@@ -180,7 +180,7 @@ check("=> 几何进入为 c^m、拓扑进入为游走计数 => 两者【精确�
 # ======================================================================
 head("F3  边界2：D 系列的层确有【长度索引】")
 
-d216 = rd("D216_history_phase_state_for_u3.md", MOD)
+d216 = rd("D216_history_phase_state.md", MOD)
 d222 = rd("D222_stratified_destruction_and_local_memory.md", MOD)
 d211 = rd("D211_global_static_closure_zero_layer.md", MOD)
 check("D216 预先结构含『历史长度模 T 的相位解释』", "历史长度模" in d216)

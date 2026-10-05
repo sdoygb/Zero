@@ -623,7 +623,7 @@ $$
 | `R-Z-RESISTANCE-METRIC-LOCALITY-GAP` | 有效电阻依赖全图，远端连接会改变局部距离 | 否定性缺口 |
 | `R-Z-DIMENSION-TRUNCATION-GAP` | 旗复形维数由图团数决定，三维空间仍需截断或选择条件 | 未解选择器 |
 
-这些结构沿用 `R-Z-CELL-COMPLEX-GEOMETRY-GAP`、`R-Z-REFINEMENT-TENSOR-CONSISTENCY-GAP` 与 D256 的内禀几何结构，不修改 `U1-U4+C1`，也不新增 `U5`。
+这些结构沿用 `R-Z-CELL-COMPLEX-GEOMETRY-GAP`、`R-Z-REFINEMENT-TENSOR-CONSISTENCY-GAP` 与 D256 的内禀几何结构，不修改 `Zero 的载体–态–支持三层`，也不新增 `（旧理论新增条款）`。
 
 $$
 

@@ -27,7 +27,7 @@ h_\sigma
 (\det Q_\sigma)Q_\sigma^{-1}.
 $$
 
-因此离散到连续缺口被条件闭合到“已给定单元复形、顶点嵌入、单元体积与面胶合”的层级；这些几何输入仍未由 `U1-U4` 或 D248-D251 导出。
+因此离散到连续缺口被条件闭合到“已给定单元复形、顶点嵌入、单元体积与面胶合”的层级；这些几何输入仍未由 `Zero 的载体–态–支持三层` 或 D248-D251 导出。
 
 本文登记恢复层结构 `R-Z-TETRAHEDRAL-DIRICHLET-ASSEMBLY`、`R-Z-DIRICHLET-ASSEMBLY-GLUING`、`R-Z-CELL-COMPLEX-GEOMETRY-GAP` 与 `R-Z-REFINEMENT-TENSOR-CONSISTENCY-GAP`。
 
@@ -443,7 +443,7 @@ $$
 | `R-Z-CELL-COMPLEX-GEOMETRY-GAP` | 单元复形、顶点嵌入与坐标体积仍未由读回、零和交换或支持预层导出 | 未解输入 |
 | `R-Z-REFINEMENT-TENSOR-CONSISTENCY-GAP` | 不同细化可以给不同 $Q\_h$；唯一连续极限需要嵌入、面胶合与张量收敛的共同条件 | 未解缺口 |
 
-这些结构沿用 `R-Z-DIRICHLET-TENSOR-METRIC`、`R-Z-DISCRETE-DIRICHLET-TENSOR-GAP` 与 `R-Z-READOUT-TO-ADM-SELECTION-GAP`，不修改 `U1-U4+C1`，也不新增 `U5`。
+这些结构沿用 `R-Z-DIRICHLET-TENSOR-METRIC`、`R-Z-DISCRETE-DIRICHLET-TENSOR-GAP` 与 `R-Z-READOUT-TO-ADM-SELECTION-GAP`，不修改 `Zero 的载体–态–支持三层`，也不新增 `（旧理论新增条款）`。
 
 $$
 

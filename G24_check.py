@@ -46,7 +46,7 @@ def rd(name):
     return open(p, encoding="utf-8", errors="replace").read() if os.path.exists(p) else ""
 
 
-d223 = rd("D223_age_carrier_tensor_u_interface.md")
+d223 = rd("D223_age_carrier_tensor_interface.md")
 d227 = rd("D227_age_local_modular_witness_selector.md")
 d228 = rd("D228_age_local_modular_family_support_covariance.md")
 d229 = rd("D229_continuous_age_support_obstruction.md")

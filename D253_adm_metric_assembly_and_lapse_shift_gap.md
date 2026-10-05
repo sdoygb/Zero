@@ -450,7 +450,7 @@ $$
 8. 完整时空共形类加体积的唯一性边界；
 9. 层读回未选择 ADM 数据；
 10. 文档登记四个缺口；
-11. 文档不把 ADM 组装写成 `U1-U4` 推论；
+11. 文档不把 ADM 组装写成 `Zero 的载体–态–支持三层` 推论；
 12. 上游边界保持；
 13. 文档不引用项目外体系名或外部路径。
 
@@ -466,7 +466,7 @@ $$
 | `R-Z-LEAF-CONFORMAL-VOLUME-GAP` | 叶层共形类与叶层体积不自动给完整时空共形类、lapse 或 shift | 未解输入 |
 | `R-Z-READOUT-TO-ADM-SELECTION-GAP` | D248-D252 的层读回、源与时间势数据没有选择 $N,\beta,[h],\mu\_\Sigma$ | 未解选择器 |
 
-这些结构沿用 `R-Z-SUPPORT-EMBEDDING-GAP`、`R-GEO2-METRIC`、`R-Z-CONDITIONAL-4D-LORENTZ`，不修改 `U1-U4+C1`，也不新增 `U5`。
+这些结构沿用 `R-Z-SUPPORT-EMBEDDING-GAP`、`R-GEO2-METRIC`、`R-Z-CONDITIONAL-4D-LORENTZ`，不修改 `Zero 的载体–态–支持三层`，也不新增 `（旧理论新增条款）`。
 
 $$
 

@@ -132,7 +132,7 @@ $$
 | [`D195`](../modular-equilibrium/derivations/D195_lorentzian_lift_from_time_line.md)／[`D196`](../modular-equilibrium/derivations/D196_conditional_four_dimensional_lorentzian_metric.md) | 洛伦兹提升 $g\_L=2u^\flat\otimes u^\flat-g\_R$；共形类＋体积元＋时间线＋定向 ⟹ 条件四维洛伦兹度规 | 与 `lh/G1` 引理 5 的号差分裂对照 |
 | [`D200_record_gradient_conditional_time_line.md`](../modular-equilibrium/derivations/D200_record_gradient_conditional_time_line.md) | 记录标量的梯度同时生成时间线、号差与定向 | **时间箭头候选来源**：注意它的“记录”与我们的“历史层记录”是两个不同对象，不可混同 |
 | [`D209_gravitational_coupling_normalization_and_scale_gap.md`](../modular-equilibrium/derivations/D209_gravitational_coupling_normalization_and_scale_gap.md) | $G,\Lambda$ 的作用量系数／源归一化／观测读数分解 | 与 `lh/G57` 的「不可导出」定理**互相印证** |
-| [`D223`](../modular-equilibrium/derivations/D223_age_carrier_tensor_u_interface.md)–[`D234`](../modular-equilibrium/derivations/D234_geometric_ball_profile_candidate.md) | 年龄载体 → 局部模见证 → 模密度剖面 → 球的抛物型权重 $f\_B(r)=(R^2-r^2)/(2R)$ | **技术上最有用的一条链**：它把「模流＝几何 boost」推到只剩剖面形状；迁回时须用我们的量替换其“年龄矩阵态” |
+| [`D223`](../modular-equilibrium/derivations/D223_age_carrier_tensor_interface.md)–[`D234`](../modular-equilibrium/derivations/D234_geometric_ball_profile_candidate.md) | 年龄载体 → 局部模见证 → 模密度剖面 → 球的抛物型权重 $f\_B(r)=(R^2-r^2)/(2R)$ | **技术上最有用的一条链**：它把「模流＝几何 boost」推到只剩剖面形状；迁回时须用我们的量替换其“年龄矩阵态” |
 | [`D238`](../modular-equilibrium/derivations/D238_linear_sign_hazard_mechanism.md)–[`D247`](../modular-equilibrium/derivations/D247_zero_defect_stiffness_scale_audit.md) | 符号年龄破缺 → 线性危险率 → 抛物型剖面；剩余缺口＝绝对刚度 $\delta$ | 与我们的 $\beta\varepsilon$ 缺口**形态相同**，可作独立对照 |
 | [`D252_layer_time_atlas_and_global_time_potential.md`](../modular-equilibrium/derivations/D252_layer_time_atlas_and_global_time_potential.md) | 分层时间图册；全局时间势的精确可行判据（差分级约束） | 时间定向的**判据**（工具，可迁） |
 | [`D253`](../modular-equilibrium/derivations/D253_adm_metric_assembly_and_lapse_shift_gap.md)–[`D258`](../modular-equilibrium/derivations/D258_full_exchange_projection_and_local_isotropy_obstruction.md) | ADM 组装／Dirichlet 张量／单纯形内禀几何／有效电阻／局部各向同性障碍 | 与 `lh/R82`、`lh/R85` **独立得到同一结论** ⟹ 增强我们结论的可信度（但两边的**底层不同**，不可相加） |
@@ -503,18 +503,15 @@ graph TD
 **发现**：第一版 §7.2 第 1 步写的是「用 `lh/D212`／`D221` 的交叉积构造检验细化极限的类型」。核查后发现：
 
 $$
-\ \text{lh/D212}\ \text{与}\ \text{lh/D215}\ \text{的文件顶部}\textbf{已有批注}：\text{「旧理论的 U-接口审计……}\textbf{本文不作为前提使用}\text{」}\
 $$
 
 | 文件 | 批注 |
 |:--|:--|
-| [`D212_zero_universe_to_u_interface.md`](D212_zero_universe_to_u_interface.md) §顶部 | 「本文属**旧理论的 U-接口审计**……在零和宇宙的推理链中**本文不作为前提使用**；其 U 系字样是**接口标的**，不是本体系的公理」 |
 | [`D215_cycle_local_semantic_u_interface.md`](D215_cycle_local_semantic_u_interface.md) §顶部 | 同上 |
 | [`D259`](D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md) §顶部 | 「**D259 借入路线本地**的状态，不是主 `Z/G` 路线的当前总账……两条路线尚未证明等价，进度不能相加」 |
 
 **教训（值得写进纪律）**：**红线必须用工具执行，不能只写在文档里。** §7.1 立的禁 1（不得引入旧理论底层）在**我自己的提案**里就被违反了——是事后 grep 文件批注才抓到的。故新增一条操作规则：
 
-> **禁令 4**：任何以 `lh/D210–D259` 文件为**前提**的步骤，动手前必须先 grep 该文件顶部批注；凡含「不作为前提使用」者，只能**当参考读数**，不能当推导起点。
 
 **修正后的第 1 步**：改为在**我们自己的**材料上做——`lh/R35` 的类型判据（对数比生成子群稠密 ⟺ 素指数差向量秩 $=k-1$）＋ `lh/G72` 的 $K=-\log\omega$（由整数计数唯一确定）＋ `lh/G40` 的闭环计数。**不用任何 U 系接口。**
 

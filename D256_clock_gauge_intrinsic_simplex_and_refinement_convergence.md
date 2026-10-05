@@ -201,7 +201,7 @@ $$
 
 \text{CMC 时钟}
 =
-\text{特定几何条件下的候选，不是由 }U1-U4\text{ 自动选出的时间。}
+\text{特定几何条件下的候选，不是由 }\text{Zero 的\text{\text{载体–态}–支持三层}}\text{ 自动选出的时间。}
 
 $$
 
@@ -577,7 +577,7 @@ $$
 
 1. 某个标量读回已经是物理时钟；
 2. $N=1,\beta=0$ 已经从上游导出；
-3. 复形、边长或细化规则已经由 `U1-U4` 导出；
+3. 复形、边长或细化规则已经由 `Zero 的载体–态–支持三层` 导出；
 4. 任意细化都会给同一连续几何；
 5. Einstein 动力学、$G$、$\Lambda$ 或引力量子化已经得到。
 
@@ -616,7 +616,7 @@ $$
 | `R-Z-SHAPE-REGULAR-REFINEMENT` | 形状正则、相容、稳定细化可给共同连续 $Q$ | 条件收敛结构 |
 | `R-Z-COMMON-REFINEMENT-LIMIT` | 共同 $Q$ 的正定收敛经连续反解给共同 $h$ | 条件定理 |
 
-这些结构沿用 `R-Z-CLOCK-GAUGE-SELECTION-GAP`、`R-Z-CELL-COMPLEX-GEOMETRY-GAP` 与 `R-Z-REFINEMENT-TENSOR-CONSISTENCY-GAP`，不修改 `U1-U4+C1`，也不新增 `U5`。
+这些结构沿用 `R-Z-CLOCK-GAUGE-SELECTION-GAP`、`R-Z-CELL-COMPLEX-GEOMETRY-GAP` 与 `R-Z-REFINEMENT-TENSOR-CONSISTENCY-GAP`，不修改 `Zero 的载体–态–支持三层`，也不新增 `（旧理论新增条款）`。
 
 $$
 

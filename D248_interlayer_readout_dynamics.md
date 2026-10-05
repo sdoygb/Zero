@@ -25,7 +25,7 @@ $$
 4. $Z$ 层只有通过位置依赖的响应或边界／终端项才能推动演化层；
 5. 守恒交换流是 GR 源张量 $T\_{ab}$ 的候选前体，但守恒流不能唯一决定对称应力张量；从读到 $T\_{ab}$ 仍须额外选择标量 Dirichlet 提升或等价的应力提升。
 
-这些结论不修改 `U1-U4+C1`，不新增 `U5`。本文登记恢复层结构 `R-Z-INTERLAYER-READOUT-QUOTIENT`、`R-Z-INTERLAYER-ZERO-SUM-EXCHANGE`、`R-Z-Z-READOUT-COMMON-MODE-BLINDNESS`、`R-Z-INTERLAYER-DIRICHLET-SOURCE-ROUTE` 与缺口 `R-Z-SOURCE-STRESS-LIFT-GAP`。
+这些结论不修改 `Zero 的载体–态–支持三层`，不新增 `（旧理论新增条款）`。本文登记恢复层结构 `R-Z-INTERLAYER-READOUT-QUOTIENT`、`R-Z-INTERLAYER-ZERO-SUM-EXCHANGE`、`R-Z-Z-READOUT-COMMON-MODE-BLINDNESS`、`R-Z-INTERLAYER-DIRICHLET-SOURCE-ROUTE` 与缺口 `R-Z-SOURCE-STRESS-LIFT-GAP`。
 
 ---
 
@@ -55,7 +55,7 @@ $$
 
 $$
 
-这里的“只通过”是恢复层输入，不是 `U1-U4` 的定理。
+这里的“只通过”是恢复层输入，不是 `Zero 的载体–态–支持三层` 的定理。
 
 **第 2 步｜读出商化。**
 
@@ -121,7 +121,7 @@ $$
 
 其中 $u\_i$ 是局部历史势，$b\_i$ 是活动层对全局零层读出的局部响应系数。
 
-必须明确：$u\_i$ 与 $b\_i$ 的来源没有由 `U1-U4` 或 `D211` 导出。本文只检验这条候选能把层间动力学压到什么程度，以及它能否提供 GR 所需的守恒源。
+必须明确：$u\_i$ 与 $b\_i$ 的来源没有由 `Zero 的载体–态–支持三层` 或 `D211` 导出。本文只检验这条候选能把层间动力学压到什么程度，以及它能否提供 GR 所需的守恒源。
 
 $$
 

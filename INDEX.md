@@ -59,7 +59,6 @@
 
 ### 0.5.1 术语迁移档案（非理论文档）
 
-
 `R49` 执行 `R48` §5 的量子侧目标（让 $\pi$ 非等差），把 `R35` 的类型指纹与 `R42`/`R43` 的双侧约束合并成**一个有限可判定的条件**：**判据**：块权重的对数比生成子群 $G$ 稠密 $\iff$ 相邻比的对数在 $\mathbb Q$ 上线性无关 $\iff$ **素数指数差向量秩 $=k-1$**（有限、可判定）。**不可能**：$k\le3$ ⇒ 秩 $\le2$ ⇒ 任何 3 块轮廓（含 3 维归约）永远是 $III\_\lambda$——这也解释了 `R42` 表里「$\lambda\_1$ 越大秩越小」不是巧合。**可行**：4 块上语境性（$\lambda\_1>0.723607$）与稠密性（秩 3）**解耦**，显式解 $(10^4,2,3,5)$ 给 $S\_{\max}=2.2349$、$(10^3,1,3,15)$ 给 $2.2188$、$(2,246,1,5)$ 给 $2.2037$。**新障碍**：旋转类的轨道权重全是 2 的幂 ⇒ 秩恒为 1 ⇒ **旋转类恒 $III\_\lambda$**（除非 $L$ 含非 2 素因子，而 $L=12$ 已被 `R31.1` 排除）。未做：从 Zero 原生生成该形状的 $\pi$。核验：`R49_check.py`。\n
 `R50` 立一条**推导纪律**并据此会诊全库矛盾：**每个量、定理、常数都带层指标 $\ell$**，断言写成 $P\_\ell(v)$ 才完整——默认解释不是矛盾而是**层不同**，只有**同层相反**才是真矛盾。层：L0 底层（`Z0`/`Z1`–`Z5`）／L1 历史层（$\mathcal P$）／L1′ 全局闭合类层（$\mathcal Z\_\ast$）／L2 演化层（活动层）／$\mathcal R$ 读出面（$\pi,\omega,K$）。**会诊 10 条**：真矛盾 1（`L=8`，已由 `R32.2` 撤回）、符号碰撞 3（$K$／$N$／局部编号）、其余 6 条全是**层坍塌**——例如「不设概率」(L0) vs「必须靠概率」(L2/L3)、「$B$ 不可导出」(L0) vs「$B=4$ 钉住」($\mathcal R$)。并把 `R48` 的 $\varepsilon(B)$ 从单侧公式**重算为双侧定律**：$B<4$ 指数衰减、$B=4$ 幂律、$B>4$ 指数增长被 **L2 容量饱和**截断（实测斜率 $\approx0$）。三条操作规则：①断言带层指标；②比较前对齐层；③**层坍塌优先于改结论**。**纪律 ① 已落地**：6 条层坍塌＋3 条符号碰撞已逐条补层指标（`G28`／`G73`／`G59`／`R48`／`Z1`／`Z17`／`R32`／`G56`／`G61`／`G32`／`G72`／`G33`／`Z0` §0.5），只加指标不改结论，落地后 170/170 通过。核验：`R50_check.py`。\n
 | 分支 | 文档 | 标题 |
@@ -255,7 +254,6 @@ $$
 | [`Z17_A0_A5_retirement_vacancy_ledger.md`](Z17_A0_A5_retirement_vacancy_ledger.md) | A0–A5 退场后的空缺账本：no-go 的 Z0 化与维数缺口的定位 |
 
 核验：[`Z0_check.py`](Z0_check.py)、[`Z1_check.py`](Z1_check.py)、[`Z2_check.py`](Z2_check.py)、[`Z3_check.py`](Z3_check.py)、[`Z4_check.py`](Z4_check.py)、[`Z5_check.py`](Z5_check.py)、[`Z6_check.py`](Z6_check.py)、[`Z7_check.py`](Z7_check.py)、[`Z8_check.py`](Z8_check.py)、[`Z9_check.py`](Z9_check.py)、[`Z10_check.py`](Z10_check.py)、[`Z11_check.py`](Z11_check.py)、[`Z12_check.py`](Z12_check.py)、[`Z13_check.py`](Z13_check.py)、[`Z14_check.py`](Z14_check.py)、[`Z15_check.py`](Z15_check.py)、[`Z16_check.py`](Z16_check.py)、[`Z17_check.py`](Z17_check.py)。表头 `Z0` = **唯一公理**；`Z1` = **取代 A1–A5 与结构扩展**。
-
 
 **四条结构扩展**（均在 G 系列之前，各带价签）：
 
@@ -474,7 +472,6 @@ $$
 | [`L2_layer_retention_verdict.md`](L2_layer_retention_verdict.md) | 层保留猜想（保留一层版） |
 | [`L2_layer_retention_corrected.md`](L2_layer_retention_corrected.md) | 层保留猜想（修正为两层） |
 
-
 ### 核验脚本（89 个）
 
 [`ledger_sync.py`](ledger_sync.py) 是**同步入口**：按 mtime 缓存逐个跑 `G*_check.py` 与 `Z*_check.py`（未变者不重跑），写回账本合计，再重生本清单。
@@ -502,14 +499,14 @@ python3 ledger_sync.py --all      # 忽略缓存，全部重跑
 | [`D213_periodic_skeleton_to_gr_direct_audit.md`](D213_periodic_skeleton_to_gr_direct_audit.md) | 周期零宇宙骨架到 GR 的直接桥审计 |
 | [`D214_local_zero_sum_transport.md`](D214_local_zero_sum_transport.md) | 局域零和传输：闭环邻接上的最小补偿 |
 | [`D215_cycle_local_semantic_u_interface.md`](D215_cycle_local_semantic_u_interface.md) ★ | 周期局域环的对外语义接口 |
-| [`D216_history_phase_state_for_u3.md`](D216_history_phase_state_for_u3.md) | 精确历史相位计数：非中心态的最小选择器 |
+| [`D216_history_phase_state.md`](D216_history_phase_state.md) | 精确历史相位计数：非中心态的最小选择器 |
 | [`D217_history_phase_asymptotic_no_go.md`](D217_history_phase_asymptotic_no_go.md) | 历史相位态的渐近障碍：暂态非中心态回到中心 |
 | [`D218_active_phase_occupancy_and_d_boundary_state.md`](D218_active_phase_occupancy_and_d_boundary_state.md) | 活动相位占用与 $D$ 层边界：稳定非中心态候选 |
 | [`D219_active_phase_seed_independence.md`](D219_active_phase_seed_independence.md) | 活动相位结构的种子无关性：从任意闭合历史到 $(1,1,2)$ |
 | [`D220_general_period_active_phase_spectrum.md`](D220_general_period_active_phase_spectrum.md) | 一般周期的活动相位谱：中心二项系数与态族 |
-| [`D221_u1_cyclic_naturality_and_primitive_phase_gap.md`](D221_u1_cyclic_naturality_and_primitive_phase_gap.md) | 载体的循环自然性：交叉积表示与原始相位障碍 |
+| [`D221_cyclic_naturality_and_primitive_phase_gap.md`](D221_cyclic_naturality_and_primitive_phase_gap.md) | 载体的循环自然性：交叉积表示与原始相位障碍 |
 | [`D222_stratified_destruction_and_local_memory.md`](D222_stratified_destruction_and_local_memory.md) | 分层毁灭与局部记忆：活动亚层全清、历史层保留最高两层 |
-| [`D223_age_carrier_tensor_u_interface.md`](D223_age_carrier_tensor_u_interface.md) ★ | 年龄载体与矩阵载体的张量接口：毁灭周期负责一侧，矩阵因子负责非交换载体与模流 |
+| [`D223_age_carrier_tensor_interface.md`](D223_age_carrier_tensor_interface.md) ★ | 年龄载体与矩阵载体的张量接口：毁灭周期负责一侧，矩阵因子负责非交换载体与模流 |
 | [`D224_minimal_m2_age_bridge_and_modular_support_independence.md`](D224_minimal_m2_age_bridge_and_modular_support_independence.md) ★ | 最小年龄矩阵桥：$M\_2$ 因子、D220 年龄权重与模流支持寿命分离 |
 | [`D225_tensor_vs_direct_sum_factorization_gap.md`](D225_tensor_vs_direct_sum_factorization_gap.md) | 张量因子与直接和替代：底层公理不选择局部耦合方式 |
 | [`D226_uniform_matrix_coexistence_selector.md`](D226_uniform_matrix_coexistence_selector.md) | 矩阵均匀共存原则：在张量与直接和之间选出张量载体 |

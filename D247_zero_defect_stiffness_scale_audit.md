@@ -38,7 +38,7 @@ $$
 \frac{R(\lambda_1-\lambda_0)}{2T^2},
 $$
 
-但这只是把输入从 $\delta$ 转移到半径、谱差与终端年龄，不是从 `U1-U4` 导出它的绝对值。
+但这只是把输入从 $\delta$ 转移到半径、谱差与终端年龄，不是从 `Zero 的载体–态–支持三层` 导出它的绝对值。
 
 本文登记结构拆分 `R-Z-ZERO-DEFECT-SHAPE-VALUE-SPLIT`、尺度事实 `R-Z-DELTA-AGE-RESCALING` 与缺口 `R-Z-DELTA-ABSOLUTE-SCALE-GAP`。
 

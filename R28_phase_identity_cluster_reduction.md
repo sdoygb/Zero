@@ -2,7 +2,7 @@
 
 **日期**：2026-10-03
 **性质**：主线归约＋no-go。审计 R27 的 `PHASE-1-COCHAIN` 与 `PAIR-ID-QUOTIENT` 是否足以给出 `C(D,2)` 个独立身份；结论是二者单独不足，必须补上“非纯规范边联络”和“记录张满和乐商”两个条件。本文不关闭 `SURV4-GLOBAL`。
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`D214`](D214_local_zero_sum_transport.md)、[`D221`](D221_u1_cyclic_naturality_and_primitive_phase_gap.md)、[`R26`](R26_pair_carrier_reduction_no_go.md)、[`R27`](R27_phase_cochain_quotient_and_dimension_dictionary.md)、[`STATUS`](STATUS.md)。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`D214`](D214_local_zero_sum_transport.md)、[`D221`](D221_cyclic_naturality_and_primitive_phase_gap.md)、[`R26`](R26_pair_carrier_reduction_no_go.md)、[`R27`](R27_phase_cochain_quotient_and_dimension_dictionary.md)、[`STATUS`](STATUS.md)。
 **后续代价归约**：[`R29`](R29_full_support_ledger_factorization_no_go.md) 证明 `FULL-SUPPORT-LEDGER` 也不足以给出 `q^D`，并把它拆成 `DIR-SUPPORT-D + RECORD-FAMILY-D + PRODUCT-LEDGER + SAME-Q`。
 **核验**：[`R28_check.py`](R28_check.py)。
 

@@ -2,7 +2,7 @@
 
 **日期**：2026-10-03
 **性质**：**推导链（A）＋ 数值验证（B）**。把用户提出的五个猜想串成一条从 $\mathcal Z\_\ast$ 到量子力学的链，并逐项数值验证。
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`D211`](D211_global_static_closure_zero_layer.md)、[`D216`](D216_history_phase_state_for_u3.md)、[`D222`](D222_stratified_destruction_and_local_memory.md)、[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`R37`](R37_kcbs_contextuality.md)、[`R49`](R49_pi_nonarithmetic_criterion.md)、[`R50`](R50_layer_discipline.md)、[`R54`](R54_$\mathcal R$_removed_quantum_emergence.md)。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`D211`](D211_global_static_closure_zero_layer.md)、[`D216`](D216_history_phase_state.md)、[`D222`](D222_stratified_destruction_and_local_memory.md)、[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`R37`](R37_kcbs_contextuality.md)、[`R49`](R49_pi_nonarithmetic_criterion.md)、[`R50`](R50_layer_discipline.md)、[`R54`](R54_$\mathcal R$_removed_quantum_emergence.md)。
 **探针**：[`R57_quantum_chain.py`](R57_quantum_chain.py) → [`R57_quantum_chain_results.json`](R57_quantum_chain_results.json)。
 
 $$

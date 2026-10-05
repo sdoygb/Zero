@@ -451,7 +451,7 @@ $$
 | `R-Z-CLOCK-GAUGE-SELECTION-GAP` | 为什么读回标量是物理时钟，以及为什么采用单位 lapse、零 shift，仍未导出 | 未解选择器 |
 | `R-Z-DISCRETE-DIRICHLET-TENSOR-GAP` | D248-D250 的离散交换权重尚未恢复连续 $Q^{ij}$，仍缺嵌入、边长、单元几何与局部张量重建规则 | 未解输入 |
 
-这些结构沿用 `R-Z-ADM-METRIC-ASSEMBLY`、`R-Z-LAPSE-SHIFT-GAP`、`R-Z-LEAF-CONFORMAL-VOLUME-GAP` 与 `R-Z-READOUT-TO-ADM-SELECTION-GAP`，不修改 `U1-U4+C1`，也不新增 `U5`。
+这些结构沿用 `R-Z-ADM-METRIC-ASSEMBLY`、`R-Z-LAPSE-SHIFT-GAP`、`R-Z-LEAF-CONFORMAL-VOLUME-GAP` 与 `R-Z-READOUT-TO-ADM-SELECTION-GAP`，不修改 `Zero 的载体–态–支持三层`，也不新增 `（旧理论新增条款）`。
 
 $$
 

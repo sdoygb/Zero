@@ -29,7 +29,7 @@ $$
 
 3. 守恒条件本身仍不选择标量、尘埃、辐射或一般流体的应力提升；D249 只把缺口从“任意 $T\_{ab}$”缩小到“作用量类别、势能与非最小耦合的选择”。
 
-这些结论不修改 `U1-U4+C1`，不新增 `U5`。本文登记恢复层结构 `R-Z-KINETIC-NORMALIZATION-REDUNDANCY`、`R-Z-SCALAR-DIRICHLET-STRESS-LIFT`、`R-Z-STIFF-SCALAR-EQUATION-OF-STATE` 与缺口 `R-Z-STRESS-LIFT-CLASS-GAP`。
+这些结论不修改 `Zero 的载体–态–支持三层`，不新增 `（旧理论新增条款）`。本文登记恢复层结构 `R-Z-KINETIC-NORMALIZATION-REDUNDANCY`、`R-Z-SCALAR-DIRICHLET-STRESS-LIFT`、`R-Z-STIFF-SCALAR-EQUATION-OF-STATE` 与缺口 `R-Z-STRESS-LIFT-CLASS-GAP`。
 
 ---
 
@@ -236,10 +236,10 @@ $$
 $$
 T^\phi_{ab}
 =
-\frac U2
+\frac \text{载体–态}
 u_au_b
 +
-\frac U2
+\frac \text{载体–态}
 \left(
 \mathrm g_{ab}+u_au_b
 \right).
@@ -261,7 +261,7 @@ $$
 
 $$
 
-\rho=p=\frac U2.
+\rho=p=\frac \text{载体–态}.
 
 $$
 
@@ -282,11 +282,11 @@ $$
 $$
 \rho
 =
-\frac U2+V,
+\frac \text{载体–态}+V,
 \qquad
 p
 =
-\frac U2-V.
+\frac \text{载体–态}-V.
 $$
 
 因此
@@ -320,9 +320,9 @@ T^\phi_{ab}
 =
 U\,n_an_b
 -
-\frac U2\,\mathrm g_{ab}
+\frac \text{载体–态}\,\mathrm g_{ab}
 =
-\frac U2
+\frac \text{载体–态}
 \left(
 2n_an_b-\mathrm g_{ab}
 \right).
