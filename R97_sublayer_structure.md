@@ -3,9 +3,9 @@
 **日期**：2026-10-04
 **性质**：**细分（正面）＋ 一处分类学的加固（三种细分形态）**。
 **触发**：用户指示——"我们尝试把 L0，L1，L2 再细分"。
-**依据**：亚层标准取自 [`D222`](D222_stratified_destruction_and_local_memory.md)（活动亚层全清、历史层保留最高两层、局部寿命 $\tau\_i$ 可不同）。
+**依据**：亚层标准取自 [`D222`](D_arc/D222_stratified_destruction_and_local_memory.md)（活动亚层全清、历史层保留最高两层、局部寿命 $\tau\_i$ 可不同）。
 **探针**：[`R97_sublayer_structure.py`](R97_sublayer_structure.py) —— **核验 20 / 未过 0**，退出码 `0`；另跑 [`verify/d222_...py`](verify/d222_stratified_destruction_and_local_memory.py) **24 / 0** 通过。
-**依赖**：[`R95`](R95_layer_table_and_discipline.md)（层表单一来源）、[`R93`](R93_$\mathcal R$_sublayer.md)（亚层 vs 泛函的区分）、[`D222`](D222_stratified_destruction_and_local_memory.md)、[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5、[`G27`](G27_purification_attempt.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`R86`](R86_reseed_class_verdict.md) F1、[`R87`](R87_class_weight_consistency.md) H1。
+**依赖**：[`R95`](R95_layer_table_and_discipline.md)（层表单一来源）、[`R93`](R93_$\mathcal R$_sublayer.md)（亚层 vs 泛函的区分）、[`D222`](D_arc/D222_stratified_destruction_and_local_memory.md)、[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5、[`G27`](G27_purification_attempt.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`R86`](R86_reseed_class_verdict.md) F1、[`R87`](R87_class_weight_consistency.md) H1。
 
 $$
 

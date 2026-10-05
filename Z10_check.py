@@ -228,7 +228,7 @@ check("写明宇称倍增是被迫的", "宇称倍增" in DOC)
 check("写明 C7 与判据清单更新到七条", "C7" in DOC and "七条" in DOC)
 check("诚实边界在位（替身／识别）", "替身" in DOC and "识别" in DOC)
 for fn, keys in [
-    ("D214_local_zero_sum_transport.md", ["环图", "额外识别"]),
+    ("D_arc/D214_local_zero_sum_transport.md", ["环图", "额外识别"]),
     ("G54_quantitative_profile_age_measure.md", ["引理 79"]),
     ("G59_I7_settled_native_cone_and_its_residue.md", ["宇称"]),
     ("zero_sum_rotation_class_algebra.md", ["内部归零数"]),

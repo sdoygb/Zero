@@ -44,10 +44,10 @@ def rd(p):
     return open(os.path.join(HERE, p), encoding="utf-8", errors="replace").read()
 
 
-d222 = rd("D222_stratified_destruction_and_local_memory.md")
-d252 = rd("D252_layer_time_atlas_and_global_time_potential.md")
-d253 = rd("D253_adm_metric_assembly_and_lapse_shift_gap.md")
-d251 = rd("D251_layer_type_complex_and_local_readout_presheaf.md")
+d222 = rd("D_arc/D222_stratified_destruction_and_local_memory.md")
+d252 = rd("D_arc/D252_layer_time_atlas_and_global_time_potential.md")
+d253 = rd("D_arc/D253_adm_metric_assembly_and_lapse_shift_gap.md")
+d251 = rd("D_arc/D251_layer_type_complex_and_local_readout_presheaf.md")
 zrp = rd("zero_sum_global_R_local_P.md")
 
 # ======================================================================

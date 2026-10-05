@@ -2,7 +2,7 @@
 
 **日期**：2026-10-03
 **性质**：**判据裁决（否定）＋ 一条精确值 ＋ 一处新的相容性定理**。检验"引入 $T^{ab}$ 是否使 $\beta\varepsilon$ 的窗口坍缩到 $\tfrac43$"。
-**依赖**：[`D250`](D250_pure_exchange_selects_stiff_scalar_source.md)、[`G57`](G57_unreachability_of_absolute_normalization.md)、[`R74`](R74_euclidean_simplex_settlement.md)、[`R76`](R76_cycle_structure.py)、[`R77`](R77_length_grading_necessity.md)、[`R79`](R79_stress_two_param.py)。
+**依赖**：[`D250`](D_arc/D250_pure_exchange_selects_stiff_scalar_source.md)、[`G57`](G57_unreachability_of_absolute_normalization.md)、[`R74`](R74_euclidean_simplex_settlement.md)、[`R76`](R76_cycle_structure.py)、[`R77`](R77_length_grading_necessity.md)、[`R79`](R79_stress_two_param.py)。
 **探针**：[`R80_beta_lock.py`](R80_beta_lock.py) → [`R80_beta_lock_results.json`](R80_beta_lock_results.json)。
 
 $$

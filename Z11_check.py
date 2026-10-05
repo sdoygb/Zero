@@ -179,7 +179,7 @@ for fn, keys in [
     ("G58_I2a_resolved_as_embedding_input.md", ["固定步数", "量纲常数"]),
     ("G61_locking_the_five_integers.md", ["L=4"]),
     ("G46_k_is_the_lifetime.md", ["顶点传递"]),
-    ("D214_local_zero_sum_transport.md", ["额外识别"]),
+    ("D_arc/D214_local_zero_sum_transport.md", ["额外识别"]),
     ("Z9_pi_filter_and_lifetime_fork.md", ["分叉"]),
     ("Z8_native_scale_field_candidate.md", ["推前重数"]),
     ("Z7_embedding_input_explicit_dictionary.md", ["闭式字典"]),

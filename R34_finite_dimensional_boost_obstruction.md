@@ -2,7 +2,7 @@
 
 **日期**：2026-10-03
 **性质**：**探针结果＋有限维不可能定理＋目标重述**。回应 [`R33`](R33_action_phase_match_project.md) §6 的第一击（P2）。本文**不新增物理假设**，只报告可复算的数值事实与一条经典表示论后果。
-**依赖**：[`R33`](R33_action_phase_match_project.md)、[`G1`](G1_derivations_from_the_bottom_layer.md)、[`G27`](G27_purification_attempt.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R19`](R19_L1_upstream_probability_phase_and_missing_boost.md)、[`D227`](D227_age_local_modular_witness_selector.md)、[`D228`](D228_age_local_modular_family_support_covariance.md)、[`STATUS`](STATUS.md)。
+**依赖**：[`R33`](R33_action_phase_match_project.md)、[`G1`](G1_derivations_from_the_bottom_layer.md)、[`G27`](G27_purification_attempt.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R19`](R19_L1_upstream_probability_phase_and_missing_boost.md)、[`D227`](D_arc/D227_age_local_modular_witness_selector.md)、[`D228`](D_arc/D228_age_local_modular_family_support_covariance.md)、[`STATUS`](STATUS.md)。
 **探针**：[`R34_mixing_generator_probe.py`](R34_mixing_generator_probe.py) → [`R34_mixing_generator_results.json`](R34_mixing_generator_results.json)。
 **核验**：[`R34_check.py`](R34_check.py)。
 

@@ -2,7 +2,7 @@
 
 **日期**：2026-10-02
 **状态入口**：[`STATUS.md`](STATUS.md)
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`G8`](G8_dimension_selection.md)、[`G11`](G11_dimension_as_consistency.md)、[`G12`](G12_gauge_sector_minimal_extension.md)、[`G63`](G63_target_list_and_audit.md)、[`G70`](G70_B_and_tau_closing.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`D259`](D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md)、[`zero_sum_geometry_probe.py`](simulations/zero_sum_geometry_probe.py)。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`G8`](G8_dimension_selection.md)、[`G11`](G11_dimension_as_consistency.md)、[`G12`](G12_gauge_sector_minimal_extension.md)、[`G63`](G63_target_list_and_audit.md)、[`G70`](G70_B_and_tau_closing.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`D259`](D_arc/D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md)、[`zero_sum_geometry_probe.py`](simulations/zero_sum_geometry_probe.py)。
 **补充审查**：[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 7、[`G60`](G60_dimensionless_ledger_and_one_free_unit.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`G81`](G81_central_charge_from_area_density.md)。
 **核验**：[`R3_check.py`](R3_check.py)。
 
@@ -265,7 +265,7 @@ $$
 
 ### 3.7 D259 五通道秩证书把 `m=5` 当输入
 
-[`D259`](D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md) 的局部秩链条是
+[`D259`](D_arc/D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md) 的局部秩链条是
 
 $$
 \text{五通道零和单元}

@@ -507,8 +507,8 @@ $$
 
 | 文件 | 批注 |
 |:--|:--|
-| [`D215_cycle_local_semantic_u_interface.md`](D215_cycle_local_semantic_u_interface.md) §顶部 | 同上 |
-| [`D259`](D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md) §顶部 | 「**D259 借入路线本地**的状态，不是主 `Z/G` 路线的当前总账……两条路线尚未证明等价，进度不能相加」 |
+| [`D215_cycle_local_semantic_u_interface.md`](D_arc/D215_cycle_local_semantic_u_interface.md) §顶部 | 同上 |
+| [`D259`](D_arc/D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md) §顶部 | 「**D259 借入路线本地**的状态，不是主 `Z/G` 路线的当前总账……两条路线尚未证明等价，进度不能相加」 |
 
 **教训（值得写进纪律）**：**红线必须用工具执行，不能只写在文档里。** §7.1 立的禁 1（不得引入旧理论底层）在**我自己的提案**里就被违反了——是事后 grep 文件批注才抓到的。故新增一条操作规则：
 

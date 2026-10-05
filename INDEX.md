@@ -1,6 +1,6 @@
 # INDEX · 零和宇宙文档总清单
 
-**生成方式**：由文件系统实际内容生成（标题取自各文件首行），非手写。
+**生成方式**：由文件系统实际内容生成（标题取自各文件首行），非手写。  
 **核验**：[`INDEX_check.py`](INDEX_check.py) —— 无孤儿文档 + 计数一致 + 范围声明。
 
 ---
@@ -40,7 +40,7 @@
 `R32` 把 R31 的生存要求 `PEAK-IN-GRAVITON-DOMAIN` 施加到 `G72` §4 列出的**三条账本路线**上，证明只有**闭类旋转轨道**（路线 A）能给出落在引力子域的主导维数，且只在 `L=4`：路线 B/C（时间残类，`q=1/L`）在 `L\ge4` 上 `q\le1/4<1/3` 故峰恒为 `D=2`；路线 D12（`q=e^{-1}`）峰为 `D=3`（另有账本纯度必为有理数、`e^{-1}` 超越的 no-go）；路线 A 由 R31.1 只在 `L=4` 给峰 `{4}`。故**定理 R32.1**：唯一存活组合是 `(A, L=4)`，`argmax={4}`——同一个生存要求**同时**选出账本寄存器与寿命，`LEDGER-ROT` 从【具名输入】升为【条件选择】。**定理 R32.2** 同时消解 `R23.6` 的 `L=8` 对照：其 `q_L=e^{-1/L}` 不是账本纯度（超越 vs 有理 `M_2/M^2`），其 `L=8` 依赖的「每步增长率」正是 R27 §6 `WIPE-RESET-LEDGER` 已撤回的比较量，而在册每代比较下 R23.6 自陈无有限极大点。边界：`L\ge4` 由 `G61` (A)∧(B) 给出（不用最小性）；`L=2` 时 B/C 会给并列峰 `{3,4}`，故唯一性依赖排除 `L=2`；路线表穷尽性未证。**命题 R32.3（有条件弱化）**：在**身份计数已固定**为 `C(D,2)` 时，判据可弱化为 `PEAK-NOT-GRAVITY-FREE`（只要求峰 `\ne2`），结论不变（`{D\ge3}` 下只多留 `D12`，由 `G72` §4 有理纯度 no-go 独立排除）。**命题 R32.4（联合唯一性）**：在身份计数 `{D, C(D,2), C(D+1,2)}` × 路线 `{A, B/C, D12}` 的叉积中，`S={D\ge4}` 下**恰有一个**组合存活——`(C(D,2), A, L=4)`，峰 `{4}`（单方向峰 `D=2`；字典 `C(D+1,2)` 峰 `D=3`）。故 `PAIR-CARRIER` 也由【具名结构输入】升为【条件选择】，且弱判据不能用于联合选择。R32 不关闭 O3／`SURV4-GLOBAL`。\n
 `R33` 把「**振幅的相位是否就是几何作用量的相位**」立为独立目标 `ACTION-PHASE-MATCH`（**立项，未证**），三种等价形式：(T1) 模流＝几何流、(T2) 振幅相位 `=e^{iS_geo}`、(T3) `K_ω=c·G_geo` 且 `c=2π`（区域特例即 L1 的 `K_B→2πB_B`）。材料侧：`K=−log ω` 由整数计数唯一确定、无自由参数（`G72`），复振幅／干涉／Born／模流均已导出（`G62`／`G68`）。缺口侧四个可否证子目标：S1 `2π` 归一化（现为识别）、S2 非恒定剖面＋局域性（`R12` 的 blocker）、S3 相位可加性、S4 经典极限复现 `V=κ₁^N`；三种失败形态 F1 非几何／F2 非局域／F3 归一化自由。**第一击**：boost 必须从**可逆／不可逆分裂**（`G1` 引理 5 的 `R_τ⊕H_Q`）来，**不能**从旋转双覆盖来（`R19` 已排除；代数内容 `[J,J]⊂so(3)` 生不出 boost，需混合生成元）。R33 不改动任何既有判定，也不关闭 L1。\n
 `R34` 报告 R33 第一击（P2）的探针结果：**混合生成元在原生 `M_2(C)` 里存在**（`so(1,3)` 三组关系 `[J,J]=iJ`、`[J,K]=iK`、`[K,K]=-iJ` 全部实现），**但有限维不可能承载 boost**——`K_i=i\sigma_i/2` 必反 Hermitian（不存在实系数 Hermitian 解），故 `e^{i\theta K}` 不酉且范数无界（`1→1.65→12.2→148.4`）；而有限 `T` 下原生模流由 `K_\omega=-\log\omega` 生成（Hermitian、谱有限离散、跨度 `=log 50`），故为**内**自同构、闭包**紧**。**定理 R34.1**：非紧半单 Lie 群无非平凡有限维酉表示 ⟹ `(T1)`／`(T3)` 在任何有限 `T` 为假。失败原因是**维数**而非 Zero（任何有限维代数都缺 boost）。目标因此被唯一化：**P2′** 细化极限须含 **type III** 因子（BW 的几何模流需 type III₁）；**P2″** 给出二值数值指纹——`spec(log Δ_T)` 有限 vs type III₁ 需 `R`。R34 让 `R19`（旋转太紧→维数不够）、`R12`（常数剖面）、`R13`（谱半径发散）三条 no-go 合流，不关闭 L1。\n
-`R35` 执行 R34 的 P2″ 数值纲领，得到**判据性**结论：极限因子的类型由 $G=\langle\log(w\_i/w\_j)\rangle$ 的形状决定——`{0}`／`cZ`／稠密，对应平凡／III$\_\lambda$（$\lambda=e^{-c}$）／III$\_1$。数值：均匀轮廓给 `{0}`（R12 的机制）；**原生满分支 `2^a` 给 III$\_{1/2}$**（残差 `2.9e-12`）——**不是** BW 所需的 III$\_1$；而幂律 `(a+1)^2`、阶乘 `(a+1)!`、甚至 `2^a(a+1)` **全部给 III$\_1$**，即**指数因子不足以强制 III$\_\lambda$**，只要轮廓不是**恰好等差**。文档里的原生例（G29 的块 `2,5,20,100`，比值 `2.5,4,5` 递增）非等差，指向 III$\_1$。**净效果**：`ACTION-PHASE-MATCH` 的 (T1)/(T3) 反过来给缺失输入 `π`（`E5`）一个可否证约束——**渐近块轮廓须非等差**；并给出二值否证判据：若极限**恰为** III$\_{1/2}$，则其模论非 QFT 那一支（局域代数 III$\_1$）⇒ 无 BW。原生轮廓本身仍未算出。R35 不关闭 L1，也不解决 `2π`。\n
+`R35` 执行 R34 的 P2″ 数值纲领，得到**判据性**结论：极限因子的类型由 $G=\langle\log(w_i/w_j)\rangle$ 的形状决定——`{0}`／`cZ`／稠密，对应平凡／III$_\lambda$（$\lambda=e^{-c}$）／III$_1$。数值：均匀轮廓给 `{0}`（R12 的机制）；**原生满分支 `2^a` 给 III$_{1/2}$**（残差 `2.9e-12`）——**不是** BW 所需的 III$_1$；而幂律 `(a+1)^2`、阶乘 `(a+1)!`、甚至 `2^a(a+1)` **全部给 III$_1$**，即**指数因子不足以强制 III$_\lambda$**，只要轮廓不是**恰好等差**。文档里的原生例（G29 的块 `2,5,20,100`，比值 `2.5,4,5` 递增）非等差，指向 III$_1$。**净效果**：`ACTION-PHASE-MATCH` 的 (T1)/(T3) 反过来给缺失输入 `π`（`E5`）一个可否证约束——**渐近块轮廓须非等差**；并给出二值否证判据：若极限**恰为** III$_{1/2}$，则其模论非 QFT 那一支（局域代数 III$_1$）⇒ 无 BW。原生轮廓本身仍未算出。R35 不关闭 L1，也不解决 `2π`。\n
 `R36` 对 Zero 现有结构做 **CHSH 检验**：机制校验通过（Bell 态 `2.8284=2√2`、直积态 `2`、Werner 门槛 `0.7075≈1/√2`）；但 `G68` 的多路径设定**不是双体**（单系统多路径，干涉 ≠ Bell 违反），而 `G82` 的两个独立 `Z₂`（`B=2×2`）因**独立动机**而联合态为**直积**，故 `S=2.0000`、`T` 秩 1——**单方向关联再强也不违反**。结论：**现有可检验的每一个二分割上 CHSH≤2（Bell 局域）**。违反门槛被量化：`S>2 ⟺ u₁²+u₂²>1 ⟺ T 秩 ≥2`（两比特时等价于纠缠；Werner 参考线 `p>1/√2`）。缺口因此被准确命名：需要的不是更强干涉，而是**空间二分割＋跨它的纠缠**——正是 `D31` 早在 `G88` §0 登记为未恢复的「**复合系统与张量积**」，与 R35 的 `III₁` 问题共享同一缺失结构。R36 不否定量子性（是「未能检验」，非「已排除」）。\n
 `R37` 在**单体**层面做 **KCBS/语境性检验**（不需要 `E1`、空间分离或精确类空）。关键是把「五角星取向自由」这个陷阱用 **von Neumann 迹不等式**正确处理：对全部取向取最大有闭式 `S_max(rho)=sum_k lambda_k(rho) mu_k(A)`，`mu(A)=(sqrt5, 1.3819660, 1.3819660)`，非语境界 `2`。对照通过（相邻正交误差 `2.8e-16`；完全混合 `5/3<2`；最优纯态 `sqrt5`；3000 随机态抽查无一起界）。**结论：原生态违反 KCBS** —— 以 `G72`/`G29` 推前权重 `2,5,20,100` 的 3 维归约，谱 `(0.7407,0.1852,0.0741)` 给 `S_max=2.0146>2`（去最小块给 `2.0652`），阈值 `lambda*=0.7236`、原生余量 `+0.0171`。这是量子栏**第一个正面硬证据**：Zero 的单体统计**是语境的（量子）**，不是经典概率。与 `R36` 合起来：**单体量子性成立；多体（Bell）层面只是尚无场地**。边界：检验是 state-dependent（测量集按态选）；3 维归约＝`pi`/`E5`；谱用文档例，**若真实谱 `lambda_1<0.7236` 则结论翻转**（二值可证伪入口）。\n
 `R38` 检验纠缠的涌现机制 **H：共享的闭合起因（历史层记录）＋ 一个历史层未记录的自由度 ⇒ 跨位点纠缠**，用 `Z15` 的 Jordan-Wigner 构造与 `R36` 的 CHSH 判据。结果：单位点 `c_j†|0>` 给 `S=2.000`（不纠缠）；**跨位点相干叠加 `(c_0†+c_1†)|0>/sqrt2` 给 `S=2sqrt2=2.8284`（最大纠缠）**；位点被记录（`50/50` 经典混合）退回 `S=2.000`。机制成立的原因是 **JW 字符串把「位点」非局域化**，故「同一个费米子」这一共享事实与「哪个位点」这一未记录自由度可并存。判据 **(R38-1)**：`纠缠 = 共同起因 ∧ 历史层未记录的自由度`；**(R38-2)** 它有两条实现路径：A′ 给关系加相位（`EDGE-CONNECTION`）或 **B′ 多一个未记录自由度（格点，不需新相位）**。这把 `R36` 的「没有纠缠」与 `R37` 的「单体量子性成立」缝起来。决定性下游问题 **(R38-3)**：**Zero 的历史层对「位点」究竟是失明还是记录？**（二值）。边界：`Z-READ` 未导出、链是 `1+1` 维、共同起因在探针中是给定的。\n
@@ -59,8 +59,10 @@
 
 ### 0.5.1 术语迁移档案（非理论文档）
 
-`R49` 执行 `R48` §5 的量子侧目标（让 $\pi$ 非等差），把 `R35` 的类型指纹与 `R42`/`R43` 的双侧约束合并成**一个有限可判定的条件**：**判据**：块权重的对数比生成子群 $G$ 稠密 $\iff$ 相邻比的对数在 $\mathbb Q$ 上线性无关 $\iff$ **素数指数差向量秩 $=k-1$**（有限、可判定）。**不可能**：$k\le3$ ⇒ 秩 $\le2$ ⇒ 任何 3 块轮廓（含 3 维归约）永远是 $III\_\lambda$——这也解释了 `R42` 表里「$\lambda\_1$ 越大秩越小」不是巧合。**可行**：4 块上语境性（$\lambda\_1>0.723607$）与稠密性（秩 3）**解耦**，显式解 $(10^4,2,3,5)$ 给 $S\_{\max}=2.2349$、$(10^3,1,3,15)$ 给 $2.2188$、$(2,246,1,5)$ 给 $2.2037$。**新障碍**：旋转类的轨道权重全是 2 的幂 ⇒ 秩恒为 1 ⇒ **旋转类恒 $III\_\lambda$**（除非 $L$ 含非 2 素因子，而 $L=12$ 已被 `R31.1` 排除）。未做：从 Zero 原生生成该形状的 $\pi$。核验：`R49_check.py`。\n
-`R50` 立一条**推导纪律**并据此会诊全库矛盾：**每个量、定理、常数都带层指标 $\ell$**，断言写成 $P\_\ell(v)$ 才完整——默认解释不是矛盾而是**层不同**，只有**同层相反**才是真矛盾。层：L0 底层（`Z0`/`Z1`–`Z5`）／L1 历史层（$\mathcal P$）／L1′ 全局闭合类层（$\mathcal Z\_\ast$）／L2 演化层（活动层）／$\mathcal R$ 读出面（$\pi,\omega,K$）。**会诊 10 条**：真矛盾 1（`L=8`，已由 `R32.2` 撤回）、符号碰撞 3（$K$／$N$／局部编号）、其余 6 条全是**层坍塌**——例如「不设概率」(L0) vs「必须靠概率」(L2/L3)、「$B$ 不可导出」(L0) vs「$B=4$ 钉住」($\mathcal R$)。并把 `R48` 的 $\varepsilon(B)$ 从单侧公式**重算为双侧定律**：$B<4$ 指数衰减、$B=4$ 幂律、$B>4$ 指数增长被 **L2 容量饱和**截断（实测斜率 $\approx0$）。三条操作规则：①断言带层指标；②比较前对齐层；③**层坍塌优先于改结论**。**纪律 ① 已落地**：6 条层坍塌＋3 条符号碰撞已逐条补层指标（`G28`／`G73`／`G59`／`R48`／`Z1`／`Z17`／`R32`／`G56`／`G61`／`G32`／`G72`／`G33`／`Z0` §0.5），只加指标不改结论，落地后 170/170 通过。核验：`R50_check.py`。\n
+[`A2Z_MIGRATION_RECORD.md`](A2Z_MIGRATION_RECORD.md)：记录 2026-10-03 的 A0–A5 → Z0 条款术语迁移（用户裁决、迁移红线、事故与纪律）。**家谱映射的权威位置是 [`G0`](G0_bottom_layer_and_derivation_route.md) §0.1**；回归闸门 [`Z0_axiom_hygiene_check.py`](Z0_axiom_hygiene_check.py)。
+
+`R49` 执行 `R48` §5 的量子侧目标（让 $\pi$ 非等差），把 `R35` 的类型指纹与 `R42`/`R43` 的双侧约束合并成**一个有限可判定的条件**：**判据**：块权重的对数比生成子群 $G$ 稠密 $\iff$ 相邻比的对数在 $\mathbb Q$ 上线性无关 $\iff$ **素数指数差向量秩 $=k-1$**（有限、可判定）。**不可能**：$k\le3$ ⇒ 秩 $\le2$ ⇒ 任何 3 块轮廓（含 3 维归约）永远是 $III_\lambda$——这也解释了 `R42` 表里「$\lambda_1$ 越大秩越小」不是巧合。**可行**：4 块上语境性（$\lambda_1>0.723607$）与稠密性（秩 3）**解耦**，显式解 $(10^4,2,3,5)$ 给 $S_{\max}=2.2349$、$(10^3,1,3,15)$ 给 $2.2188$、$(2,246,1,5)$ 给 $2.2037$。**新障碍**：旋转类的轨道权重全是 2 的幂 ⇒ 秩恒为 1 ⇒ **旋转类恒 $III_\lambda$**（除非 $L$ 含非 2 素因子，而 $L=12$ 已被 `R31.1` 排除）。未做：从 Zero 原生生成该形状的 $\pi$。核验：`R49_check.py`。\n
+`R50` 立一条**推导纪律**并据此会诊全库矛盾：**每个量、定理、常数都带层指标 $\ell$**，断言写成 $P_\ell(v)$ 才完整——默认解释不是矛盾而是**层不同**，只有**同层相反**才是真矛盾。层：L0 底层（`Z0`/`Z1`–`Z5`）／L1 历史层（$\mathcal P$）／L1′ 全局闭合类层（$\mathcal Z_\ast$）／L2 演化层（活动层）／$\mathcal R$ 读出面（$\pi,\omega,K$）。**会诊 10 条**：真矛盾 1（`L=8`，已由 `R32.2` 撤回）、符号碰撞 3（$K$／$N$／局部编号）、其余 6 条全是**层坍塌**——例如「不设概率」(L0) vs「必须靠概率」(L2/L3)、「$B$ 不可导出」(L0) vs「$B=4$ 钉住」($\mathcal R$)。并把 `R48` 的 $\varepsilon(B)$ 从单侧公式**重算为双侧定律**：$B<4$ 指数衰减、$B=4$ 幂律、$B>4$ 指数增长被 **L2 容量饱和**截断（实测斜率 $\approx0$）。三条操作规则：①断言带层指标；②比较前对齐层；③**层坍塌优先于改结论**。**纪律 ① 已落地**：6 条层坍塌＋3 条符号碰撞已逐条补层指标（`G28`／`G73`／`G59`／`R48`／`Z1`／`Z17`／`R32`／`G56`／`G61`／`G32`／`G72`／`G33`／`Z0` §0.5），只加指标不改结论，落地后 170/170 通过。核验：`R50_check.py`。\n
 | 分支 | 文档 | 标题 |
 |:--|:--|:--|
 | `R0` | [`R0_publication_theorem.md`](R0_publication_theorem.md) | 可发表主定理接口与五项验收门槛 |
@@ -160,14 +162,14 @@
 
 | 前缀 | 来源 | 归属 | `lh/` 中的数量 |
 |:--|:--|:--|--:|
-| **`G*`** | 本会话独立推导（自底层条款（Z0 条款 ＋ Z1–Z5 定理）到 GR） | **零和宇宙** | 91 篇 + 89 个核验脚本 |
-| **`D2xx`** | 零层弧（D210–D259） | **零和宇宙**（其中 8 篇含非原生桥接） | 50 篇 |
+| **`G*`** | 本会话独立推导（自底层条款（Z0 条款 ＋ Z1–Z5 定理）到 GR） | **零和宇宙** | 90 篇 + 88 个核验脚本 |
+| **`D2xx`** | 零层弧（D210–D259） | **零和宇宙**（其中 8 篇含非原生桥接） | 0 篇 |
 | **`zero_sum_*`** | 零和宇宙的仿真验证笔记与程序 | **零和宇宙** | 11 篇 + 10 个脚本 |
-| **`Z*`** | **基础层**：单一公理「零不断乱动」＋ 取代 A1–A5＋ Zero 结构扩展 | **零和宇宙** | 18 篇 + 18 个核验脚本 |
+| **`Z*`** | **基础层**：单一公理「零不断乱动」＋ 取代 A1–A5（历史命名）＋ Zero 结构扩展 | **零和宇宙** | 18 篇 + 18 个核验脚本 |
 | `D1–D209` | 混合语料 | **不属零和宇宙** | **0**（未拷入） |
 
 $$
-\text{zero-sum universe}\ =\ \text{zero_sum_*}\ \to\ \text{Z*}\ \to\ \text{G*}\ +\ \text{D2xx}
+\boxed{\text{zero-sum universe}\ =\ \texttt{zero\_sum\_*}\ \to\ \texttt{Z*}\ \to\ \texttt{G*}\ +\ \texttt{D2xx}}
 $$
 
 ---
@@ -228,7 +230,7 @@ $$
 
 ---
 
-## 4 `Z*` 基础层：单一公理与取代 A1–A5（18 篇 ＋ 18 个核验脚本）
+## 4 `Z*` 基础层：单一公理与取代 A1–A5（历史命名）（18 篇 ＋ 18 个核验脚本）
 
 **读序**：本层在 Zero 原始层**之上**、G 推导系列**之前**。它把 Zero 的架构确立为 Z0 条款（公理只有 Z0），并把 A1–A5 降为定理。
 
@@ -255,12 +257,13 @@ $$
 
 核验：[`Z0_check.py`](Z0_check.py)、[`Z1_check.py`](Z1_check.py)、[`Z2_check.py`](Z2_check.py)、[`Z3_check.py`](Z3_check.py)、[`Z4_check.py`](Z4_check.py)、[`Z5_check.py`](Z5_check.py)、[`Z6_check.py`](Z6_check.py)、[`Z7_check.py`](Z7_check.py)、[`Z8_check.py`](Z8_check.py)、[`Z9_check.py`](Z9_check.py)、[`Z10_check.py`](Z10_check.py)、[`Z11_check.py`](Z11_check.py)、[`Z12_check.py`](Z12_check.py)、[`Z13_check.py`](Z13_check.py)、[`Z14_check.py`](Z14_check.py)、[`Z15_check.py`](Z15_check.py)、[`Z16_check.py`](Z16_check.py)、[`Z17_check.py`](Z17_check.py)。表头 `Z0` = **唯一公理**；`Z1` = **取代 A1–A5 与结构扩展**。
 
+
 **四条结构扩展**（均在 G 系列之前，各带价签）：
 
 | 条款 | 买回 | 处置 |
 |:--|:--|:--|
-| **Z-E1** 全局读出耦合 | Z1 定理 1 的**连通性**；G23 (a) 的全局读出 $R\_Z$／层间核 $K\_{ij}$ | **识别 U**（不是公理）；与 `tri_layer` 笔记的局部重建相反，属改选 |
-| **Z-E2** 局部寿命与年龄 | G23 **(b) 年龄簇（22 篇）**主体 | **导出**：年龄＝词长；局部 $\tau\_i$ 为参数异质性 |
+| **Z-E1** 全局读出耦合 | Z1 定理 1 的**连通性**；G23 (a) 的全局读出 $R_Z$／层间核 $K_{ij}$ | **识别 U**（不是公理）；与 `tri_layer` 笔记的局部重建相反，属改选 |
+| **Z-E2** 局部寿命与年龄 | G23 **(b) 年龄簇（22 篇）**主体 | **导出**：年龄＝词长；局部 $\tau_i$ 为参数异质性 |
 | **Z-E3** 周期与相位 | G23 **(c) 周期／相位簇（9 篇）**主体 | 周期＝**参数**；相位＝**定义**（需先有 $T$） |
 | **Z-E4** 符号与配对 | G23 **(d) 符号／配对簇（9 篇）**主体 | **导出**：符号＝双向步；配对＝补偿步对 $(+,-)$ |
 
@@ -268,7 +271,7 @@ $$
 
 ---
 
-## 5 `G*` 推导系列（91 篇）
+## 5 `G*` 推导系列（90 篇）
 
 ### 底层与路线
 
@@ -318,7 +321,6 @@ $$
 
 ### 条款精简
 
--  — 条款精简：6 条 A 条款 → 3 条独立定理
 
 ### 语料、动力学与概率
 
@@ -445,34 +447,7 @@ $$
 
 - [`G90_zero_series_reference_triage.md`](G90_zero_series_reference_triage.md) — Zero 系列参考分诊：哪些已承接、哪些要打问号、哪些是纯历史
 
-### Zero 演进与专题审计（本会话新增）
-
-- [`LAYER_LEDGER.md`](LAYER_LEDGER.md) — 分层账本：断言逐条带层指标（L0／L1／L1′／L2／读出）
-- [`SYNTHESIS_zero_to_standard_model.md`](SYNTHESIS_zero_to_standard_model.md) — 到标准物理模型的路线图 ＋ 外部文献清单
-- [`LIT_SURVEY.md`](LIT_SURVEY.md) — 外部文献调查
-- [`E1_NN_verdict.md`](E1_NN_verdict.md) — Nielsen–Ninomiya 检验：平移不变性不成立；真实对称为反射
-- [`README.md`](README.md) — 仓库入口
-
-**L2 演化层专题（毁灭–重播种周期）**
-
-| 文件 | 内容 |
-|:--|:--|
-| [`L2_period_verdict.md`](L2_period_verdict.md) | $T$ 是可辨识的不动点参数 |
-| [`L2_period_abs_verdict.md`](L2_period_abs_verdict.md) | 容量上限：可行性 $T\le6$（维数）／$T\le5$（投影） |
-| [`L2_rho_closed_verdict.md`](L2_rho_closed_verdict.md) | $\rho(T)$ 是 Perron 比；反解乘性不确定 |
-| [`L2_transfer_verdict.md`](L2_transfer_verdict.md) | 双桶状态不完备 |
-| [`L2_catalan_verdict.md`](L2_catalan_verdict.md) | Catalan 系数律 |
-| [`L2_cat_vs_motzkin_verdict.md`](L2_cat_vs_motzkin_verdict.md) | Catalan≠Motzkin（第 4 项分歧 8 vs 10） |
-| [`L2_C_recursion_verdict.md`](L2_C_recursion_verdict.md) | 递推与闭式：$\lambda=c(T)$ |
-| [`L2_years_verdict.md`](L2_years_verdict.md) | 年数不可内部导出；$t_{\rm cycle}=T\alpha$ |
-| [`L2_anchor_verdict.md`](L2_anchor_verdict.md) | 锚的淘汰链与最终数值 |
-| [`L2_imprint_verdict.md`](L2_imprint_verdict.md) | 路线 A 印记：双值间隔谱 |
-| [`L2_T_absolute_verdict.md`](L2_T_absolute_verdict.md) | $T$ 的绝对值：容量封顶给出 $T=5$ |
-| [`L2_decoupling_verdict.md`](L2_decoupling_verdict.md) | 「相位解耦 ⇒ 无预兆瞬间毁灭」的结构核查 |
-| [`L2_layer_retention_verdict.md`](L2_layer_retention_verdict.md) | 层保留猜想（保留一层版） |
-| [`L2_layer_retention_corrected.md`](L2_layer_retention_corrected.md) | 层保留猜想（修正为两层） |
-
-### 核验脚本（89 个）
+### 核验脚本（88 个）
 
 [`ledger_sync.py`](ledger_sync.py) 是**同步入口**：按 mtime 缓存逐个跑 `G*_check.py` 与 `Z*_check.py`（未变者不重跑），写回账本合计，再重生本清单。
 
@@ -485,7 +460,7 @@ python3 ledger_sync.py --all      # 忽略缓存，全部重跑
 
 ---
 
-## 6 `D2xx` 零层弧（50 篇）
+## 6 `D2xx` 零层弧（0 篇）
 
 编号**保持不变**（= 母项目中的同一编号）。★ 标记的 8 篇含**非原生桥接结构**（见 [`G26`](G26_scope_and_non_native_structures.md)／[`G27`](G27_purification_attempt.md)）。
 
@@ -493,56 +468,6 @@ python3 ledger_sync.py --all      # 忽略缓存，全部重跑
 
 | 文档 | 标题 |
 |:--|:--|
-| [`D210_zero_sum_closure_filter.md`](D210_zero_sum_closure_filter.md) | 零和闭合筛选：无有限预算与无通道权重的谱系增长 |
-| [`D211_global_static_closure_zero_layer.md`](D211_global_static_closure_zero_layer.md) | 全局静态闭合零层：多重零记录、局部历史与全局读回边界 |
-| [`D212_zero_universe_to_u_interface.md`](D212_zero_universe_to_u_interface.md) ★ | 周期零宇宙的对外条件接口 |
-| [`D213_periodic_skeleton_to_gr_direct_audit.md`](D213_periodic_skeleton_to_gr_direct_audit.md) | 周期零宇宙骨架到 GR 的直接桥审计 |
-| [`D214_local_zero_sum_transport.md`](D214_local_zero_sum_transport.md) | 局域零和传输：闭环邻接上的最小补偿 |
-| [`D215_cycle_local_semantic_u_interface.md`](D215_cycle_local_semantic_u_interface.md) ★ | 周期局域环的对外语义接口 |
-| [`D216_history_phase_state.md`](D216_history_phase_state.md) | 精确历史相位计数：非中心态的最小选择器 |
-| [`D217_history_phase_asymptotic_no_go.md`](D217_history_phase_asymptotic_no_go.md) | 历史相位态的渐近障碍：暂态非中心态回到中心 |
-| [`D218_active_phase_occupancy_and_d_boundary_state.md`](D218_active_phase_occupancy_and_d_boundary_state.md) | 活动相位占用与 $D$ 层边界：稳定非中心态候选 |
-| [`D219_active_phase_seed_independence.md`](D219_active_phase_seed_independence.md) | 活动相位结构的种子无关性：从任意闭合历史到 $(1,1,2)$ |
-| [`D220_general_period_active_phase_spectrum.md`](D220_general_period_active_phase_spectrum.md) | 一般周期的活动相位谱：中心二项系数与态族 |
-| [`D221_cyclic_naturality_and_primitive_phase_gap.md`](D221_cyclic_naturality_and_primitive_phase_gap.md) | 载体的循环自然性：交叉积表示与原始相位障碍 |
-| [`D222_stratified_destruction_and_local_memory.md`](D222_stratified_destruction_and_local_memory.md) | 分层毁灭与局部记忆：活动亚层全清、历史层保留最高两层 |
-| [`D223_age_carrier_tensor_interface.md`](D223_age_carrier_tensor_interface.md) ★ | 年龄载体与矩阵载体的张量接口：毁灭周期负责一侧，矩阵因子负责非交换载体与模流 |
-| [`D224_minimal_m2_age_bridge_and_modular_support_independence.md`](D224_minimal_m2_age_bridge_and_modular_support_independence.md) ★ | 最小年龄矩阵桥：$M\_2$ 因子、D220 年龄权重与模流支持寿命分离 |
-| [`D225_tensor_vs_direct_sum_factorization_gap.md`](D225_tensor_vs_direct_sum_factorization_gap.md) | 张量因子与直接和替代：底层公理不选择局部耦合方式 |
-| [`D226_uniform_matrix_coexistence_selector.md`](D226_uniform_matrix_coexistence_selector.md) | 矩阵均匀共存原则：在张量与直接和之间选出张量载体 |
-| [`D227_age_local_modular_witness_selector.md`](D227_age_local_modular_witness_selector.md) ★ | 年龄扇区局部模见证：把均匀共存改写为 GR 侧可检验选择器 |
-| [`D228_age_local_modular_family_support_covariance.md`](D228_age_local_modular_family_support_covariance.md) | 年龄局部模生成元族：从逐扇区见证到支持协变 |
-| [`D229_continuous_age_support_obstruction.md`](D229_continuous_age_support_obstruction.md) | 连续年龄支持的原子障碍：为什么不能把有限扇区直接取连续极限 |
-| [`D230_linfinity_age_support_and_projection_complement.md`](D230_linfinity_age_support_and_projection_complement.md) | 连续年龄支持的 $L^\infty$ 构造：投影压缩加补单位 |
-| [`D231_modular_density_profile_gap.md`](D231_modular_density_profile_gap.md) | 局部模密度剖面缺口：区间支持不等于几何 boost |
-| [`D232_profile_as_matrix_age_correlation.md`](D232_profile_as_matrix_age_correlation.md) ★ | 模密度剖面就是矩阵相位的年龄相关性 |
-| [`D233_sign_age_symmetry_no_go_for_profile.md`](D233_sign_age_symmetry_no_go_for_profile.md) | 符号年龄对称性无解：现有重播种不能产生非恒定剖面 |
-| [`D234_geometric_ball_profile_candidate.md`](D234_geometric_ball_profile_candidate.md) | 几何球模核参照：抛物型剖面候选与未闭合的年龄映射 |
-| [`D235_age_radial_reparametrization_no_go.md`](D235_age_radial_reparametrization_no_go.md) | 年龄到径向映射的重参数化障碍：二次年龄剖面不是上游结论 |
-| [`D236_source_operator_identification_embedding.md`](D236_source_operator_identification_embedding.md) ★ | 源算子识别的条件嵌入与不唯一性 |
-| [`D237_contact_channel_single_profile_reduction.md`](D237_contact_channel_single_profile_reduction.md) ★ | 接触项与单剖面归约：中央通道、平行通道与独立通道 |
-| [`D238_linear_sign_hazard_mechanism.md`](D238_linear_sign_hazard_mechanism.md) | 线性符号危险率机制：抛物型年龄比例的最小条件实现 |
-| [`D239_quadratic_sign_potential_audit.md`](D239_quadratic_sign_potential_audit.md) | 线性危险率的二次势审计：中心临界、常曲率与年龄配对 |
-| [`D240_additive_record_no_go.md`](D240_additive_record_no_go.md) | 可加记录无解：静态零层为什么不能生成二次符号势 |
-| [`D241_sign_blind_pairing_no_go.md`](D241_sign_blind_pairing_no_go.md) | 符号盲配对无解：时间方向不等于正负符号耦合 |
-| [`D242_finite_memory_pairing_no_go.md`](D242_finite_memory_pairing_no_go.md) | 有限记忆配对无解：两层历史不能生成二次符号势 |
-| [`D243_global_readback_not_interaction.md`](D243_global_readback_not_interaction.md) | 全局读回不是相互作用：零层可见性不产生全对全耦合 |
-| [`D244_zero_sum_matching_linearity.md`](D244_zero_sum_matching_linearity.md) | 零和匹配线性性：闭合词配对本身不给全对全 |
-| [`D245_fixed_pair_kernel_uniqueness.md`](D245_fixed_pair_kernel_uniqueness.md) | 固定二体核唯一性：二次势把全对全核逼成常数 |
-| [`D246_collective_zero_mode_rank_one.md`](D246_collective_zero_mode_rank_one.md) | 全对全核的集体零模表示：从 $k^2$ 条边到单个 $Q^2$ |
-| [`D247_zero_defect_stiffness_scale_audit.md`](D247_zero_defect_stiffness_scale_audit.md) | 零缺陷刚度尺度审计：形状与数值必须分开 |
-| [`D248_interlayer_readout_dynamics.md`](D248_interlayer_readout_dynamics.md) | 层间读出动力学：从历史与零层到守恒源 |
-| [`D249_minimal_stress_lift_from_interlayer_scalar.md`](D249_minimal_stress_lift_from_interlayer_scalar.md) | 最小应力提升：层间标量流、刚性物态与应力类别缺口 |
-| [`D250_pure_exchange_selects_stiff_scalar_source.md`](D250_pure_exchange_selects_stiff_scalar_source.md) | 纯层间交换选择刚性标量源：无势 Dirichlet、常量零模与 onsite 缺口 |
-| [`D251_layer_type_complex_and_local_readout_presheaf.md`](D251_layer_type_complex_and_local_readout_presheaf.md) | 层类型复合与局域读出预层：物理局域接口的最小底座 |
-| [`D252_layer_time_atlas_and_global_time_potential.md`](D252_layer_time_atlas_and_global_time_potential.md) | 分层时间图册与全局时间势：定向可行条件与 Lorentz 锥缺口 |
-| [`D253_adm_metric_assembly_and_lapse_shift_gap.md`](D253_adm_metric_assembly_and_lapse_shift_gap.md) | 叶状 ADM 度规组装与 lapse/shift 缺口 |
-| [`D254_dirichlet_tensor_leaf_metric_and_clock_gauge.md`](D254_dirichlet_tensor_leaf_metric_and_clock_gauge.md) | Dirichlet 张量到叶层度规与读回时钟规范 |
-| [`D255_tetrahedral_dirichlet_assembly_and_gluing.md`](D255_tetrahedral_dirichlet_assembly_and_gluing.md) | 交换权重的四面体 Dirichlet 组装与面胶合 |
-| [`D256_clock_gauge_intrinsic_simplex_and_refinement_convergence.md`](D256_clock_gauge_intrinsic_simplex_and_refinement_convergence.md) | 时钟规范拆分、内禀单纯几何与细化收敛条件 |
-| [`D257_resistance_metric_fixed_point_and_locality_gap.md`](D257_resistance_metric_fixed_point_and_locality_gap.md) | 有效电阻度量、交换权重固定点与局部性缺口 |
-| [`D258_full_exchange_projection_and_local_isotropy_obstruction.md`](D258_full_exchange_projection_and_local_isotropy_obstruction.md) | 全边交换投影、$K\_4$ 普遍固定点与局部各向异性障碍 |
-| [`D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md`](D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md) | Z 层条件字典与四维时空的汇流构造 |
 
 ---
 
@@ -568,9 +493,9 @@ python3 ledger_sync.py --all      # 忽略缓存，全部重跑
 | 1 | `zero_sum_*`（见 §3 的 7 篇笔记） | **Zero 原始层**：先有仿真，后有公理 |
 | 2 | [`Z0`](Z0_zero_never_rests_single_axiom.md) | **唯一公理**：零不断乱动（三款各买一件东西） |
 | 3 | [`Z1`](Z1_zero_layer_as_the_foundation.md) | 取代 A1–A5 ＋ Zero 结构的扩充（含散度字典） |
-| 4 | [`Z2`](Z2_zero_to_gr_direct_route.md) | **直连路线**：从 Zero 到 GR（免去 A0–A5桥接；标出两处残余输入） |
-| 5 | [`G0`](G0_bottom_layer_and_derivation_route.md) | **底层条款表**＋ 路线 ＋ 账本 I1–I12 |
-| 6 |  | 条款精简：6 条 A 条款 → 3 条独立定理（公理只有 Z0） |
+| 4 | [`Z2`](Z2_zero_to_gr_direct_route.md) | **直连路线**：从 Zero 到 GR（免去 A0–A5（历史命名）桥接；标出两处残余输入） |
+| 5 | [`G0`](G0_bottom_layer_and_derivation_route.md) | **底层条款表**（Z0 条款 ＋ Z1–Z5 定理；A0–A5 历史命名）＋ 路线 ＋ 账本 I1–I12 |
+| 6 | [`G19`](G19_axiom_reduction.md) | 条款精简：6 条 A 条款 → 3 条独立定理（公理只有 Z0） |
 | 7 | [`G1`](G1_derivations_from_the_bottom_layer.md) → [`G8`](G8_dimension_selection.md) | 几何骨架 → 维数 |
 | 8 | [`G13`](G13_foliation_and_lorentz_invariance_gap.md) → [`G15`](G15_bare_ax3_has_no_characteristic_speed.md) | 叶层与洛伦兹不变性（含 no-go） |
 | 9 | [`G16`](G16_repair_audit_without_new_axioms.md) | 不增扩充条款清算：**主定理存活** |

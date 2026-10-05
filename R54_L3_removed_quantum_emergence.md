@@ -2,7 +2,7 @@
 
 **日期**：2026-10-03
 **性质**：**构造性推导（正面）**。按"零乱动 → 分层 → 成块"的设计，把粗粒化 $\pi$ 从**具名输入**（`E5`）降为 $\mathcal Z\_\ast$ 自身嵌套结构的**函数**，并在此过程中让量子力学的三个判据同时成立。
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`D211`](D211_global_static_closure_zero_layer.md)、[`D216`](D216_history_phase_state.md)、[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R37`](R37_kcbs_contextuality.md)、[`R44`](R44_survival_vs_contextuality_no_go.md)、[`R49`](R49_pi_nonarithmetic_criterion.md)、[`R50`](R50_layer_discipline.md)。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`D211`](D_arc/D211_global_static_closure_zero_layer.md)、[`D216`](D_arc/D216_history_phase_state.md)、[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R37`](R37_kcbs_contextuality.md)、[`R44`](R44_survival_vs_contextuality_no_go.md)、[`R49`](R49_pi_nonarithmetic_criterion.md)、[`R50`](R50_layer_discipline.md)。
 **探针**：[`R53_zero_to_quantum.py`](R53_zero_to_quantum.py) → [`R53_zero_to_quantum_results.json`](R53_zero_to_quantum_results.json)。
 
 $$

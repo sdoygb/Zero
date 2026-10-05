@@ -4,7 +4,7 @@
 **性质**：在 [`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R9`](R9_external_GR_derivations_landscape.md)、[`R10`](R10_cao_carroll_bulk_entanglement_completion.md) 之后，对三个具体缺口做“能否由现有 Zero 基础推出”的定向判定。
 **政策**：新增结果必须给出可独立复核的证明或反例；未证明的部分继续登记为开放／条件。不得把条件桥改名为定理，不得把外部论文已证的部分计作本项目成果。
 **核验**：[`R12_check.py`](R12_check.py)。
-**依赖**：[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G79`](G79_horizon_thermodynamics.md)、[`D44`](/Users/oygb/Downloads/modular-equilibrium/derivations/D44_poincare_closure_obstruction.md)、[`D231`](D231_modular_density_profile_gap.md)、[`D233`](D233_sign_age_symmetry_no_go_for_profile.md)、[`D235`](D235_age_radial_reparametrization_no_go.md)、[`D236`](D236_source_operator_identification_embedding.md)、[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`R10`](R10_cao_carroll_bulk_entanglement_completion.md)。
+**依赖**：[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G79`](G79_horizon_thermodynamics.md)、[`D44`](/Users/oygb/Downloads/modular-equilibrium/derivations/D44_poincare_closure_obstruction.md)、[`D231`](D_arc/D231_modular_density_profile_gap.md)、[`D233`](D_arc/D233_sign_age_symmetry_no_go_for_profile.md)、[`D235`](D_arc/D235_age_radial_reparametrization_no_go.md)、[`D236`](D_arc/D236_source_operator_identification_embedding.md)、[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`R10`](R10_cao_carroll_bulk_entanglement_completion.md)。
 
 $$
 

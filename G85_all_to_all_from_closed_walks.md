@@ -141,7 +141,7 @@ $$
 
 | 项 | 说明 |
 |:--|:--|
-| **同一性是识别** | 我把 [`G40`](G40_metric_from_closed_walk_counting.md) 的**度规闭环核**认成 [`D242`](D242_finite_memory_pairing_no_go.md) 的**配对核**；这个等同**未证**（但很自然：两者都住在同一个年龄／位置图上） |
+| **同一性是识别** | 我把 [`G40`](G40_metric_from_closed_walk_counting.md) 的**度规闭环核**认成 [`D242`](D_arc/D242_finite_memory_pairing_no_go.md) 的**配对核**；这个等同**未证**（但很自然：两者都住在同一个年龄／位置图上） |
 | 导出的是**结构** | 全对全／非可和／二次势 ⟹ 导出；精确的 $(2L-1)$ 或别的系数 ⟹ **未**导出 |
 | 环长限制 | 只做了 $L=4$ 的环（[`G61`](G61_locking_the_five_integers.md) 的值）；一般 $L$ 未做 |
 | 与 Z3 的关系 | 本文的"Z3 的闭合"用的是[`G40`](G40_metric_from_closed_walk_counting.md) 已建立的闭环计数；**没有**重推 Z3 |

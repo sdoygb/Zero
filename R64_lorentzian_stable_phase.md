@@ -3,7 +3,7 @@
 **日期**：2026-10-03
 **性质**：**命题层论证**。把 `R12`–`R13`、`G41`、`D257`、`D258`、`R62` 五条否证结果合成一个稳定相论证。
 **地位**：**不新增公理**。三条命题分别取自 `G1` 引理 5、账本形式（`R31`/`R32`）、`G89` 命题 2。
-**依赖**：[`G1`](G1_derivations_from_the_bottom_layer.md)、[`G8`](G8_dimension_selection.md)、[`G22`](G22_correction_sublayers_and_local_layers.md)、[`G41`](G41_lovelock_premises_under_nonuniform_weight.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`D252`](D252_layer_time_atlas_and_global_time_potential.md)、[`D257`](D257_resistance_metric_fixed_point_and_locality_gap.md)、[`D258`](D258_full_exchange_projection_and_local_isotropy_obstruction.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R62`](R62_M2_geometry.py)。
+**依赖**：[`G1`](G1_derivations_from_the_bottom_layer.md)、[`G8`](G8_dimension_selection.md)、[`G22`](G22_correction_sublayers_and_local_layers.md)、[`G41`](G41_lovelock_premises_under_nonuniform_weight.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`D252`](D_arc/D252_layer_time_atlas_and_global_time_potential.md)、[`D257`](D_arc/D257_resistance_metric_fixed_point_and_locality_gap.md)、[`D258`](D_arc/D258_full_exchange_projection_and_local_isotropy_obstruction.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R62`](R62_M2_geometry.py)。
 **核验**：[`R63_lorentzian_stability.py`](R63_lorentzian_stability.py)。
 
 $$

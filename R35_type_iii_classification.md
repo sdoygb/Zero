@@ -2,7 +2,7 @@
 
 **日期**：2026-10-03
 **性质**：**探针结果＋判据＋对缺失输入的新约束**。执行 [`R34`](R34_finite_dimensional_boost_obstruction.md) §4 的数值纲领 P2″。本文**不新增物理假设**；它把"极限是不是 type III₁"化归为一个**关于粗粒化 π 的精确判据**。
-**依赖**：[`R34`](R34_finite_dimensional_boost_obstruction.md)、[`R33`](R33_action_phase_match_project.md)、[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G32`](G32_native_origin_of_saturation.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`D227`](D227_age_local_modular_witness_selector.md)、[`D228`](D228_age_local_modular_family_support_covariance.md)、[`STATUS`](STATUS.md)。
+**依赖**：[`R34`](R34_finite_dimensional_boost_obstruction.md)、[`R33`](R33_action_phase_match_project.md)、[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G32`](G32_native_origin_of_saturation.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`D227`](D_arc/D227_age_local_modular_witness_selector.md)、[`D228`](D_arc/D228_age_local_modular_family_support_covariance.md)、[`STATUS`](STATUS.md)。
 **探针**：[`R35_type_iii_probe.py`](R35_type_iii_probe.py) → [`R35_type_iii_results.json`](R35_type_iii_results.json)。
 **核验**：[`R35_check.py`](R35_check.py)。
 

@@ -2,7 +2,7 @@
 
 **日期**：2026-10-02
 **性质**：对抗审计 [`R25`](R25_native_pair_cost_and_four_dim_peak.md) 的 `PAIR-CARRIER-DER`。本文把“成对连接就是继承身份”拆成可分别证明或否证的结构输入，并登记两条 no-go：Z1 定理 1 的连通性不推出完全方向图；零和分量字典 `D=m-1` 会把 R25 的四维峰移到三维。
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`R3`](R3_dimension_selection.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R24`](R24_global_four_survival_gate.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`D243_global_readback_not_interaction.md`](D243_global_readback_not_interaction.md)、[`D244_zero_sum_matching_linearity.md`](D244_zero_sum_matching_linearity.md)。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`R3`](R3_dimension_selection.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R24`](R24_global_four_survival_gate.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`D243_global_readback_not_interaction.md`](D_arc/D243_global_readback_not_interaction.md)、[`D244_zero_sum_matching_linearity.md`](D_arc/D244_zero_sum_matching_linearity.md)。
 **旧理论审计**：[`D194`](../modular-equilibrium/derivations/D194_zero_sum_lattice_rank_and_isotropic_limit.md)、[`D25`](../modular-equilibrium/derivations/D25_topology_reconstruction.md)、[`D26`](../modular-equilibrium/derivations/D26_topology_reconstruction_limits.md)。
 **核验**：[`R26_check.py`](R26_check.py)。
 
@@ -181,7 +181,7 @@ $$
 ### 2.3 全局可达性不是局部方向对
 
 [`Z1`](Z1_zero_layer_as_the_foundation.md) §4.1 的 `Z-E1` 把“任一站点可经全局闭合类影响任一其他站点”写成全局读出耦合，并把可达性图写成完全图。
-[`D243`](D243_global_readback_not_interaction.md) 已证明：全局可见性不等于全对全相互作用。
+[`D243`](D_arc/D243_global_readback_not_interaction.md) 已证明：全局可见性不等于全对全相互作用。
 
 因此必须区分：
 
@@ -435,12 +435,12 @@ $$
 | 材料 | 能提供什么 | 不能提供什么 | 对 R26 的处置 |
 |:--|:--|:--|:--|
 | [`D194`](../modular-equilibrium/derivations/D194_zero_sum_lattice_rank_and_isotropic_limit.md) | 根向量对标签 `v_ij=e_j-e_i`、方图 `C(m,2)`、`dim H_Q=m-1` | 标签到继承后代的动力学；`D=m` 字典；每条边计一次 | 只作组合骨架；在 `α` 下反而排除 R25 的四维峰 |
-| [`D244`](D244_zero_sum_matching_linearity.md) | 零和正负完美匹配只有线性边数，不能直接给二次全对全 | 一般非匹配载体不存在 no-go；它只界住最直接的匹配模型 | 支持“连通／匹配不足以给 `C(D,2)`” |
+| [`D244`](D_arc/D244_zero_sum_matching_linearity.md) | 零和正负完美匹配只有线性边数，不能直接给二次全对全 | 一般非匹配载体不存在 no-go；它只界住最直接的匹配模型 | 支持“连通／匹配不足以给 `C(D,2)`” |
 | [`D25`](../modular-equilibrium/derivations/D25_topology_reconstruction.md)／[`D26`](../modular-equilibrium/derivations/D26_topology_reconstruction_limits.md) | 在固定二体核且无非两体项时，可从非零核恢复普通图 | 因子分解、严格两体项和核来源本身是输入 | 证明图恢复有额外前提，不能自动关闭 `PAIR-ID-EDGE` |
 | [`G80`](G80_all_to_all_age_coupling.md) | 明确把“为什么全对全”登记为识别缺口 | 不能把全对全来源冒充已导出 | 与 R26 的接口边界一致 |
 | [`G85`](G85_all_to_all_from_closed_walks.md) | 闭环计数可给结构性的全对全／非可和／二次势 | “度规核 = 配对核”仍是识别；精确系数未导出 | 可用于其它层，不能替换 Z1 定理 1 局部边身份 |
 | [`G86`](G86_pairing_kernel_from_A5_directly.md) | 把配对核直接定义为 Z3 账本的匹配距离分布 | 该定义与对所有匹配求和是读出，不是 Z3 逐字推论 | 支持“可定义模型”，不支持“唯一原生推导” |
-| [`D243`](D243_global_readback_not_interaction.md) | 全局可见性不等于全对全相互作用 | 不能用全局读出完全图替换局域方向图 | 统一 `Z-E1` 完全读出与 Z1 定理 1 仅连通的旧口径张力 |
+| [`D243`](D_arc/D243_global_readback_not_interaction.md) | 全局可见性不等于全对全相互作用 | 不能用全局读出完全图替换局域方向图 | 统一 `Z-E1` 完全读出与 Z1 定理 1 仅连通的旧口径张力 |
 
 **结论**：旧材料没有直接证明 `PAIR-CARRIER-DER`。最强骨架是 D194；但它的维数字典与 R25 相反，因此只能作为“待裁决的结构资源”。
 

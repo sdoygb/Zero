@@ -74,7 +74,7 @@ $$
 | 忠实模态 $\rho\_B$ | 可直接接有限维对象 | [`G29`](G29_probability_as_derived_not_postulated.md) 计数推前态 |
 | 模 Hamiltonian $K\_B=-\log\rho\_B$ | 已接 | [`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md) |
 | 第一定律 $\delta S\_B=\delta\langle K\_B\rangle+O(\varepsilon^2)$ | 本文升级为精确恒等式 | R8 §3 |
-| 小球的几何模流极限 $K\_B\to 2\pi B\_B$ | **开放**：必须按强图／预解意义理解；现有 Zero 不能补上 | [`D231`](D231_modular_density_profile_gap.md)、[`D234`](D234_geometric_ball_profile_candidate.md) 只给候选剖面；[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md) 给充分条件与失败机制 |
+| 小球的几何模流极限 $K\_B\to 2\pi B\_B$ | **开放**：必须按强图／预解意义理解；现有 Zero 不能补上 | [`D231`](D_arc/D231_modular_density_profile_gap.md)、[`D234`](D_arc/D234_geometric_ball_profile_candidate.md) 只给候选剖面；[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md) 给充分条件与失败机制 |
 | 面积项 $S=\eta A$ | 仅低维、强 gap 数值支持 | [`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md) |
 | 固定体积平衡 | 未作完整连续变分 | [`G79`](G79_horizon_thermodynamics.md) 只给有限模型接口 |
 | 系数 $\eta=1/(4G)$ | 单位约定 | [`G57`](G57_unreachability_of_absolute_normalization.md)、[`G60`](G60_dimensionless_ledger_and_one_free_unit.md) |
@@ -272,8 +272,8 @@ $\Lambda g\_{ab}$ 与 [`G57`](G57_unreachability_of_absolute_normalization.md) �
 
 1. [`G79`](G79_horizon_thermodynamics.md) 找到边界权重最小和边界局域性；
 2. 其与抛物线剖面的相关只有 $0.865$，不是精确核；
-3. [`D231`](D231_modular_density_profile_gap.md) 证明同一支持不决定模密度剖面；
-4. [`D234`](D234_geometric_ball_profile_candidate.md) 的抛物型核来自共形真空参照，不是 Zero 原生定理；
+3. [`D231`](D_arc/D231_modular_density_profile_gap.md) 证明同一支持不决定模密度剖面；
+4. [`D234`](D_arc/D234_geometric_ball_profile_candidate.md) 的抛物型核来自共形真空参照，不是 Zero 原生定理；
 5. Brunetti–Moretti 的零阶非共形余项给出明确失败机制：一般有质量／非共形模型不会自动得到精确几何 boost。
 
 因此当前只能说“存在候选剖面”，不能说“模流就是几何 boost”；也不能把 BGL／Hislop–Longo 的前提当成 Zero 已经给出。完整审计与 $55$ 项核验见 [`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)。

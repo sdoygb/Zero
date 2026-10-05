@@ -2,7 +2,7 @@
 
 **日期**：2026-10-03
 **性质**：**对抗审计＋no-go＋依赖账本更正**。本文**撤回**本节前一稿对"小群—相位判据 (C1)"的依赖归约主张：该主张经独立审计后不成立。本文不新增物理假设、不关闭 `SURV4-GLOBAL`，也不把 `D=4` 写成【导出】。
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G11`](G11_dimension_as_consistency.md)、[`G15`](G15_bare_ax3_has_no_characteristic_speed.md)、[`G27`](G27_purification_attempt.md)、[`G31`](G31_characteristic_speed_and_saturation.md)、[`G32`](G32_native_origin_of_saturation.md)、[`G53`](G53_connecting_the_rg_axis_to_lattice_refinement.md)、[`G59`](G59_I7_settled_native_cone_and_its_residue.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`D221`](D221_cyclic_naturality_and_primitive_phase_gap.md)、[`R3`](R3_dimension_selection.md)、[`STATUS`](STATUS.md)。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G11`](G11_dimension_as_consistency.md)、[`G15`](G15_bare_ax3_has_no_characteristic_speed.md)、[`G27`](G27_purification_attempt.md)、[`G31`](G31_characteristic_speed_and_saturation.md)、[`G32`](G32_native_origin_of_saturation.md)、[`G53`](G53_connecting_the_rg_axis_to_lattice_refinement.md)、[`G59`](G59_I7_settled_native_cone_and_its_residue.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`D221`](D_arc/D221_cyclic_naturality_and_primitive_phase_gap.md)、[`R3`](R3_dimension_selection.md)、[`STATUS`](STATUS.md)。
 **核验**：[`R30_check.py`](R30_check.py)。
 
 $$

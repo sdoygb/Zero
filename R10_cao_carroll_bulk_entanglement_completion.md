@@ -3,7 +3,7 @@
 **日期**：2026-10-02
 **目标**：Cao, Carroll, *Bulk Entanglement Gravity without a Boundary: Towards Finding Einstein's Equation in Hilbert Space*, Phys. Rev. D 97, 086003 (2018), [DOI](https://doi.org/10.1103/PhysRevD.97.086003), [arXiv:1712.02803](https://arxiv.org/abs/1712.02803)。
 **性质**：外部论文前提审计与 Zero 条件桥，不修改 `STATUS.md`，不把外部论文的假设算作 Zero 定理。
-**依赖**：[`R9`](R9_external_GR_derivations_landscape.md)、[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G47`](G47_refinement_limit_of_the_effective_metric.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`R1`](R1_gamma_convergence_theorem.md)、[`R6`](R6_h5_dictionary_error_bound.md)、[`R7`](R7_h3_h7_regularity.md)、[`G55`](G55_dynamics_line_degeneration_to_GR.md)、[`G56`](G56_degeneration_attempt2_six_slots.md)、[`D225`](D225_tensor_vs_direct_sum_factorization_gap.md)、[`D226`](D226_uniform_matrix_coexistence_selector.md)、[`G11`](G11_dimension_as_consistency.md)、[`R3`](R3_dimension_selection.md)。
+**依赖**：[`R9`](R9_external_GR_derivations_landscape.md)、[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G47`](G47_refinement_limit_of_the_effective_metric.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`R1`](R1_gamma_convergence_theorem.md)、[`R6`](R6_h5_dictionary_error_bound.md)、[`R7`](R7_h3_h7_regularity.md)、[`G55`](G55_dynamics_line_degeneration_to_GR.md)、[`G56`](G56_degeneration_attempt2_six_slots.md)、[`D225`](D_arc/D225_tensor_vs_direct_sum_factorization_gap.md)、[`D226`](D_arc/D226_uniform_matrix_coexistence_selector.md)、[`G11`](G11_dimension_as_consistency.md)、[`R3`](R3_dimension_selection.md)。
 **核验**：[`R10_check.py`](R10_check.py)。
 
 $$
@@ -68,7 +68,7 @@ $$
 
 | # | 原文假设 | Zero 候选来源 | 当前状态 | 决定性缺口 |
 |--:|:--|:--|:--|:--|
-| A1 | **首选张量分解** $\mathcal H=\bigotimes\_i\mathcal H\_i$，因子粗略对应空间局部点或小区域 | [`G29`](G29_probability_as_derived_not_postulated.md) 的粗粒化推前；[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) 的 $M\_2(\mathbb C)\otimes\mathbb C^{T+1}$；[`D225`](D225_tensor_vs_direct_sum_factorization_gap.md)、[`D226`](D226_uniform_matrix_coexistence_selector.md) 的因子选择审计；[`R7`](R7_h3_h7_regularity.md) 的站点嵌入 | **输入** | 有限维代数张量因子不是空间 Hilbert 因子；没有原生的因子到物理站点映射 |
+| A1 | **首选张量分解** $\mathcal H=\bigotimes\_i\mathcal H\_i$，因子粗略对应空间局部点或小区域 | [`G29`](G29_probability_as_derived_not_postulated.md) 的粗粒化推前；[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) 的 $M\_2(\mathbb C)\otimes\mathbb C^{T+1}$；[`D225`](D_arc/D225_tensor_vs_direct_sum_factorization_gap.md)、[`D226`](D_arc/D226_uniform_matrix_coexistence_selector.md) 的因子选择审计；[`R7`](R7_h3_h7_regularity.md) 的站点嵌入 | **输入** | 有限维代数张量因子不是空间 Hilbert 因子；没有原生的因子到物理站点映射 |
 | A2 | **RC 态**：$S(\mathbf B)=\frac12\sum\_{i\in\mathbf B,j\notin\mathbf B}I(i\co j)$，近似态写成 $S=S\_{\rm RC}+S\_{\rm sub}$ | [`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) 给有限维态和熵；[`G75`](G75_quantum_geometry_modular_readout.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md) 给局域面积律候选 | **开放** | 面积律不等于 RC；Zero 没有证明熵对所有区域等于割边两两互信息之和 |
 | A3 | **面积来自互信息**：$\mathcal A(\mathbf B,\bar{\mathbf B})=I(\mathbf B\co\bar{\mathbf B})/(2\alpha)$ | [`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md) 的面积律；[`G79`](G79_horizon_thermodynamics.md) 的面积识别；[`G40`](G40_metric_from_closed_walk_counting.md) 的度规候选 | **开放** | 只测过少数区域熵，未证明所有切割的 $I/\mathcal A$ 常数；$\eta\_{\rm face}m$ 稳定而 $\eta\_{\rm face}$ 不稳定 |
 | A4 | **修改纠缠平衡**：$\delta S\_{\rm RC}+\delta S\_{\rm sub}=0$，对全部大范围切割成立 | [`G79`](G79_horizon_thermodynamics.md) 的格点第一定律；[`R8`](R8_jacobson_entanglement_equilibrium_completion.md) 的精确熵差恒等式 R8.1 | **条件证成** | 现有结果只到有限维或 Gaussian 局部模型；没有全局跨切割平衡的连续变分 |
@@ -98,7 +98,7 @@ $$
 
 的空间局域因子分解。[`G29`](G29_probability_as_derived_not_postulated.md) 的 $\pi$ 也是粗粒化映射，给出的是类的推前计数，而不是由态唯一选出的空间张量因子。
 
-[`D225`](D225_tensor_vs_direct_sum_factorization_gap.md) 进一步证明，仅凭已有 $U1-U4$ 无法在
+[`D225`](D_arc/D225_tensor_vs_direct_sum_factorization_gap.md) 进一步证明，仅凭已有 $U1-U4$ 无法在
 
 $$
 M_2(\mathbb C)\otimes C(X_\tau),
@@ -106,7 +106,7 @@ M_2(\mathbb C)\otimes C(X_\tau),
 M_2(\mathbb C)\oplus C(X_\tau)
 $$
 
-之间选择。[`D226`](D226_uniform_matrix_coexistence_selector.md) 用“矩阵模时间在每个年龄扇区中完整共存”选出张量载体，但该原则本身是恢复层选择器，不是 Z 条款的定理。
+之间选择。[`D226`](D_arc/D226_uniform_matrix_coexistence_selector.md) 用“矩阵模时间在每个年龄扇区中完整共存”选出张量载体，但该原则本身是恢复层选择器，不是 Z 条款的定理。
 
 ### A2｜RC 条件
 
@@ -748,7 +748,7 @@ $$
 2. [`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)：有限维模流不能自动变成几何 boost。
 3. [`G29_probability_as_derived_not_postulated.md`](G29_probability_as_derived_not_postulated.md)：计数推前与粗粒化。
 4. [`G62_quantum_sector_from_GNS_modular_flow_gleason.md`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)：GNS、模流与有限维代数。
-5. [`D225_tensor_vs_direct_sum_factorization_gap.md`](D225_tensor_vs_direct_sum_factorization_gap.md)、[`D226_uniform_matrix_coexistence_selector.md`](D226_uniform_matrix_coexistence_selector.md)：张量与直接和因子选择。
+5. [`D225_tensor_vs_direct_sum_factorization_gap.md`](D_arc/D225_tensor_vs_direct_sum_factorization_gap.md)、[`D226_uniform_matrix_coexistence_selector.md`](D_arc/D226_uniform_matrix_coexistence_selector.md)：张量与直接和因子选择。
 6. [`R7_h3_h7_regularity.md`](R7_h3_h7_regularity.md)：类到连续场的条件构造。
 7. [`G78_area_law_in_3d.md`](G78_area_law_in_3d.md)：三维面积律窗口与 gap 障碍。
 8. [`G55_dynamics_line_degeneration_to_GR.md`](G55_dynamics_line_degeneration_to_GR.md)、[`G56_degeneration_attempt2_six_slots.md`](G56_degeneration_attempt2_six_slots.md)：有效 Lorentzian 组装边界。

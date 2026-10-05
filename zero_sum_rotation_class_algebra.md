@@ -127,7 +127,7 @@ $$
 |:--|:--|
 | 旋转类 $[w]$ | $\kappa\_1=\sum\_b\omega\_b^2$ 的**闭类路线**（$L{=}4$：$\omega=[2/3,1/3]$，$\kappa\_1=5/9$）；[`G72`](G72_kappa1_from_the_ledger.md) |
 | $K(L)$ | [`G21`](G21_do_the_layers_help_derive_GR.md) §4 的 Burnside 计数；[`G28`](G28_dynamics_audit.md) §4 闭环图的**节点数** |
-| $r(w)$ | `reproduction_audit` 的审计对象；[`D244`](D244_zero_sum_matching_linearity.md) 的对照 |
+| $r(w)$ | `reproduction_audit` 的审计对象；[`D244`](D_arc/D244_zero_sum_matching_linearity.md) 的对照 |
 | $M=1+r$ / $2^r$ | 登记的**候选重数规则**（[`G90`](G90_zero_series_reference_triage.md) 判【打问号】：物理后代数仍未造出） |
 
 ---

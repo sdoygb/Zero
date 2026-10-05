@@ -3,7 +3,7 @@
 **日期**：2026-10-03
 **性质**：**推导链落盘 ＋ 独立复算**。目标只有一条：**证明量子力学能从 Zero 自身的规则里长出来**，不引入外部输入。
 **地位**：本文**不新增公理**。链的每一环都取自 `Z0`／`Z1`／`Z14`／`D211`／`G27`。代数与测度均出自 Zero 自身结构。
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`D211`](D211_global_static_closure_zero_layer.md)、[`D216`](D216_history_phase_state.md)、[`D222`](D222_stratified_destruction_and_local_memory.md)、[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R37`](R37_kcbs_contextuality.md)、[`R49`](R49_pi_nonarithmetic_criterion.md)、[`R50`](R50_layer_discipline.md)、[`R57`](R57_evolution_layer_quantum_chain.md)。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`D211`](D_arc/D211_global_static_closure_zero_layer.md)、[`D216`](D_arc/D216_history_phase_state.md)、[`D222`](D_arc/D222_stratified_destruction_and_local_memory.md)、[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R37`](R37_kcbs_contextuality.md)、[`R49`](R49_pi_nonarithmetic_criterion.md)、[`R50`](R50_layer_discipline.md)、[`R57`](R57_evolution_layer_quantum_chain.md)。
 **探针**：[`R57_quantum_chain.py`](R57_quantum_chain.py)。
 **核验**：[`R58_check.py`](R58_check.py) —— **通过 37 / 不符 0**，退出码 `0`。
 

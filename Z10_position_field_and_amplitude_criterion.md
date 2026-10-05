@@ -1,7 +1,7 @@
 # Z10 · 位置型原生场：D214 的环与**归零概率**——逃出引理 79，但**死在 $k=L$ 的放大**上
 
 **日期**：本轮 · **性质**：**推进 E1 的第四格**（[`Z9`](Z9_pi_filter_and_lifetime_fork.md) §5 的"类↔站点"问题）＋ **一条新的硬判据 C7** ＋ 两个独立复现。
-**依赖**：[`D214`](D214_local_zero_sum_transport.md)（闭合词循环次序 ⟹ 环图 $C\_L$）、[`Z9`](Z9_pi_filter_and_lifetime_fork.md)（年龄筛／生存筛）、[`Z8`](Z8_native_scale_field_candidate.md)（判据 C1–C6）、[`Z7`](Z7_embedding_input_explicit_dictionary.md)（闭式字典）、[`G54`](G54_quantitative_profile_age_measure.md)（引理 79）、[`G46`](G46_k_is_the_lifetime.md)（$k=L$）、[`G59`](G59_I7_settled_native_cone_and_its_residue.md)（宇称倍增）、[`rotation_class_algebra`](zero_sum_rotation_class_algebra.md) §3（$r(w)$ 分布）。
+**依赖**：[`D214`](D_arc/D214_local_zero_sum_transport.md)（闭合词循环次序 ⟹ 环图 $C\_L$）、[`Z9`](Z9_pi_filter_and_lifetime_fork.md)（年龄筛／生存筛）、[`Z8`](Z8_native_scale_field_candidate.md)（判据 C1–C6）、[`Z7`](Z7_embedding_input_explicit_dictionary.md)（闭式字典）、[`G54`](G54_quantitative_profile_age_measure.md)（引理 79）、[`G46`](G46_k_is_the_lifetime.md)（$k=L$）、[`G59`](G59_I7_settled_native_cone_and_its_residue.md)（宇称倍增）、[`rotation_class_algebra`](zero_sum_rotation_class_algebra.md) §3（$r(w)$ 分布）。
 **等级标签**：【推进】/【判据】/【筛除】/【数值核验】/【复现】/【结论】。
 **核验**：[`Z10_check.py`](Z10_check.py) —— **独立实断言 37 / 结论行 0 / 不符 0**，退出码 `0`（约 1 秒）
 
@@ -17,7 +17,7 @@ $$
 
 ## §0 结论（四句）
 
-1. **站点图有原生候选**：[`D214`](D214_local_zero_sum_transport.md) §2——"$L$ 个词位构成一个**环图** $C\_L$"，且它自己就写明"把这张图解释成物理局域图**仍是额外识别**"（＝I5）。**这不新增输入。**
+1. **站点图有原生候选**：[`D214`](D_arc/D214_local_zero_sum_transport.md) §2——"$L$ 个词位构成一个**环图** $C\_L$"，且它自己就写明"把这张图解释成物理局域图**仍是额外识别**"（＝I5）。**这不新增输入。**
 2. **位置型原生场存在**：**归零（切割）概率**
    $$P_i=\frac{\binom{i}{i/2}\binom{L-i}{(L-i)/2}}{\binom{L}{L/2}}$$
    它有**精确闭式**（本文与暴力枚举逐位吻合，$L=4\dots14$ 偏差**精确 $0$**），且**逃出 [`G54`](G54_quantitative_profile_age_measure.md) 引理 79**——因为它是**位置条件化**的统计量，不是整词量。**这正是 [`Z9`](Z9_pi_filter_and_lifetime_fork.md) 年龄筛留下的那道缝。**
@@ -32,15 +32,15 @@ $$
 
 ## §1 站点图：D214 的环（原生，且它自己标注了识别）
 
-[`D214`](D214_local_zero_sum_transport.md)：
+[`D214`](D_arc/D214_local_zero_sum_transport.md)：
 
 > **第 2 步｜闭合词自带一个循环次序。** … 因此 $L$ 个词位构成一个**环图** $C\_L$。**把这张图解释成物理局域图仍是额外识别**；本文只主张**词序内部已经存在这张图**。
 
 | 项 | 内容 | 等级 |
 |:--|:--|:--|
 | 站点 | 词位 $0,\dots,L-1$ | 【导出】（**Z14** 的循环次序） |
-| 邻接 | 最近邻环边 $i\sim i+1\pmod L$ | 【导出】（[`D214`](D214_local_zero_sum_transport.md) §第 4 步） |
-| 词位＝物理点 | — | **【识别】＝I5**（[`D214`](D214_local_zero_sum_transport.md) 自陈） |
+| 邻接 | 最近邻环边 $i\sim i+1\pmod L$ | 【导出】（[`D214`](D_arc/D214_local_zero_sum_transport.md) §第 4 步） |
+| 词位＝物理点 | — | **【识别】＝I5**（[`D214`](D_arc/D214_local_zero_sum_transport.md) 自陈） |
 
 **故 [`Z9`](Z9_pi_filter_and_lifetime_fork.md) §5 问的"类↔站点"有了一个不需要新输入的候选答案**：站点**就是**词位，邻接**就是**循环次序。
 

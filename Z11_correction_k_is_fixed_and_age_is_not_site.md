@@ -1,7 +1,7 @@
 # Z11 · **更正 [`Z10`](Z10_position_field_and_amplitude_criterion.md) §3**：$k=L$ 是**固定步数**（不是格子大小）——并由此排除一条识别（**年龄 ≠ 站点**）
 
 **日期**：本轮 · **性质**：**自我更正** ＋ **判据 C7 的表述修正** ＋ **对 I5 的一条新约束**（正面交付）。
-**依赖**：[`G58`](G58_I2a_resolved_as_embedding_input.md) §3（"$L$ 固定步数"是 **Z0 条款内**唯一读法）、[`G61`](G61_locking_the_five_integers.md)（锁 $L=4$）、[`G46`](G46_k_is_the_lifetime.md)（$k=L$）、[`Z10`](Z10_position_field_and_amplitude_criterion.md)、[`Z9`](Z9_pi_filter_and_lifetime_fork.md) §3（$\tau\_i$ 分叉）、[`Z8`](Z8_native_scale_field_candidate.md)、[`Z7`](Z7_embedding_input_explicit_dictionary.md)、[`D214`](D214_local_zero_sum_transport.md)（词位＝物理点是**额外识别**）。
+**依赖**：[`G58`](G58_I2a_resolved_as_embedding_input.md) §3（"$L$ 固定步数"是 **Z0 条款内**唯一读法）、[`G61`](G61_locking_the_five_integers.md)（锁 $L=4$）、[`G46`](G46_k_is_the_lifetime.md)（$k=L$）、[`Z10`](Z10_position_field_and_amplitude_criterion.md)、[`Z9`](Z9_pi_filter_and_lifetime_fork.md) §3（$\tau\_i$ 分叉）、[`Z8`](Z8_native_scale_field_candidate.md)、[`Z7`](Z7_embedding_input_explicit_dictionary.md)、[`D214`](D_arc/D214_local_zero_sum_transport.md)（词位＝物理点是**额外识别**）。
 **等级标签**：【更正】/【数值核验】/【约束】/【结论】。
 **核验**：[`Z11_check.py`](Z11_check.py) —— **独立实断言 31 / 结论行 0 / 不符 0**，退出码 `0`（约 1 秒）
 
@@ -20,7 +20,7 @@ $$
 1. **更正**：[`Z10`](Z10_position_field_and_amplitude_criterion.md) §3 判"归零概率场死在 $k=L$ 上"——那个测试取的是 $k=N$（**寿命随格子增长**）。而 **Z0 条款内**唯一的读法是 [`G58`](G58_I2a_resolved_as_embedding_input.md) §3 的"**$L$ 固定步数**"（$L$ 是 **Z4／Z3** 的原生计数），[`G61`](G61_locking_the_five_integers.md) 把它锁成 $L=4$ ⟹ **$k$ 固定**。
 2. **放大只是多项式**：$\;$度规对比度 $=\text{range}(c)^{\,k}$。$k=4$ 时**范围 $50$ 的场只给对比度 $6.0\times10^{4}$、字典偏差 $2.5\times10^{-4}$** ⟹ **非退化**。[`Z7`](Z7_embedding_input_explicit_dictionary.md) 的场与 [`Z8`](Z8_native_scale_field_candidate.md) 的候选 2 **都活着**。
 3. **新约束（本轮正面交付）**：$k=N$ 那个致死场景**恰恰等价于"年龄＝站点"**——若站点就是年龄，则细化格点＝细化年龄轴 ⟹ 一次寿命的**步数**随格子增长 ⟹ $k\to\infty$ ⟹ 退化。
-   **故 [`D214`](D214_local_zero_sum_transport.md) 自陈的那条"额外识别"（词位＝物理点）被排除**：I5 必须把站点认成**别的东西**。
+   **故 [`D214`](D_arc/D214_local_zero_sum_transport.md) 自陈的那条"额外识别"（词位＝物理点）被排除**：I5 必须把站点认成**别的东西**。
 4. **顺带结掉 [`Z9`](Z9_pi_filter_and_lifetime_fork.md) §3 的 $\tau\_i$ 分叉**：读法 (a)（全局 $k$、标度场 $c=\tau\_i/L$）对比度 $\sim\text{range}^k$ **非退化**；读法 (b)（局部截断 $k\_i=\tau\_i$，$\Delta k\sim L$）给 $2^{\Delta k}$ **指数退化** ⟹ **(a) 存活，(b) 出局**。
 
 ---

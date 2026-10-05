@@ -5,7 +5,7 @@
 **触发**：用户提问——"你先判断，$\mathcal R$ 是否 L2 的亚层？"
 **判据**：一层是否独立，看它**有没有自己的更新规则**（`R50` §2 (R50-3) 的口径）。
 **探针**：[`R93_$\mathcal R$_sublayer.py`](R93_$\mathcal R$_sublayer.py) —— **核验 10 / 未过 0**，退出码 `0`。
-**依赖**：[`R50`](R50_layer_discipline.md)、[`R54`](R54_$\mathcal R$_removed_quantum_emergence.md)、[`R57`](R57_evolution_layer_quantum_chain.md)、[`R58`](R58_evolution_layer_quantum_emergence.md)、[`R72`](R72_layer_attribution.md)、[`R87`](R87_class_weight_consistency.md)、[`R91`](R91_$\mathcal R$_status_contradiction.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`D222`](D222_stratified_destruction_and_local_memory.md)。
+**依赖**：[`R50`](R50_layer_discipline.md)、[`R54`](R54_$\mathcal R$_removed_quantum_emergence.md)、[`R57`](R57_evolution_layer_quantum_chain.md)、[`R58`](R58_evolution_layer_quantum_emergence.md)、[`R72`](R72_layer_attribution.md)、[`R87`](R87_class_weight_consistency.md)、[`R91`](R91_$\mathcal R$_status_contradiction.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`D222`](D_arc/D222_stratified_destruction_and_local_memory.md)。
 
 $$
 \begin{aligned}

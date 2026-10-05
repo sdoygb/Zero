@@ -2,7 +2,7 @@
 
 **日期**：2026-10-03
 **性质**：**卡点提炼 ＋ 重新命名 ＋ 方向评估**。不对应任何新计算结论，只把已知否证重新组织。
-**依赖**：[`G40`](G40_metric_from_closed_walk_counting.md)、[`G41`](G41_lovelock_premises_under_nonuniform_weight.md)、[`D254`](D254_dirichlet_tensor_leaf_metric_and_clock_gauge.md)、[`D256`](D256_clock_gauge_intrinsic_simplex_and_refinement_convergence.md)、[`D257`](D257_resistance_metric_fixed_point_and_locality_gap.md)、[`D258`](D258_full_exchange_projection_and_local_isotropy_obstruction.md)、[`R33`](R33_action_phase_match_project.md)、[`R47`](R47_signature_from_causal_cone.md)、[`R62`](R62_M2_geometry.py)、[`R68`](R68_causal_metric_emergence.md)、[`R71`](R71_continuum_and_dimension.md)、[`R79`](R79_stress_two_param.py)、[`R81`](R81_stress_audit.py)。
+**依赖**：[`G40`](G40_metric_from_closed_walk_counting.md)、[`G41`](G41_lovelock_premises_under_nonuniform_weight.md)、[`D254`](D_arc/D254_dirichlet_tensor_leaf_metric_and_clock_gauge.md)、[`D256`](D_arc/D256_clock_gauge_intrinsic_simplex_and_refinement_convergence.md)、[`D257`](D_arc/D257_resistance_metric_fixed_point_and_locality_gap.md)、[`D258`](D_arc/D258_full_exchange_projection_and_local_isotropy_obstruction.md)、[`R33`](R33_action_phase_match_project.md)、[`R47`](R47_signature_from_causal_cone.md)、[`R62`](R62_M2_geometry.py)、[`R68`](R68_causal_metric_emergence.md)、[`R71`](R71_continuum_and_dimension.md)、[`R79`](R79_stress_two_param.py)、[`R81`](R81_stress_audit.py)。
 **探针**：[`R82_conformal_freedom.py`](R82_conformal_freedom.py)。
 
 $$

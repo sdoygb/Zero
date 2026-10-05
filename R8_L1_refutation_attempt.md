@@ -24,7 +24,7 @@ $$
 | 外部 BGL/Hislop–Longo 定理在各自前提下的几何模结论 | **已证**（外部文献） | 见 §4 |
 | 若完整实现 C-L1a 至 C-L1h，则 R8-GMA 可条件证成 | **条件证成** | BGL/Hislop–Longo 提供几何模桥；Zero 尚未提供其前提 |
 | 从现有 Zero 对象构造 C-L1a 至 C-L1h | **开放** | 没有四维连续局部代数网、共形真空、场映射和算子极限 |
-| 现有支持、边界权重、$0.865$ 相关、图 Laplacian 或 Gibbs 读数给出 R8-GMA | **排除** | [`D231`](D231_modular_density_profile_gap.md) 的同一支持非唯一性；剖面不等于几何流 |
+| 现有支持、边界权重、$0.865$ 相关、图 Laplacian 或 Gibbs 读数给出 R8-GMA | **排除** | [`D231`](D_arc/D231_modular_density_profile_gap.md) 的同一支持非唯一性；剖面不等于几何流 |
 | 对具有非零质量/相关形变的模型给出精确几何 boost 模流 | **排除** | Brunetti–Moretti 的零阶拟微分余项一般非零 |
 | 把 R8-GMA 字面上的无界算子范数当作已良定义目标 | **排除** | 局域 QFT 中模生成元无界；须改用公共核心上的强图/预解收敛或有界逼近 |
 | 从现有 Zero 无条件导出四维 GR | **排除** | 本审计只强化 R8 已有的“条件恢复”结论 |
@@ -108,8 +108,8 @@ $$
 | [`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) | 有限维忠实态的 GNS 构造、模流、KMS 核验 | 连续区域代数；空间局域代数网；共形真空表示 |
 | [`G75`](G75_quantum_geometry_modular_readout.md) | 对人为选定的 Gibbs 态证明 $K=-\log\rho=\beta L\_W+\text{常数}$ | 不能把该 Gibbs 态读成真空限制；不能由 $L\_W$ 得出共形 boost |
 | [`G79`](G79_horizon_thermodynamics.md) | 一维自由费米链上边界权重最小、局域性和第一定律接口 | 精确抛物线核；与几何 boost 的算子识别；这里的 $T=1/(2\pi)$ 明列为“识别” |
-| [`D231`](D231_modular_density_profile_gap.md) | 同一支持可承载不同剖面，给出不同模生成元；登记 boost-profile gap | 不能选出几何 boost 剖面；不能把支持数据当作生成元识别 |
-| [`D234`](D234_geometric_ball_profile_candidate.md) | 给出共形球候选核 $f\_B(r)=(R^2-r^2)/(2R)$、接触项警告和输入预算 | 年龄到径向映射、源算子识别、接触项、连续极限均明列为未导出 |
+| [`D231`](D_arc/D231_modular_density_profile_gap.md) | 同一支持可承载不同剖面，给出不同模生成元；登记 boost-profile gap | 不能选出几何 boost 剖面；不能把支持数据当作生成元识别 |
+| [`D234`](D_arc/D234_geometric_ball_profile_candidate.md) | 给出共形球候选核 $f\_B(r)=(R^2-r^2)/(2R)$、接触项警告和输入预算 | 年龄到径向映射、源算子识别、接触项、连续极限均明列为未导出 |
 
 ### 2.1 需要统一的表述
 

@@ -87,7 +87,7 @@ $$
 
 ## §4 原生非均匀候选：前缀（生存）测度
 
-[`D232`](D232_profile_as_matrix_age_correlation.md) §0 第 6 步列了 5 个候选来源，其中 **第 2 条「活动路径的生存统计」是原生量**。取前缀均匀测度，定义
+[`D232`](D_arc/D232_profile_as_matrix_age_correlation.md) §0 第 6 步列了 5 个候选来源，其中 **第 2 条「活动路径的生存统计」是原生量**。取前缀均匀测度，定义
 
 $$
 F(a):=\frac{\#\{p\in\{\pm1\}^a:\ p\ \text{可补全为长度 }L\ \text{的零和词}\}}{2^{a}}
@@ -156,8 +156,8 @@ $$
 
 | 项 | 说明 |
 |:--|:--|
-| **退化区** | $a\le L/2$ 时 $F\equiv1\Rightarrow p\_1=0$，[`D232`](D232_profile_as_matrix_age_correlation.md) 的 likelihood ratio **在那里退化**（$f=+\infty$）。本文把 $F$ 当**可闭合概率**用，不是直接当相位比 |
-| **读法风险** | 「$F$ ＝ [`D232`](D232_profile_as_matrix_age_correlation.md) 的相位比」是**我的读法**，**未在 D 系列核验**（与 [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) §7 同类风险） |
+| **退化区** | $a\le L/2$ 时 $F\equiv1\Rightarrow p\_1=0$，[`D232`](D_arc/D232_profile_as_matrix_age_correlation.md) 的 likelihood ratio **在那里退化**（$f=+\infty$）。本文把 $F$ 当**可闭合概率**用，不是直接当相位比 |
+| **读法风险** | 「$F$ ＝ [`D232`](D_arc/D232_profile_as_matrix_age_correlation.md) 的相位比」是**我的读法**，**未在 D 系列核验**（与 [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) §7 同类风险） |
 | 替身 | 仍用 $\pm1$ 平衡词当闭合词替身（与 [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) 同），**未用真实荷词多重性** |
 | **未证明** | **未证明前缀均匀测度是 $\pi$ 的唯一原生选择**；其他归一化未测 |
 | 维度 | 只在一维整数游走上做；图上的可补全计数未测 |

@@ -14,7 +14,7 @@ $$
 
 | # | 尝试 | 出处 | 失败点（原文） |
 |--:|:--|:--|:--|
-| **1** | **周期骨架 ⟹ 四维 GR 的直接桥** | [`D213`](D213_periodic_skeleton_to_gr_direct_audit.md) | "当前周期零宇宙骨架 $\not\Longrightarrow$ 四维 GR"；**六槽位只拿到 1/6**，"第一个硬关口"是**没有局域零和传输图**（$|E\_{\rm cross}|=0$） |
+| **1** | **周期骨架 ⟹ 四维 GR 的直接桥** | [`D213`](D_arc/D213_periodic_skeleton_to_gr_direct_audit.md) | "当前周期零宇宙骨架 $\not\Longrightarrow$ 四维 GR"；**六槽位只拿到 1/6**，"第一个硬关口"是**没有局域零和传输图**（$|E\_{\rm cross}|=0$） |
 | **2** | **Lovelock 链**（本系列 G1–G10） | [`G10`](G10_final_derivation_and_input_ledger.md) | **条件恢复**：形式被 Lovelock 唯一逼出，但**度规与维数是输入**；I2a 开 |
 | **3** | **度规线**（G40–G53） | [`G53`](G53_connecting_the_rg_axis_to_lattice_refinement.md) | 度规导出了（闭环计数，$k=L$），三前提齐；但**细化极限 I2a 仍负面**（逆向流发散、无 UV 不动点） |
 
@@ -45,7 +45,7 @@ $$
 
 ## §2 因果槽位：被选速度的**精确闭式**（本轮新计算）
 
-[`D213`](D213_periodic_skeleton_to_gr_direct_audit.md) 的六槽位里**没有"因果槽位"**——它把洛伦兹性只当作"时间定向候选"。而现在我们知道：
+[`D213`](D_arc/D213_periodic_skeleton_to_gr_direct_audit.md) 的六槽位里**没有"因果槽位"**——它把洛伦兹性只当作"时间定向候选"。而现在我们知道：
 
 **三个速度必须分开**（[`G31`](G31_characteristic_speed_and_saturation.md) ＋ [`G15`](G15_bare_ax3_has_no_characteristic_speed.md)）：
 
@@ -138,7 +138,7 @@ $$
 | **有效锥** | KPP 锥是**有效锥**（前沿外指数小、非严格零），不是严格双曲特征锥 |
 | 模型 | 模拟是 G31 的年龄结构最小模型（$L=4$、SPAWN$=2$），**不是** D 系列的真实闭合动力学 |
 | 槽位判定 | 六槽位重估用的是**各文档自己的结论等级**，我**未**逐篇重跑其数值（只复算了 $(L)(O)(C)$ 与 KPP） |
-| 影响 | 更正 [`G55`](G55_dynamics_line_degeneration_to_GR.md) §7；重建 [`D213`](D213_periodic_skeleton_to_gr_direct_audit.md) 的槽位账本；不改变 G1–G55 的其余数值结论 |
+| 影响 | 更正 [`G55`](G55_dynamics_line_degeneration_to_GR.md) §7；重建 [`D213`](D_arc/D213_periodic_skeleton_to_gr_direct_audit.md) 的槽位账本；不改变 G1–G55 的其余数值结论 |
 
 ---
 

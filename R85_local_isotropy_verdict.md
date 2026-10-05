@@ -3,7 +3,7 @@
 **日期**：2026-10-03
 **性质**：**否证（局部）＋ 一处更正 ＋ 一个可能的重新读法**。执行"方向 3 重试（`D258` 重启）"。
 **更正**：[`R82`](R82_conformal_gap_memo.md) §6 曾推测"`R79` 已移除 `D258` 的障碍，方向 3 值得重试"。**该推测错误**，本文撤回。
-**依赖**：[`D256`](D256_clock_gauge_intrinsic_simplex_and_refinement_convergence.md)、[`D258`](D258_full_exchange_projection_and_local_isotropy_obstruction.md)、[`R74`](R74_euclidean_simplex_settlement.md)、[`R77`](R77_length_grading_necessity.md)、[`R79`](R79_stress_two_param.py)、[`R82`](R82_conformal_gap_memo.md)。
+**依赖**：[`D256`](D_arc/D256_clock_gauge_intrinsic_simplex_and_refinement_convergence.md)、[`D258`](D_arc/D258_full_exchange_projection_and_local_isotropy_obstruction.md)、[`R74`](R74_euclidean_simplex_settlement.md)、[`R77`](R77_length_grading_necessity.md)、[`R79`](R79_stress_two_param.py)、[`R82`](R82_conformal_gap_memo.md)。
 **探针**：[`R84_local_stiffness.py`](R84_local_stiffness.py)、[`R83_local_simplex.py`](R83_local_simplex.py)。
 
 $$

@@ -110,11 +110,11 @@ $\lambda=\log M/T$ 在 $M\to10^{3}M$ 下**恒等**（$M=2,T=2$ 给 $0.346574$）
 
 ## §5 收官判词：退化尝试 #2 的最终账
 
-（槽位预算取自 [`D213`](D213_periodic_skeleton_to_gr_direct_audit.md) 的六槽位表，逐槽重估见 [`G56`](G56_degeneration_attempt2_six_slots.md) §1。）
+（槽位预算取自 [`D213`](D_arc/D213_periodic_skeleton_to_gr_direct_audit.md) 的六槽位表，逐槽重估见 [`G56`](G56_degeneration_attempt2_six_slots.md) §1。）
 
 | 槽位 | 状态 |
 |:--|:--|
-| $C\_{\rm loc}$ 局域零和传输 | ✅（[`D214`](D214_local_zero_sum_transport.md) 条件补上） |
+| $C\_{\rm loc}$ 局域零和传输 | ✅（[`D214`](D_arc/D214_local_zero_sum_transport.md) 条件补上） |
 | $C\_{\rm 4D}$ 四维细化与连续坐标 | ⚠️ 部分（**I2a 仍开**） |
 | $C\_{\rm Lor}$ 时间线、号差、定向 | ✅（[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5、[`G13`](G13_foliation_and_lorentz_invariance_gap.md)） |
 | $C\_{\rm src}$ 局部守恒源 | ✅（[`G5`](G5_stress_lift_and_conservation.md)、[`G16`](G16_repair_audit_without_new_axioms.md)） |

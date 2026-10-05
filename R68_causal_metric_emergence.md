@@ -10,7 +10,7 @@ $$
 \underbrace{\text{本文的度规}=\text{因果结构}}_{\text{由有向演化给出}\ \Rightarrow\ \text{无需求逆}}
 $$
 
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`Z3`](Z3_i2a_dimension_drift_verdict.md)、[`Z4`](Z4_p1_weight_scaling_and_shape.md)、[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5、[`G41`](G41_lovelock_premises_under_nonuniform_weight.md)、[`D252`](D252_layer_time_atlas_and_global_time_potential.md)、[`D257`](D257_resistance_metric_fixed_point_and_locality_gap.md)、[`R64`](R64_lorentzian_stable_phase.md)。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`Z3`](Z3_i2a_dimension_drift_verdict.md)、[`Z4`](Z4_p1_weight_scaling_and_shape.md)、[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5、[`G41`](G41_lovelock_premises_under_nonuniform_weight.md)、[`D252`](D_arc/D252_layer_time_atlas_and_global_time_potential.md)、[`D257`](D_arc/D257_resistance_metric_fixed_point_and_locality_gap.md)、[`R64`](R64_lorentzian_stable_phase.md)。
 **探针**：[`R65_causal_metric.py`](R65_causal_metric.py)、[`R66_causal_metric_2d.py`](R66_causal_metric_2d.py)、[`R67_causal_interval.py`](R67_causal_interval.py)。
 
 $$
