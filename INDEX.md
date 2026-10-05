@@ -480,7 +480,7 @@ $$
 
 ### 标准模型缺口总盘点
 
-- [`G92_standard_model_gap_inventory.md`](G92_standard_model_gap_inventory.md) — 标准模型缺口总盘点（一份不重复计数的清单）
+- [`G92_standard_model_gap_inventory.md`](G92_standard_model_gap_inventory.md) — **标准物理模型**缺口总盘点（一份不重复计数的清单；SM 门只是其中一道）
 
 ### 核验脚本（90 个）
 
@@ -491,7 +491,7 @@ python3 ledger_sync.py            # 增量同步（用缓存）
 python3 ledger_sync.py --all      # 忽略缓存，全部重跑
 ```
 
-账本合计：**独立实断言 3220 / 不符 0**（依赖上文的结论行以 `[i]` 单列，不计入合计；见 [`G10_final_derivation_and_input_ledger.md`](G10_final_derivation_and_input_ledger.md) §6）。
+账本合计：**独立实断言 3225 / 不符 0**（依赖上文的结论行以 `[i]` 单列，不计入合计；见 [`G10_final_derivation_and_input_ledger.md`](G10_final_derivation_and_input_ledger.md) §6）。
 
 ---
 

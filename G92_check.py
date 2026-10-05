@@ -54,7 +54,18 @@ DOC = read("G92_standard_model_gap_inventory.md")
 # ----------------------------------------------------------------------
 head("F1  文档结构")
 
-check("标题点出盘点", "缺口总盘点" in DOC)
+check("标题点出盘点且已限定为「标准物理模型」",
+      "缺口总盘点" in DOC and "**标准物理模型**缺口总盘点" in DOC)
+check("标题明写 SM 门只是其中一道", "SM 门只是其中一道" in DOC)
+check("横幅含术语分离（标准物理模型 vs 标准模型）",
+      "术语分离" in DOC and "标准物理模型}（六道恢复门" in DOC
+      and "＝ 粒子物理标准模型" in DOC)
+check("每项都有「所属门」字段（9 项）",
+      DOC.count("| **所属门** |") == 9, str(DOC.count("| **所属门** |")))
+check("§7 补入术语边界（原标题是混淆）",
+      "把两个不同的东西混成了一个" in DOC)
+check("§7 补入 26 参数对账（全部有归属、但无逐参数表）",
+      "26 参数对账" in DOC and "没有一张逐参数表" in DOC and "全部有归属" in DOC)
 check("性质写明盘点、不改判定", "**盘点（inventory）**" in DOC and "不新增推导、不改动任何判定" in DOC)
 check("三条去重规则在位", all(k in DOC for k in ("① 同一对象只算一次", "② 同一缺失原理", "③ 「交付形式」不算缺口")))
 check("Tier A 九项齐全",
