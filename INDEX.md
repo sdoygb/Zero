@@ -447,6 +447,34 @@ $$
 
 - [`G90_zero_series_reference_triage.md`](G90_zero_series_reference_triage.md) — Zero 系列参考分诊：哪些已承接、哪些要打问号、哪些是纯历史
 
+### Zero 演进与专题审计（本会话新增）
+
+- [`LAYER_LEDGER.md`](LAYER_LEDGER.md) — 分层账本：断言逐条带层指标（L0／L1／L1′／L2／读出）
+- [`SYNTHESIS_zero_to_standard_model.md`](SYNTHESIS_zero_to_standard_model.md) — 到标准物理模型的路线图 ＋ 外部文献清单
+- [`LIT_SURVEY.md`](LIT_SURVEY.md) — 外部文献调查
+- [`E1_NN_verdict.md`](E1_NN_verdict.md) — Nielsen–Ninomiya 检验：平移不变性不成立；真实对称为反射
+- [`README.md`](README.md) — 仓库入口
+
+**L2 演化层专题（毁灭–重播种周期）**
+
+| 文件 | 内容 |
+|:--|:--|
+| [`L2_period_verdict.md`](L2_period_verdict.md) | $T$ 是可辨识的不动点参数 |
+| [`L2_period_abs_verdict.md`](L2_period_abs_verdict.md) | 容量上限：可行性 $T\le6$（维数）／$T\le5$（投影） |
+| [`L2_rho_closed_verdict.md`](L2_rho_closed_verdict.md) | $\rho(T)$ 是 Perron 比；反解乘性不确定 |
+| [`L2_transfer_verdict.md`](L2_transfer_verdict.md) | 双桶状态不完备 |
+| [`L2_catalan_verdict.md`](L2_catalan_verdict.md) | Catalan 系数律 |
+| [`L2_cat_vs_motzkin_verdict.md`](L2_cat_vs_motzkin_verdict.md) | Catalan≠Motzkin（第 4 项分歧 8 vs 10） |
+| [`L2_C_recursion_verdict.md`](L2_C_recursion_verdict.md) | 递推与闭式：$\lambda=c(T)$ |
+| [`L2_years_verdict.md`](L2_years_verdict.md) | 年数不可内部导出；$t_{\rm cycle}=T\alpha$ |
+| [`L2_anchor_verdict.md`](L2_anchor_verdict.md) | 锚的淘汰链与最终数值 |
+| [`L2_imprint_verdict.md`](L2_imprint_verdict.md) | 路线 A 印记：双值间隔谱 |
+| [`L2_T_absolute_verdict.md`](L2_T_absolute_verdict.md) | $T$ 的绝对值：容量封顶给出 $T=5$ |
+| [`L2_decoupling_verdict.md`](L2_decoupling_verdict.md) | 「相位解耦 ⇒ 无预兆瞬间毁灭」的结构核查 |
+| [`L2_layer_retention_verdict.md`](L2_layer_retention_verdict.md) | 层保留猜想（保留一层版） |
+| [`L2_layer_retention_corrected.md`](L2_layer_retention_corrected.md) | 层保留猜想（修正为两层） |
+
+
 ### 核验脚本（89 个）
 
 [`ledger_sync.py`](ledger_sync.py) 是**同步入口**：按 mtime 缓存逐个跑 `G*_check.py` 与 `Z*_check.py`（未变者不重跑），写回账本合计，再重生本清单。
