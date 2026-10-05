@@ -8,7 +8,6 @@
 **核验**：[`R58_check.py`](R58_check.py) —— **通过 37 / 不符 0**，退出码 `0`。
 
 $$
-
 \begin{aligned}
 &\textbf{命题（Zero 内量子力学的涌现）：}\\
 &\text{取全局闭合类层，对其成员取}\textbf{初始段}\text{，得壳层塔与续接数；}\\
@@ -127,7 +126,6 @@ $M\_2(\mathbb C)$ 因子**原生**（循环次序 ＋ 原生 $\pm$ $\Rightarrow 
 | 1.13 | 2.0047 | 18.12 | **是** |
 
 $$
-
 \begin{aligned}
 &\textbf{第一阶（无参数）：}\ \text{壳层塔自带非均匀}\ \Longrightarrow\ \omega\ \text{非均匀}\
 \Longrightarrow\ K\ \text{非平凡}\\

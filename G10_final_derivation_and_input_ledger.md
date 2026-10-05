@@ -10,9 +10,7 @@
 > **【2026-10-02 条件极限更新｜[`R7`](R7_h3_h7_regularity.md)】** 本文 §7、§8 中“一般 Γ-收敛定理仍未证”是写作时状态。当前已有条件定理链：H1–H4 的紧性／Γ-liminf／恢复列／唯一极限见 [`R1`](R1_gamma_convergence_theorem.md)；H5 见 [`R6`](R6_h5_dictionary_error_bound.md)；H3／H7 见 [`R7`](R7_h3_h7_regularity.md)，其中 H7 必须按光滑提升理解。剩余物理输入是 I5b 与 GDL。
 
 $$
-
 \text{最终等级：}\textbf{条件恢复}——\text{四维 GR 的形式被 Lovelock 唯一逼出，度量与维数是输入。}
-
 $$
 
 ---
@@ -255,7 +253,7 @@ $$
 > 二者核验的是**旧理论**的主张，故**单列**、不并入上表；`ledger_sync.py` 的 glob 为 `G*_check.py`，天然不采集它们。
 
 $$
-\text{同步入口：}\quad \text{python3 ledger_sync.py}\quad\Longrightarrow\quad \text{增量重跑并写回本表}.
+\text{同步入口：}\quad \text{python3 ledger\_sync.py}\quad\Longrightarrow\quad \text{增量重跑并写回本表}.
 $$
 
 ---
@@ -299,14 +297,12 @@ $$
 > **【历史横幅｜当前状态见 [`STATUS.md`](STATUS.md)】** 下面的等级框保留第 8 轮时点的 I1–I5 写法。当前条件是 E1–E4；其中 E4 已由“待输入”升级为“不可导出定理”。交付清单仍有效。
 
 $$
-
 \begin{aligned}
 &\textbf{能主张：}\ \text{给定 E1–E4 后，四维 GR 的结构与场方程被唯一逼出（Lovelock）；}\\
 &\qquad\text{其中签名、局域性、尺度律、守恒流来源、维数下界是}\textbf{导出}的；\\
-&\textbf{不能主张：}\ \text{从零和底层**无条件**导出四维 GR。}\\
+&\textbf{不能主张：}\ \text{从零和底层\textbf{无条件}导出四维 GR。}\\
 &\qquad\text{嵌入、维数选择原则、作用量类别、}G,\Lambda\ \text{是}\textbf{输入或条件}，其中量纲常数已证明不可由 Z0 原语导出。
 \end{aligned}
-
 $$
 
 **交付：**

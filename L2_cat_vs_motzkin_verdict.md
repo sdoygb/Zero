@@ -12,7 +12,6 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\textbf{我们实测的序列是 Catalan，不是 Motzkin}：\\
 &\qquad \text{co}[2i]=2\,C_i,\quad C_i=\tfrac{1}{i+1}\tbinom{2i}{i}

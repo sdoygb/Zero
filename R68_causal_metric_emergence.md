@@ -14,7 +14,6 @@ $$
 **探针**：[`R65_causal_metric.py`](R65_causal_metric.py)、[`R66_causal_metric_2d.py`](R66_causal_metric_2d.py)、[`R67_causal_interval.py`](R67_causal_interval.py)。
 
 $$
-
 \begin{aligned}
 &\textbf{主结果：}\ \text{二维格上的}\ \pm1\ \text{局域演化，其因果结构给出}\\
 &\qquad I(\Delta\tau,\Delta\mathbf x)=\sum_{k=0}^{(\Delta\tau-|\Delta\mathbf x|_1)/2}\!\!(2k^2+1)
@@ -53,8 +52,10 @@ $$
 
 **因果结构**：事件 $e=(\tau,\mathbf x)$，
 
-$$e\preceq e'\iff \text{存在合法演化连接二者}\iff
-\Delta\tau\ge0,\quad |\Delta\mathbf x|_1\le\Delta\tau,\quad \Delta\tau\equiv|\Delta\mathbf x|_1\ (\text{mod}\ 2)$$
+$$
+e\preceq e\iff \text{存在合法演化连接二者}\iff
+\Delta\tau\ge0,\quad |\Delta\mathbf x|_1\le\Delta\tau,\quad \Delta\tau\equiv|\Delta\mathbf x|_1\ (\text{mod}\ 2)
+$$
 
 ---
 
@@ -62,7 +63,9 @@ $$e\preceq e'\iff \text{存在合法演化连接二者}\iff
 
 二维格上，事件 $(0,\mathbf 0)$ 与 $(\Delta\tau,\Delta\mathbf x)$ 之间的因果区间：
 
-$$I=\sum_{k=0}^{m}(2k^2+1),\qquad m=\frac{\Delta\tau-|\Delta\mathbf x|_1}{2}$$
+$$
+I=\sum_{k=0}^{m}(2k^2+1),\qquad m=\frac{\Delta\tau-|\Delta\mathbf x|_1}{2}
+$$
 
 **实测**（固定 $\Delta\tau=12$）：
 
@@ -86,7 +89,9 @@ $$
 |:--|--:|--:|--:|--:|--:|--:|--:|
 | $I$ | 1 | 4 | 13 | 32 | 65 | 116 | 189 |
 
-$$\ \text{因果区间体积是}\ \textbf{单变量函数}\ \text{—— 变量就是菱形范数缺口}\ $$
+$$
+\ \text{因果区间体积是}\ \textbf{单变量函数}\ \text{—— 变量就是菱形范数缺口}\
+$$
 
 **这就是洛伦兹号差的定义**：时间与空间以**相反的符号**进入不变量。
 
@@ -104,7 +109,9 @@ $$\ \text{因果区间体积是}\ \textbf{单变量函数}\ \text{—— 变量�
 | 需要 $III\_1$ 吗 | 需要 | **不需要** |
 | 空间维数从哪来 | 图的维数（输入） | 图的维数（**仍是输入**） |
 
-$$\ \text{因果路}\ \textbf{绕开了全部已知障碍}:\ \text{无需求逆、无需模流、无需 }III_1\ $$
+$$
+\ \text{因果路}\ \textbf{绕开了全部已知障碍}:\ \text{无需求逆、无需模流、无需 }III_1\
+$$
 
 **而它给出洛伦兹号差，是"每步走一格"的直接后果 —— 零输入。**
 

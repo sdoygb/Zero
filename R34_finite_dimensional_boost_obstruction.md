@@ -7,7 +7,6 @@
 **核验**：[`R34_check.py`](R34_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{混合生成元在原生 }M_2(\mathbb C)\text{ 里}\textbf{存在}:\ \mathfrak{so}(1,3)\text{ 的三组关系全部实现;}\\
 &\qquad\text{但其中的 }K_i\text{ 必}\textbf{非 Hermitian}\text{（不存在实系数 Hermitian 解）}。\\
@@ -67,7 +66,7 @@ $$
 | $K\_i$ Hermitian | ❌（反 Hermitian） |
 | 实系数 Hermitian 解 $K\_i=c\sigma\_i$ | ❌ 无解（关系 $[K,K]=-iJ$ 要求 $2c^2=-1/2$） |
 | $e^{i\theta K}$ 酉 | ❌（$i\theta K=-\theta\sigma/2$ 是**实**指数） |
-| $\|e^{i\theta K}\|\_2$ 随 $\theta$ 增长 | $1\to1.65\to12.2\to148.4$（$\theta=0,1,5,10$） |
+| $\\lvert e^{i\theta K}\ \rvert\_2$ 随 $\theta$ 增长 | $1\to1.65\to12.2\to148.4$（$\theta=0,1,5,10$） |
 | 对照：旋转 $e^{i\theta J}$ 酉 | ✅ |
 
 **(Q3) 原生模流。** $K\_\omega=-\log\omega$（[`G72`](G72_kappa1_from_the_ledger.md) §1 的推前）取代表值 $\omega\propto(1,2,10,50)$ 时谱为 $(4.143,\,3.450,\,1.841,\,0.231)$，**跨度 $=3.912=\log50$**（与 G72 逐位吻合）。有限维 ⇒ 谱有限 ⇒ 模流准周期 ⇒ **闭包是环面（紧）**。
@@ -86,7 +85,6 @@ $$
 ## §2 定理 R34.1（有限维不可能）【已证】
 
 $$
-
 \begin{aligned}
 &\text{设 }T<\infty\text{，}\mathcal A_T=M_2(\mathbb C)\otimes\mathbb C^{T+1}\ (\dim=4(T+1))\text{，}\omega\text{ 为忠实态，}\\
 &\qquad\sigma_t=\text{Ad}(e^{itK_\omega})\ \text{为其模流}。\\
@@ -114,12 +112,10 @@ $$
 失败模式若只是"找不到"，项目会散；这里失败给出了**唯一的去处**：
 
 $$
-
 \text{几何模流（Bisognano–Wichmann）住在 }\textbf{type III}_1\text{ 因子上}。
 \text{有限维（type I）不可能有几何 boost}。
 \Longrightarrow
 \text{要 }(T1)/(T3)\text{，细化极限必须给出（或含）type III}。
-
 \qquad\text{(R34-5)}
 $$
 
@@ -170,10 +166,8 @@ $$
 7. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：boost 在代数层写得出、在有限维表示层写不出；}\\
 \text{这把"作用量相位"项目从散漫的提案变成一个有唯一去处的极限命题。}
-
 $$
 
 ---

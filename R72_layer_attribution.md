@@ -7,7 +7,6 @@
 **核验**：[`R72_layer_audit.py`](R72_layer_audit.py)。
 
 $$
-
 \begin{aligned}
 &\textbf{结论：维数的推导}\ \textbf{确实在演化层}\ \text{（`R23` 命题 R23.7，限演化层）};\\
 &\qquad\text{但它的机制是"严格递减 ＋ 下界"},\ \textbf{不是内部峰}。\\
@@ -89,8 +88,10 @@ D\ge4\ \text{来自}\ \text{G8}\ \text{引理 36/37}:\quad
 D=2\Rightarrow G_{ab}\equiv0;\qquad D=3\Rightarrow W_{abcd}\equiv0
 $$
 
-$$\ \text{用的是}\ GR\ \text{的}\textbf{场内容要求}（存在传播引力子），\textbf{不是}\ \text{Einstein 方程}
-\ \Longrightarrow\ \textbf{不循环}\ $$
+$$
+\text{用的是}\ GR\ \text{的}\textbf{场内容要求}（存在传播引力子），\textbf{不是}\ \text{Einstein 方程}
+\ \Longrightarrow\ \textbf{不循环}
+$$
 
 ---
 
@@ -99,7 +100,6 @@ $$\ \text{用的是}\ GR\ \text{的}\textbf{场内容要求}（存在传播引�
 `R64` 把 $D=4$ 说成"稳定端点"。按本轮核对，准确表述是**三重重合**：
 
 $$
-
 \begin{aligned}
 D=4\ \text{同时是}\quad &(i)\ \text{允许域的下边界}\ (D\ge4);\\
 &(ii)\ \text{该边界上窗口最宽的相}\ (\Delta_4=0.1000\ \text{最大});\\
@@ -107,7 +107,9 @@ D=4\ \text{同时是}\quad &(i)\ \text{允许域的下边界}\ (D\ge4);\\
 \end{aligned}
 $$
 
-$$\Longrightarrow\ \textbf{三者在}\ D=4\ \text{重合，这是它稳定的原因};\ \text{而}\ \textbf{单靠任何一条都不足以选出它}$$
+$$
+\Longrightarrow\ \textbf{三者在}\ D=4\ \text{重合，这是它稳定的原因};\ \text{而}\ \textbf{单靠任何一条都不足以选出它}
+$$
 
 （每条都需要 $D\ge4$ 或 $q$ 的窗口。）
 

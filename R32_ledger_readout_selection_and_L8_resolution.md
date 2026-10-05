@@ -6,7 +6,6 @@
 **核验**：[`R32_check.py`](R32_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{三条账本路线（}G72\text{ §4）：}\\
 &\qquad \text{A 闭类旋转轨道：}q_L=\sum_c\omega_c^2,\quad q_4=\tfrac59;\\
@@ -87,7 +86,6 @@ $$
 ## §2 定理 R32.1（寄存器与寿命的同时选择）【已证，条件模型内】
 
 $$
-
 \begin{aligned}
 &\text{设采用成对账本 }F_D=B\binom D2q^D\text{ 与 }\text{PEAK-IN-GRAVITON-DOMAIN}。\\
 &\text{则在 }G72\text{ §4 的三条路线与物理寿命域 }L\ge4\text{ 中，}\\
@@ -133,10 +131,8 @@ $$
 **推论（在固定身份计数下的最弱形式）**：**若身份计数已独立固定为 `C(D,2)`**，则选维真正需要的内容是 `D*≠2`——而 `D=2` 正是 [`G8`](G8_dimension_selection.md) 引理 36 里 `G_{ab}\equiv0`、几何扇区没有动力学的维数。此时可用更弱的形式：
 
 $$
-
 \text{PEAK-NOT-GRAVITY-FREE}:\quad
 \text{账本的主导维数不得是几何扇区为空（}D=2\text{）的维数。}
-
 \qquad\text{(R32-4)}
 $$
 
@@ -153,7 +149,6 @@ $$
 （$\binom{D+1}2$ 的相邻比是 $\frac{D+2}{D}q$，峰在 $D=3$ 当且仅当 $q\in(1/2,3/5)$——恰是路线 A 在 $L=4$ 的 $q=5/9$，与 [`R26`](R26_pair_carrier_reduction_no_go.md) 的"字典把峰移到三维"逐字一致。）
 
 $$
-
 \begin{aligned}
 &\text{命题 R32.4（联合唯一性）：}\\
 &\text{在身份计数 }\{D,\ \tbinom D2,\ \tbinom{D+1}2\}\times\text{账本路线 }\{A(L=2,4,6,8),B/C,D12\}\text{ 的叉积中，}\\
@@ -170,10 +165,8 @@ $$
 2. **联合选择需要判据的完整形式**：弱化为 $S=\{D\ge3\}$ 时，$(\binom{D+1}2,A,L=4)$ 会一起存活，$D$ 不再唯一。故 `PEAK-IN-GRAVITON-DOMAIN`（$D\ge4$）不可省；`PEAK-NOT-GRAVITY-FREE` 只在身份计数已被独立固定时可用。
 
 $$
-
 \text{净效果：一个生存要求同时选出}\textbf{身份计数}\text{、}\textbf{账本寄存器}\text{与}\textbf{寿命}\text{；}
 \text{三者都不必再各自作为具名输入。}
-
 \qquad\text{(R32-6)}
 $$
 
@@ -199,9 +192,7 @@ $$
 **(c) 在册比较量下 R23.6 自陈无极大点。** R23.6 的 (1) 用**单周期**量 `P(L)=F_L(L)=L/e`，它关于 `L` **严格递增**（R23 原文："在有限寿命集合上没有极大点"）。故在册的每代比较下，R23.6 **不提供**任何竞争性选择。
 
 $$
-
 \text{故 }L=8\text{ 是"非账本 }q\text{ ＋已撤回比较量"的双重产物；在册框架内它不构成张力。}
-
 \qquad\text{(R32-5)}
 $$
 
@@ -243,10 +234,8 @@ $$
 | 仍开放 | `PAIR-CARRIER`／`LEDGER-FACTORIZATION` 七项输入、`WIPE-RESET-LEDGER` | **不变**（身份**计数** `C(D,2)` 已由命题 R32.4 选出；仍开放的是 [`R29`](R29_full_support_ledger_factorization_no_go.md) 的四项**代价**输入与 [`R28`](R28_phase_identity_cluster_reduction.md) 的三项**身份簇**输入、以及 `WIPE-RESET-LEDGER`） |
 
 $$
-
 \text{净变化：一个生存要求同时选出寄存器、寿命与维数；}\\
 \text{原来的两个具名输入（寄存器选择、}L=4\text{）不再各自要价，但账本形式与代际账本仍要价。}
-
 \qquad\text{(R32-7)}
 $$
 
@@ -263,10 +252,8 @@ $$
 7. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：账本寄存器与寿命由同一个生存要求选出，}D=4\text{ 是这条链的结论；}
 \text{但链的地基仍是条件账本形式＋代际账本＋一条生存要求。}
-
 $$
 
 ---

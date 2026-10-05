@@ -10,7 +10,6 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\textbf{递推（已核验）}：\ h_{n+1}=(c+1)\,h_n-c\,h_{n-1}\\
 &\qquad\Longrightarrow\ r^2-(c+1)r+c=(r-c)(r-1)\ \Longrightarrow\

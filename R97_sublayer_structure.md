@@ -8,7 +8,6 @@
 **依赖**：[`R95`](R95_layer_table_and_discipline.md)（层表单一来源）、[`R93`](R93_$\mathcal R$_sublayer.md)（亚层 vs 泛函的区分）、[`D222`](D_arc/D222_stratified_destruction_and_local_memory.md)、[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5、[`G27`](G27_purification_attempt.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`R86`](R86_reseed_class_verdict.md) F1、[`R87`](R87_class_weight_consistency.md) H1。
 
 $$
-
 \begin{aligned}
 &\textbf{结果：}\ \text{L1／L2}\ \textbf{可以细分}（各有 2 个真亚层），\ \text{L0}\ \textbf{不宜叫亚层}（\text{是}\ \textbf{三元类型结构}\text{）。}\\
 &\textbf{关键新结果（L2）：}\ \text{演化层分裂为}\ \textbf{保守面}（窗口，双随机）\ \text{与}\ \textbf{产生面}（重播种，分支）；\\

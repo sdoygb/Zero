@@ -7,7 +7,6 @@
 **核验**：[`R44_check.py`](R44_check.py)。
 
 $$
-
 \begin{aligned}
 &\textbf{两个要求都是同一个泛函 }q=\sum_c\omega_c^2\textbf{ 的函数}：\\
 &\quad\textbf{(S) 生存（}R32\text{）}：\text{账本 }F_D=\binom{D}{2}q^D\text{ 的峰在 }D=4\iff q\in(\tfrac12,\tfrac35)。\\
@@ -98,7 +97,6 @@ $$
 ## §3 no-go
 
 $$
-
 \begin{aligned}
 q<3/5 &: \quad \text{peak at } D=4 \ \textbf{(S) yes};\quad S_{\max}<2 \ \textbf{(C) no};\\
 q=3/5 &: \quad \text{both at the boundary};\quad \text{peak } D=4/5 \ \text{tied},\ S_{\max}=2;\\

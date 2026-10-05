@@ -7,7 +7,6 @@
 **v0.5 定位**：D253 把时间势到度规代表之间压成 lapse、shift、叶层共形类和叶层体积。本文继续追问：层间交换或局部读出提供的 Dirichlet 能量能否直接给叶层空间度规？答案是：在三维叶上，完整的连续 Dirichlet 张量加“测度就是度规体积”这一致性条件确实唯一反解 $h$；若给出标量读回时钟并采用单位 lapse、零 shift 规范，则条件度规写成 $\mathrm g=dt^2-h$。但 D248-D250 目前只给离散图能量，尚未恢复连续张量 $Q^{ij}$。
 
 $$
-
 \text{离散交换能量}
 \not\Longrightarrow
 \text{连续 }Q^{ij};
@@ -15,7 +14,6 @@ $$
 (t,Q,\mu=\text{vol}_h)
 \Longrightarrow_{\rm cond}
 \mathrm g=dt^2-h.
-
 $$
 
 本文登记恢复层结构 `R-Z-READOUT-CLOCK-GAUGE`、`R-Z-DIRICHLET-TENSOR-METRIC`、`R-Z-METRIC-VOLUME-CONSISTENCY`、`R-Z-CLOCK-GAUGE-SELECTION-GAP` 与 `R-Z-DISCRETE-DIRICHLET-TENSOR-GAP`。
@@ -48,9 +46,7 @@ $$
 2. 用连续 Dirichlet 张量加度规体积一致性反解叶层空间度规 $h$。
 
 $$
-
 \text{本文不选择物质、曲率或 Einstein 动力学，只审计空间度规与时钟规范。}
-
 $$
 
 **第 2 步｜标量读回作为时钟。**
@@ -72,9 +68,7 @@ $$
 这一步不是自动的。D200 已登记记录标量到时间线的选择缺口；本文沿用该边界，只把 $\theta$ 作为候选时钟。
 
 $$
-
 \text{读回标量可以作为时钟候选，但其物理时间解释仍是输入。}
-
 $$
 
 **第 3 步｜单位 lapse 与零 shift 规范。**
@@ -90,11 +84,9 @@ $$
 则 D253 的 ADM 公式化为
 
 $$
-
 \mathrm g
 =
 dt^2-h_{ij}dx^i dx^j .
-
 $$
 
 这正是时间叶与法向正交、并且 $dt$ 给出单位 lapse 的规范代表。
@@ -102,11 +94,9 @@ $$
 该规范条件给出的是度规代表，不是几何来源：
 
 $$
-
 (t,h)+\text{单位 lapse、零 shift}
 \Longrightarrow_{\rm cond}
 \mathrm g=dt^2-h.
-
 $$
 
 这登记为 `R-Z-READOUT-CLOCK-GAUGE`。为什么选这个规范仍须登记为 `R-Z-CLOCK-GAUGE-SELECTION-GAP`。
@@ -132,9 +122,7 @@ $$
 因此 $\mathrm g=dt^2-h$ 只在一组明确规范条件下成立。
 
 $$
-
 \text{单位 lapse、零 shift 是显式规范输入，不是读回标量的自动推论。}
-
 $$
 
 **第 5 步｜连续 Dirichlet 张量。**
@@ -159,9 +147,7 @@ $$
 $Q^{ij}$ 是相对于所选坐标密度的连续二次型张量。它来自 D248-D250 的交换能量的连续极限候选，但离散权重本身还没有给出 $Q^{ij}$。
 
 $$
-
 \text{先有连续 }Q^{ij}\text{ 后，才谈它给哪个空间度规。}
-
 $$
 
 **第 6 步｜度规体积一致性。**
@@ -175,11 +161,9 @@ $$
 则
 
 $$
-
 Q
 =
 \sqrt{\det h}\,h^{-1}.
-
 $$
 
 这里 $Q=(Q^{ij})$ 是矩阵记号，$h^{-1}=(h^{ij})$。
@@ -187,10 +171,8 @@ $$
 这一步是关键：
 
 $$
-
 \text{Dirichlet 二次型给的是 }\sqrt{\det h}\,h^{-1},
 \text{不是随便一个 }h.
-
 $$
 
 这登记为 `R-Z-METRIC-VOLUME-CONSISTENCY`。若把 $\mu$ 当成独立测度，而不是度规体积，D207 已证明仍存在共形歧义。
@@ -210,11 +192,9 @@ $$
 因此由 $Q$ 可以反解
 
 $$
-
 h
 =
 (\det Q)\,Q^{-1}.
-
 $$
 
 同时
@@ -228,11 +208,9 @@ $$
 所以三维叶层空间度规由连续 Dirichlet 张量 $Q$ 唯一确定。
 
 $$
-
 Q\ \text{非退化}
 \Longrightarrow
 \text{唯一三维叶层 }h.
-
 $$
 
 这登记为 `R-Z-DIRICHLET-TENSOR-METRIC`。
@@ -262,10 +240,8 @@ $$
 这解释了为什么三维叶是当前关键：
 
 $$
-
 n=2\text{ 保留共形歧义};\qquad
 n=3\text{ 可由 }Q\text{ 唯一反解 }h.
-
 $$
 
 **第 9 步｜独立测度的共形重标度。**
@@ -315,9 +291,7 @@ $$
 这正是第 7 步唯一性的另一条证明。
 
 $$
-
 \text{度规体积一致性消去 }n\ne2\text{ 时的共形歧义。}
-
 $$
 
 **第 10 步｜条件度规组装。**
@@ -325,13 +299,11 @@ $$
 合并时钟与空间侧：
 
 $$
-
 (t,Q,\mu=\text{vol}_h)
 \Longrightarrow_{\rm cond}
 h
 \Longrightarrow_{\rm cond}
 \mathrm g=dt^2-h .
-
 $$
 
 其体积形式为
@@ -347,9 +319,7 @@ $$
 号差在 $h>0$ 时为 $(1,n)$，四维叶给 $(1,3)$。
 
 $$
-
 \text{给定 }t,Q\text{ 与度规体积一致性后，条件 Lorentz 度规已经写出。}
-
 $$
 
 **第 11 步｜离散交换能量的剩余缺口。**
@@ -373,11 +343,9 @@ $$
 所以图权重 $K\_e$ 本身不能决定连续系数 $Q$，还须知道边长、细化映射与怎样把边数据汇聚成局部张量。
 
 $$
-
 \text{离散交换能量}
 \not\Longrightarrow
 \text{唯一连续 }Q^{ij}.
-
 $$
 
 这登记为 `R-Z-DISCRETE-DIRICHLET-TENSOR-GAP`。D251 给支持与限制映射，但尚未给边长、单元几何或局部张量重建规则。
@@ -400,9 +368,7 @@ $$
 若这四项都显式给出，则 $h$ 与 $\mathrm g$ 可以条件组装。
 
 $$
-
 \text{ADM 选择缺口被拆成时钟规范、连续张量恢复与体积一致性三关。}
-
 $$
 
 **第 13 步｜判决。**
@@ -454,9 +420,7 @@ $$
 这些结构沿用 `R-Z-ADM-METRIC-ASSEMBLY`、`R-Z-LAPSE-SHIFT-GAP`、`R-Z-LEAF-CONFORMAL-VOLUME-GAP` 与 `R-Z-READOUT-TO-ADM-SELECTION-GAP`，不修改 `Zero 的载体–态–支持三层`，也不新增 `（旧理论新增条款）`。
 
 $$
-
 \text{空间度规反解已条件闭合；离散到连续与时钟规范仍未闭合。}
-
 $$
 
 ---
@@ -475,7 +439,5 @@ $$
 | Einstein 动力学 | 选择物理解与演化 | 未闭合 |
 
 $$
-
 \text{当前把空间侧压到一条反解公式；连续张量来源与时钟规范仍是恢复层输入。}
-
 $$

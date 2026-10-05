@@ -6,7 +6,6 @@
 **依赖证据**：[`G76`](G76_area_law_in_2d.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`D231`](D_arc/D231_modular_density_profile_gap.md)；为理清后续更正，另核对 [`G73`](G73_B_is_an_input.md) 与 [`G83`](G83_the_missing_1_14.md)。
 
 $$
-
 \begin{aligned}
 &\text{0.23534171 与 8.50 倍的算术可复现；}\\
 &\text{但 8.50 倍不是结构性证明，}\xi\simeq1.078L\text{ 还是漏了 }v_F\text{ 的旧口径。}\\
@@ -191,9 +190,7 @@ $$
 因此 J2 的准确状态是：
 
 $$
-
 \text{“8 倍”不是结构性证明；结构障碍取决于寿命细化与区域尺度是否同步。}
-
 $$
 
 ---
@@ -328,7 +325,6 @@ $$
 4. Z3 点汇与 G78 三维均匀交错质量之间没有构造性映射；这是比 8.5 倍数字更根本的缺口。
 
 $$
-
 \begin{aligned}
 &\text{J2 的结构性部分应表述为：}\\
 &\text{若寿命细化且区域尺度同步，Z3 点汇的均匀 gap 以 }1/L\text{ 闭合，}\xi\propto L\text{，C3 不可能。}\\

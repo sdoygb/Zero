@@ -39,10 +39,14 @@ def head(title):
 
 
 IDX = io.open(os.path.join(HERE, "INDEX.md"), encoding="utf-8").read()
-FILES = sorted(f for f in os.listdir(HERE) if f.endswith(".md"))
+_DARC = os.path.join(HERE, "D_arc")
+FILES = sorted(
+    [f for f in os.listdir(HERE) if f.endswith(".md")]
+    + [os.path.join("D_arc", f) for f in os.listdir(_DARC) if f.endswith(".md")]
+)
 
-GMD = [f for f in FILES if re.match(r"G\d+_.*\.md$", f)]
-DMD = [f for f in FILES if re.match(r"D\d+_.*\.md$", f)]
+GMD = [f for f in FILES if re.match(r"G\d+_.*\.md$", os.path.basename(f))]
+DMD = [f for f in FILES if re.match(r"D\d+_.*\.md$", os.path.basename(f))]
 ZMD = [f for f in FILES if f.startswith("zero_sum_") and f.endswith(".md")]
 CK = sorted(f for f in os.listdir(HERE) if re.match(r"G\d+_check\.py$", f))
 ZBMD = [f for f in FILES if re.match(r"Z\d+_.*\.md$", f)]
@@ -56,7 +60,8 @@ orphans = []
 for f in FILES:
     if f == "INDEX.md":
         continue
-    if ("](%s)" % f) not in IDX:
+    base = os.path.basename(f)
+    if ("](%s)" % base) not in IDX and ("](%s)" % f) not in IDX:
         orphans.append(f)
 check("所有 .md 都被 INDEX 链接（共 %d 篇，排除 INDEX.md 自身）" % (len(FILES) - 1),
       not orphans, "孤儿: %s" % orphans if orphans else "无")
@@ -79,7 +84,7 @@ check("INDEX 声明 zero_sum_* = %d 篇 + %d 个程序 + %d 个核验脚本" % (
 # ======================================================================
 head("F3  范围声明成立")
 
-nums = sorted(int(re.match(r"D(\d+)", f).group(1)) for f in DMD)
+nums = sorted(int(re.match(r"D(\d+)", os.path.basename(f)).group(1)) for f in DMD)
 check("lh/ 里的 D 文件全部在 210–259 区间", nums and min(nums) >= 210 and max(nums) <= 259,
       "%d–%d" % (min(nums), max(nums)))
 check("lh/ 里没有 D1–D209（不属零和宇宙的语料未拷入）",
@@ -91,7 +96,7 @@ check("INDEX 明示 D1–D209 数量为 0",
 head("F4  三个来源的清单完整")
 
 missing_g = [f for f in GMD if ("](%s)" % f) not in IDX]
-missing_d = [f for f in DMD if ("](%s)" % f) not in IDX]
+missing_d = [f for f in DMD if ("](%s)" % f) not in IDX and ("](%s)" % os.path.basename(f)) not in IDX]
 missing_z = [f for f in ZMD if ("](%s)" % f) not in IDX]
 missing_zb = [f for f in ZBMD if ("](%s)" % f) not in IDX]
 check("G 清单完整（%d 篇）" % len(GMD), not missing_g, "缺 %s" % missing_g)

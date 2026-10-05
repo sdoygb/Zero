@@ -7,7 +7,6 @@
 **核验**：[`R36_check.py`](R36_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{两比特判据（Horodecki）：}S_{\max}=2\sqrt{u_1^2+u_2^2},\quad
 u_i=\text{关联矩阵 }T_{ij}=\text{Tr}(\rho\,\sigma_i\otimes\sigma_j)\text{ 的奇异值}。\\
@@ -55,9 +54,7 @@ $$
 | 判据 | 交叉项 $2\text{Re}(a\_m\bar a\_{m'})$ 非零 | $S=2\sqrt{u\_1^2+u\_2^2}>2$ |
 
 $$
-
 \text{因此 }G68\text{ 的 4 条路径（}a=(0.6{+}0.3i,\,0.5{-}0.2i,\,0.2{-}0.1i,\,-0.35{+}0.15i)\text{）}\textbf{不能}\text{做 Bell 检验。}
-
 \qquad\text{(R36-1)}
 $$
 
@@ -85,9 +82,7 @@ $$
 数值（探针 S3）：直积态 $S=2.0000$、$T=(1,0,0)$；**把 $\sigma\_z\otimes\sigma\_z$ 关联拉到最大也仍是 $S=2.0000$**——因为秩 1 的 $T$ 只给一个方向。
 
 $$
-
 \text{单方向关联}\textbf{永远}\text{不能违反 CHSH——这是"两比特违反} \iff \text{纠缠"判据的直接后果。}
-
 \qquad\text{(R36-3)}
 $$
 
@@ -117,9 +112,7 @@ $$
 ## §4 缺口的准确名称
 
 $$
-
 \text{CHSH 之所需的不是"更强的干涉"，而是}\textbf{一个空间二分割＋跨它的纠缠}。
-
 \qquad\text{(R36-5)}
 $$
 
@@ -145,9 +138,7 @@ $$
 6. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：Zero 的量子栏目前是"单系统量子理论"；多体（Bell）层面不是"错"，而是"还没有场地"。}
-
 $$
 
 ---

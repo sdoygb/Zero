@@ -6,7 +6,6 @@
 **核验**：[`Z17_check.py`](Z17_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{A0–A5 退场后，"谁供给 }m\text{ 约束"成为新问题；本文的答案是：}\textbf{没有一条 Z0 条款供给}。\\
 &\textbf{定理 Z17.1（no-go 的 Z0 化）：}\ \text{环图模型 }\mathcal M_m\ (m\ge2)\text{ 满足 }Z0\text{① ②③ 与 }Z1\text{–}Z5+U，\\
@@ -54,9 +53,7 @@ A0–A5 现在是**定理表**（标号保留，以免破坏 G1–G89 的引用�
 | **A5 遗漏子句** | 闭合历史**再播种**新活动层 | [`Z5`](Z0_zero_never_rests_single_axiom.md)（由 Z0②＋有限寿命**逼出**） | **定理**（共同 $T$／Seed 仍为恢复层输入） | **否** |
 
 $$
-
 \text{六条 A 里，只有 A0 提到 }|C|\text{；而它只声明"存在 }C\text{"，从不声明 }|C|\text{ 等于几。}
-
 \qquad\text{(Z17-1)}
 $$
 
@@ -67,7 +64,6 @@ $$
 ## §2 定理 Z17.1（no-go 的 Z0 化）【已证】
 
 $$
-
 \begin{aligned}
 &\text{对每个整数 }m\ge2\text{，环图模型 }\mathcal M_m\ (C=\mathbb Z_m,\ \Gamma=C_m)\text{ 满足：}\\
 &\qquad Z0\text{① ②③};\quad Z1\text{（词与图）};\quad Z2\text{（全分支＋整数重数）};\\
@@ -112,10 +108,8 @@ $$
 | 参数 | $L$、$T$、$N$ | **否** | 不能约束 $m$ |
 
 $$
-
 \text{逐条款核对：}\textbf{没有一条 Z0 条款依赖 }|C|\text{ 的数值}。
 \text{故 Z0 与 A0–A5 一样，对 }m\text{ 中立。}
-
 \qquad\text{(Z17-3)}
 $$
 
@@ -126,20 +120,16 @@ $$
 ## §4 空缺中与选维有关的那一项
 
 $$
-
 \text{空缺 = "A0–A5 只声明存在 }C\text{，从不声明 }|C|\text{"；Z0 同样不声明。}
 \Longrightarrow
 \text{维数缺口 = }|C|\text{ 或 }m=D+1\text{ 不被固定。}
-
 \qquad\text{(Z17-4)}
 $$
 
 这与 [`Z6`](Z6_stall_autopsy_and_released_ledger.md) §1 的机制 **M1（结构／值混淆）** 一致：Z0 是**结构**公理（词、图、步、计数），它给不出**值**。维数是**值**，故必须由输入或由一条额外的选择原则供给。
 
 $$
-
 \text{所以"A0–A5 退出"没有把维数问题变得更可解：它把同一道题原样交给了 Z0，而 Z0 同样不回答。}
-
 \qquad\text{(Z17-5)}
 $$
 
@@ -170,10 +160,8 @@ $$
 | 生存要求 `PEAK-IN-GRAVITON-DOMAIN` | `R31` §4 | **不是** Z0 条款；**新增具名输入** |
 
 $$
-
 \text{选维链的"材料"（词／图／相位／轨道／寿命）是 Z0 原生的；}\\
 \text{"选择"（读出、身份计数、生存要求）不是 Z0 条款，而是被具名或由判据选出。}
-
 \qquad\text{(Z17-6)}
 $$
 
@@ -202,9 +190,7 @@ $$
 6. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：空缺真实存在，但它在"值"这一格，不在"结构"这一格；Z0 化不改变维数缺口的位置。}
-
 $$
 
 ---
@@ -238,9 +224,7 @@ python3 INDEX_check.py
 ### 9.2 双侧约束与 no-go
 
 $$
-
 \text{生存与语境性是同一个泛函 } q=\sum_c\omega_c^2 \text{ 上的两个互斥要求（在 } q=3/5 \text{ 相接不重叠）。}
-
 \qquad\text{(Z17-3)}
 $$
 
@@ -253,9 +237,7 @@ $$
 ### 9.3 逃生口：把"对象"数清
 
 $$
-
 \binom k2 \text{ 的 } k \text{ 是}\textbf{对象个数}；\text{Zero 的原语对象是}\textbf{通道}（T_{ex} \text{ 由通道对 } (i,j) \text{ 指标化}）。
-
 \qquad\text{(Z17-4)}
 $$
 
@@ -269,9 +251,7 @@ $$
 ### 9.4 价格付掉：签名由因果锥供出
 
 $$
-
 \text{光滑锥场}\iff\text{共形洛伦兹结构（符号差 }(1,D-1)\text{）}；\text{签名是}\textbf{离散不变量} \Rightarrow G59 \text{ 的有效锥够用。}
-
 \qquad\text{(Z17-5)}
 $$
 
@@ -280,7 +260,6 @@ $$
 ### 9.5 对空缺账本的净更新
 
 $$
-
 \begin{aligned}
 &\text{§4 的单一空缺 }|C| \text{ 现在读作二值选择：}\quad |C|=D \ \text{或}\ |C|=D+1.\\
 &\qquad |C|=D\ (\text{洛伦兹对})：\text{签名内建，但与单体量子性互斥};\\

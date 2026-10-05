@@ -84,7 +84,7 @@ $$
 | `E5` 分项 | 五层读法（`R50`） | 四层读法（`R54`/`R58`） | 证据 |
 |:--|:--|:--|:--|
 | 粗粒化 $\pi$ | $\mathcal R$ 具名输入 | **L1′ 导出** | `R54` §2；**`R53_zero_to_quantum.py` 实测无任何 $\gamma/\betaarepsilon$**（纯计数） |
-| 态 $\omega$ | $\mathcal R$ | L1′（带挂起 $\betaarepsilon$） | `R58` §2：$\omega\propto W e^{-\betaarepsilon\|s\|}$ |
+| 态 $\omega$ | $\mathcal R$ | L1′（带挂起 $\betaarepsilon$） | `R58` §2：$\omega\propto W e^{-\betaarepsilon\\lvert s\ \rvert}$ |
 | 模温 $\betaarepsilon$ | $\mathcal R$ | **L2** | `R57` §4#1；`R58_check` F3 门槛 $\gamma^*=1.105384$（实测） |
 | 局域读回／站点 | $\mathcal R$ | **L1′（仍为输入）** | `R39`／`R40` |
 

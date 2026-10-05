@@ -134,7 +134,6 @@ $$
 | **可证伪预言** | $\gamma=1/(2\lambda)$ · 锥外指数尾 $\mu\_*$ | **2** |
 
 $$
-
 \begin{aligned}
 &\text{退化出 GR：}\textbf{结构 ＋ 场方程 ＋ 守恒源 ＋ 有限因果锥（KPP）}\ \text{全部到位};\\
 &\text{剩下的是：}\textbf{3 条外部输入}（\text{嵌入、作用量、量纲常数}）\ \text{与}\ \textbf{2 条可证伪预言}。

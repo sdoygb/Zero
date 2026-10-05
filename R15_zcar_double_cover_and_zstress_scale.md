@@ -7,7 +7,6 @@
 **核验**：[`R15_check.py`](R15_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{R14.4 把 ``一圈'' 当成了 }L\text{-循环的置换号；正确的对象是旋转群的双覆盖。}\\
 &\text{双覆盖给出 }(\text{升格 }R)^{L}=-1\ \text{自动成立，不再依赖 }L\text{ 的奇偶巧合。}\\

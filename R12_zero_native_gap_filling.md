@@ -7,7 +7,6 @@
 **依赖**：[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G79`](G79_horizon_thermodynamics.md)、[`D44`](/Users/oygb/Downloads/modular-equilibrium/derivations/D44_poincare_closure_obstruction.md)、[`D231`](D_arc/D231_modular_density_profile_gap.md)、[`D233`](D_arc/D233_sign_age_symmetry_no_go_for_profile.md)、[`D235`](D_arc/D235_age_radial_reparametrization_no_go.md)、[`D236`](D_arc/D236_source_operator_identification_embedding.md)、[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`R10`](R10_cao_carroll_bulk_entanglement_completion.md)。
 
 $$
-
 \begin{aligned}
 &\text{这轮没有把 L1 或 L5 补成定理。}\\
 &\text{真正新增的是两个“不能由现有 Zero 数据推出”的严格边界，}\\
@@ -59,11 +58,9 @@ $$
 若 $X=\text{diag}(x\_1,\dots,x\_n)$ 且 $\text{Tr}X=0$，则
 
 $$
-
 D(\rho+\lambda X\|\rho)
 =
 \frac{\lambda^2}{2}\sum_i\frac{x_i^2}{p_i}+O(\lambda^3)
-
 \qquad\text{(R12-3)}
 $$
 
@@ -171,12 +168,10 @@ $$
 因此
 
 $$
-
 D(\sigma_R\|\rho)
 =
 \frac{91}{8}R^d+O(R^{3d/2})
 \ne o(R^d).
-
 \qquad\text{(R12-12)}
 $$
 
@@ -200,9 +195,7 @@ $$
 这个界说：在 gap 与窗口条件下，相对熵曲率与 $\|X\|\_2^2$ 同阶。但若 $\rho\_R$ 随 $R$ 改变、$\|X\_R\|\_2^2$ 可达 $R^d$，则 $D$ 仍可达 $R^d$，与命题 R12.2 不矛盾。因此：
 
 $$
-
 \text{gap 控制的是曲率系数，不是 Jacobson 所需的 }D=o(R^d)。
-
 \qquad\text{(R12-14)}
 $$
 
@@ -288,26 +281,26 @@ $$
 2. 取区间 $I\_n=[0,N\_n]$、格距 $a\_n\to0$，保持 $l=a\_nN\_n$ 固定。
 3. 用精确关联矩阵定义
 
-   $$
+$$
    H_n=\log\frac{1-C_n}{C_n}.
    \qquad\text{(R12-20)}
-   $$
+$$
 
 4. 证明缩放下核或二次型收敛到
 
-   $$
+$$
    2\pi l\int dx\,\beta(x)T_{00}(x),
    \qquad
    \beta(x)=\frac{x}{l}\left(1-\frac{x}{l}\right).
    \qquad\text{(R12-21)}
-   $$
+$$
 
 5. 在公共核心 $\mathcal D$ 上证明强预解收敛
 
-   $$
+$$
    (\lambda-H_n)^{-1}\to(\lambda-2\pi B_B)^{-1},
    \qquad\text{(R12-22)}
-   $$
+$$
 
    再经 Kato 型定理把交换子收敛抬到 $\mathcal D$ 上。
 
@@ -358,33 +351,31 @@ $$
 
 1. 每条关联 $(v,e)$ 有独立端口因子 $H\_{v,e}$，且
 
-   $$
+$$
    H_v=\bigotimes_{e\ni v}H_{v,e}.
    \qquad\text{(R12-26)}
-   $$
+$$
 
 2. 每条边 $e=\{u,v\}$ 选一个纯态
 
-   $$
+$$
    |\Phi_e\rangle\in H_{u,e}\otimes H_{v,e}.
    \qquad\text{(R12-27)}
-   $$
+$$
 
 3. 全局态取逐边张量积
 
-   $$
+$$
    |\Psi\rangle=\bigotimes_{e\in E}|\Phi_e\rangle.
    \qquad\text{(R12-28)}
-   $$
+$$
 
 **引理 R12.6（RC-EPF）【条件证成】**
 在上述条件下，对每个 $B\subset V$，
 
 $$
-
 S(\Psi_B)=\sum_{e\in\partial B}s_e
 =\frac12\sum_{u\in B,\,v\notin B}I(u\co v)
-
 \qquad\text{(R12-29)}
 $$
 
@@ -484,7 +475,6 @@ RC-EPF 只补上 Cao-Carroll 熵侧的一个有限实现类，可与 D126 的 $K
 5. 没有把 RC-EPF 从有限图推广到物理连续几何。
 
 $$
-
 \begin{aligned}
 &\text{Current status: conditional recovery, unchanged.}\\
 &\text{What the Zero layer cannot supply is now sharper, not smaller.}

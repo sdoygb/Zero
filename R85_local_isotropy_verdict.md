@@ -7,7 +7,6 @@
 **探针**：[`R84_local_stiffness.py`](R84_local_stiffness.py)、[`R83_local_simplex.py`](R83_local_simplex.py)。
 
 $$
-
 \begin{aligned}
 &\textbf{裁决：}\ \text{在 }D\text{-单纯形上，逐顶点的}\ \textbf{局部刚度张量必然各向异性}。\\
 &\qquad A_v=\sum_{j\in\text{star}(v)}\hat u_{vj}\hat u_{vj}^{\top}
@@ -71,7 +70,9 @@ $$
 
 **物理读法**：这正是 `Z4`／层高的**径向分层**在局部几何上的显形。
 
-$$\text{层高}\ h\ \longleftrightarrow\ \text{到质心的距离}\ \longleftrightarrow\ \text{局部几何的径向}$$
+$$
+\text{层高}\ h\ \longleftrightarrow\ \text{到质心的距离}\ \longleftrightarrow\ \text{局部几何的径向}
+$$
 
 ---
 
@@ -88,7 +89,9 @@ $$\text{层高}\ h\ \longleftrightarrow\ \text{到质心的距离}\ \longleftrig
 
 **边权的均匀情形给出与余切相同的 $0.8$** —— 因为两者在规则单纯形上只差一个整体常数。
 
-$$\Longrightarrow\ \textbf{障碍在单纯形的星形几何本身，不在权重口径}$$
+$$
+\Longrightarrow\ \textbf{障碍在单纯形的星形几何本身，不在权重口径}
+$$
 
 ---
 
@@ -100,7 +103,9 @@ $$
 \text{各向异性}\ \max=0.8000,\ \min=0.7778,\qquad \textbf{标量顶点数}=0/15
 $$
 
-$$\Longrightarrow\ \text{细化}\ \textbf{不收敛}\ \text{到各向同性（这正是 }D258\ \text{的原始结论）}$$
+$$
+\Longrightarrow\ \text{细化}\ \textbf{不收敛}\ \text{到各向同性（这正是 }D258\ \text{的原始结论）}
+$$
 
 ---
 

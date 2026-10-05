@@ -7,7 +7,6 @@
 **v0.5 定位**：D251 给出形式支持与局域读出，D252 给出全局时间势，D248-D250 给出条件源链。本文检查它们能否直接给出 Lorentz 度规。结论是：时间势最多给叶状候选；叶层数据要组装成度规，还须明确 lapse、shift、叶层共形类与叶层体积。完整时空共形类加体积元则已由 D143 唯一给度规，但这组完整数据目前不是层读回的推论。
 
 $$
-
 \text{时间势}
 \not\Longrightarrow
 \text{唯一 Lorentz 度规};
@@ -15,7 +14,6 @@ $$
 \text{叶状 ADM 数据}
 \Longrightarrow_{\rm cond}
 \text{度规代表}.
-
 $$
 
 本文登记恢复层结构 `R-Z-EMBEDDING-TO-FOLIATION`、`R-Z-ADM-METRIC-ASSEMBLY`、`R-Z-LAPSE-SHIFT-GAP`、`R-Z-LEAF-CONFORMAL-VOLUME-GAP` 与 `R-Z-READOUT-TO-ADM-SELECTION-GAP`。
@@ -37,9 +35,7 @@ $$
 这些数据并不都是度规分量。形式支持不是物理点，层间流不是度规，时间势也不是光锥。
 
 $$
-
 \text{层读回数据、时间数据与度规数据不能默认为同一层对象。}
-
 $$
 
 **第 2 步｜从时间势到叶状候选。**
@@ -70,13 +66,11 @@ $$
 4. 支持嵌入保持层内邻接。
 
 $$
-
 \text{全局时间势}
 \Longrightarrow_{\rm cond}
 \text{叶状候选},
 \qquad
 \text{不是自动叶状}.
-
 $$
 
 这登记为 `R-Z-EMBEDDING-TO-FOLIATION`。
@@ -106,7 +100,6 @@ $$
 定义
 
 $$
-
 \mathrm g_{N,\beta}
 =
 N^2dt^2
@@ -114,7 +107,6 @@ N^2dt^2
 h_{ij}
 \bigl(dx^i+\beta^i dt\bigr)
 \bigl(dx^j+\beta^j dt\bigr).
-
 $$
 
 在 $\beta=0$ 时，
@@ -130,9 +122,7 @@ $$
 但一般 $N\ne1$ 或 $\beta\ne0$ 时，时间叶不一定与法向正交。
 
 $$
-
 \text{ADM 公式是条件组装公式，不是几何选择原则。}
-
 $$
 
 **第 4 步｜行列式、号差与体积。**
@@ -183,11 +173,9 @@ $$
 四维时 $n=3$，号差为 $(1,3)$。时间定向由 $dt$ 的正方向和 $N>0$ 给出。
 
 $$
-
 (t,N,\beta,h)
 \Longrightarrow_{\rm cond}
 \text{一个号差为 }(1,n)\text{ 的 Lorentz 度规代表}.
-
 $$
 
 **第 5 步｜反向唯一性。**
@@ -213,9 +201,7 @@ $$
 这只是坐标分解的唯一性，不是度规来源的定理。
 
 $$
-
 \text{ADM 分解是同一度规在固定叶状下的重新分组。}
-
 $$
 
 **第 6 步｜同一时间势与同一空间度规不唯一。**
@@ -255,11 +241,9 @@ $$
 因此同一时间势和同一叶层空间度规仍不能唯一确定 Lorentz 度规。
 
 $$
-
 (t,h)
 \not\Longrightarrow
 \mathrm g .
-
 $$
 
 这正是 `R-Z-LAPSE-SHIFT-GAP`：若不固定 $N$ 与 $\beta$，零锥、固有时间和 shift 都不唯一。
@@ -271,9 +255,7 @@ $$
 因此这里不能说“$N,\beta$ 是新的上游物理输入”，也不能把它们任意算作独立自由度。准确的表述是：
 
 $$
-
 \text{给定叶状时，}N,\beta\text{ 是度规代表的规范数据；不给叶状或完整度规时，它们仍是缺失数据。}
-
 $$
 
 这把它与 `R-Z-SUPPORT-EMBEDDING-GAP` 分开：嵌入缺口问“什么区域和时间函数”，lapse/shift 缺口问“在选定叶状后怎样写度规代表”。
@@ -300,11 +282,9 @@ $$
 再把它代入第 3 步的 ADM 公式，就得到
 
 $$
-
 (t,N,\beta,[h],\mu_\Sigma)
 \Longrightarrow_{\rm cond}
 \mathrm g_{N,\beta}.
-
 $$
 
 这登记为 `R-Z-ADM-METRIC-ASSEMBLY`。
@@ -342,11 +322,9 @@ $$
 所以 $\lambda\ne1$ 时，$\mathrm g\_\lambda$ 与 $\mathrm g\_1$ 共享时间函数与四维体积元，却给不同空间度规、不同 lapse 和不同光锥。它们也不在同一个完整四维共形类中，因为时间与空间方向需要不同的共形因子。
 
 $$
-
 \text{叶层体积元}
 \not\Longrightarrow
 \text{唯一 lapse 或唯一时空共形类}.
-
 $$
 
 这登记为 `R-Z-LEAF-CONFORMAL-VOLUME-GAP`。
@@ -370,7 +348,6 @@ $$
 但层读回、层间流和全局时间势目前没有直接给出完整的 $[\mathrm g]$ 与 $\mu$。因此两条路线必须区分：
 
 $$
-
 \text{叶层 }(t,[h],\mu_\Sigma,N,\beta)
 \Longrightarrow_{\rm cond}
 \mathrm g;
@@ -378,7 +355,6 @@ $$
 \text{完整 }([\mathrm g],\mu,o)
 \Longrightarrow
 \mathrm g.
-
 $$
 
 **第 11 步｜D248-D252 到 ADM 数据的选择缺口。**
@@ -410,9 +386,7 @@ $$
 这类固定点还需要初值、边界条件和物质状态，不由现有层数据自动给出。
 
 $$
-
 \text{层读回与源候选不能直接选择 }N,\beta,[h],\mu_\Sigma.
-
 $$
 
 这登记为 `R-Z-READOUT-TO-ADM-SELECTION-GAP`。
@@ -469,9 +443,7 @@ $$
 这些结构沿用 `R-Z-SUPPORT-EMBEDDING-GAP`、`R-GEO2-METRIC`、`R-Z-CONDITIONAL-4D-LORENTZ`，不修改 `Zero 的载体–态–支持三层`，也不新增 `（旧理论新增条款）`。
 
 $$
-
 \text{ADM 度规组装已条件闭合；从层数据选择 ADM 输入仍未闭合。}
-
 $$
 
 ---
@@ -491,7 +463,5 @@ $$
 | Einstein 动力学 | 选择物理解与演化 | `R-Z-EH-VARIATION-BRIDGE` 条件入口，未闭合 |
 
 $$
-
 \text{当前闭合的是“给定 ADM 数据怎样写度规”，不是“怎样从层数据选出 ADM 数据”。}
-
 $$

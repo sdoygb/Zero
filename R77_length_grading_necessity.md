@@ -6,7 +6,6 @@
 **探针**：[`R77_length_grading.py`](R77_length_grading.py)、[`R76_cycle_structure.py`](R76_cycle_structure.py)。
 
 $$
-
 \begin{aligned}
 &\textbf{命题（长度分级的必然性）：}\\
 &\quad\text{设 }K_{D+1}\text{ 为通道图的 1-骨架，根在闭合点 }0。\ \text{根稳定子}\ \text{Stab}(0)\cong S_D。\\
@@ -41,12 +40,16 @@ $$
 1. 闭合发生在**零配置**，记该点为根 $0$。
 2. 保持 $0$ 不动的图自同构群是 $\text{Stab}(0)\cong S\_D$（置换其余 $D$ 个通道）。
 3. 设 $c,c'$ 是两条长度同为 $\ell$ 的简单圈，都过 $0$。把它们写成 $0$ 出发的序列：
-   $$c=(0,a_1,\dots,a_{\ell-1},0),\qquad c'=(0,b_1,\dots,b_{\ell-1},0)$$
+$$
+c=(0,a_1,\dots,a_{\ell-1},0),\qquad c'=(0,b_1,\dots,b_{\ell-1},0)
+$$
    其中 $\{a\_i\}$、$\{b\_i\}$ 分别是 $\{1,\dots,D\}$ 的 $(\ell-1)$ 元子集。
 4. 存在 $\sigma\in S\_D$ 把 $a\_i\mapsto b\_i$（因 $S\_D$ 在 $(\ell-1)$-子集上传递）。
 5. 完全图的边集在任意置换下不变，故 $\sigma(c)=c'$。
 
-$$\Longrightarrow\ \text{同一长度的圈构成}\ \text{Stab}(0)\ \text{的}\textbf{单轨道}$$
+$$
+\Longrightarrow\ \text{同一长度的圈构成}\ \text{Stab}(0)\ \text{的}\textbf{单轨道}
+$$
 
 **数值核验**（$D=4$）：
 
@@ -68,7 +71,9 @@ $$
 
 $Z0③$ 的逐边配平是 $x\_i+x\_j=0$（每条通道的净荷为零）。在完全图上这会传播：
 
-$$x_i+x_j=0\ \text{对所有相邻对}\ \Longrightarrow\ \text{所有顶点同号（相邻全等）}\ \Longrightarrow\ \sum_i x_i=0\ \text{只容许偶数长度}$$
+$$
+x_i+x_j=0\ \text{对所有相邻对}\ \Longrightarrow\ \text{所有顶点同号（相邻全等）}\ \Longrightarrow\ \sum_i x_i=0\ \text{只容许偶数长度}
+$$
 
 **数值核验**（$K\_5$）：
 
@@ -93,9 +98,13 @@ $$
 
 **分解**：
 
-$$10=2\cdot5,\qquad 15=3\cdot5,\qquad 12=2^2\cdot3$$
+$$
+10=2\cdot5,\qquad 15=3\cdot5,\qquad 12=2^2\cdot3
+$$
 
-$$\Longrightarrow\ \text{三个比值的方向}\ (2,3,5)\ \text{给出}\ \textbf{两个独立素数方向}\ \Longrightarrow\ \text{秩}=2=k-1\ \Longrightarrow\ III_1$$
+$$
+\Longrightarrow\ \text{三个比值的方向}\ (2,3,5)\ \text{给出}\ \textbf{两个独立素数方向}\ \Longrightarrow\ \text{秩}=2=k-1\ \Longrightarrow\ III_1
+$$
 
 **而** $6=2\cdot3,\ 12=2^2\cdot3,\ 12=2^2\cdot3$ **只有 $\{2,3\}$，秩 $1$，不足。**
 
@@ -107,7 +116,9 @@ $$
 
 依据：`G21` 引理 75 —— **闭合闭环无规范起点，内在对象是旋转类；带起点的词只是它的提升**。故闭合类**不带**闭合点的标记，无根口径是原生的。
 
-$$\ \text{故 }[10,15,12]\ \text{是原生计数};\ \text{而它给出}\ III_1\ $$
+$$
+\ \text{故 }[10,15,12]\ \text{是原生计数};\ \text{而它给出}\ III_1\
+$$
 
 ---
 
@@ -125,7 +136,9 @@ $$\ \text{故 }[10,15,12]\ \text{是原生计数};\ \text{而它给出}\ III_1\ 
 
 **在固定长度下，最大振幅、转向数、首次返回时刻都取多个值。**
 
-$$\Longrightarrow\ \text{正确命题是}\ \textbf{"长度是根稳定子下唯一的等级"},\ \text{不是"唯一的组合不变量"}$$
+$$
+\Longrightarrow\ \text{正确命题是}\ \textbf{"长度是根稳定子下唯一的等级"},\ \text{不是"唯一的组合不变量"}
+$$
 
 **两者不同**：前者是**对称性陈述**（哪些函数是不变的），后者是**函数空间陈述**（哪些量能区分路径）。只有前者成立。
 

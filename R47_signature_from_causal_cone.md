@@ -7,7 +7,6 @@
 **核验**：[`R47_check.py`](R47_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{A smooth cone field} \iff \text{conformal Lorentz structure (the cone is the zero set of a quadratic form,}\\
 &\qquad\text{signature } (1,D-1)\text{).}\\
@@ -59,9 +58,7 @@ $$
 **(2) 有效锥够用（不变量论证）。** `G59` 的锥是**有效**的：锥外影响指数小而非零。但：
 
 $$
-
 \textbf{签名是离散不变量}\ \Longrightarrow\ \text{指数小尾巴只移动边界，不改变拓扑，}\textbf{故签名不变}。
-
 \qquad\text{(R47-2)}
 $$
 
@@ -85,9 +82,7 @@ $$
 **载体复核**（`R45` 已算）：文档例 `(2,5,20,100)`：`q=0.6466` ✅∈`(0.6,2/3)`、`S=2.0328>2` ✅、单纯形字典峰 `D=4` ✅；两层族 `p=0.8`：`q=0.6585` ✅、`S=2.0150` ✅、峰 `D=4` ✅。
 
 $$
-
 \textbf{逃生口成立，且价格已付：}D=4\ \text{与单体量子性共存。}
-
 \qquad\text{(R47-4)}
 $$
 

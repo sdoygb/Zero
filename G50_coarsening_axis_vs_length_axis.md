@@ -35,9 +35,13 @@ $$
 
 ### 1.3 `D230` 的**区间投影 + 投影压缩加补单位**
 
-$$q_I=1_I,\qquad q_I^2=q_I,\qquad [q_I,C_X]=0$$
+$$
+q_I=1_I,\qquad q_I^2=q_I,\qquad [q_I,C_X]=0
+$$
 
-$$A(I)=q_I A q_I+\mathbb C(1-q_I),\qquad 1=q_I+(1-q_I)$$
+$$
+A(I)=q_I A q_I+\mathbb C(1-q_I),\qquad 1=q_I+(1-q_I)
+$$
 
 > "**用区间投影代替连续年龄点原子**"
 > $\text{压缩块保留局域矩阵；补单位保留全局 C*-代数结构。}$

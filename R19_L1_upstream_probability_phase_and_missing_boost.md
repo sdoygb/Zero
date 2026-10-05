@@ -12,7 +12,6 @@ $$
 **核验**：[`R19_check.py`](R19_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{概率、复相位与模流都已经从 Zero 生出来；}\\
 &\text{卡住 L1 的是：这些流都是 Euclidean 旋转或交换平移型，}\\

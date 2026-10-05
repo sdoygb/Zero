@@ -6,7 +6,6 @@
 **核验**：[`R29_check.py`](R29_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{“和乐类支撑全部 }D\text{ 个方向”不推出“联合记录重叠为 }q^D\text{”。}\\
 &\text{全支撑可以只给张量秩 }2\text{ 的非乘积记录，重叠与 }D\text{ 无关；}\\
@@ -62,7 +61,6 @@ $$
 这个句子里至少混合了四个不同对象：
 
 $$
-
 \begin{aligned}
 \text{DIR-SUPPORT-D}&:\quad
 \text{可继承类的实际支撑方向数为 }s(D)=D;\\
@@ -79,24 +77,20 @@ $$
 同时保留已有的一条读出口径：
 
 $$
-
 \text{LEDGER-ONE}:
 \quad
 \text{一次实际终端记录在相应记录态之间给一次因子 }q_j。
-
 \qquad\text{(R29-3)}
 $$
 
 `LEDGER-ONE` 是 G71 中“一次实际记录给一次因子”的条件结构，不等于“每个方向自动产生一笔实际记录”。本文的关键区别是
 
 $$
-
 \text{DIR-SUPPORT-D}
 \not\Longrightarrow
 \text{RECORD-FAMILY-D}
 \not\Longrightarrow
 \text{PRODUCT-LEDGER}.
-
 \qquad\text{(R29-4)}
 $$
 
@@ -208,9 +202,7 @@ $$
 且实际终端账本对每个方向因子给一次 `LEDGER-ONE` 记录读出，则
 
 $$
-
 A_D=\prod_{j=1}^{D}q_j=q^D.
-
 \qquad\text{(R29-12)}
 $$
 
@@ -228,9 +220,7 @@ $$
 得到
 
 $$
-
 F_D=B\binom D2q^D.
-
 \qquad\text{(R29-14)}
 $$
 
@@ -256,13 +246,11 @@ $$
 因此当前的正确记账是
 
 $$
-
 F_D=B\,M_D\,A_D,
 \qquad
 M_D\text{ 管身份，}
 \quad
 A_D\text{ 管代价。}
-
 \qquad\text{(R29-15)}
 $$
 
@@ -306,7 +294,6 @@ $$
 因此五项清单不能继续作为五个平行条件使用。当前最小代价侧输入应写成
 
 $$
-
 \text{LEDGER-FACTORIZATION}
 =
 \text{DIR-SUPPORT-D}
@@ -316,7 +303,6 @@ $$
 \text{PRODUCT-LEDGER}
 \wedge
 \text{SAME-Q}.
-
 \qquad\text{(R29-16)}
 $$
 
@@ -379,9 +365,7 @@ $$
 7. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：全支撑只说明“所有方向都参与”，乘积记录才说明“指数怎样累乘”。}
-
 $$
 
 ---

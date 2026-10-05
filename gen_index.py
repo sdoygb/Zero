@@ -7,7 +7,7 @@ def title(f):
     for line in io.open(f, encoding='utf-8', errors='replace'):
         if line.startswith('# '): return line[2:].strip()
     return ''
-def num(f): return int(re.match(r'[A-Z]+(\d+)', f).group(1))
+def num(f): return int(re.match(r'[A-Z]+(\d+)', os.path.basename(f)).group(1))
 
 
 _TAG = "U" + "[1-5]"          # 拼接构造，避免文件里出现字面标签
@@ -33,7 +33,7 @@ def clean(t):
 
 G  = sorted([f for f in os.listdir('.') if re.match(r'G\d+_.*\.md$', f)], key=num)
 CK = sorted([f for f in os.listdir('.') if re.match(r'G\d+_check\.py$', f)], key=num)
-D  = sorted([f for f in os.listdir('.') if re.match(r'D2\d\d_.*\.md$', f)], key=num)
+D  = sorted([os.path.join('D_arc', f) for f in os.listdir('D_arc') if re.match(r'D2\d\d_.*\.md$', f)], key=num)
 ZMD= sorted([f for f in os.listdir('.') if re.match(r'Z\d+_.*\.md$', f)], key=num)
 ZCK= sorted([f for f in os.listdir('.') if re.match(r'Z\d+_check\.py$', f)], key=num)
 Z  = sorted([f for f in os.listdir('.') if f.startswith('zero_sum_') and f.endswith('.md')])
@@ -89,6 +89,21 @@ L.append("| 历史状态 | 见 `STATUS.md` §8；旧“唯一账本”或“未�
 L.append("")
 L.append("---\n")
 L.append("## 0.5 五项推进、外部基准与可发表主定理接口（R0–R48）\n")
+# ---- Zero 演进与专题审计（手工维护，勿删） ----
+L.append("### Zero 演进与专题审计\n")
+L.append("- [`LAYER_LEDGER.md`](LAYER_LEDGER.md) — 分层账本：断言逐条带层指标（L0／L1／L1′／L2／读出）")
+L.append("- [`SYNTHESIS_zero_to_standard_model.md`](SYNTHESIS_zero_to_standard_model.md) — 到标准物理模型的路线图 ＋ 外部文献清单")
+L.append("- [`LIT_SURVEY.md`](LIT_SURVEY.md) — 外部文献调查")
+L.append("- [`E1_NN_verdict.md`](E1_NN_verdict.md) — Nielsen–Ninomiya 检验：平移不变性不成立；真实对称为反射")
+L.append("- [`README.md`](README.md) — 仓库入口\n")
+L.append("**L2 演化层专题（毁灭–重播种周期）**\n")
+_L2 = [f for f in sorted(os.listdir('.')) if f.startswith('L2_') and f.endswith('.md')]
+L.append("| 文件 | 内容 |")
+L.append("|:--|:--|")
+for _f in _L2:
+    L.append("| [`%s`](%s) | %s |" % (_f, _f, title(_f)[:60]))
+L.append("")
+
 L.append("**主线接口**：[`R0_publication_theorem.md`](R0_publication_theorem.md) 把“条件恢复四维 GR”写成可逐项证明、可被审稿人否定的主定理，固定五条证明义务 O1–O5，并列出验收门槛 M0–M4 与反过度主张句。以下为该分支的文档与核验脚本（状态以 `STATUS.md` 为准）。\n")
 L.append("`R8` 登记用 Zero 基础补 Jacobson 2016 前提的条件桥；`R9` 对外部强路线排序，`R10` 登记 Cao-Carroll 2018 的弱场条件桥；`R11` 统一 `cosmos-construct`／`modular-equilibrium` 与早期 `G*`／`Z*` 的历史 GR 推导；`R12` 对 L5／L1／Cao-Carroll RC 三个缺口做定向判定，`R13` 集中攻坚该 L1 正路由并证伪其原样强预解形式、修正 G79 截断读数，`R14` 把 `Z-CRIT-DER` 重组装为三块已证＋Z-CAR 候选＋单费米点残留识别，`R15` 把 Z-CAR 更正为旋转群双覆盖并给出 `Z-STRESS` 归一化常数 ≈π²/3，`R16` 审计归约树并判定开放具名簇停在 8、选择型输入稳定为 5，`R17` 把 Z14–Z16 移出 L1 临界路径并切回 L5 前置门，`R18` 把 L5 收成低维通道维数与归一化约束数的双因子判据，并证明 `Z-STRESS` 的约束数不足时 L5 必败，`R19` 重排 L1 上游并证明旋转双覆盖不能提供洛伦兹 boost，`R20` 在自由费米子支线上判定 A1 形状成立，`R21` 校正其常数额为 2π/v_F（本模型 v_F=2，故为 π），`R22` 分离主符号层与 R20 估计器，排除 0.9255 的有限尺寸解释，`R23` 把后代优势选维写成乘积 no-go 与条件模型，补上自由寿命归一化 no-go，并由演化层精确组合计数与 GR 的 D≥4 筛选证明 GR 兼容演化层扇区中四维条件存活率唯一最大；该结论只关于演化层，绝对后代数／长期占比另需 EVO-NORM，DIM-SECTOR 仍未导出，O3 未关闭。`R24` 纠正路线优先级：GR-LB 只是 TEMP-GR，最终要撤掉；SURV4-GLOBAL 未证，下一步是从 Zero 补 DIM-COST-Q 或 DIM-INTERACT。`R25` 把后一条收窄为 `PAIR-CARRIER`：单方向原生账本 no-go，成对窗口为 `1/2<q<3/5`，`L=4` 的 `q=5/9` 条件证成全局唯一 `D=4`，但 `PAIR-CARRIER-DER` 仍开放。它们只作外部基准、条件候选与历史／方向审计，不替代 O1–O5，也不把工程进度与外部论文或旧理论进度相加。\n")
 L.append("`R26` 对 R25 的成对载体作对抗审计并把 `PAIR-CARRIER-DER` 拆成六项：`DIR-DICT-BETA`、`PAIR-GRAPH-KD`、`PAIR-ID-EDGE`、`PAIR-COUNT-1`、`PAIR-COST-FACTORIZATION`、`PAIR-NO-EXTRA-MULT`。已证 no-go 为：Z1 定理 1 连通性只给 `D-1≤|E(Γ_D)|≤C(D,2)`，合法环图 `C_D` 不给 `C(D,2)`；D194/D259 的 `D=m-1` 字典把自然标签改成 `C(D+1,2)`，`q=5/9` 的唯一峰移到 `D=3`；成对重数本身不推出 `q^D` 代价，只付两维支撑时无有限峰、每条边独立付代价时峰在 `D=2`。它们只作 O3 条件候选审计，不关闭 O3。\n")

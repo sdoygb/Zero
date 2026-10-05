@@ -6,7 +6,6 @@
 **探针**：[`R49_pi_nonarithmetic_probe.py`](R49_pi_nonarithmetic_probe.py) → [`R49_pi_nonarithmetic_results.json`](R49_pi_nonarithmetic_results.json)。
 
 $$
-
 \begin{aligned}
 &\textbf{判据（精确）：}\text{块权重 }w_0,\dots,w_{k-1}>0\ \text{的对数比生成子群 }G\subseteq\mathbb R\ \text{稠密}\\
 &\qquad\Longleftrightarrow\ \text{相邻比的对数在 }\mathbb Q\ \text{上线性无关}

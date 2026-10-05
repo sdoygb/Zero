@@ -6,7 +6,6 @@
 **探针**：[`R57_quantum_chain.py`](R57_quantum_chain.py) → [`R57_quantum_chain_results.json`](R57_quantum_chain_results.json)。
 
 $$
-
 \begin{aligned}
 &\textbf{链：}\ \mathcal Z_\ast\ \overset{\ \text{下投影（取前缀）}\ }{\longrightarrow}\ E,P\ \overset{\ \text{层塔}\ }{\longrightarrow}\ h\ \overset{\ \text{补全数}\times\text{层高代价}\ }{\longrightarrow}\ \omega\\
 &\qquad\overset{\ \text{块对角态}\ }{\longrightarrow}\ \rho\ \overset{\ K=-\log\rho\ }{\longrightarrow}\ \text{模流}\ \overset{\ \text{KMS}\ }{\longrightarrow}\ \text{酉演化}
@@ -109,7 +108,7 @@ $M\_2(\mathbb C)$ 因子是**原生的**（`G27`：循环次序 ＋ 原生 $\pm$
 | $\sigma\_t$ 保 $*$-结构 | ✅ |
 | $\sigma\_t$ 保迹 | ✅ |
 | $\sigma\_t$ 保正 | ✅ |
-| **KMS 条件** $\omega(A\sigma\_t(B))\big|\_{t-i}=\omega(\sigma\_t(B)A)$ | **偏差 $4.2\times10^{-15}$** ✅ |
+| **KMS 条件** $\omega(A\sigma\_t(B))\big\lvert \_{t-i}=\omega(\sigma\_t(B)A)$ | **偏差 $4.2\times10^{-15}$** ✅ |
 
 **KMS 是这里最关键的一条**：它是"热性 + 代数结构 ⇒ 量子统计力学"的判据。$10^{-15}$ 是机器精度。
 

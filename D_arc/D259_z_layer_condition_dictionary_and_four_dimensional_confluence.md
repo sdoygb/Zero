@@ -9,13 +9,10 @@
 > **【路线本地状态｜[`STATUS.md`](../STATUS.md)】** 本文的“未导出／未解输入”是 **D259 借入路线本地**的状态，不是主 `Z/G` 路线的当前总账。主路线已经在 E1–E4 下条件恢复 GR；两条路线尚未证明等价，进度不能相加。全项目当前状态见 [`STATUS.md`](../STATUS.md) §3、§7。
 
 $$
-
 \text{Z 保存“结果”，P/E 保存“怎样得到结果”。}
-
 $$
 
 $$
-
 \begin{aligned}
 &\text{五通道零和局域证书}\\
 &+\text{完整交换各向同性}\\
@@ -25,15 +22,12 @@ $$
 &\Longrightarrow_{\rm cond}
 \text{四维洛伦兹图册}.
 \end{aligned}
-
 $$
 
 $$
-
 \text{Z 的无时间性}
 \not\Longrightarrow
 \text{五通道证书、时间线、尺度或跨区域汇流自动存在}.
-
 $$
 
 本文登记恢复层结构 `R-Z-INVARIANT-HISTORY-SPLIT`、`R-Z-FIVE-CHANNEL-RANK-CERTIFICATE`、`R-Z-CLOSURE-TIME-LINE-CERTIFICATE`、`R-Z-CROSS-REGION-CONFLUENCE`、`R-Z-CONDITIONAL-4D-ATLAS` 与缺口 `R-Z-DICTIONARY-SOURCE-GAP`。
@@ -93,22 +87,18 @@ $$
 则两份历史在低能几何读出上不可区分。若它们在重叠区域还要给同一时空，则必须有汇流条件：
 
 $$
-
 \pi_i(w_i)=\pi_j(w_j)=\alpha,
 \qquad
 \Pi_i(w_i)|_{U_i\cap U_j}
 \sim
 \Pi_j(w_j)|_{U_i\cap U_j}.
-
 $$
 
 这里 $\sim$ 表示允许由局部转移映射联系的同一几何数据。
 
 $$
-
 \text{同一闭合类允许多种历史；}
 \text{同一时空必需重叠一致性。}
-
 $$
 
 这登记为 `R-Z-INVARIANT-HISTORY-SPLIT`。
@@ -148,20 +138,16 @@ $$
 所以四维局部方向的最小零和证书是：
 
 $$
-
 \text{五通道零和局部闭合单元}
 \Longrightarrow_{\rm cond}
 \text{四个独立局域方向}.
-
 $$
 
 这不是“四维时空已经导出”。它只把维数输入从裸写的 $d=4$ 改写为一张更接近闭合事件语言的证书。
 
 $$
-
 \text{五通道证书本身仍是恢复层输入，}
 \text{只是它把维数输入压成秩输入。}
-
 $$
 
 这登记为 `R-Z-FIVE-CHANNEL-RANK-CERTIFICATE`。
@@ -206,11 +192,9 @@ $$
 在四个局域方向上成立。
 
 $$
-
 \text{完整局域交换}
 \Longrightarrow_{\rm cond}
 \text{各向同性四维正定型 }g_R.
-
 $$
 
 对四顶点空间单元，`D258` 的 $K\_4$ 正例给出三维各向同性空间截面。对外部边进入局部交换图的情况，`R-Z-LOCAL-EXCHANGE-BACKREACTION-GAP` 仍然有效。
@@ -244,17 +228,13 @@ $$
 因此
 
 $$
-
 \text{signature}(g_L)=(1,3).
-
 $$
 
 但 `D195` 已证明零和置换对称不能自然选出这条线。本文也保留这一点：
 
 $$
-
 \text{无向时间线是独立闭合证书，不是无时间 Z 层的自动结果。}
-
 $$
 
 这登记为 `R-Z-CLOSURE-TIME-LINE-CERTIFICATE`。
@@ -282,11 +262,9 @@ $$
 于是局部字典中的第一条桥为
 
 $$
-
 (\text{五通道秩},\text{各向同性 }g_R,[\ell],o,\mu)
 \Longrightarrow_{\rm cond}
 (U_\sigma,g_{L,\sigma}).
-
 $$
 
 它只给局部图表，不给跨区域汇流。
@@ -322,11 +300,9 @@ $$
 则局部图表可粘成一张条件四维洛伦兹图册：
 
 $$
-
 \{(U_i,g_{L,i},[\ell_i],o_i,\mu_i,\Phi_{ji})\}
 \Longrightarrow_{\rm cond}
 (M,g_L).
-
 $$
 
 这登记为 `R-Z-CROSS-REGION-CONFLUENCE` 与 `R-Z-CONDITIONAL-4D-ATLAS`。
@@ -334,11 +310,9 @@ $$
 如果两个区域给出同一个 Z 闭合类，但在重叠上不能由 $\Phi\_{ji}$ 相容，那么不能汇流为单一四维时空。此时 Z 只保存共同结果类，区域历史仍给不同局部几何候选。
 
 $$
-
 \text{同一 Z 结果}
 \not\Longrightarrow
 \text{自动同一局部几何}.
-
 $$
 
 **第 8 步｜结果先于历史还是历史先于结果。**
@@ -362,11 +336,9 @@ $$
 因此本文支持的表述是：
 
 $$
-
 \text{局部历史中，过程先闭合成结果；}
 \quad
 \text{Z 内部，结果没有先后属性。}
-
 $$
 
 本文不声称 $\alpha$ 先在 Z 中出现并因果选择历史。若需要这种解释，必须额外加入律在先或读出选择器。
@@ -391,11 +363,9 @@ $$
 其中任一项缺失，四维洛伦兹图册都不能由 $\mathcal Z\_\ast$ 单独恢复。
 
 $$
-
 \mathcal Z_\ast
 \not\Longrightarrow
 (M,g_L).
-
 $$
 
 这不是否定 Z 层，而是说明 Z 层保存的是四维时空的“结果类”，不是构造四维时空的完整字典。
@@ -405,7 +375,6 @@ $$
 本步把目标结构压成：
 
 $$
-
 \mathfrak D
 =
 \left(
@@ -416,17 +385,14 @@ o,\;
 \mu,\;
 \Phi_{ij}
 \right)
-
 $$
 
 并给出条件链：
 
 $$
-
 \mathfrak D
 \Longrightarrow_{\rm cond}
 (M,g_L).
-
 $$
 
 它不导出 $\mathfrak D$。但它的价值是：只要后续能从 Z 层闭合事件、历史层与支持映射中逐项生成 $\mathfrak D$，四维时空就不必作为裸输入塞进来。
@@ -499,13 +465,11 @@ $$
 这样的结果类；其局部证明、演化和区域差异放在 P/E 层。四维时空若要在这一框架中出现，不应被写成 Z 层的裸预设，而应写成跨区域闭合历史共同汇流到的闭合时空类。
 
 $$
-
 \text{Z 保存结果类；}
 \quad
 \text{历史保存局部实现；}
 \quad
 \text{四维时空由条件字典与区域汇流恢复。}
-
 $$
 
 本文不声称四维时空已经无条件导出，也不声称 Z 的无时间性自动给出四维。本文给出的是一张可逐项攻击的条件字典：下一步应优先从闭合事件和局部支持生成五通道证书、时间线与跨区域汇流。

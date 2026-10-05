@@ -204,16 +204,39 @@ def lint_text(raw):
         issues["C7"].append("\\( 出现 %d 次，\\[ 出现 %d 次" % (np_, nb_))
 
     # C8  $$ 块内空行
-    for m in re.finditer(r"\$\$(.*?)\$\$", text, flags=re.S):
-        if "\n\n" in m.group(1):
-            issues["C8"].append("L%d：$$ 块内含空行" % line_of(text, m.start()))
+    # 用**行级状态机**配对独占行的 $$（正则非贪婪匹配会在奇偶错位时跨块配对，
+    # 把块间空行误报为块内空行 —— 见 LATEX_AUDIT 的 C8 记录）。
+    _lines8 = text.split("\n")
+    _in8 = False
+    _start8 = 0
+    for _i8, _l8 in enumerate(_lines8, 1):
+        if _l8.strip() == "$$":
+            if not _in8:
+                _in8 = True
+                _start8 = _i8
+            else:
+                _seg8 = _lines8[_start8:_i8 - 1]
+                if any(not _x.strip() for _x in _seg8):
+                    issues["C8"].append("L%d：$$ 块内含空行" % _start8)
+                _in8 = False
 
     # C9  $$ 与正文同行
-    for m in re.finditer(r"\$\$(.*?)\$\$", text, flags=re.S):
-        ln = line_of(text, m.start())
-        line = raw.split("\n")[ln - 1] if ln - 1 < len(raw.split("\n")) else ""
-        if line.strip() not in ("$$",) and not line.strip().startswith("$$"):
-            issues["C9"].append("L%d：$$ 与正文同行" % ln)
+    # 判定：某行的 $$ 前后**都有非空白文字** => 夹在正文中（如 `正文 $$x$$ 继续`）。
+    # 合法情形不报：
+    #   · `$$` 独占一行（多行块定界符）
+    #   · 整行就是 `$$公式$$`（同行成对的显示公式）
+    #   · 块内部的公式行
+    _in9 = False
+    for _i9, _l9 in enumerate(raw.split("\n"), 1):
+        if _l9.strip() == "$$":
+            _in9 = not _in9
+            continue
+        if _in9 or _l9.count("$$") < 2:
+            continue
+        _p9 = _l9[:_l9.find("$$")]
+        _q9 = _l9[_l9.rfind("$$") + 2:]
+        if _p9.strip() and _q9.strip():
+            issues["C9"].append("L%d：$$ 与正文同行" % _i9)
 
     return issues
 

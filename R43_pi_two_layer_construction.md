@@ -7,7 +7,6 @@
 **核验**：[`R43_check.py`](R43_check.py)。
 
 $$
-
 \begin{aligned}
 &\textbf{双侧约束}：\text{(i) 主导块（语境性）};\quad\text{(ii) 差集秩}\ge2\text{（}III_1\text{）}。\\
 &\textbf{扫描结果}：\text{7 个自然族}\textbf{ 没有一个}\text{同时满足（最接近者：闭合长度 }L=20\text{，}S_{\max}=1.9849\text{，差 }0.8\%\text{）};\\
@@ -57,9 +56,7 @@ $$
 | F 幂律 | 谱平（`λ₁=0.278`） |
 
 $$
-
 \text{自然族的通病：块一多，谱就平；谱一平，语境性就丢。}
-
 \qquad\text{(R43-1)}
 $$
 
@@ -82,9 +79,7 @@ $$
 **60 组网格（`p∈{0.80…0.95}` × `α∈{0.5,1,1.5,2}` × `K∈{8,16,32}`）中 46 组同时满足。**
 
 $$
-
 \textbf{两层 } \pi\ \text{同时给出语境性（}S_{\max}>2\text{）与 }III_1\text{（秩}\ge2\text{）。}
-
 \qquad\text{(R43-3)}
 $$
 
@@ -104,9 +99,7 @@ $$
 **所以 `π` 的形状要求现在很具体**：
 
 $$
-
 \pi=\text{（一个主导类，权重 }p\gtrsim0.8\text{）}\ \oplus\ \text{（一个幂律尾，}\alpha\gtrsim1\text{）}。
-
 \qquad\text{(R43-5)}
 $$
 
@@ -121,9 +114,7 @@ $$
 5. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：}\pi\text{ 的形状被夹出来了——}\textbf{主导类 ＋ 幂律尾};\ \text{但它仍需从 Zero 导出，且要过 }R32\text{ 那把尺子。}
-
 $$
 
 ---

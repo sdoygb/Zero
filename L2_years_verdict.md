@@ -12,7 +12,6 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\text{年数}\ t_{\rm cycle}=T\times\tau_{\rm step}\ \text{中，}\textbf{只有 } T \text{ 可算};\ \tau_{\rm step}\ \text{不可由 } Z0\ \text{导出}。\\
 &\qquad\text{这不是"还没算出来"，是}\textbf{我们自己的定理}：\\

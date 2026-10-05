@@ -46,7 +46,11 @@ def head(title):
 def read(name):
     path = os.path.join(HERE, name)
     if not os.path.exists(path):
-        return ""
+        alt = os.path.join(HERE, "D_arc", name)     # D 系列已归档到 D_arc/
+        if os.path.exists(alt):
+            path = alt
+        else:
+            return ""
     return io.open(path, encoding="utf-8").read()
 
 

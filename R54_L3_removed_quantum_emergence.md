@@ -6,7 +6,6 @@
 **探针**：[`R53_zero_to_quantum.py`](R53_zero_to_quantum.py) → [`R53_zero_to_quantum_results.json`](R53_zero_to_quantum_results.json)。
 
 $$
-
 \begin{aligned}
 &\textbf{机制：}\ \pi\ \text{不是输入。闭合词内部的}\textbf{嵌套结构}\text{自带一个高度层级；}\\
 &\qquad \text{该层级密度的极大点唯一地划出"哪些层独立成块、哪些层合并"。}\\
@@ -41,7 +40,7 @@ $$
 | 设计 | 落地 |
 |:--|:--|
 | (1) 零乱动 | 词 $w=(w\_0,\dots,w\_{L-1})$，$w\_i=\pm1$，$\sum w\_i=0$ 即闭合；计数 $\binom{L}{L/2}$ |
-| (2) 分一层一层 | 高度 $h$ = 部分和层级 $\max\_k|S\_k|$，$S\_k=\sum\_{i<k}w\_i$ |
+| (2) 分一层一层 | 高度 $h$ = 部分和层级 $\max\_k\lvert S\_k \rvert$，$S\_k=\sum\_{i<k}w\_i$ |
 | (3) 竖着看高度一致 | 层 $h$ = 所有最高浮出恰为 $h$ 的闭合词 |
 | (4) 横着看是一层东西 | 层的成员 = 该高度上的嵌套片段全体 |
 | (5) 既然是集合 | 层内片段由**局域补偿移动**（`Z1` 定理 1）连通 |

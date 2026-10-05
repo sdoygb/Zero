@@ -7,7 +7,6 @@
 **核验**：[`R48_check.py`](R48_check.py)。
 
 $$
-
 \begin{aligned}
 &\textbf{支持锥（精确锥）在原模型里一直是精确的：}\ |x|\le t\ \text{逐格成立（}B\ \text{无关，已核验零违反）。}\\
 &\text{缺的不是锥，而是}\textbf{锥边的可见性}\ \varepsilon(B):=\lim_{t}\tfrac1t\log\rho_t(t)\ \text{（}t\ \text{时刻恰在锥边上的密度）。}\\

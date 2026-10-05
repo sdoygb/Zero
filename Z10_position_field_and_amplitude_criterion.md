@@ -19,7 +19,9 @@ $$
 
 1. **站点图有原生候选**：[`D214`](D_arc/D214_local_zero_sum_transport.md) §2——"$L$ 个词位构成一个**环图** $C\_L$"，且它自己就写明"把这张图解释成物理局域图**仍是额外识别**"（＝I5）。**这不新增输入。**
 2. **位置型原生场存在**：**归零（切割）概率**
-   $$P_i=\frac{\binom{i}{i/2}\binom{L-i}{(L-i)/2}}{\binom{L}{L/2}}$$
+$$
+P_i=\frac{\binom{i}{i/2}\binom{L-i}{(L-i)/2}}{\binom{L}{L/2}}
+$$
    它有**精确闭式**（本文与暴力枚举逐位吻合，$L=4\dots14$ 偏差**精确 $0$**），且**逃出 [`G54`](G54_quantitative_profile_age_measure.md) 引理 79**——因为它是**位置条件化**的统计量，不是整词量。**这正是 [`Z9`](Z9_pi_filter_and_lifetime_fork.md) 年龄筛留下的那道缝。**
 3. **宇称是被迫的**：$P\_i=0$ **精确**对一切奇数 $i$ ⟹ 有效图只能取**宇称倍增环**——**独立复现了 [`G59`](G59_I7_settled_native_cone_and_its_residue.md) §3.2 的宇称倍增**（也与 [`G33`](G33_macro_master_equation_and_mz_kernel.md) 的年龄奇偶 $\mathbb Z\_2$ 同构）。
 4. **（已更正，见 §3 横幅与 [`Z11`](Z11_correction_k_is_fixed_and_age_is_not_site.md)）它死在 $k=N$ 上**：固定 $k$ 时它是**模范场**（字典偏差二阶收敛，$k=4$：$2.2\text{e-}3\to5.6\text{e-}4\to1.4\text{e-}4\to3.6\text{e-}5$）；一旦取 $k=N$（＝[`G46`](G46_k_is_the_lifetime.md) 的 $k=L$），偏差与对比度**爆炸**（$1.3\to4.2\to8.9\times10^{3}\to1.3\times10^{17}$；对比度 $10^{16}\to10^{101}$）⟹ **度规退化**。

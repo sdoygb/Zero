@@ -12,7 +12,6 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\textbf{修正后的猜想与}\ \text{D222}\ \textbf{逐条一致，无差别}：\\
 &\qquad \text{① } L2\ \text{全部毁灭}\ \checkmark;\quad

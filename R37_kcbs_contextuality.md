@@ -7,7 +7,6 @@
 **核验**：[`R37_check.py`](R37_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{KCBS：}C^3\text{ 中 5 条射线，相邻正交（}v_i\perp v_{i+1}\text{），}A:=\sum_i|v_i\rangle\langle v_i|,\ S(\rho)=\sum_i\text{Tr}(\rho P_i)。\\
 &\text{非语境界 }2;\ \text{量子最大 }\sqrt5=2.2360679。\\
@@ -54,10 +53,8 @@ $$
 其中 $\lambda(\rho)$、$\mu(A)$ 各自降序。探针用 3000 个随机态与随机取向核对：**无一例超过该闭式**（超出量 `0.0`）$\Rightarrow$ 闭式正确、且它确实是上确界。
 
 $$
-
 \text{判据：}\ S_{\max}(\rho)>2\iff\text{语境};\qquad
 \mu(A)=(\sqrt5,\ 1.3819660,\ 1.3819660)\ (\text{和}=5)。
-
 \qquad\text{(R37-2)}
 $$
 
@@ -74,10 +71,8 @@ $$
 | （对照）完全混合 | $(1/3,1/3,1/3)$ | 1.6667 | 否 |
 
 $$
-
 \text{阈值：族 }(\lambda,\tfrac{1-\lambda}2,\tfrac{1-\lambda}2)\text{ 上 }\lambda^*=\frac{2-\mu_2}{\mu_1-\mu_2}=0.7236;
 \quad\text{原生 }\lambda_1=0.7407\ \Rightarrow\ \textbf{余量 }+0.0171。
-
 \qquad\text{(R37-3)}
 $$
 
@@ -95,9 +90,7 @@ $$
 | 结果 | `S≤2`（Bell 局域） | **`S_max=2.0146>2`（语境）** |
 
 $$
-
 \text{合起来：Zero 的单体统计}\textbf{是量子（语境）}\text{的；多体（Bell）层面}\textbf{尚无场地}。
-
 \qquad\text{(R37-4)}
 $$
 
@@ -114,9 +107,7 @@ $$
 | 3 | **谱的来源** | 用的是**文档例**（`G72`/`G29` 的推前权重），不是从 `π` 显式算出的那一个；若真实谱更接近均匀（`λ₁<0.7236`），结论**翻转** |
 
 $$
-
 \text{第 3 条是可证伪入口：算出真实谱 }\lambda_1\text{，与 }0.7236\text{ 比大小即可——}\textbf{二值结论}。
-
 \qquad\text{(R37-5)}
 $$
 
@@ -131,9 +122,7 @@ $$
 5. 没有由单体语境性推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：}\textbf{Zero 的单体统计是语境的（量子）}\text{——第一个硬证据，条件于文档谱与 3 维归约。}
-
 $$
 
 ---

@@ -7,10 +7,9 @@
 **核验**：[`R40_check.py`](R40_check.py)。
 
 $$
-
 \begin{aligned}
-&\textbf{实现事实}：\text{zero_sum_cycle_evolution.py}\ \text{的播种输入是}\ \text{seed_word}\ (\text{一个}\textbf{词}),\\
-&\qquad\text{并经 }\text{canonical_cycle}\ \text{映到}\textbf{旋转类}\ (\text{L257--265})——\textbf{形状层面},\ \text{非位置层面}。\\
+&\textbf{实现事实}：\text{zero\_sum\_cycle\_evolution.py}\ \text{的播种输入是}\ \text{seed\_word}\ (\text{一个}\textbf{词}),\\
+&\qquad\text{并经 }\text{canonical\_cycle}\ \text{映到}\textbf{旋转类}\ (\text{L257--265})——\textbf{形状层面},\ \text{非位置层面}。\\
 &\textbf{等变性判据}：\text{若整个循环对环图自同构（旋转）等变、且记录对旋转不变，}\\
 &\qquad\text{则位点信息}\textbf{无法}\text{注入记录}。\\
 &\textbf{结果}：6\ \text{组}\ (m,L)\ \text{全部}\ “\text{旋转下记录相同}=\text{True}”\ \wedge\ I(\text{位点};\text{记录})=0。\\
@@ -60,9 +59,7 @@ cohorts[mode_index[seed]][0] = 1.0                              # L265
 | 6, 6 | 1 | 1 | ✅ | 0 |
 
 $$
-
 \text{只要播种规则由图结构定义（词／类），}\textbf{位点信息在任何环节都进不了记录}。
-
 \qquad\text{(R40-1)}
 $$
 
@@ -71,9 +68,7 @@ $$
 ## §2 裁决与后果
 
 $$
-
 \text{(R39 §3) 的残余条件}\textbf{不成立}\ \Longrightarrow\ \text{失明保持}\ \Longrightarrow\ \text{路线 B′ 有效，A′ 不必付}。
-
 \qquad\text{(R40-2)}
 $$
 
@@ -106,9 +101,7 @@ $$
 4. 没有由纠缠推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：播种只用形状不用位置；失明从记录层一路保持到播种层。}
-
 $$
 
 ---

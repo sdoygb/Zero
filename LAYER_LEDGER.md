@@ -11,7 +11,6 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\textbf{我们这个物理世界是 L2（演化层）的物理世界。}\\
 &\therefore\ \text{任何定理只写成}\ P(v)\ \text{都是}\textbf{未完成}的;\ \text{必须写}\ P_\ell(v),\ \text{并回答一个问题：}\\
@@ -92,7 +91,6 @@ $$
 **更正后的正确表述**：
 
 $$
-
 \begin{aligned}
 &\text{在 }\textbf{L0}\ \text{上，NN 的前提④不成立} \Longrightarrow \text{NN 对}\ \Gamma_L\ \text{这个}\textbf{组合对象}\text{不适用。}\\
 &\text{但 NN 要裁决的是 }\textbf{L2}\ \text{的费米扇区};\ \text{而 L2 的平移不变性来自}\ \textbf{L2}\ \text{的格点结构，}\\

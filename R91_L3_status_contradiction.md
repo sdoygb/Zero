@@ -45,7 +45,7 @@ $$
 | `E5` 分项 | 五层读法（`R50`） | 四层读法（`R54`/`R58`） | 关键证据 |
 |:--|:--|:--|:--|
 | 粗粒化 $\pi$ | **$\mathcal R$ 具名输入** | **L1′ 导出** | `R54` §2：$\pi$ = 闭合词嵌套高度层级（密度极大点划界）；**`R53_zero_to_quantum.py` 里没有任何 $\gamma/\beta\varepsilon$ 参数**——纯计数 |
-| 态 $\omega$ | $\mathcal R$（推前权重） | L1′（下投影） | `R58` §2：$\omega(\sigma)\propto W(\sigma)e^{-\beta\varepsilon\|s\|}$ ⇒ **带挂起常数** |
+| 态 $\omega$ | $\mathcal R$（推前权重） | L1′（下投影） | `R58` §2：$\omega(\sigma)\propto W(\sigma)e^{-\beta\varepsilon\\lvert s\ \rvert}$ ⇒ **带挂起常数** |
 | 模温读数 $\beta\varepsilon$／$\gamma$ | $\mathcal R$ | **L2**（层塔温度） | `R57` §4#1：$\gamma$ 未从原生量导出；`R58` §6#1 同 |
 | 局域读回／站点识别 | $\mathcal R$ | **L1′（仍为具名输入）** | `R39`／`R40`（$I(\text{位点};\text{记录})=0$、播种不注入位点） |
 
@@ -60,7 +60,7 @@ $$
 | 构造 | 文档 | 测度 | 是否需要温度 |
 |:--|:--|:--|:--|
 | **嵌套块**（密度极大点划界） | `R53`／`R54` | 块权重 = 层密度的**纯计数**（$[9232,2518,880,208,30,2]$） | **不需要**（脚本里无 $\gamma$） |
-| **前缀壳层**（初始段 ＋ 层高代价） | `R57`／`R58`／`R74` | $\omega\propto W(\sigma)e^{-\beta\varepsilon\|s\|}$ | **需要**（门槛 $\gamma^*=1.105384$，代表值 $\gamma=1.13$） |
+| **前缀壳层**（初始段 ＋ 层高代价） | `R57`／`R58`／`R74` | $\omega\propto W(\sigma)e^{-\beta\varepsilon\\lvert s\ \rvert}$ | **需要**（门槛 $\gamma^*=1.105384$，代表值 $\gamma=1.13$） |
 
 $$
 \Longrightarrow\ \text{"撤 \mathcal R"去掉的是}\ \textbf{粗粒化映射这个输入};\ \text{而}\ \text{R57}\text{/}\text{R58}\ \text{那条链}\ \textbf{换来了一个新的挂起常数}\ \beta\varepsilon。

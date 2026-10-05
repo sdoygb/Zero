@@ -6,7 +6,6 @@
 **探针**：[`R80_beta_lock.py`](R80_beta_lock.py) → [`R80_beta_lock_results.json`](R80_beta_lock_results.json)。
 
 $$
-
 \begin{aligned}
 &\textbf{裁决：}\ T^{ab}\ \text{的引入}\ \textbf{没有}\ \text{把}\ \beta\varepsilon\ \text{钉死在}\ \tfrac43。\\
 &\qquad\text{在各向同性方程}\ a(\beta\varepsilon)=b(\beta\varepsilon)\ \text{下，解是}\\
@@ -99,7 +98,9 @@ $$
 |:--|--:|--:|--:|--:|--:|--:|
 | $q$ | 0.3991 | 0.3950 | 0.3922 | 0.3900 | 0.3884 | 0.3860 |
 
-$$q\approx0.39<\tfrac35\ \Longrightarrow\ \text{既不语境，也不在维数窗口}$$
+$$
+q\approx0.39<\tfrac35\ \Longrightarrow\ \text{既不语境，也不在维数窗口}
+$$
 
 $$
 \Longrightarrow\ \textbf{第二处 R44 型 no-go}:\ \text{物质各向同性与维数峰不能共用同一个温度}
@@ -125,7 +126,9 @@ $$
 \text{std 分量}=b-a\ \Longrightarrow\ \text{各向同性}\iff a=b
 $$
 
-$$\Longrightarrow\ \text{各向同性}\iff \frac{D-1}{D-2}=1\ \text{（无解）}$$
+$$
+\Longrightarrow\ \text{各向同性}\iff \frac{D-1}{D-2}=1\ \text{（无解）}
+$$
 
 **所以"度数相等"与"各向同性"不相容** —— 除了用另一个读法：
 

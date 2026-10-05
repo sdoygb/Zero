@@ -7,7 +7,6 @@
 **核验**：[`R38_check.py`](R38_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{按 }Z15\text{ 的 Jordan--Wigner：}c_j=({\textstyle\prod_{k<j}}\sigma_k^z)\,\sigma_j^-。\\
 &\text{取单粒子扇区（共同起因＝"存在一个费米子"＝共享的闭合记录）：}\\
@@ -42,9 +41,7 @@ $$
 | **量子纠缠** | ✅ 有  | ❌ **未被记录**             | 叠加 ⇒ `S=2\sqrt2` |
 
 $$
-
 \text{纠缠}=\text{共同起因}\ \wedge\ \text{（至少一个）历史层未记录的自由度}。
-
 \qquad\text{(R38-1)}
 $$
 
@@ -62,9 +59,7 @@ $$
 | **本文** | **路线 B′**：两个未记录自由度（两位点自旋） | **不需新相位即可纠缠** ✅ |
 
 $$
-
 \text{(R38-1) 有两条实现路径：}\textbf{A′ 给关系加相位}\text{（}`EDGE-CONNECTION`\text{）或}\textbf{ B′ 多一个未记录自由度}\text{（格点）。}
-
 \qquad\text{(R38-2)}
 $$
 
@@ -80,9 +75,7 @@ $$
 6. 没有由纠缠推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{下一个决定性问题：Zero 的历史层对"位点"究竟是失明还是记录？——二值，且可用现成工具判。}
-
 \qquad\text{(R38-3)}
 $$
 

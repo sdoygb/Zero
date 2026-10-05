@@ -7,7 +7,6 @@
 **依赖**：[`R90`](R90_layer_distribution.md) §6、[`R95`](R95_layer_table_and_discipline.md)（层表）、[`R97`](R97_sublayer_structure.md)（L1 三档）、[`G27`](G27_purification_attempt.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`R59`](R59_conjecture_inventory.md) K8、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R37`](R37_kcbs_contextuality.md)、[`R42`](R42_explicit_pi_rotation_class.md)、[`R86`](R86_reseed_class_verdict.md) F1。
 
 $$
-
 \begin{aligned}
 &\textbf{结论：}\ \text{L1}\ \textbf{不缺相位群}——\text{相位群}\ \mu_n=\{\omega^k\}\ (\omega=e^{2\pi i/L})\ \text{由}\ \textbf{L0 的循环次序}供出，\ -1\in\mu_n\ \text{与双覆盖相容};\\
 &\qquad\text{L1}\ \text{缺的是}\ \textbf{相对相位的登记规则}（哪个移位量入账）。\ \text{缺口因此从"缺相位"精确化为"缺索引"}。\\

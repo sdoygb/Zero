@@ -6,7 +6,6 @@
 **探针**：[`R82_conformal_freedom.py`](R82_conformal_freedom.py)。
 
 $$
-
 \begin{aligned}
 &\textbf{重新命名：}\ \text{卡点不是"构造不出 }g_{ab}\text{"，而是"}\textbf{共形因子 }\Omega^2(x)\ \textbf{没有来源}"。\\
 &\qquad\text{框架给到的是}\ \textbf{共形类}\ [g];\ \text{缺的是单项标量}\ \Omega^2(x)。\\
@@ -87,7 +86,9 @@ $$
 \ \text{可达集合／因果区间}\ \textbf{读不出}\ \Omega^2\
 $$
 
-$$\Longrightarrow\ \text{这就是卡点的数学根源：只给光锥}\ \Longrightarrow\ \text{相差一个}\ \Omega^2(x)$$
+$$
+\Longrightarrow\ \text{这就是卡点的数学根源：只给光锥}\ \Longrightarrow\ \text{相差一个}\ \Omega^2(x)
+$$
 
 ---
 

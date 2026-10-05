@@ -7,27 +7,22 @@
 **v0.5 定位**：D254 把读回时钟、单位 lapse、零 shift 与连续 Dirichlet 张量分开登记，D255 又把离散到连续缺口缩到单元几何与细化。本文继续做两件事：把时钟问题拆成物理时钟、单位法向归一化与零 shift 三项；并证明若改用内禀边长单纯复形，顶点嵌入与独立坐标体积可以消去，但复形、边长与细化规则仍必须给出。细化到同一连续 $Q$ 与 $h$ 仍需要形状正则、相容与稳定条件。
 
 $$
-
 \text{读回标量}
 \not\Longrightarrow
 \text{物理时钟};
 \qquad
 \text{时钟、单位法向、零 shift 是三项独立输入}.
-
 $$
 
 $$
-
 (\mathcal K,l_e)
 \Longrightarrow_{\rm cond}
 (G,Q,h);
 \qquad
 \text{顶点嵌入不再是独立输入}.
-
 $$
 
 $$
-
 \text{任意细化}
 \not\Longrightarrow
 \text{同一 }(Q,h);
@@ -35,7 +30,6 @@ $$
 \text{形状正则、相容、稳定细化}
 \Longrightarrow_{\rm cond}
 (Q_h,h_h)\to(Q,h).
-
 $$
 
 本文登记恢复层结构 `R-Z-CLOCK-CALIBRATION-SPLIT`、`R-Z-GAUSSIAN-NORMAL-LOCAL-FRAME`、`R-Z-CMC-CLOCK-ROUTE`、`R-Z-INTRINSIC-SIMPLEX-GEOMETRY`、`R-Z-GEOMETRIC-STIFFNESS-COMPATIBILITY`、`R-Z-SHAPE-REGULAR-REFINEMENT` 与 `R-Z-COMMON-REFINEMENT-LIMIT`。
@@ -58,30 +52,28 @@ $$
 
 1. **物理时钟**：
 
-   $$
+$$
    t=\theta ,
-   $$
+$$
 
    并要求 $d\theta$ 在条件 Lorentz 度规下为时间型；
 2. **单位法向归一化**：
 
-   $$
+$$
    N=1 ;
-   $$
+$$
 
 3. **零 shift 或叶片正交**：
 
-   $$
+$$
    \beta=0 .
-   $$
+$$
 
 三者语义不同。$t=\theta$ 给时间排序候选，$N=1$ 给法向曲线的单位参数，$\beta=0$ 给叶片与法向正交。任意一项都不能由另外两项自动给出。
 
 $$
-
 (t=\theta,\ N=1,\ \beta=0)
 \text{ 是三项显式选择，不是单个“读回时钟”条件。}
-
 $$
 
 这登记为 `R-Z-CLOCK-CALIBRATION-SPLIT`。
@@ -133,11 +125,9 @@ $$
 当 $N=1$ 时 $a\_b=0$，所以法向曲线是单位测地线，$t$ 是这些曲线上的固有时。
 
 $$
-
 N=1
 \Longrightarrow_{\rm cond}
 \text{法向曲线是单位测地线，}t\text{ 为法向固有时}.
-
 $$
 
 这只是给定叶状后的局部几何含义，不说明哪条读回标量应被选为物理时钟。
@@ -163,9 +153,7 @@ $$
 则 $J(1/\kappa)=0$。在这一点之后，同一个 $t,x^i$ 不能继续作为单值坐标。
 
 $$
-
 \text{单位正交叶状是局部条件结构，不自动给全局同步坐标。}
-
 $$
 
 这登记为 `R-Z-GAUSSIAN-NORMAL-LOCAL-FRAME`。全局 caustic 与同步失败继续由 `R-Z-CLOCK-GAUGE-SELECTION-GAP` 承担。
@@ -198,11 +186,9 @@ $$
 若 $H$ 有临界点或水平集多次相交，$H$ 不能作为单值全局时钟。
 
 $$
-
 \text{CMC 时钟}
 =
 \text{特定几何条件下的候选，不是由 }\text{Zero 的\text{\text{载体–态}–支持三层}}\text{ 自动选出的时间。}
-
 $$
 
 这登记为 `R-Z-CMC-CLOCK-ROUTE`。
@@ -234,7 +220,6 @@ $$
 局部内禀度规的 Gram 矩阵为
 
 $$
-
 G_{ij}
 =
 \frac12
@@ -243,7 +228,6 @@ l_{0i}^2+l_{0j}^2-l_{ij}^2
 \right),
 \qquad
 1\le i,j\le3 .
-
 $$
 
 因此 $G$ 只依赖六条边长。若全部面满足三角形不等式，且
@@ -255,11 +239,9 @@ $$
 则局部单纯形非退化。
 
 $$
-
 \text{边长与单纯形不等式}
 \Longrightarrow_{\rm cond}
 \text{局部 Gram 度规 }G.
-
 $$
 
 这里不需要把 $x\_a$ 嵌入外部空间；$x\_a$ 只用于定义局部仿射坐标。
@@ -293,11 +275,9 @@ $$
 得到
 
 $$
-
 Q
 =
 \sqrt{\det G}\,G^{-1}.
-
 $$
 
 反向验证：
@@ -320,11 +300,9 @@ $$
 所以
 
 $$
-
 (\mathcal K,l_e)
 \Longrightarrow_{\rm cond}
 (G,Q,h)
-
 $$
 
 在三维非退化单纯形上成立。
@@ -370,11 +348,9 @@ $$
 比较两项，
 
 $$
-
 A_\sigma
 =
 \frac{\sqrt{\det G}}{6}G^{-1}.
-
 $$
 
 若把 $Q$ 定义为相对参考坐标体积的 Dirichlet 张量，则
@@ -390,21 +366,17 @@ $$
 这与第 6 步一致。
 
 $$
-
 \text{内禀边长的标准 P1 刚度自动给收敛所需的几何权重}.
-
 $$
 
 交换权重 $K\_{ab}$ 若要替代 P1 刚度，必须至少满足
 
 $$
-
 \sum_{a<b}
 K_{ab}
 e_{ab}\otimes e_{ab}
 =
 \frac{\sqrt{\det G}}{6}G^{-1}.
-
 $$
 
 这登记为 `R-Z-GEOMETRIC-STIFFNESS-COMPATIBILITY`。若该条件失败，D255 的装配公式仍可给一个条件二次型，但它不是由同一内禀几何标准 P1 能量生成的，细化极限不必与 $G$ 一致。
@@ -430,11 +402,9 @@ $$
 与边长分配仍必须给出。同一个图可以属于不同复形；同一组顶点关系可以配不同边长。因此
 
 $$
-
 \text{内禀路线}
 \not\Longrightarrow
 \text{复形与边长来源}.
-
 $$
 
 `R-Z-CELL-COMPLEX-GEOMETRY-GAP` 因而被改写为复形、边长与单纯形不等式来源缺口，而不是顶点嵌入缺口。
@@ -468,11 +438,9 @@ $$
 在选定的分布或局部能量拓扑中成立。
 
 $$
-
 \text{形状正则、相容、稳定细化}
 \Longrightarrow_{\rm cond}
 Q_h\to Q.
-
 $$
 
 这登记为 `R-Z-SHAPE-REGULAR-REFINEMENT`。
@@ -490,12 +458,10 @@ $$
 若 $Q\_h\to Q$ 且 $Q$ 在目标区域一致正定，则矩阵求逆与行列式连续，所以
 
 $$
-
 Q_h\to Q
 \Longrightarrow
 h_h\to
 (\det Q)Q^{-1}.
-
 $$
 
 因此共同连续 $Q$ 自动给共同连续 $h$。
@@ -505,9 +471,7 @@ $$
 注意：共同极限不是由面胶合自动得到的，而是由相容、形状正则与稳定性共同保证的。
 
 $$
-
 \text{面胶合只给逐单元拼接条件；共同连续极限还需细化收敛条件。}
-
 $$
 
 **第 11 步｜固定边权在细化下不会自动有极限。**
@@ -553,11 +517,9 @@ Q_a=1 .
 $$
 
 $$
-
 \text{固定边权 }K
 \not\Longrightarrow
 \text{固定连续 }Q.
-
 $$
 
 所以 D255 中把 $K\_{ab}$ 视为固定输入只适合固定单元几何的装配公式；一旦细化，必须把 $K\_{ab}$ 替换为内禀 P1 刚度或将 $K\_{ab}$ 按局部度量重标定。
@@ -619,9 +581,7 @@ $$
 这些结构沿用 `R-Z-CLOCK-GAUGE-SELECTION-GAP`、`R-Z-CELL-COMPLEX-GEOMETRY-GAP` 与 `R-Z-REFINEMENT-TENSOR-CONSISTENCY-GAP`，不修改 `Zero 的载体–态–支持三层`，也不新增 `（旧理论新增条款）`。
 
 $$
-
 \text{顶点嵌入可被内禀边长替代；物理时钟、复形与细化来源仍未被上游替代。}
-
 $$
 
 ---
@@ -643,7 +603,5 @@ $$
 | Einstein 动力学 | 选择物理解与演化 | 未闭合 |
 
 $$
-
 \text{当前把“顶点嵌入”从输入表移到条件构造；但没有把复形、边长或细化来源移出输入表。}
-
 $$

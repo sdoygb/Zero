@@ -156,7 +156,6 @@ c_{a,h}(x)
 (\rho_h*\mu_a)(x)
 =
 \sum_{s\in\mathcal S_a}w_s\,\rho_h(x-x_s)\,c_{a,s}.
-
 \qquad\text{(R7-D6)}
 $$
 
@@ -169,7 +168,6 @@ $$
 \rho_h*
 \left(\sum_s w_s c_{a,s}\delta_{x_s}\right)
 \in C^\infty(\mathbb T^d).
-
 \qquad\text{(R7-D7)}
 $$
 
@@ -305,40 +303,40 @@ $$
 
 1. **纯 mollification 项**：
 
-   $$
+$$
    \|\rho_h*c-c\|_\infty\le C h^2,
    \qquad
    \|\nabla(\rho_h*c-c)\|_\infty\le C h,
-   $$
+$$
 
-   $$
+$$
    \|D^2(\rho_h*c-c)\|_\infty\le C h^\alpha.
-   $$
+$$
 
 2. **离散求积项**：对每个多重指标 $|\beta|\le2$，
 
-   $$
+$$
    \|D^\beta(\rho_h*\mu_a)-D^\beta(\rho_h*c\,dx)\|_\infty
    \le
    C\,\omega_a\,h^{-d-|\beta|-2}.
    \qquad\text{(R7-D15)}
-   $$
+$$
 
 3. 因此
 
-   $$
+$$
    \|c_{a,h}-c\|_\infty
    \le
    C\left(h^2+\omega_a h^{-d-2}\right),
    \qquad\text{(R7-D16)}
-   $$
+$$
 
-   $$
+$$
    \|D^2(c_{a,h}-c)\|_\infty
    \le
    C\left(h^\alpha+\omega_a h^{-d-4}\right).
    \qquad\text{(R7-D17)}
-   $$
+$$
 
 **证明.** 第 1 条是偶核 mollification 的标准 Taylor 估计。第 2 条把 GDL 用在
 
@@ -369,30 +367,30 @@ $$
 
 1. H3 需要的离散一阶控制要求
 
-   $$
+$$
    \omega_a h^{-d-2}\to0,
    \qquad
    \frac{a}{h}\to0 .
    \qquad\text{(R7-D18)}
-   $$
+$$
 
 2. H7 需要的 $C^2$ 控制要求
 
-   $$
+$$
    \omega_a h^{-d-4}\to0,
    \qquad
    h\to0 .
    \qquad\text{(R7-D19)}
-   $$
+$$
 
 3. 若 $\omega\_a\le C a^2$，则两式都由
 
-   $$
+$$
    \
    0<\theta<\frac{2}{d+4}
    \
    \qquad\text{(R7-D20)}
-   $$
+$$
 
    保证。对 $d=3$，可取任意 $\theta<2/7$。
 
@@ -438,14 +436,14 @@ $$
 
 1. $q\_{a,e}$ 一致收敛到
 
-   $$
+$$
    q(x):=\mathcal P_{d,k}(c(x));
-   $$
+$$
 
 2. 因而 H3 的强 $L^1$ 收敛成立；
 3. 若 $q^{\rm cell}\_{a,i}$ 表示方向 $i$ 的单元平均，则
 
-   $$
+$$
    \left|
    \frac{q_{a,e}}{q^{\rm cell}_{a,i}(\text{cell}(e))}-1
    \right|
@@ -455,7 +453,7 @@ $$
    C\frac{a}{h_a}
    \longrightarrow0 .
    \qquad\text{(R7-D22)}
-   $$
+$$
 
 4. 同时 $c\ge c\_{\min}>0$ 时，$q\_i$ 的上下界与 H2 的椭圆性保持。
 
@@ -664,7 +662,6 @@ $$
 \text{GDL}
 \Longrightarrow
 \text{强系数收敛与 }\eta_a\to0 .
-
 $$
 
 这比原 H3 更精确：原 H3 只写“有效系数强收敛”，没有说明旋转类如何生成边缘系数场；R7 把这一步变成显式映射 $\Theta\_{a,h}$。
@@ -678,7 +675,6 @@ $$
 \text{H7 条件闭合（修正版）：极限 }Q=\mathcal P(c)\text{ 为 }C^2\text{；}
 \quad
 \text{光滑提升在 }C^2\text{ 收敛。}
-
 $$
 
 同时：
@@ -686,7 +682,6 @@ $$
 $$
 \
 \text{原始逐单元常数 }q_{a,i}\text{ 在 }C^2\text{ 收敛的字面版本为假。}
-
 $$
 
 ### 7.3 仍未由 R7 解决的对象

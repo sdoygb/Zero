@@ -12,7 +12,6 @@ $$
 **核验**：[`R18_check.py`](R18_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{L5 的危险不是一个系数的取值问题，而是两个因子：}\\
 &\text{（目录）低维通道子空间 }V_{\rm light}\text{ 的维数；}\\
@@ -140,7 +139,7 @@ $$
 
 | 情形 | 判定 |
 |:--|:--|
-| $\dim V\_{\rm light}\ge3$ | $\ker\mathcal N|\_{V\_{\rm light}}\ne\{0\}$ 必然成立，`Z-STRESS` **不能**关闭 L5 |
+| $\dim V\_{\rm light}\ge3$ | $\ker\mathcal N\lvert \_{V\_{\rm light}}\ne\{0\}$ 必然成立，`Z-STRESS` **不能**关闭 L5 |
 | $\dim V\_{\rm light}=2$ | 需逐例检验 $(\delta V,\delta T\_{00})$ 在 $V\_{\rm light}$ 上是否单射；任一低维通道对 $T\_{00}$ 中性即失败 |
 | $\dim V\_{\rm light}\le1$ | `Z-STRESS` 单独**可能**够（是充分性检验，不是推论） |
 

@@ -105,13 +105,17 @@ $$
 
 **V1【导出·修正】**：忠实态 $\omega$ 的 **GNS 向量态就是迹形式**
 
-$$p(P)=\text{Tr}(\rho_\omega P),\qquad \rho_\omega:=W\ \text{（块对角、每块 }\tfrac{w_a}{2}I_2\text{）}$$
+$$
+p(P)=\text{Tr}(\rho_\omega P),\qquad \rho_\omega:=W\ \text{（块对角、每块 }\tfrac{w_a}{2}I_2\text{）}
+$$
 
 分量级理由是数出来的：$M\_2(\mathbb C)$ 上的正线性泛函必形如 $M\mapsto\text{Tr}(AM)$，而每个最小投影上的态值**恰好钉死一条对角元**，于是 $\mathcal A\_T$ 上所有最小投影的态值正好组成 $2(T+1)$ 个正数，正是 $\rho$ 的对角。
 
 数值核验（$T=0,1,4$）：$\omega(X)=\text{Tr}(WX)$，偏差 $\le\mathbf{4.4\times10^{-16}}$。
 
-$$\Longrightarrow\ \textbf{Born 的"形式"不需要加性、也不需要 Gleason}。$$
+$$
+\Longrightarrow\ \textbf{Born 的"形式"不需要加性、也不需要 Gleason}。
+$$
 
 ### §4.2 Gleason 在 $\mathcal A\_T$ 上**不适用**（**no-go**）
 
@@ -150,7 +154,9 @@ $$\Longrightarrow\ \textbf{Born 的"形式"不需要加性、也不需要 Gleaso
 
 $L(\mathcal A\_T)$ 上的加性只固定 $2(T+1)-1$ 个参数；迹形式的参数是 $4(T+1)^{2}-1$（$T\ge1$）。差 $=$ **盲核**
 
-$$\{\text{无迹块外 Hermitian}\},\qquad \dim=4(T+1)^{2}-2(T+1)\quad(T=1:12,\ T=7:240)$$
+$$
+\{\text{无迹块外 Hermitian}\},\qquad \dim=4(T+1)^{2}-2(T+1)\quad(T=1:12,\ T=7:240)
+$$
 
 数值核验：块外部分对**全部**块对角投影的读数**恒为 $0$**（$\lvert\text{Tr}(\text{off}\cdot E)\rvert\le10^{-10}$）。**即：$\mathcal A\_T$ 的投影格看不见块间相干。**
 

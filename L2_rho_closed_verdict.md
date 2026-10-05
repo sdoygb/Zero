@@ -12,7 +12,6 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\textbf{正面：}\ \rho(T)\ \text{的结构是精确可算的（Perron 比值）};\ \text{其}\textbf{渐近形态是线性的}:\ \rho(T)=c\,T+o(T)。\\
 &\textbf{否定：}\ \text{但线性且}\textbf{无常数项}\ \Longrightarrow\ \text{由 }\rho\text{ 反解只能得到 } T=\rho/c,\\

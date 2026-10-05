@@ -94,7 +94,7 @@ $$
 （与 [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) 的分布**逐位一致**。）
 
 $$
-\ \text{旋转类规模非均匀} \Longrightarrow c\not\equiv1 \Longrightarrow \textbf{几何};\ \text{而它是 Z3 **自己**的写入标签——不是外加结构}。\
+\ \text{旋转类规模非均匀} \Longrightarrow c\not\equiv1 \Longrightarrow \textbf{几何};\ \text{而它是 Z3 \textbf{自己}的写入标签——不是外加结构}。\
 $$
 
 **这一步把 [`Z8`](Z8_native_scale_field_candidate.md) §4 的"$\pi$"从自由输入钉成了具体标签**：

@@ -7,7 +7,6 @@
 **核验**：[`R24_check.py`](R24_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{临时输入 }\text{TEMP-GR}:\ \text{允许传播引力子}\Rightarrow D\ge4;\\
 &\text{最终目标 }\text{SURV4-GLOBAL}:\ \arg\max_{D\ge1}S_D=\{4\}\text{，且不使用 }D\ge4;\\
@@ -16,7 +15,6 @@ $$
 &\text{单方向缺失桥 }\text{DIM-COST-Q}:\ \text{从 Zero 导出 }q\in(3/4,4/5)\text{，不能按四维拟合};\\
 &\text{后续 }\text{R25}\text{ 把 }DIM\text{-}INTERACT\text{ 收成 }PAIR\text{-}CARRIER\text{ 候选：}\binom D2q^D\text{ 的四维窗口是 }1/2<q<3/5。
 \end{aligned}
-
 $$
 
 > **一句话**：`GR-LB` 只能暂时缩小候选集，不能参与“为什么四维生存率更高”的最终证明。当前底层可证的是一条 no-go：独立方向的乘积存活率只会偏向低维；要让四维成为全局峰，必须从 Zero 导出维度收益与相干损失的竞争窗口，或导出同效的非乘积相互作用。
@@ -51,11 +49,9 @@ $$
 因此最终目标必须写成：
 
 $$
-
 \text{SURV4-GLOBAL}:\quad
 \arg\max_{D\in\mathcal D}S_D=\{4\},
 \qquad \mathcal D=\{1,2,3,4,\ldots\},
-
 \qquad\text{(R24-2)}
 $$
 
@@ -114,13 +110,11 @@ $$
 若把它写成“四维生存率最高”，就遗漏了隐含条件 `D≥4`，这正是本轮需要纠正的口径。
 
 $$
-
 \text{PROD-SURV}+\text{GR-LB}
 \Longrightarrow
 \text{SURV4-GR-SCAFFOLD}
 \not\Longrightarrow
 \text{SURV4-GLOBAL}.
-
 \qquad\text{(R24-6)}
 $$
 
@@ -177,12 +171,10 @@ $$
 最终要证明的不是“把 $q$ 选进窗口”，而是从 Zero 的闭合统计、寿命分布或方向耦合中推出：
 
 $$
-
 \text{DIM-COST-Q}:\quad
 \frac34<q<\frac45,
 \quad
 q\text{ 的定义不使用 }D=4.
-
 \qquad\text{(R24-10)}
 $$
 
@@ -277,9 +269,7 @@ $$
 当前状态：
 
 $$
-
 \text{1、2、3、4 开放；5 只在已给 }DIM\text{-}COST\text{ 或 }DIM\text{-}INTERACT\text{ 时已证；6、7 尚未开始。}
-
 \qquad\text{(R24-14)}
 $$
 

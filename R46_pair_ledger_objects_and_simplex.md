@@ -7,16 +7,15 @@
 **核验**：[`R46_check.py`](R46_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{关键观察：}\binom k2\text{ 里的 }k\text{ 是}\textbf{对象个数}。\ \text{而 Zero 的原语对象是}\textbf{通道}：\\
 &\qquad\text{补偿移动 }T_{ex}:x\mapsto x+e_j-e_i\ \text{由}\textbf{通道对 }(i,j)\text{ 指标化}
 &\ \Longrightarrow\ \text{多重度}=\binom{|C|}2。\\
 &\textbf{导出候选}：\text{若通道集是 }D\text{-单纯形的顶点集（}|C|=D+1\text{），则}
 &\ \binom{D+1}2=\text{单纯形边数}。\\
-&\textbf{仓库自身的证据}：G29\ \text{核验三的 } \text{single_cut}:M=1+r
+&\textbf{仓库自身的证据}：G29\ \text{核验三的 } \text{single\_cut}:M=1+r
 &\ \textbf{恰为 }r\text{-单纯形顶点数}\ (r=1..7\ \text{全对})\ \checkmark\\
-&\qquad(\text{all_cuts}:M=2^r\ \text{是超立方顶点，}\textbf{非}\text{单纯形}\ ✗)\\
+&\qquad(\text{all\_cuts}:M=2^r\ \text{是超立方顶点，}\textbf{非}\text{单纯形}\ ✗)\\
 &\therefore\ \binom{D+1}2\ \textbf{可导出}\ \text{（对象＝通道＝单纯形顶点）}。\\
 &\textbf{价格}：\text{单纯形是}\textbf{欧氏}的（无签名）\Longrightarrow\text{洛伦兹签名须}\textbf{外供}\ \text{（}G59\text{ 的锥／}R33\text{ 的 T1）。}
 \end{aligned}
@@ -71,10 +70,8 @@ $$
 | 是单纯形顶点？ | ✅ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ |
 
 $$
-
-\text{single_cut}\ \text{的宏类计数}\textbf{ 逐值等于 }r\text{-单纯形的顶点数}
+\text{single\_cut}\ \text{的宏类计数}\textbf{ 逐值等于 }r\text{-单纯形的顶点数}
 \ \Longrightarrow\ \text{该模型的顶点集}\textbf{ 就是}\text{单纯形}。
-
 \qquad\text{(R46-2)}
 $$
 
@@ -85,10 +82,8 @@ $$
 ## §3 价格：签名必须外供（必须说清）
 
 $$
-
 \text{单纯形是}\textbf{欧氏}\text{的（无签名）}\ \Longrightarrow\
 \text{选}\binom{D+1}2\ \text{就把"洛伦兹签名"}\textbf{推给因果结构}。
-
 \qquad\text{(R46-3)}
 $$
 
@@ -98,9 +93,7 @@ $$
 | $\binom{D+1}2$（单纯形边） | ✅ 相容（窗口 `[0.6,2/3]`） | **须外供** ✗ | 有量子性，签名待供 |
 
 $$
-
 \textbf{二者不可兼得——除非因果结构能供出签名。}
-
 \qquad\text{(R46-4)}
 $$
 
@@ -109,9 +102,7 @@ $$
 ## §4 二值下游判据（决定性）
 
 $$
-
 \text{判据：}G59\ \text{的锥／}R33\ \text{的 T1 能否从零和输运供出洛伦兹签名？}
-
 \qquad\text{(R46-5)}
 $$
 

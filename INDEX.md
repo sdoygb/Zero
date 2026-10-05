@@ -22,6 +22,33 @@
 
 ## 0.5 五项推进、外部基准与可发表主定理接口（R0–R48）
 
+### Zero 演进与专题审计
+
+- [`LAYER_LEDGER.md`](LAYER_LEDGER.md) — 分层账本：断言逐条带层指标（L0／L1／L1′／L2／读出）
+- [`SYNTHESIS_zero_to_standard_model.md`](SYNTHESIS_zero_to_standard_model.md) — 到标准物理模型的路线图 ＋ 外部文献清单
+- [`LIT_SURVEY.md`](LIT_SURVEY.md) — 外部文献调查
+- [`E1_NN_verdict.md`](E1_NN_verdict.md) — Nielsen–Ninomiya 检验：平移不变性不成立；真实对称为反射
+- [`README.md`](README.md) — 仓库入口
+
+**L2 演化层专题（毁灭–重播种周期）**
+
+| 文件 | 内容 |
+|:--|:--|
+| [`L2_C_recursion_verdict.md`](L2_C_recursion_verdict.md) | L2 · $C(T)$ 递推：**已对齐闭合**（含闭式） |
+| [`L2_T_absolute_verdict.md`](L2_T_absolute_verdict.md) | L2 · $T$ 的绝对值：**容量封顶给出 $T=5$** |
+| [`L2_anchor_verdict.md`](L2_anchor_verdict.md) | L2 · 锚定：毁灭周期（年）的**结构闭合 ＋ 一个自由锚** |
+| [`L2_cat_vs_motzkin_verdict.md`](L2_cat_vs_motzkin_verdict.md) | L2 · Catalan 与 Motzkin：术语更正 ＋ 参考文献定位 |
+| [`L2_catalan_verdict.md`](L2_catalan_verdict.md) | L2 · $\text{co}[s]$ 的闭式：**Catalan 数**（已定），部分和公式未竟 |
+| [`L2_decoupling_verdict.md`](L2_decoupling_verdict.md) | L2 · 「相位解耦 ⇒ 无预兆、瞬间毁灭」的核查 |
+| [`L2_imprint_verdict.md`](L2_imprint_verdict.md) | L2 · 路线 A：毁灭事件的可观测印记 —— **印记存在，且 T 可反解** |
+| [`L2_layer_retention_corrected.md`](L2_layer_retention_corrected.md) | L2 · 层保留猜想（修正版）：**与 `D222` 完全一致** |
+| [`L2_layer_retention_verdict.md`](L2_layer_retention_verdict.md) | L2 · 层保留猜想核查：**L0 完整保留 ✓，L1 保留一层 vs 两层是可区分的** |
+| [`L2_period_abs_verdict.md`](L2_period_abs_verdict.md) | L2 · 毁灭周期 $T$ 的**绝对取值**试算：容量封顶给出 $T\in\{5,6\}$ |
+| [`L2_period_verdict.md`](L2_period_verdict.md) | L2 · 毁灭周期 $T$：可辨识的不动点（**不是自由参数，但也不是一个数**） |
+| [`L2_rho_closed_verdict.md`](L2_rho_closed_verdict.md) | L2 · $\rho(T)$ 的闭式与「反解唯一整数 $T$」的判定：**闭式存在，但反解不唯一** |
+| [`L2_transfer_verdict.md`](L2_transfer_verdict.md) | L2 · 补全状态后的转移矩阵：$\lambda(T)$ 的精确代数方程 |
+| [`L2_years_verdict.md`](L2_years_verdict.md) | L2 · 毁灭周期「多少年」：**可算部分已闭合，年数需要一个锚** |
+
 **主线接口**：[`R0_publication_theorem.md`](R0_publication_theorem.md) 把“条件恢复四维 GR”写成可逐项证明、可被审稿人否定的主定理，固定五条证明义务 O1–O5，并列出验收门槛 M0–M4 与反过度主张句。以下为该分支的文档与核验脚本（状态以 `STATUS.md` 为准）。
 
 `R8` 登记用 Zero 基础补 Jacobson 2016 前提的条件桥；`R9` 对外部强路线排序，`R10` 登记 Cao-Carroll 2018 的弱场条件桥；`R11` 统一 `cosmos-construct`／`modular-equilibrium` 与早期 `G*`／`Z*` 的历史 GR 推导；`R12` 对 L5／L1／Cao-Carroll RC 三个缺口做定向判定，`R13` 集中攻坚该 L1 正路由并证伪其原样强预解形式、修正 G79 截断读数，`R14` 把 `Z-CRIT-DER` 重组装为三块已证＋Z-CAR 候选＋单费米点残留识别，`R15` 把 Z-CAR 更正为旋转群双覆盖并给出 `Z-STRESS` 归一化常数 ≈π²/3，`R16` 审计归约树并判定开放具名簇停在 8、选择型输入稳定为 5，`R17` 把 Z14–Z16 移出 L1 临界路径并切回 L5 前置门，`R18` 把 L5 收成低维通道维数与归一化约束数的双因子判据，并证明 `Z-STRESS` 的约束数不足时 L5 必败，`R19` 重排 L1 上游并证明旋转双覆盖不能提供洛伦兹 boost，`R20` 在自由费米子支线上判定 A1 形状成立，`R21` 校正其常数额为 2π/v_F（本模型 v_F=2，故为 π），`R22` 分离主符号层与 R20 估计器，排除 0.9255 的有限尺寸解释，`R23` 把后代优势选维写成乘积 no-go 与条件模型，补上自由寿命归一化 no-go，并由演化层精确组合计数与 GR 的 D≥4 筛选证明 GR 兼容演化层扇区中四维条件存活率唯一最大；该结论只关于演化层，绝对后代数／长期占比另需 EVO-NORM，DIM-SECTOR 仍未导出，O3 未关闭。`R24` 纠正路线优先级：GR-LB 只是 TEMP-GR，最终要撤掉；SURV4-GLOBAL 未证，下一步是从 Zero 补 DIM-COST-Q 或 DIM-INTERACT。`R25` 把后一条收窄为 `PAIR-CARRIER`：单方向原生账本 no-go，成对窗口为 `1/2<q<3/5`，`L=4` 的 `q=5/9` 条件证成全局唯一 `D=4`，但 `PAIR-CARRIER-DER` 仍开放。它们只作外部基准、条件候选与历史／方向审计，不替代 O1–O5，也不把工程进度与外部论文或旧理论进度相加。
@@ -163,7 +190,7 @@
 | 前缀 | 来源 | 归属 | `lh/` 中的数量 |
 |:--|:--|:--|--:|
 | **`G*`** | 本会话独立推导（自底层条款（Z0 条款 ＋ Z1–Z5 定理）到 GR） | **零和宇宙** | 90 篇 + 88 个核验脚本 |
-| **`D2xx`** | 零层弧（D210–D259） | **零和宇宙**（其中 8 篇含非原生桥接） | 0 篇 |
+| **`D2xx`** | 零层弧（D210–D259） | **零和宇宙**（其中 8 篇含非原生桥接） | 50 篇 |
 | **`zero_sum_*`** | 零和宇宙的仿真验证笔记与程序 | **零和宇宙** | 11 篇 + 10 个脚本 |
 | **`Z*`** | **基础层**：单一公理「零不断乱动」＋ 取代 A1–A5（历史命名）＋ Zero 结构扩展 | **零和宇宙** | 18 篇 + 18 个核验脚本 |
 | `D1–D209` | 混合语料 | **不属零和宇宙** | **0**（未拷入） |
@@ -460,7 +487,7 @@ python3 ledger_sync.py --all      # 忽略缓存，全部重跑
 
 ---
 
-## 6 `D2xx` 零层弧（0 篇）
+## 6 `D2xx` 零层弧（50 篇）
 
 编号**保持不变**（= 母项目中的同一编号）。★ 标记的 8 篇含**非原生桥接结构**（见 [`G26`](G26_scope_and_non_native_structures.md)／[`G27`](G27_purification_attempt.md)）。
 
@@ -468,6 +495,56 @@ python3 ledger_sync.py --all      # 忽略缓存，全部重跑
 
 | 文档 | 标题 |
 |:--|:--|
+| [`D_arc/D210_zero_sum_closure_filter.md`](D_arc/D210_zero_sum_closure_filter.md) | 零和闭合筛选：无有限预算与无通道权重的谱系增长 |
+| [`D_arc/D211_global_static_closure_zero_layer.md`](D_arc/D211_global_static_closure_zero_layer.md) | 全局静态闭合零层：多重零记录、局部历史与全局读回边界 |
+| [`D_arc/D212_zero_universe_to_u_interface.md`](D_arc/D212_zero_universe_to_u_interface.md) | 周期零宇宙的载体–态–支持三层接口 |
+| [`D_arc/D213_periodic_skeleton_to_gr_direct_audit.md`](D_arc/D213_periodic_skeleton_to_gr_direct_audit.md) | 周期零宇宙骨架到 GR 的直接桥审计 |
+| [`D_arc/D214_local_zero_sum_transport.md`](D_arc/D214_local_zero_sum_transport.md) | 局域零和传输：闭环邻接上的最小补偿 |
+| [`D_arc/D215_cycle_local_semantic_u_interface.md`](D_arc/D215_cycle_local_semantic_u_interface.md) | 周期局域环的语义接口 |
+| [`D_arc/D216_history_phase_state.md`](D_arc/D216_history_phase_state.md) | 精确历史相位计数：忠实态的最小选择器 |
+| [`D_arc/D217_history_phase_asymptotic_no_go.md`](D_arc/D217_history_phase_asymptotic_no_go.md) | 历史相位态的渐近障碍：暂态非中心态回到中心 |
+| [`D_arc/D218_active_phase_occupancy_and_d_boundary_state.md`](D_arc/D218_active_phase_occupancy_and_d_boundary_state.md) | 活动相位占用与 $D$ 层边界：稳定非中心态候选 |
+| [`D_arc/D219_active_phase_seed_independence.md`](D_arc/D219_active_phase_seed_independence.md) | 活动相位结构的种子无关性：从任意闭合历史到 $(1,1,2)$ |
+| [`D_arc/D220_general_period_active_phase_spectrum.md`](D_arc/D220_general_period_active_phase_spectrum.md) | 一般周期的活动相位谱：中心二项系数与忠实态族 |
+| [`D_arc/D221_cyclic_naturality_and_primitive_phase_gap.md`](D_arc/D221_cyclic_naturality_and_primitive_phase_gap.md) | 载体代数的循环自然性：交叉积表示与原始相位障碍 |
+| [`D_arc/D222_stratified_destruction_and_local_memory.md`](D_arc/D222_stratified_destruction_and_local_memory.md) | 分层毁灭与局部记忆：活动亚层全清、历史层保留最高两层 |
+| [`D_arc/D223_age_carrier_tensor_interface.md`](D_arc/D223_age_carrier_tensor_interface.md) | 年龄载体与矩阵载体的张量接口：毁灭周期负责支持协变，矩阵因子负责载体代数／忠实态 |
+| [`D_arc/D224_minimal_m2_age_bridge_and_modular_support_independence.md`](D_arc/D224_minimal_m2_age_bridge_and_modular_support_independence.md) | 最小年龄矩阵桥：$M\_2$ 因子、D220 年龄权重与模流支持寿命分离 |
+| [`D_arc/D225_tensor_vs_direct_sum_factorization_gap.md`](D_arc/D225_tensor_vs_direct_sum_factorization_gap.md) | 张量因子与直接和替代：三层条款不选择局部耦合方式 |
+| [`D_arc/D226_uniform_matrix_coexistence_selector.md`](D_arc/D226_uniform_matrix_coexistence_selector.md) | 矩阵均匀共存原则：在张量与直接和之间选出张量载体 |
+| [`D_arc/D227_age_local_modular_witness_selector.md`](D_arc/D227_age_local_modular_witness_selector.md) | 年龄扇区局部模见证：把均匀共存改写为 GR 侧可检验选择器 |
+| [`D_arc/D228_age_local_modular_family_support_covariance.md`](D_arc/D228_age_local_modular_family_support_covariance.md) | 年龄局部模生成元族：从逐扇区见证到支持协变 |
+| [`D_arc/D229_continuous_age_support_obstruction.md`](D_arc/D229_continuous_age_support_obstruction.md) | 连续年龄支持的原子障碍：为什么不能把有限扇区直接取连续极限 |
+| [`D_arc/D230_linfinity_age_support_and_projection_complement.md`](D_arc/D230_linfinity_age_support_and_projection_complement.md) | 连续年龄支持的 $L^\infty$ 构造：投影压缩加补单位 |
+| [`D_arc/D231_modular_density_profile_gap.md`](D_arc/D231_modular_density_profile_gap.md) | 局部模密度剖面缺口：区间支持不等于几何 boost |
+| [`D_arc/D232_profile_as_matrix_age_correlation.md`](D_arc/D232_profile_as_matrix_age_correlation.md) | 模密度剖面就是矩阵相位的年龄相关性 |
+| [`D_arc/D233_sign_age_symmetry_no_go_for_profile.md`](D_arc/D233_sign_age_symmetry_no_go_for_profile.md) | 符号年龄对称性无解：现有重播种不能产生非恒定剖面 |
+| [`D_arc/D234_geometric_ball_profile_candidate.md`](D_arc/D234_geometric_ball_profile_candidate.md) | 几何球模核参照：抛物型剖面候选与未闭合的年龄映射 |
+| [`D_arc/D235_age_radial_reparametrization_no_go.md`](D_arc/D235_age_radial_reparametrization_no_go.md) | 年龄到径向映射的重参数化障碍：二次年龄剖面不是上游结论 |
+| [`D_arc/D236_source_operator_identification_embedding.md`](D_arc/D236_source_operator_identification_embedding.md) | 源算子识别的条件嵌入与不唯一性 |
+| [`D_arc/D237_contact_channel_single_profile_reduction.md`](D_arc/D237_contact_channel_single_profile_reduction.md) | 接触项与单剖面归约：中央通道、平行通道与独立通道 |
+| [`D_arc/D238_linear_sign_hazard_mechanism.md`](D_arc/D238_linear_sign_hazard_mechanism.md) | 线性符号危险率机制：抛物型年龄比例的最小条件实现 |
+| [`D_arc/D239_quadratic_sign_potential_audit.md`](D_arc/D239_quadratic_sign_potential_audit.md) | 线性危险率的二次势审计：中心临界、常曲率与年龄配对 |
+| [`D_arc/D240_additive_record_no_go.md`](D_arc/D240_additive_record_no_go.md) | 可加记录无解：静态零层为什么不能生成二次符号势 |
+| [`D_arc/D241_sign_blind_pairing_no_go.md`](D_arc/D241_sign_blind_pairing_no_go.md) | 符号盲配对无解：时间方向不等于正负符号耦合 |
+| [`D_arc/D242_finite_memory_pairing_no_go.md`](D_arc/D242_finite_memory_pairing_no_go.md) | 有限记忆配对无解：两层历史不能生成二次符号势 |
+| [`D_arc/D243_global_readback_not_interaction.md`](D_arc/D243_global_readback_not_interaction.md) | 全局读回不是相互作用：零层可见性不产生全对全耦合 |
+| [`D_arc/D244_zero_sum_matching_linearity.md`](D_arc/D244_zero_sum_matching_linearity.md) | 零和匹配线性性：闭合词配对本身不给全对全 |
+| [`D_arc/D245_fixed_pair_kernel_uniqueness.md`](D_arc/D245_fixed_pair_kernel_uniqueness.md) | 固定二体核唯一性：二次势把全对全核逼成常数 |
+| [`D_arc/D246_collective_zero_mode_rank_one.md`](D_arc/D246_collective_zero_mode_rank_one.md) | 全对全核的集体零模表示：从 $k^2$ 条边到单个 $Q^2$ |
+| [`D_arc/D247_zero_defect_stiffness_scale_audit.md`](D_arc/D247_zero_defect_stiffness_scale_audit.md) | 零缺陷刚度尺度审计：形状与数值必须分开 |
+| [`D_arc/D248_interlayer_readout_dynamics.md`](D_arc/D248_interlayer_readout_dynamics.md) | 层间读出动力学：从历史与零层到守恒源 |
+| [`D_arc/D249_minimal_stress_lift_from_interlayer_scalar.md`](D_arc/D249_minimal_stress_lift_from_interlayer_scalar.md) | 最小应力提升：层间标量流、刚性物态与应力类别缺口 |
+| [`D_arc/D250_pure_exchange_selects_stiff_scalar_source.md`](D_arc/D250_pure_exchange_selects_stiff_scalar_source.md) | 纯层间交换选择刚性标量源：无势 Dirichlet、常量零模与 onsite 缺口 |
+| [`D_arc/D251_layer_type_complex_and_local_readout_presheaf.md`](D_arc/D251_layer_type_complex_and_local_readout_presheaf.md) | 层类型复合与局域读出预层：物理局域接口的最小底座 |
+| [`D_arc/D252_layer_time_atlas_and_global_time_potential.md`](D_arc/D252_layer_time_atlas_and_global_time_potential.md) | 分层时间图册与全局时间势：定向可行条件与 Lorentz 锥缺口 |
+| [`D_arc/D253_adm_metric_assembly_and_lapse_shift_gap.md`](D_arc/D253_adm_metric_assembly_and_lapse_shift_gap.md) | 叶状 ADM 度规组装与 lapse/shift 缺口 |
+| [`D_arc/D254_dirichlet_tensor_leaf_metric_and_clock_gauge.md`](D_arc/D254_dirichlet_tensor_leaf_metric_and_clock_gauge.md) | Dirichlet 张量到叶层度规与读回时钟规范 |
+| [`D_arc/D255_tetrahedral_dirichlet_assembly_and_gluing.md`](D_arc/D255_tetrahedral_dirichlet_assembly_and_gluing.md) | 交换权重的四面体 Dirichlet 组装与面胶合 |
+| [`D_arc/D256_clock_gauge_intrinsic_simplex_and_refinement_convergence.md`](D_arc/D256_clock_gauge_intrinsic_simplex_and_refinement_convergence.md) | 时钟规范拆分、内禀单纯几何与细化收敛条件 |
+| [`D_arc/D257_resistance_metric_fixed_point_and_locality_gap.md`](D_arc/D257_resistance_metric_fixed_point_and_locality_gap.md) | 有效电阻度量、交换权重固定点与局部性缺口 |
+| [`D_arc/D258_full_exchange_projection_and_local_isotropy_obstruction.md`](D_arc/D258_full_exchange_projection_and_local_isotropy_obstruction.md) | 全边交换投影、$K\_4$ 普遍固定点与局部各向异性障碍 |
+| [`D_arc/D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md`](D_arc/D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md) | Z 层条件字典与四维时空的汇流构造 |
 
 ---
 

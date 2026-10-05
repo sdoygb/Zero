@@ -10,7 +10,6 @@
 **独立审计**：[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`R8_L2_area_density_audit.md`](R8_L2_area_density_audit.md)。
 
 $$
-
 \begin{aligned}
 &\text{Zero 层已经能补：任意有限维忠实态的模 Hamiltonian 与精确第一定律；}\\
 &\text{2016 论文仍缺的硬前提是：强图/预解意义的几何模流极限、普适面积密度、}\\
@@ -307,9 +306,7 @@ $$
 状态与细化独立性目前没有测试；固定 $L=4$ 而只放大三维空间区域的路线也还没有做大窗口检验。因此 L2 的准确结论不是“已证明不可能”，而是：
 
 $$
-
 \text{C3 当前不被现有数据支持；若寿命与区域尺度同步细化，则有结构性障碍；否则仍是尺度识别缺口。}
-
 $$
 
 ### J3｜四维 Lorentzian 与固定体积局域化
@@ -406,7 +403,6 @@ $$
 5. 没有从 Zero 无条件导出四维 GR。
 
 $$
-
 \begin{aligned}
 &\text{当前最强状态：}\textbf{条件恢复}。\\
 &\text{决定性下一步：证明 L1，或用反例否定 2016 补法。}

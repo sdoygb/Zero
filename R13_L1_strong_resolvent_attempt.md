@@ -7,7 +7,6 @@
 **配套**：[`R13_external_limit_lemmas.md`](R13_external_limit_lemmas.md)（外部严格结果）、[`R13_refutation_attempt.md`](R13_refutation_attempt.md)（对抗审计）、[`R13_numeric_probe.py`](R13_numeric_probe.py)（数值探针）、[`R13_check.py`](R13_check.py)（独立核验）。
 
 $$
-
 \begin{aligned}
 &\text{本轮没有证明 L1。}\\
 &\text{R12 §2.3 的原样命题（未重标度的 }h_N\text{ 强预解收敛到有限 }2\pi B_B\text{）被排除；}\\
@@ -70,10 +69,8 @@ $$
 [`G75`](G75_quantum_geometry_modular_readout.md) §7 与 [`G76`](G76_area_law_in_2d.md) §5 同样把交错质量／耦合形式登记为“识别”。因此：
 
 $$
-
 \text{Z0 条款没有 CAR、反对易关系、hopping、半满占据或单费米点选择器；}
 \text{“临界自由费米链”是模型识别，不是 Zero 定理。}
-
 $$
 
 保持 Z3 字面数据不变，至少还有经典两态链、临界横场 Ising 链（$c=1/2$）、硬核玻色链等互不相容的完成方式。要把它变成定理，需要新增 `Z-CRIT-DER`（见 §4.3）。
@@ -196,9 +193,9 @@ $$
 
 1. **Eisler–Tonni–Peschel**（arXiv:1902.04474）：无限自由费米链的连续极限把模 Hamiltonian 写成
 
-   $$
+$$
    \mathcal H=2\pi l\int_0^l dx\,\frac{x}{l}\left(1-\frac{x}{l}\right)T_{00}(x),
-   $$
+$$
 
    前提是**把全部长程跳跃纳入连续极限**；只比较最近邻项会有约 $8\%$ 的中心偏差（Eisler–Peschel, arXiv:1703.08126）。这解释了本项目实测的近邻剖面偏差约 $3\%$ 与尾项约 $2.5\%$：它们是同一非局域结构的两个投影，必须合并处理。
 2. **Kato 二次型收敛定理**：闭、稠定、下半有界二次型的 Kato／Mosco 收敛直接给出强预解收敛（Kato, *Perturbation Theory*, Ch. VI；Reed–Simon I, VIII.7）。这是把“二次型收敛”升级为“模流收敛”的机器。
@@ -261,7 +258,6 @@ $$
 5. 因此 **J1 仍未关闭，条件恢复判定不变**。
 
 $$
-
 \begin{aligned}
 &\text{Current status: L1 open; conditional 1+1D program only.}\\
 &\text{The original strong-resolvent claim is excluded, not proved.}

@@ -8,7 +8,6 @@
 ## 唯一公理
 
 $$
-
 \textbf{Z0（零不断乱动）}
 \begin{cases}
 \text{① 零不停留：零（平衡／闭合态）不是静止态，它持续运动；}\\
@@ -117,6 +116,8 @@ python3 E1_NN_check.py
 
 [**CC BY-NC 4.0**](LICENSE)（Attribution-NonCommercial 4.0 International）
 
-$$\text{可自由共享与改编（需署名）};\qquad \textbf{禁止商业使用}。$$
+$$
+\text{可自由共享与改编（需署名）};\qquad \textbf{禁止商业使用}。
+$$
 
 署名请注明：**Zero 项目**，<https://github.com/sdoygb/Zero>。

@@ -46,7 +46,9 @@ $$
 ## §2 逆向保谱重整化的实现（**逆问题病态**）
 
 **结构**：粗链（$n$ 顶点）$\to$ 细链（$2n$ 顶点），插入块内电导
-$$\underbrace{g_1}_{},\ c_1,\ \underbrace{g_2}_{},\ c_2,\ \ldots,\ c_{n-1},\ \underbrace{g_n}_{}$$
+$$
+\underbrace{g_1}_{},\ c_1,\ \underbrace{g_2}_{},\ c_2,\ \ldots,\ c_{n-1},\ \underbrace{g_n}_{}
+$$
 解 $g$（**对数均值固定为 0** 做规范固定——只有比值有物理意义，[`G45`](G45_units_vs_scales_is_the_ruler_human.md)），使最低 $n-1$ 个本征值匹配。
 
 | 级 $r$ | $N$ | **失配（逆向）** | 失配（正向，对照） |

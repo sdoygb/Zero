@@ -6,7 +6,6 @@
 **核验**：[`R16_check.py`](R16_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{归约树}\textbf{不收敛于 L1}：\text{已证子命题在增加，但开放具名簇稳定在 }8。\\
 &\text{其中“哪一个”}(5)>\text{分析型}(2)+\text{常数型}(1)\ \Longrightarrow\ \text{瓶颈是 Z0③。}\\

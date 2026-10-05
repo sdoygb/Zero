@@ -8,7 +8,6 @@
 **核验**：[`R27_check.py`](R27_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{取 }m\text{ 个零和相位通道，零和局域秩为 }D=m-1。\\
 &\text{边相位 1-上链 }C^1(K_m)\text{ 的规范商满足}\\
@@ -84,9 +83,7 @@ $$
 这是 D194／D259 的秩字典，不是 R26 中所说的路线 `β: D=m`。本文的目的是检查：采用这个字典以后，是否仍能得到 R25 的 `C(D,2)`。
 
 $$
-
 \text{R27 不取消路线 }\alpha: D=m-1\text{；它改变的是“身份”计在原始边上还是规范商上。}
-
 \qquad\text{(R27-4)}
 $$
 
@@ -97,11 +94,9 @@ $$
 ### 3.1 具名输入
 
 $$
-
 \text{PHASE-1-COCHAIN}:\quad
 \text{每个零和相位通道上的闭合记录给出一个顶点相位，}
 \text{通道之间的相对相由边 1-上链 }a\in C^1(K_m)\text{ 表示。}
-
 \qquad\text{(R27-5)}
 $$
 
@@ -110,11 +105,9 @@ $$
 再取
 
 $$
-
 \text{PAIR-ID-QUOTIENT}:\quad
 \text{物理继承身份取边相位的规范商类，}
 \text{不取原始无序边 }\{i,j\}\text{ 本身。}
-
 \qquad\text{(R27-6)}
 $$
 
@@ -129,7 +122,6 @@ $$
 商空间虽仍为 `C(D,2)` 维，却没有被实际身份填充。因此 R27 后续必须使用 R28 的归约：
 
 $$
-
 \text{PHASE-IDENTITY-DER}
 =
 \text{EDGE-CONNECTION}
@@ -137,7 +129,6 @@ $$
 \text{HOLONOMY-FULL-SPAN}
 \wedge
 \text{INHERITANCE-IDENTITY}.
-
 \qquad\text{(R27-R28)}
 $$
 
@@ -198,7 +189,6 @@ $$
 则规范商满足
 
 $$
-
 \dim\frac{C^1(K_m)}{dC^0}
 =
 \binom m2-(m-1)
@@ -206,7 +196,6 @@ $$
 \binom{m-1}{2}
 =
 \binom D2.
-
 \qquad\text{(R27-12)}
 $$
 
@@ -263,9 +252,7 @@ $$
 2. 把身份计在相位规范商上，得到 `C(D,2)`，R25 的窗口保留。
 
 $$
-
 \text{R26 的字典 no-go 没有被取消；它被定位为“原始边身份”与“商类身份”的读法分叉。}
-
 \qquad\text{(R27-16)}
 $$
 
@@ -287,20 +274,16 @@ $$
 因此 R27 必须把代价来源写清：
 
 $$
-
 \text{FULL-SUPPORT-LEDGER}:\quad
 \text{一个可继承的和乐类必须在全部 }D\text{ 个独立相位方向上相干；}
 \text{每方向一次账本记录给同一因子 }q。
-
 \qquad\text{(R27-18)}
 $$
 
 若 `FULL-SUPPORT-LEDGER` 成立，则
 
 $$
-
 F_D=B\binom D2q^D
-
 \qquad\text{(R27-19)}
 $$
 
@@ -309,7 +292,6 @@ $$
 R29 对抗审计后，`FULL-SUPPORT-LEDGER` 不能再作为不透明的单一输入使用。它必须展开为
 
 $$
-
 \text{LEDGER-FACTORIZATION}
 =
 \text{DIR-SUPPORT-D}
@@ -319,7 +301,6 @@ $$
 \text{PRODUCT-LEDGER}
 \wedge
 \text{SAME-Q}.
-
 \qquad\text{(R27-18a)}
 $$
 
@@ -435,11 +416,9 @@ $$
 这里仍未证明零和约束会自动给出共同 `T` 与 `Seed`。D211 明写二者是恢复层输入；所以需要把它登记为：
 
 $$
-
 \text{WIPE-RESET-LEDGER}:\quad
 \text{演化层以共同毁灭—重播种周期为代际，}
 \text{每代比较 }F_D\text{，不再除以串行内部耗时 }\tau D。
-
 \qquad\text{(R27-28)}
 $$
 
@@ -448,9 +427,7 @@ $$
 若同时采用 `WIPE-RESET-LEDGER` 与 (R27-23)，则
 
 $$
-
 \arg\max_D\lambda_D^{\rm gen}=\{4\}.
-
 \qquad\text{(R27-29)}
 $$
 
@@ -492,7 +469,6 @@ $$
 因此新的最小条件式是
 
 $$
-
 \text{PHASE-IDENTITY-DER}
 \wedge
 \text{LEDGER-FACTORIZATION}
@@ -502,7 +478,6 @@ $$
 \text{L=4}
 \Longrightarrow
 \arg\max_D\lambda_D^{\rm gen}=\{4\}.
-
 \qquad\text{(R27-30)}
 $$
 
@@ -527,11 +502,9 @@ R27 的净收益不是“少要输入”，而是：
 8. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：R27 找到一条能汇流 }\alpha\text{ 与 }C(D,2)\text{ 的条件路线；}
 \text{在共同毁灭代际账本下，每代谱系峰也可用于代际增长率峰。}
 \text{但仍需四项原生物理桥，且绝对层占比另由 }EVO\text{-}NORM\text{ 管辖。}
-
 $$
 
 ---

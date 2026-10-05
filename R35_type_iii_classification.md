@@ -7,7 +7,6 @@
 **核验**：[`R35_check.py`](R35_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{设块权重 }w_0,\dots,w_T>0\text{，模谱}=\{\log(w_i/w_j)\}\text{，其生成的加法子群 }G\subseteq\mathbb R。\\
 &\qquad G=\{0\}\Rightarrow\text{模流（渐近）平凡};\quad
@@ -51,9 +50,7 @@ $$
 - 而可用的类型只有三种：$\{0\}$、$c\mathbb Z$、$\mathbb R$（Connes：因子的模谱闭包必为 $\mathbb R\_+$ 的闭子群）。
 
 $$
-
 \text{所以正确的问题是：}G\text{ 是 \{0\}、循环、还是稠密？——三者对应平凡、III}_\lambda\text{、III}_1。
-
 \qquad\text{(R35-1)}
 $$
 
@@ -82,10 +79,8 @@ $$
 | $2^a(a+1)$ | $0.71377$ | $0.4994$ | **III$\_1$** |
 
 $$
-
 \textbf{关键读数：}2^a(a+1)\text{ 仍是 III}_1
 \text{——只要轮廓}\textbf{不是恰好等差}\text{，指数因子不足以强制 III}_\lambda。
-
 \qquad\text{(R35-3)}
 $$
 
@@ -110,11 +105,9 @@ $$
 ## §4 新约束：几何模流反过来约束 π
 
 $$
-
 \text{ACTION-PHASE-MATCH}\ \text{的 (T1)/(T3)}
 \ \Longrightarrow\
 \pi\text{ 的渐近块轮廓}\textbf{非等差}。
-
 \qquad\text{(R35-5)}
 $$
 
@@ -153,10 +146,8 @@ $$
 7. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：极限类型是 }\pi\text{ 的函数；"恰好几何"的 }\pi\text{ 判死几何模流，一般的 }\pi\text{ 通过。}
 \text{承重点被挪回 }\pi\text{，但这次 }\pi\text{ 不再是"未导出"，而是"有约束"。}
-
 $$
 
 ---

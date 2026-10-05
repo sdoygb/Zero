@@ -105,7 +105,9 @@ $$
 | Gleason 在 **$\mathcal A\_T$ 的投影格**上不适用：$\mathcal A\_T=M\_2(\mathbb C)^{\oplus(T+1)}$ 是 **type $\mathrm I\_2$ 直和**，且 $L(M\_2)$ 的唯一正交对是 $\{P,1-P\}$ $\Longrightarrow$ 加性退化为互补加性 | ✅ |
 | G62 §4 的反例在**每个 $T$** 上都满足 $p(E)+p(1-E)=1$、$0\le p\le1$，且残差 $0.24$ $\Longrightarrow$ **非迹形式** | ✅ |
 
-$$\Longrightarrow\ \text{阈值主张}\textbf{撤回}:\ \text{"}\dim\mathcal A_T=2(T+1)\ge3\text{" 是}\textbf{对象混淆};\ \text{失效是}\textbf{类型（}\mathrm I_2\text{ 直和）问题，不随 }T\text{ 改变}。$$
+$$
+\Longrightarrow\ \text{阈值主张}\textbf{撤回}:\ \text{"}\dim\mathcal A_T=2(T+1)\ge3\text{" 是}\textbf{对象混淆};\ \text{失效是}\textbf{类型（}\mathrm I_2\text{ 直和）问题，不随 }T\text{ 改变}。
+$$
 
 $\Longrightarrow$ 正确的条件是**加性域覆盖 $\mathcal B(\mathcal H\_T)$ 的全部投影**（$T\ge1$）——那是**新增输入**，不是阈值。
 

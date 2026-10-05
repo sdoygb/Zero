@@ -7,7 +7,6 @@
 **核验**：[`R50_check.py`](R50_check.py)；探针 [`R50_layer_scan_probe.py`](R50_layer_scan_probe.py) → [`R50_layer_scan_results.json`](R50_layer_scan_results.json)。
 
 $$
-
 \begin{aligned}
 &\textbf{纪律 R50（层指标）：}\text{本体系的每个量、每个定理、每个常数，都带一个}\textbf{层指标 }\ell。\\
 &\qquad \text{断言}\ P(v)\ \text{只在层}\ \ell\ \text{上成立；完整的写法要带层指标（如}\ P_{\text{\ell}}(v)\text{）。}\\
@@ -140,7 +139,6 @@ $$
 | 5.00 | $\approx 0$（饱和） | $-0.111572$ | **定律失效** |
 
 $$
-
 \begin{aligned}
 &\textbf{结论：这是一条}\textbf{双侧定律}\text{，两侧的"解释层"不同：}\\
 &\qquad B<4:\quad \rho_t(t)\sim (B/4)^{\,t/2}\ \text{（}\textbf{\mathcal R 可见性}\text{：指数衰减，锥边不可见）};\\

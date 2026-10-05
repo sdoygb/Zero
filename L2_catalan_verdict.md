@@ -12,7 +12,6 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\textbf{序列定案：}\ \text{co}[2i]=2\,C_i,\quad \text{co}[\text{奇}]=0,\qquad C_i=\frac{1}{i+1}\binom{2i}{i}\ \text{（Catalan 数）}。\\
 &\qquad \text{序列 }2,2,4,10,28,84,264,858,2860,9724,\dots\ =\ \textbf{OEIS A284016}（=2\times\text{A000108}）。\\

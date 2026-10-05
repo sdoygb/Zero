@@ -7,7 +7,6 @@
 **核验**：[`Z16_check.py`](Z16_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{仅凭 }Z0+Z\text{-E*，不能推出“物理载体必须等重保留两个中心特征”。}\\
 &\text{若另加具名输入 }Z\text{-UNIF：最小平衡 }Z_2\text{-模块是正则表示 }R=\mathbb C_+\oplus\mathbb C_-。\\
@@ -350,11 +349,9 @@ $$
 **准确改写**：
 
 $$
-
 Z\text{-READ}
 \neq
 Z\text{-UNIF}.
-
 \qquad\text{(Z16-25)}
 $$
 

@@ -9,7 +9,6 @@
 ## §-1 范围红线（**先读这一节**）
 
 $$
-
 \begin{aligned}
 &\textbf{本体系的底层只有 } \text{Z0} \text{ 一条（「零不断乱动」）。}\\
 &\textbf{任何旧理论的底层条款一律不进本体系}——\text{只作参考、对照与文献。}\\
@@ -37,7 +36,6 @@ $$
 ## §0 一句话判定
 
 $$
-
 \begin{aligned}
 &\textbf{唯一底层是我们自己的 } \text{Z0} \text{（「零不断乱动」）；旧理论的底层（} \text{U1–U4} \text{）} \textbf{不引入}。\\
 &\text{旧理论（参考）唯一有用的东西：它把"到标准物理模型"拆成了可逐项审计的六道恢复门}\\
@@ -442,7 +440,7 @@ graph TD
 | D2 | Regge calculus 综述（离散曲率 → 连续曲率） | — | 缺口 3 | 缺角／Regge 作用量 → Einstein–Hilbert | 单纯形复形与边长输入 |
 | D3 | Ambjørn, Jurkiewicz, Loll 的因果动力学三角剖分（CDT）系列 | — | 缺口 5（维数涌现） | **谱维数与 Hausdorff 维数的流** —— 直接对应 `D193` 的 $d\_s$ 计算 | 需要正确的测度 |
 | D4 | Bombelli, Lee, Meyer, Sorkin, *Space-time as a causal set* | [PRL 59, 521 (1987)](https://doi.org/10.1103/PhysRevLett.59.521)（**无 arXiv 编号**；及因果集综述） | 缺口 3／5 | **因果序 ⟹ 共形类**的严格版本（正是 `R82` 的结论） | 需局域有限性与标度 |
-| D5 | Connes 的谱距离公式 $d(x,y)=\sup\{|f(x)-f(y)|:\|[D,f]\|\le1\}$ | [hep-th/9603053](https://arxiv.org/abs/hep-th/9603053) 等 | **缺口 3（度量从算子来）** | **从 Dirac 算子直接得到距离** —— 绕开「有效电阻全局依赖」的那条 no-go | 需谱三元组 |
+| D5 | Connes 的谱距离公式 $d(x,y)=\sup\{\lvert f(x)-f(y) \rvert:\\lvert [D,f]\ \rvert\le1\}$ | [hep-th/9603053](https://arxiv.org/abs/hep-th/9603053) 等 | **缺口 3（度量从算子来）** | **从 Dirac 算子直接得到距离** —— 绕开「有效电阻全局依赖」的那条 no-go | 需谱三元组 |
 | D6 | Belkin, Niyogi, *Laplacian Eigenmaps for Dimensionality Reduction*／离散→流形 Laplace–Beltrami 收敛 | — | 缺口 3 | 图 Laplacian → Laplace–Beltrami 的收敛定理 | 需采样密度条件 |
 | D7 | Burago, Ivanov 等关于格点上**局部各向同性障碍**的结果 | — | 缺口 3（`R85`／`D258`） | 立方格 → 连续各向同性的不可能性及其修复（长程／随机格） | 需额外结构 |
 
@@ -502,8 +500,6 @@ graph TD
 
 **发现**：第一版 §7.2 第 1 步写的是「用 `lh/D212`／`D221` 的交叉积构造检验细化极限的类型」。核查后发现：
 
-$$
-$$
 
 | 文件 | 批注 |
 |:--|:--|

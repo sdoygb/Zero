@@ -6,7 +6,6 @@
 **核验**：[`R33_check.py`](R33_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{量子栏缺的}\textbf{不是}\text{"有没有相位"——复振幅（GNS）、干涉（}G68\text{）、Born（两路）都已导出；}\\
 &\text{缺的是：}\textbf{相位是不是几何的}。\\
@@ -48,7 +47,6 @@ $$
 固定原生忠实态 $\omega$（计数测度逐支为正，[`G27`](G27_purification_attempt.md)），$K\_\omega:=-\log\rho\_\omega$ 为模 Hamiltonian，$\sigma\_t^\omega(A)=e^{itK\_\omega}Ae^{-itK\_\omega}$ 为模流。
 
 $$
-
 \begin{aligned}
 \textbf{(T1) 流形式:}\quad
 &\sigma_t^\omega=\text{由原生几何量生成的单参数群（boost／Dirichlet 生成元）};\\
@@ -117,9 +115,7 @@ $$
 | **S4** | **经典极限** | 在记录数增长下，$e^{iS\_{\rm geo}}$ 的干涉衰减**复现** $V=\kappa\_1^{N(t)}$（`G71`／`G72`）。**否证**：若退相干速率与作用量相位不相容，则两套结构互斥 |
 
 $$
-
 \text{S1–S4 全部可否证；任一条否证，}\text{ACTION-PHASE-MATCH}\text{ 就在相应形式上失败，而不只是"还没算"}。
-
 \qquad\text{(R33-3)}
 $$
 
@@ -159,10 +155,8 @@ $$
 **boost 天然就是"$\mathbb R\_\tau$ 与 $H\_Q$ 的混合"**——而这两个子空间**都是原生的**，且它们的混合在 `G1` 的 ADM 写法里被显式设为 $N=1,\beta=0$（即**没有**混合项）。本文的提案是：
 
 $$
-
 \text{把 }N=1,\beta=0\ \text{理解为}\textbf{一个参考叶层的规范选择}，
 \text{而 boost 就是离开该选择的混合生成元 }M(\tau,a)\in\mathfrak{so}(1,m-1).
-
 \qquad\text{(R33-6)}
 $$
 
@@ -205,9 +199,7 @@ $$
 7. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：量子栏缺的不是相位，而是"相位是几何的"这一句；本文把它立成可否证的证明题。}
-
 $$
 
 ---

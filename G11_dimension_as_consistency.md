@@ -51,7 +51,6 @@ $$
 2. [`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) §5 已证本表原行**推断有漏洞**并明确**撤回**"必须修改 A3（现 Z0③）"：
 
 $$
-
 \text{复振幅}\ \text{来自原生非对易代数＋GNS（没动 }Z0\text{③／原 }A3\text{）};\qquad
 \text{Born 规则}\ \text{是 Gleason 定理（没动 }Z0\text{③／原 }A3\text{）}。\
 $$

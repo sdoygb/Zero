@@ -12,7 +12,6 @@ $$
 **核验**：[`R17_check.py`](R17_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{当前路线不应继续下钻 }Z\text{-UNIF、自旋结构与循环切口。}\\
 &\text{它们只服务于 }Z\text{-CAR 分支，不是 }K_B\to2\pi B_B\text{ 的必经数学步骤。}\\

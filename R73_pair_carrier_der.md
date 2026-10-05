@@ -7,7 +7,6 @@
 **探针**：[`R73_pair_carrier.py`](R73_pair_carrier.py) → [`R73_pair_carrier_results.json`](R73_pair_carrier_results.json)。
 
 $$
-
 \begin{aligned}
 &\textbf{三个量必须分开：}\\
 &\quad\text{通道对数（边数）}\ E(D)=\binom{D+1}2\quad\text{（}D\text{-单纯形的边）};\\
@@ -90,7 +89,9 @@ $$
 \ \text{洛伦兹 }D\text{ 的窗口}\ =\ \text{欧氏 }(D-1)\text{ 的窗口}\
 $$
 
-$$\Longrightarrow\ \textbf{R44 的 no-go 是洛伦兹字典特有的};\ \text{欧氏单纯形字典确实逃逸}$$
+$$
+\Longrightarrow\ \textbf{R44 的 no-go 是洛伦兹字典特有的};\ \text{欧氏单纯形字典确实逃逸}
+$$
 
 **`R73` 的窗口复算与 `R45` 一致**（`R45`：洛伦兹 $[0.502,0.600]$、欧氏 $[0.602,0.666]$；本轮精确值 $(\tfrac12,\tfrac35)$、$(\tfrac35,\tfrac23)$ —— 差异来自 `R45` 用网格采样）。
 
@@ -119,7 +120,9 @@ $$
 | 独立类数 | $10$ | $6$ |
 | 与 `R49` 秩判据的差 | $-1$（若真为 10） | 按 $6$ 算，**少 $4$ 个独立方向** |
 
-$$\Longrightarrow\ \text{用}\ \binom{D+1}2\ \text{做账本，则身份秩}\ \textbf{必然短缺}\ D+1\ \Longrightarrow\ \text{`R49` 的稠密判据更难满足}$$
+$$
+\Longrightarrow\ \text{用}\ \binom{D+1}2\ \text{做账本，则身份秩}\ \textbf{必然短缺}\ D+1\ \Longrightarrow\ \text{`R49` 的稠密判据更难满足}
+$$
 
 ---
 
@@ -177,7 +180,9 @@ $$
 | 5 | 10 | 15 | 10 ✅ |
 | 6 | 15 | 21 | 15 ✅ |
 
-$$\Longrightarrow\ \textbf{R45 的 }D\text{ 与 R46 的 }D\text{ 是同一标号（账本峰位／单纯形维）}$$
+$$
+\Longrightarrow\ \textbf{R45 的 }D\text{ 与 R46 的 }D\text{ 是同一标号（账本峰位／单纯形维）}
+$$
 
 ---
 

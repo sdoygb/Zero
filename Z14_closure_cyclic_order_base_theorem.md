@@ -7,7 +7,6 @@
 **核验**：[`Z14_check.py`](Z14_check.py)。
 
 $$
-
 \begin{aligned}
 &\textbf{Z-E*}\quad \text{闭合零和词已经给出一个正向循环 }C_L。\\
 &\text{其正向旋转群是 }\mathbb Z_L\subset SO(2)\text{；双覆盖 }Spin(2)\to SO(2)\text{ 给出中心 }\mathbb Z_2。\\
@@ -247,10 +246,8 @@ $$
 因此 `Z-CAR` 的状态应改为：
 
 $$
-
 \text{群论部分的双覆盖已导出；物理读出的“哪一个”仍未选择。}
 \qquad\text{(Z14-16)}
-
 $$
 
 这与 L1 的关系不变：

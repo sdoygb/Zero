@@ -6,7 +6,6 @@
 **探针**：[`R70_continuum_dp.py`](R70_continuum_dp.py)（动态规划精确计数）。
 
 $$
-
 \begin{aligned}
 &\textbf{缺口 1（连续极限）：}\ \text{成立}。\ I(\Delta\tau,0)\ \textbf{精确是}\ \Delta\tau\ \text{的}\ d\ \text{次多项式};\quad
 d\ \text{阶差分恒为常数}\ (2,4,8).\\

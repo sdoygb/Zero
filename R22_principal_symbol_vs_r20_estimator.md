@@ -8,7 +8,6 @@
 **外部定理**：Eisler–Tonni–Peschel, [arXiv:1902.04474](https://arxiv.org/abs/1902.04474)，第 3 节无限链半满区间。
 
 $$
-
 \begin{aligned}
 &\text{R21 的 }\pi=2\pi/v_F\text{ 在正确的主符号／近零模层保留。}\\
 &\text{R20 的 }B_N\text{（键中点、}l=N-1\text{）不是外部定理的 }T_N\text{。}\\
@@ -284,9 +283,7 @@ $$
 | 四维 boost 与楔形几何 | **开放** |
 
 $$
-
 \text{R22 关闭的是“补 }\pi\text{ 的数值”这一伪任务；它没有证明四维 L1。}
-
 \qquad\text{(R22-18)}
 $$
 

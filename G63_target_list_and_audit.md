@@ -157,7 +157,6 @@ $$
 ## §5 结论
 
 $$
-
 \begin{aligned}
 &\text{本项目}\textbf{第一次}有了对照清单:\ \text{21 项};\ \text{其中}\textbf{已导出 18}、\text{开放 3}、\text{无记录 0};\\
 &\text{清单}\textbf{不含物质/规范参数}——\text{这是}\textbf{定理}（|F|=1），\text{不是遗漏};\\

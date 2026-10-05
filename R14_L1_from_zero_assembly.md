@@ -7,7 +7,6 @@
 **核验**：[`R14_check.py`](R14_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{J1 仍未关闭。}\\
 &\text{但 }Z\text{-CRIT-DER 不再是一个整体识别：它拆成}\\
@@ -154,10 +153,10 @@ $$
 
 1. $L$ **偶**（零和 $\Rightarrow L$ 偶）。$L$-循环的置换号
 
-   $$
+$$
    \text{sgn}(R)=(-1)^{L-1}=-1 .
    \qquad\text{(R14-8)}
-   $$
+$$
 
 2. [`G66`](G66_SU2_double_cover_from_geometry.md)／[`G67`](G67_reflection_generates_spin_Z2.md)：几何双覆盖中**一整圈 $2\pi$ 旋转的升格为 $-1$**（$V\cdot(-V)=-V^2=-1$）。
 

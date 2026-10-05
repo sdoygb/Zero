@@ -12,7 +12,6 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\textbf{结构已闭合：}\ t_{\rm cycle}=T\cdot\alpha,\qquad T\in\{5,6\}\ (\text{或可行域}\le5)。\\
 &\qquad \alpha:=\text{「一步 = 多少年」};\ \text{它是}\textbf{唯一自由锚}。\\

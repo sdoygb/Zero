@@ -14,7 +14,7 @@ $$
 
 | # | 尝试 | 出处 | 失败点（原文） |
 |--:|:--|:--|:--|
-| **1** | **周期骨架 ⟹ 四维 GR 的直接桥** | [`D213`](D_arc/D213_periodic_skeleton_to_gr_direct_audit.md) | "当前周期零宇宙骨架 $\not\Longrightarrow$ 四维 GR"；**六槽位只拿到 1/6**，"第一个硬关口"是**没有局域零和传输图**（$|E\_{\rm cross}|=0$） |
+| **1** | **周期骨架 ⟹ 四维 GR 的直接桥** | [`D213`](D_arc/D213_periodic_skeleton_to_gr_direct_audit.md) | "当前周期零宇宙骨架 $\not\Longrightarrow$ 四维 GR"；**六槽位只拿到 1/6**，"第一个硬关口"是**没有局域零和传输图**（$\lvert E\_{\rm cross} \rvert=0$） |
 | **2** | **Lovelock 链**（本系列 G1–G10） | [`G10`](G10_final_derivation_and_input_ledger.md) | **条件恢复**：形式被 Lovelock 唯一逼出，但**度规与维数是输入**；I2a 开 |
 | **3** | **度规线**（G40–G53） | [`G53`](G53_connecting_the_rg_axis_to_lattice_refinement.md) | 度规导出了（闭环计数，$k=L$），三前提齐；但**细化极限 I2a 仍负面**（逆向流发散、无 UV 不动点） |
 

@@ -7,7 +7,6 @@
 **核验**：[`R39_check.py`](R39_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{记录}=\text{（精确词 }w\text{，闭合类 }[w]\text{）——}\textbf{不含位点标签}\ (\text{Z3／G0 逐字})。\\
 &\text{环图 }C_m\text{ 上，闭合词 }w\text{ 的闭合性与起始位点 }v_0\textbf{ 无关}，\\
@@ -58,9 +57,7 @@ $$
 **对照（记录不空）**：记录确实能区分**词形**——`m=6, L=6` 的 22 个闭合词分成 6 个旋转类，`m=8, L=6` 分成 4 类 ✓。即：**记"走成什么样"，不记"在哪儿"。**
 
 $$
-
 \text{记录}=\text{形状信息（有）}+\text{位置信息（零）}。
-
 \qquad\text{(R39-2)}
 $$
 
@@ -69,18 +66,14 @@ $$
 ## §2 裁决：走 B′
 
 $$
-
 \text{(R38-3) 的答案是}\textbf{失明}\ \Longrightarrow\ \text{纠缠机制 R38 直接生效，}\textbf{不需要} \text{EDGE-CONNECTION}。
-
 \qquad\text{(R39-3)}
 $$
 
 **为什么这是结构性的、不是巧合**：位点标签（"哪个位点叫什么"）在 Zero 里**从来不是原生对象**——`E1`（站点识别 `I5b`）至今是[`STATUS`](STATUS.md) 的**第一号承重项**。既然理论本身没有原生位点标签，记录**就不可能**把它写进去。**缺 `E1` 这件事，恰好就是历史层对位点失明的原因。**
 
 $$
-
 \text{“位点不可识别”（}E1\text{ 缺失）}\ \Longleftrightarrow\ \text{“记录不含位点”}\ \Longleftrightarrow\ \text{“which-site 是未记录自由度”}。
-
 \qquad\text{(R39-4)}
 $$
 
@@ -108,10 +101,8 @@ $$
 5. 没有由纠缠推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-
 \text{当前诚实结论：记录只写形状、不写位置；}\textbf{which-site 是天然的未记录自由度}。\\
 \text{翻盘的唯一入口是播种点 }P_i\text{ —— 那是一个具名、可否证的下游问题。}
-
 $$
 
 ---

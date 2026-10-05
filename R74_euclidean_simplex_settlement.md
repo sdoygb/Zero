@@ -7,7 +7,6 @@
 **核验**：[`R74_check.py`](R74_check.py) —— **通过 23 / 不符 0**，退出码 `0`。
 
 $$
-
 \begin{aligned}
 &\textbf{结算：}\ \text{在欧氏单纯形账本}\ M(D)=\binom{D+1}2\ \text{下，}\\
 &\qquad \beta\varepsilon\in(1.200,\ 1.470)\ \Longrightarrow\
@@ -93,9 +92,13 @@ $$
 | 1.13 | 0.5820 | **4** | 3 |
 | 1.20 | 0.6000 | 5 | **4** |
 
-$$\text{洛伦兹在}\ \beta\varepsilon{=}1.13\ \text{就给}\ D=4;\ \text{欧氏要到}\ 1.20$$
+$$
+\text{洛伦兹在}\ \beta\varepsilon{=}1.13\ \text{就给}\ D=4;\ \text{欧氏要到}\ 1.20
+$$
 
-$$\Longrightarrow\ \text{与 }R73\ \text{§2 的窗口平移规律逐字一致}$$
+$$
+\Longrightarrow\ \text{与 }R73\ \text{§2 的窗口平移规律逐字一致}
+$$
 
 ---
 

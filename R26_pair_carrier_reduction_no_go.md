@@ -7,7 +7,6 @@
 **核验**：[`R26_check.py`](R26_check.py)。
 
 $$
-
 \begin{aligned}
 &\text{若继承身份是 Z1 定理 1 的非平凡补偿移动轨道，则身份数 }N_{\rm id}=|E(\Gamma)|;\\
 &\Gamma\text{ 连通只给 }D-1\le |E(\Gamma)|\le\binom D2
@@ -129,9 +128,7 @@ $$
 若“继承身份”定义为 Z1 定理 1 非平凡补偿移动在取逆下的轨道，则
 
 $$
-
 N_{\rm id}(\Gamma_D)=|E_D|.
-
 \qquad\text{(R26-6)}
 $$
 
@@ -142,9 +139,7 @@ $$
 若只使用 Z1 定理 1／Z-E1 的**连通性**，并假定 `Γ_D` 是单边无向简单图，则
 
 $$
-
 D-1\le |E_D|\le\binom D2.
-
 \qquad\text{(R26-7)}
 $$
 
@@ -209,9 +204,7 @@ $$
 则
 
 $$
-
 N_{\rm id}(D)=|E(K_D)|=\binom D2.
-
 \qquad\text{(R26-10)}
 $$
 
@@ -273,9 +266,7 @@ $$
 其四维唯一窗口是
 
 $$
-
 \frac35<q<\frac23.
-
 \qquad\text{(R26-15)}
 $$
 
@@ -351,27 +342,27 @@ $$
 
 1. 若成对载体只付两维支撑代价，
 
-   $$
+$$
    F_D^{\rm supp}=B\binom D2q^2
    \qquad\text{(R26-21)}
-   $$
+$$
 
    对 `q>0` 随 `D` 严格增长，在无界候选集上没有有限最大点；
 2. 若每条边都必须独立存活，
 
-   $$
+$$
    F_D^{\rm edge}=B\binom D2q^{\binom D2};
    \qquad\text{(R26-22)}
-   $$
+$$
 
    在 `q=5/9` 时相邻比
 
-   $$
+$$
    \frac{F_{D+1}^{\rm edge}}{F_D^{\rm edge}}
    =
    \frac{D+1}{D-1}\left(\frac59\right)^D
    \qquad\text{(R26-23)}
-   $$
+$$
 
    从 `D=2` 起小于一且继续递减，故唯一峰为 `D=2`。
 
@@ -380,11 +371,9 @@ $$
 因此 R25 的正结果必须额外采用
 
 $$
-
 \text{PAIR-COST-FACTORIZATION}:\quad
 F_D=B\binom D2q^D,
 \text{ 而不是 }q^2\text{、}q^{\binom D2}\text{或其它指数}.
-
 \qquad\text{(R26-24)}
 $$
 
@@ -419,10 +408,8 @@ $$
 因此还需要
 
 $$
-
 \text{PAIR-NO-EXTRA-MULT}:\quad
 \text{除 }B\text{ 外没有按边、按方向或按 }D\text{ 的额外复制／归一化因子}.
-
 \qquad\text{(R26-27)}
 $$
 
@@ -491,10 +478,8 @@ $$
 6. 没有关闭 `DIM-SECTOR`、`EVO-NORM` 或 `SURV4-GLOBAL`。
 
 $$
-
 \text{当前诚实结论：R25 的正结果是条件模型内的精确结果；}
 \text{其原生桥不是一个，而是六个尚未同时关闭的接口。}
-
 $$
 
 ---

@@ -8,7 +8,6 @@
 **数值探针**：[`R25_native_pair_cost_probe.py`](R25_native_pair_cost_probe.py)。
 
 $$
-
 \begin{aligned}
 &\text{旋转类读出账本给 }q_{\rm rot}(L)=\sum_c\omega_c^2,\qquad q_{\rm rot}(4)=\frac59;\\
 &\text{单方向身份 }F_D=B\,D\,q^D\text{ 在一切物理 }L\ge4\text{ 上失败：}q_{\rm rot}(L)<\frac34;\\
@@ -74,10 +73,8 @@ $$
 本文把“每条独立方向都产生一笔同类终端记录，故增加一个方向就增加一次记录压制”记为具名读出
 
 $$
-
 \text{LEDGER-ROT}:\quad
 q_L:=\kappa_1(L)=\sum_c\omega_c^2.
-
 \qquad\text{(R25-4)}
 $$
 
@@ -98,7 +95,6 @@ $$
 故
 
 $$
-
 q_4
 =
 \left(\frac26\right)^2+
@@ -107,7 +103,6 @@ q_4
 \frac19+\frac49
 =
 \frac59.
-
 \qquad\text{(R25-6)}
 $$
 
@@ -225,11 +220,9 @@ $$
 这不是某个数值参数，而是维数标签组合中的原生整数。把它作为继承身份记为具名结构输入：
 
 $$
-
 \text{PAIR-CARRIER}:\quad
 \text{一个维数相干闭合的继承身份是两条不同方向的成对连接；}
 \text{主重数为 }\binom D2.
-
 \qquad\text{(R25-12)}
 $$
 
@@ -293,11 +286,9 @@ $$
 则
 
 $$
-
 \arg\max_{D\ge1}
 B\binom D2\left(\frac59\right)^D
 =\{4\}.
-
 \qquad\text{(R25-17)}
 $$
 
@@ -441,16 +432,16 @@ $$
 
 1. 旋转类读出账本给每方向保留率
 
-   $$
+$$
    q_4=\frac59<0.75.
-   $$
+$$
 
 2. 因此单方向模型 $F\_D=B Dq^D$ 的原生版本不选四维；在 `L=4` 时唯一峰是二。
 3. 若继承身份改为方向对，则
 
-   $$
+$$
    F_D=B\binom D2q^D
-   $$
+$$
 
    的四维窗口是 `1/2<q<3/5`，而原生 `q=5/9` 正落在窗口内。
 4. 于是条件模型给出全局唯一峰 `D=4`，且没有使用 GR、没有使用 `D≥4`、没有按四维拟合 `q`。
@@ -458,9 +449,7 @@ $$
 6. 当前物理桥应写成六项接口的合取：`DIR-DICT-BETA + PAIR-GRAPH-KD + PAIR-ID-EDGE + PAIR-COUNT-1 + PAIR-COST-FACTORIZATION + PAIR-NO-EXTRA-MULT`。
 
 $$
-
 \text{当前最强诚实结论：四维全局峰已有可审查的条件正解；原生物理桥是成对方向连接。}
-
 $$
 
 > **后续（[`R31`](R31_phase_ledger_and_lifetime_selection.md)）**：本文只用了 `q_4` 的数值与上界 `q_L≤2/3`（后者用来否掉单方向路线），**没有**问"`q_L` 作为 `L` 的函数，其成对账本峰落在哪里"。R31 补上这一问并证明（定理 R31.1）：在 `LEDGER-ROT` ＋ 成对账本下，全部偶寿命中**恰有 `L=4`** 使有限峰落在引力子允许域 `D≥4`（`L=2` 无有限峰；`L≥6` 由 `q_L≤L/N_L≤r_6=3/10<1/3` 知唯一峰为 `D=2`），且此时峰 `={4}`。因此本文 §5 定理 R25.5 的"`L=4`"不再依赖最小性，而由具名生存要求 `PEAK-IN-GRAVITON-DOMAIN` 给出。本文其余结论（含 R25.2／R25.3 的单方向 no-go 与 R25.4 的四维窗口）原样不变。

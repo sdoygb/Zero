@@ -12,7 +12,6 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\textbf{毁灭周期 } T\ \textbf{不是自由参数，但它也不是"一个数"}——\text{它是一个}\textbf{不动点参数}：\\
 &\qquad\text{给定 } T,\ \text{L2 的}(毁灭量 / 历史量)\ \text{比}\ \textbf{收敛到一个 } T\ \text{特有的常数}\ \rho(T);\\
@@ -108,7 +107,6 @@ $$
 **三个精确关系（逐周期整数核对，$T=3\dots14$，16 周期，全部通过）**：
 
 $$
-
 \begin{aligned}
 &\text{(i)}\ \ h(2k-1)=h(2k)\quad(k\ge2)
 &&\text{历史序列只依赖}\ \lceil T/2\rceil\ \text{（奇偶成对）};\\[2pt]

@@ -12,7 +12,6 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\textbf{猜想的结构部分成立}:\ \text{破坏是}\textbf{阈值触发}\text{，不是渐进压缩 ⟹ 无预兆}\ \checkmark\\
 &\qquad \text{而级联时标}\ n=\ln N/\ln\lambda\ \text{对 } N\ \textbf{只对数敏感} \Longrightarrow\ \text{「瞬间」}=O(1)\ \text{步}\ \checkmark\\
@@ -132,7 +131,6 @@ $$
 ## §5 诚实的结论：猜想需要改一个字
 
 $$
-
 \begin{aligned}
 &\text{猜想}\ \textbf{「无预兆」}\ \text{与}\ \textbf{「阈值型、非压缩」}：\ \textbf{完全成立}。\\
 &\text{猜想}\ \textbf{「几天」}：\ \textbf{不能与「周期} \sim \text{百亿年」同时成立}。\\

@@ -5,7 +5,7 @@
 **核验**：[`G44_check.py`](G44_check.py) —— **独立实断言 13 / 结论行 16 / 不符 0**，退出码 `0`
 
 $$
-\ \text{把闭环计数截断在有限尺度 }k\text{，三前提全满足}\ \Longrightarrow\ \text{起源可以**局域地**得到。}\
+\ \text{把闭环计数截断在有限尺度 }k\text{，三前提全满足}\ \Longrightarrow\ \text{起源可以\textbf{局域地}得到。}\
 $$
 
 ---

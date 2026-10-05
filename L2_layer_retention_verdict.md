@@ -12,11 +12,10 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\textbf{猜想①（L2 全毁）}：\ \checkmark\ \text{与}\ \text{D211}/\text{D222}\ \text{一致}。\\
 &\textbf{猜想②（L0 完整保留）}：\ \checkmark\ \text{一致 —— }L0\ \text{本就不在毁灭范围内（}R95\S0\text{：无自身更新律）}。\\
-&\textbf{猜想③（L1 保留最上**一**层）}：\ \text{与}\ \text{D222}\ \text{的「最高**两**层」}\textbf{实质不同}，\\
+&\textbf{猜想③（L1 保留最上\textbf{一}层）}：\ \text{与}\ \text{D222}\ \text{的「最高\textbf{两}层」}\textbf{实质不同}，\\
 &\qquad \text{但}\textbf{结构上完全相容}（零和保持、幂等都成立）。\\
 &\qquad \text{差别在}\ \textbf{记忆窗口}（1 代 vs 2 代）\ \text{与}\ \textbf{生长率}（见 §3）。
 \end{aligned}
@@ -106,8 +105,11 @@ $$
 $k=1$ 时生长率**就是** $C(T)$ —— 一个**纯组合量**（Catalan 部分和）：
 
 $$
-\lambda_{k=1}(T)=C(T)=2\!\!\sum_{i<T/2}\!\!C_i\qquad\text{（Catalan 部分和，见 [`L2_catalan_destruction.py`](L2_catalan_destruction.py)）}
+\lambda_{k=1}(T)=C(T)=2\!\!\sum_{i<T/2}\!\!C_i
 $$
+
+（Catalan 部分和，见 [`L2\_catalan\_destruction.py`](L2_catalan_destruction.py)）
+
 
 $$
 \Longrightarrow\ \text{保留一层时，生长率}\textbf{不需要解二次方程}\ \text{——直接就是 Catalan 和。}

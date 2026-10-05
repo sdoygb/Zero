@@ -11,7 +11,6 @@
 ## §0 一句话
 
 $$
-
 \begin{aligned}
 &\textbf{容量封顶把 } T\ \text{压到}\ \le 5;\ \text{而 } T\ \text{的自然值是奇数}\ \{3,5,7,\dots\}\\
 &\qquad \Longrightarrow\ \boxed{\ T=5\ }\\

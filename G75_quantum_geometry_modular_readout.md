@@ -152,7 +152,6 @@ $$
 ## §6 判定：零和宇宙的"量子几何"是什么
 
 $$
-
 \begin{aligned}
 &\textbf{不是}\ \text{"把度规量子化"};\qquad \textbf{而是}\ \text{几何}=\text{态的模读出};\\
 &\text{面积律}\ \text{由}\ \textbf{宇称}\ \text{打开};\qquad G\ \text{是}\ \textbf{单位}\ (\text{不可导出，}G57)。

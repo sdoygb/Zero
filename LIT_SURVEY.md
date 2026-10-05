@@ -10,7 +10,6 @@
 ## §-1 范围与红线（**先读这一节**）
 
 $$
-
 \begin{aligned}
 &\textbf{本体系唯一的底层是 } \text{Z0}\text{（「零不断乱动」，1 条）。}\\
 &\text{本文列出的每一篇外部文献，都只是}\textbf{工具、尺子或靶子}；\\
@@ -72,7 +71,7 @@ $$
 | 2 | Proof of the Quantum Null Energy Condition | Bousso, Fisher, Koeller, Leichenauer, Wall | 2015 | **1509.02542** | [arxiv.org/abs/1509.02542](https://arxiv.org/abs/1509.02542)（HTTP 200；DOI 10.1103/PhysRevD.93.024017） | **证明** QNEC：$\langle T\_{kk}\rangle \ge \hbar\, S''/2\pi$（$S''$ 为单侧区域熵沿零方向的二阶变分）。 | 提供了「$\langle T\_{kk}\rangle$ 有下界」的**定理级**来源——若本项目将来要**推出**源的能量条件而非假设（→ G1/G4 交界的源结构），这是标准模板。 | 证明依赖：QFT 的**相对熵单调性**＋**模 Hamiltonian 的马尔可夫性/包含性质**。迁回须先在 `Z0` 上建立局域代数网与相对熵单调性——**目前 `Z0` 侧连连续网都没有**。 |
 | 2 | Holographic Proof of the Quantum Null Energy Condition | Koeller, Leichenauer | 2015 | **1512.06109** | [arxiv.org/abs/1512.06109](https://arxiv.org/abs/1512.06109)（HTTP 200；DOI 10.1103/PhysRevD.94.024026） | 在全息对偶下用 HRRT 面积泛函独立验证 QNEC，含全息 QNEC 的**饱和**条件。 | 提供 QNEC 的**独立第二证**；其「面积泛函 ⇒ 熵的变分 ⇒ 能量下界」的链条与本项目 `G76` 面积律候选同构（→ G1 的面积项）。 | 依赖全息对偶与 HRRT——本项目**完全没有**对偶结构，只能参考链条形状，不能搬结论。 |
 | 2 | Recovering the QNEC from the ANEC | Ceyhan, Faulkner | 2018 | **1812.04683** | [arxiv.org/abs/1812.04683](https://arxiv.org/abs/1812.04683)（HTTP 200） | 用**相对模流**构造特殊纯化族，证明 Wall 的猜想：相对熵的形状导数 = 纯化族上的平均零能量变分；**由此推出 QNEC**。 | **本组最有价值的一篇**：它把「能量条件」的上游一路退到 **ANEC（平均零能量条件）＋相对熵单调性**。若本项目想给出「为什么有能量下界」的**层级**（而非单条假设），这是现成的最长处链条（→ G1/G4）。 | 需 QFT ＋ 相对模流 ＋ 纯化族存在性。**必须在 `Z0` 上重建**：本项目的模流来自 GNS（`G62`），但「相对模流」「纯化族」在多站点情形**尚未建**（`R29` 已登记乘积记录 no-go）。 |
-| 2 | Relative entropy and the Bekenstein bound | Casini | 2008 | **0804.2182** | [arxiv.org/abs/0804.2182](https://arxiv.org/abs/0804.2182)（HTTP 200；DOI 10.1088/0264-9381/25/20/205021） | 从**相对熵的正性** $S(\rho\|\sigma)\ge0$ 导出 Bekenstein 界 $S \le 2\pi R E$；界不是新公理，而是量子信息不等式的推论。 | 给出「**熵界 ⇒ 能量界**」的逆向用法：本项目若要把「面积律」变成**约束源**而不是结果，这条是模板（→ G1、G8）。 | 需 QFT 的模 Hamiltonian 与其**局域性/有限传播速度**。迁回须在 `Z0` 上先有「区域代数＋模算子」的连续版本，本项目只有有限维/离散版本。 |
+| 2 | Relative entropy and the Bekenstein bound | Casini | 2008 | **0804.2182** | [arxiv.org/abs/0804.2182](https://arxiv.org/abs/0804.2182)（HTTP 200；DOI 10.1088/0264-9381/25/20/205021） | 从**相对熵的正性** $S(\rho\\lvert \sigma)\ge0$ 导出 Bekenstein 界 $S \le 2\pi R E$；界不是新公理，而是量子信息不等式的推论。 | 给出「**熵界 ⇒ 能量界**」的逆向用法：本项目若要把「面积律」变成**约束源**而不是结果，这条是模板（→ G1、G8）。 | 需 QFT 的模 Hamiltonian 与其**局域性/有限传播速度**。迁回须在 `Z0` 上先有「区域代数＋模算子」的连续版本，本项目只有有限维/离散版本。 |
 
 **⚠ 附带发现（纠正）**：`SYNTHESIS` §5 B1 把「三条信息论约束」的来源记作 Nielsen。本次抓取中，用户／上游转述的 `quant-ph/0505152` **并非**该文——
 
@@ -170,7 +169,7 @@ $$
 | 4 | Spectral Dimension of the Universe | Ambjørn, Jurkiewicz, Loll | 2005 | **hep-th/0505113** | [arxiv.org/abs/hep-th/0505113](https://arxiv.org/abs/hep-th/0505113)（HTTP 200） | CDT 中谱维数从紫外 $d\_s\approx2$ 流到红外 $d\_s\approx4$ 的首个报告。 | （→ G4）**维数涌现的定量基准**。本项目 `R30` 已判「$d\_s$ 靶值本身不可判」（4 维环面对照组回读 $3.75$–$5.12$）——本文给出该判据在外部路线的**实际精度**，可用来校准本项目的悲观/乐观程度。 | 需正确的测度与标度；**不得**把 CDT 的 $d\_s=4$ 当作本项目 $D=4$ 的支撑（底层不同，进度不可相加）。 |
 | 4 | The causal set approach to quantum gravity | Surya | 2019 | **1903.11544** | [arxiv.org/abs/1903.11544](https://arxiv.org/abs/1903.11544)（HTTP 200） | 因果集纲领的现代综述：**因果序 ⇒ 共形类**，以及需要额外数据才能定标度。 | **（→ G2 的正题）**：本项目 `R82` 已把卡点正名为「**共形因子 $\Omega^2(x)$ 无来源**」。本综述确认：在因果集路线中**这同样是标准缺口**（因果序只给共形类）。用途：给 `R82` 提供**外部独立印证**，并给出该缺口的常规补法清单（→ G2）。 | 综述含 sprinkling／局域有限性等前提；迁回须在 `Z0` 上重做。**注意**：与 `R82` 的结论**互相印证但不可相加**。 |
 | 4 | Space-time as a causal set | Bombelli, Lee, Meyer, Sorkin | 1987 | **编号未确认**（PRL 59, 521–524；DOI 10.1103/PhysRevLett.59.521） | [doi.org/10.1103/PhysRevLett.59.521](https://doi.org/10.1103/PhysRevLett.59.521)（Crossref API 核对；INSPIRE recid 未查） | 因果集纲领的奠基文：把时空取为**局部有限的偏序集**，因果序是唯一基本结构。 | （→ G2、G4）与本项目 `Z0` 的「词／图／偏序」语言最接近的外部起点；用途：给「**序 ⇒ 共形类**」提供原始出处。 | 需局部有限性与（隐含的）连续近似对应。迁回须在 `Z0` 上重做；本项目已有 `Z0` 自身的偏序结构，**不是**因果集的偏序。 |
-| 4+G2 | Gravity coupled with matter and foundation of non-commutative geometry | Connes | 1996 | **hep-th/9603053** | [arxiv.org/abs/hep-th/9603053](https://arxiv.org/abs/hep-th/9603053)（HTTP 200） | 谱距离公式 $d(x,y)=\sup\{|f(x)-f(y)|:\ \|[D,f]\|\le1\}$：**距离由 Dirac 算子给出**，无需先有度规。 | **（→ G2 的绕行方案）**：本项目 `G40` 的度量候选受「有效电阻全局依赖」困扰；谱距离给出**完全不同的**度量来源——**从算子直接得到距离**。这是 `SYNTHESIS` §5 D5 所指向的工具，本次已独立确认编号。 | **必须在 `Z0` 上重新导出**：需**谱三元组**（$D$ 自伴、$[\mathcal A,\mathcal D]$ 有界等）。本项目无 $D$；且谱距离给出的是**距离**，**不含共形因子与绝对尺度**——`G57` 的不可导出定理**依然生效**，谱距离**不能**解决 G2 的绝对尺度部分。 |
+| 4+G2 | Gravity coupled with matter and foundation of non-commutative geometry | Connes | 1996 | **hep-th/9603053** | [arxiv.org/abs/hep-th/9603053](https://arxiv.org/abs/hep-th/9603053)（HTTP 200） | 谱距离公式 $d(x,y)=\sup\{\lvert f(x)-f(y) \rvert:\ \\lvert [D,f]\ \rvert\le1\}$：**距离由 Dirac 算子给出**，无需先有度规。 | **（→ G2 的绕行方案）**：本项目 `G40` 的度量候选受「有效电阻全局依赖」困扰；谱距离给出**完全不同的**度量来源——**从算子直接得到距离**。这是 `SYNTHESIS` §5 D5 所指向的工具，本次已独立确认编号。 | **必须在 `Z0` 上重新导出**：需**谱三元组**（$D$ 自伴、$[\mathcal A,\mathcal D]$ 有界等）。本项目无 $D$；且谱距离给出的是**距离**，**不含共形因子与绝对尺度**——`G57` 的不可导出定理**依然生效**，谱距离**不能**解决 G2 的绝对尺度部分。 |
 
 ---
 
@@ -226,7 +225,6 @@ $$
 本线索的全部文献都是**否证性/限制性**的，故不在此重复展开，统一收进 [§13 定理清单（否决性）](#13-定理清单否决性)。此处只给**一句话总判**：
 
 $$
-
 \begin{aligned}
 &\text{外部限制定理对 } \text{Z0} \text{ 路线的净效果：}\\
 &\textbf{(a) 封死的}：\text{格点上无加倍手征费米子（Nielsen--Ninomiya）；}\\
@@ -444,7 +442,6 @@ curl -sL "https://api.crossref.org/works/10.1063/1.523436"
 ## §17 一句话收尾
 
 $$
-
 \begin{aligned}
 &\text{本次外部检索的净收益：}\textbf{1 个直接咬合}（\text{交叉积 } III_1\to II\text{，服务 } G3\text{）、}\\
 &\qquad\textbf{1 条最贴近 } G1 \text{ 的形状}（\text{计数}\to\text{算子}\to\text{曲率}\to\text{作用量}），\\
