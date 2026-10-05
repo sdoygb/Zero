@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 生成的探针结果（可由对应脚本重新生成）
+*_results.json
+
+# 编辑器 / 系统
+.obsidian/
+.trash/
+.DS_Store
+*.swp
+
+# 仿真结果（可由 simulations/*.py 重新生成）
+simulations/*_results.json

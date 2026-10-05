@@ -1,0 +1,46 @@
+{
+ "5": {
+  "alpha_yr": 2880000000.0,
+  "alpha_s": 9.0885888e+16,
+  "t_cycle_yr": 14400000000.0,
+  "t_cycle_s": 4.5442944e+17
+ },
+ "6": {
+  "alpha_yr": 2400000000.0,
+  "alpha_s": 7.573824e+16,
+  "t_cycle_yr": 14400000000.0,
+  "t_cycle_s": 4.5442944e+17
+ },
+ "_anchor": "A: t_cycle = H0^-1 = 14.4 Gyr",
+ "_eliminated": [
+  "planck",
+  "oldest_star",
+  "cosmic_age (exact equality)"
+ ],
+ "_margin_t0_ratio": 1.0437051532941943,
+ "_next_destruction_Gyr": 0.6029999999999998,
+ "_phase_fraction": 0.958125,
+ "_phase_prior": {
+  "P1_uniform_phase": {
+   "survival": "t0/(t0+t)",
+   "median_Gyr": 13.797,
+   "q05_Gyr": 0.7262,
+   "q25_Gyr": 4.599,
+   "q75_Gyr": 41.391,
+   "q95_Gyr": 262.143,
+   "mean": "divergent"
+  },
+  "P2_log_uniform": {
+   "median_Gyr": 17.826,
+   "q75_Gyr": 164.031,
+   "q95_Gyr": 694.149
+  },
+  "anchor_A_position": {
+   "t_cycle_Gyr": 14.4,
+   "phase": 0.9581,
+   "t_rem_Gyr": 0.603,
+   "prior_mass": "~4.2%",
+   "status": "low-end endpoint, NOT central value"
+  }
+ }
+}
