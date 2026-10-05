@@ -8,12 +8,12 @@
 
 $$
 \begin{aligned}
-&\textbf{矛盾：}\ \texttt{R50}\ \text{说 $\mathcal R$（读出层）是}\ \textbf{活层};\
-\texttt{R54}\text{/}\texttt{R57}\text{/}\texttt{R58}\ \text{说它}\ \textbf{不再作为独立层存在};\ \texttt{R72}\ \text{直接写"已撤"。}\\
-&\qquad\text{而}\ \texttt{R72}\ \textbf{同一篇}\ \text{§2.1 里又把账本峰标为"L1′/$\mathcal R$" —— 自相矛盾。}\\
-&\textbf{影响：}\ \text{这不是标签问题}：\ \texttt{E5}\ \text{（量子读出，具名输入）的}\ \textbf{分项归属}\ \text{随读法改变}。\\
-&\qquad\text{四层读法下，}\texttt{R54}\ \text{以}\ \textbf{零参数}\ \text{导出}\ \pi\ \Longrightarrow\ \texttt{E5}\ \text{的"粗粒化"分项}\ \textbf{真的退休了}。\\
-&\therefore\ \text{若采纳四层读法，}\ \texttt{R50}\ \S6\ \text{"层归位不改变 }E5\text{ 仍为具名输入"}\ \textbf{需要改写}。
+&\textbf{矛盾：}\ \text{R50}\ \text{说 \mathcal R（读出层）是}\ \textbf{活层};\
+\text{R54}\text{/}\text{R57}\text{/}\text{R58}\ \text{说它}\ \textbf{不再作为独立层存在};\ \text{R72}\ \text{直接写"已撤"。}\\
+&\qquad\text{而}\ \text{R72}\ \textbf{同一篇}\ \text{§2.1 里又把账本峰标为"L1′/\mathcal R" —— 自相矛盾。}\\
+&\textbf{影响：}\ \text{这不是标签问题}：\ \text{E5}\ \text{（量子读出，具名输入）的}\ \textbf{分项归属}\ \text{随读法改变}。\\
+&\qquad\text{四层读法下，}\text{R54}\ \text{以}\ \textbf{零参数}\ \text{导出}\ \pi\ \Longrightarrow\ \text{E5}\ \text{的"粗粒化"分项}\ \textbf{真的退休了}。\\
+&\therefore\ \text{若采纳四层读法，}\ \text{R50}\ \S6\ \text{"层归位不改变 }E5\text{ 仍为具名输入"}\ \textbf{需要改写}。
 \end{aligned}
 $$
 
@@ -27,7 +27,7 @@ $$
 | 2 | [`R50`](R50_layer_discipline.md) §2 (R50-3) | "动力学只在 L2 是定律……在 $\mathcal R$，才有'有效定律 ＋ 概率'" | **$\mathcal R$ 是活层** |
 | 3 | [`R50`](R50_layer_discipline.md) §6 边界 | "层归位**不改变** `E5`（量子读出）仍为具名输入这一事实" | **$\mathcal R$ 是活层** |
 | 4 | [`R54`](R54_$\mathcal R$_removed_quantum_emergence.md) 标题／§1(7) | "**撤掉 $\mathcal R$ 之后**量子力学从哪来"；"(7) 撤掉 $\mathcal R$：$\pi$ = 上述层级的函数，**不需要任何输入**" | **$\mathcal R$ 已撤** |
-| 5 | [`R57`](R57_evolution_layer_quantum_chain.md) §1.2／结论框 | "$M_2(\mathbb C)$ 因子是原生的，**不需要 $\mathcal R$**"；"撤掉 $\mathcal R$ 之后，量子力学的全部要件仍能长出" | **$\mathcal R$ 已撤** |
+| 5 | [`R57`](R57_evolution_layer_quantum_chain.md) §1.2／结论框 | "$M\_2(\mathbb C)$ 因子是原生的，**不需要 $\mathcal R$**"；"撤掉 $\mathcal R$ 之后，量子力学的全部要件仍能长出" | **$\mathcal R$ 已撤** |
 | 6 | [`R58`](R58_evolution_layer_quantum_emergence.md) §3 | "读出层不再需要的理由：读出层的不可导出部分已收敛为**一个**对象——粗粒化映射。本链由全局闭合类层的下投影给出它，故**读出层不再作为独立层存在**" | **$\mathcal R$ 已撤** |
 | 7 | [`R72`](R72_layer_attribution.md) §4 层贡献表 | "**$\mathcal R$** ｜ **已撤（`R58`）** ｜ —" | **$\mathcal R$ 已撤** |
 | 8 | [`R72`](R72_layer_attribution.md) §2.1 **同一篇** | "`R31`/`R32` 账本峰 ｜ $\binom D2q^D$ ｜ **L1′/$\mathcal R$** ｜ 内部峰" | **自相矛盾** |
@@ -50,7 +50,7 @@ $$
 | 局域读回／站点识别 | $\mathcal R$ | **L1′（仍为具名输入）** | `R39`／`R40`（$I(\text{位点};\text{记录})=0$、播种不注入位点） |
 
 $$
-\boxed{\ \text{四层读法下，}\texttt{E5}\ \text{的"粗粒化"分项}\ \textbf{由}\ \texttt{R54}\ \text{以零参数导出}\ \Longrightarrow\ \text{该分项}\ \textbf{真的退休}。}
+\ \text{四层读法下，}\text{E5}\ \text{的"粗粒化"分项}\ \textbf{由}\ \text{R54}\ \text{以零参数导出}\ \Longrightarrow\ \text{该分项}\ \textbf{真的退休}。
 $$
 
 **故**：`R50` §6 的"层归位**不改变** `E5` 仍为具名输入"这一句，**只在五层读法下成立**；采纳四层读法就必须改写它（`E5` 应拆成"L1′ 已导出（$\pi$）／L2 输入（$\beta\varepsilon$）／L1′ 输入（局域读回）"）。
@@ -63,7 +63,7 @@ $$
 | **前缀壳层**（初始段 ＋ 层高代价） | `R57`／`R58`／`R74` | $\omega\propto W(\sigma)e^{-\beta\varepsilon\|s\|}$ | **需要**（门槛 $\gamma^*=1.105384$，代表值 $\gamma=1.13$） |
 
 $$
-\Longrightarrow\ \text{"撤 $\mathcal R$"去掉的是}\ \textbf{粗粒化映射这个输入};\ \text{而}\ \texttt{R57}\text{/}\texttt{R58}\ \text{那条链}\ \textbf{换来了一个新的挂起常数}\ \beta\varepsilon。
+\Longrightarrow\ \text{"撤 \mathcal R"去掉的是}\ \textbf{粗粒化映射这个输入};\ \text{而}\ \text{R57}\text{/}\text{R58}\ \text{那条链}\ \textbf{换来了一个新的挂起常数}\ \beta\varepsilon。
 $$
 
 **所以正确的说法不是"E5 消失了"，而是"E5 被位移了"**：从"粗粒化 $\pi$ 是输入"变成"**层塔温度 $\beta\varepsilon$ 是输入**"（或"用 `R54` 的零参数路线，但成块规则的必然性未证"）。这与盘点 §3.2-D 的温度冲突（$\ln\frac32$ vs $(1.200,1.470)$）是**同一个**未锁定常数。
@@ -81,7 +81,7 @@ $$
 | 5 | `R90` §4 M3 表 $\mathcal R$ 行 | 独立一行 | 四层读法下并入 **L1′** 行（"复振幅／概率／语境性 有，纠缠无"）——**结论不变** |
 
 $$
-\Longrightarrow\ \textbf{猜想的判定不受影响};\ \text{受影响的只是}\ \textbf{层的计数}（4\ \text{vs}\ 3）\ \text{与}\ \texttt{E5}\ \text{的记账}。
+\Longrightarrow\ \textbf{猜想的判定不受影响};\ \text{受影响的只是}\ \textbf{层的计数}（4\ \text{vs}\ 3）\ \text{与}\ \text{E5}\ \text{的记账}。
 $$
 
 **而对 `R86`–`R88` 的判定无影响**：那里用的是"记录 $\lambda$ 属 L1′"这一条，与 $\mathcal R$ 是否独立无关。
@@ -113,8 +113,8 @@ $$
 
 $$
 \begin{aligned}
-&\texttt{R50}\ \text{说 $\mathcal R$ 是活层};\ \texttt{R54}\text{/}\texttt{R58}\ \text{说它已撤};\ \texttt{R72}\ \text{同篇内两种说法并存} \Longrightarrow\ \textbf{真矛盾};\\
-&\text{它不是标签问题}：\ \text{四层读法下}\ \texttt{R54}\ \text{以}\ \textbf{零参数}\ \text{导出}\ \pi,\ \text{使}\ \texttt{E5}\ \text{的粗粒化分项}\ \textbf{真的退休};\\
-&\text{但"撤 $\mathcal R$"}\ \textbf{换来了新常数}\ \beta\varepsilon\ \Longrightarrow\ \text{E5 是被}\ \textbf{位移}\ \text{而非消失}。\ \text{猜想的判定不变（只是层数 4 vs 3）。}
+&\text{R50}\ \text{说 \mathcal R 是活层};\ \text{R54}\text{/}\text{R58}\ \text{说它已撤};\ \text{R72}\ \text{同篇内两种说法并存} \Longrightarrow\ \textbf{真矛盾};\\
+&\text{它不是标签问题}：\ \text{四层读法下}\ \text{R54}\ \text{以}\ \textbf{零参数}\ \text{导出}\ \pi,\ \text{使}\ \text{E5}\ \text{的粗粒化分项}\ \textbf{真的退休};\\
+&\text{但"撤 \mathcal R"}\ \textbf{换来了新常数}\ \beta\varepsilon\ \Longrightarrow\ \text{E5 是被}\ \textbf{位移}\ \text{而非消失}。\ \text{猜想的判定不变（只是层数 4 vs 3）。}
 \end{aligned}
 $$

@@ -12,14 +12,14 @@
 ## §0 一句话
 
 $$
-\boxed{
+
 \begin{aligned}
-&\textbf{修正后的猜想与}\ \texttt{D222}\ \textbf{逐条一致，无差别}：\\
+&\textbf{修正后的猜想与}\ \text{D222}\ \textbf{逐条一致，无差别}：\\
 &\qquad \text{① } L2\ \text{全部毁灭}\ \checkmark;\quad
 \text{② } L1\ \text{保留最高}\textbf{两}层\ \checkmark;\quad
 \text{③ } L0\ \text{完整保留}\ \checkmark\\
-&\therefore\ \text{你的猜想}\ \textbf{就是}\ \texttt{D222}\ \text{已登记的规则};\ \text{不需要新条款。}
-\end{aligned}}
+&\therefore\ \text{你的猜想}\ \textbf{就是}\ \text{D222}\ \text{已登记的规则};\ \text{不需要新条款。}
+\end{aligned}
 $$
 
 ---
@@ -28,12 +28,12 @@ $$
 
 | 猜想（修正版） | `D222` | 判定 |
 |:--|:--|:--|
-| L2 全部毁灭 | $E_i\to D_i$，$E_i=\varnothing$ | ✅ **一致** |
-| **L1 保留最上面两个亚层** | 「历史层只保留最高**两层**」$\Pi_i=\biguplus_{q\in\mathsf{Top}_2(b_i)}P_i^{(q)}$ | ✅ **一致** |
+| L2 全部毁灭 | $E\_i\to D\_i$，$E\_i=\varnothing$ | ✅ **一致** |
+| **L1 保留最上面两个亚层** | 「历史层只保留最高**两层**」$\Pi\_i=\biguplus\_{q\in\mathsf{Top}\_2(b\_i)}P\_i^{(q)}$ | ✅ **一致** |
 | L0 完整保留 | `D222` 只动 L1/L2 | ✅ **一致** |
 
 $$
-\boxed{\ \text{修正后}\ \textbf{零差别}:\ \text{你的猜想}\ \equiv\ \texttt{D222}。\ }
+\ \text{修正后}\ \textbf{零差别}:\ \text{你的猜想}\ \equiv\ \text{D222}。\ 
 $$
 
 ---
@@ -43,9 +43,9 @@ $$
 | 性质 | 内容 | 依据 |
 |:--|:--|:--|
 | **零和保持** | 每条闭合历史 $Q(w)=0$ ⟹ 任何保留子集仍零和 | `D222` §第 6 步 |
-| **幂等性** $\Pi^2=\Pi$ | $\mathsf{Top}_2$ 反复施加不再削层 | `D222` §第 2 步 |
+| **幂等性** $\Pi^2=\Pi$ | $\mathsf{Top}\_2$ 反复施加不再削层 | `D222` §第 2 步 |
 
-**幂等性逐 $b$ 核验**（$\mathsf{Top}_2(b)=\{b-1,b\}$ for $b\ge2$）：
+**幂等性逐 $b$ 核验**（$\mathsf{Top}\_2(b)=\{b-1,b\}$ for $b\ge2$）：
 
 | $b$ | 保留集 | $b'$ | 再投影 | 幂等 |
 |--:|:--|--:|--:|:--|
@@ -62,7 +62,7 @@ $$
 设 $C(T):=$ 「$h=1$ 条历史 → 一个周期产生的闭合事件数」。两层保留给**二阶递推**：
 
 $$
-h_n=C\,(h_{n-1}+h_{n-2})\ \Longrightarrow\ \boxed{\ \lambda^2=C\,(\lambda+1)\ }
+h_n=C\,(h_{n-1}+h_{n-2})\ \Longrightarrow\ \ \lambda^2=C\,(\lambda+1)\ 
 $$
 
 $$
@@ -88,7 +88,7 @@ $$
 **登记为开放**：$C(T)$ 的正确定义（含站点与去重口径）**未定**；本文只保留 §3 的**代数关系**。
 
 $$
-\boxed{\ \text{本节结论}\ \textbf{不作数};\ \text{只登记"存在一个二阶递推，其系数需先统一定义"}。\ }
+\ \text{本节结论}\ \textbf{不作数};\ \text{只登记"存在一个二阶递推，其系数需先统一定义"}。\ 
 $$
 
 ---
@@ -99,7 +99,7 @@ $$
 2. **§3 的代数关系成立**（$\lambda^2=C(\lambda+1)$ ⟺ $C=\lambda^2/(\lambda+1)$），但 **$C(T)$ 的定义未定**（§4）。
 3. **本文件不改动** [`L2_layer_retention_verdict.md`](L2_layer_retention_verdict.md) 里 $k=1$ 的分析；那一份现在只作为**被修正的版本**保留。
 4. **未做**：$C(T)$ 两种口径的调和（站点数、去重规则）。
-5. **未做**：把 $\lambda$ 与 `L2_catalan_destruction.py` 的 $h_1=2\sum C_i$ 口径统一。
+5. **未做**：把 $\lambda$ 与 `L2_catalan_destruction.py` 的 $h\_1=2\sum C\_i$ 口径统一。
 
 ---
 

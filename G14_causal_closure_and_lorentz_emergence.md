@@ -5,7 +5,7 @@
 **核验**：[`G14_check.py`](G14_check.py) —— **独立实断言 27 / 结论行 0 / 不符 0**，退出码 `0`（0.2 秒）
 
 $$
-\boxed{\text{物质层的 I6 不是「是／否」，而是「以 }\gamma\text{ 为参数的破缺，}\gamma\to0\text{ 时恢复」。}}
+\text{物质层的 I6 不是「是／否」，而是「以 }\gamma\text{ 为参数的破缺，}\gamma\to0\text{ 时恢复」。}
 $$
 
 ---
@@ -20,11 +20,11 @@ G13 把 I6 的缺口定位在物质层：粗粒化是**热方程（抛物型）*
 
 ## §1 引理 48（Fick 闭合是非因果的）【导出】
 
-从守恒 $\partial_\tau\rho+\nabla\!\cdot\!j=0$ 出发，若取 **Fick 闭合** $j=-D\nabla\rho$，得热方程。核验：紧支源在 $|x|>1+t+0.5$ 之外仍有 $3.4\times10^{-2}$ 的非零尾 ⟹ **传播速度无穷**。
+从守恒 $\partial\_\tau\rho+\nabla\!\cdot\!j=0$ 出发，若取 **Fick 闭合** $j=-D\nabla\rho$，得热方程。核验：紧支源在 $|x|>1+t+0.5$ 之外仍有 $3.4\times10^{-2}$ 的非零尾 ⟹ **传播速度无穷**。
 
 而 Z1 定理 1 的每次移动是**有限、局域**的（沿单条边，图 $\Gamma$ 的边集有界）。故
 
-$$\boxed{\text{Fick 不可能是底层动力学的精确宏观极限——它只是关于 }\tau\text{ 的首阶截断。}}$$
+$$\text{Fick 不可能是底层动力学的精确宏观极限——它只是关于 }\tau\text{ 的首阶截断。}$$
 
 ---
 
@@ -43,10 +43,10 @@ $$
 \lambda\,\partial_\tau^2\rho+\partial_\tau\rho=D\nabla^2\rho
 $$
 
-主部为 $\lambda\partial_\tau^2-D\nabla^2$，故**特征速度有限**：
+主部为 $\lambda\partial\_\tau^2-D\nabla^2$，故**特征速度有限**：
 
 $$
-\boxed{\,c=\sqrt{D/\lambda}\,}
+\,c=\sqrt{D/\lambda}\,
 $$
 
 **核验**：$\gamma=1.0$ 与 $\gamma=0.2$ 两种情形下，电报解在 $|x|>1+ct$ 之外为机器零（$10^{-9}$ 量级）。
@@ -65,7 +65,7 @@ $$
 
 | 区间 | 根 | 含义 |
 |:--|:--|:--|
-| $\gamma\gg ck$（过阻尼） | $\omega\approx-i\dfrac{c^2k^2}{2\gamma}$ | **热型**，$D_{\rm eff}=c^2/(2\gamma)$ |
+| $\gamma\gg ck$（过阻尼） | $\omega\approx-i\dfrac{c^2k^2}{2\gamma}$ | **热型**，$D\_{\rm eff}=c^2/(2\gamma)$ |
 | $\gamma\to0$（无阻尼） | $\omega\to\pm ck$ | **波型**，无色散 |
 
 **核验**（两个方向都单调收敛）：
@@ -75,7 +75,7 @@ $$
 | $\gamma=10\to40\to160$（对热解） | $0.0077\to0.0013\to0.0010$ |
 | $\gamma=0.5\to0.1\to0.02$（对达朗贝尔解） | $0.2887\to0.0694\to0.0144$ |
 
-$$\boxed{\text{G6 的热方程是过阻尼极限，不是另一个理论。}}$$
+$$\text{G6 的热方程是过阻尼极限，不是另一个理论。}$$
 
 ---
 
@@ -93,7 +93,7 @@ $$\boxed{\text{G6 的热方程是过阻尼极限，不是另一个理论。}}$$
 ## §5 这给出本纲领的**第一个可证伪量**
 
 $$
-\boxed{\ \gamma=\frac1{2\lambda}\ \text{是优先参考系的耦合}\ }
+\ \gamma=\frac1{2\lambda}\ \text{是优先参考系的耦合}\ 
 $$
 
 若 $\lambda$ 有限，则存在一个优先参考系，其效应在频率 $\omega\gtrsim\gamma$ 时出现（相对修正 $\sim\gamma/\omega$）。这是一个**可被实验约束**的量。

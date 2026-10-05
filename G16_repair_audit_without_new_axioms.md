@@ -5,7 +5,7 @@
 **核验**：[`G16_check.py`](G16_check.py) —— **独立实断言 20 / 结论行 0 / 不符 0**，退出码 `0`（1.4 秒）
 
 $$
-\boxed{\text{不增扩充条款是可以的——代价是源带优先叶层，而}\textbf{不是}\text{牺牲 GR。}}
+\text{不增扩充条款是可以的——代价是源带优先叶层，而}\textbf{不是}\text{牺牲 GR。}
 $$
 
 ---
@@ -34,13 +34,13 @@ $$
 \partial_\tau\rho=-\nabla\!\cdot\!j-\Gamma\rho,\qquad
 \partial_\tau\sigma=+\Gamma\rho
 \quad\Longrightarrow\quad
-\boxed{\ \partial_\tau(\rho+\sigma)=-\nabla\!\cdot\!j\ }
+\ \partial_\tau(\rho+\sigma)=-\nabla\!\cdot\!j\ 
 $$
 
 **精确守恒。** **核验**：总量逐步精确守恒（偏差 $<10^{-12}$）；**仅体**不守恒，且缺口恰等于汇的增量（偏差 $<10^{-12}$）。
 
 $$
-\boxed{\text{Z4 的终端账本本身就是守恒律所需的第二本账。}}
+\text{Z4 的终端账本本身就是守恒律所需的第二本账。}
 $$
 
 > 这正是 G7 引理 34 的两条解法之一（"体 + 汇"），而它**已经在条款集里**。
@@ -49,19 +49,19 @@ $$
 
 ## §2 引理 58（汇修复守恒，但不修复因果性）【导出】
 
-反应扩散 $\partial_\tau\rho=D\nabla^2\rho-\Gamma\rho$ 仍是**抛物型**。
+反应扩散 $\partial\_\tau\rho=D\nabla^2\rho-\Gamma\rho$ 仍是**抛物型**。
 
 **核验**：紧支源下 $t=1$、$|x|>3$ 处仍有 $8.7\times10^{-3}$；**对照**电报方程（有记忆核）在锥外为 $6.1\times10^{-10}$。
 
 $$
-\boxed{\text{因果性来自记忆核，不来自汇。}}
+\text{因果性来自记忆核，不来自汇。}
 $$
 
 ---
 
 ## §3 引理 59（几何层完全不受影响）【导出】
 
-Bianchi 恒等式 $\nabla^aG_{ab}=0$ 对一般度规成立（**核验**偏差 $1.7\times10^{-16}$），且**只依赖度规与 Levi-Civita 联络，不含任何源**。
+Bianchi 恒等式 $\nabla^aG\_{ab}=0$ 对一般度规成立（**核验**偏差 $1.7\times10^{-16}$），且**只依赖度规与 Levi-Civita 联络，不含任何源**。
 
 $$
 \Longrightarrow\ \text{Lovelock 的推导（局域 + 二阶 + 无散 }\Rightarrow c_1G+c_2g\text{）}\textbf{不看源}.
@@ -77,7 +77,7 @@ $$
 | **源** | **守恒性由体 + 汇总账补回**（引理 57） |
 
 $$
-\boxed{G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}\ \text{存活；受损的只是「源 = 相对论物质」这一附带主张。}}
+G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}\ \text{存活；受损的只是「源 = 相对论物质」这一附带主张。}
 $$
 
 ---

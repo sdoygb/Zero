@@ -6,13 +6,13 @@
 **核验**：[`R9_check.py`](R9_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{R8 把 Jacobson 2016 作为第一接口的选择仍然成立；}\\
 &\text{但次选应从 Jacobson 1995 改为 Cao-Carroll 2018；}\\
 &\text{Oh-Park-Sin 和 Faulkner 等全息强结果不能当 Zero 的首选接口；}\\
 &\text{Zero 目前仍只支持条件恢复，不支持无条件导出四维 GR。}
-\end{aligned}}
+\end{aligned}
 $$
 
 ---
@@ -25,12 +25,12 @@ $$
 
 | Zero 已有对象 | Jacobson 2016 所需对象 | 对接程度 |
 |:--|:--|:--|
-| 有限维忠实态、GNS 模流、模 Hamiltonian | 小球约化态与 $K_B=-\log\rho_B$ | 直接对应 |
+| 有限维忠实态、GNS 模流、模 Hamiltonian | 小球约化态与 $K\_B=-\log\rho\_B$ | 直接对应 |
 | R8.1 精确熵差恒等式 | 一阶纠缠第一定律 | 已补到有限维任意忠实态 |
 | 面积律候选与边界退化 | 小球面积的 UV 项 | 条件对应 |
 | 固定体积边界权重 | 固定体积熵平衡 | 只有有限模型接口 |
 | 离散细化与局部极限 | 连续 Lorentzian 区域代数网 | 未闭合 |
-| 模流候选剖面 | 几何 boost $K_B\to 2\pi B_B$ | 决定性缺口 |
+| 模流候选剖面 | 几何 boost $K\_B\to 2\pi B\_B$ | 决定性缺口 |
 
 Jacobson 2016 的结构把问题集中到一条链上：
 
@@ -140,7 +140,7 @@ CFT / 全息支线
 | Alonso-Serrano-Liska 2020 | 局部因果菱形为输入 | Clausius 熵与纠缠熵对照 | 面积项为输入 | 比较两类平衡表述 | 热力学自然得到 unimodular gravity，不是完整 GR | 无直接定量预言 | 是重要反例：热力学第一定律不自动给完整 GR |
 | Gorard 2020 + Wolfram 2020 | 离散超图与因果图显式；连续流形为极限 | 不处理 modular/boost 桥 | 离散曲率与体积锥显式 | 不是主轴 | 离散 Ricci 约束；固定维数为输入 | 离散 Lorentz 与几何修正 | 需要固定维数、弱遍历性和连续超图极限 |
 | Carrasco-Pedraza-Svesko-Weller-Davies 2023 | 全息复杂体积理论为输入 | 不处理 modular/boost 桥 | CV 字典为输入 | 不是主轴 | 线性化；明确承诺限制在二维膨胀引力 | 无直接定量预言 | 复杂度假设比模流离 Zero 更远 |
-| Kumar 2024/2025 | 大因果菱形与 de Sitter 静态片为输入 | 近 Rindler 的纠缠第一定律为输入 | $\delta S_{\rm out}=\delta A/(4G)$ 为输入 | 用量子膨胀与非平衡熵流 | 宣称完整半经典 EFE，但保留多项假设与因子约定 | 无直接定量预言 | 不能算真正“无假设”；适合作为批评案例 |
+| Kumar 2024/2025 | 大因果菱形与 de Sitter 静态片为输入 | 近 Rindler 的纠缠第一定律为输入 | $\delta S\_{\rm out}=\delta A/(4G)$ 为输入 | 用量子膨胀与非平衡熵流 | 宣称完整半经典 EFE，但保留多项假设与因子约定 | 无直接定量预言 | 不能算真正“无假设”；适合作为批评案例 |
 | Bianconi 2025 | Lorentzian 度规为输入 | 用相对熵作用量，不走模 boost | 不以边界面积为主轴 | 不是固定体积方案 | 修改 EFE；低耦合极限回到 EFE | 有 $G$-场与暗物质角色，但量化不足 | R8.1 可接相对熵，但缺少度规算符与双度规结构 |
 
 ---
@@ -161,7 +161,7 @@ $$
 \Delta\le \frac d2
 $$
 
-时，这一项在小球极限中压过通常的 $R^d\delta\langle T_{00}\rangle$ 项，于是 Jacobson 所需的 $\delta S_{\rm IR}$ 形式不再自动成立。
+时，这一项在小球极限中压过通常的 $R^d\delta\langle T\_{00}\rangle$ 项，于是 Jacobson 所需的 $\delta S\_{\rm IR}$ 形式不再自动成立。
 
 来源：Casini, Galante, Myers, JHEP 03 (2016) 194, [DOI](https://doi.org/10.1007/JHEP03(2016)194), [arXiv:1601.00528](https://arxiv.org/abs/1601.00528)。
 
@@ -176,16 +176,16 @@ Speranza 对相关算符微扰的球区域熵计算得到同一类标度。论�
 R8 已经写过“无低维相关算符污染该项”属于 C4 的一部分，但 R9 的结论更强：
 
 1. 低维污染不是技术小项，而是可以改变小球熵的首阶标度。
-2. Zero 的 gap $m_{\rm stag}=0.23534171$ 与相关维数控制目前没有建立映射。
+2. Zero 的 gap $m\_{\rm stag}=0.23534171$ 与相关维数控制目前没有建立映射。
 3. 若 Zero 的局部相关算符有效维数接近二，固定体积平衡可能失去 Jacobson 所需的首阶形式。
 4. 所以 Jacobson 2016 仍是最强接口，但不是“只差 boost”一条；还差相关算符层级与固定体积 UV/IR 分离。
 
 这并不推翻 R8，而是把 R8 的 `L1/L2／$\mathcal R$/L4` 缺口补上一条外部审计要求：
 
 $$
-\boxed{
+
 \text{在补几何 boost 之前，先证明低维相关算符不会污染固定体积小球首阶熵变。}
-}
+
 $$
 
 ---
@@ -213,7 +213,7 @@ Jacobson, PRL 116, 201101 (2016), [DOI](https://doi.org/10.1103/PhysRevLett.116.
 **剩余硬缺口**：
 
 1. 有限维模流到连续局部代数网。
-2. 算子级 $K_B\to 2\pi B_B$。
+2. 算子级 $K\_B\to 2\pi B\_B$。
 3. 普适面积密度 $S=\eta A+o(A)$。
 4. 固定体积平衡的连续实现。
 5. 低维相关算符污染的控制。
@@ -294,7 +294,7 @@ Leichenauer, Levine, Shahbazi-Moghaddam, PRD 98, 086013 (2018), [DOI](https://do
 
 Dong, Lewkowycz, JHEP 01 (2018) 081, [DOI](https://doi.org/10.1007/JHEP01(2018)081), [arXiv:1705.08453](https://arxiv.org/abs/1705.08453)。
 
-**外部强度**：Euclidean 路径积分和量子极值面给出任意引力理论的熵极值，并推广到 $G_N$ 全阶。对积分类场方程给出强结果。
+**外部强度**：Euclidean 路径积分和量子极值面给出任意引力理论的熵极值，并推广到 $G\_N$ 全阶。对积分类场方程给出强结果。
 
 **Zero 接口**：低。它依赖 Euclidean 引力路径积分、极值面和广义熵，而 Zero 目前只有离散/有限模型接口。
 
@@ -345,8 +345,8 @@ Kumar, Gen. Rel. Grav. (2024/2025), [DOI](https://doi.org/10.1007/s10714-023-031
 
 1. 起点是大因果菱形和 de Sitter 静态片。
 2. 使用近 Rindler 的纠缠第一定律。
-3. 输入 $\delta S_{\rm out}=\delta A/(4G)$。
-4. 假设 $T_{ab}$ 涨落可忽略。
+3. 输入 $\delta S\_{\rm out}=\delta A/(4G)$。
+4. 假设 $T\_{ab}$ 涨落可忽略。
 5. 为恢复方程采用了特殊因子约定。
 
 **判决**：它是值得登记的新提案，但现阶段不能据此宣称 Jacobson 路线已被无假设替代。
@@ -412,7 +412,7 @@ Bianconi, PRD 111, 066001 (2025), [DOI](https://doi.org/10.1103/PhysRevD.111.066
 
 ### 6.1 首选线：Jacobson 2016
 
-1. 先攻低维相关算符污染：把 $m_{\rm stag}$、相关指数和固定体积首阶熵变的关系写成可证或可排除的问题。
+1. 先攻低维相关算符污染：把 $m\_{\rm stag}$、相关指数和固定体积首阶熵变的关系写成可证或可排除的问题。
 2. 再攻算子级几何 boost：在有限维/准局部模型中，构造
 
 $$

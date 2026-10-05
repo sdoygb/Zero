@@ -6,7 +6,7 @@
 **核验**：[`R30_check.py`](R30_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{主张"无质量极化的}\textbf{小群}\text{必须交换"}\Longrightarrow\text{空解（no-go）}:\ ISO(2)\text{ 已非交换。}\\
 &\text{改成"}\textbf{旋转部分}\text{ }SO(D-2)\text{ 交换"}\Longrightarrow\{4\}\text{，但它是 }G89\text{ §4 第 1／2 条的}\textbf{同义改写}:\\
@@ -19,7 +19,7 @@ $$
 &\text{原生性更正：}Z0\text{ §4.3 明写"}\textbf{Zero 层没有相位}\text{"；}\\
 &\qquad\text{且 }Zero\text{ 有原生}\textbf{非交换}\text{有限结构（二面体 }D_L\text{、}M_2(\mathbb C)\text{）。}\\
 &\text{唯一幸存的桥是函子 }F\text{（§8），它仍开放。}
-\end{aligned}}
+\end{aligned}
 $$
 
 > **一句话**：本节前一稿提出的"用原生循环相位把小群选维的依赖降一层"**失败了**：字面读法给空解，可修复读法只是 `G89` §4 第 1／2 条的换词，而所谓"原生相位"在 `Z0` §4.3 里被明文否认，Zero 真正的原生结构是**有限**循环与**有限非交换**（`D_L`），不是连续相位。R30 的价值因此不在"选维前进"，而在**把这条路封死并留下唯一出口的精确形式**：一个从 Zero 层范畴到正交作用范畴的函子 `F`，且不许默认"闭包自动满射到 `SO(D−2)`"。
@@ -68,7 +68,7 @@ $$
 零矢量的稳定子（小群）是**欧几里得群**
 
 $$
-\operatorname{Stab}(k)=ISO(D-2)=\mathbb R^{D-2}\rtimes SO(D-2),
+\text{Stab}(k)=ISO(D-2)=\mathbb R^{D-2}\rtimes SO(D-2),
 \qquad\text{(R30-2)}
 $$
 
@@ -89,9 +89,9 @@ ISO(D-2)\text{ 交换}\iff D-2\le1\iff D\le3;
 $$
 
 $$
-\boxed{
+
 \text{照字面读"小群必须交换"，连 }D=4\text{ 都被排除——与 }G89\text{ §4 第 11 条／}G11\text{ 原 }(Z_2)\text{ 的"不可满足"失败模式同类。}
-}
+
 \qquad\text{(R30-5)}
 $$
 
@@ -121,16 +121,16 @@ $$
 | $D$ | 3 | **4** | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
 |:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
 | $\dim SO(D-2)$ | 0 | **1** | 3 | 6 | 10 | 15 | 21 | 28 | 36 | 45 |
-| $\dim\mathcal P_D^{+}$ | 0 | **1** | 3 | 6 | 10 | 15 | 21 | 28 | 36 | 45 |
-| $\dim\mathcal P_D^{-}$ | 0 | **1** | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| $\dim\mathcal P\_D^{+}$ | 0 | **1** | 3 | 6 | 10 | 15 | 21 | 28 | 36 | 45 |
+| $\dim\mathcal P\_D^{-}$ | 0 | **1** | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 | `SO(D−2)` 交换 | ✓ | **✓** | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ |
 | `dim P_D^- ≤ 1` | ✓ | **✓** | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ |
 
 $$
-\boxed{
+
 \text{(C1-rot)}\iff G89\text{ §4 第 1／2 条（"至少一个特征空间为 1 维"）；}
 \text{在 }D\ge4\text{ 上逐点同真，故不是独立证据。}
-}
+
 \qquad\text{(R30-8)}
 $$
 
@@ -191,10 +191,10 @@ $$
 它**已经包含**无质量、自旋 2、极化这三个概念——即新旧两条路径共用的那一批外部对象。故"(C1) ＋过筛"不是两条独立证据，而是**同一外部概念的重复使用**：用无质量小群推出维数，再用"存在无质量引力子"筛掉低维。
 
 $$
-\boxed{
+
 \text{依赖深度没有降低：(C1) 的进口}\textbf{不更少}\text{，且与 }(Z_2)'\text{ 共用无质量／极化／Lorentz 三件外部结构；}
 \text{前一稿的"依赖归约"主张}\textbf{撤回}。
-}
+
 \qquad\text{(R30-12)}
 $$
 
@@ -218,9 +218,9 @@ $$
 **(b) "Zero 没有原生非交换来源"是错的（对有限群）。** [`G27`](G27_purification_attempt.md:34) 已证 `L≥3` 时二面体群 `D_L` **非交换**（`r∘s≠s∘r`），并给出显式二维不可约表示；[`G32`](G32_native_origin_of_saturation.md:25) 记 `D_L ⟹ M_2(\mathbb C)`，[`Z16`](Z16_zunif_balanced_regular_module.md) 用正则模块条件构造 CAR。故 Zero 层**有**原生非交换结构——只是**有限**的。
 
 $$
-\boxed{
+
 \text{"Zero 无原生非交换来源"仅对}\textbf{连续}\text{群成立；从有限非交换跳到连续非交换，正是本路线走私的那一步。}
-}
+
 \qquad\text{(R30-14)}
 $$
 
@@ -240,10 +240,10 @@ $$
 | "无质量"只作为外部输入 `P_grav` 出现 | [`R3`](R3_dimension_selection.md:125) |
 
 $$
-\boxed{
+
 \text{无质量是 Lorentzian 质壳概念；当前语料}\textbf{没有质壳、没有质量谱}。
 \text{故 (C1) 完全依赖一件外部输入。}
-}
+
 \qquad\text{(R30-15)}
 $$
 
@@ -254,9 +254,9 @@ $$
 把前一稿的"相位桥"换成一个**不允许默认任何一步**的函子陈述：
 
 $$
-\boxed{
+
 \begin{aligned}
-\texttt{LG-FUNCTOR}:\quad
+\text{LG-FUNCTOR}:\quad
 &\text{存在函子 }F,\text{ 从 Zero 层范畴}\\
 &\qquad(\text{连通 }\Gamma+\text{Z1 定理 1 补偿移动}+\text{Z2 全分支};\ \text{态射}=\text{Z1 定理 1／Z2 相容映射})\\
 &\text{到有限维实内积空间及其正交作用范畴，使}\\
@@ -264,7 +264,7 @@ $$
 &\text{(ii)}\ F\text{ 把 }Z14/G27\text{ 的原生 }\mathbb Z_L/D_L\text{ 送到 }SO(D-2)\text{ 的极大环面，}\\
 &\qquad\text{且}\textbf{显式给出}\text{的闭包／细化极限}\textbf{满射到整个 }SO(D-2)\text{（不许默认这一步）};\\
 &\text{(iii)}\ D(m)\text{ 由 }F\text{ 决定，不由外部物理输入（}P_{\rm grav}\text{ 等）决定。}
-\end{aligned}}
+\end{aligned}
 \qquad\text{(R30-16)}
 $$
 
@@ -291,9 +291,9 @@ $$
 | 本轮定级 | **no-go ＋同义改写** | **反向硬结果**（先攻点是判 `G53` UV 发散真伪） | **已被排除为选维器** |
 
 $$
-\boxed{
+
 \text{三条路的净结果：一条封死、一条有反向硬结果、一条已被排除。选维的缺口位置比 }R3\text{ 时更清楚，但等级未变。}
-}
+
 \qquad\text{(R30-17)}
 $$
 
@@ -304,13 +304,13 @@ $$
 前一稿曾主张 `G11` 的"小群不可达"no-go 应被划界。**更正后的说法**：
 
 $$
-\boxed{
+
 \begin{aligned}
-&\text{给定 }G1\text{ 引理 5 的号差 }(1,m-1)\text{ 与}\textbf{一条零方向}\text{，小群 }=\operatorname{Stab}(k)\text{ 是派生对象；}\\
+&\text{给定 }G1\text{ 引理 5 的号差 }(1,m-1)\text{ 与}\textbf{一条零方向}\text{，小群 }=\text{Stab}(k)\text{ 是派生对象；}\\
 &\text{但零方向本身不是原生的（§7），故 }G11\text{ 的 no-go}\textbf{ 判定不变}。\\
 &\text{可登记的细化只有一句：缺口被}\textbf{定位}\text{为"零方向／无质量"这一件外部输入，}\\
 &\qquad\text{而不再笼统写作"整个小群不可达"。}
-\end{aligned}}
+\end{aligned}
 \qquad\text{(R30-18)}
 $$
 
@@ -324,10 +324,10 @@ $$
 - 但 [`Z3`](Z3_i2a_dimension_drift_verdict.md:22) §0 已明确更正：该图是**位形空间**的图 `G_T`，而 I2a 问的是**物理通道图** `Γ` 的细化极限；把前者当后者是**错误归属**。`Z3` §7 边界重申"只针对 `G_T`，**没有**判定 `Γ` 的细化族"。
 
 $$
-\boxed{
+
 \text{故 }Z0\text{ §2.6 逼出终端款所依据的"无稳定谱维数"，是在位形空间图上算的；}
 \text{它对 }\Gamma\text{ 的效力}\textbf{未证}。
-}
+
 \qquad\text{(R30-19)}
 $$
 
@@ -346,10 +346,10 @@ $$
 7. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-\boxed{
+
 \text{当前诚实结论：本轮封死了一条看似有希望的选维路线，并把唯一出口写成可否证的函子；}
 \text{四维仍是【条件】。}
-}
+
 $$
 
 ---

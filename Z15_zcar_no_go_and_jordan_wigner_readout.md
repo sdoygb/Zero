@@ -7,16 +7,16 @@
 **核验**：[`Z15_check.py`](Z15_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{仅凭 }Z\text{-E* 不能唯一选出费米扇区：}\chi(-\mathbb I)=+1\text{ 与 }-1\text{ 都相容。}\\
 &\text{因此必须登记具名输入 }Z\text{-READ；这不是权重，而是离散读出选择。}\\
 &\text{在 }Z\text{-READ 下，旋量外代数给出 Fock 空间，Jordan–Wigner 推出 CAR 与 }(-1)^F。\\
 &\text{这关闭了“旋量 }\mathbb Z_2\text{ 到费米宇称”的构造问题，但没有关闭 L1。}
-\end{aligned}}
+\end{aligned}
 $$
 
-> **一句话**：双覆盖只告诉你“有一个 $\mathbb Z_2$ 可选”；它不告诉你“必须选哪一个”。选哪一个是一笔离散输入。选了之后，外代数和 Jordan–Wigner 可以把这笔输入变成真正的反对易场。
+> **一句话**：双覆盖只告诉你“有一个 $\mathbb Z\_2$ 可选”；它不告诉你“必须选哪一个”。选哪一个是一笔离散输入。选了之后，外代数和 Jordan–Wigner 可以把这笔输入变成真正的反对易场。
 
 ---
 
@@ -30,7 +30,7 @@ $$
 | Jordan–Wigner 算符满足 CAR | **已证（有限维构造）** | §4，引理 Z15.3 |
 | 中心元 $-\mathbb I$ 作用为费米宇称 $(-1)^F$ | **条件证成** | §4，推论 Z15.4 |
 | 从 Zero 内部唯一选出 `Z-READ` | **开放**；正是 E5 的离散部分 | §5 |
-| L1：$K_B\to2\pi B_B$ | **仍未关闭** | §5 |
+| L1：$K\_B\to2\pi B\_B$ | **仍未关闭** | §5 |
 
 **净判定**：`Z-CAR` 不再是一个模糊的“物理读出”缺口。它现在由三部分组成：
 
@@ -53,9 +53,9 @@ $$
 
 设 `D` 是 `Z-E*` 提供的全部结构：
 
-1. 一个正向循环 $C_L$；
-2. 旋转群同态 $\mathbb Z_L\to SO(2)$；
-3. 中心扩张 $1\to\mathbb Z_2\to\mathrm{Spin}(2)\to SO(2)\to1$。
+1. 一个正向循环 $C\_L$；
+2. 旋转群同态 $\mathbb Z\_L\to SO(2)$；
+3. 中心扩张 $1\to\mathbb Z\_2\to\text{Spin}(2)\to SO(2)\to1$。
 
 则 `D` **不能**推出“物理扇区必须取非平凡中心特征”。等价地，
 
@@ -68,28 +68,32 @@ $$
 取同一个双覆盖
 
 $$
-q:\mathrm{Spin}(2)\cong U(1)\longrightarrow SO(2)\cong U(1),
+q:\text{Spin}(2)\cong U(1)\longrightarrow SO(2)\cong U(1),
 \qquad q(z)=z^2 .
 \qquad\text{(Z15-3)}
 $$
 
 构造两个模型：
 
-1. **张量模型**：取一维表示 $\pi_+$，令
+1. **张量模型**：取一维表示 $\pi\_+$，令
+
    $$
-   \pi_+(g)=\mathbb I,\qquad \forall g\in\mathrm{Spin}(2).
+   \pi_+(g)=\mathbb I,\qquad \forall g\in\text{Spin}(2).
    \qquad\text{(Z15-4)}
    $$
+
    它通过商 $SO(2)$ 分解，故中心元满足
+
    $$
    \pi_+(-\mathbb I)=+1.
    \qquad\text{(Z15-5)}
    $$
 
 2. **旋量模型**：取二维表示
+
    $$
    \pi_-(U_\theta)=
-   \operatorname{diag}\!\left(e^{i\theta/2},e^{-i\theta/2}\right),
+   \text{diag}\!\left(e^{i\theta/2},e^{-i\theta/2}\right),
    \qquad
    \pi_-(-\mathbb I)=-\mathbb I.
    \qquad\text{(Z15-6)}
@@ -115,12 +119,14 @@ $$
 **定义（`Z-READ`，具名输入）**：在闭合循环的量子读出中，选择：
 
 1. 非平凡中心特征
+
    $$
    \chi(-\mathbb I)=-1;
    \qquad\text{(Z15-8)}
    $$
+
 2. 一个自旋结构（周期或反周期边界条件）；
-3. 一个与步位循环序相容的有序模式基，并把每个位置对应到一个旋量模 $S_j$ 与局部模式。
+3. 一个与步位循环序相容的有序模式基，并把每个位置对应到一个旋量模 $S\_j$ 与局部模式。
 
 外代数／Fock 构造不列为额外输入：它是给定旋量模与模式基后的规范代数构造。
 
@@ -135,7 +141,7 @@ $$
 
 ### 定理 Z15.2（Fock 构造）【条件证成，给定 `Z-READ`】
 
-设 $S$ 是 $\mathrm{Spin}(2)$ 的二维旋量模，中心元作用为 $-\mathbb I$。定义**外代数**
+设 $S$ 是 $\text{Spin}(2)$ 的二维旋量模，中心元作用为 $-\mathbb I$。定义**外代数**
 
 $$
 \mathcal F(S)=\bigoplus_{n\ge0}\Lambda^n S.
@@ -153,12 +159,12 @@ $$
 
 则：
 
-1. 每个 $S_j$ 上中心元 $-\mathbb I$ 作用为 $-1$；
-2. 在 $\Lambda^n(S_{\rm tot})$ 上，中心元作用为 $(-1)^n$；
+1. 每个 $S\_j$ 上中心元 $-\mathbb I$ 作用为 $-1$；
+2. 在 $\Lambda^n(S\_{\rm tot})$ 上，中心元作用为 $(-1)^n$；
 3. 定义粒子数 $F$ 为外代数次数，则中心元的作用正是
 
 $$
-\boxed{\ \pi(-\mathbb I)=(-1)^F\ }.
+\ \pi(-\mathbb I)=(-1)^F\ .
 \qquad\text{(Z15-11)}
 $$
 
@@ -179,7 +185,7 @@ $$
 \qquad\text{(Z15-12)}
 $$
 
-令 $\sigma_j^z$ 为第 $j$ 个模式上的 Pauli $z$，并定义
+令 $\sigma\_j^z$ 为第 $j$ 个模式上的 Pauli $z$，并定义
 
 $$
 P_j=\prod_{k<j}\sigma_k^z,
@@ -206,16 +212,16 @@ P=(-1)^F=\prod_{j=1}^{N}\sigma_j^z.
 \qquad\text{(Z15-15)}
 $$
 
-**证明**：相邻模式的 $P_j$ 串在交换两个费米算符时给出一个 $-1$；同一模式使用 Pauli 反对易关系。这是标准 Jordan–Wigner 代数计算。独立核验见 [`Z15_check.py`](Z15_check.py) 的有限维矩阵复算。$\square$
+**证明**：相邻模式的 $P\_j$ 串在交换两个费米算符时给出一个 $-1$；同一模式使用 Pauli 反对易关系。这是标准 Jordan–Wigner 代数计算。独立核验见 [`Z15_check.py`](Z15_check.py) 的有限维矩阵复算。$\square$
 
-### 推论 Z15.4（旋量 $\mathbb Z_2$ 到费米宇称）【条件证成】
+### 推论 Z15.4（旋量 $\mathbb Z\_2$ 到费米宇称）【条件证成】
 
 在 `Z-READ` 下，把定理 Z15.2 的 Fock 分次与引理 Z15.3 的占据空间等同，则中心元满足
 
 $$
-\boxed{\
+\
 \pi(-\mathbb I)=(-1)^F=P\ .
-\ }
+\ 
 \qquad\text{(Z15-16)}
 $$
 
@@ -235,7 +241,7 @@ $$
 |:--|:--|:--|
 | 双覆盖存在 | 已证 | 已证 |
 | 非平凡中心特征是否由 Zero 唯一选出 | 开放 | **排除**：需要 `Z-READ` |
-| 旋量 $\mathbb Z_2$ 到费米宇称 | 未做 | **在 `Z-READ` 下条件证成** |
+| 旋量 $\mathbb Z\_2$ 到费米宇称 | 未做 | **在 `Z-READ` 下条件证成** |
 | CAR／反对易关系 | 仍是识别 | **在 `Z-READ` 下构造性推出** |
 | 从 Zero 内部产生 `Z-READ` | 未触及 | **开放**；E5 离散部分 |
 | L1 | 开放 | **仍开放** |
@@ -243,10 +249,10 @@ $$
 因此 `Z-CAR` 应改写为：
 
 $$
-\boxed{
+
 \text{双覆盖已导出；唯一选择已排除；}\\
 \text{在具名 }Z\text{-READ 下 CAR 已条件构造；物理选择仍开放。}
-}
+
 \qquad\text{(Z15-17)}
 $$
 
@@ -278,7 +284,7 @@ $$
 
 | 文档 | 关系 |
 |:--|:--|
-| [`Z14`](Z14_closure_cyclic_order_base_theorem.md) | Z14 导出双覆盖与中心 $\mathbb Z_2$；Z15 证明其不能唯一选择中心特征 |
+| [`Z14`](Z14_closure_cyclic_order_base_theorem.md) | Z14 导出双覆盖与中心 $\mathbb Z\_2$；Z15 证明其不能唯一选择中心特征 |
 | [`Z13`](Z13_zero_foundation_missing_principle.md) | `Z-READ` 是 E5 的离散读出部分，仍须具名并付价签 |
 | [`R14`](R14_L1_from_zero_assembly.md) | R14.3 的 $2^r$ 维 Fock 计数与 Z15 的外代数构造相容；Z15 不把它们混同 |
 | [`R15`](R15_zcar_double_cover_and_zstress_scale.md) | R15.1 的双覆盖群论部分由 Z14 导出；R15 的“旋量到费米未做”由 Z15 条件构造补齐 |

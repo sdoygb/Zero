@@ -7,7 +7,7 @@
 **核验**：[`R47_check.py`](R47_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{A smooth cone field} \iff \text{conformal Lorentz structure (the cone is the zero set of a quadratic form,}\\
 &\qquad\text{signature } (1,D-1)\text{).}\\
@@ -16,12 +16,12 @@ $$
 &\qquad\text{so the exponentially small tails of } G59 \text{ only blur the boundary, not the topology.}\\
 &\therefore\ \text{the price can be paid: } \binom{D+1}2 \text{ is legitimate} \Longrightarrow D=4 \text{ and contextuality can coexist.}\\
 &\text{Residual: the conformal factor / scale is still not derived (} E4/G57\text{).}
-\end{aligned}}
+\end{aligned}
 $$
 
 > **一句话**：上一轮留下的价格——"单纯形字典是欧氏的、签名须外供"——**这一轮付掉了**。理由是一条标准事实加一条不变量论证：**光滑锥场 ⟺ 共形洛伦兹结构**（锥就是某个二次型的零集，其符号差必为 $(1,D-1)$），而**签名是离散不变量**，所以 `G59` 那个"只有有效锥、锥外指数小但非零"的毛病**无害**——指数尾巴只把锥的边界抹糊（数值：锥外占比随阈值从 `0.395` 变到 `0.0515`），**但改不了锥的拓扑**（pointed、convex），签名照旧是洛伦兹。于是 `R44` 的互斥被**完全绕过**：**`D=4` 与单体量子性可以同时到手。**
 
-> **【后续更正｜[`R48`](R48_exact_cone_and_effective_cone.md)（2026-10-03）】** 本文 §3 残留 2「精确光锥仍缺」是**措辞错误**：`R48` 证明**支持锥一直是精确的**（$\operatorname{supp}\rho_n\subseteq[-n,n]$，$B$ 无关）；`G59` 的"锥外指数小"是**锥边可见性** $\varepsilon(B)=\tfrac12\log(4/B)$ 而非锥的精确性。因此**本文的签名判决不需要"离散不变量"辩护**（它面对的是精确锥），结论本身**加强**且不变。本文其余内容保持原状（按 `STATUS.md` §9 的纪律，原文不原地改写）。
+> **【后续更正｜[`R48`](R48_exact_cone_and_effective_cone.md)（2026-10-03）】** 本文 §3 残留 2「精确光锥仍缺」是**措辞错误**：`R48` 证明**支持锥一直是精确的**（$\text{supp}\rho\_n\subseteq[-n,n]$，$B$ 无关）；`G59` 的"锥外指数小"是**锥边可见性** $\varepsilon(B)=\tfrac12\log(4/B)$ 而非锥的精确性。因此**本文的签名判决不需要"离散不变量"辩护**（它面对的是精确锥），结论本身**加强**且不变。本文其余内容保持原状（按 `STATUS.md` §9 的纪律，原文不原地改写）。
 
 ---
 
@@ -59,9 +59,9 @@ $$
 **(2) 有效锥够用（不变量论证）。** `G59` 的锥是**有效**的：锥外影响指数小而非零。但：
 
 $$
-\boxed{
+
 \textbf{签名是离散不变量}\ \Longrightarrow\ \text{指数小尾巴只移动边界，不改变拓扑，}\textbf{故签名不变}。
-}
+
 \qquad\text{(R47-2)}
 $$
 
@@ -85,9 +85,9 @@ $$
 **载体复核**（`R45` 已算）：文档例 `(2,5,20,100)`：`q=0.6466` ✅∈`(0.6,2/3)`、`S=2.0328>2` ✅、单纯形字典峰 `D=4` ✅；两层族 `p=0.8`：`q=0.6585` ✅、`S=2.0150` ✅、峰 `D=4` ✅。
 
 $$
-\boxed{
+
 \textbf{逃生口成立，且价格已付：}D=4\ \text{与单体量子性共存。}
-}
+
 \qquad\text{(R47-4)}
 $$
 
@@ -104,7 +104,7 @@ $$
 | 5 | `2\pi`、`E1` | 仍未解决 |
 
 $$
-\boxed{\ \text{The signature is derived; the scale and the dynamics are not.}\ }
+\ \text{The signature is derived; the scale and the dynamics are not.}\ 
 $$
 
 ---

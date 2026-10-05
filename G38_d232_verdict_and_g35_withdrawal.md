@@ -5,7 +5,7 @@
 **核验**：[`G38_check.py`](G38_check.py) —— **独立实断言 28 / 结论行 0 / 不符 0**，退出码 `0`
 
 $$
-\boxed{\ f(a)=\frac{1}{\lambda_1-\lambda_0}\log\frac{p_0(a)}{p_1(a)}\ \ (\text{D232 原文})\ \Longrightarrow\ \text{G37 算的正是这个量}\ \Longrightarrow\ \text{G35 撤回}\ }
+\ f(a)=\frac{1}{\lambda_1-\lambda_0}\log\frac{p_0(a)}{p_1(a)}\ \ (\text{D232 原文})\ \Longrightarrow\ \text{G37 算的正是这个量}\ \Longrightarrow\ \text{G35 撤回}\ 
 $$
 
 ---
@@ -24,9 +24,9 @@ $$
 
 | 位置 | 原文 |
 |:--|:--|
-| **预先结构** | $K(f)=K_M\otimes f$，并用 Gibbs 形式从生成元构造态 ⟹ **$f$ 是【输入】** |
-| **第 3 步｜likelihood ratio** | $\dfrac{p_0(a)}{p_1(a)}=\dfrac{e^{-\lambda_0f(a)}}{e^{-\lambda_1f(a)}}=\exp\!\big((\lambda_1-\lambda_0)f(a)\big)$ |
-| **反解** | $f(a)=\dfrac{1}{\lambda_1-\lambda_0}\log\dfrac{p_0(a)}{p_1(a)}$ |
+| **预先结构** | $K(f)=K\_M\otimes f$，并用 Gibbs 形式从生成元构造态 ⟹ **$f$ 是【输入】** |
+| **第 3 步｜likelihood ratio** | $\dfrac{p\_0(a)}{p\_1(a)}=\dfrac{e^{-\lambda\_0f(a)}}{e^{-\lambda\_1f(a)}}=\exp\!\big((\lambda\_1-\lambda\_0)f(a)\big)$ |
+| **反解** | $f(a)=\dfrac{1}{\lambda\_1-\lambda\_0}\log\dfrac{p\_0(a)}{p\_1(a)}$ |
 | **结论框** | **"矩阵相位比例随年龄 $a$ 变化当且仅当 $f$ 非恒定。"** |
 | **自述** | "这是一个**可逆改写**：给定年龄条件矩阵比例，就恢复剖面；给定剖面，就给出比例。" |
 
@@ -40,7 +40,7 @@ $$
 
 $\Longrightarrow$ **$f(a)$ 就是由两个矩阵相位（$\pm$）的比例决定的那个函数** $\Longrightarrow$ **[`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) 算的符号比正是这个量** ✅
 
-$\Longrightarrow$ **`G35` 的"$p_+(a)\ne p_-(a)$ 可能"被否证** $\Longrightarrow$ **撤回** ✅
+$\Longrightarrow$ **`G35` 的"$p\_+(a)\ne p\_-(a)$ 可能"被否证** $\Longrightarrow$ **撤回** ✅
 
 ---
 
@@ -48,13 +48,13 @@ $\Longrightarrow$ **`G35` 的"$p_+(a)\ne p_-(a)$ 可能"被否证** $\Longrighta
 
 `D233` 原文（本轮读到）：
 
-> "年龄谱**只依赖绝对值** $n=\lvert\sum x_j\rvert$，正负两支在每一步被**反射配对**。因此**年龄条件符号比例恒为一半一半**。现有零动力学给不出非恒定剖面。"
+> "年龄谱**只依赖绝对值** $n=\lvert\sum x\_j\rvert$，正负两支在每一步被**反射配对**。因此**年龄条件符号比例恒为一半一半**。现有零动力学给不出非恒定剖面。"
 
 $$
-\boxed{\ \text{这正是 G37 的符号对称定理；我用组合枚举}\textbf{独立验证}\text{了它。}\ }
+\ \text{这正是 G37 的符号对称定理；我用组合枚举}\textbf{独立验证}\text{了它。}\ 
 $$
 
-（$L=2,\dots,16$ 全部 $p_+(a)=p_-(a)=\tfrac12\lvert\mathcal W_L\rvert$ ✅）
+（$L=2,\dots,16$ 全部 $p\_+(a)=p\_-(a)=\tfrac12\lvert\mathcal W\_L\rvert$ ✅）
 
 ---
 
@@ -69,11 +69,11 @@ $$
 | # | 证据 | 出处 |
 |--:|:--|:--|
 | 1 | 年龄 → 径向坐标的映射是 **no-go**（重参数化族全保年龄序） | `D235`／[`G25`](G25_age_to_geometry_channel_is_obstructed.md) |
-| 2 | 几何核 $f_B(r)=\frac{R^2-r^2}{2R}$ 来自**外部参照**，D234 自己声明 | `D234`／[`G25`](G25_age_to_geometry_channel_is_obstructed.md) |
+| 2 | 几何核 $f\_B(r)=\frac{R^2-r^2}{2R}$ 来自**外部参照**，D234 自己声明 | `D234`／[`G25`](G25_age_to_geometry_channel_is_obstructed.md) |
 | 3 | **重播种给不出非恒定剖面**（$f\equiv0$，可证） | `D233`／**本文** |
 
 $$
-\boxed{\ \text{几何剖面不是从零和动力学里长出来的。}\ }
+\ \text{几何剖面不是从零和动力学里长出来的。}\ 
 $$
 
 ---

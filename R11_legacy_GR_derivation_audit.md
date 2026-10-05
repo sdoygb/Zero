@@ -7,12 +7,12 @@
 **核验**：[`R11_check.py`](R11_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{旧理论没有无条件导出四维 GR。}\\
 &\text{最强遗留物是有限维模代数、K32 类时锥代数引理、面积系数预算和条件化几何组装。}\\
 &\text{这些材料只能补 R8／R10 的条件桥，不能关闭 J1／J5，也不计入 O1–O5。}
-\end{aligned}}
+\end{aligned}
 $$
 
 ---
@@ -65,7 +65,7 @@ $$
 
 1. 选定内空间陪集几何；
 2. 计算谱作用量；
-3. 由热核系数 $a_2$ 得到 Einstein–Hilbert 项；
+3. 由热核系数 $a\_2$ 得到 Einstein–Hilbert 项；
 4. 检查局部牛顿势与 PPN。
 
 来源：
@@ -154,7 +154,7 @@ $$
 | 所有球 × 所有类时参考系 | `K30` 只定位族的要求，没有构造全族 | 仍在 R8 的 J3／J4 区域 |
 | Jacobson 面积系数 | 外部输入或面积律一致性识别 | 不能算 Zero 已导出 $G$ |
 | 连续 Lorentzian 区域代数 | 旧模型没有一般连续网 | 连续局域化仍开放 |
-| $K_B\to2\pi B_B$ | 没有算子级极限定理 | **L1 仍开放** |
+| $K\_B\to2\pi B\_B$ | 没有算子级极限定理 | **L1 仍开放** |
 | 低维相关算符控制 | 未做 | **L5 仍开放** |
 | $\Lambda$ | 仍为输入 | 不改变 E4 的处置 |
 
@@ -192,7 +192,7 @@ $$
 | 有限维模第一定律 | [`D23_modular_first_law.md`](../modular-equilibrium/derivations/D23_modular_first_law.md) | `R8.1` 的独立历史确认 |
 | 条件 EFE 桥 | [`D24_equilibrium_to_einstein.md`](../modular-equilibrium/derivations/D24_equilibrium_to_einstein.md) | 条件桥失败树；明确 C1–C4 是输入 |
 | 正能平移不等于 boost | `D42–D44` | 可直接补强 L1 的排除边界 |
-| 面积系数预算 | [`D152_entanglement_area_coefficient_and_G.md`](../modular-equilibrium/derivations/D152_entanglement_area_coefficient_and_G.md) | $G=1/(4\kappa c I_1)$ 的缺口分解 |
+| 面积系数预算 | [`D152_entanglement_area_coefficient_and_G.md`](../modular-equilibrium/derivations/D152_entanglement_area_coefficient_and_G.md) | $G=1/(4\kappa c I\_1)$ 的缺口分解 |
 | 张量 vs 直接和 | [`D225_tensor_vs_direct_sum_factorization_gap.md`](../modular-equilibrium/derivations/D225_tensor_vs_direct_sum_factorization_gap.md) | 排除把代数因子直接当空间站点 |
 | 模密度剖面缺口 | `D231`、`D233`、`D234` | 候选核与“支持不能唯一选 boost”的边界 |
 | ADM／Dirichlet 条件几何 | `D253–D256` | 条件恢复空间几何；仍缺时钟、lapse、shift 与细化 |
@@ -228,8 +228,8 @@ $$
 |:--|:--|:--|
 | 层结构对 GR 帮助很小 | [`G21`](G21_do_the_layers_help_derive_GR.md) | `G22` 更正：层结构给局域性与时间定向，不给度规与号差 |
 | “唯一堵点是 Z0③（历史标号 A3）” | [`G55`](G55_dynamics_line_degeneration_to_GR.md) | `G56`／`G59` 撤回；I7 不承重，精确锥仍开放 |
-| $m_{\rm stag}=\Theta/(2L)$ | [`G78`](G78_area_law_in_3d.md) | `G77` 的口径更正为 $m_{\rm stag}=|\Theta|/L$；数字须用 $0.23534171$ |
-| $\xi\simeq1.078L$ 与缺口 $8.498$ | `G77`／`G78` | `R8-L2` 修正：漏了 $v_F$，物理关联长度约 $2.157L$；$8.498$ 是有限窗口算术差距 |
+| $m\_{\rm stag}=\Theta/(2L)$ | [`G78`](G78_area_law_in_3d.md) | `G77` 的口径更正为 $m\_{\rm stag}=|\Theta|/L$；数字须用 $0.23534171$ |
+| $\xi\simeq1.078L$ 与缺口 $8.498$ | `G77`／`G78` | `R8-L2` 修正：漏了 $v\_F$，物理关联长度约 $2.157L$；$8.498$ 是有限窗口算术差距 |
 | $1.14$ 与 $m=1.75$ | `G80`／`G83` | 已撤回 |
 | I2a 是唯一真瓶颈 | [`Z2`](Z2_zero_to_gr_direct_route.md) | 当前视为 E1 条件链；无条件 Γ-收敛仍未证 |
 | 数学缺口 0、承重 no-go 0 | [`Z6`](Z6_stall_autopsy_and_released_ledger.md) | 只在“输入可有”的政策下成立，不是绝对无条件状态 |
@@ -256,9 +256,9 @@ $$
 结论：
 
 $$
-\boxed{
+
 \text{旧理论只把 J1–J5 的失败边界写详细了，没有关掉其中任何决定性缺口。}
-}
+
 $$
 
 ---
@@ -287,7 +287,7 @@ $$
 | K30 小球探测 | 球心、半径与偏心探测的参数化 | 局部场重构的辅助恒等式 | 不是“所有球”族的构造 |
 | K31 面积展开 | Jacobson 面积展开的内部一致性检查 | R8-L4 的独立复核 | 不导出 Jacobson 系数 |
 | K22 负结果 | 单球第一定律只给 $l=0$ | 防止把迹投影当全张量 | 不代替全族条件 |
-| D152 面积系数 | $G=1/(4\kappa c I_1)$ 的缺口预算 | R8-L2 | 三个因子仍未导出 |
+| D152 面积系数 | $G=1/(4\kappa c I\_1)$ 的缺口预算 | R8-L2 | 三个因子仍未导出 |
 | D23 模第一定律 | 有限维精确熵差恒等式的前身 | R8.1 交叉核验 | 不升级到连续 QFT |
 | D42–D44 | 正能平移不生成 Lorentz boost | L1 的排除边界 | 不证明 boost 存在 |
 | D225 | 抽象代数因子不选择空间张量分解 | CC1 | 不排除特殊动力学选择 |
@@ -304,7 +304,7 @@ $$
 | C2 | `GRCOMPLETE` 写“完整非线性 EFE”，但把全族与 Jacobson 系数当前提 | 只能记作条件结构闭合 |
 | C3 | 谱作用量路线写“恢复 GR”，但内空间是 ansatz，KK 约化未做 | 外部唯象交叉检查，不并入 Zero |
 | C4 | `D213` 说当前骨架不能直接推 GR；后文条件链仍存在 | 直接路线 no-go 成立；条件路线不因此自动关闭 |
-| C5 | `G78` 仍保留旧 $m_{\rm stag}=\Theta/(2L)$ 附注 | 当前数字以 `G77`／`R8-L2` 为准 |
+| C5 | `G78` 仍保留旧 $m\_{\rm stag}=\Theta/(2L)$ 附注 | 当前数字以 `G77`／`R8-L2` 为准 |
 | C6 | `G55` 称唯一堵点是 Z0③（历史标号 A3）；`G56`／`G59` 撤回 | Z0③ 唯一性作废；I7 不承重 |
 | C7 | `G21` 称层结构帮助很小；`G22` 更正 | 采纳 `G22`：有限局域性与时间定向贡献，但仍不给度规 |
 | C8 | `G80`／`G83` 的 `1.14`、`m=1.75` 后被撤回 | 只作历史；不得进入当前数字 |
@@ -338,7 +338,7 @@ $$
 
 1. 把 `R11` 的迁移部件接到 `R8` 的 J1–J5 检查表；
 2. 先做 L5 的低维相关算符污染判定；
-3. 再做 L1 的算子级 $K_B-2\pi B_B$ 收敛或反例；
+3. 再做 L1 的算子级 $K\_B-2\pi B\_B$ 收敛或反例；
 4. 同时用 `R11` 的历史冲突表阻止旧“已完成”文本回流；
 5. 保持 `R11` 为外部／历史审计，不计入 `R0` 的 O1–O5 进度。
 

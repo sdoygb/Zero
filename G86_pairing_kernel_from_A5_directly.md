@@ -5,7 +5,7 @@
 **核验**：[`G86_check.py`](G86_check.py) —— **独立实断言 18 / 结论行 0 / 不符 0**，退出码 `0`（0.4 秒）
 
 $$
-\boxed{\ \text{配对核}\ \textbf{直接定义}\text{为 Z3 账本的匹配距离分布};\quad \text{D244 的界只管}\textbf{单个词}，\text{账本是}\textbf{系综}。\ }
+\ \text{配对核}\ \textbf{直接定义}\text{为 Z3 账本的匹配距离分布};\quad \text{D244 的界只管}\textbf{单个词}，\text{账本是}\textbf{系综}。\ 
 $$
 
 ---
@@ -23,7 +23,7 @@ $$
 `modular-equilibrium/derivations/D244_zero_sum_matching_linearity.md`：
 
 > **"零和匹配线性性：闭合词配对本身不给全对全。"**
-> 一个闭合词有 $m$ 个正步、$m$ 个负步，正负**完美匹配**给**恰好 $m$ 条边**；若每条边权重有界 $|w_e|\le W$，则
+> 一个闭合词有 $m$ 个正步、$m$ 个负步，正负**完美匹配**给**恰好 $m$ 条边**；若每条边权重有界 $|w\_e|\le W$，则
 匹配势满足
 
 $$
@@ -37,15 +37,15 @@ $$
 **核验（F1）**：单个词 $++--++--$（$L=8$）的匹配边数 $=m=L/2=4$ ✅
 
 $$
-\boxed{\ \text{这个界是}\textbf{单个词}\text{的}——\text{而 Z3 的账本是}\textbf{系综}。\ }
+\ \text{这个界是}\textbf{单个词}\text{的}——\text{而 Z3 的账本是}\textbf{系综}。\ 
 $$
 
 ---
 
-## §2 直接定义：Z3 账本的匹配距离分布（符号 $s_{\rm A5}$ 沿用历史命名）
+## §2 直接定义：Z3 账本的匹配距离分布（符号 $s\_{\rm A5}$ 沿用历史命名）
 
 $$
-\boxed{\ s_{\rm A5}(q)=\#\Bigl\{(w,M,e):\ w\ \text{闭合词},\ M\ \text{正负完美匹配},\ e\in M,\ \mathrm{dist}(e)=q\Bigr\}\ }
+\ s_{\rm A5}(q)=\#\Bigl\{(w,M,e):\ w\ \text{闭合词},\ M\ \text{正负完美匹配},\ e\in M,\ \text{dist}(e)=q\Bigr\}\ 
 $$
 
 **为什么是"对所有匹配求和"**：计数测度的本意就是**对所有组态求和**（[`G29`](G29_probability_as_derived_not_postulated.md)）——账本不指定唯一配对规则，**所有相容配对都计数**。
@@ -58,7 +58,7 @@ $$
 
 ## §3 结果：在圆上**全对全**
 
-| $L$ | $s_{\rm A5}(q)$（$q=0..L-1$） | 循环距离 $1..\frac L2$ 覆盖 |
+| $L$ | $s\_{\rm A5}(q)$（$q=0..L-1$） | 循环距离 $1..\frac L2$ 覆盖 |
 |--:|:--|:--|
 | $4$ | $0,\ 16,\ 8,\ 0$ | $\{1,2\}$ ⟹ $\mathbf{2/2}$ ✅ |
 | $6$ | $0,\ 144,\ 144,\ 72,\ 0,\ 0$ | $\{1,2,3\}$ ⟹ $\mathbf{3/3}$ ✅ |
@@ -66,7 +66,7 @@ $$
 | $10$ | $0,\ 33600,\dots,\ 16800,\ 0\dots$ | $\{1,\dots,5\}$ ⟹ $\mathbf{5/5}$ ✅ |
 
 $$
-\boxed{\ \text{闭合词是}\textbf{循环}的 \Longrightarrow \text{不同的距离只有}\ 1..\tfrac L2 \Longrightarrow \text{核}\textbf{正好覆盖全部}\ }
+\ \text{闭合词是}\textbf{循环}的 \Longrightarrow \text{不同的距离只有}\ 1..\tfrac L2 \Longrightarrow \text{核}\textbf{正好覆盖全部}\ 
 $$
 
 **（这是我第一版判据写错的地方**：我按 $r=1..L-1$ 判，于是把 $\{1,\dots,\tfrac L2\}$ 的三角支撑误判成"不全"。**圆上只有 $\tfrac L2$ 个距离**。）
@@ -87,7 +87,7 @@ $$
 $$
 
 $$
-\boxed{\ \text{系综求和}\textbf{指数增长} \Longrightarrow \text{非可和};\ \text{D244 的 }mW\ \text{界（单字）}\textbf{被绕过}。\ }
+\ \text{系综求和}\textbf{指数增长} \Longrightarrow \text{非可和};\ \text{D244 的 }mW\ \text{界（单字）}\textbf{被绕过}。\ 
 $$
 
 ---
@@ -101,7 +101,7 @@ $$
 | **度规核**（$L=4$） | $+1.2381$ | ✅ |
 
 $$
-\boxed{\ \text{任何}\ \textbf{all-to-all 核}\ \text{都给}\textbf{恒正增量} \Longrightarrow \text{二次势} \Longrightarrow \text{下游结论（G80 放大、G78 面积律）}\textbf{与核无关}\ }
+\ \text{任何}\ \textbf{all-to-all 核}\ \text{都给}\textbf{恒正增量} \Longrightarrow \text{二次势} \Longrightarrow \text{下游结论（G80 放大、G78 面积律）}\textbf{与核无关}\ 
 $$
 
 **这就是识别的收敛**：
@@ -116,7 +116,7 @@ $$
 ## §6 判定
 
 $$
-\boxed{\ \text{识别层收敛}:\ \text{只要求核是"全对全／非可和"}\ \text{这一类，}\text{不要求它是哪一个。}\ }
+\ \text{识别层收敛}:\ \text{只要求核是"全对全／非可和"}\ \text{这一类，}\text{不要求它是哪一个。}\ 
 $$
 
 | 项 | 状态 |

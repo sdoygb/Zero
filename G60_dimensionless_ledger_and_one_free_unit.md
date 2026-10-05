@@ -5,7 +5,7 @@
 **核验**：[`G60_check.py`](G60_check.py) —— **独立实断言 21 / 结论行 0 / 不符 0**，退出码 `0`（0.14 秒）
 
 $$
-\boxed{\ \text{量纲常数是}\textbf{单位}\text{，不是}\textbf{参数};\qquad \text{本项目需要}\textbf{恰好一个单位}，\text{其余必须全以无量纲比给出}。\ }
+\ \text{量纲常数是}\textbf{单位}\text{，不是}\textbf{参数};\qquad \text{本项目需要}\textbf{恰好一个单位}，\text{其余必须全以无量纲比给出}。\ 
 $$
 
 ---
@@ -29,7 +29,7 @@ $$
 | **Duff 的判据** | **外星人检验**：只能交换无量纲数 |
 
 $$
-\boxed{\ \text{"导出 }G,\Lambda,\hbar\ \text{的数值"}\ \textbf{不是良定义的问题}——\text{它们是单位}。\ }
+\ \text{"导出 }G,\Lambda,\hbar\ \text{的数值"}\ \textbf{不是良定义的问题}——\text{它们是单位}。\ 
 $$
 
 **所以 G57 的正确表述不是"我们做不到"，而是"那个问题问错了"。**
@@ -48,16 +48,16 @@ $\Longrightarrow$ **无标度理论里的标度只能从重整化／量子来**�
 
 | # | 量 | 值／形式 | 出处 | 本文复算 |
 |--:|:--|:--|:--|:--|
-| 1 | 被选速度 | $c_*=\tanh\mu_*$，$\mu_*\tanh\mu_*-\log\cosh\mu_*=\tfrac12\log B$ | [`G56`](G56_degeneration_attempt2_six_slots.md) | $c_*(2,3,4)=0.779944,\,0.934697,\,1.000000$ ✅ |
+| 1 | 被选速度 | $c\_*=\tanh\mu\_*$，$\mu\_*\tanh\mu\_*-\log\cosh\mu\_*=\tfrac12\log B$ | [`G56`](G56_degeneration_attempt2_six_slots.md) | $c\_*(2,3,4)=0.779944,\,0.934697,\,1.000000$ ✅ |
 | 2 | 截断 | $k=L$ | [`G46`](G46_k_is_the_lifetime.md) | — |
-| 3 | 记忆时间 | $\tau_{\rm mem}=\dfrac{\sum_{t=1}^{T}t\lVert K_t\rVert}{\sum_{t=1}^{T}\lVert K_t\rVert}$（$T$ 由收敛判据取定；**不含 $K_0$**）$=3.27374796$ 步（$N=8$） | [`G33`](G33_macro_master_equation_and_mz_kernel.md) §5 | $T=12$ 截断值 $3.248588$；含 $K_0$ 口径 $2.639508$ $\Longrightarrow$ **【约定】+【数值证据】，非【导出】** |
+| 3 | 记忆时间 | $\tau\_{\rm mem}=\dfrac{\sum\_{t=1}^{T}t\lVert K\_t\rVert}{\sum\_{t=1}^{T}\lVert K\_t\rVert}$（$T$ 由收敛判据取定；**不含 $K\_0$**）$=3.27374796$ 步（$N=8$） | [`G33`](G33_macro_master_equation_and_mz_kernel.md) §5 | $T=12$ 截断值 $3.248588$；含 $K\_0$ 口径 $2.639508$ $\Longrightarrow$ **【约定】+【数值证据】，非【导出】** |
 | 4 | 可闭合概率 | $F(L)=\binom{L}{L/2}/2^{L}$ | [`G54`](G54_quantitative_profile_age_measure.md) | $F(16)=0.196381$ ✅ |
 | 5 | 重播种权重 | $\omega(C)=\lvert C\rvert/\sum\lvert C'\rvert$ | [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) | $L{=}4{:}[2,4]$，$L{=}6{:}[2,6,6,6]$，$L{=}8{:}[2,4,8\times8]$ ✅ 与 G37 表一致 |
-| 6 | 年龄奇偶律 | $E_{t+1}=N-E_t$ | [`G33`](G33_macro_master_equation_and_mz_kernel.md) | 165 态违反 **0** ✅ |
+| 6 | 年龄奇偶律 | $E\_{t+1}=N-E\_t$ | [`G33`](G33_macro_master_equation_and_mz_kernel.md) | 165 态违反 **0** ✅ |
 | 7 | 依赖半径 | $k/2-1$ | [`G55`](G55_dynamics_line_degeneration_to_GR.md)／[`G58`](G58_I2a_resolved_as_embedding_input.md) | $k{=}4,8,12\to1,3,5$ ✅ |
 | 8 | **层系数（整数）** | $\binom{m-1}{m/2}$（偶 $m$），$0$（奇 $m$） | [`G49`](G49_four_boundaries_advanced.md) | $1,0,3,0,10,0,35$；总权 $354$ ✅ |
 | 9 | 全分支判据 | $(O)$ 精确 $0$；$(C)$ 恰 $1$ 个零本征值 | [`G42`](G42_third_route_local_weights.md)／[`G46`](G46_k_is_the_lifetime.md) | ✅ |
-| 10 | 维数筛选的表示论数 | $\dim\mathcal P_D^+=\tfrac{(D-2)(D-3)}2$，$\dim\mathcal P_D^-=D-3$ | [`G11`](G11_dimension_as_consistency.md) | — |
+| 10 | 维数筛选的表示论数 | $\dim\mathcal P\_D^+=\tfrac{(D-2)(D-3)}2$，$\dim\mathcal P\_D^-=D-3$ | [`G11`](G11_dimension_as_consistency.md) | — |
 | 11 | 局部代数维数 | $\dim\mathcal A=4(T+1)$，正交极小投影 $=2(T+1)$ | [`G32`](G32_native_origin_of_saturation.md) | — |
 | 12 | 选择率 | $\lambda=\log M/T$ | [`G29`](G29_probability_as_derived_not_postulated.md) | — |
 
@@ -70,12 +70,12 @@ $\Longrightarrow$ **无标度理论里的标度只能从重整化／量子来**�
 | 栏 | 项 |
 |:--|:--|
 | **(i) 已导出** | §2 的 **11 项**（有闭式或定理）——**原第 3 项（记忆时间）已移出**：它是【约定】+【数值证据】，见 [`G61`](G61_locking_the_five_integers.md) §5 与本行的更正 |
-| **(i′) 约定／口径** | 记忆时间 $\tau_{\rm mem}$（原点取 $t\ge1$；截断 $T$ 由收敛判据定）· $G,\Lambda$ · $\hbar$（单位） |
+| **(i′) 约定／口径** | 记忆时间 $\tau\_{\rm mem}$（原点取 $t\ge1$；截断 $T$ 由收敛判据定）· $G,\Lambda$ · $\hbar$（单位） |
 | **(ii) 在册开放** | $B$ 的值（[`G56`](G56_degeneration_attempt2_six_slots.md) §5）· 严格锥残余（[`G59`](G59_I7_settled_native_cone_and_its_residue.md)）· 粗粒化 $\pi$ 的选择（[`G29`](G29_probability_as_derived_not_postulated.md)／[`G33`](G33_macro_master_equation_and_mz_kernel.md)）· 剖面 $f(a)$ 的读法（[`G54`](G54_quantitative_profile_age_measure.md)）· 作用量类别 I3b |
 | **(iii) 无记录** ⚠ | **$L$、SPAWN、$N$、$K$、$B$ —— 模型的整数参数值，从未入账** |
 
 $$
-\boxed{\ \textbf{本项目的"无记录"栏有 5 项}:\ L\ (\text{寿命}),\ \text{SPAWN},\ N\ (\text{总重数}),\ K\ (\text{容量}),\ B\ (\text{繁殖数})。\ }
+\ \textbf{本项目的"无记录"栏有 5 项}:\ L\ (\text{寿命}),\ \text{SPAWN},\ N\ (\text{总重数}),\ K\ (\text{容量}),\ B\ (\text{繁殖数})。\ 
 $$
 
 **为什么这一栏最要紧**：§2 那一整栏"已导出"的量，**几乎全是这 5 个未入账整数的函数**——
@@ -130,7 +130,7 @@ $$
 **再加上两条结构事实**：时间是**步数**（无量纲计数）；模型里**没有质量量纲**。
 
 $$
-\boxed{\ \text{几何扇区的有量纲自由度}\ \textbf{恰好 1 个（一个锚）}。\ }
+\ \text{几何扇区的有量纲自由度}\ \textbf{恰好 1 个（一个锚）}。\ 
 $$
 
 **若物质／量子扇区入账**，则还需 $\hbar$ 作为第二个单位——这**正是 Okun 的计数（3 个单位）**，也说明本项目的立场与文献里的分歧点**对得上**。
@@ -147,7 +147,7 @@ $$
 | 文献立场 | 无 | **Duff 的立场**（只有无量纲数据）——**五年前就有文献依据** |
 
 $$
-\boxed{\ \textbf{本项目不是"三输入"，而是"一个单位 ＋ 两个读法 ＋ 五个未入账整数"}。\ }
+\ \textbf{本项目不是"三输入"，而是"一个单位 ＋ 两个读法 ＋ 五个未入账整数"}。\ 
 $$
 
 **这比原来的说法更有用**：它把"不可导出"（听起来像缺陷）换成了"**单位是约定**"，并把**真正欠的东西精确到了 5 个整数**——而那 5 个整数是**可以一个一个去锁的**。
@@ -158,7 +158,7 @@ $$
 
 | 项 | 说明 |
 |:--|:--|
-| **只借方法论** | 本文只取旧理论（`cosmos-construct`）的**无量纲方法论与文献锚**（三栏账本、单位 vs 参数、文献）；**不搬它的物理**（其底层与 Z0 条款不同，$E_6$／$\sin^2\theta_W=3/8$ 等与本项目无关） |
+| **只借方法论** | 本文只取旧理论（`cosmos-construct`）的**无量纲方法论与文献锚**（三栏账本、单位 vs 参数、文献）；**不搬它的物理**（其底层与 Z0 条款不同，$E\_6$／$\sin^2\theta\_W=3/8$ 等与本项目无关） |
 | **完整性弱于旧理论** | 旧理论有**标准模型的 19／26 项无量纲参数**当对照清单，故"完整"有硬定义；本项目**没有**这样的现成清单 ⟹ §3 的三栏账**"完整"是相对自己而言**，不是对照 SM |
 | **"恰好一个"是结构记账** | §4 是**量纲记账＋数值核验**，不是定理级证明；且结论**依赖"哪些扇区入账"**（几何 1 个；加量子则 2 个） |
 | 数值范围 | $W\to sW$ 不变性在 $N=64$、$k=8$ 的环上核验；其他图未测 |

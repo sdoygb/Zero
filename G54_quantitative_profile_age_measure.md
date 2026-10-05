@@ -3,10 +3,10 @@
 **日期**：本轮 · **性质**：新计算（精确组合定理 ＋ 半程定理）＋ **限定 [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md)／[`G38`](G38_d232_verdict_and_g35_withdrawal.md)**。
 **等级标签**：【导出】/【定理】/【数值核验】/【限定】/【结论】。
 **核验**：[`G54_check.py`](G54_check.py) —— **独立实断言 63 / 结论行 0 / 不符 0**，退出码 `0`（0.5 秒）
-> **【勘误·[`Z9`](Z9_pi_filter_and_lifetime_fork.md)】** 下表原写「$1.0000\times4$」（$L=8$）／「$\times8$」（$L=16$）：按 §4.1 半程定理 $F\equiv1$ 对 $a\le L/2$ **含端点**成立，正确条数是 **$\times5$** 与 **$\times9$**。已改正；不影响半程定理与 $\mathrm{SPAWN}=L/2$。
+> **【勘误·[`Z9`](Z9_pi_filter_and_lifetime_fork.md)】** 下表原写「$1.0000\times4$」（$L=8$）／「$\times8$」（$L=16$）：按 §4.1 半程定理 $F\equiv1$ 对 $a\le L/2$ **含端点**成立，正确条数是 **$\times5$** 与 **$\times9$**。已改正；不影响半程定理与 $\text{SPAWN}=L/2$。
 
 $$
-\boxed{\ \text{计数测度下}\textbf{任何整词量都年龄均匀}\ \Longrightarrow\ f\equiv0\ \text{是 Z0③ 的第四次后果，不是符号配对的偶然。}\ }
+\ \text{计数测度下}\textbf{任何整词量都年龄均匀}\ \Longrightarrow\ f\equiv0\ \text{是 Z0③ 的第四次后果，不是符号配对的偶然。}\ 
 $$
 
 ---
@@ -20,7 +20,7 @@ $$
 [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) §7 自己标出了最关键的读法风险：**它只算了符号配对**。本文把这件事算完：
 
 $$
-\boxed{\ \text{哪些配对必然给 }f\equiv0\text{？哪些能给出原生非恒定剖面？}\ }
+\ \text{哪些配对必然给 }f\equiv0\text{？哪些能给出原生非恒定剖面？}\ 
 $$
 
 **结论（先行）**：$f\equiv0$ 与"配对"无关，它是**计数测度**的直接后果；非恒定性只能来自**参考测度**（＝[`G29`](G29_probability_as_derived_not_postulated.md)／[`G33`](G33_macro_master_equation_and_mz_kernel.md) 的**唯一输入** $\pi$）。
@@ -29,9 +29,9 @@ $$
 
 ## §1 年龄均匀性引理（精确）
 
-**设定**：闭合词 $w\in\mathcal W_L$（平衡 $\pm1$ 词，$\sum w_i=0$）；**年龄** $a$ = 分支已走的步数（$0\le a\le L$）。每个词在**每一个**年龄上恰好被计一次。
+**设定**：闭合词 $w\in\mathcal W\_L$（平衡 $\pm1$ 词，$\sum w\_i=0$）；**年龄** $a$ = 分支已走的步数（$0\le a\le L$）。每个词在**每一个**年龄上恰好被计一次。
 
-**引理 79（年龄均匀性）**：设 $Q:\mathcal W_L\to\mathbb R$ 是**整词**的函数，$A(a):=\#\{w\in\mathcal W_L: Q(w)\in\text{相位}_0\}$。则 $A(a)$ **与 $a$ 无关**。
+**引理 79（年龄均匀性）**：设 $Q:\mathcal W\_L\to\mathbb R$ 是**整词**的函数，$A(a):=\#\{w\in\mathcal W\_L: Q(w)\in\text{相位}\_0\}$。则 $A(a)$ **与 $a$ 无关**。
 
 *证明*：$Q$ 是整词的函数，故"$w$ 属于相位 0"是 $w$ 的性质，与走到哪一步无关；而每个 $w$ 对每个 $a$ 贡献恰好一次。$\square$
 
@@ -66,11 +66,11 @@ $$
 
 | $L$ | 4 | 6 | 8 | 10 | 12 | 14 | 16 |
 |:--|--:|--:|--:|--:|--:|--:|--:|
-| $\lvert\mathcal W_L\rvert$ | 6 | 20 | 70 | 252 | 924 | 3432 | 12870 |
-| $p_+/p_-$ | 3/3 | 10/10 | 35/35 | 126/126 | 462/462 | 1716/1716 | 6435/6435 |
+| $\lvert\mathcal W\_L\rvert$ | 6 | 20 | 70 | 252 | 924 | 3432 | 12870 |
+| $p\_+/p\_-$ | 3/3 | 10/10 | 35/35 | 126/126 | 462/462 | 1716/1716 | 6435/6435 |
 
 $$
-\boxed{\ \text{G37/G38 成立，而且对}\textbf{任意整词配对}\text{成立，不只是符号配对。}\ }
+\ \text{G37/G38 成立，而且对}\textbf{任意整词配对}\text{成立，不只是符号配对。}\ 
 $$
 
 ---
@@ -93,19 +93,19 @@ $$
 F(a):=\frac{\#\{p\in\{\pm1\}^a:\ p\ \text{可补全为长度 }L\ \text{的零和词}\}}{2^{a}}
 $$
 
-**等价判据**：$p$ 可补全 $\iff |S_a(p)|\le L-a$ 且 $L-a-S_a(p)$ 为偶。对**偶 $L$**，奇偶条件自动满足，故
+**等价判据**：$p$ 可补全 $\iff |S\_a(p)|\le L-a$ 且 $L-a-S\_a(p)$ 为偶。对**偶 $L$**，奇偶条件自动满足，故
 
 $$
-\boxed{\ F(a)=\Pr\big(|S_a|\le L-a\big)=\frac{1}{2^{a}}\sum_{\substack{|h|\le L-a\\ h\equiv a\,(2)}}\binom{a}{\tfrac{a+h}{2}}\ }
+\ F(a)=\Pr\big(|S_a|\le L-a\big)=\frac{1}{2^{a}}\sum_{\substack{|h|\le L-a\\ h\equiv a\,(2)}}\binom{a}{\tfrac{a+h}{2}}\ 
 $$
 
 ### 4.1 **半程定理**（本轮最硬的结果）
 
 $$
-\boxed{\ F(a)\equiv1\quad(a\le L/2);\qquad F(a)\ \text{在}\ a>L/2\ \text{上}\textbf{严格递减};\qquad F(L)=\binom{L}{L/2}\Big/2^{L}\ }
+\ F(a)\equiv1\quad(a\le L/2);\qquad F(a)\ \text{在}\ a>L/2\ \text{上}\textbf{严格递减};\qquad F(L)=\binom{L}{L/2}\Big/2^{L}\ 
 $$
 
-*证明（前半程）*：$|S_a|\le a\le L-a$（当 $a\le L/2$），故约束自动满足。$\square$
+*证明（前半程）*：$|S\_a|\le a\le L-a$（当 $a\le L/2$），故约束自动满足。$\square$
 
 **核验**：
 
@@ -119,7 +119,7 @@ $$
 **单调性**：$L=8,16,32,64$ 的后半程**逐步严格递减** ✅
 
 $$
-\boxed{\ \text{剖面有一个}\textbf{原生开关 }a=L/2\text{：前半程无条件可闭合，后半程才开始丢选项。}\ }
+\ \text{剖面有一个}\textbf{原生开关 }a=L/2\text{：前半程无条件可闭合，后半程才开始丢选项。}\ 
 $$
 
 ### 4.2 相位比读法下的 $f(a)$（$L=8$）
@@ -147,7 +147,7 @@ $$
 | **Z0③ 的第四次出现**（历史标号 A3） | 计数测度 $\Rightarrow$ 整词量年龄均匀 $\Rightarrow f\equiv0$（前三次：[`G15`](G15_bare_ax3_has_no_characteristic_speed.md) 无弹道、[`G27`](G27_purification_attempt.md) 平凡模流、[`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) 符号对称） |
 
 $$
-\boxed{\ f\equiv0\ \text{不是"符号配对"的偶然，而是}\textbf{Z0③／Z2 的计数测度}的直接后果。\ }
+\ f\equiv0\ \text{不是"符号配对"的偶然，而是}\textbf{Z0③／Z2 的计数测度}的直接后果。\ 
 $$
 
 ---
@@ -156,7 +156,7 @@ $$
 
 | 项 | 说明 |
 |:--|:--|
-| **退化区** | $a\le L/2$ 时 $F\equiv1\Rightarrow p_1=0$，[`D232`](D232_profile_as_matrix_age_correlation.md) 的 likelihood ratio **在那里退化**（$f=+\infty$）。本文把 $F$ 当**可闭合概率**用，不是直接当相位比 |
+| **退化区** | $a\le L/2$ 时 $F\equiv1\Rightarrow p\_1=0$，[`D232`](D232_profile_as_matrix_age_correlation.md) 的 likelihood ratio **在那里退化**（$f=+\infty$）。本文把 $F$ 当**可闭合概率**用，不是直接当相位比 |
 | **读法风险** | 「$F$ ＝ [`D232`](D232_profile_as_matrix_age_correlation.md) 的相位比」是**我的读法**，**未在 D 系列核验**（与 [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) §7 同类风险） |
 | 替身 | 仍用 $\pm1$ 平衡词当闭合词替身（与 [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) 同），**未用真实荷词多重性** |
 | **未证明** | **未证明前缀均匀测度是 $\pi$ 的唯一原生选择**；其他归一化未测 |

@@ -5,7 +5,7 @@
 **核验**：[`G39_check.py`](G39_check.py) —— **独立实断言 40 / 结论行 0 / 不符 0**，退出码 `0`
 
 $$
-\boxed{\ \text{不是。但它确实为「把度规从输入变成导出」而设——而且我在 G5 里过度归因了一次。}\ }
+\ \text{不是。但它确实为「把度规从输入变成导出」而设——而且我在 G5 里过度归因了一次。}\ 
 $$
 
 ---
@@ -20,7 +20,7 @@ $$
 
 ## §1 直接答案：**不是**（有反证）
 
-G5 的类时性公式 $n^2=1-\lvert\mathbb E[\text{step}]\rvert_h^2$，逐值核验：
+G5 的类时性公式 $n^2=1-\lvert\mathbb E[\text{step}]\rvert\_h^2$，逐值核验：
 
 | $\varepsilon$ | $\mathbb E[\text{step}]$ | $n^2=1-\varepsilon^2$ | 类时？ |
 |--:|--:|--:|:--|
@@ -31,7 +31,7 @@ G5 的类时性公式 $n^2=1-\lvert\mathbb E[\text{step}]\rvert_h^2$，逐值核
 | 1.00（完全定向） | 1.00 | 0.0000 | 否 |
 
 $$
-\boxed{\ \text{类时}\iff|\mathbb E[\text{step}]|_h<1\iff\text{输运【非完全定向】};\quad \text{无偏好只是极值 }n^2=1。\ }
+\ \text{类时}\iff|\mathbb E[\text{step}]|_h<1\iff\text{输运【非完全定向】};\quad \text{无偏好只是极值 }n^2=1。\ 
 $$
 
 | 几何链结论 | 换成偏置 $\varepsilon<1$ |
@@ -55,7 +55,7 @@ $\Longrightarrow$ **几何链的结构性结论不依赖 Z0③。**
 
 **已更正为**：
 
-> 类时性来自「输运**非完全定向**」$\bigl(|\mathbb E[\text{step}]|_h<1\bigr)$；无偏好只是它的**极值情形** $n^2=1$。
+> 类时性来自「输运**非完全定向**」$\bigl(|\mathbb E[\text{step}]|\_h<1\bigr)$；无偏好只是它的**极值情形** $n^2=1$。
 
 （更正注记已写入 [`G5`](G5_stress_lift_and_conservation.md)，旧结论框已消失，仅保留引文以便追溯 ✅）
 
@@ -66,11 +66,11 @@ $\Longrightarrow$ **几何链的结构性结论不依赖 Z0③。**
 | | |
 |:--|:--|
 | 无偏好 $\Longrightarrow$ 均匀导纳（[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 3′） | $h$ 是**规范**的图 Laplacian |
-| 去掉它 $\Longrightarrow$ $h$ 变成**任意加权 Laplacian** | 数值核验：不同权重给出 $\lVert h_i-h_0\rVert$ 显著非零 ✅ |
+| 去掉它 $\Longrightarrow$ $h$ 变成**任意加权 Laplacian** | 数值核验：不同权重给出 $\lVert h\_i-h\_0\rVert$ 显著非零 ✅ |
 | 而 $h$ **就是度规**（$g=d\tau^2-h$ 的约定） | $\Longrightarrow$ **度规变成输入** |
 
 $$
-\boxed{\ \text{Z0③ 的无偏好}\ =\ \text{把「度规」从输入变成导出。}\ }
+\ \text{Z0③ 的无偏好}\ =\ \text{把「度规」从输入变成导出。}\ 
 $$
 
 而"度规是输入"**正是账本里的 I5** ✅ —— 所以 Z0③ 与 I5 是同一件事的两面。

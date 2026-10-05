@@ -5,7 +5,7 @@
 **核验**：[`G43_check.py`](G43_check.py) —— **独立实断言 39 / 结论行 0 / 不符 0**，退出码 `0`
 
 $$
-\boxed{\ \text{动力学（G29–G35）不含任何度规；把度规问题搁置不影响它的任何结论。}\ }
+\ \text{动力学（G29–G35）不含任何度规；把度规问题搁置不影响它的任何结论。}\ 
 $$
 
 ---
@@ -20,7 +20,7 @@ $$
 
 ## §1 审计：动力学系列**不含**度规
 
-对 **G29–G35** 逐篇检索 12 个度规/几何词（度规、号差、曲率、$\det$、$g_{ab}$、Lovelock、Einstein、联络、流形、$R_{ab}$、Ricci）：
+对 **G29–G35** 逐篇检索 12 个度规/几何词（度规、号差、曲率、$\det$、$g\_{ab}$、Lovelock、Einstein、联络、流形、$R\_{ab}$、Ricci）：
 
 | 文档 | 非否定语境下的命中 |
 |:--|:--|
@@ -52,14 +52,14 @@ $$
 | 1 | 微观规则 $\Phi$（**Z1 定理 1** 图 ＋ **Z2** 全分支 ＋ **Z4** 步 ＋ **Z3** 闭合） | [`G33`](G33_macro_master_equation_and_mz_kernel.md) |
 | 2 | 计数测度 $\mu$ | [`G29`](G29_probability_as_derived_not_postulated.md) |
 | 3 | 粗粒化 $\pi$（唯一输入） | [`G33`](G33_macro_master_equation_and_mz_kernel.md) |
-| 4 | 宏观传播子 $G_t=\Pi V^t\mathcal L$ | [`G33`](G33_macro_master_equation_and_mz_kernel.md) |
-| 5 | 精确 MZ 核 $K_t$ | [`G33`](G33_macro_master_equation_and_mz_kernel.md) |
+| 4 | 宏观传播子 $G\_t=\Pi V^t\mathcal L$ | [`G33`](G33_macro_master_equation_and_mz_kernel.md) |
+| 5 | 精确 MZ 核 $K\_t$ | [`G33`](G33_macro_master_equation_and_mz_kernel.md) |
 | 6 | 记忆时间 | [`G33`](G33_macro_master_equation_and_mz_kernel.md) |
 | 7 | 因果锥：一步一条边 | [`G31`](G31_characteristic_speed_and_saturation.md) |
 | 8 | 被选速度（KPP） | [`G31`](G31_characteristic_speed_and_saturation.md) |
 | 9 | 选择率 $\lambda=\log M/T$ | [`G29`](G29_probability_as_derived_not_postulated.md) |
 | 10 | 可集块判据 $QV\mathcal L=0$ | [`G33`](G33_macro_master_equation_and_mz_kernel.md) |
-| 11 | 年龄奇偶定律 $E_{t+1}=N-E_t$ | [`G33`](G33_macro_master_equation_and_mz_kernel.md) |
+| 11 | 年龄奇偶定律 $E\_{t+1}=N-E\_t$ | [`G33`](G33_macro_master_equation_and_mz_kernel.md) |
 | 12 | 重播种律 $\omega(C)=\lvert C\rvert/\sum\lvert C'\rvert$ | [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) |
 
 ---
@@ -73,7 +73,7 @@ $$
 | 选择率 | **计数比** | $\log M/T$ |
 
 $$
-\boxed{\ \text{不需要长度单位}\ \Longrightarrow\ \textbf{不需要度规}。\ }
+\ \text{不需要长度单位}\ \Longrightarrow\ \textbf{不需要度规}。\ 
 $$
 
 （[`G31`](G31_characteristic_speed_and_saturation.md) 已据本文补上**显式单位说明**：把格距换成物理长度才会用到度规。）
@@ -84,7 +84,7 @@ $$
 
 | 项 | 文档 |
 |:--|:--|
-| 应力张量的**张量形式** $T_{ab}$ | [`G5`](G5_stress_lift_and_conservation.md) |
+| 应力张量的**张量形式** $T\_{ab}$ | [`G5`](G5_stress_lift_and_conservation.md) |
 | **号差** $(1,m-1)$ | [`G1`](G1_derivations_from_the_bottom_layer.md) |
 | **Lovelock / Einstein** | [`G1`](G1_derivations_from_the_bottom_layer.md) |
 | **局域数据 $\phi$ 的来源** | [`G42`](G42_third_route_local_weights.md) |
@@ -94,11 +94,11 @@ $$
 ## §6 结论
 
 $$
-\boxed{\ \text{把度规问题（} \phi \text{ 的来源）搁置}\ \Longrightarrow\ \text{不影响动力学的任何结论。}\ }
+\ \text{把度规问题（} \phi \text{ 的来源）搁置}\ \Longrightarrow\ \text{不影响动力学的任何结论。}\ 
 $$
 
 $$
-\boxed{\ \text{回到最初目标「推出零和宇宙的动力学」：}\textbf{已经达成}。\ }
+\ \text{回到最初目标「推出零和宇宙的动力学」：}\textbf{已经达成}。\ 
 $$
 
 （那个目标就是 **G30–G36**；其完成审计见 [`G36`](G36_objective_completion_audit.md)。）

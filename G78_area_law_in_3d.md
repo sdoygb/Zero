@@ -5,7 +5,7 @@
 **核验**：[`G78_check.py`](G78_check.py) —— **独立实断言 12 / 结论行 0 / 不符 0**，退出码 `0`（2.9 秒）
 
 $$
-\boxed{\ \text{3D 面积律成立}（\text{gap}\ge2）:\ S=aL^2+bL+c\ \text{拟合 rms}\ \mathbf{2\times10^{-5}},\ a\ \text{稳定到}\ \mathbf{0.01\%}\ }
+\ \text{3D 面积律成立}（\text{gap}\ge2）:\ S=aL^2+bL+c\ \text{拟合 rms}\ \mathbf{2\times10^{-5}},\ a\ \text{稳定到}\ \mathbf{0.01\%}\ 
 $$
 
 ---
@@ -29,14 +29,14 @@ $$
 
 > **口径附注（本轮补丁）**。本文表里的 $m$ 是**直接加在 Hamiltonian 上的交错项**
 > $m(-1)^{i+j}$（见 [`G76_check.py`](G76_check.py) 的 `build(N, mass)`），
-> 因此 $m$ 的单位与 hopping 相同，$\mathrm{gap}=2m$（等价：本文的 $m$ 就是 $m_{\rm stag}$）。
+> 因此 $m$ 的单位与 hopping 相同，$\text{gap}=2m$（等价：本文的 $m$ 就是 $m\_{\rm stag}$）。
 > 由 Z3 推导的 $m$ **必须**先化成这个口径才能代入本表：
-> $m_{\rm stag}=\Theta(\sigma)/(2L_{\rm life})=\sigma_{\rm site}/(2L_{\rm life})$。
-> 若误把 G33 的总流率 $\kappa=1/L_{\rm life}$ 当强度，在 $L_{\rm life}=4$ 上
-> **数值巧合地**给出同一个 $0.25$，但在 $L_{\rm life}\ge8$ 上会差 $O(L_{\rm life})$；
-> 更一般地，$L_{\rm life}\equiv2\pmod4$ 属于**另一个标度区**
-> （$k=\pi/2$ 不落在 $k$ 网格上，$\mathrm{gap}\cdot L_{\rm life}\to10.71$），
-> 其数字不可与本表的 $L_{\rm life}\equiv0\pmod4$ 结果混用。
+> $m\_{\rm stag}=\Theta(\sigma)/(2L\_{\rm life})=\sigma\_{\rm site}/(2L\_{\rm life})$。
+> 若误把 G33 的总流率 $\kappa=1/L\_{\rm life}$ 当强度，在 $L\_{\rm life}=4$ 上
+> **数值巧合地**给出同一个 $0.25$，但在 $L\_{\rm life}\ge8$ 上会差 $O(L\_{\rm life})$；
+> 更一般地，$L\_{\rm life}\equiv2\pmod4$ 属于**另一个标度区**
+> （$k=\pi/2$ 不落在 $k$ 网格上，$\text{gap}\cdot L\_{\rm life}\to10.71$），
+> 其数字不可与本表的 $L\_{\rm life}\equiv0\pmod4$ 结果混用。
 
 ---
 
@@ -51,7 +51,7 @@ $$
 | **4.0** | $1.09,\ 2.64,\ 4.88,\ 7.82,\ 11.46$ | $0.273\to0.318$ | $0.3475$ | $0.3475$ | $\mathbf{0.01\%}$ | $\mathbf{1.93\times10^{-5}}$ |
 
 $$
-\boxed{\ \text{rms}\ \textbf{随 gap 单调递减，跨度}\ \mathbf{>100}\ \text{倍}（4.41\times10^{-2}\to1.93\times10^{-5}）\ }
+\ \text{rms}\ \textbf{随 gap 单调递减，跨度}\ \mathbf{>100}\ \text{倍}（4.41\times10^{-2}\to1.93\times10^{-5}）\ 
 $$
 
 $$
@@ -85,7 +85,7 @@ $$
 | **3D**（本文） | 表面积 $\propto L^2$ | $S\propto L^2$ |
 
 $$
-\boxed{\ S\ \propto\ \text{边界测度}\quad(\text{当}\ \xi\ll L\ \text{时，}d=1,2,3\ \text{全部一致})。\ }
+\ S\ \propto\ \text{边界测度}\quad(\text{当}\ \xi\ll L\ \text{时，}d=1,2,3\ \text{全部一致})。\ 
 $$
 
 **而 gap 的来源已经导出**（[`G77`](G77_staggered_coupling_from_A5.md)：Z3 的汇 ＋ G33 的宇称 ⟹ $m=1/L$）。

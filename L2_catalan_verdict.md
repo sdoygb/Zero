@@ -1,4 +1,4 @@
-# L2 · $\mathrm{co}[s]$ 的闭式：**Catalan 数**（已定），部分和公式未竟
+# L2 · $\text{co}[s]$ 的闭式：**Catalan 数**（已定），部分和公式未竟
 
 **日期**：2026-10-04
 **性质**：**正面结果（闭式已定）＋ 一处未竟（部分和的代数化简）**。
@@ -12,12 +12,12 @@
 ## §0 一句话
 
 $$
-\boxed{
+
 \begin{aligned}
-&\textbf{序列定案：}\ \mathrm{co}[2i]=2\,C_i,\quad \mathrm{co}[\text{奇}]=0,\qquad C_i=\frac{1}{i+1}\binom{2i}{i}\ \text{（Catalan 数）}。\\
+&\textbf{序列定案：}\ \text{co}[2i]=2\,C_i,\quad \text{co}[\text{奇}]=0,\qquad C_i=\frac{1}{i+1}\binom{2i}{i}\ \text{（Catalan 数）}。\\
 &\qquad \text{序列 }2,2,4,10,28,84,264,858,2860,9724,\dots\ =\ \textbf{OEIS A284016}（=2\times\text{A000108}）。\\
-&\textbf{未竟：}\ \Sigma\,\mathrm{co}\ \text{的}\textbf{代数化简}\ \text{（Catalan 部分和）我没做对，按纪律不写。}
-\end{aligned}}
+&\textbf{未竟：}\ \Sigma\,\text{co}\ \text{的}\textbf{代数化简}\ \text{（Catalan 部分和）我没做对，按纪律不写。}
+\end{aligned}
 $$
 
 ---
@@ -31,16 +31,16 @@ curl "https://oeis.org/search?q=2,2,4,10,28,84,264,858,2860,9724&fmt=text"
    （"essentially twice the Catalan numbers"）
 ```
 
-**逐项核验**（本文件）：$\mathrm{co}[2i]=2C_i$ 对 $T=4,6,\dots,20$ **全部一致** ✓
+**逐项核验**（本文件）：$\text{co}[2i]=2C\_i$ 对 $T=4,6,\dots,20$ **全部一致** ✓
 
 | $i$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
-| $C_i$ | 1 | 1 | 2 | 5 | 14 | 42 | 132 | 429 | 1430 | 4862 |
-| $2C_i$ | 2 | 2 | 4 | 10 | 28 | 84 | 264 | 858 | 2860 | 9724 |
-| 实测 $\mathrm{co}[2i]$ | 2 | 2 | 4 | 10 | 28 | 84 | 264 | 858 | 2860 | 9724 |
+| $C\_i$ | 1 | 1 | 2 | 5 | 14 | 42 | 132 | 429 | 1430 | 4862 |
+| $2C\_i$ | 2 | 2 | 4 | 10 | 28 | 84 | 264 | 858 | 2860 | 9724 |
+| 实测 $\text{co}[2i]$ | 2 | 2 | 4 | 10 | 28 | 84 | 264 | 858 | 2860 | 9724 |
 
 **物理读法**：在 $T$ 步内、从平衡 $\pm1$ 出发、**首次**回到 0 的路径数，每两步按 Catalan 增长 ——
-即「在某个偶数步**首次**闭合」的计数 = $2C_i$，等价于 OEIS 注解里的
+即「在某个偶数步**首次**闭合」的计数 = $2C\_i$，等价于 OEIS 注解里的
 "walks that start and end at origin, **not touching origin at intermediate stages**"。
 
 ---
@@ -48,16 +48,16 @@ curl "https://oeis.org/search?q=2,2,4,10,28,84,264,858,2860,9724&fmt=text"
 ## §2 主体结果（全部逐项核验）
 
 $$
-\text{(i)}\quad \mathrm{co}[2i]=2C_i,\qquad \mathrm{co}[2i+1]=0
+\text{(i)}\quad \text{co}[2i]=2C_i,\qquad \text{co}[2i+1]=0
 $$
 
 $$
-\text{(ii)}\quad S(T):=\sum_s \mathrm{co}[s]\;=\;2\sum_{i=0}^{T/2-1}C_i
-\qquad\text{（逐项核验 $T=4\dots20$ ✓）}
+\text{(ii)}\quad S(T):=\sum_s \text{co}[s]\;=\;2\sum_{i=0}^{T/2-1}C_i
+\qquad\text{（逐项核验 T=4\dots20 ✓）}
 $$
 
 $$
-\text{(iii)}\quad \boxed{\ \lambda(T)^2=S(T)\,\bigl(\lambda(T)+1\bigr)\ }
+\text{(iii)}\quad \ \lambda(T)^2=S(T)\,\bigl(\lambda(T)+1\bigr)\ 
 \qquad\text{（由 }2T\text{ 维分块矩阵的块行列式精确推出）}
 $$
 
@@ -71,18 +71,18 @@ $$
 | 14 | 394 | 394.997475 | 394.99 | $\sim10^{-5}$ |
 | **20** | **13836** | **13836.999928** | **13837** | $5\times10^{-9}$ |
 
-**渐近**：$C_i\sim 4^i/(i^{3/2}\sqrt\pi)$ ⟹
+**渐近**：$C\_i\sim 4^i/(i^{3/2}\sqrt\pi)$ ⟹
 
 $$
 S(T)\sim\frac{2^{T}}{(T/2)^{3/2}\sqrt\pi}\ \text{（至多项式因子）},\qquad
-\boxed{\ \lambda(T)=S(T)+1+O(1/S)\ }
+\ \lambda(T)=S(T)+1+O(1/S)\ 
 $$
 
 ---
 
-## §3 未竟：$\Sigma\,\mathrm{co}$ 的代数化简
+## §3 未竟：$\Sigma\,\text{co}$ 的代数化简
 
-我**试图**把 $S(T)=2\sum_{i=0}^{T/2-1}C_i$ 写成**单个二项式系数**，以便像 $B=4$ 那样出现"精确常数"。
+我**试图**把 $S(T)=2\sum\_{i=0}^{T/2-1}C\_i$ 写成**单个二项式系数**，以便像 $B=4$ 那样出现"精确常数"。
 
 **试过的候选，全部证伪**（逐项比对）：
 
@@ -114,16 +114,16 @@ $$
 **但仍未够**：$\rho(T)$ 需要的是**另一个**线性泛函的比值（$D$ 侧），它**不由 $\lambda$ 单独决定**——需要特征向量。
 
 $$
-\boxed{\ \text{本轮把 }\lambda(T)\ \textbf{完全关闭};\ \rho(T)\ \text{与"反解唯一 }T\text{"仍需特征向量。}\ }
+\ \text{本轮把 }\lambda(T)\ \textbf{完全关闭};\ \rho(T)\ \text{与"反解唯一 }T\text{"仍需特征向量。}\ 
 $$
 
-**顺带**：$\mathrm{co}$ 是 Catalan 意味着 $\lambda$ 的"底"是 $4^{T/2}=2^T$ ——**这是全库第一次出现 Catalan 结构**，值得单独记一笔（与 `G27`／`G62` 的 $M_2$、`D_L` 二面体结构可能同源）。
+**顺带**：$\text{co}$ 是 Catalan 意味着 $\lambda$ 的"底"是 $4^{T/2}=2^T$ ——**这是全库第一次出现 Catalan 结构**，值得单独记一笔（与 `G27`／`G62` 的 $M\_2$、`D_L` 二面体结构可能同源）。
 
 ---
 
 ## §5 边界与未做
 
-1. **$\Sigma\,\mathrm{co}$ 的代数化简未竟**（§3）：六个候选全部证伪，按纪律不写。
+1. **$\Sigma\,\text{co}$ 的代数化简未竟**（§3）：六个候选全部证伪，按纪律不写。
 2. **$T=10$ 的偏差**（$4.4\times10^{-4}$）仍未解释。
 3. **$\rho(T)$ 未闭合**：需要特征向量的显式解（这是 $\rho$ 的最后一环，本轮未做）。
 4. **未做**：Catalan 结构的**物理来源**（为什么首次闭合计数是 Catalan？应可从 `D220` 的二元延拓 + 首次返回条件推出，但本轮未推）。
@@ -138,8 +138,8 @@ cd /Users/oygb/Downloads/lh && python3 L2_catalan.py
 ```
 
 - 序列定案：OEIS 实查（`curl https://oeis.org/search?q=...&fmt=text`）得 A284016。
-- 闭式 (i)：逐项比对 $\mathrm{co}[2i]=2C_i$，$T=4\dots20$ 全部一致。
-- 闭式 (ii)：逐项比对 $S(T)=2\sum_{i<T/2}C_i$，全部一致。
+- 闭式 (i)：逐项比对 $\text{co}[2i]=2C\_i$，$T=4\dots20$ 全部一致。
+- 闭式 (ii)：逐项比对 $S(T)=2\sum\_{i<T/2}C\_i$，全部一致。
 - 闭式 (iii)：由 $2T$ 维分块矩阵块行列式推出，与逐周期实测增长率对照（§2 表）。
 - **已证伪**六个 $S(T)$ 代数化简候选（§3）。
 - **未引入**概率；**未引用**任何 U 系材料作为前提。

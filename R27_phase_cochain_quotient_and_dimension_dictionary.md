@@ -8,7 +8,7 @@
 **核验**：[`R27_check.py`](R27_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{取 }m\text{ 个零和相位通道，零和局域秩为 }D=m-1。\\
 &\text{边相位 1-上链 }C^1(K_m)\text{ 的规范商满足}\\
@@ -21,7 +21,7 @@ $$
  \Longrightarrow \arg\max_D F_D=\{4\},\qquad
  \arg\max_D\log F_D=\{4\}。\\
 &\text{但这四项仍不是 Z0 的无条件推论；绝对层占比仍另需 }EVO\text{-}NORM。
-\end{aligned}}
+\end{aligned}
 $$
 
 > **一句话**：R26 的字典冲突不是因为 `D=m-1` 一定错，而是因为把 D194 的 `C(m,2)` 个原始根向量标签误当成了独立继承载体。相位边 1-上链模掉顶点相位后，维数恰好从 `C(D+1,2)` 变成 `D+C(D,2)`，留下 R25 所需的 `C(D,2)`。若演化层按 D211 的共同毁灭周期统一换代，则长期谱系比较应使用每代乘法 `F_D`，不能再把 `D` 当作同一代内部串行耗时 `\tau D`。这一步给出清晰的新桥，也明确保留了四项待证输入。
@@ -51,7 +51,7 @@ $$
 $$
 p(w)\mid L,\qquad p(w)\text{ 为偶数},
 \qquad
-C(\operatorname{Orb}(w))\rtimes\mathbb Z_{p(w)}
+C(\text{Orb}(w))\rtimes\mathbb Z_{p(w)}
 \cong M_{p(w)}(\mathbb C).
 \qquad\text{(R27-1)}
 $$
@@ -77,16 +77,16 @@ $$
 定义有效局域维数为
 
 $$
-\boxed{D:=m-1.}
+D:=m-1.
 \qquad\text{(R27-3)}
 $$
 
 这是 D194／D259 的秩字典，不是 R26 中所说的路线 `β: D=m`。本文的目的是检查：采用这个字典以后，是否仍能得到 R25 的 `C(D,2)`。
 
 $$
-\boxed{
+
 \text{R27 不取消路线 }\alpha: D=m-1\text{；它改变的是“身份”计在原始边上还是规范商上。}
-}
+
 \qquad\text{(R27-4)}
 $$
 
@@ -97,11 +97,11 @@ $$
 ### 3.1 具名输入
 
 $$
-\boxed{
-\texttt{PHASE-1-COCHAIN}:\quad
+
+\text{PHASE-1-COCHAIN}:\quad
 \text{每个零和相位通道上的闭合记录给出一个顶点相位，}
 \text{通道之间的相对相由边 1-上链 }a\in C^1(K_m)\text{ 表示。}
-}
+
 \qquad\text{(R27-5)}
 $$
 
@@ -110,17 +110,17 @@ $$
 再取
 
 $$
-\boxed{
-\texttt{PAIR-ID-QUOTIENT}:\quad
+
+\text{PAIR-ID-QUOTIENT}:\quad
 \text{物理继承身份取边相位的规范商类，}
 \text{不取原始无序边 }\{i,j\}\text{ 本身。}
-}
+
 \qquad\text{(R27-6)}
 $$
 
 若第二项不成立，R26 的峰移动仍然有效：身份数回到 `C(D+1,2)`，在 `q=5/9` 时唯一峰为 `D=3`。
 
-R28 进一步指出：即使前两项都成立，只要所有记录边相位都是纯规范 $a_r=d\theta_r$，则
+R28 进一步指出：即使前两项都成立，只要所有记录边相位都是纯规范 $a\_r=d\theta\_r$，则
 
 $$
 H_{\rm rec}=0,
@@ -129,15 +129,15 @@ $$
 商空间虽仍为 `C(D,2)` 维，却没有被实际身份填充。因此 R27 后续必须使用 R28 的归约：
 
 $$
-\boxed{
-\texttt{PHASE-IDENTITY-DER}
+
+\text{PHASE-IDENTITY-DER}
 =
-\texttt{EDGE-CONNECTION}
+\text{EDGE-CONNECTION}
 \wedge
-\texttt{HOLONOMY-FULL-SPAN}
+\text{HOLONOMY-FULL-SPAN}
 \wedge
-\texttt{INHERITANCE-IDENTITY}.
-}
+\text{INHERITANCE-IDENTITY}.
+
 \qquad\text{(R27-R28)}
 $$
 
@@ -162,7 +162,7 @@ $$
 #### 定理 R27.1（梯度映射的秩）
 
 $$
-\operatorname{rank}d=m-1.
+\text{rank}d=m-1.
 \qquad\text{(R27-9)}
 $$
 
@@ -178,7 +178,7 @@ $$
 于是
 
 $$
-\operatorname{rank}d
+\text{rank}d
 =m-\dim\ker d
 =m-1.
 \qquad\square
@@ -198,7 +198,7 @@ $$
 则规范商满足
 
 $$
-\boxed{
+
 \dim\frac{C^1(K_m)}{dC^0}
 =
 \binom m2-(m-1)
@@ -206,7 +206,7 @@ $$
 \binom{m-1}{2}
 =
 \binom D2.
-}
+
 \qquad\text{(R27-12)}
 $$
 
@@ -263,9 +263,9 @@ $$
 2. 把身份计在相位规范商上，得到 `C(D,2)`，R25 的窗口保留。
 
 $$
-\boxed{
+
 \text{R26 的字典 no-go 没有被取消；它被定位为“原始边身份”与“商类身份”的读法分叉。}
-}
+
 \qquad\text{(R27-16)}
 $$
 
@@ -287,20 +287,20 @@ $$
 因此 R27 必须把代价来源写清：
 
 $$
-\boxed{
-\texttt{FULL-SUPPORT-LEDGER}:\quad
+
+\text{FULL-SUPPORT-LEDGER}:\quad
 \text{一个可继承的和乐类必须在全部 }D\text{ 个独立相位方向上相干；}
 \text{每方向一次账本记录给同一因子 }q。
-}
+
 \qquad\text{(R27-18)}
 $$
 
 若 `FULL-SUPPORT-LEDGER` 成立，则
 
 $$
-\boxed{
+
 F_D=B\binom D2q^D
-}
+
 \qquad\text{(R27-19)}
 $$
 
@@ -309,17 +309,17 @@ $$
 R29 对抗审计后，`FULL-SUPPORT-LEDGER` 不能再作为不透明的单一输入使用。它必须展开为
 
 $$
-\boxed{
-\texttt{LEDGER-FACTORIZATION}
+
+\text{LEDGER-FACTORIZATION}
 =
-\texttt{DIR-SUPPORT-D}
+\text{DIR-SUPPORT-D}
 \wedge
-\texttt{RECORD-FAMILY-D}
+\text{RECORD-FAMILY-D}
 \wedge
-\texttt{PRODUCT-LEDGER}
+\text{PRODUCT-LEDGER}
 \wedge
-\texttt{SAME-Q}.
-}
+\text{SAME-Q}.
+
 \qquad\text{(R27-18a)}
 $$
 
@@ -392,11 +392,11 @@ D211 第 5C 步给出的演化层循环是
 
 $$
 E^{(n)}
-\xrightarrow{\text{第 }n\text{ 个周期末全清}}
+\overset{\text{第 }n\text{ 个周期末全清}}{\longrightarrow}
 D,
 \qquad
 P+\mathcal Z_\ast
-\xrightarrow{\operatorname{Seed}}
+\overset{\text{Seed}}{\longrightarrow}
 E^{(n+1)}.
 \qquad\text{(R27-24)}
 $$
@@ -435,11 +435,11 @@ $$
 这里仍未证明零和约束会自动给出共同 `T` 与 `Seed`。D211 明写二者是恢复层输入；所以需要把它登记为：
 
 $$
-\boxed{
-\texttt{WIPE-RESET-LEDGER}:\quad
+
+\text{WIPE-RESET-LEDGER}:\quad
 \text{演化层以共同毁灭—重播种周期为代际，}
 \text{每代比较 }F_D\text{，不再除以串行内部耗时 }\tau D。
-}
+
 \qquad\text{(R27-28)}
 $$
 
@@ -448,28 +448,28 @@ $$
 若同时采用 `WIPE-RESET-LEDGER` 与 (R27-23)，则
 
 $$
-\boxed{
+
 \arg\max_D\lambda_D^{\rm gen}=\{4\}.
-}
+
 \qquad\text{(R27-29)}
 $$
 
-因此，先前的 $T_D=\tau D$ 长期反例不再适用于 D211 的演化层代际比较：它把 $D$ 当成了同一代内部消耗的外部串行时间，又遗漏了周期末的统一种子重置。该反例只保留给“没有共同毁灭代际账本、且各维在同一个自由运行钟内串行完成”的其它模型。
+因此，先前的 $T\_D=\tau D$ 长期反例不再适用于 D211 的演化层代际比较：它把 $D$ 当成了同一代内部消耗的外部串行时间，又遗漏了周期末的统一种子重置。该反例只保留给“没有共同毁灭代际账本、且各维在同一个自由运行钟内串行完成”的其它模型。
 
 ### 6.2 两个不能省略的边界
 
-**共同代际必须真存在。** D222 允许局部寿命 $\tau_i$ 不同，甚至可以没有全局毁灭周期。此时不能直接把所有区域放在一张 $\log F_D$ 表上比较；必须另取
+**共同代际必须真存在。** D222 允许局部寿命 $\tau\_i$ 不同，甚至可以没有全局毁灭周期。此时不能直接把所有区域放在一张 $\log F\_D$ 表上比较；必须另取
 
 $$
-\texttt{LOCAL-GENERATION-LEDGER},
+\text{LOCAL-GENERATION-LEDGER},
 $$
 
 用局部周期归一化，或构造一个共同参考代际。没有这一步，只能得到局部结论，不能得到全局长期峰。
 
-**每代倍数必须按共同周期计全。** 若一个共同周期内部允许同一维扇区完成多个闭合子代，则 $F_D$ 必须已经包含这些内部重复；否则还需
+**每代倍数必须按共同周期计全。** 若一个共同周期内部允许同一维扇区完成多个闭合子代，则 $F\_D$ 必须已经包含这些内部重复；否则还需
 
 $$
-\texttt{GENERATION-MULTIPLICITY},
+\text{GENERATION-MULTIPLICITY},
 $$
 
 把内部闭合次数计入每代乘法。不能只写 $q^D$ 而暗中丢掉同一周期内的额外闭合代。
@@ -492,17 +492,17 @@ $$
 因此新的最小条件式是
 
 $$
-\boxed{
-\texttt{PHASE-IDENTITY-DER}
+
+\text{PHASE-IDENTITY-DER}
 \wedge
-\texttt{LEDGER-FACTORIZATION}
+\text{LEDGER-FACTORIZATION}
 \wedge
-\texttt{WIPE-RESET-LEDGER}
+\text{WIPE-RESET-LEDGER}
 \wedge
-\texttt{L=4}
+\text{L=4}
 \Longrightarrow
 \arg\max_D\lambda_D^{\rm gen}=\{4\}.
-}
+
 \qquad\text{(R27-30)}
 $$
 
@@ -527,11 +527,11 @@ R27 的净收益不是“少要输入”，而是：
 8. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-\boxed{
+
 \text{当前诚实结论：R27 找到一条能汇流 }\alpha\text{ 与 }C(D,2)\text{ 的条件路线；}
 \text{在共同毁灭代际账本下，每代谱系峰也可用于代际增长率峰。}
 \text{但仍需四项原生物理桥，且绝对层占比另由 }EVO\text{-}NORM\text{ 管辖。}
-}
+
 $$
 
 ---

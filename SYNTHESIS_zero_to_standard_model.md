@@ -9,12 +9,12 @@
 ## §-1 范围红线（**先读这一节**）
 
 $$
-\boxed{
+
 \begin{aligned}
-&\textbf{本体系的底层只有 } \texttt{Z0} \text{ 一条（「零不断乱动」）。}\\
+&\textbf{本体系的底层只有 } \text{Z0} \text{ 一条（「零不断乱动」）。}\\
 &\textbf{任何旧理论的底层条款一律不进本体系}——\text{只作参考、对照与文献。}\\
 &\text{参考 ≠ 前提};\quad \text{对照 ≠ 汇流};\quad \text{外部结论 ≠ 本体系定理。}
-\end{aligned}}
+\end{aligned}
 $$
 
 | 允许 | 不允许 |
@@ -37,14 +37,14 @@ $$
 ## §0 一句话判定
 
 $$
-\boxed{
+
 \begin{aligned}
-&\textbf{唯一底层是我们自己的 } \texttt{Z0} \text{（「零不断乱动」）；旧理论的底层（} \texttt{U1–U4} \text{）} \textbf{不引入}。\\
+&\textbf{唯一底层是我们自己的 } \text{Z0} \text{（「零不断乱动」）；旧理论的底层（} \text{U1–U4} \text{）} \textbf{不引入}。\\
 &\text{旧理论（参考）唯一有用的东西：它把"到标准物理模型"拆成了可逐项审计的六道恢复门}\\
 &\qquad\Longrightarrow\ \text{拿它当}\textbf{缺口清单的尺子}。\\
 &\textbf{我们这边}：\text{"零"给的是计数与多重性，}\textbf{给不出作用量}。\\
-&\therefore\ \textbf{下一步不是继续推，而是先定位链上的断点，并补 } \texttt{S} \text{（作用量）与 } \texttt{R-JOIN} \text{（复合）两关。}
-\end{aligned}}
+&\therefore\ \textbf{下一步不是继续推，而是先定位链上的断点，并补 } \text{S} \text{（作用量）与 } \text{R-JOIN} \text{（复合）两关。}
+\end{aligned}
 $$
 
 **当前可发表的主张**（**只引我们自己的状态源**）：
@@ -76,8 +76,8 @@ $$
 
 | 文件 | 是什么 |
 |:--|:--|
-| [`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) | 由底层条款导出的**全部**东西（含引理 5 的号差分裂 $\mathbb R_\tau\oplus H_Q$） |
-| [`G40_metric_from_closed_walk_counting.md`](G40_metric_from_closed_walk_counting.md) | 度规的**唯一候选来源**：闭环计数 $N^{(k)}_{ij}=kA_{ij}(A^{k-1})_{ij}$ |
+| [`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) | 由底层条款导出的**全部**东西（含引理 5 的号差分裂 $\mathbb R\_\tau\oplus H\_Q$） |
+| [`G40_metric_from_closed_walk_counting.md`](G40_metric_from_closed_walk_counting.md) | 度规的**唯一候选来源**：闭环计数 $N^{(k)}\_{ij}=kA\_{ij}(A^{k-1})\_{ij}$ |
 | [`G41_lovelock_premises_under_nonuniform_weight.md`](G41_lovelock_premises_under_nonuniform_weight.md) | Lovelock 前提 $(L)(O)(C)$ ＋ **三角困境**（局域／度规由数据导出／不引入偏好三者不可兼得） |
 | [`G57_unreachability_of_absolute_normalization.md`](G57_unreachability_of_absolute_normalization.md) | **绝对标度不可导出**（定理） |
 | [`G59_I7_settled_native_cone_and_its_residue.md`](G59_I7_settled_native_cone_and_its_residue.md) | 原生态锥与残余 |
@@ -94,9 +94,9 @@ $$
 | [`R8_jacobson_entanglement_equilibrium_completion.md`](R8_jacobson_entanglement_equilibrium_completion.md) | 用 Zero 补 Jacobson 2016 的前提 | 精确熵差恒等式已证；L1／L5 未关闭 |
 | [`R10_cao_carroll_bulk_entanglement_completion.md`](R10_cao_carroll_bulk_entanglement_completion.md) | Cao-Carroll 2018 的条件桥 | 只到弱场线性化 |
 | [`R11_legacy_GR_derivation_audit.md`](R11_legacy_GR_derivation_audit.md) | 旧理论与历史 GR 推导审计（含 `modular-equilibrium`） | 可迁移部件与失败边界 |
-| [`R33_action_phase_match_project.md`](R33_action_phase_match_project.md) | **`ACTION-PHASE-MATCH` 立项**：(T1) 模流＝几何流／(T2) 相位 $=e^{iS_{\rm geo}}$／(T3) $K_\omega=c\,G_{\rm geo}$, $c=2\pi$ | **最大缺口在此立项，未证** |
+| [`R33_action_phase_match_project.md`](R33_action_phase_match_project.md) | **`ACTION-PHASE-MATCH` 立项**：(T1) 模流＝几何流／(T2) 相位 $=e^{iS\_{\rm geo}}$／(T3) $K\_\omega=c\,G\_{\rm geo}$, $c=2\pi$ | **最大缺口在此立项，未证** |
 | [`R34_finite_dimensional_boost_obstruction.md`](R34_finite_dimensional_boost_obstruction.md) | **定理**：非紧半单 Lie 群无非平凡有限维酉表示 ⟹ 有限维**不可能**承载 boost | 缺口是**维数**而非 Zero |
-| [`R35_type_iii_classification.md`](R35_type_iii_classification.md) | 极限因子的**类型**由粗粒化轮廓决定；原生满分支给 $III_{1/2}$（不是 $III_1$） | 反向约束 $\pi$ |
+| [`R35_type_iii_classification.md`](R35_type_iii_classification.md) | 极限因子的**类型**由粗粒化轮廓决定；原生满分支给 $III\_{1/2}$（不是 $III\_1$） | 反向约束 $\pi$ |
 | [`R36_chsh_bell_locality.md`](R36_chsh_bell_locality.md)／[`R37`](R37_kcbs_contextuality.md)／[`R38`](R38_entanglement_from_shared_closure_origin.md) | CHSH（Bell 局域）／KCBS（**单体语境 ✅**）／纠缠机制（共同起因＋未记录自由度，$S=2\sqrt2$） | 单体量子性成立；多体缺场地 |
 | [`R44_survival_vs_contextuality_no_go.md`](R44_survival_vs_contextuality_no_go.md) | **no-go**：选维（生存）与单体语境性在洛伦兹字典内**互斥** | 出口＝改账本形式 |
 | [`R46_pair_ledger_objects_and_simplex.md`](R46_pair_ledger_objects_and_simplex.md)／[`R47`](R47_signature_from_causal_cone.md)／[`R74`](R74_euclidean_simplex_settlement.md) | 欧氏单纯形字典 $C(D+1,2)$ ＋ 签名由因果锥供出 ⟹ **$D=4$ 峰与单体语境性同时闭环** | 条件解 |
@@ -124,15 +124,15 @@ $$
 | [`D53_yukawa_closure.md`](../modular-equilibrium/derivations/D53_yukawa_closure.md)／[`D59`](../modular-equilibrium/derivations/D59_flavor_moduli_selection_no_go.md) | Yukawa 闭合；味模空间选择 no-go | 质量层级无规范来源 |
 | [`D57_gauge_connection_yang_mills.md`](../modular-equilibrium/derivations/D57_gauge_connection_yang_mills.md) | 联络 ＋ Yang-Mills（唯一宇称偶两阶规范动力学） | 可迁移的**唯一性论证**（迁回后须在 `Z0` 上重证） |
 | [`D61`](../modular-equilibrium/derivations/D61_gauge_quantization_brst.md)／[`D65`](../modular-equilibrium/derivations/D65_renormalized_brst_slavnov_taylor.md)／[`D74`](../modular-equilibrium/derivations/D74_gribov_ambiguity_nonperturbative_measure.md) | BRST ／ STI ／ Gribov | 非微扰测度未建 |
-| [`D112`](../modular-equilibrium/derivations/D112_weak_mixing_angle_selector.md)／[`D113`](../modular-equilibrium/derivations/D113_gauge_kinetic_normalization.md)／[`D115`](../modular-equilibrium/derivations/D115_weak_angle_scale_anchor.md) | $\sin^2\theta_W=3/8$ 高能条件；低能 $0.23122$ 需尺度锚 $M_U\approx1.03\times10^{13}$ GeV | 数值对照；注意它是**由观测角反解**的，不是上游预言 |
-| [`D138_finite_geo1_crossed_product_skeleton.md`](../modular-equilibrium/derivations/D138_finite_geo1_crossed_product_skeleton.md) | 有限交叉积骨架 | **技术参考**：交叉积给了它 $M_T(\mathbb C)$；我们这边 `lh/D212`／`D221` **独立**也得到同一个载体——两边在**同一个对象**上会合，但这**不是**路线汇流 |
+| [`D112`](../modular-equilibrium/derivations/D112_weak_mixing_angle_selector.md)／[`D113`](../modular-equilibrium/derivations/D113_gauge_kinetic_normalization.md)／[`D115`](../modular-equilibrium/derivations/D115_weak_angle_scale_anchor.md) | $\sin^2\theta\_W=3/8$ 高能条件；低能 $0.23122$ 需尺度锚 $M\_U\approx1.03\times10^{13}$ GeV | 数值对照；注意它是**由观测角反解**的，不是上游预言 |
+| [`D138_finite_geo1_crossed_product_skeleton.md`](../modular-equilibrium/derivations/D138_finite_geo1_crossed_product_skeleton.md) | 有限交叉积骨架 | **技术参考**：交叉积给了它 $M\_T(\mathbb C)$；我们这边 `lh/D212`／`D221` **独立**也得到同一个载体——两边在**同一个对象**上会合，但这**不是**路线汇流 |
 | [`D192_zero_sum_conversion_dynamics.md`](../modular-equilibrium/derivations/D192_zero_sum_conversion_dynamics.md) | 零和转化的无偏好最小核；建造偏置可来自约束图的邻域度（$\pi(0,0,0)/\pi(-2,0,2)=2$） | **该纲领里唯一直接用零和对象的文档** ⟹ 对我们最可能有用的技术参考 |
-| [`D193_zero_sum_graph_to_coarse_geometry.md`](../modular-equilibrium/derivations/D193_zero_sum_graph_to_coarse_geometry.md) | 零和图 → 粗粒几何（Laplacian／Dirichlet 形式／谱维数 $d_s=0.9997,2.0073$） | 与 `lh/G40` 的对照 |
-| [`D194_zero_sum_lattice_rank_and_isotropic_limit.md`](../modular-equilibrium/derivations/D194_zero_sum_lattice_rank_and_isotropic_limit.md) | 秩 $=m-1$；四维门槛 $m\ge5$；等权格各向同性连续极限 $\mathcal Q(p)=m\sum p_i^2$ | 判据参考：它的「四维」是秩门槛，**不是**维数导出 |
-| [`D195`](../modular-equilibrium/derivations/D195_lorentzian_lift_from_time_line.md)／[`D196`](../modular-equilibrium/derivations/D196_conditional_four_dimensional_lorentzian_metric.md) | 洛伦兹提升 $g_L=2u^\flat\otimes u^\flat-g_R$；共形类＋体积元＋时间线＋定向 ⟹ 条件四维洛伦兹度规 | 与 `lh/G1` 引理 5 的号差分裂对照 |
+| [`D193_zero_sum_graph_to_coarse_geometry.md`](../modular-equilibrium/derivations/D193_zero_sum_graph_to_coarse_geometry.md) | 零和图 → 粗粒几何（Laplacian／Dirichlet 形式／谱维数 $d\_s=0.9997,2.0073$） | 与 `lh/G40` 的对照 |
+| [`D194_zero_sum_lattice_rank_and_isotropic_limit.md`](../modular-equilibrium/derivations/D194_zero_sum_lattice_rank_and_isotropic_limit.md) | 秩 $=m-1$；四维门槛 $m\ge5$；等权格各向同性连续极限 $\mathcal Q(p)=m\sum p\_i^2$ | 判据参考：它的「四维」是秩门槛，**不是**维数导出 |
+| [`D195`](../modular-equilibrium/derivations/D195_lorentzian_lift_from_time_line.md)／[`D196`](../modular-equilibrium/derivations/D196_conditional_four_dimensional_lorentzian_metric.md) | 洛伦兹提升 $g\_L=2u^\flat\otimes u^\flat-g\_R$；共形类＋体积元＋时间线＋定向 ⟹ 条件四维洛伦兹度规 | 与 `lh/G1` 引理 5 的号差分裂对照 |
 | [`D200_record_gradient_conditional_time_line.md`](../modular-equilibrium/derivations/D200_record_gradient_conditional_time_line.md) | 记录标量的梯度同时生成时间线、号差与定向 | **时间箭头候选来源**：注意它的“记录”与我们的“历史层记录”是两个不同对象，不可混同 |
 | [`D209_gravitational_coupling_normalization_and_scale_gap.md`](../modular-equilibrium/derivations/D209_gravitational_coupling_normalization_and_scale_gap.md) | $G,\Lambda$ 的作用量系数／源归一化／观测读数分解 | 与 `lh/G57` 的「不可导出」定理**互相印证** |
-| [`D223`](../modular-equilibrium/derivations/D223_age_carrier_tensor_u_interface.md)–[`D234`](../modular-equilibrium/derivations/D234_geometric_ball_profile_candidate.md) | 年龄载体 → 局部模见证 → 模密度剖面 → 球的抛物型权重 $f_B(r)=(R^2-r^2)/(2R)$ | **技术上最有用的一条链**：它把「模流＝几何 boost」推到只剩剖面形状；迁回时须用我们的量替换其“年龄矩阵态” |
+| [`D223`](../modular-equilibrium/derivations/D223_age_carrier_tensor_u_interface.md)–[`D234`](../modular-equilibrium/derivations/D234_geometric_ball_profile_candidate.md) | 年龄载体 → 局部模见证 → 模密度剖面 → 球的抛物型权重 $f\_B(r)=(R^2-r^2)/(2R)$ | **技术上最有用的一条链**：它把「模流＝几何 boost」推到只剩剖面形状；迁回时须用我们的量替换其“年龄矩阵态” |
 | [`D238`](../modular-equilibrium/derivations/D238_linear_sign_hazard_mechanism.md)–[`D247`](../modular-equilibrium/derivations/D247_zero_defect_stiffness_scale_audit.md) | 符号年龄破缺 → 线性危险率 → 抛物型剖面；剩余缺口＝绝对刚度 $\delta$ | 与我们的 $\beta\varepsilon$ 缺口**形态相同**，可作独立对照 |
 | [`D252_layer_time_atlas_and_global_time_potential.md`](../modular-equilibrium/derivations/D252_layer_time_atlas_and_global_time_potential.md) | 分层时间图册；全局时间势的精确可行判据（差分级约束） | 时间定向的**判据**（工具，可迁） |
 | [`D253`](../modular-equilibrium/derivations/D253_adm_metric_assembly_and_lapse_shift_gap.md)–[`D258`](../modular-equilibrium/derivations/D258_full_exchange_projection_and_local_isotropy_obstruction.md) | ADM 组装／Dirichlet 张量／单纯形内禀几何／有效电阻／局部各向同性障碍 | 与 `lh/R82`、`lh/R85` **独立得到同一结论** ⟹ 增强我们结论的可信度（但两边的**底层不同**，不可相加） |
@@ -159,30 +159,30 @@ cd /Users/oygb/Downloads/modular-equilibrium/verify && python3 d259_z_layer_cond
 
 | 文件 | 是什么 | 结论 |
 |:--|:--|:--|
-| [`E1_NN_verdict.md`](E1_NN_verdict.md) | **E1 核查判定**：Nielsen–Ninomiya 四前提逐条裁决 ＋ 内容图 $\Gamma_L$ 的谱与标度 | **NN 不适用**（④平移不变不成立）；但**我们尚无手征算子**，故这不是安全证明 |
+| [`E1_NN_verdict.md`](E1_NN_verdict.md) | **E1 核查判定**：Nielsen–Ninomiya 四前提逐条裁决 ＋ 内容图 $\Gamma\_L$ 的谱与标度 | **NN 不适用**（④平移不变不成立）；但**我们尚无手征算子**，故这不是安全证明 |
 | [`E1_NN_check.py`](E1_NN_check.py) | 独立探针：从 `Z1` 定理 1 的补偿移动起算，穷举全部 $L$ 个移位判对称性 | 断言全部通过，退出码 `0` |
 | [`LAYER_LEDGER.md`](LAYER_LEDGER.md) | **分层推导台账**：物理世界在 L2；分层行为表；本轮结果的逐项定层；**两处层坍塌更正** | ⚠️ **E1 的原措辞（「NN 不适用」）已按层纪律更正**：那是用 L0 图事实裁决 L2 费米扇区，**不能**读成「费米扇区安全」 |
-| [`L2_T_absolute_verdict.md`](L2_T_absolute_verdict.md) | **$T$ 的绝对值：容量封顶给出 $T=5$** | 实测 $c(T)=4,8,18,46,130$（$T=3,5,7,9,11$）；容量 $K_{\rm proj}=2(T+1)$ 给可行 $\{3,5\}$ ⟹ **$T=5$**（自然值为奇数）。$\alpha=2.88$ 十亿年，$t_{\rm cycle}=14.4$ 十亿年，相位 $95.81\%$，**距下次毁灭 6.03 亿年**。判别式：间隔谱比值 $3.5$（$T{=}6$ 给 $4.0$）。**边界**：$c(T)$ 闭式未得；两容量口径未分胜负 |
-| [`L2_C_recursion_verdict.md`](L2_C_recursion_verdict.md) | **$C(T)$ 递推：已对齐闭合** | **递推** $h_{n+1}=(c+1)h_n-c\,h_{n-1}$，特征根 $(c,1)$ ⟹ $\boxed{\lambda=c(T)}$。**闭式** $c(T)=2\sum_{i=0}^{T/2-2}C_i$（$T\ge4$；$c(3)=4$），$T=3\dots12$ 全部核验。**机制**：$c$ 与站点数**无关**（1/2/3/6 站点均给同值）——这正是我先前反复弄错的地方 |
-| [`L2_catalan_destruction.py`](L2_catalan_destruction.py) §F2 | **$C(T)$ 口径已统一**（本轮修正） | 实测序列奇偶成对：$4,4,8,8,18,46,130,394$，与 $D_1(T-2)$ 同值。**闭式未得**（连续猜错三次，按纪律不写公式）；**增长比 $\lambda$ 与 $C(T)$ 的递推尚未对上**（原始仿真 $T{=}3\to4.0007$）⟹ 登记为开放 |
+| [`L2_T_absolute_verdict.md`](L2_T_absolute_verdict.md) | **$T$ 的绝对值：容量封顶给出 $T=5$** | 实测 $c(T)=4,8,18,46,130$（$T=3,5,7,9,11$）；容量 $K\_{\rm proj}=2(T+1)$ 给可行 $\{3,5\}$ ⟹ **$T=5$**（自然值为奇数）。$\alpha=2.88$ 十亿年，$t\_{\rm cycle}=14.4$ 十亿年，相位 $95.81\%$，**距下次毁灭 6.03 亿年**。判别式：间隔谱比值 $3.5$（$T{=}6$ 给 $4.0$）。**边界**：$c(T)$ 闭式未得；两容量口径未分胜负 |
+| [`L2_C_recursion_verdict.md`](L2_C_recursion_verdict.md) | **$C(T)$ 递推：已对齐闭合** | **递推** $h\_{n+1}=(c+1)h\_n-c\,h\_{n-1}$，特征根 $(c,1)$ ⟹ $\lambda=c(T)$。**闭式** $c(T)=2\sum\_{i=0}^{T/2-2}C\_i$（$T\ge4$；$c(3)=4$），$T=3\dots12$ 全部核验。**机制**：$c$ 与站点数**无关**（1/2/3/6 站点均给同值）——这正是我先前反复弄错的地方 |
+| [`L2_catalan_destruction.py`](L2_catalan_destruction.py) §F2 | **$C(T)$ 口径已统一**（本轮修正） | 实测序列奇偶成对：$4,4,8,8,18,46,130,394$，与 $D\_1(T-2)$ 同值。**闭式未得**（连续猜错三次，按纪律不写公式）；**增长比 $\lambda$ 与 $C(T)$ 的递推尚未对上**（原始仿真 $T{=}3\to4.0007$）⟹ 登记为开放 |
 | [`L2_layer_retention_corrected.md`](L2_layer_retention_corrected.md) | **层保留猜想（修正版）** | **修正后与 `D222` 零差别**：L2 全毁 ✓、**L1 保留最高两层** ✓、L0 完整保留 ✓ ⟹ 猜想**就是**已登记规则，不需新条款。附带确认零和保持与幂等性。§3 给代数关系 $\lambda^2=C(\lambda+1)$；**§4 自认 $C(T)$ 口径未统一**（单站点 2.73 vs 原始仿真 4.00） |
-| [`L2_layer_retention_verdict.md`](L2_layer_retention_verdict.md) | **层保留猜想核查**（用户第二猜想） | **一致**：L2 全毁 ✓、L0 完整保留 ✓（`R95` §0 早已给）。**实质差别**：猜想保留 L1 最高**一层**，`D222` 是**两层** —— 结构上相容（零和、幂等都过），但**生长率不同**：$\lambda_{k=1}=C(T)$（Catalan 部分和，**更简洁**）vs $\lambda_{k=2}=(C+\sqrt{C^2+4C})/2$。两者都超临界 ⟹ 饱和不能选 $k$，但生长率可区分 |
-| [`L2_decoupling_verdict.md`](L2_decoupling_verdict.md) | **「相位解耦 ⇒ 无预兆、瞬间毁灭」的核查**（用户猜想） | **成立**：「无预兆」「非压缩」——破坏是**阈值型**（三候选机制全部阈值）；级联 $n=\ln N/\ln\lambda$ 对 $N$ **只对数敏感**。**不成立**：「几天」与「周期百亿年」**不相容** —— 结构给 $t_{\rm destroy}/t_{\rm cycle}\sim n/T=O(1)$（纯无量纲），与 $10^{-12}$ 差 12 个数量级。「瞬间」应是 **$O(1)$ 步**，不是 $10^{-12}$ 个周期 |
-| [`L2_anchor_verdict.md`](L2_anchor_verdict.md) | **锚定：毁灭周期（年）** | **结构闭合**：$t_{\rm cycle}=T\alpha$，$T\in\{5,6\}$；锚定链 $\kappa$（`G60` §4 唯一长度锚）$\times c_*=1$（`R48`）$\Rightarrow$ 一个自由时间锚 $\alpha$。**可否证预言**（路线 A）：沉积间隔谱是**两值** $\{2\alpha,(T+2)\alpha\}$，比值 $(T+2)/2\in\{3.5,4\}$。观测量 $(比值, 2\alpha$ 的绝对时长$)$ 两个 ⟹ 定出 $(T,\alpha)$ |
-| [`L2_imprint_verdict.md`](L2_imprint_verdict.md) | **路线 A：毁灭事件的可观测印记** | **印记存在**（在时间轴的间隔结构里，不在幅度里）：记录层沉积流的间隔序列为 $\underbrace{2,\dots,2}_{T/2-1},\ \mathbf{T+2},\dots$ ⟹ **反解式 $T=2\times$(每周期沉积次数)**。这把「$T$ 未知」那一半解决了；剩下一半是「钟」$\tau_{\rm step}$。**可否证预言**：间隔谱是两个离散值 $\{2\tau_{\rm step},(T+2)\tau_{\rm step}\}$ |
-| [`L2_years_verdict.md`](L2_years_verdict.md) | **毁灭周期「多少年」**（用户目标） | **年数不可内部导出**——引**我们自己的定理** `G57` §3（量纲空洞）＋ `G60` §4（有量纲自由度恰好 1 个）。$t_{\rm cycle}=T\times\tau_{\rm step}$ 中 **$T$ 已闭合**（Catalan：$D_1=\binom{T}{T/2}$、$\lambda=h_1+1$），$\tau_{\rm step}$ 是**唯一锚**。交付**一族解**而非一个数；**唯一出路**是找能锚定 $\tau_{\rm step}$ 的**观测关系**（四条路线） |
-| [`L2_cat_vs_motzkin_verdict.md`](L2_cat_vs_motzkin_verdict.md) | **Catalan vs Motzkin 术语更正 ＋ 文献定位** | **更正**：实测序列是 **Catalan**（$\mathrm{co}[2i]=2C_i$），**不是 Motzkin**；$2\times$Motzkin 前 3 项 $2,2,4$ 重合、第 4 项分岔（$8$ vs $10$）。物理原因：`Z0①`「零不停留」⟹ 每步必改变平衡 ⟹ **无水平步** ⟹ Dyck 型。文献侧（编号已实抓）：Motzkin 在物理里是**格路计数工具**（[1706.00197](https://arxiv.org/abs/1706.00197)、[2608.11179](https://arxiv.org/abs/2608.11179)），**与宇宙周期无关**；Catalan 侧有矩阵模型／CDT 先例（[0804.0252](https://arxiv.org/abs/0804.0252)） |
-| [`L2_catalan_verdict.md`](L2_catalan_verdict.md) | **$\mathrm{co}[s]$ 的闭式：Catalan 数** | **定案**：$\mathrm{co}[2i]=2C_i$（Catalan），序列 $2,2,4,10,28,84,264,\dots$ = **OEIS A284016**（$2\times$A000108）；$S(T)=2\sum_{i<T/2}C_i$；$\lambda^2=S(\lambda+1)$，即 $\lambda\approx S+1$。$T=6,12,14,20$ 吻合到 $<2\times10^{-5}$。**未竟**：$\Sigma\,\mathrm{co}$ 的代数化简（六个候选证伪） |
-| [`L2_transfer_verdict.md`](L2_transfer_verdict.md) | **补全状态后的转移矩阵**（用户指示的第 1 条） | **正面**：状态完备后周期推进线性，特征方程有精确代数形式 $\lambda^2=(\Sigma\,\mathrm{co})(\lambda+1)$；$T=6,12,14,20$ 上与实测吻合到 $<10^{-5}$。**未竟**：$\mathrm{co}[s]$ 的组合闭式三个候选全部证伪，按纪律不写；$T=10$ 偏 $4.4\times10^{-4}$ 未解释；$\rho(T)$ 仍需特征向量 |
+| [`L2_layer_retention_verdict.md`](L2_layer_retention_verdict.md) | **层保留猜想核查**（用户第二猜想） | **一致**：L2 全毁 ✓、L0 完整保留 ✓（`R95` §0 早已给）。**实质差别**：猜想保留 L1 最高**一层**，`D222` 是**两层** —— 结构上相容（零和、幂等都过），但**生长率不同**：$\lambda\_{k=1}=C(T)$（Catalan 部分和，**更简洁**）vs $\lambda\_{k=2}=(C+\sqrt{C^2+4C})/2$。两者都超临界 ⟹ 饱和不能选 $k$，但生长率可区分 |
+| [`L2_decoupling_verdict.md`](L2_decoupling_verdict.md) | **「相位解耦 ⇒ 无预兆、瞬间毁灭」的核查**（用户猜想） | **成立**：「无预兆」「非压缩」——破坏是**阈值型**（三候选机制全部阈值）；级联 $n=\ln N/\ln\lambda$ 对 $N$ **只对数敏感**。**不成立**：「几天」与「周期百亿年」**不相容** —— 结构给 $t\_{\rm destroy}/t\_{\rm cycle}\sim n/T=O(1)$（纯无量纲），与 $10^{-12}$ 差 12 个数量级。「瞬间」应是 **$O(1)$ 步**，不是 $10^{-12}$ 个周期 |
+| [`L2_anchor_verdict.md`](L2_anchor_verdict.md) | **锚定：毁灭周期（年）** | **结构闭合**：$t\_{\rm cycle}=T\alpha$，$T\in\{5,6\}$；锚定链 $\kappa$（`G60` §4 唯一长度锚）$\times c\_*=1$（`R48`）$\Rightarrow$ 一个自由时间锚 $\alpha$。**可否证预言**（路线 A）：沉积间隔谱是**两值** $\{2\alpha,(T+2)\alpha\}$，比值 $(T+2)/2\in\{3.5,4\}$。观测量 $(比值, 2\alpha$ 的绝对时长$)$ 两个 ⟹ 定出 $(T,\alpha)$ |
+| [`L2_imprint_verdict.md`](L2_imprint_verdict.md) | **路线 A：毁灭事件的可观测印记** | **印记存在**（在时间轴的间隔结构里，不在幅度里）：记录层沉积流的间隔序列为 $\underbrace{2,\dots,2}\_{T/2-1},\ \mathbf{T+2},\dots$ ⟹ **反解式 $T=2\times$(每周期沉积次数)**。这把「$T$ 未知」那一半解决了；剩下一半是「钟」$\tau\_{\rm step}$。**可否证预言**：间隔谱是两个离散值 $\{2\tau\_{\rm step},(T+2)\tau\_{\rm step}\}$ |
+| [`L2_years_verdict.md`](L2_years_verdict.md) | **毁灭周期「多少年」**（用户目标） | **年数不可内部导出**——引**我们自己的定理** `G57` §3（量纲空洞）＋ `G60` §4（有量纲自由度恰好 1 个）。$t\_{\rm cycle}=T\times\tau\_{\rm step}$ 中 **$T$ 已闭合**（Catalan：$D\_1=\binom{T}{T/2}$、$\lambda=h\_1+1$），$\tau\_{\rm step}$ 是**唯一锚**。交付**一族解**而非一个数；**唯一出路**是找能锚定 $\tau\_{\rm step}$ 的**观测关系**（四条路线） |
+| [`L2_cat_vs_motzkin_verdict.md`](L2_cat_vs_motzkin_verdict.md) | **Catalan vs Motzkin 术语更正 ＋ 文献定位** | **更正**：实测序列是 **Catalan**（$\text{co}[2i]=2C\_i$），**不是 Motzkin**；$2\times$Motzkin 前 3 项 $2,2,4$ 重合、第 4 项分岔（$8$ vs $10$）。物理原因：`Z0①`「零不停留」⟹ 每步必改变平衡 ⟹ **无水平步** ⟹ Dyck 型。文献侧（编号已实抓）：Motzkin 在物理里是**格路计数工具**（[1706.00197](https://arxiv.org/abs/1706.00197)、[2608.11179](https://arxiv.org/abs/2608.11179)），**与宇宙周期无关**；Catalan 侧有矩阵模型／CDT 先例（[0804.0252](https://arxiv.org/abs/0804.0252)） |
+| [`L2_catalan_verdict.md`](L2_catalan_verdict.md) | **$\text{co}[s]$ 的闭式：Catalan 数** | **定案**：$\text{co}[2i]=2C\_i$（Catalan），序列 $2,2,4,10,28,84,264,\dots$ = **OEIS A284016**（$2\times$A000108）；$S(T)=2\sum\_{i<T/2}C\_i$；$\lambda^2=S(\lambda+1)$，即 $\lambda\approx S+1$。$T=6,12,14,20$ 吻合到 $<2\times10^{-5}$。**未竟**：$\Sigma\,\text{co}$ 的代数化简（六个候选证伪） |
+| [`L2_transfer_verdict.md`](L2_transfer_verdict.md) | **补全状态后的转移矩阵**（用户指示的第 1 条） | **正面**：状态完备后周期推进线性，特征方程有精确代数形式 $\lambda^2=(\Sigma\,\text{co})(\lambda+1)$；$T=6,12,14,20$ 上与实测吻合到 $<10^{-5}$。**未竟**：$\text{co}[s]$ 的组合闭式三个候选全部证伪，按纪律不写；$T=10$ 偏 $4.4\times10^{-4}$ 未解释；$\rho(T)$ 仍需特征向量 |
 | [`L2_rho_closed_verdict.md`](L2_rho_closed_verdict.md) | **$\rho(T)$ 的闭式与反解判定**（用户指示） | **正面**：$\rho(T)$ 是 Perron 比值，渐近为 **$c\,T$（线性，$c\approx0.75$）**；$D$ 与 $h$ 同率指数增长（$T{=}10$ 时 $\lambda\approx47$）。**否定**：线性且**无常数项** ⟹ 反解 $T=\rho/c$ 带乘性未知量，**不能钉出整数 $T$**。与 $B=4$ 的对照：$B$ 的闭式含**精确常数 4**，$\rho$ 不含 |
-| [`L2_period_abs_verdict.md`](L2_period_abs_verdict.md) | **$T$ 的绝对取值试算**（用户提问的第二问） | **容量封顶把 $T$ 从「无上界」压到 $\le 5$（投影口径）／$\le 6$（$\dim\mathcal A$ 口径）；交叉点 $5.66$／$6.21$。但 $T=3$ 落在可行域**内部**（$c_3=3\le8$）⟹ **容量不排除也不选出** $T=3$。两个口径未分出胜负，故 $T$ 的绝对值**未唯一钉住**（与 $B=4$ 的成功对照：$B$ 有**两条**独立的精确条件落在同一点） |
+| [`L2_period_abs_verdict.md`](L2_period_abs_verdict.md) | **$T$ 的绝对取值试算**（用户提问的第二问） | **容量封顶把 $T$ 从「无上界」压到 $\le 5$（投影口径）／$\le 6$（$\dim\mathcal A$ 口径）；交叉点 $5.66$／$6.21$。但 $T=3$ 落在可行域**内部**（$c\_3=3\le8$）⟹ **容量不排除也不选出** $T=3$。两个口径未分出胜负，故 $T$ 的绝对值**未唯一钉住**（与 $B=4$ 的成功对照：$B$ 有**两条**独立的精确条件落在同一点） |
 | [`L2_period_verdict.md`](L2_period_verdict.md) | **L2 毁灭周期 $T$ 的判定**（用户提问） | **$T$ 是可辨识的不动点参数**：每个 $T$ 给唯一的渐近比值 $\rho(T)$（实测 $T=2{:}1.3700$、$3{:}1.2079$、$4{:}2.4158$…），且 $h(2k{-}1)=h(2k)$、$D(2k{-}1)=\frac12D(2k)$、$\rho(2k)=2\rho(2k{-}1)$ **精确成立**；**但 $T$ 的绝对秒数不可导出**（标度不在 L2），且 L2 在纯"毁灭+重播种"下**不饱和**（需具名容量） |
 
 **三个副产结果**（证据都在 `E1_NN_verdict.md`）：
 
-1. $\Gamma_L$ 的真实对称是**反射** $w\mapsto\operatorname{reverse}(w)$，**不是平移**（$L=4\dots12$ 全部：保图移位集 $=[\,0\,]$）；
-2. 谱隙 $\lambda_1(\Gamma_L)\approx\pi^2/L^2$（$\lambda_1L^2\to9.84$ vs $\pi^2=9.8696$），而带宽 $\lambda_{\max}\to\frac43L$ **线性发散**（`G77` 格点的 $\lambda_{\max}$ 恒为 $4$）⟹ $\Gamma_L$ 与物理格点在**大 $L$ 不等价**；
-3. 物理格点（环图 $C_L$）**恒有 1 个零模**，与 $2(1-\cos\theta)$ 解析谱逐 $L$ 完全一致 ⟹ 单粒子层面**没有加倍**。
+1. $\Gamma\_L$ 的真实对称是**反射** $w\mapsto\text{reverse}(w)$，**不是平移**（$L=4\dots12$ 全部：保图移位集 $=[\,0\,]$）；
+2. 谱隙 $\lambda\_1(\Gamma\_L)\approx\pi^2/L^2$（$\lambda\_1L^2\to9.84$ vs $\pi^2=9.8696$），而带宽 $\lambda\_{\max}\to\frac43L$ **线性发散**（`G77` 格点的 $\lambda\_{\max}$ 恒为 $4$）⟹ $\Gamma\_L$ 与物理格点在**大 $L$ 不等价**；
+3. 物理格点（环图 $C\_L$）**恒有 1 个零模**，与 $2(1-\cos\theta)$ 解析谱逐 $L$ 完全一致 ⟹ 单粒子层面**没有加倍**。
 
 ---
 
@@ -213,14 +213,14 @@ $$
 $$
 
 $$
-\Longrightarrow\ \textbf{这里只能做交叉校验}：\texttt{lh/D212}\ \text{与}\ \texttt{modular-equilibrium/D221}\ \text{得到同一载体，}\ \textbf{但两条路线未证等价（}\texttt{R5}\text{）}。
+\Longrightarrow\ \textbf{这里只能做交叉校验}：\text{lh/D212}\ \text{与}\ \text{modular-equilibrium/D221}\ \text{得到同一载体，}\ \textbf{但两条路线未证等价（}\text{R5}\text{）}。
 $$
 
 **三处独立复现**（增强我们结论的可信度，**不改动**我们的任何判定）：
 
 | 缺口 | 我们（`lh`，`Z0` 上导出） | 旧理论（仅对照） | 是否一致 |
 |:--|:--|:--|:--|
-| 局部各向同性障碍 | `R85`：单纯形上必然各向异性 $D/(D+1)$ | `D258`：范围投影 ＋ 局部各向同性条件；反例 $\operatorname{spec}=\{4/5,1,1\}$ | **结论一致，底层不同** |
+| 局部各向同性障碍 | `R85`：单纯形上必然各向异性 $D/(D+1)$ | `D258`：范围投影 ＋ 局部各向同性条件；反例 $\text{spec}=\{4/5,1,1\}$ | **结论一致，底层不同** |
 | 共形因子／绝对尺度无来源 | `G57`／`R82`：只到共形类 | `D139`／`D141`／`D207` | **结论一致** |
 | 时间箭头不由零和／可逆核选出 | `Z0` §2.5（重播种被「不断」逼出） | `D175`–`D179`：可逆零重写不选箭头，吸收补全须多付一个单向选择 | **结论同源，且它量化了代价** |
 
@@ -235,10 +235,10 @@ $$
 | 1 | **`S`：无原生作用量**（相位 $\ne e^{iS}$） | L1／L2 | **开放**，`ACTION-PHASE-MATCH` 立项未证 | `D117`／`D118`：字面「总作用量为零」**不可升级为 `U5`**；改走相对作用量 `R-AREL` | 分支间相位、时间平移动力学、幅度 | `R33`／`R102`／`AXIOMS` §6.4 |
 | 2 | **`R-JOIN`：复合系统／张量积／共同时间** | 跨层 | 开放（CHSH ≤ 2） | **`J0/J1` 已建，`J2` 条件建立，`J3` 物理复合未建** | 多体、Bell、纠缠熵的场地 | `AXIOMS` §3.1；`R36`–`R41` |
 | 3 | **共形因子 $\Omega^2(x)$ 无来源** | 几何 | **开放**（`R82` 正名）；`R85` 各向同性必然失败 | `D139`–`D143`：给定共形类＋体积元后度规**唯一**，但共形类本身＝输入 | 四维度规的定量间隔 | `R82`／`R85`／`D143` |
-| 4 | **`L1`：几何模极限 $K_B\to2\pi B_B$** | 读出面 | **开放**；原样强预解**已排除**（`R13`）；type $III_1$ 未达 | `D231`／`D234`：候选剖面 $f_B(r)=(R^2-r^2)/(2R)$ **已对出形状**；剩源算子识别／接触项／年龄-径向标定 | 模流＝几何 boost；$2\pi$ 归一化 | `R12`／`R13`／`D234` |
+| 4 | **`L1`：几何模极限 $K\_B\to2\pi B\_B$** | 读出面 | **开放**；原样强预解**已排除**（`R13`）；type $III\_1$ 未达 | `D231`／`D234`：候选剖面 $f\_B(r)=(R^2-r^2)/(2R)$ **已对出形状**；剩源算子识别／接触项／年龄-径向标定 | 模流＝几何 boost；$2\pi$ 归一化 | `R12`／`R13`／`D234` |
 | 5 | **`DIM-SECTOR`／$D=4$** | L0／L2 | **已证内部不可导出**；条件候选 `PAIR-CARRIER` ＋ $L=4$（$q=5/9$） | `D194`：秩 $=m-1$，四维门槛 $m\ge5$（**不是**维数导出） | 四维唯一性 | `R3`／`R25`–`R32`／`D194` |
-| 6 | **物质扇区：规范群／表示／代计数** | SM 门 | **无记录** | 反常复形、中心商 $G_0/Z_6$、$Q\in\frac13\mathbb Z$、$\sin^2\theta_W=3/8$ **条件恢复**；**实际规范群、物质表示、四荷秩、$k=3$ 未选出** | 标准物理模型的物质栏 | `D45`–`D52` |
-| 7 | **`E4`：绝对标度 $G,\Lambda$** | 量纲 | **不可导出**（定理，`G57`） | `D209`：$(G_g,b)$ 分解；长度缩放下 $G\Lambda$、$Gm^2$ 不变；**绝对耦合值仍缺** | SI 数值、可检验预言的量纲 | `G57`／`D209` |
+| 6 | **物质扇区：规范群／表示／代计数** | SM 门 | **无记录** | 反常复形、中心商 $G\_0/Z\_6$、$Q\in\frac13\mathbb Z$、$\sin^2\theta\_W=3/8$ **条件恢复**；**实际规范群、物质表示、四荷秩、$k=3$ 未选出** | 标准物理模型的物质栏 | `D45`–`D52` |
+| 7 | **`E4`：绝对标度 $G,\Lambda$** | 量纲 | **不可导出**（定理，`G57`） | `D209`：$(G\_g,b)$ 分解；长度缩放下 $G\Lambda$、$Gm^2$ 不变；**绝对耦合值仍缺** | SI 数值、可检验预言的量纲 | `G57`／`D209` |
 | 8 | **$\beta\varepsilon$／绝对刚度 $\delta$** | 态侧 | **开放**，三处数值冲突（`R80`） | `D247`：剩余对象＝零缺陷形状 $Q^2$ ＋ **刚度数值 $\delta$**；年龄重标度 $\delta'=\delta/\lambda^2$ | 语境性门槛 ＋ 物质各向同性（**一个数卡两条链**） | `R80`／`D247` |
 | 9 | **账本经典性**（$\mathbb N$ 值重数） | L1′ | **已证**，且在 `Z0③` 下**不可闭合**，判为「$D=4$ 的对价」 | `D192`：建造偏置**可来自约束图的邻域度**（不须额外边力） | Bell 违反、多体纠缠 | `R86`／`R99`／`D192` |
 | 10 | **`E1`／`I5b`：类到物理站点** | 嵌入 | 单值识别**已证不可行**；平衡对应可构造；带基点嵌入仍缺 | `R-TIME`／`R-CAUSAL` 未建 | 把「两方」识别为「两处空间」 | `R2`／`AXIOMS` §3.2 |
@@ -305,8 +305,8 @@ graph TD
 |:--|:--|
 | 度规候选（闭环计数，零自由参数） | **共形因子 $\Omega^2(x)$ 的来源** |
 | Lovelock 前提 $(L)(O)(C)$；$(C)$ 零本征值恰 1 个 | **$D=4$ 的物理独立选择** |
-| 条件 Einstein 方程 $G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}$ | **状态到几何的映射** |
-| 守恒源（$T^\phi_{ab}$ 在壳守恒） | 连续网／Type III 相对模／Hadamard 态／几何模条件 |
+| 条件 Einstein 方程 $G\_{ab}+\Lambda g\_{ab}=8\pi G\,T\_{ab}$ | **状态到几何的映射** |
+| 守恒源（$T^\phi\_{ab}$ 在壳守恒） | 连续网／Type III 相对模／Hadamard 态／几何模条件 |
 | 有限前沿锥（支持锥**精确**；$\varepsilon(B)=\frac12\log(4/B)$，$B=4$ 自洽） | 锥边可见性的常数 $\frac12$ 尚无解析推导；$B=4$ 的绝对来源 |
 | 弱场：Poisson／PPN $\beta=\gamma=1$／Schwarzschild-$\Lambda$ 精确解（条件） | 强场一般解、旋转、带电、坍缩、非线性引力波 |
 | FRW 动力学闭合（条件，$a\propto t^{1/3}$） | 初态与势能不被上游选择 |
@@ -316,14 +316,14 @@ graph TD
 
 | 已到手 | 仍缺 |
 |:--|:--|
-| 非对易代数 $M_2(\mathbb C)$（循环序 ＋ $\pm$） | **作用量 $S$ ⟹ 类间相位** |
+| 非对易代数 $M\_2(\mathbb C)$（循环序 ＋ $\pm$） | **作用量 $S$ ⟹ 类间相位** |
 | 复振幅／Hilbert 空间（GNS，Gram 正定） | **时间平移生成元 $H$** |
 | 模流 ＋ KMS（偏差 $3.6\times10^{-16}$） | **支持并与物理复合（$J3$）** |
 | Born 规则（**两条独立路**：Schur／GNS 迹） | 测量诠释（我们与旧理论都登记为具名输入） |
-| 干涉（交叉项 $2\operatorname{Re}\rho_{12}$） | 参照时钟态的物理选择 |
-| 退相干 $V=\kappa_1^{N(t)}$ | 「事件对应哪个效应」 |
+| 干涉（交叉项 $2\text{Re}\rho\_{12}$） | 参照时钟态的物理选择 |
+| 退相干 $V=\kappa\_1^{N(t)}$ | 「事件对应哪个效应」 |
 | 自旋 1/2（旋转群双覆盖） | — |
-| **单体语境性 ✅**（KCBS，$S_{\max}=2.0146>2$，余量 $0.0171$） | 检验是 state-dependent；3 维归约＝$\pi$ |
+| **单体语境性 ✅**（KCBS，$S\_{\max}=2.0146>2$，余量 $0.0171$） | 检验是 state-dependent；3 维归约＝$\pi$ |
 | — | **多体：CHSH 恒 $\le2$**（Bell 局域） |
 
 ### 4.3 SM 门（**我们：无记录；下列全部是旧理论的靶子**）
@@ -334,12 +334,12 @@ graph TD
 |:--|:--|
 | 一代左手物质**六类局域反常复形消去** | **实际规范群、物质表示、四荷秩未选出** |
 | Witten $SU(2)$ 整体反常奇偶条件 | **$k=3$（三代）未导出**（反常与 Witten 条件都给不出） |
-| 给定局部群后：整体中心商 $G_0/Z_6$ | 物理解释哪些子代数构成低能扇区 |
+| 给定局部群后：整体中心商 $G\_0/Z\_6$ | 物理解释哪些子代数构成低能扇区 |
 | 电荷量子化 $Q\in\frac13\mathbb Z$（需中心相容） | 连续规范来源（三路都须新增群／表示／选择器） |
 | 两阶 Yang-Mills 为唯一宇称偶两阶规范动力学 | 非微扰测度／Gribov／禁闭／微扰正定性 |
 | BRST 幂零性、STI、Nielsen 恒等式 | Higgs 势与真空对齐的动力学来源 |
 | Higgs 最小表示 $(1,2,\pm1/2)$（条件唯一）；树级 $\rho=1$ | **绝对电弱尺度**（无量纲扇区不能生成尺度） |
-| 高能 $\sin^2\theta_W=3/8$（等耦合点）；$M_U\approx1.03\times10^{13}$ GeV（由观测角**反解**） | 阈值谱、高能群、破缺链；尺度锚 |
+| 高能 $\sin^2\theta\_W=3/8$（等耦合点）；$M\_U\approx1.03\times10^{13}$ GeV（由观测角**反解**） | 阈值谱、高能群、破缺链；尺度锚 |
 | $B$–$L$ 反常闭合（含 $\nu^c$） | 中微子完成路线与 Majorana/Weinberg 尺度 |
 | 味模空间维数（Dirac 20／Majorana 22；夸克 10） | **Yukawa 耦合与质量层级无规范来源** |
 | — | **CP 相位**：规范与反常不选择相位 |
@@ -379,16 +379,16 @@ graph TD
 | A3 | Koeller, Leichenauer, *Holographic Proof of the Quantum Null Energy Condition* | [1512.06109](https://arxiv.org/abs/1512.06109) | 面积律 ＋ 能量条件 | 全息侧的独立验证 | 依赖 HRRT |
 | A4 | **Ceyhan, Faulkner, *Recovering the QNEC from the ANEC*** | [1812.04683](https://arxiv.org/abs/1812.04683) | 缺口 1 的下游 | **QNEC 的证明**：由 ANEC ＋ 相对熵单调性推出 —— 比 A1 更彻底，把「能量条件」整条链收进熵 | 同上；需 ANEC 作输入 |
 | A5 | **Casini, *Relative entropy and the Bekenstein bound*** | [0804.2182](https://arxiv.org/abs/0804.2182) | 缺口 4／面积律 | 相对熵正性 ⟹ **Bekenstein 界** —— 熵界的来源是熵的正性，不是新公理 | 需 QFT 与模理论 |
-| A6 | Witten, *Gravity and the Crossed Product* | [2112.12828](https://arxiv.org/abs/2112.12828) | **缺口 4（$III_1$）** | 摘要逐字：**type III$_1$ 的交叉积 → type II$_\infty$**；在此代数中**黑洞态熵有定义（up to 常数）** | 需渐近边界代数与模流 |
-| A7 | Chandrasekaran, Longo, Penington, Witten, *An Algebra of Observables for de Sitter Space* | [2206.10780](https://arxiv.org/abs/2206.10780) | **缺口 4** ＋ 观测者代数 | 摘要逐字：**type II$_1$ ＋ 最大熵态**；广义熵 $S_{\rm gen}=A/4G_N+S_{\rm out}$ 在代数内成立 | 静态 patch；类型假设 |
+| A6 | Witten, *Gravity and the Crossed Product* | [2112.12828](https://arxiv.org/abs/2112.12828) | **缺口 4（$III\_1$）** | 摘要逐字：**type III$\_1$ 的交叉积 → type II$\_\infty$**；在此代数中**黑洞态熵有定义（up to 常数）** | 需渐近边界代数与模流 |
+| A7 | Chandrasekaran, Longo, Penington, Witten, *An Algebra of Observables for de Sitter Space* | [2206.10780](https://arxiv.org/abs/2206.10780) | **缺口 4** ＋ 观测者代数 | 摘要逐字：**type II$\_1$ ＋ 最大熵态**；广义熵 $S\_{\rm gen}=A/4G\_N+S\_{\rm out}$ 在代数内成立 | 静态 patch；类型假设 |
 | A8 | **Chandrasekaran, Penington, Witten, *Large $N$ algebras and generalized entropy*** | [2209.10454](https://arxiv.org/abs/2209.10454) | 缺口 4 | 交叉积 → 广义熵的系统版本 | 同上 |
 | A9 | **Jensen, Sorce, Speranza, *Generalized entropy for general subregions in quantum gravity*** | [2306.01837](https://arxiv.org/abs/2306.01837) | 缺口 4 | 一般子区域的广义熵与代数 | 同上 |
 | A10 | **Faulkner, Speranza, *Gravitational algebras and the generalized second law*** | [2405.00847](https://arxiv.org/abs/2405.00847) | **缺口 4 ＋ 缺口 1（T1）** | 广义第二定律的代数版本；其前提是「**模流在视界上几何的态**」—— **正是我们 (T1) 要证的东西**（所以它是靶子也是对表） | 同上前提，不可直接引用 |
-| A11 | **Sorce, *Notes on the type classification of von Neumann algebras*** | [2302.01958](https://arxiv.org/abs/2302.01958) | **缺口 4 ＋ 缺口 8** | **类型分类的工具书**（因子、III$_\lambda$/III$_1$ 的判据与动机）—— 直接服务我们 `R35` 的类型判据 | 教学性质，无定理风险 |
+| A11 | **Sorce, *Notes on the type classification of von Neumann algebras*** | [2302.01958](https://arxiv.org/abs/2302.01958) | **缺口 4 ＋ 缺口 8** | **类型分类的工具书**（因子、III$\_\lambda$/III$\_1$ 的判据与动机）—— 直接服务我们 `R35` 的类型判据 | 教学性质，无定理风险 |
 
 > **A6–A11 为什么是本清单最值钱的六条**：我们的几何门明确卡在「连续网、Type III 相对模、Hadamard 态、几何模条件未建」，而我们**自己已经在做有限交叉积**（`lh/D212`、`lh/D221`）。这六篇给的正是「交叉积 ⟹ type II ⟹ 熵与模 Hamiltonian 有意义」的现成定理，是**唯一与我们已有结构直接咬合**的外部工具组。
 >
-> **但我们已有的类型结论与它们方向相反**：`R35` 实测原生满分支给 **III$_{1/2}$**（不是 III$_1$）。所以 A6／A7 不能直接套用——必须先让细化极限的类型变成 III$_1$，或证明 III$_\lambda$ 也能交叉积出可定义熵。A11 是判定这一步的工具。
+> **但我们已有的类型结论与它们方向相反**：`R35` 实测原生满分支给 **III$\_{1/2}$**（不是 III$\_1$）。所以 A6／A7 不能直接套用——必须先让细化极限的类型变成 III$\_1$，或证明 III$\_\lambda$ 也能交叉积出可定义熵。A11 是判定这一步的工具。
 >
 > **A10 的双重身份**：它的前提（模流几何）就是我们的目标 (T1)。引用它时**只能当靶子**（它告诉我们「若 (T1) 成立则能得到什么」），**不能当依据**。
 
@@ -432,7 +432,7 @@ graph TD
 | C5 | Coleman, Mandula, *All Possible Symmetries of the S Matrix* | [Phys. Rev. 159, 1251 (1967)](https://doi.org/10.1103/PhysRev.159.1251) | SM 门 | **限制定理**：庞加莱 × 内部对称只能是直积 | 假设下的；超对称逃逸 |
 | C6 | Weinberg, Witten, *Limits on Massless Particles* | [Phys. Lett. B96, 59 (1980)](https://doi.org/10.1016/0370-2693(80)90212-9) | 缺口 4／高自旋 | **否证性**：无质量高自旋的守恒流不存在 | 直接封死「用高自旋补救 boost」 |
 | C7 | CPT 定理与自旋–统计定理（Streater–Wightman／Jost 的代数证明） | [Streater–Wightman, *PCT, Spin and Statistics, and All That*](https://doi.org/10.1515/9781400884230) | SM 门 ＋ QFT 门 | **定理**：从局域性 ＋ 谱条件逼出 CPT 与自旋–统计 | 需公理性 QFT 前提 |
-| C8 | Jordan–Wigner 变换的代数刻画（`lh/R38` 用到的构造的严格版本） | — | 缺口 2 | 费米子从格点自由度（$\mathbb Z_2$ 双覆盖）的严格条件 | 需格点序 |
+| C8 | Jordan–Wigner 变换的代数刻画（`lh/R38` 用到的构造的严格版本） | — | 缺口 2 | 费米子从格点自由度（$\mathbb Z\_2$ 双覆盖）的严格条件 | 需格点序 |
 
 ### 5.4 优先级 D：离散 → 连续
 
@@ -440,7 +440,7 @@ graph TD
 |--:|:--|:--|:--|:--|:--|
 | D1 | Braides, *Γ-Convergence for Beginners* | [DOI](https://doi.org/10.1093/acprof:oso/9780198507840.001.0001) | **缺口 3**（离散→连续作用量） | 离散能量泛函的**变分收敛**框架 —— `lh/R1` 定理的原始工具 | 需正确标度 |
 | D2 | Regge calculus 综述（离散曲率 → 连续曲率） | — | 缺口 3 | 缺角／Regge 作用量 → Einstein–Hilbert | 单纯形复形与边长输入 |
-| D3 | Ambjørn, Jurkiewicz, Loll 的因果动力学三角剖分（CDT）系列 | — | 缺口 5（维数涌现） | **谱维数与 Hausdorff 维数的流** —— 直接对应 `D193` 的 $d_s$ 计算 | 需要正确的测度 |
+| D3 | Ambjørn, Jurkiewicz, Loll 的因果动力学三角剖分（CDT）系列 | — | 缺口 5（维数涌现） | **谱维数与 Hausdorff 维数的流** —— 直接对应 `D193` 的 $d\_s$ 计算 | 需要正确的测度 |
 | D4 | Bombelli, Lee, Meyer, Sorkin, *Space-time as a causal set* | [PRL 59, 521 (1987)](https://doi.org/10.1103/PhysRevLett.59.521)（**无 arXiv 编号**；及因果集综述） | 缺口 3／5 | **因果序 ⟹ 共形类**的严格版本（正是 `R82` 的结论） | 需局域有限性与标度 |
 | D5 | Connes 的谱距离公式 $d(x,y)=\sup\{|f(x)-f(y)|:\|[D,f]\|\le1\}$ | [hep-th/9603053](https://arxiv.org/abs/hep-th/9603053) 等 | **缺口 3（度量从算子来）** | **从 Dirac 算子直接得到距离** —— 绕开「有效电阻全局依赖」的那条 no-go | 需谱三元组 |
 | D6 | Belkin, Niyogi, *Laplacian Eigenmaps for Dimensionality Reduction*／离散→流形 Laplace–Beltrami 收敛 | — | 缺口 3 | 图 Laplacian → Laplace–Beltrami 的收敛定理 | 需采样密度条件 |
@@ -450,7 +450,7 @@ graph TD
 
 | # | 文献 | 编号 | 打我们哪里 | 它说什么 | 对我们的具体后果 |
 |--:|:--|:--|:--|:--|:--|
-| E1 | **Nielsen, Ninomiya**（1981，*A no-go theorem for regularizing chiral fermions*） | 编号未确认（早于 arXiv）；[Nucl. Phys. B185, 20 (1981)](https://doi.org/10.1016/0550-3213(81)90361-8) | **费米扇区（`G77`／`R38`／手征性）** | 局域 ＋ 厄米 ＋ **平移不变** ＋ **双线性** ⟹ 手征费米子**必然加倍** | ✅ **已核查完毕（[`E1_NN_verdict.md`](E1_NN_verdict.md)）**：四前提中 **④平移不变不成立**（$\Gamma_L$ 的非平凡保图移位集为空，$L=4\dots12$ 穷举），故 **NN 不适用**、**不构成**否决。**但也不等于安全**：失去平移不变 ＝ 失去动量空间描述，「单费米点」既不被禁止也不被保护，仍只是 `G77` 的**具名识别**；且我们**尚无手征算子**（$L$ 半正定，谱在 $[0,\lambda_{\max}]$） |
+| E1 | **Nielsen, Ninomiya**（1981，*A no-go theorem for regularizing chiral fermions*） | 编号未确认（早于 arXiv）；[Nucl. Phys. B185, 20 (1981)](https://doi.org/10.1016/0550-3213(81)90361-8) | **费米扇区（`G77`／`R38`／手征性）** | 局域 ＋ 厄米 ＋ **平移不变** ＋ **双线性** ⟹ 手征费米子**必然加倍** | ✅ **已核查完毕（[`E1_NN_verdict.md`](E1_NN_verdict.md)）**：四前提中 **④平移不变不成立**（$\Gamma\_L$ 的非平凡保图移位集为空，$L=4\dots12$ 穷举），故 **NN 不适用**、**不构成**否决。**但也不等于安全**：失去平移不变 ＝ 失去动量空间描述，「单费米点」既不被禁止也不被保护，仍只是 `G77` 的**具名识别**；且我们**尚无手征算子**（$L$ 半正定，谱在 $[0,\lambda\_{\max}]$） |
 | E2 | **Bombelli, Henson, Sorkin, *Discreteness without symmetry breaking: a theorem*** | [gr-qc/0605006](https://arxiv.org/abs/gr-qc/0605006) | **几何门（局部各向同性 vs 洛伦兹破缺）** | 摘要逐字：Poisson sprinkling **不存在**到时空方向的等变可测映射；故离散结构**不会**挑出优越参照系；**也不存在**与洛伦兹不变相容的**有限价图**关联方式 | **三条后果**：① 对我们**有利**——「离散 ⇒ 必破洛伦兹」**不是**定理，`R85` 的各向异性障碍不被它背书为「不可避免」；② 对我们**不利**——它的结论建立在**概率系综**（Poisson 过程）上，而我们的 `Z0③`**不设概率** ⟹ 这条最诱人的出路**与我们唯一的公理正面冲突**。必须在「引入概率」与「接受各向异性」之间二选一；③ **精确边界（勿过度引用）**：它的第二条只断言「**与 Lorentz 不变相容的有限价图**关联于 sprinkling」不存在，并**不**声称有限价图本身不可能连续化——我们的图是**给定的离散结构**而非从 sprinkling 导出，故该断言**不自动**适用于我们；真正落在我们身上的是**连续极限**必须恢复洛伦兹不变这一要求 |
 | E3 | **Friedman 等／Mattingly 等关于洛伦兹破缺的观测约束**（含「modified dispersion relations」界） | — | 因果门（`G59`／`R48` 的锥） | 洛伦兹破缺的**经验界**极严 | 若我们最终必须破洛伦兹，则须给出破缺**标度**并对上这些界——这是把「共形因子／标度无来源」（缺口 3）与**观测**连起来的唯一通道 |
 | E4 | **Coleman–Mandula**；**Weinberg–Witten**；**Weinberg 无质量自旋 2** | 均编号未确认（早于 arXiv）：[PR 159, 1251 (1967)](https://doi.org/10.1103/PhysRev.159.1251)；[PL B96, 59 (1980)](https://doi.org/10.1016/0370-2693(80)90212-9)；[PR 138, B988 (1965)](https://doi.org/10.1103/PhysRev.138.B988) | SM 门 ＋ 自旋扇区 | 庞加莱 × 内部对称只能是直积；无质量高自旋的守恒流不存在；无质量自旋 2 的洛伦兹不变 S-矩阵必含 GR 型耦合 | 分别封死：**用「大对称群」一次解决规范群与时空**；**用高自旋补救 boost**（与 `R34` 同向，但 `R34` 更强）；**绕开 GR 的引力子**。它们也提示：**引力子的无质量自旋 2 本身**是一条强约束，可作为选维的筛选条件 |
@@ -465,7 +465,7 @@ graph TD
 | F2 | Chamseddine, Connes, *Resilience of the Spectral Standard Model* | [1208.1030](https://arxiv.org/abs/1208.1030) | 该路线**抗压性**的评估（含已知困难） |
 | F3 | van den Dungen 等, *A survey of spectral models of gravity coupled to matter* | [1904.12392](https://arxiv.org/abs/1904.12392) | 综述；自述有限几何是**逐步识别**出来的 ⟹ **有限几何是输入，不是导出** |
 | F4 | Sakellariadou 等, *Aspects of the Bosonic Spectral Action* | [1503.01671](https://arxiv.org/abs/1503.01671) | 正文自述 cutting-off spectral action **faces some issues** ⟹ 借它须先处理这些 issues |
-| F5 | Ambjørn, Jurkiewicz, Loll 等, *Spectral Dimension of the Universe* | [hep-th/0505113](https://arxiv.org/abs/hep-th/0505113) | **谱维数的流**（$d_s$ 随尺度跑）—— 与我们 `lh/G28`／`D193` 的 $d_s$ 计算直接对照 |
+| F5 | Ambjørn, Jurkiewicz, Loll 等, *Spectral Dimension of the Universe* | [hep-th/0505113](https://arxiv.org/abs/hep-th/0505113) | **谱维数的流**（$d\_s$ 随尺度跑）—— 与我们 `lh/G28`／`D193` 的 $d\_s$ 计算直接对照 |
 | F6 | Loll, *Quantum Gravity from Causal Dynamical Triangulations: A Review* | [1905.08669](https://arxiv.org/abs/1905.08669) | CDT 综述：**四维从动力学涌现**的机制 |
 | F7 | Loll 等, *Causal Dynamical Triangulations: Gateway to Nonperturbative Quantum Gravity* | [2401.09399](https://arxiv.org/abs/2401.09399) | 较新综述 |
 | F8 | Surya, *The causal set approach to quantum gravity* | [1903.11544](https://arxiv.org/abs/1903.11544) | 因果集综述（配 A12 读） |
@@ -480,7 +480,7 @@ graph TD
 | 2 | [`lh/R33_action_phase_match_project.md`](R33_action_phase_match_project.md) | **最大缺口的作用量立项书**：(T1)／(T2)／(T3) 三种等价形式 ＋ 四个可否证子目标 | **本体系** |
 | 3 | Benincasa–Dowker, *The Scalar Curvature of a Causal Set* [1001.2725](https://arxiv.org/abs/1001.2725) | **全清单里"最像我们"的一篇**：只用计数（因果序）造出 $\Box$ 与 $\Box-\frac12R$，从而给出近似局域**作用量** | **外部，工具**（它的因果集≠我们的零和词图） |
 | 4 | Nielsen–Ninomiya（[PL B105, 219 (1981)](https://doi.org/10.1016/0370-2693(81)91026-1)）＋ Bombelli–Henson–Sorkin [gr-qc/0605006](https://arxiv.org/abs/gr-qc/0605006) | **两条最危险的否证性定理**：前者决定费米扇区有没有希望，后者决定几何门的两条出路哪一条能走 | **外部，否证性** |
-| 5 | Witten [2112.12828](https://arxiv.org/abs/2112.12828) ＋ Sorce [2302.01958](https://arxiv.org/abs/2302.01958) | 交叉积 → type II（熵才有定义）＋ **类型分类工具书**（服务我们 `R35` 的 III$_1$ vs III$_\lambda$ 判据） | **外部，工具** |
+| 5 | Witten [2112.12828](https://arxiv.org/abs/2112.12828) ＋ Sorce [2302.01958](https://arxiv.org/abs/2302.01958) | 交叉积 → type II（熵才有定义）＋ **类型分类工具书**（服务我们 `R35` 的 III$\_1$ vs III$\_\lambda$ 判据） | **外部，工具** |
 
 **次选**：Chamseddine–Connes [hep-th/9606001](https://arxiv.org/abs/hep-th/9606001)（物质扇区唯一现成路线）／Ceyhan–Faulkner [1812.04683](https://arxiv.org/abs/1812.04683)（能量条件从熵来）／García Trillos–Slepčev [1508.01928](https://arxiv.org/abs/1508.01928)（谱收敛的**尖锐标度条件**，补 `R13` 缺的那一环）／[`lh/R34`](R34_finite_dimensional_boost_obstruction.md)（我们的 boost no-go 定理）。
 
@@ -503,7 +503,7 @@ graph TD
 **发现**：第一版 §7.2 第 1 步写的是「用 `lh/D212`／`D221` 的交叉积构造检验细化极限的类型」。核查后发现：
 
 $$
-\boxed{\ \texttt{lh/D212}\ \text{与}\ \texttt{lh/D215}\ \text{的文件顶部}\textbf{已有批注}：\text{「旧理论的 U-接口审计……}\textbf{本文不作为前提使用}\text{」}\ }
+\ \text{lh/D212}\ \text{与}\ \text{lh/D215}\ \text{的文件顶部}\textbf{已有批注}：\text{「旧理论的 U-接口审计……}\textbf{本文不作为前提使用}\text{」}\ 
 $$
 
 | 文件 | 批注 |
@@ -522,9 +522,9 @@ $$
 
 | 步 | 动作 | 目标缺口 | 成功的判据（可否证） | 外部工具（只作工具） |
 |--:|:--|:--|:--|:--|
-| 1 | 在**我们已有的** `lh/D212`／`D221` 的交叉积构造上，检验「有限周期细化极限的因子类型」 | 缺口 4 | 二值：极限是 type II，仍是 $III_\lambda$／$III_1$ | Witten [2112.12828](https://arxiv.org/abs/2112.12828)、C–L–P–W [2206.10780](https://arxiv.org/abs/2206.10780)（**类型判据**） |
-| 2 | 用 `lh/R35` 的类型判据（对数比生成子群稠密 ⟺ 素指数差向量秩 $=k-1$），对**我们自己的**粗粒化轮廓 $\pi$ 做判定 | 缺口 4 ＋ 8 | 二值：秩 $\ge2$ ⇒ $III_1$；否则 $III_\lambda$ | 无（判据是我们自己的） |
-| 3 | 用 `lh/R33` 的 (T3) 形式 $K_\omega=c\,G_{\rm geo}$ 检验：**我们的** $K=-\log\omega$（`G72`，由整数计数唯一确定）能否与**我们的**闭环计数几何量成比例 | 缺口 1 ＋ 4 | 比例常数是否恰为 $2\pi$；非 $2\pi$ ⇒ (T3) 假 | 无（材料都在我们这边） |
+| 1 | 在**我们已有的** `lh/D212`／`D221` 的交叉积构造上，检验「有限周期细化极限的因子类型」 | 缺口 4 | 二值：极限是 type II，仍是 $III\_\lambda$／$III\_1$ | Witten [2112.12828](https://arxiv.org/abs/2112.12828)、C–L–P–W [2206.10780](https://arxiv.org/abs/2206.10780)（**类型判据**） |
+| 2 | 用 `lh/R35` 的类型判据（对数比生成子群稠密 ⟺ 素指数差向量秩 $=k-1$），对**我们自己的**粗粒化轮廓 $\pi$ 做判定 | 缺口 4 ＋ 8 | 二值：秩 $\ge2$ ⇒ $III\_1$；否则 $III\_\lambda$ | 无（判据是我们自己的） |
+| 3 | 用 `lh/R33` 的 (T3) 形式 $K\_\omega=c\,G\_{\rm geo}$ 检验：**我们的** $K=-\log\omega$（`G72`，由整数计数唯一确定）能否与**我们的**闭环计数几何量成比例 | 缺口 1 ＋ 4 | 比例常数是否恰为 $2\pi$；非 $2\pi$ ⇒ (T3) 假 | 无（材料都在我们这边） |
 | 4 | 用 `lh/R38`／`R39`／`R40` 的「共同起因＋未记录自由度」机制，检验能否**从零和结构本身**逼出跨位点关联（而非引入张量积） | 缺口 2 | CHSH $S>2$ 或给出不可能性证明 | CBH 约束 [quant-ph/0211089](https://arxiv.org/abs/quant-ph/0211089)（**对照**，不作前提） |
 | 5 | 把 `lh/R44` 的双侧约束（生存窗口 vs 语境性）与 `R45` 的账本形式扫描合成一个**唯一**形式判据 | 缺口 5 ＋ 8 | 若存在唯一形式同时满足 ⇒ 缺口 5 收窄 | 无 |
 | 6 | 用 Γ-收敛把 `lh/R1` 的条件定理与 `lh/G40` 的闭环计数接成一个变分极限 | 缺口 3 | 极限泛函唯一；或给出反例 | Braides 的 Γ-收敛框架（工具） |

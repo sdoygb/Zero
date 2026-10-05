@@ -12,12 +12,12 @@
 ## §0 一句话
 
 $$
-\boxed{
+
 \begin{aligned}
-&\textbf{正面：}\ \text{补全状态后，周期推进是}\textbf{线性}的，且其特征方程有}\textbf{精确代数形式}：\\
-&\qquad \lambda^2=(\Sigma\,\mathrm{co})\,(\lambda+1),\\
-&\qquad \text{其中}\ \mathrm{co}[s]=\text{"重播种 } h=1\ \text{条历史时，第 } s\ \text{步的闭合数"}。\\
-&\textbf{未竟：}\ \mathrm{co}[s]\ \text{的}\textbf{组合闭式}\ \text{我反复猜错（见 §4），故}\textbf{不写出}。
+&\textbf{正面：}\ \text{补全状态后，周期推进是}\textbf{线性}的，且其特征方程有\textbf{精确代数形式}：\\
+&\qquad \lambda^2=(\Sigma\,\text{co})\,(\lambda+1),\\
+&\qquad \text{其中}\ \text{co}[s]=\text{"重播种 } h=1\ \text{条历史时，第 } s\ \text{步的闭合数"}。\\
+&\textbf{未竟：}\ \text{co}[s]\ \text{的}\textbf{组合闭式}\ \text{我反复猜错（见 §4），故}\textbf{不写出}。
 \end{aligned}}
 $$
 
@@ -27,13 +27,13 @@ $$
 
 | | 上一轮（错） | 本轮（对） |
 |:--|:--|:--|
-| 状态 | 只有历史层向量 | **周期末的每步闭合分布** $C_n=(C_n[0],\dots,C_n[T-1])$，$T$ 维 |
-| 为什么够 | ✗ 丢了平衡分布 | ✓ 因 $C_{n+1}=\mathrm{co}\cdot h_n$ 且 $h_n=\Sigma C_n+\Sigma C_{n-1}$，$C_n$ 是完备状态 |
+| 状态 | 只有历史层向量 | **周期末的每步闭合分布** $C\_n=(C\_n[0],\dots,C\_n[T-1])$，$T$ 维 |
+| 为什么够 | ✗ 丢了平衡分布 | ✓ 因 $C\_{n+1}=\text{co}\cdot h\_n$ 且 $h\_n=\Sigma C\_n+\Sigma C\_{n-1}$，$C\_n$ 是完备状态 |
 
 **关键实测恒等式**（$T=10$，逐周期精确）：
 
 $$
-C_n[s]=\mathrm{co}[s]\cdot h_{n-1}\quad\Longrightarrow\quad
+C_n[s]=\text{co}[s]\cdot h_{n-1}\quad\Longrightarrow\quad
 \frac{\Sigma C_n}{h_{n-1}}=46\ \text{（精确整数，逐周期不变）}
 $$
 
@@ -41,23 +41,23 @@ $$
 
 ## §2 正面结果：精确代数方程
 
-**状态** $(C_n,C_{n-1})$，维数 $2T$。分块矩阵形态
+**状态** $(C\_n,C\_{n-1})$，维数 $2T$。分块矩阵形态
 
 $$
-A=\begin{pmatrix}\mathbf{1}\,\mathrm{co}^{\mathsf T}&\mathbf{1}\,\mathrm{co}^{\mathsf T}\\ I&0\end{pmatrix},
+A=\begin{pmatrix}\mathbf{1}\,\text{co}^{\mathsf T}&\mathbf{1}\,\text{co}^{\mathsf T}\\ I&0\end{pmatrix},
 \qquad \mathbf{1}=(1,\dots,1)^{\mathsf T}.
 $$
 
-块行列式给出**精确**特征方程（$S:=\Sigma\,\mathrm{co}$）：
+块行列式给出**精确**特征方程（$S:=\Sigma\,\text{co}$）：
 
 $$
-\boxed{\ \lambda^2=S\,(\lambda+1)\quad\Longrightarrow\quad
-\lambda(T)=\frac{S+\sqrt{S^2+4S}}{2}=S+\frac{S}{S+\cdots}\ }
+\ \lambda^2=S\,(\lambda+1)\quad\Longrightarrow\quad
+\lambda(T)=\frac{S+\sqrt{S^2+4S}}{2}=S+\frac{S}{S+\cdots}\ 
 $$
 
 **与实测逐周期增长率的对照**：
 
-| $T$ | $S=\Sigma\,\mathrm{co}$ | $\lambda$ 理论 | 实测 $\lambda$ | 相对差 |
+| $T$ | $S=\Sigma\,\text{co}$ | $\lambda$ 理论 | 实测 $\lambda$ | 相对差 |
 |--:|--:|--:|--:|--:|
 | 4 | 4 | 4.828427 | — | — |
 | 6 | 8 | 8.898979 | 8.898979 | $<10^{-8}$ |
@@ -76,14 +76,14 @@ $$
 **注意**：$S=46$ 时方程给 $\lambda=47-\epsilon$，而 $T=20$ 的 $S=13836$ 给 $\lambda=13837-\epsilon$ —— 即
 
 $$
-\boxed{\ \lambda(T)\approx S(T)+1\ }\qquad(S\ \text{大时相对差}\ \sim1/S)
+\ \lambda(T)\approx S(T)+1\ \qquad(S\ \text{大时相对差}\ \sim1/S)
 $$
 
 ---
 
-## §3 $\mathrm{co}[s]$ 的实测结构（**未给闭式**）
+## §3 $\text{co}[s]$ 的实测结构（**未给闭式**）
 
-| $T$ | $\mathrm{co}[s]$（$s=0,1,\dots,T-1$） |
+| $T$ | $\text{co}[s]$（$s=0,1,\dots,T-1$） |
 |--:|:--|
 | 4 | $2,0,2,0$ |
 | 6 | $2,0,2,0,4,0$ |
@@ -96,15 +96,17 @@ $$
 
 1. **奇数步闭合数恒为 0**（因平衡奇偶 = 词长奇偶，种子为 $\pm1$）；
 2. **偶数步部分与 $T$ 无关**（$T=20$ 的前 5 个非零项 $2,2,4,10,28$ 与 $T=10$ 相同）⟹ 存在一个**通用的整数序列**
+
    $$
    2,\ 2,\ 4,\ 10,\ 28,\ 84,\ 264,\ 858,\ 2860,\ 9724,\ \dots
    $$
+
    其相邻比 $\to3$。
 
-**序列识别：我反复猜错，故不作为结论。** 试过并**证伪**的候选：$2M_{s/2}$、$2M_{s/2+1}$（Motzkin 各种索引）、$c_m^2$（Fibonacci 型）。**均逐项比对失败。**
+**序列识别：我反复猜错，故不作为结论。** 试过并**证伪**的候选：$2M\_{s/2}$、$2M\_{s/2+1}$（Motzkin 各种索引）、$c\_m^2$（Fibonacci 型）。**均逐项比对失败。**
 
 $$
-\Longrightarrow\ \textbf{诚实：}\ \mathrm{co}\ \text{的组合闭式}\ \textbf{仍未得到};\ \text{但 }\lambda(T)\ \text{已由代数方程与 }S\ \text{挂钩}。
+\Longrightarrow\ \textbf{诚实：}\ \text{co}\ \text{的组合闭式}\ \textbf{仍未得到};\ \text{但 }\lambda(T)\ \text{已由代数方程与 }S\ \text{挂钩}。
 $$
 
 ---
@@ -128,7 +130,7 @@ $$
 ## §5 对"反解 $T$"的含义
 
 $$
-\lambda(T)=\frac{S+\sqrt{S^2+4S}}{2},\qquad S=\sum_s\mathrm{co}[s]
+\lambda(T)=\frac{S+\sqrt{S^2+4S}}{2},\qquad S=\sum_s\text{co}[s]
 $$
 
 **这是进步**：$\lambda(T)$ 不再是黑箱，而是 $S(T)$ 的**显式代数函数**。
@@ -136,7 +138,7 @@ $$
 **但仍未够**：$\rho(T)$ 需要的是**另一个**线性泛函的比值（$D$ 侧的 Perron 分量），它**不由 $\lambda$ 单独决定**——需要特征向量。故：
 
 $$
-\boxed{\ \text{本轮把 }\lambda(T)\ \text{关闭到"代数方程 ＋ 一个整数序列"；}\rho(T)\ \text{的闭式仍需特征向量的显式解。}\ }
+\ \text{本轮把 }\lambda(T)\ \text{关闭到"代数方程 ＋ 一个整数序列"；}\rho(T)\ \text{的闭式仍需特征向量的显式解。}\ 
 $$
 
 **与目标（反解唯一整数 $T$）的距离**：仍差**一个含精确常数的关系**。本轮**没有**产生它。
@@ -145,7 +147,7 @@ $$
 
 ## §6 边界与未做
 
-1. **$\mathrm{co}$ 的闭式未得**（§3）：试过的三个候选全部证伪，按纪律不写。
+1. **$\text{co}$ 的闭式未得**（§3）：试过的三个候选全部证伪，按纪律不写。
 2. **$T=10$ 的偏差未解释**（§4）。
 3. **$\rho(T)$ 未由本轮闭合**：$\lambda$ 与 $\rho$ 是两个不同的量（前者是增长率，后者是立体比值），本轮只关了前者。
 4. **未做**：特征向量的显式解（这是 $\rho$ 的最后一环）。
@@ -160,8 +162,8 @@ $$
 cd /Users/oygb/Downloads/lh && python3 L2_transfer.py
 ```
 
-- 状态完备性：由实测恒等式 $\Sigma C_n/h_{n-1}=46$（精确整数）确认。
+- 状态完备性：由实测恒等式 $\Sigma C\_n/h\_{n-1}=46$（精确整数）确认。
 - 代数方程：由 $2T$ 维分块矩阵的块行列式推出，并与逐周期实测增长率对照（§2 表）。
-- **已撤回**两处早期错误：① 双桶状态（不完备，给 $\rho=D_1$，与实测差 2 个量级）；② 3T 维状态（重复计数）。
-- **已证伪**三个 $\mathrm{co}$ 闭式候选（Motzkin 两种索引、Fibonacci 平方）。
+- **已撤回**两处早期错误：① 双桶状态（不完备，给 $\rho=D\_1$，与实测差 2 个量级）；② 3T 维状态（重复计数）。
+- **已证伪**三个 $\text{co}$ 闭式候选（Motzkin 两种索引、Fibonacci 平方）。
 - **未引入**概率；**未引用**任何 U 系材料作为前提。

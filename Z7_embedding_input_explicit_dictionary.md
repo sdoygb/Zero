@@ -8,8 +8,8 @@
 > **【2026-10-02 条件极限更新｜[`R7`](R7_h3_h7_regularity.md)】** 本文 §7 表中“Γ-收敛定理仍未证”是写作时状态。当前 H1–H4 的条件 Γ-定理见 [`R1`](R1_gamma_convergence_theorem.md)，H5 见 [`R6`](R6_h5_dictionary_error_bound.md)，H3／H7 见 [`R7`](R7_h3_h7_regularity.md)；剩余物理输入是 I5b 与 GDL。当前唯一状态源仍是 [`STATUS.md`](STATUS.md)。
 
 $$
-\boxed{\ \text{嵌入输入} = \textbf{一个局部标度场 } c(x)\ +\ \text{单元形状};\qquad
-w_e = P_{k,d}(c_e)\big(1+O(a^2)\big),\quad P_{k,d}(c)=\sum_{m\le k} m\,W_d(m{-}1)\,c^{\,m}.\ }
+\ \text{嵌入输入} = \textbf{一个局部标度场 } c(x)\ +\ \text{单元形状};\qquad
+w_e = P_{k,d}(c_e)\big(1+O(a^2)\big),\quad P_{k,d}(c)=\sum_{m\le k} m\,W_d(m{-}1)\,c^{\,m}.\ 
 $$
 
 ---
@@ -17,9 +17,9 @@ $$
 ## §0 结论（四句）
 
 1. **E1 不再是一个"说不清的输入"**：它等价于**给出一个局部标度场 $c(x)$（＋单元形状）**——度规由下面的**闭式字典**算出来，没有剩余自由度。
-2. **字典把 G49 的因子化从均匀场推广到缓变场**：几何进 $c^{\,m}$、拓扑进**格点游走数** $W_d(m-1)$，两者仍然精确分离。
+2. **字典把 G49 的因子化从均匀场推广到缓变场**：几何进 $c^{\,m}$、拓扑进**格点游走数** $W\_d(m-1)$，两者仍然精确分离。
 3. **收敛阶 $2$ 在 1D／2D／3D 全部成立**（[`G58`](G58_I2a_resolved_as_embedding_input.md) 此前**只在 1D** 测过；其诚实边界第 3 条正是"二维／高维未测"）。
-4. **单元形状按 $(a_x/a_y)^2$ 携带各向异性**（[`G18`](G18_attackability_of_the_continuum_limit.md) 引理 67），本文在**导出的游走计数权重**下把它验到 $O(a^2)$。
+4. **单元形状按 $(a\_x/a\_y)^2$ 携带各向异性**（[`G18`](G18_attackability_of_the_continuum_limit.md) 引理 67），本文在**导出的游走计数权重**下把它验到 $O(a^2)$。
 
 ---
 
@@ -28,8 +28,8 @@ $$
 | 缺口 | 推进前的状态 | 本文做了什么 |
 |:--|:--|:--|
 | **E1／I2a** | [`G58`](G58_I2a_resolved_as_embedding_input.md) 判定"归并为**嵌入输入**"，但数值**只在 1D**；"嵌入"到底是什么，没有显式写出 | 把嵌入**显式化**为"一个标量场＋单元形状"，并给出**闭式字典**；在 2D／3D 复验 |
-| **形状携带度规** | [`G18`](G18_attackability_of_the_continuum_limit.md) 引理 67 用**导纳模型**（$\kappa^{xx}/\kappa^{yy}=(a_x/a_y)^2$）说明；未在导出权重下验 | 在 $w=A\circ A^{k-1}$ 族权重下验证同一比例 |
-| **$k$ 为何是物理量** | [`G57`](G57_unreachability_of_absolute_normalization.md) §4.1 数值观察：$k$ 改形状、标度 $s$ 不改形状 | 字典给出**解释**：$k$ 是多项式 $P_{k,d}$ 的**次数** |
+| **形状携带度规** | [`G18`](G18_attackability_of_the_continuum_limit.md) 引理 67 用**导纳模型**（$\kappa^{xx}/\kappa^{yy}=(a\_x/a\_y)^2$）说明；未在导出权重下验 | 在 $w=A\circ A^{k-1}$ 族权重下验证同一比例 |
+| **$k$ 为何是物理量** | [`G57`](G57_unreachability_of_absolute_normalization.md) §4.1 数值观察：$k$ 改形状、标度 $s$ 不改形状 | 字典给出**解释**：$k$ 是多项式 $P\_{k,d}$ 的**次数** |
 
 ---
 
@@ -39,8 +39,8 @@ $$
 
 | 口径 | 定义 | 出处 |
 |:--|:--|:--|
-| **层和** | $w_e=\sum_{m=2}^{k} m\,(A\circ A^{m-1})_e$ | [`G46`](G46_k_is_the_lifetime.md)、[`G58`](G58_I2a_resolved_as_embedding_input.md)、[`G49`](G49_four_boundaries_advanced.md) |
-| **单层** | $w_e=k\,(A\circ A^{k-1})_e$ | [`Z5`](Z5_finite_k_locality_escape.md) §0、[`G40`](G40_metric_from_closed_walk_counting.md) |
+| **层和** | $w\_e=\sum\_{m=2}^{k} m\,(A\circ A^{m-1})\_e$ | [`G46`](G46_k_is_the_lifetime.md)、[`G58`](G58_I2a_resolved_as_embedding_input.md)、[`G49`](G49_four_boundaries_advanced.md) |
+| **单层** | $w\_e=k\,(A\circ A^{k-1})\_e$ | [`Z5`](Z5_finite_k_locality_escape.md) §0、[`G40`](G40_metric_from_closed_walk_counting.md) |
 
 两者都是"有限游程的闭环计数"；差别只在**是否对层号 $m$ 求和**。本文两个都验（§5 对照）。
 
@@ -49,22 +49,22 @@ $$
 设细化族在边 $e$ 处携带**缓变**标度场 $c$，则
 
 $$
-\boxed{\
+\
 \begin{aligned}
 \textbf{层和口径：}&\quad w_e=P^{\rm sum}_{k,d}(c_e)\big(1+O(a^2)\big),\qquad P^{\rm sum}_{k,d}(c)=\sum_{\substack{2\le m\le k\\ m\ \rm even}} m\,W_d(m-1)\,c^{\,m};\\[2mm]
 \textbf{单层口径：}&\quad w_e=P^{\rm single}_{k,d}(c_e)\big(1+O(a^2)\big),\qquad P^{\rm single}_{k,d}(c)=W_d(k-1)\,c^{\,k}.
-\end{aligned}\ }
+\end{aligned}\ 
 $$
 
-其中 $W_d(L)$ = $\mathbb Z^d$ 上**用 $L$ 步从一点走到相邻点**的游走数（精确整数，纯拓扑）：
+其中 $W\_d(L)$ = $\mathbb Z^d$ 上**用 $L$ 步从一点走到相邻点**的游走数（精确整数，纯拓扑）：
 
 | $L$ | $1$ | $3$ | $5$ | $7$ |
 |:--|--:|--:|--:|--:|
-| $W_1(L)=\binom{L}{(L+1)/2}$ | $1$ | $3$ | $10$ | $35$ |
-| $W_2(L)$ | $1$ | $9$ | $100$ | $1225$ |
-| $W_3(L)$ | $1$ | $15$ | $310$ | $7455$ |
+| $W\_1(L)=\binom{L}{(L+1)/2}$ | $1$ | $3$ | $10$ | $35$ |
+| $W\_2(L)$ | $1$ | $9$ | $100$ | $1225$ |
+| $W\_3(L)$ | $1$ | $15$ | $310$ | $7455$ |
 
-（$W_2$ 的 $1,9,1225$ 与 [`Z5`](Z5_finite_k_locality_escape.md) §4 的正则 2D 值逐字一致；$W_3$ 的 $1,15,310,7455$ 与 [`Z6`](Z6_stall_autopsy_and_released_ledger.md) §4.2 的三维正则值逐字一致——**两条独立路径互证**。）
+（$W\_2$ 的 $1,9,1225$ 与 [`Z5`](Z5_finite_k_locality_escape.md) §4 的正则 2D 值逐字一致；$W\_3$ 的 $1,15,310,7455$ 与 [`Z6`](Z6_stall_autopsy_and_released_ledger.md) §4.2 的三维正则值逐字一致——**两条独立路径互证**。）
 
 **数值验证**（相对偏差的最大值，内部区域）：
 
@@ -81,7 +81,7 @@ $$
 \Longrightarrow\ \textbf{字典是渐近精确的}（\text{相对误差 }O(a^2)）;\ \text{嵌入的"度规"信息}\textbf{全部装在场 }c\text{ 与单元形状里}。
 $$
 
-**为什么这正是 [`G49`](G49_four_boundaries_advanced.md) 的因子化**：$W_d(m-1)$ 只依赖**图的拓扑**（$\mathbb Z^d$ 的游走数），$c^{\,m}$ 只依赖**几何**（局部标度）。均匀场时二者给出 $\sum_m m W_d(m-1)c^m$，与 G49／[`G58`](G58_I2a_resolved_as_embedding_input.md) §2.4 的均匀环结果一致；**本文补上的是"缓变场"这一整类**。
+**为什么这正是 [`G49`](G49_four_boundaries_advanced.md) 的因子化**：$W\_d(m-1)$ 只依赖**图的拓扑**（$\mathbb Z^d$ 的游走数），$c^{\,m}$ 只依赖**几何**（局部标度）。均匀场时二者给出 $\sum\_m m W\_d(m-1)c^m$，与 G49／[`G58`](G58_I2a_resolved_as_embedding_input.md) §2.4 的均匀环结果一致；**本文补上的是"缓变场"这一整类**。
 
 ---
 
@@ -97,7 +97,7 @@ $$
 3D 侧由 §2.2 的字典偏差直接给出同阶（$O(a^2)$，两个相邻比值的预测 $1.78$ 与 $2.25$ 均命中）。
 
 $$
-\boxed{\ \text{固定步数支：}1D/2D/3D\ \text{都二阶收敛};\ \text{“连续极限存在”在高维不是新障碍。}\ }
+\ \text{固定步数支：}1D/2D/3D\ \text{都二阶收敛};\ \text{“连续极限存在”在高维不是新障碍。}\ 
 $$
 
 **反支仍在**（本文 2D 复验）：固定物理时长 $k=\rho N$ 时，非均匀场下内部动态范围随 $N$ 增长（$\rho=0.10$：$1.78\to1.92\to\mathbf{13.8}$，$N=16\to32\to64$）⟹ 无黎曼极限——与 [`G58`](G58_I2a_resolved_as_embedding_input.md) §2.3 的 1D 结论同向。
@@ -106,9 +106,9 @@ $$
 
 ## §4 单元形状携带度规（[`G18`](G18_attackability_of_the_continuum_limit.md) 引理 67 的导出版）
 
-矩形单元 $a_x\times a_y$、同一组导出权重、测试函数 $u=\sin\pi x\sin\pi y$，取离散 Dirichlet 形式的两个方向分量 $F_x,F_y$：
+矩形单元 $a\_x\times a\_y$、同一组导出权重、测试函数 $u=\sin\pi x\sin\pi y$，取离散 Dirichlet 形式的两个方向分量 $F\_x,F\_y$：
 
-| $(N_x,N_y)$ | $a_x/a_y$ | $F_x/F_y$ | 预测 $(a_x/a_y)^2$ | 相对差 |
+| $(N\_x,N\_y)$ | $a\_x/a\_y$ | $F\_x/F\_y$ | 预测 $(a\_x/a\_y)^2$ | 相对差 |
 |:--|--:|--:|--:|--:|
 | $(16,16)$ | $1$ | $1.000000$ | $1$ | $1.1\times10^{-15}$ |
 | $(16,8)$ | $0.5$ | $0.252426$ | $0.25$ | $0.97\%$ |
@@ -116,7 +116,7 @@ $$
 | $(32,16)$ | $0.5$ | $0.250604$ | $0.25$ | $0.24\%$ |
 
 $$
-\boxed{\ \kappa^{xx}/\kappa^{yy}=(a_x/a_y)^2\big(1+O(a^2)\big)\ \Longrightarrow\ \textbf{单元形状与场 }c\textbf{ 同为 E1 的内容};\ \text{只给场不给形状，度规不定}。\ }
+\ \kappa^{xx}/\kappa^{yy}=(a_x/a_y)^2\big(1+O(a^2)\big)\ \Longrightarrow\ \textbf{单元形状与场 }c\textbf{ 同为 E1 的内容};\ \text{只给场不给形状，度规不定}。\ 
 $$
 
 ---
@@ -125,10 +125,10 @@ $$
 
 | 项 | 单层口径（[`Z5`](Z5_finite_k_locality_escape.md)） | 层和口径（[`G46`](G46_k_is_the_lifetime.md)／[`G58`](G58_I2a_resolved_as_embedding_input.md)） |
 |:--|:--|:--|
-| 字典 | $W_d(k-1)c^k$ | $\sum_{m\le k}mW_d(m-1)c^m$ |
+| 字典 | $W\_d(k-1)c^k$ | $\sum\_{m\le k}mW\_d(m-1)c^m$ |
 | 二阶收敛 | ✅（1D／2D／3D） | ✅（1D／2D／3D） |
 | $(O)$／$(C)$／支集 | ✅ | ✅（**本文复验**：$1.6\times10^{-16}$／零模 $1$／越界 $0$） |
-| 正则 $\Gamma$ | 精确平坦 | 精确平坦（$P^{\rm sum}_{k,2}(1)=10438$） |
+| 正则 $\Gamma$ | 精确平坦 | 精确平坦（$P^{\rm sum}\_{k,2}(1)=10438$） |
 | 非正则 $\Gamma$ | 非均匀 $0.79\sim1.43$（[`Z6`](Z6_stall_autopsy_and_released_ledger.md) §4.2） | 非均匀 $1.54$（**本文复验**） |
 | 紧半径（1D／2D） | $k/2-1$／$k/2-1$ | $k/2-1$／$k/2-2$ |
 | 半径上界 | $\le k/2$ | $\le k/2$ |
@@ -145,7 +145,7 @@ $$
 | **E1 嵌入** | 内容**显式**：**一个局部标度场 $c(x)$ ＋ 单元形状 ＋ 站点识别**（不再是"一个度规"） |
 | **I2a 收敛** | 弱形式（逐点渐近＋二阶）在 1D／2D／3D 成立；**Γ-收敛条件定理见 R1／R6／R7，无条件版本仍未证**（诚实边界） |
 | **$k$ 的角色** | $k$ 是字典多项式的**次数** ⟹ 改 $k$ 改形状（解释 [`G57`](G57_unreachability_of_absolute_normalization.md) §4.1）；整体标度 $s$ 不进字典 ⟹ 不改形状 ✅ |
-| **几何 vs 拓扑** | 几何 $=c$（场）＋形状（单元）；拓扑 $=W_d$（游走数）——**二者仍精确分离** |
+| **几何 vs 拓扑** | 几何 $=c$（场）＋形状（单元）；拓扑 $=W\_d$（游走数）——**二者仍精确分离** |
 
 **这把"几何是输入"缩到最小**：需要外部提供的不是度规，而是**一个标量场与一族单元形状**；度规随之被**算出**。
 
@@ -182,4 +182,4 @@ $$
 python3 Z7_check.py      # 独立实断言 37 / 不符 0，退出码 0（约 10 秒）
 ```
 
-F1 **层和口径字典**（1D／2D／3D 二阶） · F2 **单层口径字典**（1D／2D／3D 二阶） · F3 **$W_d(L)$ 精确整数表** ＋ 与 Z6／Z5 的正则值互证 · F4 **2D 固定 $k$ 剖面二阶收敛**（斜率 $\approx-2$） · F5 **单元形状携带度规**（$(a_x/a_y)^2$，正方单元机器精度各向同性） · F6 **两口径定性结论一致**（$(O)$／$(C)$／支集／平坦性／半径上界） · F7 **$k\propto N$ 支二维发散** · F8 文档结论与引文在位。
+F1 **层和口径字典**（1D／2D／3D 二阶） · F2 **单层口径字典**（1D／2D／3D 二阶） · F3 **$W\_d(L)$ 精确整数表** ＋ 与 Z6／Z5 的正则值互证 · F4 **2D 固定 $k$ 剖面二阶收敛**（斜率 $\approx-2$） · F5 **单元形状携带度规**（$(a\_x/a\_y)^2$，正方单元机器精度各向同性） · F6 **两口径定性结论一致**（$(O)$／$(C)$／支集／平坦性／半径上界） · F7 **$k\propto N$ 支二维发散** · F8 文档结论与引文在位。

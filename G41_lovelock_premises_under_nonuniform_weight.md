@@ -5,7 +5,7 @@
 **核验**：[`G41_check.py`](G41_check.py) —— **独立实断言 17 / 结论行 15 / 不符 0**，退出码 `0`（F4 增 1 项命名核验）
 
 $$
-\boxed{\ (O)\ \text{成立};\quad (C)\ \text{成立};\quad \textbf{$(L')$ 不成立（$g$ 不被局域地决定）} \Longrightarrow \text{闭环计数度规在 }k\to\infty\text{ 极限下是非局域的。}\quad\textbf{但 Lovelock 的 }(L)\ \text{自动成立（见 §3.5）。}}
+\ (O)\ \text{成立};\quad (C)\ \text{成立};\quad \textbf{(L') 不成立（g 不被局域地决定）} \Longrightarrow \text{闭环计数度规在 }k\to\infty\text{ 极限下是非局域的。}\quad\textbf{但 Lovelock 的 }(L)\ \text{自动成立（见 §3.5）。}
 $$
 
 ---
@@ -18,7 +18,7 @@ $$
 (L)\ \text{局域};\qquad (O)\ \text{二阶};\qquad (C)\ \text{守恒源},
 $$
 
-则场方程被 Lovelock 唯一逼成 $G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}$。
+则场方程被 Lovelock 唯一逼成 $G\_{ab}+\Lambda g\_{ab}=8\pi G\,T\_{ab}$。
 
 **问题**：[`G40`](G40_metric_from_closed_walk_counting.md) 的**闭环计数度规**（非均匀权）满足这三条吗？
 
@@ -26,7 +26,7 @@ $$
 
 ## §1 (O) 二阶：**成立** ✅
 
-加权 Laplacian $\mathcal L=\sum_j w_{ij}(\cdot_i-\cdot_j)$ 的算子性质：
+加权 Laplacian $\mathcal L=\sum\_j w\_{ij}(\cdot\_i-\cdot\_j)$ 的算子性质：
 
 | 检验 | 结果 |
 |:--|:--|
@@ -45,16 +45,16 @@ $$
 | uniform | **1** |
 | closed-walk | **1** |
 
-（连通图 $\Rightarrow$ 核恰为常数）$\Rightarrow$ 可定义无散流 $j_{ij}=w_{ij}(f_i-f_j)$，其散度 $=\mathcal L f$ $\Rightarrow$ **源可守恒** ✅
+（连通图 $\Rightarrow$ 核恰为常数）$\Rightarrow$ 可定义无散流 $j\_{ij}=w\_{ij}(f\_i-f\_j)$，其散度 $=\mathcal L f$ $\Rightarrow$ **源可守恒** ✅
 
 ---
 
 ## §3 $(L')$ $g$-locality：**不成立** ✗（决定性检验）
 
-**判据（测的是 $(L')$，不是 Lovelock 的 $(L)$）**：扰动**远端**一条边，看**中部两条相邻边权之比** $r=w_{i_1}/w_{i_2}$ 是否改变。
+**判据（测的是 $(L')$，不是 Lovelock 的 $(L)$）**：扰动**远端**一条边，看**中部两条相邻边权之比** $r=w\_{i\_1}/w\_{i\_2}$ 是否改变。
 （用**比值**是为了排除「总归一化」造成的假象。）
 
-**为什么这个判据测的不是 $(L)$**：$(L)$ 说「$E_{ab}$ 是 $g$ 的局域泛函」；本判据说「$g$（的权）**被数据局域地决定**」。前者是关于 $g\to E$ 的映射，后者是关于 $\varphi\to g$ 的映射（详见 §3.5）。
+**为什么这个判据测的不是 $(L)$**：$(L)$ 说「$E\_{ab}$ 是 $g$ 的局域泛函」；本判据说「$g$（的权）**被数据局域地决定**」。前者是关于 $g\to E$ 的映射，后者是关于 $\varphi\to g$ 的映射（详见 §3.5）。
 
 | $k$（远端扰动幅度） | 闭环计数 $r$ | 相对变化 | 均匀权 $r$ | 相对变化 |
 |--:|--:|--:|--:|--:|
@@ -65,8 +65,8 @@ $$
 | 2.00 | 0.1250000001 | **$8.753\times10^{-1}$** | 1.0000000000 | **0** |
 
 $$
-\boxed{\ \text{均匀权：远端扰动的影响}\textbf{精确为 0}（\text{严格局域});\quad
-\text{闭环计数：影响显著非零} \Longrightarrow \textbf{$(L')$ 不成立}.}
+\ \text{均匀权：远端扰动的影响}\textbf{精确为 0}（\text{严格局域});\quad
+\text{闭环计数：影响显著非零} \Longrightarrow \textbf{(L') 不成立}.
 $$
 
 ### §3.5 $(L)$ 本身：**在度规=输入下自动成立** ✅
@@ -84,11 +84,11 @@ E_{ab}(p)=\frac{1}{\sqrt{|g|}}\frac{\delta S}{\delta g^{ab}(p)}
 +\partial_c\partial_d\frac{\partial\mathcal L}{\partial(\partial_c\partial_dg^{ab})}(p),
 $$
 
-右边只用到 $g$ 与它在 $p$ 的**有限阶**导数 $\Longrightarrow$ $(L)$ 成立，**与 $g$ 从哪来无关**。同理 $\nabla^aE_{ab}=0$（Noether 第二定理）与「二阶」也是形式性质。
+右边只用到 $g$ 与它在 $p$ 的**有限阶**导数 $\Longrightarrow$ $(L)$ 成立，**与 $g$ 从哪来无关**。同理 $\nabla^aE\_{ab}=0$（Noether 第二定理）与「二阶」也是形式性质。
 
-**数值见证（截断实验）**：取 3D 度规 $g=dx^2+f(x)^2(dy^2+dz^2)$，把 $f$ 在 $\lvert x-x_0\rvert>0.12$ 处换成完全不同的函数，在 $x_0$ 复算：
+**数值见证（截断实验）**：取 3D 度规 $g=dx^2+f(x)^2(dy^2+dz^2)$，把 $f$ 在 $\lvert x-x\_0\rvert>0.12$ 处换成完全不同的函数，在 $x\_0$ 复算：
 
-| | $G^x_{\ x}$ | $G^y_{\ y}$ |
+| | $G^x\_{\ x}$ | $G^y\_{\ y}$ |
 |:--|--:|--:|
 | $f$ 原样 | $-0.7031898869$ | $-10.2026910780$ |
 | $f$ 远端改坏 | $-0.7031898869$ | $-10.2026910780$ |
@@ -96,8 +96,9 @@ $$
 **差 $=0.000\times10^{0}$** $\Longrightarrow$ $(L)$ 自动成立。【导出】
 
 $$
-\Longrightarrow\ \textbf{本文的判定必须读作}\textbf{$(L')$}\text{ 不成立}；\ \text{它对 Lovelock 的适用性}\textbf{没有影响}。
+\Longrightarrow\ \textbf{本文的判定必须读作}\textbf{(L')}\text{ 不成立}；\ \text{它对 Lovelock 的适用性}\textbf{没有影响}。
 $$
+
 ---
 
 ## §4 影响**不随距离衰减**（真正全局）
@@ -127,7 +128,7 @@ $$
 | **闭环计数**（Perron） | **✗** | ✅ | ✅ |
 
 $$
-\boxed{\ \text{对闭环计数路线：}\textbf{局域} + \textbf{导出} + \textbf{不增扩充条款}\ \text{三者不可兼得。}\ }
+\ \text{对闭环计数路线：}\textbf{局域} + \textbf{导出} + \textbf{不增扩充条款}\ \text{三者不可兼得。}\ 
 $$
 
 ---
@@ -141,7 +142,7 @@ $$
 $$
 
 $$
-\boxed{\ \text{闭环计数度规落在\emph{已被排除的非局域类}里。}\ }
+\ \text{闭环计数度规落在**已被排除的非局域类**里。}\ 
 $$
 
 ---
@@ -150,7 +151,7 @@ $$
 
 ### 7.1 若三前提成立，Einstein 方程是否随之而来？
 
-**是**。这正是 [`G1`](G1_derivations_from_the_bottom_layer.md) 推论 7.1：$(L)+(O)+(C)\Longrightarrow G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}$（Lovelock 唯一性）。
+**是**。这正是 [`G1`](G1_derivations_from_the_bottom_layer.md) 推论 7.1：$(L)+(O)+(C)\Longrightarrow G\_{ab}+\Lambda g\_{ab}=8\pi G\,T\_{ab}$（Lovelock 唯一性）。
 
 **但在这条路线上，前提不齐**：
 
@@ -161,13 +162,13 @@ $$
 | **$(L)$ 局域** | **✗** |
 
 $$
-\boxed{\ \text{缺 }(L)\ \Longrightarrow\ \text{Lovelock 不适用}\ \Longrightarrow\ \textbf{Einstein 方程不由这条路线得出}。\ }
+\ \text{缺 }(L)\ \Longrightarrow\ \text{Lovelock 不适用}\ \Longrightarrow\ \textbf{Einstein 方程不由这条路线得出}。\ 
 $$
 
 > **【本语料批注（[`Z5`](Z5_finite_k_locality_escape.md)）】** 本判决是在 **Perron 取法（$k\to\infty$）**下作出的——
 > 而那个闭式只是 [`G40`](G40_metric_from_closed_walk_counting.md) §2 的**极限**。
 > 换成**有限游走长度 $k$** 后，远端扰动对中部权比的影响在半径 $k$ 之外**精确为 0**（1D／2D 均已验），
-> 且 $w^{(k)}=A\cdot A^{k-1}$ 含因子 $A_{ij}$ ⇒ **支撑仍只在最近邻**（$(O)$ 不受影响）。
+> 且 $w^{(k)}=A\cdot A^{k-1}$ 含因子 $A\_{ij}$ ⇒ **支撑仍只在最近邻**（$(O)$ 不受影响）。
 > 故 **$(L')$ 可修**；代价改记为：局部半径 $k$、一个长度标度（已登记 `I2b`／[`G44`](G44_metric_needs_a_scale_not_an_origin.md)）、
 > 以及 **$\Gamma$ 必须非正则**（否则度规退化为平坦）——详见 [`Z5`](Z5_finite_k_locality_escape.md) §5。
 **注意**：$(O)$ 与 $(C)$ 两条**单独不足以**推出 Einstein 方程——Lovelock 唯一性是三前提**合取**的结论。所以"两条成立"不构成部分成功。
@@ -187,7 +188,7 @@ $$
 | 项 | 说明 |
 |:--|:--|
 | 检验维度 | 用**一维链**做局域性检验；高维／其他图上的衰减行为**未逐一测** |
-| 两个问题 | "(L) 指 $E_{ab}$ 对 $g$ 的局域泛函"与"$g$ 本身是否被局域地决定"是**两个问题**；本文测的是**后者** |
+| 两个问题 | "(L) 指 $E\_{ab}$ 对 $g$ 的局域泛函"与"$g$ 本身是否被局域地决定"是**两个问题**；本文测的是**后者** |
 | **未证** | **未证明 Lovelock 在非局域情形下必然失效**；只说其前提 $(L')$ 不满足 |
 | **命名更正** | 本文原写「$(L)$ 不成立」，应为「**$(L')$（$g$-locality）不成立**」。Lovelock 的 $(L)$ 在「度规=输入」下**自动成立**（§3.5）$\Longrightarrow$ G40 的「度规可导出」与 Lovelock 的适用性不再冲突；真正的代价是 $(L')$，即"$g$ 需要外部局域数据" |
 | 影响 | 不改变 G1–G40 的其余数值结论，只给出 (L)/(O)/(C) 的逐条判定 |

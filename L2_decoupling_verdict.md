@@ -12,14 +12,14 @@
 ## §0 一句话
 
 $$
-\boxed{
+
 \begin{aligned}
 &\textbf{猜想的结构部分成立}:\ \text{破坏是}\textbf{阈值触发}\text{，不是渐进压缩 ⟹ 无预兆}\ \checkmark\\
 &\qquad \text{而级联时标}\ n=\ln N/\ln\lambda\ \text{对 } N\ \textbf{只对数敏感} \Longrightarrow\ \text{「瞬间」}=O(1)\ \text{步}\ \checkmark\\
 &\textbf{但「几天」有一个比值障碍}:\ \frac{t_{\rm destroy}}{t_{\rm cycle}}\sim\frac{n}{T}\sim1,\\
 &\qquad \text{而「几天 / 百亿年」需要}\ 10^{-12}\ \text{—— 差 } 12\ \text{个数量级}。\\
 &\text{出路：}\ \textbf{「天」与「步」不是同一种钟};\ \text{换算率正是那个自由锚 } \alpha。
-\end{aligned}}
+\end{aligned}
 $$
 
 ---
@@ -28,7 +28,7 @@ $$
 
 | 猜想 | 结构判定 | 依据 |
 |:--|:--|:--|
-| **① 无预兆** | ✅ **成立** | 破坏是**阈值型**：`Z4` 终端款在年龄 $k=T$ 处**一次性**吸收；在此之前观测量按 `D220` 的 $a_k=Ac_k$ **平滑演化**，没有"压缩" |
+| **① 无预兆** | ✅ **成立** | 破坏是**阈值型**：`Z4` 终端款在年龄 $k=T$ 处**一次性**吸收；在此之前观测量按 `D220` 的 $a\_k=Ac\_k$ **平滑演化**，没有"压缩" |
 | **② 不是往回压缩** | ✅ **成立** | 活动量**指数增长**（不是收缩）；`Z0①` 无逆步 ⟹ 结构上**没有**"压缩"这个方向 |
 | **③ 相位解耦** | ⚠️ **部分成立** | 见 §2 |
 | **④ 几天** | ❌ **有一个比值障碍** | 见 §3 |
@@ -38,7 +38,7 @@ $$
 ## §2 「相位解耦」在结构上意味着什么
 
 **本体系的相位**（`Z0` §4.3）：**Zero 层没有相位**；相位 $:=$ 词长 $\bmod T$。
-活动相位年龄 $k$ = 路径离上次重播种的步数；`D220` 给 $a_k=Ac_k$。
+活动相位年龄 $k$ = 路径离上次重播种的步数；`D220` 给 $a\_k=Ac\_k$。
 
 **"解耦"若指"各 $k$ 层独立演化"** ⟹ 就没有 $k\to k+1$ 的年龄推进
 ⟹ **与 `Z0①`「零不停留」冲突**（年龄推进**就是**步）。
@@ -51,8 +51,8 @@ $$
 
 | # | 机制 | 结构依据 | 是否阈值型 |
 |--:|:--|:--|:--|
-| 1 | **容量饱和**被击穿 | `G32`：$K_{\rm cap}=4(T+1)$ 每站点 | ✅ 是 |
-| 2 | **模流相位**退相干 | 模流 $K_\omega=-\log\omega$；$D222$ 全局共同代际 | ✅ 是 |
+| 1 | **容量饱和**被击穿 | `G32`：$K\_{\rm cap}=4(T+1)$ 每站点 | ✅ 是 |
+| 2 | **模流相位**退相干 | 模流 $K\_\omega=-\log\omega$；$D222$ 全局共同代际 | ✅ 是 |
 | 3 | 某通道**相位差**达阈值（如 $\pi$） | `R15` 的双覆盖 $2\pi=-\mathbb I$ | ✅ 是 |
 
 $$
@@ -66,7 +66,7 @@ $$
 **级联时标**：从 $O(1)$ 长到 $N$ 需
 
 $$
-\boxed{\ n=\frac{\ln N}{\ln\lambda(T)}\ }
+\ n=\frac{\ln N}{\ln\lambda(T)}\ 
 $$
 
 | $T$ | $\lambda$ | 长到 $10^{3}$ | $10^{10}$ | $10^{22}$ | $10^{80}$ |
@@ -82,15 +82,15 @@ $$
 
 **但**：
 
-| 若毁灭历时 | 比值 $t_{\rm destroy}/t_{\rm cycle}$ | 相当于几步（$T{=}6$） |
+| 若毁灭历时 | 比值 $t\_{\rm destroy}/t\_{\rm cycle}$ | 相当于几步（$T{=}6$） |
 |:--|--:|--:|
 | $1$ 天 | $1.9\times10^{-13}$ | $3.8\times10^{-12}$ |
 | $7$ 天 | $1.3\times10^{-12}$ | $2.7\times10^{-11}$ |
 | $30$ 天 | $5.7\times10^{-12}$ | $1.1\times10^{-10}$ |
 
 $$
-\boxed{\ \text{而级联只给}\ n=O(1)\ \text{步} \Longrightarrow \frac{t_{\rm destroy}}{t_{\rm cycle}}\sim\frac{n}{T}\sim1
-\ \text{—— 与 } 10^{-12}\ \text{差 } 12\ \text{个数量级}。\ }
+\ \text{而级联只给}\ n=O(1)\ \text{步} \Longrightarrow \frac{t_{\rm destroy}}{t_{\rm cycle}}\sim\frac{n}{T}\sim1
+\ \text{—— 与 } 10^{-12}\ \text{差 } 12\ \text{个数量级}。\ 
 $$
 
 ---
@@ -102,8 +102,8 @@ t_{\rm destroy}=n\cdot\alpha\qquad(n=O(1)\ \text{步})
 $$
 
 $$
-\boxed{\ \text{要 } t_{\rm destroy}=\text{几天},\ \text{须 } \alpha\sim\frac{\text{几天}}{n}\sim\text{天}\ \Longrightarrow\
-\textbf{一步}\approx\textbf{天}。\ }
+\ \text{要 } t_{\rm destroy}=\text{几天},\ \text{须 } \alpha\sim\frac{\text{几天}}{n}\sim\text{天}\ \Longrightarrow\
+\textbf{一步}\approx\textbf{天}。\ 
 $$
 
 **而 [`L2_anchor_verdict.md`](L2_anchor_verdict.md) §3d 的锚给** $\alpha\sim2.4$ **十亿年**。
@@ -112,7 +112,7 @@ $$
 \Longrightarrow\ \textbf{两个画面不相容，除非锚不同}：
 $$
 
-| 画面 | $\alpha$ | $t_{\rm cycle}=T\alpha$ | 与「百亿年」相容？ |
+| 画面 | $\alpha$ | $t\_{\rm cycle}=T\alpha$ | 与「百亿年」相容？ |
 |:--|--:|--:|:--|
 | 「毁灭几天」 | $\sim$ 天 | $\sim$ 几天（$T{=}6$） | ❌ **不相容** |
 | 「周期百亿年」 | $\sim2.4$ 十亿年 | $14.4$ 十亿年 | ✅ |
@@ -124,7 +124,7 @@ $$
 $$
 
 $$
-\boxed{\ \text{这个比值是}\textbf{纯无量纲、由结构决定}\text{的；锚只定总体尺度。}\ }
+\ \text{这个比值是}\textbf{纯无量纲、由结构决定}\text{的；锚只定总体尺度。}\ 
 $$
 
 ---
@@ -132,14 +132,14 @@ $$
 ## §5 诚实的结论：猜想需要改一个字
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{猜想}\ \textbf{「无预兆」}\ \text{与}\ \textbf{「阈值型、非压缩」}：\ \textbf{完全成立}。\\
 &\text{猜想}\ \textbf{「几天」}：\ \textbf{不能与「周期} \sim \text{百亿年」同时成立}。\\
 &\qquad \text{结构给的比值是 } t_{\rm destroy}/t_{\rm cycle}\sim n/T=O(1)\ \text{——即「毁灭占周期的可观份额」}。\\
 &\text{若坚持「几天」，则 } t_{\rm cycle}\ \text{也必须}\sim\text{几天（锚变小）}。\\
 &\text{若坚持「周期百亿年」，则毁灭历时}\ \sim\text{十亿年（}O(1)\ \text{步}\times\alpha\text{）}。
-\end{aligned}}
+\end{aligned}
 $$
 
 **建议的措辞修正**：把「几天」改为**「$O(1)$ 步，即模型意义下的瞬间」**。
@@ -164,5 +164,5 @@ cd /Users/oygb/Downloads/lh && python3 L2_decoupling.py
 ```
 
 - 级联时标：$n=\ln N/\ln\lambda(T)$，逐 $T$ 数值（$\lambda$ 来自 [`L2_catalan_destruction.py`](L2_catalan_destruction.py)）。
-- 比值障碍：$t_{\rm destroy}/t_{\rm cycle}=n/T$，与锚无关。
+- 比值障碍：$t\_{\rm destroy}/t\_{\rm cycle}=n/T$，与锚无关。
 - 阈值型：三个候选机制（`G32` 容量、模流、`R15` 双覆盖）全部阈值型。

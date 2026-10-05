@@ -5,7 +5,7 @@
 **核验**：[`G15_check.py`](G15_check.py) —— **独立实断言 8 / 结论行 11 / 不符 0**，退出码 `0`（0.3 秒）
 
 $$
-\boxed{\text{在 Z0 条款（A0–A5 历史命名）下，物质层没有有限特征速度；故 I6 的物质层不可由 Z0 条款推出。}}
+\text{在 Z0 条款（A0–A5 历史命名）下，物质层没有有限特征速度；故 I6 的物质层不可由 Z0 条款推出。}
 $$
 
 ---
@@ -26,7 +26,7 @@ G14 把 I6 的物质层归结为自洽要求 $c=\sqrt{D/\lambda}=1$。本文检�
 
 **核验**：前 6 步支持集前沿 $=0,1,2,3,4,5$。
 
-$$\boxed{\text{底层是有限速度的：微观因果性成立。}}$$
+$$\text{底层是有限速度的：微观因果性成立。}$$
 
 ---
 
@@ -34,7 +34,7 @@ $$\boxed{\text{底层是有限速度的：微观因果性成立。}}$$
 
 热方程在 $t=1$ 时 $|x|>3$ 处仍有 $1.4\times10^{-2}$（G13 F4、G14 引理 48 的同一事实）。
 
-$$\boxed{\text{失败发生在粗粒化，不在底层。}}$$
+$$\text{失败发生在粗粒化，不在底层。}$$
 
 ---
 
@@ -43,20 +43,20 @@ $$\boxed{\text{失败发生在粗粒化，不在底层。}}$$
 Z2 的"全分支"一步更新的净电流是
 
 $$
-j_e=K_e(\rho_i-\rho_j)\quad\text{——由当前密度\emph{瞬时}决定。}
+j_e=K_e(\rho_i-\rho_j)\quad\text{——由当前密度**瞬时**决定。}
 $$
 
 **核验**：离散散度定理逐步精确成立（偏差 $0$）。
 
 $$
-\boxed{\text{没有独立的记忆变量}\ \Longrightarrow\ \text{Fick 闭合}\ \Longrightarrow\ \text{无弛豫时间 }\lambda\ \Longrightarrow\ c\ \text{不是有限数}.}
+\text{没有独立的记忆变量}\ \Longrightarrow\ \text{Fick 闭合}\ \Longrightarrow\ \text{无弛豫时间 }\lambda\ \Longrightarrow\ c\ \text{不是有限数}.
 $$
 
 ---
 
 ## §4 引理 55（无偏好抹掉弹道区）【导出】
 
-弹道区（$\mathrm{MSD}\propto\tau^2$）要求**步间关联**。**核验**：
+弹道区（$\text{MSD}\propto\tau^2$）要求**步间关联**。**核验**：
 
 | 演化 | 短时指数 | 长时指数 |
 |:--|--:|--:|
@@ -65,7 +65,7 @@ $$
 | **持续性**游走（有记忆） | **1.902** | 1.069 |
 
 $$
-\boxed{\text{弹道区}\iff\text{步间关联};\qquad \text{Z0③（无偏好）}\Longrightarrow\text{无弹道区}\Longrightarrow\text{无有限 }c.}
+\text{弹道区}\iff\text{步间关联};\qquad \text{Z0③（无偏好）}\Longrightarrow\text{无弹道区}\Longrightarrow\text{无有限 }c.
 $$
 
 ---
@@ -83,7 +83,7 @@ $$
 ## §6 结论（no-go 的准确表述）
 
 $$
-\boxed{\text{在 Z0 条款（含无偏好 Z0③）下，I6 的物质层\emph{不可}推出——它是 no-go，不是待办。}}
+\text{在 Z0 条款（含无偏好 Z0③）下，I6 的物质层**不可**推出——它是 no-go，不是待办。}
 $$
 
 两条出路，**都必须修改或削弱 Z0 条款**：

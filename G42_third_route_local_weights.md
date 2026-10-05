@@ -5,7 +5,7 @@
 **核验**：[`G42_check.py`](G42_check.py) —— **独立实断言 40 / 结论行 0 / 不符 0**，退出码 `0`
 
 $$
-\boxed{\ \text{局域权} \Longrightarrow (L)(O)(C)\ \text{齐} \Longrightarrow \text{Lovelock 适用} \Longrightarrow \textbf{Einstein 方程到手}。}
+\ \text{局域权} \Longrightarrow (L)(O)(C)\ \text{齐} \Longrightarrow \text{Lovelock 适用} \Longrightarrow \textbf{Einstein 方程到手}。
 $$
 
 ---
@@ -28,7 +28,7 @@ $$
 
 **差别只在 $\phi$ 的来源**：全局 Perron 向量 vs 局域数据。
 
-**判据**：扰动**远端**边 $(58,59)$，看**中部**两条相邻边权之比 $r=w_{i_1}/w_{i_2}$。
+**判据**：扰动**远端**边 $(58,59)$，看**中部**两条相邻边权之比 $r=w\_{i\_1}/w\_{i\_2}$。
 
 | $\phi$ 读法 | $k=0.02$ | $k=0.50$ | 局域？ |
 |:--|--:|--:|:--:|
@@ -36,7 +36,7 @@ $$
 | **局域数据**（第三条路） | $\mathbf{0.000\times10^{0}}$ | $\mathbf{0.000\times10^{0}}$ | **是** |
 
 $$
-\boxed{\ \text{差别不在权重公式，而在 }\phi\text{ 是【全局导出】还是【局域给定】。}\ }
+\ \text{差别不在权重公式，而在 }\phi\text{ 是【全局导出】还是【局域给定】。}\ 
 $$
 
 ---
@@ -47,7 +47,7 @@ $$
 
 ## §3 $(C)$ 守恒源：**成立** ✅
 
-局域权下加权 Laplacian **恰有 1 个零本征值**（连通图 $\Rightarrow$ 核 $=$ 常数）$\Longrightarrow$ 无散流 $j_{ij}=w_{ij}(f_i-f_j)$ 存在。
+局域权下加权 Laplacian **恰有 1 个零本征值**（连通图 $\Rightarrow$ 核 $=$ 常数）$\Longrightarrow$ 无散流 $j\_{ij}=w\_{ij}(f\_i-f\_j)$ 存在。
 
 ## §4 $\Longrightarrow$ Lovelock 适用 $\Longrightarrow$ Einstein 方程到手 ✅
 
@@ -61,9 +61,9 @@ $$
 
 ---
 
-## §5 自由度计数：$|E|=\dim\operatorname{Sym}^2H_Q$
+## §5 自由度计数：$|E|=\dim\text{Sym}^2H\_Q$
 
-| $m$ | $\lvert E\rvert=\binom m2$ | $\dim H_Q=m-1$ | $\dim\operatorname{Sym}^2H_Q=\frac{(m-1)m}{2}$ | 相等？ |
+| $m$ | $\lvert E\rvert=\binom m2$ | $\dim H\_Q=m-1$ | $\dim\text{Sym}^2H\_Q=\frac{(m-1)m}{2}$ | 相等？ |
 |--:|--:|--:|--:|:--:|
 | 3 | 3 | 2 | 3 | ✅ |
 | 4 | 6 | 3 | 6 | ✅ |
@@ -73,7 +73,7 @@ $$
 | 10 | 45 | 9 | 45 | ✅ |
 
 $$
-\boxed{\ \text{权重个数}\textbf{恰好等于}\text{空间度规的独立分量数（无冗余、无亏缺）。}\ }
+\ \text{权重个数}\textbf{恰好等于}\text{空间度规的独立分量数（无冗余、无亏缺）。}\ 
 $$
 
 **而且 $w\mapsto h$ 是单射**（$m=4,5,6$ 各 40 组随机权给出 40 个互不相同的 $h$）$\Longrightarrow$ 由维度相配得**双射** $\Longrightarrow$ **权重是度规的忠实参数化** ✅
@@ -94,11 +94,11 @@ $D=4$ 的自由度计数：
 | **物理自由度** | $10-4=$ **6** |
 
 $$
-\boxed{\ \text{方程数与场分量数相配} \Longrightarrow \text{度规是被场方程\emph{决定}的动力学变量，不是外部背景。}\ }
+\ \text{方程数与场分量数相配} \Longrightarrow \text{度规是被场方程**决定**的动力学变量，不是外部背景。}\ 
 $$
 
 $$
-\boxed{\ \text{所以「度规是输入」在这条路上}\ =\ \text{「度规是动力学场」——这正是 GR 的结构。}\ }
+\ \text{所以「度规是输入」在这条路上}\ =\ \text{「度规是动力学场」——这正是 GR 的结构。}\ 
 $$
 
 ---

@@ -18,15 +18,15 @@
 
 ---
 
-## §1 定义：闭合图 $\mathcal G_T$
+## §1 定义：闭合图 $\mathcal G\_T$
 
 **定义 D1（节点）**：周期 $T$ 的**零和循环词**的**旋转类**（[`rotation_class_algebra`](zero_sum_rotation_class_algebra.md) D1）。
-节点数 $=\ K(T)=\frac1T\sum_{d\mid\gcd(T,T/2)}\varphi(d)\binom{T/d}{T/(2d)}$。
+节点数 $=\ K(T)=\frac1T\sum\_{d\mid\gcd(T,T/2)}\varphi(d)\binom{T/d}{T/(2d)}$。
 
 **定义 D2（邻接）**：两词**相邻** $\iff$ 交换**一对相邻的异号步**（`+-` $\leftrightarrow$ `-+`），再取旋转类。
 
-> **关键**：交换一对相邻异号步，就是把 $+1$ 右移一格、$-1$ 左移一格——**这正是 Z1 定理 1 的补偿移动** $x\mapsto x+e_j-e_i$。
-> 故 $\mathcal G_T$ 就是 **Z1 定理 1 动力学在零和词空间上的可执行实现**。
+> **关键**：交换一对相邻异号步，就是把 $+1$ 右移一格、$-1$ 左移一格——**这正是 Z1 定理 1 的补偿移动** $x\mapsto x+e\_j-e\_i$。
+> 故 $\mathcal G\_T$ 就是 **Z1 定理 1 动力学在零和词空间上的可执行实现**。
 
 ---
 
@@ -52,7 +52,7 @@ $T:8\to18$ 节点数增长 **×270**。
 | 直径 | 4 | 6 | 9 | 12 | 16 | 20 |
 
 $$
-\boxed{\ \text{无截断}\ \Longrightarrow\ \text{平均度无界}\ \Longrightarrow\ \mathcal G_T\ \textbf{不是流形的离散化}\ \Longrightarrow\ \text{无稳定谱维数}.\ }
+\ \text{无截断}\ \Longrightarrow\ \text{平均度无界}\ \Longrightarrow\ \mathcal G_T\ \textbf{不是流形的离散化}\ \Longrightarrow\ \text{无稳定谱维数}.\ 
 $$
 
 （$T{=}16$ 处 $8.43$ 与 §4 的 $8.44$ 差 $0.01$，系取整；曲线单调上升，结论不变。）

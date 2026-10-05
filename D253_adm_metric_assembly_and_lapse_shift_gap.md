@@ -7,7 +7,7 @@
 **v0.5 定位**：D251 给出形式支持与局域读出，D252 给出全局时间势，D248-D250 给出条件源链。本文检查它们能否直接给出 Lorentz 度规。结论是：时间势最多给叶状候选；叶层数据要组装成度规，还须明确 lapse、shift、叶层共形类与叶层体积。完整时空共形类加体积元则已由 D143 唯一给度规，但这组完整数据目前不是层读回的推论。
 
 $$
-\boxed{
+
 \text{时间势}
 \not\Longrightarrow
 \text{唯一 Lorentz 度规};
@@ -15,7 +15,7 @@ $$
 \text{叶状 ADM 数据}
 \Longrightarrow_{\rm cond}
 \text{度规代表}.
-}
+
 $$
 
 本文登记恢复层结构 `R-Z-EMBEDDING-TO-FOLIATION`、`R-Z-ADM-METRIC-ASSEMBLY`、`R-Z-LAPSE-SHIFT-GAP`、`R-Z-LEAF-CONFORMAL-VOLUME-GAP` 与 `R-Z-READOUT-TO-ADM-SELECTION-GAP`。
@@ -39,9 +39,9 @@ $$
 这些数据并不都是度规分量。形式支持不是物理点，层间流不是度规，时间势也不是光锥。
 
 $$
-\boxed{
+
 \text{层读回数据、时间数据与度规数据不能默认为同一层对象。}
-}
+
 $$
 
 **第 2 步｜从时间势到叶状候选。**
@@ -72,13 +72,13 @@ $$
 4. 支持嵌入保持层内邻接。
 
 $$
-\boxed{
+
 \text{全局时间势}
 \Longrightarrow_{\rm cond}
 \text{叶状候选},
 \qquad
 \text{不是自动叶状}.
-}
+
 $$
 
 这登记为 `R-Z-EMBEDDING-TO-FOLIATION`。
@@ -108,7 +108,7 @@ $$
 定义
 
 $$
-\boxed{
+
 \mathrm g_{N,\beta}
 =
 N^2dt^2
@@ -116,7 +116,7 @@ N^2dt^2
 h_{ij}
 \bigl(dx^i+\beta^i dt\bigr)
 \bigl(dx^j+\beta^j dt\bigr).
-}
+
 $$
 
 在 $\beta=0$ 时，
@@ -132,9 +132,9 @@ $$
 但一般 $N\ne1$ 或 $\beta\ne0$ 时，时间叶不一定与法向正交。
 
 $$
-\boxed{
+
 \text{ADM 公式是条件组装公式，不是几何选择原则。}
-}
+
 $$
 
 **第 4 步｜行列式、号差与体积。**
@@ -169,15 +169,15 @@ $$
 并且
 
 $$
-\operatorname{vol}_{\mathrm g_{N,\beta}}
+\text{vol}_{\mathrm g_{N,\beta}}
 =
-N\,dt\wedge\operatorname{vol}_h .
+N\,dt\wedge\text{vol}_h .
 $$
 
-在 $N>0$、$h>0$ 时，$\mathrm g_{N,\beta}$ 的号差为
+在 $N>0$、$h>0$ 时，$\mathrm g\_{N,\beta}$ 的号差为
 
 $$
-\operatorname{signature}(\mathrm g_{N,\beta})
+\text{signature}(\mathrm g_{N,\beta})
 =
 (1,n).
 $$
@@ -185,18 +185,18 @@ $$
 四维时 $n=3$，号差为 $(1,3)$。时间定向由 $dt$ 的正方向和 $N>0$ 给出。
 
 $$
-\boxed{
+
 (t,N,\beta,h)
 \Longrightarrow_{\rm cond}
 \text{一个号差为 }(1,n)\text{ 的 Lorentz 度规代表}.
-}
+
 $$
 
 **第 5 步｜反向唯一性。**
 
 反过来，给定一个时间定向 Lorentz 度规 $\mathrm g$ 与正则时间函数 $t$，并要求 $dt$ 为时间型：
 
-1. 叶层 $h$ 是 $\mathrm g$ 在 $\Sigma_t$ 上的诱导正定度规；
+1. 叶层 $h$ 是 $\mathrm g$ 在 $\Sigma\_t$ 上的诱导正定度规；
 2. lapse $N$ 由法向单位向量或 $g^{-1}(dt,dt)$ 确定；
 3. shift $\beta$ 由 $dt$ 与叶切向的内积确定。
 
@@ -215,9 +215,9 @@ $$
 这只是坐标分解的唯一性，不是度规来源的定理。
 
 $$
-\boxed{
+
 \text{ADM 分解是同一度规在固定叶状下的重新分组。}
-}
+
 $$
 
 **第 6 步｜同一时间势与同一空间度规不唯一。**
@@ -250,18 +250,18 @@ $$
 
 | 度规 | $x$ 方向上的两个零速度 |
 |:--|:--|
-| $\mathrm g_A$ | $-1,\ +1$ |
-| $\mathrm g_B$ | $-2,\ +2$ |
-| $\mathrm g_C$ | $-1.5,\ +0.5$ |
+| $\mathrm g\_A$ | $-1,\ +1$ |
+| $\mathrm g\_B$ | $-2,\ +2$ |
+| $\mathrm g\_C$ | $-1.5,\ +0.5$ |
 
 因此同一时间势和同一叶层空间度规仍不能唯一确定 Lorentz 度规。
 
 $$
-\boxed{
+
 (t,h)
 \not\Longrightarrow
 \mathrm g .
-}
+
 $$
 
 这正是 `R-Z-LAPSE-SHIFT-GAP`：若不固定 $N$ 与 $\beta$，零锥、固有时间和 shift 都不唯一。
@@ -273,9 +273,9 @@ $$
 因此这里不能说“$N,\beta$ 是新的上游物理输入”，也不能把它们任意算作独立自由度。准确的表述是：
 
 $$
-\boxed{
+
 \text{给定叶状时，}N,\beta\text{ 是度规代表的规范数据；不给叶状或完整度规时，它们仍是缺失数据。}
-}
+
 $$
 
 这把它与 `R-Z-SUPPORT-EMBEDDING-GAP` 分开：嵌入缺口问“什么区域和时间函数”，lapse/shift 缺口问“在选定叶状后怎样写度规代表”。
@@ -285,7 +285,7 @@ $$
 若叶层空间度规 $h$ 不直接给出，而只给出：
 
 1. 叶层共形类 $[h]$；
-2. 叶层体积元 $\mu_\Sigma$；
+2. 叶层体积元 $\mu\_\Sigma$；
 
 则 D143 在 $n$ 维叶上给出唯一空间度规：
 
@@ -294,7 +294,7 @@ h
 =
 \left(
 \frac{\mu_\Sigma}
-{\operatorname{vol}_{h_0}}
+{\text{vol}_{h_0}}
 \right)^{2/n}
 h_0 .
 $$
@@ -302,16 +302,16 @@ $$
 再把它代入第 3 步的 ADM 公式，就得到
 
 $$
-\boxed{
+
 (t,N,\beta,[h],\mu_\Sigma)
 \Longrightarrow_{\rm cond}
 \mathrm g_{N,\beta}.
-}
+
 $$
 
 这登记为 `R-Z-ADM-METRIC-ASSEMBLY`。
 
-但 D248-D252 目前没有给出 $[h]$、$\mu_\Sigma$、$N$ 或 $\beta$。因此这只把缺口分解，没有从层读回导出度规。
+但 D248-D252 目前没有给出 $[h]$、$\mu\_\Sigma$、$N$ 或 $\beta$。因此这只把缺口分解，没有从层读回导出度规。
 
 **第 9 步｜叶层体积不固定 lapse。**
 
@@ -330,25 +330,25 @@ $$
 则
 
 $$
-\operatorname{vol}_{h_\lambda}
+\text{vol}_{h_\lambda}
 =
-\lambda^{-1}\operatorname{vol}_h,
+\lambda^{-1}\text{vol}_h,
 \qquad
-\operatorname{vol}_{\mathrm g_\lambda}
+\text{vol}_{\mathrm g_\lambda}
 =
-\lambda\,dt\wedge\operatorname{vol}_{h_\lambda}
+\lambda\,dt\wedge\text{vol}_{h_\lambda}
 =
-dt\wedge\operatorname{vol}_h .
+dt\wedge\text{vol}_h .
 $$
 
-所以 $\lambda\ne1$ 时，$\mathrm g_\lambda$ 与 $\mathrm g_1$ 共享时间函数与四维体积元，却给不同空间度规、不同 lapse 和不同光锥。它们也不在同一个完整四维共形类中，因为时间与空间方向需要不同的共形因子。
+所以 $\lambda\ne1$ 时，$\mathrm g\_\lambda$ 与 $\mathrm g\_1$ 共享时间函数与四维体积元，却给不同空间度规、不同 lapse 和不同光锥。它们也不在同一个完整四维共形类中，因为时间与空间方向需要不同的共形因子。
 
 $$
-\boxed{
+
 \text{叶层体积元}
 \not\Longrightarrow
 \text{唯一 lapse 或唯一时空共形类}.
-}
+
 $$
 
 这登记为 `R-Z-LEAF-CONFORMAL-VOLUME-GAP`。
@@ -362,7 +362,7 @@ $$
 =
 \left(
 \frac{\mu}
-{\operatorname{vol}_{\mathrm g_0}}
+{\text{vol}_{\mathrm g_0}}
 \right)^{2/4}
 \mathrm g_0 ,
 $$
@@ -372,7 +372,7 @@ $$
 但层读回、层间流和全局时间势目前没有直接给出完整的 $[\mathrm g]$ 与 $\mu$。因此两条路线必须区分：
 
 $$
-\boxed{
+
 \text{叶层 }(t,[h],\mu_\Sigma,N,\beta)
 \Longrightarrow_{\rm cond}
 \mathrm g;
@@ -380,7 +380,7 @@ $$
 \text{完整 }([\mathrm g],\mu,o)
 \Longrightarrow
 \mathrm g.
-}
+
 $$
 
 **第 11 步｜D248-D252 到 ADM 数据的选择缺口。**
@@ -412,9 +412,9 @@ $$
 这类固定点还需要初值、边界条件和物质状态，不由现有层数据自动给出。
 
 $$
-\boxed{
+
 \text{层读回与源候选不能直接选择 }N,\beta,[h],\mu_\Sigma.
-}
+
 $$
 
 这登记为 `R-Z-READOUT-TO-ADM-SELECTION-GAP`。
@@ -425,7 +425,7 @@ $$
 
 1. 正则时间势给叶状候选，不给唯一度规；
 2. 给定 $(t,N,\beta,h)$，ADM 公式唯一给一个号差 $(1,n)$ 的度规代表；
-3. 给定 $(t,N,\beta,[h],\mu_\Sigma)$，D143 可先补出 $h$，再给出条件度规；
+3. 给定 $(t,N,\beta,[h],\mu\_\Sigma)$，D143 可先补出 $h$，再给出条件度规；
 4. $N,\beta$ 是叶状规范数据，不是独立物理场；
 5. 完整时空共形类与体积元直接给唯一度规，但这组数据仍未由层读回导出。
 
@@ -466,14 +466,14 @@ $$
 | `R-Z-ADM-METRIC-ASSEMBLY` | 给定 $t,N,\beta$、叶层共形类与叶层体积，可唯一组装一个 Lorentz 度规代表 | 条件定理 |
 | `R-Z-LAPSE-SHIFT-GAP` | 时间势与叶层空间度规不选择 lapse 与 shift；它们是叶状规范数据，但未给定叶状或完整度规时仍缺失 | 规范选择缺口 |
 | `R-Z-LEAF-CONFORMAL-VOLUME-GAP` | 叶层共形类与叶层体积不自动给完整时空共形类、lapse 或 shift | 未解输入 |
-| `R-Z-READOUT-TO-ADM-SELECTION-GAP` | D248-D252 的层读回、源与时间势数据没有选择 $N,\beta,[h],\mu_\Sigma$ | 未解选择器 |
+| `R-Z-READOUT-TO-ADM-SELECTION-GAP` | D248-D252 的层读回、源与时间势数据没有选择 $N,\beta,[h],\mu\_\Sigma$ | 未解选择器 |
 
 这些结构沿用 `R-Z-SUPPORT-EMBEDDING-GAP`、`R-GEO2-METRIC`、`R-Z-CONDITIONAL-4D-LORENTZ`，不修改 `U1-U4+C1`，也不新增 `U5`。
 
 $$
-\boxed{
+
 \text{ADM 度规组装已条件闭合；从层数据选择 ADM 输入仍未闭合。}
-}
+
 $$
 
 ---
@@ -485,7 +485,7 @@ $$
 | 光滑 $n+1$ 维流形 | 给叶状舞台 | 恢复层输入 |
 | 正则全局时间势 $t$ | 给叶状候选与时间定向 | `D252` 条件存在 |
 | 叶层共形类 $[h]$ | 给空间角度结构 | 未导出 |
-| 叶层体积元 $\mu_\Sigma$ | 给空间体积密度 | 未导出 |
+| 叶层体积元 $\mu\_\Sigma$ | 给空间体积密度 | 未导出 |
 | lapse $N$ | 给叶间固有时与光锥标度 | 叶状规范数据，未选择 |
 | shift $\beta$ | 给叶间倾斜与光锥倾斜 | 叶状规范数据，未选择 |
 | 号差 $(1,n)$ | 给 Lorentz 结构 | `D144` 独立输入 |
@@ -493,7 +493,7 @@ $$
 | Einstein 动力学 | 选择物理解与演化 | `R-Z-EH-VARIATION-BRIDGE` 条件入口，未闭合 |
 
 $$
-\boxed{
+
 \text{当前闭合的是“给定 ADM 数据怎样写度规”，不是“怎样从层数据选出 ADM 数据”。}
-}
+
 $$

@@ -14,7 +14,7 @@ $$
 **探针**：[`R65_causal_metric.py`](R65_causal_metric.py)、[`R66_causal_metric_2d.py`](R66_causal_metric_2d.py)、[`R67_causal_interval.py`](R67_causal_interval.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\textbf{主结果：}\ \text{二维格上的}\ \pm1\ \text{局域演化，其因果结构给出}\\
 &\qquad I(\Delta\tau,\Delta\mathbf x)=\sum_{k=0}^{(\Delta\tau-|\Delta\mathbf x|_1)/2}\!\!(2k^2+1)
@@ -22,7 +22,7 @@ $$
 &\qquad\Longrightarrow\ I\ \textbf{只依赖}\ \Delta\tau-|\Delta\mathbf x|_1\quad(\text{菱形范数缺口})\\
 &\qquad\Longrightarrow\ \text{时间方向进入时带}\ \textbf{负号}\ \Longrightarrow\ \textbf{洛伦兹号差}。\\
 &\qquad\Longrightarrow\ \text{这不需任何输入：}\ \text{它纯粹是"每步走一格"的后果。}
-\end{aligned}}
+\end{aligned}
 $$
 
 ---
@@ -31,8 +31,8 @@ $$
 
 | # | 项 | 结果 | 状态 |
 |--:|:--|:--|:--|
-| 1 | 可达条件 | $\Delta\tau\ge\vert\Delta\mathbf x\vert_1$ 且同奇偶 | ✅ **光锥天然出现** |
-| 2 | 因果区间体积只依赖 $\Delta\tau-\vert\Delta\mathbf x\vert_1$ | 全部 7 个取值**唯一确定** $I$ | ✅ **洛伦兹结构** |
+| 1 | 可达条件 | $\Delta\tau\ge\vert\Delta\mathbf x\vert\_1$ 且同奇偶 | ✅ **光锥天然出现** |
+| 2 | 因果区间体积只依赖 $\Delta\tau-\vert\Delta\mathbf x\vert\_1$ | 全部 7 个取值**唯一确定** $I$ | ✅ **洛伦兹结构** |
 | 3 | 固定 $\Delta\tau$ 下 $I$ 随 $\vert\Delta\mathbf x\vert$ 单调递减 | ✅（$189\to116\to65\to32\to13\to4\to1$） | ✅ |
 | 4 | 洛伦兹不变量 $\Delta\tau^2-\vert\Delta\mathbf x\vert^2$ vs 欧氏 $+$ | 前者 | ✅ |
 | 5 | Myrheim–Meyer 维数（1+1） | $2.80\to2.88$（期望 2） | ⚠️ 收敛但未到位 |
@@ -54,7 +54,7 @@ $$
 **因果结构**：事件 $e=(\tau,\mathbf x)$，
 
 $$e\preceq e'\iff \text{存在合法演化连接二者}\iff
-\Delta\tau\ge0,\quad |\Delta\mathbf x|_1\le\Delta\tau,\quad \Delta\tau\equiv|\Delta\mathbf x|_1\ (\mathrm{mod}\ 2)$$
+\Delta\tau\ge0,\quad |\Delta\mathbf x|_1\le\Delta\tau,\quad \Delta\tau\equiv|\Delta\mathbf x|_1\ (\text{mod}\ 2)$$
 
 ---
 
@@ -66,7 +66,7 @@ $$I=\sum_{k=0}^{m}(2k^2+1),\qquad m=\frac{\Delta\tau-|\Delta\mathbf x|_1}{2}$$
 
 **实测**（固定 $\Delta\tau=12$）：
 
-| $\vert\Delta\mathbf x\vert_1$ | $\Delta\tau^2-\vert\Delta\mathbf x\vert^2$（洛伦兹） | $\Delta\tau^2+\vert\Delta\mathbf x\vert^2$（欧氏） | $I$ |
+| $\vert\Delta\mathbf x\vert\_1$ | $\Delta\tau^2-\vert\Delta\mathbf x\vert^2$（洛伦兹） | $\Delta\tau^2+\vert\Delta\mathbf x\vert^2$（欧氏） | $I$ |
 |--:|--:|--:|--:|
 | 0 | 144 | 144 | **189** |
 | 2 | 140 | 148 | **116** |
@@ -77,16 +77,16 @@ $$I=\sum_{k=0}^{m}(2k^2+1),\qquad m=\frac{\Delta\tau-|\Delta\mathbf x|_1}{2}$$
 | 12 | 0 | 288 | **1** |
 
 $$
-\boxed{\ I\ \text{随}\ \Delta\tau^2-\vert\Delta\mathbf x\vert^2\ \text{同向变化，随}\ \Delta\tau^2+\vert\Delta\mathbf x\vert^2\ \text{反向} }
+\ I\ \text{随}\ \Delta\tau^2-\vert\Delta\mathbf x\vert^2\ \text{同向变化，随}\ \Delta\tau^2+\vert\Delta\mathbf x\vert^2\ \text{反向} 
 $$
 
-**而且**：按 $\Delta\tau-|\Delta\mathbf x|_1$ 分组，每一组的 $I$ **唯一**：
+**而且**：按 $\Delta\tau-|\Delta\mathbf x|\_1$ 分组，每一组的 $I$ **唯一**：
 
-| $\Delta\tau-\vert\Delta\mathbf x\vert_1$ | 0 | 2 | 4 | 6 | 8 | 10 | 12 |
+| $\Delta\tau-\vert\Delta\mathbf x\vert\_1$ | 0 | 2 | 4 | 6 | 8 | 10 | 12 |
 |:--|--:|--:|--:|--:|--:|--:|--:|
 | $I$ | 1 | 4 | 13 | 32 | 65 | 116 | 189 |
 
-$$\boxed{\ \text{因果区间体积是}\ \textbf{单变量函数}\ \text{—— 变量就是菱形范数缺口}\ }$$
+$$\ \text{因果区间体积是}\ \textbf{单变量函数}\ \text{—— 变量就是菱形范数缺口}\ $$
 
 **这就是洛伦兹号差的定义**：时间与空间以**相反的符号**进入不变量。
 
@@ -96,15 +96,15 @@ $$\boxed{\ \text{因果区间体积是}\ \textbf{单变量函数}\ \text{—— 
 
 | | 前面失败的度规 | 本文的因果度规 |
 |:--|:--|:--|
-| 定义 | $R=\mathcal E^{-1}$，$\mathcal E$ = 全局 Laplacian | $I(e_1,e_2)$ = 可达区间基数 |
+| 定义 | $R=\mathcal E^{-1}$，$\mathcal E$ = 全局 Laplacian | $I(e\_1,e\_2)$ = 可达区间基数 |
 | 依赖 | **全部**边权（全局） | **只依赖**两端事件之间的可达性 |
 | 局域性 | ❌ 必然失败（`G41`、`D257`） | ✅ 可达性是**局域步**的传递闭包 |
 | 需要求逆吗 | **需要** | **不需要** |
-| 需要模流/boost 吗 | 需要（$K_B$） | **不需要** |
-| 需要 $III_1$ 吗 | 需要 | **不需要** |
+| 需要模流/boost 吗 | 需要（$K\_B$） | **不需要** |
+| 需要 $III\_1$ 吗 | 需要 | **不需要** |
 | 空间维数从哪来 | 图的维数（输入） | 图的维数（**仍是输入**） |
 
-$$\boxed{\ \text{因果路}\ \textbf{绕开了全部已知障碍}:\ \text{无需求逆、无需模流、无需 }III_1\ }$$
+$$\ \text{因果路}\ \textbf{绕开了全部已知障碍}:\ \text{无需求逆、无需模流、无需 }III_1\ $$
 
 **而它给出洛伦兹号差，是"每步走一格"的直接后果 —— 零输入。**
 
@@ -153,6 +153,6 @@ python3 R65_causal_metric.py       # 一维版（含奇偶性与饱和的诊断�
 ## §7 一句话
 
 $$
-\boxed{\ \text{闭环演化的因果结构}\textbf{无输入地}\text{给出洛伦兹号差：时间与空间以相反符号进入不变量；}\
-\text{而空间维数仍是输入。}\ }
+\ \text{闭环演化的因果结构}\textbf{无输入地}\text{给出洛伦兹号差：时间与空间以相反符号进入不变量；}\
+\text{而空间维数仍是输入。}\ 
 $$

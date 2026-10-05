@@ -19,7 +19,7 @@ $$
 | 命题 | 判决 | 理由 |
 |:--|:--|:--|
 | 有限维忠实态给出 GNS 模流与 $K=-\log\rho$ | **已证** | [`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) 的有限维代数核验 |
-| 在人为选定的 Gibbs 态上 $\rho=e^{-\beta L_W}/Z\Rightarrow K=\beta L_W$ | **已证**（条件于该态） | [`G75`](G75_quantum_geometry_modular_readout.md)；这不是区域真空模定理 |
+| 在人为选定的 Gibbs 态上 $\rho=e^{-\beta L\_W}/Z\Rightarrow K=\beta L\_W$ | **已证**（条件于该态） | [`G75`](G75_quantum_geometry_modular_readout.md)；这不是区域真空模定理 |
 | R8.1 精确熵差恒等式 | **已证** | 有限维密度矩阵代数恒等式 |
 | 外部 BGL/Hislop–Longo 定理在各自前提下的几何模结论 | **已证**（外部文献） | 见 §4 |
 | 若完整实现 C-L1a 至 C-L1h，则 R8-GMA 可条件证成 | **条件证成** | BGL/Hislop–Longo 提供几何模桥；Zero 尚未提供其前提 |
@@ -37,7 +37,7 @@ $$
 
 ### 1.1 目标对象
 
-设 $B_R$ 是某个小测地球对应的因果菱形，$\mathcal A(B_R)$ 是其局部可观测代数，$\rho_B$ 是物理真空限制到该区域后对应的忠实正规态。R8 使用
+设 $B\_R$ 是某个小测地球对应的因果菱形，$\mathcal A(B\_R)$ 是其局部可观测代数，$\rho\_B$ 是物理真空限制到该区域后对应的忠实正规态。R8 使用
 
 $$
 K_B=-\log\rho_B.
@@ -49,13 +49,13 @@ $$
 \rho_B=Z_B^{-1}\exp(-2\pi B_B),
 $$
 
-则 $\log\rho_B=-2\pi B_B+\text{常数}$，因此
+则 $\log\rho\_B=-2\pi B\_B+\text{常数}$，因此
 
 $$
 K_B=2\pi B_B+\text{常数}.
 $$
 
-常数项不贡献交换子，所以真正要证明的是：$K_B$ 与 $2\pi B_B$ 在同一算子核心上生成同一个流。
+常数项不贡献交换子，所以真正要证明的是：$K\_B$ 与 $2\pi B\_B$ 在同一算子核心上生成同一个流。
 
 ### 1.2 三个不同的命题
 
@@ -83,7 +83,7 @@ $$
 \left\|[K_{B,a},\phi(f)]-2\pi[B_B,\phi(f)]\right\|\to0.
 $$
 
-第 1 条可以在 BGL/Hislop–Longo 的前提下成立。第 2 条随之在适当核心上成立。**第 3 条并不自动随之成立**，因为 $K_B$ 和 $B_B$ 都是无界算子，$\phi(f)$ 的无界性还取决于所选的场代数；在局域 QFT 的局部 $C^*$-代数和通常的 Fock 场代数上，这一类交换子通常不是有界算子。
+第 1 条可以在 BGL/Hislop–Longo 的前提下成立。第 2 条随之在适当核心上成立。**第 3 条并不自动随之成立**，因为 $K\_B$ 和 $B\_B$ 都是无界算子，$\phi(f)$ 的无界性还取决于所选的场代数；在局域 QFT 的局部 $C^*$-代数和通常的 Fock 场代数上，这一类交换子通常不是有界算子。
 
 ### 1.3 对“局部 boost”的必要修正
 
@@ -106,10 +106,10 @@ $$
 |:--|:--|:--|
 | [`R8`](R8_jacobson_entanglement_equilibrium_completion.md) | 把 Jacobson 2016 补前提压缩成 C1–C4；R8.1 精确熵差恒等式；明确 J1 未证 | C2 本身、连续 Lorentzian 局部代数网、普适面积密度 |
 | [`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) | 有限维忠实态的 GNS 构造、模流、KMS 核验 | 连续区域代数；空间局域代数网；共形真空表示 |
-| [`G75`](G75_quantum_geometry_modular_readout.md) | 对人为选定的 Gibbs 态证明 $K=-\log\rho=\beta L_W+\text{常数}$ | 不能把该 Gibbs 态读成真空限制；不能由 $L_W$ 得出共形 boost |
+| [`G75`](G75_quantum_geometry_modular_readout.md) | 对人为选定的 Gibbs 态证明 $K=-\log\rho=\beta L\_W+\text{常数}$ | 不能把该 Gibbs 态读成真空限制；不能由 $L\_W$ 得出共形 boost |
 | [`G79`](G79_horizon_thermodynamics.md) | 一维自由费米链上边界权重最小、局域性和第一定律接口 | 精确抛物线核；与几何 boost 的算子识别；这里的 $T=1/(2\pi)$ 明列为“识别” |
 | [`D231`](D231_modular_density_profile_gap.md) | 同一支持可承载不同剖面，给出不同模生成元；登记 boost-profile gap | 不能选出几何 boost 剖面；不能把支持数据当作生成元识别 |
-| [`D234`](D234_geometric_ball_profile_candidate.md) | 给出共形球候选核 $f_B(r)=(R^2-r^2)/(2R)$、接触项警告和输入预算 | 年龄到径向映射、源算子识别、接触项、连续极限均明列为未导出 |
+| [`D234`](D234_geometric_ball_profile_candidate.md) | 给出共形球候选核 $f\_B(r)=(R^2-r^2)/(2R)$、接触项警告和输入预算 | 年龄到径向映射、源算子识别、接触项、连续极限均明列为未导出 |
 
 ### 2.1 需要统一的表述
 
@@ -131,7 +131,7 @@ $$
 
 1. `\eqref{rK}` 把限制真空形式地写成 $\rho=Z^{-1}\exp(-K/T)$，并取 $T=\hbar/2\pi$。
 2. 紧接着明确说明：**一般 QFT 中 $K$ 不是局域算子，也不生成几何流。**
-3. 对 CFT，论文才写 $K=H_\zeta$，即由共形 boost Killing 场生成的 Hamiltonian，并引用 Hislop–Longo。
+3. 对 CFT，论文才写 $K=H\_\zeta$，即由共形 boost Killing 场生成的 Hamiltonian，并引用 Hislop–Longo。
 4. 对非共形场，论文没有证明精确几何模识别，而是增加关于
 
 $$
@@ -145,9 +145,9 @@ $$
 因此：
 
 $$
-\boxed{
+
 \text{Jacobson 2016 没有替 Zero 证明一般 R8-GMA；它只证明了 CFT 分支的条件桥。}
-}
+
 $$
 
 ---
@@ -181,7 +181,7 @@ P. D. Hislop, R. Longo, *Modular structure of the local algebras associated with
 - 模自同构群由保持双锥的广义分式线性变换实现；
 - 该群是共形群的子群；
 - 模共轭是时间反演与相对论射线反演的乘积实现；
-- 由此得到双锥的 spacelike duality 与 type $\mathrm{III}_1$ 性质。
+- 由此得到双锥的 spacelike duality 与 type $\text{III}\_1$ 性质。
 
 对本审计的意义：这是最直接的“双锥几何模流”定理，但它的前提是**自由无质量共形标量 QFT**。Zero 目前的年龄代数、自由费米链和 Gibbs 读数没有实例化这些前提。
 
@@ -279,8 +279,8 @@ $$
 
 - $\Omega$ 对每个局部代数循环且分离；
 - Reeh–Schlieder 成立；
-- 限制态 $\omega_B=\omega|_{\mathcal A(B)}$ 是忠实正规态；
-- GNS 模算子 $\Delta_B$ 和模共轭 $J_B$ 已定义。
+- 限制态 $\omega\_B=\omega|\_{\mathcal A(B)}$ 是忠实正规态；
+- GNS 模算子 $\Delta\_B$ 和模共轭 $J\_B$ 已定义。
 
 ### C-L1c｜共形协变局域表示
 
@@ -294,12 +294,12 @@ $$
 
 ### C-L1d｜几何流与表面重力标定
 
-对每个小菱形存在唯一的共形 Killing 场 $\xi_B$，满足：
+对每个小菱形存在唯一的共形 Killing 场 $\xi\_B$，满足：
 
-- $\xi_B$ 在边界上为零并生成保持菱形不变的流 $C_t^B$；
-- 表面重力归一为 $\kappa_B=1$；
-- $U_B(t)=e^{itB_B}$ 实现 $C_t^B$；
-- 真空限制满足 $\rho_B=Z_B^{-1}e^{-2\pi B_B}$，或等价地 $K_B=2\pi B_B+cI$。
+- $\xi\_B$ 在边界上为零并生成保持菱形不变的流 $C\_t^B$；
+- 表面重力归一为 $\kappa\_B=1$；
+- $U\_B(t)=e^{itB\_B}$ 实现 $C\_t^B$；
+- 真空限制满足 $\rho\_B=Z\_B^{-1}e^{-2\pi B\_B}$，或等价地 $K\_B=2\pi B\_B+cI$。
 
 ### C-L1e｜从 Zero 区域到物理区域的构造映射
 
@@ -314,7 +314,7 @@ $$
 
 ### C-L1f｜良定义的算子拓扑
 
-必须选定公共核心 $\mathcal D\subset\mathcal H$，使 $K_B,B_B$ 和 $\phi(f)$ 的适当多项式在该核心上良定义，并证明下列至少一种：
+必须选定公共核心 $\mathcal D\subset\mathcal H$，使 $K\_B,B\_B$ 和 $\phi(f)$ 的适当多项式在该核心上良定义，并证明下列至少一种：
 
 1. 对每个局部多项式 $P(\phi(f))$ 和 $\psi\in\mathcal D$，
 
@@ -328,7 +328,7 @@ $$
 
 3. 或强预解收敛，再配合交换子的共同核心紧性/相对有界性。
 
-若坚持字面无界算子范数，则须额外证明交换子是一致有界的。BGL 的 $\Delta_O^{it}=U_O(t)$ 本身不提供这一范数界。
+若坚持字面无界算子范数，则须额外证明交换子是一致有界的。BGL 的 $\Delta\_O^{it}=U\_O(t)$ 本身不提供这一范数界。
 
 ### C-L1g｜余项与接触项控制
 
@@ -357,7 +357,7 @@ $$
 并证明：
 
 - 对所有允许的局部 Lorentz 参考系一致；
-- 曲率修正 $O(R^2/L_{\rm geo}^2)$ 受控；
+- 曲率修正 $O(R^2/L\_{\rm geo}^2)$ 受控；
 - 质量、gap 与晶格各向异性误差受控；
 - 细化参数 $a\to0$ 时的误差界可交换于 $R\to0$ 极限。
 
@@ -370,7 +370,7 @@ $$
 | C-L1a 连续局部代数网 | G62 有限维年龄代数；R1/R7 空间型 Dirichlet 极限 | **不能** |
 | C-L1b 真空标准性 | G62 可给有限维忠实态 GNS；不是四维区域真空 | **部分类比，不能实例化** |
 | C-L1c 共形酉表示 | 无共形真空、无正能连续表示 | **不能** |
-| C-L1d 几何流 | D234 给候选权重；无 $U_B(t)$ 实现 | **不能** |
+| C-L1d 几何流 | D234 给候选权重；无 $U\_B(t)$ 实现 | **不能** |
 | C-L1e 区域/场映射 | 年龄到径向映射不唯一，源算子未识别 | **不能** |
 | C-L1f 拓扑 | 有限维矩阵可用范数；连续场只有形式交换子 | **不能** |
 | C-L1g 余项 | G79 明说是格点/非相对论修正；D234 列接触项 | **不能** |
@@ -379,7 +379,7 @@ $$
 Zero 能真正提供的是三块有限/条件素材：
 
 1. **有限维 GNS 模流**：给出 $K=-\log\rho$ 和 KMS 结构。
-2. **选定 Gibbs 态上的算子同一**：$K=\beta L_W+\text{常数}$。
+2. **选定 Gibbs 态上的算子同一**：$K=\beta L\_W+\text{常数}$。
 3. **几何候选与数值证据**：边界退化、局域性、面积律接口和抛物型候选核。
 
 它们都不能单独越过“连续局域 QFT ＋ 共形真空 ＋ 几何模定理”这一层。
@@ -391,10 +391,10 @@ Zero 能真正提供的是三块有限/条件素材：
 以下输入不能由候选剖面替代：
 
 1. **连续 Lorentzian 几何**：Minkowski/小测地正规坐标、因果菱形、边界与法向。
-2. **区域保持共形 Killing 流**：$\xi_B$、$\kappa_B=1$ 以及 $C_t^B$。
+2. **区域保持共形 Killing 流**：$\xi\_B$、$\kappa\_B=1$ 以及 $C\_t^B$。
 3. **局部场论结构**：场代数、真空、正能、Reeh–Schlieder、标准形式。
 4. **共形协变与统一真空**：BGL 型局部酉表示及其正能表示。
-5. **几何生成元的算子实现**：不是只给权重函数，而是给 $U_B(t)$。
+5. **几何生成元的算子实现**：不是只给权重函数，而是给 $U\_B(t)$。
 6. **连续极限与重整化**：质量、相关算子、接触项、曲率和 UV 截断的误差控制。
 
 其中第 2、3、4、5 条正是从“剖面候选”到“几何 boost”之间缺失的物理结构。
@@ -409,16 +409,16 @@ Zero 能真正提供的是三块有限/条件素材：
 |:--|:--|:--|
 | Bisognano–Wichmann | Poincare 真空下的 wedge 模流为 Lorentz boost | 一般小球；Zero 年龄对象 |
 | Hislop–Longo | 自由无质量标量、任意维、double cone 的共形模流与 PCT | 一般交互 QFT；一般 Zero 态 |
-| Brunetti–Guido–Longo | 共形协变因果可加局部网上的 $\Delta_O^{it}=U_O(t)$ | 没有连续共形网时结论不能用 |
+| Brunetti–Guido–Longo | 共形协变因果可加局部网上的 $\Delta\_O^{it}=U\_O(t)$ | 没有连续共形网时结论不能用 |
 | Fredenhagen | 渐近尺度不变/角落极限的模流吻合 | 整个菱形的精确算子等式 |
 | Brunetti–Moretti | 给出有质量情形与共形生成元的零阶余项 | 反而排除一般精确 boost 识别 |
 
 因此文献答案是：
 
 $$
-\boxed{
+
 \text{有精确桥接定理；但桥的另一端必须是连续共形局部代数网，现有 Zero 尚未站到那一端。}
-}
+
 $$
 
 ---
@@ -456,21 +456,21 @@ G79 的一维自由费米链与抛物线剖面相关为 $0.865$，而且 D234 �
 $$
 \left\|[K_a,\phi(f)]-2\pi[B,\phi(f)]\right\|
 \le
-C_R\,(1-\operatorname{corr})
+C_R\,(1-\text{corr})
 $$
 
 或更直接的连续性/紧性定理，相关值不能推出 R8-GMA。
 
 ### 9.4 失败机制 D：字面范数可能无界
 
-即使已经证明流相等，若 $[K_B,\phi(f)]$ 和 $[B_B,\phi(f)]$ 都只是形式或二次型，二者相减的范数可能根本不存在。此时“未加拓扑的 R8-GMA”不是待证明定理，而是待定义的命题。
+即使已经证明流相等，若 $[K\_B,\phi(f)]$ 和 $[B\_B,\phi(f)]$ 都只是形式或二次型，二者相减的范数可能根本不存在。此时“未加拓扑的 R8-GMA”不是待证明定理，而是待定义的命题。
 
 ### 9.5 最小代数反例
 
 取 $\mathcal H=\mathbb C^4$，$\phi=\phi^*$ 为相邻站点耦合矩阵，令
 
 $$
-K_{\rm geom}=\operatorname{diag}(g_1,g_2,g_3,g_4),
+K_{\rm geom}=\text{diag}(g_1,g_2,g_3,g_4),
 \qquad
 g_j=\frac{R^2-x_j^2}{2R},
 $$
@@ -478,7 +478,7 @@ $$
 再取同一支持上的常量候选
 
 $$
-K_{\rm flat}=\operatorname{diag}(1,1,1,1).
+K_{\rm flat}=\text{diag}(1,1,1,1).
 $$
 
 则
@@ -505,7 +505,7 @@ $$
 
 - R8.1 有限维精确熵差恒等式。
 - GNS/Tomita–Takesaki 在有限维忠实态上的模流结构。
-- 在人为选定 Gibbs 态上的 $K=\beta L_W+\text{常数}$。
+- 在人为选定 Gibbs 态上的 $K=\beta L\_W+\text{常数}$。
 - BW、Hislop–Longo、BGL 在各自明确前提下的外部几何模定理。
 
 ### 条件证成
@@ -528,12 +528,12 @@ $$
 - 从现有 Zero 基础无条件导出四维 GR。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{C2/R8-GMA 不是“已由 Zero 补上”；}\\
 &\text{它是“在连续共形 QFT 桥存在时条件证成，在现有 Zero 基础上开放”。}\\
 &\text{候选剖面相关不得当作几何 boost，非共形质量余项是明确排除机制。}
-\end{aligned}}
+\end{aligned}
 $$
 
 ---

@@ -1,18 +1,18 @@
-# G57 · 不可达定理：绝对归一化（$C_{\rm norm}$ 收官）
+# G57 · 不可达定理：绝对归一化（$C\_{\rm norm}$ 收官）
 
 **日期**：本轮 · **性质**：**不可达定理**（结构归纳）＋ 数值核验 ＋ **[`G56`](G56_degeneration_attempt2_six_slots.md) §4 缺口的结算**。
 **等级标签**：【定理】/【导出】/【数值核验】/【不可达】/【结论】。
 **核验**：[`G57_check.py`](G57_check.py) —— **独立实断言 35 / 结论行 0 / 不符 0**，退出码 `0`（约 1 秒）
 
 $$
-\boxed{\ \text{Z0 条款（A0–A5 历史命名）的原语里}\textbf{没有任何有量纲常数}\ \Longrightarrow\ \text{任何泛函都无量纲}\ \Longrightarrow\ \text{绝对归一化}\textbf{不可导出}。\ }
+\ \text{Z0 条款（A0–A5 历史命名）的原语里}\textbf{没有任何有量纲常数}\ \Longrightarrow\ \text{任何泛函都无量纲}\ \Longrightarrow\ \text{绝对归一化}\textbf{不可导出}。\ 
 $$
 
 ---
 
 ## §0 要结清的账
 
-[`G56`](G56_degeneration_attempt2_six_slots.md) §4 把退化尝试 #2 的剩余缺口定为**两个**：$C_{\rm norm}$（$G,\Lambda$ 与物理尺度归一化）与 I2a（连续极限收敛）。本轮把 **$C_{\rm norm}$ 判死**：
+[`G56`](G56_degeneration_attempt2_six_slots.md) §4 把退化尝试 #2 的剩余缺口定为**两个**：$C\_{\rm norm}$（$G,\Lambda$ 与物理尺度归一化）与 I2a（连续极限收敛）。本轮把 **$C\_{\rm norm}$ 判死**：
 
 > 它不是"还没算出来"，而是**原理上不可导出**——而这条判定本身是可以证明的。
 
@@ -27,14 +27,14 @@ Z0 条款（A0–A5 历史命名）的全部原始数据（[`G0`](G0_bottom_laye
 | Z1 定理 1（通道集 $C$；原 A0） | 有限集 $C=\{1,\dots,m\}$ | 基数 | $1$ |
 | Z1 定理 2（原 A1） | 整向量 $x\in\mathbb Z^{C}$、约束 $Q(x)=0$ | 整数、整系数 | $1$ |
 | Z1 定理 1／识别 U（原 A2） | 连通图 $\Gamma=(C,E)$ | 有限集 | $1$ |
-| Z1 定理 1（原 A2） | 基本移动 $T_ex=x+e_j-e_i$ | 整数偏移 | $1$ |
+| Z1 定理 1（原 A2） | 基本移动 $T\_ex=x+e\_j-e\_i$ | 整数偏移 | $1$ |
 | Z0③／Z2（原 A3） | 全分支、整数重数 | 计数 | $1$ |
-| Z4（原 A4） | 步指标 $\tau\in\mathbb Z_{\ge0}$ | **计数（步）** | $1$ |
+| Z4（原 A4） | 步指标 $\tau\in\mathbb Z\_{\ge0}$ | **计数（步）** | $1$ |
 | Z3／Z4（原 A5） | 闭合 $x=0$；寿命 $L$（步数） | 整数计数 | $1$ |
 | Z14（原 A5） | 循环次序 $i\sim i+1\pmod L$ | 序关系 | $1$ |
 
 $$
-\boxed{\ \text{全表量纲为 }1\text{：没有米、秒、克，也没有任何耦合常数。}\ }
+\ \text{全表量纲为 }1\text{：没有米、秒、克，也没有任何耦合常数。}\ 
 $$
 
 ---
@@ -48,10 +48,10 @@ $$
 | [`G3`](G3_admittance_fixed_point.md) 引理 12 | 齐次度 $=1$ | $1$ |
 | [`G29`](G29_probability_as_derived_not_postulated.md) | 选择率 $\lambda=\log M/T$ | $1$ |
 | [`G31`](G31_characteristic_speed_and_saturation.md) | 前缘速度（格距/步） | $1$ |
-| [`G33`](G33_macro_master_equation_and_mz_kernel.md) | 传播子 $G_t$、记忆时间 | $1$ |
+| [`G33`](G33_macro_master_equation_and_mz_kernel.md) | 传播子 $G\_t$、记忆时间 | $1$ |
 | [`G42`](G42_third_route_local_weights.md)／[`G46`](G46_k_is_the_lifetime.md) | 度规权 $w^{(k)}$（计数）、截断 $k=L$ | $1$ |
 | [`G54`](G54_quantitative_profile_age_measure.md) | 可闭合概率 $F(a)$ | $1$ |
-| [`G55`](G55_dynamics_line_degeneration_to_GR.md)／[`G56`](G56_degeneration_attempt2_six_slots.md) | 被选速度 $c_*=\tanh\mu_*$ | $1$ |
+| [`G55`](G55_dynamics_line_degeneration_to_GR.md)／[`G56`](G56_degeneration_attempt2_six_slots.md) | 被选速度 $c\_*=\tanh\mu\_*$ | $1$ |
 
 **唯一的量纲入口是 $\kappa$**——它是"计数 → 长度"的**兑换率**，正是 I2b／I4。
 
@@ -72,7 +72,7 @@ $$
 **推论 3**：能导出的只有**无量纲比**；且因理论内没有绝对长度，连 $\Lambda\ell^2$ 里的 $\ell$ 也必须**外部**提供。
 
 $$
-\boxed{\ \text{绝对尺度不是"还没算出来"，而是}\textbf{条款集里根本没有那个自由度}。\ }
+\ \text{绝对尺度不是"还没算出来"，而是}\textbf{条款集里根本没有那个自由度}。\ 
 $$
 
 ---
@@ -81,7 +81,7 @@ $$
 
 ### 4.1 截断 $k$ 改变形状（物理量）
 
-非均匀链（$N=128$，边权 $c_i=1+0.3\cos(2\pi i/N)$），看无量纲比 $w(10,11)/w(90,91)$：
+非均匀链（$N=128$，边权 $c\_i=1+0.3\cos(2\pi i/N)$），看无量纲比 $w(10,11)/w(90,91)$：
 
 | $k$ | 8 | 16 | 32 | 64 |
 |:--|--:|--:|--:|--:|
@@ -97,7 +97,7 @@ $$
 | 归一化本征值最大偏差 | $1.6\times10^{-15}$ | $0$ | $2.1\times10^{-15}$ |
 
 $$
-\boxed{\ \text{标度 }s=\text{单位（人为、无物理内容）};\qquad \text{截断 }k=\text{尺度（物理）}。\ }
+\ \text{标度 }s=\text{单位（人为、无物理内容）};\qquad \text{截断 }k=\text{尺度（物理）}。\ 
 $$
 
 （这是 [`G45`](G45_units_vs_scales_is_the_ruler_human.md) 的复现；**本文把它的数值观察升级为 §3 的定理**。）
@@ -114,15 +114,15 @@ $\lambda=\log M/T$ 在 $M\to10^{3}M$ 下**恒等**（$M=2,T=2$ 给 $0.346574$）
 
 | 槽位 | 状态 |
 |:--|:--|
-| $C_{\rm loc}$ 局域零和传输 | ✅（[`D214`](D214_local_zero_sum_transport.md) 条件补上） |
-| $C_{\rm 4D}$ 四维细化与连续坐标 | ⚠️ 部分（**I2a 仍开**） |
-| $C_{\rm Lor}$ 时间线、号差、定向 | ✅（[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5、[`G13`](G13_foliation_and_lorentz_invariance_gap.md)） |
-| $C_{\rm src}$ 局部守恒源 | ✅（[`G5`](G5_stress_lift_and_conservation.md)、[`G16`](G16_repair_audit_without_new_axioms.md)） |
-| $C_{\rm geom}$ Lovelock／Einstein 作用 | ✅ 条件（[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 7、[`G42`](G42_third_route_local_weights.md)、[`G46`](G46_k_is_the_lifetime.md)） |
-| $C_{\rm norm}$ 绝对归一化 | ❌ **不可达（本文定理）** |
+| $C\_{\rm loc}$ 局域零和传输 | ✅（[`D214`](D214_local_zero_sum_transport.md) 条件补上） |
+| $C\_{\rm 4D}$ 四维细化与连续坐标 | ⚠️ 部分（**I2a 仍开**） |
+| $C\_{\rm Lor}$ 时间线、号差、定向 | ✅（[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5、[`G13`](G13_foliation_and_lorentz_invariance_gap.md)） |
+| $C\_{\rm src}$ 局部守恒源 | ✅（[`G5`](G5_stress_lift_and_conservation.md)、[`G16`](G16_repair_audit_without_new_axioms.md)） |
+| $C\_{\rm geom}$ Lovelock／Einstein 作用 | ✅ 条件（[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 7、[`G42`](G42_third_route_local_weights.md)、[`G46`](G46_k_is_the_lifetime.md)） |
+| $C\_{\rm norm}$ 绝对归一化 | ❌ **不可达（本文定理）** |
 
 $$
-\boxed{\ \text{零和宇宙能退化出的是：}\textbf{GR 的结构 ＋ 无量纲比};\qquad \text{绝对尺度与 }G,\Lambda\ \text{必须外部输入。}\ }
+\ \text{零和宇宙能退化出的是：}\textbf{GR 的结构 ＋ 无量纲比};\qquad \text{绝对尺度与 }G,\Lambda\ \text{必须外部输入。}\ 
 $$
 
 **这不是缺陷，而是原理性边界**：任何只由有限组合数据启动的理论都有同一条边界——它**没有量纲可借**。反过来说，这条定理也**保护**了纲领：凡是要"从零和算出 $G$"的努力都可被这条定理判定为**方向性错误**，除非先显式补一个量纲常数。
@@ -147,4 +147,4 @@ $$
 python3 G57_check.py     # 通过 35 / 不符 0，退出码 0（约 1 秒）
 ```
 
-F1 **原语量纲清点** · F2 **派生量清点（唯一例外 $\kappa$）** · F3 **重标定不变** · F4 **$k$ 改形状／$s$ 不改形状** · F5 选择率无量纲。（定理表述与 $C_{\rm norm}$ 收官在正文，不再由脚本断言。）
+F1 **原语量纲清点** · F2 **派生量清点（唯一例外 $\kappa$）** · F3 **重标定不变** · F4 **$k$ 改形状／$s$ 不改形状** · F5 选择率无量纲。（定理表述与 $C\_{\rm norm}$ 收官在正文，不再由脚本断言。）

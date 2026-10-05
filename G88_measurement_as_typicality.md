@@ -5,7 +5,7 @@
 **核验**：[`G88_check.py`](G88_check.py) —— **独立实断言 14 / 结论行 0 / 不符 0**，退出码 `0`（0.6 秒）
 
 $$
-\boxed{\ \text{测量诠释}=\underbrace{\text{频率符合概率}}_{\textbf{导出（典型性）}}+\underbrace{\text{为什么"我"在这一支}}_{\textbf{输入}}。\ }
+\ \text{测量诠释}=\underbrace{\text{频率符合概率}}_{\textbf{导出（典型性）}}+\underbrace{\text{为什么"我"在这一支}}_{\textbf{输入}}。\ 
 $$
 
 ---
@@ -46,11 +46,11 @@ $$
 
 ### 2.1 典型集（AEP）
 
-$A_\varepsilon=\{|-\tfrac1n\log p(x^n)-H|<\varepsilon\}$：
+$A\_\varepsilon=\{|-\tfrac1n\log p(x^n)-H|<\varepsilon\}$：
 
 | $n$ | 2 | 5 | 10 | 20 |
 |:--|--:|--:|--:|--:|
-| $\mathbb P(A_\varepsilon)$ | $0.000$ | $0.530$ | $0.806$ | $\mathbf{0.910}$ |
+| $\mathbb P(A\_\varepsilon)$ | $0.000$ | $0.530$ | $0.806$ | $\mathbf{0.910}$ |
 
 $$
 \textbf{单调趋 1}\ ✅\qquad(\text{小 }n\ \text{下不成立——AEP 是}\textbf{渐近}陈述，如实登记)
@@ -80,7 +80,7 @@ $$
 $$
 
 $$
-\boxed{\ \text{频率符合概率} = \textbf{定理}\ (\text{典型性}):\ \text{不需要额外输入}。\ }
+\ \text{频率符合概率} = \textbf{定理}\ (\text{典型性}):\ \text{不需要额外输入}。\ 
 $$
 
 ---
@@ -106,7 +106,7 @@ $$
 | 「测量诠释」整条列为**输入** | 拆成 **(a) 频率**（✅ **导出**）＋ **(b) 第一人称**（输入） |
 
 $$
-\boxed{\ \text{量子栏的输入从"测量诠释"缩窄为"}\textbf{第一人称读法}\text{"}。\ }
+\ \text{量子栏的输入从"测量诠释"缩窄为"}\textbf{第一人称读法}\text{"}。\ 
 $$
 
 **量子栏最终状态**：

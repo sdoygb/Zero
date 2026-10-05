@@ -6,12 +6,12 @@
 **核验**：[`R16_check.py`](R16_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{归约树}\textbf{不收敛于 L1}：\text{已证子命题在增加，但开放具名簇稳定在 }8。\\
 &\text{其中“哪一个”}(5)>\text{分析型}(2)+\text{常数型}(1)\ \Longrightarrow\ \text{瓶颈是 Z0③。}\\
 &\text{结论：回 Zero 加“闭合循环序”基础定理（}Z\text{-E*），}\textbf{不加权重}。
-\end{aligned}}
+\end{aligned}
 $$
 
 > **一句话**：R12→R15 一路下来，**不是越推越少，而是越分越细**；能证的都证了，剩下的几乎全是“选哪一个”。这就是该回头补底座的信号。
@@ -93,7 +93,7 @@ $$
 
 **建议**（按序）：
 
-1. **回 Zero 加一条基础定理 `Z-E*`**：把 [`R15`](R15_zcar_double_cover_and_zstress_scale.md) 的“闭合 ⇒ 循环序 ⇒ $\mathbb Z_L$ 旋转 ⇒ 双覆盖 ⇒ $\mathbb Z_2$ 分级”从副产品升级为具名定理（见 [`Z14`](Z14_closure_cyclic_order_base_theorem.md)）。
+1. **回 Zero 加一条基础定理 `Z-E*`**：把 [`R15`](R15_zcar_double_cover_and_zstress_scale.md) 的“闭合 ⇒ 循环序 ⇒ $\mathbb Z\_L$ 旋转 ⇒ 双覆盖 ⇒ $\mathbb Z\_2$ 分级”从副产品升级为具名定理（见 [`Z14`](Z14_closure_cyclic_order_base_theorem.md)）。
 2. **加的不是权重**：Z13 已证加概率/权重会破坏 Z0③ 与“全分支＋整数重数”的最小性论证；`Z-E*` 只用闭合的**拓扑**（循环序），不引入任何偏好。
 3. **加完再回来**：`Z-CAR` 的物理读出现已分成 `Z-READ`／`Z-UNIF` 选择问题与已条件的 Jordan–Wigner 构造；下一步应攻这两种读出桥能否由更弱的物理原则唯一选出，同时收自旋结构、循环切口、单费米点／交错耦合与 `Z-STRESS` 的 $\pi^{2}/3$，然后才谈 `Z-CONF`。
 
@@ -106,13 +106,13 @@ $$
 R17 对本文的建议作了一次方向修正：
 
 1. `Z14`–`Z16` 属于 `Z-CAR` 上游，不构成 L1 的临界路径；
-2. 继续下钻 `Z-UNIF`、自旋结构与循环切口不改变 $K_B\to2\pi B_B$；
+2. 继续下钻 `Z-UNIF`、自旋结构与循环切口不改变 $K\_B\to2\pi B\_B$；
 3. 主线改为 **L5 的 go/no-go**，因为 L5 是 Jacobson 2016 固定体积首阶平衡的上游门槛；
 4. 自由费米子路线只保留为有限的 `Z-CORE + Z-TAIL` 支线，且不得冒充四维 L1。
 
 因此本文 §5 第 3 条中“继续攻 `Z-READ`／`Z-UNIF` 的物理桥”不再是主线；该分支冻结为具名输入。
 
-**`R18` 追加**：L5 的 go/no-go 已被收成“低维通道维数对归一化约束数”的双因子判据；`Z-STRESS` 的 $m\le2$ 条约束在 $\dim V_{\rm light}\ge3$ 时不足。因此“继续攻 `Z-READ`／`Z-UNIF`”同样不适用于 L5 主线：下一步是 1+1D 枚举 $V_{\rm light}$，而不是新增表示层。
+**`R18` 追加**：L5 的 go/no-go 已被收成“低维通道维数对归一化约束数”的双因子判据；`Z-STRESS` 的 $m\le2$ 条约束在 $\dim V\_{\rm light}\ge3$ 时不足。因此“继续攻 `Z-READ`／`Z-UNIF`”同样不适用于 L5 主线：下一步是 1+1D 枚举 $V\_{\rm light}$，而不是新增表示层。
 
 ---
 

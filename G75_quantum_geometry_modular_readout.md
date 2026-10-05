@@ -5,7 +5,7 @@
 **核验**：[`G75_check.py`](G75_check.py) —— **独立实断言 22 / 结论行 0 / 不符 0**，退出码 `0`（0.9 秒）
 
 $$
-\boxed{\ \text{几何}=\text{态的模读出};\qquad \text{面积律由}\textbf{宇称结构}\text{打开};\qquad G\ \text{是}\textbf{单位}。\ }
+\ \text{几何}=\text{态的模读出};\qquad \text{面积律由}\textbf{宇称结构}\text{打开};\qquad G\ \text{是}\textbf{单位}。\ 
 $$
 
 ---
@@ -15,9 +15,9 @@ $$
 | 出处 | 卡点（原文） |
 |:--|:--|
 | **`D129`** 面积律支持不可导性 | "面积律**必须额外选择状态类与边界几何**……**不否定面积律，只否定它从当前支持结构自动出现**" |
-| **`D152`** 面积系数与 $G$ | $I=\kappa I_1A_{\rm supp}$、$A_{\rm supp}=c\,\mathrm{Area}$、$S=\mathrm{Area}/(4G)$ ⟹ $G=1/(4\kappa cI_1)$，**"这是条件识别，不是导出：三个输入未定，$G$ 就不定"** |
+| **`D152`** 面积系数与 $G$ | $I=\kappa I\_1A\_{\rm supp}$、$A\_{\rm supp}=c\,\text{Area}$、$S=\text{Area}/(4G)$ ⟹ $G=1/(4\kappa cI\_1)$，**"这是条件识别，不是导出：三个输入未定，$G$ 就不定"** |
 | **`D81`** 视界热力学 | **条件于固定背景**（Schwarzschild ＋ 欧氏周期 ＋ GHY），"不是非微扰量子引力熵的构造" |
-| **`Q857`** 引力量子化的卡点 | **判死**：谱作用量 $a_4$ 的比值普适为 $(5R^2-2\mathrm{Ric}^2+2\mathrm{Riem}^2)$，而 Gauss–Bonnet 需要 $(1,-4,1)$，**不可能相消**；"UV 完备化没有工具" |
+| **`Q857`** 引力量子化的卡点 | **判死**：谱作用量 $a\_4$ 的比值普适为 $(5R^2-2\text{Ric}^2+2\text{Riem}^2)$，而 Gauss–Bonnet 需要 $(1,-4,1)$，**不可能相消**；"UV 完备化没有工具" |
 
 **我们的三个不对称优势**：
 
@@ -31,9 +31,9 @@ $$
 
 ## §1 核心：**模 Hamiltonian = 度规算子**
 
-[`G29`](G29_probability_as_derived_not_postulated.md) 给推前态 $\omega$、[`G40`](G40_metric_from_closed_walk_counting.md)／[`G46`](G46_k_is_the_lifetime.md) 给度规权 $W$ ⟹ 图 Laplacian $L_W$。
+[`G29`](G29_probability_as_derived_not_postulated.md) 给推前态 $\omega$、[`G40`](G40_metric_from_closed_walk_counting.md)／[`G46`](G46_k_is_the_lifetime.md) 给度规权 $W$ ⟹ 图 Laplacian $L\_W$。
 
-取 Gibbs 态 $\rho=e^{-\beta L_W}/Z$，则
+取 Gibbs 态 $\rho=e^{-\beta L\_W}/Z$，则
 
 $$
 K=-\log\rho=\beta L_W+\text{const}\cdot I
@@ -46,7 +46,7 @@ $$
 | $\beta=5.0$ | 偏差 $\mathbf{1.3\times10^{-14}}$ |
 
 $$
-\boxed{\ \text{模 Hamiltonian 与度规算子}\textbf{是同一个算子} \Longrightarrow \textbf{几何}=\text{态的模读出}。\ }
+\ \text{模 Hamiltonian 与度规算子}\textbf{是同一个算子} \Longrightarrow \textbf{几何}=\text{态的模读出}。\ 
 $$
 
 **而这与 [`G7`](G7_one_operator_and_the_dissipation_obstruction.md) 已经给的一条接上**：那里证过"几何的能函 = 物质的梯度流生成元"。于是我们有**三重同一**：
@@ -89,7 +89,7 @@ $$
 
 ## §3 **正面结果**：宇称结构打开 gap ⟹ 面积律
 
-关键：**加"均匀质量"没用**（只平移能谱、不改关联矩阵）；要打开 gap 必须用**交错（破坏手征对称）**的项——而**零和结构里正好有**：[`G33`](G33_macro_master_equation_and_mz_kernel.md) 的**年龄奇偶律** $E_{t+1}=N-E_t$。
+关键：**加"均匀质量"没用**（只平移能谱、不改关联矩阵）；要打开 gap 必须用**交错（破坏手征对称）**的项——而**零和结构里正好有**：[`G33`](G33_macro_master_equation_and_mz_kernel.md) 的**年龄奇偶律** $E\_{t+1}=N-E\_t$。
 
 | 交错质量 $m$ | gap | $S(2)$ | $S(8)$ | $S(32)$ | $S(32)-S(2)$ |
 |--:|--:|--:|--:|--:|--:|
@@ -100,7 +100,7 @@ $$
 | **2.0** | $2.0$ | $0.3434$ | $0.3466$ | $0.3466$ | $\mathbf{+0.003}$（**面积律**） |
 
 $$
-\boxed{\ \textbf{宇称结构打开 gap} \Longrightarrow S\ \text{饱和（面积律）};\qquad \text{且单调恢复}。\ }
+\ \textbf{宇称结构打开 gap} \Longrightarrow S\ \text{饱和（面积律）};\qquad \text{且单调恢复}。\ 
 $$
 
 ### 这**回答了 `D129` 的卡点**
@@ -108,7 +108,7 @@ $$
 | `D129` 说需要额外选的 | 我们的原生对应物 |
 |:--|:--|
 | **状态类** | [`G29`](G29_probability_as_derived_not_postulated.md) 的计数推前态 |
-| **打开面积律的 gap** | **[`G33`](G33_macro_master_equation_and_mz_kernel.md) 的年龄奇偶 $\mathbb Z_2$** |
+| **打开面积律的 gap** | **[`G33`](G33_macro_master_equation_and_mz_kernel.md) 的年龄奇偶 $\mathbb Z\_2$** |
 | 边界几何 | [`G40`](G40_metric_from_closed_walk_counting.md)／[`G46`](G46_k_is_the_lifetime.md) 的闭环计数度规 |
 
 $$
@@ -130,7 +130,7 @@ Jacobson 式核算：$S=\eta A$、$T=1/(2\pi)$（[`G62`](G62_quantum_sector_from
 | $3.0$ | $1.000000$ | $0.1592$ | $1.4324$ |
 
 $$
-\boxed{\ \text{面积系数与 }G\ \text{承载}\textbf{同一个单位} \Longrightarrow \text{D152 的"三输入未定"}\textbf{就是这个单位自由度}（\text{G57}）。\ }
+\ \text{面积系数与 }G\ \text{承载}\textbf{同一个单位} \Longrightarrow \text{D152 的"三输入未定"}\textbf{就是这个单位自由度}（\text{G57}）。\ 
 $$
 
 ---
@@ -139,7 +139,7 @@ $$
 
 | 量 | 值 |
 |:--|:--|
-| 谱作用量 $a_4$ 的比值 $(R^2,\mathrm{Ric}^2,\mathrm{Riem}^2)$ | $(5,-2,2)$ |
+| 谱作用量 $a\_4$ 的比值 $(R^2,\text{Ric}^2,\text{Riem}^2)$ | $(5,-2,2)$ |
 | Gauss–Bonnet 需要 | $(1,-4,1)$ |
 | 成比例？ | **否** ✅（`Q857` 的判死是对的） |
 
@@ -152,11 +152,11 @@ $$
 ## §6 判定：零和宇宙的"量子几何"是什么
 
 $$
-\boxed{
+
 \begin{aligned}
 &\textbf{不是}\ \text{"把度规量子化"};\qquad \textbf{而是}\ \text{几何}=\text{态的模读出};\\
 &\text{面积律}\ \text{由}\ \textbf{宇称}\ \text{打开};\qquad G\ \text{是}\ \textbf{单位}\ (\text{不可导出，}G57)。
-\end{aligned}}
+\end{aligned}
 $$
 
 | 旧体系的卡点 | 本文的处置 |
@@ -173,7 +173,7 @@ $$
 | 项 | 说明 |
 |:--|:--|
 | **模型是最小的** | 自由费米子链，粘合权 = 闭环计数度规权；**不是**真实量子引力模型 |
-| **交错质量是"识别"** | 我把宇称 $\mathbb Z_2$ 读成交错质量；**未**从 A5 导出这个耦合的形式 |
+| **交错质量是"识别"** | 我把宇称 $\mathbb Z\_2$ 读成交错质量；**未**从 A5 导出这个耦合的形式 |
 | 一维 | 面积律在 **1D** 是"$S$ 饱和"；**高维**的面积律（$S\propto$ 边界面积）**未做** |
 | $T=1/(2\pi)$ | 模流温度的这个值来自把模参数读成几何角（**识别**，[`G72`](G72_kappa1_from_the_ledger.md) 同类） |
 | `D81` 那条 | 视界热力学**未做**（需要黑洞解，我们没有） |

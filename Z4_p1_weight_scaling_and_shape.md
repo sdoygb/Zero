@@ -6,7 +6,7 @@
 **核验**：[`Z4_check.py`](Z4_check.py) —— **独立实断言 33 / 结论行 0 / 不符 0**，退出码 `0`
 
 $$
-\boxed{\ \text{I2a}\ \textbf{没有被 no-go 挡住};\ \text{它缺的是}\textbf{一个标度}＋\textbf{一个维数}（都已登记）＋\textbf{一个新问题}。\ }
+\ \text{I2a}\ \textbf{没有被 no-go 挡住};\ \text{它缺的是}\textbf{一个标度}＋\textbf{一个维数}（都已登记）＋\textbf{一个新问题}。\ 
 $$
 
 ---
@@ -17,9 +17,9 @@ $$
 
 **结论三句**
 
-1. **存在性**：对**格点型细化**，$\lvert V_n\rvert=\Theta(\mathrm{diam}_n^{d})$（固定 $d$）⇒ BFT 型条件成立 ⇒ **有限维 GH 极限存在**。
+1. **存在性**：对**格点型细化**，$\lvert V\_n\rvert=\Theta(\text{diam}\_n^{d})$（固定 $d$）⇒ BFT 型条件成立 ⇒ **有限维 GH 极限存在**。
    **但 $d$ 不由理论选定**（$D=4$ no-go，[`G89`](G89_dimension_no_go_and_the_balance_condition.md)）⇒ **维数是输入**。
-2. **标度**：G40 的权重 $w\sim a^{d}$，而 G2 的收敛律要求 $K_e\sim a^{d-2}$ ⇒ **差 $a^{2}$**。
+2. **标度**：G40 的权重 $w\sim a^{d}$，而 G2 的收敛律要求 $K\_e\sim a^{d-2}$ ⇒ **差 $a^{2}$**。
    补这个因子需要**一个细化相关的归一化 ＝ 一个长度标度** ⇒ **正是已登记输入**（`I2b`／[`G44`](G44_metric_needs_a_scale_not_an_origin.md) 的"度规需要一个标度"）。
 3. **形状**：权重的剖面**不是趋于均匀**，而是收敛到一个**确定的共形剖面**（$=$ 域的基态剖面）。
    这是本轮**新提出**的问题：该剖面是物理的，还是边界的假象？
@@ -28,14 +28,14 @@ $$
 
 ## §1 预备：G40 权重的闭式（本文导出）
 
-长度 $k$ 的闭合游走对边 $(i,j)$ 的穿越数 $N^{(k)}_{ij}=k\,A_{ij}(A^{k-1})_{ij}$（[`Z2`](Z2_zero_to_gr_direct_route.md) §4.1 暴力核验）。
-按 Perron–Frobenius，$A^{k-1}\approx\lambda^{k-1}\phi\phi^{\!\top}$（$\lVert\phi\rVert_2=1$），故
+长度 $k$ 的闭合游走对边 $(i,j)$ 的穿越数 $N^{(k)}\_{ij}=k\,A\_{ij}(A^{k-1})\_{ij}$（[`Z2`](Z2_zero_to_gr_direct_route.md) §4.1 暴力核验）。
+按 Perron–Frobenius，$A^{k-1}\approx\lambda^{k-1}\phi\phi^{\!\top}$（$\lVert\phi\rVert\_2=1$），故
 
 $$
 \sum_{ij}N^{(k)}_{ij}=k\lambda^{k-1}\phi^{\!\top}A\phi=k\lambda^{k},
 \qquad
 \Longrightarrow\quad
-\boxed{\ w_{ij}=\frac{A_{ij}\,\phi_i\phi_j}{\lambda}\ }
+\ w_{ij}=\frac{A_{ij}\,\phi_i\phi_j}{\lambda}\ 
 $$
 
 即**归一化穿越数有闭式**：邻接 × 两端 Perron 分量 ÷ Perron 根。
@@ -46,7 +46,7 @@ $$
 
 固定物理尺寸、格距 $a\to a/2$，测中心权重的幂次 $\alpha$（$w\sim a^{\alpha}$）：
 
-| $d$ | $N$ | $\lambda$ | $w_{\rm center}$ | $\alpha$（半步） | **G2 要求 $d-2$** |
+| $d$ | $N$ | $\lambda$ | $w\_{\rm center}$ | $\alpha$（半步） | **G2 要求 $d-2$** |
 |--:|--:|--:|--:|--:|--:|
 | 1 | 16 | 1.96595 | $5.933\times10^{-2}$ | — | $-1$ |
 | 1 | 32 | 1.99094 | $3.037\times10^{-2}$ | 0.966 | $-1$ |
@@ -61,7 +61,7 @@ $$
 \frac{w^{G40}}{K_e^{G2,\rm req}}\sim\frac{a^{d}}{a^{d-2}}=a^{2}.
 $$
 
-**后果**：G2 的离散能量 $E_N\approx K a^{2-d}\int\lvert\nabla f\rvert^{2}$，代入 $K=w\sim a^{d}$ 得
+**后果**：G2 的离散能量 $E\_N\approx K a^{2-d}\int\lvert\nabla f\rvert^{2}$，代入 $K=w\sim a^{d}$ 得
 
 $$
 E_N\ \sim\ a^{d}\cdot a^{2-d}=a^{2}\ \xrightarrow[a\to0]{}\ 0 .
@@ -71,7 +71,7 @@ $$
 补救只有一条：把权重乘以 $a^{-2}$（等价于选一个**长度标度**）。
 
 $$
-\boxed{\ \textbf{I2a 的"标度"这一半}\ =\ \textbf{已登记输入}\ (\text{I2b／G44 的"度规需要一个标度"})。\ }
+\ \textbf{I2a 的"标度"这一半}\ =\ \textbf{已登记输入}\ (\text{I2b／G44 的"度规需要一个标度"})。\ 
 $$
 
 ---
@@ -82,13 +82,13 @@ $$
 
 | $d=1$，$n$ | 16 | 32 | 64 | 128 | 256 |
 |:--|--:|--:|--:|--:|--:|
-| 体内 $\mathrm{std}(\log w)$ | 0.1694 | 0.1873 | 0.1954 | 0.1992 | **0.2011** |
-| 全域 $\mathrm{std}(\log w)$ | 1.0974 | 1.3181 | 1.4817 | 1.5975 | 1.6762 |
+| 体内 $\text{std}(\log w)$ | 0.1694 | 0.1873 | 0.1954 | 0.1992 | **0.2011** |
+| 全域 $\text{std}(\log w)$ | 1.0974 | 1.3181 | 1.4817 | 1.5975 | 1.6762 |
 
 | $d=2$，$n$ | 8 | 16 | 32 | 64 |
 |:--|--:|--:|--:|--:|
-| 体内 $\mathrm{std}(\log w)$ | 0.1818 | 0.2395 | 0.2649 | **0.2764** |
-| 全域 $\mathrm{std}(\log w)$ | 1.1548 | 1.5520 | 1.8640 | 2.0955 |
+| 体内 $\text{std}(\log w)$ | 0.1818 | 0.2395 | 0.2649 | **0.2764** |
+| 全域 $\text{std}(\log w)$ | 1.1548 | 1.5520 | 1.8640 | 2.0955 |
 
 **体内标准差收敛到一个正常数（1D $\to0.20$，2D $\to0.28$），不衰减**；
 **全域标准差发散**（因为边界层厚度固定而域变大）。
@@ -110,7 +110,7 @@ $$
 | **带边界补片**（非顶点传递） | 非均匀（基态剖面） | **有剖面** | 剖面**依赖域与边界条件** ⇒ 度规**非普适** |
 
 $$
-\boxed{\ \text{两条路都留下一个问题}:\ \text{要么均匀（G2 障碍），要么非均匀但依赖域}。\ }
+\ \text{两条路都留下一个问题}:\ \text{要么均匀（G2 障碍），要么非均匀但依赖域}。\ 
 $$
 
 ---
@@ -122,10 +122,10 @@ $$
 | **长度标度**（$a^{-2}$ 归一化） | **已登记输入** | `I2b`／[`G44`](G44_metric_needs_a_scale_not_an_origin.md)（"度规需要一个标度而不是原点"） |
 | **维数 $d$** | **已登记 no-go** | [`G89`](G89_dimension_no_go_and_the_balance_condition.md)（Z0 条款不约束 $D$；$D=4$ 是【条件】） |
 | **共形剖面的地位** | **新问题** | 本轮提出（§3.1）——是物理的，还是边界假象？ |
-| 二阶性（(O)） | 分析问题 | 在标度补齐后，$E_N$ 有限且非退化 ⇒ 二阶（Einstein–Hilbert 型）是**自然的**，但未证 |
+| 二阶性（(O)） | 分析问题 | 在标度补齐后，$E\_N$ 有限且非退化 ⇒ 二阶（Einstein–Hilbert 型）是**自然的**，但未证 |
 
 $$
-\boxed{\ \text{I2a}\ \textbf{不是被 no-go 挡住，而是}\textbf{conditional on 两个已登记输入}＋\textbf{一个新问题}。\ }
+\ \text{I2a}\ \textbf{不是被 no-go 挡住，而是}\textbf{conditional on 两个已登记输入}＋\textbf{一个新问题}。\ 
 $$
 
 这与 [`G18`](G18_attackability_of_the_continuum_limit.md) 的既有判定**一致**：

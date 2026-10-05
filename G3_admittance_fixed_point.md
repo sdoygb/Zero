@@ -6,9 +6,9 @@
 **等级标签：**【导出】/【数值证据】/【未建立】。
 
 $$
-\boxed{
+
 \text{本轮结果：不动点有显式解（均匀权重），且 I2b 由它导出，不再是独立输入。}
-}
+
 $$
 
 ---
@@ -21,7 +21,7 @@ $$
 K_e=\kappa\,\bigl(l_e[K]\bigr)^{\,d-2},
 $$
 
-其中 $l_e$ 是权重 $K$ 通过装配 $Q=\omega^{-1}\sum_eK_ee_e\otimes e_e$、反解 $h=(\det Q)^{1/(d-2)}Q^{-1}$、取长度 $l_e=\sqrt{e_e^{\mathsf T}he_e}$ 得到的**涌现**边长。本文求解这条方程。
+其中 $l\_e$ 是权重 $K$ 通过装配 $Q=\omega^{-1}\sum\_eK\_ee\_e\otimes e\_e$、反解 $h=(\det Q)^{1/(d-2)}Q^{-1}$、取长度 $l\_e=\sqrt{e\_e^{\mathsf T}he\_e}$ 得到的**涌现**边长。本文求解这条方程。
 
 记
 
@@ -41,20 +41,20 @@ $$
 \Phi(tK)=t\,\Phi(K),\qquad h(tK)=t^{\frac{2}{d-2}}h(K).
 $$
 
-**证明.** $A=\sum_eK_ee_e\otimes e_e\to tA$，故 $Q\to tQ$，$\det Q\to t^d\det Q$，于是
+**证明.** $A=\sum\_eK\_ee\_e\otimes e\_e\to tA$，故 $Q\to tQ$，$\det Q\to t^d\det Q$，于是
 
 $$
 h=(\det Q)^{\frac1{d-2}}Q^{-1}\;\longrightarrow\;t^{\frac{d}{d-2}}\,t^{-1}h=t^{\frac{2}{d-2}}h .
 $$
 
-于是 $l_e^2=e_e^{\mathsf T}he_e\to t^{\frac{2}{d-2}}l_e^2$，故 $l_e^{d-2}\to t\,l_e^{d-2}$。$\square$
+于是 $l\_e^2=e\_e^{\mathsf T}he\_e\to t^{\frac{2}{d-2}}l\_e^2$，故 $l\_e^{d-2}\to t\,l\_e^{d-2}$。$\square$
 
 **推论 12.1.** 不动点方程只确定 $K$ 的**射线**；整体尺度由 $\kappa$ 承担，而 $\kappa$ 携带长度单位。这与 Z0 条款不含绝对长度一致：**方程不能预言绝对导纳，只能预言其形状。**
 
 **负结果 12.2【导出】.** 齐次度 $1$ 对**每一个** $d$ 都成立（核验 $d=3,4,5,6$ 全部为 $1.0000000000$）。因此
 
 $$
-\boxed{\text{齐次度不能用来选择维数。}}
+\text{齐次度不能用来选择维数。}
 $$
 
 这条负结果值得单独登记，因为它极容易被误用。具体地说：若误用 $d=3$ 专用的反解公式 $h=(\det Q)Q^{-1}$，会算出齐次度 $\frac{(d-1)(d-2)}2$，从而错误地"导出" $d=3$。正确的通用反解是 $h=(\det Q)^{1/(d-2)}Q^{-1}$，它给出齐次度 $1$，不选择任何维数。
@@ -63,7 +63,7 @@ $$
 
 ## §2 引理 13（显式解：均匀权重）【导出】
 
-**陈述.** 对**任意** $d$ 维单纯形，取均匀权重 $K_e\equiv c>0$。则
+**陈述.** 对**任意** $d$ 维单纯形，取均匀权重 $K\_e\equiv c>0$。则
 
 $$
 l_e\ \text{与边无关},\qquad \Phi(K)\propto K ,
@@ -73,21 +73,21 @@ $$
 
 **证明.**
 
-**(a) 顶点协方差恒等式.** 设顶点 $x_0,\dots,x_d$，$\bar x=\frac1{d+1}\sum_ax_a$，$G=\sum_a(x_a-\bar x)\otimes(x_a-\bar x)$。则
+**(a) 顶点协方差恒等式.** 设顶点 $x\_0,\dots,x\_d$，$\bar x=\frac1{d+1}\sum\_ax\_a$，$G=\sum\_a(x\_a-\bar x)\otimes(x\_a-\bar x)$。则
 
 $$
 \sum_{a<b}(x_b-x_a)\otimes(x_b-x_a)=(d+1)G .
 $$
 
-展开左手边：$\sum_{a\ne b}x_a\otimes x_a-\sum_{a\ne b}x_a\otimes x_b=d\sum_ax_a\otimes x_a-(S\otimes S-\sum_ax_a\otimes x_a)$，其中 $S=\sum_ax_a$；即 $(d+1)\sum_ax_a\otimes x_a-S\otimes S=(d+1)G$。$\checkmark$
+展开左手边：$\sum\_{a\ne b}x\_a\otimes x\_a-\sum\_{a\ne b}x\_a\otimes x\_b=d\sum\_ax\_a\otimes x\_a-(S\otimes S-\sum\_ax\_a\otimes x\_a)$，其中 $S=\sum\_ax\_a$；即 $(d+1)\sum\_ax\_a\otimes x\_a-S\otimes S=(d+1)G$。$\checkmark$
 
-**(b) 白化后的正则单纯形.** 令 $\hat y_a=G^{-1/2}(x_a-\bar x)$。由 $\sum_ay_a=0$ 与 $\sum_ay_a\otimes y_a=G$ 得
+**(b) 白化后的正则单纯形.** 令 $\hat y\_a=G^{-1/2}(x\_a-\bar x)$。由 $\sum\_ay\_a=0$ 与 $\sum\_ay\_a\otimes y\_a=G$ 得
 
 $$
 \sum_a\hat y_a=0,\qquad \sum_a\hat y_a\otimes\hat y_a=I .
 $$
 
-取迹得 $\sum_a|\hat y_a|^2=d$；又 $0=|\sum_a\hat y_a|^2=\sum_a|\hat y_a|^2+2\sum_{a<b}\hat y_a\!\cdot\!\hat y_b$ 给 $\sum_{a<b}\hat y_a\!\cdot\!\hat y_b=-\frac d2$。设对角为 $p$、非对角为 $q$（下文证明它们确实各自为常量），则 $(d+1)p=d$ 与 $p+dq=0$ 给
+取迹得 $\sum\_a|\hat y\_a|^2=d$；又 $0=|\sum\_a\hat y\_a|^2=\sum\_a|\hat y\_a|^2+2\sum\_{a<b}\hat y\_a\!\cdot\!\hat y\_b$ 给 $\sum\_{a<b}\hat y\_a\!\cdot\!\hat y\_b=-\frac d2$。设对角为 $p$、非对角为 $q$（下文证明它们确实各自为常量），则 $(d+1)p=d$ 与 $p+dq=0$ 给
 
 $$
 p=\frac d{d+1},\qquad q=-\frac1{d+1}.
@@ -101,7 +101,7 @@ $$
 
 **与边无关**。（$p,q$ 各自为常量这一点由核验在所有测试的 $d$ 与随机单元上以 $\le3\times10^{-13}$ 的精度确认。）
 
-**(c) 均匀权重.** 均匀 $K\equiv c$ 给 $A=c\sum_ee_e\otimes e_e=c(d+1)G\propto G$，故 $Q\propto G/\omega$，$h\propto G^{-1}$，从而
+**(c) 均匀权重.** 均匀 $K\equiv c$ 给 $A=c\sum\_ee\_e\otimes e\_e=c(d+1)G\propto G$，故 $Q\propto G/\omega$，$h\propto G^{-1}$，从而
 
 $$
 l_e^2\propto(x_b-x_a)^{\mathsf T}G^{-1}(x_b-x_a)=2=\text{常量}.
@@ -109,18 +109,18 @@ $$
 
 于是 $\Phi(K)$ 是均匀向量，$\Phi(K)\propto K$。$\square$
 
-**核验.** 6 个随机单元 $\times$ $d=3,4,5$ 上 $\Phi(\text{uniform})\propto\text{uniform}$，最大相对偏差 $5.2\times10^{-13}$；正四面体 $d=3$ 的解析值 $l_e=\sqrt{288}=16.97056275$ 精确复现。
+**核验.** 6 个随机单元 $\times$ $d=3,4,5$ 上 $\Phi(\text{uniform})\propto\text{uniform}$，最大相对偏差 $5.2\times10^{-13}$；正四面体 $d=3$ 的解析值 $l\_e=\sqrt{288}=16.97056275$ 精确复现。
 
 **推论 13.1（I2b 被导出）.**
 
 $$
-\boxed{
+
 K_e=\kappa\,l_e^{\,d-2}
 \quad\text{且}\quad
 l_e\approx a_e
 \quad\Longrightarrow\quad
 K_e\approx\kappa\,a_e^{\,d-2},
-}
+
 $$
 
 而这正是 G2 引理 9 独立要求的尺度律。因此 **I2b 不再是独立输入：它由自洽性导出。** 这一步闭合了 G2 §4 留下的循环。
@@ -128,16 +128,16 @@ $$
 **推论 13.2（单元级各向异性被消掉）.** 不动点把每个单元变成等边的。因此
 
 $$
-\boxed{
+
 \text{连续几何的各向异性只能来自单元之间的胶合与全局结构，不能来自单个单元的形状。}
-}
+
 $$
 
 ---
 
 ## §3 存在性与稳定性
 
-**存在性【导出】.** 若 $K>0$ 且单元的边向量张成整个空间，则 $A>0$，$Q>0$，$h>0$，故每个 $l_e>0$，于是 $\Phi(K)>0$。结合引理 12 的齐次度 $1$，归一化映射 $\Psi:=\Phi/|\Phi|$ 把正单纯形映入自身。引理 13 进一步给出**显式**不动点（均匀射线），所以存在性不需要一般存在性定理。
+**存在性【导出】.** 若 $K>0$ 且单元的边向量张成整个空间，则 $A>0$，$Q>0$，$h>0$，故每个 $l\_e>0$，于是 $\Phi(K)>0$。结合引理 12 的齐次度 $1$，归一化映射 $\Psi:=\Phi/|\Phi|$ 把正单纯形映入自身。引理 13 进一步给出**显式**不动点（均匀射线），所以存在性不需要一般存在性定理。
 
 **唯一性【数值证据】.** 对 3 个随机单元（$d=3,3,4$）各取 24 个随机初值做归一化迭代：
 

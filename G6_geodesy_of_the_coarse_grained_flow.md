@@ -6,16 +6,16 @@
 **等级标签：**【导出】/【判定】。
 
 $$
-\boxed{
+
 \text{本轮判定 I3c：对尘埃为否；但 (C′) 因此把物质类别从尘埃改为"带场方程的物质"。}
-}
+
 $$
 
 ---
 
 ## §0 问题（I3c）
 
-G5 引理 21 证明：尘埃应力 $T_{ab}=\rho u_au_b$ 守恒 $\iff$ 同余测地。G5 遗留的问题（I3c）是：
+G5 引理 21 证明：尘埃应力 $T\_{ab}=\rho u\_au\_b$ 守恒 $\iff$ 同余测地。G5 遗留的问题（I3c）是：
 
 > 底层无偏好动力学的粗粒化流，是否测地？
 
@@ -34,13 +34,13 @@ $$
 即 **$L$ 就是 G1 引理 3 的图 Laplacian**。连续极限给
 
 $$
-\boxed{\ \partial_\tau\rho=D\,\Delta_h\rho\ }
+\ \partial_\tau\rho=D\,\Delta_h\rho\ 
 $$
 
 **热方程**，其守恒流是**扩散流**
 
 $$
-\boxed{\ j^a=(\rho,\,-D\nabla\rho),\qquad \nabla_aj^a=0\ }
+\ j^a=(\rho,\,-D\nabla\rho),\qquad \nabla_aj^a=0\ 
 $$
 
 **核验.**
@@ -50,7 +50,7 @@ $$
 - 热核满足热方程；$(\rho,J)$ 满足连续性方程；$J/\rho=x/(2\tau)$。
 
 $$
-\boxed{\text{底层的粗粒化物质不是尘埃，而是扩散（抛物型）。}}
+\text{底层的粗粒化物质不是尘埃，而是扩散（抛物型）。}
 $$
 
 ---
@@ -68,16 +68,16 @@ $$
 **流线是扩散标度 $x\propto\sqrt\tau$，不是匀速直线**，因此不是测地线。等价的精确说法：同余的**快度**为
 
 $$
-\eta=\operatorname{artanh}\frac{x}{2\tau},\qquad
+\eta=\text{artanh}\frac{x}{2\tau},\qquad
 u^a\partial_a\eta=-\frac{x}{4\tau^2}\bigl(1-\tfrac{x^2}{4\tau^2}\bigr)^{-3/2}\ne0 ,
 $$
 
-加速度 $a_b\ne0$。
+加速度 $a\_b\ne0$。
 
-**核验（sympy）.** $u^0=(1-s^2)^{-1/2}$、$u^1=s(1-s^2)^{-1/2}$（$s=x/2\tau$）；流线解为 $x=C_1\sqrt\tau$；$a_1\ne0$（样本点取值 $-0.078,\ -0.354,\ -0.032$）。
+**核验（sympy）.** $u^0=(1-s^2)^{-1/2}$、$u^1=s(1-s^2)^{-1/2}$（$s=x/2\tau$）；流线解为 $x=C\_1\sqrt\tau$；$a\_1\ne0$（样本点取值 $-0.078,\ -0.354,\ -0.032$）。
 
 $$
-\boxed{\text{扩散同余非测地。}}
+\text{扩散同余非测地。}
 $$
 
 ---
@@ -97,23 +97,23 @@ $$
 **推论 26.1.**
 
 $$
-\boxed{\text{不存在非平凡的定常、守恒、且测地的尘埃同余。}}
+\text{不存在非平凡的定常、守恒、且测地的尘埃同余。}
 $$
 
 结合 G5 引理 20、21：
 
 $$
-\boxed{\text{正则尘埃提升虽然良定义且满足 (C′)，但一般\emph{不守恒}。尘埃路线被排除。}}
+\text{正则尘埃提升虽然良定义且满足 (C′)，但一般**不守恒**。尘埃路线被排除。}
 $$
 
 ---
 
 ## §4 引理 27（标量场：守恒 ⟺ 场方程）【导出】
 
-对标量场 $\phi$，Hilbert 应力 $T^\phi_{ab}=\partial_a\phi\partial_b\phi-g_{ab}(\tfrac12X+V)$ 满足
+对标量场 $\phi$，Hilbert 应力 $T^\phi\_{ab}=\partial\_a\phi\partial\_b\phi-g\_{ab}(\tfrac12X+V)$ 满足
 
 $$
-\boxed{\ \nabla^aT^\phi_{ab}=\bigl(\Box\phi-V'(\phi)\bigr)\partial_b\phi\ }
+\ \nabla^aT^\phi_{ab}=\bigl(\Box\phi-V'(\phi)\bigr)\partial_b\phi\ 
 $$
 
 **核验（sympy，逐分量）.** 恒等式成立。
@@ -121,7 +121,7 @@ $$
 因此
 
 $$
-\boxed{\text{标量场 }T\text{ 守恒}\iff\text{场方程 }\Box\phi=V',\quad\text{与是否测地无关}.}
+\text{标量场 }T\text{ 守恒}\iff\text{场方程 }\Box\phi=V',\quad\text{与是否测地无关}.
 $$
 
 ---
@@ -133,21 +133,21 @@ $$
 | 量 | 值 |
 |:--|:--|
 | $\Box\phi$ | $0$（$\phi=\tau$ 是解） |
-| $X=g^{ab}\partial_a\phi\partial_b\phi$ | $-1/x^2<0$（时间型） |
-| $\nabla^aT^\phi_{ab}$ | $0$（守恒） |
-| 同余加速度 $a_b$ | $(0,\ 1/x)\ne0$（**非测地**） |
+| $X=g^{ab}\partial\_a\phi\partial\_b\phi$ | $-1/x^2<0$（时间型） |
+| $\nabla^aT^\phi\_{ab}$ | $0$（守恒） |
+| 同余加速度 $a\_b$ | $(0,\ 1/x)\ne0$（**非测地**） |
 
 **核验（sympy）.** 四项全部成立。
 
 **推论 28.1.**
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{守恒}\iff\text{场方程，而不是}\iff\text{测地};\\
 &\text{故 }(C')\text{ 选出的是"带场方程的物质"类别，而不是尘埃类别。}
 \end{aligned}
-}
+
 $$
 
 所以 I3c 的"否"是**一次选择，不是一条死路**：它排除了尘埃，保留了场类。
@@ -162,10 +162,10 @@ $$
 |:--|:--|
 | G1 引理 3 | 差分型能量 $E(f)=f^{\mathsf T}Lf$（空间几何种子） |
 | G2 引理 9 | 导纳尺度律的载体 |
-| G6 引理 24 | 粗粒化动力学 $\partial_\tau\rho=L\rho$（物质运动） |
+| G6 引理 24 | 粗粒化动力学 $\partial\_\tau\rho=L\rho$（物质运动） |
 
 $$
-\boxed{\text{能量泛函与物质动力学由同一个算子给出。}}
+\text{能量泛函与物质动力学由同一个算子给出。}
 $$
 
 这是一个结构性线索：**几何与物质不是两套独立结构，而是同一算子的两个读出。** 如果这条线索成立，Einstein 方程中"几何被物质源驱动"的耦合就不必手工引入。本文只登记这条线索，不声称它是定理。
@@ -186,7 +186,7 @@ $$
 **修正 3｜I3 的残余收窄.** I3 现在只剩一项：**场类里选哪一个场／哪一个作用量。** 这正是 G5 引理 22 登记的非唯一性所在（尘埃 $p=0$ 与刚性标量 $p=\rho$ 都"能守恒"），而现在尘埃这一支已经被测地性判定排除，只剩标量（及更一般的场）一支。
 
 $$
-\boxed{\text{I3 的残余：作用量类别的选择器（标量 }V=0\text{ 给 }p=\rho\text{）。}}
+\text{I3 的残余：作用量类别的选择器（标量 }V=0\text{ 给 }p=\rho\text{）。}
 $$
 
 ---
@@ -212,4 +212,4 @@ $$
 **可证伪点：** 若场类中不存在满足 $p=\rho$ 之外的、且能给出观测物态的作用量，则源侧只剩刚性标量，Einstein 方程只能配 $p=\rho$ 的源——这将是一个可检验的强预言。
 
 **后续状态｜`G7` 把 §6 的线索追到结论：耦合是结构性的，但耗散迫使源换支。**  
-[`G7_one_operator_and_the_dissipation_obstruction.md`](G7_one_operator_and_the_dissipation_obstruction.md) 证明：宏观动力学 $\partial_\tau\rho=-L\rho$ 就是本节 §6 那个 $L$ 的**梯度流**，$F=\tfrac12\rho^{\mathsf T}L\rho$、$dF/d\tau=-|L\rho|^2$；耗散完全来自粗粒化（微观双射、宏观 $P^{\mathsf T}$ 奇异）。于是本文 §6 的线索成立。但它同时制造障碍：$\nabla^aG_{ab}=0$ 强制耗散型宏观源不满足 $\nabla^aT_{ab}=0$。**故 §6 的"能量与动力学同一算子"必须配一条选择规则：源只能取精确守恒的那一支**——微观整数电流，或"体 + 汇"整体。本文引理 24 的扩散流因此不能直接做源。核验：`G7_check.py` 通过 21 / 不符 0，退出码 0。
+[`G7_one_operator_and_the_dissipation_obstruction.md`](G7_one_operator_and_the_dissipation_obstruction.md) 证明：宏观动力学 $\partial\_\tau\rho=-L\rho$ 就是本节 §6 那个 $L$ 的**梯度流**，$F=\tfrac12\rho^{\mathsf T}L\rho$、$dF/d\tau=-|L\rho|^2$；耗散完全来自粗粒化（微观双射、宏观 $P^{\mathsf T}$ 奇异）。于是本文 §6 的线索成立。但它同时制造障碍：$\nabla^aG\_{ab}=0$ 强制耗散型宏观源不满足 $\nabla^aT\_{ab}=0$。**故 §6 的"能量与动力学同一算子"必须配一条选择规则：源只能取精确守恒的那一支**——微观整数电流，或"体 + 汇"整体。本文引理 24 的扩散流因此不能直接做源。核验：`G7_check.py` 通过 21 / 不符 0，退出码 0。

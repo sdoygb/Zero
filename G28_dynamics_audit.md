@@ -5,10 +5,10 @@
 **核验**：[`G28_check.py`](G28_check.py) —— **独立实断言 40 / 结论行 0 / 不符 0**，退出码 `0`
 
 $$
-\boxed{\begin{aligned}
+\begin{aligned}
 &\text{微观动力学：}\textbf{建起来了}\text{；宏观：}\textbf{只到扩散型}\text{；}\\
 &\text{统计/量子：}\textbf{没有}\text{；几何动力学：}\textbf{有否定证据}\text{。}
-\end{aligned}}
+\end{aligned}
 $$
 
 ---
@@ -46,7 +46,7 @@ $$
 
 **证据**：
 
-- `generative_selection` 的更新式：$N(t+1)=N(t)+\operatorname{Poisson}\big(\text{birth\_rate}\cdot N(t)\big)$ ← **显式 Poisson**
+- `generative_selection` 的更新式：$N(t+1)=N(t)+\text{Poisson}\big(\text{birth\_rate}\cdot N(t)\big)$ ← **显式 Poisson**
 - 而且**"活"必须靠概率**：
 
 | 场景 | 存活率 | 自持率 |
@@ -57,10 +57,10 @@ $$
 | **`living`（复制、平衡）** | **1.00** | 1.00 |
 
 $$
-\boxed{\text{Z0③（不设概率；A3 历史命名，}\textbf{L0}\text{）与「再生／选择」动力学（}\textbf{L2／$\mathcal R$}\text{）}\textbf{不相容}。}
+\text{Z0③（不设概率；A3 历史命名，}\textbf{L0}\text{）与「再生／选择」动力学（}\textbf{L2／\mathcal R}\text{）}\textbf{不相容}。
 $$
 
-**这是 [`G27`](G27_purification_attempt.md) 那条张力的\emph{第二个面}**：统计扇区（模流，**L3**）与再生扇区（**L2**）**都**需要概率，而 Z0③ 禁止的是 **L0** 的概率 —— **层不同，故不是同层冲突**（`R50` 会诊 #1）。
+**这是 [`G27`](G27_purification_attempt.md) 那条张力的**第二个面****：统计扇区（模流，**L3**）与再生扇区（**L2**）**都**需要概率，而 Z0③ 禁止的是 **L0** 的概率 —— **层不同，故不是同层冲突**（`R50` 会诊 #1）。
 
 ---
 
@@ -84,7 +84,7 @@ next_gap = "a zero-sum closure graph alone does not fix the number of
 **不收敛到 4。**
 
 $$
-\boxed{\text{几何探针}\textbf{独立确认}\text{了我在 }G8/G11\text{ 的结论：零和结构本身不选定维数。}}
+\text{几何探针}\textbf{独立确认}\text{了我在 }G8/G11\text{ 的结论：零和结构本身不选定维数。}
 $$
 
 ---
@@ -99,7 +99,7 @@ $$
 **平均度 $3.6\to9.5$（×2.6），节点数 ×270。**
 
 $$
-\boxed{\text{度无界}\ \Longrightarrow\ \text{闭环图}\textbf{不是流形的离散化}\ \Longrightarrow\ \text{无稳定谱维数。}}
+\text{度无界}\ \Longrightarrow\ \text{闭环图}\textbf{不是流形的离散化}\ \Longrightarrow\ \text{无稳定谱维数。}
 $$
 
 **数据来源**：本节数字取自 [`simulations/zero_sum_geometry_probe.py`](simulations/zero_sum_geometry_probe.py)
@@ -128,16 +128,16 @@ $$
 ## §6 回答你的问题
 
 $$
-\boxed{\begin{aligned}
+\begin{aligned}
 &\text{微观动力学：}\textbf{建起来了}\text{（确定性全分支，守恒律每步精确）；}\\
 &\text{宏观动力学：}\textbf{只建到扩散型}\text{（有梯度流与守恒，几何极限未建立且探针否定）；}\\
 &\text{统计／量子动力学：}\textbf{L3 未建}\text{（Z0③ 的禁令只作用在 }\textbf{L0}\text{；L3 的概率应由推前涌现）；}\\
 &\text{再生／选择动力学：}\textbf{建起来了，但用的是概率}\text{（L2 层：须由 }\textbf{L3}\text{ 的推前导出，而非作为底层权重注入）。}
-\end{aligned}}
+\end{aligned}
 $$
 
 $$
-\boxed{\text{严格说：}\textbf{L0 有唯一的生成规则}\text{；「活」的那一半属 }\textbf{L2／$\mathcal R$}\text{，其概率须由推前导出 ⟹ }\textbf{层坍塌}\text{（}R50\ \#1\text{），不是同层冲突。}}
+\text{严格说：}\textbf{L0 有唯一的生成规则}\text{；「活」的那一半属 }\textbf{L2／\mathcal R}\text{，其概率须由推前导出 ⟹ }\textbf{层坍塌}\text{（}R50\ \#1\text{），不是同层冲突。}
 $$
 
 ---

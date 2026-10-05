@@ -7,17 +7,17 @@
 **核验**：[`R28_check.py`](R28_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{若所有记录相位都由顶点势生成，}a_r=d\theta_r\text{，则 }[a_r]=0\text{ 于 }C^1/dC^0。\\
 &\text{此时商空间虽同构于 }\mathbb R^{\binom D2}\text{，物理身份子空间却是 }0。\\
 &\text{因此 }PHASE\text{-}1\text{-}COCHAIN+PAIR\text{-}ID\text{-}QUOTIENT\\
 &\qquad\text{不能自动给出 }C(D,2)\text{ 个独立继承身份。}\\
 &\text{二者必须补成 }PHASE\text{-}IDENTITY\text{-}DER\text{：}\\
-&\qquad \texttt{EDGE-CONNECTION}
-\wedge\texttt{HOLONOMY-FULL-SPAN}
-\wedge\texttt{INHERITANCE-IDENTITY}。
-\end{aligned}}
+&\qquad \text{EDGE-CONNECTION}
+\wedge\text{HOLONOMY-FULL-SPAN}
+\wedge\text{INHERITANCE-IDENTITY}。
+\end{aligned}
 $$
 
 > **一句话**：`C^1/dC^0` 的维数给的是“可以有多少个独立和乐类”，不是“实际记录已经给出了多少个”。D214 的零和传输和任意顶点势只产生纯规范相位，其和乐全部为零；要得到 R25 的 `C(D,2)`，还必须证明真实边联络存在且记录投影张满整个商空间。
@@ -93,12 +93,12 @@ $$
 则物理身份子空间应由记录在商中的张成给出：
 
 $$
-\boxed{
+
 H_{\rm rec}
 :=
-\operatorname{span}_{\mathbb R}\{[a_r]:r\in\mathcal R\}
+\text{span}_{\mathbb R}\{[a_r]:r\in\mathcal R\}
 \subseteq Q.
-}
+
 \qquad\text{(R28-6)}
 $$
 
@@ -110,11 +110,11 @@ $$
 $$
 
 $$
-\boxed{
+
 \dim Q=\binom D2
 \not\Longrightarrow
 \dim H_{\rm rec}=\binom D2.
-}
+
 \qquad\text{(R28-8)}
 $$
 
@@ -168,7 +168,7 @@ n\longmapsto n+e_{i+1}-e_i.
 \qquad\text{(R28-12)}
 $$
 
-若给每个词位一个势 $\theta_i$，则边补偿相位为
+若给每个词位一个势 $\theta\_i$，则边补偿相位为
 
 $$
 a_i=\theta_{i+1}-\theta_i.
@@ -189,11 +189,11 @@ $$
 因此环图上的和乐恒为零。D214 的局域零和传输给出的是**纯规范相位**，不是 R27 所需的非平凡边联络。
 
 $$
-\boxed{
+
 \text{零和传输结构}
 \not\Longrightarrow
 \text{非平凡相位和乐}.
-}
+
 \qquad\text{(R28-15)}
 $$
 
@@ -206,7 +206,7 @@ $$
 $$
 I_{\rm rec}
 :=
-\operatorname{span}_{\mathbb R}\{a_r:r\in\mathcal R\}
+\text{span}_{\mathbb R}\{a_r:r\in\mathcal R\}
 \subseteq C^1(K_m).
 \qquad\text{(R28-16)}
 $$
@@ -230,13 +230,13 @@ $$
 ### 定理 R28.3（张满判据）【已证】
 
 $$
-\boxed{
+
 \dim H_{\rm rec}
 =
 \binom D2
 \iff
 I_{\rm rec}+dC^0=C^1(K_m).
-}
+
 \qquad\text{(R28-19)}
 $$
 
@@ -283,7 +283,7 @@ $$
 \qquad\text{(R28-23)}
 $$
 
-**证明**：取所有 $a_r=d\theta_r$。这满足第 1 条，也允许第 2 条中的身份定义，但由推论 R28.2 得 `H_rec=0`。故 (R28-23) 不成立。$\square$
+**证明**：取所有 $a\_r=d\theta\_r$。这满足第 1 条，也允许第 2 条中的身份定义，但由推论 R28.2 得 `H_rec=0`。故 (R28-23) 不成立。$\square$
 
 **边界**：这不是说相位商路线必败。它说明原来的两条输入把“载体存在”和“商类语义”误当成了“实际记录张满商空间”。
 
@@ -296,10 +296,10 @@ $$
 ### 输入 R28-A｜`EDGE-CONNECTION`【开放】
 
 $$
-\boxed{
-\texttt{EDGE-CONNECTION}:\quad
+
+\text{EDGE-CONNECTION}:\quad
 \text{真实闭合记录携带独立于顶点势的边联络数据 }a_r\not\equiv d\theta。
-}
+
 \qquad\text{(R28-24)}
 $$
 
@@ -308,10 +308,10 @@ $$
 ### 输入 R28-B｜`HOLONOMY-FULL-SPAN`【开放】
 
 $$
-\boxed{
-\texttt{HOLONOMY-FULL-SPAN}:\quad
+
+\text{HOLONOMY-FULL-SPAN}:\quad
 I_{\rm rec}+dC^0=C^1(K_m).
-}
+
 \qquad\text{(R28-25)}
 $$
 
@@ -320,10 +320,10 @@ $$
 ### 输入 R28-C｜`INHERITANCE-IDENTITY`【开放】
 
 $$
-\boxed{
-\texttt{INHERITANCE-IDENTITY}:\quad
+
+\text{INHERITANCE-IDENTITY}:\quad
 \text{跨代继承身份不是原始边，而是 }H_{\rm rec}\text{ 中的规范商类。}
-}
+
 \qquad\text{(R28-26)}
 $$
 
@@ -332,15 +332,15 @@ $$
 合并写作
 
 $$
-\boxed{
-\texttt{PHASE-IDENTITY-DER}
+
+\text{PHASE-IDENTITY-DER}
 :=
-\texttt{EDGE-CONNECTION}
+\text{EDGE-CONNECTION}
 \wedge
-\texttt{HOLONOMY-FULL-SPAN}
+\text{HOLONOMY-FULL-SPAN}
 \wedge
-\texttt{INHERITANCE-IDENTITY}.
-}
+\text{INHERITANCE-IDENTITY}.
+
 \qquad\text{(R28-27)}
 $$
 
@@ -367,9 +367,9 @@ $$
 | `L=4` | 仍独立；它固定 `q=5/9` 或其它代价数值 |
 
 $$
-\boxed{
+
 \text{身份秩与身份代价是两个正交问题。}
-}
+
 \qquad\text{(R28-29)}
 $$
 
@@ -378,17 +378,17 @@ $$
 R29 进一步证明，即使真的让全部方向进入支撑，也不会自动得到 `q^D`。联合记录可以只张成二维子空间，重叠保持 `q` 而与 `D` 无关；也可以把所有方向合并成一笔共同记录。因此代价侧最小输入应写成
 
 $$
-\boxed{
-\texttt{LEDGER-FACTORIZATION}
+
+\text{LEDGER-FACTORIZATION}
 =
-\texttt{DIR-SUPPORT-D}
+\text{DIR-SUPPORT-D}
 \wedge
-\texttt{RECORD-FAMILY-D}
+\text{RECORD-FAMILY-D}
 \wedge
-\texttt{PRODUCT-LEDGER}
+\text{PRODUCT-LEDGER}
 \wedge
-\texttt{SAME-Q}.
-}
+\text{SAME-Q}.
+
 \qquad\text{(R28-30)}
 $$
 
@@ -425,9 +425,9 @@ R28 不排除 R26 的 `β` 边身份路线。两条路线的身份来源不同�
 7. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-\boxed{
+
 \text{当前诚实结论：R27 的商维数正确；R28 证明“商空间存在”不等于“身份已经出现”。}
-}
+
 $$
 
 ---

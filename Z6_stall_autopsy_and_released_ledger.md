@@ -8,7 +8,7 @@
 > **【状态层级｜[`STATUS.md`](STATUS.md)】** 本文是“输入可有”政策的详细审计与机制分类，不再是项目唯一账本。它给出的 E1–E4 与“数学缺口 0／承重 no-go 0”是**政策相对**结论；项目唯一的当前状态、历史替代关系和 D259 路线分离见 [`STATUS.md`](STATUS.md)。
 
 $$
-\boxed{\ \textbf{卡点不是墙，是四种记账错误};\quad \text{放开输入后：数学缺口 }0\ +\ \text{承重 no-go }0\ +\ \text{具名输入 }3\ +\ \text{条件 }1。\ }
+\ \textbf{卡点不是墙，是四种记账错误};\quad \text{放开输入后：数学缺口 }0\ +\ \text{承重 no-go }0\ +\ \text{具名输入 }3\ +\ \text{条件 }1。\ 
 $$
 
 ---
@@ -26,7 +26,7 @@ $$
 3. **本轮的判定采用 Z 层规则（＝"可以有输入"）**：于是本文政策账本为
 
 $$
-\boxed{\ \text{零和宇宙}\ +\ \underbrace{3\ \text{条具名输入}}_{\text{嵌入·作用量类别·量纲常数}}\ +\ \underbrace{1\ \text{条条件}}_{D=4}\ \Longrightarrow\ \text{四维 GR（结构＋场方程＋守恒源＋有限前沿锥）}。\ }
+\ \text{零和宇宙}\ +\ \underbrace{3\ \text{条具名输入}}_{\text{嵌入·作用量类别·量纲常数}}\ +\ \underbrace{1\ \text{条条件}}_{D=4}\ \Longrightarrow\ \text{四维 GR（结构＋场方程＋守恒源＋有限前沿锥）}。\ 
 $$
 
 ---
@@ -44,7 +44,7 @@ $$
 
 | 定理 | 内容 | 它把什么变成输入 |
 |:--|:--|:--|
-| [`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 1 | 对每个 $m\ge2$，A0–A5（历史命名）条款集都有模型 $\mathcal M_m$（$C_m$ 环图，逐条款核验 $m\le12$） ⟹ 条款**不约束** $D$ | **维数 $D$** |
+| [`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 1 | 对每个 $m\ge2$，A0–A5（历史命名）条款集都有模型 $\mathcal M\_m$（$C\_m$ 环图，逐条款核验 $m\le12$） ⟹ 条款**不约束** $D$ | **维数 $D$** |
 | [`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 2 | $m\ge4$ 时原生对合 $\{\pm1\}\times\{\sigma^2=1\}$ 全不给 $(1,1)$，谱集为 $\{(k,m{-}1{-}k)\}$ | 排除了一条**伪**推导（G11 原 (Z₂) 作废） |
 | [`G57`](G57_unreachability_of_absolute_normalization.md) §3 | A0–A5（历史命名）条款的原语与允许操作**全为无量纲** ⟹ 任何泛函无量纲 ⟹ 绝对尺度不可导出 | **量纲常数 $G,\Lambda$、长度标度** |
 
@@ -56,7 +56,7 @@ $$
 
 | 碰撞 | 被误读成 | 拆开之后 | 出处 |
 |:--|:--|:--|:--|
-| $(L)$：$E_{ab}$ 是 $g$ 的局域泛函 ／ $(L')$：$g$ 被数据局域决定 | "**(L) 不成立** ⟹ Lovelock 不适用" | 只有 $(L')$ 在 Perron 取法下不成立；$(L)$ 在"度规=输入"下**自动成立**（截断实验差 $0$） | [`G41`](G41_lovelock_premises_under_nonuniform_weight.md) §3.5、§7.2 命名更正 |
+| $(L)$：$E\_{ab}$ 是 $g$ 的局域泛函 ／ $(L')$：$g$ 被数据局域决定 | "**(L) 不成立** ⟹ Lovelock 不适用" | 只有 $(L')$ 在 Perron 取法下不成立；$(L)$ 在"度规=输入"下**自动成立**（截断实验差 $0$） | [`G41`](G41_lovelock_premises_under_nonuniform_weight.md) §3.5、§7.2 命名更正 |
 | 空间"二阶" ／ 时间马尔可夫 ／ 双曲性 | "**二阶**一个词" | 三条**互相独立**：前两条要记忆核为零，第三条要记忆核非零 | [`G55`](G55_dynamics_line_degeneration_to_GR.md) §1 |
 | PDE 特征速度 ／ 前沿（被选）速度 | "Z0③ 堵死因果（A3 历史命名）⟹ 必须改 Z0 条款" | 有限因果速度由**饱和＋前沿速度**原生给出；改条款**撤回** | [`G55`](G55_dynamics_line_degeneration_to_GR.md) §7 → [`G56`](G56_degeneration_attempt2_six_slots.md) §3 |
 | 宏观态记忆核 ／ 电流弛豫（两种"记忆"） | "记忆核存在 ⟹ 条件被削弱" | 前者是粗粒化副产品，**给不出光锥**；后者才给 | [`G55`](G55_dynamics_line_degeneration_to_GR.md) §5 |
@@ -76,7 +76,7 @@ $$
 | [`G58`](G58_I2a_resolved_as_embedding_input.md) | **$\Gamma$-收敛**（Lovelock 真正需要的） | 固定 $k$：**二阶收敛**（斜率 $-1.945$）；极限局域 | **判定：I2a 归并为嵌入输入** |
 
 $$
-\boxed{\ \text{"找不到 UV 不动点"只在"要求自相似"时才是障碍};\ \text{Lovelock 只要求 }(L)\text{，即}\Gamma\text{-收敛}。\ }
+\ \text{"找不到 UV 不动点"只在"要求自相似"时才是障碍};\ \text{Lovelock 只要求 }(L)\text{，即}\Gamma\text{-收敛}。\ 
 $$
 
 ### 1.4 M4 的证据：同一个缺口，两套判据
@@ -102,17 +102,17 @@ $$
 | 6 | 连续极限 I2a | [`G10`](G10_final_derivation_and_input_ledger.md) §7 | M3＋M4 | **归并为嵌入输入** | [`G58`](G58_I2a_resolved_as_embedding_input.md)：$\Gamma$-收敛，二阶，局域 |
 | 7 | 固定物理时长支发散 | [`G58`](G58_I2a_resolved_as_embedding_input.md) §2.3 | M1 | **本就不该取** | 该支预先假定量纲常数（＝I4） |
 | 8 | 维数 $D$ 不可导出 | [`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 1 | M1 | **定理（不是卡点）** | $D$ 是输入；$D\le3$ 由物理筛选排除 |
-| 9 | $D=4$ 的"选择原则" | [`G89`](G89_dimension_no_go_and_the_balance_condition.md) §3 | M1 | **条件** | $(Z_2)'$ 极化两标签无偏好（需 $O(D-2)$，条款集之外） |
-| 10 | 绝对归一化 $C_{\rm norm}$ | [`G57`](G57_unreachability_of_absolute_normalization.md) §3 | M1 | **不可导出（定理）** | 登记 I4；**禁止再攻**（方向性错误） |
-| 11 | 因果：Z0③ 抹掉特征速度（A3 历史命名） | [`G15`](G15_bare_ax3_has_no_characteristic_speed.md) | M2 | **已撤** | 认对速度概念：前沿速度 $c_*=\tanh\mu_*$，$c_*=1\iff B=4$ |
+| 9 | $D=4$ 的"选择原则" | [`G89`](G89_dimension_no_go_and_the_balance_condition.md) §3 | M1 | **条件** | $(Z\_2)'$ 极化两标签无偏好（需 $O(D-2)$，条款集之外） |
+| 10 | 绝对归一化 $C\_{\rm norm}$ | [`G57`](G57_unreachability_of_absolute_normalization.md) §3 | M1 | **不可导出（定理）** | 登记 I4；**禁止再攻**（方向性错误） |
+| 11 | 因果：Z0③ 抹掉特征速度（A3 历史命名） | [`G15`](G15_bare_ax3_has_no_characteristic_speed.md) | M2 | **已撤** | 认对速度概念：前沿速度 $c\_*=\tanh\mu\_*$，$c\_*=1\iff B=4$ |
 | 12 | I7 电流记忆／记忆核 | [`G15`](G15_bare_ax3_has_no_characteristic_speed.md) §6 | M2＋M4 | **不承重** | 饱和原生；残余"有效锥→精确锥"在 $B=4$ 处每格 $10^{-14}$ |
 | 13 | I6 物质层洛伦兹 | [`G13`](G13_foliation_and_lorentz_invariance_gap.md)、[`G55`](G55_dynamics_line_degeneration_to_GR.md) §6 | M2 | **并入 I7（已解除）** | 几何层已建立；物质锥＝KPP 锥 |
 | 14 | 装配路线（$K\to h$） | [`G4`](G4_assembly_route_obstruction.md) | — | **真排除** | 唯一不动点＝均匀 ⟹ 1 参数刚性；这是**有效的指路**，不是卡点 |
 | 15 | 有效电阻路线 | [`G2`](G2_local_continuum_limit.md) 引理 10 | — | **真排除** | 非局域 ＋ 破坏局部各向同性；同上 |
-| 16 | 尘埃源／耗散源 | [`G6`](G6_geodesy_of_the_coarse_grained_flow.md)、[`G7`](G7_one_operator_and_the_dissipation_obstruction.md) | — | **真排除** | 扩散同余非测地；$\nabla^aG_{ab}=0$ 强制源守恒 |
+| 16 | 尘埃源／耗散源 | [`G6`](G6_geodesy_of_the_coarse_grained_flow.md)、[`G7`](G7_one_operator_and_the_dissipation_obstruction.md) | — | **真排除** | 扩散同余非测地；$\nabla^aG\_{ab}=0$ 强制源守恒 |
 
 $$
-\boxed{\ \text{16 个卡点：真排除 3（是}\textbf{指路}\text{）、定理／条件型 3（说明"这是输入"）、机制型 10（拆词／换判据／归并后消失）};\ \textbf{承重卡点 }0。\ }
+\ \text{16 个卡点：真排除 3（是}\textbf{指路}\text{）、定理／条件型 3（说明"这是输入"）、机制型 10（拆词／换判据／归并后消失）};\ \textbf{承重卡点 }0。\ 
 $$
 
 ---
@@ -130,7 +130,7 @@ $$
 $$
 \underbrace{\text{Z0}}_{\text{唯一公理}}\Rightarrow
 \underbrace{\text{词／图／散度字典／守恒}}_{\text{【导出】}}\Rightarrow
-\underbrace{\text{余维 }1,\ \operatorname{im}B=H_Q}_{\text{【导出】}}\Rightarrow
+\underbrace{\text{余维 }1,\ \text{im}B=H_Q}_{\text{【导出】}}\Rightarrow
 \underbrace{w^{(k)}=A\circ A^{k-1},\ k\sim L}_{\text{【导出】＋【输入】嵌入}}\Rightarrow
 \underbrace{h}_{\text{【导出】}}\Rightarrow
 \underbrace{(L)(O)(C)}_{\text{【导出】／【输入】源类}}\Rightarrow
@@ -148,8 +148,8 @@ $$
 
 > **E1–E4 是经典几何路线的账本**；[`Z13`](Z13_zero_foundation_missing_principle.md) 指出它对**量子读出路线（J1／J5）**漏记 E5。上面 §0 的方框公式仍对**经典条件恢复**成立；量子侧必须另付 E5 这一笔，且 `R13` 的 `Z-CRIT-DER` 逐字就是 E5。
 
-**导出侧（不需额外输入）**：词／图／散度字典／零和恒等式、余维 1、传输秩、差分型能量正定、导纳均匀的条件、$g=d\tau^2-h$ 与号差 $(1,m{-}1)$、曲率、Lovelock 唯一性、$(O)$、$(C)$、局域性（半径 $k/2$）、守恒源（体 ＋ 汇）、$D\le3$ 的排除、有限前沿锥 $c_*=\tanh\mu_*$。
-**可证伪预言（2 条）**：$\gamma=1/(2\lambda)$（[`G14`](G14_causal_closure_and_lorentz_emergence.md)）；锥外指数尾 $\sim e^{-\mu_*(x-c_*t)}$（[`G59`](G59_I7_settled_native_cone_and_its_residue.md) §4）。
+**导出侧（不需额外输入）**：词／图／散度字典／零和恒等式、余维 1、传输秩、差分型能量正定、导纳均匀的条件、$g=d\tau^2-h$ 与号差 $(1,m{-}1)$、曲率、Lovelock 唯一性、$(O)$、$(C)$、局域性（半径 $k/2$）、守恒源（体 ＋ 汇）、$D\le3$ 的排除、有限前沿锥 $c\_*=\tanh\mu\_*$。
+**可证伪预言（2 条）**：$\gamma=1/(2\lambda)$（[`G14`](G14_causal_closure_and_lorentz_emergence.md)）；锥外指数尾 $\sim e^{-\mu\_*(x-c\_*t)}$（[`G59`](G59_I7_settled_native_cone_and_its_residue.md) §4）。
 
 ### 3.3 一处**陈旧条目**的更正（这是"莫名"的直接成因）
 
@@ -170,14 +170,14 @@ $$
 
 ### 4.1 三维非正则 $\Gamma$ 上的端到端前提核验（$10^3$ 环面，$u\in[1,1.5]$ 无序边权）
 
-$w^{(k)}=A\circ A^{k-1}$，$\mathcal L=\operatorname{diag}(W\mathbf 1)-W$：
+$w^{(k)}=A\circ A^{k-1}$，$\mathcal L=\text{diag}(W\mathbf 1)-W$：
 
 | 前提 | 检验 | 实测 |
 |:--|:--|:--|
 | **$(O)$** | $\lVert\mathcal L\mathbf 1\rVert/\lVert\mathcal L\rVert$ | $\mathbf{1.8\times10^{-16}}$ |
 | **$(O)$** | $\lVert\mathcal Lx\rVert/\lVert\mathcal L\rVert$（不湮灭线性） | $1.42$ |
 | **$(O)$** | $\lVert\mathcal Lx^2\rVert/\lVert\mathcal L\rVert$（二阶差分） | $13.7$ |
-| **$(C)$** | 零本征值个数 ／ $\lambda_2$ | $\mathbf{1}$ ／ $1.715\times10^{4}$ |
+| **$(C)$** | 零本征值个数 ／ $\lambda\_2$ | $\mathbf{1}$ ／ $1.715\times10^{4}$ |
 | **$(L)$ 支集** | $W$ 在 $A$ 之外的非零元 | $\mathbf{0}$（$6000$ 个非零元全在图边上） |
 | **$(L)$ 半径** | 远端扰动（$3$ 倍）对中部权比的相对变化，$k=4,8$ | $\mathbf{0.000\times10^{0}}$（精确零） |
 | 反向控制 | 邻近扰动（$k=8$） | $5.94$（显著非零） |
@@ -193,7 +193,7 @@ $w^{(k)}=A\circ A^{k-1}$，$\mathcal L=\operatorname{diag}(W\mathbf 1)-W$：
 **光滑指定剖面**：$c(x)=1+0.3\cos(2\pi x/n)$ 在三维环面的 $x$ 线上（$k=6$）给边权 $1.473\to42.824$（相对差 $2.52$）——**预设的共形因子被度规带上**（与 [`G49`](G49_four_boundaries_advanced.md) 的因子化 $c^m$ 一致）。
 
 $$
-\boxed{\ \text{正则 }\Gamma\Rightarrow\text{平坦};\ \text{非正则 }\Gamma\Rightarrow\text{几何};\ \text{故"}\Gamma\text{ 非正则"是}\textbf{E1 的内容}，不是额外代价。\ }
+\ \text{正则 }\Gamma\Rightarrow\text{平坦};\ \text{非正则 }\Gamma\Rightarrow\text{几何};\ \text{故"}\Gamma\text{ 非正则"是}\textbf{E1 的内容}，不是额外代价。\ 
 $$
 
 ### 4.3 局域半径的**口径对齐**（收紧 [`Z5`](Z5_finite_k_locality_escape.md) §5.1）
@@ -202,7 +202,7 @@ $$
 
 | 口径 | 观测量 | $k=4$ | $k=8$ | $k=12$ | $k=16$ | 半径 |
 |:--|:--|:--|:--|:--|:--|:--|
-| **值**（[`G58`](G58_I2a_resolved_as_embedding_input.md) §2.2 口径，1D） | $\lvert\Delta w_{100}\rvert>10^{-14}$ | $1..1$ | $1..3$ | $1..5$ | — | $k/2-1$ |
+| **值**（[`G58`](G58_I2a_resolved_as_embedding_input.md) §2.2 口径，1D） | $\lvert\Delta w\_{100}\rvert>10^{-14}$ | $1..1$ | $1..3$ | $1..5$ | — | $k/2-1$ |
 | **比值**（[`Z5`](Z5_finite_k_locality_escape.md) §2 口径，1D） | $\lvert\Delta r\rvert>10^{-13}\lvert r\rvert$ | $0..1$ | $0..3$ | — | $0..7$ | $k/2-1$ |
 | **比值**（[`Z5`](Z5_finite_k_locality_escape.md) §2 口径，2D） | 同上 | $0..1$ | $0..3$ | — | $0..7$ | $k/2-1$ |
 | 半径之外 | $d=k/2$（1D 与 2D，$k=8$） | — | $\mathbf{0}$（精确） | — | — | — |
@@ -212,7 +212,7 @@ $$
 > "半格取样错就能伪造一个收敛阶"**同型**：**半径是几何量，起算点必须是几何的**。
 
 $$
-\boxed{\ \text{真半径} = k/2-1\ (\text{三种口径一致}),\ \text{半径之外}\textbf{精确为 }0;\quad \textbf{Z5 §5.1 的"半径 }k\text{"松了约 2 倍}。\ }
+\ \text{真半径} = k/2-1\ (\text{三种口径一致}),\ \text{半径之外}\textbf{精确为 }0;\quad \textbf{Z5 §5.1 的"半径 }k\text{"松了约 2 倍}。\ 
 $$
 
 > **【口径复验｜[`Z7`](Z7_embedding_input_explicit_dictionary.md) §5】** 上表三例都在**单层口径**（[`Z5`](Z5_finite_k_locality_escape.md)）下测得。
@@ -221,12 +221,12 @@ $$
 
 ### 4.4 KPP 闭式（独立复算 [`G56`](G56_degeneration_attempt2_six_slots.md) §2）
 
-$f(\mu)=\mu\tanh\mu-\log\cosh\mu$，极值条件 $f(\mu_*)=\tfrac12\log B$，$c_*=\tanh\mu_*$：
+$f(\mu)=\mu\tanh\mu-\log\cosh\mu$，极值条件 $f(\mu\_*)=\tfrac12\log B$，$c\_*=\tanh\mu\_*$：
 
 | $B$ | $2$ | $3$ | $4$ | $5$ |
 |:--|--:|--:|--:|--:|
-| $c_*$（本文） | $0.779944$ | $0.934697$ | $\mathbf{1.000000}$ | **无解**（$f(\infty)=\log2<\tfrac12\log5$） |
-| $c_*$（[`G56`](G56_degeneration_attempt2_six_slots.md) 表） | $0.779944$ | $0.934697$ | $1.000000$ | 无解 |
+| $c\_*$（本文） | $0.779944$ | $0.934697$ | $\mathbf{1.000000}$ | **无解**（$f(\infty)=\log2<\tfrac12\log5$） |
+| $c\_*$（[`G56`](G56_degeneration_attempt2_six_slots.md) 表） | $0.779944$ | $0.934697$ | $1.000000$ | 无解 |
 
 $$
 \Longrightarrow\ c_*=1\iff B=4;\ \text{因果槽位}\textbf{原生}，\text{不需要动 Z0 条款}。
@@ -245,7 +245,7 @@ $$
 | 5 | **量纲常数** | $\kappa$（计数→长度兑换率）＋ $G,\Lambda$ | 无：绝对尺度**不可导出**（[`G57`](G57_unreachability_of_absolute_normalization.md) §3） |
 
 $$
-\boxed{\ \text{输入是自由的，但不是任意的}：\text{每条输入都被已导出结论从两侧夹住（见"选错的代价"列）。}\ }
+\ \text{输入是自由的，但不是任意的}：\text{每条输入都被已导出结论从两侧夹住（见"选错的代价"列）。}\ 
 $$
 
 ---
@@ -258,7 +258,7 @@ $$
 | **未新增物理** | 本文**没有**导出新方程；它做的是四件事：卡点机制分类、账本重结、三维端到端核验、半径口径收紧 |
 | **三维数值的范围** | 用 $10^3$ 环面（$u\in[1,1.5]$）与 $16^3$ 开网格；**未**扫权分布、未做 $O(a^2)$ 收敛阶的三维版本（[`G58`](G58_I2a_resolved_as_embedding_input.md) 只在 1D 做） |
 | **"$(L')$ 已修"的强度** | 数值为"半径外**精确 0**"（三条独立实现：1D／2D／3D）；**未**作一般证明 |
-| **E2 的强度** | $D=4$ 仍是**条件**（[`G89`](G89_dimension_no_go_and_the_balance_condition.md)）：$(Z_2)'$ 的动机在条款集之外（需 $O(D-2)$） |
+| **E2 的强度** | $D=4$ 仍是**条件**（[`G89`](G89_dimension_no_go_and_the_balance_condition.md)）：$(Z\_2)'$ 的动机在条款集之外（需 $O(D-2)$） |
 | **I7 残余** | "有效锥 → 精确锥"仍是**残余**（[`G59`](G59_I7_settled_native_cone_and_its_residue.md)）：$B=4$ 时每格 $10^{-14}$，一般 $B$ 有指数尾 |
 | **未做** | 未逐篇重跑 G1–G89 的数值；§2 的"终态"取自各文档**自己的结论等级**（引文已逐条核验在位） |
 

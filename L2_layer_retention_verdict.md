@@ -12,14 +12,14 @@
 ## §0 一句话
 
 $$
-\boxed{
+
 \begin{aligned}
-&\textbf{猜想①（L2 全毁）}：\ \checkmark\ \text{与}\ \texttt{D211}/\texttt{D222}\ \text{一致}。\\
+&\textbf{猜想①（L2 全毁）}：\ \checkmark\ \text{与}\ \text{D211}/\text{D222}\ \text{一致}。\\
 &\textbf{猜想②（L0 完整保留）}：\ \checkmark\ \text{一致 —— }L0\ \text{本就不在毁灭范围内（}R95\S0\text{：无自身更新律）}。\\
-&\textbf{猜想③（L1 保留最上**一**层）}：\ \text{与}\ \texttt{D222}\ \text{的「最高**两**层」}\textbf{实质不同}，\\
+&\textbf{猜想③（L1 保留最上**一**层）}：\ \text{与}\ \text{D222}\ \text{的「最高**两**层」}\textbf{实质不同}，\\
 &\qquad \text{但}\textbf{结构上完全相容}（零和保持、幂等都成立）。\\
 &\qquad \text{差别在}\ \textbf{记忆窗口}（1 代 vs 2 代）\ \text{与}\ \textbf{生长率}（见 §3）。
-\end{aligned}}
+\end{aligned}
 $$
 
 ---
@@ -28,13 +28,13 @@ $$
 
 | 猜想 | `D222` | 判定 |
 |:--|:--|:--|
-| L2 全部毁灭 | $E_i\to D_i$，$E_i=\varnothing$ | ✅ **一致** |
+| L2 全部毁灭 | $E\_i\to D\_i$，$E\_i=\varnothing$ | ✅ **一致** |
 | L1 毁掉下面亚层 | 「历史层只保留最高两层」 | ⚠️ **层数不同**（1 vs 2） |
-| 最上面的亚层保留 | $\Pi_i$ 保留 $\mathsf{Top}_2$ | ✅ 方向一致（都保留最高） |
+| 最上面的亚层保留 | $\Pi\_i$ 保留 $\mathsf{Top}\_2$ | ✅ 方向一致（都保留最高） |
 | L0 完整保留 | `D222` 只动 L1/L2 | ✅ **一致** |
 
 $$
-\boxed{\ \text{猜想与}\ \texttt{D222}\ \text{只差一处：保留 1 层 vs 2 层。}\ }
+\ \text{猜想与}\ \text{D222}\ \text{只差一处：保留 1 层 vs 2 层。}\ 
 $$
 
 ---
@@ -62,7 +62,7 @@ $$
 \Longrightarrow\ \text{两者都满足}\ \Pi^2=\Pi\ \text{（不继续削层）}。
 $$
 
-> **更正**：我起初担心 $k=1$ 若不重标号会"每轮继续削一层"。**实测否证**：$b=2$ 保留 $\{2\}$，下轮 $\mathrm{Top}_1(2)=\{2\}$ —— **稳定**。故 $k=1$ 不需要额外约定。
+> **更正**：我起初担心 $k=1$ 若不重标号会"每轮继续削一层"。**实测否证**：$b=2$ 保留 $\{2\}$，下轮 $\text{Top}\_1(2)=\{2\}$ —— **稳定**。故 $k=1$ 不需要额外约定。
 
 ---
 
@@ -78,14 +78,14 @@ $$
 **两种保留规则给出不同的递推**：
 
 $$
-k=1:\quad h_n=C\,h_{n-1}\ \Longrightarrow\ \boxed{\lambda_{k=1}=C}
+k=1:\quad h_n=C\,h_{n-1}\ \Longrightarrow\ \lambda_{k=1}=C
 $$
 
 $$
-k=2:\quad h_n=C\,(h_{n-1}+h_{n-2})\ \Longrightarrow\ \boxed{\lambda_{k=2}^2=C\,(\lambda_{k=2}+1)}
+k=2:\quad h_n=C\,(h_{n-1}+h_{n-2})\ \Longrightarrow\ \lambda_{k=2}^2=C\,(\lambda_{k=2}+1)
 $$
 
-| $T$ | $C$ | $\lambda_{k=1}$ | $\lambda_{k=2}$ | 比值 |
+| $T$ | $C$ | $\lambda\_{k=1}$ | $\lambda\_{k=2}$ | 比值 |
 |--:|--:|--:|--:|--:|
 | 4 | 4 | $4$ | $4.828427$ | $0.828$ |
 | 6 | 8 | $8$ | $8.898979$ | $0.899$ |
@@ -94,7 +94,7 @@ $$
 | 12 | 130 | $130$ | $130.992424$ | $0.992$ |
 
 $$
-\boxed{\ \text{保留层数}\ k\ \textbf{是可测量的结构参数}：\lambda_{k=1}=C,\ \lambda_{k=2}=\frac{C+\sqrt{C^2+4C}}{2}\ }
+\ \text{保留层数}\ k\ \textbf{是可测量的结构参数}：\lambda_{k=1}=C,\ \lambda_{k=2}=\frac{C+\sqrt{C^2+4C}}{2}\ 
 $$
 
 **两者都 $>1$ ⟹ 都超临界 ⟹ 都不饱和** ⟹ 饱和不能用来选 $k$。但**生长率不同**，原理上可区分。
@@ -135,4 +135,4 @@ cd /Users/oygb/Downloads/lh && python3 L2_layer_retention.py
 
 - 幂等性：$k=1,2$ 逐 $b$ 核验（§2.2 表）。
 - 零和：与 $k$ 无关（`D222` §第 6 步）。
-- 生长率：$\lambda_{k=1}=C$、$\lambda_{k=2}=(C+\sqrt{C^2+4C})/2$，逐 $T$ 列表（§3）。
+- 生长率：$\lambda\_{k=1}=C$、$\lambda\_{k=2}=(C+\sqrt{C^2+4C})/2$，逐 $T$ 列表（§3）。

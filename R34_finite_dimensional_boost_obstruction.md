@@ -7,7 +7,7 @@
 **核验**：[`R34_check.py`](R34_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{混合生成元在原生 }M_2(\mathbb C)\text{ 里}\textbf{存在}:\ \mathfrak{so}(1,3)\text{ 的三组关系全部实现;}\\
 &\qquad\text{但其中的 }K_i\text{ 必}\textbf{非 Hermitian}\text{（不存在实系数 Hermitian 解）}。\\
@@ -15,7 +15,7 @@ $$
 &\qquad\text{而有限 }T\text{ 下原生模流是}\textbf{内}\text{自同构、闭包}\textbf{紧}。\\
 &\text{故 }(T1)/(T3)\text{ 在}\textbf{任何有限 }T\text{ 都不可能成立}——\text{这是定理，不是"还没算"}。\\
 &\text{目标因此被}\textbf{唯一化}\text{：细化极限必须给出 }\textbf{type III}_1\text{（BW 的几何模流需 type III}_1\text{）}。
-\end{aligned}}
+\end{aligned}
 $$
 
 > **一句话**：P2 探针把"找 boost"这个任务劈成两半——**代数那一半成功了**（`so(1,3)` 在原生复数代数里写得出来），**表示论那一半失败了**（写成 Hermitian 就得 `so(4)`，写成 `so(1,3)` 就不酉）。失败的原因是**有限维**：非紧半单李群没有非平凡的有限维酉表示。于是 `ACTION-PHASE-MATCH` 不再是"在某处找一个算子"，而是一个**极限命题**：精细极限必须长出 type III 结构。这把 R33 的 P2 从"提案"变成了"有明确否证边界的定理级目标"。
@@ -26,22 +26,22 @@ $$
 
 | 问 | 结果 | 当前状态 |
 |:--|:--|:--|
-| **Q1** `so(1,3)` 关系能否在原生 $M_2(\mathbb C)$ 实现 | `[J,J]=iJ`、`[J,K]=iK`、`[K,K]=-iJ` **全部成立** | **已证（数值，探针）** |
-| **Q2** 其中的 $K$ 是否 Hermitian | **否**（$K_i=i\sigma_i/2$，反 Hermitian） | **已证** |
-| **Q2b** 是否存在**实系数 Hermitian** 解 | **不存在**（$K_i=c\sigma_i$ 要求 $2c^2=-1/2$，无实解） | **已证** |
+| **Q1** `so(1,3)` 关系能否在原生 $M\_2(\mathbb C)$ 实现 | `[J,J]=iJ`、`[J,K]=iK`、`[K,K]=-iJ` **全部成立** | **已证（数值，探针）** |
+| **Q2** 其中的 $K$ 是否 Hermitian | **否**（$K\_i=i\sigma\_i/2$，反 Hermitian） | **已证** |
+| **Q2b** 是否存在**实系数 Hermitian** 解 | **不存在**（$K\_i=c\sigma\_i$ 要求 $2c^2=-1/2$，无实解） | **已证** |
 | **Q2c** $e^{i\theta K}$ 是否酉 | **否**（实指数；范数 $1\to1.65\to12.2\to148.4$） | **已证** |
-| **Q3** 原生模流在有限 $T$ 的性质 | $K_\omega=-\log\omega$ Hermitian、**谱有限离散**（跨度 $=\log50$）⇒ 流内、闭包紧 | **已证** |
+| **Q3** 原生模流在有限 $T$ 的性质 | $K\_\omega=-\log\omega$ Hermitian、**谱有限离散**（跨度 $=\log50$）⇒ 流内、闭包紧 | **已证** |
 | **Q4** 两个实形式的 Killing 形式 | $so(4)$：全 $=-4$（**负定＝紧**）；$so(1,3)$：$(-4,-4,-4,+4,+4,+4)$（**不定＝非紧**） | **已证** |
 | **定理 R34.1** | 有限 $T$ 下 $(T1)/(T3)$ **不可能** | **已证** |
-| 目标重述 | 细化极限必须给出 **type III**（$BW$ 的几何模流需 type III$_1$） | **新目标（P2′）** |
-| 有限 $T$ 的**可测指纹** | 模谱离散 vs type III$_1$ 需 $\operatorname{spec}\Delta=\mathbb R_+$ | **新增数值纲领（P2″）** |
+| 目标重述 | 细化极限必须给出 **type III**（$BW$ 的几何模流需 type III$\_1$） | **新目标（P2′）** |
+| 有限 $T$ 的**可测指纹** | 模谱离散 vs type III$\_1$ 需 $\text{spec}\Delta=\mathbb R\_+$ | **新增数值纲领（P2″）** |
 | 四维 GR | — | **未由此推出** |
 
 ---
 
 ## §1 探针的问法与结果
 
-**(Q1) 代数那一半：成功。** 取原生 Pauli 生成元（[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) §1 已把 $[\sigma_x,\sigma_y]=2i\sigma_z$ 核验为原生），令
+**(Q1) 代数那一半：成功。** 取原生 Pauli 生成元（[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) §1 已把 $[\sigma\_x,\sigma\_y]=2i\sigma\_z$ 核验为原生），令
 
 $$
 J_i:=\frac{\sigma_i}{2}\ (\text{Hermitian}),\qquad K_i:=\frac{i\sigma_i}{2}\ (\text{anti-Hermitian}).
@@ -63,21 +63,21 @@ $$
 
 | 检验 | 结果 |
 |:--|:--|
-| $J_i$ Hermitian | ✅ |
-| $K_i$ Hermitian | ❌（反 Hermitian） |
-| 实系数 Hermitian 解 $K_i=c\sigma_i$ | ❌ 无解（关系 $[K,K]=-iJ$ 要求 $2c^2=-1/2$） |
+| $J\_i$ Hermitian | ✅ |
+| $K\_i$ Hermitian | ❌（反 Hermitian） |
+| 实系数 Hermitian 解 $K\_i=c\sigma\_i$ | ❌ 无解（关系 $[K,K]=-iJ$ 要求 $2c^2=-1/2$） |
 | $e^{i\theta K}$ 酉 | ❌（$i\theta K=-\theta\sigma/2$ 是**实**指数） |
-| $\|e^{i\theta K}\|_2$ 随 $\theta$ 增长 | $1\to1.65\to12.2\to148.4$（$\theta=0,1,5,10$） |
+| $\|e^{i\theta K}\|\_2$ 随 $\theta$ 增长 | $1\to1.65\to12.2\to148.4$（$\theta=0,1,5,10$） |
 | 对照：旋转 $e^{i\theta J}$ 酉 | ✅ |
 
-**(Q3) 原生模流。** $K_\omega=-\log\omega$（[`G72`](G72_kappa1_from_the_ledger.md) §1 的推前）取代表值 $\omega\propto(1,2,10,50)$ 时谱为 $(4.143,\,3.450,\,1.841,\,0.231)$，**跨度 $=3.912=\log50$**（与 G72 逐位吻合）。有限维 ⇒ 谱有限 ⇒ 模流准周期 ⇒ **闭包是环面（紧）**。
+**(Q3) 原生模流。** $K\_\omega=-\log\omega$（[`G72`](G72_kappa1_from_the_ledger.md) §1 的推前）取代表值 $\omega\propto(1,2,10,50)$ 时谱为 $(4.143,\,3.450,\,1.841,\,0.231)$，**跨度 $=3.912=\log50$**（与 G72 逐位吻合）。有限维 ⇒ 谱有限 ⇒ 模流准周期 ⇒ **闭包是环面（紧）**。
 
 **(Q4) 紧与非紧的分界（Killing 形式）。**
 
 $$
-\text{so}(4):\ \operatorname{spec}B=(-4,\dots,-4)\ \textbf{负定}\ (=\text{紧});
+\text{so}(4):\ \text{spec}B=(-4,\dots,-4)\ \textbf{负定}\ (=\text{紧});
 \qquad
-\text{so}(1,3):\ \operatorname{spec}B=(-4,-4,-4,+4,+4,+4)\ \textbf{不定}\ (=\text{非紧}).
+\text{so}(1,3):\ \text{spec}B=(-4,-4,-4,+4,+4,+4)\ \textbf{不定}\ (=\text{非紧}).
 \qquad\text{(R34-3)}
 $$
 
@@ -86,20 +86,20 @@ $$
 ## §2 定理 R34.1（有限维不可能）【已证】
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{设 }T<\infty\text{，}\mathcal A_T=M_2(\mathbb C)\otimes\mathbb C^{T+1}\ (\dim=4(T+1))\text{，}\omega\text{ 为忠实态，}\\
-&\qquad\sigma_t=\operatorname{Ad}(e^{itK_\omega})\ \text{为其模流}。\\
+&\qquad\sigma_t=\text{Ad}(e^{itK_\omega})\ \text{为其模流}。\\
 &\text{则不存在 }\ t\mapsto\text{boost 的单参数酉群与 }\sigma_t\text{ 相符};\ \text{特别地 }(T1)\text{／}(T3)\text{ 在有限 }T\text{ 为假}。
-\end{aligned}}
+\end{aligned}
 \qquad\text{(R34-4)}
 $$
 
 **证明**（三步）：
 
-1. **$\sigma_t$ 的闭包紧。** $\dim\mathcal A_T<\infty$ ⇒ $K_\omega$ 的谱有限 ⇒ $\{e^{itK_\omega}\}$ 是环面 $\mathbb T^k$ 中的准周期族，其闭包紧。
+1. **$\sigma\_t$ 的闭包紧。** $\dim\mathcal A\_T<\infty$ ⇒ $K\_\omega$ 的谱有限 ⇒ $\{e^{itK\_\omega}\}$ 是环面 $\mathbb T^k$ 中的准周期族，其闭包紧。
 2. **boost 非紧。** 由 (R34-3)，$\mathfrak{so}(1,3)$ 的 Killing 形式不定，故其对应的连通群**非紧**；boost 子群是其中非紧的单参数子群。
-3. **经典表示论事实。** 非紧连通半单 Lie 群**没有非平凡的有限维酉表示**（紧性判据：容许忠实有限维酉表示的连通半单群必紧）。故有限维 Hilbert 空间**不能**承载酉 boost 作用；而 $\sigma_t$ 是酉的。两族不可能相符。$\square$
+3. **经典表示论事实。** 非紧连通半单 Lie 群**没有非平凡的有限维酉表示**（紧性判据：容许忠实有限维酉表示的连通半单群必紧）。故有限维 Hilbert 空间**不能**承载酉 boost 作用；而 $\sigma\_t$ 是酉的。两族不可能相符。$\square$
 
 **边界（必须写明）**：
 
@@ -114,12 +114,12 @@ $$
 失败模式若只是"找不到"，项目会散；这里失败给出了**唯一的去处**：
 
 $$
-\boxed{
+
 \text{几何模流（Bisognano–Wichmann）住在 }\textbf{type III}_1\text{ 因子上}。
 \text{有限维（type I）不可能有几何 boost}。
 \Longrightarrow
 \text{要 }(T1)/(T3)\text{，细化极限必须给出（或含）type III}。
-}
+
 \qquad\text{(R34-5)}
 $$
 
@@ -142,10 +142,10 @@ $$
 \qquad\text{(R34-6)}
 $$
 
-**P2″（可测指纹，新增）**：type III$_1$ 的判据是 $\operatorname{spec}\Delta=\mathbb R_+$，等价地 $\operatorname{spec}(\log\Delta)=\mathbb R$。而有限 $T$ 下 $\operatorname{spec}(\log\Delta_T)$ 是**有限集**（本文：4 个点，跨度 $\log50$）。于是有一个干净的数值纲领：
+**P2″（可测指纹，新增）**：type III$\_1$ 的判据是 $\text{spec}\Delta=\mathbb R\_+$，等价地 $\text{spec}(\log\Delta)=\mathbb R$。而有限 $T$ 下 $\text{spec}(\log\Delta\_T)$ 是**有限集**（本文：4 个点，跨度 $\log50$）。于是有一个干净的数值纲领：
 
 $$
-\text{对增长中的 }T\text{ 计算 }\operatorname{spec}(\log\Delta_T),\ \text{问它是否}\textbf{填满区间}（\text{→ 区间}\Rightarrow\text{type I}_\infty;\ \mathbb R\Rightarrow\text{type III}_1）。
+\text{对增长中的 }T\text{ 计算 }\text{spec}(\log\Delta_T),\ \text{问它是否}\textbf{填满区间}（\text{→ 区间}\Rightarrow\text{type I}_\infty;\ \mathbb R\Rightarrow\text{type III}_1）。
 \qquad\text{(R34-7)}
 $$
 
@@ -153,9 +153,9 @@ $$
 
 ---
 
-## §5 与"$K_\omega$ 无自由参数"的呼应
+## §5 与"$K\_\omega$ 无自由参数"的呼应
 
-探针复现了 $K_\omega$ 的跨度 $=\log50$（[`G72`](G72_kappa1_from_the_ledger.md) §1）。这一点在本文语境下更重要：**$K_\omega$ 的值由整数计数唯一确定**，故 (R34-6) 的判据里**没有可调参数**——极限是否给出 type III、模流是否几何，都是**硬问题**，不能靠拟合绕过。
+探针复现了 $K\_\omega$ 的跨度 $=\log50$（[`G72`](G72_kappa1_from_the_ledger.md) §1）。这一点在本文语境下更重要：**$K\_\omega$ 的值由整数计数唯一确定**，故 (R34-6) 的判据里**没有可调参数**——极限是否给出 type III、模流是否几何，都是**硬问题**，不能靠拟合绕过。
 
 ---
 
@@ -170,10 +170,10 @@ $$
 7. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-\boxed{
+
 \text{当前诚实结论：boost 在代数层写得出、在有限维表示层写不出；}\\
 \text{这把"作用量相位"项目从散漫的提案变成一个有唯一去处的极限命题。}
-}
+
 $$
 
 ---

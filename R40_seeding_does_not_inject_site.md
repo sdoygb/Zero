@@ -7,15 +7,15 @@
 **核验**：[`R40_check.py`](R40_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
-&\textbf{实现事实}：\texttt{zero\_sum\_cycle\_evolution.py}\ \text{的播种输入是}\ \texttt{seed\_word}\ (\text{一个}\textbf{词}),\\
-&\qquad\text{并经 }\texttt{canonical\_cycle}\ \text{映到}\textbf{旋转类}\ (\text{L257--265})——\textbf{形状层面},\ \text{非位置层面}。\\
+&\textbf{实现事实}：\text{zero_sum_cycle_evolution.py}\ \text{的播种输入是}\ \text{seed_word}\ (\text{一个}\textbf{词}),\\
+&\qquad\text{并经 }\text{canonical_cycle}\ \text{映到}\textbf{旋转类}\ (\text{L257--265})——\textbf{形状层面},\ \text{非位置层面}。\\
 &\textbf{等变性判据}：\text{若整个循环对环图自同构（旋转）等变、且记录对旋转不变，}\\
 &\qquad\text{则位点信息}\textbf{无法}\text{注入记录}。\\
 &\textbf{结果}：6\ \text{组}\ (m,L)\ \text{全部}\ “\text{旋转下记录相同}=\text{True}”\ \wedge\ I(\text{位点};\text{记录})=0。\\
 &\therefore\ \textbf{失明在播种后仍成立} \Longrightarrow \text{R38 的路线 B′ 保持有效，}\textbf{不需要}\text{ 改走 A′}。
-\end{aligned}}
+\end{aligned}
 $$
 
 > **一句话**：`R39` 留下唯一一个能翻盘的入口——播种点 `P_i`。这一击把它查了：**实现里播种用的是"词"（并且立刻取旋转类），根本不是位点**；而整条循环（步进→闭合→退出→播种→新活动层）**对位点旋转不变**，所以位点信息在任何一个环节都注入不进去。**失明是结构性的，不是巧合。**
@@ -60,9 +60,9 @@ cohorts[mode_index[seed]][0] = 1.0                              # L265
 | 6, 6 | 1 | 1 | ✅ | 0 |
 
 $$
-\boxed{
+
 \text{只要播种规则由图结构定义（词／类），}\textbf{位点信息在任何环节都进不了记录}。
-}
+
 \qquad\text{(R40-1)}
 $$
 
@@ -71,9 +71,9 @@ $$
 ## §2 裁决与后果
 
 $$
-\boxed{
+
 \text{(R39 §3) 的残余条件}\textbf{不成立}\ \Longrightarrow\ \text{失明保持}\ \Longrightarrow\ \text{路线 B′ 有效，A′ 不必付}。
-}
+
 \qquad\text{(R40-2)}
 $$
 
@@ -106,9 +106,9 @@ $$
 4. 没有由纠缠推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-\boxed{
+
 \text{当前诚实结论：播种只用形状不用位置；失明从记录层一路保持到播种层。}
-}
+
 $$
 
 ---

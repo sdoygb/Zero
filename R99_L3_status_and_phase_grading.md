@@ -17,7 +17,7 @@
 | 准确的名字 | **导出记号**（`R95` 用语）：$\mathcal R=\text{L1}'\ \text{的读出面}$，**按 L2 的钟取景** |
 
 $$
-\boxed{\ \mathcal R\ \textbf{不是层}（无自己的律、无自己的信息），\ \textbf{也不是空名}（它是代数}\times\text{态的表示层）。\
+\ \mathcal R\ \textbf{不是层}（无自己的律、无自己的信息），\ \textbf{也不是空名}（它是代数\times\text{态的表示层）。\
 \text{正确的话是：}\textbf{导出的显示面}。}
 $$
 
@@ -28,11 +28,11 @@ $$
 | 内容 | 出处 | 是否 $\mathcal R$ 独有 |
 |:--|:--|:--|
 | **Hilbert 空间结构**（复内积 $\langle A,B\rangle=\omega(A^*B)$） | `G62` §2 | 由 $(\mathcal A,\omega)$ **配对**产生；两侧分别来自 L0 与 L2/L1′ |
-| **模流** $\sigma_t=\rho^{it}(\cdot)\rho^{-it}$ | `G62` §3 | 由 $\rho$ 决定（`R93` J2：**显含态** ⇒ 不是层定律） |
-| **Born 形式** $p(P)=\operatorname{Tr}(\rho P)$ | `G62` §4.1 | 由 $\rho$ 决定 |
+| **模流** $\sigma\_t=\rho^{it}(\cdot)\rho^{-it}$ | `G62` §3 | 由 $\rho$ 决定（`R93` J2：**显含态** ⇒ 不是层定律） |
+| **Born 形式** $p(P)=\text{Tr}(\rho P)$ | `G62` §4.1 | 由 $\rho$ 决定 |
 
 $$
-\Longrightarrow\ \text{三样都是}\ \textbf{配对的产物}，\text{没有一样是 $\mathcal R$ 自己"生"出来的}。
+\Longrightarrow\ \text{三样都是}\ \textbf{配对的产物}，\text{没有一样是 \mathcal R 自己"生"出来的}。
 $$
 
 **这解释了为什么删除 $\mathcal R$ 会破坏记账**：删掉名字后，"代数（L0）× 态（L2/L1′）在哪配对"这件事**无处安放**——`R50` §3 的十条会诊里有多条以 $\mathcal R$ 为坐标，正是因为它们讲的都是**配对之后的读数**。
@@ -43,14 +43,14 @@ $$
 
 | 判据 | 检验 | 结果 | 出处 |
 |:--|:--|:--|:--|
-| J1 无剩余信息 | $\mathcal R$ 对象能否由 L0＋L2/L1′ 算出 | **能**（$K=-\log\omega$、Born、$S_{\max}$；数值与 `R58` 逐位一致） | `R93` J1 |
-| J2 无自身更新律 | $\sigma_t$ 是否含态 | **含**（$K$ 跨度随 $\beta\varepsilon$ 从 $9.08$ 到 $18.12$） | `R93` J2 |
-| J3 层间通量单向 | L2 改⇒$\mathcal R$ 变？$\mathcal R$ 改⇒L2 变？ | **单向**（$S_{\max}\,2.0047\to2.2019$；$\mathcal R$ 不入 L2 的律） | `R93` J3 |
+| J1 无剩余信息 | $\mathcal R$ 对象能否由 L0＋L2/L1′ 算出 | **能**（$K=-\log\omega$、Born、$S\_{\max}$；数值与 `R58` 逐位一致） | `R93` J1 |
+| J2 无自身更新律 | $\sigma\_t$ 是否含态 | **含**（$K$ 跨度随 $\beta\varepsilon$ 从 $9.08$ 到 $18.12$） | `R93` J2 |
+| J3 层间通量单向 | L2 改⇒$\mathcal R$ 变？$\mathcal R$ 改⇒L2 变？ | **单向**（$S\_{\max}\,2.0047\to2.2019$；$\mathcal R$ 不入 L2 的律） | `R93` J3 |
 | J4 亚层形态 | 与母层同类否 | **不同类**（亚层是同层细化；$\mathcal R$ 是配对读出面） | `R93` J4 |
 | **J6（本轮补）** | 内容归属 | 代数 → **L0**；态 → **L2/L1′**；GNS → **规范配对** | 本文件 §2 |
 
 $$
-\Longrightarrow\ \text{三项细分形态（`R97` §4）里，$\mathcal R$ 属}\ \textbf{泛函读出};\ \text{本轮补 J6 说明它}\ \textbf{连泛函的原料都来自两层}。
+\Longrightarrow\ \text{三项细分形态（`R97` §4）里，\mathcal R 属}\ \textbf{泛函读出};\ \text{本轮补 J6 说明它}\ \textbf{连泛函的原料都来自两层}。
 $$
 
 ---
@@ -60,7 +60,7 @@ $$
 上一轮（`R98` §2）留下靶子——"找相位的分级规则，让可见度落在 $(0,1)$"。本轮试了最自然的分级：**相位 $=$ 移位量相位 $\times$ 层高代价**：
 
 $$
-z_C=\sum_{w\in C}\omega^{\mathrm{shift}(w)}\,e^{-\varepsilon\,h_{\max}(w)},
+z_C=\sum_{w\in C}\omega^{\text{shift}(w)}\,e^{-\varepsilon\,h_{\max}(w)},
 \qquad
 \mathcal V_C=\frac{|z_C|}{|C|}
 $$
@@ -78,14 +78,14 @@ $$
 3. $\varepsilon$ 只把**平均**往下压，不把**分布**移进中间区。
 
 $$
-\boxed{\ \text{相位分级}\ \textbf{无效}：\text{类内相位的近均匀性是}\ \textbf{结构性的}（类}\ =\ \text{循环移位轨道）}。
+\ \text{相位分级}\ \textbf{无效}：\text{类内相位的近均匀性是}\ \textbf{结构性的}（类\ =\ \text{循环移位轨道）}。
 $$
 
 **机理**：旋转类的成员互为循环移位 ⇒ 其移位量 $k$ 在 $\{0,\dots,L-1\}$ 上近似均匀 ⇒ $\sum\omega^{k}\approx0$。这是**类定义的直接后果**，不是参数问题。
 
 $$
 \Longrightarrow\ \textbf{结论：干涉不能靠"类内"补齐};\ \text{必须有}\ \textbf{类间}（分支间）\ \text{的相对相位}
-\ \Longrightarrow\ \text{回到}\ \texttt{ACTION-PHASE-MATCH}\ (\texttt{R33})。
+\ \Longrightarrow\ \text{回到}\ \text{ACTION-PHASE-MATCH}\ (\text{R33})。
 $$
 
 **这同时加强 `R86` 的诊断**：缺口不在"类内缺相位"，而在"**类间缺作用量**"。
@@ -97,7 +97,7 @@ $$
 | # | 项 | 说明 |
 |--:|:--|:--|
 | 1 | "导出记号"的措辞 | 若把"层"定义为"可独立命名的结构"，$\mathcal R$ 可以算层；本文件沿用 `R95` 的四层读法 |
-| 2 | 相位分级只试了一种 | 分级函数取层高 $h_{\max}$；其他分级（闭合长度、转向数）未试 ⇒ 否定结论**限于这一族** |
+| 2 | 相位分级只试了一种 | 分级函数取层高 $h\_{\max}$；其他分级（闭合长度、转向数）未试 ⇒ 否定结论**限于这一族** |
 | 3 | J6 的"规范配对" | GNS 对 $(\mathcal A,\omega)$ 是规范的；但**选哪个 $\omega$** 仍是输入（$\beta\varepsilon$ 未锁定） |
 | 4 | $\mathcal R$ 与 L1′ 的界线 | 若未来把"读出"并入 L1′ 的亚层，本节结论不变（只是改标签） |
 | 5 | 四维 GR | 未由此推出 |
@@ -107,10 +107,10 @@ $$
 ## §6 一句话
 
 $$
-\boxed{\
+\
 \begin{aligned}
-&\textbf{$\mathcal R$ 不是层}（无自身律、无剩余信息、通量单向），\ \textbf{也不是空名}——\text{它是}\ \textbf{代数(L0)}\times\textbf{态(L2/L1′)}\ \text{的配对读出面};\\
+&\textbf{\mathcal R 不是层}（无自身律、无剩余信息、通量单向），\ \textbf{也不是空名}——\text{它是}\ \textbf{代数(L0)}\times\textbf{态(L2/L1′)}\ \text{的配对读出面};\\
 &\text{删掉它会破坏记账（十条会诊以它为坐标），故}\ \textbf{保留为导出记号};\\
 &\text{顺带：}\ \textbf{相位分级无效}——\text{类内相消是旋转类定义的结构性后果} \Longrightarrow\ \text{干涉只可能来自}\ \textbf{类间作用量}。
-\end{aligned}}
+\end{aligned}
 $$

@@ -6,12 +6,12 @@
 **等级标签**：【已证】/【条件构造】/【单向嵌入】/【反例】/【开放】。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{D259 的四维局部图册与主 }Z/G\text{ 的四维局部度规之间，}\textbf{已有一条条件输出桥};\\
 &\text{但两条路线之间}\textbf{没有完整等价};\ \text{主}\to\text{D259 还需额外的五通道证书、时间选线与各向异性桥}.\\
 &\text{G9 的“5 通道 vs 4 维”不是物理互斥，而是}\textbf{通道计数约定冲突}。
-\end{aligned}}
+\end{aligned}
 $$
 
 ---
@@ -103,7 +103,7 @@ $$
 因此：
 
 $$
-\boxed{D_{\rm main}(4)=D_{\rm D259}(5)=4.}
+D_{\rm main}(4)=D_{\rm D259}(5)=4.
 $$
 
 但真正若把两边都读成 route β，则：
@@ -155,7 +155,7 @@ $$
 取正交分解
 
 $$
-H_Q=\operatorname{span}\{u\}\oplus u^\perp .
+H_Q=\text{span}\{u\}\oplus u^\perp .
 $$
 
 定义三个空间方向上的正定二次型
@@ -192,11 +192,11 @@ $$
 因此两边的局部洛伦兹度规**逐点相等**。
 
 $$
-\boxed{
+
 \text{D259 局部图册}
-\xrightarrow{\ \text{选时间线}\ }
+\overset{\ \text{选时间线}\ }{\longrightarrow}
 \text{主 }Z/G\text{ 的局部度规}.
-}
+
 $$
 
 这是 **E1 级条件输出桥**。它证明两边的四维度规对象不是互相排斥的。
@@ -234,25 +234,25 @@ $$
 另一方面，主路线允许空间度规各向异性。最直接的反例取
 
 $$
-h=\operatorname{diag}(1,2,3).
+h=\text{diag}(1,2,3).
 $$
 
 若假设存在 `c,u` 使 `g_R=cI_4` 且 `g_R|_{u^\perp}=h`，则 `h` 必须与 `cI_3` 同谱；但
 
 $$
-\operatorname{spec}(h)=\{1,2,3\},
+\text{spec}(h)=\{1,2,3\},
 \qquad
-\operatorname{spec}(cI_3)=\{c,c,c\},
+\text{spec}(cI_3)=\{c,c,c\},
 $$
 
 不可能相等。于是：
 
 $$
-\boxed{
+
 \text{完整五通道 D259}
 \not\cong
 \text{一般各向异性主 }Z/G\text{ 局部模型}.
-}
+
 $$
 
 这不是说 D255 的四面体装配不能承载各向异性；而是说 **D259 在“完整交换各向同性”这一层没有提供足够的反向字典**。要修复它，必须把 D255 的单元几何或加权交换结构提升为 D259 的显式输入，并证明它与主路线的 `h` 生成规则交换。
@@ -284,7 +284,7 @@ $$
 |:--|:--|:--|
 | B1 | `dim H_4=4`，`u∈H_4` 为单位时间线 | 固定四维切空间与号差 |
 | B2 | `h=g_R|_{u^\perp}` 与主路线空间度规逐点相等 | 固定空间度规 |
-| B3 | `\mu=\operatorname{vol}_{g_G}` | 固定体积/尺度 |
+| B3 | `\mu=\text{vol}_{g_G}` | 固定体积/尺度 |
 | B4 | `\Phi_{ji}` 保持 `g_R,u,o,\mu` 且满足 cocycle | 固定全局图册 |
 | B5 | `\mathcal C_5` 的交换结构经 `\mathcal A` 复现 `g_R` | 把 D259 证书接到主路线 |
 | B6 | 对任意共同细化，B2–B5 在细化下交换 | 给唯一连续极限 |
@@ -299,13 +299,13 @@ $$
 若再加入 B7，则可以把“几何路线等价”升级为“物理路线等价”。
 
 $$
-\boxed{
+
 \text{B1–B4}\Rightarrow E1;
 \qquad
 \text{B1–B6}\Rightarrow E2;
 \qquad
 \text{B1–B7}\Rightarrow E3.
-}
+
 $$
 
 目前只能证明第一行，而且只覆盖 D259→主路线这一方向。

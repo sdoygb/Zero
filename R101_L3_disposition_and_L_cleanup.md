@@ -10,12 +10,12 @@
 ## §1 $\mathcal R$ 的处置（**唯一裁定**）
 
 $$
-\boxed{\
+\
 \begin{aligned}
 &\mathcal R\ \textbf{不是层}（无自身更新律、无剩余信息、通量单向），\ \textbf{也不是空名};\\
 &\text{它的}\ \textbf{正式身份}：\ \text{导出记号} = \text{L1}'\ \text{的读出面，按 L2 的钟取景};\\
-&\text{它的}\ \textbf{正式写法}：\ \text{凡断言涉及 $\mathcal R$，必须写成}\ \texttt{readout(L1}';\ \text{clock}=L2)\ \text{或标注【读出面】}。
-\end{aligned}}
+&\text{它的}\ \textbf{正式写法}：\ \text{凡断言涉及 \mathcal R，必须写成}\ \text{readout(L1}';\ \text{clock}=L2)\ \text{或标注【读出面】}。
+\end{aligned}
 $$
 
 ### 1.1 五条处置（逐条落地状态）
@@ -29,7 +29,7 @@ $$
 | 5 | **不删名**（保留 $\mathcal R$ 作为读出面的书写位置） | **已裁定** | 删掉会使十条会诊失去坐标（`R91` §3 已警告） |
 
 $$
-\Longrightarrow\ \text{$\mathcal R$ 的处置}\ \textbf{已闭合};\ \text{后续只需维护"任何 $\mathcal R$ 断言必须带【读出面】标签"}。
+\Longrightarrow\ \text{\mathcal R 的处置}\ \textbf{已闭合};\ \text{后续只需维护"任何 \mathcal R 断言必须带【读出面】标签"}。
 $$
 
 ### 1.2 $\mathcal R$ 的三个**未**决点（诚实登记，不在本轮解决）
@@ -51,11 +51,11 @@ $$
 | 1 | **层标记** | $L0,\ L1,\ L1',\ L2$ | **保留**（$L$ 的专属用法） |
 | 2 | **外部引理阶梯**（Jacobson 2016 的缺口分解） | $L1$ BW/几何 boost、$L5$ 低维算符污染 | **改记 $J1$–$J5$**（已执行） |
 | 3 | **外部派生标签** | `R8_L2`（R8 的第 2 项）、$L3/L4$ 区域 | **改记 $J2$、$J3/J4$**（已执行） |
-| 4 | **词长**（原 $L$） | $\mathcal W_L$、$N_L=\binom L{L/2}$、$q_L$ | **改记 $n$**（`R100`；新文档已执行，旧文档待批量） |
-| 5 | **寿命／系统尺寸**（原 $L$） | $E_+(L{=}4)$、`R8_L2` 的"寿命环" | **寿命记 $\tau$、尺寸记 $\nu$**（`R100`；待批量） |
+| 4 | **词长**（原 $L$） | $\mathcal W\_L$、$N\_L=\binom L{L/2}$、$q\_L$ | **改记 $n$**（`R100`；新文档已执行，旧文档待批量） |
+| 5 | **寿命／系统尺寸**（原 $L$） | $E\_+(L{=}4)$、`R8_L2` 的"寿命环" | **寿命记 $\tau$、尺寸记 $\nu$**（`R100`；待批量） |
 
 $$
-\boxed{\ \text{五套用法里，只有第 1 套可以继续用 } L;\ \text{其余四套全部改用}\ J\ /\ n\ /\ \tau\ /\ \nu\text{。}}
+\ \text{五套用法里，只有第 1 套可以继续用 } L;\ \text{其余四套全部改用}\ J\ /\ n\ /\ \tau\ /\ \nu\text{。}
 $$
 
 ### 2.2 已执行（本轮，全部核验通过）
@@ -108,10 +108,10 @@ $$
 ## §5 一句话
 
 $$
-\boxed{\
+\
 \begin{aligned}
-&\textbf{$\mathcal R$ 处置已闭合}：\text{四层为准，$\mathcal R$}\ =\ \textbf{导出记号}（\text{L1}'\ \text{的读出面，按 L2 的钟取景}）；\ \text{五条处置全部落地};\\
+&\textbf{\mathcal R 处置已闭合}：\text{四层为准，\mathcal R}\ =\ \textbf{导出记号}（\text{L1}'\ \text{的读出面，按 L2 的钟取景}）；\ \text{五条处置全部落地};\\
 &\textbf{清场}：\text{外部引理阶梯}\ L1\text{–}L5\ \textbf{改记}\ J1\text{–}J5（32 文件，核验全过）,\ \text{词长}\to n,\ \text{寿命}\to\tau,\ \text{尺寸}\to\nu;\\
 &\textbf{残余}：\text{叙述句里的 }L1/L2\ \text{登记为待办（不盲改，因同串异指）}。
-\end{aligned}}
+\end{aligned}
 $$

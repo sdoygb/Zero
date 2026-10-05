@@ -5,7 +5,7 @@
 **核验**：[`G76_check.py`](G76_check.py) —— **独立实断言 10 / 结论行 0 / 不符 0**，退出码 `0`（0.5 秒）
 
 $$
-\boxed{\ \text{gap}=0:\ S\sim L\log L\ (\text{面积律被对数破坏});\qquad \text{gap}>0:\ S\propto L\ (\textbf{周长律})\ }
+\ \text{gap}=0:\ S\sim L\log L\ (\text{面积律被对数破坏});\qquad \text{gap}>0:\ S\propto L\ (\textbf{周长律})\ 
 $$
 
 ---
@@ -42,7 +42,7 @@ $$
 | **1.00**（有 gap） | $1.00$ | $1.30,\ 2.18,\ 3.06,\ 3.94,\ 4.82,\ 5.71,\ 6.59,\ 7.47$ | $\mathbf{0.872\to0.883}$ | $\mathbf{0.007}$ |
 
 $$
-\boxed{\ b\ \text{随 gap 单调递减，跨度}\ >\mathbf{50}\ \text{倍}（0.549\to0.007）。\ }
+\ b\ \text{随 gap 单调递减，跨度}\ >\mathbf{50}\ \text{倍}（0.549\to0.007）。\ 
 $$
 
 - **无 gap**：斜率持续增长（$b=0.549$）$\Longrightarrow S\sim L\log L$ ⟹ **面积律被对数破坏**（与 2D Fermi 液体的已知结果一致）；
@@ -71,7 +71,7 @@ $$
 | **2D**（本文） | $S\sim L\log L$ | $S\propto L$（**周长律**） |
 
 $$
-\boxed{\ \textbf{两个维数都要求 gap};\ \text{而 gap 由}\textbf{宇称结构}（\text{G33}）\text{打开}。\ }
+\ \textbf{两个维数都要求 gap};\ \text{而 gap 由}\textbf{宇称结构}（\text{G33}）\text{打开}。\ 
 $$
 
 **所以 [`G75`](G75_quantum_geometry_modular_readout.md) 的结论在 2D 站稳了**：面积律不是自动的（`D129` 说得对），**但在零和框架里它由原生结构打开**。
@@ -82,7 +82,7 @@ $$
 
 | 项 | 说明 |
 |:--|:--|
-| **交错质量仍是"识别"** | 我把宇称 $\mathbb Z_2$ 读成交错质量；**未**从 A5 导出该耦合的形式（[`G75`](G75_quantum_geometry_modular_readout.md) 同一边界） |
+| **交错质量仍是"识别"** | 我把宇称 $\mathbb Z\_2$ 读成交错质量；**未**从 A5 导出该耦合的形式（[`G75`](G75_quantum_geometry_modular_readout.md) 同一边界） |
 | 尺寸有限 | $N=24$、$L\le9$；临界案的 $L\log L$ 与"带对数修正的线性"在有限 $L$ 下**未完全分离**（$b=0.549$ 是**增长率**的证据，不是拟合优度的证明） |
 | 格子 | 只用**方格子环面**；其他 2D 几何／无环面**未测** |
 | 3D | **未做**（$S\propto$ 面积的直接验证） |

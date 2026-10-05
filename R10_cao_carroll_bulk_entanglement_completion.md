@@ -7,13 +7,13 @@
 **核验**：[`R10_check.py`](R10_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{Cao-Carroll 2018 的原生优点是：它直接接受有限维 Hilbert 因子、互信息图和全局切割。}\\
 &\text{但七项假设中，Zero 目前没有一项可以升级为“由 Z 条款（A0–A5 历史命名）无条件导出”。}\\
 &\text{即使给出 CC1-CC7，结论仍只是平直背景上的线性化 Einstein 方程，}\\
 &\text{不是完整非线性 GR，也不能从该桥选出 }D=4\text{。}
-\end{aligned}}
+\end{aligned}
 $$
 
 > **一句话**：R9 把 Cao-Carroll 定为次目标是正确的，因为它能接 Zero 的有限维量子侧；但接口不是“Zero 的有限维分解就是论文的首选局域张量分解”。真正决定性的是 RC 条件、跨切割面积-互信息比例、Radon 反演、Lorentzian 组装和 $D=4$ 选维五项。
@@ -55,9 +55,9 @@ $$
 5. $\Lambda$、黑洞或全阶 backreaction。
 
 $$
-\boxed{
+
 \text{R10 的最高允许结论只能是：在 CC1-CC7 下恢复弱场线性化 EFE。}
-}
+
 $$
 
 ---
@@ -68,11 +68,11 @@ $$
 
 | # | 原文假设 | Zero 候选来源 | 当前状态 | 决定性缺口 |
 |--:|:--|:--|:--|:--|
-| A1 | **首选张量分解** $\mathcal H=\bigotimes_i\mathcal H_i$，因子粗略对应空间局部点或小区域 | [`G29`](G29_probability_as_derived_not_postulated.md) 的粗粒化推前；[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) 的 $M_2(\mathbb C)\otimes\mathbb C^{T+1}$；[`D225`](D225_tensor_vs_direct_sum_factorization_gap.md)、[`D226`](D226_uniform_matrix_coexistence_selector.md) 的因子选择审计；[`R7`](R7_h3_h7_regularity.md) 的站点嵌入 | **输入** | 有限维代数张量因子不是空间 Hilbert 因子；没有原生的因子到物理站点映射 |
-| A2 | **RC 态**：$S(\mathbf B)=\frac12\sum_{i\in\mathbf B,j\notin\mathbf B}I(i\co j)$，近似态写成 $S=S_{\rm RC}+S_{\rm sub}$ | [`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) 给有限维态和熵；[`G75`](G75_quantum_geometry_modular_readout.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md) 给局域面积律候选 | **开放** | 面积律不等于 RC；Zero 没有证明熵对所有区域等于割边两两互信息之和 |
-| A3 | **面积来自互信息**：$\mathcal A(\mathbf B,\bar{\mathbf B})=I(\mathbf B\co\bar{\mathbf B})/(2\alpha)$ | [`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md) 的面积律；[`G79`](G79_horizon_thermodynamics.md) 的面积识别；[`G40`](G40_metric_from_closed_walk_counting.md) 的度规候选 | **开放** | 只测过少数区域熵，未证明所有切割的 $I/\mathcal A$ 常数；$\eta_{\rm face}m$ 稳定而 $\eta_{\rm face}$ 不稳定 |
-| A4 | **修改纠缠平衡**：$\delta S_{\rm RC}+\delta S_{\rm sub}=0$，对全部大范围切割成立 | [`G79`](G79_horizon_thermodynamics.md) 的格点第一定律；[`R8`](R8_jacobson_entanglement_equilibrium_completion.md) 的精确熵差恒等式 R8.1 | **条件证成** | 现有结果只到有限维或 Gaussian 局部模型；没有全局跨切割平衡的连续变分 |
-| A5 | **emergent EFT**：$\delta S_{\rm sub}=\delta S_{\rm EFT}$，且 EFT 有对应 Rindler Hamiltonian | [`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) 给有限维 GNS；[`G75`](G75_quantum_geometry_modular_readout.md) 给模 Hamiltonian 读数 | **输入** | Zero 没有 emergent 连续 QFT、Rindler wedge 或真空减除熵 |
+| A1 | **首选张量分解** $\mathcal H=\bigotimes\_i\mathcal H\_i$，因子粗略对应空间局部点或小区域 | [`G29`](G29_probability_as_derived_not_postulated.md) 的粗粒化推前；[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) 的 $M\_2(\mathbb C)\otimes\mathbb C^{T+1}$；[`D225`](D225_tensor_vs_direct_sum_factorization_gap.md)、[`D226`](D226_uniform_matrix_coexistence_selector.md) 的因子选择审计；[`R7`](R7_h3_h7_regularity.md) 的站点嵌入 | **输入** | 有限维代数张量因子不是空间 Hilbert 因子；没有原生的因子到物理站点映射 |
+| A2 | **RC 态**：$S(\mathbf B)=\frac12\sum\_{i\in\mathbf B,j\notin\mathbf B}I(i\co j)$，近似态写成 $S=S\_{\rm RC}+S\_{\rm sub}$ | [`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) 给有限维态和熵；[`G75`](G75_quantum_geometry_modular_readout.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md) 给局域面积律候选 | **开放** | 面积律不等于 RC；Zero 没有证明熵对所有区域等于割边两两互信息之和 |
+| A3 | **面积来自互信息**：$\mathcal A(\mathbf B,\bar{\mathbf B})=I(\mathbf B\co\bar{\mathbf B})/(2\alpha)$ | [`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md) 的面积律；[`G79`](G79_horizon_thermodynamics.md) 的面积识别；[`G40`](G40_metric_from_closed_walk_counting.md) 的度规候选 | **开放** | 只测过少数区域熵，未证明所有切割的 $I/\mathcal A$ 常数；$\eta\_{\rm face}m$ 稳定而 $\eta\_{\rm face}$ 不稳定 |
+| A4 | **修改纠缠平衡**：$\delta S\_{\rm RC}+\delta S\_{\rm sub}=0$，对全部大范围切割成立 | [`G79`](G79_horizon_thermodynamics.md) 的格点第一定律；[`R8`](R8_jacobson_entanglement_equilibrium_completion.md) 的精确熵差恒等式 R8.1 | **条件证成** | 现有结果只到有限维或 Gaussian 局部模型；没有全局跨切割平衡的连续变分 |
+| A5 | **emergent EFT**：$\delta S\_{\rm sub}=\delta S\_{\rm EFT}$，且 EFT 有对应 Rindler Hamiltonian | [`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md) 给有限维 GNS；[`G75`](G75_quantum_geometry_modular_readout.md) 给模 Hamiltonian 读数 | **输入** | Zero 没有 emergent 连续 QFT、Rindler wedge 或真空减除熵 |
 | A6 | **生成几何的动力学**：存在 Hamiltonian 或量子电路，生成空间几何序列并组装 Lorentzian 时空 | [`G55`](G55_dynamics_line_degeneration_to_GR.md)、[`G56`](G56_degeneration_attempt2_six_slots.md) 给经典形式与有效前沿；[`R1`](R1_gamma_convergence_theorem.md)、[`R7`](R7_h3_h7_regularity.md) 给空间型 Dirichlet 极限 | **条件证成** | 没有连续 Lorentzian 时间演化；R1/R7 只给空间型极限，G56 的 KPP 锥是有效锥 |
 | A7 | **Lorentz 不变性**：上述条件对任意常时片成立，整体在适当极限下 Lorentz 不变 | [`G55`](G55_dynamics_line_degeneration_to_GR.md) 的几何层与 [`G56`](G56_degeneration_attempt2_six_slots.md) 的有效锥是候选；[`G11`](G11_dimension_as_consistency.md)、[`R3`](R3_dimension_selection.md) 给选维边界 | **开放** | 没有连续 Lorentz 表示、任意法向重构或物理独立的 $D=4$ 选择器 |
 
@@ -149,8 +149,8 @@ $$
 
 Zero 目前最接近的是 [`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md) 的规则立方块面积律。但 R8-L2 审计已经说明：
 
-1. 三维中稳定的是 $\eta_{\rm face}m\simeq0.467$，不是 gap 无关的常数 $\eta_{\rm face}$；
-2. 导出的 $m_{\rm stag}=0.23534171$ 与完全面积律窗口仍有约 $8.498$ 倍差距；
+1. 三维中稳定的是 $\eta\_{\rm face}m\simeq0.467$，不是 gap 无关的常数 $\eta\_{\rm face}$；
+2. 导出的 $m\_{\rm stag}=0.23534171$ 与完全面积律窗口仍有约 $8.498$ 倍差距；
 3. 该差距是有限窗口算术结果，不能单独证明结构不可能，但也不支持普适面积密度已经成立。
 
 此外，原论文要求的是**跨任意切割的互信息**，不是只测一个区域的总熵。因此 A3 状态是**开放**。
@@ -161,7 +161,7 @@ Zero 目前最接近的是 [`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law
 
 $$
 S(\sigma)-S(\rho)
-=\operatorname{Tr}((\sigma-\rho)K_\rho)-D(\sigma\Vert\rho).
+=\text{Tr}((\sigma-\rho)K_\rho)-D(\sigma\Vert\rho).
 $$
 
 这能补 A4 的**第一定律代数**，但不能补它的**跨切割平衡**。Cao-Carroll 的 MEEC 是对平直背景中全部余维一全测地切割
@@ -175,7 +175,7 @@ $$
 1. 单个有限维态或 Gaussian 态；
 2. 局部视界/区间；
 3. 没有连续全切割族；
-4. 没有 $\delta S_{\rm sub}$ 的独立 EFT 识别。
+4. 没有 $\delta S\_{\rm sub}$ 的独立 EFT 识别。
 
 所以 A4 只能记为**条件证成**，不是已证。
 
@@ -201,7 +201,7 @@ $$
 c_*=\tanh\mu_*,
 $$
 
-但 $c_*$ 是有效前沿速度，不是严格双曲特征速度。故 A6 只能记为**条件证成**。
+但 $c\_*$ 是有效前沿速度，不是严格双曲特征速度。故 A6 只能记为**条件证成**。
 
 ### A7｜Lorentz 极限与维数
 
@@ -302,7 +302,7 @@ R7 已把这一步登记为 I5b 输入，而不是从 Z0 导出。
 
 $$
 |\Psi\rangle
-=|\mathrm{Bell}\rangle_{03}\otimes|\mathrm{Bell}\rangle_{12}.
+=|\text{Bell}\rangle_{03}\otimes|\text{Bell}\rangle_{12}.
 $$
 
 它精确满足 RC，因为每对内部因子的互信息为 $2\log2$，而任何切割的熵都等于被切开的 Bell 对数乘以 $\log2$。但它的信息边包含距离为 3 的配对 $(0,3)$，不是最近邻局域图。
@@ -310,9 +310,9 @@ $$
 这证明：
 
 $$
-\boxed{
+
 \text{一个精确 RC 态仍可能有长程或交叉的信息边，因此 RC 本身不产生局域几何。}
-}
+
 $$
 
 ---
@@ -339,7 +339,7 @@ $$
 
 ### CC2｜近似 RC 与割函数收敛
 
-对允许的切割族 $\mathfrak C_a$，存在 $\varepsilon_a\to0$，使
+对允许的切割族 $\mathfrak C\_a$，存在 $\varepsilon\_a\to0$，使
 
 $$
 \sup_{\mathbf B_a\in\mathfrak C_a}
@@ -371,7 +371,7 @@ $$
 
 ### CC4｜背景度规与 Radon 反演
 
-存在平直或近平坦背景度规 $g_{ij}$，并把切割面积扰动提升为
+存在平直或近平坦背景度规 $g\_{ij}$，并把切割面积扰动提升为
 
 $$
 \delta\mathcal A(\mathcal C)
@@ -414,7 +414,7 @@ $$
 
 ### CC6｜Lorentzian 组装与弱场极限
 
-存在一族常时片 $\mathcal M_t$，以及时间演化
+存在一族常时片 $\mathcal M\_t$，以及时间演化
 
 $$
 |\Psi(t)\rangle,
@@ -432,7 +432,7 @@ $$
 
 ### CC7｜局部 Lorentz 完成
 
-在弱场窗口内，对任意单位类时法向 $t^\mu$，CC1-CC6 一致成立，并且存在局部 Lorentz 一致性误差 $\zeta_a\to0$：
+在弱场窗口内，对任意单位类时法向 $t^\mu$，CC1-CC6 一致成立，并且存在局部 Lorentz 一致性误差 $\zeta\_a\to0$：
 
 $$
 \left|
@@ -485,19 +485,19 @@ $$
 5. 由 CC7 对所有法向成立，得到
 
 $$
-\boxed{\ \delta G_{\mu\nu}
-=8\pi G_N\,\delta T_{\mu\nu}.\ }
+\ \delta G_{\mu\nu}
+=8\pi G_N\,\delta T_{\mu\nu}.\ 
 $$
 
 ### 定理 R10.1 不推出什么
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{该定理只在平直背景的弱场一阶成立；}\\
 &\text{不推出完整非线性 EFE、非微扰因果结构、黑洞解或 }\Lambda\text{ 的动力学；}\\
 &\text{不推出 }D=4\text{，因为空间维数 }n\text{ 可以继续是自由参数。}
-\end{aligned}}
+\end{aligned}
 $$
 
 具体地说：
@@ -538,7 +538,7 @@ $$
 S(\mathbf B)=\frac12\sum_{i\in\mathbf B,j\notin\mathbf B}I(i\co j)
 $$
 
-对所有允许区域成立，并量化 $S_{\rm sub}$。这条不能由现有面积律替代，因为面积律只是总量标度，不含任意切割的割函数结构。
+对所有允许区域成立，并量化 $S\_{\rm sub}$。这条不能由现有面积律替代，因为面积律只是总量标度，不含任意切割的割函数结构。
 
 ### G-CC3｜跨切割面积-互信息比例
 
@@ -591,8 +591,8 @@ $$
 | F2 | 随机四因子态的 RC 偏差 | RC 不是任意有限维态的自动结果 | 不是定理，只是数值反例 |
 | F3 | 长程 Bell 配对态的 RC 恒等式 | RC 可与非局域信息边共存 | 不产生局域几何 |
 | F4 | 2D massive free-fermion 的 $I/\mathcal A$ 比例稳定性 | 单一 Zero 型基准支持面积-互信息比例 | 不证明任意切割与任意态 |
-| F5 | $4G_N\alpha=1$ 与 $16\pi G_N/2=8\pi G_N$ | 弱场系数代数一致 | 不证明 $\alpha$ 从 Zero 导出 |
-| F6 | $\dim\mathcal P_D=D(D-3)/2$ | $D=4$ 的极化维数事实 | 不提供物理独立的 $D=4$ 选择器 |
+| F5 | $4G\_N\alpha=1$ 与 $16\pi G\_N/2=8\pi G\_N$ | 弱场系数代数一致 | 不证明 $\alpha$ 从 Zero 导出 |
+| F6 | $\dim\mathcal P\_D=D(D-3)/2$ | $D=4$ 的极化维数事实 | 不提供物理独立的 $D=4$ 选择器 |
 
 ### F1/F2｜RC 不是面积律的同义句
 
@@ -617,7 +617,7 @@ $$
 
 $$
 |\Psi\rangle
-=|\mathrm{Bell}\rangle_{03}\otimes|\mathrm{Bell}\rangle_{12}
+=|\text{Bell}\rangle_{03}\otimes|\text{Bell}\rangle_{12}
 $$
 
 对所有非空真子集精确满足 RC，但互信息边 $(0,3)$ 的长度为 3。数值核验的最大 RC 误差为零到机器精度。
@@ -625,9 +625,9 @@ $$
 结论：
 
 $$
-\boxed{
+
 \text{RC 是表示纠缠数据的一种约束，不足以独自产生局域空间嵌入。}
-}
+
 $$
 
 ### F4｜面积-互信息比例的一个有限基准
@@ -664,7 +664,7 @@ $$
 =8\pi G_N\delta T_{\mu\nu}t^\mu t^\nu.
 $$
 
-同时匹配 $\alpha=1/(4G_N)$ 需要
+同时匹配 $\alpha=1/(4G\_N)$ 需要
 
 $$
 4G_N\alpha=1.
@@ -691,19 +691,19 @@ $$
 | CC1 不成立 | 有限维因子不能被解释为空间局部区域，整个 Hilbert-space-to-geometry 映射失败 |
 | CC2 不成立 | RC 割函数失效，面积数据不再由两两互信息控制 |
 | CC3 不成立 | $\alpha$ 不普适，面积识别不能接 Rindler/Newton 系数 |
-| CC4 不成立 | 只能有候选度规，不能从切割面积反演 $\delta h_{ij}$ |
+| CC4 不成立 | 只能有候选度规，不能从切割面积反演 $\delta h\_{ij}$ |
 | CC5 不成立 | 没有 EFT/Rindler 第一定律，MEEC 不能给出 Hamiltonian constraint |
 | CC6 不成立 | 只有空间型 Riemannian 几何，没有 Lorentzian 弱场 EFE |
 | CC7 不成立 | 只有单个法向的 Hamiltonian constraint，不能组装全线性化 EFE |
 | $D=4$ 缺口不关闭 | 即使弱场 EFE 成立，也不能说恢复的是四维 GR |
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{Zero 对 Cao-Carroll 的最强贡献是：把有限维态、模流、面积律和第一定律的接口写清；}\\
 &\text{但 CC1-CC7 没有一条已经由 Z 条款无条件关闭。}\\
 &\text{当前唯一诚实结论仍是：条件恢复，不是无条件导出。}
-\end{aligned}}
+\end{aligned}
 $$
 
 ---
@@ -728,9 +728,9 @@ $$
 6. 没有从 Zero 无条件导出弱场 EFE，更不能声称完整非线性 GR。
 
 $$
-\boxed{
+
 \text{R10 的判定：Cao-Carroll 是合适的次接口，但它补的是“弱场条件桥”，不是“完整 GR 的最后一块砖”。}
-}
+
 $$
 
 ---

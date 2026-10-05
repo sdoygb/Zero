@@ -5,7 +5,7 @@
 **核验**：[`G44_check.py`](G44_check.py) —— **独立实断言 13 / 结论行 16 / 不符 0**，退出码 `0`
 
 $$
-\boxed{\ \text{把闭环计数截断在有限尺度 }k\text{，三前提全满足}\ \Longrightarrow\ \text{起源可以\emph{局域地}得到。}\ }
+\ \text{把闭环计数截断在有限尺度 }k\text{，三前提全满足}\ \Longrightarrow\ \text{起源可以**局域地**得到。}\ 
 $$
 
 ---
@@ -29,7 +29,7 @@ $$
 | 前提 | 结果 |
 |:--|:--|
 | **$(L')$ $g$-locality** | ✅ **精确为 0**（$k\le64 \ll$ 直径 $79$） |
-| **$(L)$（Lovelock 前提）** | ✅ **自动成立**（[`G41`](G41_lovelock_premises_under_nonuniform_weight.md) §3.5：局域作用量 $\Longrightarrow$ $E_{ab}=\mathcal E(g,\partial g,\partial^2g)$） |
+| **$(L)$（Lovelock 前提）** | ✅ **自动成立**（[`G41`](G41_lovelock_premises_under_nonuniform_weight.md) §3.5：局域作用量 $\Longrightarrow$ $E\_{ab}=\mathcal E(g,\partial g,\partial^2g)$） |
 | **$(O)$ 二阶** | ✅ 机器精度（$1.1\times10^{-16}$；5 组 $(N,k)$ 全部） |
 | **$(C)$ 守恒源** | ✅ 恰有 **1 个**零本征值 |
 
@@ -38,7 +38,7 @@ $$
 $$
 
 $$
-\boxed{\ \text{有限截断把「非局域」换成了「有一个尺度」——而起源本身是}\textbf{可以局域地得到的}。\ }
+\ \text{有限截断把「非局域」换成了「有一个尺度」——而起源本身是}\textbf{可以局域地得到的}。\ 
 $$
 
 ---
@@ -55,7 +55,7 @@ $$
 **非局域性在 $k$ 超过图直径后【连续地】出现** $\Longrightarrow$
 
 $$
-\boxed{\ \text{G41 的『}(L')\text{ 不成立』要}\textbf{限定为 }k\to\infty\text{ 的极限}。\ }
+\ \text{G41 的『}(L')\text{ 不成立』要}\textbf{限定为 }k\to\infty\text{ 的极限}。\ 
 $$
 
 （G41 不被推翻：$k\to\infty$ 确实非局域 ✅）
@@ -99,7 +99,7 @@ $$
 | **不增扩充条款** | ⚠️ 需要 $k$ —— **但有原生候选** |
 
 $$
-\boxed{\ \text{若 }k\text{ 能挂在 Z4 的寿命／Z14 的闭合周期上，}\textbf{三难困境解除}。\ }
+\ \text{若 }k\text{ 能挂在 Z4 的寿命／Z14 的闭合周期上，}\textbf{三难困境解除}。\ 
 $$
 
 **这是明确的下一步。**

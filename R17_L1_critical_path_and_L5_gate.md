@@ -3,23 +3,25 @@
 **日期**：2026-10-02  
 **性质**：方向审计 ＋ 一条 L5 相关 no-go ＋ 路线切换判定。不关闭 L1，不新增自由参数；把“继续下钻”改成有门槛的路线选择。  
 **唯一目标**：L1
+
 $$
 K_B\longrightarrow 2\pi B_B .
 $$
+
 **依赖**：[`R0`](R0_publication_theorem.md)、[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R14`](R14_L1_from_zero_assembly.md)、[`R16`](R16_direction_audit_reduction_tree.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md)、[`Z16`](Z16_zunif_balanced_regular_module.md)。  
 **核验**：[`R17_check.py`](R17_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{当前路线不应继续下钻 }Z\text{-UNIF、自旋结构与循环切口。}\\
 &\text{它们只服务于 }Z\text{-CAR 分支，不是 }K_B\to2\pi B_B\text{ 的必经数学步骤。}\\
 &\text{已有中央宇称不能清除 L5 的二费米型标量算符，故 L5 仍需独立状态／对称证书。}\\
 &\text{路线切换：主攻 L5 的 go/no-go；1+1D 的 }Z\text{-CORE}+Z\text{-TAIL 仅作有限引理支线。}
-\end{aligned}}
+\end{aligned}
 $$
 
-> **一句话**：我们前几轮把“费米扇区怎么读出”越写越细，但 L1 要的是模流变成几何 boost。继续细分 `Z-CAR` 只会得到更漂亮的输入账本，不会得到 $K_B\to2\pi B_B$。现在应回到 L1 的上游门槛 L5，先判定低维相关算符污染是否可控。
+> **一句话**：我们前几轮把“费米扇区怎么读出”越写越细，但 L1 要的是模流变成几何 boost。继续细分 `Z-CAR` 只会得到更漂亮的输入账本，不会得到 $K\_B\to2\pi B\_B$。现在应回到 L1 的上游门槛 L5，先判定低维相关算符污染是否可控。
 
 ---
 
@@ -58,7 +60,7 @@ $$
 | `Z-HILB` | 公共空间／嵌入 | 使极限算子有共同定义域 |
 | `Z-CORE` | 分析型 | 二次型／强预解收敛的核心 |
 | `Z-TAIL` | 分析型 | 长程尾项与端点的 uniform 控制 |
-| `Z-STRESS` | 归一化 | 固定 $T_{00}$、$2\pi$ 与常数 |
+| `Z-STRESS` | 归一化 | 固定 $T\_{00}$、$2\pi$ 与常数 |
 | `Z-CONF` | 四维提升 | 从 1+1D 区间到四维双锥 |
 
 **分界**：
@@ -66,15 +68,15 @@ $$
 $$
 \text{选择型}
 =
-\{\texttt{Z-CRIT-DER},\texttt{Z-SCALE},\texttt{Z-HILB},\texttt{Z-CONF}\},
+\{\text{Z-CRIT-DER},\text{Z-SCALE},\text{Z-HILB},\text{Z-CONF}\},
 \qquad
 \text{分析型}
 =
-\{\texttt{Z-CORE},\texttt{Z-TAIL}\},
+\{\text{Z-CORE},\text{Z-TAIL}\},
 \qquad
 \text{常数型}
 =
-\{\texttt{Z-STRESS}\}.
+\{\text{Z-STRESS}\}.
 \qquad\text{(R17-2)}
 $$
 
@@ -92,10 +94,10 @@ $$
 2. 中心特征的离散选择；
 3. 表示层的平衡正则模块。
 
-它们既没有构造公共 Hilbert 空间与公共核心，也没有证明任何 $K_B\to2\pi B_B$ 的极限。因此：
+它们既没有构造公共 Hilbert 空间与公共核心，也没有证明任何 $K\_B\to2\pi B\_B$ 的极限。因此：
 
 $$
-\texttt{Z14},\texttt{Z15},\texttt{Z16}
+\text{Z14},\text{Z15},\text{Z16}
 \not\subset
 \text{CriticalPath(L1)}.
 \qquad\text{(R17-3)}
@@ -140,7 +142,7 @@ R^{2\Delta}\delta\langle O_\Delta\rangle^2,
 \qquad\text{(R17-4)}
 $$
 
-它会与 Jacobson 所需的 $R^d\delta\langle T_{00}\rangle$ 竞争。若危险算符未受控，则即使 L1 成立，固定体积首阶平衡也可能不成立。
+它会与 Jacobson 所需的 $R^d\delta\langle T\_{00}\rangle$ 竞争。若危险算符未受控，则即使 L1 成立，固定体积首阶平衡也可能不成立。
 
 `R12` 又证明：仅有有限维忠实态、GNS 模流、gap、宇称与计数推前，不能推出
 
@@ -153,7 +155,7 @@ $$
 
 ### 4.2 已有的中央宇称是什么
 
-Z14–Z16 给出的中央 $\mathbb Z_2$ 在费米实现中作用为费米宇称：
+Z14–Z16 给出的中央 $\mathbb Z\_2$ 在费米实现中作用为费米宇称：
 
 $$
 P=(-1)^F,
@@ -201,7 +203,7 @@ $$
 
 **推论 R17.3（L5 不能只靠已有中央宇称关闭）【已证】**
 
-Z14–Z16 的中央 $\mathbb Z_2$ 不足以构成 L5 的对称保护证书。若危险标量算符是二费米型或偶局域密度，它在费米宇称下保持偶，因此不会因该宇称自动消失。
+Z14–Z16 的中央 $\mathbb Z\_2$ 不足以构成 L5 的对称保护证书。若危险标量算符是二费米型或偶局域密度，它在费米宇称下保持偶，因此不会因该宇称自动消失。
 
 **边界**：这并不证明危险算符一定存在，也不证明 L5 一定失败；它只证明“已经有费米宇称”不能替代 L5 的算符标度目录或额外对称条件。
 
@@ -213,7 +215,7 @@ Z14–Z16 的中央 $\mathbb Z_2$ 不足以构成 L5 的对称保护证书。若
 
 下一主问题定义为：
 
-> **L5-CERT**：给定候选连续态类，列出所有规范中性局域标量算符 $O_\Delta$，并证明至少一条：
+> **L5-CERT**：给定候选连续态类，列出所有规范中性局域标量算符 $O\_\Delta$，并证明至少一条：
 > 1. 所有危险算符满足 $\Delta>d/2$；
 > 2. 危险系数由附加对称性严格为零；
 > 3. 危险项与接触项／局部反项统一合并，仍给出 $D=o(R^d)$；

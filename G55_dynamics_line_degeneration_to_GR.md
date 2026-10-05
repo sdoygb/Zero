@@ -5,7 +5,7 @@
 **核验**：[`G55_check.py`](G55_check.py) —— **独立实断言 33 / 结论行 0 / 不符 0**，退出码 `0`（约 1 秒）
 
 $$
-\boxed{\ \text{退化到 GR 的}\textbf{形式}\text{要求记忆核【消失】；退化到 GR 的}\textbf{因果结构}\text{要求记忆核【存在】。}\ }
+\ \text{退化到 GR 的}\textbf{形式}\text{要求记忆核【消失】；退化到 GR 的}\textbf{因果结构}\text{要求记忆核【存在】。}\ 
 $$
 
 ---
@@ -19,7 +19,7 @@ $$
 | **R3** | **有限光锥**（因果结构） | **本文新计算** | ❌ **不能**：马尔可夫 $\Rightarrow$ 抛物 $\Rightarrow$ 无锥 |
 
 $$
-\boxed{\ \text{判词是}\textbf{分裂}\text{的：形式能退化，因果不能退化。}\ }
+\ \text{判词是}\textbf{分裂}\text{的：形式能退化，因果不能退化。}\ 
 $$
 
 ---
@@ -44,11 +44,11 @@ $$
 
 复用 [`G33`](G33_macro_master_equation_and_mz_kernel.md) 的 $(V,\Pi,\mathcal L)$ 构造（$L=4$、$N=8$、165 个微观态）：
 
-| 粗粒化 $\pi$ | 类数 | $\lVert QV\mathcal L\rVert$ | $\lVert K_1\rVert$ | $\max_{t\ge2}\lVert K_t\rVert$ | 马尔可夫 |
+| 粗粒化 $\pi$ | 类数 | $\lVert QV\mathcal L\rVert$ | $\lVert K\_1\rVert$ | $\max\_{t\ge2}\lVert K\_t\rVert$ | 马尔可夫 |
 |:--|--:|--:|--:|--:|:--:|
-| $n_0$ | 9 | $1.31$ | $1.14$ | $2.72$ | 否 |
-| **$n_0+n_2$** | 9 | $\mathbf{6.26\times10^{-17}}$ | $4.07\times10^{-16}$ | $\mathbf{2.15\times10^{-31}}$ | **是** |
-| **$n_1+n_3$** | 9 | $\mathbf{6.26\times10^{-17}}$ | $4.06\times10^{-16}$ | $\mathbf{2.15\times10^{-31}}$ | **是** |
+| $n\_0$ | 9 | $1.31$ | $1.14$ | $2.72$ | 否 |
+| **$n\_0+n\_2$** | 9 | $\mathbf{6.26\times10^{-17}}$ | $4.07\times10^{-16}$ | $\mathbf{2.15\times10^{-31}}$ | **是** |
+| **$n\_1+n\_3$** | 9 | $\mathbf{6.26\times10^{-17}}$ | $4.06\times10^{-16}$ | $\mathbf{2.15\times10^{-31}}$ | **是** |
 | **$E\bmod 2$** | 2 | $\mathbf{2.92\times10^{-17}}$ | $6.47\times10^{-16}$ | $\mathbf{7.95\times10^{-31}}$ | **是** |
 
 **退化后确实是一阶马尔可夫**：
@@ -57,30 +57,30 @@ $$
 G_{t+1}=G_t\,\Omega\qquad(\text{残差 }1.6\times10^{-16},\ 1.9\times10^{-16},\ 2.0\times10^{-15}\ \text{对三个奇偶 }\pi)
 $$
 
-**对照**（$n_0$）同一式子残差 $2.861$ —— **不退化**。非退化时的记忆时间（[`G33`](G33_macro_master_equation_and_mz_kernel.md) §5，口径为该文所定）$\tau_{\rm mem}(\infty)=\mathbf{3.27374796}$ 步（$T=12$ 截断口径给 $3.248588$），**有限**。
+**对照**（$n\_0$）同一式子残差 $2.861$ —— **不退化**。非退化时的记忆时间（[`G33`](G33_macro_master_equation_and_mz_kernel.md) §5，口径为该文所定）$\tau\_{\rm mem}(\infty)=\mathbf{3.27374796}$ 步（$T=12$ 截断口径给 $3.248588$），**有限**。
 
 $$
-\boxed{\ \text{存在}\textbf{精确的}马尔可夫退化点；它就是「\pi\ \text{尊重年龄奇偶 }\mathbb Z_2\text{」。}\ }
+\ \text{存在}\textbf{精确的}马尔可夫退化点；它就是「\pi\ \text{尊重年龄奇偶 }\mathbb Z_2\text{」。}\ 
 $$
 
-**[`G11`](G11_dimension_as_consistency.md) 的候选对应**：[`G11`](G11_dimension_as_consistency.md) 里定维数的是"反转 $\mathbb Z_2$ 穷尽匹配"，这里定马尔可夫性的是"年龄奇偶 $\mathbb Z_2$" —— **同型**，**但未证是同一个**（已登记，不作依据）。
+**[`G11`](G11_dimension_as_consistency.md) 的候选对应**：[`G11`](G11_dimension_as_consistency.md) 里定维数的是"反转 $\mathbb Z\_2$ 穷尽匹配"，这里定马尔可夫性的是"年龄奇偶 $\mathbb Z\_2$" —— **同型**，**但未证是同一个**（已登记，不作依据）。
 
 ---
 
 ## §3 源与 Lovelock 前提 ✅（本文复算）
 
-在环 $C_{64}$ 上取闭环计数权 $w^{(m)}_{ij}=m\,A_{ij}(A^{m-1})_{ij}$，$k=8$：
+在环 $C\_{64}$ 上取闭环计数权 $w^{(m)}\_{ij}=m\,A\_{ij}(A^{m-1})\_{ij}$，$k=8$：
 
 | 前提 | 内容 | 实测 |
 |:--|:--|:--|
-| **$(O)$** | 图 Laplacian 作用在常向量上为 0 | $\max\lVert L_W\mathbf 1\rVert/\lVert L_W\rVert=\mathbf{0.00\times10^{0}}$ |
-| **$(C)$** | 恰有 1 个零本征值 | $\lvert\lambda\rvert_1=2.44\times10^{-14}$，$\lvert\lambda\rvert_2=3.41$ |
-| **$(L)$** | 支撑只落在图上 | $W_{ij}=0$ 对非邻接对 ✅ |
+| **$(O)$** | 图 Laplacian 作用在常向量上为 0 | $\max\lVert L\_W\mathbf 1\rVert/\lVert L\_W\rVert=\mathbf{0.00\times10^{0}}$ |
+| **$(C)$** | 恰有 1 个零本征值 | $\lvert\lambda\rvert\_1=2.44\times10^{-14}$，$\lvert\lambda\rvert\_2=3.41$ |
+| **$(L)$** | 支撑只落在图上 | $W\_{ij}=0$ 对非邻接对 ✅ |
 
 **$(L)$ 的精确化（对 [`G48`](G48_per_layer_scales_and_metrics.md) 的更正）**：层 $m$ 边权的**依赖半径**不是 $m$，而是
 
 $$
-\boxed{\ \text{偶 }m:\ \text{半径}=\frac m2-1\ (\text{受影响边}=1,\dots,\tfrac m2-1);\qquad \text{奇 }m:\ \text{层权重恒为 }0\ }
+\ \text{偶 }m:\ \text{半径}=\frac m2-1\ (\text{受影响边}=1,\dots,\tfrac m2-1);\qquad \text{奇 }m:\ \text{层权重恒为 }0\ 
 $$
 
 | $m$ | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
@@ -92,7 +92,7 @@ $$
 
 **同一个算子**（[`G7`](G7_one_operator_and_the_dissipation_obstruction.md) 引理 30）：$F=\tfrac12\rho^{\mathsf T}L\rho$ 沿 $\dot\rho=-L\rho$ 单调不增（$48.169\to4.00$），$\dot F=-\lvert L\rho\rvert^2\le0$ ✅ ——**几何的能函与物质的梯度流是同一算子的两个读出**。
 
-**守恒源**：[`G16`](G16_repair_audit_without_new_axioms.md) 的体＋汇使 $\partial_\tau(\rho+\sigma)=-\nabla\!\cdot\!j$ **精确守恒** ✅
+**守恒源**：[`G16`](G16_repair_audit_without_new_axioms.md) 的体＋汇使 $\partial\_\tau(\rho+\sigma)=-\nabla\!\cdot\!j$ **精确守恒** ✅
 
 $$
 \Longrightarrow\ \text{(R2) 成立}\ \Longrightarrow\ \text{Einstein 方程的}\textbf{形式}\text{在退化点上到手。}
@@ -110,7 +110,7 @@ $$
 | **Cattaneo／电报**（记忆） | 双曲（$c=1$） | $1.69\times10^{-20}$ | — | $\lvert x\rvert>2.5$：$7.20\times10^{-10}$ |
 
 $$
-\boxed{\ \text{有限特征速度}\textbf{来自记忆}；\text{马尔可夫截断恰好丢掉光锥。}\ }
+\ \text{有限特征速度}\textbf{来自记忆}；\text{马尔可夫截断恰好丢掉光锥。}\ 
 $$
 
 ---
@@ -129,7 +129,7 @@ $$
 | **电流的记忆（弛豫）** | **I7**（[`G15`](G15_bare_ax3_has_no_characteristic_speed.md)） | 电流的独立自由度 | **能**（Cattaneo 的 $\lambda$） |
 
 $$
-\boxed{\ \text{G30 的记忆核}\textbf{救不了光锥}；\text{光锥要的是电流的记忆（I7）。}\ }
+\ \text{G30 的记忆核}\textbf{救不了光锥}；\text{光锥要的是电流的记忆（I7）。}\ 
 $$
 
 ---
@@ -157,11 +157,11 @@ $$
 |--:|:--|:--|:--|
 | 1 | **度规**：闭环计数度规，截断 $k=L$（由 Z4 寿命唯一确定） | ✅ 已导出（**收敛性 I2a 仍负面**） | [`G40`](G40_metric_from_closed_walk_counting.md)、[`G46`](G46_k_is_the_lifetime.md)、[`G53`](G53_connecting_the_rg_axis_to_lattice_refinement.md) |
 | 2 | **场方程**：$(L)(O)(C)$ 齐 $\Rightarrow$ Lovelock $\Rightarrow$ Einstein | ✅ 本文复算 | [`G42`](G42_third_route_local_weights.md) |
-| 3 | **源**：同一算子 ＋ 体＋汇 $\Rightarrow$ 精确守恒 $T_{ab}$ | ✅ | [`G7`](G7_one_operator_and_the_dissipation_obstruction.md)、[`G16`](G16_repair_audit_without_new_axioms.md) |
+| 3 | **源**：同一算子 ＋ 体＋汇 $\Rightarrow$ 精确守恒 $T\_{ab}$ | ✅ | [`G7`](G7_one_operator_and_the_dissipation_obstruction.md)、[`G16`](G16_repair_audit_without_new_axioms.md) |
 | 4 | **因果结构**：物质锥 ＝ 几何零锥 | ❌ **卡在 Z0③** | [`G15`](G15_bare_ax3_has_no_characteristic_speed.md)、本文 §4 |
 
 $$
-\boxed{\ \text{唯一堵点是}\textbf{Z0③（无偏好）}\text{——它是唯一挡住 GR 因果结构的条款。}\ }
+\ \text{唯一堵点是}\textbf{Z0③（无偏好）}\text{——它是唯一挡住 GR 因果结构的条款。}\ 
 $$
 
 **三条出路**（[`G16`](G16_repair_audit_without_new_axioms.md) 已列，本文给代价）：
@@ -186,7 +186,7 @@ $$
 | **数值零** | 电报方程锥外的"零"是**数值零**（有限差分；$dx,dt$ 固定，未做收敛阶分析） |
 | **读法** | "GR $\iff$ 记忆核为零"是**读法**（GR 场方程确实无记忆），**未**逐条核验 GR 的初值表述 |
 | **未证明** | **未证**"电流记忆是恢复光锥的**唯一途径**" |
-| $\mathbb Z_2$ | 与 [`G11`](G11_dimension_as_consistency.md) 的对应只是**结构类比**，未证同一 |
+| $\mathbb Z\_2$ | 与 [`G11`](G11_dimension_as_consistency.md) 的对应只是**结构类比**，未证同一 |
 | 维度 | 只在 1D 链／环上算；高维未测 |
 | 影响 | **限定** [`G30`](G30_memory_kernel_test.md) §6；**归并** I6 物质层与 I7；**精确化** [`G48`](G48_per_layer_scales_and_metrics.md) 的半径律；不改变 G1–G54 的其余数值结论 |
 

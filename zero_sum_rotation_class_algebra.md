@@ -14,14 +14,14 @@ Zero 层由**两部分**构成：**文章**（7 篇笔记）与**程序**（10 �
 但程序里装着的一批**定义与定理**此前只以代码形式存在，没有对应的文章。本文补上**旋转类代数**这一支。
 
 $$
-\boxed{\ \text{类（旋转类）}\ \longrightarrow\ \text{计数（项链公式）}\ \longrightarrow\ \text{重数（三套闭合代数）}\ }
+\ \text{类（旋转类）}\ \longrightarrow\ \text{计数（项链公式）}\ \longrightarrow\ \text{重数（三套闭合代数）}\ 
 $$
 
 ---
 
 ## §1 定义：旋转类（项链）
 
-**定义 D1（旋转类）**：设 $w=(w_1,\dots,w_L)\in\{\pm1\}^L$ 是**零和词**（$\sum_i w_i=0$，故 $L$ 为偶数）。
+**定义 D1（旋转类）**：设 $w=(w\_1,\dots,w\_L)\in\{\pm1\}^L$ 是**零和词**（$\sum\_i w\_i=0$，故 $L$ 为偶数）。
 其**旋转类** $[w]$ 是全部循环移位
 
 $$
@@ -31,13 +31,13 @@ $$
 **定义 D2（规范代表）**：程序取
 
 $$
-\operatorname{canon}(w):=\min\{w^{(k)}\}\quad(\text{字典序}),
+\text{canon}(w):=\min\{w^{(k)}\}\quad(\text{字典序}),
 $$
 
 即"最小旋转"。它是一个**可计算的类不变量**（同类的词给同一个 canon）。
 
-> **它为什么重要**：G 系列里一直抽象地数"零和词的旋转类"——$\kappa_1$ 的闭类路线（$\omega_i=o_i/|W_L|$，
-> 见 [`G72`](G72_kappa1_from_the_ledger.md)）、[`G82`](G82_B_from_two_independent_Z2.md) 的取向 $\mathbb Z_2$、
+> **它为什么重要**：G 系列里一直抽象地数"零和词的旋转类"——$\kappa\_1$ 的闭类路线（$\omega\_i=o\_i/|W\_L|$，
+> 见 [`G72`](G72_kappa1_from_the_ledger.md)）、[`G82`](G82_B_from_two_independent_Z2.md) 的取向 $\mathbb Z\_2$、
 > [`G21`](G21_do_the_layers_help_derive_GR.md) §4 的 Burnside 计数、[`G28`](G28_dynamics_audit.md) §4 的闭环图。
 > **Zero 程序里早就有它的可执行实现**（`canonical_cycle`）——这是 Zero 层与 G 系列之间**唯一的实质性桥**。
 
@@ -56,7 +56,7 @@ $$
 
 **核验（枚举 vs 闭式，逐项）**：
 
-| $L$ | $\|W_L\|=\binom{L}{L/2}$ | 枚举 $K$ | 闭式 $K$ | |
+| $L$ | $\|W\_L\|=\binom{L}{L/2}$ | 枚举 $K$ | 闭式 $K$ | |
 |--:|--:|--:|--:|:--:|
 | 2 | 2 | 1 | 1 | ✓ |
 | 4 | 6 | 2 | 2 | ✓ |
@@ -104,10 +104,10 @@ $$
 | `all_cuts` | $M=2^{r}$ | 每个内部归零点**独立**决定切或不切 |
 
 $$
-M_{\rm sterile}=1,\qquad M_{\rm single\_cut}=1+r(w),\qquad M_{\rm all\_cuts}=2^{\,r(w)}.
+M_{\rm sterile}=1,\qquad M_{\rm single_cut}=1+r(w),\qquad M_{\rm all_cuts}=2^{\,r(w)}.
 $$
 
-**核验（总重数 $\sum_{[w]}M$）**：
+**核验（总重数 $\sum\_{[w]}M$）**：
 
 | $L$ | sterile | single_cut | all_cuts |
 |--:|--:|--:|--:|
@@ -125,7 +125,7 @@ $$
 
 | 本文对象 | 在体系里的位置 |
 |:--|:--|
-| 旋转类 $[w]$ | $\kappa_1=\sum_b\omega_b^2$ 的**闭类路线**（$L{=}4$：$\omega=[2/3,1/3]$，$\kappa_1=5/9$）；[`G72`](G72_kappa1_from_the_ledger.md) |
+| 旋转类 $[w]$ | $\kappa\_1=\sum\_b\omega\_b^2$ 的**闭类路线**（$L{=}4$：$\omega=[2/3,1/3]$，$\kappa\_1=5/9$）；[`G72`](G72_kappa1_from_the_ledger.md) |
 | $K(L)$ | [`G21`](G21_do_the_layers_help_derive_GR.md) §4 的 Burnside 计数；[`G28`](G28_dynamics_audit.md) §4 闭环图的**节点数** |
 | $r(w)$ | `reproduction_audit` 的审计对象；[`D244`](D244_zero_sum_matching_linearity.md) 的对照 |
 | $M=1+r$ / $2^r$ | 登记的**候选重数规则**（[`G90`](G90_zero_series_reference_triage.md) 判【打问号】：物理后代数仍未造出） |

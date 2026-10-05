@@ -5,20 +5,20 @@
 **核验**：[`G77_check.py`](G77_check.py) —— **独立实断言 15 / 结论行 5 / 不符 0**，退出码 `0`（0.5 秒）
 
 $$
-\boxed{\ \text{交错耦合} = \text{Z3 的汇}\ \text{作用于}\ \text{G33 的宇称类}
+\ \text{交错耦合} = \text{Z3 的汇}\ \text{作用于}\ \text{G33 的宇称类}
 \Longrightarrow m=\frac{\sigma_{\rm site}}{L}=\frac{1}{L}\ \text{（线性区）},\qquad
-m(L{=}4)=\mathbf{0.2353}\ \text{（完整值）}\ }
+m(L{=}4)=\mathbf{0.2353}\ \text{（完整值）}\ 
 $$
 
 > **口径与因子 2（本版更正）**。$\sigma(a)$ 是**每点强度**（在终止年龄每步退出概率 $=1$，
-> 记为 $\sigma_{\rm site}=1$，见 §1 第 4 步）。精确关系是
-> H=-t\sum_j(c_j^\dagger c_{j+1}+\mathrm{h.c.})+\sum_a\sigma(a)n_a \quad\Longrightarrow\quad \mathrm{gap}=\frac{2|\Theta(\sigma)|}{L},\quad m_{\rm stag}=\frac{|\Theta(\sigma)|}{L}, > \quad \Theta(\sigma):=\sum_{a=0}^{L-1}(-1)^a\sigma(a)
-> **两个数各自的适用条件**：线性区（$\sigma_{\rm site}\to0$）用
-> $m_{\rm stag}=\sigma_{\rm site}/L$，在 $L=4$ 上给 $0.25$（与旧版数字相同）；
-> Z3 的**完整退出强度** $\sigma_{\rm site}=1$ 用对角化精确值 $m_{\rm stag}=0.2353$
-> （$\mathrm{gap}=0.47068342$，**降** $5.9\%$）。二者都只适用于 $L\equiv0\pmod 4$。
+> 记为 $\sigma\_{\rm site}=1$，见 §1 第 4 步）。精确关系是
+> H=-t\sum_j(c_j^\dagger c_{j+1}+\text{h.c.})+\sum_a\sigma(a)n_a \quad\Longrightarrow\quad \text{gap}=\frac{2|\Theta(\sigma)|}{L},\quad m_{\rm stag}=\frac{|\Theta(\sigma)|}{L}, > \quad \Theta(\sigma):=\sum_{a=0}^{L-1}(-1)^a\sigma(a)
+> **两个数各自的适用条件**：线性区（$\sigma\_{\rm site}\to0$）用
+> $m\_{\rm stag}=\sigma\_{\rm site}/L$，在 $L=4$ 上给 $0.25$（与旧版数字相同）；
+> Z3 的**完整退出强度** $\sigma\_{\rm site}=1$ 用对角化精确值 $m\_{\rm stag}=0.2353$
+> （$\text{gap}=0.47068342$，**降** $5.9\%$）。二者都只适用于 $L\equiv0\pmod 4$。
 > **约定说明**：[`G76`](G76_area_law_in_2d.md) 表里的 $m$ 就是加在 Hamiltonian 上的交错项
-> 幅度，其 $\mathrm{gap}=2m$ 在 $m\le0.5$ 时精确成立。故本文的 $m_{\rm stag}$ **直接**
+> 幅度，其 $\text{gap}=2m$ 在 $m\le0.5$ 时精确成立。故本文的 $m\_{\rm stag}$ **直接**
 > 就是 G76 的 $m$，无需换算。
 
 ---
@@ -27,7 +27,7 @@ $$
 
 [`G75`](G75_quantum_geometry_modular_readout.md)（1D）与 [`G76`](G76_area_law_in_2d.md)（2D）都靠一个**交错质量**打开 gap、从而给出面积律——但我当时**如实登记**：
 
-> "我把宇称 $\mathbb Z_2$ 读成交错质量；**未**从 Z3 导出这个耦合的形式。"
+> "我把宇称 $\mathbb Z\_2$ 读成交错质量；**未**从 Z3 导出这个耦合的形式。"
 
 **本文把它导出。** 而且在读旧体系时发现，这条正是 `D135` 说的三层结构里的中间那层：
 
@@ -39,7 +39,7 @@ $$
 
 ### 第 1 步｜站点 = 闭合词的循环位置
 
-[`G27`](G27_purification_attempt.md)／[`G40`](G40_metric_from_closed_walk_counting.md)：闭合词自带循环次序 $\Longrightarrow$ 环图。**站点就是词位置** $i\in\{0,\dots,L-1\}$，$i\sim i+1\ (\mathrm{mod}\ L)$。
+[`G27`](G27_purification_attempt.md)／[`G40`](G40_metric_from_closed_walk_counting.md)：闭合词自带循环次序 $\Longrightarrow$ 环图。**站点就是词位置** $i\in\{0,\dots,L-1\}$，$i\sim i+1\ (\text{mod}\ L)$。
 
 ### 第 2 步｜老化 = 位置前移（**结论保留、宇称子句作废**）
 
@@ -58,7 +58,7 @@ $$
    $A=\{0,2,\dots\}$、$B=\{1,3,\dots\}$，满足 $s(A)=B$、$s(B)=A$、$s^2(A)=A$。
    宇称是**类** $A/B$ 的标签，不是"奇/偶位置"的标签。
 3. **与 [`G82`](G82_B_from_two_independent_Z2.md) §1 的裁决**：G77 第 2 步与 G82 §1 **不冲突**——
-   宇称 $\mathbb Z_2$ 是标签层对合 $\pi$（G82 对），但 $\pi$ **保持**每个宇称类
+   宇称 $\mathbb Z\_2$ 是标签层对合 $\pi$（G82 对），但 $\pi$ **保持**每个宇称类
    （$\pi\circ s\circ\pi=s^{-1}$，数值 $[3,0,1,2]$），因此它**不能**用来推"汇是交错的"；
    交错的真正来源是第 3 步（汇只作用在 $a=L-1$）。原句是**多余且错误**的子句，
    **删掉它不损失任何推导力**。
@@ -67,20 +67,20 @@ $$
 
 Z3 的退出（Z4 终端款：寿命到达）：未闭合分支在**寿命到达**时进入终端账本 ⟹ 汇的**支撑**是 $a=L-1$（单点）。
 
-~~$a_{\rm terminal}$ 是奇数 ⟹ 恰好一个宇称类受汇作用 ⟹ 汇是交错的~~
+~~$a\_{\rm terminal}$ 是奇数 ⟹ 恰好一个宇称类受汇作用 ⟹ 汇是交错的~~
 **这条推理不成立**：$\Theta(\sigma)$ 在**环平移**下只变号，它测的是
 "$\sigma$ 在两个宇称类上的**权重差**"，而**不是**"支撑落在一个类上"。
 正确的是下面的分类命题（证明见 §1.5）。
 
 $$
-\boxed{\ \textbf{汇的交错振幅}\ \Theta(\sigma)=\sum_a(-1)^a\sigma(a)\ \text{由 Z3 的退出决定为}\ \pm\sigma_{\rm site}\ }
+\ \textbf{汇的交错振幅}\ \Theta(\sigma)=\sum_a(-1)^a\sigma(a)\ \text{由 Z3 的退出决定为}\ \pm\sigma_{\rm site}\ 
 $$
 
 **数值核验**（同一总权 $V$，$V\to0$ 的线性区）：
 
-| $\sigma$ 构造 | $\Theta/V$ | $\mathrm{gap}\cdot L/V$ |
+| $\sigma$ 构造 | $\Theta/V$ | $\text{gap}\cdot L/V$ |
 |:--|--:|--:|
-| 点汇 $\delta_{a,L-1}$ | $-1.000000$ | $2.00000000$ |
+| 点汇 $\delta\_{a,L-1}$ | $-1.000000$ | $2.00000000$ |
 | 同类等距 $K=2,3,4,8,L/2$ | $-1.000000$ | $2.00000000$（机器精度） |
 | 整类铺满 | $-1.000000$ | $2.00000000$ |
 | 跨类相邻两点 | $0.000000$ | $0.0000438$ |
@@ -90,6 +90,7 @@ $$
 $$
 \Longrightarrow\ \text{把 Z3 的汇读成"跨年龄分布"救不了第一环；}
 $$
+
 $$
 \text{点汇（Z4 终端款字面）在同一总权下已经是最优支撑。}
 $$
@@ -111,7 +112,7 @@ $$
 \qquad\Longrightarrow\qquad \sigma_{\rm site}=\mathbf 1\ \text{（每点强度）}
 $$
 
-而稳态均匀 $n_a=N/L$ **是补充规则的结果**，给的是**总流率**
+而稳态均匀 $n\_a=N/L$ **是补充规则的结果**，给的是**总流率**
 
 $$
 \kappa=\frac{\langle n_{L-1}\rangle}{N}=\frac1L\qquad(\text{无量纲密度比，不是 on-site 能量})
@@ -119,77 +120,77 @@ $$
 
 **G77 原版把 $\kappa$ 当成了 on-site 强度**——这是口径错误。两者数值可分辨：
 
-| $L$ | $\sigma_{\rm site}=1$ 的 $\mathrm{gap}$ | $\kappa=1/L$ 当强度的 $\mathrm{gap}$ | 比值 |
+| $L$ | $\sigma\_{\rm site}=1$ 的 $\text{gap}$ | $\kappa=1/L$ 当强度的 $\text{gap}$ | 比值 |
 |--:|--:|--:|--:|
 | $4$ | $0.47068342$ | $0.12451363$ | $3.7802$ |
 | $8$ | $0.23266113$ | $0.03121193$ | $7.4542$ |
 | $16$ | $0.11601535$ | $0.00781000$ | $14.8547$ |
 
 $$
-\boxed{\ m_{\rm stag}=\frac{|\Theta(\sigma)|}{L}
+\ m_{\rm stag}=\frac{|\Theta(\sigma)|}{L}
 \ \Longrightarrow\ \begin{cases}
 \text{线性区 }(\sigma_{\rm site}\to0): & m_{\rm stag}=\sigma_{\rm site}/L=0.25\ (L=4)\\
 \text{完整强度 }(\sigma_{\rm site}=1): & m_{\rm stag}=0.2353\ (L=4,\ \text{对角化})
-\end{cases}\ }
+\end{cases}\ 
 $$
 
-**§1.4a 因子 2 的更正确认**。早版本文写 $m=\Theta(\sigma)/(2L)=\sigma_{\rm site}/(2L)$，**错了**。
+**§1.4a 因子 2 的更正确认**。早版本文写 $m=\Theta(\sigma)/(2L)=\sigma\_{\rm site}/(2L)$，**错了**。
 精确关系是
 
 $$
-\mathrm{gap}=\frac{2|\Theta(\sigma)|}{L},\qquad m_{\rm stag}=\frac{|\Theta(\sigma)|}{L}
+\text{gap}=\frac{2|\Theta(\sigma)|}{L},\qquad m_{\rm stag}=\frac{|\Theta(\sigma)|}{L}
 $$
 
-三条独立核验：① $H=-t\,\mathrm{hop}+m(-1)^a$ 给 $\mathrm{gap}=2m$，
-$m=0.05/0.25/0.5$ 精确给 $\mathrm{gap}=0.1/0.5/1.0$；
-② $\sigma\to0$ 时 $d\,\mathrm{gap}/dV\cdot L=2.000000$（与支撑宽度无关）；
-③ 抛物型汇 $\Theta/V=0.011952$（$L=64$）时 $\mathrm{gap}\cdot L/V=0.0239=2\Theta/V$。
+三条独立核验：① $H=-t\,\text{hop}+m(-1)^a$ 给 $\text{gap}=2m$，
+$m=0.05/0.25/0.5$ 精确给 $\text{gap}=0.1/0.5/1.0$；
+② $\sigma\to0$ 时 $d\,\text{gap}/dV\cdot L=2.000000$（与支撑宽度无关）；
+③ 抛物型汇 $\Theta/V=0.011952$（$L=64$）时 $\text{gap}\cdot L/V=0.0239=2\Theta/V$。
 
-**关于线性区的 $0.25$**：来源是 $\mathrm{gap}=2|\Theta|/L=2\sigma_{\rm site}/L=0.5$，
-再取 $m_{\rm stag}=\mathrm{gap}/2=0.25$。旧版也写 $0.25$，但**理由不同**：
-旧版把总流率 $\kappa$ 当每点强度；新版用每点强度 $\sigma_{\rm site}=1$ 乘 $1/L$。
-完整强度给 $0.2353$（$\mathrm{gap}=0.47068342$，$L=4$ 的修正 $-5.9\%$）。
+**关于线性区的 $0.25$**：来源是 $\text{gap}=2|\Theta|/L=2\sigma\_{\rm site}/L=0.5$，
+再取 $m\_{\rm stag}=\text{gap}/2=0.25$。旧版也写 $0.25$，但**理由不同**：
+旧版把总流率 $\kappa$ 当每点强度；新版用每点强度 $\sigma\_{\rm site}=1$ 乘 $1/L$。
+完整强度给 $0.2353$（$\text{gap}=0.47068342$，$L=4$ 的修正 $-5.9\%$）。
 
 ## §1.5｜分类定理：汇的交错振幅**只**由宇称不平衡决定
 
 **定理 1（均匀分量不可见）——【导出】** 令
-$H(\sigma)=-t\sum_j(c_j^\dagger c_{j+1}+\mathrm{h.c.})+\sum_a\sigma(a)n_a$
+$H(\sigma)=-t\sum\_j(c\_j^\dagger c\_{j+1}+\text{h.c.})+\sum\_a\sigma(a)n\_a$
 （周期环，$L$ 偶，$t=1$，半满）。则对任意常数 $c$：
 
 $$
-\mathrm{gap}(\sigma+c\mathbf 1)=\mathrm{gap}(\sigma)\qquad\text{（严格）}
+\text{gap}(\sigma+c\mathbf 1)=\text{gap}(\sigma)\qquad\text{（严格）}
 $$
 
-**证明**：$\sum_a c\,n_a=c\hat N$，在半满固定粒子数扇区上是常数 $cL/2$。∎
+**证明**：$\sum\_a c\,n\_a=c\hat N$，在半满固定粒子数扇区上是常数 $cL/2$。∎
 数值：$c=0,0.1,1,5$ 给极差 $\le7.2\times10^{-15}$。
 
 **定理 2（形状无关）——【导出（线性区）＋数值证据（强强度）】** 在 $\sigma\to0$ 的线性区：
 
 $$
-\mathrm{gap}(\sigma)=\frac{2|\Theta(\sigma)|}{L}+O(\sigma^2),\qquad
+\text{gap}(\sigma)=\frac{2|\Theta(\sigma)|}{L}+O(\sigma^2),\qquad
 \Theta(\sigma)=\sum_{a=0}^{L-1}(-1)^a\sigma(a)
 $$
 
 **证明**：$k$ 空间把 $\sigma$ 分解为 $k=0$ 与 $k=\pi$ 两个通道。$k=0$ 通道是 $\hat N$ 的倍数
-（定理 1），$k=\pi$ 通道就是交错质量 $m_{\rm stag}=\Theta(\sigma)/L$，故
-$\mathrm{gap}=2m_{\rm stag}=|\Theta(\sigma)|/L$。非零动量混合由能带的解析性给 $O(\sigma^2)$。∎
+（定理 1），$k=\pi$ 通道就是交错质量 $m\_{\rm stag}=\Theta(\sigma)/L$，故
+$\text{gap}=2m\_{\rm stag}=|\Theta(\sigma)|/L$。非零动量混合由能带的解析性给 $O(\sigma^2)$。∎
 
 **数值证据**：$V=10^{-6}$ 时单点、同类等距 $K=2,4,8,L/2$、整类铺满、抛物型**七种支撑**
-全部给 $\mathrm{gap}/(2|\Theta|/L)=1.000000\pm2\times10^{-8}$；
-$d\,\mathrm{gap}/dV\cdot L=2.000000$（$L=16\dots512$，与支撑宽度无关）。
+全部给 $\text{gap}/(2|\Theta|/L)=1.000000\pm2\times10^{-8}$；
+$d\,\text{gap}/dV\cdot L=2.000000$（$L=16\dots512$，与支撑宽度无关）。
 
-**推论 3（最优支撑）——【导出】** 固定总权 $V=\sum_a\sigma(a)\ge0$ 与 $\sigma\ge0$：
+**推论 3（最优支撑）——【导出】** 固定总权 $V=\sum\_a\sigma(a)\ge0$ 与 $\sigma\ge0$：
 
 $$
 |\Theta(\sigma)|\le V,\qquad\text{等号}\iff \sigma\ \text{的支撑落在}\textbf{单一宇称类}\text{上}
 $$
 
-**证明**：记两类权重 $V_A,V_B$，则 $\Theta=V_A-V_B$、$V=V_A+V_B$，故
-$|\Theta|=|V_A-V_B|\le V_A+V_B=V$；等号要求 $V_A\cdot V_B=0$。∎
+**证明**：记两类权重 $V\_A,V\_B$，则 $\Theta=V\_A-V\_B$、$V=V\_A+V\_B$，故
+$|\Theta|=|V\_A-V\_B|\le V\_A+V\_B=V$；等号要求 $V\_A\cdot V\_B=0$。∎
 
 $$
-\boxed{\ \text{Z4 终端款的字面点汇（支撑}=\{L-1\}\text{）取等号：}\eta:=|\Theta|/V=\mathbf 1\ \text{（100\% 效率）}
-\ \Longrightarrow\ m_{\rm stag}=\frac{|\Theta(\sigma)|}{L}=\frac{\sigma_{\rm site}}{L}\ }
+\ \text{Z4 终端款的字面点汇（支撑}=\{L-1\}\text{）取等号：}\eta:=|\Theta|/V=\mathbf 1\ \text{（100\% 效率）}
+\ \Longrightarrow\ m_{\rm stag}=\frac{|\Theta(\sigma)|}{L}=\frac{\sigma_{\rm site}}{L}\ 
 $$
 
 所以**不存在**"通过跨年龄分配 $\sigma(a)$ 来提高交错质量"的自由度：
@@ -219,41 +220,41 @@ $$
 （$L=4,8,12,16,\dots$；$L=4$ 是 [`G61`](G61_locking_the_five_integers.md)／
 [`G73`](G73_B_is_an_input.md) 的锁定值，在其中）。
 $L\equiv2\pmod 4$ 是**另一个标度区**：那里 $k=\pi/2$ 不落在 $k$ 网格上，
-$\mathrm{gap}\cdot L\to10.71$ 而不是 $1.8546$，所以 $L=6,10,14,\dots$ 的数字
+$\text{gap}\cdot L\to10.71$ 而不是 $1.8546$，所以 $L=6,10,14,\dots$ 的数字
 **不能**与本链的其他数字混用。
 
-**完整 Z3 退出强度下的数字（本版新增）**：取 $\sigma_{\rm site}=1$（口径 A/C）：
+**完整 Z3 退出强度下的数字（本版新增）**：取 $\sigma\_{\rm site}=1$（口径 A/C）：
 
 | 量 | 值 |
 |:--|--:|
-| $L=4$ 点汇 $\mathrm{gap}$（对角化） | $0.47068342$ |
-| $\Rightarrow m=\mathrm{gap}/2$ | $\mathbf{0.23534171}$ |
-| 线性区 $2\sigma_{\rm site}/L$ | $0.50000000$ |
-| $L\equiv0\pmod4$ 大 $L$：$\mathrm{gap}\cdot L/\sigma_{\rm site}$ | $1.8546$ |
-| 关联长度 $\xi=v_F/m$（$v_F=1$） | $4.25$ |
+| $L=4$ 点汇 $\text{gap}$（对角化） | $0.47068342$ |
+| $\Rightarrow m=\text{gap}/2$ | $\mathbf{0.23534171}$ |
+| 线性区 $2\sigma\_{\rm site}/L$ | $0.50000000$ |
+| $L\equiv0\pmod4$ 大 $L$：$\text{gap}\cdot L/\sigma\_{\rm site}$ | $1.8546$ |
+| 关联长度 $\xi=v\_F/m$（$v\_F=1$） | $4.25$ |
 
 **关联长度与 $L$ 同步增长（本版新增的硬约束）**：
 
 | $L$ | $8$ | $16$ | $32$ | $64$ | $128$ | $256$ |
 |:--|--:|--:|--:|--:|--:|--:|
-| $\mathrm{gap}$ | $0.23266113$ | $0.11601535$ | $0.05796885$ | $0.02897959$ | $0.01448919$ | $0.00724452$ |
-| $m=\mathrm{gap}/2$ | $0.11633$ | $0.05801$ | $0.02898$ | $0.01449$ | $0.007245$ | $0.003622$ |
-| $\xi=v_F/m$ | $8.60$ | $17.24$ | $34.50$ | $69.01$ | $138.03$ | $276.07$ |
+| $\text{gap}$ | $0.23266113$ | $0.11601535$ | $0.05796885$ | $0.02897959$ | $0.01448919$ | $0.00724452$ |
+| $m=\text{gap}/2$ | $0.11633$ | $0.05801$ | $0.02898$ | $0.01449$ | $0.007245$ | $0.003622$ |
+| $\xi=v\_F/m$ | $8.60$ | $17.24$ | $34.50$ | $69.01$ | $138.03$ | $276.07$ |
 | $\xi/L$ | $1.0745$ | $1.0774$ | $1.0782$ | $1.0783$ | $1.0784$ | $1.0784$ |
 
 $$
-\boxed{\ \xi\simeq1.078\,L\ \text{（与 }L\text{ 同步增长）}\Longrightarrow
-\textbf{"子区域尺寸}\gg\xi\textbf{"这个面积律前提在本链里永远不满足}\ }
+\ \xi\simeq1.078\,L\ \text{（与 }L\text{ 同步增长）}\Longrightarrow
+\textbf{"子区域尺寸}\gg\xi\textbf{"这个面积律前提在本链里永远不满足}\ 
 $$
 
 $$
-\boxed{\ \text{面积律仍是}\textbf{部分的}（\text{一维 }b\approx0.15\sim0.17\ \text{而非}\ 0.007）——
-\text{弱化如实保留，并升级为一条}\textbf{结构性障碍}。\ }
+\ \text{面积律仍是}\textbf{部分的}（\text{一维 }b\approx0.15\sim0.17\ \text{而非}\ 0.007）——
+\text{弱化如实保留，并升级为一条}\textbf{结构性障碍}。\ 
 $$
 
 **这是一条**明确的开放点**：更强的 gap 需要**汇以外的机构**——但**不是**"不止一个终止年龄"
-（两个终止年龄跨两类，$\Theta$ 被稀释：$L=4$ 时 $\Theta=0$、$\mathrm{gap}=0.236$ 只剩非微扰残余），
-**也不是**"跨年龄平滑"（所有支撑宽度的 $\mathrm{gap}\cdot L/V$ 都是 $2.0000$，没有增益）。
+（两个终止年龄跨两类，$\Theta$ 被稀释：$L=4$ 时 $\Theta=0$、$\text{gap}=0.236$ 只剩非微扰残余），
+**也不是**"跨年龄平滑"（所有支撑宽度的 $\text{gap}\cdot L/V$ 都是 $2.0000$，没有增益）。
 
 ---
 
@@ -275,9 +276,9 @@ $$
 | **"汇 = 交错质量"是模型化** | 我把 Z3 的汇写成自由费米模型里的在格能量；这是标准的对应，但**未**从 Z3 严格推出自由费米形式 |
 | 汇率 = $1/L$ 依赖均匀稳态 | 该均匀性来自 [`G33`](G33_macro_master_equation_and_mz_kernel.md) 的等量补充（其自身是 I8 的替身，[`G36`](G36_objective_completion_audit.md) 已登记） |
 | **部分性** | 导出的 $m=0.25$ 只给**部分**面积律（$b=0.150$）；**完全**面积律（$b\to0$）需 $m\ge0.5$，本文**未**找到原生来源 |
-| **部分性** | 线性区 $m_{\rm stag}=0.25$ 只给**部分**面积律（$b=0.150$）；Z3 的完整退出强度给 $m_{\rm stag}=0.2353$；**完全**面积律需 $m\ge0.5$，本文**未**找到原生来源 |
-| **★ 结构性障碍（本轮新增）** | 点汇的关联长度 $\xi=v_F/m_{\rm stag}\simeq1.078\,L$ **与 $L$ 同步增长**（$L=8\dots256$，$\xi/L$ 稳定到 $0.3\%$）⟹ 子区域尺寸远大于 $\xi$ 这个面积律前提**在整条链上永远不满足** |
-| **口径** | $\sigma$ 是**每点强度**（$\sigma_{\rm site}=1$），G33 的 $\kappa=1/L$ 是**总流率**、不是强度；$L\equiv2\pmod4$ 属另一标度区（$\mathrm{gap}\cdot L\to10.71$），数字不可混用 |
+| **部分性** | 线性区 $m\_{\rm stag}=0.25$ 只给**部分**面积律（$b=0.150$）；Z3 的完整退出强度给 $m\_{\rm stag}=0.2353$；**完全**面积律需 $m\ge0.5$，本文**未**找到原生来源 |
+| **★ 结构性障碍（本轮新增）** | 点汇的关联长度 $\xi=v\_F/m\_{\rm stag}\simeq1.078\,L$ **与 $L$ 同步增长**（$L=8\dots256$，$\xi/L$ 稳定到 $0.3\%$）⟹ 子区域尺寸远大于 $\xi$ 这个面积律前提**在整条链上永远不满足** |
+| **口径** | $\sigma$ 是**每点强度**（$\sigma\_{\rm site}=1$），G33 的 $\kappa=1/L$ 是**总流率**、不是强度；$L\equiv2\pmod4$ 属另一标度区（$\text{gap}\cdot L\to10.71$），数字不可混用 |
 | 影响 | 把 [`G75`](G75_quantum_geometry_modular_readout.md)／[`G76`](G76_area_law_in_2d.md) 的"识别"升级为**以 I5 为前提的导出**，并给出**部分性**这一诚实的弱化；不改变 G1–G76 的其余数值结论 |
 
 ---
@@ -288,4 +289,4 @@ $$
 python3 G77_check.py     # 通过 20 / 不符 0，退出码 0（0.5 秒）
 ```
 
-F1 **老化 = 位置前移** · F2 **汇是一个宇称类** · F3 **稳态均匀 $\Longrightarrow$ 总流率 $\kappa=1/L$（不是每点强度）** · F4 **$m_{\rm stag}=|\Theta|/L$；线性区 $0.25$、完整强度 $0.2353$** · F5 **代入 G76（$b=0.150$）** · F6 **$L\equiv0\pmod4$；$\xi\simeq1.078\,L$ $\Longrightarrow$ 面积律前提永不满足**。
+F1 **老化 = 位置前移** · F2 **汇是一个宇称类** · F3 **稳态均匀 $\Longrightarrow$ 总流率 $\kappa=1/L$（不是每点强度）** · F4 **$m\_{\rm stag}=|\Theta|/L$；线性区 $0.25$、完整强度 $0.2353$** · F5 **代入 G76（$b=0.150$）** · F6 **$L\equiv0\pmod4$；$\xi\simeq1.078\,L$ $\Longrightarrow$ 面积律前提永不满足**。

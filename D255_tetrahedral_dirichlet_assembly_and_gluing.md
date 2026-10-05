@@ -7,7 +7,7 @@
 **v0.5 定位**：D254 把连续 Dirichlet 张量到三维叶层空间度规的路径闭合，但离散交换权重怎样恢复连续 $Q^{ij}$ 仍是缺口。本文在给定三维四面体单元与顶点嵌入的条件下给出显式装配公式：
 
 $$
-\boxed{
+
 Q_\sigma
 =
 \frac{1}{\omega_\sigma}
@@ -16,7 +16,7 @@ K_{ab}\,
 e_{ab}\otimes e_{ab},
 \qquad
 e_{ab}=x_b-x_a .
-}
+
 $$
 
 再由 D254 的三维反解得到
@@ -42,7 +42,7 @@ $$
 D254 的条件链是
 
 $$
-(t,Q,\mu=\operatorname{vol}_h)
+(t,Q,\mu=\text{vol}_h)
 \Longrightarrow_{\rm cond}
 h
 \Longrightarrow_{\rm cond}
@@ -72,9 +72,9 @@ $$
 在给定嵌入单元复形后，答案是：可以。
 
 $$
-\boxed{
+
 \text{剩余问题不是公式本身，而是单元几何与细化规则从哪里来。}
-}
+
 $$
 
 **第 2 步｜三维四面体单元。**
@@ -108,12 +108,12 @@ $$
 >0 .
 $$
 
-顶点嵌入 $x_a$ 与单元复形此时是显式输入。
+顶点嵌入 $x\_a$ 与单元复形此时是显式输入。
 
 $$
-\boxed{
+
 \text{没有顶点嵌入，交换权重只给图，不给三维连续张量。}
-}
+
 $$
 
 **第 3 步｜仿射标量梯度。**
@@ -160,9 +160,9 @@ E_\sigma(g)
 $$
 
 $$
-\boxed{
+
 \text{交换权重与边长向量一起给一个梯度二次型 }A_\sigma .
-}
+
 $$
 
 **第 4 步｜连续 Dirichlet 能量。**
@@ -199,22 +199,22 @@ $$
 因此得到显式装配公式
 
 $$
-\boxed{
+
 Q_\sigma
 =
 \frac{1}{\omega_\sigma}
 \sum_{a<b}
 K_{ab}\,
 e_{ab}\otimes e_{ab}.
-}
+
 $$
 
 这是本文的核心条件定理。
 
 $$
-\boxed{
+
 \text{在给定四面体几何后，交换权重唯一装配出单元 Dirichlet 张量。}
-}
+
 $$
 
 这登记为 `R-Z-TETRAHEDRAL-DIRICHLET-ASSEMBLY`。
@@ -229,16 +229,16 @@ A_\sigma
 \sum_{a<b}K_{ab}e_{ab}\otimes e_{ab}
 $$
 
-是正定矩阵，所以 $Q_\sigma>0$。
+是正定矩阵，所以 $Q\_\sigma>0$。
 
 D254 的三维反解给出
 
 $$
-\boxed{
+
 h_\sigma
 =
 (\det Q_\sigma)\,Q_\sigma^{-1}.
-}
+
 $$
 
 因此局部条件度规为
@@ -257,9 +257,9 @@ $$
 4. 顶点嵌入与单元体积。
 
 $$
-\boxed{
+
 \text{单元级度规已可组装；全局度规还须面胶合与细化一致性。}
-}
+
 $$
 
 **第 6 步｜面胶合条件。**
@@ -267,21 +267,21 @@ $$
 若两个四面体 $\sigma,\tau$ 共享面 $T$，则一个全局叶层度规必须先要求共享面上的 Dirichlet 张量一致：
 
 $$
-\boxed{
+
 Q_\sigma|_T
 =
 Q_\tau|_T
 \qquad
 \text{在切向作用上}.
-}
+
 $$
 
 因为 D254 的反解 $h=(\det Q)Q^{-1}$ 是 $Q$ 的函数，所以只要 $Q$ 在共享面上一致，由它反解出的 $h$ 也在共享面上一致。
 
 $$
-\boxed{
+
 Q\text{ 的面胶合是 }h\text{ 的面胶合的充分条件}.
-}
+
 $$
 
 这登记为 `R-Z-DIRICHLET-ASSEMBLY-GLUING`。
@@ -299,11 +299,11 @@ $$
 因此面胶合失败不能只当作数值误差；它表示当前单元分解与交换权重不相容。
 
 $$
-\boxed{
+
 \text{面胶合失败}
 \Longrightarrow
 \text{没有单一叶层度规 }h\text{ 同时实现两侧二次型}.
-}
+
 $$
 
 **第 8 步｜局部胶合不等于全局来源。**
@@ -323,21 +323,21 @@ $$
 其中：
 
 1. $\mathcal K$ 是单元复形；
-2. $x_a$ 是顶点嵌入；
-3. $\omega_\sigma$ 是单元坐标体积；
-4. $K_{ab}$ 是交换权重。
+2. $x\_a$ 是顶点嵌入；
+3. $\omega\_\sigma$ 是单元坐标体积；
+4. $K\_{ab}$ 是交换权重。
 
 $$
-\boxed{
+
 \text{单元复形、顶点嵌入与坐标体积仍是独立恢复层输入。}
-}
+
 $$
 
 这登记为 `R-Z-CELL-COMPLEX-GEOMETRY-GAP`。
 
 **第 9 步｜细化一致性。**
 
-若取两套细化 $\mathcal K_h$ 与 $\mathcal K_{h'}$，它们可给两个装配张量
+若取两套细化 $\mathcal K\_h$ 与 $\mathcal K\_{h'}$，它们可给两个装配张量
 
 $$
 Q_h
@@ -349,17 +349,17 @@ $$
 
 1. 顶点嵌入在共同细化上相容；
 2. 面胶合在重叠单元上相容；
-3. $Q_h$ 与 $Q_{h'}$ 在共同可测区域上收敛到同一个连续张量；
+3. $Q\_h$ 与 $Q\_{h'}$ 在共同可测区域上收敛到同一个连续张量；
 4. 反解出的 $h$ 在相同限制下有共同极限。
 
 若这些条件不成立，离散交换数据可以有多个连续几何极限。
 
 $$
-\boxed{
+
 \text{面胶合}
 \not\Longrightarrow
 \text{细化独立或唯一连续极限}.
-}
+
 $$
 
 这登记为 `R-Z-REFINEMENT-TENSOR-CONSISTENCY-GAP`。
@@ -383,29 +383,29 @@ $$
 后条件变为
 
 $$
-\boxed{
+
 (K_{ab},x_a,\omega_\sigma)
 \Longrightarrow_{\rm cond}
 Q_\sigma
 \Longrightarrow_{\rm cond}
 h_\sigma .
-}
+
 $$
 
 所以缺口不再是“没有公式”，而是“公式所需的单元几何与细化规则尚未由上游选择”。
 
 $$
-\boxed{
+
 \text{离散到连续已缩小为单元几何选择与细化一致性。}
-}
+
 $$
 
 **第 11 步｜判决。**
 
 本步能主张：
 
-1. 给定四面体顶点嵌入与交换权重，$Q_\sigma$ 由显式装配公式唯一确定；
-2. 由 $Q_\sigma$ 可条件反解局部 $h_\sigma$ 与 $\mathrm g_\sigma=dt^2-h_\sigma$；
+1. 给定四面体顶点嵌入与交换权重，$Q\_\sigma$ 由显式装配公式唯一确定；
+2. 由 $Q\_\sigma$ 可条件反解局部 $h\_\sigma$ 与 $\mathrm g\_\sigma=dt^2-h\_\sigma$；
 3. 面胶合是全局叶层度规的必要条件；
 4. 胶合失败给出明确 no-go。
 
@@ -424,7 +424,7 @@ $$
 
 1. D255 与恢复结构已登记；
 2. 单元体积与边向量定义；
-3. 离散交换能量与 $A_\sigma$ 一致；
+3. 离散交换能量与 $A\_\sigma$ 一致；
 4. 装配公式 $Q=A/\omega$ 对多个梯度成立；
 5. $Q$ 正定并反解出正定 $h$；
 6. 面张量一致给出共同局部度规；
@@ -440,17 +440,17 @@ $$
 
 | 标识 | 含义 | 状态 |
 |:--|:--|:--|
-| `R-Z-TETRAHEDRAL-DIRICHLET-ASSEMBLY` | 给定四面体顶点与交换权重，$Q_\sigma=\omega_\sigma^{-1}\sum K_{ab}e_{ab}\otimes e_{ab}$ 唯一装配单元 Dirichlet 张量 | 条件定理 |
+| `R-Z-TETRAHEDRAL-DIRICHLET-ASSEMBLY` | 给定四面体顶点与交换权重，$Q\_\sigma=\omega\_\sigma^{-1}\sum K\_{ab}e\_{ab}\otimes e\_{ab}$ 唯一装配单元 Dirichlet 张量 | 条件定理 |
 | `R-Z-DIRICHLET-ASSEMBLY-GLUING` | 相邻单元在共享面上的 $Q$ 必须一致才能得到单一叶层度规；一致是充分条件 | 条件约束 |
 | `R-Z-CELL-COMPLEX-GEOMETRY-GAP` | 单元复形、顶点嵌入与坐标体积仍未由读回、零和交换或支持预层导出 | 未解输入 |
-| `R-Z-REFINEMENT-TENSOR-CONSISTENCY-GAP` | 不同细化可以给不同 $Q_h$；唯一连续极限需要嵌入、面胶合与张量收敛的共同条件 | 未解缺口 |
+| `R-Z-REFINEMENT-TENSOR-CONSISTENCY-GAP` | 不同细化可以给不同 $Q\_h$；唯一连续极限需要嵌入、面胶合与张量收敛的共同条件 | 未解缺口 |
 
 这些结构沿用 `R-Z-DIRICHLET-TENSOR-METRIC`、`R-Z-DISCRETE-DIRICHLET-TENSOR-GAP` 与 `R-Z-READOUT-TO-ADM-SELECTION-GAP`，不修改 `U1-U4+C1`，也不新增 `U5`。
 
 $$
-\boxed{
+
 \text{单元级离散到连续已条件闭合；单元几何来源与细化唯一性仍未闭合。}
-}
+
 $$
 
 ---
@@ -462,16 +462,16 @@ $$
 | 标量读回时钟 | 给叶状与时间函数 | `D200`、`D254` 缺口 |
 | 单位 lapse、零 shift | 给 $\mathrm g=dt^2-h$ | `D254` 条件规范 |
 | 三维单元复形 $\mathcal K$ | 给图与单元连接 | 未导出 |
-| 顶点嵌入 $x_a$ | 给边向量与局部方向 | D251 支持嵌入的加细 |
-| 单元坐标体积 $\omega_\sigma$ | 把边二次型变为张量密度 | 未导出 |
-| 交换权重 $K_{ab}$ | 给离散二次型 | D248-D250 条件源前体 |
+| 顶点嵌入 $x\_a$ | 给边向量与局部方向 | D251 支持嵌入的加细 |
+| 单元坐标体积 $\omega\_\sigma$ | 把边二次型变为张量密度 | 未导出 |
+| 交换权重 $K\_{ab}$ | 给离散二次型 | D248-D250 条件源前体 |
 | 面胶合规则 | 给全局度规存在性 | 条件约束 |
 | 细化族与共同限制 | 给连续极限唯一性 | 未导出 |
 | 度规体积一致性 | 把 $Q$ 反解为 $h$ | `D254` 显式约定 |
 | Einstein 动力学 | 选择物理解与演化 | 未闭合 |
 
 $$
-\boxed{
+
 \text{当前得到的是给定单元几何后的条件装配，不是已由上游选出的唯一连续空间。}
-}
+
 $$

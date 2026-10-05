@@ -14,7 +14,7 @@
 把**"可能的描述数／分支程序数"**当成了**"新物理圈数"**。本文把这次审计的**定理内容**写出来：
 
 $$
-\boxed{\ \text{闭合}\ \Rightarrow\ \text{持续};\qquad \text{持续}\ \ne\ \text{繁殖};\qquad \text{只有显式复制给指数增长。}\ }
+\ \text{闭合}\ \Rightarrow\ \text{持续};\qquad \text{持续}\ \ne\ \text{繁殖};\qquad \text{只有显式复制给指数增长。}\ 
 $$
 
 ---
@@ -70,7 +70,7 @@ $$
 | `split_all` | $1.0$ | 0 | 6 | —（非幂零） | constant ／ polynomial |
 
 $$
-\boxed{\ \text{五条规则中，}\textbf{只有显式复制（copy）给指数增长};\ \text{其余至多常数／多项式。}\ }
+\ \text{五条规则中，}\textbf{只有显式复制（copy）给指数增长};\ \text{其余至多常数／多项式。}\ 
 $$
 
 ---
@@ -83,10 +83,10 @@ $$
 T^{6}=0,\qquad \rho(T)=0,\qquad \#\{\text{零特征值}\}=123 ,
 $$
 
-故 $N_k=\mathbf 1^\top T^k v_0$ 在**有限代内归零**——程序把这一指数直接算作 `nilpotent_index`：
+故 $N\_k=\mathbf 1^\top T^k v\_0$ 在**有限代内归零**——程序把这一指数直接算作 `nilpotent_index`：
 
 $$
-\boxed{\ \rho(T)=0\ \Longleftrightarrow\ T\ \text{幂零}\ \Longleftrightarrow\ \text{谱系在有限代内灭绝};\quad\text{灭绝时间}=\text{幂零指数}.}
+\ \rho(T)=0\ \Longleftrightarrow\ T\ \text{幂零}\ \Longleftrightarrow\ \text{谱系在有限代内灭绝};\quad\text{灭绝时间}=\text{幂零指数}.
 $$
 
 **这条是**"闭合不等于永续"**的定量形式**：切分而**不复制**，父一撤，谱系就死。

@@ -7,14 +7,14 @@
 **依赖**：[`R90`](R90_layer_distribution.md) §6、[`R95`](R95_layer_table_and_discipline.md)（层表）、[`R97`](R97_sublayer_structure.md)（L1 三档）、[`G27`](G27_purification_attempt.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`R59`](R59_conjecture_inventory.md) K8、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R37`](R37_kcbs_contextuality.md)、[`R42`](R42_explicit_pi_rotation_class.md)、[`R86`](R86_reseed_class_verdict.md) F1。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\textbf{结论：}\ \text{L1}\ \textbf{不缺相位群}——\text{相位群}\ \mu_n=\{\omega^k\}\ (\omega=e^{2\pi i/L})\ \text{由}\ \textbf{L0 的循环次序}供出，\ -1\in\mu_n\ \text{与双覆盖相容};\\
 &\qquad\text{L1}\ \text{缺的是}\ \textbf{相对相位的登记规则}（哪个移位量入账）。\ \text{缺口因此从"缺相位"精确化为"缺索引"}。\\
 &\textbf{新结果①：}\ \text{同一旋转类内存在}\ \textbf{多种移位量}（L=8/10/12 分别 10/26/80 个类）\ \Longrightarrow\ \text{类内相对相位非平凡};\\
 &\qquad\text{但按}\ \omega^{shift}\ \text{直接求和时可见度}\to0（L=8/10/12 平均 0.158/0.037/0.047）\ \Longrightarrow\ \text{朴素指派}\textbf{过相干}\text{，需要分级}。\\
-&\textbf{新结果②：}\ \text{相位群用}\ L\ \text{作阶} \Longrightarrow\ \text{该}\ L\ \text{必须是}\ \textbf{词长};\ \text{而}\ \texttt{R31}\ \text{的}\ L=4\ \text{是}\ \textbf{寿命} \Longrightarrow\ \textbf{L 的第二种双重身份}。
-\end{aligned}}
+&\textbf{新结果②：}\ \text{相位群用}\ L\ \text{作阶} \Longrightarrow\ \text{该}\ L\ \text{必须是}\ \textbf{词长};\ \text{而}\ \text{R31}\ \text{的}\ L=4\ \text{是}\ \textbf{寿命} \Longrightarrow\ \textbf{L 的第二种双重身份}。
+\end{aligned}
 $$
 
 ---
@@ -23,8 +23,8 @@ $$
 
 | # | 判据 | 结果 | 判定 |
 |--:|:--|:--|:--|
-| T1 | $\mu_n$ 是群、阶 $=n$ | $n=4,6,8,10,12,16$ 全部成立 | **已证** |
-| T1′ | $-1\in\mu_n$（与双覆盖相容） | $\iff L$ 偶；全部测试 $L$ 为偶 ⇒ 成立 | **已证** |
+| T1 | $\mu\_n$ 是群、阶 $=n$ | $n=4,6,8,10,12,16$ 全部成立 | **已证** |
+| T1′ | $-1\in\mu\_n$（与双覆盖相容） | $\iff L$ 偶；全部测试 $L$ 为偶 ⇒ 成立 | **已证** |
 | T2 | 同一类内是否出现多种移位量 | $n=8$：$10$ 个类；$n=10$：$26$；$n=12$：$80$（最大 $8/10/12$ 种） | **已证** |
 | T3 | 带相位求和 vs 非相干和 | 可见度 $<1$ 普遍；平均 $0.1577/0.0366/0.0467$ | **已证** |
 | T3′ | 最小可见度 | $n=8/10/12$ 均 $\sim10^{-16}$ ⇒ **完全相消** | **已证（重要）** |
@@ -40,20 +40,20 @@ Zero 自身已有两处相位结构（**都在 L0／L1-a**）：
 
 | 来源 | 内容 | 相位群 |
 |:--|:--|:--|
-| 循环次序 $\mathbb Z_L$ ＋ 双覆盖 | `G27`／`Z14`；`R59` K8：升格的 $2\pi=-\mathbb I$ | $\mu_n=\{\omega^k\}$，$\omega=e^{2\pi i/L}$ |
-| 原生 $\pm$ | 反射（`G66`／`G67`：$(b)=(a)^2$） | $\mathbb Z_2\subset\mu_n$（$L$ 偶时） |
+| 循环次序 $\mathbb Z\_L$ ＋ 双覆盖 | `G27`／`Z14`；`R59` K8：升格的 $2\pi=-\mathbb I$ | $\mu\_n=\{\omega^k\}$，$\omega=e^{2\pi i/L}$ |
+| 原生 $\pm$ | 反射（`G66`／`G67`：$(b)=(a)^2$） | $\mathbb Z\_2\subset\mu\_n$（$L$ 偶时） |
 
 $$
-\boxed{\ \text{相位群的}\ \textbf{阶由 L0 的循环次序固定}\ (=L);\quad \text{L1 只需承载"移位量"这个整数索引}。}
+\ \text{相位群的}\ \textbf{阶由 L0 的循环次序固定}\ (=L);\quad \text{L1 只需承载"移位量"这个整数索引}。
 $$
 
-**数值**（T1）：$\mu_n$ 对 $n=4,6,8,10,12,16$ 皆为阶 $n$ 的群；$-1\in\mu_n\iff n$ 偶（全部成立）⇒ **与双覆盖中心 $\mathbb Z_2$ 精确相容**。
+**数值**（T1）：$\mu\_n$ 对 $n=4,6,8,10,12,16$ 皆为阶 $n$ 的群；$-1\in\mu\_n\iff n$ 偶（全部成立）⇒ **与双覆盖中心 $\mathbb Z\_2$ 精确相容**。
 
 ---
 
 ## §2 相对相位：类内非平凡，但朴素指派**过相干**
 
-**每条分支的相位**取 $\omega^{\mathrm{shift}(w)}$，其中 $\mathrm{shift}(w)$ 是"$w$ 相对其旋转类规范代表的左移位数"（原生整数，$\in\{0,\dots,L-1\}$）。
+**每条分支的相位**取 $\omega^{\text{shift}(w)}$，其中 $\text{shift}(w)$ 是"$w$ 相对其旋转类规范代表的左移位数"（原生整数，$\in\{0,\dots,L-1\}$）。
 
 **T2（类内相位非平凡）**：
 
@@ -67,7 +67,7 @@ $$
 \Longrightarrow\ \text{同一旋转类内确实存在多种相对相位} \Rightarrow\ \textbf{类内干涉是有内容的}，\text{不是恒等}。
 $$
 
-**T3（可见度）**：对每个类取类内路径的相干和 $\bigl|\sum_j\omega^{k_j}\bigr|/n$ 与非相干和 $1$ 比较：
+**T3（可见度）**：对每个类取类内路径的相干和 $\bigl|\sum\_j\omega^{k\_j}\bigr|/n$ 与非相干和 $1$ 比较：
 
 | $L$ | 平均可见度 | 最小可见度 |
 |--:|--:|--:|
@@ -76,7 +76,7 @@ $$
 | 12 | $0.0467$ | $\sim10^{-16}$ |
 
 $$
-\boxed{\ \text{按}\ \omega^{\mathrm{shift}}\ \text{直接求和，可见度}\ \textbf{塌到 0}\ \Longrightarrow\ \text{朴素指派}\ \textbf{过相干}（相位在类内近似均匀分布）。}
+\ \text{按}\ \omega^{\text{shift}}\ \text{直接求和，可见度}\ \textbf{塌到 0}\ \Longrightarrow\ \text{朴素指派}\ \textbf{过相干}（相位在类内近似均匀分布）。
 $$
 
 **这条是有用的负面结果**：它说明"相位 = 移位量"这个最小指派**太强**——类内路径被完全相消。要得到 `G68` 那种**部分干涉**，相位必须**分级**（例如按闭合长度或层高调制），这正是 `R56`／`R57` 的层高代价 $e^{-\beta\varepsilon h}$ 在做的事（那里调的是**幅度**，不是相位）。
@@ -95,14 +95,14 @@ $$
 |:--|:--|:--|
 | `R31`／`R32` 的 $n=4$ | **寿命**（终端时间） | `R31` §2–§3 |
 | `R54`／`R57`／`R58`／`R74` 的 $n=16$ | **词长** | `R54` §2 |
-| **本文件** 相位群 $\mu_n$ | **词长**（移位量模 $L$） | T1 |
+| **本文件** 相位群 $\mu\_n$ | **词长**（移位量模 $L$） | T1 |
 
 $$
-\Longrightarrow\ \text{这与}\ \texttt{R89}\ \S4\ \text{登记的"}\ L=4\text{ vs }L=16\ \text{符号碰撞"}\ \textbf{是同一处的第二次现身}：
+\Longrightarrow\ \text{这与}\ \text{R89}\ \S4\ \text{登记的"}\ L=4\text{ vs }L=16\ \text{符号碰撞"}\ \textbf{是同一处的第二次现身}：
 \ \text{相位群把}\ L\ \textbf{钉在词长}。
 $$
 
-**处理建议**（与 `R89` 一致）：补层指标——寿命记 $L_\tau$（L2 的时间尺度），词长记 $L_w$（L1-a 的记录长度），相位群写 $\mu_{L_w}$。
+**处理建议**（与 `R89` 一致）：补层指标——寿命记 $L\_\tau$（L2 的时间尺度），词长记 $L\_w$（L1-a 的记录长度），相位群写 $\mu\_{L\_w}$。
 
 ---
 
@@ -112,30 +112,30 @@ $$
 
 | 层次 | 相对相位从哪来 | 现状 |
 |:--|:--|:--|
-| **类内**（同一 $[w]$） | 移位量 $\mathrm{shift}(w)$ | **本文件已给**（$\omega^{\mathrm{shift}}$；但过相干，见 §2） |
+| **类内**（同一 $[w]$） | 移位量 $\text{shift}(w)$ | **本文件已给**（$\omega^{\text{shift}}$；但过相干，见 §2） |
 | **分支间**（不同类／不同闭合时刻） | 需要一个**作用量** $S$，相位 $=e^{iS}$ | **缺**：Zero 里没有原生作用量 |
 
 $$
-\boxed{\ \text{分支间相对相位}\ \textbf{必须来自一个作用量};\ \text{而 Zero 的原语里没有作用量} \Longrightarrow\ \text{这正是}\ \texttt{ACTION-PHASE-MATCH}\ (\texttt{R33})\ \text{要证的那一句}。}
+\ \text{分支间相对相位}\ \textbf{必须来自一个作用量};\ \text{而 Zero 的原语里没有作用量} \Longrightarrow\ \text{这正是}\ \text{ACTION-PHASE-MATCH}\ (\text{R33})\ \text{要证的那一句}。
 $$
 
 **故本次的净收获**：把 L1 的相位缺口**分成两半**——
 
-1. **类内相对相位**：**可给**（本文件；相位群 $\mu_n$ ＋ 移位量索引）；
-2. **分支间相对相位**：**需作用量** ⇒ 归入 `R33` 的 $\texttt{ACTION-PHASE-MATCH}$，不是 L1 自身能补的。
+1. **类内相对相位**：**可给**（本文件；相位群 $\mu\_n$ ＋ 移位量索引）；
+2. **分支间相对相位**：**需作用量** ⇒ 归入 `R33` 的 $\text{ACTION-PHASE-MATCH}$，不是 L1 自身能补的。
 
 $$
-\Longrightarrow\ \text{L1 的缺口}\ \textbf{缩小了一半};\ \text{剩下的一半与 $\mathcal R$ 的动力学问}\ \textbf{同一个}（都是"相位＝几何作用量"）。
+\Longrightarrow\ \text{L1 的缺口}\ \textbf{缩小了一半};\ \text{剩下的一半与 \mathcal R 的动力学问}\ \textbf{同一个}（都是"相位＝几何作用量"）。
 $$
 
 ---
 
 ## §5 与既有结论的相容性（T5）
 
-`R37` 的 KCBS 判据作用在**顶三类权重** $\omega_C$ 上（类级量）。本文件的相位只改变**同类内**的路径求和，**不改变** $\omega_C$：
+`R37` 的 KCBS 判据作用在**顶三类权重** $\omega\_C$ 上（类级量）。本文件的相位只改变**同类内**的路径求和，**不改变** $\omega\_C$：
 
 $$
-\Longrightarrow\ \text{相位方案与}\ \texttt{R37}\text{／}\texttt{R44}\text{／}\texttt{R25}\ \text{全部}\ \textbf{无冲突};\ \text{它改的是}\ \textbf{干涉}\ \text{那一栏，不是语境性那一栏}。
+\Longrightarrow\ \text{相位方案与}\ \text{R37}\text{／}\text{R44}\text{／}\text{R25}\ \text{全部}\ \textbf{无冲突};\ \text{它改的是}\ \textbf{干涉}\ \text{那一栏，不是语境性那一栏}。
 $$
 
 ---
@@ -144,11 +144,11 @@ $$
 
 | # | 项 | 说明 |
 |--:|:--|:--|
-| 1 | 相位指派 $\omega^{\mathrm{shift}}$ 是**我的选择** | 它是**最小**的原生指派（只用移位量）；`R42`／`R43` 的 $\pi$ 候选另有相位规则，未与本文合并 |
+| 1 | 相位指派 $\omega^{\text{shift}}$ 是**我的选择** | 它是**最小**的原生指派（只用移位量）；`R42`／`R43` 的 $\pi$ 候选另有相位规则，未与本文合并 |
 | 2 | "过相干"的结论 | 只对**这一种**指派成立；换指派（如按闭合长度调制）会改变可见度 |
 | 3 | T2 的"两分支双双闭合" | 罕见（$L\le12$ 几乎不发生，见原始输出）⇒ 本文主判据改用"类内多种移位量"，不依赖该罕见情形 |
 | 4 | 作用量的缺失 | 本文件只**定位**它（归 `R33`），未构造 |
-| 5 | $\mu_n$ 的阶 = 词长 | 依赖"移位量模 $L$"这一读法；若相位另有载体（例如按类大小），阶会变 |
+| 5 | $\mu\_n$ 的阶 = 词长 | 依赖"移位量模 $L$"这一读法；若相位另有载体（例如按类大小），阶会变 |
 | 6 | 四维 GR | 未由此推出 |
 
 ---
@@ -164,10 +164,10 @@ python3 R98_phase_group.py     # 核验 22 / 未过 0，退出码 0
 ## §8 一句话
 
 $$
-\boxed{\
+\
 \begin{aligned}
 &\text{L1}\ \textbf{不缺相位群}（\mu_n\ \text{由 L0 的循环次序供出，与双覆盖相容），\ \textbf{缺的是相对相位的登记规则};\\
-&\text{类内相对相位}\ \textbf{可给}（\omega^{\mathrm{shift}}），\ \text{但该指派}\ \textbf{过相干}（可见度}\to0）\Rightarrow\ \text{下一步找相位的分级规则};\\
-&\text{分支间相对相位}\ \textbf{需要作用量} \Rightarrow\ \text{归入}\ \texttt{ACTION-PHASE-MATCH}\ (\texttt{R33})。\ \text{缺口由此缩小一半}。
-\end{aligned}}
+&\text{类内相对相位}\ \textbf{可给}（\omega^{\text{shift}}），\ \text{但该指派}\ \textbf{过相干}（可见度}\to0）\Rightarrow\ \text{下一步找相位的分级规则};\\
+&\text{分支间相对相位}\ \textbf{需要作用量} \Rightarrow\ \text{归入}\ \text{ACTION-PHASE-MATCH}\ (\text{R33})。\ \text{缺口由此缩小一半}。
+\end{aligned}
 $$

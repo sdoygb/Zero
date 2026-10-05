@@ -3,18 +3,18 @@
 **日期**：2026-10-04
 **性质**：**细分（正面）＋ 一处分类学的加固（三种细分形态）**。
 **触发**：用户指示——"我们尝试把 L0，L1，L2 再细分"。
-**依据**：亚层标准取自 [`D222`](D222_stratified_destruction_and_local_memory.md)（活动亚层全清、历史层保留最高两层、局部寿命 $\tau_i$ 可不同）。
+**依据**：亚层标准取自 [`D222`](D222_stratified_destruction_and_local_memory.md)（活动亚层全清、历史层保留最高两层、局部寿命 $\tau\_i$ 可不同）。
 **探针**：[`R97_sublayer_structure.py`](R97_sublayer_structure.py) —— **核验 20 / 未过 0**，退出码 `0`；另跑 [`verify/d222_...py`](verify/d222_stratified_destruction_and_local_memory.py) **24 / 0** 通过。
 **依赖**：[`R95`](R95_layer_table_and_discipline.md)（层表单一来源）、[`R93`](R93_$\mathcal R$_sublayer.md)（亚层 vs 泛函的区分）、[`D222`](D222_stratified_destruction_and_local_memory.md)、[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5、[`G27`](G27_purification_attempt.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`R86`](R86_reseed_class_verdict.md) F1、[`R87`](R87_class_weight_consistency.md) H1。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\textbf{结果：}\ \text{L1／L2}\ \textbf{可以细分}（各有 2 个真亚层），\ \text{L0}\ \textbf{不宜叫亚层}（\text{是}\ \textbf{三元类型结构}\text{）。}\\
 &\textbf{关键新结果（L2）：}\ \text{演化层分裂为}\ \textbf{保守面}（窗口，双随机）\ \text{与}\ \textbf{产生面}（重播种，分支）；\\
 &\qquad\text{两者由一个}\ \textbf{守恒律}\ \text{联系}：\ \textbf{账目数}\ =\ \textbf{活动分支数}\ \text{（每条记录伴随一条新分支）}。\\
-&\textbf{分类学加固}：\ \text{同一母层下的细分有}\ \textbf{三种形态}——\text{亚层（同类＋索引）／类型分裂（对象不同）／泛函读出（$\mathcal R$）}。
-\end{aligned}}
+&\textbf{分类学加固}：\ \text{同一母层下的细分有}\ \textbf{三种形态}——\text{亚层（同类＋索引）／类型分裂（对象不同）／泛函读出（\mathcal R）}。
+\end{aligned}
 $$
 
 ---
@@ -53,7 +53,7 @@ $$
 | 8 | $1.000000$ | $1.000000$ | **双随机** |
 
 $$
-\Longrightarrow\ \text{保测度};\ \text{平稳测度} = \text{词上均匀}\ (\texttt{R87}\ \text{H1})\ \Longrightarrow\ \omega_C=o_C/N_n\ \text{是推前}。
+\Longrightarrow\ \text{保测度};\ \text{平稳测度} = \text{词上均匀}\ (\text{R87}\ \text{H1})\ \Longrightarrow\ \omega_C=o_C/N_n\ \text{是推前}。
 $$
 
 ### 1.2 L2-b｜重播种面（产生）
@@ -71,7 +71,7 @@ $$
 ### 1.3 两者的守恒律（新）
 
 $$
-\boxed{\ \text{一条记录事件} = \underbrace{+1\ \text{账目}}_{\text{L1}}\ +\ \underbrace{+1\ \text{活动分支}}_{\text{L2-b}}\ \Longrightarrow\ \textbf{账目数} = \textbf{活动分支数}\ }
+\ \text{一条记录事件} = \underbrace{+1\ \text{账目}}_{\text{L1}}\ +\ \underbrace{+1\ \text{活动分支}}_{\text{L2-b}}\ \Longrightarrow\ \textbf{账目数} = \textbf{活动分支数}\ 
 $$
 
 **注意它不是"总数不变"**——分裂**增加**总分支数；守恒的是**账目与活动分支之间的相等性**。这与 `R59` K11 的"局部失衡全局配平"**同源**（局部产生，全局配平）。
@@ -91,8 +91,8 @@ $$
 | **L1-c 终端账本** | 未闭合分支的汇 | `Z4` 终端款 | 只进不出 |
 
 $$
-\text{L1-a}\ \xrightarrow{\ \lambda:w\mapsto[w]\ }\ \text{L1-b};\qquad
-\text{L1-a}\ \xrightarrow{\ \text{寿命到达}\ }\ \text{L1-c}.
+\text{L1-a}\ \overset{\ \lambda:w\mapsto[w]\ }{\longrightarrow}\ \text{L1-b};\qquad
+\text{L1-a}\ \overset{\ \text{寿命到达}\ }{\longrightarrow}\ \text{L1-c}.
 $$
 
 **三者都是"记录"的子类型**（精确／概括／汇）⇒ **符合** `D222` 的亚层形态（精确→概括 ＋ 保持规则）。保持规则的可测性已由 `verify/d222_stratified_destruction_and_local_memory.py` 核验（**24 / 0**）。
@@ -107,13 +107,13 @@ L0 内部有三个子结构，但**对象类型不同**：
 |:--|:--|:--|:--|
 | **L0-a 组合** | 词空间、零和、全分支计数 | **集合／计数** | 无（静态） |
 | **L0-b 过程** | 步推进 $\tau\mapsto\tau+1$、闭合退出、终端 | **映射（推进）** | **有（每步 1）且不可逆** |
-| **L0-c 代数** | 循环次序 ＋ 原生 $\pm$ ⇒ $M_2(\mathbb C)$、双覆盖 | **代数** | 无（静态） |
+| **L0-c 代数** | 循环次序 ＋ 原生 $\pm$ ⇒ $M\_2(\mathbb C)$、双覆盖 | **代数** | 无（静态） |
 
 $$
-\boxed{\ \text{只有 L0-b 自带速率} \Longrightarrow\ \textbf{时间箭头只在 L0-b};\quad \text{L0-a／L0-c 不带时间}。}
+\ \text{只有 L0-b 自带速率} \Longrightarrow\ \textbf{时间箭头只在 L0-b};\quad \text{L0-a／L0-c 不带时间}。
 $$
 
-**这与 `G1` 引理 5 逐字对应**：切空间分解 $T\cong H_Q\oplus\mathbb R_\tau$ 里，$\mathbb R_\tau$（不可逆方向）来自 **L0-b**，$H_Q$（可逆方向）来自 L0-a 与 L0-c 的结构。
+**这与 `G1` 引理 5 逐字对应**：切空间分解 $T\cong H\_Q\oplus\mathbb R\_\tau$ 里，$\mathbb R\_\tau$（不可逆方向）来自 **L0-b**，$H\_Q$（可逆方向）来自 L0-a 与 L0-c 的结构。
 
 **命名建议**：L0 的细分应叫 **"L0 的三元类型结构（L0-a／L0-b／L0-c）"**，而**不要**叫"L0 的三个亚层"——因为亚层要求"同类对象 ＋ 索引"，而这里对象类型不同。
 
@@ -130,7 +130,7 @@ $$
 | **泛函读出** | 对母层状态的**函数**，无自身更新律 | **$\mathcal R$**（$\pi,\omega,K$；`R93` J2） | **否** |
 
 $$
-\boxed{\ \text{亚层} \subsetneq \text{细分};\qquad \text{细分} = \text{亚层} \sqcup \text{类型分裂} \sqcup \text{泛函读出}。}
+\ \text{亚层} \subsetneq \text{细分};\qquad \text{细分} = \text{亚层} \sqcup \text{类型分裂} \sqcup \text{泛函读出}。
 $$
 
 **为什么这条重要**：过去"层／亚层／读出"三者混用（`R50` 把 $\mathcal R$ 列为独立层，`D222` 用亚层，而 L0 的子结构一直没名字）。现在有三分法后，每种细分都能被正确命名，**不会再制造新的层坍塌**。
@@ -159,7 +159,7 @@ $$
 | 2 | L0 三分法的命名 | 我建议"三元类型结构"；若主路线另有约定，以主路线为准 |
 | 3 | L1′ 未细分 | 语料无模型；本文件不造 |
 | 4 | 守恒律的范围 | "账目数 $=$ 活动分支数"在**单站点、每次记录恰一支继续**的读法下成立；多站点／局域异步未核 |
-| 5 | 局部寿命 $\tau_i$ | `D222` 的"可不同步"未在本轮数值化（只引用其 verify 脚本） |
+| 5 | 局部寿命 $\tau\_i$ | `D222` 的"可不同步"未在本轮数值化（只引用其 verify 脚本） |
 | 6 | 四维 GR | 未由此推出 |
 
 ---
@@ -176,10 +176,10 @@ python3 verify/d222_stratified_destruction_and_local_memory.py # 24 通过 / 0 �
 ## §8 一句话
 
 $$
-\boxed{\
+\
 \begin{aligned}
 &\text{L1}\ \text{细分为三档记录（词／类／汇）};\ \text{L2}\ \text{细分为}\ \textbf{保守面（窗口）＋产生面（重播种）}，\ \text{由}\ \textbf{账目}=\textbf{活动分支}\ \text{绑定};\\
 &\text{L0}\ \textbf{不能}\ \text{叫亚层}——\text{它是}\ \textbf{三元类型结构}（组合／过程／代数），\ \text{时间箭头只在过程那一元};\\
 &\text{由此确立}\ \textbf{三种细分形态}：\text{亚层／类型分裂／泛函读出}。
-\end{aligned}}
+\end{aligned}
 $$

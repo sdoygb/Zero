@@ -11,12 +11,12 @@
 > **【2026-10-02 条件极限更新｜[`R7`](R7_h3_h7_regularity.md)】** 本文写作时 Γ-链仍只剩数值旁证。当前 H1–H4 的条件 Γ-定理见 [`R1`](R1_gamma_convergence_theorem.md)，H5 见 [`R6`](R6_h5_dictionary_error_bound.md)，H3／H7 见 [`R7`](R7_h3_h7_regularity.md)（H7 为光滑提升版本）。因此“一般 Γ-收敛定理未证”应读作“尚无无条件定理”；当前剩余输入是 I5b 与 GDL，本文的预测误差分级仍以 [`STATUS.md`](STATUS.md) 为准。
 
 $$
-\boxed{\
+\
 \text{本文的“预测”分为三层：}\
 \underbrace{\text{函数形式}}_{\text{条件定理或数值支持}}\ +\
 \underbrace{\text{无量纲数值}}_{\text{可由未定输入算出}}\ +\
 \underbrace{\text{物理单位}}{\text{E4 约定，当前不可导出}}.
-\ }
+\ 
 $$
 
 ---
@@ -26,8 +26,8 @@ $$
 当前最现实的可检验对象不是需要绝对单位的高能偏离，而是**无量纲的有限尺寸修正**：
 
 $$
-\boxed{\ \textbf{主预言 R4-P1}:\quad
-\text{宇称 gap 打开后，2D 面积律带正的对数有限尺寸修正；3D 面密度 }a_{\rm face}\text{ 满足 }a_{\rm face}(m)m\approx0.467\pm0.008.\ }
+\ \textbf{主预言 R4-P1}:\quad
+\text{宇称 gap 打开后，2D 面积律带正的对数有限尺寸修正；3D 面密度 }a_{\rm face}\text{ 满足 }a_{\rm face}(m)m\approx0.467\pm0.008.\ 
 $$
 
 这条预言属于“GR 之外”，因为 GR 本身不含这里由年龄奇偶打开的交错 gap，也不含由离散闭环计数产生的 `O(1/L)`、`O(1/L²)` 或 `log L` 修正。它同时是当前最可执行的，因为它无量纲，不依赖 E4 的绝对尺度。
@@ -96,7 +96,7 @@ $$
 给出。锥外前沿尾部为
 
 $$
-\boxed{\ A(x,t)\sim C_B(x-c_*t)\,\exp\!\left[-\mu_*(B)\,(x-c_*t)\right]\ }.
+\ A(x,t)\sim C_B(x-c_*t)\,\exp\!\left[-\mu_*(B)\,(x-c_*t)\right]\ .
 $$
 
 `B=4` 时 `c_*=1`，`μ_*=32.6926`，每格衰减
@@ -168,8 +168,8 @@ $$
 `W_d(L)` 是 `Z^d` 上从一点到相邻点的 `L` 步精确游走数。当前 `L=4` 时，旋转类规模给出两个归一化标度：
 
 $$
-\boxed{\ c\in\{0.75,1.5\},\qquad \frac{\max c}{\min c}=2,\qquad
-\text{度规对比度}\le 2^k=16.\ }
+\ c\in\{0.75,1.5\},\qquad \frac{\max c}{\min c}=2,\qquad
+\text{度规对比度}\le 2^k=16.\ 
 $$
 
 **参数依赖**：字典次数 `k`、维数 `d`、局部标度场或有限值标号 `c`、单元形状、细化族；二值化还依赖 `L=4` 与 `T_age∈{2,4}`。
@@ -230,9 +230,9 @@ $$
 在 `D=4` 中：
 
 $$
-\boxed{\ m_{\rm dyn}=0,1;\qquad
+\ m_{\rm dyn}=0,1;\qquad
 \mathcal L_2\text{ 是拓扑项，不进入四维场方程};\qquad
-G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}.\ }
+G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}.\ 
 $$
 
 因此当前路线没有独立的四维高曲率耦合 `α₂`。若 `D>4`，`α₂` 才会作为独立尺度进入场方程，且其数值不被 `Z0` 或 E4 给出。
@@ -296,17 +296,17 @@ $$
 有 gap 时面积律写成有限尺寸展开：
 
 $$
-\boxed{\
+\
 S_d(L)=a_d L^{d-1}+b_d L^{d-2}+c_d+o(1).
-\ }
+\ 
 $$
 
 在二维弱 gap 情形，当前数据更适合写成
 
 $$
-\boxed{\
+\
 S_2(L)=a_2(m)L+b_2(m)\log L+c_2(m)+o(1).
-\ }
+\ 
 $$
 
 ### 5.2 已证明的函数形式与未定数值
@@ -382,12 +382,12 @@ $$
 可测的无量纲量是每弧度阻尼率。当 $x=ck/\gamma\gg1$ 时，
 
 $$
-\delta_\Gamma=\frac{\gamma}{\operatorname{Re}\omega}
+\delta_\Gamma=\frac{\gamma}{\text{Re}\omega}
 \approx\frac{1}{2\lambda\omega}
 =\frac{1}{4\pi\lambda f}.
 $$
 
-因此，若在频率 $f$ 上测得 $\delta_\Gamma(f)<\delta_{\max}$，就得到排除线
+因此，若在频率 $f$ 上测得 $\delta\_\Gamma(f)<\delta\_{\max}$，就得到排除线
 
 $$
 \lambda>\frac{1}{4\pi f\,\delta_{\max}}.
@@ -413,7 +413,7 @@ $$
 主预言写为
 
 $$
-\boxed{\
+\
 \begin{aligned}
 \text{2D:}\quad
 S_2(L,m)&=a_2(m)L+b_2(m)\log L+c_2(m)+o(1),\\
@@ -422,7 +422,7 @@ b_2(0.25)&\simeq0.150,\qquad b_2(0.5)\simeq0.051,\qquad b_2(1)\simeq0.007;\\[1mm
 S_3(L,m)&=a_3(m)L^2+b_3(m)L+c_3(m)+o(1),\\
 a_{\rm face}(m)&:=\frac{a_3(m)}{3},\qquad
 a_{\rm face}(m)m=0.467\pm0.008\quad(m=2,3,4,\ \xi\ll L).
-\end{aligned}}
+\end{aligned}
 $$
 
 并在 `L=4` 的离散支中附带

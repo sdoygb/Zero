@@ -6,26 +6,26 @@
 **核验**：[`R29_check.py`](R29_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{“和乐类支撑全部 }D\text{ 个方向”不推出“联合记录重叠为 }q^D\text{”。}\\
 &\text{全支撑可以只给张量秩 }2\text{ 的非乘积记录，重叠与 }D\text{ 无关；}\\
 &\text{也可以把所有方向合并成一次共同记录，只付一次 }q。\\
-&\texttt{FULL-SUPPORT-LEDGER}
+&\text{FULL-SUPPORT-LEDGER}
 \not\Longrightarrow
-\texttt{PRODUCT-LEDGER}.\\
+\text{PRODUCT-LEDGER}.\\
 &\text{要得到 }A_D=q^D\text{，必须补：}\\
 &\qquad
-\texttt{DIR-SUPPORT-D}
+\text{DIR-SUPPORT-D}
 \wedge
-\texttt{RECORD-FAMILY-D}
+\text{RECORD-FAMILY-D}
 \wedge
-\texttt{PRODUCT-LEDGER}
+\text{PRODUCT-LEDGER}
 \wedge
-\texttt{SAME-Q}.\\
+\text{SAME-Q}.\\
 &\text{再独立采用 }PAIR\text{-}ID\text{，才得到 }
 F_D=B\binom D2q^D。
-\end{aligned}}
+\end{aligned}
 $$
 
 > **一句话**：R27 的 `FULL-SUPPORT-LEDGER` 把“所有方向都参与”和“每个方向独立付一次同一个 `q`”写在了一起，但这两件事并不等价。前者只给支撑，后者才给指数。R29 把指数来源拆成四个可分别检验的条件，并证明旧材料没有直接补上它们。
@@ -52,7 +52,7 @@ $$
 R27 写出的输入是
 
 $$
-\texttt{FULL-SUPPORT-LEDGER}:
+\text{FULL-SUPPORT-LEDGER}:
 \quad
 \text{一个可继承和乐类必须支撑全部 }D\text{ 个独立相位方向，}
 \text{每方向一次账本记录给同一因子 }q。
@@ -62,41 +62,41 @@ $$
 这个句子里至少混合了四个不同对象：
 
 $$
-\boxed{
+
 \begin{aligned}
-\texttt{DIR-SUPPORT-D}&:\quad
+\text{DIR-SUPPORT-D}&:\quad
 \text{可继承类的实际支撑方向数为 }s(D)=D;\\
-\texttt{RECORD-FAMILY-D}&:\quad
+\text{RECORD-FAMILY-D}&:\quad
 \text{每个支撑方向 }j\text{ 对应一个可区分记录因子 }R_j;\\
-\texttt{PRODUCT-LEDGER}&:\quad
+\text{PRODUCT-LEDGER}&:\quad
 A_D=\prod_{j=1}^{D}q_j;\\
-\texttt{SAME-Q}&:\quad
+\text{SAME-Q}&:\quad
 q_j=q\text{，与 }j\text{ 和 }D\text{ 无关。}
-\end{aligned}}
+\end{aligned}
 \qquad\text{(R29-2)}
 $$
 
 同时保留已有的一条读出口径：
 
 $$
-\boxed{
-\texttt{LEDGER-ONE}:
+
+\text{LEDGER-ONE}:
 \quad
 \text{一次实际终端记录在相应记录态之间给一次因子 }q_j。
-}
+
 \qquad\text{(R29-3)}
 $$
 
 `LEDGER-ONE` 是 G71 中“一次实际记录给一次因子”的条件结构，不等于“每个方向自动产生一笔实际记录”。本文的关键区别是
 
 $$
-\boxed{
-\texttt{DIR-SUPPORT-D}
+
+\text{DIR-SUPPORT-D}
 \not\Longrightarrow
-\texttt{RECORD-FAMILY-D}
+\text{RECORD-FAMILY-D}
 \not\Longrightarrow
-\texttt{PRODUCT-LEDGER}.
-}
+\text{PRODUCT-LEDGER}.
+
 \qquad\text{(R29-4)}
 $$
 
@@ -143,9 +143,9 @@ $$
 因此
 
 $$
-\texttt{DIR-SUPPORT-D}
+\text{DIR-SUPPORT-D}
 \not\Longrightarrow
-\texttt{PRODUCT-LEDGER},
+\text{PRODUCT-LEDGER},
 \qquad
 A_D\ne q^D.
 \qquad\text{(R29-8)}
@@ -195,22 +195,22 @@ $$
 若下列四项同时成立：
 
 $$
-\texttt{DIR-SUPPORT-D},
+\text{DIR-SUPPORT-D},
 \quad
-\texttt{RECORD-FAMILY-D},
+\text{RECORD-FAMILY-D},
 \quad
-\texttt{PRODUCT-LEDGER},
+\text{PRODUCT-LEDGER},
 \quad
-\texttt{SAME-Q},
+\text{SAME-Q},
 \qquad\text{(R29-11)}
 $$
 
 且实际终端账本对每个方向因子给一次 `LEDGER-ONE` 记录读出，则
 
 $$
-\boxed{
+
 A_D=\prod_{j=1}^{D}q_j=q^D.
-}
+
 \qquad\text{(R29-12)}
 $$
 
@@ -219,7 +219,7 @@ $$
 再独立采用
 
 $$
-\texttt{PAIR-ID}:
+\text{PAIR-ID}:
 \quad
 M_D=\binom D2,
 \qquad\text{(R29-13)}
@@ -228,9 +228,9 @@ $$
 得到
 
 $$
-\boxed{
+
 F_D=B\binom D2q^D.
-}
+
 \qquad\text{(R29-14)}
 $$
 
@@ -256,13 +256,13 @@ $$
 因此当前的正确记账是
 
 $$
-\boxed{
+
 F_D=B\,M_D\,A_D,
 \qquad
 M_D\text{ 管身份，}
 \quad
 A_D\text{ 管代价。}
-}
+
 \qquad\text{(R29-15)}
 $$
 
@@ -306,17 +306,17 @@ $$
 因此五项清单不能继续作为五个平行条件使用。当前最小代价侧输入应写成
 
 $$
-\boxed{
-\texttt{LEDGER-FACTORIZATION}
+
+\text{LEDGER-FACTORIZATION}
 =
-\texttt{DIR-SUPPORT-D}
+\text{DIR-SUPPORT-D}
 \wedge
-\texttt{RECORD-FAMILY-D}
+\text{RECORD-FAMILY-D}
 \wedge
-\texttt{PRODUCT-LEDGER}
+\text{PRODUCT-LEDGER}
 \wedge
-\texttt{SAME-Q}.
-}
+\text{SAME-Q}.
+
 \qquad\text{(R29-16)}
 $$
 
@@ -336,13 +336,13 @@ $$
 R25 的每代峰定理没有错误，但它的条件应写全。只有在
 
 $$
-\texttt{PHASE-IDENTITY-DER}
+\text{PHASE-IDENTITY-DER}
 \wedge
-\texttt{LEDGER-FACTORIZATION}
+\text{LEDGER-FACTORIZATION}
 \wedge
-\texttt{WIPE-RESET-LEDGER}
+\text{WIPE-RESET-LEDGER}
 \wedge
-\texttt{L=4}
+\text{L=4}
 \qquad\text{(R29-18)}
 $$
 
@@ -379,9 +379,9 @@ $$
 7. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-\boxed{
+
 \text{当前诚实结论：全支撑只说明“所有方向都参与”，乘积记录才说明“指数怎样累乘”。}
-}
+
 $$
 
 ---

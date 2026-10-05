@@ -7,15 +7,15 @@
 **核验**：[`R37_check.py`](R37_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
-&\text{KCBS：}C^3\text{ 中 5 条射线，相邻正交（}v_i\perp v_{i+1}\text{），}A:=\sum_i|v_i\rangle\langle v_i|,\ S(\rho)=\sum_i\operatorname{Tr}(\rho P_i)。\\
+&\text{KCBS：}C^3\text{ 中 5 条射线，相邻正交（}v_i\perp v_{i+1}\text{），}A:=\sum_i|v_i\rangle\langle v_i|,\ S(\rho)=\sum_i\text{Tr}(\rho P_i)。\\
 &\text{非语境界 }2;\ \text{量子最大 }\sqrt5=2.2360679。\\
 &\text{对}\textbf{全部取向}\text{取最大有闭式（von Neumann 迹不等式）：}\\
 &\qquad S_{\max}(\rho)=\sum_k\lambda_k(\rho)\,\mu_k(A),\qquad \mu(A)=(\sqrt5,\ 1.3819660,\ 1.3819660)。\\
 &\text{结论：原生态（}G72\text{ 推前权重 }2,5,20,100\text{）的谱 }\lambda_1=0.7407>\lambda^*=0.7236\\
 &\qquad\Longrightarrow S_{\max}=2.0146>2\ \Longrightarrow\ \textbf{语境（单体量子性成立）}。
-\end{aligned}}
+\end{aligned}
 $$
 
 > **一句话**：CHSH 那一刀因为缺"空间"砍不下去（R36）；换到**单体**层面用 KCBS，刀**砍下去了，而且见血**：把"取向自由"这个陷阱用 von Neumann 迹不等式正确处理之后，原生态的最大 KCBS 值 **`S_max = 2.0146 > 2`**（另一个 3 维归约给 `2.0652`）。也就是说——**Zero 的单体统计不是经典概率，是真正语境的**。这是量子栏拿到的第一个**硬证据**，而且它不需要 `E1`、不需要空间分离、不需要精确光锥。
@@ -45,7 +45,7 @@ $$
 
 $$
 S(\rho;U)=\sum_i\langle v_i|U^{\dagger}\rho U|v_i\rangle
-=\operatorname{Tr}\!\bigl(\rho\,UAU^{\dagger}\bigr)
+=\text{Tr}\!\bigl(\rho\,UAU^{\dagger}\bigr)
 \ \xrightarrow[\ \text{von Neumann}\ ]{\ \max_U\ }\
 S_{\max}(\rho)=\sum_k\lambda_k(\rho)\,\mu_k(A).
 \qquad\text{(R37-1)}
@@ -54,10 +54,10 @@ $$
 其中 $\lambda(\rho)$、$\mu(A)$ 各自降序。探针用 3000 个随机态与随机取向核对：**无一例超过该闭式**（超出量 `0.0`）$\Rightarrow$ 闭式正确、且它确实是上确界。
 
 $$
-\boxed{
+
 \text{判据：}\ S_{\max}(\rho)>2\iff\text{语境};\qquad
 \mu(A)=(\sqrt5,\ 1.3819660,\ 1.3819660)\ (\text{和}=5)。
-}
+
 \qquad\text{(R37-2)}
 $$
 
@@ -67,17 +67,17 @@ $$
 
 原生态在**指针基（类基）下对角**（[`G72`](G72_kappa1_from_the_ledger.md) §1：针基 = 推前的类基 = `K` 的本征基），其谱就是**推前权重**。文档例（[`G29`](G29_probability_as_derived_not_postulated.md) §2 的块大小 $2,5,20,100$）给 $w=(0.0157,0.0394,0.1575,0.7874)$。取 3 维归约：
 
-| 3 维归约 | 谱 $\lambda$ | $S_{\max}$ | 是否语境 |
+| 3 维归约 | 谱 $\lambda$ | $S\_{\max}$ | 是否语境 |
 |:--|:--|--:|:--|
 | 取前 3 块归一 | $(0.7407,\ 0.1852,\ 0.0741)$ | **2.0146** | **是** ✅ |
 | 去掉最小块 | $(0.8000,\ 0.1600,\ 0.0400)$ | **2.0652** | **是** ✅ |
 | （对照）完全混合 | $(1/3,1/3,1/3)$ | 1.6667 | 否 |
 
 $$
-\boxed{
+
 \text{阈值：族 }(\lambda,\tfrac{1-\lambda}2,\tfrac{1-\lambda}2)\text{ 上 }\lambda^*=\frac{2-\mu_2}{\mu_1-\mu_2}=0.7236;
 \quad\text{原生 }\lambda_1=0.7407\ \Rightarrow\ \textbf{余量 }+0.0171。
-}
+
 \qquad\text{(R37-3)}
 $$
 
@@ -95,9 +95,9 @@ $$
 | 结果 | `S≤2`（Bell 局域） | **`S_max=2.0146>2`（语境）** |
 
 $$
-\boxed{
+
 \text{合起来：Zero 的单体统计}\textbf{是量子（语境）}\text{的；多体（Bell）层面}\textbf{尚无场地}。
-}
+
 \qquad\text{(R37-4)}
 $$
 
@@ -114,9 +114,9 @@ $$
 | 3 | **谱的来源** | 用的是**文档例**（`G72`/`G29` 的推前权重），不是从 `π` 显式算出的那一个；若真实谱更接近均匀（`λ₁<0.7236`），结论**翻转** |
 
 $$
-\boxed{
+
 \text{第 3 条是可证伪入口：算出真实谱 }\lambda_1\text{，与 }0.7236\text{ 比大小即可——}\textbf{二值结论}。
-}
+
 \qquad\text{(R37-5)}
 $$
 
@@ -131,9 +131,9 @@ $$
 5. 没有由单体语境性推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-\boxed{
+
 \text{当前诚实结论：}\textbf{Zero 的单体统计是语境的（量子）}\text{——第一个硬证据，条件于文档谱与 3 维归约。}
-}
+
 $$
 
 ---

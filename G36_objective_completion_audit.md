@@ -5,7 +5,7 @@
 **核验**：[`G36_check.py`](G36_check.py) —— **独立实断言 5 / 结论行 0 / 不符 0**，退出码 `0`（已按协议精简为机械保障部分）
 
 $$
-\boxed{\ \text{六项列出的子目标全部完成；未覆盖项是\emph{显式登记}的边界，不是遗漏。}\ }
+\ \text{六项列出的子目标全部完成；未覆盖项是**显式登记**的边界，不是遗漏。}\ 
 $$
 
 ---
@@ -21,10 +21,10 @@ $$
 | # | 目标项 | 文档 | 核验 | 关键结果 |
 |--:|:--|:--|:--|:--|
 | 1 | 记忆核检验（存在性） | [`G30`](G30_memory_kernel_test.md) | 23 项 | **CK 违约**，全变差达 **0.6655** |
-| 2 | $(\Phi,\pi,\mu)$：输入压缩到 $\pi$ 一个 | [`G33`](G33_macro_master_equation_and_mz_kernel.md) | 30 项 | $G_t=\Pi V^t\mathcal L$ **零自由参数** |
+| 2 | $(\Phi,\pi,\mu)$：输入压缩到 $\pi$ 一个 | [`G33`](G33_macro_master_equation_and_mz_kernel.md) | 30 项 | $G\_t=\Pi V^t\mathcal L$ **零自由参数** |
 | 3 | **导出宏观主方程与速率** | [`G33`](G33_macro_master_equation_and_mz_kernel.md) | 同上 | GME ＋ **精确 MZ 核**（机器精度） |
 | 4 | **把退出规则并入 $\pi$** | [`G34`](G34_exit_rule_absorbed_into_pi.md) | 29 项 | 控实验**精确复现**（**2.910 倍**） |
-| 5 | **记忆核的 Mori–Zwanzig 形式** | [`G33`](G33_macro_master_equation_and_mz_kernel.md) | 同上 | $K_t=\Pi V\mathcal Q(V\mathcal Q)^{t-1}V\mathcal L$ |
+| 5 | **记忆核的 Mori–Zwanzig 形式** | [`G33`](G33_macro_master_equation_and_mz_kernel.md) | 同上 | $K\_t=\Pi V\mathcal Q(V\mathcal Q)^{t-1}V\mathcal L$ |
 | 6 | **对再播种机制建模** | [`G35`](G35_reseeding_and_chirality.md) | 32 项 | 手性阈值 $L^\ast=8$，**原生绕过** |
 
 **支撑项**：[`G29`](G29_probability_as_derived_not_postulated.md)（概率作为导出量）· [`G31`](G31_characteristic_speed_and_saturation.md)（特征速度与饱和）· [`G32`](G32_native_origin_of_saturation.md)（饱和的原生来源）。
@@ -67,7 +67,7 @@ $\Phi$ 的**条款出处逐条**（[`G33`](G33_macro_master_equation_and_mz_kern
 | 动力学是否尊重容量上界 | **未证**（[`G32`](G32_native_origin_of_saturation.md)） |
 
 $$
-\boxed{\ \text{「整个动力学」}\ne\text{「一切物理」：几何连续极限 I2a 仍开。}\ }
+\ \text{「整个动力学」}\ne\text{「一切物理」：几何连续极限 I2a 仍开。}\ 
 $$
 
 ---

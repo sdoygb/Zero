@@ -1,13 +1,13 @@
 # R45 · 账本形式扫描：`R44` 的 no-go **可逃**，代价是 `R32` 的唯一性被削弱
 
 **日期**：2026-10-03  
-**性质**：**扫描＋逃生口（正面）＋ 对 `R32` 唯一性的收窄**。执行 `R44` (R44-7) 的新目标：找 $F_D$ 使"$D=4$ 峰窗口"覆盖 $q>3/5$。  
+**性质**：**扫描＋逃生口（正面）＋ 对 `R32` 唯一性的收窄**。执行 `R44` (R44-7) 的新目标：找 $F\_D$ 使"$D=4$ 峰窗口"覆盖 $q>3/5$。  
 **依赖**：[`R44`](R44_survival_vs_contextuality_no_go.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R37`](R37_kcbs_contextuality.md)、[`G1`](G1_lovelock_from_zero.md)、[`STATUS`](STATUS.md)。  
 **探针**：[`R45_ledger_form_scan_probe.py`](R45_ledger_form_scan_probe.py) → [`R45_ledger_form_scan_results.json`](R45_ledger_form_scan_results.json)。  
 **核验**：[`R45_check.py`](R45_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{扫描族：}F_D=M(D)\,q^{E(D)}\quad(\text{8 种 }M\times\text{8 种 }E=64\ \text{个形式})。\\
 &\textbf{结果}：\text{64 个形式中}\ \mathbf{39}\ \text{个的“}D=4\text{ 峰窗口”与语境性区 }(3/5,1]\ \textbf{相交}\ \checkmark\\
@@ -17,7 +17,7 @@ $$
 &\therefore\ \textbf{逃生口存在}：\text{账本改数“欧氏对”}\ \binom{D+1}2=\dim\mathfrak{so}(D+1)\ \text{而非洛伦兹对}\ \binom D2=\dim\mathfrak{so}(D-1,1)。\\
 &\qquad\text{此时}\ \textbf{文档例}(2,5,20,100)\ \text{与两层族}\ \textbf{同时满足} D=4\ \text{峰与语境性}。\\
 &\textbf{代价}：39\ \text{个形式都行}\Rightarrow\text{“}D=4\text{”不再唯一钉住账本形式}\Rightarrow R32\ \text{的唯一性被削弱。}
-\end{aligned}}
+\end{aligned}
 $$
 
 > **一句话**：`R44` 的 no-go 不是终点——**扫描 64 个账本形式，39 个都能让 `D=4` 峰与语境性共存**。最干净的那一行是：把"对"的计数从**洛伦兹对** $\binom D2=\dim\mathfrak{so}(D-1,1)$ 换成**欧氏对** $\binom{D+1}2=\dim\mathfrak{so}(D+1)$，窗口就从 $[0.5,0.6]$ 移到 $[0.6,2/3]$——**整个落进语境性区**。于是文档例（$q=0.6466$，$S=2.0328$）与两层族（$q=0.6585$，$S=2.0150$）**同时**给出 $D=4$ 峰与语境性。代价要照实说：**39 个形式都行，说明"$D=4$"不再唯一钉住账本形式**——`R32` 的"唯一存活者"结论被削弱为"**在洛伦兹对字典内的唯一性**"。
@@ -52,9 +52,9 @@ $$
 | $\binom{D+1}2$ | $\binom{D+1}2$ | `[0.882, 0.922]` | ✅ |
 
 $$
-\boxed{
+
 \text{峰在 }D=4\text{ 的窗口与语境性区是否相交，}\textbf{完全由 }(M,E)\text{ 决定}。
-}
+
 \qquad\text{(R45-1)}
 $$
 
@@ -75,16 +75,16 @@ $$
 
 **载体检验**：
 
-| 载体 | $q$ | $S_{\max}$ | 洛伦兹字典峰 | **欧氏字典峰** |
+| 载体 | $q$ | $S\_{\max}$ | 洛伦兹字典峰 | **欧氏字典峰** |
 |:--|--:|--:|:--|:--|
 | 文档例 `(2,5,20,100)` | 0.6466 | **2.0328** ✅ | `D=5` ✗ | **`D=4`** ✅ |
 | 两层族 `p=0.8,\alpha=2,K=8` | 0.6585 | **2.0150** ✅ | `D=5` ✗ | **`D=4`** ✅ |
 | 路线 A `L=4` | 0.5556 | 1.9514 ✗ | `D=4` ✅ | `D=3` ✗ |
 
 $$
-\boxed{
+
 \textbf{欧氏字典下，文档例与两层族同时给出 }D=4\textbf{ 峰与语境性。}
-}
+
 \qquad\text{(R45-3)}
 $$
 
@@ -95,18 +95,18 @@ $$
 `R32` 定理 R32.4 曾给"**联合唯一性**：只有 $(\binom D2,\ A,\ L=4)$ 存活"。本轮表明：
 
 $$
-\boxed{
+
 \text{“}D=4\text{”}\textbf{不再唯一钉住账本形式}：64\ \text{个形式中 39 个都能给出 }D=4\text{ 峰（在合适的 }q\text{ 上）。}
-}
+
 \qquad\text{(R45-4)}
 $$
 
 **准确的重述**：`R32` 的唯一性是**在洛伦兹对字典内**的唯一性；一旦允许更换对计数，`D=4` 的选择性**保留**（峰仍在 `D=4`），但**唯一性丢失**——而且这意味着 `R32` 的"生存选择"本身**不足以**定出账本形式，需要**另一个**原则来钉它。
 
 $$
-\boxed{
+
 \text{净效果：}\textbf{量子性可以要回来}（换成欧氏对），\textbf{但选维的唯一性被削弱}。
-}
+
 \qquad\text{(R45-5)}
 $$
 
@@ -117,9 +117,9 @@ $$
 `R31` 导出 $\binom D2 q^D$ 靠的是"$D$ 维里有 $\binom D2$ 个独立平面、每面存活概率 $q$"。要合法使用 $\binom{D+1}2$，必须给出同等强度的导出（例如：若账本建立在**球面/欧氏化**的对结构上，则出现 $\dim\mathfrak{so}(D+1)$）。这是**唯一**能把这轮结果从"选择"升级为"导出"的一步。
 
 $$
-\boxed{
+
 \text{下一击：}\textbf{从零和输运的对结构导出 }\binom{D+1}2\text{ 或排除它}。
-}
+
 \qquad\text{(R45-6)}
 $$
 
@@ -135,7 +135,7 @@ $$
 6. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-\boxed{\ \text{Escape exists (Euclidean pair count), at the price of R32 uniqueness.}\ }
+\ \text{Escape exists (Euclidean pair count), at the price of R32 uniqueness.}\ 
 $$
 
 ---

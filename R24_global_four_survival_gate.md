@@ -7,16 +7,16 @@
 **核验**：[`R24_check.py`](R24_check.py)。
 
 $$
-\boxed{
+
 \begin{aligned}
-&\text{临时输入 }\texttt{TEMP-GR}:\ \text{允许传播引力子}\Rightarrow D\ge4;\\
-&\text{最终目标 }\texttt{SURV4-GLOBAL}:\ \arg\max_{D\ge1}S_D=\{4\}\text{，且不使用 }D\ge4;\\
+&\text{临时输入 }\text{TEMP-GR}:\ \text{允许传播引力子}\Rightarrow D\ge4;\\
+&\text{最终目标 }\text{SURV4-GLOBAL}:\ \arg\max_{D\ge1}S_D=\{4\}\text{，且不使用 }D\ge4;\\
 &\text{当前事故：}S_D=a_L^D\text{ 随 }D\text{ 严格下降，故全局峰在 }D=1\text{，不在 }D=4;\\
 &\text{单方向正候选：}F_D=B\,D\,q^D\text{ 在 }3/4<q<4/5\text{ 时全局唯一选中 }D=4;\\
-&\text{单方向缺失桥 }\texttt{DIM-COST-Q}:\ \text{从 Zero 导出 }q\in(3/4,4/5)\text{，不能按四维拟合};\\
-&\text{后续 }\texttt{R25}\text{ 把 }DIM\text{-}INTERACT\text{ 收成 }PAIR\text{-}CARRIER\text{ 候选：}\binom D2q^D\text{ 的四维窗口是 }1/2<q<3/5。
+&\text{单方向缺失桥 }\text{DIM-COST-Q}:\ \text{从 Zero 导出 }q\in(3/4,4/5)\text{，不能按四维拟合};\\
+&\text{后续 }\text{R25}\text{ 把 }DIM\text{-}INTERACT\text{ 收成 }PAIR\text{-}CARRIER\text{ 候选：}\binom D2q^D\text{ 的四维窗口是 }1/2<q<3/5。
 \end{aligned}
-}
+
 $$
 
 > **一句话**：`GR-LB` 只能暂时缩小候选集，不能参与“为什么四维生存率更高”的最终证明。当前底层可证的是一条 no-go：独立方向的乘积存活率只会偏向低维；要让四维成为全局峰，必须从 Zero 导出维度收益与相干损失的竞争窗口，或导出同效的非乘积相互作用。
@@ -42,7 +42,7 @@ $$
 把“存在传播引力子”作为筛选条件写为
 
 $$
-\texttt{TEMP-GR}:\quad D\le3\text{ 暂时排除，故候选集是 }D\ge4.
+\text{TEMP-GR}:\quad D\le3\text{ 暂时排除，故候选集是 }D\ge4.
 \qquad\text{(R24-1)}
 $$
 
@@ -51,11 +51,11 @@ $$
 因此最终目标必须写成：
 
 $$
-\boxed{
-\texttt{SURV4-GLOBAL}:\quad
+
+\text{SURV4-GLOBAL}:\quad
 \arg\max_{D\in\mathcal D}S_D=\{4\},
 \qquad \mathcal D=\{1,2,3,4,\ldots\},
-}
+
 \qquad\text{(R24-2)}
 $$
 
@@ -63,7 +63,7 @@ $$
 若只在 `D≥4` 上证明四维排名第一，只能记为：
 
 $$
-\texttt{SURV4-GR-SCAFFOLD}:\quad
+\text{SURV4-GR-SCAFFOLD}:\quad
 \arg\max_{D\ge4}S_D=\{4\}.
 \qquad\text{(R24-3)}
 $$
@@ -96,9 +96,9 @@ $$
 \qquad\text{(R24-5)}
 $$
 
-更强的结论是：$a_L^D$ 关于正整数 $D$ 严格递减，因此任何包含 $D=1,2,3$ 的全域候选集都不可能在 $D=4$ 取得全局最大。
+更强的结论是：$a\_L^D$ 关于正整数 $D$ 严格递减，因此任何包含 $D=1,2,3$ 的全域候选集都不可能在 $D=4$ 取得全局最大。
 
-**证明**：由 R23 引理 R23.7a，$0<a_L<1$。于是
+**证明**：由 R23 引理 R23.7a，$0<a\_L<1$。于是
 
 $$
 a_L^{D+1}-a_L^D=a_L^D(a_L-1)<0,
@@ -114,13 +114,13 @@ $$
 若把它写成“四维生存率最高”，就遗漏了隐含条件 `D≥4`，这正是本轮需要纠正的口径。
 
 $$
-\boxed{
-\texttt{PROD-SURV}+\texttt{GR-LB}
+
+\text{PROD-SURV}+\text{GR-LB}
 \Longrightarrow
-\texttt{SURV4-GR-SCAFFOLD}
+\text{SURV4-GR-SCAFFOLD}
 \not\Longrightarrow
-\texttt{SURV4-GLOBAL}.
-}
+\text{SURV4-GLOBAL}.
+
 \qquad\text{(R24-6)}
 $$
 
@@ -165,7 +165,7 @@ F_4>F_3\iff q>\frac34,
 F_4>F_5\iff q<\frac45.
 $$
 
-在窗口内，$F_D$ 先升后降，故整数全局峰唯一为 $D=4$；边界分别与 $D=3$ 或 $D=5$ 并列。$\square$
+在窗口内，$F\_D$ 先升后降，故整数全局峰唯一为 $D=4$；边界分别与 $D=3$ 或 $D=5$ 并列。$\square$
 
 这条定理满足“先证四维生存率比较高”的数学形式，而且没有使用 GR。  
 但它仍不是 Zero 原生证明，因为 `DIM-COST` 给出的 $q$ 目前是具名输入。
@@ -177,12 +177,12 @@ $$
 最终要证明的不是“把 $q$ 选进窗口”，而是从 Zero 的闭合统计、寿命分布或方向耦合中推出：
 
 $$
-\boxed{
-\texttt{DIM-COST-Q}:\quad
+
+\text{DIM-COST-Q}:\quad
 \frac34<q<\frac45,
 \quad
 q\text{ 的定义不使用 }D=4.
-}
+
 \qquad\text{(R24-10)}
 $$
 
@@ -216,7 +216,7 @@ g_D>0,
 \qquad\text{(R24-12)}
 $$
 
-其中 $g_D$ 代表维数之间的兼容性、自催化网络或多方向共同闭合带来的增益。  
+其中 $g\_D$ 代表维数之间的兼容性、自催化网络或多方向共同闭合带来的增益。  
 要在不使用 GR 的情况下得到全局四维峰，至少需要：
 
 $$
@@ -228,7 +228,7 @@ $$
 
 这给出一个强约束：四维不可能仅靠“绝对分支更多”胜出，因为绝对数随 $D$ 增加；必须有原生相互作用让四维的**条件存活率**同时压过低维和高维。
 
-若直接指定 $g_4=1$、其余 $g_D=0$，那只是把答案写进选择器，判为循环。
+若直接指定 $g\_4=1$、其余 $g\_D=0$，那只是把答案写进选择器，判为循环。
 
 ### 5.1 `R25` 对 `DIM-INTERACT` 的收窄
 
@@ -237,7 +237,7 @@ $$
 $$
 S_D=B\binom D2q^D,
 \qquad
-\texttt{PAIR-CARRIER}:\ \text{继承身份是两条不同方向的成对连接。}
+\text{PAIR-CARRIER}:\ \text{继承身份是两条不同方向的成对连接。}
 \qquad\text{(R24-15)}
 $$
 
@@ -266,7 +266,7 @@ $$
 
 在撤掉 GR 之前，正确顺序是：
 
-1. `DIM-SECTOR`：从 Zero 构造维数扇区 $\mathcal S_D$；
+1. `DIM-SECTOR`：从 Zero 构造维数扇区 $\mathcal S\_D$；
 2. `BOTTOM-FITNESS`：从 Zero 构造可继续留下后代的物理计数；
 3. `DIM-BENEFIT`：解释多方向闭合或方向选择为何给出 $D$ 的增益；
 4. `DIM-COST-Q`：导出每方向损失 $q$，或给出同效 `DIM-INTERACT`；
@@ -277,9 +277,9 @@ $$
 当前状态：
 
 $$
-\boxed{
+
 \text{1、2、3、4 开放；5 只在已给 }DIM\text{-}COST\text{ 或 }DIM\text{-}INTERACT\text{ 时已证；6、7 尚未开始。}
-}
+
 \qquad\text{(R24-14)}
 $$
 

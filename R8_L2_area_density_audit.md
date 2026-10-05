@@ -6,14 +6,14 @@
 **依赖证据**：[`G76`](G76_area_law_in_2d.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`D231`](D231_modular_density_profile_gap.md)；为理清后续更正，另核对 [`G73`](G73_B_is_an_input.md) 与 [`G83`](G83_the_missing_1_14.md)。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{0.23534171 与 8.50 倍的算术可复现；}\\
 &\text{但 8.50 倍不是结构性证明，}\xi\simeq1.078L\text{ 还是漏了 }v_F\text{ 的旧口径。}\\
 &\eta\text{ 的 gap 无关性已被现有数据反驳；状态与细化独立性未被检验。}\\
 &\text{点位汇在寿命细化时能隙以 }1/L\text{ 闭合，故结构性障碍是条件性的，}\\
 &\text{不等于固定 }L=4\text{ 加空间大区域时面积律不可能。}
-\end{aligned}}
+\end{aligned}
 $$
 
 > **一句话**：J2 不是简单的一个“差 8 倍”数字题。它同时含有三件不同的事：有限窗口的可判阈值、有限寿命 `L=4` 的固定质量、以及寿命细化时的能隙闭合。R8 当前把这三件事压成了一句“结构性障碍”，因此结论方向部分正确，但依据和口径都不够干净；C3 更不能由现有数据成立。
@@ -40,7 +40,7 @@ $$
 G77 的模型是寿命环
 
 $$
-H=-t\sum_j(c_j^\dagger c_{j+1}+\mathrm{h.c.})
+H=-t\sum_j(c_j^\dagger c_{j+1}+\text{h.c.})
 +\sum_a\sigma(a)n_a,
 \qquad t=1,
 $$
@@ -191,9 +191,9 @@ $$
 因此 J2 的准确状态是：
 
 $$
-\boxed{
+
 \text{“8 倍”不是结构性证明；结构障碍取决于寿命细化与区域尺度是否同步。}
-}
+
 $$
 
 ---
@@ -228,7 +228,7 @@ $$
 因此，在同一面积律有效的均匀质量族里：
 
 $$
-\boxed{\eta_{\rm face}\text{ 明显依赖 gap 参数 }m.}
+\eta_{\rm face}\text{ 明显依赖 gap 参数 }m.
 $$
 
 这直接反驳 C3 中“`eta` 不依赖 gap 参数”的那一条；除非把 `eta` 重新定义成另一个经过重整化的对象，而那已不再是本审计中的有限格点面积系数。
@@ -268,7 +268,7 @@ $$
 因此：
 
 $$
-\boxed{\text{当前不能被读成“尺度无关”；只可以说大 gap 小窗口内的拟合较稳。}}
+\text{当前不能被读成“尺度无关”；只可以说大 gap 小窗口内的拟合较稳。}
 $$
 
 面积熵的系数在有限截断场论中本来就需要明确的归一化／重整化约定；C3 若要求裸格点 `eta` 对细化方式不变，反而比通常的面积律更强，现有数据不能承担。
@@ -284,7 +284,7 @@ $$
 =
 \frac{S_\omega(B_R)}{A(\partial B_R)},
 \qquad
-\operatorname{Err}_R(m,\omega)
+\text{Err}_R(m,\omega)
 =
 \left|\eta_R(m,\omega)-\eta\right|.
 $$
@@ -292,7 +292,7 @@ $$
 合格证明至少要给出：
 
 $$
-\sup_{\omega\in\mathcal S}\operatorname{Err}_R(m,\omega)
+\sup_{\omega\in\mathcal S}\text{Err}_R(m,\omega)
 \le
 C(m)\exp\!\left(-\frac{R}{\xi(m)}\right)
 +\varepsilon_{\rm UV},
@@ -328,13 +328,13 @@ $$
 4. Z3 点汇与 G78 三维均匀交错质量之间没有构造性映射；这是比 8.5 倍数字更根本的缺口。
 
 $$
-\boxed{
+
 \begin{aligned}
 &\text{J2 的结构性部分应表述为：}\\
 &\text{若寿命细化且区域尺度同步，Z3 点汇的均匀 gap 以 }1/L\text{ 闭合，}\xi\propto L\text{，C3 不可能。}\\
 &\text{若寿命固定在 }L=4\text{，当前数据只否定 C3 的 gap 无关性，}\\
 &\text{还不能否定通过更大空间区域恢复面积项的路线。}
-\end{aligned}}
+\end{aligned}
 $$
 
 **最准确的短结论**：L2 不是“只差一个有限尺寸拟合”，也不是“现有数字已证明无条件不可能”。它是一个**尺度识别缺口**：点汇确实给出随寿命线性增长的关联长度，但 R8 尚未证明物理区域尺寸必须与寿命同步；与此同时，现有面积密度数据已经足以否定 C3 中最强的“单一普适 `eta`、且与 gap 无关”版本。

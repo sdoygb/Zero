@@ -17,9 +17,9 @@ $$
 \mathbb N^{(\mathcal C/{\sim})}.
 $$
 
-该层保存**闭合结果类与其重数**。精确的**局部组装历史**仍留在 $P_i$ 中，
-而活动层 $E_i$ **从 $P_i$ 重建**——不是仅从 $\mathcal Z_\ast$ 重建
-（原文：*"Exact local assembly histories remain in $P_i$, and the active layers $E_i$ rebuild from $P_i$, not from $\mathcal Z_\ast$ alone."*）。
+该层保存**闭合结果类与其重数**。精确的**局部组装历史**仍留在 $P\_i$ 中，
+而活动层 $E\_i$ **从 $P\_i$ 重建**——不是仅从 $\mathcal Z\_\ast$ 重建
+（原文：*"Exact local assembly histories remain in $P\_i$, and the active layers $E\_i$ rebuild from $P\_i$, not from $\mathcal Z\_\ast$ alone."*）。
 
 ## 1. 各层
 
@@ -74,7 +74,7 @@ $$
 $$
 B_L
 =
-\sum_{\substack{2\le\tau\le L\\ \tau\ \mathrm{even}}}
+\sum_{\substack{2\le\tau\le L\\ \tau\ \text{even}}}
 \binom{\tau}{\tau/2}
 $$
 

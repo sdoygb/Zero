@@ -6,7 +6,7 @@
 **核验**：[`Z0_check.py`](Z0_check.py) —— **独立实断言 43 / 结论行 0 / 不符 0**，退出码 `0`
 
 $$
-\boxed{\ \textbf{公理只有一条：零不断乱动};\quad Z1,Z2,Z3,Z4,Z5\ \text{全部由它导出}。\ }
+\ \textbf{公理只有一条：零不断乱动};\quad Z1,Z2,Z3,Z4,Z5\ \text{全部由它导出}。\ 
 $$
 
 ---
@@ -27,20 +27,20 @@ $$
 ## §0.5 符号与层指标（只加指标，不改结论）
 
 > 按 [`R50`](R50_layer_discipline.md) 纪律 ①，本文用到的符号一律带层指标：$L$（寿命）与 $T$（周期）是 **L0 自由参数**；
-> 容量记 $K_{\rm cap}$（L0/L2），模 Hamiltonian 记 $K_\omega=-\log\omega$（$\mathcal R$）；
-> 重数记 $N_{\rm mult}$（L0），时刻数记 $N_t$（L2／$\mathcal R$），站点数记 $N_{\rm site}$（$|C|$）。
+> 容量记 $K\_{\rm cap}$（L0/L2），模 Hamiltonian 记 $K\_\omega=-\log\omega$（$\mathcal R$）；
+> 重数记 $N\_{\rm mult}$（L0），时刻数记 $N\_t$（L2／$\mathcal R$），站点数记 $N\_{\rm site}$（$|C|$）。
 
 ---
 
 ## §1 唯一公理
 
 $$
-\boxed{\ \textbf{Z0（零不断乱动）}\quad
+\ \textbf{Z0（零不断乱动）}\quad
 \begin{aligned}
 &\text{① 零不停留：零（平衡／闭合态）不是静止态，它持续运动；}\\
 &\text{② 从不停歇：运动不因任何时刻而终止（"不断"）；}\\
 &\text{③ 不设概率：运动不带权重——没有选择规则。}
-\end{aligned}\ }
+\end{aligned}\ 
 $$
 
 **三款都不可省**，且每款各买一件东西（§3）。**除 Z0 外无其它公理。**
@@ -94,7 +94,7 @@ $$
 > **识别 U（唯一宇宙）**：全部站点属于**同一个**宇宙 ⇒ 交互图连通 ⇒ $\Gamma$ 连通。
 
 这就是 [`Z1`](Z1_zero_layer_as_the_foundation.md) 的 **Z-E1**。它现在的地位从"扩充条款"变为**识别**：
-它买回历史标号 A2 的**连通性**，代价是与 Zero 笔记的显式选择相反（`tri_layer` 明写 $E_i$ 从 $P_i$ 重建、"not from $\mathcal Z_\ast$ alone"）
+它买回历史标号 A2 的**连通性**，代价是与 Zero 笔记的显式选择相反（`tri_layer` 明写 $E\_i$ 从 $P\_i$ 重建、"not from $\mathcal Z\_\ast$ alone"）
 ——那是一次**改选**，理由见 §4.1。
 
 ### 2.5 Z5（重播种）【导出】——**由"不断"逼出**
@@ -122,7 +122,7 @@ $$
 **(a) 闭环图的定义**（[`zero_sum_geometry_probe.py`](simulations/zero_sum_geometry_probe.py)）：
 节点 = **周期 $T$ 的零和循环词的旋转类**；两条词**相邻** $\iff$ **交换一对相邻的异号步**（`+-` $\leftrightarrow$ `-+`）。
 
-> **这正是历史标号 A2 的补偿移动**（今 **Z1 定理 1**）：把 $+1$ 右移一格、$-1$ 左移一格，即 $x\mapsto x+e_j-e_i$。
+> **这正是历史标号 A2 的补偿移动**（今 **Z1 定理 1**）：把 $+1$ 右移一格、$-1$ 左移一格，即 $x\mapsto x+e\_j-e\_i$。
 > 故该图就是 **Z1 定理 1 的动力学在零和词空间上的可执行实现**。
 
 **(b) 平均度无界**（[`G28`](G28_dynamics_audit.md) §4；本版独立复现，逐项吻合）：
@@ -133,7 +133,7 @@ $$
 | **平均度** | 3.60 | 4.92 | 6.15 | 7.39 | 8.43 | **9.50** |
 
 $$
-\boxed{\ \text{无截断}\ \Longrightarrow\ \text{平均度无界}\ \Longrightarrow\ \text{非流形离散化}\ \Longrightarrow\ \text{无稳定谱维数}.\ }
+\ \text{无截断}\ \Longrightarrow\ \text{平均度无界}\ \Longrightarrow\ \text{非流形离散化}\ \Longrightarrow\ \text{无稳定谱维数}.\ 
 $$
 
 **(c) 故终端款被逼出**：若体系要给出**几何**（流形式、有稳定谱维数的结构），圈长**必须有截断**；
@@ -175,17 +175,17 @@ $$
 ### 4.1 **Z-E1** → **识别 U**（§2.4）
 
 **已不是公理，也不是独立条款**，而是"唯一宇宙"这一识别。它同时买回 [`G23`](G23_zero_layer_structure_inventory.md) **(a)** 的
-全局读出 $R_Z$ 与层间核 $K_{ij}$。
+全局读出 $R\_Z$ 与层间核 $K\_{ij}$。
 
 **与 Zero 笔记的张力（必须写明）**：[`zero_sum_tri_layer_universe.md`](zero_sum_tri_layer_universe.md) 显式选择相反一侧
-（$E_i$ 从 $P_i$ 重建，"not from $\mathcal Z_\ast$ alone"）。**这是改选**，理由：只有它能买回 Z1 定理 1 的连通性。
+（$E\_i$ 从 $P\_i$ 重建，"not from $\mathcal Z\_\ast$ alone"）。**这是改选**，理由：只有它能买回 Z1 定理 1 的连通性。
 
 ### 4.2 **Z-E2（年龄）** → **导出**
 
 **年龄 = 词长**：Zero 程序里 `len(word) >= LAYER_LIFETIME` 就是"年龄到达寿命"的**逐字实现**。
 故年龄变量**不需要新结构**（核验 F6）。
 
-**局部寿命 $\tau_i$**（各站点不同）：Z0 不禁止寿命逐站点不同 ⇒ 这是**参数异质性**，不是新公理。
+**局部寿命 $\tau\_i$**（各站点不同）：Z0 不禁止寿命逐站点不同 ⇒ 这是**参数异质性**，不是新公理。
 
 ### 4.3 **Z-E3（周期与相位）** → **一半导出、一半扩充**
 
@@ -217,7 +217,7 @@ $$
 | A1／A2／A3／A5（历史命名） | 定理 | **定理**（[`Z1`](Z1_zero_layer_as_the_foundation.md) §3 的推导全部沿用；映射见 [`G0`](G0_bottom_layer_and_derivation_route.md) §0.1） |
 
 $$
-\boxed{\ \text{旧的"6 条 A → 3 条独立 A"（}G19\text{）}\ \longrightarrow\ \text{"1 条公理} + 1\text{ 个参数} + 1\text{ 条识别"}。\ }
+\ \text{旧的"6 条 A → 3 条独立 A"（}G19\text{）}\ \longrightarrow\ \text{"1 条公理} + 1\text{ 个参数} + 1\text{ 条识别"}。\ 
 $$
 
 ---
@@ -228,7 +228,7 @@ $$
 
 1. **Z4 的终端款已导出，但带一个条件**："闭环图须给出稳定谱维数"（§2.6）。
    若放弃几何要求，终端款即失去依据——这是全体系**唯一带条件的导出**。
-   （[`R30`](R30_little_group_phase_route_audit.md) §11 另登记 `Z4-EVIDENCE-SCOPE`：该条件的证据取自**位形空间图** $\mathcal G_T$，
+   （[`R30`](R30_little_group_phase_route_audit.md) §11 另登记 `Z4-EVIDENCE-SCOPE`：该条件的证据取自**位形空间图** $\mathcal G\_T$，
    它对**物理通道图** $\Gamma$ 的效力未证；`Z3` §7 亦只更正归属、未判定 $\Gamma$。）
    另需注意：$L$ 的**值**仍是参数（纪律 1），导出的是**终端条款本身**，不是 $L=4$。
 2. **"不设概率"的导出依赖最小性论证**（§2.2）：它论证的是"单公理体系内不存在权重数据"，
@@ -247,8 +247,8 @@ $$
 3. **识别 U 的裁决**（全局读出 vs 局部重建）。
 4. **$T$ 的地位**：参数，还是由 Z5 的再生周期**导出**？（若导出，参数再少一个）
 5. **`Z4-EVIDENCE-SCOPE`（[`R30`](R30_little_group_phase_route_audit.md) §11 登记）**：§2.6 的"无稳定谱维数"是在
-   **位形空间图** $\mathcal G_T$ 上算的；[`Z3`](Z3_i2a_dimension_drift_verdict.md) §0／§7 已更正"把 $\mathcal G_T$ 当作 I2a 的障碍"是
-   **错误归属**，并明确"只针对 $\mathcal G_T$，**没有**判定 $\Gamma$ 的细化族"。故 §2.6 对**物理通道图** $\Gamma$ 的效力**未证**，本条待裁决。
+   **位形空间图** $\mathcal G\_T$ 上算的；[`Z3`](Z3_i2a_dimension_drift_verdict.md) §0／§7 已更正"把 $\mathcal G\_T$ 当作 I2a 的障碍"是
+   **错误归属**，并明确"只针对 $\mathcal G\_T$，**没有**判定 $\Gamma$ 的细化族"。故 §2.6 对**物理通道图** $\Gamma$ 的效力**未证**，本条待裁决。
    （范围声明：这不是否定终端款，也不改变 $L$ 作为参数的地位。）
 
 ---
