@@ -21,6 +21,7 @@ import sys
 from itertools import product
 from math import comb
 
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 LH = HERE
 MOD = os.path.expanduser("~/Downloads/modular-equilibrium")

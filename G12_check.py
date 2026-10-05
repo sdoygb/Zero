@@ -23,6 +23,7 @@ from itertools import permutations
 
 import numpy as np
 
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 FAIL = 0
 

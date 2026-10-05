@@ -23,6 +23,7 @@ from collections import defaultdict
 import numpy as np
 from scipy.sparse import csr_matrix, diags
 
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 LEDGER_MODE = os.environ.get("LH_LEDGER", "A")
 FAIL = 0

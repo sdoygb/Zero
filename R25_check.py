@@ -18,6 +18,7 @@ from fractions import Fraction
 from itertools import product
 from math import comb, exp
 
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 FAIL = 0
 

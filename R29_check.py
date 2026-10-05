@@ -14,6 +14,7 @@ import sys
 from fractions import Fraction
 from math import comb, sqrt
 
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 FAIL = 0
 

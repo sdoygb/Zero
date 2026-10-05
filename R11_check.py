@@ -21,6 +21,7 @@ import sys
 from fractions import Fraction
 from pathlib import Path
 
+
 HERE = Path(__file__).resolve().parent
 DOC = HERE / "R11_legacy_GR_derivation_audit.md"
 STATUS = HERE / "STATUS.md"

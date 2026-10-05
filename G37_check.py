@@ -40,7 +40,7 @@ def head(title):
 
 def rd(f):
     p = os.path.join(HERE, f)
-    return open(p, encoding="utf-8", errors="replace").read() if os.path.exists(p) else ""
+    return open(p, encoding="utf-8", errors="replace").read().replace("\_", "_") if os.path.exists(p) else ""
 
 
 def words(L):

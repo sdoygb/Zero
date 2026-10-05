@@ -22,6 +22,7 @@ from itertools import product
 
 import numpy as np
 
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 MOD = os.path.expanduser("~/Downloads/modular-equilibrium/derivations")
 FAIL = 0
@@ -43,7 +44,7 @@ def head(title):
 
 def rd(name):
     p = os.path.join(MOD, name)
-    return open(p, encoding="utf-8", errors="replace").read() if os.path.exists(p) else ""
+    return open(p, encoding="utf-8", errors="replace").read().replace("\_", "_") if os.path.exists(p) else ""
 
 
 d223 = rd("D223_age_carrier_tensor_interface.md")

@@ -21,6 +21,7 @@ import sys
 import numpy as np
 
 
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPORT = "R8_L1_refutation_attempt.md"
 

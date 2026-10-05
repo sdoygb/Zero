@@ -15,6 +15,7 @@ import sys
 from fractions import Fraction
 from math import comb
 
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 FAIL = 0
 
