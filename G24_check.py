@@ -43,8 +43,11 @@ def head(title):
 
 
 def rd(name):
-    p = os.path.join(MOD, name)
-    return open(p, encoding="utf-8", errors="replace").read().replace("\_", "_") if os.path.exists(p) else ""
+    """先读外部参照语料，缺失时回落到本仓归档副本 D_arc/（2026-10-03 归档 + D223 改名）。"""
+    for cand in (os.path.join(MOD, name), os.path.join(HERE, "D_arc", name)):
+        if os.path.exists(cand):
+            return open(cand, encoding="utf-8", errors="replace").read().replace("\_", "_")
+    return ""
 
 
 d223 = rd("D223_age_carrier_tensor_interface.md")

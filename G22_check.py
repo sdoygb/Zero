@@ -42,7 +42,8 @@ def head(title):
 
 
 def rd(p):
-    return open(os.path.join(HERE, p), encoding="utf-8", errors="replace").read()
+    # D 系列正文用 `\_` 转义下划线；断言按字面下划线写，故读取时归一化
+    return open(os.path.join(HERE, p), encoding="utf-8", errors="replace").read().replace("\\_", "_")
 
 
 d222 = rd("D_arc/D222_stratified_destruction_and_local_memory.md")

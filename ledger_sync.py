@@ -144,11 +144,19 @@ def main():
     src = open(LEDGER, encoding="utf-8").read()
     for s in scripts:
         name = os.path.basename(s)
-        n = cache[name]["n"]
-        src = re.sub(r"\| `%s` \| *\d+ \| *\d+ \|" % re.escape(name),
-                     "| `%s` | %d | 0 |" % (name, n), src)
-    src = re.sub(r"\| \*\*合计\*\* \| \*\*\d+\*\* \| \*\*全 0\*\* \|",
-                 "| **合计** | **%d** | **全 0** |" % total, src)
+        e = cache[name]
+        n, rc = e["n"], e["rc"]
+        pat = r"\| `%s` \| *\d+ \| *\d+ \|" % re.escape(name)
+        if re.search(pat, src):
+            src = re.sub(pat, "| `%s` | %d | %d |" % (name, n, rc), src)
+        else:
+            # 新脚本：补一行（插在「合计」行之前）
+            src = re.sub(r"(\| \*\*合计\*\* \|)",
+                         "| `%s` | %d | %d |\n\\1" % (name, n, rc), src, count=1)
+    nbad = sum(1 for s in scripts if cache[os.path.basename(s)]["rc"] != 0)
+    verdict = "**全 0**" if nbad == 0 else "**%d 个非 0**" % nbad
+    src = re.sub(r"\| \*\*合计\*\* \| \*\*\d+\*\* \| \*\*[^*]+\*\* \|",
+                 "| **合计** | **%d** | %s |" % (total, verdict), src)
     open(LEDGER, "w", encoding="utf-8").write(src)
 
     # 便宜的一致性：先重生索引，再核状态入口，最后做文档清单核验

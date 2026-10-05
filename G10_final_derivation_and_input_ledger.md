@@ -129,7 +129,8 @@ $$
 > **口径（本版起）**：下表「独立实断言」= 脚本里 `level="ind"` 的可失败断言数；
 > 依赖上文的结论行打印 `[i]`、**不计入合计**。合计由 [`ledger_sync.py`](ledger_sync.py) 以 `LH_LEDGER=B` 实跑得出。
 > 每篇文档头部的**核验**行给出同一口径的两个数：**独立实断言 N / 结论行 M**（本表只列 N）。
-> 账本当前合计为 **独立实断言 2999**（111 个脚本，退出码全 0）：`G*` 90 个（2253 项）、`Z*` 17 个（645 项）、`zero_sum_*` 4 个（101 项）。结论行按 `[i]` 单列，不计入合计。
+> **当前账本的权威数字是本表本身**（脚本名、断言数、退出码三栏都由 `ledger_sync.py` 实跑写回）。
+> 历史读数（**不得再作当前状态引用**）：G10 早期版本曾写「2999 项 / 111 个脚本 / 退出码全 0」，`STATUS.md` §2.1 的「2999 项」与 `INDEX.md` 的旧合计都是那一版的读数。
 > `R0`–`R30` 的 `R*_check.py` 是**主定理接口与选维**分支的独立核验脚本，按设计**单列**，不计入上表合计（当前 `R0`–`R30` 各自不符项为 0）。
 
 | 脚本 | 独立实断言 | 退出码 |
@@ -143,21 +144,21 @@ $$
 | `G7_check.py` | 21 | 0 |
 | `G8_check.py` | 32 | 0 |
 | `G9_check.py` | 21 | 0 |
-| `G11_check.py` | 22 | 0 |
-| `G12_check.py` | 22 | 0 |
+| `G11_check.py` | 21 | 1 |
+| `G12_check.py` | 21 | 1 |
 | `G13_check.py` | 21 | 0 |
 | `G14_check.py` | 27 | 0 |
 | `G15_check.py` | 8 | 0 |
 | `G16_check.py` | 20 | 0 |
 | `G17_check.py` | 19 | 0 |
 | `G18_check.py` | 5 | 0 |
-| `G20_check.py` | 40 | 0 |
+| `G20_check.py` | 39 | 1 |
 | `G21_check.py` | 15 | 0 |
 | `G22_check.py` | 37 | 0 |
 | `G23_check.py` | 24 | 0 |
 | `G24_check.py` | 35 | 0 |
 | `G25_check.py` | 32 | 0 |
-| `G26_check.py` | 22 | 0 |
+| `G26_check.py` | 22 | 1 |
 | `G27_check.py` | 29 | 0 |
 | `G28_check.py` | 40 | 0 |
 | `G29_check.py` | 39 | 0 |
@@ -222,14 +223,14 @@ $$
 | `G87_check.py` | 6 | 0 |
 | `G88_check.py` | 14 | 0 |
 | `G89_check.py` | 79 | 0 |
-| `G90_check.py` | 47 | 0 |
+| `G90_check.py` | 42 | 1 |
 | `Z1_check.py` | 33 | 0 |
 | `Z2_check.py` | 25 | 0 |
 | `Z3_check.py` | 37 | 0 |
 | `Z4_check.py` | 33 | 0 |
 | `Z5_check.py` | 35 | 0 |
 | `Z6_check.py` | 56 | 0 |
-| `Z7_check.py` | 37 | 0 |
+| `Z7_check.py` | 36 | 1 |
 | `Z8_check.py` | 56 | 0 |
 | `Z9_check.py` | 46 | 0 |
 | `Z10_check.py` | 37 | 0 |
@@ -244,7 +245,10 @@ $$
 | `zero_sum_closure_graph_theorems_check.py` | 23 | 0 |
 | `zero_sum_persistence_theorems_check.py` | 22 | 0 |
 | `Z0_check.py` | 42 | 0 |
-| **合计** | **3027** | **全 0** |
+| `G91_check.py` | 174 | 0 |
+| `Z0_axiom_hygiene_check.py` | 8 | 1 |
+| `Z17_check.py` | 17 | 0 |
+| **合计** | **3163** | **7 个非 0** |
 
 （`INDEX_check.py` 为索引体检，17 项，**单列不计入上表合计**。）
 

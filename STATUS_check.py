@@ -105,7 +105,7 @@ check("R23 后代选维只作 O3 条件候选",
       and "演化层" in STATUS
       and "EVO-NORM" in STATUS
       and "条件存活率" in STATUS
-      and "s_4/s_D>F_D^0/F_4^0" in STATUS
+      and "s\_4/s\_D>F\_D^0/F\_4^0" in STATUS
       and "R23_check.py" in STATUS)
 check("R24 登记全局四维生存峰门槛且保持未证",
       "### 2.24 全局四维生存峰门槛与移除 GR（`R24`）当前状态" in STATUS
@@ -205,7 +205,7 @@ check("R34 登记有限维 boost 不可能定理",
 check("R35 登记 P2″ 类型判据与对 π 的新约束",
       "### 2.35 P2″：极限类型由粗粒化轮廓决定，并反向约束 `π`（`R35`）当前状态" in STATUS
       and "非等差" in STATUS
-      and "III$_{1/2}$" in STATUS
+      and "III$\_{1/2}$" in STATUS
       and "R35_type_iii_classification.md" in STATUS
       and "R35_check.py" in STATUS)
 check("R36 登记 CHSH 探针与 Bell 局域判定",
@@ -294,7 +294,7 @@ check("G10 指向 STATUS 且旧 §4/§7 标为历史",
           "[`STATUS.md`](STATUS.md)", "§4 的旧终态表", "§7 的未建立清单", "都不是当前状态"))
 check("G0 指向 STATUS 且 §4 标为历史",
       has("G0_bottom_layer_and_derivation_route.md",
-          "[`STATUS.md`](STATUS.md)", "本节只保留早期输入表", "历史推导记录"))
+          "[`STATUS.md`](STATUS.md)", "本节只保留早期输入表", "早期推导记录"))
 check("Z6 指向 STATUS 且不再自称唯一账本",
       has("Z6_stall_autopsy_and_released_ledger.md",
           "[`STATUS.md`](STATUS.md)", "不再是项目唯一账本"))
@@ -305,8 +305,8 @@ check("Z2 标出 I2a 当前为 E1 条件链",
       has("Z2_zero_to_gr_direct_route.md",
           "[`STATUS.md`](STATUS.md)", "当前归入 E1 条件链"))
 check("D259 标出路线本地状态",
-      has("D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md",
-          "[`STATUS.md`](STATUS.md)", "D259 借入路线本地"))
+      has("D_arc/D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md",
+          "[`STATUS.md`](../STATUS.md)", "D259 借入路线本地"))
 check("借入层说明指向 STATUS",
       has("verify/README.md", "[`STATUS.md`](../STATUS.md)", "D259 路线本地状态"))
 
