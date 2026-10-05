@@ -1,9 +1,9 @@
 # R4 · 条件恢复之外的候选可检验预言
 
-**日期**：2026-10-02  
-**性质**：候选清单、误差分级、主预言选择与可执行核验方案。  
-**依赖**：[`STATUS.md`](STATUS.md)、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`Z7`](Z7_embedding_input_explicit_dictionary.md)、[`Z9`](Z9_pi_filter_and_lifetime_fork.md)-[`Z12`](Z12_geometric_input_closed_binary_labeling.md)、[`G54`](G54_quantitative_profile_age_measure.md)、[`G59`](G59_I7_settled_native_cone_and_its_residue.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)-[`G81`](G81_central_charge_from_area_density.md)、[`simulations/README.md`](simulations/README.md)。  
-**等级标签**：【候选】/【条件证成】/【函数形式已证或数值支持】/【数值输入】/【可证伪】/【主预言】/【结论】。  
+**日期**：2026-10-02
+**性质**：候选清单、误差分级、主预言选择与可执行核验方案。
+**依赖**：[`STATUS.md`](STATUS.md)、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`Z7`](Z7_embedding_input_explicit_dictionary.md)、[`Z9`](Z9_pi_filter_and_lifetime_fork.md)-[`Z12`](Z12_geometric_input_closed_binary_labeling.md)、[`G54`](G54_quantitative_profile_age_measure.md)、[`G59`](G59_I7_settled_native_cone_and_its_residue.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)-[`G81`](G81_central_charge_from_area_density.md)、[`simulations/README.md`](simulations/README.md)。
+**等级标签**：【候选】/【条件证成】/【函数形式已证或数值支持】/【数值输入】/【可证伪】/【主预言】/【结论】。
 **核验**：[`R4_check.py`](R4_check.py)。
 
 > **当前状态边界**：本文不从 `Z0` 无条件导出 GR，也不把条件恢复写成无条件理论。所有候选均以 `Z0 + 识别 U + E1/E2/E3/E4 + 参数 L,T,N` 为前提；凡数值依赖 `B`、`L`、`T_age`、`m_stag`、`π` 或单位约定的部分，必须单列。
@@ -16,7 +16,7 @@ $$
 \underbrace{\text{函数形式}}_{\text{条件定理或数值支持}}\ +\
 \underbrace{\text{无量纲数值}}_{\text{可由未定输入算出}}\ +\
 \underbrace{\text{物理单位}}{\text{E4 约定，当前不可导出}}.
-\ 
+\
 $$
 
 ---
@@ -27,7 +27,7 @@ $$
 
 $$
 \ \textbf{主预言 R4-P1}:\quad
-\text{宇称 gap 打开后，2D 面积律带正的对数有限尺寸修正；3D 面密度 }a_{\rm face}\text{ 满足 }a_{\rm face}(m)m\approx0.467\pm0.008.\ 
+\text{宇称 gap 打开后，2D 面积律带正的对数有限尺寸修正；3D 面密度 }a_{\rm face}\text{ 满足 }a_{\rm face}(m)m\approx0.467\pm0.008.\
 $$
 
 这条预言属于“GR 之外”，因为 GR 本身不含这里由年龄奇偶打开的交错 gap，也不含由离散闭环计数产生的 `O(1/L)`、`O(1/L²)` 或 `log L` 修正。它同时是当前最可执行的，因为它无量纲，不依赖 E4 的绝对尺度。
@@ -169,7 +169,7 @@ $$
 
 $$
 \ c\in\{0.75,1.5\},\qquad \frac{\max c}{\min c}=2,\qquad
-\text{度规对比度}\le 2^k=16.\ 
+\text{度规对比度}\le 2^k=16.\
 $$
 
 **参数依赖**：字典次数 `k`、维数 `d`、局部标度场或有限值标号 `c`、单元形状、细化族；二值化还依赖 `L=4` 与 `T_age∈{2,4}`。
@@ -232,7 +232,7 @@ $$
 $$
 \ m_{\rm dyn}=0,1;\qquad
 \mathcal L_2\text{ 是拓扑项，不进入四维场方程};\qquad
-G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}.\ 
+G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}.\
 $$
 
 因此当前路线没有独立的四维高曲率耦合 `α₂`。若 `D>4`，`α₂` 才会作为独立尺度进入场方程，且其数值不被 `Z0` 或 E4 给出。
@@ -298,7 +298,7 @@ $$
 $$
 \
 S_d(L)=a_d L^{d-1}+b_d L^{d-2}+c_d+o(1).
-\ 
+\
 $$
 
 在二维弱 gap 情形，当前数据更适合写成
@@ -306,7 +306,7 @@ $$
 $$
 \
 S_2(L)=a_2(m)L+b_2(m)\log L+c_2(m)+o(1).
-\ 
+\
 $$
 
 ### 5.2 已证明的函数形式与未定数值

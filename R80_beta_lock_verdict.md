@@ -45,7 +45,7 @@ $$
 由 $\sum\_{(i,j)}u^a u^b=\big(\sum K\big)\delta^{ab}-K^{ab}$：
 
 $$
-\ T^{ab}=\Big(\sum_{(i,j)}K_{ij}\Big)\delta^{ab}-K^{ab}\ 
+\ T^{ab}=\Big(\sum_{(i,j)}K_{ij}\Big)\delta^{ab}-K^{ab}\
 $$
 
 $$
@@ -77,7 +77,7 @@ $\text{Stab}(0)=S\_D$ 把 $\binom{D+1}2=D+\binom D2$ 条通道对分成两个轨
 **精确解**：$a=D\,r^{h\_A}$、$b=\binom D2 r^{h\_B}$，$h\_B-h\_A=1$：
 
 $$
-a=b\iff 4r=6r^2\iff r=\tfrac23\iff\ \beta\varepsilon^*=\ln\tfrac32=0.405465\ 
+a=b\iff 4r=6r^2\iff r=\tfrac23\iff\ \beta\varepsilon^*=\ln\tfrac32=0.405465\
 $$
 
 ---
@@ -90,7 +90,7 @@ $$
 | 欧氏单纯形账本的 $D=4$ 峰 | $(1.200,\ 1.470)$ |
 
 $$
-\ \text{不相交}\ \Longrightarrow\ \text{若两处 }\beta\varepsilon\text{ 是同一个常数，则}\textbf{互斥}\ 
+\ \text{不相交}\ \Longrightarrow\ \text{若两处 }\beta\varepsilon\text{ 是同一个常数，则}\textbf{互斥}\
 $$
 
 **在 $\beta\varepsilon=\ln\frac32$ 处的 $q$**：
@@ -116,7 +116,7 @@ $$
 $$
 
 $$
-\text{相等}\iff D\,a=a+(D-2)b\iff\ \frac ba=\frac{D-1}{D-2}\ 
+\text{相等}\iff D\,a=a+(D-2)b\iff\ \frac ba=\frac{D-1}{D-2}\
 $$
 
 **代入各向同性条件** $T^{ab}\vert\_{\rm std}=0$，注意对非根指标对 $T^{ij}=b\,\delta^{ij}+a(1-\delta^{ij})$：
@@ -153,7 +153,7 @@ $$
 而 `D250` 的标题是《**纯层间交换选择刚性标量源**》 —— 两者在无外部度规输入的情况下**独立吻合**。
 
 $$
-\ w=1\ \text{是通道对介质的本征属性};\ \text{与 }D250\ \text{的独立推论一致}\ 
+\ w=1\ \text{是通道对介质的本征属性};\ \text{与 }D250\ \text{的独立推论一致}\
 $$
 
 ---
@@ -161,7 +161,7 @@ $$
 ## §6 结论与两条出路
 
 $$
-\ \text{引入 }T^{ab}\ \textbf{没有}\text{把 }\beta\varepsilon\ \text{钉死在 }\tfrac43;\ \text{它给出 }\ln\tfrac32,\ \text{且与维数窗口互斥}\ 
+\ \text{引入 }T^{ab}\ \textbf{没有}\text{把 }\beta\varepsilon\ \text{钉死在 }\tfrac43;\ \text{它给出 }\ln\tfrac32,\ \text{且与维数窗口互斥}\
 $$
 
 **两条出路**：
@@ -200,5 +200,5 @@ python3 R80_beta_lock.py     # 各高度模型下的各向同性方程解
 
 $$
 \ T^{ab}\ \text{给的是}\ \ln\tfrac32\ \text{（各向同性方程的解），不是}\ \tfrac43;\
-\text{且与账本窗口互斥 —— 除非承认两个独立的温度。}\ 
+\text{且与账本窗口互斥 —— 除非承认两个独立的温度。}\
 $$

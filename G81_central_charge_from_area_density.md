@@ -5,7 +5,7 @@
 **核验**：[`G81_check.py`](G81_check.py) —— **独立实断言 10 / 结论行 6 / 不符 0**，退出码 `0`（0.3 秒）
 
 $$
-\ c=6a\ell\ \text{（关系，导出）};\ \text{但}\ k=\frac c6=0.467\ \textbf{不是整数}\ \text{（与 }D87\text{ 的张力）}。\ 
+\ c=6a\ell\ \text{（关系，导出）};\ \text{但}\ k=\frac c6=0.467\ \textbf{不是整数}\ \text{（与 }D87\text{ 的张力）}。\
 $$
 
 ---
@@ -31,13 +31,13 @@ $$
 | $4.0$ | $0.1158$ | $0.463$ |
 
 $$
-\ a\cdot m=\mathbf{0.467\pm0.008}\ (\text{相对涨落}\ 1.7\%)\ \Longrightarrow\ \textbf{面积密度与 gap 无关的组合};\ a\propto\frac1m\propto\xi。\ 
+\ a\cdot m=\mathbf{0.467\pm0.008}\ (\text{相对涨落}\ 1.7\%)\ \Longrightarrow\ \textbf{面积密度与 gap 无关的组合};\ a\propto\frac1m\propto\xi。\
 $$
 
 这是[`G78`](G78_area_law_in_3d.md) 的数据给的一条**新普适关系**：
 
 $$
-\ a_{\rm face}\propto\frac1m\ \ (\text{numerical});\qquad \frac{1}{4G}:=a_{\rm face}\ \ (\text{identification})。\ 
+\ a_{\rm face}\propto\frac1m\ \ (\text{numerical});\qquad \frac{1}{4G}:=a_{\rm face}\ \ (\text{identification})。\
 $$
 
 **为什么"$1/G=4a$ 只能是识别**：[`G57`](G57_unreachability_of_absolute_normalization.md) 推论 2 证明 $G$ **不可导出**；旧体系同判——`D24:22` 把 $G$ 登记为"已通过低能匹配固定"，`D24:198` 明文写"面积系数和 $G$ 可同步缩放，单靠熵不能固定 $G$"，`D24:202` 把该归一化登记为【约定】。所以可导出的是 $a\_{\rm face}\propto1/m$；$1/G=4a\_{\rm face}$ 是把这个比例**认成** $G$ 的定义。
@@ -56,7 +56,7 @@ $$
 | $\frac{3\ell}{2G}$ 与 $6a\ell$ 一致（$\ell=1,2,5$） | ✅ |
 
 $$
-\Longrightarrow\ \ \text{中央荷被}\textbf{面积密度与 AdS 半径}\text{完全定住（这是一个}\textbf{关系}）。\ 
+\Longrightarrow\ \ \text{中央荷被}\textbf{面积密度与 AdS 半径}\text{完全定住（这是一个}\textbf{关系}）。\
 $$
 
 ---
@@ -72,7 +72,7 @@ $$
 
 $$
 \ c=6\rho v_F/m^2\ \ (\rho=0.4674\pm0.0068\ \text{3D asymptotic});\qquad
-c_{\rm eff}=6\rho\ \text{holds only at}\ m=1。\ 
+c_{\rm eff}=6\rho\ \text{holds only at}\ m=1。\
 $$
 
 量纲账：$\rho$ 与 $v\_F$ 都是格点单位的纯数、$m$ 是格点单位的质量，故 $c$ 是纯数；其中 $c\propto m^{-2}$ 是**唯一与口径无关**的部分。
@@ -88,7 +88,7 @@ $$
 $m=1$ 给 $k=1.002$（无张力）；而 $m=2,3,4$ 给 $k=0.250,\ 0.111,\ 0.063$，即张力 $1/k=4.0,\ 9.0,\ 16.0\approx m^2$。
 
 $$
-\ k=\frac{\rho v_F}{m^2}\ \propto\ m^{-2};\qquad k=1\ \Longleftrightarrow\ v_F=\frac{m^2}{\rho}\ 
+\ k=\frac{\rho v_F}{m^2}\ \propto\ m^{-2};\qquad k=1\ \Longleftrightarrow\ v_F=\frac{m^2}{\rho}\
 $$
 
 **修正（三条）**：
@@ -106,7 +106,7 @@ $$
 | $c=6a\ell$ | $1.402$ | $2.805$ | $5.609$ |
 
 $$
-\Longrightarrow\ \ \textbf{可导出的是关系}\ c=6a\ell;\ \textbf{不可导出的是值}（\text{它由单位比值 }\ell/G\text{ 决定，}G57）。\ 
+\Longrightarrow\ \ \textbf{可导出的是关系}\ c=6a\ell;\ \textbf{不可导出的是值}（\text{它由单位比值 }\ell/G\text{ 决定，}G57）。\
 $$
 
 这与 `D87` 自陈的"依赖**水平归一化**"和 `D86` 的"不解释中央荷从上游如何产生"**完全一致**——**而我们把它归因到了一条定理**（[`G57`](G57_unreachability_of_absolute_normalization.md)）。

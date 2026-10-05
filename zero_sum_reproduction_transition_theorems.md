@@ -14,7 +14,7 @@
 把**"可能的描述数／分支程序数"**当成了**"新物理圈数"**。本文把这次审计的**定理内容**写出来：
 
 $$
-\ \text{闭合}\ \Rightarrow\ \text{持续};\qquad \text{持续}\ \ne\ \text{繁殖};\qquad \text{只有显式复制给指数增长。}\ 
+\ \text{闭合}\ \Rightarrow\ \text{持续};\qquad \text{持续}\ \ne\ \text{繁殖};\qquad \text{只有显式复制给指数增长。}\
 $$
 
 ---
@@ -70,7 +70,7 @@ $$
 | `split_all` | $1.0$ | 0 | 6 | —（非幂零） | constant ／ polynomial |
 
 $$
-\ \text{五条规则中，}\textbf{只有显式复制（copy）给指数增长};\ \text{其余至多常数／多项式。}\ 
+\ \text{五条规则中，}\textbf{只有显式复制（copy）给指数增长};\ \text{其余至多常数／多项式。}\
 $$
 
 ---

@@ -77,7 +77,7 @@ $$I=\sum_{k=0}^{m}(2k^2+1),\qquad m=\frac{\Delta\tau-|\Delta\mathbf x|_1}{2}$$
 | 12 | 0 | 288 | **1** |
 
 $$
-\ I\ \text{随}\ \Delta\tau^2-\vert\Delta\mathbf x\vert^2\ \text{同向变化，随}\ \Delta\tau^2+\vert\Delta\mathbf x\vert^2\ \text{反向} 
+\ I\ \text{随}\ \Delta\tau^2-\vert\Delta\mathbf x\vert^2\ \text{同向变化，随}\ \Delta\tau^2+\vert\Delta\mathbf x\vert^2\ \text{反向}
 $$
 
 **而且**：按 $\Delta\tau-|\Delta\mathbf x|\_1$ 分组，每一组的 $I$ **唯一**：
@@ -154,5 +154,5 @@ python3 R65_causal_metric.py       # 一维版（含奇偶性与饱和的诊断�
 
 $$
 \ \text{闭环演化的因果结构}\textbf{无输入地}\text{给出洛伦兹号差：时间与空间以相反符号进入不变量；}\
-\text{而空间维数仍是输入。}\ 
+\text{而空间维数仍是输入。}\
 $$

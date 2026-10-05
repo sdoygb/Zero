@@ -7,7 +7,7 @@
 > **【当前清单入口｜[`STATUS.md`](STATUS.md)】** 本文的清单计法是当前采用的计数来源；项目唯一当前状态与历史计数的替代关系见 [`STATUS.md`](STATUS.md) §5。
 
 $$
-\ B=4\ \text{仍是【候选识别】};\qquad \tau(N)\ \text{确在 }N\to\infty\ \text{时趋于有限值，但【两个极限不可交换】，且截断误差与 }N\text{ 依赖同量级}\ \Longrightarrow\ \tau\ \textbf{不升级为预言}。\ 
+\ B=4\ \text{仍是【候选识别】};\qquad \tau(N)\ \text{确在 }N\to\infty\ \text{时趋于有限值，但【两个极限不可交换】，且截断误差与 }N\text{ 依赖同量级}\ \Longrightarrow\ \tau\ \textbf{不升级为预言}。\
 $$
 
 ---
@@ -31,7 +31,7 @@ c_*(2)=0.7799,\qquad c_*(3)=0.9347,\qquad c_*(4)=1.0000
 $$
 
 $$
-\ \textbf{弱化}:\ B=2,3\ \text{给的是}\textbf{亚光速}前沿，而亚光速物质在 GR 里\textbf{完全允许}（\text{不违反因果}）。\ 
+\ \textbf{弱化}:\ B=2,3\ \text{给的是}\textbf{亚光速}前沿，而亚光速物质在 GR 里\textbf{完全允许}（\text{不违反因果}）。\
 $$
 
 $$
@@ -67,7 +67,7 @@ $$
 | **稳健性**（固定 $p=0.5/0.75/1.0/1.25$） | $3.4185/3.3798/3.3605/3.3489$ ⟹ 极差 $0.070$ |
 
 $$
-\ \tau_\infty\approx\mathbf{3.35\pm0.04}\ (\text{模型依赖；且这是 }\lim_N\lim_T,\ T{=}12\ \text{的口径})\ 
+\ \tau_\infty\approx\mathbf{3.35\pm0.04}\ (\text{模型依赖；且这是 }\lim_N\lim_T,\ T{=}12\ \text{的口径})\
 $$
 
 **本文必须自我限定一处**：$\lim\_N\lim\_T\tau$ 与 $\lim\_T\lim\_N\tau$ **不可交换**。先把 $T\to\infty$（$T=400$，已收敛）再让 $N$ 增大，$N=20$ 给 $3.337015$，比 $T=12$ 口径的 $3.315625$ 高 $0.021$；而 $T=12$ 的截断误差本身是 $+0.025$（$N=8$）。**故 $N$ 依赖与截断误差同量级，$\tau\_\infty$ 的「收敛」证据不足以支撑「升级为预言」。**
@@ -89,7 +89,7 @@ $$
 | **约定（非参数）** | $G,\Lambda$／$\hbar$ |
 
 $$
-\ \text{开放从 4 项降到}\textbf{2 项}:\ B\ \text{的识别};\ \text{测量诠释}。\ 
+\ \text{开放从 4 项降到}\textbf{2 项}:\ B\ \text{的识别};\ \text{测量诠释}。\
 $$
 
 （另外两项——自旋双值性、$\tau$ 的初条件——已分别由 [`G66`](G66_SU2_double_cover_from_geometry.md)／[`G67`](G67_reflection_generates_spin_Z2.md) 结清；$\tau$ 的口径项**没有**结清，见 §2 末的自我限定。）

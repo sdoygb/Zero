@@ -6,7 +6,7 @@
 
 $$
 \ \text{1.14 作废}:\ \text{上游}\ m=1.75\ \text{已撤销}（(2L-1)\ \text{不进入宇称通道}）;\qquad
-\text{阈值}\ m\ge2\ \text{自设}\ \Longleftrightarrow\ \xi\lesssim1.2\ \text{仍成立}。\ 
+\text{阈值}\ m\ge2\ \text{自设}\ \Longleftrightarrow\ \xi\lesssim1.2\ \text{仍成立}。\
 $$
 
 ---
@@ -46,7 +46,7 @@ $$
 | $2.640$（平均） | $1.32$ |
 
 $$
-\ \text{G78 的"经验阈值 }m\ge2\text{"}\ \textbf{被解释}\text{为}\ \xi\lesssim1.2\ 
+\ \text{G78 的"经验阈值 }m\ge2\text{"}\ \textbf{被解释}\text{为}\ \xi\lesssim1.2\
 $$
 
 ~~**导出的 $m=1.75$**~~ **作废**（见 [`G80`](G80_all_to_all_age_coupling.md) §2.0）。Z3 字面点汇 $m\_{\rm stag}=0.235342$ 给 $\xi=v\_F/m=8.50$（min）到 $11.22$（平均）⟹ **远在阈值之外**。
@@ -64,7 +64,7 @@ $$
 
 $$
 \ 0.235342:\ \frac{4.41\times10^{-2}}{2.50\times10^{-2}}=\mathbf{1.76}\ \text{倍}\ \Longrightarrow\ \text{面积律在该值上不成立};\qquad
-\text{rms}<10^{-4}\ \text{requires}\ m\gtrsim1.61。\ 
+\text{rms}<10^{-4}\ \text{requires}\ m\gtrsim1.61。\
 $$
 
 ~~而导出的 $1.75$ 与 $2$ 只差 1.4 倍~~ **作废**：正确的导出值是 $m\_{\rm stag}=0.235342$，距 $m\ge2$ 差 $8.50$ 倍；"1.14"是**混口径**（把幅度放大乘到按 gap 匹配的质量上）的产物。
@@ -87,7 +87,7 @@ $$
 
 $$
 \ \text{① 未解决}:\ \text{上游}\ m=1.75\ \text{已撤销};\qquad
-0.235342:\ \text{rms}=2.50\times10^{-2}\ (\text{only}\ 1.76\times\ \text{better than no gap})。\ 
+0.235342:\ \text{rms}=2.50\times10^{-2}\ (\text{only}\ 1.76\times\ \text{better than no gap})。\
 $$
 
 **顺带的正面产出**：[`G78`](G78_area_law_in_3d.md) 的**经验阈值**（$m\ge2$）被**翻译**成了物理判据 $\xi\lesssim1.2$——那才是可移植的形式。

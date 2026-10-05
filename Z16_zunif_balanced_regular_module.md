@@ -1,9 +1,9 @@
 # Z16 · 读出无偏性与平衡正则模块：`Z-UNIF` 条件构造
 
-**日期**：2026-10-02  
-**性质**：条件构造 ＋ no-go。检查“两个中心特征都不选，改为等重保留”能否替代 `Z-READ` 中的标量扇区选择。  
-**价签**：新增一笔具名输入 **`Z-UNIF`**。它不是概率或权重，但仍是表示层选择规则，不能冒充 Z0 的导出。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md)、[`R14`](R14_L1_from_zero_assembly.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R16`](R16_direction_audit_reduction_tree.md)。  
+**日期**：2026-10-02
+**性质**：条件构造 ＋ no-go。检查“两个中心特征都不选，改为等重保留”能否替代 `Z-READ` 中的标量扇区选择。
+**价签**：新增一笔具名输入 **`Z-UNIF`**。它不是概率或权重，但仍是表示层选择规则，不能冒充 Z0 的导出。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md)、[`R14`](R14_L1_from_zero_assembly.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R16`](R16_direction_audit_reduction_tree.md)。
 **核验**：[`Z16_check.py`](Z16_check.py)。
 
 $$
@@ -72,7 +72,7 @@ D\nRightarrow Z\text{-UNIF}.
 \qquad\text{(Z16-3)}
 $$
 
-**证明（三个同样合法的载体）**  
+**证明（三个同样合法的载体）**
 保持同一个闭合循环 $C\_L$、同一个旋转同态 $\mathbb Z\_L\to SO(2)$ 与同一个双覆盖
 
 $$
@@ -130,7 +130,7 @@ $$
 
 **它是什么**：它是一条**表示层选择规则**。因此必须诚实登记为具名输入，而不能说“Z0③ 自动推出等重保留”。这一点与 Z13 的两难完全一致：要在读出层获得选择，就要付一笔输入价签。
 
-**买回什么**：不再需要在 $+1$ 与 $-1$ 之间作标量二选一，并得到一个规范的中心分次。  
+**买回什么**：不再需要在 $+1$ 与 $-1$ 之间作标量二选一，并得到一个规范的中心分次。
 **代价是什么**：新增 `Z-UNIF`，且物理上为何采用它仍未被 Zero 推导。
 
 ---

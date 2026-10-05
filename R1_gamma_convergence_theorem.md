@@ -1,10 +1,10 @@
 # R1 · Γ-收敛：从数值二阶到可审查的条件定理
 
-**日期**：2026-10-02  
-**性质**：R0 的 O1 交付；把 `G18`、`G58`、`Z6`、`Z7`、`Z12` 的数值收敛升级为一个带显式假设的离散到连续收敛框架。  
-**依赖**：[`R0`](R0_publication_theorem.md) O1、[`G18`](G18_attackability_of_the_continuum_limit.md)、[`G58`](G58_I2a_resolved_as_embedding_input.md)、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`Z7`](Z7_embedding_input_explicit_dictionary.md)、[`Z12`](Z12_geometric_input_closed_binary_labeling.md)、[`G41`](G41_lovelock_premises_under_nonuniform_weight.md)。  
-**等级标签**：【定义】/【条件定理】/【证明分解】/【数值旁证】/【反例】/【未证】/【边界】。  
-**核验**：[`R1_check.py`](R1_check.py)。  
+**日期**：2026-10-02
+**性质**：R0 的 O1 交付；把 `G18`、`G58`、`Z6`、`Z7`、`Z12` 的数值收敛升级为一个带显式假设的离散到连续收敛框架。
+**依赖**：[`R0`](R0_publication_theorem.md) O1、[`G18`](G18_attackability_of_the_continuum_limit.md)、[`G58`](G58_I2a_resolved_as_embedding_input.md)、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`Z7`](Z7_embedding_input_explicit_dictionary.md)、[`Z12`](Z12_geometric_input_closed_binary_labeling.md)、[`G41`](G41_lovelock_premises_under_nonuniform_weight.md)。
+**等级标签**：【定义】/【条件定理】/【证明分解】/【数值旁证】/【反例】/【未证】/【边界】。
+**核验**：[`R1_check.py`](R1_check.py)。
 **当前状态**：未把 E1 无条件关闭。本文给出一个可审查的条件定理；实际闭环权到该定理的接口仍依赖未证的字典误差界。
 
 > **引用边界**：本文的 `R1-A` 是条件定理，不是“E1 已完成”的证明。数值结果只作旁证，不能替代紧性、Γ-liminf、恢复列和唯一极限的证明。
@@ -42,7 +42,7 @@
 6. 本文已经写成期刊级、逐 epsilon 自足的定理全文；本文交付的是定理陈述与证明分解。
 
 $$
-\ \textbf{R1 的交付不是“收敛已证”，而是“证明义务被写成一组可逐项关闭的条件”。}\ 
+\ \textbf{R1 的交付不是“收敛已证”，而是“证明义务被写成一组可逐项关闭的条件”。}\
 $$
 
 ### 0.2 与旧结果的关系
@@ -214,7 +214,7 @@ $$
 本文的核心区分是：
 
 $$
-\ \text{Lovelock 需要的是局部结构收敛；Γ-收敛是证明变分稳定性的更强工具；UV 不动点是另一项更强且不必要的要求。}\ 
+\ \text{Lovelock 需要的是局部结构收敛；Γ-收敛是证明变分稳定性的更强工具；UV 不动点是另一项更强且不必要的要求。}\
 $$
 
 “没有 UV 不动点”并不否定 Γ-极限。反过来，Γ-极限也不自动说明离散几何在标度变换下自相似。

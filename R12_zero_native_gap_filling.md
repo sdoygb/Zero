@@ -1,9 +1,9 @@
 # R12 · 用 Zero 基础补外部论文缺口：L5、L1 与 Cao-Carroll 三个定向尝试
 
-**日期**：2026-10-02  
-**性质**：在 [`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R9`](R9_external_GR_derivations_landscape.md)、[`R10`](R10_cao_carroll_bulk_entanglement_completion.md) 之后，对三个具体缺口做“能否由现有 Zero 基础推出”的定向判定。  
-**政策**：新增结果必须给出可独立复核的证明或反例；未证明的部分继续登记为开放／条件。不得把条件桥改名为定理，不得把外部论文已证的部分计作本项目成果。  
-**核验**：[`R12_check.py`](R12_check.py)。  
+**日期**：2026-10-02
+**性质**：在 [`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R9`](R9_external_GR_derivations_landscape.md)、[`R10`](R10_cao_carroll_bulk_entanglement_completion.md) 之后，对三个具体缺口做“能否由现有 Zero 基础推出”的定向判定。
+**政策**：新增结果必须给出可独立复核的证明或反例；未证明的部分继续登记为开放／条件。不得把条件桥改名为定理，不得把外部论文已证的部分计作本项目成果。
+**核验**：[`R12_check.py`](R12_check.py)。
 **依赖**：[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G79`](G79_horizon_thermodynamics.md)、[`D44`](/Users/oygb/Downloads/modular-equilibrium/derivations/D44_poincare_closure_obstruction.md)、[`D231`](D231_modular_density_profile_gap.md)、[`D233`](D233_sign_age_symmetry_no_go_for_profile.md)、[`D235`](D235_age_radial_reparametrization_no_go.md)、[`D236`](D236_source_operator_identification_embedding.md)、[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`R10`](R10_cao_carroll_bulk_entanglement_completion.md)。
 
 $$
@@ -55,7 +55,7 @@ $$
 
 设 $\rho=\text{diag}(p\_1,\dots,p\_n)>0$ 是忠实密度矩阵。
 
-**引理 R12.3-a（对角块的精确曲率）【已证】**  
+**引理 R12.3-a（对角块的精确曲率）【已证】**
 若 $X=\text{diag}(x\_1,\dots,x\_n)$ 且 $\text{Tr}X=0$，则
 
 $$
@@ -69,7 +69,7 @@ $$
 
 对角方向的曲率是 $1/p\_i$；当 $p\_i\to0$ 时无界。
 
-**一般厄米扰动只作结构陈述【条件证成】。**  
+**一般厄米扰动只作结构陈述【条件证成】。**
 相对熵在 $\rho$ 处的 Hessian 是 BKM 度量：它是定义在厄米无迹扰动空间上的正定二次型，且对忠实 $\rho$ 有限。本文不使用其完整逐元素核，只使用“正定”与对角块 (R12-3)。这样 L5-NO-GO 不依赖任何易错的非对角系数约定。
 
 ### 1.2 为什么 gap／宇称不能自动给出小量
@@ -83,7 +83,7 @@ $$
 
 型相关算符项；当 $\Delta\le d/2$ 时它可压过 $R^d\delta\langle T\_{00}\rangle$。下面的命题说明，Zero 现有的有限维数据完全允许这种情况。
 
-**命题 R12.2（L5-NG，有限维 no-go）【已证】**  
+**命题 R12.2（L5-NG，有限维 no-go）【已证】**
 存在一个满足以下全部条件的合法 Zero 型有限维态族：
 
 1. 每个态都是忠实密度矩阵；
@@ -105,7 +105,7 @@ $$
 
 因此，**仅由有限维忠实态、GNS 模流、计数推前、gap 与宇称，推不出 (R12-2)**。
 
-**证明（显式反例）**  
+**证明（显式反例）**
 取三个正权重与一个零和、正交于 $\log w$ 的扰动：
 
 $$
@@ -188,7 +188,7 @@ $$
 
 虽然 gap／宇称不能给出 (R12-2)，gap 确实能控制紧支撑扰动下的二阶曲率。
 
-**引理 R12.3（gap 条件界）【条件证成】**  
+**引理 R12.3（gap 条件界）【条件证成】**
 设 $\rho=e^{-K}/Z$ 有模谱隙 $\gamma>0$，并设 $\sigma\_\lambda=\rho+\lambda X$、$\text{Tr}X=0$，且 $X$ 不移动模能量超过 $O(1)$ 的窗口。则
 
 $$
@@ -230,7 +230,7 @@ $$
 
 ### 2.1 中央剖面阻碍
 
-**命题 R12.4（中央剖面 no-go）【已证，限于当前 Zero 条件类】**  
+**命题 R12.4（中央剖面 no-go）【已证，限于当前 Zero 条件类】**
 设模生成元保持当前 Zero 形式
 
 $$
@@ -253,7 +253,7 @@ $$
 
 ### 2.2 Poincaré 闭合阻碍
 
-**命题 R12.5（半侧模平移不足）【已证，引用 D44】**  
+**命题 R12.5（半侧模平移不足）【已证，引用 D44】**
 半侧模包含只给出两两对易的正能平移：
 
 $$
@@ -330,7 +330,7 @@ $$
 
 ### 3.1 RC 不能从 Z1 定理 1 的图与有限维代数推出
 
-**反例 R12.7（GHZ）【已证】**  
+**反例 R12.7（GHZ）【已证】**
 四因子 GHZ 态
 
 $$
@@ -353,7 +353,7 @@ $$
 
 ### 3.2 可严格成立的有限子类：RC-EPF 引理
 
-**定义 R12.6（逐边纯态乘积，EPF）【新增具名条件】**  
+**定义 R12.6（逐边纯态乘积，EPF）【新增具名条件】**
 设通道图 $G=(V,E)$ 是简单图。
 
 1. 每条关联 $(v,e)$ 有独立端口因子 $H\_{v,e}$，且
@@ -377,7 +377,7 @@ $$
    \qquad\text{(R12-28)}
    $$
 
-**引理 R12.6（RC-EPF）【条件证成】**  
+**引理 R12.6（RC-EPF）【条件证成】**
 在上述条件下，对每个 $B\subset V$，
 
 $$
@@ -399,7 +399,7 @@ S\!\left(\text{Tr}_v|\Phi_e\rangle\langle\Phi_e|\right),
 \qquad\text{(R12-30)}
 $$
 
-**证明**  
+**证明**
 不同边的端口因子互相张量独立，所以
 
 $$

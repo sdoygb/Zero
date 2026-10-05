@@ -66,7 +66,7 @@ $$
 **级联时标**：从 $O(1)$ 长到 $N$ 需
 
 $$
-\ n=\frac{\ln N}{\ln\lambda(T)}\ 
+\ n=\frac{\ln N}{\ln\lambda(T)}\
 $$
 
 | $T$ | $\lambda$ | 长到 $10^{3}$ | $10^{10}$ | $10^{22}$ | $10^{80}$ |
@@ -90,7 +90,7 @@ $$
 
 $$
 \ \text{而级联只给}\ n=O(1)\ \text{步} \Longrightarrow \frac{t_{\rm destroy}}{t_{\rm cycle}}\sim\frac{n}{T}\sim1
-\ \text{—— 与 } 10^{-12}\ \text{差 } 12\ \text{个数量级}。\ 
+\ \text{—— 与 } 10^{-12}\ \text{差 } 12\ \text{个数量级}。\
 $$
 
 ---
@@ -103,7 +103,7 @@ $$
 
 $$
 \ \text{要 } t_{\rm destroy}=\text{几天},\ \text{须 } \alpha\sim\frac{\text{几天}}{n}\sim\text{天}\ \Longrightarrow\
-\textbf{一步}\approx\textbf{天}。\ 
+\textbf{一步}\approx\textbf{天}。\
 $$
 
 **而 [`L2_anchor_verdict.md`](L2_anchor_verdict.md) §3d 的锚给** $\alpha\sim2.4$ **十亿年**。
@@ -124,7 +124,7 @@ $$
 $$
 
 $$
-\ \text{这个比值是}\textbf{纯无量纲、由结构决定}\text{的；锚只定总体尺度。}\ 
+\ \text{这个比值是}\textbf{纯无量纲、由结构决定}\text{的；锚只定总体尺度。}\
 $$
 
 ---

@@ -1,8 +1,8 @@
 # R8 L1 对抗审计：C2/R8-GMA 能否由现有 Zero 基础补上
 
-**日期**：2026-10-02  
-**审计级别**：L1，独立对抗审计，不修改 `STATUS.md` 或其它项目文件。  
-**唯一新增文件**：本文件与 [`R8_L1_check.py`](R8_L1_check.py)。  
+**日期**：2026-10-02
+**审计级别**：L1，独立对抗审计，不修改 `STATUS.md` 或其它项目文件。
+**唯一新增文件**：本文件与 [`R8_L1_check.py`](R8_L1_check.py)。
 **审计对象**：[`R8_jacobson_entanglement_equilibrium_completion.md`](R8_jacobson_entanglement_equilibrium_completion.md) 中 C2/R8-GMA：
 
 $$

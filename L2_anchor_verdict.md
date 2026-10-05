@@ -49,7 +49,7 @@ $$
 $$
 
 $$
-\Longrightarrow\ \ t_{\rm cycle}=T\cdot\alpha\ 
+\Longrightarrow\ \ t_{\rm cycle}=T\cdot\alpha\
 $$
 
 **$\alpha$ 的定义**：一步的时长。
@@ -85,7 +85,7 @@ $$
 真正无量纲、可检验的量是
 
 $$
-\ \frac{t_{\rm cycle}}{t_{\rm Hubble}}=T\cdot\frac{\alpha}{t_{\rm Hubble}}\ 
+\ \frac{t_{\rm cycle}}{t_{\rm Hubble}}=T\cdot\frac{\alpha}{t_{\rm Hubble}}\
 $$
 
 $$
@@ -108,7 +108,7 @@ $$
 **排除的候选**：普朗克时间（$Z0$ 步的量子下限，但**不属 L2 的公开时钟**）；电弱尺度（与 L2 无关）；宇宙年龄（是**累积量**，不是时钟）。
 
 $$
-\ \text{锚定式：}\ t_{\rm cycle}=H_0^{-1}\quad\Longrightarrow\quad \alpha=\frac{H_0^{-1}}{T}\ 
+\ \text{锚定式：}\ t_{\rm cycle}=H_0^{-1}\quad\Longrightarrow\quad \alpha=\frac{H_0^{-1}}{T}\
 $$
 
 ### 数值（Planck 2018 附近：$H\_0^{-1}=14.4$ 十亿年，$t\_0=13.797$ 十亿年）
@@ -174,7 +174,7 @@ $$
 
 $$
 \ t_{\rm cycle}=1.44\times10^{10}\ \text{年}=144\ \text{亿年};\qquad
-\text{距下次破坏}\approx 6.0\times10^{8}\ \text{年}\ 
+\text{距下次破坏}\approx 6.0\times10^{8}\ \text{年}\
 $$
 
 **间隔谱**（唯一能分开 $T=5$ 与 $T=6$ 的观测量）：
@@ -200,7 +200,7 @@ $$
 
 $$
 \ \text{生存函数}\ P(t_{\rm rem}>t)=\frac{t_0}{t_0+t};\qquad
-\text{分位数}\ t_{\rm rem}(q)=t_0\frac{q}{1-q}\ 
+\text{分位数}\ t_{\rm rem}(q)=t_0\frac{q}{1-q}\
 $$
 
 | 分位 $q$ | $t\_{\rm rem}$（十亿年） | 相位 $\phi$ |
@@ -236,7 +236,7 @@ $$
 | P2 中位数 | $31.623$ | $0.4363$ | $17.826$ | $50\%$ |
 
 $$
-\ \textbf{锚 A 落在先验的低概率尾部（仅 4.2\%），是}\textbf{低端端元}\textbf{，不是中心值}。\ 
+\ \textbf{锚 A 落在先验的低概率尾部（仅 4.2\%），是}\textbf{低端端元}\textbf{，不是中心值}。\
 $$
 
 **90% 可信区间（P1）**：$[0.73,\ 262.14]$ 十亿年 —— 跨度 $>2$ 个数量级。
@@ -248,7 +248,7 @@ $$
 
 $$
 \ \text{「距下次破坏还有多久」的正确答案是}\textbf{一个重尾分布}：
-\ \text{中位数}\approx 13.8\ \text{十亿年},\ 90\%\ \text{区间}\ [0.7,\ 262]\ \text{十亿年}。\ 
+\ \text{中位数}\approx 13.8\ \text{十亿年},\ 90\%\ \text{区间}\ [0.7,\ 262]\ \text{十亿年}。\
 $$
 
 「$6$ 亿年」是它的**最低 $5\%$ 端元**。

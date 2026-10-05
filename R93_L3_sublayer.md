@@ -112,7 +112,7 @@ $$
 | **$\mathcal R$** 的 $K$ 跨度、$S\_{\max}$ | **变**（见 §2 表） |
 
 $$
-\Longrightarrow\ \ \beta\varepsilon\ \text{是}\ \textbf{\mathcal R 侧（态）的参数};\ \text{它不是 L2 的动力学参数。}\ 
+\Longrightarrow\ \ \beta\varepsilon\ \text{是}\ \textbf{\mathcal R 侧（态）的参数};\ \text{它不是 L2 的动力学参数。}\
 $$
 
 **这条更正的用处**（把三条既有结论串起来）：

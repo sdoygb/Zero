@@ -1,6 +1,6 @@
 # G5 · 应力提升：守恒流的来源、正则尘埃提升与 (C) 的不足
 
-**日期**：本轮 · **依赖**：Z0 条款（A0–A5 历史命名）；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 5、7（Lovelock 判据）。不使用任何 `D*` 结论。
+**日期**：本轮 · **依赖**：Z0 条款；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 5、7（Lovelock 判据）。不使用任何 `D*` 结论。
 **核验**：[`G5_check.py`](G5_check.py) —— **独立实断言 35 / 结论行 0 / 不符 0**，退出码 `0`
 
 **等级标签：**【导出】/【未建立】。
@@ -28,7 +28,7 @@ G0 把 I3 写成"应力提升：把守恒流变成 $T\_{ab}$"。本文做三件�
 每一次基本移动 $T\_ex=x+e\_j-e\_i$ 都在一条边上搬运一个单位的荷。记沿边 $e$ 的净流为整数 $f\_e$，则
 
 $$
-\ x(\tau)-x(0)=B\,f\ 
+\ x(\tau)-x(0)=B\,f\
 $$
 
 其中 $B$ 是关联矩阵。这是**精确的整数恒等式**，不是近似。于是
@@ -95,7 +95,7 @@ $$
 于是正则应力张量是**尘埃型**
 
 $$
-\ T_{ab}=\rho\,u_a u_b\ 
+\ T_{ab}=\rho\,u_a u_b\
 $$
 
 **核验.** 6 组随机 $(h,j)$：$j$ 都类时，且 $g(u,u)=1$（偏差 $\le4.4\times10^{-16}$）。
@@ -113,7 +113,7 @@ $$
 第一步用了流守恒 $\nabla^a(\rho u\_a)=0$。因此
 
 $$
-\ T\text{ 守恒}\iff a_b=u^a\nabla_au_b=0\quad(\text{测地流}).\ 
+\ T\text{ 守恒}\iff a_b=u^a\nabla_au_b=0\quad(\text{测地流}).\
 $$
 
 **核验（sympy 精确）.**
@@ -154,7 +154,7 @@ $$
 因此在 G1 引理 7 的 Lovelock 判据里，(C) 必须加强为
 
 $$
-\ (C')\quad T_{ab}\text{ 是物质数据的泛函（度规只进入指标升降与归一化），不得含独立度规自由度}.\ 
+\ (C')\quad T_{ab}\text{ 是物质数据的泛函（度规只进入指标升降与归一化），不得含独立度规自由度}.\
 $$
 
 **核验.** 任意 2 维度规（本例 $g=-\,(1+t^2x^2)dt^2+dx^2$）上 $\nabla^aG\_{ab}=0$ 逐分量成立。
@@ -205,5 +205,5 @@ $$
 \text{I3c（测地性／粗粒化漂移）}\;\succ\;\text{I1（维数）}\;\succ\;\text{I2a}\;\succ\;\text{I4}\;\succ\;\text{I5}.
 $$
 
-**后续状态｜`G6` 给本文 I3b 的"尘埃提升"加了限定。**  
+**后续状态｜`G6` 给本文 I3b 的"尘埃提升"加了限定。**
 [`G6_geodesy_of_the_coarse_grained_flow.md`](G6_geodesy_of_the_coarse_grained_flow.md) 判定：底层的粗粒化动力学是**热方程**，守恒流是扩散流；热核同余的流线为 $x\propto\sqrt\tau$，**非测地**（引理 25、26）。因此本文引理 20 的正则尘埃提升虽然良定义、也满足 (C′)，却因引理 21（守恒 $\iff$ 测地）而**一般不守恒**。真正守恒且满足 (C′) 的是**场类**：$\nabla^aT^\phi\_{ab}=(\Box\phi-V')\partial\_b\phi$，守恒 $\iff$ 场方程，与测地无关；Rindler + $\phi=\tau$ 是非测地同余上守恒 $T$ 的显式例子。故 §7 表中 I3b 应读作"提升良定义且满足 (C′)，但尘埃分支不守恒；守恒分支是场类"。核验：`G6_check.py` 通过 26 / 不符 0，退出码 0。

@@ -58,7 +58,7 @@ $$
 | 8 | 8 | 28 | 7 | **21** | 28 | 21 |
 
 $$
-\ \dim H_1(K_n)=\binom n2-n+1=\binom{n-1}2\ 
+\ \dim H_1(K_n)=\binom n2-n+1=\binom{n-1}2\
 $$
 
 **取 $n=D+1$（$D$-单纯形的顶点数）**：
@@ -87,7 +87,7 @@ $F\_D=M(D)\,q^D$ 峰在 $D$ 的窗口：$q\in\Big(\dfrac{M(D-1)}{M(D)},\ \dfrac{
 | 5 | $(\tfrac35,\tfrac23)$ | $(\tfrac23,\tfrac57)$ |
 
 $$
-\ \text{洛伦兹 }D\text{ 的窗口}\ =\ \text{欧氏 }(D-1)\text{ 的窗口}\ 
+\ \text{洛伦兹 }D\text{ 的窗口}\ =\ \text{欧氏 }(D-1)\text{ 的窗口}\
 $$
 
 $$\Longrightarrow\ \textbf{R44 的 no-go 是洛伦兹字典特有的};\ \text{欧氏单纯形字典确实逃逸}$$
@@ -108,7 +108,7 @@ $$\Longrightarrow\ \textbf{R44 的 no-go 是洛伦兹字典特有的};\ \text{�
 
 $$
 \ \text{若身份秩}\equiv\text{通道对数}\Longrightarrow\text{秩}\ \binom{D+1}2;\quad
-\text{实际圈秩}\ \binom D2\quad\Longrightarrow\ \textbf{秩被高估}\ D+1\ 
+\text{实际圈秩}\ \binom D2\quad\Longrightarrow\ \textbf{秩被高估}\ D+1\
 $$
 
 **具体代价**（$D=4$）：
@@ -134,7 +134,7 @@ $$\Longrightarrow\ \text{用}\ \binom{D+1}2\ \text{做账本，则身份秩}\ \t
 | 3 | **$III\_1$** | 独立和乐类的**素数支撑**（`R49`） | ❌ **此处短缺** |
 
 $$
-\ \text{欧氏单纯形路线能同时给 1 与 2};\ \text{第 3 件（}III_1\text{）需要}\textbf{另一种素数来源}\ 
+\ \text{欧氏单纯形路线能同时给 1 与 2};\ \text{第 3 件（}III_1\text{）需要}\textbf{另一种素数来源}\
 $$
 
 而第 3 件是否必需，取决于目标：若只要"量子力学"，**$III\_1$ 不必要**（`R71` §3 已辨）；若要 Brown–Henneaux 的连续模时间，则必要。
@@ -205,10 +205,10 @@ python3 R73_pair_carrier.py     # 圈秩、窗口、single_cut 的精确核验
 ## §9 一句话
 
 $$
-\ \binom{D+1}2\ \text{可导出为}\textbf{通道对数};\ \text{但}\ \textbf{独立和乐类数只有}\ \binom D2\ (\text{差}\ D+1);\ 
+\ \binom{D+1}2\ \text{可导出为}\textbf{通道对数};\ \text{但}\ \textbf{独立和乐类数只有}\ \binom D2\ (\text{差}\ D+1);\
 $$
 
 $$
 \ \text{欧氏单纯形账本确实逃逸 `R44`（窗口}\ (\tfrac35,\tfrac23)\ \text{落在语境性区内），}\
-\text{但身份秩需另找素数来源。}\ 
+\text{但身份秩需另找素数来源。}\
 $$

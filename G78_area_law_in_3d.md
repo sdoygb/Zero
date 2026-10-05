@@ -5,7 +5,7 @@
 **核验**：[`G78_check.py`](G78_check.py) —— **独立实断言 12 / 结论行 0 / 不符 0**，退出码 `0`（2.9 秒）
 
 $$
-\ \text{3D 面积律成立}（\text{gap}\ge2）:\ S=aL^2+bL+c\ \text{拟合 rms}\ \mathbf{2\times10^{-5}},\ a\ \text{稳定到}\ \mathbf{0.01\%}\ 
+\ \text{3D 面积律成立}（\text{gap}\ge2）:\ S=aL^2+bL+c\ \text{拟合 rms}\ \mathbf{2\times10^{-5}},\ a\ \text{稳定到}\ \mathbf{0.01\%}\
 $$
 
 ---
@@ -51,7 +51,7 @@ $$
 | **4.0** | $1.09,\ 2.64,\ 4.88,\ 7.82,\ 11.46$ | $0.273\to0.318$ | $0.3475$ | $0.3475$ | $\mathbf{0.01\%}$ | $\mathbf{1.93\times10^{-5}}$ |
 
 $$
-\ \text{rms}\ \textbf{随 gap 单调递减，跨度}\ \mathbf{>100}\ \text{倍}（4.41\times10^{-2}\to1.93\times10^{-5}）\ 
+\ \text{rms}\ \textbf{随 gap 单调递减，跨度}\ \mathbf{>100}\ \text{倍}（4.41\times10^{-2}\to1.93\times10^{-5}）\
 $$
 
 $$
@@ -85,7 +85,7 @@ $$
 | **3D**（本文） | 表面积 $\propto L^2$ | $S\propto L^2$ |
 
 $$
-\ S\ \propto\ \text{边界测度}\quad(\text{当}\ \xi\ll L\ \text{时，}d=1,2,3\ \text{全部一致})。\ 
+\ S\ \propto\ \text{边界测度}\quad(\text{当}\ \xi\ll L\ \text{时，}d=1,2,3\ \text{全部一致})。\
 $$
 
 **而 gap 的来源已经导出**（[`G77`](G77_staggered_coupling_from_A5.md)：Z3 的汇 ＋ G33 的宇称 ⟹ $m=1/L$）。

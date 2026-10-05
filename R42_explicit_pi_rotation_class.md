@@ -1,9 +1,9 @@
 # R42 · 显式 `π`（旋转类）：两项二值判据的实际裁决
 
-**日期**：2026-10-03  
-**性质**：**显式分块计算＋两项判据裁决＋对 `R37` 范围的收窄＋对 `π` 的双侧约束**。  
-**依赖**：[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R35`](R35_type_iii_classification.md)、[`R37`](R37_kcbs_contextuality.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G32`](G32_native_origin_of_saturation.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R42_explicit_pi_rotation_class_probe.py`](R42_explicit_pi_rotation_class_probe.py) → [`R42_explicit_pi_rotation_class_results.json`](R42_explicit_pi_rotation_class_results.json)。  
+**日期**：2026-10-03
+**性质**：**显式分块计算＋两项判据裁决＋对 `R37` 范围的收窄＋对 `π` 的双侧约束**。
+**依赖**：[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R35`](R35_type_iii_classification.md)、[`R37`](R37_kcbs_contextuality.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G32`](G32_native_origin_of_saturation.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R42_explicit_pi_rotation_class_probe.py`](R42_explicit_pi_rotation_class_probe.py) → [`R42_explicit_pi_rotation_class_results.json`](R42_explicit_pi_rotation_class_results.json)。
 **核验**：[`R42_check.py`](R42_check.py)。
 
 $$

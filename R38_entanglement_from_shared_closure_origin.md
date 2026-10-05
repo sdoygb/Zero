@@ -1,9 +1,9 @@
 # R38 · 纠缠的涌现机制：**共同起因 ＋ 未记录的自由度**
 
-**日期**：2026-10-03  
-**性质**：**机制立项＋探针验证（正面）**。检验假设 H：**共享的闭合起因（历史层记录）＋ 一个历史层没有记录的自由度 ⇒ 跨位点纠缠**。用 [`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md) 的 Jordan–Wigner 构造与 [`R36`](R36_chsh_bell_locality.md) 的 CHSH 判据。  
-**依赖**：[`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R28`](R28_phase_identity_cluster_reduction.md)、[`R36`](R36_chsh_bell_locality.md)、[`R37`](R37_kcbs_contextuality.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R38_jw_entanglement_probe.py`](R38_jw_entanglement_probe.py) → [`R38_jw_entanglement_results.json`](R38_jw_entanglement_results.json)。  
+**日期**：2026-10-03
+**性质**：**机制立项＋探针验证（正面）**。检验假设 H：**共享的闭合起因（历史层记录）＋ 一个历史层没有记录的自由度 ⇒ 跨位点纠缠**。用 [`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md) 的 Jordan–Wigner 构造与 [`R36`](R36_chsh_bell_locality.md) 的 CHSH 判据。
+**依赖**：[`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R28`](R28_phase_identity_cluster_reduction.md)、[`R36`](R36_chsh_bell_locality.md)、[`R37`](R37_kcbs_contextuality.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R38_jw_entanglement_probe.py`](R38_jw_entanglement_probe.py) → [`R38_jw_entanglement_results.json`](R38_jw_entanglement_results.json)。
 **核验**：[`R38_check.py`](R38_check.py)。
 
 $$

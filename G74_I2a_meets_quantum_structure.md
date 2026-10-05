@@ -5,7 +5,7 @@
 **核验**：[`G74_check.py`](G74_check.py) —— **独立实断言 11 / 结论行 6 / 不符 0**，退出码 `0`（0.4 秒）
 
 $$
-\ \text{I2a}=\underbrace{\text{代数极限}}_{\text{免费（}D41\text{）}}+\underbrace{\text{度规极限}}_{\text{固定步数收敛（}G58\text{）}}+\underbrace{\text{尺度}}_{\text{不可导出（}G57\text{）}}。\ 
+\ \text{I2a}=\underbrace{\text{代数极限}}_{\text{免费（}D41\text{）}}+\underbrace{\text{度规极限}}_{\text{固定步数收敛（}G58\text{）}}+\underbrace{\text{尺度}}_{\text{不可导出（}G57\text{）}}。\
 $$
 
 ---
@@ -56,7 +56,7 @@ $$
 | $SU(2)$ 伴随作用与包含映射**交换** | ✅ |
 
 $$
-\ \text{G66／G67 的自旋结构在连续极限下}\textbf{不被破坏}。\ 
+\ \text{G66／G67 的自旋结构在连续极限下}\textbf{不被破坏}。\
 $$
 
 ---
@@ -85,7 +85,7 @@ $$
 | 跳级（步长 2）：$\mathcal A\_T\to\mathcal A\_{T+2}$ | **同一组坐标** ✅ |
 
 $$
-\ \text{共尾（步长 2 的）子网给}\textbf{同一}归纳极限 \Longrightarrow \text{极限与细化方式无关}。\ 
+\ \text{共尾（步长 2 的）子网给}\textbf{同一}归纳极限 \Longrightarrow \text{极限与细化方式无关}。\
 $$
 
 （这正是 `D41` 的核心结论在零和模型里的落地。）
@@ -120,7 +120,7 @@ $\Longrightarrow$ 正确的条件是**加性域覆盖 $\mathcal B(\mathcal H\_T)
 | **尺度**（绝对长度／$\kappa$） | ❌ **不可导出**（单位） | [`G57`](G57_unreachability_of_absolute_normalization.md)／[`G60`](G60_dimensionless_ledger_and_one_free_unit.md) ＋ `D150` |
 
 $$
-\ \text{所以 I2a 的"难"只在}\textbf{尺度识别}——\text{而它是}\textbf{输入}（\text{与 }D150\text{ 一致}）。\ 
+\ \text{所以 I2a 的"难"只在}\textbf{尺度识别}——\text{而它是}\textbf{输入}（\text{与 }D150\text{ 一致}）。\
 $$
 
 ---

@@ -1,12 +1,12 @@
 # R8 · 用 Zero 层补 Jacobson 2016：纠缠平衡路线的条件闭合尝试
 
-**日期**：2026-10-02  
-**性质**：外部强论文定向补前提尝试，不新增物理公理，不把条件恢复写成无条件导出。  
-**首选目标**：Jacobson, *Entanglement Equilibrium and the Einstein Equation*, PRL 116, 201101 (2016), [DOI](https://doi.org/10.1103/PhysRevLett.116.201101), [arXiv:1505.04753](https://arxiv.org/abs/1505.04753)。  
-**次选目标**：Cao, Carroll, *Bulk Entanglement Gravity without a Boundary: Towards Finding Einstein's Equation in Hilbert Space*, PRD 97, 086003 (2018), [DOI](https://doi.org/10.1103/PhysRevD.97.086003), [arXiv:1712.02803](https://arxiv.org/abs/1712.02803)。  
-**历史控制**：Jacobson, *Thermodynamics of Spacetime: The Einstein Equation of State*, PRL 75, 1260 (1995), [DOI](https://doi.org/10.1103/PhysRevLett.75.1260), [arXiv:gr-qc/9504004](https://arxiv.org/abs/gr-qc/9504004)。  
-**依赖**：[`STATUS.md`](STATUS.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G57`](G57_unreachability_of_absolute_normalization.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G76`](G76_area_law_in_2d.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`R1`](R1_gamma_convergence_theorem.md)、[`R7`](R7_h3_h7_regularity.md)、[`R9`](R9_external_GR_derivations_landscape.md)。  
-**核验**：[`R8_check.py`](R8_check.py)、[`R8_L1_check.py`](R8_L1_check.py)、[`R8_L2_check.py`](R8_L2_check.py)。  
+**日期**：2026-10-02
+**性质**：外部强论文定向补前提尝试，不新增物理公理，不把条件恢复写成无条件导出。
+**首选目标**：Jacobson, *Entanglement Equilibrium and the Einstein Equation*, PRL 116, 201101 (2016), [DOI](https://doi.org/10.1103/PhysRevLett.116.201101), [arXiv:1505.04753](https://arxiv.org/abs/1505.04753)。
+**次选目标**：Cao, Carroll, *Bulk Entanglement Gravity without a Boundary: Towards Finding Einstein's Equation in Hilbert Space*, PRD 97, 086003 (2018), [DOI](https://doi.org/10.1103/PhysRevD.97.086003), [arXiv:1712.02803](https://arxiv.org/abs/1712.02803)。
+**历史控制**：Jacobson, *Thermodynamics of Spacetime: The Einstein Equation of State*, PRL 75, 1260 (1995), [DOI](https://doi.org/10.1103/PhysRevLett.75.1260), [arXiv:gr-qc/9504004](https://arxiv.org/abs/gr-qc/9504004)。
+**依赖**：[`STATUS.md`](STATUS.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G57`](G57_unreachability_of_absolute_normalization.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G76`](G76_area_law_in_2d.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`R1`](R1_gamma_convergence_theorem.md)、[`R7`](R7_h3_h7_regularity.md)、[`R9`](R9_external_GR_derivations_landscape.md)。
+**核验**：[`R8_check.py`](R8_check.py)、[`R8_L1_check.py`](R8_L1_check.py)、[`R8_L2_check.py`](R8_L2_check.py)。
 **独立审计**：[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`R8_L2_area_density_audit.md`](R8_L2_area_density_audit.md)。
 
 $$
@@ -149,7 +149,7 @@ $$
 $$
 \
 \delta S_B=\delta\langle K_B\rangle-D(\sigma_B\|\rho_B).
-\ 
+\
 $$
 
 这一步真正补上了 G79 的非 Gaussian 缺口，但仍然只补**第一定律**，没有补几何 boost 或面积律。

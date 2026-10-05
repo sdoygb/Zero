@@ -5,7 +5,7 @@
 **核验**：[`G69_check.py`](G69_check.py) —— **独立实断言 21 / 结论行 0 / 不符 0**，退出码 `0`（0.23 秒）
 
 $$
-\ SL(2,\mathbb{C})\ \text{双覆盖}\ SO^+(1,3);\qquad \text{签名由 Clifford 关系}\ \{\gamma^\mu,\gamma^\nu\}=2\eta^{\mu\nu}\ \text{进入自旋结构}。\ 
+\ SL(2,\mathbb{C})\ \text{双覆盖}\ SO^+(1,3);\qquad \text{签名由 Clifford 关系}\ \{\gamma^\mu,\gamma^\nu\}=2\eta^{\mu\nu}\ \text{进入自旋结构}。\
 $$
 
 ---
@@ -82,7 +82,7 @@ Weyl 表示的 $4\times4$ $\gamma$ 矩阵（$\gamma^0=\begin{pmatrix}0&I\\I&0\en
 | $\{\gamma^\mu,\gamma^\nu\}=2\eta^{\mu\nu}I$ | ✅ |
 
 $$
-\ \text{Clifford 关系}\textbf{编码签名} \Longrightarrow \text{类时反射与类空反射的升格}\textbf{平方不同}。\ 
+\ \text{Clifford 关系}\textbf{编码签名} \Longrightarrow \text{类时反射与类空反射的升格}\textbf{平方不同}。\
 $$
 
 **这给 [`G67`](G67_reflection_generates_spin_Z2.md) 的反射 $\mathbb Z\_2$ 加了一条**：在洛伦兹情形它**按签名劈开**（类时 $+1$／类空 $-1$）。

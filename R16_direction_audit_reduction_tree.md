@@ -1,8 +1,8 @@
 # R16 · 方向检查：L1 归约树是否收敛
 
-**日期**：2026-10-02  
-**性质**：方向审计。不新增物理假设、不关闭任何缺口；只统计、分类与判定。  
-**依赖**：[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R14`](R14_L1_from_zero_assembly.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md)、[`Z16`](Z16_zunif_balanced_regular_module.md)。  
+**日期**：2026-10-02
+**性质**：方向审计。不新增物理假设、不关闭任何缺口；只统计、分类与判定。
+**依赖**：[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R14`](R14_L1_from_zero_assembly.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md)、[`Z16`](Z16_zunif_balanced_regular_module.md)。
 **核验**：[`R16_check.py`](R16_check.py)。
 
 $$

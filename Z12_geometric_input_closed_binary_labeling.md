@@ -10,7 +10,7 @@ $$
 \begin{aligned}
 &\text{闭合词旋转类的规模取值集}=\{2\}\cup\{T\ \text{的偶因子}\ge4\};\qquad L=4\Rightarrow\{2,4\}\ (\textbf{二值});\\
 &\Longrightarrow\ \textbf{E1 的几何内容}=\text{一个}\textbf{有限值标号};\quad \text{连续极限}=\text{二值纹理的}\textbf{均匀化}。
-\end{aligned}\ 
+\end{aligned}\
 $$
 
 ---
@@ -59,7 +59,7 @@ $$
 | 对比度上界 $(\max/\min)^k$ | $k=2$：$4$；$\;k=4$：$\mathbf{16}$；$\;k=8$：$256$ |
 
 $$
-\ \text{几何输入} = \textbf{一个二值标号}:\ \text{每个空间站点写「交替类」还是「非交替类」}。\ 
+\ \text{几何输入} = \textbf{一个二值标号}:\ \text{每个空间站点写「交替类」还是「非交替类」}。\
 $$
 
 **这是一个严格缩小**：从 [`Z7`](Z7_embedding_input_explicit_dictionary.md) 的"任意缓变标量场（连续自由函数）"降到"有限值标号（离散）"。
@@ -85,7 +85,7 @@ $$
 | $1/\sqrt{\text{块}}$ | $0.5000$ | $0.3536$ | $0.2500$ | $0.1768$ | $0.1250$ | $0.0884$ |
 
 $$
-\ \textbf{周期} \Rightarrow \text{大尺度几何不可见};\quad \textbf{非周期} \Rightarrow \text{极限是均匀化后的有效度规}。\ 
+\ \textbf{周期} \Rightarrow \text{大尺度几何不可见};\quad \textbf{非周期} \Rightarrow \text{极限是均匀化后的有效度规}。\
 $$
 
 **这条把 I2a 说清楚了**：连续极限不是一个自由函数取极限，而是**一个二值纹理的均匀化**——即标准 $\Gamma$-收敛／均匀化设定（[`G18`](G18_attackability_of_the_continuum_limit.md)、[`G58`](G58_I2a_resolved_as_embedding_input.md)），**二值性恰好让它落在经典范畴内**。
@@ -104,14 +104,14 @@ $$
 
 **登记为带价条款**（[`Z1`](Z1_zero_layer_as_the_foundation.md) §1 纪律 2）：
 
-> **Z-E5｜几何标号**。**买**：每个空间站点上"写哪个闭合类"的标号。**证据**：无此标号则 [E1](Z6_stall_autopsy_and_released_ledger.md) 的几何格无法落点。**价**：它不是由 Z0 条款（A0–A5 历史命名）推出的（[`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 1 的方法可用于此）；但它**比"一个自由场"便宜得多**：离散、有限值、取值集由 §1 定。
+> **Z-E5｜几何标号**。**买**：每个空间站点上"写哪个闭合类"的标号。**证据**：无此标号则 [E1](Z6_stall_autopsy_and_released_ledger.md) 的几何格无法落点。**价**：它不是由 Z0 条款推出的（[`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 1 的方法可用于此）；但它**比"一个自由场"便宜得多**：离散、有限值、取值集由 §1 定。
 
 ---
 
 ## §5 可证伪预言（第四条）
 
 $$
-\ \text{在 }L=4\ \text{的锁定理论里，涌现共形因子}\textbf{只取两个值}\ (\text{比值 }2).\ 
+\ \text{在 }L=4\ \text{的锁定理论里，涌现共形因子}\textbf{只取两个值}\ (\text{比值 }2).\
 $$
 
 即：任何由该理论导出的几何，其局部标度只能是 $\{0.75,1.5\}$ 这两档（在归一化口径下）——**第三档不存在**。

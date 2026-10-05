@@ -5,7 +5,7 @@
 **核验**：[`G68_check.py`](G68_check.py) —— **独立实断言 10 / 结论行 5 / 不符 0**，退出码 `0`（0.17 秒）
 
 $$
-\ \text{干涉}\ =\ \pi\ \text{合并路径}\ +\ \text{振幅线性}\ \Longrightarrow\ \text{交叉项}\ 2\text{Re}(a_m\bar a_{m'})。\ 
+\ \text{干涉}\ =\ \pi\ \text{合并路径}\ +\ \text{振幅线性}\ \Longrightarrow\ \text{交叉项}\ 2\text{Re}(a_m\bar a_{m'})。\
 $$
 
 ---
@@ -26,7 +26,7 @@ $$
 **而它明确没做的是——干涉。** 本文补这一项，并且：
 
 $$
-\ \text{路①用的正是本项目}\textbf{刚导出的原生 }SU(2)\text{（G66/G67）};\ \text{干涉用 }G29\text{ 的 }\pi\ +\ G62\text{ 的振幅}。\ 
+\ \text{路①用的正是本项目}\textbf{刚导出的原生 }SU(2)\text{（G66/G67）};\ \text{干涉用 }G29\text{ 的 }\pi\ +\ G62\text{ 的振幅}。\
 $$
 
 ---
@@ -42,7 +42,7 @@ $$
 **解空间**：把 $[A,\sigma\_x]=[A,\sigma\_y]=[A,\sigma\_z]=0$ 写成 16×4 线性系统，**奇异值谱**给出核维数
 
 $$
-\ \dim\ker=\mathbf{1}\ \Longrightarrow\ A\propto I\ \Longrightarrow\ \text{唯一不变双线性}=\psi^{\dagger}\psi=|\psi|^2\ 
+\ \dim\ker=\mathbf{1}\ \Longrightarrow\ A\propto I\ \Longrightarrow\ \text{唯一不变双线性}=\psi^{\dagger}\psi=|\psi|^2\
 $$
 
 **排除另一个候选**：反对称双线性 $\psi^{T}(i\sigma\_2)\psi\equiv0$（核验 200 组随机 $\psi$，偏差 $<10^{-13}$）✅
@@ -126,7 +126,7 @@ $$
 **而路径分辨时交叉项恰为 0**（每个路径自成一类）✅
 
 $$
-\ \text{干涉的}\textbf{有无}\text{完全由 }\pi\ \text{是否合并路径决定};\quad \text{干涉的}\textbf{大小与符号}\text{由被合并路径的}\textbf{相对相位}\text{决定}。\ 
+\ \text{干涉的}\textbf{有无}\text{完全由 }\pi\ \text{是否合并路径决定};\quad \text{干涉的}\textbf{大小与符号}\text{由被合并路径的}\textbf{相对相位}\text{决定}。\
 $$
 
 **必须区分两件事**（原措辞把它们混在一起）：
@@ -164,7 +164,7 @@ $$
 | $\hbar$ | 约定（**单位**，不是参数） | [`G60`](G60_dimensionless_ledger_and_one_free_unit.md) |
 
 $$
-\ \text{量子栏现在只剩}\textbf{一条输入}（\text{测量诠释}）\text{＋}\textbf{一条约定}（\hbar）。\ 
+\ \text{量子栏现在只剩}\textbf{一条输入}（\text{测量诠释}）\text{＋}\textbf{一条约定}（\hbar）。\
 $$
 
 ---

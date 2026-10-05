@@ -1,8 +1,8 @@
 # D250 · 纯层间交换选择刚性标量源：无势 Dirichlet、常量零模与 onsite 缺口
 
 **日期**：本轮对话 · **依赖**：`AXIOMS.md` §0.3、§1、`D197`、`D198`、`D248`、`D249`
-**测试模型**：对称层间交换二次能量、常量零模、离散 Dirichlet 能量、连续 Dirichlet 作用量、无势时间型标量物态、尘埃与辐射对比、onsite 势能缺口。它们不是 `U1-U4` 的推论。
-**预先结构**：把层间读出势当作可参加源作用的标量、纯差分交换、正定交换核、局部细化到连续 Dirichlet 形式、时间型梯度。它们不是 `U1-U4` 的推论。
+**测试模型**：对称层间交换二次能量、常量零模、离散 Dirichlet 能量、连续 Dirichlet 作用量、无势时间型标量物态、尘埃与辐射对比、onsite 势能缺口。
+**预先结构**：把层间读出势当作可参加源作用的标量、纯差分交换、正定交换核、局部细化到连续 Dirichlet 形式、时间型梯度。
 **核验**：[`verify/d250_pure_exchange_selects_stiff_scalar_source.py`](verify/d250_pure_exchange_selects_stiff_scalar_source.py) —— **通过 / 不符**见运行输出
 **v0.5 定位**：`D249` 已证明，最小标量类如果允许势能 $V(\phi)$，物态仍可选择；如果限制为无势 Dirichlet 标量，则时间型梯度给刚性物态 $p=\rho$。本文继续问：层间交换本身是否自然选择无势 Dirichlet？
 
@@ -19,8 +19,6 @@ $$
 $$
 
 尘埃、辐射、质量、势能和一般流体都需要额外的 onsite 层项、额外场或不同作用量类别。本文登记恢复层结构 `R-Z-PURE-EXCHANGE-DIRICHLET-SELECTION`、`R-Z-STIFF-SOURCE-DISCRIMINATOR` 与缺口 `R-Z-ONSITE-LAYER-TERM-GAP`，并继续使用 `D198` 已有的缺口 `R-Z-MATTER-MULTIPLET-GAP`。
-
-本文不修改 `U1-U4+C1`，不新增 `U5`。
 
 ---
 
@@ -405,7 +403,7 @@ $$
 6. 纯交换无势支路给 $p=\rho$；
 7. 尘埃、辐射与刚性标量迹不同；
 8. 文档登记 onsite 缺口与单标量源分支；
-9. 文档不把新结构写成 `U1-U4` 推论；
+9.
 10. 上游边界保持；
 11. 文档不引用项目外体系名或外部路径。
 
@@ -419,8 +417,6 @@ $$
 | `R-Z-STIFF-SOURCE-DISCRIMINATOR` | 无势时间型纯交换标量给 $p=\rho$，可与尘埃、辐射区分 | 条件构造 |
 | `R-Z-ONSITE-LAYER-TERM-GAP` | 质量、势能与非刚性物态需要 onsite 层项或额外局部能量，来源未导出 | 未解输入 |
 | `R-Z-MATTER-MULTIPLET-GAP` | 纯交换单标量只给一个刚性分支，不给标准模型物质多重态 | 未解输入（沿用 `D198`） |
-
-这些结构不修改 `U1-U4+C1`，也不新增 `U5`。
 
 $$
 

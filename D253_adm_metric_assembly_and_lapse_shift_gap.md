@@ -1,8 +1,8 @@
 # D253 · 叶状 ADM 度规组装与 lapse/shift 缺口
 
 **日期**：本轮对话 · **依赖**：`AXIOMS.md` §0.3、§1、§4、`D143`、`D144`、`D196`、`D207`、`D248`、`D251`、`D252`
-**测试模型**：正则全局时间函数、叶层空间度规、lapse、shift、ADM 分解、同一时间与同一空间度规的不同 Lorentz 延拓、叶层共形类与叶层体积、完整时空共形类与体积。它们不是 `U1-U4` 的推论。
-**预先结构**：光滑 $n+1$ 维流形、正则全局时间势、叶层空间度规、叶层共形类、叶层体积元、lapse、shift、号差与时间定向。它们不是 `U1-U4` 的推论。
+**测试模型**：正则全局时间函数、叶层空间度规、lapse、shift、ADM 分解、同一时间与同一空间度规的不同 Lorentz 延拓、叶层共形类与叶层体积、完整时空共形类与体积。
+**预先结构**：光滑 $n+1$ 维流形、正则全局时间势、叶层空间度规、叶层共形类、叶层体积元、lapse、shift、号差与时间定向。
 **核验**：[`verify/d253_adm_metric_assembly_and_lapse_shift_gap.py`](verify/d253_adm_metric_assembly_and_lapse_shift_gap.py) —— **36 通过 / 0 不符**，退出码 `0`
 **v0.5 定位**：D251 给出形式支持与局域读出，D252 给出全局时间势，D248-D250 给出条件源链。本文检查它们能否直接给出 Lorentz 度规。结论是：时间势最多给叶状候选；叶层数据要组装成度规，还须明确 lapse、shift、叶层共形类与叶层体积。完整时空共形类加体积元则已由 D143 唯一给度规，但这组完整数据目前不是层读回的推论。
 
@@ -19,8 +19,6 @@ $$
 $$
 
 本文登记恢复层结构 `R-Z-EMBEDDING-TO-FOLIATION`、`R-Z-ADM-METRIC-ASSEMBLY`、`R-Z-LAPSE-SHIFT-GAP`、`R-Z-LEAF-CONFORMAL-VOLUME-GAP` 与 `R-Z-READOUT-TO-ADM-SELECTION-GAP`。
-
-本文不修改 `U1-U4+C1`，不新增 `U5`。
 
 ---
 

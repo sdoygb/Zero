@@ -1,9 +1,9 @@
 # R39 · 历史层对"位点"是否失明？（`R38-3` 的裁决）
 
-**日期**：2026-10-03  
-**性质**：**探针裁决（正面）**。回答 [`R38`](R38_entanglement_from_shared_closure_origin.md) 的决定性下游问题 (R38-3)：闭合记录 `(精确词 w, 闭合类 [w])` 里**有没有位点信息**。  
-**依赖**：[`R38`](R38_entanglement_from_shared_closure_origin.md)、[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`G0`](G0_bottom_layer_and_derivation_route.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R28`](R28_phase_identity_cluster_reduction.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R39_site_blindness_probe.py`](R39_site_blindness_probe.py) → [`R39_site_blindness_results.json`](R39_site_blindness_results.json)。  
+**日期**：2026-10-03
+**性质**：**探针裁决（正面）**。回答 [`R38`](R38_entanglement_from_shared_closure_origin.md) 的决定性下游问题 (R38-3)：闭合记录 `(精确词 w, 闭合类 [w])` 里**有没有位点信息**。
+**依赖**：[`R38`](R38_entanglement_from_shared_closure_origin.md)、[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`G0`](G0_bottom_layer_and_derivation_route.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R28`](R28_phase_identity_cluster_reduction.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R39_site_blindness_probe.py`](R39_site_blindness_probe.py) → [`R39_site_blindness_results.json`](R39_site_blindness_results.json)。
 **核验**：[`R39_check.py`](R39_check.py)。
 
 $$

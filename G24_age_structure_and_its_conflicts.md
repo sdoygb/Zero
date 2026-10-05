@@ -23,7 +23,7 @@ $$
 ### (a) 局部代数分解（`D223`）
 
 $$
-\ \mathcal A_i=M_{n_i}(\mathbb C)\otimes C(X_{\tau_i})\ 
+\ \mathcal A_i=M_{n_i}(\mathbb C)\otimes C(X_{\tau_i})\
 $$
 
 | 因子 | 负责 |

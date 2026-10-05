@@ -1,8 +1,8 @@
 # R29 · 全支撑账本归约：全支撑不推出乘积记录
 
-**日期**：2026-10-03  
-**性质**：主线归约＋no-go＋旧理论源审计。审计 R27 的 `FULL-SUPPORT-LEDGER` 是否可从 Z3（＋Z4）、G71、G72、R25–R28 或两个旧理论目录直接得到；结论是不能，`FULL-SUPPORT-LEDGER` 实际包含至少四项独立条件。本文不关闭 `SURV4-GLOBAL`。  
-**依赖**：[`G0`](G0_bottom_layer_and_derivation_route.md)、[`G71`](G71_decoherence_from_the_terminal_ledger.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`R26`](R26_pair_carrier_reduction_no_go.md)、[`R27`](R27_phase_cochain_quotient_and_dimension_dictionary.md)、[`R28`](R28_phase_identity_cluster_reduction.md)、[`STATUS`](STATUS.md)。  
+**日期**：2026-10-03
+**性质**：主线归约＋no-go＋旧理论源审计。审计 R27 的 `FULL-SUPPORT-LEDGER` 是否可从 Z3（＋Z4）、G71、G72、R25–R28 或两个旧理论目录直接得到；结论是不能，`FULL-SUPPORT-LEDGER` 实际包含至少四项独立条件。本文不关闭 `SURV4-GLOBAL`。
+**依赖**：[`G0`](G0_bottom_layer_and_derivation_route.md)、[`G71`](G71_decoherence_from_the_terminal_ledger.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`R26`](R26_pair_carrier_reduction_no_go.md)、[`R27`](R27_phase_cochain_quotient_and_dimension_dictionary.md)、[`R28`](R28_phase_identity_cluster_reduction.md)、[`STATUS`](STATUS.md)。
 **核验**：[`R29_check.py`](R29_check.py)。
 
 $$
@@ -234,7 +234,7 @@ F_D=B\binom D2q^D.
 \qquad\text{(R29-14)}
 $$
 
-**买回物**：`FULL-LEDGER-FACTORIZATION` 把 R27 的含糊全支撑句变成可逐项审计的 `q^D`。  
+**买回物**：`FULL-LEDGER-FACTORIZATION` 把 R27 的含糊全支撑句变成可逐项审计的 `q^D`。
 **代价**：需要四条独立输入。它们分别负责方向不丢失、记录不合并、重叠不纠缠、代价不随方向或维数改变。
 
 ---
@@ -245,7 +245,7 @@ $$
 
 | 来源 | 严格支持什么 | 没有支持什么 |
 |:--|:--|:--|
-| Z3／G0（历史标号 A5） | 未闭合分支到寿命时进入终端账本 | 没有方向寄存器，没有“记录数等于方向数” |
+| Z3／G0 | 未闭合分支到寿命时进入终端账本 | 没有方向寄存器，没有“记录数等于方向数” |
 | G71 | `LEDGER-ONE`：一次实际记录给一次 `q`；`n` 次记录给 `q^n` | 记录态形式不由 Z3 唯一推出；没有声明每个方向自动产生一次记录 |
 | G72 | 不同账本路线给 `5/9`、`1/4`、`e^{-1}` | 没有 `SAME-Q`，反而显示 `q` 依赖路线 |
 | R25 | `LEDGER-ROT` 固定 `q_L=sum_c omega_c^2` | 没有方向到记录的注入，也没有联合乘积分解 |

@@ -1,8 +1,8 @@
 # R32 · 账本读出的选择与 `L=8` 张力的消解：一个生存要求同时选出寄存器与寿命
 
-**日期**：2026-10-03  
-**性质**：**选择定理＋张力消解＋账本升级**。在 [`G71`](G71_decoherence_from_the_terminal_ledger.md)／[`G72`](G72_kappa1_from_the_ledger.md) 列出的三条账本路线中，只有**闭类旋转轨道**（路线 A）能给出落在引力子允许域的主导维数；[`R23`](R23_dimension_descendant_selection.md) 命题 R23.6 的 `L=8` 张力同时消解。本文**不**关闭 `SURV4-GLOBAL`，也不把 `D=4` 写成无条件导出。  
-**依赖**：[`G61`](G61_locking_the_five_integers.md)、[`G71`](G71_decoherence_from_the_terminal_ledger.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`R27`](R27_phase_cochain_quotient_and_dimension_dictionary.md)、[`R29`](R29_full_support_ledger_factorization_no_go.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`STATUS`](STATUS.md)。  
+**日期**：2026-10-03
+**性质**：**选择定理＋张力消解＋账本升级**。在 [`G71`](G71_decoherence_from_the_terminal_ledger.md)／[`G72`](G72_kappa1_from_the_ledger.md) 列出的三条账本路线中，只有**闭类旋转轨道**（路线 A）能给出落在引力子允许域的主导维数；[`R23`](R23_dimension_descendant_selection.md) 命题 R23.6 的 `L=8` 张力同时消解。本文**不**关闭 `SURV4-GLOBAL`，也不把 `D=4` 写成无条件导出。
+**依赖**：[`G61`](G61_locking_the_five_integers.md)、[`G71`](G71_decoherence_from_the_terminal_ledger.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`R27`](R27_phase_cochain_quotient_and_dimension_dictionary.md)、[`R29`](R29_full_support_ledger_factorization_no_go.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`STATUS`](STATUS.md)。
 **核验**：[`R32_check.py`](R32_check.py)。
 
 $$
@@ -114,7 +114,7 @@ $$
 
 三情形穷尽所设路线的**物理寿命域**，故唯一存活组合是 `(A, L=4)`。$\square$
 
-**买回物**：(1) 账本寄存器（此时不必再作为"路径耦合哪个寄存器"的具名输入）；(2) 寿命 `L=4`；(3) 维数 `D=4`。  
+**买回物**：(1) 账本寄存器（此时不必再作为"路径耦合哪个寄存器"的具名输入）；(2) 寿命 `L=4`；(3) 维数 `D=4`。
 **代价**：一个具名生存要求 `PEAK-IN-GRAVITON-DOMAIN`（R31 §4 已登记），外加成对账本形式与 §4 的两条边界。
 
 ### 2.1 命题 R32.3（判据的极小性）【已证】

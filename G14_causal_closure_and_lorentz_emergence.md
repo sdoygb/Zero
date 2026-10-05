@@ -1,6 +1,6 @@
 # G14 · I6 的物质层：因果闭合把抛物与双曲统一成一个参数族
 
-**日期**：本轮 · **依赖**：Z0 条款（A0–A5 历史命名）；[`G5`](G5_stress_lift_and_conservation.md) 引理 18、19；[`G6`](G6_geodesy_of_the_coarse_grained_flow.md) 引理 24、27；[`G13`](G13_foliation_and_lorentz_invariance_gap.md) 引理 44–47。
+**日期**：本轮 · **依赖**：Z0 条款；[`G5`](G5_stress_lift_and_conservation.md) 引理 18、19；[`G6`](G6_geodesy_of_the_coarse_grained_flow.md) 引理 24、27；[`G13`](G13_foliation_and_lorentz_invariance_gap.md) 引理 44–47。
 **等级标签**：【导出】/【条件】/【输入】。
 **核验**：[`G14_check.py`](G14_check.py) —— **独立实断言 27 / 结论行 0 / 不符 0**，退出码 `0`（0.2 秒）
 
@@ -93,7 +93,7 @@ $$\text{G6 的热方程是过阻尼极限，不是另一个理论。}$$
 ## §5 这给出本纲领的**第一个可证伪量**
 
 $$
-\ \gamma=\frac1{2\lambda}\ \text{是优先参考系的耦合}\ 
+\ \gamma=\frac1{2\lambda}\ \text{是优先参考系的耦合}\
 $$
 
 若 $\lambda$ 有限，则存在一个优先参考系，其效应在频率 $\omega\gtrsim\gamma$ 时出现（相对修正 $\sim\gamma/\omega$）。这是一个**可被实验约束**的量。

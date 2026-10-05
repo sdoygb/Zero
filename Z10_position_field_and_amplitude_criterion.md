@@ -10,7 +10,7 @@ $$
 \begin{aligned}
 &\text{位置型原生场存在（归零概率，逃出引理 79，固定 }k\text{ 下字典二阶）；}\\
 &\text{但它在 }k=L\text{ 下给出}\textbf{退化度规} \Longrightarrow \textbf{新判据 C7：振幅必须 }O(1)。
-\end{aligned}\ 
+\end{aligned}\
 $$
 
 ---
@@ -51,7 +51,7 @@ $$
 **定义**（**Z3** 的闭合谓词逐位置化）：$P\_i:=\Pr\big(S\_i=0\ \big|\ \text{长度 }L\ \text{的平衡词}\big)$，其中 $S\_i$ 是前缀和。
 
 $$
-\ P_i=\frac{\binom{i}{i/2}\binom{L-i}{(L-i)/2}}{\binom{L}{L/2}}\quad(i\ \text{偶});\qquad P_i=0\quad(i\ \text{奇});\qquad P_0=P_L=1\ 
+\ P_i=\frac{\binom{i}{i/2}\binom{L-i}{(L-i)/2}}{\binom{L}{L/2}}\quad(i\ \text{偶});\qquad P_i=0\quad(i\ \text{奇});\qquad P_0=P_L=1\
 $$
 
 **为什么它逃出引理 79**：引理 79 说的是"**整词量**的年龄谱与年龄无关"（每个词在每个年龄恰计一次 ⟹ 计数均匀）。$P\_i$ 是**位置条件化**的统计量（"有多少词**在位置 $i$** 归零"），不是整词量 ⟹ **不受引理 79 约束** ⟹ 这正是 [`Z9`](Z9_pi_filter_and_lifetime_fork.md) §1.1 年龄筛留下的缝。
@@ -115,7 +115,7 @@ $$
 **机理**：$c$ 的范围随 $L$ **按 $\sqrt L$ 增长**（$5.07\to7.13\to10.06\to14.20$，弧正弦律的后果），而字典把范围放大成 $P\_k(c)$ 的幂律对比度 $\sim(\text{range})^{k/2}$；当 $k=L$ 时两个增长相乘。
 
 $$
-\ \textbf{C7（有界振幅）}:\ \text{range}(c)=O(1)\ \text{随细化不增};\quad \text{否则 } k=L \text{ 放大} \Rightarrow \text{退化度规}。\ 
+\ \textbf{C7（有界振幅）}:\ \text{range}(c)=O(1)\ \text{随细化不增};\quad \text{否则 } k=L \text{ 放大} \Rightarrow \text{退化度规}。\
 $$
 
 ### 3.1 判据清单（更新到七条）
@@ -151,7 +151,7 @@ $$
 | 新缺口 | 类↔站点 | **振幅与 $k=L$ 的相容性**（对所有候选一律要查） |
 
 $$
-\ \text{E1 的问题被改写成一句更硬的话}:\ \textbf{找一个振幅不随 }L\textbf{ 增长的原生场（或放弃 }k=L\text{）}。\ 
+\ \text{E1 的问题被改写成一句更硬的话}:\ \textbf{找一个振幅不随 }L\textbf{ 增长的原生场（或放弃 }k=L\text{）}。\
 $$
 
 **这与 [`Z9`](Z9_pi_filter_and_lifetime_fork.md) §3 的 $\tau\_i$ 分叉是同一个岔口**：$\tau\_i$ 的读法 (b)（局部截断 $k\_i=\tau\_i$，$c\equiv1$）**没有 $k=L$ 的放大问题**（对比度 $83$ 而非 $1801$）——**两条独立线索指向同一处**。

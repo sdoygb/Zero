@@ -54,7 +54,7 @@ $$
 
 $$
 \Longrightarrow\ \textbf{投影口径把 } T\ \text{压到}\ \le 5;\ \text{而自然值是奇数} \Longrightarrow\
-\ T=5\ 
+\ T=5\
 $$
 
 ---

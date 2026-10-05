@@ -1,9 +1,9 @@
 # R50 · 分层纪律：为什么同一个量在不同层"对、反、全局、局部"都对
 
-**日期**：2026-10-03  
-**性质**：**推导纪律（经验条款）** ＋ **一份矛盾清单与会诊** ＋ **一个层分辨实例的重新计算**。  
-**地位**：本文是**方法论条款**，不新增物理假设；它给出一条**筛错规则**：遇到"同一公式/个数/常数在不同文献里矛盾"时，先问**层指标**，再动结论。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)（Z6 层结构）、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`G28`](G28_dynamics_audit.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G73`](G73_B_is_an_input.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`R3`](R3_dimension_selection.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R37`](R37_kcbs_contextuality.md)、[`R42`](R42_explicit_pi_rotation_class.md)、[`R44`](R44_survival_vs_contextuality_no_go.md)、[`R48`](R48_exact_cone_and_effective_cone.md)、[`R49`](R49_pi_nonarithmetic_criterion.md)、[`STATUS`](STATUS.md)。  
+**日期**：2026-10-03
+**性质**：**推导纪律（经验条款）** ＋ **一份矛盾清单与会诊** ＋ **一个层分辨实例的重新计算**。
+**地位**：本文是**方法论条款**，不新增物理假设；它给出一条**筛错规则**：遇到"同一公式/个数/常数在不同文献里矛盾"时，先问**层指标**，再动结论。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)（Z6 层结构）、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`G28`](G28_dynamics_audit.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G73`](G73_B_is_an_input.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`R3`](R3_dimension_selection.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R37`](R37_kcbs_contextuality.md)、[`R42`](R42_explicit_pi_rotation_class.md)、[`R44`](R44_survival_vs_contextuality_no_go.md)、[`R48`](R48_exact_cone_and_effective_cone.md)、[`R49`](R49_pi_nonarithmetic_criterion.md)、[`STATUS`](STATUS.md)。
 **核验**：[`R50_check.py`](R50_check.py)；探针 [`R50_layer_scan_probe.py`](R50_layer_scan_probe.py) → [`R50_layer_scan_results.json`](R50_layer_scan_results.json)。
 
 $$
@@ -33,7 +33,7 @@ $$
 | **$\mathcal R$ 读出面** | $\pi,\ \omega,\ K,\ \langle\cdot\rangle$ | 粗粒化 $\pi$、推前权重 $\omega$、模 Hamiltonian $K=-\log\omega$、模流、**局域读回**与站点识别 | **`E5`（具名输入，账本漏记项）**；`G62` 在此层构造量子运动学 |
 
 $$
-\ \text{关键：}\textbf{L1 只增且不可逆；L2 有动力学且"活"；\mathcal R 才谈概率、模流、量子态。}\ 
+\ \text{关键：}\textbf{L1 只增且不可逆；L2 有动力学且"活"；\mathcal R 才谈概率、模流、量子态。}\
 $$
 
 **本文用到的记号**：断言写成 $P\_{\text{\ell}}(v)$；缺层指标的断言记 $P\_{\text{\bullet}}(v)$，**视为未完成**。
@@ -101,7 +101,7 @@ $$
 | 10 | **$c\_*=1$ 的地位** | `G56`：$c\_*=1\iff B=4$ 是**自洽条件**；`G59`：锥外指数尾 ⇒ **有效锥**；`R48`：支持锥**精确**且切可见性 | **L0（支持锥）vs $\mathcal R$（被选速度）** | **假矛盾**（`R48` 已收口）。L0：$\text{supp}\rho\_n\subseteq[-n,n]$ **精确**（$B$ 无关）；$\mathcal R$：被选速度 $c\_*=\tanh\mu\_*\le1$，等号只在 $B=4$。处置：把"有效锥 vs 精确锥"改写为"**L0 的精确支持锥 vs $\mathcal R$ 的可见锥**" |
 
 $$
-\ \text{10 条里：真矛盾 1 条（#3 的 L=8，已由 }R32.2\text{ 撤回）、符号碰撞 3 条（#8/#9/#5 的部分）、其余 6 条全是层坍塌。}\ 
+\ \text{10 条里：真矛盾 1 条（#3 的 L=8，已由 }R32.2\text{ 撤回）、符号碰撞 3 条（#8/#9/#5 的部分）、其余 6 条全是层坍塌。}\
 $$
 
 ### §3.1 补层指标的落地追踪（2026-10-03 执行纪律 ①）

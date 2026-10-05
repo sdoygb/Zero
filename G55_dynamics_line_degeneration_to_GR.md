@@ -5,7 +5,7 @@
 **核验**：[`G55_check.py`](G55_check.py) —— **独立实断言 33 / 结论行 0 / 不符 0**，退出码 `0`（约 1 秒）
 
 $$
-\ \text{退化到 GR 的}\textbf{形式}\text{要求记忆核【消失】；退化到 GR 的}\textbf{因果结构}\text{要求记忆核【存在】。}\ 
+\ \text{退化到 GR 的}\textbf{形式}\text{要求记忆核【消失】；退化到 GR 的}\textbf{因果结构}\text{要求记忆核【存在】。}\
 $$
 
 ---
@@ -19,7 +19,7 @@ $$
 | **R3** | **有限光锥**（因果结构） | **本文新计算** | ❌ **不能**：马尔可夫 $\Rightarrow$ 抛物 $\Rightarrow$ 无锥 |
 
 $$
-\ \text{判词是}\textbf{分裂}\text{的：形式能退化，因果不能退化。}\ 
+\ \text{判词是}\textbf{分裂}\text{的：形式能退化，因果不能退化。}\
 $$
 
 ---
@@ -60,7 +60,7 @@ $$
 **对照**（$n\_0$）同一式子残差 $2.861$ —— **不退化**。非退化时的记忆时间（[`G33`](G33_macro_master_equation_and_mz_kernel.md) §5，口径为该文所定）$\tau\_{\rm mem}(\infty)=\mathbf{3.27374796}$ 步（$T=12$ 截断口径给 $3.248588$），**有限**。
 
 $$
-\ \text{存在}\textbf{精确的}马尔可夫退化点；它就是「\pi\ \text{尊重年龄奇偶 }\mathbb Z_2\text{」。}\ 
+\ \text{存在}\textbf{精确的}马尔可夫退化点；它就是「\pi\ \text{尊重年龄奇偶 }\mathbb Z_2\text{」。}\
 $$
 
 **[`G11`](G11_dimension_as_consistency.md) 的候选对应**：[`G11`](G11_dimension_as_consistency.md) 里定维数的是"反转 $\mathbb Z\_2$ 穷尽匹配"，这里定马尔可夫性的是"年龄奇偶 $\mathbb Z\_2$" —— **同型**，**但未证是同一个**（已登记，不作依据）。
@@ -80,7 +80,7 @@ $$
 **$(L)$ 的精确化（对 [`G48`](G48_per_layer_scales_and_metrics.md) 的更正）**：层 $m$ 边权的**依赖半径**不是 $m$，而是
 
 $$
-\ \text{偶 }m:\ \text{半径}=\frac m2-1\ (\text{受影响边}=1,\dots,\tfrac m2-1);\qquad \text{奇 }m:\ \text{层权重恒为 }0\ 
+\ \text{偶 }m:\ \text{半径}=\frac m2-1\ (\text{受影响边}=1,\dots,\tfrac m2-1);\qquad \text{奇 }m:\ \text{层权重恒为 }0\
 $$
 
 | $m$ | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
@@ -110,7 +110,7 @@ $$
 | **Cattaneo／电报**（记忆） | 双曲（$c=1$） | $1.69\times10^{-20}$ | — | $\lvert x\rvert>2.5$：$7.20\times10^{-10}$ |
 
 $$
-\ \text{有限特征速度}\textbf{来自记忆}；\text{马尔可夫截断恰好丢掉光锥。}\ 
+\ \text{有限特征速度}\textbf{来自记忆}；\text{马尔可夫截断恰好丢掉光锥。}\
 $$
 
 ---
@@ -129,7 +129,7 @@ $$
 | **电流的记忆（弛豫）** | **I7**（[`G15`](G15_bare_ax3_has_no_characteristic_speed.md)） | 电流的独立自由度 | **能**（Cattaneo 的 $\lambda$） |
 
 $$
-\ \text{G30 的记忆核}\textbf{救不了光锥}；\text{光锥要的是电流的记忆（I7）。}\ 
+\ \text{G30 的记忆核}\textbf{救不了光锥}；\text{光锥要的是电流的记忆（I7）。}\
 $$
 
 ---
@@ -161,7 +161,7 @@ $$
 | 4 | **因果结构**：物质锥 ＝ 几何零锥 | ❌ **卡在 Z0③** | [`G15`](G15_bare_ax3_has_no_characteristic_speed.md)、本文 §4 |
 
 $$
-\ \text{唯一堵点是}\textbf{Z0③（无偏好）}\text{——它是唯一挡住 GR 因果结构的条款。}\ 
+\ \text{唯一堵点是}\textbf{Z0③（无偏好）}\text{——它是唯一挡住 GR 因果结构的条款。}\
 $$
 
 **三条出路**（[`G16`](G16_repair_audit_without_new_axioms.md) 已列，本文给代价）：

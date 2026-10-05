@@ -6,7 +6,7 @@
 **核验**：[`Z8_check.py`](Z8_check.py) —— **独立实断言 56 / 结论行 0 / 不符 0**，退出码 `0`（约 0.7 秒）
 
 $$
-\ c\ \text{的原生候选} = \pi\ \text{的推前重数};\qquad \textbf{“}\Gamma\ \text{非正则}\textbf{”} = \textbf{“}\pi\ \text{非均匀}\textbf{”}\ \text{——不是新输入，而是已有输入 }\pi\ \text{的同一件事}。\ 
+\ c\ \text{的原生候选} = \pi\ \text{的推前重数};\qquad \textbf{“}\Gamma\ \text{非正则}\textbf{”} = \textbf{“}\pi\ \text{非均匀}\textbf{”}\ \text{——不是新输入，而是已有输入 }\pi\ \text{的同一件事}。\
 $$
 
 ---
@@ -36,7 +36,7 @@ $$
 | C6 | **正** | 边权／导纳为正 | [`G2`](G2_local_continuum_limit.md)、[`G40`](G40_metric_from_closed_walk_counting.md) |
 
 $$
-\ \text{C4 是最锋利的一条}:\ \text{它把"几何"与"破缺 Z0③"分开};\ \text{任何候选只要在均匀结构上不恒定，立刻出局}。\ 
+\ \text{C4 是最锋利的一条}:\ \text{它把"几何"与"破缺 Z0③"分开};\ \text{任何候选只要在均匀结构上不恒定，立刻出局}。\
 $$
 
 ---
@@ -72,7 +72,7 @@ $$
 字典是**缓变场**的渐近式；对跳跃场它给不出正确值，而真实权重由半径 $k/2-1$ 的邻域决定（[`Z5`](Z5_finite_k_locality_escape.md)／[`G58`](G58_I2a_resolved_as_embedding_input.md)／[`Z7`](Z7_embedding_input_explicit_dictionary.md) §5），于是"前半程恒定"被邻域效应抹掉，只剩 $2$ 条边的精确平坦区。
 
 $$
-\ \text{候选 1 出局（违反 C5）};\ \textbf{但它的失败有信息量}:\ \text{“非恒定”还不够}，\text{要的是“}\textbf{缓变}\text{的非恒定”。}\ 
+\ \text{候选 1 出局（违反 C5）};\ \textbf{但它的失败有信息量}:\ \text{“非恒定”还不够}，\text{要的是“}\textbf{缓变}\text{的非恒定”。}\
 $$
 
 > **【补充·[`Z9`](Z9_pi_filter_and_lifetime_fork.md) §1.2】** 候选 1 还**独立地**违反 C4：把年龄认成站点后，在顶点传递图 $C\_8$ 上用**真实走道权重**算得 $(\max-\min)/\text{mean}=\mathbf{1.354}$，而 [`G46`](G46_k_is_the_lifetime.md) §3 要求顶点传递图上取值数 $=1$。故候选 1 有**两条独立的死因**（C4 与 C5）。
@@ -94,7 +94,7 @@ $$
 取**归一化重数**为标度场：
 
 $$
-\ c_i:=\frac{M_i}{\langle M\rangle}\quad(\text{无量纲、逐点、正、}\pi\ \text{的函数})。\ 
+\ c_i:=\frac{M_i}{\langle M\rangle}\quad(\text{无量纲、逐点、正、}\pi\ \text{的函数})。\
 $$
 
 **边值**由耦合规则给出。语料已把这条规则**导出**（不是假设）：[`G80`](G80_all_to_all_age_coupling.md) 证明年龄间是**全对全**耦合，[`G85`](G85_all_to_all_from_closed_walks.md) 把"为什么全对全"归到**度规自身的闭环计数**（对走长 $m$ 求和 ⟹ 覆盖所有距离）。
@@ -127,7 +127,7 @@ $$
 | 均值 | $1.47\times10^{-2}$ | $9.17\times10^{-4}$ | $5.73\times10^{-5}$ | $2$（$\div16$） | $\approx96$ |
 
 $$
-\ \text{候选 2 通过全部六条};\ \textbf{且它是 }\pi\ \text{的函数——}\pi\ \text{已是本理论唯一的输入}。\ 
+\ \text{候选 2 通过全部六条};\ \textbf{且它是 }\pi\ \text{的函数——}\pi\ \text{已是本理论唯一的输入}。\
 $$
 
 ---
@@ -142,7 +142,7 @@ $$
 | **$\pi$** | 已登记为**唯一输入** | 不变，但现在它**同时**承担"几何的标度场" |
 
 $$
-\ \text{输入项数不减，但}\textbf{“几何侧”不再有独立输入}:\ \text{几何是 }\pi\ \text{的读数}。\ 
+\ \text{输入项数不减，但}\textbf{“几何侧”不再有独立输入}:\ \text{几何是 }\pi\ \text{的读数}。\
 $$
 
 **这条与 [`G29`](G29_probability_as_derived_not_postulated.md) §8 自陈的"承重点转移"完全一致**：那里说"非均匀性依赖粗粒化分块的选择 ⟹ 粗粒化的选择现在是承重的"；本文把那句话**接到了几何上**——同一个承重点。

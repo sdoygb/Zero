@@ -1,6 +1,6 @@
 # G4 · 代数装配路线的排除：等边化、刚性与度量不可导出
 
-**日期**：本轮 · **依赖**：Z0 条款（A0–A5 历史命名）；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 4；[`G2_local_continuum_limit.md`](G2_local_continuum_limit.md) 引理 9；[`G3_admittance_fixed_point.md`](G3_admittance_fixed_point.md) 引理 12、13。不使用任何 `D*` 结论。
+**日期**：本轮 · **依赖**：Z0 条款；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 4；[`G2_local_continuum_limit.md`](G2_local_continuum_limit.md) 引理 9；[`G3_admittance_fixed_point.md`](G3_admittance_fixed_point.md) 引理 12、13。不使用任何 `D*` 结论。
 **核验**：[`G4_check.py`](G4_check.py) —— **独立实断言 31 / 结论行 0 / 不符 0**，退出码 `0`
 
 **等级标签：**【导出】/【数值证据】/【未建立】。
@@ -29,7 +29,7 @@ G3 解出了单元级不动点。接着必须回答两件事：
 **陈述.** 对任意 $d$ 维单纯形，顶点协方差 $G=\sum\_a(x\_a-\bar x)\otimes(x\_a-\bar x)$ 与体积 $\omega$ 满足
 
 $$
-\ \det G=\frac{d!^{\,2}}{d+1}\,\omega^2\ 
+\ \det G=\frac{d!^{\,2}}{d+1}\,\omega^2\
 $$
 
 即形状因子 $\text{SF}:=\det G/\omega^2$ **只依赖 $d$，不携带任何形状信息**。
@@ -54,7 +54,7 @@ $$
 $$
 h=K^{\frac{2}{d-2}}(d+1)^{\frac{2}{d-2}}c_d^{\frac{1}{d-2}}\,G^{-1},
 \qquad
-\ l_e^2=2\,c_d^{\frac{1}{d-2}}(d+1)^{\frac{2}{d-2}}K^{\frac{2}{d-2}}\ 
+\ l_e^2=2\,c_d^{\frac{1}{d-2}}(d+1)^{\frac{2}{d-2}}K^{\frac{2}{d-2}}\
 $$
 
 其中 $c\_d=d!^2/(d+1)$。因此 **$l\_e$ 与边无关、与单元形状无关**。$d=3$ 时 $l^2=288K^2$。

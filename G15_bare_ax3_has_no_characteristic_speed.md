@@ -1,11 +1,11 @@
 # G15 · 裸 Z0③（无偏好）下不存在有限特征速度：I6 物质层的 no-go
 
-**日期**：本轮 · **依赖**：Z0 条款（A0–A5 历史命名）；[`G5`](G5_stress_lift_and_conservation.md) 引理 18；[`G6`](G6_geodesy_of_the_coarse_grained_flow.md) 引理 24；[`G14`](G14_causal_closure_and_lorentz_emergence.md) 引理 48–51。
+**日期**：本轮 · **依赖**：Z0 条款；[`G5`](G5_stress_lift_and_conservation.md) 引理 18；[`G6`](G6_geodesy_of_the_coarse_grained_flow.md) 引理 24；[`G14`](G14_causal_closure_and_lorentz_emergence.md) 引理 48–51。
 **等级标签**：【导出】/【条件】/**【输入】**/**【不可达（定理）】**。
 **核验**：[`G15_check.py`](G15_check.py) —— **独立实断言 8 / 结论行 11 / 不符 0**，退出码 `0`（0.3 秒）
 
 $$
-\text{在 Z0 条款（A0–A5 历史命名）下，物质层没有有限特征速度；故 I6 的物质层不可由 Z0 条款推出。}
+\text{在 Z0 条款下，物质层没有有限特征速度；故 I6 的物质层不可由 Z0 条款推出。}
 $$
 
 ---

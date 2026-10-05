@@ -1,9 +1,9 @@
 # R15 · L1 推进：`Z-CAR` 的双覆盖升级，与 `Z-STRESS` 的归一化常数
 
-**日期**：2026-10-02  
-**性质**：修正 [`R14`](R14_L1_from_zero_assembly.md) §6 的一处因子隐患，并把 `Z-CAR` 改写成**双覆盖**形式；同时给 `Z-STRESS` 一个可量化的数值目标。  
-**政策**：区分【已证】／【候选】／【识别】／【开放】。L1 判定不变。  
-**依赖**：[`R14`](R14_L1_from_zero_assembly.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、`R13_numeric_probe.py`。  
+**日期**：2026-10-02
+**性质**：修正 [`R14`](R14_L1_from_zero_assembly.md) §6 的一处因子隐患，并把 `Z-CAR` 改写成**双覆盖**形式；同时给 `Z-STRESS` 一个可量化的数值目标。
+**政策**：区分【已证】／【候选】／【识别】／【开放】。L1 判定不变。
+**依赖**：[`R14`](R14_L1_from_zero_assembly.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、`R13_numeric_probe.py`。
 **核验**：[`R15_check.py`](R15_check.py)。
 
 $$
@@ -65,7 +65,7 @@ $$
 $$
 
 $$
-\ \text{几何 }2\pi=\mathbb I,\quad \text{升格 }2\pi=-\mathbb I\ 
+\ \text{几何 }2\pi=\mathbb I,\quad \text{升格 }2\pi=-\mathbb I\
 \qquad\text{(R15-6)}
 $$
 

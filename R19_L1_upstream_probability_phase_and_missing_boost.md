@@ -1,14 +1,14 @@
 # R19 · L1 上游重排：概率与相位在位，缺的是洛伦兹 boost
 
-**日期**：2026-10-02  
-**性质**：L1 上游依赖图重排 ＋ 一条已证 no-go（旋转双覆盖不能提供 boost）＋ 一组验收条件。不关闭 L1，不新增物理参数。  
+**日期**：2026-10-02
+**性质**：L1 上游依赖图重排 ＋ 一条已证 no-go（旋转双覆盖不能提供 boost）＋ 一组验收条件。不关闭 L1，不新增物理参数。
 **唯一目标**：Jacobson 2016 的最后一跳
 
 $$
 K_{B,a}\longrightarrow 2\pi B_B .
 $$
 
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R17`](R17_L1_critical_path_and_L5_gate.md)、[`R18`](R18_L5_cert_dimension_normalization_gate.md)、[`D44`](/Users/oygb/Downloads/modular-equilibrium/derivations/D44_poincare_closure_obstruction.md)。  
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R17`](R17_L1_critical_path_and_L5_gate.md)、[`R18`](R18_L5_cert_dimension_normalization_gate.md)、[`D44`](/Users/oygb/Downloads/modular-equilibrium/derivations/D44_poincare_closure_obstruction.md)。
 **核验**：[`R19_check.py`](R19_check.py)。
 
 $$

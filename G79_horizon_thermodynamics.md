@@ -5,7 +5,7 @@
 **核验**：[`G79_check.py`](G79_check.py) —— **独立实断言 9 / 结论行 7 / 不符 0**，退出码 `0`（0.3 秒）
 
 $$
-\ \text{视界}=\text{纠缠面}:\ \text{模 Hamiltonian 的权重在边界}\to0\ \Longrightarrow\ \text{温度零点在边界}。\ 
+\ \text{视界}=\text{纠缠面}:\ \text{模 Hamiltonian 的权重在边界}\to0\ \Longrightarrow\ \text{温度零点在边界}。\
 $$
 
 ---
@@ -28,7 +28,7 @@ $$
 
 | # | 假设 | 等级 | 出处／代价 |
 |--:|:--|:--|:--|
-| **H1** | **离散底**：Z0 条款（A0–A5 历史命名；$C$、零和、连通图局域补偿、无偏好计数、步 ＋ 闭合／终端）＋ 账本 I1–I11 | **【定理／已导出】**（**Z1 定理 1、Z2、Z3** 三条独立定理；公理只有 **Z0** 一条） | 这是底；号差 $(1,m-1)$ 由 [`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5 **已导出** |
+| **H1** | **离散底**：Z0 条款＋ 账本 I1–I11 | **【定理／已导出】**（**Z1 定理 1、Z2、Z3** 三条独立定理；公理只有 **Z0** 一条） | 这是底；号差 $(1,m-1)$ 由 [`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5 **已导出** |
 | **H2** | **量子扇区**：GNS 表示 ＋ 模流 ＋ 复振幅 ＋ Born（两条独立路） | **【导出】** | [`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)（Gleason）／本文引 [`G68`](G68_interference_from_coarse_graining.md)（Schur）；**测量诠释仍是【输入】** |
 | **H3** | **纠缠→几何的读法**：区域 = 纠缠面；边界 = 权重零点；模 Hamiltonian 集中在边界附近 | **【条件】+【数值证据】** | 本文 §1（与抛物线相关只有 $0.865$）；**$2\pi$ 与 boost 生成元的识别仍是【输入】** |
 | **H4** | **面积熵**：$S\propto(\text{边界面积})$ 的**标度**【导出】；$S=A/(4G)$ 中的 $1/(4G)$ 是**单位**【约定】；「$A$ = 几何面积」仍是**【输入】** | 标度【导出】／系数【约定】／识别【输入】 | 标度：[`G76`](G76_area_law_in_2d.md)／[`G78`](G78_area_law_in_3d.md)；系数：[`G57`](G57_unreachability_of_absolute_normalization.md)／[`G60`](G60_dimensionless_ledger_and_one_free_unit.md) |
@@ -66,7 +66,7 @@ $$
 | 与抛物线剖面 $x(\ell-x)$ 的相关 | $\mathbf{0.865}$（**如实：不是 0.99**） |
 
 $$
-\ \text{权重在边界}\to0 \Longrightarrow \text{（局部温度）零点在边界} \Longrightarrow \textbf{视界}=\text{纠缠面}。\ 
+\ \text{权重在边界}\to0 \Longrightarrow \text{（局部温度）零点在边界} \Longrightarrow \textbf{视界}=\text{纠缠面}。\
 $$
 
 > **更正（2026-10-02，见 [`R13`](R13_L1_strong_resolvent_attempt.md) §5.1）**：上表的“与抛物线相关 $0.865$”不是稳定误差估计，而是对关联矩阵本征值做 $\text{clip}(10^{-9},1-10^{-9})$ 正则化后的数值。同一配置（$N=96$ 周期环、区间 $[32,64)$）放松截断会显著抬高相关与中心键：
@@ -111,7 +111,7 @@ $$
 **残差降幅 $\mathbf{4.0,\ 4.0}$** ⟹ 残差 $\propto\varepsilon^2$ ⟹ **第一定律到一阶成立** ✅
 
 $$
-\ \delta S=\text{tr}(\delta\rho K)\ \text{成立};\ \text{在 Gaussian 态下它化归}\textbf{链式法则}。\ 
+\ \delta S=\text{tr}(\delta\rho K)\ \text{成立};\ \text{在 Gaussian 态下它化归}\textbf{链式法则}。\
 $$
 
 ---

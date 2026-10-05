@@ -52,7 +52,7 @@ $$
 
 $$
 \ \lambda^2=S\,(\lambda+1)\quad\Longrightarrow\quad
-\lambda(T)=\frac{S+\sqrt{S^2+4S}}{2}=S+\frac{S}{S+\cdots}\ 
+\lambda(T)=\frac{S+\sqrt{S^2+4S}}{2}=S+\frac{S}{S+\cdots}\
 $$
 
 **与实测逐周期增长率的对照**：
@@ -138,7 +138,7 @@ $$
 **但仍未够**：$\rho(T)$ 需要的是**另一个**线性泛函的比值（$D$ 侧的 Perron 分量），它**不由 $\lambda$ 单独决定**——需要特征向量。故：
 
 $$
-\ \text{本轮把 }\lambda(T)\ \text{关闭到"代数方程 ＋ 一个整数序列"；}\rho(T)\ \text{的闭式仍需特征向量的显式解。}\ 
+\ \text{本轮把 }\lambda(T)\ \text{关闭到"代数方程 ＋ 一个整数序列"；}\rho(T)\ \text{的闭式仍需特征向量的显式解。}\
 $$
 
 **与目标（反解唯一整数 $T$）的距离**：仍差**一个含精确常数的关系**。本轮**没有**产生它。

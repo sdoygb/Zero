@@ -5,11 +5,11 @@
 **核验**：[`G71_check.py`](G71_check.py) —— **独立实断言 20 / 结论行 0 / 不符 0**，退出码 `0`（0.5 秒）；另由 `WB_ledger_rate.py` 复核 **81 通过 / 0 不符**（W8 段给本文 §5′ 的传播子）。
 
 $$
-\ \text{干涉可见度}\ \mathcal V=\bigl|\langle D_1|D_0\rangle\bigr|\ \Longrightarrow\ \mathcal V(t)=\kappa_1^{\,N(t)},\quad N(t)=\Bigl\lfloor \frac{t}{L}\Bigr\rfloor;\qquad \text{环境}=Z3\ \text{的终端账本}。\ 
+\ \text{干涉可见度}\ \mathcal V=\bigl|\langle D_1|D_0\rangle\bigr|\ \Longrightarrow\ \mathcal V(t)=\kappa_1^{\,N(t)},\quad N(t)=\Bigl\lfloor \frac{t}{L}\Bigr\rfloor;\qquad \text{环境}=Z3\ \text{的终端账本}。\
 $$
 
 $$
-\ \text{不要把它读成}\ \kappa_1^{\,t/L}\ \text{当}\ t\not\equiv0\ (\text{mod}\ L)\text{：那是把}\textbf{记录率}\ \frac1L\ \text{与}\textbf{每记录压制}\ \kappa_1\ \text{混成一个指数}。\ 
+\ \text{不要把它读成}\ \kappa_1^{\,t/L}\ \text{当}\ t\not\equiv0\ (\text{mod}\ L)\text{：那是把}\textbf{记录率}\ \frac1L\ \text{与}\textbf{每记录压制}\ \kappa_1\ \text{混成一个指数}。\
 $$
 
 （$t=mL$ 处两者相同，故 §4 的 $T\_d$ 不受影响；中间步不同，见 §5′。）
@@ -30,7 +30,7 @@ $$
 ## §1 环境在哪？——**不需要外加**
 
 $$
-\ \text{环境}=\text{Z3／Z4 的终端账本 }D\ (\text{终端款归 Z4；G16 的体＋汇})。\ 
+\ \text{环境}=\text{Z3／Z4 的终端账本 }D\ (\text{终端款归 Z4；G16 的体＋汇})。\
 $$
 
 **Z3／Z4** 规定（终端款属 **Z4**）：未闭合分支在寿命到达时**进入终端账本**——**每一条分支的退出都被记账**。于是：
@@ -56,7 +56,7 @@ $$
 $$
 \rho_{12}\ \longmapsto\ \rho_{12}\,\langle D_1|D_0\rangle
 \qquad\Longrightarrow\qquad
-\ \mathcal V=2|\rho_{12}|=\bigl|\langle D_1|D_0\rangle\bigr|\ 
+\ \mathcal V=2|\rho_{12}|=\bigl|\langle D_1|D_0\rangle\bigr|\
 $$
 
 **核验**（$|D\_1\rangle=\kappa|0\rangle+\sqrt{1-\kappa^2}|1\rangle$，对记录取偏迹）：
@@ -85,7 +85,7 @@ $$
 | 理论 $\log\kappa\_1$ | $\mathbf{-0.356675}$（偏差 $<10^{-12}$）✅ |
 
 $$
-\ \text{每步退相干率}\ \Gamma_{\rm step}=\text{记录率}\times(-\log\kappa_1)=\frac{-\log\kappa_1}{L}\ 
+\ \text{每步退相干率}\ \Gamma_{\rm step}=\text{记录率}\times(-\log\kappa_1)=\frac{-\log\kappa_1}{L}\
 $$
 
 | 核验（记录率 $r=0.25,0.5,1,2$） | 结果 |
@@ -104,7 +104,7 @@ $$
 
 $$
 \text{记录率}=\frac1L\ \Longrightarrow\ \ T_d=\frac{L}{-\log\kappa_1}\ ,\qquad
-\ \kappa_1=\text{tr}\bigl(\rho\,\Delta_K\rho\bigr)=\sum_b\omega_b^2\ 
+\ \kappa_1=\text{tr}\bigl(\rho\,\Delta_K\rho\bigr)=\sum_b\omega_b^2\
 $$
 
 **$\kappa\_1=\sum\_b\omega\_b^2$ 的推导（只用 Z3 的记账）**【导出】：
@@ -142,7 +142,7 @@ $$
 | $(0,1)$ | 部分记录 | $\kappa$ |
 
 $$
-\ \text{G68 的静态判据（}\pi\text{ 是否合并）在本文变成}\textbf{由记录累积决定的动力学过程}。\ 
+\ \text{G68 的静态判据（}\pi\text{ 是否合并）在本文变成}\textbf{由记录累积决定的动力学过程}。\
 $$
 
 ---
@@ -150,7 +150,7 @@ $$
 ## §5′ 正确的传播子（WB 修订，回应"记录率／每记录压制混用"）
 
 $$
-\ \mathcal V(t)=\Bigl|\sum_{i}c_i\bar c_j\,e^{-i(K_i-K_j)t/L}\Bigr|\cdot\kappa_1^{\,\lfloor t/L\rfloor}\ 
+\ \mathcal V(t)=\Bigl|\sum_{i}c_i\bar c_j\,e^{-i(K_i-K_j)t/L}\Bigr|\cdot\kappa_1^{\,\lfloor t/L\rfloor}\
 $$
 
 | 项 | 作用 | 等级 |

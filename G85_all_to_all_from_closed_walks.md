@@ -5,7 +5,7 @@
 **核验**：[`G85_check.py`](G85_check.py) —— **独立实断言 21 / 结论行 0 / 不符 0**，退出码 `0`（0.5 秒）
 
 $$
-\ \text{Z3 的闭合}\ +\ \text{G40 的闭环计数}\ \Longrightarrow\ \text{核对所有走长 }m\ \text{求和}\ \Longrightarrow\ \textbf{全对全 ＋ 非可和}\ 
+\ \text{Z3 的闭合}\ +\ \text{G40 的闭环计数}\ \Longrightarrow\ \text{核对所有走长 }m\ \text{求和}\ \Longrightarrow\ \textbf{全对全 ＋ 非可和}\
 $$
 
 ---
@@ -39,7 +39,7 @@ s(r)=\sum_{m=2}^{k} m\,(A^{m-1})_{0,r}
 $$
 
 $$
-\ \text{它对}\textbf{所有走长 }m\ \text{求和}——\text{不是截断，而是度规的定义方式}。\ 
+\ \text{它对}\textbf{所有走长 }m\ \text{求和}——\text{不是截断，而是度规的定义方式}。\
 $$
 
 ---
@@ -69,7 +69,7 @@ $$
 | $20$ | $6757490,\ 3203982,\ 6757490$ | ✅ |
 
 $$
-\ k\ge3\ \text{时}\textbf{所有距离都被耦合}——\text{这就是"全对全"}。\ 
+\ k\ge3\ \text{时}\textbf{所有距离都被耦合}——\text{这就是"全对全"}。\
 $$
 
 ### 2.3 **非可和**
@@ -103,7 +103,7 @@ $$
 **增量恒正**（$14108,\ 30948,\ 30948,\ 14108,\dots$）⟹ $\Phi$ **二次增长** ✅
 
 $$
-\ \text{增量周期平均}\ 25335\ \text{与整体平均}\ 24633\ \text{相差}\ 2.8\%\ \Longrightarrow\ \textbf{线性增长（二次势）}\ ✅\ 
+\ \text{增量周期平均}\ 25335\ \text{与整体平均}\ 24633\ \text{相差}\ 2.8\%\ \Longrightarrow\ \textbf{线性增长（二次势）}\ ✅\
 $$
 
 ---
@@ -117,7 +117,7 @@ $$
 **而本文的核不是常数**（$s(1)=15474\neq s(2)=7054$）⟹ 精确的 O(1) 因子会有**定义散布** ⟹
 
 $$
-\ \text{这与}\text{G83}\ \text{的结论}\textbf{一致}:\ \text{导出的是}\textbf{结构}（\text{全对全/非可和/二次势}），\text{不是精确系数}。\ 
+\ \text{这与}\text{G83}\ \text{的结论}\textbf{一致}:\ \text{导出的是}\textbf{结构}（\text{全对全/非可和/二次势}），\text{不是精确系数}。\
 $$
 
 ---
@@ -125,7 +125,7 @@ $$
 ## §5 判定
 
 $$
-\ \textbf{R-Z-LONG-RANGE-MEMORY-GAP 被填上}:\ \text{全对全来自}\textbf{度规自身的闭环计数}。\ 
+\ \textbf{R-Z-LONG-RANGE-MEMORY-GAP 被填上}:\ \text{全对全来自}\textbf{度规自身的闭环计数}。\
 $$
 
 | 项 | 状态 |

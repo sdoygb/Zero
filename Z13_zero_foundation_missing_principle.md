@@ -1,8 +1,8 @@
 # Z13 · Zero 基础缺什么：不是公理，而是选择／读出原理
 
-**日期**：2026-10-02  
-**性质**：底层评估。不新增物理假设、不改动任何既有数值结论；把“Zero 还缺什么”收成一份带账本的判定。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`Z2`](Z2_zero_to_gr_direct_route.md)、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`G41`](G41_lovelock_premises_under_nonuniform_weight.md)、[`G57`](G57_unreachability_of_absolute_normalization.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G76`](G76_area_law_in_2d.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)。  
+**日期**：2026-10-02
+**性质**：底层评估。不新增物理假设、不改动任何既有数值结论；把“Zero 还缺什么”收成一份带账本的判定。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`Z2`](Z2_zero_to_gr_direct_route.md)、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`G41`](G41_lovelock_premises_under_nonuniform_weight.md)、[`G57`](G57_unreachability_of_absolute_normalization.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G76`](G76_area_law_in_2d.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)。
 **核验**：[`Z13_check.py`](Z13_check.py)。
 
 $$
@@ -37,7 +37,7 @@ $$
 |:--|:--|:--|:--|
 | Z0 | 零不断乱动（三款：不停留／不停歇／不设概率） | 唯一公理 | `Z0` §1 |
 | Z1–Z5 | 词与图、全分支＋整数重数、闭合与退出、寿命终端、重播种 | 由 Z0 导出 | `Z0` §2 |
-| A1–A5（历史命名） | 旧条款系统（今由 Z0 导出为定理） | 降为定理 | `Z1` §3、`Z2` §2 |
+| A1–A5 | 旧条款系统（今由 Z0 导出为定理） | 降为定理 | `Z1` §3、`Z2` §2 |
 | 散度字典 | $d\_w(v)=\#\{\text{进}\}-\#\{\text{出}\}$，追加边 $u\to v$ 使 $d\mapsto d+e\_v-e\_u$ | 定理 | `Z1` 定理 1 |
 | 零和守恒 | $\sum\_v d\_w(v)\equiv 0$ | 定理 | `Z1` 定理 2 |
 | 闭合判据 | 闭合 $\Longrightarrow d\equiv0$（单向严格） | 定理 | `Z1` 定理 5 |
@@ -98,7 +98,7 @@ $$
 | 编号 | 缺的是什么 | 问题形式 | 现有登记 | 依据 |
 |:--|:--|:--|:--|:--|
 | **E1** 物理标号 | 组合对象 $\to$ 物理点 | 哪个词位序是哪个站点？ | **具名输入**（I5） | `Z2` §5、`R2` |
-| **E2** 维数 | 哪个 $D$？ | Z0 条款（A0–A5 历史命名）对每个 $m\ge2$ 都有模型 | **条件**（I1） | `G89` 命题 1 |
+| **E2** 维数 | 哪个 $D$？ | Z0 条款对每个 $m\ge2$ 都有模型 | **条件**（I1） | `G89` 命题 1 |
 | **E3** 源类 | 哪一族作用量？ | 尘埃／耗散已排除，场类未选一 | **具名输入**（I3b） | `G5`–`G7` |
 | **E4** 绝对标度 | 哪个单位？ | $G,\Lambda$ 不可由原语导出 | **不可导出**（I4） | `G57` |
 | **E5** 量子读出 | 哪个状态／扇区／粗粒化？ | 自由费米形式、交错质量、模温读数均未导出 | **账本漏记；分散标记为识别** | §4 |
@@ -122,7 +122,7 @@ $$
 | 状态类与边界几何须额外选择 | D129：“面积律**必须额外选择状态类与边界几何**……不否定面积律，只否定它从当前支持结构自动出现” | `G75` 引 D129 |
 | 面积系数是三输入条件识别 | D152：“这是条件识别，不是导出：三个输入未定，$G$ 就不定” | `G75` 引 D152 |
 
-**与 L1 的连接**：`R13` 排除了原样强预解收敛，并把存活路线的第一道缺口命名为 `Z-CRIT-DER`——“从 Z0／A0–A5 导出 CAR、hopping、半满与单费米点”（原文标号，历史命名）。这**逐字就是 E5**。所以 L1 的困难不是谱分析技巧问题，而是账本漏项问题。
+**与 L1 的连接**：`R13` 排除了原样强预解收敛，并把存活路线的第一道缺口命名为 `Z-CRIT-DER`——“从 Z0／A0–A5 导出 CAR、hopping、半满与单费米点”。这**逐字就是 E5**。所以 L1 的困难不是谱分析技巧问题，而是账本漏项问题。
 
 ---
 

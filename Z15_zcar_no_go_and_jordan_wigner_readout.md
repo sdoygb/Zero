@@ -1,9 +1,9 @@
 # Z15 · `Z-CAR` 的物理读出：无唯一性定理与 Jordan–Wigner 条件构造
 
-**日期**：2026-10-02  
-**性质**：把 `Z-CAR` 的剩余“物理读出”拆成严格两段：先证明基础结构不能唯一选出费米扇区，再在具名输入 `Z-READ` 下构造外代数与 Jordan–Wigner，推出 CAR 与费米宇称。  
-**价签**：无唯一性定理不加输入；正面构造新增一笔具名输入 **`Z-READ`**（离散选择，不是概率或权重）。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、[`R14`](R14_L1_from_zero_assembly.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R16`](R16_direction_audit_reduction_tree.md)。  
+**日期**：2026-10-02
+**性质**：把 `Z-CAR` 的剩余“物理读出”拆成严格两段：先证明基础结构不能唯一选出费米扇区，再在具名输入 `Z-READ` 下构造外代数与 Jordan–Wigner，推出 CAR 与费米宇称。
+**价签**：无唯一性定理不加输入；正面构造新增一笔具名输入 **`Z-READ`**（离散选择，不是概率或权重）。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、[`R14`](R14_L1_from_zero_assembly.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R16`](R16_direction_audit_reduction_tree.md)。
 **核验**：[`Z15_check.py`](Z15_check.py)。
 
 $$
@@ -64,7 +64,7 @@ D\nRightarrow \chi(-\mathbb I)=-1.
 \qquad\text{(Z15-2)}
 $$
 
-**证明（两个合法模型）**  
+**证明（两个合法模型）**
 取同一个双覆盖
 
 $$
@@ -132,7 +132,7 @@ $$
 
 **它不是概率或权重**：`Z-READ` 是离散选择，不给任何分支赋实数。Z0③ 与“全分支＋整数重数”不受影响；按 [`Z13`](Z13_zero_foundation_missing_principle.md) 的政策，它属于必须具名并自付价签的读出输入。
 
-**买回什么**：`Z-READ` 买回从旋量双值性到费米反对易代数的具体构造。  
+**买回什么**：`Z-READ` 买回从旋量双值性到费米反对易代数的具体构造。
 **代价是什么**：它仍不是由 Zero 内部唯一选出的；这正是 E5 的离散部分。
 
 ---
@@ -221,7 +221,7 @@ $$
 $$
 \
 \pi(-\mathbb I)=(-1)^F=P\ .
-\ 
+\
 \qquad\text{(Z15-16)}
 $$
 

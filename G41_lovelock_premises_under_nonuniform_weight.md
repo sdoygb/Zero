@@ -128,7 +128,7 @@ $$
 | **闭环计数**（Perron） | **✗** | ✅ | ✅ |
 
 $$
-\ \text{对闭环计数路线：}\textbf{局域} + \textbf{导出} + \textbf{不增扩充条款}\ \text{三者不可兼得。}\ 
+\ \text{对闭环计数路线：}\textbf{局域} + \textbf{导出} + \textbf{不增扩充条款}\ \text{三者不可兼得。}\
 $$
 
 ---
@@ -142,7 +142,7 @@ $$
 $$
 
 $$
-\ \text{闭环计数度规落在**已被排除的非局域类**里。}\ 
+\ \text{闭环计数度规落在**已被排除的非局域类**里。}\
 $$
 
 ---
@@ -162,7 +162,7 @@ $$
 | **$(L)$ 局域** | **✗** |
 
 $$
-\ \text{缺 }(L)\ \Longrightarrow\ \text{Lovelock 不适用}\ \Longrightarrow\ \textbf{Einstein 方程不由这条路线得出}。\ 
+\ \text{缺 }(L)\ \Longrightarrow\ \text{Lovelock 不适用}\ \Longrightarrow\ \textbf{Einstein 方程不由这条路线得出}。\
 $$
 
 > **【本语料批注（[`Z5`](Z5_finite_k_locality_escape.md)）】** 本判决是在 **Perron 取法（$k\to\infty$）**下作出的——

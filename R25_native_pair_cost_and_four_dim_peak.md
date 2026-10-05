@@ -1,10 +1,10 @@
 # R25 · 成对维度增益与旋转类读出账本成本：四维全局峰的首个非 GR 正候选
 
-**日期**：2026-10-02  
-**性质**：把 [`R24`](R24_global_four_survival_gate.md) 的 `DIM-INTERACT` 从一个泛名缺口收成一条有精确窗口的候选机制；同时给出单方向路线的原生 no-go。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`G61`](G61_locking_the_five_integers.md)、[`G71`](G71_decoherence_from_the_terminal_ledger.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`zero_sum_rotation_class_algebra.md`](zero_sum_rotation_class_algebra.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R24`](R24_global_four_survival_gate.md)。  
-**后续对抗审计**：[`R26`](R26_pair_carrier_reduction_no_go.md) 把 `PAIR-CARRIER-DER` 拆成维数字典、方向图、边身份、计数和代价因子化六项。  
-**核验**：[`R25_check.py`](R25_check.py)。  
+**日期**：2026-10-02
+**性质**：把 [`R24`](R24_global_four_survival_gate.md) 的 `DIM-INTERACT` 从一个泛名缺口收成一条有精确窗口的候选机制；同时给出单方向路线的原生 no-go。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`G61`](G61_locking_the_five_integers.md)、[`G71`](G71_decoherence_from_the_terminal_ledger.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`zero_sum_rotation_class_algebra.md`](zero_sum_rotation_class_algebra.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R24`](R24_global_four_survival_gate.md)。
+**后续对抗审计**：[`R26`](R26_pair_carrier_reduction_no_go.md) 把 `PAIR-CARRIER-DER` 拆成维数字典、方向图、边身份、计数和代价因子化六项。
+**核验**：[`R25_check.py`](R25_check.py)。
 **数值探针**：[`R25_native_pair_cost_probe.py`](R25_native_pair_cost_probe.py)。
 
 $$

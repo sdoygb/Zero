@@ -14,7 +14,7 @@ Zero 层由**两部分**构成：**文章**（7 篇笔记）与**程序**（10 �
 但程序里装着的一批**定义与定理**此前只以代码形式存在，没有对应的文章。本文补上**旋转类代数**这一支。
 
 $$
-\ \text{类（旋转类）}\ \longrightarrow\ \text{计数（项链公式）}\ \longrightarrow\ \text{重数（三套闭合代数）}\ 
+\ \text{类（旋转类）}\ \longrightarrow\ \text{计数（项链公式）}\ \longrightarrow\ \text{重数（三套闭合代数）}\
 $$
 
 ---

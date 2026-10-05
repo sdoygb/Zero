@@ -1,6 +1,6 @@
 # G8 · 维数筛选：Z0 条款不选维数，但结构把 $D\le3$ 排除
 
-**日期**：本轮 · **依赖**：Z0 条款（A0–A5 历史命名）；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 1、5；[`G3_admittance_fixed_point.md`](G3_admittance_fixed_point.md) 负结果 12.2。不使用任何 `D*` 结论。
+**日期**：本轮 · **依赖**：Z0 条款；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 1、5；[`G3_admittance_fixed_point.md`](G3_admittance_fixed_point.md) 负结果 12.2。不使用任何 `D*` 结论。
 **核验**：[`G8_check.py`](G8_check.py) —— **独立实断言 32 / 结论行 0 / 不符 0**，退出码 `0`（1.5 秒）
 
 **等级标签：**【导出】/【条件】/【输入】。

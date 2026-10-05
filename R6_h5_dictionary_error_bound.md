@@ -10,7 +10,7 @@ $$
 \
 \text{在周期环面上、}k\text{ 固定、}c\text{ 为 Lipschitz 梯度时：}\quad
 \left|\frac{\widehat W_{a,e}}{P_{k,d}(c_e)}-1\right|\le C\,a^{2} .
-\ 
+\
 $$
 
 > **一句话**：H5 **可以证明，不再是数值猜测**。O(a) 项由“关于边中点的反射＋游程反转”配对面**精确消去**；剩下的 O(a²) 由 Taylor 余项控制。而且速率是**尖锐**的：只有连续没有梯度时降为 O(a^{α})，间断时直接 O(1) 失败。
@@ -178,7 +178,7 @@ $$
 \
 \text{H5 的充要边界：}c\text{ 在细化下连续}\Longrightarrow\varepsilon_a\to0;\quad
 c\text{ 间断}\Longrightarrow\text{H5 失败} .
-\ 
+\
 $$
 
 **固定 $k$ 是本质的**：$k\propto N$ 时 $L=m-1$ 也 $\propto N$，$\Theta=O(Gk a)=O(G k/N)$ 不再趋于零，且引理 R6.1 失效（绕环游程进入计数）。这与 [`G58`](G58_I2a_resolved_as_embedding_input.md) §2.3、[`Z7`](Z7_embedding_input_explicit_dictionary.md) §2.3 的“$k\propto N$ 无黎曼极限”同向。
@@ -232,7 +232,7 @@ $k=4,8,12$ 给常数约 $8.4,\,60.1,\,212.2$，经验指数约 $2.8\text{–}3.1
 5. **数值是旁证不是证明**：§6 的数字与 §4 的证明分离；数值只用于确认常数与速率，不替代引理 R6.1–R6.2。
 
 $$
-\ \textbf{H5 解决后，主 }\Gamma\textbf{-收敛链的剩余承重点只剩 H3/H7（类到光滑场的构造与正则迁移）。}\ 
+\ \textbf{H5 解决后，主 }\Gamma\textbf{-收敛链的剩余承重点只剩 H3/H7（类到光滑场的构造与正则迁移）。}\
 $$
 
 **改动文件**：`R6_h5_dictionary_error_bound.md`、`R6_check.py`（另有两份独立复核：`R6_independent_check.py`、`R6_refutation_attempt.md`）。未修改既有主链文件。

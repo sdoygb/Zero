@@ -153,7 +153,6 @@ $$
 | `G16_check.py` | 20 | 0 |
 | `G17_check.py` | 19 | 0 |
 | `G18_check.py` | 5 | 0 |
-| `G19_check.py` | 26 | 0 |
 | `G20_check.py` | 40 | 0 |
 | `G21_check.py` | 15 | 0 |
 | `G22_check.py` | 37 | 0 |
@@ -314,7 +313,7 @@ $$
 
 | 编号 | 文档 | 内容 |
 |:--|:--|:--|
-| Z0 条款（A0–A5 历史命名） | [`G0`](G0_bottom_layer_and_derivation_route.md) | 底层条款集、路线、输入账本 |
+| Z0 条款 | [`G0`](G0_bottom_layer_and_derivation_route.md) | 底层条款集、路线、输入账本 |
 | 引理 1–8 | [`G1`](G1_derivations_from_the_bottom_layer.md) | 余维、传输、能量、度规、号差、曲率、Lovelock |
 | 引理 9–11 | [`G2`](G2_local_continuum_limit.md) | 局域连续极限的分解 |
 | 引理 12–13 | [`G3`](G3_admittance_fixed_point.md) | 自洽不动点与显式解 |

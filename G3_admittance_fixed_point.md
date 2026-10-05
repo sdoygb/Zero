@@ -1,6 +1,6 @@
 # G3 · 导纳自洽不动点：显式解、尺度含义与一个负结果
 
-**日期**：本轮 · **依赖**：G0 的 Z0 条款（A0–A5 历史命名）；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 4；[`G2_local_continuum_limit.md`](G2_local_continuum_limit.md) 引理 9、11。不使用任何 `D*` 结论。
+**日期**：本轮 · **依赖**：G0 的 Z0 条款；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 4；[`G2_local_continuum_limit.md`](G2_local_continuum_limit.md) 引理 9、11。不使用任何 `D*` 结论。
 **核验**：[`G3_check.py`](G3_check.py) —— **独立实断言 48 / 结论行 0 / 不符 0**，退出码 `0`
 
 **等级标签：**【导出】/【数值证据】/【未建立】。
@@ -179,5 +179,5 @@ I2 现在剩下两项：**I2a**（形状正则细化的收敛定理）与**不�
 
 **可证伪点：** 若在全局（多单元 + 面胶合）版本中存在非均匀不动点，且其几何不是等边的，则推论 13.2 失效，连续几何可能需要额外的各向异性来源。
 
-**后续状态｜`G4` 否决本文的不动点作为几何机制，推论 13.1 降级。**  
+**后续状态｜`G4` 否决本文的不动点作为几何机制，推论 13.1 降级。**
 [`G4_assembly_route_obstruction.md`](G4_assembly_route_obstruction.md) 给出：$\det G=\frac{d!^2}{d+1}\omega^2$ 只依赖 $d$，故均匀 $K$ 下每个单元的涌现边长恒相等（$l^2=288K^2$，$d=3$），且面胶合**自动成立**；根搜索（300 初值 $\times$ 4 单元）进一步表明本文的不动点**只有均匀射线**。于是涌现几何必然是等边三角剖分，而等边 Regge 几何只有 1 个参数、且无平坦实现——**代数装配路线被排除**。因此本文推论 13.1（"I2b 由不动点导出"）降级为 G2 引理 9 的必要尺度条件。保留的部分：引理 12（齐次度 1、尺度由 $\kappa$ 承担、齐次度不选择维数）与引理 13（均匀解是任意单纯形的不动点）都仍然成立。核验：`G4_check.py` 通过 31 / 不符 0，退出码 0。

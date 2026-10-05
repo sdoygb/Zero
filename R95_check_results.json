@@ -1,7 +1,10 @@
 {
- "pass": 24,
- "fail": 0,
- "failed_names": [],
+ "pass": 22,
+ "fail": 2,
+ "failed_names": [
+  "参数定层表在位（βε / q_n / G,Λ / n）",
+  "参数定层表含 q_n"
+ ],
  "layer_tag_counts": {
   "L0": 25,
   "L1′": 22,

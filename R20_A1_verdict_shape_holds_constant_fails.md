@@ -1,14 +1,14 @@
 # R20 · A1 判定：形状成立，常数不成立
 
-**日期**：2026-10-02  
-**性质**：A1 的数值判定。给出三条可复算结论与一条处置；不关闭 L1，不新增物理参数。  
+**日期**：2026-10-02
+**性质**：A1 的数值判定。给出三条可复算结论与一条处置；不关闭 L1，不新增物理参数。
 **目标**：判定 [`R19`](R19_L1_upstream_probability_phase_and_missing_boost.md) §5 的 A1，即模流与几何流是否满足
 
 $$
 \sigma_{\theta/2\pi}=\alpha_\theta .
 $$
 
-**依赖**：[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R19`](R19_L1_upstream_probability_phase_and_missing_boost.md)。  
+**依赖**：[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R19`](R19_L1_upstream_probability_phase_and_missing_boost.md)。
 **核验**：[`R20_check.py`](R20_check.py)；探针 [`R20_A1_probe.py`](R20_A1_probe.py)。
 
 > **后续校正（[`R21`](R21_vf_normalization_resolves_the_r20_factor.md)、[`R22`](R22_principal_symbol_vs_r20_estimator.md)）**：本轮形状结论保留，但 $A\_N$、$\rho\_N$、$|\lambda\_N|$ 不再是 $\pi$ 的有效估计器。R21 修正了目标常数；R22 进一步证明 R20 的键中点 $B\_N$（$l=N-1$）与外部定理的 $T\_N$ 不同，且光滑测试向量不是 $T\_N$ 的近零模。因此正文中的“缺口约 $1.85$ 倍”只保留为当时估计器的算术读数，不再作为 L1 的承重结论。

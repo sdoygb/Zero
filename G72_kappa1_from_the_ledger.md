@@ -5,11 +5,11 @@
 **核验**：[`G72_check.py`](G72_check.py) —— **独立实断言 17 / 结论行 2 / 不符 0**，退出码 `0`（0.26 秒）；另由 `WB_ledger_rate.py` 复核 **81 通过 / 0 不符**（W9 段给 D12 系数自由的 CPTP 证明，W7 段给 $e^{-1}$ 的 no-go）。
 
 $$
-\ \kappa_1=e^{-1}\ \text{是}\textbf{约定}（D12 的系数 1 ＋"1 模时间单位 = 1 步"的识别），\textbf{不是} Z3 的推论。\ 
+\ \kappa_1=e^{-1}\ \text{是}\textbf{约定}（D12 的系数 1 ＋"1 模时间单位 = 1 步"的识别），\textbf{不是} Z3 的推论。\
 $$
 
 $$
-\ \text{Z3 能给的是}\ \kappa_1=\sum_b\omega_b^2\in\Bigl[\frac1K,\ \kappa_{\max}\Bigr],\qquad T_d=\frac{L}{-\log\kappa_1}\ \Longrightarrow\ \frac{T_d}{L}\ \ge\ \frac{1}{\log K}\ 
+\ \text{Z3 能给的是}\ \kappa_1=\sum_b\omega_b^2\in\Bigl[\frac1K,\ \kappa_{\max}\Bigr],\qquad T_d=\frac{L}{-\log\kappa_1}\ \Longrightarrow\ \frac{T_d}{L}\ \ge\ \frac{1}{\log K}\
 $$
 
 ---
@@ -45,7 +45,7 @@ $$
 | $K=-\log\omega$ | $[4.151,\ 3.235,\ 1.849,\ 0.239]$（跨度 $3.912$）✅ |
 
 $$
-\ \textbf{针基}=\pi\ \text{的类基}\ (\text{推前的类})=\ K\ \text{的本征基}\ 
+\ \textbf{针基}=\pi\ \text{的类基}\ (\text{推前的类})=\ K\ \text{的本征基}\
 $$
 
 $$
@@ -87,7 +87,7 @@ $$
 **秩 1 约定性（`WB_ledger_rate.py` W9）**【约定】：对**任意** $\gamma\ge0$，$\mathcal L\_\gamma(\rho)=-i[K,\rho]+\gamma\bigl(\Delta\_K(\rho)-\rho\bigr)$ **仍是合法 CPTP 生成元**（$\exp(t\mathcal L\_\gamma)$ 的 Choi 最小本征值 $>-10^{-10}$、保迹、$\omega$ 仍是不动点；$\gamma=0,0.25,1,7.3,100$ 全部通过）。故 $(A,\omega)$ **不固定**系数 $1$：
 
 $$
-\ \text{D12 的"率 = 1"是}\textbf{规范选择}；\text{旧体系自己在记账栏写作【约定】}。\ 
+\ \text{D12 的"率 = 1"是}\textbf{规范选择}；\text{旧体系自己在记账栏写作【约定】}。\
 $$
 
 **D12 内可被推导的那个量**【导出】：**信道形式**（$\Delta\_K$ 是保单位条件期望、CPTP、$\omega$ 是不动点），以及**指针基由稳定性唯一**。**率不在其中。**
@@ -109,7 +109,7 @@ $$
 $$
 
 $$
-\ \text{账本侧唯一可证伪的}\pi\text{-无关陈述是}\textbf{不等式}\ \frac{T_d}{L}\ge\frac{1}{\log K}\ （K=\text{类数}）\ 
+\ \text{账本侧唯一可证伪的}\pi\text{-无关陈述是}\textbf{不等式}\ \frac{T_d}{L}\ge\frac{1}{\log K}\ （K=\text{类数}）\
 $$
 
 > **后续（[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)）**：本节三条路线此后不再只是"并列的可能"。[`R31`](R31_phase_ledger_and_lifetime_selection.md) 登记了生存要求 `PEAK-IN-GRAVITON-DOMAIN`（账本主导维数须落在引力子域 `D≥4`）；R32 定理 R32.1 把它施加到本表三行上：**路线 B/C**（$q=1/L\le1/4<1/3$，$L\ge4$）的峰恒为 $D=2$；**D12**（$q=e^{-1}\in(1/3,1/2)$）的峰为 $D=3$；只有**路线 A**（旋转类，$L=4$ 给 $q=5/9\in(1/2,3/5)$）给峰 $\{4\}$。故在这三条路线内，**唯一存活者是路线 A 且 $L=4$**。本文 §4 的 $e^{-1}$ no-go（纯度必为有理数）与 R32 的峰判据是两条独立的排除。边界：路线表的穷尽性未证（见 R32 §4）。

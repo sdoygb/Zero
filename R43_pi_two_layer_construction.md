@@ -1,9 +1,9 @@
 # R43 · `π` 的构造：**两层族**同时满足双侧约束
 
-**日期**：2026-10-03  
-**性质**：**分割族扫描＋构造性结果（正面）**。承接 [`R42`](R42_explicit_pi_rotation_class.md) 的双侧约束 (R42-5)：不再枚举仓库里的自然分割，而是**构造并扫描分割族**，找满足约束的 `π`。  
-**依赖**：[`R42`](R42_explicit_pi_rotation_class.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R35`](R35_type_iii_classification.md)、[`R37`](R37_kcbs_contextuality.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R43_pi_family_scan_probe.py`](R43_pi_family_scan_probe.py) → [`R43_pi_family_scan_results.json`](R43_pi_family_scan_results.json)。  
+**日期**：2026-10-03
+**性质**：**分割族扫描＋构造性结果（正面）**。承接 [`R42`](R42_explicit_pi_rotation_class.md) 的双侧约束 (R42-5)：不再枚举仓库里的自然分割，而是**构造并扫描分割族**，找满足约束的 `π`。
+**依赖**：[`R42`](R42_explicit_pi_rotation_class.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R35`](R35_type_iii_classification.md)、[`R37`](R37_kcbs_contextuality.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R43_pi_family_scan_probe.py`](R43_pi_family_scan_probe.py) → [`R43_pi_family_scan_results.json`](R43_pi_family_scan_results.json)。
 **核验**：[`R43_check.py`](R43_check.py)。
 
 $$

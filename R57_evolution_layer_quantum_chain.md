@@ -51,7 +51,7 @@ $$
 层高 $h(\sigma)=|s|$（离零的距离，即局部失衡的幅度）。测度：
 
 $$
-\ \omega(\sigma)\ \propto\ W(\sigma)\,e^{-\gamma\,h(\sigma)}\ 
+\ \omega(\sigma)\ \propto\ W(\sigma)\,e^{-\gamma\,h(\sigma)}\
 $$
 
 $e^{-\gamma}$ = 每爬一层的代价（能隙型）。**门槛**：$\gamma\ge\gamma^*\approx1.124$（与 $L$ 无关，见 `R56`）。
@@ -147,7 +147,7 @@ $$
 | 语境性 | 顶三谱 $\Rightarrow S\_{\max}>2$ | 不需要 |
 
 $$
-\ \text{撤掉 \mathcal R 之后，量子力学的全部要件仍能长出。}\ 
+\ \text{撤掉 \mathcal R 之后，量子力学的全部要件仍能长出。}\
 $$
 
 ---
@@ -177,5 +177,5 @@ python3 R57_quantum_chain.py      # 9 项验证，末行给总判定
 ## §6 一句话
 
 $$
-\ \text{五个猜想串起来，}\mathcal Z_\ast\text{ 的下投影确实逼出了演化层的量子力学；只余一个结构性常数 }\gamma\ \text{待定。}\ 
+\ \text{五个猜想串起来，}\mathcal Z_\ast\text{ 的下投影确实逼出了演化层的量子力学；只余一个结构性常数 }\gamma\ \text{待定。}\
 $$

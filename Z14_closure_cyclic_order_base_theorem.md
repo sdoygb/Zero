@@ -1,9 +1,9 @@
 # Z14 · 闭合的循环序与双覆盖：基础扩展 Z-E*
 
-**日期**：2026-10-02  
-**性质**：基础扩展。把闭合零和词已经携带的**循环序**与来自 `SO(2)` 的**双覆盖**提升为一条具名基础定理；不新增物理读出，不关闭 L1。  
-**价签**：**【导出／基础扩展｜无偏好】**。只增加群作用与中心扩张的拓扑结构，不增加概率、权重、测度或逐分支偏好。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、[`R14`](R14_L1_from_zero_assembly.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R16`](R16_direction_audit_reduction_tree.md)。  
+**日期**：2026-10-02
+**性质**：基础扩展。把闭合零和词已经携带的**循环序**与来自 `SO(2)` 的**双覆盖**提升为一条具名基础定理；不新增物理读出，不关闭 L1。
+**价签**：**【导出／基础扩展｜无偏好】**。只增加群作用与中心扩张的拓扑结构，不增加概率、权重、测度或逐分支偏好。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、[`R14`](R14_L1_from_zero_assembly.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R16`](R16_direction_audit_reduction_tree.md)。
 **核验**：[`Z14_check.py`](Z14_check.py)。
 
 $$
@@ -169,7 +169,7 @@ $$
 
 $$
 \ \text{几何 }R_{2\pi}=\mathbb I,\qquad
-\text{升格 }(U_{2\pi/L})^{L}=-\mathbb I\ .\ 
+\text{升格 }(U_{2\pi/L})^{L}=-\mathbb I\ .\
 \qquad\text{(Z14-12)}
 $$
 

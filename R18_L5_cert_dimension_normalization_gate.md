@@ -1,14 +1,14 @@
 # R18 · L5-CERT 第一关：低维通道的目录与归一化判据
 
-**日期**：2026-10-02  
-**性质**：L5 的第一次定向攻坚。新增两条已证判据与一条审计判决；不关闭 L1，不新增物理参数，不新增表示层标签。  
+**日期**：2026-10-02
+**性质**：L5 的第一次定向攻坚。新增两条已证判据与一条审计判决；不关闭 L1，不新增物理参数，不新增表示层标签。
 **唯一目标**：Jacobson 2016 固定体积首阶平衡的上游门槛 L5，即
 
 $$
 D(\sigma_R\|\rho)=o(R^d).
 $$
 
-**依赖**：[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R9`](R9_external_GR_derivations_landscape.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R17`](R17_L1_critical_path_and_L5_gate.md)、[`G76`](G76_area_law_in_2d.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`Z16`](Z16_zunif_balanced_regular_module.md)。  
+**依赖**：[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R9`](R9_external_GR_derivations_landscape.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R17`](R17_L1_critical_path_and_L5_gate.md)、[`G76`](G76_area_law_in_2d.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`Z16`](Z16_zunif_balanced_regular_module.md)。
 **核验**：[`R18_check.py`](R18_check.py)。
 
 $$
@@ -122,8 +122,8 @@ $$
 
 **(ii)（关闭方向）** 若 $\mathcal N|\_{V\_{\rm light}}$ 单射，则任何满足 $\mathcal N(\sigma\_R-\rho)=O(1)$ 的族都有 $\varepsilon\_R=O(1)$，从而 $D(\sigma\_R\|\rho)=O(1)=o(R^d)$。
 
-**证明**  
-(i) 由 $\mathcal N(X)=0$ 得 (R18-5) 第一式。相对熵展开用 (R18-1)；代入 $\varepsilon\_R=R^{d/2}$ 得第二式，且 $\chi\_K(X)>0$ 使主项严格为正。$\mathcal N$ 线性，不改变主项阶数。  
+**证明**
+(i) 由 $\mathcal N(X)=0$ 得 (R18-5) 第一式。相对熵展开用 (R18-1)；代入 $\varepsilon\_R=R^{d/2}$ 得第二式，且 $\chi\_K(X)>0$ 使主项严格为正。$\mathcal N$ 线性，不改变主项阶数。
 (ii) $V\_{\rm light}$ 有限维且 $\mathcal N$ 在其上单射，故存在 $c>0$ 使 $\|\mathcal N(X)\|\ge c\|X\|$ 对一切 $X\in V\_{\rm light}$ 成立。取 $\|X\|=1$；由 $\mathcal N(\sigma\_R-\rho)=O(1)$ 得 $\varepsilon\_R=O(1)$，代入 (R18-1) 得 $D=O(1)$。$\square$
 
 **边界**：命题 (i) 只给充分条件。即使 $\mathcal N|\_{V\_{\rm light}}$ 非单射，也可能因低维系数在候选类上恒为零（目录空）而使该通道整体消失；这一点由 §5 处理。

@@ -28,10 +28,10 @@ $$
 
 | 层 | 状态 | 证据 |
 |:--|:--|:--|
-| **1 运动学** | ✅ | Z0 条款（A0–A5 历史命名；[`G19`](G19_axiom_reduction.md) 精简为 **Z1 定理 1、Z2、Z3**）；11 个沙盒 |
+| **1 运动学** | ✅ | Z0 条款；11 个沙盒 |
 | **2 微观动力学** | ✅ **建好并运行** | `cycle_evolution`：**零约束每步精确**（`max_total_charge_error = 0`）；规则 `sterile` / `single_cut` / `all_cuts`；`λ = log(M)/T` |
 | **3 宏观动力学** | ⚠️ **部分** | [`G6`](G6_geodesy_of_the_coarse_grained_flow.md) 热方程（扩散）；[`G7`](G7_one_operator_and_the_dissipation_obstruction.md) 梯度流；[`G16`](G16_repair_audit_without_new_axioms.md) 体+汇守恒 ⟹ **但几何极限 I2a 未建立** |
-| **4 统计/量子** | ❌ **没有** | Z0③ 禁概率（A3 历史命名）；[`G27`](G27_purification_attempt.md)：均匀计数 ⟹ 模 Hamiltonian **平凡** |
+| **4 统计/量子** | ❌ **没有** | Z0③ 禁概率；[`G27`](G27_purification_attempt.md)：均匀计数 ⟹ 模 Hamiltonian **平凡** |
 
 ---
 
@@ -57,7 +57,7 @@ $$
 | **`living`（复制、平衡）** | **1.00** | 1.00 |
 
 $$
-\text{Z0③（不设概率；A3 历史命名，}\textbf{L0}\text{）与「再生／选择」动力学（}\textbf{L2／\mathcal R}\text{）}\textbf{不相容}。
+\text{Z0③与「再生／选择」动力学（}\textbf{L2／\mathcal R}\text{）}\textbf{不相容}。
 $$
 
 **这是 [`G27`](G27_purification_attempt.md) 那条张力的**第二个面****：统计扇区（模流，**L3**）与再生扇区（**L2**）**都**需要概率，而 Z0③ 禁止的是 **L0** 的概率 —— **层不同，故不是同层冲突**（`R50` 会诊 #1）。
@@ -120,7 +120,7 @@ $$
 - 登记为 **`R-Z-CLOSURE-EXIT-RULE`**。
 
 $$
-\Longrightarrow\ \text{我的 Z0 条款里「闭合分支退出活动层」这一条（原 A5 → Z3），正是那条额外规则。}
+\Longrightarrow\ \text{我的 Z0 条款里「闭合分支退出活动层」这一条，正是那条额外规则。}
 $$
 
 ---
@@ -147,7 +147,7 @@ $$
 | 项 | 说明 |
 |:--|:--|
 | 复跑范围 | 我只复跑了 `geometry_probe`（26 秒，exit 0）；其余三个沙盒**未复跑** |
-| 外部设定 | `cycle_evolution` 的变异概率 $0.03$、`living_universe` 的 rates 是**外部设定**，不是从 Z0 条款（A0–A5 历史命名）导出 |
+| 外部设定 | `cycle_evolution` 的变异概率 $0.03$、`living_universe` 的 rates 是**外部设定**，不是从 Z0 条款导出 |
 | 隐含输入 | `geometry_probe` 用 4D torus 作对照，**隐含"4 维是目标"**——这本身是输入 |
 | 影响 | 不改变 G1–G27 的结论，只登记动力学的完成度 |
 

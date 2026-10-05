@@ -71,7 +71,7 @@ $$
 ### 1.3 两者的守恒律（新）
 
 $$
-\ \text{一条记录事件} = \underbrace{+1\ \text{账目}}_{\text{L1}}\ +\ \underbrace{+1\ \text{活动分支}}_{\text{L2-b}}\ \Longrightarrow\ \textbf{账目数} = \textbf{活动分支数}\ 
+\ \text{一条记录事件} = \underbrace{+1\ \text{账目}}_{\text{L1}}\ +\ \underbrace{+1\ \text{活动分支}}_{\text{L2-b}}\ \Longrightarrow\ \textbf{账目数} = \textbf{活动分支数}\
 $$
 
 **注意它不是"总数不变"**——分裂**增加**总分支数；守恒的是**账目与活动分支之间的相等性**。这与 `R59` K11 的"局部失衡全局配平"**同源**（局部产生，全局配平）。

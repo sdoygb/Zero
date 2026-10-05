@@ -6,7 +6,7 @@
 
 $$
 \ k=\frac{\rho v_F}{m^2};\qquad k=1\ \Longleftrightarrow\ v_F=\frac{m^2}{\rho}
-\ \Longrightarrow\ m\in[0.9669,\ 1.1108]。\ 
+\ \Longrightarrow\ m\in[0.9669,\ 1.1108]。\
 $$
 
 即 $k=1$ 只把 $m$ 钉在 $\approx1$ 附近；而 $m\ge2$（面积律可判区）给 $k\le0.31$。
@@ -52,7 +52,7 @@ $$
 
 $$
 \ \text{only}\ m\lesssim1.11\ \text{can reach}\ k=1;\qquad
-m=1\ \text{was ruled out by}\ G78\ \text{§2}。\ 
+m=1\ \text{was ruled out by}\ G78\ \text{§2}。\
 $$
 
 **且 $k\ge1$ 整体不可达**：$k\ge1\iff m^2\le\rho v\_F=1.002\iff m\le1.001$，即所有 $k\in\mathbb{Z}\_{\ge1}$ 都要求 $m\le1.001$——全部落在 [`G78`](G78_area_law_in_3d.md) §2 判定的**不可判区**。
@@ -70,7 +70,7 @@ $$
 
 $$
 \ \text{tension}=\frac{m^2}{\rho v_F}:\quad m=2,3,4\ \Longrightarrow\ 4.0,\ 9.0,\ 16.0;\qquad
-\pm20\%\ \text{only at}\ m\approx1,\ \text{not judgeable}\ 
+\pm20\%\ \text{only at}\ m\approx1,\ \text{not judgeable}\
 $$
 
 ---

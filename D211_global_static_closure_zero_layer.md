@@ -1,11 +1,11 @@
 # D211 · 全局静态闭合零层：多重零记录、局部历史与全局读回边界
 
 **日期**：本轮对话 · **依赖**：`AXIOMS.md` §0.3、§3、§6、§7、`D175`、`D178`、`D179`、`D180`、`D187`、`D191`、`D210`
-**测试模型**：有限零和闭合历史、循环等价类、多重集记录、局部历史纤维、可逆周期与吸收终端补全。它们不是 `U1-U4` 的推论。
-**预先结构**：闭合谓词、循环等价、全局多重集、吸收写入规则、局部历史划分与局部重建规则。它们不是 `U1-U4` 的推论。
+**测试模型**：有限零和闭合历史、循环等价类、多重集记录、局部历史纤维、可逆周期与吸收终端补全。
+**预先结构**：闭合谓词、循环等价、全局多重集、吸收写入规则、局部历史划分与局部重建规则。
 **核验**：[`verify/d211_global_static_closure_zero_layer.py`](verify/d211_global_static_closure_zero_layer.py) —— **通过 / 不符**见运行输出
 **数值模拟**：[`simulations/zero_sum_closure_exit.py`](simulations/zero_sum_closure_exit.py)、[`simulations/zero_sum_closure_exit.md`](zero_sum_closure_exit.md)、[`simulations/zero_sum_open_reservoir.py`](simulations/zero_sum_open_reservoir.py)、[`simulations/zero_sum_open_reservoir.md`](zero_sum_open_reservoir.md)、[`simulations/zero_sum_periodic_destruction.py`](simulations/zero_sum_periodic_destruction.py)、[`simulations/zero_sum_periodic_destruction.md`](zero_sum_periodic_destruction.md)
-**v0.5 定位**：`D191` 的零层是满足零约束的动态状态层；本文新增的 $\mathcal Z\_\ast$ 是已经闭合的振动模式停驻其上的全局静态记录层。前者承载运动，后者承载完成的闭合结果。本文不修改 `U1-U4+C1`，不新增 `U5`。
+**v0.5 定位**：`D191` 的零层是满足零约束的动态状态层；本文新增的 $\mathcal Z\_\ast$ 是已经闭合的振动模式停驻其上的全局静态记录层。前者承载运动，后者承载完成的闭合结果。
 
 $$
 
@@ -705,7 +705,5 @@ $$
 
 $$
 
-这不修改 `U1-U4+C1`，不新增 `U5`。
-
-**后续状态｜`D222` 把单层历史改为有限记忆。**  
+**后续状态｜`D222` 把单层历史改为有限记忆。**
 `D222` 允许 $E\_i,P\_i,\mathcal Z\_\ast$ 都有亚层，并规定：活动亚层在局部寿命到达时全清；历史层只保留最高两层；零层压缩不能合并不同闭合类标签。局部寿命 $\tau\_i$ 可以随区域不同，因此本文的单一全局周期只是最小版本，不是必需结构。

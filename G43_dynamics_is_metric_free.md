@@ -5,7 +5,7 @@
 **核验**：[`G43_check.py`](G43_check.py) —— **独立实断言 39 / 结论行 0 / 不符 0**，退出码 `0`
 
 $$
-\ \text{动力学（G29–G35）不含任何度规；把度规问题搁置不影响它的任何结论。}\ 
+\ \text{动力学（G29–G35）不含任何度规；把度规问题搁置不影响它的任何结论。}\
 $$
 
 ---
@@ -73,7 +73,7 @@ $$
 | 选择率 | **计数比** | $\log M/T$ |
 
 $$
-\ \text{不需要长度单位}\ \Longrightarrow\ \textbf{不需要度规}。\ 
+\ \text{不需要长度单位}\ \Longrightarrow\ \textbf{不需要度规}。\
 $$
 
 （[`G31`](G31_characteristic_speed_and_saturation.md) 已据本文补上**显式单位说明**：把格距换成物理长度才会用到度规。）
@@ -94,11 +94,11 @@ $$
 ## §6 结论
 
 $$
-\ \text{把度规问题（} \phi \text{ 的来源）搁置}\ \Longrightarrow\ \text{不影响动力学的任何结论。}\ 
+\ \text{把度规问题（} \phi \text{ 的来源）搁置}\ \Longrightarrow\ \text{不影响动力学的任何结论。}\
 $$
 
 $$
-\ \text{回到最初目标「推出零和宇宙的动力学」：}\textbf{已经达成}。\ 
+\ \text{回到最初目标「推出零和宇宙的动力学」：}\textbf{已经达成}。\
 $$
 
 （那个目标就是 **G30–G36**；其完成审计见 [`G36`](G36_objective_completion_audit.md)。）

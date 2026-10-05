@@ -1,9 +1,9 @@
 # R41 · 维数无关性：纠缠机制不含空间维度量
 
-**日期**：2026-10-03  
-**性质**：**更正（`R38`／`R40` 的注脚）＋ 命题＋数值检验**。  
-**依赖**：[`R38`](R38_entanglement_from_shared_closure_origin.md)、[`R39`](R39_history_layer_site_blindness.md)、[`R40`](R40_seeding_does_not_inject_site.md)、[`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md)、[`G59`](G59_exact_cone_vs_effective_cone.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R41_dimension_independence_probe.py`](R41_dimension_independence_probe.py) → [`R41_dimension_independence_results.json`](R41_dimension_independence_results.json)。  
+**日期**：2026-10-03
+**性质**：**更正（`R38`／`R40` 的注脚）＋ 命题＋数值检验**。
+**依赖**：[`R38`](R38_entanglement_from_shared_closure_origin.md)、[`R39`](R39_history_layer_site_blindness.md)、[`R40`](R40_seeding_does_not_inject_site.md)、[`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md)、[`G59`](G59_exact_cone_vs_effective_cone.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R41_dimension_independence_probe.py`](R41_dimension_independence_probe.py) → [`R41_dimension_independence_results.json`](R41_dimension_independence_results.json)。
 **核验**：[`R41_check.py`](R41_check.py)。
 
 $$

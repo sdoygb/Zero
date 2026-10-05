@@ -1,8 +1,8 @@
 # R49 · 让 $\pi$ 非等差：**精确判据、3 块不可能、4 块可构造**
 
-**日期**：2026-10-03  
-**性质**：**判据导出（精确）＋ 一条不可能定理 ＋ 显式构造**。执行 [`R48`](R48_exact_cone_and_effective_cone.md) §5 提出的量子侧目标（"让 $\pi$ 非等差"），把 [`R35`](R35_type_iii_classification.md) 的数值指纹与 [`R42`](R42_explicit_pi_rotation_class.md)／[`R43`](R43_pi_two_layer_construction.md) 的双侧约束**合并成一个有限可判定的条件**。  
-**依赖**：[`R35`](R35_type_iii_classification.md)、[`R42`](R42_explicit_pi_rotation_class.md)、[`R43`](R43_pi_two_layer_construction.md)、[`R44`](R44_survival_vs_contextuality_no_go.md)、[`R37`](R37_kcbs_contextuality.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G27`](G27_purification_attempt.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`STATUS`](STATUS.md)。  
+**日期**：2026-10-03
+**性质**：**判据导出（精确）＋ 一条不可能定理 ＋ 显式构造**。执行 [`R48`](R48_exact_cone_and_effective_cone.md) §5 提出的量子侧目标（"让 $\pi$ 非等差"），把 [`R35`](R35_type_iii_classification.md) 的数值指纹与 [`R42`](R42_explicit_pi_rotation_class.md)／[`R43`](R43_pi_two_layer_construction.md) 的双侧约束**合并成一个有限可判定的条件**。
+**依赖**：[`R35`](R35_type_iii_classification.md)、[`R42`](R42_explicit_pi_rotation_class.md)、[`R43`](R43_pi_two_layer_construction.md)、[`R44`](R44_survival_vs_contextuality_no_go.md)、[`R37`](R37_kcbs_contextuality.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G27`](G27_purification_attempt.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`STATUS`](STATUS.md)。
 **探针**：[`R49_pi_nonarithmetic_probe.py`](R49_pi_nonarithmetic_probe.py) → [`R49_pi_nonarithmetic_results.json`](R49_pi_nonarithmetic_results.json)。
 
 $$
@@ -39,7 +39,7 @@ $$
 | 9 | 从 Zero **原生生成**该形状的 $\pi$ | **仍未做**（本轮只做判据与构造） | §5 |
 
 $$
-\ \text{关闭的是"能不能"；未关闭的是"从哪来"。}\ 
+\ \text{关闭的是"能不能"；未关闭的是"从哪来"。}\
 $$
 
 ---
@@ -85,7 +85,7 @@ $$
 **定理 (R49-2)**：$k\le3$ 时，$\text{rank}\le k-1\le2$，而稠密要求 $k-1$。故
 
 $$
-\ \text{任何 3 块轮廓（含全部 3 维归约）}\textbf{永远是 }III_\lambda\text{，不可能是 }III_1。\ 
+\ \text{任何 3 块轮廓（含全部 3 维归约）}\textbf{永远是 }III_\lambda\text{，不可能是 }III_1。\
 $$
 
 **与 `R42` §3 的对照**：`R42` 的表里 $L=2,4,6,8$ 全给"秩 1"，当时写的是"块越多、$\lambda\_1$ 越小 ⇒ 语境性越弱"；本定理给出**机制**：
@@ -145,7 +145,7 @@ $$
 **随机搜索**（4 块，权重 $1..300$，$1.2\times10^5$ 组）：秩 $=3$ 的 $69116$ 个（58%），其中语境 $422$ 个；最优 $S\_{\max}=2.2037$（$w=(2,246,1,5)$）。
 
 $$
-\ \textbf{结论：4 块上语境性与稠密性不互斥，且可行域不小——}\text{前提是尾部必须"素数丰富"。}\ 
+\ \textbf{结论：4 块上语境性与稠密性不互斥，且可行域不小——}\text{前提是尾部必须"素数丰富"。}\
 $$
 
 ---

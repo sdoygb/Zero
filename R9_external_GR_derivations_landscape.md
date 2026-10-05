@@ -1,8 +1,8 @@
 # R9 · 外部“恢复 Einstein 方程或 GR”路线再排序
 
-**日期**：2026-10-02  
-**范围**：2015-2026 年主流可核验工作，另保留 Jacobson 1995 作为历史控制。  
-**性质**：外部路线审计，不修改 `STATUS.md`，不把外部论文的已有证明算作 Zero 层新增定理。  
+**日期**：2026-10-02
+**范围**：2015-2026 年主流可核验工作，另保留 Jacobson 1995 作为历史控制。
+**性质**：外部路线审计，不修改 `STATUS.md`，不把外部论文的已有证明算作 Zero 层新增定理。
 **核验**：[`R9_check.py`](R9_check.py)。
 
 $$
@@ -314,7 +314,7 @@ Alonso-Serrano, Liska, PRD 102, 104056 (2020), [DOI](https://doi.org/10.1103/Phy
 
 ### 4.10 Gorard 2020 与 Wolfram 2020
 
-Gorard, Complex Systems 29(2), 599-674 (2020), [DOI](https://doi.org/10.25088/ComplexSystems.29.2.599), [arXiv:2004.14810](https://arxiv.org/abs/2004.14810)。  
+Gorard, Complex Systems 29(2), 599-674 (2020), [DOI](https://doi.org/10.25088/ComplexSystems.29.2.599), [arXiv:2004.14810](https://arxiv.org/abs/2004.14810)。
 Wolfram, Complex Systems 29(2), 107-536 (2020), [DOI](https://doi.org/10.25088/ComplexSystems.29.2.107), [arXiv:2004.08210](https://arxiv.org/abs/2004.08210)。
 
 **外部强度**：离散超图、因果图、离散 Lorentz 和离散 Ricci 约束非常完整，是离散 GR 路线的代表。

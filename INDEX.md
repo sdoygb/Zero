@@ -1,6 +1,6 @@
 # INDEX · 零和宇宙文档总清单
 
-**生成方式**：由文件系统实际内容生成（标题取自各文件首行），非手写。  
+**生成方式**：由文件系统实际内容生成（标题取自各文件首行），非手写。
 **核验**：[`INDEX_check.py`](INDEX_check.py) —— 无孤儿文档 + 计数一致 + 范围声明。
 
 ---
@@ -59,7 +59,6 @@
 
 ### 0.5.1 术语迁移档案（非理论文档）
 
-[`A2Z_MIGRATION_RECORD.md`](A2Z_MIGRATION_RECORD.md)：记录 2026-10-03 的 A0–A5 → Z0 条款术语迁移（用户裁决、迁移红线、事故与纪律）。**家谱映射的权威位置是 [`G0`](G0_bottom_layer_and_derivation_route.md) §0.1**；回归闸门 [`Z0_axiom_hygiene_check.py`](Z0_axiom_hygiene_check.py)。
 
 `R49` 执行 `R48` §5 的量子侧目标（让 $\pi$ 非等差），把 `R35` 的类型指纹与 `R42`/`R43` 的双侧约束合并成**一个有限可判定的条件**：**判据**：块权重的对数比生成子群 $G$ 稠密 $\iff$ 相邻比的对数在 $\mathbb Q$ 上线性无关 $\iff$ **素数指数差向量秩 $=k-1$**（有限、可判定）。**不可能**：$k\le3$ ⇒ 秩 $\le2$ ⇒ 任何 3 块轮廓（含 3 维归约）永远是 $III\_\lambda$——这也解释了 `R42` 表里「$\lambda\_1$ 越大秩越小」不是巧合。**可行**：4 块上语境性（$\lambda\_1>0.723607$）与稠密性（秩 3）**解耦**，显式解 $(10^4,2,3,5)$ 给 $S\_{\max}=2.2349$、$(10^3,1,3,15)$ 给 $2.2188$、$(2,246,1,5)$ 给 $2.2037$。**新障碍**：旋转类的轨道权重全是 2 的幂 ⇒ 秩恒为 1 ⇒ **旋转类恒 $III\_\lambda$**（除非 $L$ 含非 2 素因子，而 $L=12$ 已被 `R31.1` 排除）。未做：从 Zero 原生生成该形状的 $\pi$。核验：`R49_check.py`。\n
 `R50` 立一条**推导纪律**并据此会诊全库矛盾：**每个量、定理、常数都带层指标 $\ell$**，断言写成 $P\_\ell(v)$ 才完整——默认解释不是矛盾而是**层不同**，只有**同层相反**才是真矛盾。层：L0 底层（`Z0`/`Z1`–`Z5`）／L1 历史层（$\mathcal P$）／L1′ 全局闭合类层（$\mathcal Z\_\ast$）／L2 演化层（活动层）／$\mathcal R$ 读出面（$\pi,\omega,K$）。**会诊 10 条**：真矛盾 1（`L=8`，已由 `R32.2` 撤回）、符号碰撞 3（$K$／$N$／局部编号）、其余 6 条全是**层坍塌**——例如「不设概率」(L0) vs「必须靠概率」(L2/L3)、「$B$ 不可导出」(L0) vs「$B=4$ 钉住」($\mathcal R$)。并把 `R48` 的 $\varepsilon(B)$ 从单侧公式**重算为双侧定律**：$B<4$ 指数衰减、$B=4$ 幂律、$B>4$ 指数增长被 **L2 容量饱和**截断（实测斜率 $\approx0$）。三条操作规则：①断言带层指标；②比较前对齐层；③**层坍塌优先于改结论**。**纪律 ① 已落地**：6 条层坍塌＋3 条符号碰撞已逐条补层指标（`G28`／`G73`／`G59`／`R48`／`Z1`／`Z17`／`R32`／`G56`／`G61`／`G32`／`G72`／`G33`／`Z0` §0.5），只加指标不改结论，落地后 170/170 通过。核验：`R50_check.py`。\n
@@ -165,7 +164,7 @@
 | **`G*`** | 本会话独立推导（自底层条款（Z0 条款 ＋ Z1–Z5 定理）到 GR） | **零和宇宙** | 91 篇 + 89 个核验脚本 |
 | **`D2xx`** | 零层弧（D210–D259） | **零和宇宙**（其中 8 篇含非原生桥接） | 50 篇 |
 | **`zero_sum_*`** | 零和宇宙的仿真验证笔记与程序 | **零和宇宙** | 11 篇 + 10 个脚本 |
-| **`Z*`** | **基础层**：单一公理「零不断乱动」＋ 取代 A1–A5（历史命名）＋ Zero 结构扩展 | **零和宇宙** | 18 篇 + 18 个核验脚本 |
+| **`Z*`** | **基础层**：单一公理「零不断乱动」＋ 取代 A1–A5＋ Zero 结构扩展 | **零和宇宙** | 18 篇 + 18 个核验脚本 |
 | `D1–D209` | 混合语料 | **不属零和宇宙** | **0**（未拷入） |
 
 $$
@@ -230,15 +229,15 @@ $$
 
 ---
 
-## 4 `Z*` 基础层：单一公理与取代 A1–A5（历史命名）（18 篇 ＋ 18 个核验脚本）
+## 4 `Z*` 基础层：单一公理与取代 A1–A5（18 篇 ＋ 18 个核验脚本）
 
 **读序**：本层在 Zero 原始层**之上**、G 推导系列**之前**。它把 Zero 的架构确立为 Z0 条款（公理只有 Z0），并把 A1–A5 降为定理。
 
 | 文档 | 标题 |
 |:--|:--|
 | [`Z0_zero_never_rests_single_axiom.md`](Z0_zero_never_rests_single_axiom.md) | 零不断乱动：**单一公理**与 Z1–Z5 的导出 |
-| [`Z1_zero_layer_as_the_foundation.md`](Z1_zero_layer_as_the_foundation.md) | Zero 层作为基础：A1–A5（历史命名）的**取代**与 Zero 结构的**扩充** |
-| [`Z2_zero_to_gr_direct_route.md`](Z2_zero_to_gr_direct_route.md) | 从 Zero **直连** GR：免去 A0–A5（历史命名）桥接的路线与两处残余输入 |
+| [`Z1_zero_layer_as_the_foundation.md`](Z1_zero_layer_as_the_foundation.md) | Zero 层作为基础：A1–A5的**取代**与 Zero 结构的**扩充** |
+| [`Z2_zero_to_gr_direct_route.md`](Z2_zero_to_gr_direct_route.md) | 从 Zero **直连** GR：免去 A0–A5桥接的路线与两处残余输入 |
 | [`Z3_i2a_dimension_drift_verdict.md`](Z3_i2a_dimension_drift_verdict.md) | I2a 的维数漂移判定：**固有**还是**截断假象** |
 | [`Z4_p1_weight_scaling_and_shape.md`](Z4_p1_weight_scaling_and_shape.md) | P1：G40 权重在细化下的标度与形状 —— I2a 到底缺什么 |
 | [`Z5_finite_k_locality_escape.md`](Z5_finite_k_locality_escape.md) | 有限 $k$：逃出三角困境，与三笔代价（其中一笔是新账） |
@@ -321,18 +320,18 @@ $$
 
 ### 条款精简
 
-- [`G19_axiom_reduction.md`](G19_axiom_reduction.md) — 条款精简：6 条 A 条款 → 3 条独立定理（A0–A5 历史命名）
+-  — 条款精简：6 条 A 条款 → 3 条独立定理
 
 ### 语料、动力学与概率
 
 - [`G20_axiom_audit_extended_to_zero_and_D.md`](G20_axiom_audit_extended_to_zero_and_D.md) — 把 Z0 条款审计扩展到 zero/D 语料（原题：公理审计）
 - [`G21_do_the_layers_help_derive_GR.md`](G21_do_the_layers_help_derive_GR.md) — 层级结构对推 GR 有帮助吗？它能被严格导出吗？
 - [`G22_correction_sublayers_and_local_layers.md`](G22_correction_sublayers_and_local_layers.md) — 修正 G21：补上亚层（stratification）与局部／全局层结构
-- [`G23_zero_layer_structure_inventory.md`](G23_zero_layer_structure_inventory.md) — 零层基础结构清点：Z0 条款（A0–A5 历史命名）漏了什么
+- [`G23_zero_layer_structure_inventory.md`](G23_zero_layer_structure_inventory.md) — 零层基础结构清点：Z0 条款漏了什么
 - [`G24_age_structure_and_its_conflicts.md`](G24_age_structure_and_its_conflicts.md) — 年龄结构：零层弧最大簇的完整结构，以及它与 I2a / I8 的冲突
 - [`G25_age_to_geometry_channel_is_obstructed.md`](G25_age_to_geometry_channel_is_obstructed.md) — 年龄 → 几何通道被堵住：D234/D235/D236 与四条独立的 no-go
 - [`G26_scope_and_non_native_structures.md`](G26_scope_and_non_native_structures.md) — 范围与「非原生结构」清点
-- [`G27_purification_attempt.md`](G27_purification_attempt.md) — 净化尝试：7 类非原生结构里 6 类可从 Z0 条款（A0–A5 历史命名）重新导出
+- [`G27_purification_attempt.md`](G27_purification_attempt.md) — 净化尝试：7 类非原生结构里 6 类可从 Z0 条款重新导出
 - [`G28_dynamics_audit.md`](G28_dynamics_audit.md) — 动力学审计：零和宇宙的动力学建起来没有？
 - [`G29_probability_as_derived_not_postulated.md`](G29_probability_as_derived_not_postulated.md) — 概率作为导出量：计数测度的粗粒化推前（不增扩充条款）
 - [`G30_memory_kernel_test.md`](G30_memory_kernel_test.md) — 记忆核检验：推前动力学是**非马尔可夫**的
@@ -544,9 +543,9 @@ python3 ledger_sync.py --all      # 忽略缓存，全部重跑
 | 1 | `zero_sum_*`（见 §3 的 7 篇笔记） | **Zero 原始层**：先有仿真，后有公理 |
 | 2 | [`Z0`](Z0_zero_never_rests_single_axiom.md) | **唯一公理**：零不断乱动（三款各买一件东西） |
 | 3 | [`Z1`](Z1_zero_layer_as_the_foundation.md) | 取代 A1–A5 ＋ Zero 结构的扩充（含散度字典） |
-| 4 | [`Z2`](Z2_zero_to_gr_direct_route.md) | **直连路线**：从 Zero 到 GR（免去 A0–A5（历史命名）桥接；标出两处残余输入） |
-| 5 | [`G0`](G0_bottom_layer_and_derivation_route.md) | **底层条款表**（Z0 条款 ＋ Z1–Z5 定理；A0–A5 历史命名）＋ 路线 ＋ 账本 I1–I12 |
-| 6 | [`G19`](G19_axiom_reduction.md) | 条款精简：6 条 A 条款 → 3 条独立定理（公理只有 Z0） |
+| 4 | [`Z2`](Z2_zero_to_gr_direct_route.md) | **直连路线**：从 Zero 到 GR（免去 A0–A5桥接；标出两处残余输入） |
+| 5 | [`G0`](G0_bottom_layer_and_derivation_route.md) | **底层条款表**＋ 路线 ＋ 账本 I1–I12 |
+| 6 |  | 条款精简：6 条 A 条款 → 3 条独立定理（公理只有 Z0） |
 | 7 | [`G1`](G1_derivations_from_the_bottom_layer.md) → [`G8`](G8_dimension_selection.md) | 几何骨架 → 维数 |
 | 8 | [`G13`](G13_foliation_and_lorentz_invariance_gap.md) → [`G15`](G15_bare_ax3_has_no_characteristic_speed.md) | 叶层与洛伦兹不变性（含 no-go） |
 | 9 | [`G16`](G16_repair_audit_without_new_axioms.md) | 不增扩充条款清算：**主定理存活** |

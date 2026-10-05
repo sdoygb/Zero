@@ -5,7 +5,7 @@
 **核验**：[`G53_check.py`](G53_check.py) —— **独立实断言 6 / 结论行 17 / 不符 0**，退出码 `0`
 
 $$
-\ \text{配对（}N\to N/2\text{）就是格距加倍（}a\to2a\text{）} \Longrightarrow \textbf{两者是同一条轴}。\ 
+\ \text{配对（}N\to N/2\text{）就是格距加倍（}a\to2a\text{）} \Longrightarrow \textbf{两者是同一条轴}。\
 $$
 
 ---
@@ -30,7 +30,7 @@ $$
 **核验**：正向 RG 一步把 $N$ 从 $64$ 变成 $32$ ✓ 正是配对一个 ✓
 
 $$
-\ \text{G52 的粗粒化轴}\ =\ \text{G47 的细化轴}\ \text{（方向相反）}。\ 
+\ \text{G52 的粗粒化轴}\ =\ \text{G47 的细化轴}\ \text{（方向相反）}。\
 $$
 
 **所以**：
@@ -56,7 +56,7 @@ $$\underbrace{g_1}_{},\ c_1,\ \underbrace{g_2}_{},\ c_2,\ \ldots,\ c_{n-1},\ \un
 | 2 | 64 | $3.5\times10^{-3}$ | $\sim10^{-7}$ |
 
 $$
-\ \text{逆向失配}\ 10^{-3}\text{–}10^{-2}\ \textbf{远大于}\ \text{正向}\ 10^{-7} \Longrightarrow \textbf{逆问题病态}。\ 
+\ \text{逆向失配}\ 10^{-3}\text{–}10^{-2}\ \textbf{远大于}\ \text{正向}\ 10^{-7} \Longrightarrow \textbf{逆问题病态}。\
 $$
 
 ---
@@ -70,7 +70,7 @@ $$
 | 3 | 128 | 7.9370 | $8.34\times10^{6}$ |
 
 $$
-\ \text{块内电导爆炸到 }10^{10}\ \Longrightarrow\ \textbf{逆向（细化）流发散}\ \Longrightarrow\ \textbf{没有 UV 不动点}。\ 
+\ \text{块内电导爆炸到 }10^{10}\ \Longrightarrow\ \textbf{逆向（细化）流发散}\ \Longrightarrow\ \textbf{没有 UV 不动点}。\
 $$
 
 ---
@@ -85,7 +85,7 @@ $$
 | 0.70 | 12.460 | 2.723 | 3.481 | 6.883 | **11.443** |
 
 $$
-\ \text{形状距离}\textbf{并非单调不增} \Longrightarrow \text{只有 CV 平台，没有真正的吸引不动点}。\ 
+\ \text{形状距离}\textbf{并非单调不增} \Longrightarrow \text{只有 CV 平台，没有真正的吸引不动点}。\
 $$
 
 ---
@@ -100,7 +100,7 @@ $$
 | 只有 CV 平台、无吸引不动点 | §4 |
 
 $$
-\ \text{I2a（连续极限是否存在）}\textbf{仍未解决}。\ 
+\ \text{I2a（连续极限是否存在）}\textbf{仍未解决}。\
 $$
 
 $$
@@ -117,7 +117,7 @@ $$
 | **本轮（保谱逆向流）** | **发散** ✗ |
 
 $$
-\ \textbf{换用保谱粗粒化（G52）之后，细化方向的结论没有改变。}\ 
+\ \textbf{换用保谱粗粒化（G52）之后，细化方向的结论没有改变。}\
 $$
 
 **所以 G52 的不动点是 IR 侧的，它不能救 I2a** ✗

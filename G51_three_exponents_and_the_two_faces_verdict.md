@@ -5,7 +5,7 @@
 **核验**：[`G51_check.py`](G51_check.py) —— **独立实断言 28 / 结论行 23 / 不符 0**，退出码 `0`
 
 $$
-\ \text{我的构造【没有】产生谱维数的跑动} \Longrightarrow \text{「两个脸孔」作为}\textbf{定量}\text{现象未实现}。\ 
+\ \text{我的构造【没有】产生谱维数的跑动} \Longrightarrow \text{「两个脸孔」作为}\textbf{定量}\text{现象未实现}。\
 $$
 
 ---
@@ -43,7 +43,7 @@ $$
 | 6 | 1.50055 | 1.31430 | 1.26596 | **3.82%** |
 
 $$
-\ \text{相对差}\textbf{单调递减}（8.24\%\to4.85\%\to3.82\%） \Longrightarrow \text{恒等式在}\textbf{连续极限意义下}\text{成立。}\ 
+\ \text{相对差}\textbf{单调递减}（8.24\%\to4.85\%\to3.82\%） \Longrightarrow \text{恒等式在}\textbf{连续极限意义下}\text{成立。}\
 $$
 
 **有限尺寸下偏差 3.8–8.2%，如实登记，不作定量使用。**
@@ -76,7 +76,7 @@ $$
 **也都单调衰减** ⟹ **没有宽度不动点** ✗
 
 $$
-\ \text{两种粗粒化都只有}\textbf{平凡不动点} \Longrightarrow \text{粗粒化轴上没有非平凡不动点} \Longrightarrow \text{渐近安全式图景}\textbf{未实现}。\ 
+\ \text{两种粗粒化都只有}\textbf{平凡不动点} \Longrightarrow \text{粗粒化轴上没有非平凡不动点} \Longrightarrow \text{渐近安全式图景}\textbf{未实现}。\
 $$
 
 ---
@@ -94,7 +94,7 @@ $$
 | 24 | 3.201 | 0.0927 | −0.0088 |
 
 $$
-\ \text{展布仅 }3.2\text{ 倍、变异系数 }0.09\text{、与层级权}\textbf{零相关} \Longrightarrow \textbf{有界、非层级}。\ 
+\ \text{展布仅 }3.2\text{ 倍、变异系数 }0.09\text{、与层级权}\textbf{零相关} \Longrightarrow \textbf{有界、非层级}。\
 $$
 
 ---
@@ -109,7 +109,7 @@ $$
 | 16 | 2.38666 | 1.27984 | 1.04% |
 
 $$
-\ \text{指数随长度轴的变化}\ \textbf{<3\%}\ \Longrightarrow\ \text{没有跑动}。\ 
+\ \text{指数随长度轴的变化}\ \textbf{<3\%}\ \Longrightarrow\ \text{没有跑动}。\
 $$
 
 **而 $N$ 轴的漂移是有限尺寸效应**（$d\_s$：1.271 → 1.293 → 1.314），不是物理跑动。
@@ -125,7 +125,7 @@ $$
 | **层级 $c=3^{-\text{level}}$** | **1.82838** | **1.81815** | **+40.6%** |
 
 $$
-\ \text{有界调制}\to\text{影响 }<1\%;\qquad \textbf{层级调制}\to\text{影响 }+40.6\%。\ 
+\ \text{有界调制}\to\text{影响 }<1\%;\qquad \textbf{层级调制}\to\text{影响 }+40.6\%。\
 $$
 
 ---
@@ -139,7 +139,7 @@ $$
 | 而**层级**几何本可大幅改变指数（+40.6%） | §4 |
 
 $$
-\ \text{我的构造}\textbf{没有}\text{产生谱维数的跑动} \Longrightarrow \text{「两个脸孔」作为定量现象}\textbf{未实现}。\ 
+\ \text{我的构造}\textbf{没有}\text{产生谱维数的跑动} \Longrightarrow \text{「两个脸孔」作为定量现象}\textbf{未实现}。\
 $$
 
 ---
@@ -157,7 +157,7 @@ $$
 **而 $d\_f,d\_w,d\_s$ 是【拓扑的】全局标度量** $\Longrightarrow$ **对几何不敏感**。
 
 $$
-\ \text{负面结论}\textbf{被自己的定理解释}，\text{不是异常。}\ 
+\ \text{负面结论}\textbf{被自己的定理解释}，\text{不是异常。}\
 $$
 
 ---

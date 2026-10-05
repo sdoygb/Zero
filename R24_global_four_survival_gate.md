@@ -1,8 +1,8 @@
 # R24 · 全局四维生存峰门槛：先去掉 GR 假设
 
-**日期**：2026-10-02  
-**性质**：路线纠正。本文把 `GR-LB` 明确登记为临时脚手架，不把它算作四维生存优势的来源；最终目标是先在 Zero／演化层内证明全局 `argmax_D S_D={4}`，再撤掉 GR 假设。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`G73`](G73_B_is_an_input.md)、[`R3`](R3_dimension_selection.md)、[`R23`](R23_dimension_descendant_selection.md)、[`zero_sum_geometry_probe.py`](zero_sum_geometry_probe.py)。  
+**日期**：2026-10-02
+**性质**：路线纠正。本文把 `GR-LB` 明确登记为临时脚手架，不把它算作四维生存优势的来源；最终目标是先在 Zero／演化层内证明全局 `argmax_D S_D={4}`，再撤掉 GR 假设。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`G73`](G73_B_is_an_input.md)、[`R3`](R3_dimension_selection.md)、[`R23`](R23_dimension_descendant_selection.md)、[`zero_sum_geometry_probe.py`](zero_sum_geometry_probe.py)。
 **后续对抗审计**：[`R26`](R26_pair_carrier_reduction_no_go.md)。
 **核验**：[`R24_check.py`](R24_check.py)。
 
@@ -59,7 +59,7 @@ $$
 \qquad\text{(R24-2)}
 $$
 
-且 (R24-2) 的证明不得使用 (R24-1)。  
+且 (R24-2) 的证明不得使用 (R24-1)。
 若只在 `D≥4` 上证明四维排名第一，只能记为：
 
 $$
@@ -110,7 +110,7 @@ $$
 
 ### 2.2 当前事故
 
-因此，`PROD-SURV` 不能证明 (R24-2)。它只能与 `GR-LB` 合起来证明 (R24-3)。  
+因此，`PROD-SURV` 不能证明 (R24-2)。它只能与 `GR-LB` 合起来证明 (R24-3)。
 若把它写成“四维生存率最高”，就遗漏了隐含条件 `D≥4`，这正是本轮需要纠正的口径。
 
 $$
@@ -167,7 +167,7 @@ $$
 
 在窗口内，$F\_D$ 先升后降，故整数全局峰唯一为 $D=4$；边界分别与 $D=3$ 或 $D=5$ 并列。$\square$
 
-这条定理满足“先证四维生存率比较高”的数学形式，而且没有使用 GR。  
+这条定理满足“先证四维生存率比较高”的数学形式，而且没有使用 GR。
 但它仍不是 Zero 原生证明，因为 `DIM-COST` 给出的 $q$ 目前是具名输入。
 
 ---
@@ -216,7 +216,7 @@ g_D>0,
 \qquad\text{(R24-12)}
 $$
 
-其中 $g\_D$ 代表维数之间的兼容性、自催化网络或多方向共同闭合带来的增益。  
+其中 $g\_D$ 代表维数之间的兼容性、自催化网络或多方向共同闭合带来的增益。
 要在不使用 GR 的情况下得到全局四维峰，至少需要：
 
 $$
@@ -257,7 +257,7 @@ q=\frac59\in\left(\frac12,\frac35\right),
 \qquad\text{(R24-17)}
 $$
 
-因此 `DIM-INTERACT` 不再是一个泛名备选，而是具体化为 `PAIR-CARRIER`。它仍未关闭：从 Zero 构造“为什么继承身份计方向对而不是单方向”这一物理桥，记为 `PAIR-CARRIER-DER`，当前是**开放**项。  
+因此 `DIM-INTERACT` 不再是一个泛名备选，而是具体化为 `PAIR-CARRIER`。它仍未关闭：从 Zero 构造“为什么继承身份计方向对而不是单方向”这一物理桥，记为 `PAIR-CARRIER-DER`，当前是**开放**项。
 [`R26`](R26_pair_carrier_reduction_no_go.md) 又把它拆为至少六项：`DIR-DICT-BETA`、`PAIR-GRAPH-KD`、`PAIR-ID-EDGE`、`PAIR-COUNT-1`、`PAIR-COST-FACTORIZATION`、`PAIR-NO-EXTRA-MULT`。其中连通性不推出 `K_D`，零和字典 `D=m-1` 会把 `q=5/9` 的峰移到 `D=3`，而成对重数也不自动给出 `q^D` 代价。
 
 ---

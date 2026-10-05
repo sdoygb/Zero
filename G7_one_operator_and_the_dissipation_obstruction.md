@@ -1,6 +1,6 @@
 # G7 · 同一算子的两个后果：结构性耦合，与它制造的耗散障碍
 
-**日期**：本轮 · **依赖**：Z0 条款（A0–A5 历史命名）；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 3；[`G5_stress_lift_and_conservation.md`](G5_stress_lift_and_conservation.md) 引理 18、23；[`G6_geodesy_of_the_coarse_grained_flow.md`](G6_geodesy_of_the_coarse_grained_flow.md) 引理 24、27。不使用任何 `D*` 结论。
+**日期**：本轮 · **依赖**：Z0 条款；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 3；[`G5_stress_lift_and_conservation.md`](G5_stress_lift_and_conservation.md) 引理 18、23；[`G6_geodesy_of_the_coarse_grained_flow.md`](G6_geodesy_of_the_coarse_grained_flow.md) 引理 24、27。不使用任何 `D*` 结论。
 **核验**：[`G7_check.py`](G7_check.py) —— **独立实断言 21 / 结论行 0 / 不符 0**，退出码 `0`
 
 **等级标签：**【导出】/【线索，未建立】。
@@ -54,7 +54,7 @@ $$
 则热方程 $\partial\_\tau\rho=-L\rho$ 正是 $F$ 的（$L^2$ 度量下的）梯度流，且
 
 $$
-\ \frac{dF}{d\tau}=-\rho^{\mathsf T}L^2\rho=-|L\rho|^2\le0\ 
+\ \frac{dF}{d\tau}=-\rho^{\mathsf T}L^2\rho=-|L\rho|^2\le0\
 $$
 
 **核验.**
@@ -90,7 +90,7 @@ $$
 有终端汇 $D$ 时
 
 $$
-\ \partial_\tau\rho+\nabla\!\cdot\!j=-\sigma,\qquad \sigma\ge0\ 
+\ \partial_\tau\rho+\nabla\!\cdot\!j=-\sigma,\qquad \sigma\ge0\
 $$
 
 **核验.** 体荷单调下降并泄漏到汇（$97876\to80242$）。
@@ -110,7 +110,7 @@ $$
 **核验（sympy，同一 Rindler 度规）.** $\nabla^aG\_{ab}=0$ 逐分量成立，同时非测地尘埃源的 $\nabla^aT\_{ab}\ne0$（$a\_b=(0,1/x)$）。
 
 $$
-\ \text{Lovelock 判据的 }(C')\text{ 要求源精确守恒；耗散型宏观扩散流不满足}.\ 
+\ \text{Lovelock 判据的 }(C')\text{ 要求源精确守恒；耗散型宏观扩散流不满足}.\
 $$
 
 **这就是线索制造的障碍。** 线索说"几何与物质是同一个算子"，而该算子的动力学是**耗散**的；耗散源不能驱动 Einstein 形式。

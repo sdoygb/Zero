@@ -1,8 +1,8 @@
 # D257 · 有效电阻度量、交换权重固定点与局部性缺口
 
 **日期**：本轮对话 · **依赖**：`AXIOMS.md` §0.3、§1、§4、`D193`、`D207`、`D214`、`D215`、`D248`、`D250`、`D251`、`D254`、`D255`、`D256`
-**测试模型**：加权图 Laplacian、Moore-Penrose 逆、有效电阻距离、经典多维标度嵌入、四顶点完全图、正四面体、旗复形、共享面胶合、交换权重固定点、远端边扰动、尺度重标度与三维截断。它们不是 `U1-U4` 的推论。
-**预先结构**：有限加权支持图、正交换权重、连通分量、图的完全距离补全、旗复形或三维骨架、全局尺度与连续极限拓扑。它们不是 `U1-U4` 的推论。
+**测试模型**：加权图 Laplacian、Moore-Penrose 逆、有效电阻距离、经典多维标度嵌入、四顶点完全图、正四面体、旗复形、共享面胶合、交换权重固定点、远端边扰动、尺度重标度与三维截断。
+**预先结构**：有限加权支持图、正交换权重、连通分量、图的完全距离补全、旗复形或三维骨架、全局尺度与连续极限拓扑。
 **核验**：[`verify/d257_resistance_metric_fixed_point_and_locality_gap.py`](verify/d257_resistance_metric_fixed_point_and_locality_gap.py) —— **通过 / 不符**见运行输出
 **v0.5 定位**：D256 已证明内禀边长可以替代顶点嵌入，但复形与边长仍是输入。本文检验一个更激进的最小路线：只用支持图的交换权重 $K\_{ij}$，构造加权 Laplacian，再把有效电阻距离当作内禀距离。结论是，该路线能条件生成一个全局欧氏度量与旗复形候选；单位权重四顶点完全图精确给正四面体轮廓，并且在取 $c=576$ 时满足 D256 的 P1 固定点。更严重的是，有效电阻是全局量，远端边改变局部距离，且一般图没有自然三维复形、正权重固定点或局部收敛定理。
 
@@ -50,8 +50,6 @@ A_K=A_{\rm P1}
 $$
 
 本文登记恢复层结构 `R-Z-EFFECTIVE-RESISTANCE-METRIC`、`R-Z-FLAG-COMPLEX-FROM-GRAPH`、`R-Z-RESISTANCE-FACE-GLUING`、`R-Z-EXCHANGE-METRIC-FIXED-POINT`、正例 `R-Z-K4-P1-FIXED-POINT` 与缺口 `R-Z-RESISTANCE-METRIC-LOCALITY-GAP`、`R-Z-DIMENSION-TRUNCATION-GAP`。
-
-本文不修改 `U1-U4+C1`，不新增 `U5`。
 
 ---
 
@@ -131,7 +129,7 @@ $$
 
 $$
 
-\text{正交换权重给半正定 Laplacian，零模正好是常量平移}. 
+\text{正交换权重给半正定 Laplacian，零模正好是常量平移}.
 
 $$
 

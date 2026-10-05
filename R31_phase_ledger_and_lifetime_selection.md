@@ -1,8 +1,8 @@
 # R31 · 相位接通账本：旋转类轨道分布唯一选出 `L=4`，并让 `D=4` 成为结论
 
-**日期**：2026-10-03  
-**性质**：**原生选择＋账本升级**。把 [`Z14`](Z14_closure_cyclic_order_base_theorem.md) 的循环序（相位）接到 [`R25`](R25_native_pair_cost_and_four_dim_peak.md) 的成对账本上：旋转类的**轨道大小分布**决定 `q_L`，而"账本的主导维数必须落在引力子允许域"这一**生存要求**唯一选出 `L=4`。本文**不**关闭 `SURV4-GLOBAL`，也**不**把 `D=4` 写成无条件导出。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G61`](G61_locking_the_five_integers.md)、[`G71`](G71_decoherence_from_the_terminal_ledger.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`R26`](R26_pair_carrier_reduction_no_go.md)、[`R27`](R27_phase_cochain_quotient_and_dimension_dictionary.md)、[`R29`](R29_full_support_ledger_factorization_no_go.md)、[`R30`](R30_little_group_phase_route_audit.md)、[`zero_sum_rotation_class_algebra`](zero_sum_rotation_class_algebra.md)、[`STATUS`](STATUS.md)。  
+**日期**：2026-10-03
+**性质**：**原生选择＋账本升级**。把 [`Z14`](Z14_closure_cyclic_order_base_theorem.md) 的循环序（相位）接到 [`R25`](R25_native_pair_cost_and_four_dim_peak.md) 的成对账本上：旋转类的**轨道大小分布**决定 `q_L`，而"账本的主导维数必须落在引力子允许域"这一**生存要求**唯一选出 `L=4`。本文**不**关闭 `SURV4-GLOBAL`，也**不**把 `D=4` 写成无条件导出。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G61`](G61_locking_the_five_integers.md)、[`G71`](G71_decoherence_from_the_terminal_ledger.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`R26`](R26_pair_carrier_reduction_no_go.md)、[`R27`](R27_phase_cochain_quotient_and_dimension_dictionary.md)、[`R29`](R29_full_support_ledger_factorization_no_go.md)、[`R30`](R30_little_group_phase_route_audit.md)、[`zero_sum_rotation_class_algebra`](zero_sum_rotation_class_algebra.md)、[`STATUS`](STATUS.md)。
 **核验**：[`R31_check.py`](R31_check.py)。
 
 $$

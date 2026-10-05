@@ -7,7 +7,7 @@
 > **【当前状态入口｜[`STATUS.md`](STATUS.md)】** 本文结清 I7 的承重问题；后续 `Z9`–`Z12` 又收窄了 E1 的几何标号与站点识别。项目唯一当前状态见 [`STATUS.md`](STATUS.md)。
 
 $$
-\ \text{I7 的动机（有限因果速度要电流弛豫）已被饱和解除};\ \text{剩下的只有"有效锥 vs 精确锥"。}\ 
+\ \text{I7 的动机（有限因果速度要电流弛豫）已被饱和解除};\ \text{剩下的只有"有效锥 vs 精确锥"。}\
 $$
 
 ---
@@ -31,7 +31,7 @@ $$
 | 3 | 被选速度有**精确闭式** $\mu\_*\tanh\mu\_*-\log\cosh\mu\_*=\tfrac12\log B$、$c\_*=\tanh\mu\_*$ | [`G56`](G56_degeneration_attempt2_six_slots.md) §2 |
 
 $$
-\ \text{有限因果速度由}\textbf{饱和 ＋ 前沿速度}\text{原生提供} \Longrightarrow \text{不需要电流弛豫} \Longrightarrow \text{I7 不承重。}\ 
+\ \text{有限因果速度由}\textbf{饱和 ＋ 前沿速度}\text{原生提供} \Longrightarrow \text{不需要电流弛豫} \Longrightarrow \text{I7 不承重。}\
 $$
 
 ---
@@ -85,7 +85,7 @@ $$
 （窗口敏感度如实登记：$B{=}3$ 浅窗给 $-1.4640$。偏差随 $T$ 减小。）
 
 $$
-\ \text{锥外信号}\ \sim e^{-\mu_*(x-c_*t)}\ \textbf{指数小但非零} \Longrightarrow \text{这是【有效锥】，不是精确锥。}\ 
+\ \text{锥外信号}\ \sim e^{-\mu_*(x-c_*t)}\ \textbf{指数小但非零} \Longrightarrow \text{这是【有效锥】，不是精确锥。}\
 $$
 
 ### 3.4 $B=4$：残余**准精确实现**
@@ -97,7 +97,7 @@ $$
 | 中间密度格数（$[10^{-9},10^{-3}]$） | **$B{=}4$：4 格**；**$B{=}2$：28 格**（对照） |
 
 $$
-\ B=4\ \text{时前沿塌成}\textbf{台阶}：\text{残余（严格锥）在此}\textbf{准精确}（\text{每格 }10^{-14}）。\ 
+\ B=4\ \text{时前沿塌成}\textbf{台阶}：\text{残余（严格锥）在此}\textbf{准精确}（\text{每格 }10^{-14}）。\
 $$
 
 ### 3.5 前沿以常数速度推进
@@ -117,7 +117,7 @@ $$
 ### **可证伪预言 #2**
 
 $$
-\ \text{光锥外信号}\ \sim e^{-\mu_*(B)\,(x-c_*(B)t)},\qquad c_*=\tanh\mu_*,\ \ \mu_*\tanh\mu_*-\log\cosh\mu_*=\tfrac12\log B\ 
+\ \text{光锥外信号}\ \sim e^{-\mu_*(B)\,(x-c_*(B)t)},\qquad c_*=\tanh\mu_*,\ \ \mu_*\tanh\mu_*-\log\cosh\mu_*=\tfrac12\log B\
 $$
 
 即：**零和宇宙的光锥是有效锥**——锥外**指数小但非零**；GR 的是**精确零**。这是本纲领**第二条**可被实验约束的预言（第一条：优先帧耦合 $\gamma=1/(2\lambda)$，[`G14`](G14_causal_closure_and_lorentz_emergence.md)）。

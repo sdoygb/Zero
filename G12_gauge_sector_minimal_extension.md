@@ -1,6 +1,6 @@
 # G12 · 评估：规范扇区的最小扩展——需要什么、代价是什么、会不会破坏已导出的结论
 
-**日期**：本轮 · **依赖**：Z0 条款（A0–A5 历史命名）；[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 1、2、4、5、7；[`G11`](G11_dimension_as_consistency.md)。
+**日期**：本轮 · **依赖**：Z0 条款；[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 1、2、4、5、7；[`G11`](G11_dimension_as_consistency.md)。
 **等级标签**：【导出】/【条件】/【输入】/**【评估】**/**【不可达（定理）】**。
 **核验**：[`G12_check.py`](G12_check.py) —— **独立实断言 22 / 结论行 12 / 不符 0**，退出码 `0`（F5 由 3 项增到 5 项）
 
@@ -76,7 +76,7 @@ D=|F|(m-1)+1\quad(\text{乘积基底、零和只沿 }C\text{、无内部边};\ \
 $$
 
 $$
-D=m|F|-1\quad(\text{连通 }C\times F;\ \beta_0=1;\ \textbf{唯一满足识别 U（原 A2 连通款）的情形})
+D=m|F|-1\quad(\text{连通 }C\times F;\ \beta_0=1;\ \textbf{唯一满足识别 U的情形})
 $$
 
 （$n\_v$ 是移动图顶点数，$\beta\_0$ 是连通分量数。**Z1 定理 2 的零和自动成立**（每条移动都零和）$\Longrightarrow$ $Q=0$ 是定理、不是额外约束，故 $D=\text{rank}B+1$。显式整数格 ＋ Smith 标准形复算，$m\le5$、$|F|\le3$ 全部无挠。）
@@ -95,7 +95,7 @@ $$
 
 **所以（X）不是可选项，是被逼出来的**——这正是本文最有用的一条结论。
 
-**⚠️ 上面这条的原始版本有一处需要更正（推导级）**：原式 $D=\lvert F\rvert(m-1)+1$ 描述的是**移动图不连通**（$\beta\_0=\lvert F\rvert$ 个分量）的乘积基底设定，**违反识别 U 明文的「连通图」**（[`G19`](G19_axiom_reduction.md) 的连通条款行）。在满足识别 U 的连通设定下正确公式是 $D=m\lvert F\rvert-1$。**结论 $\lvert F\rvert=1$ 不变**，但理由换成："$D=4$ 要求 $m\lvert F\rvert=5$，而 $m\ge3$（[`G8`](G8_dimension_selection.md) 引理 37 排除 $D=3$）$\Longrightarrow$ 唯一解 $(m,\lvert F\rvert)=(5,1)$"。
+**⚠️ 上面这条的原始版本有一处需要更正（推导级）**：原式 $D=\lvert F\rvert(m-1)+1$ 描述的是**移动图不连通**（$\beta\_0=\lvert F\rvert$ 个分量）的乘积基底设定，**违反识别 U 明文的「连通图」**（ 的连通条款行）。在满足识别 U 的连通设定下正确公式是 $D=m\lvert F\rvert-1$。**结论 $\lvert F\rvert=1$ 不变**，但理由换成："$D=4$ 要求 $m\lvert F\rvert=5$，而 $m\ge3$（[`G8`](G8_dimension_selection.md) 引理 37 排除 $D=3$）$\Longrightarrow$ 唯一解 $(m,\lvert F\rvert)=(5,1)$"。
 
 **另一条等价的读法**：$\lvert F\rvert$ 计数的是**移动图的连通分量数**。若坚持 $\lvert F\rvert$ 个「独立内部扇区」（$=\lvert F\rvert$ 个分量），则识别 U 已被违反；在这个意义上，**Z0 条款内的规范扇区扩展不只是"需要扩充条款（X）"，而是"需要先放弃识别 U 的连通性要求"**。
 

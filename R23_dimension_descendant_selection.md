@@ -1,9 +1,9 @@
 # R23 · 从后代优势选维（仅限演化层）：乘积 no-go 与 `DIM-DESC` 条件模型
 
-**日期**：2026-10-02  
-**性质**：对“所有维数都存在，四维因最容易留下后代而占主导”这一设想的严格化、否证边界与最小正模型。**不声称已从 Zero 无条件推出四维时空**。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G61`](G61_locking_the_five_integers.md)、[`G73`](G73_B_is_an_input.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`R3`](R3_dimension_selection.md)、[`zero_sum_reproduction_audit.md`](zero_sum_reproduction_audit.md)、[`zero_sum_reproduction_transition_theorems.md`](zero_sum_reproduction_transition_theorems.md)。  
-**核验**：[`R23_check.py`](R23_check.py)。  
+**日期**：2026-10-02
+**性质**：对“所有维数都存在，四维因最容易留下后代而占主导”这一设想的严格化、否证边界与最小正模型。**不声称已从 Zero 无条件推出四维时空**。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G61`](G61_locking_the_five_integers.md)、[`G73`](G73_B_is_an_input.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`R3`](R3_dimension_selection.md)、[`zero_sum_reproduction_audit.md`](zero_sum_reproduction_audit.md)、[`zero_sum_reproduction_transition_theorems.md`](zero_sum_reproduction_transition_theorems.md)。
+**核验**：[`R23_check.py`](R23_check.py)。
 **数值探针**：[`R23_dim_desc_probe.py`](R23_dim_desc_probe.py)。
 
 > **路线注**：[`R24`](R24_global_four_survival_gate.md) 规定 `GR-LB` 只是临时脚手架，不能承担最终的四维生存率证明。本文 §5.4 的结果是 `SURV4-GR-SCAFFOLD`；要证明不使用 GR 的 `SURV4-GLOBAL`，先补 `DIM-COST-Q` 或 `DIM-INTERACT`。[`R25`](R25_native_pair_cost_and_four_dim_peak.md) 随后证明：单方向模型配旋转类读出账本给出 no-go；成对连接模型 `PAIR-CARRIER` 的四维窗口是 `1/2<q<3/5`，并在 $L=4$ 的 $q=5/9$ 上唯一给出 `D=4`。[`R26`](R26_pair_carrier_reduction_no_go.md) 再把 `PAIR-CARRIER-DER` 拆成六项，并证明连通性不推出 `C(D,2)`、字典 `D=m-1` 会把峰移到三维、成对重数不自动给 `q^D` 代价。
@@ -71,7 +71,7 @@ $$
 D\in\{1,2,3,\ldots,D_{\max}\}.
 $$
 
-对每个 $D$，设存在一个零和闭合扇区 $\mathcal S\_D$，并称其有效维数为 $D$。  
+对每个 $D$，设存在一个零和闭合扇区 $\mathcal S\_D$，并称其有效维数为 $D$。
 本文不规定 $\mathcal S\_D$ 的具体图、复形或粗粒化；该映射是具名输入：
 
 $$
@@ -443,7 +443,7 @@ $$
 
 ### 5.1 `DIM-SECTOR` 未构造
 
-[`R3`](R3_dimension_selection.md) 与 [`zero_sum_geometry_probe.py`](zero_sum_geometry_probe.py) 已表明：现有零和闭合图没有稳定四维平台。  
+[`R3`](R3_dimension_selection.md) 与 [`zero_sum_geometry_probe.py`](zero_sum_geometry_probe.py) 已表明：现有零和闭合图没有稳定四维平台。
 因此当前的 `D` 只是候选扇区标签。必须构造一个维数一致、细化稳定的 $\mathcal S\_D$ 族，否则 (R23-11) 只在抽象模型中有定义。
 
 因此仍然需要的是：先把“维数”变成由 Zero 原生闭合结构可构造、可粗粒化并可在细化下稳定的扇区读数；否则后代功能再漂亮，也只是定义在一个尚未落到 Zero 上的家族。

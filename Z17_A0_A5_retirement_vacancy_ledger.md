@@ -1,9 +1,8 @@
 # Z17 · A0–A5 退场后的空缺账本：no-go 的 Z0 化与维数缺口的定位
 
-**日期**：2026-10-03  
-**性质**：**基础审计＋no-go 范围重证**。A0–A5 已由公理降为 [`Z0`](Z0_zero_never_rests_single_axiom.md) 的**定理表**（[`G0`](G0_bottom_layer_and_derivation_route.md) 顶部）。本文逐条款核验：维数 no-go（[`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 1／[`R3`](R3_dimension_selection.md) 定理 R3-1）所用的模型类 $\{\mathcal M\_m\}\_{m\ge2}$ **是否满足 Z0 的全部条款**（Z0① ②③ ＋ Z1–Z5 ＋ 识别 U ＋ 参数）。  
-**结论**：**满足，且每条 Z0 条款对 $m$ 一致**——因此 no-go 可整体搬到 Z0 层，**Z0（L0）不提供任何新的维数约束**。**层指标**：本条限 **L0**；读出面（$\mathcal R$）在具名账本族内仍可条件选出 $D=4$（[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)），两者不冲突（[`R50`](R50_layer_discipline.md) 会诊 #4）。本文同时给出"A0–A5 退出的空缺"的完整账本。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`G0`](G0_bottom_layer_and_derivation_route.md)、[`G19`](G19_axiom_reduction.md)、[`G20`](G20_axiom_audit_extended_to_zero_and_D.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`R3`](R3_dimension_selection.md)、[`R30`](R30_little_group_phase_route_audit.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`STATUS`](STATUS.md)。  
+**日期**：2026-10-03
+**性质**：**基础审计＋no-go 范围重证**。A0–A5 已由公理降为 [`Z0`](Z0_zero_never_rests_single_axiom.md) 的**定理表**（[`G0`](G0_bottom_layer_and_derivation_route.md) 顶部）。本文逐条款核验：维数 no-go（[`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 1／[`R3`](R3_dimension_selection.md) 定理 R3-1）所用的模型类 $\{\mathcal M\_m\}\_{m\ge2}$ **是否满足 Z0 的全部条款**（Z0① ②③ ＋ Z1–Z5 ＋ 识别 U ＋ 参数）。
+**结论**：**满足，且每条 Z0 条款对 $m$ 一致**——因此 no-go 可整体搬到 Z0 层，**Z0（L0）不提供任何新的维数约束**。**层指标**：本条限 **L0**；读出面（$\mathcal R$）在具名账本族内仍可条件选出 $D=4$（[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)），两者不冲突（[`R50`](R50_layer_discipline.md) 会诊 #4）。本文同时给出"A0–A5 退出的空缺"的完整账本。
 **核验**：[`Z17_check.py`](Z17_check.py)。
 
 $$

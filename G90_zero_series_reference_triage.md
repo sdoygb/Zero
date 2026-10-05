@@ -8,7 +8,7 @@
 **核验**：[`G90_check.py`](G90_check.py) —— **独立实断言 47 / 结论行 0 / 不符 0**，退出码 `0`（复算引用数 ＋ 真跑实验）
 
 $$
-\ \text{净承接 5 项（含 1 条推导、1 条输入）、打问号 2 项、纯历史 3 项；10 个实验迁入后全部可复跑。}\ 
+\ \text{净承接 5 项（含 1 条推导、1 条输入）、打问号 2 项、纯历史 3 项；10 个实验迁入后全部可复跑。}\
 $$
 
 ---
@@ -28,7 +28,7 @@ D 系列有 [`G9`](G9_d_series_reference_triage.md) 的**逐篇分诊**；Zero �
 | 项 | 事实 |
 |:--|:--|
 | 来源 | 逐字节复制自 `../modular-equilibrium/simulations/`（md5 相同） |
-| 原址为何能跑 | 脚本用 `ROOT = Path(__file__).resolve().parents[1]`；在原址 `simulations/` 下解析为 `modular-equilibrium/` |
+| 原址为何能跑 | 脚本用 `ROOT = Path(__file__).resolve.parents[1]`；在原址 `simulations/` 下解析为 `modular-equilibrium/` |
 | 复制到 `lh/` **根目录**后 | 解析为 `/Users/oygb/Downloads/`（不存在）⇒ **10 个实验全部 `rc=1`**（`FileNotFoundError`） |
 | 现状 | 已置入 [`simulations/`](simulations/README.md)，`ROOT` 恰好解析为 `lh/`、输出写回 `simulations/` ⇒ **10/10 恢复可跑**（沙箱实测 1–25 秒，退出码全 0） |
 
@@ -82,7 +82,7 @@ D 系列有 [`G9`](G9_d_series_reference_triage.md) 的**逐篇分诊**；Zero �
 - `open_reservoir` 反向指出：`closure_exit` 的活动层之所以会清空，是**两个外加条件**造成的
   （① 固定寿命 $L=4$；② 闭合后不再播种）——**它定位了缺的那个子句**。
 
-两者合起来 ⇒ [`G20`](G20_axiom_audit_extended_to_zero_and_D.md) §3 引理 74：**Z3（历史标号 A5）缺「再播种」子句**（重播种现由 **Z5** 导出）。
+两者合起来 ⇒ [`G20`](G20_axiom_audit_extended_to_zero_and_D.md) §3 引理 74：**Z3缺「再播种」子句**（重播种现由 **Z5** 导出）。
 按"不增公理"纪律**没有**写进条款表，而是登记为账本 **`I8`**（输入／模型选择）。
 
 ### 2.3 `global_R_local_P` → `D211` 的术语更新 → G 系列的 $P\_i$／$\mathcal Z\_\ast$
@@ -148,7 +148,7 @@ $$
 > **【纯历史】（对理论）＋【层内基础设施】（对 Zero 层）**。
 
 **处置建议**：保留为历史档案（它们仍可复跑，见 §1.1），但**不再计入"理论资产"**；
-若日后要用，须先补笔记并给出它与 Z0 条款（A0–A5 历史命名）的关系。
+若日后要用，须先补笔记并给出它与 Z0 条款的关系。
 
 ## §5 一条时间线观察（值得记录，但不构成承接）
 
@@ -172,7 +172,7 @@ $$
 | **【纯历史】** | **2** | `cycle_evolution`、`living_universe` |
 
 $$
-\ \text{Zero 系列的真实产出 = 2 条推导（G34＋Z4 终端款）＋ 1 条输入（I8）＋ 1 个问题（locality）＋ 2 个待造对象。}\ 
+\ \text{Zero 系列的真实产出 = 2 条推导（G34＋Z4 终端款）＋ 1 条输入（I8）＋ 1 个问题（locality）＋ 2 个待造对象。}\
 $$
 
 **开放项**

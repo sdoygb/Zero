@@ -5,7 +5,7 @@
 **核验**：[`G56_check.py`](G56_check.py) —— **独立实断言 14 / 结论行 0 / 不符 0**，退出码 `0`（0.4 秒）
 
 $$
-\ \text{前两次退化：}1/6\ \text{槽位}\ \longrightarrow\ \text{本轮重估：}\mathbf{5/6}\ \text{；缺的只剩}\textbf{绝对归一化}\text{与}\textbf{连续极限}。\ 
+\ \text{前两次退化：}1/6\ \text{槽位}\ \longrightarrow\ \text{本轮重估：}\mathbf{5/6}\ \text{；缺的只剩}\textbf{绝对归一化}\text{与}\textbf{连续极限}。\
 $$
 
 ---
@@ -21,7 +21,7 @@ $$
 `D213` 自己写下的下一步是 `R-Z-LOCAL-ZERO-SUM-TRANSPORT-GAP`（"局域补偿边怎样从周期闭合与历史层中自然出现"）。
 
 $$
-\ \text{关键：}D213\text{ 的六槽位预算，这些年已经被新成果填掉了五个。}\ 
+\ \text{关键：}D213\text{ 的六槽位预算，这些年已经被新成果填掉了五个。}\
 $$
 
 ---
@@ -38,7 +38,7 @@ $$
 | $C\_{\rm norm}$ $G,\Lambda$ 与物理尺度归一化 | 缺 | ❌ **仍缺** | I4；且 [`G45`](G45_units_vs_scales_is_the_ruler_human.md) 判定：**零和模型只能给无量纲量** |
 
 $$
-\ \text{净账本：}1/6\ \longrightarrow\ \mathbf{5/6}\ \text{（其中 }C_{\rm 4D}\text{ 只到「部分」）；剩 }C_{\rm norm}\text{ 与 }C_{\rm 4D}\text{ 内部的 I2a。}\ 
+\ \text{净账本：}1/6\ \longrightarrow\ \mathbf{5/6}\ \text{（其中 }C_{\rm 4D}\text{ 只到「部分」）；剩 }C_{\rm norm}\text{ 与 }C_{\rm 4D}\text{ 内部的 I2a。}\
 $$
 
 ---
@@ -66,13 +66,13 @@ $$
 令 $f(\mu)=\mu\tanh\mu-\log\cosh\mu$。**极值条件 $f(\mu\_*)=\tfrac12\log B$，且在极值处 $c\_*=\tanh\mu\_*$**：
 
 $$
-\ \mu_*\tanh\mu_*-\log\cosh\mu_*=\tfrac12\log B,\qquad c_*=\tanh\mu_*\ 
+\ \mu_*\tanh\mu_*-\log\cosh\mu_*=\tfrac12\log B,\qquad c_*=\tanh\mu_*\
 $$
 
 因为 $f(+\infty)=\log 2$，我们立刻得到**临界条件**：
 
 $$
-\ c_*=1\iff\tfrac12\log B=\log 2\iff B=4;\qquad B>4\ \text{无解（生长超过输运上限）}\ 
+\ c_*=1\iff\tfrac12\log B=\log 2\iff B=4;\qquad B>4\ \text{无解（生长超过输运上限）}\
 $$
 
 ### 2.2 核验（闭式 vs [`G31`](G31_characteristic_speed_and_saturation.md) 实测 vs 直接模拟）
@@ -93,23 +93,23 @@ $$
 GR 的光锥是**信号锥**（前沿），不是 PDE 的特征速度。所以：
 
 $$
-\ \text{(\mathcal R) 物质锥可认成【KPP 前沿锥】}\Longrightarrow\text{匹配条件 }c_*=1\iff B=4\ \text{是一个【自洽条件】，不是新的扩充条款；}\ \text{(L0 层) 支持锥精确且与 }B\ \text{无关（}R48\text{）。}\ 
+\ \text{(\mathcal R) 物质锥可认成【KPP 前沿锥】}\Longrightarrow\text{匹配条件 }c_*=1\iff B=4\ \text{是一个【自洽条件】，不是新的扩充条款；}\ \text{(L0 层) 支持锥精确且与 }B\ \text{无关（}R48\text{）。}\
 $$
 
 ---
 
 ## §3 **更正 [`G55`](G55_dynamics_line_degeneration_to_GR.md) §7**
 
-[`G55`](G55_dynamics_line_degeneration_to_GR.md) §7 我写了"唯一堵点是 A3"（历史命名），并**推荐出路 (b) 削弱 Z0③**。**本轮更正**：
+[`G55`](G55_dynamics_line_degeneration_to_GR.md) §7 我写了"唯一堵点是 A3"，并**推荐出路 (b) 削弱 Z0③**。**本轮更正**：
 
 | | [`G55`](G55_dynamics_line_degeneration_to_GR.md) §7 的说法 | **本轮更正** |
 |:--|:--|:--|
-| 因果速度的来源 | "必须有记忆核；A3 抹掉电流记忆 ⟹ 必须削弱 A3 或加 I7"（历史命名引文） | **[`G31`](G31_characteristic_speed_and_saturation.md)/[`G32`](G32_native_origin_of_saturation.md) 已给出原生出路**：**饱和**（局部代数有限维 ⟹ 有限容量）**不需要新的扩充条款**，它给出**有限的被选速度** |
-| 承重的条款分句 | "A3"（历史命名） | **Z0③ 的「不设预算」分句**（[`G31`](G31_characteristic_speed_and_saturation.md) §5 已定位）；而 [`G32`](G32_native_origin_of_saturation.md) 论证**饱和与「不设预算」不冲突**（总重数可增长、可区分占据数有界） |
+| 因果速度的来源 | "必须有记忆核；A3 抹掉电流记忆 ⟹ 必须削弱 A3 或加 I7" | **[`G31`](G31_characteristic_speed_and_saturation.md)/[`G32`](G32_native_origin_of_saturation.md) 已给出原生出路**：**饱和**（局部代数有限维 ⟹ 有限容量）**不需要新的扩充条款**，它给出**有限的被选速度** |
+| 承重的条款分句 | "A3" | **Z0③ 的「不设预算」分句**（[`G31`](G31_characteristic_speed_and_saturation.md) §5 已定位）；而 [`G32`](G32_native_origin_of_saturation.md) 论证**饱和与「不设预算」不冲突**（总重数可增长、可区分占据数有界） |
 | 结论 | 要改底层条款 | **不必改 Z0 条款**；出路是**认对速度概念**（前沿速度 ≠ 特征速度） |
 
 $$
-\ \text{因果槽位}\textbf{不需要动 Z0③}；\text{G55 §7 的推荐 (b) 撤回。}\ 
+\ \text{因果槽位}\textbf{不需要动 Z0③}；\text{G55 §7 的推荐 (b) 撤回。}\
 $$
 
 **但代价如实登记**：KPP 锥是**有效锥**——前沿之外振幅指数小而非严格为零，故它匹配的是**信号锥**，不是严格双曲锥。
@@ -124,7 +124,7 @@ $$
 | 2 | **I2a：连续极限的收敛** | **真难题** | [`G47`](G47_refinement_limit_of_the_effective_metric.md)／[`G53`](G53_connecting_the_rg_axis_to_lattice_refinement.md)：逆向（细化）保谱流**发散、无 UV 不动点**；G52 的不动点在 IR 侧 |
 
 $$
-\ \text{"退化出 GR" 现在缺的不是五个槽位，而是：}\textbf{① 绝对归一化（可能不可导出）}\text{ 与 }\textbf{② 连续极限收敛}。\ 
+\ \text{"退化出 GR" 现在缺的不是五个槽位，而是：}\textbf{① 绝对归一化（可能不可导出）}\text{ 与 }\textbf{② 连续极限收敛}。\
 $$
 
 ---

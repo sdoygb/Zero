@@ -1,9 +1,9 @@
 # R48 · 精确锥的结算：它**一直是精确的**，缺的是**锥边的可见性**
 
-**日期**：2026-10-03  
-**性质**：**开放项关闭**（`G59` §2「有效锥 → 精确锥」）＋ **判据裁决**（`G56` §4 的 $B=4$ 原生约束）＋ **更正 `R47` §3 残留 2**。  
-**依赖**：[`G59`](G59_I7_settled_native_cone_and_its_residue.md)、[`G56`](G56_degeneration_attempt2_six_slots.md)、[`G31`](G31_characteristic_speed_and_saturation.md)、[`R47`](R47_signature_from_causal_cone.md)、[`R46`](R46_pair_ledger_objects_and_simplex.md)、[`R45`](R45_ledger_form_scan.md)、[`G57`](G57_dimensional_constants_no_go.md)、[`Z17`](Z17_A0_A5_retirement_vacancy_ledger.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R48_exact_cone_probe.py`](R48_exact_cone_probe.py) → [`R48_exact_cone_results.json`](R48_exact_cone_results.json)。  
+**日期**：2026-10-03
+**性质**：**开放项关闭**（`G59` §2「有效锥 → 精确锥」）＋ **判据裁决**（`G56` §4 的 $B=4$ 原生约束）＋ **更正 `R47` §3 残留 2**。
+**依赖**：[`G59`](G59_I7_settled_native_cone_and_its_residue.md)、[`G56`](G56_degeneration_attempt2_six_slots.md)、[`G31`](G31_characteristic_speed_and_saturation.md)、[`R47`](R47_signature_from_causal_cone.md)、[`R46`](R46_pair_ledger_objects_and_simplex.md)、[`R45`](R45_ledger_form_scan.md)、[`G57`](G57_dimensional_constants_no_go.md)、[`Z17`](Z17_A0_A5_retirement_vacancy_ledger.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R48_exact_cone_probe.py`](R48_exact_cone_probe.py) → [`R48_exact_cone_results.json`](R48_exact_cone_results.json)。
 **核验**：[`R48_check.py`](R48_check.py)。
 
 $$
@@ -40,7 +40,7 @@ $$
 | 10 | 共形因子／尺度、动力学（Einstein 方程） | **仍未导出**（同 `G57`／`G1`） | §4 |
 
 $$
-\ \text{关闭的是}\textbf{锥的精确性}\text{；未关闭的是}\textbf{尺度}\text{与}\textbf{动力学}。\ 
+\ \text{关闭的是}\textbf{锥的精确性}\text{；未关闭的是}\textbf{尺度}\text{与}\textbf{动力学}。\
 $$
 
 ---
@@ -202,7 +202,7 @@ $$
 | "签名对有效锥稳健，但**精确光锥仍缺**"（`R47` §3 残留 2） | **措辞更正**：支持锥**从来不缺**（引理 R48-1）。缺的是**锥边的填充／可见性**；`R47` 的签名判决**不需要**"离散不变量"兜底——它面对的是**精确锥**。 |
 | "锥外信号指数小但非零 ⇒ 这是**有效锥**，不是精确锥"（`G59` §3.3） | **概念更正**：指数小是**锥边密度**的属性（$\varepsilon(B)>0$），不是锥的精确性。$B=4$ 时同一实验给出 $\rho\_t(t)\propto t^{-1}$，即锥边**被填充**。 |
 | `G59` §3.4「$B=4$ 时残余**准精确**实现（每格 $10^{-14}$）」 | **升级为精确陈述**：$B=4$ 时前沿以**精确速度 1** 推进（$x/t=0.9983$，$t$ 增大不降），锥边密度仅按 $t^{-1}$ 衰减。 |
-| `G59` §4「可证伪预言 #2：锥外信号 $\sim e^{-\mu\_*(x-c\_*t)}$」 | **保留并加严**：锥边（$x=t$）上的信号是 $A(B)t^{-\alpha}e^{-\varepsilon(B)t}$——$B<4$ 时预言的是**双指数**不可见，$B=4$ 时是**幂律**可见。 |
+| `G59` §4「可证伪预言 #2：锥外信号 $\sim e^{-\mu\_*(x-c\_*t)}$」 | **保留并加严**：锥边（$x=t$）上的信号是 $A(B)t^{-\alpha}e^{-\varepsilon(B)t}$——$B<4$ 时预言的是**双指数**不可见，$B=4$ 时是**幂律**可。 |
 
 ### 4.2 残留（照旧说清）
 

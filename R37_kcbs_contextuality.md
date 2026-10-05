@@ -1,9 +1,9 @@
 # R37 · KCBS 探针：Zero 的单体统计**是语境的**（量子性第一个硬证据）
 
-**日期**：2026-10-03  
-**性质**：**探针结果＋精确判据＋正面结论（带边界）**。对 Zero 的单体结构做 KCBS/语境性检验——这是**不需要 `E1`、不需要空间、不需要类空**的那一类检验（见 R36 §五）。  
-**依赖**：[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G68`](G68_interference_from_coarse_graining.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`G88`](G88_measurement_as_typicality.md)、[`R33`](R33_action_phase_match_project.md)、[`R35`](R35_type_iii_classification.md)、[`R36`](R36_chsh_bell_locality.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R37_kcbs_probe.py`](R37_kcbs_probe.py) → [`R37_kcbs_results.json`](R37_kcbs_results.json)。  
+**日期**：2026-10-03
+**性质**：**探针结果＋精确判据＋正面结论（带边界）**。对 Zero 的单体结构做 KCBS/语境性检验——这是**不需要 `E1`、不需要空间、不需要类空**的那一类检验（见 R36 §五）。
+**依赖**：[`G27`](G27_purification_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G68`](G68_interference_from_coarse_graining.md)、[`G72`](G72_kappa1_from_the_ledger.md)、[`G88`](G88_measurement_as_typicality.md)、[`R33`](R33_action_phase_match_project.md)、[`R35`](R35_type_iii_classification.md)、[`R36`](R36_chsh_bell_locality.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R37_kcbs_probe.py`](R37_kcbs_probe.py) → [`R37_kcbs_results.json`](R37_kcbs_results.json)。
 **核验**：[`R37_check.py`](R37_check.py)。
 
 $$

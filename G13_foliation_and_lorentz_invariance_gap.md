@@ -1,6 +1,6 @@
 # G13 · 叶层与洛伦兹不变性缺口（账本第 6 条 I6）
 
-**日期**：本轮 · **依赖**：Z0 条款（A0–A5 历史命名）；[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5、6、7；[`G6`](G6_geodesy_of_the_coarse_grained_flow.md) 引理 24、27。
+**日期**：本轮 · **依赖**：Z0 条款；[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 5、6、7；[`G6`](G6_geodesy_of_the_coarse_grained_flow.md) 引理 24、27。
 **等级标签**：【导出】/【条件】/**【输入】**/【不可达（定理）】。
 **核验**：[`G13_check.py`](G13_check.py) —— **独立实断言 21 / 结论行 0 / 不符 0**，退出码 `0`（2 秒）
 

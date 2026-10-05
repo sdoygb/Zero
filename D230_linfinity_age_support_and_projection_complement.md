@@ -1,8 +1,8 @@
 # D230 · 连续年龄支持的 $L^\infty$ 构造：投影压缩加补单位
 
 **日期**：本轮对话 · **依赖**：`AXIOMS.md` §0.3、§1、`D223`、`D227`、`D228`、`D229`
-**测试模型**：测度年龄空间、区间中央投影、投影压缩加补单位代数、嵌套支持、无交支持、局部矩阵因子与年龄推进协变。它们不是 `U1-U4` 的推论。
-**预先结构**：连续年龄测度空间、年龄区间投影、局部支持采用 $qAq+\mathbb C(1-q)$、年龄前缀扩张与张量矩阵因子。它们不是 `U1-U4` 的推论。
+**测试模型**：测度年龄空间、区间中央投影、投影压缩加补单位代数、嵌套支持、无交支持、局部矩阵因子与年龄推进协变。
+**预先结构**：连续年龄测度空间、年龄区间投影、局部支持采用 $qAq+\mathbb C(1-q)$、年龄前缀扩张与张量矩阵因子。
 **核验**：[`verify/d230_linfinity_age_support_and_projection_complement.py`](verify/d230_linfinity_age_support_and_projection_complement.py) —— **通过 / 不符**见运行输出
 **v0.5 定位**：`D229` 证明有限年龄扇区不能直接换成 $C([0,T])$，因为连续区间交换代数没有非平凡中央投影。本文给出一个不丢单位的连续年龄支持构造。
 
@@ -55,7 +55,7 @@ $$
 5. 年龄前缀推进与模流支持协变兼容；
 6. 有限细化塔的弱极限自然落在 $L^\infty$，而不是 $C([0,T])$。
 
-本文登记恢复层结构 `R-Z-LINFINITY-AGE-SUPPORT-ALGEBRA`、`R-Z-PROJECTION-COMPRESSION-COMPLEMENT` 与缺口 `R-Z-CONTINUOUS-AGE-MEASURE-GAP`。本文不修改 `U1-U4+C1`，不新增 `U5`。
+本文登记恢复层结构 `R-Z-LINFINITY-AGE-SUPPORT-ALGEBRA`、`R-Z-PROJECTION-COMPRESSION-COMPLEMENT` 与缺口 `R-Z-CONTINUOUS-AGE-MEASURE-GAP`。
 
 ---
 
@@ -472,8 +472,6 @@ $$
 | `R-Z-PROJECTION-COMPRESSION-COMPLEMENT` | 用 $q\_IAq\_I+\mathbb C(1-q\_I)$ 同时保留局部矩阵因子与全局单位 | 条件构造 |
 | `R-Z-CONTINUOUS-AGE-MEASURE-GAP` | 为什么取该测度与区间支持，以及怎样接到几何，仍未导出 | 未解选择器 |
 
-这些结构不修改 `U1-U4+C1`，也不新增 `U5`。
-
 $$
 
 \text{连续年龄支持已从 }C([0,T])\text{ 转向 }L^\infty\text{ 的区间投影；几何映射仍缺。}
@@ -482,5 +480,5 @@ $$
 
 ---
 
-**后续状态｜`D231` 把缺口收窄到模密度剖面。**  
+**后续状态｜`D231` 把缺口收窄到模密度剖面。**
 `D231` 指出 $K(I)=K\_M\otimes q\_I$ 只给锐利支持，不足以识别几何 boost；一般生成元应写成 $K(f)=K\_M\otimes f$。同一个支持区间可以承载常量、线性退化、二次退化等不同剖面，并给出不同模生成元谱。下一步必须选择剖面 $f\_B$，而不是继续增加支持区域。

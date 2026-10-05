@@ -1,8 +1,8 @@
 # R8 · J2 独立审计（外部阶梯 J2；与 Zero 的层 L2 无关）：普适面积密度
 
-**日期**：2026-10-02  
-**范围**：只审计 [`R8`](R8_jacobson_entanglement_equilibrium_completion.md) 的 L2／C3，不修改 `STATUS.md`、`R8` 或任何 G/D 文件。  
-**核验**：[`R8_L2_check.py`](R8_L2_check.py)。  
+**日期**：2026-10-02
+**范围**：只审计 [`R8`](R8_jacobson_entanglement_equilibrium_completion.md) 的 L2／C3，不修改 `STATUS.md`、`R8` 或任何 G/D 文件。
+**核验**：[`R8_L2_check.py`](R8_L2_check.py)。
 **依赖证据**：[`G76`](G76_area_law_in_2d.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`D231`](D231_modular_density_profile_gap.md)；为理清后续更正，另核对 [`G73`](G73_B_is_an_input.md) 与 [`G83`](G83_the_missing_1_14.md)。
 
 $$

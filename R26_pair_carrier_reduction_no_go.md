@@ -1,9 +1,9 @@
 # R26 · 成对载体约化：`C(D,2)` 不能由连通性直接得到
 
-**日期**：2026-10-02  
-**性质**：对抗审计 [`R25`](R25_native_pair_cost_and_four_dim_peak.md) 的 `PAIR-CARRIER-DER`。本文把“成对连接就是继承身份”拆成可分别证明或否证的结构输入，并登记两条 no-go：Z1 定理 1 的连通性不推出完全方向图；零和分量字典 `D=m-1` 会把 R25 的四维峰移到三维。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`R3`](R3_dimension_selection.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R24`](R24_global_four_survival_gate.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`D243_global_readback_not_interaction.md`](D243_global_readback_not_interaction.md)、[`D244_zero_sum_matching_linearity.md`](D244_zero_sum_matching_linearity.md)。  
-**旧理论审计**：[`D194`](../modular-equilibrium/derivations/D194_zero_sum_lattice_rank_and_isotropic_limit.md)、[`D25`](../modular-equilibrium/derivations/D25_topology_reconstruction.md)、[`D26`](../modular-equilibrium/derivations/D26_topology_reconstruction_limits.md)。  
+**日期**：2026-10-02
+**性质**：对抗审计 [`R25`](R25_native_pair_cost_and_four_dim_peak.md) 的 `PAIR-CARRIER-DER`。本文把“成对连接就是继承身份”拆成可分别证明或否证的结构输入，并登记两条 no-go：Z1 定理 1 的连通性不推出完全方向图；零和分量字典 `D=m-1` 会把 R25 的四维峰移到三维。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`R3`](R3_dimension_selection.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R24`](R24_global_four_survival_gate.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`D243_global_readback_not_interaction.md`](D243_global_readback_not_interaction.md)、[`D244_zero_sum_matching_linearity.md`](D244_zero_sum_matching_linearity.md)。
+**旧理论审计**：[`D194`](../modular-equilibrium/derivations/D194_zero_sum_lattice_rank_and_isotropic_limit.md)、[`D25`](../modular-equilibrium/derivations/D25_topology_reconstruction.md)、[`D26`](../modular-equilibrium/derivations/D26_topology_reconstruction_limits.md)。
 **核验**：[`R26_check.py`](R26_check.py)。
 
 $$
@@ -30,7 +30,7 @@ $$
 |:--|:--|:--|
 | 若继承身份是 Z1 定理 1 的非平凡补偿移动轨道，则身份数严格等于方向图边数 | **已证（结构）** | §2，定理 R26.1 |
 | Z1 定理 1 连通图只给边数区间，下界为树，上界为完全图 | **已证** | §2，推论 R26.2 |
-| 连通性不能推出完全图 `K_D`；环图 `C_D` 已是 Z 条款（A0–A5 历史命名）的合法模型 | **已证（no-go）** | §2，命题 R26.3；`G89` 命题 1 |
+| 连通性不能推出完全图 `K_D`；环图 `C_D` 已是 Z 条款的合法模型 | **已证（no-go）** | §2，命题 R26.3；`G89` 命题 1 |
 | 全局读出可达性不能冒充局部方向对载体 | **已判（接口分离）** | §2.3；`D243` |
 | `DIR-DICT-BETA + PAIR-GRAPH-KD + PAIR-ID-EDGE + PAIR-COUNT-1` 给出 `C(D,2)` | **条件证成** | §3，定理 R26.4 |
 | 路线 `α: D=m-1` 配合 `C(m,2)` 标签给出 `C(D+1,2)`；`q=5/9` 的唯一峰是三维 | **已证（no-go）** | §4，命题 R26.5 |
@@ -180,7 +180,7 @@ $$
 
 ### 2.3 全局可达性不是局部方向对
 
-[`Z1`](Z1_zero_layer_as_the_foundation.md) §4.1 的 `Z-E1` 把“任一站点可经全局闭合类影响任一其他站点”写成全局读出耦合，并把可达性图写成完全图。  
+[`Z1`](Z1_zero_layer_as_the_foundation.md) §4.1 的 `Z-E1` 把“任一站点可经全局闭合类影响任一其他站点”写成全局读出耦合，并把可达性图写成完全图。
 [`D243`](D243_global_readback_not_interaction.md) 已证明：全局可见性不等于全对全相互作用。
 
 因此必须区分：

@@ -1,9 +1,9 @@
 # R36 · CHSH 探针：现有二分割上 **Bell 局域**，且违反所需的门槛已量化
 
-**日期**：2026-10-03  
-**性质**：**探针结果＋判据＋目标量化**。对 Zero 现有结构做 CHSH 检验：`G68` 的多路径设定与 `G82` 的"两个独立 `Z₂`"。本文**不新增物理假设**，也不把"未能检验"写成"已排除量子性"。  
-**依赖**：[`G68`](G68_interference_from_coarse_graining.md)、[`G82`](G82_B_from_two_independent_Z2.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md)、[`G88`](G88_measurement_as_typicality.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R35`](R35_type_iii_classification.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R36_chsh_probe.py`](R36_chsh_probe.py) → [`R36_chsh_results.json`](R36_chsh_results.json)。  
+**日期**：2026-10-03
+**性质**：**探针结果＋判据＋目标量化**。对 Zero 现有结构做 CHSH 检验：`G68` 的多路径设定与 `G82` 的"两个独立 `Z₂`"。本文**不新增物理假设**，也不把"未能检验"写成"已排除量子性"。
+**依赖**：[`G68`](G68_interference_from_coarse_graining.md)、[`G82`](G82_B_from_two_independent_Z2.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md)、[`G88`](G88_measurement_as_typicality.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R35`](R35_type_iii_classification.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R36_chsh_probe.py`](R36_chsh_probe.py) → [`R36_chsh_results.json`](R36_chsh_results.json)。
 **核验**：[`R36_check.py`](R36_check.py)。
 
 $$

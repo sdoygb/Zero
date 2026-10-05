@@ -42,7 +42,7 @@ $$
 | `open_reservoir`（$d=1,2,4$） | ❌ | ❌ | 末值 $504$／$1\,214\,752$／$1\,777\,511\,808$ | **持续** |
 
 $$
-\ \textbf{给定"不断"（}N_k\not\to0\textbf{ 恒不成立）}:\quad \text{必须"无寿命"}\ \vee\ \text{"有重播种"}\ \text{二择一}。\ 
+\ \textbf{给定"不断"（}N_k\not\to0\textbf{ 恒不成立）}:\quad \text{必须"无寿命"}\ \vee\ \text{"有重播种"}\ \text{二择一}。\
 $$
 
 **对照的干净之处**：`wipe_no_reseed` 与 `wipe_reseed` 是**同一个模型**，只差重播种那一条——

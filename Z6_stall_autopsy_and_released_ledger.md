@@ -8,7 +8,7 @@
 > **【状态层级｜[`STATUS.md`](STATUS.md)】** 本文是“输入可有”政策的详细审计与机制分类，不再是项目唯一账本。它给出的 E1–E4 与“数学缺口 0／承重 no-go 0”是**政策相对**结论；项目唯一的当前状态、历史替代关系和 D259 路线分离见 [`STATUS.md`](STATUS.md)。
 
 $$
-\ \textbf{卡点不是墙，是四种记账错误};\quad \text{放开输入后：数学缺口 }0\ +\ \text{承重 no-go }0\ +\ \text{具名输入 }3\ +\ \text{条件 }1。\ 
+\ \textbf{卡点不是墙，是四种记账错误};\quad \text{放开输入后：数学缺口 }0\ +\ \text{承重 no-go }0\ +\ \text{具名输入 }3\ +\ \text{条件 }1。\
 $$
 
 ---
@@ -26,7 +26,7 @@ $$
 3. **本轮的判定采用 Z 层规则（＝"可以有输入"）**：于是本文政策账本为
 
 $$
-\ \text{零和宇宙}\ +\ \underbrace{3\ \text{条具名输入}}_{\text{嵌入·作用量类别·量纲常数}}\ +\ \underbrace{1\ \text{条条件}}_{D=4}\ \Longrightarrow\ \text{四维 GR（结构＋场方程＋守恒源＋有限前沿锥）}。\ 
+\ \text{零和宇宙}\ +\ \underbrace{3\ \text{条具名输入}}_{\text{嵌入·作用量类别·量纲常数}}\ +\ \underbrace{1\ \text{条条件}}_{D=4}\ \Longrightarrow\ \text{四维 GR（结构＋场方程＋守恒源＋有限前沿锥）}。\
 $$
 
 ---
@@ -44,9 +44,9 @@ $$
 
 | 定理 | 内容 | 它把什么变成输入 |
 |:--|:--|:--|
-| [`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 1 | 对每个 $m\ge2$，A0–A5（历史命名）条款集都有模型 $\mathcal M\_m$（$C\_m$ 环图，逐条款核验 $m\le12$） ⟹ 条款**不约束** $D$ | **维数 $D$** |
+| [`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 1 | 对每个 $m\ge2$，A0–A5条款集都有模型 $\mathcal M\_m$（$C\_m$ 环图，逐条款核验 $m\le12$） ⟹ 条款**不约束** $D$ | **维数 $D$** |
 | [`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 2 | $m\ge4$ 时原生对合 $\{\pm1\}\times\{\sigma^2=1\}$ 全不给 $(1,1)$，谱集为 $\{(k,m{-}1{-}k)\}$ | 排除了一条**伪**推导（G11 原 (Z₂) 作废） |
-| [`G57`](G57_unreachability_of_absolute_normalization.md) §3 | A0–A5（历史命名）条款的原语与允许操作**全为无量纲** ⟹ 任何泛函无量纲 ⟹ 绝对尺度不可导出 | **量纲常数 $G,\Lambda$、长度标度** |
+| [`G57`](G57_unreachability_of_absolute_normalization.md) §3 | A0–A5条款的原语与允许操作**全为无量纲** ⟹ 任何泛函无量纲 ⟹ 绝对尺度不可导出 | **量纲常数 $G,\Lambda$、长度标度** |
 
 $$
 \Longrightarrow\ \textbf{在这三处"卡住"是正确行为};\ \text{它们是对"这是输入"的三个证明，不是三次失败。}
@@ -58,7 +58,7 @@ $$
 |:--|:--|:--|:--|
 | $(L)$：$E\_{ab}$ 是 $g$ 的局域泛函 ／ $(L')$：$g$ 被数据局域决定 | "**(L) 不成立** ⟹ Lovelock 不适用" | 只有 $(L')$ 在 Perron 取法下不成立；$(L)$ 在"度规=输入"下**自动成立**（截断实验差 $0$） | [`G41`](G41_lovelock_premises_under_nonuniform_weight.md) §3.5、§7.2 命名更正 |
 | 空间"二阶" ／ 时间马尔可夫 ／ 双曲性 | "**二阶**一个词" | 三条**互相独立**：前两条要记忆核为零，第三条要记忆核非零 | [`G55`](G55_dynamics_line_degeneration_to_GR.md) §1 |
-| PDE 特征速度 ／ 前沿（被选）速度 | "Z0③ 堵死因果（A3 历史命名）⟹ 必须改 Z0 条款" | 有限因果速度由**饱和＋前沿速度**原生给出；改条款**撤回** | [`G55`](G55_dynamics_line_degeneration_to_GR.md) §7 → [`G56`](G56_degeneration_attempt2_six_slots.md) §3 |
+| PDE 特征速度 ／ 前沿（被选）速度 | "Z0③ 堵死因果⟹ 必须改 Z0 条款" | 有限因果速度由**饱和＋前沿速度**原生给出；改条款**撤回** | [`G55`](G55_dynamics_line_degeneration_to_GR.md) §7 → [`G56`](G56_degeneration_attempt2_six_slots.md) §3 |
 | 宏观态记忆核 ／ 电流弛豫（两种"记忆"） | "记忆核存在 ⟹ 条件被削弱" | 前者是粗粒化副产品，**给不出光锥**；后者才给 | [`G55`](G55_dynamics_line_degeneration_to_GR.md) §5 |
 | "(O) 二阶需要输入" | "I2a 的缺口在 (O)" | $(O)$ 是**形式性质**（局域作用量的自动结果），与 $g$ 从哪来无关 | [`Z2`](Z2_zero_to_gr_direct_route.md) §3 更正说明 |
 | "输入"的三种意思 | 一个词 | ① Z0 条款 ② **识别**（组合对象→物理标号）③ **有量纲常数**——只有 ③ 被 [`G57`](G57_unreachability_of_absolute_normalization.md) 判死 | [`G10`](G10_final_derivation_and_input_ledger.md) §4 vs [`G57`](G57_unreachability_of_absolute_normalization.md) |
@@ -76,7 +76,7 @@ $$
 | [`G58`](G58_I2a_resolved_as_embedding_input.md) | **$\Gamma$-收敛**（Lovelock 真正需要的） | 固定 $k$：**二阶收敛**（斜率 $-1.945$）；极限局域 | **判定：I2a 归并为嵌入输入** |
 
 $$
-\ \text{"找不到 UV 不动点"只在"要求自相似"时才是障碍};\ \text{Lovelock 只要求 }(L)\text{，即}\Gamma\text{-收敛}。\ 
+\ \text{"找不到 UV 不动点"只在"要求自相似"时才是障碍};\ \text{Lovelock 只要求 }(L)\text{，即}\Gamma\text{-收敛}。\
 $$
 
 ### 1.4 M4 的证据：同一个缺口，两套判据
@@ -104,7 +104,7 @@ $$
 | 8 | 维数 $D$ 不可导出 | [`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 1 | M1 | **定理（不是卡点）** | $D$ 是输入；$D\le3$ 由物理筛选排除 |
 | 9 | $D=4$ 的"选择原则" | [`G89`](G89_dimension_no_go_and_the_balance_condition.md) §3 | M1 | **条件** | $(Z\_2)'$ 极化两标签无偏好（需 $O(D-2)$，条款集之外） |
 | 10 | 绝对归一化 $C\_{\rm norm}$ | [`G57`](G57_unreachability_of_absolute_normalization.md) §3 | M1 | **不可导出（定理）** | 登记 I4；**禁止再攻**（方向性错误） |
-| 11 | 因果：Z0③ 抹掉特征速度（A3 历史命名） | [`G15`](G15_bare_ax3_has_no_characteristic_speed.md) | M2 | **已撤** | 认对速度概念：前沿速度 $c\_*=\tanh\mu\_*$，$c\_*=1\iff B=4$ |
+| 11 | 因果：Z0③ 抹掉特征速度 | [`G15`](G15_bare_ax3_has_no_characteristic_speed.md) | M2 | **已撤** | 认对速度概念：前沿速度 $c\_*=\tanh\mu\_*$，$c\_*=1\iff B=4$ |
 | 12 | I7 电流记忆／记忆核 | [`G15`](G15_bare_ax3_has_no_characteristic_speed.md) §6 | M2＋M4 | **不承重** | 饱和原生；残余"有效锥→精确锥"在 $B=4$ 处每格 $10^{-14}$ |
 | 13 | I6 物质层洛伦兹 | [`G13`](G13_foliation_and_lorentz_invariance_gap.md)、[`G55`](G55_dynamics_line_degeneration_to_GR.md) §6 | M2 | **并入 I7（已解除）** | 几何层已建立；物质锥＝KPP 锥 |
 | 14 | 装配路线（$K\to h$） | [`G4`](G4_assembly_route_obstruction.md) | — | **真排除** | 唯一不动点＝均匀 ⟹ 1 参数刚性；这是**有效的指路**，不是卡点 |
@@ -112,7 +112,7 @@ $$
 | 16 | 尘埃源／耗散源 | [`G6`](G6_geodesy_of_the_coarse_grained_flow.md)、[`G7`](G7_one_operator_and_the_dissipation_obstruction.md) | — | **真排除** | 扩散同余非测地；$\nabla^aG\_{ab}=0$ 强制源守恒 |
 
 $$
-\ \text{16 个卡点：真排除 3（是}\textbf{指路}\text{）、定理／条件型 3（说明"这是输入"）、机制型 10（拆词／换判据／归并后消失）};\ \textbf{承重卡点 }0。\ 
+\ \text{16 个卡点：真排除 3（是}\textbf{指路}\text{）、定理／条件型 3（说明"这是输入"）、机制型 10（拆词／换判据／归并后消失）};\ \textbf{承重卡点 }0。\
 $$
 
 ---
@@ -193,7 +193,7 @@ $w^{(k)}=A\circ A^{k-1}$，$\mathcal L=\text{diag}(W\mathbf 1)-W$：
 **光滑指定剖面**：$c(x)=1+0.3\cos(2\pi x/n)$ 在三维环面的 $x$ 线上（$k=6$）给边权 $1.473\to42.824$（相对差 $2.52$）——**预设的共形因子被度规带上**（与 [`G49`](G49_four_boundaries_advanced.md) 的因子化 $c^m$ 一致）。
 
 $$
-\ \text{正则 }\Gamma\Rightarrow\text{平坦};\ \text{非正则 }\Gamma\Rightarrow\text{几何};\ \text{故"}\Gamma\text{ 非正则"是}\textbf{E1 的内容}，不是额外代价。\ 
+\ \text{正则 }\Gamma\Rightarrow\text{平坦};\ \text{非正则 }\Gamma\Rightarrow\text{几何};\ \text{故"}\Gamma\text{ 非正则"是}\textbf{E1 的内容}，不是额外代价。\
 $$
 
 ### 4.3 局域半径的**口径对齐**（收紧 [`Z5`](Z5_finite_k_locality_escape.md) §5.1）
@@ -212,7 +212,7 @@ $$
 > "半格取样错就能伪造一个收敛阶"**同型**：**半径是几何量，起算点必须是几何的**。
 
 $$
-\ \text{真半径} = k/2-1\ (\text{三种口径一致}),\ \text{半径之外}\textbf{精确为 }0;\quad \textbf{Z5 §5.1 的"半径 }k\text{"松了约 2 倍}。\ 
+\ \text{真半径} = k/2-1\ (\text{三种口径一致}),\ \text{半径之外}\textbf{精确为 }0;\quad \textbf{Z5 §5.1 的"半径 }k\text{"松了约 2 倍}。\
 $$
 
 > **【口径复验｜[`Z7`](Z7_embedding_input_explicit_dictionary.md) §5】** 上表三例都在**单层口径**（[`Z5`](Z5_finite_k_locality_escape.md)）下测得。
@@ -245,7 +245,7 @@ $$
 | 5 | **量纲常数** | $\kappa$（计数→长度兑换率）＋ $G,\Lambda$ | 无：绝对尺度**不可导出**（[`G57`](G57_unreachability_of_absolute_normalization.md) §3） |
 
 $$
-\ \text{输入是自由的，但不是任意的}：\text{每条输入都被已导出结论从两侧夹住（见"选错的代价"列）。}\ 
+\ \text{输入是自由的，但不是任意的}：\text{每条输入都被已导出结论从两侧夹住（见"选错的代价"列）。}\
 $$
 
 ---

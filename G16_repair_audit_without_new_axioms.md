@@ -1,6 +1,6 @@
 # G16 · 「不增扩充条款」的清算：哪些缺口能在 Z0 条款内修复
 
-**日期**：本轮 · **约束**：**不新增扩充条款**。 · **依赖**：Z0 条款（A0–A5 历史命名）；[`G7`](G7_one_operator_and_the_dissipation_obstruction.md) 引理 31、33、34；[`G13`](G13_foliation_and_lorentz_invariance_gap.md) 引理 46；[`G15`](G15_bare_ax3_has_no_characteristic_speed.md) 引理 52–56。
+**日期**：本轮 · **约束**：**不新增扩充条款**。 · **依赖**：Z0 条款；[`G7`](G7_one_operator_and_the_dissipation_obstruction.md) 引理 31、33、34；[`G13`](G13_foliation_and_lorentz_invariance_gap.md) 引理 46；[`G15`](G15_bare_ax3_has_no_characteristic_speed.md) 引理 52–56。
 **等级标签**：【导出】/【条件】/【输入】/【不可达（定理）】。
 **核验**：[`G16_check.py`](G16_check.py) —— **独立实断言 20 / 结论行 0 / 不符 0**，退出码 `0`（1.4 秒）
 
@@ -34,7 +34,7 @@ $$
 \partial_\tau\rho=-\nabla\!\cdot\!j-\Gamma\rho,\qquad
 \partial_\tau\sigma=+\Gamma\rho
 \quad\Longrightarrow\quad
-\ \partial_\tau(\rho+\sigma)=-\nabla\!\cdot\!j\ 
+\ \partial_\tau(\rho+\sigma)=-\nabla\!\cdot\!j\
 $$
 
 **精确守恒。** **核验**：总量逐步精确守恒（偏差 $<10^{-12}$）；**仅体**不守恒，且缺口恰等于汇的增量（偏差 $<10^{-12}$）。

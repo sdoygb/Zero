@@ -5,7 +5,7 @@
 **核验**：[`G73_check.py`](G73_check.py) —— **独立实断言 18 / 结论行 0 / 不符 0**，退出码 `0`（0.4 秒）
 
 $$
-\ B\ \textbf{推不出来}（反例族:\ B=2,3,4\ \text{全自洽}）;\qquad L=4\ \text{的"最小性"是}\textbf{选择原则}，\text{同 }D17\text{ 之误}。\ 
+\ B\ \textbf{推不出来}（反例族:\ B=2,3,4\ \text{全自洽}）;\qquad L=4\ \text{的"最小性"是}\textbf{选择原则}，\text{同 }D17\text{ 之误}。\
 $$
 
 ---
@@ -64,7 +64,7 @@ $$
 | $(6,4)$ | $20$ | ✅ | $1.0000$ | ✅ |
 
 $$
-\ \textbf{L0 层}：\text{没有公理级约束挑出 }B=4 \Longrightarrow B\ \textbf{不可导出}（\text{反例族}）；\ \textbf{\mathcal R}：B=4\ \text{仍是自洽条件（}R48\text{）。}\ 
+\ \textbf{L0 层}：\text{没有公理级约束挑出 }B=4 \Longrightarrow B\ \textbf{不可导出}（\text{反例族}）；\ \textbf{\mathcal R}：B=4\ \text{仍是自洽条件（}R48\text{）。}\
 $$
 
 **这比 [`G70`](G70_B_and_tau_closing.md) 的"候选识别"更诚实**：不是"候选"，而是**证明推不出来**。
@@ -98,7 +98,7 @@ $$
 | **$B$（繁殖数）** | **输入** | 🔴 **本轮新入册** |
 
 $$
-\ \text{输入从 3 项变成}\textbf{5 项};\ \text{按旧体系纪律：明列，而不是把"定不出来"写成"已导出"}。\ 
+\ \text{输入从 3 项变成}\textbf{5 项};\ \text{按旧体系纪律：明列，而不是把"定不出来"写成"已导出"}。\
 $$
 
 ---

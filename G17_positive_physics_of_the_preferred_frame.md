@@ -1,6 +1,6 @@
 # G17 · 优先帧的正面物理：不增扩充条款下能算出什么
 
-**日期**：本轮 · **约束**：**不新增扩充条款**。 · **依赖**：Z0 条款（A0–A5 历史命名）；[`G2`](G2_local_continuum_limit.md) 引理 9；[`G13`](G13_foliation_and_lorentz_invariance_gap.md) 引理 44；[`G14`](G14_causal_closure_and_lorentz_emergence.md) 引理 48；[`G16`](G16_repair_audit_without_new_axioms.md) 引理 57。
+**日期**：本轮 · **约束**：**不新增扩充条款**。 · **依赖**：Z0 条款；[`G2`](G2_local_continuum_limit.md) 引理 9；[`G13`](G13_foliation_and_lorentz_invariance_gap.md) 引理 44；[`G14`](G14_causal_closure_and_lorentz_emergence.md) 引理 48；[`G16`](G16_repair_audit_without_new_axioms.md) 引理 57。
 **等级标签**：【导出】/【条件】/【输入】。
 **核验**：[`G17_check.py`](G17_check.py) —— **独立实断言 19 / 结论行 0 / 不符 0**，退出码 `0`（0.9 秒）
 
@@ -35,7 +35,7 @@ $$
 $$
 \nabla_{[c}n_{d]}=\partial_{[c}\nabla_{d]}\tau=0
 \quad\Longrightarrow\quad
-\ \omega_{ab}=h_a^{\ c}h_b^{\ d}\nabla_{[c}n_{d]}\equiv0\ 
+\ \omega_{ab}=h_a^{\ c}h_b^{\ d}\nabla_{[c}n_{d]}\equiv0\
 $$
 
 **核验**：$\nabla\_{[a}n\_{b]}$ 最大分量 $=0.00\times10^{0}$（精确零）。
@@ -85,7 +85,7 @@ $$
 **能量投影恒等式**（符号核验，**残差恰为 0**）：
 
 $$
-\ n^b\nabla^aT_{ab}=\dot\rho+(\rho+p)\theta+\nabla_aq^a\ 
+\ n^b\nabla^aT_{ab}=\dot\rho+(\rho+p)\theta+\nabla_aq^a\
 $$
 
 （这里用了 $a\_b=0$。）

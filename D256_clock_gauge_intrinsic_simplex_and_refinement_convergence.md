@@ -1,8 +1,8 @@
 # D256 · 时钟规范拆分、内禀单纯几何与细化收敛条件
 
 **日期**：本轮对话 · **依赖**：`AXIOMS.md` §0.3、§1、§4、`D200`、`D207`、`D251`、`D252`、`D253`、`D254`、`D255`
-**测试模型**：读回时钟、单位 lapse、零 shift、法向测地线、caustic 障碍、CMC 时钟候选、内禀边长四面体、Gram 矩阵、P1 刚度、交换权重相容性、形状正则细化、固定边权尺度漂移与共同极限。它们不是 `U1-U4` 的推论。
-**预先结构**：局部 Lorentz 流形、叶状、标量读回、法向单位场、单纯复形、边长、单纯形不等式、细化族、形状正则界、离散二次型与连续极限拓扑。它们不是 `U1-U4` 的推论。
+**测试模型**：读回时钟、单位 lapse、零 shift、法向测地线、caustic 障碍、CMC 时钟候选、内禀边长四面体、Gram 矩阵、P1 刚度、交换权重相容性、形状正则细化、固定边权尺度漂移与共同极限。
+**预先结构**：局部 Lorentz 流形、叶状、标量读回、法向单位场、单纯复形、边长、单纯形不等式、细化族、形状正则界、离散二次型与连续极限拓扑。
 **核验**：[`verify/d256_clock_gauge_intrinsic_simplex_and_refinement_convergence.py`](verify/d256_clock_gauge_intrinsic_simplex_and_refinement_convergence.py) —— **54 通过 / 0 不符**，退出码 `0`
 **v0.5 定位**：D254 把读回时钟、单位 lapse、零 shift 与连续 Dirichlet 张量分开登记，D255 又把离散到连续缺口缩到单元几何与细化。本文继续做两件事：把时钟问题拆成物理时钟、单位法向归一化与零 shift 三项；并证明若改用内禀边长单纯复形，顶点嵌入与独立坐标体积可以消去，但复形、边长与细化规则仍必须给出。细化到同一连续 $Q$ 与 $h$ 仍需要形状正则、相容与稳定条件。
 
@@ -39,8 +39,6 @@ $$
 $$
 
 本文登记恢复层结构 `R-Z-CLOCK-CALIBRATION-SPLIT`、`R-Z-GAUSSIAN-NORMAL-LOCAL-FRAME`、`R-Z-CMC-CLOCK-ROUTE`、`R-Z-INTRINSIC-SIMPLEX-GEOMETRY`、`R-Z-GEOMETRIC-STIFFNESS-COMPATIBILITY`、`R-Z-SHAPE-REGULAR-REFINEMENT` 与 `R-Z-COMMON-REFINEMENT-LIMIT`。
-
-本文不修改 `U1-U4+C1`，不新增 `U5`。
 
 ---
 
@@ -393,7 +391,7 @@ $$
 
 $$
 
-\text{内禀边长的标准 P1 刚度自动给收敛所需的几何权重}. 
+\text{内禀边长的标准 P1 刚度自动给收敛所需的几何权重}.
 
 $$
 

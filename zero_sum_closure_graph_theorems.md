@@ -52,7 +52,7 @@ $T:8\to18$ 节点数增长 **×270**。
 | 直径 | 4 | 6 | 9 | 12 | 16 | 20 |
 
 $$
-\ \text{无截断}\ \Longrightarrow\ \text{平均度无界}\ \Longrightarrow\ \mathcal G_T\ \textbf{不是流形的离散化}\ \Longrightarrow\ \text{无稳定谱维数}.\ 
+\ \text{无截断}\ \Longrightarrow\ \text{平均度无界}\ \Longrightarrow\ \mathcal G_T\ \textbf{不是流形的离散化}\ \Longrightarrow\ \text{无稳定谱维数}.\
 $$
 
 （$T{=}16$ 处 $8.43$ 与 §4 的 $8.44$ 差 $0.01$，系取整；曲线单调上升，结论不变。）

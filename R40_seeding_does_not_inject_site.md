@@ -1,9 +1,9 @@
 # R40 · 播种是否把位点写进记录？（`R39` §3 残余条件的裁决）
 
-**日期**：2026-10-03  
-**性质**：**实现审计＋等变性探针（正面）**。裁决 [`R39`](R39_history_layer_site_blindness.md) §3 的**唯一翻盘入口**：播种点 `P_i` 是否把位点写进记录。  
-**依赖**：[`R39`](R39_history_layer_site_blindness.md)、[`R38`](R38_entanglement_from_shared_closure_origin.md)、[`Z5`](Z0_zero_never_rests_single_axiom.md)、[`zero_sum_cycle_evolution`](zero_sum_cycle_evolution.py)、[`G20`](G20_axiom_audit_extended_to_zero_and_D.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R40_seeding_equivariance_probe.py`](R40_seeding_equivariance_probe.py) → [`R40_seeding_equivariance_results.json`](R40_seeding_equivariance_results.json)。  
+**日期**：2026-10-03
+**性质**：**实现审计＋等变性探针（正面）**。裁决 [`R39`](R39_history_layer_site_blindness.md) §3 的**唯一翻盘入口**：播种点 `P_i` 是否把位点写进记录。
+**依赖**：[`R39`](R39_history_layer_site_blindness.md)、[`R38`](R38_entanglement_from_shared_closure_origin.md)、[`Z5`](Z0_zero_never_rests_single_axiom.md)、[`zero_sum_cycle_evolution`](zero_sum_cycle_evolution.py)、[`G20`](G20_axiom_audit_extended_to_zero_and_D.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R40_seeding_equivariance_probe.py`](R40_seeding_equivariance_probe.py) → [`R40_seeding_equivariance_results.json`](R40_seeding_equivariance_results.json)。
 **核验**：[`R40_check.py`](R40_check.py)。
 
 $$

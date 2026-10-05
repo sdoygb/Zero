@@ -68,7 +68,7 @@ $$
 壳层参数 $h=\vert s\vert$。概率测度：
 
 $$
-\ \omega(\sigma)\ \propto\ W(\sigma)\,e^{-\beta\varepsilon\,\vert s\vert}\ 
+\ \omega(\sigma)\ \propto\ W(\sigma)\,e^{-\beta\varepsilon\,\vert s\vert}\
 $$
 
 按壳层聚合成等价类，得 $\omega\_1\ge\omega\_2\ge\cdots$。
@@ -174,5 +174,5 @@ python3 R58_check.py             # 独立复算 37 项断言，退出码 0
 
 $$
 \ \text{全局闭合类层的下投影（取初始段）}\textbf{无参数地}\text{给出非平凡模流、KMS、Born 形式；}\
-\text{量子力学在 Zero 量纲内成立。}\ 
+\text{量子力学在 Zero 量纲内成立。}\
 $$

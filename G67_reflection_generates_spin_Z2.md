@@ -5,7 +5,7 @@
 **核验**：[`G67_check.py`](G67_check.py) —— **独立实断言 18 / 结论行 0 / 不符 0**，退出码 `0`（0.17 秒）
 
 $$
-\ \text{同一个反射的两个升格之积}\ =\ -1\ =\ \text{自旋 }\mathbb Z_2\ \Longrightarrow\ (b)=(a)^2\ 
+\ \text{同一个反射的两个升格之积}\ =\ -1\ =\ \text{自旋 }\mathbb Z_2\ \Longrightarrow\ (b)=(a)^2\
 $$
 
 ---
@@ -41,7 +41,7 @@ $$
 ## §2 **核心**：$(b)=(a)^2$
 
 $$
-\ V\cdot(-V)\ =\ -V^2\ =\ \mathbf{-1}\ 
+\ V\cdot(-V)\ =\ -V^2\ =\ \mathbf{-1}\
 $$
 
 **核验**（30 组随机单位 $v$）：偏差 $\mathbf{2.24\times10^{-16}}$ ✅
@@ -86,7 +86,7 @@ v\cdot w=-1\iff w=-v\iff \text{夹角 } \pi\ \Longrightarrow\ \text{转角 } 2\p
 $$
 
 $$
-\ \text{"2π 旋转"恰好是两个【同一反射的升格】之积}——\text{旋量双值性与反射结构}\textbf{同源}。\ 
+\ \text{"2π 旋转"恰好是两个【同一反射的升格】之积}——\text{旋量双值性与反射结构}\textbf{同源}。\
 $$
 
 ---
@@ -100,13 +100,13 @@ $$
 | **(c) 定向** | **分级**（偶元 = 旋转，$\det=+1$；奇元 = 反射，$\det=-1$） |
 
 $$
-\ \text{三者都在 }\text{Pin}(3)\text{ 里}:\ (a)=\text{奇部},\ (c)=\text{分级},\ (b)=\text{中心}\ (\text{由 }(a)\text{ 平方得到})。\ 
+\ \text{三者都在 }\text{Pin}(3)\text{ 里}:\ (a)=\text{奇部},\ (c)=\text{分级},\ (b)=\text{中心}\ (\text{由 }(a)\text{ 平方得到})。\
 $$
 
 **所以 [`G65`](G65_spin_half_needs_3d_rotations.md) §5 我那句"用同一个 $\mathbb Z\_2$"是错的、而 [`G66`](G66_SU2_double_cover_from_geometry.md) 的"完全不同"也是不完整的**；正确的说法是：
 
 $$
-\ \text{不是同一个，也不是无关};\ \text{而是}\textbf{一个生成另一个}。\ 
+\ \text{不是同一个，也不是无关};\ \text{而是}\textbf{一个生成另一个}。\
 $$
 
 ---

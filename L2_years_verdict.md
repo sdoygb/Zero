@@ -75,7 +75,7 @@ $$
 $\tau\_{\rm step}$ 是**单位**，不是**参数** —— 「导出它的数值」**不是良定义的问题**。
 
 $$
-\ \text{选 } \tau_{\rm step}\ \text{等于选一个单位};\ \text{它}\textbf{不携带} \text{关于宇宙的信息}。\ 
+\ \text{选 } \tau_{\rm step}\ \text{等于选一个单位};\ \text{它}\textbf{不携带} \text{关于宇宙的信息}。\
 $$
 
 ---

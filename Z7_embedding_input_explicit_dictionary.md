@@ -9,7 +9,7 @@
 
 $$
 \ \text{嵌入输入} = \textbf{一个局部标度场 } c(x)\ +\ \text{单元形状};\qquad
-w_e = P_{k,d}(c_e)\big(1+O(a^2)\big),\quad P_{k,d}(c)=\sum_{m\le k} m\,W_d(m{-}1)\,c^{\,m}.\ 
+w_e = P_{k,d}(c_e)\big(1+O(a^2)\big),\quad P_{k,d}(c)=\sum_{m\le k} m\,W_d(m{-}1)\,c^{\,m}.\
 $$
 
 ---
@@ -53,7 +53,7 @@ $$
 \begin{aligned}
 \textbf{层和口径：}&\quad w_e=P^{\rm sum}_{k,d}(c_e)\big(1+O(a^2)\big),\qquad P^{\rm sum}_{k,d}(c)=\sum_{\substack{2\le m\le k\\ m\ \rm even}} m\,W_d(m-1)\,c^{\,m};\\[2mm]
 \textbf{单层口径：}&\quad w_e=P^{\rm single}_{k,d}(c_e)\big(1+O(a^2)\big),\qquad P^{\rm single}_{k,d}(c)=W_d(k-1)\,c^{\,k}.
-\end{aligned}\ 
+\end{aligned}\
 $$
 
 其中 $W\_d(L)$ = $\mathbb Z^d$ 上**用 $L$ 步从一点走到相邻点**的游走数（精确整数，纯拓扑）：
@@ -97,7 +97,7 @@ $$
 3D 侧由 §2.2 的字典偏差直接给出同阶（$O(a^2)$，两个相邻比值的预测 $1.78$ 与 $2.25$ 均命中）。
 
 $$
-\ \text{固定步数支：}1D/2D/3D\ \text{都二阶收敛};\ \text{“连续极限存在”在高维不是新障碍。}\ 
+\ \text{固定步数支：}1D/2D/3D\ \text{都二阶收敛};\ \text{“连续极限存在”在高维不是新障碍。}\
 $$
 
 **反支仍在**（本文 2D 复验）：固定物理时长 $k=\rho N$ 时，非均匀场下内部动态范围随 $N$ 增长（$\rho=0.10$：$1.78\to1.92\to\mathbf{13.8}$，$N=16\to32\to64$）⟹ 无黎曼极限——与 [`G58`](G58_I2a_resolved_as_embedding_input.md) §2.3 的 1D 结论同向。
@@ -116,7 +116,7 @@ $$
 | $(32,16)$ | $0.5$ | $0.250604$ | $0.25$ | $0.24\%$ |
 
 $$
-\ \kappa^{xx}/\kappa^{yy}=(a_x/a_y)^2\big(1+O(a^2)\big)\ \Longrightarrow\ \textbf{单元形状与场 }c\textbf{ 同为 E1 的内容};\ \text{只给场不给形状，度规不定}。\ 
+\ \kappa^{xx}/\kappa^{yy}=(a_x/a_y)^2\big(1+O(a^2)\big)\ \Longrightarrow\ \textbf{单元形状与场 }c\textbf{ 同为 E1 的内容};\ \text{只给场不给形状，度规不定}。\
 $$
 
 ---

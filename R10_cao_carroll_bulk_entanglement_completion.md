@@ -1,16 +1,16 @@
 # R10 · Cao-Carroll 2018 的 Zero 条件桥审计
 
-**日期**：2026-10-02  
-**目标**：Cao, Carroll, *Bulk Entanglement Gravity without a Boundary: Towards Finding Einstein's Equation in Hilbert Space*, Phys. Rev. D 97, 086003 (2018), [DOI](https://doi.org/10.1103/PhysRevD.97.086003), [arXiv:1712.02803](https://arxiv.org/abs/1712.02803)。  
-**性质**：外部论文前提审计与 Zero 条件桥，不修改 `STATUS.md`，不把外部论文的假设算作 Zero 定理。  
-**依赖**：[`R9`](R9_external_GR_derivations_landscape.md)、[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G47`](G47_refinement_limit_of_the_effective_metric.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`R1`](R1_gamma_convergence_theorem.md)、[`R6`](R6_h5_dictionary_error_bound.md)、[`R7`](R7_h3_h7_regularity.md)、[`G55`](G55_dynamics_line_degeneration_to_GR.md)、[`G56`](G56_degeneration_attempt2_six_slots.md)、[`D225`](D225_tensor_vs_direct_sum_factorization_gap.md)、[`D226`](D226_uniform_matrix_coexistence_selector.md)、[`G11`](G11_dimension_as_consistency.md)、[`R3`](R3_dimension_selection.md)。  
+**日期**：2026-10-02
+**目标**：Cao, Carroll, *Bulk Entanglement Gravity without a Boundary: Towards Finding Einstein's Equation in Hilbert Space*, Phys. Rev. D 97, 086003 (2018), [DOI](https://doi.org/10.1103/PhysRevD.97.086003), [arXiv:1712.02803](https://arxiv.org/abs/1712.02803)。
+**性质**：外部论文前提审计与 Zero 条件桥，不修改 `STATUS.md`，不把外部论文的假设算作 Zero 定理。
+**依赖**：[`R9`](R9_external_GR_derivations_landscape.md)、[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G47`](G47_refinement_limit_of_the_effective_metric.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`R1`](R1_gamma_convergence_theorem.md)、[`R6`](R6_h5_dictionary_error_bound.md)、[`R7`](R7_h3_h7_regularity.md)、[`G55`](G55_dynamics_line_degeneration_to_GR.md)、[`G56`](G56_degeneration_attempt2_six_slots.md)、[`D225`](D225_tensor_vs_direct_sum_factorization_gap.md)、[`D226`](D226_uniform_matrix_coexistence_selector.md)、[`G11`](G11_dimension_as_consistency.md)、[`R3`](R3_dimension_selection.md)。
 **核验**：[`R10_check.py`](R10_check.py)。
 
 $$
 
 \begin{aligned}
 &\text{Cao-Carroll 2018 的原生优点是：它直接接受有限维 Hilbert 因子、互信息图和全局切割。}\\
-&\text{但七项假设中，Zero 目前没有一项可以升级为“由 Z 条款（A0–A5 历史命名）无条件导出”。}\\
+&\text{但七项假设中，Zero 目前没有一项可以升级为“由 Z 条款无条件导出”。}\\
 &\text{即使给出 CC1-CC7，结论仍只是平直背景上的线性化 Einstein 方程，}\\
 &\text{不是完整非线性 GR，也不能从该桥选出 }D=4\text{。}
 \end{aligned}
@@ -486,7 +486,7 @@ $$
 
 $$
 \ \delta G_{\mu\nu}
-=8\pi G_N\,\delta T_{\mu\nu}.\ 
+=8\pi G_N\,\delta T_{\mu\nu}.\
 $$
 
 ### 定理 R10.1 不推出什么

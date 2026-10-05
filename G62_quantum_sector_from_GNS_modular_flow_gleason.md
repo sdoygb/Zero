@@ -5,7 +5,7 @@
 **核验**：[`G62_check.py`](G62_check.py) —— **独立实断言 24 / 结论行 7 / 不符 0**，退出码 `0`（0.16 秒）
 
 $$
-\ \text{概率不是公设（}G29\text{）；}\textbf{量子运动学也不是}——\text{它是}\textbf{非对易代数 ＋ GNS ＋ 模流 ＋ Gleason}。\ 
+\ \text{概率不是公设（}G29\text{）；}\textbf{量子运动学也不是}——\text{它是}\textbf{非对易代数 ＋ GNS ＋ 模流 ＋ Gleason}。\
 $$
 
 ---
@@ -24,7 +24,7 @@ $$
 | **$\dim\ge3$ 的必要性** | ❌ | ❌ **撤回"年龄因子越过阈值"**：$2(T+1)=\dim\mathcal H\_T$ 是**物理空间**维数，而 $\mathcal A\_T$ 的投影格是 type $\mathrm I\_2$ 直和（见 §4） |
 
 $$
-\ \text{G29 解决"概率不是公设"；本文解决"概率为什么是}\textbf{量子的}\text{"。}\ 
+\ \text{G29 解决"概率不是公设"；本文解决"概率为什么是}\textbf{量子的}\text{"。}\
 $$
 
 ---
@@ -180,7 +180,7 @@ $$
 | Born 规则 $\Longrightarrow$ 必须改 Z0③ | ❌ Born 是 **Gleason 的定理**（$\S4$），前提（正交可加）由**计数测度**提供（[`G29`](G29_probability_as_derived_not_postulated.md)），**没动 Z0③** |
 
 $$
-\ \textbf{更正}：\text{G11 的"必须修改 Z0③"}\textbf{撤回};\ \text{限定为：不可达的是"}\textbf{把概率当公设}"。\ 
+\ \textbf{更正}：\text{G11 的"必须修改 Z0③"}\textbf{撤回};\ \text{限定为：不可达的是"}\textbf{把概率当公设}"。\
 $$
 
 **而 $\hbar$ 的地位**由 [`G60`](G60_dimensionless_ledger_and_one_free_unit.md) §1 定（Okun 术语）：$\hbar$ 是 **basic unit**，故"**导出 $\hbar$ 的数值**"**不是良定义的问题**；良定义的是"**为什么有作用量量子**"（结构）与"**无量纲比值**"。
@@ -188,7 +188,7 @@ $$
 **所以 $\hbar$ 的正确表述是**：
 
 $$
-\ \text{量子化的}\textbf{结构可达};\ \hbar\ \text{的}\textbf{数值不可达}——\text{不是缺陷，是"它是单位"}。\ 
+\ \text{量子化的}\textbf{结构可达};\ \hbar\ \text{的}\textbf{数值不可达}——\text{不是缺陷，是"它是单位"}。\
 $$
 
 （与 GR 侧**完全同一个模式**：结构导出，尺度不可导出；见 [`G57`](G57_unreachability_of_absolute_normalization.md)／[`G60`](G60_dimensionless_ledger_and_one_free_unit.md)。）
@@ -203,7 +203,7 @@ $$
 | **量子** | $M\_2(\mathbb C)\otimes\mathbb C^{T+1}$ | 粗粒化类 $=$ 正交投影 | **GNS ＋ 模流 ＋ Gleason** | 复振幅 ＋ 酉演化 ＋ **Born** |
 
 $$
-\ \text{两个扇区}\textbf{同一个格式}：\text{原生代数}\ +\ \text{一个读法}\ +\ \text{一个数学定理}。\ 
+\ \text{两个扇区}\textbf{同一个格式}：\text{原生代数}\ +\ \text{一个读法}\ +\ \text{一个数学定理}。\
 $$
 
 ---

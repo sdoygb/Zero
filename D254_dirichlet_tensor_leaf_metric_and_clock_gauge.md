@@ -1,8 +1,8 @@
 # D254 · Dirichlet 张量到叶层度规与读回时钟规范
 
 **日期**：本轮对话 · **依赖**：`AXIOMS.md` §0.3、§1、§4、`D143`、`D193`、`D200`、`D207`、`D248`、`D250`、`D252`、`D253`
-**测试模型**：标量读回时钟、单位 lapse 与零 shift 的候选规范、连续 Dirichlet 张量、度规体积一致性、三维叶层度规反解、二维退化、离散图能量与连续张量缺口。它们不是 `U1-U4` 的推论。
-**预先结构**：标量读回、叶状、连续局部 Dirichlet 张量、单位 lapse、零 shift、度规体积一致性、离散图与细化映射。它们不是 `U1-U4` 的推论。
+**测试模型**：标量读回时钟、单位 lapse 与零 shift 的候选规范、连续 Dirichlet 张量、度规体积一致性、三维叶层度规反解、二维退化、离散图能量与连续张量缺口。
+**预先结构**：标量读回、叶状、连续局部 Dirichlet 张量、单位 lapse、零 shift、度规体积一致性、离散图与细化映射。
 **核验**：[`verify/d254_dirichlet_tensor_leaf_metric_and_clock_gauge.py`](verify/d254_dirichlet_tensor_leaf_metric_and_clock_gauge.py) —— **34 通过 / 0 不符**，退出码 `0`
 **v0.5 定位**：D253 把时间势到度规代表之间压成 lapse、shift、叶层共形类和叶层体积。本文继续追问：层间交换或局部读出提供的 Dirichlet 能量能否直接给叶层空间度规？答案是：在三维叶上，完整的连续 Dirichlet 张量加“测度就是度规体积”这一致性条件确实唯一反解 $h$；若给出标量读回时钟并采用单位 lapse、零 shift 规范，则条件度规写成 $\mathrm g=dt^2-h$。但 D248-D250 目前只给离散图能量，尚未恢复连续张量 $Q^{ij}$。
 
@@ -19,8 +19,6 @@ $$
 $$
 
 本文登记恢复层结构 `R-Z-READOUT-CLOCK-GAUGE`、`R-Z-DIRICHLET-TENSOR-METRIC`、`R-Z-METRIC-VOLUME-CONSISTENCY`、`R-Z-CLOCK-GAUGE-SELECTION-GAP` 与 `R-Z-DISCRETE-DIRICHLET-TENSOR-GAP`。
-
-本文不修改 `U1-U4+C1`，不新增 `U5`。
 
 ---
 

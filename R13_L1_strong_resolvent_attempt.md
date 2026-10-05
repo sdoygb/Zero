@@ -1,9 +1,9 @@
 # R13 · L1 正路由：从 Zero 临界链到强预解收敛的诚实状态
 
-**日期**：2026-10-02  
-**性质**：把 R12 §2.3 的“临界自由费米子正路由”从一条愿景写成可审计的命题，并给出本轮的实际判决。  
-**政策**：区分【已证】／【条件证成】／【识别】／【开放】／【排除】；不得把“数值像 BW”“重标度后可能收敛”改写成“已从 Zero 证明强预解收敛”。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`G27`](G27_purification_attempt.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`G79`](G79_horizon_thermodynamics.md)、[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`R12`](R12_zero_native_gap_filling.md)。  
+**日期**：2026-10-02
+**性质**：把 R12 §2.3 的“临界自由费米子正路由”从一条愿景写成可审计的命题，并给出本轮的实际判决。
+**政策**：区分【已证】／【条件证成】／【识别】／【开放】／【排除】；不得把“数值像 BW”“重标度后可能收敛”改写成“已从 Zero 证明强预解收敛”。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`G27`](G27_purification_attempt.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G75`](G75_quantum_geometry_modular_readout.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`G79`](G79_horizon_thermodynamics.md)、[`R8_L1_refutation_attempt.md`](R8_L1_refutation_attempt.md)、[`R12`](R12_zero_native_gap_filling.md)。
 **配套**：[`R13_external_limit_lemmas.md`](R13_external_limit_lemmas.md)（外部严格结果）、[`R13_refutation_attempt.md`](R13_refutation_attempt.md)（对抗审计）、[`R13_numeric_probe.py`](R13_numeric_probe.py)（数值探针）、[`R13_check.py`](R13_check.py)（独立核验）。
 
 $$
@@ -71,7 +71,7 @@ $$
 
 $$
 
-\text{Z0 条款（A0–A5 历史命名）没有 CAR、反对易关系、hopping、半满占据或单费米点选择器；}
+\text{Z0 条款没有 CAR、反对易关系、hopping、半满占据或单费米点选择器；}
 \text{“临界自由费米链”是模型识别，不是 Zero 定理。}
 
 $$
@@ -210,7 +210,7 @@ $$
 
 | 标签 | 还缺什么 | 关掉哪一条 |
 |:--|:--|:--|
-| `Z-CRIT-DER` | 从 Z0 条款（A0–A5 历史命名）导出 CAR、hopping、半满与单费米点 | §1.3 的识别／循环 |
+| `Z-CRIT-DER` | 从 Z0 条款导出 CAR、hopping、半满与单费米点 | §1.3 的识别／循环 |
 | `Z-SCALE` | 固定 $a\_N$、$v\_F$、重标度与低能窗口，给谱宽度界 | §3.2 的谱发散 |
 | `Z-HILB` | 公共 Hilbert 空间、细化嵌入与连续局部代数网 | §3.3 的拓扑 |
 | `Z-CORE` | 公共核心与二次型／强预解收敛，含高模消失 | §4.1 的结论 |

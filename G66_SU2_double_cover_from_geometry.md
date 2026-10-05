@@ -5,7 +5,7 @@
 **核验**：[`G66_check.py`](G66_check.py) —— **独立实断言 26 / 结论行 0 / 不符 0**，退出码 `0`（0.37 秒）
 
 $$
-\ \text{几何扇区里有}\textbf{三个不同的 }\mathbb Z_2;\ \text{接上的方式是}\textbf{一条链}，\text{不是}\textbf{同一个 }\mathbb Z_2\text{ 的两面}。\ 
+\ \text{几何扇区里有}\textbf{三个不同的 }\mathbb Z_2;\ \text{接上的方式是}\textbf{一条链}，\text{不是}\textbf{同一个 }\mathbb Z_2\text{ 的两面}。\
 $$
 
 ---
@@ -25,7 +25,7 @@ $$
 | **(c)** | **定向 $\mathbb Z\_2$** | $O(3)$ 是否含反射（$SO(3)\to O(3)$） | 把双覆盖扩成 $\text{Pin}(3)$ |
 
 $$
-\ \text{(a)}\ \ne\ \text{(b)}:\quad \text{反射升格的平方}=+1,\quad \text{而}\ 2\pi\ \text{旋转}=-1。\ 
+\ \text{(a)}\ \ne\ \text{(b)}:\quad \text{反射升格的平方}=+1,\quad \text{而}\ 2\pi\ \text{旋转}=-1。\
 $$
 
 **核验**：$v=\sigma\_x$ 作反射升格，$v^2=\mathbf{+1}$；$2\pi$ 旋转升格 $=\mathbf{-I}$ ✅
@@ -73,7 +73,7 @@ $$
 | 8 | 7 | 8 |
 
 $$
-\ D=5\ \text{也有 2 维旋量} \Longrightarrow \textbf{唯一性来自 (a)（它强制 }D=4\text{）}，\text{不是来自旋量维数}。\ 
+\ D=5\ \text{也有 2 维旋量} \Longrightarrow \textbf{唯一性来自 (a)（它强制 }D=4\text{）}，\text{不是来自旋量维数}。\
 $$
 
 **所以正确的说法是**：
@@ -118,7 +118,7 @@ $$
 | **仍待建** | 与 $\mathbb Z\_2$ **极化结构**的具体对应（螺旋度 $\pm2$ 与自旋 1/2 在同一代数里的关系）；连续 $SU(2)$ 与洛伦兹自旋结构的衔接 |
 
 $$
-\ \text{自旋 1/2 从【待建】升为}\textbf{【导出】}——\text{条件是接受 (a) 定维数那条链}。\ 
+\ \text{自旋 1/2 从【待建】升为}\textbf{【导出】}——\text{条件是接受 (a) 定维数那条链}。\
 $$
 
 ---

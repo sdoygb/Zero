@@ -7,7 +7,7 @@
 $$
 \ \text{交错耦合} = \text{Z3 的汇}\ \text{作用于}\ \text{G33 的宇称类}
 \Longrightarrow m=\frac{\sigma_{\rm site}}{L}=\frac{1}{L}\ \text{（线性区）},\qquad
-m(L{=}4)=\mathbf{0.2353}\ \text{（完整值）}\ 
+m(L{=}4)=\mathbf{0.2353}\ \text{（完整值）}\
 $$
 
 > **口径与因子 2（本版更正）**。$\sigma(a)$ 是**每点强度**（在终止年龄每步退出概率 $=1$，
@@ -73,7 +73,7 @@ Z3 的退出（Z4 终端款：寿命到达）：未闭合分支在**寿命到达
 正确的是下面的分类命题（证明见 §1.5）。
 
 $$
-\ \textbf{汇的交错振幅}\ \Theta(\sigma)=\sum_a(-1)^a\sigma(a)\ \text{由 Z3 的退出决定为}\ \pm\sigma_{\rm site}\ 
+\ \textbf{汇的交错振幅}\ \Theta(\sigma)=\sum_a(-1)^a\sigma(a)\ \text{由 Z3 的退出决定为}\ \pm\sigma_{\rm site}\
 $$
 
 **数值核验**（同一总权 $V$，$V\to0$ 的线性区）：
@@ -131,7 +131,7 @@ $$
 \ \Longrightarrow\ \begin{cases}
 \text{线性区 }(\sigma_{\rm site}\to0): & m_{\rm stag}=\sigma_{\rm site}/L=0.25\ (L=4)\\
 \text{完整强度 }(\sigma_{\rm site}=1): & m_{\rm stag}=0.2353\ (L=4,\ \text{对角化})
-\end{cases}\ 
+\end{cases}\
 $$
 
 **§1.4a 因子 2 的更正确认**。早版本文写 $m=\Theta(\sigma)/(2L)=\sigma\_{\rm site}/(2L)$，**错了**。
@@ -190,7 +190,7 @@ $|\Theta|=|V\_A-V\_B|\le V\_A+V\_B=V$；等号要求 $V\_A\cdot V\_B=0$。∎
 
 $$
 \ \text{Z4 终端款的字面点汇（支撑}=\{L-1\}\text{）取等号：}\eta:=|\Theta|/V=\mathbf 1\ \text{（100\% 效率）}
-\ \Longrightarrow\ m_{\rm stag}=\frac{|\Theta(\sigma)|}{L}=\frac{\sigma_{\rm site}}{L}\ 
+\ \Longrightarrow\ m_{\rm stag}=\frac{|\Theta(\sigma)|}{L}=\frac{\sigma_{\rm site}}{L}\
 $$
 
 所以**不存在**"通过跨年龄分配 $\sigma(a)$ 来提高交错质量"的自由度：
@@ -244,12 +244,12 @@ $\text{gap}\cdot L\to10.71$ 而不是 $1.8546$，所以 $L=6,10,14,\dots$ 的数
 
 $$
 \ \xi\simeq1.078\,L\ \text{（与 }L\text{ 同步增长）}\Longrightarrow
-\textbf{"子区域尺寸}\gg\xi\textbf{"这个面积律前提在本链里永远不满足}\ 
+\textbf{"子区域尺寸}\gg\xi\textbf{"这个面积律前提在本链里永远不满足}\
 $$
 
 $$
 \ \text{面积律仍是}\textbf{部分的}（\text{一维 }b\approx0.15\sim0.17\ \text{而非}\ 0.007）——
-\text{弱化如实保留，并升级为一条}\textbf{结构性障碍}。\ 
+\text{弱化如实保留，并升级为一条}\textbf{结构性障碍}。\
 $$
 
 **这是一条**明确的开放点**：更强的 gap 需要**汇以外的机构**——但**不是**"不止一个终止年龄"

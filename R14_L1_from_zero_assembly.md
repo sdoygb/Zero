@@ -1,9 +1,9 @@
 # R14 · 从 Zero 组装 L1：把 `Z-CRIT-DER` 从“识别”拆成五个部件
 
-**日期**：2026-10-02  
-**性质**：在 [`Z13`](Z13_zero_foundation_missing_principle.md)（概率／选择）与闭合—相位线索之后，对 L1 的正路由做一次**重组装**：把 `R13` 的第一缺口 `Z-CRIT-DER` 拆成可分别判定的小命题，并对其中一环给出新的可证伪命题。  
-**政策**：区分【已证】／【条件证成】／【候选】／【识别】／【开放】。**不把组装成功写成 L1 已证**；L1 的目标仍是 $K\_B\to2\pi B\_B$。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、[`G68`](G68_interference_from_coarse_graining.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`G81`](G81_central_charge_from_area_density.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)。  
+**日期**：2026-10-02
+**性质**：在 [`Z13`](Z13_zero_foundation_missing_principle.md)（概率／选择）与闭合—相位线索之后，对 L1 的正路由做一次**重组装**：把 `R13` 的第一缺口 `Z-CRIT-DER` 拆成可分别判定的小命题，并对其中一环给出新的可证伪命题。
+**政策**：区分【已证】／【条件证成】／【候选】／【识别】／【开放】。**不把组装成功写成 L1 已证**；L1 的目标仍是 $K\_B\to2\pi B\_B$。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z1`](Z1_zero_layer_as_the_foundation.md)、[`G40`](G40_metric_from_closed_walk_counting.md)、[`G66`](G66_SU2_double_cover_from_geometry.md)、[`G67`](G67_reflection_generates_spin_Z2.md)、[`G68`](G68_interference_from_coarse_graining.md)、[`G77`](G77_staggered_coupling_from_A5.md)、[`G81`](G81_central_charge_from_area_density.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)。
 **核验**：[`R14_check.py`](R14_check.py)。
 
 $$
@@ -166,7 +166,7 @@ $$
 **结论（候选）**：若物理扇区是位置置换的一个表示，则它与双覆盖相容 $\iff$ 全循环 $R$ 实现为 $-1$。**对称（玻色）扇区给 $+1$，反对称（费米）扇区给 $-1$。** 因此一致性**选出反对称扇区**，即 CAR／费米子，而不是 CCR／玻色子。
 
 $$
-\ \text{双覆盖的 }2\pi=-1\ \Longleftrightarrow\ \text{位置置换的反对称扇区}\ 
+\ \text{双覆盖的 }2\pi=-1\ \Longleftrightarrow\ \text{位置置换的反对称扇区}\
 \qquad\text{(R14-9)}
 $$
 

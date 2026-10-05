@@ -1,7 +1,7 @@
 # R7 · H3/H7 对抗性审计：离散系数、尺度限制与正则性迁移
 
-**日期**：2026-10-02  
-**任务**：独立审查 [`R1_gamma_convergence_theorem.md`](R1_gamma_convergence_theorem.md) 中 H3 与 H7 的表述是否成立、是否过强，并给出反例与可复现构造。  
+**日期**：2026-10-02
+**任务**：独立审查 [`R1_gamma_convergence_theorem.md`](R1_gamma_convergence_theorem.md) 中 H3 与 H7 的表述是否成立、是否过强，并给出反例与可复现构造。
 **范围**：本文件只做证伪性审计，不修改其它文件。
 
 ## 0. 判定摘要

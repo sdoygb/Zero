@@ -1,9 +1,9 @@
 # R46 · 对账本的"对象"是什么？`C(D+1,2)` 的**导出**与它的价格
 
-**日期**：2026-10-03  
-**性质**：**导出（正面）＋ 代价定位＋二值下游判据**。执行 `R45` (R45-6)：从零和输运的**对结构**导出 $\binom{D+1}2$，或排除它。  
-**依赖**：[`R45`](R45_ledger_form_scan.md)、[`R44`](R44_survival_vs_contextuality_no_go.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G59`](G59_exact_cone_vs_effective_cone.md)、[`R33`](R33_action_phase_match_project.md)、[`zero_sum_cycle_evolution`](zero_sum_cycle_evolution.py)、[`STATUS`](STATUS.md)。  
-**探针**：[`R46_pair_object_probe.py`](R46_pair_object_probe.py) → [`R46_pair_object_results.json`](R46_pair_object_results.json)。  
+**日期**：2026-10-03
+**性质**：**导出（正面）＋ 代价定位＋二值下游判据**。执行 `R45` (R45-6)：从零和输运的**对结构**导出 $\binom{D+1}2$，或排除它。
+**依赖**：[`R45`](R45_ledger_form_scan.md)、[`R44`](R44_survival_vs_contextuality_no_go.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`G29`](G29_probability_as_derived_not_postulated.md)、[`G59`](G59_exact_cone_vs_effective_cone.md)、[`R33`](R33_action_phase_match_project.md)、[`zero_sum_cycle_evolution`](zero_sum_cycle_evolution.py)、[`STATUS`](STATUS.md)。
+**探针**：[`R46_pair_object_probe.py`](R46_pair_object_probe.py) → [`R46_pair_object_results.json`](R46_pair_object_results.json)。
 **核验**：[`R46_check.py`](R46_check.py)。
 
 $$
@@ -132,7 +132,7 @@ $$
 6. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-\ \text{The simplex count is derivable; its price is the signature.}\ 
+\ \text{The simplex count is derivable; its price is the signature.}\
 $$
 
 ---

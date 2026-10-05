@@ -6,7 +6,7 @@
 
 $$
 \ \text{有限记忆}\ \text{no-go}\ (D242)\ \Longrightarrow\ \text{必须全对全}\ \text{（成立）};\quad
-\textbf{但 }(2L-1)\ \text{不进入宇称通道} \Longrightarrow m\ \text{不被放大（本版更正）}\ 
+\textbf{但 }(2L-1)\ \text{不进入宇称通道} \Longrightarrow m\ \text{不被放大（本版更正）}\
 $$
 
 ---
@@ -43,7 +43,7 @@ $$
 | **全对全** | $\delta$（一切 $r$） | $\delta(2k+1)$ | 增量恒为 $2\delta$ ⟹ **线性增长** ✅ |
 
 $$
-\ \textbf{有限记忆}\text{不能生成线性增量}（D242\ \text{的 no-go}）\Longrightarrow \text{必须全对全}。\ 
+\ \textbf{有限记忆}\text{不能生成线性增量}（D242\ \text{的 no-go}）\Longrightarrow \text{必须全对全}。\
 $$
 
 ---
@@ -70,7 +70,7 @@ $$
 
 $$
 \ \text{全对全／非可和 } \Longrightarrow \text{二次势（成立）};\quad
-\text{但它给的是 }k=0\ \text{通道，交错通道只有 }O(1/L)\ 
+\text{但它给的是 }k=0\ \text{通道，交错通道只有 }O(1/L)\
 $$
 
 **原表的错误**：$(2L-1)$ 是"点核也有的"计数算术——把 $s=\delta\_{r,0}$ 代进同一公式得
@@ -108,7 +108,7 @@ $\Delta\Phi(L-1)=2(L-1)+1=2L-1$，**与全对全完全相同**。
 
 $$
 \ m=0.235342:\ \text{rms}=2.50\times10^{-2}\ (=505\times\ \text{the}\ m=2\ \text{value});\qquad
-\text{rms}<10^{-4}\ \text{requires}\ m\gtrsim1.61\ 
+\text{rms}<10^{-4}\ \text{requires}\ m\gtrsim1.61\
 $$
 
 ---
@@ -126,7 +126,7 @@ $$
 | **全对全（原版）** | ~~$m=1.75$~~ **作废（见 §2.0）** |
 
 $$
-\ \text{放大因子 }(2L-1)\ \text{不进入宇称通道} \Longrightarrow \text{缺口回到 }O(8)\text{，不是 }1.14\ 
+\ \text{放大因子 }(2L-1)\ \text{不进入宇称通道} \Longrightarrow \text{缺口回到 }O(8)\text{，不是 }1.14\
 $$
 
 **注**：$m\ge2$ 这一判据本身已被 [`G83`](G83_the_missing_1_14.md) 判为"人为"；

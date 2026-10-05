@@ -1,8 +1,8 @@
 # D232 · 模密度剖面就是矩阵相位的年龄相关性
 
 **日期**：本轮对话 · **依赖**：`AXIOMS.md` §0.3、§1、`D224`、`D230`、`D231`
-**测试模型**：连续年龄变量、对角矩阵模生成元、Gibbs 态 $e^{-K(f)}/Z$、年龄条件矩阵比例与乘积态比较。它们不是 `U1-U4` 的推论。
-**预先结构**：将局部模生成元写成 $K(f)=K\_M\otimes f$，并用 Gibbs 形式从生成元构造态；年龄边际与矩阵相位 likelihood ratio 的识别。它们不是 `U1-U4` 的推论。
+**测试模型**：连续年龄变量、对角矩阵模生成元、Gibbs 态 $e^{-K(f)}/Z$、年龄条件矩阵比例与乘积态比较。
+**预先结构**：将局部模生成元写成 $K(f)=K\_M\otimes f$，并用 Gibbs 形式从生成元构造态；年龄边际与矩阵相位 likelihood ratio 的识别。
 **核验**：[`verify/d232_profile_as_matrix_age_correlation.py`](verify/d232_profile_as_matrix_age_correlation.py) —— **通过 / 不符**见运行输出
 **v0.5 定位**：`D231` 证明支持投影不决定内部剖面 $f$。本文把 $f$ 改写成一个态上的读数。
 
@@ -59,7 +59,7 @@ f(a)
 
 $$
 
-因此，非恒定模密度剖面就是矩阵相位与年龄支持之间的相关性。D224 的乘积态没有这种相关性，不能产生非恒定 boost 型剖面。本文登记恢复层结构 `R-Z-PROFILE-AS-MATRIX-AGE-CORRELATION` 与缺口 `R-Z-MATRIX-AGE-LIKELIHOOD-GAP`。本文不修改 `U1-U4+C1`，不新增 `U5`。
+因此，非恒定模密度剖面就是矩阵相位与年龄支持之间的相关性。D224 的乘积态没有这种相关性，不能产生非恒定 boost 型剖面。本文登记恢复层结构 `R-Z-PROFILE-AS-MATRIX-AGE-CORRELATION` 与缺口 `R-Z-MATRIX-AGE-LIKELIHOOD-GAP`。
 
 ---
 
@@ -284,8 +284,6 @@ $$
 | `R-Z-PROFILE-AS-MATRIX-AGE-CORRELATION` | 模密度剖面 $f$ 等价于矩阵相位随年龄的 likelihood ratio | 条件改写 |
 | `R-Z-MATRIX-AGE-LIKELIHOOD-GAP` | 年龄条件矩阵比例从零动力学、历史或几何哪里来，仍未导出 | 未解选择器 |
 
-这些结构不修改 `U1-U4+C1`，也不新增 `U5`。
-
 $$
 
 \text{当前缺口不再是抽象剖面，而是矩阵相位的年龄条件分布。}
@@ -294,7 +292,7 @@ $$
 
 ---
 
-**后续状态｜`D233` 检验当前零动力学能否给出该比例。**  
+**后续状态｜`D233` 检验当前零动力学能否给出该比例。**
 `D233` 证明若矩阵二态取闭合历史的正负延拓符号，则 D211/D220 的反射配对给
 
 $$

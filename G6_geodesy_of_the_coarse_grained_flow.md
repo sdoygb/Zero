@@ -1,6 +1,6 @@
 # G6 · 粗粒化流的测地性：I3c 判定与物质类别的选择
 
-**日期**：本轮 · **依赖**：Z0 条款（A0–A5 历史命名）；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 3；[`G5_stress_lift_and_conservation.md`](G5_stress_lift_and_conservation.md) 引理 20、21、23。不使用任何 `D*` 结论。
+**日期**：本轮 · **依赖**：Z0 条款；[`G1_derivations_from_the_bottom_layer.md`](G1_derivations_from_the_bottom_layer.md) 引理 3；[`G5_stress_lift_and_conservation.md`](G5_stress_lift_and_conservation.md) 引理 20、21、23。不使用任何 `D*` 结论。
 **核验**：[`G6_check.py`](G6_check.py) —— **独立实断言 26 / 结论行 0 / 不符 0**，退出码 `0`
 
 **等级标签：**【导出】/【判定】。
@@ -34,13 +34,13 @@ $$
 即 **$L$ 就是 G1 引理 3 的图 Laplacian**。连续极限给
 
 $$
-\ \partial_\tau\rho=D\,\Delta_h\rho\ 
+\ \partial_\tau\rho=D\,\Delta_h\rho\
 $$
 
 **热方程**，其守恒流是**扩散流**
 
 $$
-\ j^a=(\rho,\,-D\nabla\rho),\qquad \nabla_aj^a=0\ 
+\ j^a=(\rho,\,-D\nabla\rho),\qquad \nabla_aj^a=0\
 $$
 
 **核验.**
@@ -113,7 +113,7 @@ $$
 对标量场 $\phi$，Hilbert 应力 $T^\phi\_{ab}=\partial\_a\phi\partial\_b\phi-g\_{ab}(\tfrac12X+V)$ 满足
 
 $$
-\ \nabla^aT^\phi_{ab}=\bigl(\Box\phi-V'(\phi)\bigr)\partial_b\phi\ 
+\ \nabla^aT^\phi_{ab}=\bigl(\Box\phi-V'(\phi)\bigr)\partial_b\phi\
 $$
 
 **核验（sympy，逐分量）.** 恒等式成立。
@@ -211,5 +211,5 @@ $$
 
 **可证伪点：** 若场类中不存在满足 $p=\rho$ 之外的、且能给出观测物态的作用量，则源侧只剩刚性标量，Einstein 方程只能配 $p=\rho$ 的源——这将是一个可检验的强预言。
 
-**后续状态｜`G7` 把 §6 的线索追到结论：耦合是结构性的，但耗散迫使源换支。**  
+**后续状态｜`G7` 把 §6 的线索追到结论：耦合是结构性的，但耗散迫使源换支。**
 [`G7_one_operator_and_the_dissipation_obstruction.md`](G7_one_operator_and_the_dissipation_obstruction.md) 证明：宏观动力学 $\partial\_\tau\rho=-L\rho$ 就是本节 §6 那个 $L$ 的**梯度流**，$F=\tfrac12\rho^{\mathsf T}L\rho$、$dF/d\tau=-|L\rho|^2$；耗散完全来自粗粒化（微观双射、宏观 $P^{\mathsf T}$ 奇异）。于是本文 §6 的线索成立。但它同时制造障碍：$\nabla^aG\_{ab}=0$ 强制耗散型宏观源不满足 $\nabla^aT\_{ab}=0$。**故 §6 的"能量与动力学同一算子"必须配一条选择规则：源只能取精确守恒的那一支**——微观整数电流，或"体 + 汇"整体。本文引理 24 的扩散流因此不能直接做源。核验：`G7_check.py` 通过 21 / 不符 0，退出码 0。

@@ -1,16 +1,16 @@
 # R3 · 四维选维：不循环原则的审查与当前 no-go
 
-**日期**：2026-10-02  
-**状态入口**：[`STATUS.md`](STATUS.md)  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`G8`](G8_dimension_selection.md)、[`G11`](G11_dimension_as_consistency.md)、[`G12`](G12_gauge_sector_minimal_extension.md)、[`G63`](G63_target_list_and_audit.md)、[`G70`](G70_B_and_tau_closing.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`D259`](D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md)、[`zero_sum_geometry_probe.py`](simulations/zero_sum_geometry_probe.py)。  
-**补充审查**：[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 7、[`G60`](G60_dimensionless_ledger_and_one_free_unit.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`G81`](G81_central_charge_from_area_density.md)。  
+**日期**：2026-10-02
+**状态入口**：[`STATUS.md`](STATUS.md)
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z6`](Z6_stall_autopsy_and_released_ledger.md)、[`G8`](G8_dimension_selection.md)、[`G11`](G11_dimension_as_consistency.md)、[`G12`](G12_gauge_sector_minimal_extension.md)、[`G63`](G63_target_list_and_audit.md)、[`G70`](G70_B_and_tau_closing.md)、[`G89`](G89_dimension_no_go_and_the_balance_condition.md)、[`D259`](D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md)、[`zero_sum_geometry_probe.py`](simulations/zero_sum_geometry_probe.py)。
+**补充审查**：[`G1`](G1_derivations_from_the_bottom_layer.md) 引理 7、[`G60`](G60_dimensionless_ledger_and_one_free_unit.md)、[`G62`](G62_quantum_sector_from_GNS_modular_flow_gleason.md)、[`G76`](G76_area_law_in_2d.md)、[`G78`](G78_area_law_in_3d.md)、[`G79`](G79_horizon_thermodynamics.md)、[`G81`](G81_central_charge_from_area_density.md)。
 **核验**：[`R3_check.py`](R3_check.py)。
 
 $$
 
 \begin{aligned}
 &\text{当前语料中，没有一条同时满足“不循环、物理独立、可由主路线证明”的选维原则；}\\
-&\text{能严格证明的是：}Z0\text{ 条款集（}A0\text{–}A5\text{ 历史命名）内部不可选维；}\\
+&\text{能严格证明的是：}Z0\text{ 条款集内部不可选维；}\\
 &\text{最佳条件候选是 Lovelock 临界性 }P_{LL}\text{，但它把“无高阶 Lovelock 动力学”作为外部假设。}
 \end{aligned}
 $$
@@ -50,7 +50,7 @@ $$
 
 **强不循环（物理与证据层）**。除弱不循环外，还要求：
 
-6. $P$ 要么由 $Z0$ 条款集（$A0\text{–}A5$ 历史命名）与识别 $U$ 导出，要么是一条有独立支持的外部物理定律；
+6. $P$ 要么由 $Z0$ 条款集与识别 $U$ 导出，要么是一条有独立支持的外部物理定律；
 7. 若 $P$ 是外部定律，它不能靠把目标改成 $D=5$ 就失去动机；其接受理由不得依赖“它恰好选出四维”；
 8. $P$ 不预设目标几何。具体地说，不能先假定四维 Lorentz 流形、三维边界、四方向交换、五通道证书或两个螺旋度，再把它们包装成选维条件。
 
@@ -73,7 +73,7 @@ $$
 
 ---
 
-## §2 已证：Z0 条款集（A0–A5 历史命名）内部不能选维
+## §2 已证：Z0 条款集内部不能选维
 
 ### 2.1 模型类 no-go
 
@@ -83,17 +83,17 @@ $$
 C_m=(C,E),\qquad C=\{0,\ldots,m-1\},\qquad E=\{\{i,i+1\}:i\in\mathbb Z_m\}
 $$
 
-给出同一套 Z0 条款集（A0–A5 历史命名）的一个模型 $\mathcal M\_m$，其通道数 $|C|=m$。因此底层条款系统本身不限制 $m$。
+给出同一套 Z0 条款集的一个模型 $\mathcal M\_m$，其通道数 $|C|=m$。因此底层条款系统本身不限制 $m$。
 
-设 $\mathcal L\_0$ 为只含 Z0 条款集（A0–A5 历史命名）原语、图变量和计数变量的语言。则有：
+设 $\mathcal L\_0$ 为只含 Z0 条款集原语、图变量和计数变量的语言。则有：
 
-> **定理 R3-1（内部 no-go）**。若 $P$ 是 $\mathcal L\_0$ 中的句子且 Z0 条款集（A0–A5 历史命名）$\vdash P$，则对每个 $m\ge2$，都有 $\mathcal M\_m\models P$。所以 $P$ 不可能在模型类 $\{M\_m\}\_{m\ge2}$ 中唯一选出 $m=4$。
+> **定理 R3-1（内部 no-go）**。若 $P$ 是 $\mathcal L\_0$ 中的句子且 Z0 条款集$\vdash P$，则对每个 $m\ge2$，都有 $\mathcal M\_m\models P$。所以 $P$ 不可能在模型类 $\{M\_m\}\_{m\ge2}$ 中唯一选出 $m=4$。
 
 **证明**。由命题 1，$\mathcal M\_m$ 满足全部条款。理论可导出的 $P$ 在所有模型上为真，故 $P$ 对每个 $m\ge2$ 为真。要由 $P$ 得到 $m=4$，至少还需要一条不在 $\mathcal L\_0$ 中、且能区分这些模型的额外结构。$\square$
 
 ### 2.2 这条 no-go 的准确边界
 
-R3-1 只排除“完全在 Z0 条款集（A0–A5 历史命名）内部”的选维。它不排除：
+R3-1 只排除“完全在 Z0 条款集内部”的选维。它不排除：
 
 1. 一条新的外部物理定律；
 2. 对 $Z0$ 的新读法，但必须同时说明该读法为何不是为四维定制；
@@ -194,9 +194,9 @@ $$
 
 但 [`G89`](G89_dimension_no_go_and_the_balance_condition.md) 已证明：
 
-1. $R$ 不是 Z1 定理 1（原 $A2$，历史命名）的移动取逆；
-2. Z1 定理 1（原 A2）的取逆在 $\mathcal P\_D$ 上作用平凡；
-3. $R$ 属于 $O(D-2)$，而 $O(D-2)$ 不在 Z0 条款集（A0–A5 历史命名）中；
+1. $R$ 不是 Z1 定理 1的移动取逆；
+2. Z1 定理 1的取逆在 $\mathcal P\_D$ 上作用平凡；
+3. $R$ 属于 $O(D-2)$，而 $O(D-2)$ 不在 Z0 条款集中；
 4. 要让 $P\_{\rm bal}$ 有物理动机，还要把 $\mathcal P\_D^\pm$ 识别为同一对称群轨道。
 
 故 $P\_{\rm bal}$ 是条件证明，而不是内部导出。
@@ -215,7 +215,7 @@ $$
 D\ \text{偶},
 $$
 
-还要再加“最小性”才得到 4。最小性不是 Z0 条款集（A0–A5 历史命名）的推论。
+还要再加“最小性”才得到 4。最小性不是 Z0 条款集的推论。
 
 ### 3.5 闭圈/开方向只给数值巧合
 
@@ -281,7 +281,7 @@ $$
 
 > 五通道证书本身仍是恢复层输入，只是它把维数输入压成秩输入。
 
-所以 `m=5` 没有被 Z0 条款集（A0–A5 历史命名）导出；它只是把裸写的 `D=4` 改写为“五通道秩证书”。时间线、定向、体积和区域汇流也仍是该路线的输入。这不是独立选维。
+所以 `m=5` 没有被 Z0 条款集导出；它只是把裸写的 `D=4` 改写为“五通道秩证书”。时间线、定向、体积和区域汇流也仍是该路线的输入。这不是独立选维。
 
 同一问题也出现在 [`G12`](G12_gauge_sector_minimal_extension.md) 的秩公式读法上：文本中 `D=m|F|-1` 与路线 β 的 `D=m` 在 `|F|=1` 时相差一维，说明“哪些方向计入时空”尚未统一。该公式只能作为词典审计材料，不能作为选维依据。
 
@@ -338,7 +338,7 @@ $$
 
 的四维唯一窗口是 `1/2<q<3/5`，而 $L=4$ 的旋转类读出账本给 $q=5/9$，正落在窗口内并全局唯一给出 $D=4$。这条结果不使用 GR、不使用 $D\ge4$，也没有按四维拟合 $q$；但 `PAIR-CARRIER-DER`（为什么继承身份计方向对）仍未从 Zero 构造，故 O3 仍未关闭。
 
-[`R26`](R26_pair_carrier_reduction_no_go.md) 作进一步对抗审计：Z1 定理 1（原 A2，历史命名）的连通性只给 $D-1\le |E(\Gamma\_D)|\le\binom D2$，环图 $C\_D$ 已是合法反例，故不能自动得到完全图；若采用 D194／D259 的 $D=m-1$ 字典，自然对标签数变为 $\binom{D+1}2$，四维窗口移到 `3/5<q<2/3`，而 $q=5/9$ 的唯一峰是 $D=3$；此外，成对重数不自动给出 $q^D$ 代价。因此 `PAIR-CARRIER-DER` 应拆成 `DIR-DICT-BETA`、`PAIR-GRAPH-KD`、`PAIR-ID-EDGE`、`PAIR-COUNT-1`、`PAIR-COST-FACTORIZATION`、`PAIR-NO-EXTRA-MULT` 六项。
+[`R26`](R26_pair_carrier_reduction_no_go.md) 作进一步对抗审计：Z1 定理 1的连通性只给 $D-1\le |E(\Gamma\_D)|\le\binom D2$，环图 $C\_D$ 已是合法反例，故不能自动得到完全图；若采用 D194／D259 的 $D=m-1$ 字典，自然对标签数变为 $\binom{D+1}2$，四维窗口移到 `3/5<q<2/3`，而 $q=5/9$ 的唯一峰是 $D=3$；此外，成对重数不自动给出 $q^D$ 代价。因此 `PAIR-CARRIER-DER` 应拆成 `DIR-DICT-BETA`、`PAIR-GRAPH-KD`、`PAIR-ID-EDGE`、`PAIR-COUNT-1`、`PAIR-COST-FACTORIZATION`、`PAIR-NO-EXTRA-MULT` 六项。
 
 ---
 
@@ -411,7 +411,7 @@ $P\_{LL}$ 通过弱不循环检查：陈述、定义域、计数和求解都覆�
 
 1. “没有非拓扑高阶项”等价于拒绝高阶 Lovelock 修正。在 $D>4$ 中，这些项有资格存在；把它们全部设为零是一种作用量截断。
 2. 若允许逐维调系数，则在任意 $D$ 都可以把高阶系数设为零，维数仍不被选。要选出 4，必须要求“定理的完整局部场方程基”本身只有 $G\_{ab}$ 与 $g\_{ab}$。
-3. 这条要求是二导数引力或极简经典引力假设，不是 Z0 条款集（A0–A5 历史命名）的推论。
+3. 这条要求是二导数引力或极简经典引力假设，不是 Z0 条款集的推论。
 4. 它预设了局部度规、变分原理与 Lovelock 分类，也就是预设了引力场论框架。虽然这不直接预设 $D=4$，但它不是从零和原语中自然出现的选维机制。
 
 因此准确状态是：
@@ -512,7 +512,7 @@ $$
 
 | # | 候选原则 | 存活集 | 循环性判定 | 当前状态 |
 |--:|:--|:--|:--|:--|
-| 1 | Z0 条款集（A0–A5 历史命名）内部选维 | 所有 $D\ge2$ | 由 G89 命题 1 排除 | **排除** |
+| 1 | Z0 条款集内部选维 | 所有 $D\ge2$ | 由 G89 命题 1 排除 | **排除** |
 | 2 | 存在传播引力子 | $\{4,5,6,\ldots\}$ | 只给下界 | **条件证成，不选 4** |
 | 3 | 最小维数 + 存在引力子 | $\{4\}$ | 使用最小性 | **条件，非独立** |
 | 4 | $\pm1$ 读法给偶维 + 最小性 | $\{4\}$ | 读法与最小性均为外部选择 | **条件，非独立** |
@@ -537,7 +537,7 @@ $$
 
 ### 7.1 已证
 
-1. Z0 条款集（A0–A5 历史命名）对每个 $m\ge2$ 都有模型，故内部不能选出 $D=4$。
+1. Z0 条款集对每个 $m\ge2$ 都有模型，故内部不能选出 $D=4$。
 2. $D\le3$ 在外部物理要求“存在传播引力子”下被排除。
 3. 多条公式的唯一解为 4，彼此是同义改写，不构成互相独立的证据。
 4. 若接受 $P\_{LL}$，则 $D=4$ 可由初等计数严格推出。
@@ -572,7 +572,7 @@ $$
 $$
 
 \begin{aligned}
-&\text{已证：}Z0\text{ 条款集（}A0\text{–}A5\text{ 历史命名）不能内部选维；}\\
+&\text{已证：}Z0\text{ 条款集不能内部选维；}\\
 &\text{条件证成：接受 }P_{LL}\text{ 时可推出 }D=4;\\
 &\text{开放：}P_{LL}\text{ 的独立物理支持，或新原则；}\\
 &\text{排除：当前所有循环、同义改写与预设目标几何的候选。}

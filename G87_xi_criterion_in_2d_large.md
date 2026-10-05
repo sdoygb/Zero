@@ -6,7 +6,7 @@
 
 $$
 \ \text{criterion}=\frac{\xi}{L}\lesssim0.4\ \ (\text{ratio});\qquad
-m=0.235342\ (\text{A5 point sink})\Longrightarrow L^{\ast}=22\ (v_F=2.0),\ 29\ (v_F=2.64)\ 
+m=0.235342\ (\text{A5 point sink})\Longrightarrow L^{\ast}=22\ (v_F=2.0),\ 29\ (v_F=2.64)\
 $$
 
 ---
@@ -40,7 +40,7 @@ $S=4aL+b$（方块周长 $4L$），$L=6,10,14,18,24,30$：
 
 $$
 \ m=0.235342:\ \text{dev}\le1\%\ \text{from}\ L=10\ \text{on};\qquad
-\xi/L\le0.4\ \text{requires}\ L\ge22\ (v_F=2.0),\ 29\ (v_F=2.64)。\ 
+\xi/L\le0.4\ \text{requires}\ L\ge22\ (v_F=2.0),\ 29\ (v_F=2.64)。\
 $$
 
 ---
@@ -55,7 +55,7 @@ $$
 | $>0.4$ | 最大 $0.0136$（8 点） |
 
 $$
-\ \text{判据}=\frac{\xi}{L}\lesssim\mathbf{0.4}\quad(\textbf{比值，无量纲})，\ \text{不是}\ \xi\lesssim1.2\ (\text{绝对长度})。\ 
+\ \text{判据}=\frac{\xi}{L}\lesssim\mathbf{0.4}\quad(\textbf{比值，无量纲})，\ \text{不是}\ \xi\lesssim1.2\ (\text{绝对长度})。\
 $$
 
 **为什么这很重要**：[`G83`](G83_the_missing_1_14.md) 把阈值写成"$\xi\lesssim1.2$"（那是从 $L\le6$ 的经验阈值 $m\ge2$ 反推的，隐含着 $L\sim3$–$6$）。大尺寸数据说明**真正的判据是比值**——这与"面积律只在 $\xi\ll L$ 时出现"的物理直觉一致，而且是**尺度无关**的。
@@ -76,7 +76,7 @@ $$
 | 16 对（同一 $\xi/L$ 箱、不同 $m$） | 最大相对差 $\mathbf{51.8\%}$ |
 
 $$
-\ \textbf{坍缩不成立}:\ \frac{S}{\xi L}\ \text{还依赖 }m\ \text{本身} \Longrightarrow \text{次领项有自己的 }m\ \text{依赖}。\ 
+\ \textbf{坍缩不成立}:\ \frac{S}{\xi L}\ \text{还依赖 }m\ \text{本身} \Longrightarrow \text{次领项有自己的 }m\ \text{依赖}。\
 $$
 
 **如实登记**：面积律的**系数** $a\propto1/m$ 是普适的（§4），但**次领项不普适**，所以不存在单参数的坍缩。

@@ -1,10 +1,10 @@
 # R21 · R20 归一化缺口的判定：因子是 $2\pi/v\_F$，不是新增的 $1.85$
 
-**日期**：2026-10-02  
-**性质**：对 R20 的常数判定作归一化复核。修正 **R20 判定标号 A1**（与 A0–A5 的历史条款 A1 同名而异指）的比较口径；不关闭 L1，不新增物理参数。  
-**目标**：判定 R20 的“实测系数约 $3.3$–$3.4$、目标 $2\pi$、缺口约 $1.85$ 倍”到底是新常数，还是费米速度／应力归一化。  
-**依赖**：[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R19`](R19_L1_upstream_probability_phase_and_missing_boost.md)、[`R20`](R20_A1_verdict_shape_holds_constant_fails.md)、[`G77`](G77_staggered_coupling_from_A5.md)。  
-**核验**：[`R21_check.py`](R21_check.py)。  
+**日期**：2026-10-02
+**性质**：对 R20 的常数判定作归一化复核。修正 **R20 判定标号 A1**（与 A0–A5 的历史条款 A1 同名而异指）的比较口径；不关闭 L1，不新增物理参数。
+**目标**：判定 R20 的“实测系数约 $3.3$–$3.4$、目标 $2\pi$、缺口约 $1.85$ 倍”到底是新常数，还是费米速度／应力归一化。
+**依赖**：[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R15`](R15_zcar_double_cover_and_zstress_scale.md)、[`R19`](R19_L1_upstream_probability_phase_and_missing_boost.md)、[`R20`](R20_A1_verdict_shape_holds_constant_fails.md)、[`G77`](G77_staggered_coupling_from_A5.md)。
+**核验**：[`R21_check.py`](R21_check.py)。
 **外部定理**：Eisler–Tonni–Peschel, [arXiv:1902.04474](https://arxiv.org/abs/1902.04474)，第 2–3 节与结论。
 
 > **后续校正（[`R22`](R22_principal_symbol_vs_r20_estimator.md)）**：本轮的 $2\pi/v\_F=\pi$ 结论保留，但 R20 的 $3.394$ 不是该常数的有限尺寸估计。外部定理用的 $T\_N$ 是 (R21-3)，R20 的键中点 $B\_N$（$l=N-1$）不是同一个矩阵；任意光滑向量也不属于 $T\_N$ 的近零模。R22 因此把 $0.9255$ 从“有限尺寸残差”降为估计器／测试子空间偏差。

@@ -1,10 +1,10 @@
 # R22 · A1 主符号与 R20 比值口径的分离
 
-**日期**：2026-10-02  
-**性质**：对 R20／R21 的估计器作独立纠正，并把 1+1D 常数问题分成主符号层与算子层。**不关闭 L1**，不新增 Zero 参数。  
-**目标**：判定 R21 的 $\pi=2\pi/v\_F$ 是否真的由 R20 的二次型比值支持，还是 R20 用了与外部定理不同的几何矩阵和测试子空间。  
-**依赖**：[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R13_external_limit_lemmas.md`](R13_external_limit_lemmas.md)、[`R19`](R19_L1_upstream_probability_phase_and_missing_boost.md)、[`R20`](R20_A1_verdict_shape_holds_constant_fails.md)、[`R21`](R21_vf_normalization_resolves_the_r20_factor.md)。  
-**核验**：[`R22_check.py`](R22_check.py)。  
+**日期**：2026-10-02
+**性质**：对 R20／R21 的估计器作独立纠正，并把 1+1D 常数问题分成主符号层与算子层。**不关闭 L1**，不新增 Zero 参数。
+**目标**：判定 R21 的 $\pi=2\pi/v\_F$ 是否真的由 R20 的二次型比值支持，还是 R20 用了与外部定理不同的几何矩阵和测试子空间。
+**依赖**：[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R13_external_limit_lemmas.md`](R13_external_limit_lemmas.md)、[`R19`](R19_L1_upstream_probability_phase_and_missing_boost.md)、[`R20`](R20_A1_verdict_shape_holds_constant_fails.md)、[`R21`](R21_vf_normalization_resolves_the_r20_factor.md)。
+**核验**：[`R22_check.py`](R22_check.py)。
 **外部定理**：Eisler–Tonni–Peschel, [arXiv:1902.04474](https://arxiv.org/abs/1902.04474)，第 3 节无限链半满区间。
 
 $$

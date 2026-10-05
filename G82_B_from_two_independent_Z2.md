@@ -5,7 +5,7 @@
 **核验**：[`G82_check.py`](G82_check.py) —— **独立实断言 22 / 结论行 0 / 不符 0**，退出码 `0`（0.5 秒）
 
 $$
-\ B=2\times2=4:\quad \underbrace{\text{年龄奇偶}}_{\text{G33}}\times\underbrace{\text{词的取向}}_{\text{G27/G40}}\ 
+\ B=2\times2=4:\quad \underbrace{\text{年龄奇偶}}_{\text{G33}}\times\underbrace{\text{词的取向}}_{\text{G27/G40}}\
 $$
 
 ---
@@ -88,7 +88,7 @@ $$
 | 各自**自由**（无不动点） | ✅ |
 
 $$
-\ \text{生成}\ \mathbb Z_2\times\mathbb Z_2,\ \text{阶}=\mathbf4\ 
+\ \text{生成}\ \mathbb Z_2\times\mathbb Z_2,\ \text{阶}=\mathbf4\
 $$
 
 ---
@@ -114,7 +114,7 @@ $$
 | ③ **无选择原则** | ⚠️ **部分**（"一个标签态一个后代"仍是繁殖规则） | ❌ |
 
 $$
-\ \text{比"最小性"强：这里没有}\textbf{偏好}，\text{只有}\textbf{计数}。\ 
+\ \text{比"最小性"强：这里没有}\textbf{偏好}，\text{只有}\textbf{计数}。\
 $$
 
 ---
@@ -122,7 +122,7 @@ $$
 ## §6 判定
 
 $$
-\ B:\ \text{【输入】}\ (\text{G73})\ \longrightarrow\ \text{【条件性导出】}\ (\text{本文})。\ 
+\ B:\ \text{【输入】}\ (\text{G73})\ \longrightarrow\ \text{【条件性导出】}\ (\text{本文})。\
 $$
 
 | 项 | 内容 |

@@ -1,8 +1,8 @@
 # D225 · 张量因子与直接和替代：$U1-U4$ 不选择局部耦合方式
 
 **日期**：本轮对话 · **依赖**：`AXIOMS.md` §0.3、§1、`D157`、`D222`、`D223`、`D224`
-**测试模型**：张量局部载体 $M\_2(\mathbb C)\otimes C(X\_\tau)$、直接和局部载体 $M\_2(\mathbb C)\oplus C(X\_\tau)$、忠实乘积态、分块忠实态、年龄支持半流与模流。它们不是 `U1-U4` 的推论。
-**预先结构**：最小矩阵因子 $M\_2$、年龄链 $X\_\tau$、局部张量或直接和选择、状态权重、区域张量组合与支持赋值。它们不是 `U1-U4` 的推论。
+**测试模型**：张量局部载体 $M\_2(\mathbb C)\otimes C(X\_\tau)$、直接和局部载体 $M\_2(\mathbb C)\oplus C(X\_\tau)$、忠实乘积态、分块忠实态、年龄支持半流与模流。
+**预先结构**：最小矩阵因子 $M\_2$、年龄链 $X\_\tau$、局部张量或直接和选择、状态权重、区域张量组合与支持赋值。
 **核验**：[`verify/d225_tensor_vs_direct_sum_factorization_gap.py`](verify/d225_tensor_vs_direct_sum_factorization_gap.py) —— **通过 / 不符**见运行输出
 **v0.5 定位**：`D224` 在张量类 $M\_2(\mathbb C)\otimes C(X\_\tau)$ 中给出最小非交换载体。本文检查一个尚未排除的替代：
 
@@ -46,7 +46,7 @@ $$
 
 二者差别是恢复层的局部耦合方式，不是上游公理给出的结果。
 
-本文登记恢复层结构 `R-Z-LOCAL-FACTORIZATION-DICHOTOMY` 与缺口 `R-Z-TENSOR-DIRECT-SUM-GAP`。本文不修改 `U1-U4+C1`，不新增 `U5`。
+本文登记恢复层结构 `R-Z-LOCAL-FACTORIZATION-DICHOTOMY` 与缺口 `R-Z-TENSOR-DIRECT-SUM-GAP`。
 
 ---
 
@@ -466,8 +466,6 @@ $$
 |:--|:--|:--|
 | `R-Z-LOCAL-FACTORIZATION-DICHOTOMY` | 张量与直接和局部载体都能条件满足 `U1,U2_sem,U3,U4_sem` | 条件比较 |
 | `R-Z-TENSOR-DIRECT-SUM-GAP` | U1-U4 不选择局部共存或中央超选择扇区 | 未解选择器 |
-
-这些结构不修改 `U1-U4+C1`，也不新增 `U5`。
 
 $$
 

@@ -1,14 +1,14 @@
 # R17 · L1 必要性审计与 L5 前置门：停止继续下钻 `Z-CAR`
 
-**日期**：2026-10-02  
-**性质**：方向审计 ＋ 一条 L5 相关 no-go ＋ 路线切换判定。不关闭 L1，不新增自由参数；把“继续下钻”改成有门槛的路线选择。  
+**日期**：2026-10-02
+**性质**：方向审计 ＋ 一条 L5 相关 no-go ＋ 路线切换判定。不关闭 L1，不新增自由参数；把“继续下钻”改成有门槛的路线选择。
 **唯一目标**：L1
 
 $$
 K_B\longrightarrow 2\pi B_B .
 $$
 
-**依赖**：[`R0`](R0_publication_theorem.md)、[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R14`](R14_L1_from_zero_assembly.md)、[`R16`](R16_direction_audit_reduction_tree.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md)、[`Z16`](Z16_zunif_balanced_regular_module.md)。  
+**依赖**：[`R0`](R0_publication_theorem.md)、[`R8`](R8_jacobson_entanglement_equilibrium_completion.md)、[`R12`](R12_zero_native_gap_filling.md)、[`R13`](R13_L1_strong_resolvent_attempt.md)、[`R14`](R14_L1_from_zero_assembly.md)、[`R16`](R16_direction_audit_reduction_tree.md)、[`Z13`](Z13_zero_foundation_missing_principle.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`Z15`](Z15_zcar_no_go_and_jordan_wigner_readout.md)、[`Z16`](Z16_zunif_balanced_regular_module.md)。
 **核验**：[`R17_check.py`](R17_check.py)。
 
 $$
@@ -111,7 +111,7 @@ $$
 
 从本文起，新子问题只有在满足以下至少一项时才允许进入主线：
 
-> **R17-STOP 规则**：  
+> **R17-STOP 规则**：
 > 关闭 `Z-CORE`／`Z-TAIL`，证明 L5 的 go/no-go，或证明某个选择型缺口是不可导出／不可满足；否则不得继续增加新的 `Z-*` 标签。
 
 用这条规则检查 `Z-CAR` 分支：

@@ -1,9 +1,9 @@
 # R44 · no-go：**选维（生存）与单体语境性互斥**
 
-**日期**：2026-10-03  
-**性质**：**解析 no-go（新）＋ 对 `R32` 与 `R37` 同时重新定位**。执行 `R43` §4 第 2 笔硬账：检查"两层 `π`"是否与 [`R32`](R32_ledger_readout_selection_and_L8_resolution.md) 的生存要求相容。**结论：不仅两层族不相容，而是两个要求本身互斥。**  
-**依赖**：[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R35`](R35_type_iii_classification.md)、[`R37`](R37_kcbs_contextuality.md)、[`R42`](R42_explicit_pi_rotation_class.md)、[`R43`](R43_pi_two_layer_construction.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R44_survival_vs_contextuality_probe.py`](R44_survival_vs_contextuality_probe.py) → [`R44_survival_vs_contextuality_results.json`](R44_survival_vs_contextuality_results.json)。  
+**日期**：2026-10-03
+**性质**：**解析 no-go（新）＋ 对 `R32` 与 `R37` 同时重新定位**。执行 `R43` §4 第 2 笔硬账：检查"两层 `π`"是否与 [`R32`](R32_ledger_readout_selection_and_L8_resolution.md) 的生存要求相容。**结论：不仅两层族不相容，而是两个要求本身互斥。**
+**依赖**：[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R35`](R35_type_iii_classification.md)、[`R37`](R37_kcbs_contextuality.md)、[`R42`](R42_explicit_pi_rotation_class.md)、[`R43`](R43_pi_two_layer_construction.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R44_survival_vs_contextuality_probe.py`](R44_survival_vs_contextuality_probe.py) → [`R44_survival_vs_contextuality_results.json`](R44_survival_vs_contextuality_results.json)。
 **核验**：[`R44_check.py`](R44_check.py)。
 
 $$
@@ -58,7 +58,7 @@ $$
 $$
 
 $$
-\ \text{peak at }D=4\iff q\in(1/2,\ 3/5),\qquad \text{centre }q=5/9\ \text{(route A, }L=4\text{)}.\ 
+\ \text{peak at }D=4\iff q\in(1/2,\ 3/5),\qquad \text{centre }q=5/9\ \text{(route A, }L=4\text{)}.\
 \qquad\text{(R44-1)}
 $$
 
@@ -108,7 +108,7 @@ q>3/5 &: \quad S_{\max}>2 \ \textbf{(C) yes};\quad \text{peak at } D\ge5 \ \text
 $$
 
 $$
-\ \text{Selection (survival) and single-system contextuality are two mutually exclusive requirements on the same functional } q=\sum_c\omega_c^2.\ 
+\ \text{Selection (survival) and single-system contextuality are two mutually exclusive requirements on the same functional } q=\sum_c\omega_c^2.\
 \qquad\text{(R44-5)}
 $$
 
@@ -125,7 +125,7 @@ $$
 | 两层族 `p=0.8` | `≥0.64` | `D\ge5` ✗ | >2 ✅ |
 
 $$
-\ \text{The two existing positive results sit on the two mutually exclusive sides.}\ 
+\ \text{The two existing positive results sit on the two mutually exclusive sides.}\
 \qquad\text{(R44-6)}
 $$
 
@@ -136,7 +136,7 @@ $$
 no-go **只在 `R31`/`R32` 的账本框架内成立**——那里 $F\_D=\binom D2q^D$ 是**导出的**形式。要同时要 (S) 与 (C)，只有一条路：
 
 $$
-\ \text{Change the ledger form } F_D \text{ so that the } D=4 \text{ window covers } q>3/5. \ 
+\ \text{Change the ledger form } F_D \text{ so that the } D=4 \text{ window covers } q>3/5. \
 \qquad\text{(R44-7)}
 $$
 
@@ -158,7 +158,7 @@ $$
 6. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-\ \text{Survival and contextuality are mutually exclusive on the same } q; \text{ getting both requires changing the ledger form.}\ 
+\ \text{Survival and contextuality are mutually exclusive on the same } q; \text{ getting both requires changing the ledger form.}\
 $$
 
 ---

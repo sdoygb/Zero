@@ -1,8 +1,8 @@
 # D224 · 最小年龄矩阵桥：$M\_2$ 因子、D220 年龄权重与模流支持寿命分离
 
 **日期**：本轮对话 · **依赖**：`AXIOMS.md` §0.3、§1、`D156`、`D157`、`D220`、`D222`、`D223`
-**测试模型**：张量型局部载体 $M\_n(\mathbb C)\otimes C(X\_\tau)$、最小非交换矩阵因子 $M\_2(\mathbb C)$、D220 活动相位权重、非中心对角态与异质局部寿命。它们不是 `U1-U4` 的推论。
-**预先结构**：D223 的张量分解、最小非交换性要求、D220 活动占用到年龄权重的识别、非中心矩阵态参数、终端权重与区域张量乘积。它们不是 `U1-U4` 的推论。
+**测试模型**：张量型局部载体 $M\_n(\mathbb C)\otimes C(X\_\tau)$、最小非交换矩阵因子 $M\_2(\mathbb C)$、D220 活动相位权重、非中心对角态与异质局部寿命。
+**预先结构**：D223 的张量分解、最小非交换性要求、D220 活动占用到年龄权重的识别、非中心矩阵态参数、终端权重与区域张量乘积。
 **核验**：[`verify/d224_minimal_m2_age_bridge_and_modular_support_independence.py`](verify/d224_minimal_m2_age_bridge_and_modular_support_independence.py) —— **通过 / 不符**见运行输出
 **v0.5 定位**：`D223` 把年龄因子与矩阵因子的职责分开。本文继续减少其中的两个输入：
 
@@ -35,7 +35,7 @@ $$
 
 $$
 
-本文登记恢复层结构 `R-Z-MINIMAL-M2-AGE-BRIDGE` 与 `R-Z-MODULAR-SUPPORT-INDEPENDENCE`。本文不修改 `U1-U4+C1`，不新增 `U5`。
+本文登记恢复层结构 `R-Z-MINIMAL-M2-AGE-BRIDGE` 与 `R-Z-MODULAR-SUPPORT-INDEPENDENCE`。
 
 ---
 
@@ -438,13 +438,11 @@ $$
 
 剩余缺口继续登记在 `R-Z-AGE-CARRIER-SELECTION-GAP`：$\tau\_i,r\_i,\epsilon\_i$、张量分解、直接和比较与物理时间映射仍未导出。
 
-这两项不修改 `U1-U4+C1`，也不新增 `U5`。
-
 $$
 
 \text{局部载体已压到 }M_2\otimes C(X_{\tau_i})\text{，但三个标量参数仍待选择。}
 
 $$
 
-**后续状态｜`D225` 排除把本文张量选择误读为绝对最小。**  
+**后续状态｜`D225` 排除把本文张量选择误读为绝对最小。**
 `D225` 证明 $M\_2\oplus C(X\_{\tau\_i})$ 的复维数 $\tau\_i+5$ 小于本文张量的 $4(\tau\_i+1)$，并在显式分块状态下同样条件满足 `U1,U2_sem,U3,U4_sem`。两者差别是矩阵时间与年龄支持是否必须共存，而不是 `U1-U4` 自动选择。本文的“最小”只表示张量类内的最小非交换值，该边界已登记为 `R-Z-TENSOR-DIRECT-SUM-GAP`。

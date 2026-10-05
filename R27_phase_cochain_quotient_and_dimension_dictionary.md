@@ -1,10 +1,10 @@
 # R27 · 相位上链商与维数字典汇流：从 `D=m-1` 得到 `C(D,2)`
 
-**日期**：2026-10-02  
-**性质**：条件构造＋字典审计。把 R26 的六项接口重新组织为一条相位上链商路线；它同时使用 D194／D259 的 `D=m-1` 字典和 R25 的 `C(D,2)q^D` 峰，但代价是新增四项具名输入。本文不关闭 `SURV4-GLOBAL`，也不把共同毁灭代际下的谱系峰升级成绝对演化层占比。  
-**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`D194`](../modular-equilibrium/derivations/D194_zero_sum_lattice_rank_and_isotropic_limit.md)、[`D211`](D211_global_static_closure_zero_layer.md)、[`D217`](D217_history_phase_asymptotic_no_go.md)、[`D221`](D221_u1_cyclic_naturality_and_primitive_phase_gap.md)、[`D222`](D222_stratified_destruction_and_local_memory.md)、[`D259`](D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`R26`](R26_pair_carrier_reduction_no_go.md)、[`zero_sum_periodic_destruction`](zero_sum_periodic_destruction.md)。  
-**后续归约**：[`R28`](R28_phase_identity_cluster_reduction.md) 证明本文的 `PHASE-1-COCHAIN + PAIR-ID-QUOTIENT` 单独不足，并拆成 `EDGE-CONNECTION + HOLONOMY-FULL-SPAN + INHERITANCE-IDENTITY`。  
-**账本归约**：[`R29`](R29_full_support_ledger_factorization_no_go.md) 证明本文的 `FULL-SUPPORT-LEDGER` 也不足以给出 `q^D`，并拆成 `DIR-SUPPORT-D + RECORD-FAMILY-D + PRODUCT-LEDGER + SAME-Q`。  
+**日期**：2026-10-02
+**性质**：条件构造＋字典审计。把 R26 的六项接口重新组织为一条相位上链商路线；它同时使用 D194／D259 的 `D=m-1` 字典和 R25 的 `C(D,2)q^D` 峰，但代价是新增四项具名输入。本文不关闭 `SURV4-GLOBAL`，也不把共同毁灭代际下的谱系峰升级成绝对演化层占比。
+**依赖**：[`Z0`](Z0_zero_never_rests_single_axiom.md)、[`Z14`](Z14_closure_cyclic_order_base_theorem.md)、[`D194`](../modular-equilibrium/derivations/D194_zero_sum_lattice_rank_and_isotropic_limit.md)、[`D211`](D211_global_static_closure_zero_layer.md)、[`D217`](D217_history_phase_asymptotic_no_go.md)、[`D221`](D221_u1_cyclic_naturality_and_primitive_phase_gap.md)、[`D222`](D222_stratified_destruction_and_local_memory.md)、[`D259`](D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md)、[`R23`](R23_dimension_descendant_selection.md)、[`R25`](R25_native_pair_cost_and_four_dim_peak.md)、[`R26`](R26_pair_carrier_reduction_no_go.md)、[`zero_sum_periodic_destruction`](zero_sum_periodic_destruction.md)。
+**后续归约**：[`R28`](R28_phase_identity_cluster_reduction.md) 证明本文的 `PHASE-1-COCHAIN + PAIR-ID-QUOTIENT` 单独不足，并拆成 `EDGE-CONNECTION + HOLONOMY-FULL-SPAN + INHERITANCE-IDENTITY`。
+**账本归约**：[`R29`](R29_full_support_ledger_factorization_no_go.md) 证明本文的 `FULL-SUPPORT-LEDGER` 也不足以给出 `q^D`，并拆成 `DIR-SUPPORT-D + RECORD-FAMILY-D + PRODUCT-LEDGER + SAME-Q`。
 **核验**：[`R27_check.py`](R27_check.py)。
 
 $$

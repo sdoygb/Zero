@@ -1,9 +1,9 @@
 # R45 · 账本形式扫描：`R44` 的 no-go **可逃**，代价是 `R32` 的唯一性被削弱
 
-**日期**：2026-10-03  
-**性质**：**扫描＋逃生口（正面）＋ 对 `R32` 唯一性的收窄**。执行 `R44` (R44-7) 的新目标：找 $F\_D$ 使"$D=4$ 峰窗口"覆盖 $q>3/5$。  
-**依赖**：[`R44`](R44_survival_vs_contextuality_no_go.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R37`](R37_kcbs_contextuality.md)、[`G1`](G1_lovelock_from_zero.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R45_ledger_form_scan_probe.py`](R45_ledger_form_scan_probe.py) → [`R45_ledger_form_scan_results.json`](R45_ledger_form_scan_results.json)。  
+**日期**：2026-10-03
+**性质**：**扫描＋逃生口（正面）＋ 对 `R32` 唯一性的收窄**。执行 `R44` (R44-7) 的新目标：找 $F\_D$ 使"$D=4$ 峰窗口"覆盖 $q>3/5$。
+**依赖**：[`R44`](R44_survival_vs_contextuality_no_go.md)、[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)、[`R31`](R31_phase_ledger_and_lifetime_selection.md)、[`R37`](R37_kcbs_contextuality.md)、[`G1`](G1_lovelock_from_zero.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R45_ledger_form_scan_probe.py`](R45_ledger_form_scan_probe.py) → [`R45_ledger_form_scan_results.json`](R45_ledger_form_scan_results.json)。
 **核验**：[`R45_check.py`](R45_check.py)。
 
 $$
@@ -135,7 +135,7 @@ $$
 6. 没有由四维标签推出 Lorentz、度规、Lovelock 或 GR。
 
 $$
-\ \text{Escape exists (Euclidean pair count), at the price of R32 uniqueness.}\ 
+\ \text{Escape exists (Euclidean pair count), at the price of R32 uniqueness.}\
 $$
 
 ---

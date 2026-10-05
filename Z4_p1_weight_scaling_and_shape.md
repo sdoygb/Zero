@@ -6,7 +6,7 @@
 **核验**：[`Z4_check.py`](Z4_check.py) —— **独立实断言 33 / 结论行 0 / 不符 0**，退出码 `0`
 
 $$
-\ \text{I2a}\ \textbf{没有被 no-go 挡住};\ \text{它缺的是}\textbf{一个标度}＋\textbf{一个维数}（都已登记）＋\textbf{一个新问题}。\ 
+\ \text{I2a}\ \textbf{没有被 no-go 挡住};\ \text{它缺的是}\textbf{一个标度}＋\textbf{一个维数}（都已登记）＋\textbf{一个新问题}。\
 $$
 
 ---
@@ -35,7 +35,7 @@ $$
 \sum_{ij}N^{(k)}_{ij}=k\lambda^{k-1}\phi^{\!\top}A\phi=k\lambda^{k},
 \qquad
 \Longrightarrow\quad
-\ w_{ij}=\frac{A_{ij}\,\phi_i\phi_j}{\lambda}\ 
+\ w_{ij}=\frac{A_{ij}\,\phi_i\phi_j}{\lambda}\
 $$
 
 即**归一化穿越数有闭式**：邻接 × 两端 Perron 分量 ÷ Perron 根。
@@ -71,7 +71,7 @@ $$
 补救只有一条：把权重乘以 $a^{-2}$（等价于选一个**长度标度**）。
 
 $$
-\ \textbf{I2a 的"标度"这一半}\ =\ \textbf{已登记输入}\ (\text{I2b／G44 的"度规需要一个标度"})。\ 
+\ \textbf{I2a 的"标度"这一半}\ =\ \textbf{已登记输入}\ (\text{I2b／G44 的"度规需要一个标度"})。\
 $$
 
 ---
@@ -110,7 +110,7 @@ $$
 | **带边界补片**（非顶点传递） | 非均匀（基态剖面） | **有剖面** | 剖面**依赖域与边界条件** ⇒ 度规**非普适** |
 
 $$
-\ \text{两条路都留下一个问题}:\ \text{要么均匀（G2 障碍），要么非均匀但依赖域}。\ 
+\ \text{两条路都留下一个问题}:\ \text{要么均匀（G2 障碍），要么非均匀但依赖域}。\
 $$
 
 ---
@@ -125,7 +125,7 @@ $$
 | 二阶性（(O)） | 分析问题 | 在标度补齐后，$E\_N$ 有限且非退化 ⇒ 二阶（Einstein–Hilbert 型）是**自然的**，但未证 |
 
 $$
-\ \text{I2a}\ \textbf{不是被 no-go 挡住，而是}\textbf{conditional on 两个已登记输入}＋\textbf{一个新问题}。\ 
+\ \text{I2a}\ \textbf{不是被 no-go 挡住，而是}\textbf{conditional on 两个已登记输入}＋\textbf{一个新问题}。\
 $$
 
 这与 [`G18`](G18_attackability_of_the_continuum_limit.md) 的既有判定**一致**：

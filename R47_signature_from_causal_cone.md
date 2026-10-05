@@ -1,9 +1,9 @@
 # R47 · 因果结构供出洛伦兹签名：`R46` 的价格**可以付**
 
-**日期**：2026-10-03  
-**性质**：**判据裁决（正面）＋ 链条收束**。执行 `R46` (R46-5)：检查因果/锥结构能否供出洛伦兹签名。  
-**依赖**：[`R46`](R46_pair_ledger_objects_and_simplex.md)、[`R45`](R45_ledger_form_scan.md)、[`R44`](R44_survival_vs_contextuality_no_go.md)、[`G59`](G59_I7_settled_native_cone_and_its_residue.md)、[`R33`](R33_action_phase_match_project.md)、[`G57`](G57_dimensional_constants_no_go.md)、[`G60`](G60_dimensionless_ledger_and_one_free_unit.md)、[`STATUS`](STATUS.md)。  
-**探针**：[`R47_signature_from_causal_cone_probe.py`](R47_signature_from_causal_cone_probe.py) → [`R47_signature_from_causal_cone_results.json`](R47_signature_from_causal_cone_results.json)。  
+**日期**：2026-10-03
+**性质**：**判据裁决（正面）＋ 链条收束**。执行 `R46` (R46-5)：检查因果/锥结构能否供出洛伦兹签名。
+**依赖**：[`R46`](R46_pair_ledger_objects_and_simplex.md)、[`R45`](R45_ledger_form_scan.md)、[`R44`](R44_survival_vs_contextuality_no_go.md)、[`G59`](G59_I7_settled_native_cone_and_its_residue.md)、[`R33`](R33_action_phase_match_project.md)、[`G57`](G57_dimensional_constants_no_go.md)、[`G60`](G60_dimensionless_ledger_and_one_free_unit.md)、[`STATUS`](STATUS.md)。
+**探针**：[`R47_signature_from_causal_cone_probe.py`](R47_signature_from_causal_cone_probe.py) → [`R47_signature_from_causal_cone_results.json`](R47_signature_from_causal_cone_results.json)。
 **核验**：[`R47_check.py`](R47_check.py)。
 
 $$
@@ -104,7 +104,7 @@ $$
 | 5 | `2\pi`、`E1` | 仍未解决 |
 
 $$
-\ \text{The signature is derived; the scale and the dynamics are not.}\ 
+\ \text{The signature is derived; the scale and the dynamics are not.}\
 $$
 
 ---

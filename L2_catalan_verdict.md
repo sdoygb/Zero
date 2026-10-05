@@ -57,7 +57,7 @@ $$
 $$
 
 $$
-\text{(iii)}\quad \ \lambda(T)^2=S(T)\,\bigl(\lambda(T)+1\bigr)\ 
+\text{(iii)}\quad \ \lambda(T)^2=S(T)\,\bigl(\lambda(T)+1\bigr)\
 \qquad\text{（由 }2T\text{ 维分块矩阵的块行列式精确推出）}
 $$
 
@@ -75,7 +75,7 @@ $$
 
 $$
 S(T)\sim\frac{2^{T}}{(T/2)^{3/2}\sqrt\pi}\ \text{（至多项式因子）},\qquad
-\ \lambda(T)=S(T)+1+O(1/S)\ 
+\ \lambda(T)=S(T)+1+O(1/S)\
 $$
 
 ---
@@ -114,7 +114,7 @@ $$
 **但仍未够**：$\rho(T)$ 需要的是**另一个**线性泛函的比值（$D$ 侧），它**不由 $\lambda$ 单独决定**——需要特征向量。
 
 $$
-\ \text{本轮把 }\lambda(T)\ \textbf{完全关闭};\ \rho(T)\ \text{与"反解唯一 }T\text{"仍需特征向量。}\ 
+\ \text{本轮把 }\lambda(T)\ \textbf{完全关闭};\ \rho(T)\ \text{与"反解唯一 }T\text{"仍需特征向量。}\
 $$
 
 **顺带**：$\text{co}$ 是 Catalan 意味着 $\lambda$ 的"底"是 $4^{T/2}=2^T$ ——**这是全库第一次出现 Catalan 结构**，值得单独记一笔（与 `G27`／`G62` 的 $M\_2$、`D_L` 二面体结构可能同源）。

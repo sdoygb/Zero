@@ -5,7 +5,7 @@
 **核验**：[`G46_check.py`](G46_check.py) —— **独立实断言 36 / 结论行 0 / 不符 0**，退出码 `0`
 
 $$
-\ k\ \text{由 Z4 的有限寿命 }L\ \text{唯一确定：}\ k=L\ 
+\ k\ \text{由 Z4 的有限寿命 }L\ \text{唯一确定：}\ k=L\
 $$
 
 ---
@@ -37,7 +37,7 @@ k<L &:\\ \\text{会漏掉}\\textbf{可实现的}\\text{闭合词} \\Longrightarr
 $$
 
 $$
-\\\ k=L\\ \\text{被【逼出】，而不是被挑选}。\\ 
+\\\ k=L\\ \\text{被【逼出】，而不是被挑选}。\\
 $$
 
 **而 $L$ 是无量纲的【步数】** $\\Longrightarrow$ $k=L$ **无自由参数、不增扩充条款** ✅
@@ -54,7 +54,7 @@ $$
 | 64 | $1.1\\times10^{-16}$ | 1 | $0.0\\times10^{0}$ | **三前提齐** |
 
 $$
-\\\ (L)+(O)+(C)\\ \\text{齐} \\Longrightarrow \\text{Lovelock 适用} \\Longrightarrow \\textbf{Einstein 方程到手}。\\ 
+\\\ (L)+(O)+(C)\\ \\text{齐} \\Longrightarrow \\text{Lovelock 适用} \\Longrightarrow \\textbf{Einstein 方程到手}。\\
 $$
 
 ---
@@ -69,7 +69,7 @@ $$
 | $C\_{60}$ | 32 | 1 | **是** |
 
 $$
-\\\ \\text{Z0③ 的无偏好是 }k=L\\text{ 闭环计数度规在}\\textbf{顶点传递图上的特例}。\\ 
+\\\ \\text{Z0③ 的无偏好是 }k=L\\text{ 闭环计数度规在}\\textbf{顶点传递图上的特例}。\\
 $$
 
 **不规则图**（三角＋环＋尾）上则非均匀：
@@ -93,7 +93,7 @@ $\\Longrightarrow$ **不规则图上得到由 Z0 条款导出的新度规** ✅
 | **不增扩充条款** | ✅（$k=L$ 由 **Z4** 唯一确定） |
 
 $$
-\\\ \\text{G41 的三难困境，在 }k=L\\text{ 这条路上}\\textbf{解除}。\\ 
+\\\ \\text{G41 的三难困境，在 }k=L\\text{ 这条路上}\\textbf{解除}。\\
 $$
 
 ---
@@ -110,7 +110,7 @@ $$
 **形状随 $L$ 变化且不收敛** $\\Longrightarrow$
 
 $$
-\\\ \\text{它是【有效度规】（在尺度 }L\\text{ 上的有效描述），}\\textbf{不是 UV 固定的度规}。\\ 
+\\\ \\text{它是【有效度规】（在尺度 }L\\text{ 上的有效描述），}\\textbf{不是 UV 固定的度规}。\\
 $$
 
 **这是诚实的代价，必须登记。**

@@ -5,7 +5,7 @@
 **核验**：[`G75_check.py`](G75_check.py) —— **独立实断言 22 / 结论行 0 / 不符 0**，退出码 `0`（0.9 秒）
 
 $$
-\ \text{几何}=\text{态的模读出};\qquad \text{面积律由}\textbf{宇称结构}\text{打开};\qquad G\ \text{是}\textbf{单位}。\ 
+\ \text{几何}=\text{态的模读出};\qquad \text{面积律由}\textbf{宇称结构}\text{打开};\qquad G\ \text{是}\textbf{单位}。\
 $$
 
 ---
@@ -46,7 +46,7 @@ $$
 | $\beta=5.0$ | 偏差 $\mathbf{1.3\times10^{-14}}$ |
 
 $$
-\ \text{模 Hamiltonian 与度规算子}\textbf{是同一个算子} \Longrightarrow \textbf{几何}=\text{态的模读出}。\ 
+\ \text{模 Hamiltonian 与度规算子}\textbf{是同一个算子} \Longrightarrow \textbf{几何}=\text{态的模读出}。\
 $$
 
 **而这与 [`G7`](G7_one_operator_and_the_dissipation_obstruction.md) 已经给的一条接上**：那里证过"几何的能函 = 物质的梯度流生成元"。于是我们有**三重同一**：
@@ -100,7 +100,7 @@ $$
 | **2.0** | $2.0$ | $0.3434$ | $0.3466$ | $0.3466$ | $\mathbf{+0.003}$（**面积律**） |
 
 $$
-\ \textbf{宇称结构打开 gap} \Longrightarrow S\ \text{饱和（面积律）};\qquad \text{且单调恢复}。\ 
+\ \textbf{宇称结构打开 gap} \Longrightarrow S\ \text{饱和（面积律）};\qquad \text{且单调恢复}。\
 $$
 
 ### 这**回答了 `D129` 的卡点**
@@ -130,7 +130,7 @@ Jacobson 式核算：$S=\eta A$、$T=1/(2\pi)$（[`G62`](G62_quantum_sector_from
 | $3.0$ | $1.000000$ | $0.1592$ | $1.4324$ |
 
 $$
-\ \text{面积系数与 }G\ \text{承载}\textbf{同一个单位} \Longrightarrow \text{D152 的"三输入未定"}\textbf{就是这个单位自由度}（\text{G57}）。\ 
+\ \text{面积系数与 }G\ \text{承载}\textbf{同一个单位} \Longrightarrow \text{D152 的"三输入未定"}\textbf{就是这个单位自由度}（\text{G57}）。\
 $$
 
 ---

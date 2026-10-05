@@ -1,12 +1,12 @@
 # Z9 · $\pi$ 的筛子：**年龄筛**与**生存筛**，以及"局部寿命"的**分叉**
 
 **日期**：本轮 · **性质**：**推进 E1 的第三格**（[`Z8`](Z8_native_scale_field_candidate.md) §6 的下一步）＋ **两道硬筛** ＋ **一处勘误**。
-**依赖**：[`Z8`](Z8_native_scale_field_candidate.md)（判据 C1–C6 与候选 2）、[`Z7`](Z7_embedding_input_explicit_dictionary.md)（闭式字典）、[`G54`](G54_quantitative_profile_age_measure.md)（引理 79 年龄均匀性／半程定理）、[`G29`](G29_probability_as_derived_not_postulated.md)（推前计数测度）、[`G35`](G35_reseeding_and_chirality.md)／[`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md)（**Z3 的写入＝旋转类**；A5 的写入为历史命名）、[`G46`](G46_k_is_the_lifetime.md)（$k=L$／顶点传递图退化）、[`Z0`](Z0_zero_never_rests_single_axiom.md) §4.2／[`Z1`](Z1_zero_layer_as_the_foundation.md) §4.2（Z-E2 局部寿命）。
+**依赖**：[`Z8`](Z8_native_scale_field_candidate.md)（判据 C1–C6 与候选 2）、[`Z7`](Z7_embedding_input_explicit_dictionary.md)（闭式字典）、[`G54`](G54_quantitative_profile_age_measure.md)（引理 79 年龄均匀性／半程定理）、[`G29`](G29_probability_as_derived_not_postulated.md)（推前计数测度）、[`G35`](G35_reseeding_and_chirality.md)／[`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md)、[`G46`](G46_k_is_the_lifetime.md)（$k=L$／顶点传递图退化）、[`Z0`](Z0_zero_never_rests_single_axiom.md) §4.2／[`Z1`](Z1_zero_layer_as_the_foundation.md) §4.2（Z-E2 局部寿命）。
 **等级标签**：【推进】/【筛除】/【数值核验】/【勘误】/【条件】/【结论】。
 **核验**：[`Z9_check.py`](Z9_check.py) —— **独立实断言 46 / 结论行 0 / 不符 0**，退出码 `0`（约 0.5 秒）
 
 $$
-\ \text{几何要求 }\pi\ \text{依赖}\textbf{词的内容};\quad \text{依赖年龄的 }\pi\ \text{一律给平坦（引理 79）};\quad \text{原生幸存者}=\textbf{旋转类（Z3 自己的写入标签）}。\ 
+\ \text{几何要求 }\pi\ \text{依赖}\textbf{词的内容};\quad \text{依赖年龄的 }\pi\ \text{一律给平坦（引理 79）};\quad \text{原生幸存者}=\textbf{旋转类（Z3 自己的写入标签）}。\
 $$
 
 ---
@@ -15,7 +15,7 @@ $$
 
 1. **年龄筛**：任何**只依赖年龄**的 $\pi$（含年龄分块、年龄奇偶）给**完全相等**的类规模（[`G54`](G54_quantitative_profile_age_measure.md) 引理 79 的直接后果；本文 $L=4\dots12$ 逐岁复算）⟹ $c\equiv1$ ⟹ **平坦** ⟹ **不能承载几何**。这把 [`G33`](G33_macro_master_equation_and_mz_kernel.md)／[`G54`](G54_quantitative_profile_age_measure.md) §5 都指向的"$\pi$＝年龄分块"**筛掉了**。
 2. **生存筛**：前缀／生存测度**有**非恒定性，但**在顶点传递图上非均匀**——本文在 $C\_8$ 上用**真实走道权重**复算：$(\max-\min)/\text{mean}=\mathbf{1.354}$，而 [`G46`](G46_k_is_the_lifetime.md) §3 要求取值数 $=1$ ⟹ **违反 C4**（[`Z8`](Z8_native_scale_field_candidate.md) §1）；叠加 [`Z8`](Z8_native_scale_field_candidate.md) §2 的 C5 违反 ⟹ **筛掉**。
-3. **幸存者**：$\pi$ 必须依赖**词的内容**，而 Z3 的写入标签**本来就是**闭合词的**旋转类**（[`G35`](G35_reseeding_and_chirality.md)：「A5 的写入用的是闭合词的【旋转类】$[w]$」〔引文标号为历史命名〕；[`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) §2：$\omega\_{\rm reseed}(C)=|C|/\sum\_{C'}|C'|$）。
+3. **幸存者**：$\pi$ 必须依赖**词的内容**，而 Z3 的写入标签**本来就是**闭合词的**旋转类**。
    类规模**非均匀**（独立复算，与 [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) 逐位一致）：$L=8$ 给 $\{2{:}1,4{:}1,8{:}8\}$（$\max/\min=4$）、$L=12$ 给 $\{2{:}1,4{:}1,6{:}3,12{:}75\}$（$6$）⟹ **它能承载几何**。
 4. **局部寿命 $\tau\_i$**（清点里的首选候选）通过 C1–C4、C6，且均匀 $\tau$ 下**两种读法都精确平坦**；但"把寿命局部化"**不是一个模型而是两个**：$\;$**(a)** 全局 $k=L$ ＋ 标度场 $c\_i=\tau\_i/L$ ⟹ 对比度 $1801$；$\;$**(b)** $c\equiv1$ ＋ **局部截断** $k\_i=\tau\_i$ ⟹ 对比度 $83$；逐边相对差达 **$97\%$**。**这是一个待决分叉，不是解**（[`G46`](G46_k_is_the_lifetime.md) 的"$k$ 被 $L$ 逼出"更偏向 (b)）。
 
@@ -28,11 +28,11 @@ $$
 | 筛 | 判据 | 被筛对象 | 结果 |
 |:--|:--|:--|:--|
 | **年龄筛** | C4 ＋ [引理 79](G54_quantitative_profile_age_measure.md) | 任何 $f(\text{年龄})$ 的 $\pi$ | **类规模恒等 ⟹ 平坦** ⟹ 出局 |
-| **生存筛** | C4（本文 $C\_8$ 实算 $1.354$）＋ C5（[`Z8`](Z8_native_scale_field_candidate.md) §2） | 前缀／生存测度 $F(a)$ | **非均匀 ⟹ 破缺 Z0③（A3 历史命名）** ⟹ 出局 |
+| **生存筛** | C4（本文 $C\_8$ 实算 $1.354$）＋ C5（[`Z8`](Z8_native_scale_field_candidate.md) §2） | 前缀／生存测度 $F(a)$ | **非均匀 ⟹ 破缺 Z0③** ⟹ 出局 |
 | — | C1＋C4 | 旋转类（内容标签） | **通过** |
 
 $$
-\ \text{两道筛合起来给一句判词}:\ \textbf{几何只能来自"词的内容"，不能来自"词的年龄"}。\ 
+\ \text{两道筛合起来给一句判词}:\ \textbf{几何只能来自"词的内容"，不能来自"词的年龄"}。\
 $$
 
 ### 1.1 年龄筛的证明与复算
@@ -75,7 +75,7 @@ $$
 
 [`G35`](G35_reseeding_and_chirality.md)：
 
-> **A5 的写入用的是闭合词的【旋转类】$[w]$**（引文标号为历史命名；现行出处 **Z3**）。
+> **A5 的写入用的是闭合词的【旋转类】$[w]$**。
 
 [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) §2：重播种权重是计数测度的推前
 
@@ -94,7 +94,7 @@ $$
 （与 [`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) 的分布**逐位一致**。）
 
 $$
-\ \text{旋转类规模非均匀} \Longrightarrow c\not\equiv1 \Longrightarrow \textbf{几何};\ \text{而它是 Z3 **自己**的写入标签——不是外加结构}。\ 
+\ \text{旋转类规模非均匀} \Longrightarrow c\not\equiv1 \Longrightarrow \textbf{几何};\ \text{而它是 Z3 **自己**的写入标签——不是外加结构}。\
 $$
 
 **这一步把 [`Z8`](Z8_native_scale_field_candidate.md) §4 的"$\pi$"从自由输入钉成了具体标签**：
@@ -153,7 +153,7 @@ $$
 | 新缺口 | — | **类$\leftrightarrow$站点识别的准均匀性**（C5 的具体化） |
 
 $$
-\ \text{E1 剩一句可攻的问题}:\ \textbf{旋转类怎样与站点对应、且该对应在细化下准均匀}。\ 
+\ \text{E1 剩一句可攻的问题}:\ \textbf{旋转类怎样与站点对应、且该对应在细化下准均匀}。\
 $$
 
 ---

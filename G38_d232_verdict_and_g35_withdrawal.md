@@ -5,7 +5,7 @@
 **核验**：[`G38_check.py`](G38_check.py) —— **独立实断言 28 / 结论行 0 / 不符 0**，退出码 `0`
 
 $$
-\ f(a)=\frac{1}{\lambda_1-\lambda_0}\log\frac{p_0(a)}{p_1(a)}\ \ (\text{D232 原文})\ \Longrightarrow\ \text{G37 算的正是这个量}\ \Longrightarrow\ \text{G35 撤回}\ 
+\ f(a)=\frac{1}{\lambda_1-\lambda_0}\log\frac{p_0(a)}{p_1(a)}\ \ (\text{D232 原文})\ \Longrightarrow\ \text{G37 算的正是这个量}\ \Longrightarrow\ \text{G35 撤回}\
 $$
 
 ---
@@ -51,7 +51,7 @@ $\Longrightarrow$ **`G35` 的"$p\_+(a)\ne p\_-(a)$ 可能"被否证** $\Longrigh
 > "年龄谱**只依赖绝对值** $n=\lvert\sum x\_j\rvert$，正负两支在每一步被**反射配对**。因此**年龄条件符号比例恒为一半一半**。现有零动力学给不出非恒定剖面。"
 
 $$
-\ \text{这正是 G37 的符号对称定理；我用组合枚举}\textbf{独立验证}\text{了它。}\ 
+\ \text{这正是 G37 的符号对称定理；我用组合枚举}\textbf{独立验证}\text{了它。}\
 $$
 
 （$L=2,\dots,16$ 全部 $p\_+(a)=p\_-(a)=\tfrac12\lvert\mathcal W\_L\rvert$ ✅）
@@ -73,7 +73,7 @@ $$
 | 3 | **重播种给不出非恒定剖面**（$f\equiv0$，可证） | `D233`／**本文** |
 
 $$
-\ \text{几何剖面不是从零和动力学里长出来的。}\ 
+\ \text{几何剖面不是从零和动力学里长出来的。}\
 $$
 
 ---
