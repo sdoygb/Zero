@@ -1,0 +1,35 @@
+{
+ "A": {
+  "eigs": [
+   9.418152563760719e-17,
+   4.9999999999999964,
+   4.999999999999999,
+   5.0,
+   5.000000000000001
+  ],
+  "aniso": 1.0
+ },
+ "B": {
+  "orbA": 4,
+  "orbB": 6
+ },
+ "C": {
+  "T00": "D*a",
+  "Tii": "a+(D-1)*b"
+ },
+ "D": {
+  "w_of_ratio": "(1+3r)/4"
+ },
+ "E": {
+  "traceless_requires": "b/a = -2/3 (unphysical)"
+ },
+ "verdict": {
+  "isotropic": true,
+  "orbits": [
+   4,
+   6
+  ],
+  "two_param": true,
+  "traceless_unusable": true
+ }
+}

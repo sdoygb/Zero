@@ -1,0 +1,1918 @@
+{
+  "model": {
+    "sites": 6,
+    "initial_histories": [
+      "+-",
+      "++--",
+      "+-+-+-",
+      "++-+--",
+      "+++---",
+      "++--++--"
+    ],
+    "layer_lifetime": 4,
+    "epochs": 4,
+    "extensions": 8,
+    "probabilities": "none",
+    "mutations": "none",
+    "rules": {
+      "local_P": "global R, local P",
+      "global_P": "global R, global P control",
+      "global_R_reconstruct": "global R reconstructs history"
+    },
+    "note": "R is global in all main scenarios. The only difference is whether a site rebuilds from local P, global P, or a global canonical history reconstructed from R."
+  },
+  "runs": [
+    {
+      "scenario": "local_P",
+      "label": "global R, local P",
+      "epochs": 4,
+      "layer_lifetime": 4,
+      "initial_histories": [
+        "+-",
+        "++--",
+        "+-+-+-",
+        "++-+--",
+        "+++---",
+        "++--++--"
+      ],
+      "snapshots": [
+        {
+          "epoch": 0,
+          "global_results": 0,
+          "global_histories": 0,
+          "local_history_overlap": 0.0,
+          "active_history_overlap": 0.0,
+          "distinct_top_results": 6,
+          "local_history_sizes": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "top_results": [
+            "-+",
+            "--++",
+            "-+-+-+",
+            "--++-+",
+            "---+++",
+            "--++--++"
+          ]
+        },
+        {
+          "epoch": 1,
+          "global_results": 41,
+          "global_histories": 48,
+          "local_history_overlap": 0.00784313725490196,
+          "active_history_overlap": 0.00784313725490196,
+          "distinct_top_results": 6,
+          "local_history_sizes": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
+          ],
+          "top_results": [
+            "--++-+",
+            "---+-+++",
+            "--++-+-+-+",
+            "--+-+-++-+",
+            "---+-+-+++",
+            "---++-++--++"
+          ]
+        },
+        {
+          "epoch": 2,
+          "global_results": 248,
+          "global_histories": 344,
+          "local_history_overlap": 0.010619469026548672,
+          "active_history_overlap": 0.010619469026548672,
+          "distinct_top_results": 6,
+          "local_history_sizes": [
+            61,
+            61,
+            61,
+            61,
+            61,
+            61
+          ],
+          "top_results": [
+            "--++-+-+-+",
+            "---+++--++",
+            "--++-+-+-+-+-+",
+            "---++--+++-+",
+            "---+-+---+++++",
+            "---++-++--++--++"
+          ]
+        },
+        {
+          "epoch": 3,
+          "global_results": 1600,
+          "global_histories": 2304,
+          "local_history_overlap": 0.01085892300845572,
+          "active_history_overlap": 0.01085892300845572,
+          "distinct_top_results": 6,
+          "local_history_sizes": [
+            405,
+            405,
+            405,
+            405,
+            405,
+            405
+          ],
+          "top_results": [
+            "--++-+-+-+-+-+",
+            "---++-++--++--++",
+            "--++-+-+-+-+-+-+-+",
+            "---++-++-+--+-+-++",
+            "----+-+--++++--+++",
+            "----++++--++--++--++"
+          ]
+        },
+        {
+          "epoch": 4,
+          "global_results": 10343,
+          "global_histories": 15248,
+          "local_history_overlap": 0.01091129521115377,
+          "active_history_overlap": 0.01091129521115377,
+          "distinct_top_results": 6,
+          "local_history_sizes": [
+            2677,
+            2677,
+            2677,
+            2677,
+            2677,
+            2677
+          ],
+          "top_results": [
+            "--++-+-+-+-+-+-+-+",
+            "--+--+++--++--++--++",
+            "--++-+-+-+-+-+-+-+-+-+",
+            "--+--++-+-+--++--+++-+",
+            "----+-+--++++--+++",
+            "----++++--++--++--++--++"
+          ]
+        }
+      ],
+      "final_global_results": 10343,
+      "final_global_histories": 15248,
+      "final_local_history_overlap": 0.01091129521115377,
+      "final_active_overlap": 0.01091129521115377,
+      "final_distinct_top_results": 6,
+      "final_local_history_sizes": [
+        2677,
+        2677,
+        2677,
+        2677,
+        2677,
+        2677
+      ],
+      "final_top_results": [
+        "--++-+-+-+-+-+-+-+",
+        "--+--+++--++--++--++",
+        "--++-+-+-+-+-+-+-+-+-+",
+        "--+--++-+-+--++--+++-+",
+        "----+-+--++++--+++",
+        "----++++--++--++--++--++"
+      ]
+    },
+    {
+      "scenario": "global_P",
+      "label": "global R, global P control",
+      "epochs": 4,
+      "layer_lifetime": 4,
+      "initial_histories": [
+        "+-",
+        "++--",
+        "+-+-+-",
+        "++-+--",
+        "+++---",
+        "++--++--"
+      ],
+      "snapshots": [
+        {
+          "epoch": 0,
+          "global_results": 0,
+          "global_histories": 0,
+          "local_history_overlap": 0.0,
+          "active_history_overlap": 0.0,
+          "distinct_top_results": 6,
+          "local_history_sizes": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "top_results": [
+            "-+",
+            "--++",
+            "-+-+-+",
+            "--++-+",
+            "---+++",
+            "--++--++"
+          ]
+        },
+        {
+          "epoch": 1,
+          "global_results": 41,
+          "global_histories": 48,
+          "local_history_overlap": 0.00784313725490196,
+          "active_history_overlap": 1.0,
+          "distinct_top_results": 6,
+          "local_history_sizes": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
+          ],
+          "top_results": [
+            "--++-+",
+            "---+-+++",
+            "--++-+-+-+",
+            "--+-+-++-+",
+            "---+-+-+++",
+            "---++-++--++"
+          ]
+        },
+        {
+          "epoch": 2,
+          "global_results": 248,
+          "global_histories": 344,
+          "local_history_overlap": 0.9795654270521231,
+          "active_history_overlap": 1.0,
+          "distinct_top_results": 1,
+          "local_history_sizes": [
+            333,
+            333,
+            328,
+            333,
+            333,
+            329
+          ],
+          "top_results": [
+            "--+-++--++",
+            "--+-++--++",
+            "--+-++--++",
+            "--+-++--++",
+            "--+-++--++",
+            "--+-++--++"
+          ]
+        },
+        {
+          "epoch": 3,
+          "global_results": 1600,
+          "global_histories": 2304,
+          "local_history_overlap": 0.9970093515735169,
+          "active_history_overlap": 1.0,
+          "distinct_top_results": 1,
+          "local_history_sizes": [
+            2293,
+            2293,
+            2288,
+            2293,
+            2293,
+            2289
+          ],
+          "top_results": [
+            "--+-++--++--++",
+            "--+-++--++--++",
+            "--+-++--++--++",
+            "--+-++--++--++",
+            "--+-++--++--++",
+            "--+-++--++--++"
+          ]
+        },
+        {
+          "epoch": 4,
+          "global_results": 10343,
+          "global_histories": 15248,
+          "local_history_overlap": 0.9995494327454045,
+          "active_history_overlap": 1.0,
+          "distinct_top_results": 1,
+          "local_history_sizes": [
+            15237,
+            15237,
+            15232,
+            15237,
+            15237,
+            15233
+          ],
+          "top_results": [
+            "--+-++--++--++--++",
+            "--+-++--++--++--++",
+            "--+-++--++--++--++",
+            "--+-++--++--++--++",
+            "--+-++--++--++--++",
+            "--+-++--++--++--++"
+          ]
+        }
+      ],
+      "final_global_results": 10343,
+      "final_global_histories": 15248,
+      "final_local_history_overlap": 0.9995494327454045,
+      "final_active_overlap": 1.0,
+      "final_distinct_top_results": 1,
+      "final_local_history_sizes": [
+        15237,
+        15237,
+        15232,
+        15237,
+        15237,
+        15233
+      ],
+      "final_top_results": [
+        "--+-++--++--++--++",
+        "--+-++--++--++--++",
+        "--+-++--++--++--++",
+        "--+-++--++--++--++",
+        "--+-++--++--++--++",
+        "--+-++--++--++--++"
+      ]
+    },
+    {
+      "scenario": "global_R_reconstruct",
+      "label": "global R reconstructs history",
+      "epochs": 4,
+      "layer_lifetime": 4,
+      "initial_histories": [
+        "+-",
+        "++--",
+        "+-+-+-",
+        "++-+--",
+        "+++---",
+        "++--++--"
+      ],
+      "snapshots": [
+        {
+          "epoch": 0,
+          "global_results": 0,
+          "global_histories": 0,
+          "local_history_overlap": 0.0,
+          "active_history_overlap": 0.0,
+          "distinct_top_results": 6,
+          "local_history_sizes": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "top_results": [
+            "-+",
+            "--++",
+            "-+-+-+",
+            "--++-+",
+            "---+++",
+            "--++--++"
+          ]
+        },
+        {
+          "epoch": 1,
+          "global_results": 41,
+          "global_histories": 48,
+          "local_history_overlap": 0.00784313725490196,
+          "active_history_overlap": 1.0,
+          "distinct_top_results": 6,
+          "local_history_sizes": [
+            9,
+            9,
+            9,
+            9,
+            9,
+            9
+          ],
+          "top_results": [
+            "--++-+",
+            "---+-+++",
+            "--++-+-+-+",
+            "--+-+-++-+",
+            "---+-+-+++",
+            "---++-++--++"
+          ]
+        },
+        {
+          "epoch": 2,
+          "global_results": 242,
+          "global_histories": 318,
+          "local_history_overlap": 0.9688037872923487,
+          "active_history_overlap": 1.0,
+          "distinct_top_results": 2,
+          "local_history_sizes": [
+            299,
+            303,
+            294,
+            299,
+            303,
+            295
+          ],
+          "top_results": [
+            "--++-+-+-+-+-+",
+            "--+-+-++",
+            "--++-+-+-+-+-+",
+            "--++-+-+-+-+-+",
+            "--++-+-+-+-+-+",
+            "--++-+-+-+-+-+"
+          ]
+        },
+        {
+          "epoch": 3,
+          "global_results": 1431,
+          "global_histories": 1682,
+          "local_history_overlap": 0.9942901661075739,
+          "active_history_overlap": 1.0,
+          "distinct_top_results": 1,
+          "local_history_sizes": [
+            1663,
+            1667,
+            1658,
+            1663,
+            1667,
+            1659
+          ],
+          "top_results": [
+            "---++-+-+-+-+-++",
+            "---++-+-+-+-+-++",
+            "---++-+-+-+-+-++",
+            "---++-+-+-+-+-++",
+            "---++-+-+-+-+-++",
+            "---++-+-+-+-+-++"
+          ]
+        },
+        {
+          "epoch": 4,
+          "global_results": 8846,
+          "global_histories": 9638,
+          "local_history_overlap": 0.9990095898454816,
+          "active_history_overlap": 1.0,
+          "distinct_top_results": 1,
+          "local_history_sizes": [
+            9619,
+            9623,
+            9614,
+            9619,
+            9623,
+            9615
+          ],
+          "top_results": [
+            "--+-++-+-+-+-+-+-+-+",
+            "--+-++-+-+-+-+-+-+-+",
+            "--+-++-+-+-+-+-+-+-+",
+            "--+-++-+-+-+-+-+-+-+",
+            "--+-++-+-+-+-+-+-+-+",
+            "--+-++-+-+-+-+-+-+-+"
+          ]
+        }
+      ],
+      "final_global_results": 8846,
+      "final_global_histories": 9638,
+      "final_local_history_overlap": 0.9990095898454816,
+      "final_active_overlap": 1.0,
+      "final_distinct_top_results": 1,
+      "final_local_history_sizes": [
+        9619,
+        9623,
+        9614,
+        9619,
+        9623,
+        9615
+      ],
+      "final_top_results": [
+        "--+-++-+-+-+-+-+-+-+",
+        "--+-++-+-+-+-+-+-+-+",
+        "--+-++-+-+-+-+-+-+-+",
+        "--+-++-+-+-+-+-+-+-+",
+        "--+-++-+-+-+-+-+-+-+",
+        "--+-++-+-+-+-+-+-+-+"
+      ]
+    }
+  ],
+  "initialization_controls": {
+    "distinct": [
+      {
+        "scenario": "local_P",
+        "label": "global R, local P",
+        "epochs": 4,
+        "layer_lifetime": 4,
+        "initial_histories": [
+          "+-",
+          "++--",
+          "+-+-+-",
+          "++-+--",
+          "+++---",
+          "++--++--"
+        ],
+        "snapshots": [
+          {
+            "epoch": 0,
+            "global_results": 0,
+            "global_histories": 0,
+            "local_history_overlap": 0.0,
+            "active_history_overlap": 0.0,
+            "distinct_top_results": 6,
+            "local_history_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "top_results": [
+              "-+",
+              "--++",
+              "-+-+-+",
+              "--++-+",
+              "---+++",
+              "--++--++"
+            ]
+          },
+          {
+            "epoch": 1,
+            "global_results": 41,
+            "global_histories": 48,
+            "local_history_overlap": 0.00784313725490196,
+            "active_history_overlap": 0.00784313725490196,
+            "distinct_top_results": 6,
+            "local_history_sizes": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "top_results": [
+              "--++-+",
+              "---+-+++",
+              "--++-+-+-+",
+              "--+-+-++-+",
+              "---+-+-+++",
+              "---++-++--++"
+            ]
+          },
+          {
+            "epoch": 2,
+            "global_results": 248,
+            "global_histories": 344,
+            "local_history_overlap": 0.010619469026548672,
+            "active_history_overlap": 0.010619469026548672,
+            "distinct_top_results": 6,
+            "local_history_sizes": [
+              61,
+              61,
+              61,
+              61,
+              61,
+              61
+            ],
+            "top_results": [
+              "--++-+-+-+",
+              "---+++--++",
+              "--++-+-+-+-+-+",
+              "---++--+++-+",
+              "---+-+---+++++",
+              "---++-++--++--++"
+            ]
+          },
+          {
+            "epoch": 3,
+            "global_results": 1600,
+            "global_histories": 2304,
+            "local_history_overlap": 0.01085892300845572,
+            "active_history_overlap": 0.01085892300845572,
+            "distinct_top_results": 6,
+            "local_history_sizes": [
+              405,
+              405,
+              405,
+              405,
+              405,
+              405
+            ],
+            "top_results": [
+              "--++-+-+-+-+-+",
+              "---++-++--++--++",
+              "--++-+-+-+-+-+-+-+",
+              "---++-++-+--+-+-++",
+              "----+-+--++++--+++",
+              "----++++--++--++--++"
+            ]
+          },
+          {
+            "epoch": 4,
+            "global_results": 10343,
+            "global_histories": 15248,
+            "local_history_overlap": 0.01091129521115377,
+            "active_history_overlap": 0.01091129521115377,
+            "distinct_top_results": 6,
+            "local_history_sizes": [
+              2677,
+              2677,
+              2677,
+              2677,
+              2677,
+              2677
+            ],
+            "top_results": [
+              "--++-+-+-+-+-+-+-+",
+              "--+--+++--++--++--++",
+              "--++-+-+-+-+-+-+-+-+-+",
+              "--+--++-+-+--++--+++-+",
+              "----+-+--++++--+++",
+              "----++++--++--++--++--++"
+            ]
+          }
+        ],
+        "final_global_results": 10343,
+        "final_global_histories": 15248,
+        "final_local_history_overlap": 0.01091129521115377,
+        "final_active_overlap": 0.01091129521115377,
+        "final_distinct_top_results": 6,
+        "final_local_history_sizes": [
+          2677,
+          2677,
+          2677,
+          2677,
+          2677,
+          2677
+        ],
+        "final_top_results": [
+          "--++-+-+-+-+-+-+-+",
+          "--+--+++--++--++--++",
+          "--++-+-+-+-+-+-+-+-+-+",
+          "--+--++-+-+--++--+++-+",
+          "----+-+--++++--+++",
+          "----++++--++--++--++--++"
+        ]
+      },
+      {
+        "scenario": "global_P",
+        "label": "global R, global P control",
+        "epochs": 4,
+        "layer_lifetime": 4,
+        "initial_histories": [
+          "+-",
+          "++--",
+          "+-+-+-",
+          "++-+--",
+          "+++---",
+          "++--++--"
+        ],
+        "snapshots": [
+          {
+            "epoch": 0,
+            "global_results": 0,
+            "global_histories": 0,
+            "local_history_overlap": 0.0,
+            "active_history_overlap": 0.0,
+            "distinct_top_results": 6,
+            "local_history_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "top_results": [
+              "-+",
+              "--++",
+              "-+-+-+",
+              "--++-+",
+              "---+++",
+              "--++--++"
+            ]
+          },
+          {
+            "epoch": 1,
+            "global_results": 41,
+            "global_histories": 48,
+            "local_history_overlap": 0.00784313725490196,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 6,
+            "local_history_sizes": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "top_results": [
+              "--++-+",
+              "---+-+++",
+              "--++-+-+-+",
+              "--+-+-++-+",
+              "---+-+-+++",
+              "---++-++--++"
+            ]
+          },
+          {
+            "epoch": 2,
+            "global_results": 248,
+            "global_histories": 344,
+            "local_history_overlap": 0.9795654270521231,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              333,
+              333,
+              328,
+              333,
+              333,
+              329
+            ],
+            "top_results": [
+              "--+-++--++",
+              "--+-++--++",
+              "--+-++--++",
+              "--+-++--++",
+              "--+-++--++",
+              "--+-++--++"
+            ]
+          },
+          {
+            "epoch": 3,
+            "global_results": 1600,
+            "global_histories": 2304,
+            "local_history_overlap": 0.9970093515735169,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              2293,
+              2293,
+              2288,
+              2293,
+              2293,
+              2289
+            ],
+            "top_results": [
+              "--+-++--++--++",
+              "--+-++--++--++",
+              "--+-++--++--++",
+              "--+-++--++--++",
+              "--+-++--++--++",
+              "--+-++--++--++"
+            ]
+          },
+          {
+            "epoch": 4,
+            "global_results": 10343,
+            "global_histories": 15248,
+            "local_history_overlap": 0.9995494327454045,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              15237,
+              15237,
+              15232,
+              15237,
+              15237,
+              15233
+            ],
+            "top_results": [
+              "--+-++--++--++--++",
+              "--+-++--++--++--++",
+              "--+-++--++--++--++",
+              "--+-++--++--++--++",
+              "--+-++--++--++--++",
+              "--+-++--++--++--++"
+            ]
+          }
+        ],
+        "final_global_results": 10343,
+        "final_global_histories": 15248,
+        "final_local_history_overlap": 0.9995494327454045,
+        "final_active_overlap": 1.0,
+        "final_distinct_top_results": 1,
+        "final_local_history_sizes": [
+          15237,
+          15237,
+          15232,
+          15237,
+          15237,
+          15233
+        ],
+        "final_top_results": [
+          "--+-++--++--++--++",
+          "--+-++--++--++--++",
+          "--+-++--++--++--++",
+          "--+-++--++--++--++",
+          "--+-++--++--++--++",
+          "--+-++--++--++--++"
+        ]
+      },
+      {
+        "scenario": "global_R_reconstruct",
+        "label": "global R reconstructs history",
+        "epochs": 4,
+        "layer_lifetime": 4,
+        "initial_histories": [
+          "+-",
+          "++--",
+          "+-+-+-",
+          "++-+--",
+          "+++---",
+          "++--++--"
+        ],
+        "snapshots": [
+          {
+            "epoch": 0,
+            "global_results": 0,
+            "global_histories": 0,
+            "local_history_overlap": 0.0,
+            "active_history_overlap": 0.0,
+            "distinct_top_results": 6,
+            "local_history_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "top_results": [
+              "-+",
+              "--++",
+              "-+-+-+",
+              "--++-+",
+              "---+++",
+              "--++--++"
+            ]
+          },
+          {
+            "epoch": 1,
+            "global_results": 41,
+            "global_histories": 48,
+            "local_history_overlap": 0.00784313725490196,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 6,
+            "local_history_sizes": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "top_results": [
+              "--++-+",
+              "---+-+++",
+              "--++-+-+-+",
+              "--+-+-++-+",
+              "---+-+-+++",
+              "---++-++--++"
+            ]
+          },
+          {
+            "epoch": 2,
+            "global_results": 242,
+            "global_histories": 318,
+            "local_history_overlap": 0.9688037872923487,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 2,
+            "local_history_sizes": [
+              299,
+              303,
+              294,
+              299,
+              303,
+              295
+            ],
+            "top_results": [
+              "--++-+-+-+-+-+",
+              "--+-+-++",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+"
+            ]
+          },
+          {
+            "epoch": 3,
+            "global_results": 1431,
+            "global_histories": 1682,
+            "local_history_overlap": 0.9942901661075739,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              1663,
+              1667,
+              1658,
+              1663,
+              1667,
+              1659
+            ],
+            "top_results": [
+              "---++-+-+-+-+-++",
+              "---++-+-+-+-+-++",
+              "---++-+-+-+-+-++",
+              "---++-+-+-+-+-++",
+              "---++-+-+-+-+-++",
+              "---++-+-+-+-+-++"
+            ]
+          },
+          {
+            "epoch": 4,
+            "global_results": 8846,
+            "global_histories": 9638,
+            "local_history_overlap": 0.9990095898454816,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              9619,
+              9623,
+              9614,
+              9619,
+              9623,
+              9615
+            ],
+            "top_results": [
+              "--+-++-+-+-+-+-+-+-+",
+              "--+-++-+-+-+-+-+-+-+",
+              "--+-++-+-+-+-+-+-+-+",
+              "--+-++-+-+-+-+-+-+-+",
+              "--+-++-+-+-+-+-+-+-+",
+              "--+-++-+-+-+-+-+-+-+"
+            ]
+          }
+        ],
+        "final_global_results": 8846,
+        "final_global_histories": 9638,
+        "final_local_history_overlap": 0.9990095898454816,
+        "final_active_overlap": 1.0,
+        "final_distinct_top_results": 1,
+        "final_local_history_sizes": [
+          9619,
+          9623,
+          9614,
+          9619,
+          9623,
+          9615
+        ],
+        "final_top_results": [
+          "--+-++-+-+-+-+-+-+-+",
+          "--+-++-+-+-+-+-+-+-+",
+          "--+-++-+-+-+-+-+-+-+",
+          "--+-++-+-+-+-+-+-+-+",
+          "--+-++-+-+-+-+-+-+-+",
+          "--+-++-+-+-+-+-+-+-+"
+        ]
+      }
+    ],
+    "shared": [
+      {
+        "scenario": "local_P",
+        "label": "global R, local P",
+        "epochs": 4,
+        "layer_lifetime": 4,
+        "initial_histories": [
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "+-"
+        ],
+        "snapshots": [
+          {
+            "epoch": 0,
+            "global_results": 0,
+            "global_histories": 0,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "top_results": [
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "-+"
+            ]
+          },
+          {
+            "epoch": 1,
+            "global_results": 6,
+            "global_histories": 8,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "top_results": [
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+"
+            ]
+          },
+          {
+            "epoch": 2,
+            "global_results": 33,
+            "global_histories": 60,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              61,
+              61,
+              61,
+              61,
+              61,
+              61
+            ],
+            "top_results": [
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+"
+            ]
+          },
+          {
+            "epoch": 3,
+            "global_results": 191,
+            "global_histories": 404,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              405,
+              405,
+              405,
+              405,
+              405,
+              405
+            ],
+            "top_results": [
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+"
+            ]
+          },
+          {
+            "epoch": 4,
+            "global_results": 1162,
+            "global_histories": 2676,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              2677,
+              2677,
+              2677,
+              2677,
+              2677,
+              2677
+            ],
+            "top_results": [
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+"
+            ]
+          }
+        ],
+        "final_global_results": 1162,
+        "final_global_histories": 2676,
+        "final_local_history_overlap": 1.0,
+        "final_active_overlap": 1.0,
+        "final_distinct_top_results": 1,
+        "final_local_history_sizes": [
+          2677,
+          2677,
+          2677,
+          2677,
+          2677,
+          2677
+        ],
+        "final_top_results": [
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+"
+        ]
+      },
+      {
+        "scenario": "global_P",
+        "label": "global R, global P control",
+        "epochs": 4,
+        "layer_lifetime": 4,
+        "initial_histories": [
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "+-"
+        ],
+        "snapshots": [
+          {
+            "epoch": 0,
+            "global_results": 0,
+            "global_histories": 0,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "top_results": [
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "-+"
+            ]
+          },
+          {
+            "epoch": 1,
+            "global_results": 6,
+            "global_histories": 8,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "top_results": [
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+"
+            ]
+          },
+          {
+            "epoch": 2,
+            "global_results": 33,
+            "global_histories": 60,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              61,
+              61,
+              61,
+              61,
+              61,
+              61
+            ],
+            "top_results": [
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+"
+            ]
+          },
+          {
+            "epoch": 3,
+            "global_results": 191,
+            "global_histories": 404,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              405,
+              405,
+              405,
+              405,
+              405,
+              405
+            ],
+            "top_results": [
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+"
+            ]
+          },
+          {
+            "epoch": 4,
+            "global_results": 1162,
+            "global_histories": 2676,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              2677,
+              2677,
+              2677,
+              2677,
+              2677,
+              2677
+            ],
+            "top_results": [
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+"
+            ]
+          }
+        ],
+        "final_global_results": 1162,
+        "final_global_histories": 2676,
+        "final_local_history_overlap": 1.0,
+        "final_active_overlap": 1.0,
+        "final_distinct_top_results": 1,
+        "final_local_history_sizes": [
+          2677,
+          2677,
+          2677,
+          2677,
+          2677,
+          2677
+        ],
+        "final_top_results": [
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+"
+        ]
+      },
+      {
+        "scenario": "global_R_reconstruct",
+        "label": "global R reconstructs history",
+        "epochs": 4,
+        "layer_lifetime": 4,
+        "initial_histories": [
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "+-"
+        ],
+        "snapshots": [
+          {
+            "epoch": 0,
+            "global_results": 0,
+            "global_histories": 0,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "top_results": [
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "-+"
+            ]
+          },
+          {
+            "epoch": 1,
+            "global_results": 6,
+            "global_histories": 8,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "top_results": [
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+"
+            ]
+          },
+          {
+            "epoch": 2,
+            "global_results": 32,
+            "global_histories": 48,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              49,
+              49,
+              49,
+              49,
+              49,
+              49
+            ],
+            "top_results": [
+              "--++-+-+",
+              "--++-+-+",
+              "--++-+-+",
+              "--++-+-+",
+              "--++-+-+",
+              "--++-+-+"
+            ]
+          },
+          {
+            "epoch": 3,
+            "global_results": 171,
+            "global_histories": 240,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              241,
+              241,
+              241,
+              241,
+              241,
+              241
+            ],
+            "top_results": [
+              "--++-+-+-+-+",
+              "--++-+-+-+-+",
+              "--++-+-+-+-+",
+              "--++-+-+-+-+",
+              "--++-+-+-+-+",
+              "--++-+-+-+-+"
+            ]
+          },
+          {
+            "epoch": 4,
+            "global_results": 955,
+            "global_histories": 1212,
+            "local_history_overlap": 1.0,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              1213,
+              1213,
+              1213,
+              1213,
+              1213,
+              1213
+            ],
+            "top_results": [
+              "--++-+-+-+-+",
+              "--++-+-+-+-+",
+              "--++-+-+-+-+",
+              "--++-+-+-+-+",
+              "--++-+-+-+-+",
+              "--++-+-+-+-+"
+            ]
+          }
+        ],
+        "final_global_results": 955,
+        "final_global_histories": 1212,
+        "final_local_history_overlap": 1.0,
+        "final_active_overlap": 1.0,
+        "final_distinct_top_results": 1,
+        "final_local_history_sizes": [
+          1213,
+          1213,
+          1213,
+          1213,
+          1213,
+          1213
+        ],
+        "final_top_results": [
+          "--++-+-+-+-+",
+          "--++-+-+-+-+",
+          "--++-+-+-+-+",
+          "--++-+-+-+-+",
+          "--++-+-+-+-+",
+          "--++-+-+-+-+"
+        ]
+      }
+    ],
+    "one_local_variant": [
+      {
+        "scenario": "local_P",
+        "label": "global R, local P",
+        "epochs": 4,
+        "layer_lifetime": 4,
+        "initial_histories": [
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "++--"
+        ],
+        "snapshots": [
+          {
+            "epoch": 0,
+            "global_results": 0,
+            "global_histories": 0,
+            "local_history_overlap": 0.6666666666666666,
+            "active_history_overlap": 0.6666666666666666,
+            "distinct_top_results": 2,
+            "local_history_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "top_results": [
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "--++"
+            ]
+          },
+          {
+            "epoch": 1,
+            "global_results": 12,
+            "global_histories": 16,
+            "local_history_overlap": 0.6666666666666666,
+            "active_history_overlap": 0.6666666666666666,
+            "distinct_top_results": 2,
+            "local_history_sizes": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "top_results": [
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "---+-+++"
+            ]
+          },
+          {
+            "epoch": 2,
+            "global_results": 69,
+            "global_histories": 120,
+            "local_history_overlap": 0.6666666666666666,
+            "active_history_overlap": 0.6666666666666666,
+            "distinct_top_results": 2,
+            "local_history_sizes": [
+              61,
+              61,
+              61,
+              61,
+              61,
+              61
+            ],
+            "top_results": [
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "---+++--++"
+            ]
+          },
+          {
+            "epoch": 3,
+            "global_results": 397,
+            "global_histories": 808,
+            "local_history_overlap": 0.6666666666666666,
+            "active_history_overlap": 0.6666666666666666,
+            "distinct_top_results": 2,
+            "local_history_sizes": [
+              405,
+              405,
+              405,
+              405,
+              405,
+              405
+            ],
+            "top_results": [
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "--++-+-+-+-+-+",
+              "---++-++--++--++"
+            ]
+          },
+          {
+            "epoch": 4,
+            "global_results": 2303,
+            "global_histories": 5352,
+            "local_history_overlap": 0.6666666666666666,
+            "active_history_overlap": 0.6666666666666666,
+            "distinct_top_results": 2,
+            "local_history_sizes": [
+              2677,
+              2677,
+              2677,
+              2677,
+              2677,
+              2677
+            ],
+            "top_results": [
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--++-+-+-+-+-+-+-+",
+              "--+--+++--++--++--++"
+            ]
+          }
+        ],
+        "final_global_results": 2303,
+        "final_global_histories": 5352,
+        "final_local_history_overlap": 0.6666666666666666,
+        "final_active_overlap": 0.6666666666666666,
+        "final_distinct_top_results": 2,
+        "final_local_history_sizes": [
+          2677,
+          2677,
+          2677,
+          2677,
+          2677,
+          2677
+        ],
+        "final_top_results": [
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--++-+-+-+-+-+-+-+",
+          "--+--+++--++--++--++"
+        ]
+      },
+      {
+        "scenario": "global_P",
+        "label": "global R, global P control",
+        "epochs": 4,
+        "layer_lifetime": 4,
+        "initial_histories": [
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "++--"
+        ],
+        "snapshots": [
+          {
+            "epoch": 0,
+            "global_results": 0,
+            "global_histories": 0,
+            "local_history_overlap": 0.6666666666666666,
+            "active_history_overlap": 0.6666666666666666,
+            "distinct_top_results": 2,
+            "local_history_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "top_results": [
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "--++"
+            ]
+          },
+          {
+            "epoch": 1,
+            "global_results": 12,
+            "global_histories": 16,
+            "local_history_overlap": 0.6666666666666666,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 2,
+            "local_history_sizes": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "top_results": [
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "---+-+++"
+            ]
+          },
+          {
+            "epoch": 2,
+            "global_results": 69,
+            "global_histories": 120,
+            "local_history_overlap": 0.9726775956284152,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              117,
+              117,
+              117,
+              117,
+              117,
+              117
+            ],
+            "top_results": [
+              "--+-++--++",
+              "--+-++--++",
+              "--+-++--++",
+              "--+-++--++",
+              "--+-++--++",
+              "--+-++--++"
+            ]
+          },
+          {
+            "epoch": 3,
+            "global_results": 397,
+            "global_histories": 808,
+            "local_history_overlap": 0.9958847736625515,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              805,
+              805,
+              805,
+              805,
+              805,
+              805
+            ],
+            "top_results": [
+              "--+-++--++--++",
+              "--+-++--++--++",
+              "--+-++--++--++",
+              "--+-++--++--++",
+              "--+-++--++--++",
+              "--+-++--++--++"
+            ]
+          },
+          {
+            "epoch": 4,
+            "global_results": 2303,
+            "global_histories": 5352,
+            "local_history_overlap": 0.9993774125264601,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              5349,
+              5349,
+              5349,
+              5349,
+              5349,
+              5349
+            ],
+            "top_results": [
+              "--+-++--++--++--++",
+              "--+-++--++--++--++",
+              "--+-++--++--++--++",
+              "--+-++--++--++--++",
+              "--+-++--++--++--++",
+              "--+-++--++--++--++"
+            ]
+          }
+        ],
+        "final_global_results": 2303,
+        "final_global_histories": 5352,
+        "final_local_history_overlap": 0.9993774125264601,
+        "final_active_overlap": 1.0,
+        "final_distinct_top_results": 1,
+        "final_local_history_sizes": [
+          5349,
+          5349,
+          5349,
+          5349,
+          5349,
+          5349
+        ],
+        "final_top_results": [
+          "--+-++--++--++--++",
+          "--+-++--++--++--++",
+          "--+-++--++--++--++",
+          "--+-++--++--++--++",
+          "--+-++--++--++--++",
+          "--+-++--++--++--++"
+        ]
+      },
+      {
+        "scenario": "global_R_reconstruct",
+        "label": "global R reconstructs history",
+        "epochs": 4,
+        "layer_lifetime": 4,
+        "initial_histories": [
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "+-",
+          "++--"
+        ],
+        "snapshots": [
+          {
+            "epoch": 0,
+            "global_results": 0,
+            "global_histories": 0,
+            "local_history_overlap": 0.6666666666666666,
+            "active_history_overlap": 0.6666666666666666,
+            "distinct_top_results": 2,
+            "local_history_sizes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "top_results": [
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "-+",
+              "--++"
+            ]
+          },
+          {
+            "epoch": 1,
+            "global_results": 12,
+            "global_histories": 16,
+            "local_history_overlap": 0.6666666666666666,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 2,
+            "local_history_sizes": [
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "top_results": [
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "--++-+",
+              "---+-+++"
+            ]
+          },
+          {
+            "epoch": 2,
+            "global_results": 68,
+            "global_histories": 104,
+            "local_history_overlap": 0.9559748427672955,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 2,
+            "local_history_sizes": [
+              97,
+              97,
+              97,
+              97,
+              97,
+              101
+            ],
+            "top_results": [
+              "--+-+-+-++",
+              "--+-+-+-++",
+              "--+-+-+-++",
+              "--+-+-+-++",
+              "--+-+-+-++",
+              "--+-+-++"
+            ]
+          },
+          {
+            "epoch": 3,
+            "global_results": 373,
+            "global_histories": 500,
+            "local_history_overlap": 0.9907038512616201,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              493,
+              493,
+              493,
+              493,
+              493,
+              497
+            ],
+            "top_results": [
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+"
+            ]
+          },
+          {
+            "epoch": 4,
+            "global_results": 2116,
+            "global_histories": 2574,
+            "local_history_overlap": 0.9981884057971016,
+            "active_history_overlap": 1.0,
+            "distinct_top_results": 1,
+            "local_history_sizes": [
+              2567,
+              2567,
+              2567,
+              2567,
+              2567,
+              2571
+            ],
+            "top_results": [
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+",
+              "--++-+-+-+"
+            ]
+          }
+        ],
+        "final_global_results": 2116,
+        "final_global_histories": 2574,
+        "final_local_history_overlap": 0.9981884057971016,
+        "final_active_overlap": 1.0,
+        "final_distinct_top_results": 1,
+        "final_local_history_sizes": [
+          2567,
+          2567,
+          2567,
+          2567,
+          2567,
+          2571
+        ],
+        "final_top_results": [
+          "--++-+-+-+",
+          "--++-+-+-+",
+          "--++-+-+-+",
+          "--++-+-+-+",
+          "--++-+-+-+",
+          "--++-+-+-+"
+        ]
+      }
+    ]
+  }
+}

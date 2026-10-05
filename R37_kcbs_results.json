@@ -1,0 +1,73 @@
+{
+ "P1_control": {
+  "adjacent_orthogonality_error": 2.7755575615628914e-16,
+  "mu_eigenvalues": [
+   2.2360679774997902,
+   1.381966011250105,
+   1.3819660112501049
+  ],
+  "mu_sum": 5.0,
+  "mu1_equals_sqrt5": true,
+  "S_maximally_mixed": 1.6666666666666665,
+  "S_optimal_pure": 2.2360679774997902,
+  "noncontextual_bound": 2.0
+ },
+ "P2_closed_form_check": {
+  "random_trials": 3000,
+  "max_violation_of_bound_by_random_orientation": 0.0,
+  "closed_form_upper_bounds_all_samples": true
+ },
+ "P3_native": {
+  "G29_4blocks_all": {
+   "spectrum": [
+    0.7874015748031497,
+    0.15748031496062992,
+    0.03937007874015748,
+    0.015748031496062992
+   ],
+   "S_max": null,
+   "contextual": null
+  },
+  "top3_normalized": {
+   "spectrum": [
+    0.7407407407407407,
+    0.18518518518518517,
+    0.07407407407407407
+   ],
+   "S_max": 2.01463413439802,
+   "contextual": true
+  },
+  "drop_smallest_3": {
+   "spectrum": [
+    0.8,
+    0.16,
+    0.04
+   ],
+   "S_max": 2.0652475842498537,
+   "contextual": true
+  }
+ },
+ "P3_native_source": "G72 §1 / G29 §2 的推前权重（块大小 2,5,20,100）",
+ "P4_threshold": {
+  "family": "(lambda, (1-lambda)/2, (1-lambda)/2)",
+  "formula": "S_max = mu1*lambda + mu2*(1-lambda)  =>  lambda* = (2-mu2)/(mu1-mu2)",
+  "lambda_star": 0.7236067977499785,
+  "native_lambda1_top3": 0.7407407407407407,
+  "native_margin": 0.017133942990762208
+ },
+ "verdict": {
+  "criterion": "S_max(rho)=sum_k lambda_k mu_k > 2  <=>  语境（单体量子性）",
+  "maximally_mixed": "非语境（5/3=1.667）",
+  "native_state_contextual": true,
+  "native_S_values": {
+   "top3_normalized": 2.01463413439802,
+   "drop_smallest_3": 2.0652475842498537
+  },
+  "threshold_lambda_star": 0.7236067977499785,
+  "caveats": [
+   "state-dependent：测量集（pentagram）是按态选的，这是语境性检验的标准做法",
+   "3 维归约的选择仍是 pi/E5 的缺口",
+   "原生态谱用的是文档例（G72/G29 的推前权重），不是从 pi 显式算出的那一个"
+  ]
+ }
+}

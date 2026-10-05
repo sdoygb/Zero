@@ -1,0 +1,1197 @@
+{
+ "family": "F_D = M(D) * q^{E(D)}",
+ "contextuality_region": "q > 3/5",
+ "standard_form": "M=C(D,2), E=D  ->  window (1/2, 3/5)  (R44 no-go)",
+ "scan": [
+  {
+   "M": "C(D,2)",
+   "E": "D",
+   "window": [
+    0.502,
+    0.6
+   ],
+   "overlap_ctx": false,
+   "overlap_interval": null
+  },
+  {
+   "M": "C(D,2)",
+   "E": "D+1",
+   "window": [
+    0.502,
+    0.6
+   ],
+   "overlap_ctx": false,
+   "overlap_interval": null
+  },
+  {
+   "M": "C(D,2)",
+   "E": "D-1",
+   "window": [
+    0.502,
+    0.6
+   ],
+   "overlap_ctx": false,
+   "overlap_interval": null
+  },
+  {
+   "M": "C(D,2)",
+   "E": "C(D,2)",
+   "window": [
+    0.794,
+    0.88
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.794,
+    0.88
+   ]
+  },
+  {
+   "M": "C(D,2)",
+   "E": "C(D+1,2)",
+   "window": [
+    0.842,
+    0.902
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.842,
+    0.902
+   ]
+  },
+  {
+   "M": "C(D,2)",
+   "E": "D^2",
+   "window": [
+    0.906,
+    0.944
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.906,
+    0.944
+   ]
+  },
+  {
+   "M": "C(D,2)",
+   "E": "2^D",
+   "window": [
+    0.918,
+    0.968
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.918,
+    0.968
+   ]
+  },
+  {
+   "M": "C(D,2)",
+   "E": "1",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "C(D+1,2)",
+   "E": "D",
+   "window": [
+    0.602,
+    0.666
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.602,
+    0.666
+   ]
+  },
+  {
+   "M": "C(D+1,2)",
+   "E": "D+1",
+   "window": [
+    0.602,
+    0.666
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.602,
+    0.666
+   ]
+  },
+  {
+   "M": "C(D+1,2)",
+   "E": "D-1",
+   "window": [
+    0.602,
+    0.666
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.602,
+    0.666
+   ]
+  },
+  {
+   "M": "C(D+1,2)",
+   "E": "C(D,2)",
+   "window": [
+    0.844,
+    0.902
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.844,
+    0.902
+   ]
+  },
+  {
+   "M": "C(D+1,2)",
+   "E": "C(D+1,2)",
+   "window": [
+    0.882,
+    0.922
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.882,
+    0.922
+   ]
+  },
+  {
+   "M": "C(D+1,2)",
+   "E": "D^2",
+   "window": [
+    0.93,
+    0.954
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.93,
+    0.954
+   ]
+  },
+  {
+   "M": "C(D+1,2)",
+   "E": "2^D",
+   "window": [
+    0.94,
+    0.974
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.94,
+    0.974
+   ]
+  },
+  {
+   "M": "C(D+1,2)",
+   "E": "1",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "C(D,3)",
+   "E": "D",
+   "window": [
+    0.3,
+    0.4
+   ],
+   "overlap_ctx": false,
+   "overlap_interval": null
+  },
+  {
+   "M": "C(D,3)",
+   "E": "D+1",
+   "window": [
+    0.3,
+    0.398
+   ],
+   "overlap_ctx": false,
+   "overlap_interval": null
+  },
+  {
+   "M": "C(D,3)",
+   "E": "D-1",
+   "window": [
+    0.3,
+    0.4
+   ],
+   "overlap_ctx": false,
+   "overlap_interval": null
+  },
+  {
+   "M": "C(D,3)",
+   "E": "C(D,2)",
+   "window": [
+    0.63,
+    0.794
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.63,
+    0.794
+   ]
+  },
+  {
+   "M": "C(D,3)",
+   "E": "C(D+1,2)",
+   "window": [
+    0.708,
+    0.832
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.708,
+    0.832
+   ]
+  },
+  {
+   "M": "C(D,3)",
+   "E": "D^2",
+   "window": [
+    0.822,
+    0.902
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.822,
+    0.902
+   ]
+  },
+  {
+   "M": "C(D,3)",
+   "E": "2^D",
+   "window": [
+    0.842,
+    0.944
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.842,
+    0.944
+   ]
+  },
+  {
+   "M": "C(D,3)",
+   "E": "1",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "D",
+   "E": "D",
+   "window": [
+    0.752,
+    0.8
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.752,
+    0.8
+   ]
+  },
+  {
+   "M": "D",
+   "E": "D+1",
+   "window": [
+    0.752,
+    0.798
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.752,
+    0.798
+   ]
+  },
+  {
+   "M": "D",
+   "E": "D-1",
+   "window": [
+    0.752,
+    0.8
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.752,
+    0.8
+   ]
+  },
+  {
+   "M": "D",
+   "E": "C(D,2)",
+   "window": [
+    0.91,
+    0.944
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.91,
+    0.944
+   ]
+  },
+  {
+   "M": "D",
+   "E": "C(D+1,2)",
+   "window": [
+    0.932,
+    0.956
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.932,
+    0.956
+   ]
+  },
+  {
+   "M": "D",
+   "E": "D^2",
+   "window": [
+    0.96,
+    0.974
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.96,
+    0.974
+   ]
+  },
+  {
+   "M": "D",
+   "E": "2^D",
+   "window": [
+    0.966,
+    0.986
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.966,
+    0.986
+   ]
+  },
+  {
+   "M": "D",
+   "E": "1",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "D^2",
+   "E": "D",
+   "window": [
+    0.564,
+    0.638
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.6,
+    0.638
+   ]
+  },
+  {
+   "M": "D^2",
+   "E": "D+1",
+   "window": [
+    0.564,
+    0.64
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.6,
+    0.64
+   ]
+  },
+  {
+   "M": "D^2",
+   "E": "D-1",
+   "window": [
+    0.564,
+    0.64
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.6,
+    0.64
+   ]
+  },
+  {
+   "M": "D^2",
+   "E": "C(D,2)",
+   "window": [
+    0.826,
+    0.894
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.826,
+    0.894
+   ]
+  },
+  {
+   "M": "D^2",
+   "E": "C(D+1,2)",
+   "window": [
+    0.868,
+    0.914
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.868,
+    0.914
+   ]
+  },
+  {
+   "M": "D^2",
+   "E": "D^2",
+   "window": [
+    0.922,
+    0.95
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.922,
+    0.95
+   ]
+  },
+  {
+   "M": "D^2",
+   "E": "2^D",
+   "window": [
+    0.932,
+    0.972
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.932,
+    0.972
+   ]
+  },
+  {
+   "M": "D^2",
+   "E": "1",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "D^3",
+   "E": "D",
+   "window": [
+    0.422,
+    0.512
+   ],
+   "overlap_ctx": false,
+   "overlap_interval": null
+  },
+  {
+   "M": "D^3",
+   "E": "D+1",
+   "window": [
+    0.422,
+    0.512
+   ],
+   "overlap_ctx": false,
+   "overlap_interval": null
+  },
+  {
+   "M": "D^3",
+   "E": "D-1",
+   "window": [
+    0.422,
+    0.51
+   ],
+   "overlap_ctx": false,
+   "overlap_interval": null
+  },
+  {
+   "M": "D^3",
+   "E": "C(D,2)",
+   "window": [
+    0.752,
+    0.844
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.752,
+    0.844
+   ]
+  },
+  {
+   "M": "D^3",
+   "E": "C(D+1,2)",
+   "window": [
+    0.806,
+    0.874
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.806,
+    0.874
+   ]
+  },
+  {
+   "M": "D^3",
+   "E": "D^2",
+   "window": [
+    0.886,
+    0.928
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.886,
+    0.928
+   ]
+  },
+  {
+   "M": "D^3",
+   "E": "2^D",
+   "window": [
+    0.898,
+    0.958
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.898,
+    0.958
+   ]
+  },
+  {
+   "M": "D^3",
+   "E": "1",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "2^D",
+   "E": "D",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "2^D",
+   "E": "D+1",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "2^D",
+   "E": "D-1",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "2^D",
+   "E": "C(D,2)",
+   "window": [
+    0.794,
+    0.84
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.794,
+    0.84
+   ]
+  },
+  {
+   "M": "2^D",
+   "E": "C(D+1,2)",
+   "window": [
+    0.842,
+    0.87
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.842,
+    0.87
+   ]
+  },
+  {
+   "M": "2^D",
+   "E": "D^2",
+   "window": [
+    0.906,
+    0.924
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.906,
+    0.924
+   ]
+  },
+  {
+   "M": "2^D",
+   "E": "2^D",
+   "window": [
+    0.918,
+    0.956
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.918,
+    0.956
+   ]
+  },
+  {
+   "M": "2^D",
+   "E": "1",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "(D-1)!",
+   "E": "D",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "(D-1)!",
+   "E": "D+1",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "(D-1)!",
+   "E": "D-1",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "(D-1)!",
+   "E": "C(D,2)",
+   "window": [
+    0.7,
+    0.706
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.7,
+    0.706
+   ]
+  },
+  {
+   "M": "(D-1)!",
+   "E": "C(D+1,2)",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "(D-1)!",
+   "E": "D^2",
+   "window": null,
+   "overlap_ctx": false
+  },
+  {
+   "M": "(D-1)!",
+   "E": "2^D",
+   "window": [
+    0.872,
+    0.916
+   ],
+   "overlap_ctx": true,
+   "overlap_interval": [
+    0.872,
+    0.916
+   ]
+  },
+  {
+   "M": "(D-1)!",
+   "E": "1",
+   "window": null,
+   "overlap_ctx": false
+  }
+ ],
+ "carriers": {
+  "documented_2_5_20_100": {
+   "q": 0.64660386,
+   "S_max": 2.03278903309848,
+   "contextual": true,
+   "peak_D_standard": 5,
+   "peak_D_Cplus": 4
+  },
+  "routeA_L4": {
+   "q": 0.5555555555555556,
+   "S_max": 1.9513673220832282,
+   "contextual": false,
+   "peak_D_standard": 4,
+   "peak_D_Cplus": 3
+  },
+  "two_layer_p0.8_a2_K8": {
+   "q": 0.658547376995021,
+   "S_max": 2.015046941106376,
+   "contextual": true,
+   "peak_D_standard": 5,
+   "peak_D_Cplus": 4
+  }
+ },
+ "verdict": {
+  "n_forms": 64,
+  "forms_with_overlap": [
+   {
+    "M": "C(D,2)",
+    "E": "C(D,2)",
+    "window": [
+     0.794,
+     0.88
+    ],
+    "overlap": [
+     0.794,
+     0.88
+    ]
+   },
+   {
+    "M": "C(D,2)",
+    "E": "C(D+1,2)",
+    "window": [
+     0.842,
+     0.902
+    ],
+    "overlap": [
+     0.842,
+     0.902
+    ]
+   },
+   {
+    "M": "C(D,2)",
+    "E": "D^2",
+    "window": [
+     0.906,
+     0.944
+    ],
+    "overlap": [
+     0.906,
+     0.944
+    ]
+   },
+   {
+    "M": "C(D,2)",
+    "E": "2^D",
+    "window": [
+     0.918,
+     0.968
+    ],
+    "overlap": [
+     0.918,
+     0.968
+    ]
+   },
+   {
+    "M": "C(D+1,2)",
+    "E": "D",
+    "window": [
+     0.602,
+     0.666
+    ],
+    "overlap": [
+     0.602,
+     0.666
+    ]
+   },
+   {
+    "M": "C(D+1,2)",
+    "E": "D+1",
+    "window": [
+     0.602,
+     0.666
+    ],
+    "overlap": [
+     0.602,
+     0.666
+    ]
+   },
+   {
+    "M": "C(D+1,2)",
+    "E": "D-1",
+    "window": [
+     0.602,
+     0.666
+    ],
+    "overlap": [
+     0.602,
+     0.666
+    ]
+   },
+   {
+    "M": "C(D+1,2)",
+    "E": "C(D,2)",
+    "window": [
+     0.844,
+     0.902
+    ],
+    "overlap": [
+     0.844,
+     0.902
+    ]
+   },
+   {
+    "M": "C(D+1,2)",
+    "E": "C(D+1,2)",
+    "window": [
+     0.882,
+     0.922
+    ],
+    "overlap": [
+     0.882,
+     0.922
+    ]
+   },
+   {
+    "M": "C(D+1,2)",
+    "E": "D^2",
+    "window": [
+     0.93,
+     0.954
+    ],
+    "overlap": [
+     0.93,
+     0.954
+    ]
+   },
+   {
+    "M": "C(D+1,2)",
+    "E": "2^D",
+    "window": [
+     0.94,
+     0.974
+    ],
+    "overlap": [
+     0.94,
+     0.974
+    ]
+   },
+   {
+    "M": "C(D,3)",
+    "E": "C(D,2)",
+    "window": [
+     0.63,
+     0.794
+    ],
+    "overlap": [
+     0.63,
+     0.794
+    ]
+   },
+   {
+    "M": "C(D,3)",
+    "E": "C(D+1,2)",
+    "window": [
+     0.708,
+     0.832
+    ],
+    "overlap": [
+     0.708,
+     0.832
+    ]
+   },
+   {
+    "M": "C(D,3)",
+    "E": "D^2",
+    "window": [
+     0.822,
+     0.902
+    ],
+    "overlap": [
+     0.822,
+     0.902
+    ]
+   },
+   {
+    "M": "C(D,3)",
+    "E": "2^D",
+    "window": [
+     0.842,
+     0.944
+    ],
+    "overlap": [
+     0.842,
+     0.944
+    ]
+   },
+   {
+    "M": "D",
+    "E": "D",
+    "window": [
+     0.752,
+     0.8
+    ],
+    "overlap": [
+     0.752,
+     0.8
+    ]
+   },
+   {
+    "M": "D",
+    "E": "D+1",
+    "window": [
+     0.752,
+     0.798
+    ],
+    "overlap": [
+     0.752,
+     0.798
+    ]
+   },
+   {
+    "M": "D",
+    "E": "D-1",
+    "window": [
+     0.752,
+     0.8
+    ],
+    "overlap": [
+     0.752,
+     0.8
+    ]
+   },
+   {
+    "M": "D",
+    "E": "C(D,2)",
+    "window": [
+     0.91,
+     0.944
+    ],
+    "overlap": [
+     0.91,
+     0.944
+    ]
+   },
+   {
+    "M": "D",
+    "E": "C(D+1,2)",
+    "window": [
+     0.932,
+     0.956
+    ],
+    "overlap": [
+     0.932,
+     0.956
+    ]
+   },
+   {
+    "M": "D",
+    "E": "D^2",
+    "window": [
+     0.96,
+     0.974
+    ],
+    "overlap": [
+     0.96,
+     0.974
+    ]
+   },
+   {
+    "M": "D",
+    "E": "2^D",
+    "window": [
+     0.966,
+     0.986
+    ],
+    "overlap": [
+     0.966,
+     0.986
+    ]
+   },
+   {
+    "M": "D^2",
+    "E": "D",
+    "window": [
+     0.564,
+     0.638
+    ],
+    "overlap": [
+     0.6,
+     0.638
+    ]
+   },
+   {
+    "M": "D^2",
+    "E": "D+1",
+    "window": [
+     0.564,
+     0.64
+    ],
+    "overlap": [
+     0.6,
+     0.64
+    ]
+   },
+   {
+    "M": "D^2",
+    "E": "D-1",
+    "window": [
+     0.564,
+     0.64
+    ],
+    "overlap": [
+     0.6,
+     0.64
+    ]
+   },
+   {
+    "M": "D^2",
+    "E": "C(D,2)",
+    "window": [
+     0.826,
+     0.894
+    ],
+    "overlap": [
+     0.826,
+     0.894
+    ]
+   },
+   {
+    "M": "D^2",
+    "E": "C(D+1,2)",
+    "window": [
+     0.868,
+     0.914
+    ],
+    "overlap": [
+     0.868,
+     0.914
+    ]
+   },
+   {
+    "M": "D^2",
+    "E": "D^2",
+    "window": [
+     0.922,
+     0.95
+    ],
+    "overlap": [
+     0.922,
+     0.95
+    ]
+   },
+   {
+    "M": "D^2",
+    "E": "2^D",
+    "window": [
+     0.932,
+     0.972
+    ],
+    "overlap": [
+     0.932,
+     0.972
+    ]
+   },
+   {
+    "M": "D^3",
+    "E": "C(D,2)",
+    "window": [
+     0.752,
+     0.844
+    ],
+    "overlap": [
+     0.752,
+     0.844
+    ]
+   },
+   {
+    "M": "D^3",
+    "E": "C(D+1,2)",
+    "window": [
+     0.806,
+     0.874
+    ],
+    "overlap": [
+     0.806,
+     0.874
+    ]
+   },
+   {
+    "M": "D^3",
+    "E": "D^2",
+    "window": [
+     0.886,
+     0.928
+    ],
+    "overlap": [
+     0.886,
+     0.928
+    ]
+   },
+   {
+    "M": "D^3",
+    "E": "2^D",
+    "window": [
+     0.898,
+     0.958
+    ],
+    "overlap": [
+     0.898,
+     0.958
+    ]
+   },
+   {
+    "M": "2^D",
+    "E": "C(D,2)",
+    "window": [
+     0.794,
+     0.84
+    ],
+    "overlap": [
+     0.794,
+     0.84
+    ]
+   },
+   {
+    "M": "2^D",
+    "E": "C(D+1,2)",
+    "window": [
+     0.842,
+     0.87
+    ],
+    "overlap": [
+     0.842,
+     0.87
+    ]
+   },
+   {
+    "M": "2^D",
+    "E": "D^2",
+    "window": [
+     0.906,
+     0.924
+    ],
+    "overlap": [
+     0.906,
+     0.924
+    ]
+   },
+   {
+    "M": "2^D",
+    "E": "2^D",
+    "window": [
+     0.918,
+     0.956
+    ],
+    "overlap": [
+     0.918,
+     0.956
+    ]
+   },
+   {
+    "M": "(D-1)!",
+    "E": "C(D,2)",
+    "window": [
+     0.7,
+     0.706
+    ],
+    "overlap": [
+     0.7,
+     0.706
+    ]
+   },
+   {
+    "M": "(D-1)!",
+    "E": "2^D",
+    "window": [
+     0.872,
+     0.916
+    ],
+    "overlap": [
+     0.872,
+     0.916
+    ]
+   }
+  ],
+  "escape_exists": true
+ }
+}

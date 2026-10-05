@@ -1,0 +1,136 @@
+{
+ "A_cycle_rank": [
+  {
+   "graph": "K_2",
+   "n": 2,
+   "m": 1,
+   "rankB": 1,
+   "cycle": 0,
+   "C(n,2)": 1,
+   "C(n-1,2)": 0
+  },
+  {
+   "graph": "K_3",
+   "n": 3,
+   "m": 3,
+   "rankB": 2,
+   "cycle": 1,
+   "C(n,2)": 3,
+   "C(n-1,2)": 1
+  },
+  {
+   "graph": "K_4",
+   "n": 4,
+   "m": 6,
+   "rankB": 3,
+   "cycle": 3,
+   "C(n,2)": 6,
+   "C(n-1,2)": 3
+  },
+  {
+   "graph": "K_5",
+   "n": 5,
+   "m": 10,
+   "rankB": 4,
+   "cycle": 6,
+   "C(n,2)": 10,
+   "C(n-1,2)": 6
+  },
+  {
+   "graph": "K_6",
+   "n": 6,
+   "m": 15,
+   "rankB": 5,
+   "cycle": 10,
+   "C(n,2)": 15,
+   "C(n-1,2)": 10
+  },
+  {
+   "graph": "K_7",
+   "n": 7,
+   "m": 21,
+   "rankB": 6,
+   "cycle": 15,
+   "C(n,2)": 21,
+   "C(n-1,2)": 15
+  },
+  {
+   "graph": "K_8",
+   "n": 8,
+   "m": 28,
+   "rankB": 7,
+   "cycle": 21,
+   "C(n,2)": 28,
+   "C(n-1,2)": 21
+  }
+ ],
+ "B_single_cut": {
+  "rows": [
+   {
+    "r": 1,
+    "M": 2,
+    "simplex_verts": 2,
+    "simplex_edges": 1,
+    "cycle": 0
+   },
+   {
+    "r": 2,
+    "M": 3,
+    "simplex_verts": 3,
+    "simplex_edges": 3,
+    "cycle": 1
+   },
+   {
+    "r": 3,
+    "M": 4,
+    "simplex_verts": 4,
+    "simplex_edges": 6,
+    "cycle": 3
+   },
+   {
+    "r": 4,
+    "M": 5,
+    "simplex_verts": 5,
+    "simplex_edges": 10,
+    "cycle": 6
+   },
+   {
+    "r": 5,
+    "M": 6,
+    "simplex_verts": 6,
+    "simplex_edges": 15,
+    "cycle": 10
+   },
+   {
+    "r": 6,
+    "M": 7,
+    "simplex_verts": 7,
+    "simplex_edges": 21,
+    "cycle": 15
+   },
+   {
+    "r": 7,
+    "M": 8,
+    "simplex_verts": 8,
+    "simplex_edges": 28,
+    "cycle": 21
+   }
+  ],
+  "matches": true
+ },
+ "C_windows": {
+  "C(D,2) 洛伦兹对": {
+   "lo": "1/2",
+   "hi": "3/5",
+   "inside_context_len": "0",
+   "inside": 0.0
+  },
+  "C(D+1,2) 欧氏单纯形": {
+   "lo": "3/5",
+   "hi": "2/3",
+   "inside_context_len": "1/15",
+   "inside": 0.06666666666666667
+  }
+ },
+ "D_label_consistent": true
+}

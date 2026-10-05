@@ -1,0 +1,234 @@
+{
+  "continuous_argmax_note": "negative control only; not a native ledger value",
+  "continuous_q": 0.7788007830714049,
+  "continuous_q_exp_minus_1_over_4_pair_argmax": [
+    9
+  ],
+  "model": "rotation-class purity and pair-carrier dimension selection",
+  "pair_boundaries": {
+    "q=1/2": [
+      3,
+      4
+    ],
+    "q=3/5": [
+      4,
+      5
+    ]
+  },
+  "q4": "5/9",
+  "q4_pair_argmax": [
+    4
+  ],
+  "q4_single_argmax": [
+    2
+  ],
+  "rows": [
+    {
+      "L": 2,
+      "L_over_N": "1",
+      "L_over_N_lt_3_4": false,
+      "N": 2,
+      "class_size_distribution": {
+        "2": 1
+      },
+      "pair_argmax": [
+        40
+      ],
+      "q": "1",
+      "q_float": 1.0,
+      "q_le_L_over_N": true,
+      "single_argmax": [
+        40
+      ]
+    },
+    {
+      "L": 4,
+      "L_over_N": "2/3",
+      "L_over_N_lt_3_4": true,
+      "N": 6,
+      "class_size_distribution": {
+        "2": 1,
+        "4": 1
+      },
+      "pair_argmax": [
+        4
+      ],
+      "q": "5/9",
+      "q_float": 0.5555555555555556,
+      "q_le_L_over_N": true,
+      "single_argmax": [
+        2
+      ]
+    },
+    {
+      "L": 6,
+      "L_over_N": "3/10",
+      "L_over_N_lt_3_4": true,
+      "N": 20,
+      "class_size_distribution": {
+        "2": 1,
+        "6": 3
+      },
+      "pair_argmax": [
+        2
+      ],
+      "q": "7/25",
+      "q_float": 0.28,
+      "q_le_L_over_N": true,
+      "single_argmax": [
+        1
+      ]
+    },
+    {
+      "L": 8,
+      "L_over_N": "4/35",
+      "L_over_N_lt_3_4": true,
+      "N": 70,
+      "class_size_distribution": {
+        "2": 1,
+        "4": 1,
+        "8": 8
+      },
+      "pair_argmax": [
+        2
+      ],
+      "q": "19/175",
+      "q_float": 0.10857142857142857,
+      "q_le_L_over_N": true,
+      "single_argmax": [
+        1
+      ]
+    },
+    {
+      "L": 10,
+      "L_over_N": "5/126",
+      "L_over_N_lt_3_4": true,
+      "N": 252,
+      "class_size_distribution": {
+        "2": 1,
+        "10": 25
+      },
+      "pair_argmax": [
+        2
+      ],
+      "q": "313/7938",
+      "q_float": 0.03943058704963467,
+      "q_le_L_over_N": true,
+      "single_argmax": [
+        1
+      ]
+    },
+    {
+      "L": 12,
+      "L_over_N": "1/77",
+      "L_over_N_lt_3_4": true,
+      "N": 924,
+      "class_size_distribution": {
+        "2": 1,
+        "4": 1,
+        "6": 3,
+        "12": 75
+      },
+      "pair_argmax": [
+        2
+      ],
+      "q": "683/53361",
+      "q_float": 0.012799610202207604,
+      "q_le_L_over_N": true,
+      "single_argmax": [
+        1
+      ]
+    },
+    {
+      "L": 14,
+      "L_over_N": "7/1716",
+      "L_over_N_lt_3_4": true,
+      "N": 3432,
+      "class_size_distribution": {
+        "2": 1,
+        "14": 245
+      },
+      "pair_argmax": [
+        2
+      ],
+      "q": "667/163592",
+      "q_float": 0.004077216489803902,
+      "q_le_L_over_N": true,
+      "single_argmax": [
+        1
+      ]
+    },
+    {
+      "L": 16,
+      "L_over_N": "8/6435",
+      "L_over_N_lt_3_4": true,
+      "N": 12870,
+      "class_size_distribution": {
+        "2": 1,
+        "4": 1,
+        "8": 8,
+        "16": 800
+      },
+      "pair_argmax": [
+        2
+      ],
+      "q": "17111/13803075",
+      "q_float": 0.0012396513095813794,
+      "q_le_L_over_N": true,
+      "single_argmax": [
+        1
+      ]
+    },
+    {
+      "L": 18,
+      "L_over_N": "9/24310",
+      "L_over_N_lt_3_4": true,
+      "N": 48620,
+      "class_size_distribution": {
+        "2": 1,
+        "6": 3,
+        "18": 2700
+      },
+      "pair_argmax": [
+        2
+      ],
+      "q": "54682/147744025",
+      "q_float": 0.00037011310609684554,
+      "q_le_L_over_N": true,
+      "single_argmax": [
+        1
+      ]
+    },
+    {
+      "L": 20,
+      "L_over_N": "5/46189",
+      "L_over_N_lt_3_4": true,
+      "N": 184756,
+      "class_size_distribution": {
+        "2": 1,
+        "4": 1,
+        "10": 25,
+        "20": 9225
+      },
+      "pair_argmax": [
+        2
+      ],
+      "q": "35505/328219034",
+      "q_float": 0.00010817471359689639,
+      "q_le_L_over_N": true,
+      "single_argmax": [
+        1
+      ]
+    }
+  ],
+  "single_boundaries": {
+    "q=3/4": [
+      3,
+      4
+    ],
+    "q=4/5": [
+      4,
+      5
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+ "A": [
+  {
+   "name": "常数 Ω²=2",
+   "zero_cone_preserved": true,
+   "sample_distances": [
+    1.3838733828696905,
+    0.818261113652596,
+    2.329889194396844
+   ]
+  },
+  {
+   "name": "Ω²=1+x₀²",
+   "zero_cone_preserved": true,
+   "sample_distances": [
+    1.6238671260314355,
+    1.0244445384689889,
+    1.6707471380279677
+   ]
+  },
+  {
+   "name": "Ω²=e^{x₁}",
+   "zero_cone_preserved": true,
+   "sample_distances": [
+    0.9848773703179332,
+    0.9158144783853671,
+    0.8601710460287911
+   ]
+  },
+  {
+   "name": "Ω²=(1+|x|²)²",
+   "zero_cone_preserved": true,
+   "sample_distances": [
+    8.161098358892124,
+    3.7501273960942605,
+    23.0596902993365
+   ]
+  }
+ ],
+ "B": {
+  "example": "distance scales as Omega"
+ },
+ "C": {
+  "conformal_invisible_to_causal": true
+ },
+ "D": {
+  "theorem": "causal <=> conformal in 4d (HKMM/Malament)"
+ },
+ "conclusion": "the gap is the conformal factor, not the metric"
+}

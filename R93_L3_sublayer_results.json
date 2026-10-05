@@ -1,0 +1,48 @@
+{
+ "J1": {
+  "K_span": 18.121199327652953,
+  "sigma_unitary": true,
+  "born_trace": 1.0,
+  "S_max": 2.0047295469522033,
+  "n_blocks": 9
+ },
+ "J2": {
+  "be=0.00": {
+   "K_span": 9.081199327652953,
+   "sigma_unitary": true,
+   "born_trace": 1.0,
+   "S_max": 1.7285561130802034,
+   "n_blocks": 9
+  },
+  "be=0.50": {
+   "K_span": 13.081199327652953,
+   "sigma_unitary": true,
+   "born_trace": 1.0000000000000002,
+   "S_max": 1.8625211685169765,
+   "n_blocks": 9
+  },
+  "be=1.13": {
+   "K_span": 18.121199327652953,
+   "sigma_unitary": true,
+   "born_trace": 1.0,
+   "S_max": 2.0047295469522033,
+   "n_blocks": 9
+  }
+ },
+ "J3": {
+  "L2_to_L3": {
+   "before": 2.0047295469522033,
+   "after": 2.2019288521508775
+  }
+ },
+ "J4": {
+  "same_kind_as_D222_sublayer": false
+ },
+ "J5": {
+  "beta_dependence": "L2 无关 / L3 有关"
+ },
+ "summary": {
+  "checks": 10,
+  "failed": []
+ }
+}

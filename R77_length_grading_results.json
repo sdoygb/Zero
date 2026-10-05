@@ -1,0 +1,106 @@
+{
+ "A": [
+  {
+   "ell": 2,
+   "n": 2,
+   "hmax_vals": 1,
+   "turn_vals": 1,
+   "tau0_vals": 1,
+   "unique": true
+  },
+  {
+   "ell": 4,
+   "n": 6,
+   "hmax_vals": 2,
+   "turn_vals": 3,
+   "tau0_vals": 2,
+   "unique": false
+  },
+  {
+   "ell": 6,
+   "n": 20,
+   "hmax_vals": 3,
+   "turn_vals": 5,
+   "tau0_vals": 3,
+   "unique": false
+  },
+  {
+   "ell": 8,
+   "n": 70,
+   "hmax_vals": 4,
+   "turn_vals": 7,
+   "tau0_vals": 4,
+   "unique": false
+  },
+  {
+   "ell": 10,
+   "n": 252,
+   "hmax_vals": 5,
+   "turn_vals": 9,
+   "tau0_vals": 5,
+   "unique": false
+  },
+  {
+   "ell": 12,
+   "n": 924,
+   "hmax_vals": 6,
+   "turn_vals": 11,
+   "tau0_vals": 6,
+   "unique": false
+  }
+ ],
+ "B2": [
+  2,
+  6,
+  20,
+  70,
+  252,
+  924,
+  3432,
+  12870,
+  48620,
+  184756
+ ],
+ "B2_rank": 8,
+ "C": {
+  "D3": {
+   "counts": [
+    4,
+    3
+   ],
+   "primes": [
+    2,
+    3
+   ],
+   "rank": 1
+  },
+  "D4": {
+   "counts": [
+    10,
+    15,
+    12
+   ],
+   "primes": [
+    2,
+    3,
+    5
+   ],
+   "rank": 2
+  },
+  "D5": {
+   "counts": [
+    20,
+    45,
+    72,
+    60
+   ],
+   "primes": [
+    2,
+    3,
+    5
+   ],
+   "rank": 3
+  }
+ },
+ "D_conclusion": true
+}

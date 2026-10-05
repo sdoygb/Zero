@@ -1,0 +1,275 @@
+{
+  "model": {
+    "microstates": "cyclic zero-sum words of +1 and -1 steps",
+    "edges": "adjacent opposite-sign swaps",
+    "periods": [
+      8,
+      10,
+      12,
+      14,
+      16,
+      18
+    ],
+    "coarse_graining": [
+      "period and internal return count",
+      "period and ordered excursion-length profile"
+    ],
+    "controls": [
+      "4D torus",
+      "random regular graph"
+    ]
+  },
+  "summary": {
+    "fixed_period_graphs": {
+      "8": {
+        "name": "closure_T8",
+        "nodes": 10,
+        "edges": 18,
+        "mean_degree": 3.6,
+        "diameter": 4,
+        "local_growth_dimension": null,
+        "spectral_points": {
+          "0.10": {
+            "time": 0.8077232235402414,
+            "spectral_dimension": 3.3408488353454615
+          },
+          "0.05": {
+            "time": 1.1579429177784324,
+            "spectral_dimension": 3.9722980713512044
+          },
+          "0.02": {
+            "time": 1.7840073858797638,
+            "spectral_dimension": 5.036906263878947
+          }
+        },
+        "mds_4d_stress": 0.2106946445677414,
+        "period": 8
+      },
+      "10": {
+        "name": "closure_T10",
+        "nodes": 26,
+        "edges": 64,
+        "mean_degree": 4.923076923076923,
+        "diameter": 6,
+        "local_growth_dimension": null,
+        "spectral_points": {
+          "0.10": {
+            "time": 0.6277191285144675,
+            "spectral_dimension": 3.2819831001000495
+          },
+          "0.05": {
+            "time": 0.9328942198714313,
+            "spectral_dimension": 3.7928204921685733
+          },
+          "0.02": {
+            "time": 1.4372817113370253,
+            "spectral_dimension": 4.304110992442887
+          }
+        },
+        "mds_4d_stress": 0.18399856429961128,
+        "period": 10
+      },
+      "12": {
+        "name": "closure_T12",
+        "nodes": 80,
+        "edges": 246,
+        "mean_degree": 6.15,
+        "diameter": 9,
+        "local_growth_dimension": null,
+        "spectral_points": {
+          "0.10": {
+            "time": 0.5242676648237958,
+            "spectral_dimension": 3.1627538693035007
+          },
+          "0.05": {
+            "time": 0.7791482718346691,
+            "spectral_dimension": 3.5898522682910112
+          },
+          "0.02": {
+            "time": 1.2900737104891231,
+            "spectral_dimension": 4.086317170372055
+          }
+        },
+        "mds_4d_stress": 0.19151774370652364,
+        "period": 12
+      },
+      "14": {
+        "name": "closure_T14",
+        "nodes": 246,
+        "edges": 909,
+        "mean_degree": 7.390243902439025,
+        "diameter": 12,
+        "local_growth_dimension": 2.2272191497149763,
+        "spectral_points": {
+          "0.10": {
+            "time": 0.4074326849599521,
+            "spectral_dimension": 3.3745059257340486
+          },
+          "0.05": {
+            "time": 0.6055122100314914,
+            "spectral_dimension": 3.8830965757113063
+          },
+          "0.02": {
+            "time": 0.9328942198714313,
+            "spectral_dimension": 4.2246320585002195
+          }
+        },
+        "mds_4d_stress": 0.1705042090647935,
+        "period": 14
+      },
+      "16": {
+        "name": "closure_T16",
+        "nodes": 810,
+        "edges": 3416,
+        "mean_degree": 8.434567901234567,
+        "diameter": 16,
+        "local_growth_dimension": 2.4395470521136646,
+        "spectral_points": {
+          "0.10": {
+            "time": 0.3527654418491978,
+            "spectral_dimension": 3.4857286945227415
+          },
+          "0.05": {
+            "time": 0.5057205650666886,
+            "spectral_dimension": 4.014868104809835
+          },
+          "0.02": {
+            "time": 0.7791482718346691,
+            "spectral_dimension": 4.4174449370705275
+          }
+        },
+        "mds_4d_stress": 0.18203481781192135,
+        "period": 16
+      },
+      "18": {
+        "name": "closure_T18",
+        "nodes": 2704,
+        "edges": 12843,
+        "mean_degree": 9.499260355029586,
+        "diameter": 20,
+        "local_growth_dimension": 2.9413444760924734,
+        "spectral_points": {
+          "0.10": {
+            "time": 0.7515842206964928,
+            "spectral_dimension": 3.811278652971801
+          },
+          "0.05": {
+            "time": 1.0393451086797687,
+            "spectral_dimension": 4.454614707208378
+          },
+          "0.02": {
+            "time": 1.5446383586136858,
+            "spectral_dimension": 4.874416858846999
+          }
+        },
+        "mds_4d_stress": null,
+        "period": 18
+      }
+    },
+    "controls": {
+      "4D torus": {
+        "name": "4D torus",
+        "nodes": 625,
+        "edges": 2500,
+        "mean_degree": 8.0,
+        "diameter": 8,
+        "local_growth_dimension": 2.55235902604467,
+        "spectral_points": {
+          "0.10": {
+            "time": 0.3402856032479823,
+            "spectral_dimension": 3.746867670584038
+          },
+          "0.05": {
+            "time": 0.4878296089790859,
+            "spectral_dimension": 4.519716539255413
+          },
+          "0.02": {
+            "time": 0.6993470341537255,
+            "spectral_dimension": 5.119047237592142
+          }
+        },
+        "mds_4d_stress": 0.27759630232192545,
+        "period": null
+      },
+      "random 8-regular": {
+        "name": "random 8-regular",
+        "nodes": 810,
+        "edges": 3240,
+        "mean_degree": 8.0,
+        "diameter": 5,
+        "local_growth_dimension": null,
+        "spectral_points": {
+          "0.10": {
+            "time": 0.3402856032479823,
+            "spectral_dimension": 3.8674789254104454
+          },
+          "0.05": {
+            "time": 0.47057158406304084,
+            "spectral_dimension": 4.812001356578861
+          },
+          "0.02": {
+            "time": 0.6507404768641575,
+            "spectral_dimension": 5.95278732668443
+          }
+        },
+        "mds_4d_stress": 0.5866877131611756,
+        "period": null
+      }
+    },
+    "coarse_graphs": {
+      "coarse (T,returns)": {
+        "name": "coarse (T,returns)",
+        "nodes": 36,
+        "edges": 166,
+        "mean_degree": 9.222222222222221,
+        "diameter": 7,
+        "local_growth_dimension": null,
+        "spectral_points": {
+          "0.10": {
+            "time": 0.3791149840532586,
+            "spectral_dimension": 2.6362832997970855
+          },
+          "0.05": {
+            "time": 0.6507404768641575,
+            "spectral_dimension": 2.5662749243456204
+          },
+          "0.02": {
+            "time": 1.3373866486119932,
+            "spectral_dimension": 2.5228507838506715
+          }
+        },
+        "mds_4d_stress": null,
+        "period": null
+      },
+      "coarse (T,profile)": {
+        "name": "coarse (T,profile)",
+        "nodes": 92,
+        "edges": 760,
+        "mean_degree": 16.52173913043478,
+        "diameter": 7,
+        "local_growth_dimension": null,
+        "spectral_points": {
+          "0.10": {
+            "time": 0.21305494573297357,
+            "spectral_dimension": 2.9162895302220804
+          },
+          "0.05": {
+            "time": 0.3402856032479823,
+            "spectral_dimension": 3.0941355239721986
+          },
+          "0.02": {
+            "time": 0.6277191285144675,
+            "spectral_dimension": 2.9696068549108503
+          }
+        },
+        "mds_4d_stress": null,
+        "period": null
+      }
+    }
+  },
+  "interpretation": {
+    "status": "no stable four-dimensional plateau detected",
+    "reason": "local growth exponent and matched-return spectral dimension both drift with closure period; coarse-graining does not restore a fixed four-dimensional value",
+    "next_gap": "a zero-sum closure graph alone does not fix the number of effective geometric directions"
+  }
+}

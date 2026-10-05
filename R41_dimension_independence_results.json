@@ -1,0 +1,91 @@
+{
+ "proposition": "纠缠机制（共同起因 ＋ 未记录标签 ⇒ 纠缠）不含空间维度量 ⇒ 维数无关",
+ "test": "沿 1D/2D/3D 格子的哈密顿路径做 Jordan-Wigner，单粒子跨位点相干叠加的 CHSH 值",
+ "cases": {
+  "1D_L4": {
+   "shape": [
+    4
+   ],
+   "n_sites": 4,
+   "site_pair": [
+    [
+     0
+    ],
+    [
+     1
+    ]
+   ],
+   "lattice_adjacent": true,
+   "S_max": 2.8284271247461907,
+   "equals_2sqrt2": true
+  },
+  "2D_2x2": {
+   "shape": [
+    2,
+    2
+   ],
+   "n_sites": 4,
+   "site_pair": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "lattice_adjacent": true,
+   "S_max": 2.8284271247461907,
+   "equals_2sqrt2": true
+  },
+  "2D_2x4": {
+   "shape": [
+    2,
+    4
+   ],
+   "n_sites": 8,
+   "site_pair": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "lattice_adjacent": true,
+   "S_max": 2.8284271247461907,
+   "equals_2sqrt2": true
+  },
+  "3D_2x2x2": {
+   "shape": [
+    2,
+    2,
+    2
+   ],
+   "n_sites": 8,
+   "site_pair": [
+    [
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1
+    ]
+   ],
+   "lattice_adjacent": true,
+   "S_max": 2.8284271247461907,
+   "equals_2sqrt2": true
+  }
+ },
+ "verdict": {
+  "all_dimensions_give_2sqrt2": true,
+  "dimension_independent": true,
+  "note": "JW 字符串需要路径排序（技术性）；机制本身与维数无关。受几何限制的是把『两方』识别为『两处空间』（E1）与 Bell 的类空前提（精确锥）。"
+ }
+}

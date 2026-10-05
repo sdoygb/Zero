@@ -1,0 +1,606 @@
+{
+ "A_scan": {
+  "L": [
+   {
+    "file": "G0_bottom_layer_and_derivation_route.md",
+    "line": 384,
+    "pol": "NEG",
+    "layers": [
+     "L0",
+     "L2",
+     "L3"
+    ],
+    "has_layer": true,
+    "clause": "**宏观传播子零自由参数**：$G_t=\\Pi V^t\\mathcal L$"
+   },
+   {
+    "file": "G0_bottom_layer_and_derivation_route.md",
+    "line": 393,
+    "pol": "NEG",
+    "layers": [
+     "L0",
+     "L2"
+    ],
+    "has_layer": true,
+    "clause": "G33：$G_t=\\Pi V^t\\mathcal L$ 零自由参数"
+   },
+   {
+    "file": "G0_bottom_layer_and_derivation_route.md",
+    "line": 422,
+    "pol": "POS",
+    "layers": [
+     "L2"
+    ],
+    "has_layer": true,
+    "clause": "**后续状态｜`G46` k 由 Z3 的寿命唯一确定：**k = L**"
+   },
+   {
+    "file": "G0_bottom_layer_and_derivation_route.md",
+    "line": 423,
+    "pol": "NEG",
+    "layers": [
+     "L0",
+     "L1",
+     "L2"
+    ],
+    "has_layer": true,
+    "clause": "而 $L$ 是无量纲步数 ⟹ **无自由参数"
+   },
+   {
+    "file": "G0_bottom_layer_and_derivation_route.md",
+    "line": 423,
+    "pol": "POS",
+    "layers": [
+     "L0",
+     "L1",
+     "L2"
+    ],
+    "has_layer": true,
+    "clause": "$k=L$ 由 Z3 唯一确定"
+   },
+   {
+    "file": "G36_objective_completion_audit.md",
+    "line": 24,
+    "pol": "NEG",
+    "layers": [],
+    "has_layer": false,
+    "clause": "$G_t=\\Pi V^t\\mathcal L$ **零自由参数**"
+   },
+   {
+    "file": "G46_k_is_the_lifetime.md",
+    "line": 1,
+    "pol": "POS",
+    "layers": [
+     "L2"
+    ],
+    "has_layer": true,
+    "clause": "# G46 · $k$ 由 Z4 的**寿命**唯一确定：$k=L$"
+   },
+   {
+    "file": "G46_k_is_the_lifetime.md",
+    "line": 8,
+    "pol": "POS",
+    "layers": [
+     "L2"
+    ],
+    "has_layer": true,
+    "clause": "\\boxed{\\ k\\ \\text{由 Z4 的有限寿命 }L\\ \\text{唯一确定：}\\ k=L\\ }"
+   },
+   {
+    "file": "G46_k_is_the_lifetime.md",
+    "line": 43,
+    "pol": "NEG",
+    "layers": [
+     "L0"
+    ],
+    "has_layer": true,
+    "clause": "**而 $L$ 是无量纲的【步数】** $\\\\Longrightarrow$ $k=L$ **无自由参数"
+   },
+   {
+    "file": "G46_k_is_the_lifetime.md",
+    "line": 93,
+    "pol": "POS",
+    "layers": [
+     "L0"
+    ],
+    "has_layer": true,
+    "clause": "$k=L$ 由 **Z4** 唯一确定"
+   },
+   {
+    "file": "G63_target_list_and_audit.md",
+    "line": 196,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "F1 **已导出栏逐条复核** · F2 **$T=L\\Rightarrow\\dim\\mathcal A=20\\ge3$** · F3 **清单为什么短"
+   },
+   {
+    "file": "G73_B_is_an_input.md",
+    "line": 83,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "\\Longrightarrow\\ \\text{按 }Q775\\ \\text{的判据}:\\ L\\ \\text{与}\\ B\\ \\text{的锁定}\\textbf{都不合格}"
+   },
+   {
+    "file": "G90_zero_series_reference_triage.md",
+    "line": 159,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "而 G 系列后来一度把 $L=4$ 写成锁定候选"
+   },
+   {
+    "file": "R2_site_identification.md",
+    "line": 639,
+    "pol": "POS",
+    "layers": [
+     "L2"
+    ],
+    "has_layer": true,
+    "clause": "$L=4$ 的条件锁定"
+   },
+   {
+    "file": "R2_site_identification.md",
+    "line": 1038,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "的 $L=4$ 条件锁定"
+   },
+   {
+    "file": "R4_falsifiable_prediction.md",
+    "line": 535,
+    "pol": "POS",
+    "layers": [
+     "L0"
+    ],
+    "has_layer": true,
+    "clause": "5. **`B` 和 `L`**都没有被公理唯一锁定"
+   },
+   {
+    "file": "Z0_zero_never_rests_single_axiom.md",
+    "line": 49,
+    "pol": "NEG",
+    "layers": [
+     "L2"
+    ],
+    "has_layer": true,
+    "clause": "$L$ 为**自由参数**"
+   },
+   {
+    "file": "Z12_geometric_input_closed_binary_labeling.md",
+    "line": 114,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "\\boxed{\\ \\text{在 }L=4\\ \\text{的锁定理论里"
+   },
+   {
+    "file": "Z17_A0_A5_retirement_vacancy_ledger.md",
+    "line": 91,
+    "pol": "NEG",
+    "layers": [
+     "L0",
+     "L2"
+    ],
+    "has_layer": true,
+    "clause": "自由参数 $L$"
+   },
+   {
+    "file": "Z1_zero_layer_as_the_foundation.md",
+    "line": 48,
+    "pol": "NEG",
+    "layers": [],
+    "has_layer": false,
+    "clause": "}L,T,d\\ \\textbf{必须保持为自由参数}"
+   },
+   {
+    "file": "Z1_zero_layer_as_the_foundation.md",
+    "line": 77,
+    "pol": "NEG",
+    "layers": [
+     "L2"
+    ],
+    "has_layer": true,
+    "clause": "存在**自由参数** $L$"
+   }
+  ],
+  "B": [
+   {
+    "file": "G61_locking_the_five_integers.md",
+    "line": 15,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "$B$——而账本第一栏\"已导出\"的量**几乎全是它们的函数**"
+   },
+   {
+    "file": "G73_B_is_an_input.md",
+    "line": 67,
+    "pol": "NEG",
+    "layers": [
+     "L0"
+    ],
+    "has_layer": true,
+    "clause": "\\boxed{\\ \\text{没有公理级约束挑出 }B=4 \\Longrightarrow B\\ \\textbf{不可导出}"
+   },
+   {
+    "file": "G73_B_is_an_input.md",
+    "line": 83,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "\\Longrightarrow\\ \\text{按 }Q775\\ \\text{的判据}:\\ L\\ \\text{与}\\ B\\ \\text{的锁定}\\textbf{都不合格}"
+   },
+   {
+    "file": "G73_B_is_an_input.md",
+    "line": 108,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "$B$ 是\"已锁定/候选\""
+   },
+   {
+    "file": "G82_B_from_two_independent_Z2.md",
+    "line": 13,
+    "pol": "NEG",
+    "layers": [],
+    "has_layer": false,
+    "clause": "已判 $B$ **不可导出**"
+   },
+   {
+    "file": "R4_falsifiable_prediction.md",
+    "line": 535,
+    "pol": "POS",
+    "layers": [
+     "L0"
+    ],
+    "has_layer": true,
+    "clause": "5. **`B` 和 `L`**都没有被公理唯一锁定"
+   }
+  ],
+  "T": [
+   {
+    "file": "G63_target_list_and_audit.md",
+    "line": 196,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "F1 **已导出栏逐条复核** · F2 **$T=L\\Rightarrow\\dim\\mathcal A=20\\ge3$** · F3 **清单为什么短"
+   },
+   {
+    "file": "R27_phase_cochain_quotient_and_dimension_dictionary.md",
+    "line": 59,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "` 或统一的 `T` 当作已导出的维数"
+   },
+   {
+    "file": "Z0_zero_never_rests_single_axiom.md",
+    "line": 184,
+    "pol": "NEG",
+    "layers": [],
+    "has_layer": false,
+    "clause": "$T$ 是**自由参数**"
+   },
+   {
+    "file": "Z1_zero_layer_as_the_foundation.md",
+    "line": 48,
+    "pol": "NEG",
+    "layers": [],
+    "has_layer": false,
+    "clause": "}L,T,d\\ \\textbf{必须保持为自由参数}"
+   },
+   {
+    "file": "Z1_zero_layer_as_the_foundation.md",
+    "line": 213,
+    "pol": "NEG",
+    "layers": [
+     "L0"
+    ],
+    "has_layer": true,
+    "clause": "**条款**：存在**自由参数**周期 $T$ 与相位"
+   }
+  ],
+  "D": [
+   {
+    "file": "D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md",
+    "line": 9,
+    "pol": "NEG",
+    "layers": [],
+    "has_layer": false,
+    "clause": "】** 本文的“未导出／未解输入”是 **D259 借入路线本地**的状态"
+   },
+   {
+    "file": "G38_d232_verdict_and_g35_withdrawal.md",
+    "line": 109,
+    "pol": "NEG",
+    "layers": [],
+    "has_layer": false,
+    "clause": "F1 $f$ 是输入 · F2 相位比公式 · F3 反解公式 · F4 结论框 · F5 G37 正确/G35 撤回 · F6 D233 早已给出 · F7 加强 G25 · F8 诚实边界"
+   },
+   {
+    "file": "G89_dimension_no_go_and_the_balance_condition.md",
+    "line": 16,
+    "pol": "NEG",
+    "layers": [],
+    "has_layer": false,
+    "clause": "故任何只依赖 $D$ 的陈述都不可导出"
+   },
+   {
+    "file": "R11_legacy_GR_derivation_audit.md",
+    "line": 148,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "### 3.4 为什么不能称为“4D GR 已导出”"
+   },
+   {
+    "file": "R46_pair_ledger_objects_and_simplex.md",
+    "line": 20,
+    "pol": "POS",
+    "layers": [],
+    "has_layer": false,
+    "clause": "&\\therefore\\ \\binom{D+1}2\\ \\textbf{可导出}\\ \\text{"
+   },
+   {
+    "file": "R4_falsifiable_prediction.md",
+    "line": 246,
+    "pol": "NEG",
+    "layers": [],
+    "has_layer": false,
+    "clause": "【D>4 时才是输入】"
+   },
+   {
+    "file": "Z6_stall_autopsy_and_released_ledger.md",
+    "line": 104,
+    "pol": "NEG",
+    "layers": [],
+    "has_layer": false,
+    "clause": "维数 $D$ 不可导出"
+   },
+   {
+    "file": "Z6_stall_autopsy_and_released_ledger.md",
+    "line": 104,
+    "pol": "NEG",
+    "layers": [],
+    "has_layer": false,
+    "clause": "$D$ 是输入"
+   }
+  ]
+ },
+ "A_layer_collapse_candidates": [
+  {
+   "symbol": "L",
+   "n_neg": 9,
+   "n_pos": 12,
+   "n_missing_layer": 7,
+   "examples": [
+    {
+     "file": "G36_objective_completion_audit.md",
+     "line": 24,
+     "pol": "NEG",
+     "layers": [],
+     "has_layer": false,
+     "clause": "$G_t=\\Pi V^t\\mathcal L$ **零自由参数**"
+    },
+    {
+     "file": "Z1_zero_layer_as_the_foundation.md",
+     "line": 48,
+     "pol": "NEG",
+     "layers": [],
+     "has_layer": false,
+     "clause": "}L,T,d\\ \\textbf{必须保持为自由参数}"
+    },
+    {
+     "file": "G63_target_list_and_audit.md",
+     "line": 196,
+     "pol": "POS",
+     "layers": [],
+     "has_layer": false,
+     "clause": "F1 **已导出栏逐条复核** · F2 **$T=L\\Rightarrow\\dim\\mathcal A=20\\ge3$** · F3 **清单为什么短"
+    },
+    {
+     "file": "G73_B_is_an_input.md",
+     "line": 83,
+     "pol": "POS",
+     "layers": [],
+     "has_layer": false,
+     "clause": "\\Longrightarrow\\ \\text{按 }Q775\\ \\text{的判据}:\\ L\\ \\text{与}\\ B\\ \\text{的锁定}\\textbf{都不合格}"
+    }
+   ]
+  },
+  {
+   "symbol": "B",
+   "n_neg": 2,
+   "n_pos": 4,
+   "n_missing_layer": 4,
+   "examples": [
+    {
+     "file": "G82_B_from_two_independent_Z2.md",
+     "line": 13,
+     "pol": "NEG",
+     "layers": [],
+     "has_layer": false,
+     "clause": "已判 $B$ **不可导出**"
+    },
+    {
+     "file": "G61_locking_the_five_integers.md",
+     "line": 15,
+     "pol": "POS",
+     "layers": [],
+     "has_layer": false,
+     "clause": "$B$——而账本第一栏\"已导出\"的量**几乎全是它们的函数**"
+    },
+    {
+     "file": "G73_B_is_an_input.md",
+     "line": 83,
+     "pol": "POS",
+     "layers": [],
+     "has_layer": false,
+     "clause": "\\Longrightarrow\\ \\text{按 }Q775\\ \\text{的判据}:\\ L\\ \\text{与}\\ B\\ \\text{的锁定}\\textbf{都不合格}"
+    },
+    {
+     "file": "G73_B_is_an_input.md",
+     "line": 108,
+     "pol": "POS",
+     "layers": [],
+     "has_layer": false,
+     "clause": "$B$ 是\"已锁定/候选\""
+    }
+   ]
+  },
+  {
+   "symbol": "T",
+   "n_neg": 3,
+   "n_pos": 2,
+   "n_missing_layer": 4,
+   "examples": [
+    {
+     "file": "Z0_zero_never_rests_single_axiom.md",
+     "line": 184,
+     "pol": "NEG",
+     "layers": [],
+     "has_layer": false,
+     "clause": "$T$ 是**自由参数**"
+    },
+    {
+     "file": "Z1_zero_layer_as_the_foundation.md",
+     "line": 48,
+     "pol": "NEG",
+     "layers": [],
+     "has_layer": false,
+     "clause": "}L,T,d\\ \\textbf{必须保持为自由参数}"
+    },
+    {
+     "file": "G63_target_list_and_audit.md",
+     "line": 196,
+     "pol": "POS",
+     "layers": [],
+     "has_layer": false,
+     "clause": "F1 **已导出栏逐条复核** · F2 **$T=L\\Rightarrow\\dim\\mathcal A=20\\ge3$** · F3 **清单为什么短"
+    },
+    {
+     "file": "R27_phase_cochain_quotient_and_dimension_dictionary.md",
+     "line": 59,
+     "pol": "POS",
+     "layers": [],
+     "has_layer": false,
+     "clause": "` 或统一的 `T` 当作已导出的维数"
+    }
+   ]
+  },
+  {
+   "symbol": "D",
+   "n_neg": 6,
+   "n_pos": 2,
+   "n_missing_layer": 8,
+   "examples": [
+    {
+     "file": "D259_z_layer_condition_dictionary_and_four_dimensional_confluence.md",
+     "line": 9,
+     "pol": "NEG",
+     "layers": [],
+     "has_layer": false,
+     "clause": "】** 本文的“未导出／未解输入”是 **D259 借入路线本地**的状态"
+    },
+    {
+     "file": "G38_d232_verdict_and_g35_withdrawal.md",
+     "line": 109,
+     "pol": "NEG",
+     "layers": [],
+     "has_layer": false,
+     "clause": "F1 $f$ 是输入 · F2 相位比公式 · F3 反解公式 · F4 结论框 · F5 G37 正确/G35 撤回 · F6 D233 早已给出 · F7 加强 G25 · F8 诚实边界"
+    },
+    {
+     "file": "G89_dimension_no_go_and_the_balance_condition.md",
+     "line": 16,
+     "pol": "NEG",
+     "layers": [],
+     "has_layer": false,
+     "clause": "故任何只依赖 $D$ 的陈述都不可导出"
+    },
+    {
+     "file": "R4_falsifiable_prediction.md",
+     "line": 246,
+     "pol": "NEG",
+     "layers": [],
+     "has_layer": false,
+     "clause": "【D>4 时才是输入】"
+    }
+   ]
+  }
+ ],
+ "B_two_sided_law": {
+  "rows": [
+   {
+    "B": 2.0,
+    "measured_minus_slope": 0.3465735902799728,
+    "law": 0.34657359027997264,
+    "diff": 1.6653345369377348e-16,
+    "rho_at_T": 2.0269487629558524e-181
+   },
+   {
+    "B": 2.5,
+    "measured_minus_slope": 0.23500181462286787,
+    "law": 0.2350018146228678,
+    "diff": 8.326672684688674e-17,
+    "rho_at_T": 2.333580530722684e-123
+   },
+   {
+    "B": 3.0,
+    "measured_minus_slope": 0.14384103622589048,
+    "law": 0.14384103622589045,
+    "diff": 2.7755575615628914e-17,
+    "rho_at_T": 5.813485976801636e-76
+   },
+   {
+    "B": 3.5,
+    "measured_minus_slope": 0.06676569631226165,
+    "law": 0.06676569631226131,
+    "diff": 3.3306690738754696e-16,
+    "rho_at_T": 5.323822158624685e-36
+   },
+   {
+    "B": 3.9,
+    "measured_minus_slope": 0.012663143948277875,
+    "law": 0.012658903992144949,
+    "diff": 4.239956132925937e-06,
+    "rho_at_T": 2.2244858176865667e-08
+   },
+   {
+    "B": 4.0,
+    "measured_minus_slope": 0.0013688872477310423,
+    "law": -0.0,
+    "diff": 0.0013688872477310423,
+    "rho_at_T": 0.006564450873563488
+   },
+   {
+    "B": 4.1,
+    "measured_minus_slope": 3.984960830419728e-06,
+    "law": -0.012346306295185707,
+    "diff": 0.012350291256016126,
+    "rho_at_T": 0.09756099512943239
+   },
+   {
+    "B": 4.5,
+    "measured_minus_slope": 1.11759598785374e-16,
+    "law": -0.05889151782819173,
+    "diff": 0.05889151782819184,
+    "rho_at_T": 0.44444444444444486
+   },
+   {
+    "B": 5.0,
+    "measured_minus_slope": 5.182052493912241e-19,
+    "law": -0.11157177565710488,
+    "diff": 0.11157177565710488,
+    "rho_at_T": 0.8000000000000002
+   }
+  ],
+  "max_abs_diff_B_lt_4": 4.239956132925937e-06,
+  "B_gt_4_saturated": true,
+  "verdict": "双侧定律：B<4 指数衰减（L3 可见性）；B=4 幂律；B>4 指数增长被 L2 容量饱和截断"
+ }
+}

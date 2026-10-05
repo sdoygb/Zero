@@ -1,0 +1,231 @@
+{
+ "criterion": "双侧：(i) 主导块 (ii) 秩>=2；判据 S_max>2 且 rank>=2",
+ "families": {
+  "A_旋转类_L=12": {
+   "n_blocks": 80,
+   "lambda_1": 0.012987012987012988,
+   "top3_weight": 0.03896103896103896,
+   "S_max": 0.06493506493506494,
+   "contextual": false,
+   "rank": 4,
+   "type": "III_1",
+   "passes_both": false,
+   "note": "R31 路线 A（R42 已算）"
+  },
+  "B_时间残类_q=1/L": {
+   "n_blocks": 12,
+   "lambda_1": 0.08333333333333333,
+   "top3_weight": 0.25,
+   "S_max": 0.41666666666666663,
+   "contextual": false,
+   "rank": 0,
+   "type": "III_lambda",
+   "passes_both": false,
+   "note": "R31 路线 B/C：q=1/L ⇒ 均匀"
+  },
+  "C_闭合长度_L=20": {
+   "n_blocks": 10,
+   "lambda_1": 0.7362204724409449,
+   "top3_weight": 0.9812474098632408,
+   "S_max": 1.9848579221632827,
+   "contextual": false,
+   "rank": 45,
+   "type": "III_1",
+   "passes_both": false,
+   "note": "按闭合年龄分块"
+  },
+  "D_割数_2^r": {
+   "n_blocks": 6,
+   "lambda_1": 0.5079365079365079,
+   "top3_weight": 0.8888888888888888,
+   "S_max": 1.6622438023808856,
+   "contextual": false,
+   "rank": 1,
+   "type": "III_lambda",
+   "passes_both": false,
+   "note": "G29 核验三 all_cuts"
+  },
+  "E_单割_1+r": {
+   "n_blocks": 6,
+   "lambda_1": 0.2857142857142857,
+   "top3_weight": 0.7142857142857142,
+   "S_max": 1.2311477126785564,
+   "contextual": false,
+   "rank": 10,
+   "type": "III_1",
+   "passes_both": false,
+   "note": "G29 核验三 single_cut"
+  },
+  "F_幂律_a^-1": {
+   "n_blocks": 20,
+   "lambda_1": 0.2779522965244017,
+   "top3_weight": 0.5095792102947364,
+   "S_max": 0.9416207516521022,
+   "contextual": false,
+   "rank": 121,
+   "type": "III_1",
+   "passes_both": false,
+   "note": "幂律轮廓"
+  },
+  "G_文档例_2,5,20,100": {
+   "n_blocks": 4,
+   "lambda_1": 0.7874015748031497,
+   "top3_weight": 0.9842519685039371,
+   "S_max": 2.0327240002459184,
+   "contextual": true,
+   "rank": 6,
+   "type": "III_1",
+   "passes_both": true,
+   "note": "G29 §2 的例"
+  },
+  "H_两层族": {
+   "grid_size": 60,
+   "n_passers": 46,
+   "examples": [
+    {
+     "n_blocks": 9,
+     "lambda_1": 0.8000000000000002,
+     "top3_weight": 0.9636744733699592,
+     "S_max": 2.015046941106376,
+     "contextual": true,
+     "rank": 27,
+     "type": "III_1",
+     "passes_both": true,
+     "note": "两层：主导块 0.80 + 幂律尾 alpha=2.0 K=8",
+     "p": 0.8,
+     "alpha": 2.0,
+     "K": 8
+    },
+    {
+     "n_blocks": 17,
+     "lambda_1": 0.8,
+     "top3_weight": 0.9577937621111225,
+     "S_max": 2.006919998024688,
+     "contextual": true,
+     "rank": 89,
+     "type": "III_1",
+     "passes_both": true,
+     "note": "两层：主导块 0.80 + 幂律尾 alpha=2.0 K=16",
+     "p": 0.8,
+     "alpha": 2.0,
+     "K": 16
+    },
+    {
+     "n_blocks": 33,
+     "lambda_1": 0.8000000000000003,
+     "top3_weight": 0.9548786211671864,
+     "S_max": 2.0028913723221646,
+     "contextual": true,
+     "rank": 342,
+     "type": "III_1",
+     "passes_both": true,
+     "note": "两层：主导块 0.80 + 幂律尾 alpha=2.0 K=32",
+     "p": 0.8,
+     "alpha": 2.0,
+     "K": 32
+    },
+    {
+     "n_blocks": 9,
+     "lambda_1": 0.85,
+     "top3_weight": 0.9327858081471747,
+     "S_max": 2.0150649539480887,
+     "contextual": true,
+     "rank": 27,
+     "type": "III_1",
+     "passes_both": true,
+     "note": "两层：主导块 0.85 + 幂律尾 alpha=1.0 K=8",
+     "p": 0.85,
+     "alpha": 1.0,
+     "K": 8
+    },
+    {
+     "n_blocks": 9,
+     "lambda_1": 0.85,
+     "top3_weight": 0.9553799066171704,
+     "S_max": 2.046289230088461,
+     "contextual": true,
+     "rank": 27,
+     "type": "III_1",
+     "passes_both": true,
+     "note": "两层：主导块 0.85 + 幂律尾 alpha=1.5 K=8",
+     "p": 0.85,
+     "alpha": 1.5,
+     "K": 8
+    }
+   ],
+   "best": {
+    "n_blocks": 9,
+    "lambda_1": 0.95,
+    "top3_weight": 0.9909186183424897,
+    "S_max": 2.180812718401436,
+    "contextual": true,
+    "rank": 27,
+    "type": "III_1",
+    "passes_both": true,
+    "note": "两层：主导块 0.95 + 幂律尾 alpha=2.0 K=8",
+    "p": 0.95,
+    "alpha": 2.0,
+    "K": 8
+   }
+  }
+ },
+ "verdict": {
+  "natural_families_passing": [
+   "G_文档例_2,5,20,100"
+  ],
+  "two_layer_can_pass": true,
+  "two_layer_pass_region": [
+   [
+    0.8,
+    2.0,
+    8
+   ],
+   [
+    0.8,
+    2.0,
+    16
+   ],
+   [
+    0.8,
+    2.0,
+    32
+   ],
+   [
+    0.85,
+    1.0,
+    8
+   ],
+   [
+    0.85,
+    1.5,
+    8
+   ],
+   [
+    0.85,
+    1.5,
+    16
+   ],
+   [
+    0.85,
+    1.5,
+    32
+   ],
+   [
+    0.85,
+    2.0,
+    8
+   ],
+   [
+    0.85,
+    2.0,
+    16
+   ],
+   [
+    0.85,
+    2.0,
+    32
+   ]
+  ],
+  "conclusion": "自然族全部不同时满足；两层族（主导块 + 幂律尾）存在满足双侧约束的区域"
+ }
+}

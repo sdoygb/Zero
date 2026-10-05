@@ -1,0 +1,134 @@
+{
+ "record_definition": "(精确词 w, 闭合类 [w])；不含位点标签（Z3/G0）",
+ "site_information": {
+  "m=3_L=4": {
+   "n_closed_words": 6,
+   "n_records": 6,
+   "consistent_sites_per_record": [
+    3
+   ],
+   "H_site": 1.584962500721156,
+   "H_site_given_record": 1.5849625007211556,
+   "mutual_information_bits": 4.440892098500626e-16,
+   "site_blind": true
+  },
+  "m=3_L=6": {
+   "n_closed_words": 22,
+   "n_records": 22,
+   "consistent_sites_per_record": [
+    3
+   ],
+   "H_site": 1.584962500721156,
+   "H_site_given_record": 1.5849625007211556,
+   "mutual_information_bits": 4.440892098500626e-16,
+   "site_blind": true
+  },
+  "m=4_L=4": {
+   "n_closed_words": 8,
+   "n_records": 8,
+   "consistent_sites_per_record": [
+    4
+   ],
+   "H_site": 2.0,
+   "H_site_given_record": 2.0,
+   "mutual_information_bits": 0.0,
+   "site_blind": true
+  },
+  "m=4_L=6": {
+   "n_closed_words": 32,
+   "n_records": 32,
+   "consistent_sites_per_record": [
+    4
+   ],
+   "H_site": 2.0,
+   "H_site_given_record": 2.0,
+   "mutual_information_bits": 0.0,
+   "site_blind": true
+  },
+  "m=5_L=4": {
+   "n_closed_words": 6,
+   "n_records": 6,
+   "consistent_sites_per_record": [
+    5
+   ],
+   "H_site": 2.321928094887362,
+   "H_site_given_record": 2.321928094887362,
+   "mutual_information_bits": 0.0,
+   "site_blind": true
+  },
+  "m=5_L=6": {
+   "n_closed_words": 20,
+   "n_records": 20,
+   "consistent_sites_per_record": [
+    5
+   ],
+   "H_site": 2.321928094887362,
+   "H_site_given_record": 2.321928094887361,
+   "mutual_information_bits": 1.3322676295501878e-15,
+   "site_blind": true
+  },
+  "m=6_L=4": {
+   "n_closed_words": 6,
+   "n_records": 6,
+   "consistent_sites_per_record": [
+    6
+   ],
+   "H_site": 2.584962500721156,
+   "H_site_given_record": 2.584962500721156,
+   "mutual_information_bits": 0.0,
+   "site_blind": true
+  },
+  "m=6_L=6": {
+   "n_closed_words": 22,
+   "n_records": 22,
+   "consistent_sites_per_record": [
+    6
+   ],
+   "H_site": 2.584962500721156,
+   "H_site_given_record": 2.5849625007211565,
+   "mutual_information_bits": -4.440892098500626e-16,
+   "site_blind": true
+  },
+  "m=8_L=4": {
+   "n_closed_words": 6,
+   "n_records": 6,
+   "consistent_sites_per_record": [
+    8
+   ],
+   "H_site": 3.0,
+   "H_site_given_record": 3.0,
+   "mutual_information_bits": 0.0,
+   "site_blind": true
+  },
+  "m=8_L=6": {
+   "n_closed_words": 20,
+   "n_records": 20,
+   "consistent_sites_per_record": [
+    8
+   ],
+   "H_site": 3.0,
+   "H_site_given_record": 2.999999999999999,
+   "mutual_information_bits": 8.881784197001252e-16,
+   "site_blind": true
+  }
+ },
+ "shape_information": {
+  "m=6_L=6": {
+   "n_words": 22,
+   "n_shape_classes": 6,
+   "record_distinguishes_shapes": true
+  },
+  "m=8_L=6": {
+   "n_words": 20,
+   "n_shape_classes": 4,
+   "record_distinguishes_shapes": true
+  }
+ },
+ "verdict": {
+  "mutual_information_zero_in_all_cases": true,
+  "consistent_sites_per_record": "全部 m 个位点（记录对绝对位点完全不敏感）",
+  "record_still_nontrivial": true,
+  "conclusion": "历史层对绝对位点失明（I=0）：记录只含词形与闭合类。故 R38 的路线 B' 有立足点：'哪一个位点'是历史层未记录的自由度。",
+  "residual_condition": "唯一可能破坏失明的是播种点 P_i（D 系列列为未解选择器）；若播种把位点写进记录，则失明被打破、须改走 A'（EDGE-CONNECTION）"
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "implementation_fact": "zero_sum_cycle_evolution.py: 播种输入 seed_word，经 canonical_cycle 映到旋转类（L257-265）",
+ "test": "自同构等变性：位点旋转不改记录；记录对位点互信息恒为 0",
+ "cases": {
+  "m=4_L=4": {
+   "n_records": 1,
+   "n_shape_classes": 1,
+   "records_identical_under_site_rotation": true,
+   "consistent_sites_per_record": 4,
+   "mutual_information_bits": 0.0
+  },
+  "m=4_L=6": {
+   "n_records": 1,
+   "n_shape_classes": 1,
+   "records_identical_under_site_rotation": true,
+   "consistent_sites_per_record": 4,
+   "mutual_information_bits": 0.0
+  },
+  "m=5_L=4": {
+   "n_records": 1,
+   "n_shape_classes": 1,
+   "records_identical_under_site_rotation": true,
+   "consistent_sites_per_record": 5,
+   "mutual_information_bits": 0.0
+  },
+  "m=5_L=6": {
+   "n_records": 1,
+   "n_shape_classes": 1,
+   "records_identical_under_site_rotation": true,
+   "consistent_sites_per_record": 5,
+   "mutual_information_bits": 0.0
+  },
+  "m=6_L=4": {
+   "n_records": 1,
+   "n_shape_classes": 1,
+   "records_identical_under_site_rotation": true,
+   "consistent_sites_per_record": 6,
+   "mutual_information_bits": 0.0
+  },
+  "m=6_L=6": {
+   "n_records": 1,
+   "n_shape_classes": 1,
+   "records_identical_under_site_rotation": true,
+   "consistent_sites_per_record": 6,
+   "mutual_information_bits": 0.0
+  }
+ },
+ "verdict": {
+  "seeding_is_word_level_not_site_level": true,
+  "records_invariant_under_site_rotation": true,
+  "mutual_information_zero": true,
+  "blindness_preserved_through_reseeding": true,
+  "residual": "播种'用哪个词'仍是具名输入（脚本自述 L566），但那是**形状**选择，不含位点信息",
+  "conclusion": "播种只用词/旋转类 ⇒ 位点信息无法注入记录 ⇒ R39 的失明在播种后仍成立；R38 的路线 B′ 保持有效，不需要改走 A′"
+ }
+}

@@ -1,0 +1,601 @@
+{
+ "trace": [
+  {
+   "gen": 1,
+   "active": 10,
+   "records": 2,
+   "z_mult_total": 2,
+   "z_classes": 1,
+   "R1_record": {
+    "blocks": 2,
+    "q": 0.5,
+    "lam1": 0.5
+   },
+   "R2_eventmult": {
+    "blocks": 1,
+    "q": 1.0,
+    "lam1": 1.0
+   },
+   "R3_length": {
+    "blocks": 1,
+    "q": 1.0,
+    "lam1": 1.0
+   },
+   "R4_rotation": {
+    "blocks": 1,
+    "q": 1.0,
+    "lam1": 1.0
+   }
+  },
+  {
+   "gen": 2,
+   "active": 18,
+   "records": 4,
+   "z_mult_total": 4,
+   "z_classes": 2,
+   "R1_record": {
+    "blocks": 4,
+    "q": 0.25,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 2,
+    "q": 0.5,
+    "lam1": 0.5
+   },
+   "R3_length": {
+    "blocks": 2,
+    "q": 0.5,
+    "lam1": 0.5
+   },
+   "R4_rotation": {
+    "blocks": 2,
+    "q": 0.5,
+    "lam1": 0.5
+   }
+  },
+  {
+   "gen": 3,
+   "active": 16,
+   "records": 8,
+   "z_mult_total": 8,
+   "z_classes": 3,
+   "R1_record": {
+    "blocks": 6,
+    "q": 0.1875,
+    "lam1": 0.4
+   },
+   "R2_eventmult": {
+    "blocks": 3,
+    "q": 0.375,
+    "lam1": 0.5
+   },
+   "R3_length": {
+    "blocks": 3,
+    "q": 0.375,
+    "lam1": 0.5
+   },
+   "R4_rotation": {
+    "blocks": 3,
+    "q": 0.375,
+    "lam1": 0.5
+   }
+  },
+  {
+   "gen": 4,
+   "active": 16,
+   "records": 24,
+   "z_mult_total": 24,
+   "z_classes": 9,
+   "R1_record": {
+    "blocks": 18,
+    "q": 0.0625,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 9,
+    "q": 0.163194,
+    "lam1": 0.42857
+   },
+   "R3_length": {
+    "blocks": 4,
+    "q": 0.319444,
+    "lam1": 0.45455
+   },
+   "R4_rotation": {
+    "blocks": 9,
+    "q": 0.163194,
+    "lam1": 0.42857
+   }
+  },
+  {
+   "gen": 5,
+   "active": 32,
+   "records": 24,
+   "z_mult_total": 24,
+   "z_classes": 9,
+   "R1_record": {
+    "blocks": 18,
+    "q": 0.0625,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 9,
+    "q": 0.163194,
+    "lam1": 0.42857
+   },
+   "R3_length": {
+    "blocks": 4,
+    "q": 0.319444,
+    "lam1": 0.45455
+   },
+   "R4_rotation": {
+    "blocks": 9,
+    "q": 0.163194,
+    "lam1": 0.42857
+   }
+  },
+  {
+   "gen": 6,
+   "active": 80,
+   "records": 40,
+   "z_mult_total": 40,
+   "z_classes": 13,
+   "R1_record": {
+    "blocks": 30,
+    "q": 0.0375,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 13,
+    "q": 0.11625,
+    "lam1": 0.4
+   },
+   "R3_length": {
+    "blocks": 5,
+    "q": 0.265,
+    "lam1": 0.41176
+   },
+   "R4_rotation": {
+    "blocks": 13,
+    "q": 0.11625,
+    "lam1": 0.4
+   }
+  },
+  {
+   "gen": 7,
+   "active": 80,
+   "records": 104,
+   "z_mult_total": 120,
+   "z_classes": 36,
+   "R1_record": {
+    "blocks": 78,
+    "q": 0.014423,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 36,
+    "q": 0.045694,
+    "lam1": 0.42857
+   },
+   "R3_length": {
+    "blocks": 6,
+    "q": 0.24926,
+    "lam1": 0.4186
+   },
+   "R4_rotation": {
+    "blocks": 36,
+    "q": 0.040311,
+    "lam1": 0.4
+   }
+  },
+  {
+   "gen": 8,
+   "active": 160,
+   "records": 104,
+   "z_mult_total": 120,
+   "z_classes": 36,
+   "R1_record": {
+    "blocks": 78,
+    "q": 0.014423,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 36,
+    "q": 0.045694,
+    "lam1": 0.42857
+   },
+   "R3_length": {
+    "blocks": 6,
+    "q": 0.24926,
+    "lam1": 0.4186
+   },
+   "R4_rotation": {
+    "blocks": 36,
+    "q": 0.040311,
+    "lam1": 0.4
+   }
+  },
+  {
+   "gen": 9,
+   "active": 336,
+   "records": 168,
+   "z_mult_total": 200,
+   "z_classes": 51,
+   "R1_record": {
+    "blocks": 126,
+    "q": 0.008929,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 51,
+    "q": 0.03295,
+    "lam1": 0.4
+   },
+   "R3_length": {
+    "blocks": 7,
+    "q": 0.222506,
+    "lam1": 0.40625
+   },
+   "R4_rotation": {
+    "blocks": 51,
+    "q": 0.029762,
+    "lam1": 0.33333
+   }
+  },
+  {
+   "gen": 10,
+   "active": 336,
+   "records": 424,
+   "z_mult_total": 536,
+   "z_classes": 150,
+   "R1_record": {
+    "blocks": 318,
+    "q": 0.003538,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 150,
+    "q": 0.013338,
+    "lam1": 0.3913
+   },
+   "R3_length": {
+    "blocks": 8,
+    "q": 0.21934,
+    "lam1": 0.40506
+   },
+   "R4_rotation": {
+    "blocks": 150,
+    "q": 0.010802,
+    "lam1": 0.35714
+   }
+  },
+  {
+   "gen": 11,
+   "active": 672,
+   "records": 424,
+   "z_mult_total": 536,
+   "z_classes": 150,
+   "R1_record": {
+    "blocks": 318,
+    "q": 0.003538,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 150,
+    "q": 0.013338,
+    "lam1": 0.3913
+   },
+   "R3_length": {
+    "blocks": 8,
+    "q": 0.21934,
+    "lam1": 0.40506
+   },
+   "R4_rotation": {
+    "blocks": 150,
+    "q": 0.010802,
+    "lam1": 0.35714
+   }
+  },
+  {
+   "gen": 12,
+   "active": 1360,
+   "records": 680,
+   "z_mult_total": 872,
+   "z_classes": 210,
+   "R1_record": {
+    "blocks": 510,
+    "q": 0.002206,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 210,
+    "q": 0.009729,
+    "lam1": 0.35714
+   },
+   "R3_length": {
+    "blocks": 9,
+    "q": 0.201817,
+    "lam1": 0.39024
+   },
+   "R4_rotation": {
+    "blocks": 210,
+    "q": 0.008374,
+    "lam1": 0.34375
+   }
+  },
+  {
+   "gen": 13,
+   "active": 1360,
+   "records": 1704,
+   "z_mult_total": 2232,
+   "z_classes": 591,
+   "R1_record": {
+    "blocks": 1278,
+    "q": 0.00088,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 591,
+    "q": 0.003839,
+    "lam1": 0.33333
+   },
+   "R3_length": {
+    "blocks": 10,
+    "q": 0.201506,
+    "lam1": 0.39355
+   },
+   "R4_rotation": {
+    "blocks": 591,
+    "q": 0.002974,
+    "lam1": 0.33333
+   }
+  },
+  {
+   "gen": 14,
+   "active": 2720,
+   "records": 1704,
+   "z_mult_total": 2232,
+   "z_classes": 591,
+   "R1_record": {
+    "blocks": 1278,
+    "q": 0.00088,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 591,
+    "q": 0.003839,
+    "lam1": 0.33333
+   },
+   "R3_length": {
+    "blocks": 10,
+    "q": 0.201506,
+    "lam1": 0.39355
+   },
+   "R4_rotation": {
+    "blocks": 591,
+    "q": 0.002974,
+    "lam1": 0.33333
+   }
+  },
+  {
+   "gen": 15,
+   "active": 5456,
+   "records": 2728,
+   "z_mult_total": 3592,
+   "z_classes": 833,
+   "R1_record": {
+    "blocks": 2046,
+    "q": 0.00055,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 833,
+    "q": 0.002826,
+    "lam1": 0.34524
+   },
+   "R3_length": {
+    "blocks": 11,
+    "q": 0.188218,
+    "lam1": 0.38627
+   },
+   "R4_rotation": {
+    "blocks": 833,
+    "q": 0.002428,
+    "lam1": 0.33333
+   }
+  },
+  {
+   "gen": 16,
+   "active": 5456,
+   "records": 6824,
+   "z_mult_total": 9048,
+   "z_classes": 2354,
+   "R1_record": {
+    "blocks": 5118,
+    "q": 0.00022,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 2354,
+    "q": 0.001077,
+    "lam1": 0.35
+   },
+   "R3_length": {
+    "blocks": 12,
+    "q": 0.188494,
+    "lam1": 0.38542
+   },
+   "R4_rotation": {
+    "blocks": 2354,
+    "q": 0.000815,
+    "lam1": 0.33333
+   }
+  },
+  {
+   "gen": 17,
+   "active": 10912,
+   "records": 6824,
+   "z_mult_total": 9048,
+   "z_classes": 2354,
+   "R1_record": {
+    "blocks": 5118,
+    "q": 0.00022,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 2354,
+    "q": 0.001077,
+    "lam1": 0.35
+   },
+   "R3_length": {
+    "blocks": 12,
+    "q": 0.188494,
+    "lam1": 0.38542
+   },
+   "R4_rotation": {
+    "blocks": 2354,
+    "q": 0.000815,
+    "lam1": 0.33333
+   }
+  },
+  {
+   "gen": 18,
+   "active": 21840,
+   "records": 10920,
+   "z_mult_total": 14504,
+   "z_classes": 3340,
+   "R1_record": {
+    "blocks": 8190,
+    "q": 0.000137,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 3340,
+    "q": 0.000802,
+    "lam1": 0.35714
+   },
+   "R3_length": {
+    "blocks": 13,
+    "q": 0.177712,
+    "lam1": 0.37832
+   },
+   "R4_rotation": {
+    "blocks": 3340,
+    "q": 0.000684,
+    "lam1": 0.33333
+   }
+  },
+  {
+   "gen": 19,
+   "active": 21840,
+   "records": 27304,
+   "z_mult_total": 36344,
+   "z_classes": 9266,
+   "R1_record": {
+    "blocks": 20478,
+    "q": 5.5e-05,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 9266,
+    "q": 0.000299,
+    "lam1": 0.34848
+   },
+   "R3_length": {
+    "blocks": 14,
+    "q": 0.178069,
+    "lam1": 0.37995
+   },
+   "R4_rotation": {
+    "blocks": 9266,
+    "q": 0.000224,
+    "lam1": 0.33333
+   }
+  },
+  {
+   "gen": 20,
+   "active": 43680,
+   "records": 27304,
+   "z_mult_total": 36344,
+   "z_classes": 9266,
+   "R1_record": {
+    "blocks": 20478,
+    "q": 5.5e-05,
+    "lam1": 0.33333
+   },
+   "R2_eventmult": {
+    "blocks": 9266,
+    "q": 0.000299,
+    "lam1": 0.34848
+   },
+   "R3_length": {
+    "blocks": 14,
+    "q": 0.178069,
+    "lam1": 0.37995
+   },
+   "R4_rotation": {
+    "blocks": 9266,
+    "q": 0.000224,
+    "lam1": 0.33333
+   }
+  },
+  {
+   "gen": 21,
+   "active": 87376,
+   "records": 43688,
+   "z_mult_total": 58184,
+   "z_classes": 13246,
+   "R1_record": {
+    "blocks": 32766,
+    "q": 3.4e-05,
+    "lam1": 0.33333,
+    "gates": {
+     "q_in_window": false,
+     "contextual": false,
+     "rank": null,
+     "needed_rank": 32765,
+     "dense": null
+    }
+   },
+   "R2_eventmult": {
+    "blocks": 13246,
+    "q": 0.000226,
+    "lam1": 0.34228,
+    "gates": {
+     "q_in_window": false,
+     "contextual": false,
+     "rank": null,
+     "needed_rank": 13245,
+     "dense": null
+    }
+   },
+   "R3_length": {
+    "blocks": 15,
+    "q": 0.169009,
+    "lam1": 0.37515,
+    "gates": {
+     "q_in_window": false,
+     "contextual": false,
+     "rank": 0,
+     "needed_rank": 14,
+     "dense": false
+    }
+   },
+   "R4_rotation": {
+    "blocks": 13246,
+    "q": 0.000193,
+    "lam1": 0.33333,
+    "gates": {
+     "q_in_window": false,
+     "contextual": false,
+     "rank": null,
+     "needed_rank": 13245,
+     "dense": null
+    }
+   }
+  }
+ ],
+ "final_gen": 21,
+ "powerlaw_slope_R2": -0.9894
+}

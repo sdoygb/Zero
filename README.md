@@ -115,4 +115,8 @@ python3 E1_NN_check.py
 
 ## 许可
 
-尚未指定。若需开源许可，请在此补充。
+[**CC BY-NC 4.0**](LICENSE)（Attribution-NonCommercial 4.0 International）
+
+$$\text{可自由共享与改编（需署名）};\qquad \textbf{禁止商业使用}。$$
+
+署名请注明：**Zero 项目**，<https://github.com/sdoygb/Zero>。

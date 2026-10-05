@@ -1,0 +1,59 @@
+{
+ "Q1_so13_realized": true,
+ "Q1_detail": {
+  "J_J": true,
+  "J_K": true,
+  "K_K": true
+ },
+ "Q2_J_hermitian": true,
+ "Q2_K_hermitian": false,
+ "Q2b_real_hermitian_boost_exists": false,
+ "Q2b_required_c_squared": -0.25,
+ "Q2c_boost_exp_unitary": false,
+ "Q2c_boost_exp_norm": 1.6487212707001282,
+ "Q2c_rotation_exp_unitary": true,
+ "Q3_K_omega_spectrum": [
+  4.143134726391533,
+  3.4499875458315876,
+  1.8405496333974871,
+  0.2311117209633867
+ ],
+ "Q3_K_omega_span": 3.912023005428146,
+ "Q3_K_omega_hermitian": true,
+ "Q3_modular_flow_compact": true,
+ "Q3_pair_periods_count": 6,
+ "Q3_boost_norm_growth": [
+  1.0,
+  1.6487212707001282,
+  12.182493960703471,
+  148.41315910257657
+ ],
+ "Q3_boost_flow_noncompact": true,
+ "Q4_killing_eigs_so4": [
+  -4.0,
+  -4.0,
+  -4.0,
+  -4.0,
+  -4.0,
+  -4.0
+ ],
+ "Q4_killing_eigs_so13": [
+  -4.0,
+  -4.0,
+  -4.0,
+  4.0,
+  4.0,
+  4.0
+ ],
+ "Q4_so4_negative_definite": true,
+ "Q4_so13_indefinite": true,
+ "verdict": {
+  "mixing_generator_exists_algebraically": true,
+  "boost_can_be_hermitian": false,
+  "boost_flow_unitary": false,
+  "modular_flow_is_compact_at_finite_T": true,
+  "so13_noncompact": true,
+  "finite_T_boost_as_modular_flow_possible": false,
+  "target_moves_to": "细化极限须给出 type III（几何模流需 type III_1，BW）"
+ }
+}

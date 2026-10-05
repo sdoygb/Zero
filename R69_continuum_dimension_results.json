@@ -1,0 +1,39 @@
+{
+ "formula_check": false,
+ "scaling": [
+  {
+   "dims": 1,
+   "a": 1.3132691307478306,
+   "resid": 0.06340009153635728,
+   "expected_d": 2
+  },
+  {
+   "dims": 2,
+   "a": 1.8979761746701578,
+   "resid": 0.10393007682198974,
+   "expected_d": 3
+  },
+  {
+   "dims": 3,
+   "a": 2.238442391413771,
+   "resid": 0.09824478548018245,
+   "expected_d": 4
+  }
+ ],
+ "lorentz_only": [
+  {
+   "dims": 1,
+   "only_gap": false
+  },
+  {
+   "dims": 2,
+   "only_gap": false
+  },
+  {
+   "dims": 3,
+   "only_gap": false
+  }
+ ],
+ "dimension_measurable": true,
+ "dimension_selected": false
+}

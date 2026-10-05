@@ -1,0 +1,134 @@
+{
+ "argument": "锥 <=> 二次型零集 => 符号差 (1,D-1) => 洛伦兹；签名离散 => 有效锥足够",
+ "signature_table": [
+  {
+   "D": 2,
+   "signature_pos_neg_zero": [
+    1,
+    1,
+    0
+   ],
+   "lorentzian": true,
+   "eigenvalues": [
+    -1.0,
+    1.0
+   ]
+  },
+  {
+   "D": 3,
+   "signature_pos_neg_zero": [
+    1,
+    2,
+    0
+   ],
+   "lorentzian": true,
+   "eigenvalues": [
+    -1.0,
+    -1.0,
+    1.0
+   ]
+  },
+  {
+   "D": 4,
+   "signature_pos_neg_zero": [
+    1,
+    3,
+    0
+   ],
+   "lorentzian": true,
+   "eigenvalues": [
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0
+   ]
+  },
+  {
+   "D": 5,
+   "signature_pos_neg_zero": [
+    1,
+    4,
+    0
+   ],
+   "lorentzian": true,
+   "eigenvalues": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0
+   ]
+  },
+  {
+   "D": 6,
+   "signature_pos_neg_zero": [
+    1,
+    5,
+    0
+   ],
+   "lorentzian": true,
+   "eigenvalues": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0,
+    1.0
+   ]
+  }
+ ],
+ "fuzzy_cone": {
+  "eps=0.1": {
+   "inside": 3969,
+   "outside": 2592,
+   "fraction_outside": 0.3950617283950617
+  },
+  "eps=0.01": {
+   "inside": 4577,
+   "outside": 1984,
+   "fraction_outside": 0.3023929279073312
+  },
+  "eps=0.001": {
+   "inside": 5103,
+   "outside": 1458,
+   "fraction_outside": 0.2222222222222222
+  },
+  "eps=0.0001": {
+   "inside": 5549,
+   "outside": 1012,
+   "fraction_outside": 0.15424477975918305
+  },
+  "eps=1e-06": {
+   "inside": 6223,
+   "outside": 338,
+   "fraction_outside": 0.051516537113244935
+  }
+ },
+ "topology": {
+  "D=3": {
+   "n_negative_directions": 2,
+   "pointed": true,
+   "convex": true,
+   "signature_is_discrete": true
+  },
+  "D=4": {
+   "n_negative_directions": 3,
+   "pointed": true,
+   "convex": true,
+   "signature_is_discrete": true
+  },
+  "D=5": {
+   "n_negative_directions": 4,
+   "pointed": true,
+   "convex": true,
+   "signature_is_discrete": true
+  }
+ },
+ "verdict": {
+  "cone_gives_lorentzian_signature": true,
+  "signature_robust_to_fuzzy_tail": true,
+  "why_robust": "签名是离散不变量：指数小尾巴只移动锥边界，不改变锥的拓扑（pointed/convex）",
+  "consequence": "G59 的有效锥足以供出洛伦兹签名 => R46 的价格可以付 => C(D+1,2) 合法 => R45 的逃生口成为正路：D=4 与单体语境性可共存",
+  "residual": "共形因子/尺度仍不导出（E4/G57：量纲常数不可导出，1 个自由单位）"
+ }
+}

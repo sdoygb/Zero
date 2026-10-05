@@ -1,0 +1,77 @@
+{
+  "diagnostics": {
+    "modes": 5,
+    "generations": 34,
+    "runs": 80,
+    "seed": 210,
+    "max_total_charge_error": 0,
+    "population_safety_cap": 50000000
+  },
+  "summaries": [
+    {
+      "name": "cheap_fast_regular",
+      "note": "省、回零快、复制规整",
+      "cost": 1.0,
+      "return_time": 1.0,
+      "fidelity": 1.0,
+      "birth_rate": 0.36,
+      "mean_final_population": 31531.65,
+      "mean_descendants": 31530.65,
+      "final_share": 0.9778370093336217,
+      "rank": 1
+    },
+    {
+      "name": "cheap_fast_irregular",
+      "note": "省、回零快，但复制不规整",
+      "cost": 1.0,
+      "return_time": 1.0,
+      "fidelity": 0.58,
+      "birth_rate": 0.20879999999999999,
+      "mean_final_population": 679.1,
+      "mean_descendants": 678.1,
+      "final_share": 0.02105976417467727,
+      "rank": 2
+    },
+    {
+      "name": "expensive_fast_regular",
+      "note": "回零快且规整，但每次生殖成本高",
+      "cost": 4.0,
+      "return_time": 1.0,
+      "fidelity": 1.0,
+      "birth_rate": 0.09,
+      "mean_final_population": 18.45,
+      "mean_descendants": 17.45,
+      "final_share": 0.0005721582226811893,
+      "rank": 3
+    },
+    {
+      "name": "cheap_slow_regular",
+      "note": "省且规整，但回零慢",
+      "cost": 1.0,
+      "return_time": 4.0,
+      "fidelity": 1.0,
+      "birth_rate": 0.09,
+      "mean_final_population": 16.125,
+      "mean_descendants": 15.125,
+      "final_share": 0.0005000569832376247,
+      "rank": 4
+    },
+    {
+      "name": "long_lived_sterile",
+      "note": "永不死亡，但生殖率为零",
+      "cost": 1.0,
+      "return_time": 1.0,
+      "fidelity": 1.0,
+      "birth_rate": 0.0,
+      "mean_final_population": 1.0,
+      "mean_descendants": 0.0,
+      "final_share": 3.1011285782178275e-05,
+      "rank": 5
+    }
+  ],
+  "model": {
+    "birth_rate": "base_rate * fidelity * min_cost/cost * min_return_time/return_time",
+    "population_update": "N(t+1)=N(t)+Poisson(birth_rate*N(t))",
+    "zero_constraint": "all mode charge vectors sum to zero"
+  }
+}

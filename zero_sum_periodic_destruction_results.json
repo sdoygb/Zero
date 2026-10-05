@@ -1,0 +1,2159 @@
+{
+  "model": {
+    "initial_words": [
+      "+",
+      "-",
+      "++",
+      "--",
+      "+++",
+      "---"
+    ],
+    "destruction_period": 3,
+    "cycles": 4,
+    "probabilities": "none",
+    "mutations": "none",
+    "reseed_rule": "each closed history w seeds w+ and w-",
+    "rules": {
+      "continuous": "continuous E",
+      "wipe_no_reseed": "periodic wipe, no reseed",
+      "wipe_reseed": "periodic wipe, reseed from P"
+    }
+  },
+  "runs": [
+    {
+      "scenario": "continuous",
+      "label": "continuous E",
+      "destruction_period": 3,
+      "cycles": 4,
+      "snapshots": [
+        {
+          "time": 1,
+          "cycle": 1,
+          "step_in_cycle": 1,
+          "active_paths": 10,
+          "closed_events_this_step": 2,
+          "history_records": 2,
+          "zero_modes": 1,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 10,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            2,
+            -2,
+            4,
+            -4,
+            6,
+            -6
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 2,
+          "cycle": 1,
+          "step_in_cycle": 2,
+          "active_paths": 18,
+          "closed_events_this_step": 2,
+          "history_records": 4,
+          "zero_modes": 2,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 18,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            4,
+            -4,
+            8,
+            -8,
+            12,
+            -12
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 3,
+          "cycle": 1,
+          "step_in_cycle": 3,
+          "active_paths": 32,
+          "closed_events_this_step": 4,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 32,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 4,
+          "cycle": 2,
+          "step_in_cycle": 1,
+          "active_paths": 60,
+          "closed_events_this_step": 4,
+          "history_records": 12,
+          "zero_modes": 5,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 60,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            16,
+            -16,
+            32,
+            -32,
+            48,
+            -48
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 5,
+          "cycle": 2,
+          "step_in_cycle": 2,
+          "active_paths": 110,
+          "closed_events_this_step": 10,
+          "history_records": 22,
+          "zero_modes": 10,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 110,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            32,
+            -32,
+            64,
+            -64,
+            96,
+            -96
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 6,
+          "cycle": 2,
+          "step_in_cycle": 3,
+          "active_paths": 210,
+          "closed_events_this_step": 10,
+          "history_records": 32,
+          "zero_modes": 12,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 210,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            64,
+            -64,
+            128,
+            -128,
+            192,
+            -192
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 7,
+          "cycle": 3,
+          "step_in_cycle": 1,
+          "active_paths": 392,
+          "closed_events_this_step": 28,
+          "history_records": 60,
+          "zero_modes": 27,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 392,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            128,
+            -128,
+            256,
+            -256,
+            384,
+            -384
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 8,
+          "cycle": 3,
+          "step_in_cycle": 2,
+          "active_paths": 756,
+          "closed_events_this_step": 28,
+          "history_records": 88,
+          "zero_modes": 32,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 756,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            256,
+            -256,
+            512,
+            -512,
+            768,
+            -768
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 9,
+          "cycle": 3,
+          "step_in_cycle": 3,
+          "active_paths": 1428,
+          "closed_events_this_step": 84,
+          "history_records": 172,
+          "zero_modes": 78,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 1428,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            512,
+            -512,
+            1024,
+            -1024,
+            1536,
+            -1536
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 10,
+          "cycle": 4,
+          "step_in_cycle": 1,
+          "active_paths": 2772,
+          "closed_events_this_step": 84,
+          "history_records": 256,
+          "zero_modes": 93,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 2772,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            1024,
+            -1024,
+            2048,
+            -2048,
+            3072,
+            -3072
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 11,
+          "cycle": 4,
+          "step_in_cycle": 2,
+          "active_paths": 5280,
+          "closed_events_this_step": 264,
+          "history_records": 520,
+          "zero_modes": 240,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 5280,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            2048,
+            -2048,
+            4096,
+            -4096,
+            6144,
+            -6144
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 12,
+          "cycle": 4,
+          "step_in_cycle": 3,
+          "active_paths": 10296,
+          "closed_events_this_step": 264,
+          "history_records": 784,
+          "zero_modes": 286,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 10296,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            4096,
+            -4096,
+            8192,
+            -8192,
+            12288,
+            -12288
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        }
+      ],
+      "final_active_paths": 10296,
+      "final_history_records": 784,
+      "final_zero_modes": 286,
+      "final_dead_paths": 0,
+      "destruction_events": 0,
+      "total_destroyed_paths": 0,
+      "total_reseeded_paths": 0,
+      "total_closed_events": 784,
+      "death_accepts_only_open_paths": true,
+      "death_layer_is_monotone": true,
+      "reseed_uses_only_history": true,
+      "history_preserved_at_each_destruction": true,
+      "zero_layer_preserved_at_each_destruction": true,
+      "final_active_balances": [
+        4096,
+        -4096,
+        8192,
+        -8192,
+        12288,
+        -12288
+      ],
+      "final_history_balances": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_dead_balances": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_total_balance": 0
+    },
+    {
+      "scenario": "wipe_no_reseed",
+      "label": "periodic wipe, no reseed",
+      "destruction_period": 3,
+      "cycles": 4,
+      "snapshots": [
+        {
+          "time": 1,
+          "cycle": 1,
+          "step_in_cycle": 1,
+          "active_paths": 10,
+          "closed_events_this_step": 2,
+          "history_records": 2,
+          "zero_modes": 1,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 10,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            2,
+            -2,
+            4,
+            -4,
+            6,
+            -6
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 2,
+          "cycle": 1,
+          "step_in_cycle": 2,
+          "active_paths": 18,
+          "closed_events_this_step": 2,
+          "history_records": 4,
+          "zero_modes": 2,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 18,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            4,
+            -4,
+            8,
+            -8,
+            12,
+            -12
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 3,
+          "cycle": 1,
+          "step_in_cycle": 3,
+          "active_paths": 0,
+          "closed_events_this_step": 4,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "destruction_event": true,
+          "active_after_destruction": 0,
+          "destroyed_paths": 32,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 4,
+          "cycle": 2,
+          "step_in_cycle": 1,
+          "active_paths": 0,
+          "closed_events_this_step": 0,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "destruction_event": false,
+          "active_after_destruction": 0,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 5,
+          "cycle": 2,
+          "step_in_cycle": 2,
+          "active_paths": 0,
+          "closed_events_this_step": 0,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "destruction_event": false,
+          "active_after_destruction": 0,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 6,
+          "cycle": 2,
+          "step_in_cycle": 3,
+          "active_paths": 0,
+          "closed_events_this_step": 0,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "destruction_event": true,
+          "active_after_destruction": 0,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 7,
+          "cycle": 3,
+          "step_in_cycle": 1,
+          "active_paths": 0,
+          "closed_events_this_step": 0,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "destruction_event": false,
+          "active_after_destruction": 0,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 8,
+          "cycle": 3,
+          "step_in_cycle": 2,
+          "active_paths": 0,
+          "closed_events_this_step": 0,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "destruction_event": false,
+          "active_after_destruction": 0,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 9,
+          "cycle": 3,
+          "step_in_cycle": 3,
+          "active_paths": 0,
+          "closed_events_this_step": 0,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "destruction_event": true,
+          "active_after_destruction": 0,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 10,
+          "cycle": 4,
+          "step_in_cycle": 1,
+          "active_paths": 0,
+          "closed_events_this_step": 0,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "destruction_event": false,
+          "active_after_destruction": 0,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 11,
+          "cycle": 4,
+          "step_in_cycle": 2,
+          "active_paths": 0,
+          "closed_events_this_step": 0,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "destruction_event": false,
+          "active_after_destruction": 0,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 12,
+          "cycle": 4,
+          "step_in_cycle": 3,
+          "active_paths": 0,
+          "closed_events_this_step": 0,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "destruction_event": true,
+          "active_after_destruction": 0,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        }
+      ],
+      "final_active_paths": 0,
+      "final_history_records": 8,
+      "final_zero_modes": 3,
+      "final_dead_paths": 32,
+      "destruction_events": 4,
+      "total_destroyed_paths": 32,
+      "total_reseeded_paths": 0,
+      "total_closed_events": 8,
+      "death_accepts_only_open_paths": true,
+      "death_layer_is_monotone": true,
+      "reseed_uses_only_history": true,
+      "history_preserved_at_each_destruction": true,
+      "zero_layer_preserved_at_each_destruction": true,
+      "final_active_balances": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_history_balances": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_dead_balances": [
+        8,
+        -8,
+        16,
+        -16,
+        24,
+        -24
+      ],
+      "final_total_balance": 0
+    },
+    {
+      "scenario": "wipe_reseed",
+      "label": "periodic wipe, reseed from P",
+      "destruction_period": 3,
+      "cycles": 4,
+      "snapshots": [
+        {
+          "time": 1,
+          "cycle": 1,
+          "step_in_cycle": 1,
+          "active_paths": 10,
+          "closed_events_this_step": 2,
+          "history_records": 2,
+          "zero_modes": 1,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 10,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            2,
+            -2,
+            4,
+            -4,
+            6,
+            -6
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 2,
+          "cycle": 1,
+          "step_in_cycle": 2,
+          "active_paths": 18,
+          "closed_events_this_step": 2,
+          "history_records": 4,
+          "zero_modes": 2,
+          "dead_paths": 0,
+          "destruction_event": false,
+          "active_after_destruction": 18,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            4,
+            -4,
+            8,
+            -8,
+            12,
+            -12
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 3,
+          "cycle": 1,
+          "step_in_cycle": 3,
+          "active_paths": 16,
+          "closed_events_this_step": 4,
+          "history_records": 8,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "destruction_event": true,
+          "active_after_destruction": 0,
+          "destroyed_paths": 32,
+          "reseeded_paths": 16,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 4,
+          "cycle": 2,
+          "step_in_cycle": 1,
+          "active_paths": 16,
+          "closed_events_this_step": 16,
+          "history_records": 24,
+          "zero_modes": 9,
+          "dead_paths": 32,
+          "destruction_event": false,
+          "active_after_destruction": 16,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 5,
+          "cycle": 2,
+          "step_in_cycle": 2,
+          "active_paths": 32,
+          "closed_events_this_step": 0,
+          "history_records": 24,
+          "zero_modes": 9,
+          "dead_paths": 32,
+          "destruction_event": false,
+          "active_after_destruction": 32,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 6,
+          "cycle": 2,
+          "step_in_cycle": 3,
+          "active_paths": 80,
+          "closed_events_this_step": 16,
+          "history_records": 40,
+          "zero_modes": 13,
+          "dead_paths": 80,
+          "destruction_event": true,
+          "active_after_destruction": 0,
+          "destroyed_paths": 48,
+          "reseeded_paths": 80,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 7,
+          "cycle": 3,
+          "step_in_cycle": 1,
+          "active_paths": 80,
+          "closed_events_this_step": 80,
+          "history_records": 104,
+          "zero_modes": 36,
+          "dead_paths": 80,
+          "destruction_event": false,
+          "active_after_destruction": 80,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 8,
+          "cycle": 3,
+          "step_in_cycle": 2,
+          "active_paths": 160,
+          "closed_events_this_step": 0,
+          "history_records": 104,
+          "zero_modes": 36,
+          "dead_paths": 80,
+          "destruction_event": false,
+          "active_after_destruction": 160,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 9,
+          "cycle": 3,
+          "step_in_cycle": 3,
+          "active_paths": 336,
+          "closed_events_this_step": 80,
+          "history_records": 168,
+          "zero_modes": 51,
+          "dead_paths": 272,
+          "destruction_event": true,
+          "active_after_destruction": 0,
+          "destroyed_paths": 240,
+          "reseeded_paths": 336,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 10,
+          "cycle": 4,
+          "step_in_cycle": 1,
+          "active_paths": 336,
+          "closed_events_this_step": 336,
+          "history_records": 424,
+          "zero_modes": 150,
+          "dead_paths": 272,
+          "destruction_event": false,
+          "active_after_destruction": 336,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 11,
+          "cycle": 4,
+          "step_in_cycle": 2,
+          "active_paths": 672,
+          "closed_events_this_step": 0,
+          "history_records": 424,
+          "zero_modes": 150,
+          "dead_paths": 272,
+          "destruction_event": false,
+          "active_after_destruction": 672,
+          "destroyed_paths": 0,
+          "reseeded_paths": 0,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        },
+        {
+          "time": 12,
+          "cycle": 4,
+          "step_in_cycle": 3,
+          "active_paths": 1360,
+          "closed_events_this_step": 336,
+          "history_records": 680,
+          "zero_modes": 210,
+          "dead_paths": 1040,
+          "destruction_event": true,
+          "active_after_destruction": 0,
+          "destroyed_paths": 1008,
+          "reseeded_paths": 1360,
+          "active_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "history_balances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dead_balances": [
+            8,
+            -8,
+            16,
+            -16,
+            24,
+            -24
+          ],
+          "destroyed_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "reseeded_balance_by_site": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "total_balance": 0
+        }
+      ],
+      "final_active_paths": 1360,
+      "final_history_records": 680,
+      "final_zero_modes": 210,
+      "final_dead_paths": 1040,
+      "destruction_events": 4,
+      "total_destroyed_paths": 1328,
+      "total_reseeded_paths": 1792,
+      "total_closed_events": 872,
+      "death_accepts_only_open_paths": true,
+      "death_layer_is_monotone": true,
+      "reseed_uses_only_history": true,
+      "history_preserved_at_each_destruction": true,
+      "zero_layer_preserved_at_each_destruction": true,
+      "final_active_balances": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_history_balances": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_dead_balances": [
+        8,
+        -8,
+        16,
+        -16,
+        24,
+        -24
+      ],
+      "final_total_balance": 0
+    }
+  ],
+  "verification": {
+    "periodic_destruction_events_occur": true,
+    "wipe_without_reseed_becomes_empty": true,
+    "wipe_actually_empties_E_before_reseed": true,
+    "reseed_restores_activity_every_cycle": true,
+    "history_survives_destruction": true,
+    "open_paths_are_recorded_as_dead": true,
+    "death_layer_is_monotone_and_has_no_removal": true,
+    "death_layer_does_not_feed_reseed": true,
+    "history_and_zero_layer_survive_each_destruction": true,
+    "continuous_rule_has_no_destruction": true,
+    "global_zero_sum_is_conserved": true,
+    "history_layer_is_zero_balanced": true,
+    "reseeded_activity_can_start_zero_balanced": true,
+    "dead_layer_can_hold_local_imbalance": true,
+    "local_dead_imbalances_compensate_globally": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+ "L2": {
+  "L4": {
+   "double_stochastic": true,
+   "n_closed_words": 6,
+   "branches_active": 6,
+   "branches_absorbed": 6
+  },
+  "L6": {
+   "double_stochastic": true,
+   "n_closed_words": 20,
+   "branches_active": 20,
+   "branches_absorbed": 20
+  },
+  "L8": {
+   "double_stochastic": true,
+   "n_closed_words": 70,
+   "branches_active": 70,
+   "branches_absorbed": 70
+  }
+ },
+ "L1": {
+  "A_exact": "精确词（Z3 记录，最细）",
+  "B_class": "闭合类 [w]（旋转类，R39/R40 的记录）",
+  "C_terminal": "终端账本（Z4 终端款，未闭合分支的汇）"
+ },
+ "L0": {
+  "L0-a 组合": "词空间、零和、全分支计数 —— **静态**（无更新）",
+  "L0-b 过程": "步推进 tau->tau+1、闭合退出、终端 —— **有速率（每步 1）且不可逆**",
+  "L0-c 代数": "循环次序 ＋ 原生 ± ⇒ M_2(C)、双覆盖 —— **静态**；给相位与代数"
+ },
+ "verdict": {
+  "L2": "**符合**亚层标准（同一'活动层'对象，按'保守／产生'加索引；各有速率）",
+  "L1": "**符合**（同一'记录'对象，按精确度加索引；各有保持规则）",
+  "L0": "**部分符合**（子结构对象类型不同：集合／映射／代数 ⇒ 更像**类型分裂**而非亚层）"
+ },
+ "summary": {
+  "checks": 20,
+  "failed": []
+ }
+}

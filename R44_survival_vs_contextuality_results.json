@@ -1,0 +1,139 @@
+{
+ "mu": [
+  2.23606797749979,
+  1.381966011250105,
+  1.381966011250105
+ ],
+ "survival_window_for_D4": [
+  0.5,
+  0.6
+ ],
+ "contextuality_threshold_q": 0.6,
+ "analytic": {
+  "lambda1_max_of_q": "lambda1_max = (1+sqrt(2q-1))/2",
+  "S_max_of_q": "S_max = mu2 + (mu1-mu2)*(1+sqrt(2q-1))/2",
+  "lambda1_at_q_star": 0.7236067977499789,
+  "two_block_critical_a": 0.7236067977499789,
+  "S_max_at_q_star": 2.0
+ },
+ "rows": [
+  {
+   "q": 0.4,
+   "peak_D": 3,
+   "F4_over_F3": 0.7999999999999998,
+   "F5_over_F4": 0.6666666666666667,
+   "S_max_bound": null,
+   "survival_peak_at_4": false,
+   "contextual": false
+  },
+  {
+   "q": 0.45,
+   "peak_D": 3,
+   "F4_over_F3": 0.8999999999999999,
+   "F5_over_F4": 0.75,
+   "S_max_bound": null,
+   "survival_peak_at_4": false,
+   "contextual": false
+  },
+  {
+   "q": 0.5,
+   "peak_D": 3,
+   "F4_over_F3": 1.0,
+   "F5_over_F4": 0.8333333333333334,
+   "S_max_bound": 1.8090169943749475,
+   "survival_peak_at_4": false,
+   "contextual": false
+  },
+  {
+   "q": 0.53,
+   "peak_D": 4,
+   "F4_over_F3": 1.0600000000000003,
+   "F5_over_F4": 0.8833333333333333,
+   "S_max_bound": 1.913622694655925,
+   "survival_peak_at_4": true,
+   "contextual": false
+  },
+  {
+   "q": 0.5555555555555556,
+   "peak_D": 4,
+   "F4_over_F3": 1.111111111111111,
+   "F5_over_F4": 0.9259259259259262,
+   "S_max_bound": 1.9513673220832284,
+   "survival_peak_at_4": true,
+   "contextual": false
+  },
+  {
+   "q": 0.58,
+   "peak_D": 4,
+   "F4_over_F3": 1.16,
+   "F5_over_F4": 0.9666666666666667,
+   "S_max_bound": 1.9798373876248845,
+   "survival_peak_at_4": true,
+   "contextual": false
+  },
+  {
+   "q": 0.6,
+   "peak_D": 4,
+   "F4_over_F3": 1.2000000000000002,
+   "F5_over_F4": 0.9999999999999999,
+   "S_max_bound": 2.0,
+   "survival_peak_at_4": true,
+   "contextual": false
+  },
+  {
+   "q": 0.62,
+   "peak_D": 5,
+   "F4_over_F3": 1.2399999999999998,
+   "F5_over_F4": 1.0333333333333334,
+   "S_max_bound": 2.018228394936902,
+   "survival_peak_at_4": false,
+   "contextual": true
+  },
+  {
+   "q": 0.65,
+   "peak_D": 5,
+   "F4_over_F3": 1.3,
+   "F5_over_F4": 1.0833333333333335,
+   "S_max_bound": 2.0429224510371817,
+   "survival_peak_at_4": false,
+   "contextual": true
+  },
+  {
+   "q": 0.7,
+   "peak_D": 6,
+   "F4_over_F3": 1.4000000000000001,
+   "F5_over_F4": 1.1666666666666665,
+   "S_max_bound": 2.079107751112674,
+   "survival_peak_at_4": false,
+   "contextual": true
+  },
+  {
+   "q": 0.8,
+   "peak_D": 9,
+   "F4_over_F3": 1.5999999999999996,
+   "F5_over_F4": 1.3333333333333335,
+   "S_max_bound": 2.1398092634997514,
+   "survival_peak_at_4": false,
+   "contextual": true
+  }
+ ],
+ "carriers": {
+  "routeA_L4": {
+   "q": 0.5555555555555556,
+   "S_max": 1.9513673220832282,
+   "peak_D": 4
+  },
+  "documented_2_5_20_100": {
+   "q": 0.64660386,
+   "S_max": 2.03278903309848,
+   "peak_D": 5
+  }
+ },
+ "verdict": {
+  "windows_are_complementary": true,
+  "no_go": "q<3/5 => 峰在 D=4 但 S_max<2；q>3/5 => S_max>2 但峰在 D>=5；二者在 q=3/5 相接不重叠",
+  "routeA_L4": "生存 ✅ / 语境 ✗",
+  "documented_case": "语境 ✅ / 生存 ✗",
+  "escape": "只能改账本形式 F_D（R31/R32 框架内的 no-go）"
+ }
+}

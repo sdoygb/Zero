@@ -1,0 +1,84 @@
+{
+ "states": [
+  {
+   "state": "vacuum",
+   "S_max": 2.0,
+   "singular_values": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "entangled": false
+  },
+  {
+   "state": "1p_site0",
+   "S_max": 2.0,
+   "singular_values": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "entangled": false
+  },
+  {
+   "state": "1p_site1",
+   "S_max": 2.0,
+   "singular_values": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "entangled": false
+  },
+  {
+   "state": "1p_site2",
+   "S_max": 2.0,
+   "singular_values": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "entangled": false
+  },
+  {
+   "state": "1p_site3",
+   "S_max": 2.0,
+   "singular_values": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "entangled": false
+  },
+  {
+   "state": "superposition_sites0_1",
+   "S_max": 2.8284271247461907,
+   "singular_values": [
+    1.0000000000000002,
+    1.0000000000000002,
+    1.0000000000000002
+   ],
+   "entangled": true
+  },
+  {
+   "state": "classical_mixture_(which_site_recorded)",
+   "S_max": 2.0,
+   "singular_values": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "entangled": false
+  }
+ ],
+ "bell_expected": 2.8284271247461903,
+ "verdict": {
+  "single_particle_superposition_across_two_sites_is_entangled": true,
+  "S_superposition": 2.8284271247461907,
+  "classical_mixture_S": 2.0,
+  "which_site_record_decides": true,
+  "shared_origin": "同一个费米子（费米子数/宇称为共享的闭合记录）",
+  "unrecorded_dof": "位点指标（Jordan-Wigner 字符串把这个自由度变成非局域）",
+  "conclusion": "共同起因（同一费米子）＋ 未记录的位点自由度 ⇒ 跨位点纠缠（S=2√2）；一旦位点被记录（经典混合）⇒ S=2"
+ }
+}

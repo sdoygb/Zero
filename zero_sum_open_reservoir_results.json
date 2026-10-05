@@ -1,0 +1,395 @@
+{
+  "model": {
+    "state_space": "integer vectors in Z^d",
+    "closure_rule": "state becomes the zero vector",
+    "step_alphabet": "one coordinate changes by +1 or -1",
+    "layer_lifetime": null,
+    "reseeding": null,
+    "probabilities": "none",
+    "mutations": "none",
+    "dimensions": [
+      1,
+      2,
+      4
+    ],
+    "epochs": 10
+  },
+  "runs": [
+    {
+      "scenario": "d1",
+      "label": "dimension 1",
+      "dimension": 1,
+      "epochs": 10,
+      "snapshots": [
+        {
+          "epoch": 0,
+          "active_paths": 2,
+          "distinct_active_states": 2,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 0,
+          "cumulative_closure_fraction": 0.0,
+          "total_balance": 0
+        },
+        {
+          "epoch": 1,
+          "active_paths": 2,
+          "distinct_active_states": 2,
+          "closures_this_epoch": 2,
+          "closure_fraction": 0.5,
+          "cumulative_closures": 2,
+          "cumulative_closure_fraction": 0.5,
+          "total_balance": 0
+        },
+        {
+          "epoch": 2,
+          "active_paths": 4,
+          "distinct_active_states": 4,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 2,
+          "cumulative_closure_fraction": 0.25,
+          "total_balance": 0
+        },
+        {
+          "epoch": 3,
+          "active_paths": 6,
+          "distinct_active_states": 4,
+          "closures_this_epoch": 2,
+          "closure_fraction": 0.25,
+          "cumulative_closures": 4,
+          "cumulative_closure_fraction": 0.25,
+          "total_balance": 0
+        },
+        {
+          "epoch": 4,
+          "active_paths": 12,
+          "distinct_active_states": 6,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 4,
+          "cumulative_closure_fraction": 0.14285714285714285,
+          "total_balance": 0
+        },
+        {
+          "epoch": 5,
+          "active_paths": 20,
+          "distinct_active_states": 6,
+          "closures_this_epoch": 4,
+          "closure_fraction": 0.16666666666666666,
+          "cumulative_closures": 8,
+          "cumulative_closure_fraction": 0.15384615384615385,
+          "total_balance": 0
+        },
+        {
+          "epoch": 6,
+          "active_paths": 40,
+          "distinct_active_states": 8,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 8,
+          "cumulative_closure_fraction": 0.08695652173913043,
+          "total_balance": 0
+        },
+        {
+          "epoch": 7,
+          "active_paths": 70,
+          "distinct_active_states": 8,
+          "closures_this_epoch": 10,
+          "closure_fraction": 0.125,
+          "cumulative_closures": 18,
+          "cumulative_closure_fraction": 0.10465116279069768,
+          "total_balance": 0
+        },
+        {
+          "epoch": 8,
+          "active_paths": 140,
+          "distinct_active_states": 10,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 18,
+          "cumulative_closure_fraction": 0.057692307692307696,
+          "total_balance": 0
+        },
+        {
+          "epoch": 9,
+          "active_paths": 252,
+          "distinct_active_states": 10,
+          "closures_this_epoch": 28,
+          "closure_fraction": 0.1,
+          "cumulative_closures": 46,
+          "cumulative_closure_fraction": 0.0777027027027027,
+          "total_balance": 0
+        },
+        {
+          "epoch": 10,
+          "active_paths": 504,
+          "distinct_active_states": 12,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 46,
+          "cumulative_closure_fraction": 0.041970802919708027,
+          "total_balance": 0
+        }
+      ],
+      "final_active_paths": 504,
+      "final_closure_fraction": 0.0,
+      "final_cumulative_closure_fraction": 0.041970802919708027,
+      "final_cumulative_closures": 46,
+      "final_total_balance": 0
+    },
+    {
+      "scenario": "d2",
+      "label": "dimension 2",
+      "dimension": 2,
+      "epochs": 10,
+      "snapshots": [
+        {
+          "epoch": 0,
+          "active_paths": 2,
+          "distinct_active_states": 2,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 0,
+          "cumulative_closure_fraction": 0.0,
+          "total_balance": 0
+        },
+        {
+          "epoch": 1,
+          "active_paths": 6,
+          "distinct_active_states": 6,
+          "closures_this_epoch": 2,
+          "closure_fraction": 0.25,
+          "cumulative_closures": 2,
+          "cumulative_closure_fraction": 0.25,
+          "total_balance": 0
+        },
+        {
+          "epoch": 2,
+          "active_paths": 24,
+          "distinct_active_states": 14,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 2,
+          "cumulative_closure_fraction": 0.0625,
+          "total_balance": 0
+        },
+        {
+          "epoch": 3,
+          "active_paths": 86,
+          "distinct_active_states": 22,
+          "closures_this_epoch": 10,
+          "closure_fraction": 0.10416666666666667,
+          "cumulative_closures": 12,
+          "cumulative_closure_fraction": 0.09375,
+          "total_balance": 0
+        },
+        {
+          "epoch": 4,
+          "active_paths": 344,
+          "distinct_active_states": 34,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 12,
+          "cumulative_closure_fraction": 0.025423728813559324,
+          "total_balance": 0
+        },
+        {
+          "epoch": 5,
+          "active_paths": 1288,
+          "distinct_active_states": 46,
+          "closures_this_epoch": 88,
+          "closure_fraction": 0.06395348837209303,
+          "cumulative_closures": 100,
+          "cumulative_closure_fraction": 0.05411255411255411,
+          "total_balance": 0
+        },
+        {
+          "epoch": 6,
+          "active_paths": 5152,
+          "distinct_active_states": 62,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 100,
+          "cumulative_closure_fraction": 0.014285714285714285,
+          "total_balance": 0
+        },
+        {
+          "epoch": 7,
+          "active_paths": 19670,
+          "distinct_active_states": 78,
+          "closures_this_epoch": 938,
+          "closure_fraction": 0.04551630434782609,
+          "cumulative_closures": 1038,
+          "cumulative_closure_fraction": 0.03759779773978557,
+          "total_balance": 0
+        },
+        {
+          "epoch": 8,
+          "active_paths": 78680,
+          "distinct_active_states": 98,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 1038,
+          "cumulative_closure_fraction": 0.009765919012494354,
+          "total_balance": 0
+        },
+        {
+          "epoch": 9,
+          "active_paths": 303688,
+          "distinct_active_states": 118,
+          "closures_this_epoch": 11032,
+          "closure_fraction": 0.03505338078291815,
+          "cumulative_closures": 12070,
+          "cumulative_closure_fraction": 0.02866928894462813,
+          "total_balance": 0
+        },
+        {
+          "epoch": 10,
+          "active_paths": 1214752,
+          "distinct_active_states": 142,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 12070,
+          "cumulative_closure_fraction": 0.007378833080647528,
+          "total_balance": 0
+        }
+      ],
+      "final_active_paths": 1214752,
+      "final_closure_fraction": 0.0,
+      "final_cumulative_closure_fraction": 0.007378833080647528,
+      "final_cumulative_closures": 12070,
+      "final_total_balance": 0
+    },
+    {
+      "scenario": "d4",
+      "label": "dimension 4",
+      "dimension": 4,
+      "epochs": 10,
+      "snapshots": [
+        {
+          "epoch": 0,
+          "active_paths": 2,
+          "distinct_active_states": 2,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 0,
+          "cumulative_closure_fraction": 0.0,
+          "total_balance": 0
+        },
+        {
+          "epoch": 1,
+          "active_paths": 14,
+          "distinct_active_states": 14,
+          "closures_this_epoch": 2,
+          "closure_fraction": 0.125,
+          "cumulative_closures": 2,
+          "cumulative_closure_fraction": 0.125,
+          "total_balance": 0
+        },
+        {
+          "epoch": 2,
+          "active_paths": 112,
+          "distinct_active_states": 58,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 2,
+          "cumulative_closure_fraction": 0.015625,
+          "total_balance": 0
+        },
+        {
+          "epoch": 3,
+          "active_paths": 870,
+          "distinct_active_states": 158,
+          "closures_this_epoch": 26,
+          "closure_fraction": 0.029017857142857144,
+          "cumulative_closures": 28,
+          "cumulative_closure_fraction": 0.02734375,
+          "total_balance": 0
+        },
+        {
+          "epoch": 4,
+          "active_paths": 6960,
+          "distinct_active_states": 354,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 28,
+          "cumulative_closure_fraction": 0.0035070140280561123,
+          "total_balance": 0
+        },
+        {
+          "epoch": 5,
+          "active_paths": 54944,
+          "distinct_active_states": 686,
+          "closures_this_epoch": 736,
+          "closure_fraction": 0.013218390804597701,
+          "cumulative_closures": 764,
+          "cumulative_closure_fraction": 0.012000502638853983,
+          "total_balance": 0
+        },
+        {
+          "epoch": 6,
+          "active_paths": 439552,
+          "distinct_active_states": 1210,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 764,
+          "cumulative_closure_fraction": 0.0015182347143175097,
+          "total_balance": 0
+        },
+        {
+          "epoch": 7,
+          "active_paths": 3489382,
+          "distinct_active_states": 1982,
+          "closures_this_epoch": 27034,
+          "closure_fraction": 0.007687941358474083,
+          "cumulative_closures": 27798,
+          "cumulative_closure_fraction": 0.006915558439180502,
+          "total_balance": 0
+        },
+        {
+          "epoch": 8,
+          "active_paths": 27915056,
+          "distinct_active_states": 3074,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 27798,
+          "cumulative_closure_fraction": 0.0008704641172633345,
+          "total_balance": 0
+        },
+        {
+          "epoch": 9,
+          "active_paths": 222188976,
+          "distinct_active_states": 4558,
+          "closures_this_epoch": 1131472,
+          "closure_fraction": 0.005066584856573456,
+          "cumulative_closures": 1159270,
+          "cumulative_closure_fraction": 0.0045416128277238664,
+          "total_balance": 0
+        },
+        {
+          "epoch": 10,
+          "active_paths": 1777511808,
+          "distinct_active_states": 6522,
+          "closures_this_epoch": 0,
+          "closure_fraction": 0.0,
+          "cumulative_closures": 1159270,
+          "cumulative_closure_fraction": 0.000570291642837734,
+          "total_balance": 0
+        }
+      ],
+      "final_active_paths": 1777511808,
+      "final_closure_fraction": 0.0,
+      "final_cumulative_closure_fraction": 0.000570291642837734,
+      "final_cumulative_closures": 1159270,
+      "final_total_balance": 0
+    }
+  ],
+  "verification": {
+    "active_layer_never_empties": true,
+    "open_paths_grow_without_reseeding": true,
+    "closure_fraction_is_less_than_one": true,
+    "global_balance_stays_zero": true,
+    "larger_dimension_lowers_cumulative_closure_fraction": true
+  }
+}

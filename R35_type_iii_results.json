@@ -1,0 +1,80 @@
+{
+ "criterion": "G=<log(w_i/w_j)>：{0}->平凡；cZ->III_lambda；稠密->III_1",
+ "profiles": [
+  {
+   "name": "uniform",
+   "note": "常数剖面：R12 的机制",
+   "n_blocks": 49,
+   "log_span": 0.0,
+   "type": "trivial ({0})",
+   "lambda": 1.0,
+   "cyclic_residual": 0.0,
+   "n_diffs": 0
+  },
+  {
+   "name": "native_branching_2^a",
+   "note": "原生满分支：w_a ∝ 2^a",
+   "n_blocks": 49,
+   "log_span": 33.27106466687737,
+   "c_min": 0.69314718056,
+   "cyclic_residual": 2.8919089345436078e-12,
+   "n_diffs": 43,
+   "type": "III_lambda",
+   "lambda": 0.49999999999997263
+  },
+  {
+   "name": "geometric_0.99^a",
+   "note": "缓慢几何",
+   "n_blocks": 49,
+   "log_span": 0.4824161209680696,
+   "c_min": 0.010050335854,
+   "cyclic_residual": 2.3879778154878295e-09,
+   "n_diffs": 48,
+   "type": "III_lambda",
+   "lambda": 0.9899999999995064
+  },
+  {
+   "name": "polynomial_(a+1)^2",
+   "note": "幂律",
+   "n_blocks": 49,
+   "log_span": 7.783640596221253,
+   "c_min": 0.041238574405,
+   "cyclic_residual": 0.4992894267582457,
+   "n_diffs": 753,
+   "type": "III_1 (dense)",
+   "lambda": null
+  },
+  {
+   "name": "factorial_(a+1)!",
+   "note": "超指数",
+   "n_blocks": 49,
+   "log_span": 144.5657439463449,
+   "c_min": 0.69314718056,
+   "cyclic_residual": 0.4983947493833867,
+   "n_diffs": 398,
+   "type": "III_1 (dense)",
+   "lambda": null
+  },
+  {
+   "name": "stairs_2^a_times_(a+1)",
+   "note": "几何×多项式",
+   "n_blocks": 49,
+   "log_span": 37.162884964988,
+   "c_min": 0.713766467763,
+   "cyclic_residual": 0.4994078401177582,
+   "n_diffs": 1075,
+   "type": "III_1 (dense)",
+   "lambda": null
+  }
+ ],
+ "verdict": {
+  "uniform_is_trivial": true,
+  "native_full_branching_type": "III_lambda",
+  "native_lambda": 0.49999999999997263,
+  "polynomial_type": "III_1 (dense)",
+  "factorial_type": "III_1 (dense)",
+  "geometric_times_polynomial_type": "III_1 (dense)",
+  "bw_requires": "III_1",
+  "consequence": "若块权重按原生满分支指数增长，极限为 III_lambda(=1/2) 而非 III_1，几何模流不可得；几何模流反过来要求粗粒化 pi 的渐近轮廓非指数（幂律/超指数），即 P2' 变成对缺失输入 pi 的一个新约束"
+ }
+}

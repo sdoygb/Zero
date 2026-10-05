@@ -1,0 +1,120 @@
+{
+ "trace": [
+  {
+   "gen": 1,
+   "exact_words": 2,
+   "canon_cycles": 1,
+   "q_worduniform": 0.5,
+   "q_cycleuniform": 1.0,
+   "lam1_word": 0.5,
+   "lam1_cycle": 1.0
+  },
+  {
+   "gen": 2,
+   "exact_words": 4,
+   "canon_cycles": 2,
+   "q_worduniform": 0.25,
+   "q_cycleuniform": 0.5,
+   "lam1_word": 0.33333,
+   "lam1_cycle": 0.5
+  },
+  {
+   "gen": 3,
+   "exact_words": 4,
+   "canon_cycles": 2,
+   "q_worduniform": 0.25,
+   "q_cycleuniform": 0.5,
+   "lam1_word": 0.33333,
+   "lam1_cycle": 0.5
+  },
+  {
+   "gen": 4,
+   "exact_words": 12,
+   "canon_cycles": 6,
+   "q_worduniform": 0.083333,
+   "q_cycleuniform": 0.208333,
+   "lam1_word": 0.33333,
+   "lam1_cycle": 0.5
+  },
+  {
+   "gen": 5,
+   "exact_words": 12,
+   "canon_cycles": 6,
+   "q_worduniform": 0.083333,
+   "q_cycleuniform": 0.208333,
+   "lam1_word": 0.33333,
+   "lam1_cycle": 0.5
+  },
+  {
+   "gen": 6,
+   "exact_words": 20,
+   "canon_cycles": 8,
+   "q_worduniform": 0.05,
+   "q_cycleuniform": 0.14,
+   "lam1_word": 0.33333,
+   "lam1_cycle": 0.4
+  },
+  {
+   "gen": 7,
+   "exact_words": 52,
+   "canon_cycles": 23,
+   "q_worduniform": 0.019231,
+   "q_cycleuniform": 0.058432,
+   "lam1_word": 0.33333,
+   "lam1_cycle": 0.35714
+  },
+  {
+   "gen": 8,
+   "exact_words": 52,
+   "canon_cycles": 23,
+   "q_worduniform": 0.019231,
+   "q_cycleuniform": 0.058432,
+   "lam1_word": 0.33333,
+   "lam1_cycle": 0.35714
+  },
+  {
+   "gen": 9,
+   "exact_words": 84,
+   "canon_cycles": 26,
+   "q_worduniform": 0.011905,
+   "q_cycleuniform": 0.043084,
+   "lam1_word": 0.33333,
+   "lam1_cycle": 0.35294
+  }
+ ],
+ "final": {
+  "distinct_exact_words": 84,
+  "distinct_canon_cycles": 26,
+  "zero_layer": 26
+ },
+ "A_distinct_word_uniform": {
+  "blocks": 84,
+  "total": 84,
+  "q": 0.011905,
+  "top3_l1": 0.33333,
+  "rank": 0,
+  "dense_rank_needed": 83,
+  "in_survival_window": false,
+  "contextual": false
+ },
+ "B_distinct_cycle_uniform": {
+  "blocks": 26,
+  "total": 84,
+  "q": 0.043084,
+  "top3_l1": 0.35294,
+  "rank": 3,
+  "dense_rank_needed": 25,
+  "in_survival_window": false,
+  "contextual": false
+ },
+ "C_exact_multiplicity": {
+  "blocks": 84,
+  "total": 126,
+  "q": 0.013228,
+  "top3_l1": 0.33333,
+  "rank": 1,
+  "dense_rank_needed": 83,
+  "in_survival_window": false,
+  "contextual": false
+ }
+}

@@ -1,0 +1,333 @@
+{
+ "baseline": [
+  {
+   "h": 3,
+   "k": 4,
+   "rank": 3,
+   "need": 3,
+   "def": 0,
+   "ratio": 0.0
+  },
+  {
+   "h": 4,
+   "k": 5,
+   "rank": 4,
+   "need": 4,
+   "def": 0,
+   "ratio": 0.0
+  },
+  {
+   "h": 5,
+   "k": 6,
+   "rank": 4,
+   "need": 5,
+   "def": 1,
+   "ratio": 0.1667
+  },
+  {
+   "h": 6,
+   "k": 7,
+   "rank": 5,
+   "need": 6,
+   "def": 1,
+   "ratio": 0.1429
+  },
+  {
+   "h": 7,
+   "k": 8,
+   "rank": 6,
+   "need": 7,
+   "def": 1,
+   "ratio": 0.125
+  },
+  {
+   "h": 8,
+   "k": 9,
+   "rank": 6,
+   "need": 8,
+   "def": 2,
+   "ratio": 0.2222
+  },
+  {
+   "h": 9,
+   "k": 10,
+   "rank": 7,
+   "need": 9,
+   "def": 2,
+   "ratio": 0.2
+  },
+  {
+   "h": 10,
+   "k": 11,
+   "rank": 8,
+   "need": 10,
+   "def": 2,
+   "ratio": 0.1818
+  },
+  {
+   "h": 11,
+   "k": 12,
+   "rank": 8,
+   "need": 11,
+   "def": 3,
+   "ratio": 0.25
+  },
+  {
+   "h": 12,
+   "k": 13,
+   "rank": 9,
+   "need": 12,
+   "def": 3,
+   "ratio": 0.2308
+  },
+  {
+   "h": 13,
+   "k": 14,
+   "rank": 9,
+   "need": 13,
+   "def": 4,
+   "ratio": 0.2857
+  },
+  {
+   "h": 14,
+   "k": 15,
+   "rank": 9,
+   "need": 14,
+   "def": 5,
+   "ratio": 0.3333
+  },
+  {
+   "h": 15,
+   "k": 16,
+   "rank": 10,
+   "need": 15,
+   "def": 5,
+   "ratio": 0.3125
+  },
+  {
+   "h": 16,
+   "k": 17,
+   "rank": 11,
+   "need": 16,
+   "def": 5,
+   "ratio": 0.2941
+  },
+  {
+   "h": 17,
+   "k": 18,
+   "rank": 11,
+   "need": 17,
+   "def": 6,
+   "ratio": 0.3333
+  },
+  {
+   "h": 18,
+   "k": 19,
+   "rank": 11,
+   "need": 18,
+   "def": 7,
+   "ratio": 0.3684
+  },
+  {
+   "h": 19,
+   "k": 20,
+   "rank": 12,
+   "need": 19,
+   "def": 7,
+   "ratio": 0.35
+  },
+  {
+   "h": 20,
+   "k": 21,
+   "rank": 12,
+   "need": 20,
+   "def": 8,
+   "ratio": 0.381
+  },
+  {
+   "h": 21,
+   "k": 22,
+   "rank": 13,
+   "need": 21,
+   "def": 8,
+   "ratio": 0.3636
+  },
+  {
+   "h": 22,
+   "k": 23,
+   "rank": 14,
+   "need": 22,
+   "def": 8,
+   "ratio": 0.3478
+  },
+  {
+   "h": 23,
+   "k": 24,
+   "rank": 14,
+   "need": 23,
+   "def": 9,
+   "ratio": 0.375
+  },
+  {
+   "h": 24,
+   "k": 25,
+   "rank": 15,
+   "need": 24,
+   "def": 9,
+   "ratio": 0.36
+  },
+  {
+   "h": 25,
+   "k": 26,
+   "rank": 15,
+   "need": 25,
+   "def": 10,
+   "ratio": 0.3846
+  },
+  {
+   "h": 26,
+   "k": 27,
+   "rank": 15,
+   "need": 26,
+   "def": 11,
+   "ratio": 0.4074
+  }
+ ],
+ "with_sites": [
+  {
+   "L": 8,
+   "m": 2,
+   "blocks": 16,
+   "primes": 2,
+   "rank": 2,
+   "need": 15,
+   "def": 13
+  },
+  {
+   "L": 8,
+   "m": 3,
+   "blocks": 9,
+   "primes": 1,
+   "rank": 1,
+   "need": 8,
+   "def": 7
+  },
+  {
+   "L": 8,
+   "m": 4,
+   "blocks": 6,
+   "primes": 1,
+   "rank": 1,
+   "need": 5,
+   "def": 4
+  },
+  {
+   "L": 10,
+   "m": 2,
+   "blocks": 24,
+   "primes": 2,
+   "rank": 2,
+   "need": 23,
+   "def": 21
+  },
+  {
+   "L": 10,
+   "m": 3,
+   "blocks": 14,
+   "primes": 2,
+   "rank": 2,
+   "need": 13,
+   "def": 11
+  },
+  {
+   "L": 10,
+   "m": 4,
+   "blocks": 18,
+   "primes": 1,
+   "rank": 1,
+   "need": 17,
+   "def": 16
+  },
+  {
+   "L": 12,
+   "m": 2,
+   "blocks": 30,
+   "primes": 3,
+   "rank": 3,
+   "need": 29,
+   "def": 26
+  },
+  {
+   "L": 12,
+   "m": 3,
+   "blocks": 16,
+   "primes": 2,
+   "rank": 2,
+   "need": 15,
+   "def": 13
+  },
+  {
+   "L": 12,
+   "m": 4,
+   "blocks": 12,
+   "primes": 1,
+   "rank": 1,
+   "need": 11,
+   "def": 10
+  },
+  {
+   "L": 14,
+   "m": 2,
+   "blocks": 40,
+   "primes": 4,
+   "rank": 4,
+   "need": 39,
+   "def": 35
+  },
+  {
+   "L": 14,
+   "m": 3,
+   "blocks": 20,
+   "primes": 3,
+   "rank": 3,
+   "need": 19,
+   "def": 16
+  },
+  {
+   "L": 14,
+   "m": 4,
+   "blocks": 28,
+   "primes": 2,
+   "rank": 2,
+   "need": 27,
+   "def": 25
+  },
+  {
+   "L": 16,
+   "m": 2,
+   "blocks": 48,
+   "primes": 5,
+   "rank": 5,
+   "need": 47,
+   "def": 42
+  },
+  {
+   "L": 16,
+   "m": 3,
+   "blocks": 27,
+   "primes": 3,
+   "rank": 3,
+   "need": 26,
+   "def": 23
+  },
+  {
+   "L": 16,
+   "m": 4,
+   "blocks": 16,
+   "primes": 2,
+   "rank": 2,
+   "need": 15,
+   "def": 13
+  }
+ ]
+}

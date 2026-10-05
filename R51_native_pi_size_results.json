@@ -1,0 +1,115 @@
+{
+ "powerlaw_slope": 1.6364,
+ "final": {
+  "words": 424,
+  "size_classes": 8,
+  "q": 0.21934,
+  "lam1": 0.40506,
+  "hist": {
+   "2": 2,
+   "4": 8,
+   "6": 22,
+   "8": 60,
+   "10": 116,
+   "12": 128,
+   "14": 72,
+   "16": 16
+  }
+ },
+ "trace": [
+  {
+   "gen": 1,
+   "words": 2,
+   "size_classes": 1,
+   "q": 1.0,
+   "lam1": 1.0,
+   "top_share": 1.0
+  },
+  {
+   "gen": 2,
+   "words": 4,
+   "size_classes": 2,
+   "q": 0.5,
+   "lam1": 0.5,
+   "top_share": 0.5
+  },
+  {
+   "gen": 3,
+   "words": 8,
+   "size_classes": 3,
+   "q": 0.375,
+   "lam1": 0.5,
+   "top_share": 0.5
+  },
+  {
+   "gen": 4,
+   "words": 24,
+   "size_classes": 4,
+   "q": 0.319444,
+   "lam1": 0.45455,
+   "top_share": 0.41667
+  },
+  {
+   "gen": 5,
+   "words": 24,
+   "size_classes": 4,
+   "q": 0.319444,
+   "lam1": 0.45455,
+   "top_share": 0.41667
+  },
+  {
+   "gen": 6,
+   "words": 40,
+   "size_classes": 5,
+   "q": 0.265,
+   "lam1": 0.41176,
+   "top_share": 0.35
+  },
+  {
+   "gen": 7,
+   "words": 104,
+   "size_classes": 6,
+   "q": 0.24926,
+   "lam1": 0.4186,
+   "top_share": 0.34615
+  },
+  {
+   "gen": 8,
+   "words": 104,
+   "size_classes": 6,
+   "q": 0.24926,
+   "lam1": 0.4186,
+   "top_share": 0.34615
+  },
+  {
+   "gen": 9,
+   "words": 168,
+   "size_classes": 7,
+   "q": 0.222506,
+   "lam1": 0.40625,
+   "top_share": 0.30952
+  },
+  {
+   "gen": 10,
+   "words": 424,
+   "size_classes": 8,
+   "q": 0.21934,
+   "lam1": 0.40506,
+   "top_share": 0.30189
+  },
+  {
+   "gen": 11,
+   "words": 424,
+   "size_classes": 8,
+   "q": 0.21934,
+   "lam1": 0.40506,
+   "top_share": 0.30189
+  }
+ ],
+ "gates": {
+  "q_in_survival_window_0.5_0.6": false,
+  "contextual": false,
+  "rank": 5,
+  "needed_rank": 7
+ }
+}

@@ -1,0 +1,204 @@
+{
+ "C_interval": [
+  {
+   "dtau": 4,
+   "dx": 0,
+   "I": 13,
+   "lorentz": 16,
+   "euclid": 16
+  },
+  {
+   "dtau": 4,
+   "dx": 2,
+   "I": 4,
+   "lorentz": 12,
+   "euclid": 20
+  },
+  {
+   "dtau": 4,
+   "dx": 4,
+   "I": 1,
+   "lorentz": 0,
+   "euclid": 32
+  },
+  {
+   "dtau": 6,
+   "dx": 0,
+   "I": 32,
+   "lorentz": 36,
+   "euclid": 36
+  },
+  {
+   "dtau": 6,
+   "dx": 2,
+   "I": 13,
+   "lorentz": 32,
+   "euclid": 40
+  },
+  {
+   "dtau": 6,
+   "dx": 4,
+   "I": 4,
+   "lorentz": 20,
+   "euclid": 52
+  },
+  {
+   "dtau": 6,
+   "dx": 6,
+   "I": 1,
+   "lorentz": 0,
+   "euclid": 72
+  },
+  {
+   "dtau": 8,
+   "dx": 0,
+   "I": 65,
+   "lorentz": 64,
+   "euclid": 64
+  },
+  {
+   "dtau": 8,
+   "dx": 2,
+   "I": 32,
+   "lorentz": 60,
+   "euclid": 68
+  },
+  {
+   "dtau": 8,
+   "dx": 4,
+   "I": 13,
+   "lorentz": 48,
+   "euclid": 80
+  },
+  {
+   "dtau": 8,
+   "dx": 6,
+   "I": 4,
+   "lorentz": 28,
+   "euclid": 100
+  },
+  {
+   "dtau": 8,
+   "dx": 8,
+   "I": 1,
+   "lorentz": 0,
+   "euclid": 128
+  },
+  {
+   "dtau": 10,
+   "dx": 0,
+   "I": 116,
+   "lorentz": 100,
+   "euclid": 100
+  },
+  {
+   "dtau": 10,
+   "dx": 2,
+   "I": 65,
+   "lorentz": 96,
+   "euclid": 104
+  },
+  {
+   "dtau": 10,
+   "dx": 4,
+   "I": 32,
+   "lorentz": 84,
+   "euclid": 116
+  },
+  {
+   "dtau": 10,
+   "dx": 6,
+   "I": 13,
+   "lorentz": 64,
+   "euclid": 136
+  },
+  {
+   "dtau": 10,
+   "dx": 8,
+   "I": 4,
+   "lorentz": 36,
+   "euclid": 164
+  },
+  {
+   "dtau": 10,
+   "dx": 10,
+   "I": 1,
+   "lorentz": 0,
+   "euclid": 200
+  },
+  {
+   "dtau": 12,
+   "dx": 0,
+   "I": 189,
+   "lorentz": 144,
+   "euclid": 144
+  },
+  {
+   "dtau": 12,
+   "dx": 2,
+   "I": 116,
+   "lorentz": 140,
+   "euclid": 148
+  },
+  {
+   "dtau": 12,
+   "dx": 4,
+   "I": 65,
+   "lorentz": 128,
+   "euclid": 160
+  },
+  {
+   "dtau": 12,
+   "dx": 6,
+   "I": 32,
+   "lorentz": 108,
+   "euclid": 180
+  },
+  {
+   "dtau": 12,
+   "dx": 8,
+   "I": 13,
+   "lorentz": 80,
+   "euclid": 208
+  },
+  {
+   "dtau": 12,
+   "dx": 10,
+   "I": 4,
+   "lorentz": 44,
+   "euclid": 244
+  },
+  {
+   "dtau": 12,
+   "dx": 12,
+   "I": 1,
+   "lorentz": 0,
+   "euclid": 288
+  }
+ ],
+ "I_depends_only_on_dtau_minus_dx": true,
+ "A_mm": [
+  {
+   "T": 20,
+   "S": 15,
+   "f": 0.1824780832262291,
+   "d": 3.276519961413495
+  },
+  {
+   "T": 40,
+   "S": 29,
+   "f": 0.1754715801842569,
+   "d": 3.3242332873297133
+  },
+  {
+   "T": 80,
+   "S": 57,
+   "f": 0.17228586142930716,
+   "d": 3.346527518223926
+  }
+ ],
+ "verdict": {
+  "lorentzian": true,
+  "I_only_dtau_minus_dx": true
+ }
+}

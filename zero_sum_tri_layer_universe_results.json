@@ -1,0 +1,796 @@
+{
+  "model": {
+    "R": "cyclic canonical results of exact closed histories",
+    "P": "exact closed histories",
+    "E": "finite-lifetime layers",
+    "D": "paths destroyed when a layer reaches its lifetime",
+    "initial_seed": "empty zero history",
+    "probabilities": "none",
+    "mutations": "none",
+    "scenarios": {
+      "no evolution layer": 0,
+      "finite layer L=4": 4,
+      "finite layer L=6": 6
+    },
+    "steps": 10,
+    "count_scale_limit": 1000000000000.0,
+    "note": "All zero-sum continuations are generated. Scaling is numerical only and does not change proportions."
+  },
+  "runs": [
+    {
+      "scenario": "no evolution layer",
+      "lifetime": 0,
+      "snapshots": [
+        {
+          "time": 0,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 1,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 2,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 3,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 4,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 5,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 6,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 7,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 8,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 9,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 10,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        }
+      ],
+      "final_active_layers": 1.0,
+      "final_result_records": 0.0,
+      "final_result_modes": 0,
+      "final_history_records": 0.0,
+      "final_history_paths": 0,
+      "final_result_diversity": 0.0,
+      "final_history_diversity": 0.0,
+      "final_dead_paths": 0.0,
+      "final_mean_closure_time": 0.0,
+      "top_results": [],
+      "top_histories": [],
+      "rescale_steps": 0
+    },
+    {
+      "scenario": "finite layer L=4",
+      "lifetime": 4,
+      "snapshots": [
+        {
+          "time": 0,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 1,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 2,
+          "active_layers": 3.0,
+          "result_records": 2.0,
+          "result_modes": 1,
+          "result_diversity": 0.0,
+          "history_records": 2.0,
+          "history_paths": 2,
+          "history_diversity": 0.6931471805599453,
+          "dead_paths": 0.0,
+          "closed_events": 2.0,
+          "mean_closure_time": 2.0
+        },
+        {
+          "time": 3,
+          "active_layers": 3.0,
+          "result_records": 2.0,
+          "result_modes": 1,
+          "result_diversity": 0.0,
+          "history_records": 2.0,
+          "history_paths": 2,
+          "history_diversity": 0.6931471805599453,
+          "dead_paths": 0.0,
+          "closed_events": 2.0,
+          "mean_closure_time": 2.0
+        },
+        {
+          "time": 4,
+          "active_layers": 12.0,
+          "result_records": 12.0,
+          "result_modes": 3,
+          "result_diversity": 1.0114042647073518,
+          "history_records": 12.0,
+          "history_paths": 8,
+          "history_diversity": 2.0228085294147036,
+          "dead_paths": 16.0,
+          "closed_events": 12.0,
+          "mean_closure_time": 3.0
+        },
+        {
+          "time": 5,
+          "active_layers": 12.0,
+          "result_records": 12.0,
+          "result_modes": 3,
+          "result_diversity": 1.0114042647073518,
+          "history_records": 12.0,
+          "history_paths": 8,
+          "history_diversity": 2.0228085294147036,
+          "dead_paths": 16.0,
+          "closed_events": 12.0,
+          "mean_closure_time": 3.0
+        },
+        {
+          "time": 6,
+          "active_layers": 42.0,
+          "result_records": 44.0,
+          "result_modes": 7,
+          "result_diversity": 1.8130201138641744,
+          "history_records": 44.0,
+          "history_paths": 24,
+          "history_diversity": 3.058919807270211,
+          "dead_paths": 48.0,
+          "closed_events": 44.0,
+          "mean_closure_time": 2.8181818181818183
+        },
+        {
+          "time": 7,
+          "active_layers": 42.0,
+          "result_records": 44.0,
+          "result_modes": 7,
+          "result_diversity": 1.8130201138641744,
+          "history_records": 44.0,
+          "history_paths": 24,
+          "history_diversity": 3.058919807270211,
+          "dead_paths": 48.0,
+          "closed_events": 44.0,
+          "mean_closure_time": 2.8181818181818183
+        },
+        {
+          "time": 8,
+          "active_layers": 156.0,
+          "result_records": 168.0,
+          "result_modes": 17,
+          "result_diversity": 2.600350874227021,
+          "history_records": 168.0,
+          "history_paths": 68,
+          "history_diversity": 4.035585317824922,
+          "dead_paths": 208.0,
+          "closed_events": 168.0,
+          "mean_closure_time": 2.9285714285714284
+        },
+        {
+          "time": 9,
+          "active_layers": 156.0,
+          "result_records": 168.0,
+          "result_modes": 17,
+          "result_diversity": 2.600350874227021,
+          "history_records": 168.0,
+          "history_paths": 68,
+          "history_diversity": 4.035585317824922,
+          "dead_paths": 208.0,
+          "closed_events": 168.0,
+          "mean_closure_time": 2.9285714285714284
+        },
+        {
+          "time": 10,
+          "active_layers": 564.0,
+          "result_records": 608.0,
+          "result_modes": 39,
+          "result_diversity": 3.324853564864325,
+          "history_records": 608.0,
+          "history_paths": 188,
+          "history_diversity": 4.987456380184631,
+          "dead_paths": 720.0,
+          "closed_events": 608.0,
+          "mean_closure_time": 2.888157894736842
+        }
+      ],
+      "final_active_layers": 564.0,
+      "final_result_records": 608.0,
+      "final_result_modes": 39,
+      "final_history_records": 608.0,
+      "final_history_paths": 188,
+      "final_result_diversity": 3.324853564864325,
+      "final_history_diversity": 4.987456380184631,
+      "final_dead_paths": 720.0,
+      "final_mean_closure_time": 2.888157894736842,
+      "top_results": [
+        {
+          "word": "--+-+-+-++",
+          "length": 10,
+          "count": 50.0,
+          "fraction": 0.08223684210526316
+        },
+        {
+          "word": "--++-+-+-+",
+          "length": 10,
+          "count": 50.0,
+          "fraction": 0.08223684210526316
+        },
+        {
+          "word": "--+-++--++",
+          "length": 10,
+          "count": 43.0,
+          "fraction": 0.07072368421052631
+        },
+        {
+          "word": "--++--++-+",
+          "length": 10,
+          "count": 43.0,
+          "fraction": 0.07072368421052631
+        },
+        {
+          "word": "--+-++-+-+",
+          "length": 10,
+          "count": 40.0,
+          "fraction": 0.06578947368421052
+        },
+        {
+          "word": "--+-+-++-+",
+          "length": 10,
+          "count": 40.0,
+          "fraction": 0.06578947368421052
+        },
+        {
+          "word": "--+-+-++",
+          "length": 8,
+          "count": 25.0,
+          "fraction": 0.04111842105263158
+        },
+        {
+          "word": "--++-+-+",
+          "length": 8,
+          "count": 25.0,
+          "fraction": 0.04111842105263158
+        },
+        {
+          "word": "--+-++-+",
+          "length": 8,
+          "count": 20.0,
+          "fraction": 0.03289473684210526
+        },
+        {
+          "word": "--+--++-++",
+          "length": 10,
+          "count": 20.0,
+          "fraction": 0.03289473684210526
+        },
+        {
+          "word": "---++-+-++",
+          "length": 10,
+          "count": 20.0,
+          "fraction": 0.03289473684210526
+        },
+        {
+          "word": "--+-+--+++",
+          "length": 10,
+          "count": 20.0,
+          "fraction": 0.03289473684210526
+        }
+      ],
+      "top_histories": [
+        {
+          "word": "+-+-+-+-+-",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        },
+        {
+          "word": "+-+-+-+--+",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        },
+        {
+          "word": "+-+-+--++-",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        },
+        {
+          "word": "+-+-+--+-+",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        },
+        {
+          "word": "+-+--++-+-",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        },
+        {
+          "word": "+-+--++--+",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        },
+        {
+          "word": "+-+--+-++-",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        },
+        {
+          "word": "+-+--+-+-+",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        },
+        {
+          "word": "+--++-+-+-",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        },
+        {
+          "word": "+--++-+--+",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        },
+        {
+          "word": "+--++--++-",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        },
+        {
+          "word": "+--++--+-+",
+          "length": 10,
+          "count": 8.0,
+          "fraction": 0.013157894736842105
+        }
+      ],
+      "rescale_steps": 0
+    },
+    {
+      "scenario": "finite layer L=6",
+      "lifetime": 6,
+      "snapshots": [
+        {
+          "time": 0,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 1,
+          "active_layers": 1.0,
+          "result_records": 0.0,
+          "result_modes": 0,
+          "result_diversity": 0.0,
+          "history_records": 0.0,
+          "history_paths": 0,
+          "history_diversity": 0.0,
+          "dead_paths": 0.0,
+          "closed_events": 0.0,
+          "mean_closure_time": 0.0
+        },
+        {
+          "time": 2,
+          "active_layers": 3.0,
+          "result_records": 2.0,
+          "result_modes": 1,
+          "result_diversity": 0.0,
+          "history_records": 2.0,
+          "history_paths": 2,
+          "history_diversity": 0.6931471805599453,
+          "dead_paths": 0.0,
+          "closed_events": 2.0,
+          "mean_closure_time": 2.0
+        },
+        {
+          "time": 3,
+          "active_layers": 3.0,
+          "result_records": 2.0,
+          "result_modes": 1,
+          "result_diversity": 0.0,
+          "history_records": 2.0,
+          "history_paths": 2,
+          "history_diversity": 0.6931471805599453,
+          "dead_paths": 0.0,
+          "closed_events": 2.0,
+          "mean_closure_time": 2.0
+        },
+        {
+          "time": 4,
+          "active_layers": 13.0,
+          "result_records": 12.0,
+          "result_modes": 3,
+          "result_diversity": 1.0114042647073518,
+          "history_records": 12.0,
+          "history_paths": 8,
+          "history_diversity": 2.0228085294147036,
+          "dead_paths": 0.0,
+          "closed_events": 12.0,
+          "mean_closure_time": 3.0
+        },
+        {
+          "time": 5,
+          "active_layers": 13.0,
+          "result_records": 12.0,
+          "result_modes": 3,
+          "result_diversity": 1.0114042647073518,
+          "history_records": 12.0,
+          "history_paths": 8,
+          "history_diversity": 2.0228085294147036,
+          "dead_paths": 0.0,
+          "closed_events": 12.0,
+          "mean_closure_time": 3.0
+        },
+        {
+          "time": 6,
+          "active_layers": 64.0,
+          "result_records": 64.0,
+          "result_modes": 7,
+          "result_diversity": 1.7577476836368864,
+          "history_records": 64.0,
+          "history_paths": 28,
+          "history_diversity": 3.205805710089747,
+          "dead_paths": 64.0,
+          "closed_events": 64.0,
+          "mean_closure_time": 3.8125
+        },
+        {
+          "time": 7,
+          "active_layers": 64.0,
+          "result_records": 64.0,
+          "result_modes": 7,
+          "result_diversity": 1.7577476836368864,
+          "history_records": 64.0,
+          "history_paths": 28,
+          "history_diversity": 3.205805710089747,
+          "dead_paths": 64.0,
+          "closed_events": 64.0,
+          "mean_closure_time": 3.8125
+        },
+        {
+          "time": 8,
+          "active_layers": 266.0,
+          "result_records": 268.0,
+          "result_modes": 17,
+          "result_diversity": 2.6261176313630865,
+          "history_records": 268.0,
+          "history_paths": 88,
+          "history_diversity": 4.255020661975132,
+          "dead_paths": 192.0,
+          "closed_events": 268.0,
+          "mean_closure_time": 3.4776119402985075
+        },
+        {
+          "time": 9,
+          "active_layers": 266.0,
+          "result_records": 268.0,
+          "result_modes": 17,
+          "result_diversity": 2.6261176313630865,
+          "history_records": 268.0,
+          "history_paths": 88,
+          "history_diversity": 4.255020661975132,
+          "dead_paths": 192.0,
+          "closed_events": 268.0,
+          "mean_closure_time": 3.4776119402985075
+        },
+        {
+          "time": 10,
+          "active_layers": 1176.0,
+          "result_records": 1188.0,
+          "result_modes": 43,
+          "result_diversity": 3.452425846567207,
+          "history_records": 1188.0,
+          "history_paths": 272,
+          "history_diversity": 5.295940124152721,
+          "dead_paths": 832.0,
+          "closed_events": 1188.0,
+          "mean_closure_time": 3.531986531986532
+        }
+      ],
+      "final_active_layers": 1176.0,
+      "final_result_records": 1188.0,
+      "final_result_modes": 43,
+      "final_history_records": 1188.0,
+      "final_history_paths": 272,
+      "final_result_diversity": 3.452425846567207,
+      "final_history_diversity": 5.295940124152721,
+      "final_dead_paths": 832.0,
+      "final_mean_closure_time": 3.531986531986532,
+      "top_results": [
+        {
+          "word": "--+-+-+-++",
+          "length": 10,
+          "count": 87.0,
+          "fraction": 0.07323232323232323
+        },
+        {
+          "word": "--++-+-+-+",
+          "length": 10,
+          "count": 87.0,
+          "fraction": 0.07323232323232323
+        },
+        {
+          "word": "--++--++-+",
+          "length": 10,
+          "count": 74.0,
+          "fraction": 0.06228956228956229
+        },
+        {
+          "word": "--+-++--++",
+          "length": 10,
+          "count": 74.0,
+          "fraction": 0.06228956228956229
+        },
+        {
+          "word": "--+-+-++-+",
+          "length": 10,
+          "count": 70.0,
+          "fraction": 0.058922558922558925
+        },
+        {
+          "word": "--+-++-+-+",
+          "length": 10,
+          "count": 70.0,
+          "fraction": 0.058922558922558925
+        },
+        {
+          "word": "--+-+--+++",
+          "length": 10,
+          "count": 44.0,
+          "fraction": 0.037037037037037035
+        },
+        {
+          "word": "--+--++-++",
+          "length": 10,
+          "count": 44.0,
+          "fraction": 0.037037037037037035
+        },
+        {
+          "word": "---++-+-++",
+          "length": 10,
+          "count": 44.0,
+          "fraction": 0.037037037037037035
+        },
+        {
+          "word": "--+-+-++",
+          "length": 8,
+          "count": 37.0,
+          "fraction": 0.031144781144781145
+        },
+        {
+          "word": "--++-+-+",
+          "length": 8,
+          "count": 37.0,
+          "fraction": 0.031144781144781145
+        },
+        {
+          "word": "--+-++-+",
+          "length": 8,
+          "count": 32.0,
+          "fraction": 0.026936026936026935
+        }
+      ],
+      "top_histories": [
+        {
+          "word": "+-+-+-+-+-",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        },
+        {
+          "word": "+-+-+-+--+",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        },
+        {
+          "word": "+-+-+--++-",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        },
+        {
+          "word": "+-+-+--+-+",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        },
+        {
+          "word": "+-+--++-+-",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        },
+        {
+          "word": "+-+--++--+",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        },
+        {
+          "word": "+-+--+-++-",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        },
+        {
+          "word": "+-+--+-+-+",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        },
+        {
+          "word": "+--++-+-+-",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        },
+        {
+          "word": "+--++-+--+",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        },
+        {
+          "word": "+--++--++-",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        },
+        {
+          "word": "+--++--+-+",
+          "length": 10,
+          "count": 13.0,
+          "fraction": 0.010942760942760943
+        }
+      ],
+      "rescale_steps": 0
+    }
+  ]
+}

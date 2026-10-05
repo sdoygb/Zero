@@ -1,0 +1,111 @@
+{
+ "question": "对账本的『对象』是 D 个方向，还是 D+1 个通道？",
+ "simplex_table": [
+  {
+   "r": 1,
+   "M_single_cut": 2,
+   "M_all_cuts": 2,
+   "simplex_vertices_r": 2,
+   "single_cut_equals_simplex_vertices": true,
+   "all_cuts_equals_simplex_vertices": true,
+   "simplex_edges": 1,
+   "C(r,2)": 0,
+   "C(r+1,2)": 1
+  },
+  {
+   "r": 2,
+   "M_single_cut": 3,
+   "M_all_cuts": 4,
+   "simplex_vertices_r": 3,
+   "single_cut_equals_simplex_vertices": true,
+   "all_cuts_equals_simplex_vertices": false,
+   "simplex_edges": 3,
+   "C(r,2)": 1,
+   "C(r+1,2)": 3
+  },
+  {
+   "r": 3,
+   "M_single_cut": 4,
+   "M_all_cuts": 8,
+   "simplex_vertices_r": 4,
+   "single_cut_equals_simplex_vertices": true,
+   "all_cuts_equals_simplex_vertices": false,
+   "simplex_edges": 6,
+   "C(r,2)": 3,
+   "C(r+1,2)": 6
+  },
+  {
+   "r": 4,
+   "M_single_cut": 5,
+   "M_all_cuts": 16,
+   "simplex_vertices_r": 5,
+   "single_cut_equals_simplex_vertices": true,
+   "all_cuts_equals_simplex_vertices": false,
+   "simplex_edges": 10,
+   "C(r,2)": 6,
+   "C(r+1,2)": 10
+  },
+  {
+   "r": 5,
+   "M_single_cut": 6,
+   "M_all_cuts": 32,
+   "simplex_vertices_r": 6,
+   "single_cut_equals_simplex_vertices": true,
+   "all_cuts_equals_simplex_vertices": false,
+   "simplex_edges": 15,
+   "C(r,2)": 10,
+   "C(r+1,2)": 15
+  },
+  {
+   "r": 6,
+   "M_single_cut": 7,
+   "M_all_cuts": 64,
+   "simplex_vertices_r": 7,
+   "single_cut_equals_simplex_vertices": true,
+   "all_cuts_equals_simplex_vertices": false,
+   "simplex_edges": 21,
+   "C(r,2)": 15,
+   "C(r+1,2)": 21
+  },
+  {
+   "r": 7,
+   "M_single_cut": 8,
+   "M_all_cuts": 128,
+   "simplex_vertices_r": 8,
+   "single_cut_equals_simplex_vertices": true,
+   "all_cuts_equals_simplex_vertices": false,
+   "simplex_edges": 28,
+   "C(r,2)": 21,
+   "C(r+1,2)": 28
+  }
+ ],
+ "face_off": {
+  "lorentzian": {
+   "objects": "D 个独立方向（旋转平面）",
+   "pairs": "C(D,2) = dim so(D-1,1)",
+   "signature": "洛伦兹内建 ✓",
+   "window": [
+    0.5,
+    0.6
+   ],
+   "contextuality_compatible": false
+  },
+  "euclidean_simplex": {
+   "objects": "D+1 个通道（D-单纯形顶点）",
+   "pairs": "C(D+1,2) = 单纯形边数 = dim so(D+1)",
+   "signature": "欧氏/无签名 ✗（须外供）",
+   "window": [
+    0.6,
+    0.6666666666666666
+   ],
+   "contextuality_compatible": true
+  }
+ },
+ "verdict": {
+  "single_cut_matches_simplex_vertices": true,
+  "all_cuts_matches_simplex_vertices": false,
+  "derivation_candidate": "仓库自身模型 single_cut: M=1+r 恰为 r-单纯形顶点数 ⇒ 若对账本数的是通道对（单纯形边），则多重度 = C(r+1,2) = 欧氏字典",
+  "trade_off": "洛伦兹字典签名内建但与语境性互斥；单纯形字典与语境性相容但签名须外供（G59/G33 的因果结构）",
+  "next": "判据：因果结构能否供出签名 —— 能则 C(D+1,2) 合法（D=4 与量子性同时到手）；不能则 R44 的互斥重新生效"
+ }
+}

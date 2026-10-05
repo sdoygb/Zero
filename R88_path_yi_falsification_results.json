@@ -1,0 +1,207 @@
+{
+ "K1": {
+  "L2": {
+   "words": 2,
+   "reflection_bijective": true
+  },
+  "L4": {
+   "words": 6,
+   "reflection_bijective": true
+  },
+  "L6": {
+   "words": 20,
+   "reflection_bijective": true
+  },
+  "L8": {
+   "words": 70,
+   "reflection_bijective": true
+  },
+  "L10": {
+   "words": 252,
+   "reflection_bijective": true
+  },
+  "L12": {
+   "words": 924,
+   "reflection_bijective": true
+  },
+  "L14": {
+   "words": 3432,
+   "reflection_bijective": true
+  }
+ },
+ "K2": {
+  "L4": {
+   "N": 6,
+   "classes": 2,
+   "q_yi": 0.16666666666666666,
+   "q_R25": 0.5555555555555556
+  },
+  "L6": {
+   "N": 20,
+   "classes": 4,
+   "q_yi": 0.05,
+   "q_R25": 0.28
+  },
+  "L8": {
+   "N": 70,
+   "classes": 10,
+   "q_yi": 0.014285714285714285,
+   "q_R25": 0.10857142857142857
+  },
+  "L10": {
+   "N": 252,
+   "classes": 26,
+   "q_yi": 0.003968253968253968,
+   "q_R25": 0.03943058704963467
+  },
+  "L12": {
+   "N": 924,
+   "classes": 80,
+   "q_yi": 0.0010822510822510823,
+   "q_R25": 0.012799610202207604
+  },
+  "L16": {
+   "N": 12870,
+   "classes": 810,
+   "q_yi": 7.77000777000777e-05,
+   "q_R25": 0.0012396513095813794
+  }
+ },
+ "K3": {
+  "L4": {
+   "q": 0.16666666666666666,
+   "in_lorentz_window": false,
+   "in_euclid_window": false,
+   "peak_lorentz": 2,
+   "peak_euclid": 2
+  },
+  "L6": {
+   "q": 0.05,
+   "in_lorentz_window": false,
+   "in_euclid_window": false,
+   "peak_lorentz": 2,
+   "peak_euclid": 2
+  },
+  "L8": {
+   "q": 0.014285714285714285,
+   "in_lorentz_window": false,
+   "in_euclid_window": false,
+   "peak_lorentz": 2,
+   "peak_euclid": 2
+  },
+  "L10": {
+   "q": 0.003968253968253968,
+   "in_lorentz_window": false,
+   "in_euclid_window": false,
+   "peak_lorentz": 2,
+   "peak_euclid": 2
+  },
+  "L12": {
+   "q": 0.0010822510822510823,
+   "in_lorentz_window": false,
+   "in_euclid_window": false,
+   "peak_lorentz": 2,
+   "peak_euclid": 2
+  },
+  "L16": {
+   "q": 7.77000777000777e-05,
+   "in_lorentz_window": false,
+   "in_euclid_window": false,
+   "peak_lorentz": 2,
+   "peak_euclid": 2
+  }
+ },
+ "K4": {
+  "feasible_L": [],
+  "table": {
+   "L2": {
+    "q": 0.5,
+    "peak_lorentz": 3,
+    "peak_euclid": 2
+   },
+   "L4": {
+    "q": 0.16666666666666666,
+    "peak_lorentz": 2,
+    "peak_euclid": 2
+   },
+   "L6": {
+    "q": 0.05,
+    "peak_lorentz": 2,
+    "peak_euclid": 2
+   },
+   "L8": {
+    "q": 0.014285714285714285,
+    "peak_lorentz": 2,
+    "peak_euclid": 2
+   },
+   "L10": {
+    "q": 0.003968253968253968,
+    "peak_lorentz": 2,
+    "peak_euclid": 2
+   },
+   "L12": {
+    "q": 0.0010822510822510823,
+    "peak_lorentz": 2,
+    "peak_euclid": 2
+   },
+   "L14": {
+    "q": 0.0002913752913752914,
+    "peak_lorentz": 2,
+    "peak_euclid": 2
+   },
+   "L16": {
+    "q": 7.77000777000777e-05,
+    "peak_lorentz": 2,
+    "peak_euclid": 2
+   },
+   "L18": {
+    "q": 2.0567667626491154e-05,
+    "peak_lorentz": 2,
+    "peak_euclid": 2
+   },
+   "L20": {
+    "q": 5.412544112234515e-06,
+    "peak_lorentz": 2,
+    "peak_euclid": 2
+   }
+  }
+ },
+ "K5": {
+  "L8_words": 70,
+  "L8_classes": 10,
+  "orbit_structure_removed": true
+ },
+ "K6": {
+  "L8_class_block_sizes": [
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   4,
+   2
+  ],
+  "yi_implies_noncommutative_block": true
+ },
+ "summary": {
+  "checks": 31,
+  "failed": [
+   "L= 4 乙下 q=0.166667 落在洛伦兹 D=4 窗",
+   "L= 4 乙下 q=0.166667 落在欧氏 D=4 窗",
+   "L= 6 乙下 q=0.050000 落在洛伦兹 D=4 窗",
+   "L= 6 乙下 q=0.050000 落在欧氏 D=4 窗",
+   "L= 8 乙下 q=0.014286 落在洛伦兹 D=4 窗",
+   "L= 8 乙下 q=0.014286 落在欧氏 D=4 窗",
+   "L=10 乙下 q=0.003968 落在洛伦兹 D=4 窗",
+   "L=10 乙下 q=0.003968 落在欧氏 D=4 窗",
+   "L=12 乙下 q=0.001082 落在洛伦兹 D=4 窗",
+   "L=12 乙下 q=0.001082 落在欧氏 D=4 窗",
+   "L=16 乙下 q=0.000078 落在洛伦兹 D=4 窗",
+   "L=16 乙下 q=0.000078 落在欧氏 D=4 窗",
+   "乙下存在能给出 D>=4 峰的偶 L"
+  ]
+ }
+}

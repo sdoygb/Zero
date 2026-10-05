@@ -1,0 +1,32 @@
+{
+ "jia": {
+  "su2_basis_antihermitian": true,
+  "su2_basis_traceless": true,
+  "exp_is_unitary": true,
+  "spectrum_on_unit_circle": true,
+  "scalar_state_gives_identity_modular_flow": true,
+  "conclusion": "M_2 的保迹自同构群 = PU(2) ≅ SO(3)，紧；M_2 上的标量态 ⇒ 模流恒等 ⇒ 无法产生非紧流"
+ },
+ "yi": {
+  "center_of_M2_is_1d": true,
+  "I_commutes_with_all": true,
+  "-I_and_I_same_in_PU2": true,
+  "independent_directions_from_Z2": 0,
+  "independent_directions_from_M2": 3,
+  "conclusion": "双覆盖的 Z_2 = PU(2) 的核，不提供新方向；M_2 只贡献 su(2) 的 3 个方向（且是紧的）"
+ },
+ "bing": {
+  "dim_algebra": 18,
+  "k_classes": 9,
+  "local_directions": 1,
+  "stiffness_rank": 1,
+  "isotropy_requires_rank": 3,
+  "is_scalar": false,
+  "conclusion": "局域方向只有 1 个（±1 步）⇒ 刚度秩 1 ⇒ 各向异性 ⇒ D258 的统一尺度不存在"
+ },
+ "verdict": {
+  "jia": false,
+  "yi": false,
+  "bing": false
+ }
+}

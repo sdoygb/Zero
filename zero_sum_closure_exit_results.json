@@ -1,0 +1,789 @@
+{
+  "model": {
+    "sites": 8,
+    "initial_words": [
+      "+",
+      "-",
+      "++",
+      "--",
+      "+++",
+      "---",
+      "+-+",
+      "-+-"
+    ],
+    "layer_lifetime": 4,
+    "epochs": 6,
+    "step_alphabet": [
+      "+",
+      "-"
+    ],
+    "closure_rule": "cumulative balance returns to zero",
+    "probabilities": "none",
+    "mutations": "none",
+    "rules": {
+      "continue_after_closure": "closed paths remain active",
+      "exit_after_closure": "closed paths exit E"
+    }
+  },
+  "runs": [
+    {
+      "scenario": "continue_after_closure",
+      "label": "closed paths remain active",
+      "layer_lifetime": 4,
+      "epochs": 6,
+      "snapshots": [
+        {
+          "epoch": 0,
+          "active_paths": 8,
+          "active_closed_paths": 0,
+          "active_open_paths": 8,
+          "history_records": 0,
+          "zero_events": 0,
+          "zero_modes": 0,
+          "dead_paths": 0,
+          "per_site_active": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_dead_paths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exits_this_epoch": 4,
+          "dead_this_epoch": 0
+        },
+        {
+          "epoch": 1,
+          "active_paths": 16,
+          "active_closed_paths": 4,
+          "active_open_paths": 12,
+          "history_records": 4,
+          "zero_events": 4,
+          "zero_modes": 2,
+          "dead_paths": 0,
+          "per_site_active": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "per_site_closed_active": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_history_records": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exits_this_epoch": 2,
+          "dead_this_epoch": 8
+        },
+        {
+          "epoch": 2,
+          "active_paths": 16,
+          "active_closed_paths": 2,
+          "active_open_paths": 14,
+          "history_records": 6,
+          "zero_events": 6,
+          "zero_modes": 3,
+          "dead_paths": 8,
+          "per_site_active": [
+            4,
+            4,
+            4,
+            4,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            2
+          ],
+          "exits_this_epoch": 6,
+          "dead_this_epoch": 8
+        },
+        {
+          "epoch": 3,
+          "active_paths": 16,
+          "active_closed_paths": 6,
+          "active_open_paths": 10,
+          "history_records": 12,
+          "zero_events": 12,
+          "zero_modes": 3,
+          "dead_paths": 16,
+          "per_site_active": [
+            8,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_closed_active": [
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            4,
+            4,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            0,
+            0,
+            4,
+            4,
+            2,
+            2,
+            2,
+            2
+          ],
+          "exits_this_epoch": 0,
+          "dead_this_epoch": 16
+        },
+        {
+          "epoch": 4,
+          "active_paths": 0,
+          "active_closed_paths": 0,
+          "active_open_paths": 0,
+          "history_records": 12,
+          "zero_events": 12,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "per_site_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            4,
+            4,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            8,
+            8,
+            4,
+            4,
+            2,
+            2,
+            2,
+            2
+          ],
+          "exits_this_epoch": 0,
+          "dead_this_epoch": 0
+        },
+        {
+          "epoch": 5,
+          "active_paths": 0,
+          "active_closed_paths": 0,
+          "active_open_paths": 0,
+          "history_records": 12,
+          "zero_events": 12,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "per_site_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            4,
+            4,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            8,
+            8,
+            4,
+            4,
+            2,
+            2,
+            2,
+            2
+          ],
+          "exits_this_epoch": 0,
+          "dead_this_epoch": 0
+        },
+        {
+          "epoch": 6,
+          "active_paths": 0,
+          "active_closed_paths": 0,
+          "active_open_paths": 0,
+          "history_records": 12,
+          "zero_events": 12,
+          "zero_modes": 3,
+          "dead_paths": 32,
+          "per_site_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            4,
+            4,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            8,
+            8,
+            4,
+            4,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "final_active_paths": 0,
+      "final_active_closed_paths": 0,
+      "final_history_records": 12,
+      "final_zero_events": 12,
+      "final_zero_modes": 3,
+      "final_dead_paths": 32
+    },
+    {
+      "scenario": "exit_after_closure",
+      "label": "closed paths exit E",
+      "layer_lifetime": 4,
+      "epochs": 6,
+      "snapshots": [
+        {
+          "epoch": 0,
+          "active_paths": 8,
+          "active_closed_paths": 0,
+          "active_open_paths": 8,
+          "history_records": 0,
+          "zero_events": 0,
+          "zero_modes": 0,
+          "dead_paths": 0,
+          "per_site_active": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_dead_paths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exits_this_epoch": 4,
+          "dead_this_epoch": 0
+        },
+        {
+          "epoch": 1,
+          "active_paths": 12,
+          "active_closed_paths": 0,
+          "active_open_paths": 12,
+          "history_records": 4,
+          "zero_events": 4,
+          "zero_modes": 2,
+          "dead_paths": 0,
+          "per_site_active": [
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            1,
+            1
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "exits_this_epoch": 2,
+          "dead_this_epoch": 6
+        },
+        {
+          "epoch": 2,
+          "active_paths": 10,
+          "active_closed_paths": 0,
+          "active_open_paths": 10,
+          "history_records": 6,
+          "zero_events": 6,
+          "zero_modes": 3,
+          "dead_paths": 6,
+          "per_site_active": [
+            2,
+            2,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            1,
+            1
+          ],
+          "exits_this_epoch": 2,
+          "dead_this_epoch": 6
+        },
+        {
+          "epoch": 3,
+          "active_paths": 6,
+          "active_closed_paths": 0,
+          "active_open_paths": 6,
+          "history_records": 8,
+          "zero_events": 8,
+          "zero_modes": 3,
+          "dead_paths": 12,
+          "per_site_active": [
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            2,
+            2,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            0,
+            0,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ],
+          "exits_this_epoch": 0,
+          "dead_this_epoch": 6
+        },
+        {
+          "epoch": 4,
+          "active_paths": 0,
+          "active_closed_paths": 0,
+          "active_open_paths": 0,
+          "history_records": 8,
+          "zero_events": 8,
+          "zero_modes": 3,
+          "dead_paths": 18,
+          "per_site_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            2,
+            2,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ],
+          "exits_this_epoch": 0,
+          "dead_this_epoch": 0
+        },
+        {
+          "epoch": 5,
+          "active_paths": 0,
+          "active_closed_paths": 0,
+          "active_open_paths": 0,
+          "history_records": 8,
+          "zero_events": 8,
+          "zero_modes": 3,
+          "dead_paths": 18,
+          "per_site_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            2,
+            2,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ],
+          "exits_this_epoch": 0,
+          "dead_this_epoch": 0
+        },
+        {
+          "epoch": 6,
+          "active_paths": 0,
+          "active_closed_paths": 0,
+          "active_open_paths": 0,
+          "history_records": 8,
+          "zero_events": 8,
+          "zero_modes": 3,
+          "dead_paths": 18,
+          "per_site_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_closed_active": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_site_history_records": [
+            2,
+            2,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "per_site_dead_paths": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
+          ]
+        }
+      ],
+      "final_active_paths": 0,
+      "final_active_closed_paths": 0,
+      "final_history_records": 8,
+      "final_zero_events": 8,
+      "final_zero_modes": 3,
+      "final_dead_paths": 18
+    }
+  ],
+  "verification": {
+    "exit_removes_all_closed_paths": true,
+    "control_retains_closed_paths": true,
+    "exit_writes_history_records": true,
+    "exit_writes_zero_modes": true,
+    "exit_leaves_no_active_paths_after_lifetime": true
+  }
+}

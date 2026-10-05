@@ -1,0 +1,249 @@
+{
+ "C1 进度高度 h=k/L": {
+  "10": {
+   "blocks": 1,
+   "total": 252,
+   "q": 1.0,
+   "lam1": 1.0,
+   "rank": 0,
+   "needed_rank": 0,
+   "dense": true,
+   "peak_D": 3,
+   "gate1_survival": false,
+   "gate2_contextual": true,
+   "gate3_rank": true
+  },
+  "12": {
+   "blocks": 1,
+   "total": 924,
+   "q": 1.0,
+   "lam1": 1.0,
+   "rank": 0,
+   "needed_rank": 0,
+   "dense": true,
+   "peak_D": 3,
+   "gate1_survival": false,
+   "gate2_contextual": true,
+   "gate3_rank": true
+  },
+  "14": {
+   "blocks": 1,
+   "total": 3432,
+   "q": 1.0,
+   "lam1": 1.0,
+   "rank": 0,
+   "needed_rank": 0,
+   "dense": true,
+   "peak_D": 3,
+   "gate1_survival": false,
+   "gate2_contextual": true,
+   "gate3_rank": true
+  }
+ },
+ "C2 转向总量 T": {
+  "10": {
+   "blocks": 5,
+   "total": 252,
+   "q": 0.354371,
+   "lam1": 0.5,
+   "rank": 3,
+   "needed_rank": 4,
+   "dense": false,
+   "peak_D": 3,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": false
+  },
+  "12": {
+   "blocks": 6,
+   "total": 924,
+   "q": 0.32356,
+   "lam1": 0.470588,
+   "rank": 3,
+   "needed_rank": 5,
+   "dense": false,
+   "peak_D": 2,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": false
+  },
+  "14": {
+   "blocks": 7,
+   "total": 3432,
+   "q": 0.299709,
+   "lam1": 0.454545,
+   "rank": 4,
+   "needed_rank": 6,
+   "dense": false,
+   "peak_D": 2,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": false
+  }
+ },
+ "C3 转向缺口 |T-4|": {
+  "10": {
+   "blocks": 4,
+   "total": 252,
+   "q": 0.392164,
+   "lam1": 0.52,
+   "rank": 3,
+   "needed_rank": 3,
+   "dense": true,
+   "peak_D": 3,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": true
+  },
+  "12": {
+   "blocks": 5,
+   "total": 924,
+   "q": 0.334804,
+   "lam1": 0.477958,
+   "rank": 4,
+   "needed_rank": 4,
+   "dense": true,
+   "peak_D": 3,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": true
+  },
+  "14": {
+   "blocks": 6,
+   "total": 3432,
+   "q": 0.302205,
+   "lam1": 0.452489,
+   "rank": 5,
+   "needed_rank": 5,
+   "dense": true,
+   "peak_D": 2,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": true
+  }
+ },
+ "C4 浮出高度 max|S_k|": {
+  "10": {
+   "blocks": 5,
+   "total": 252,
+   "q": 0.364575,
+   "lam1": 0.560345,
+   "rank": 4,
+   "needed_rank": 4,
+   "dense": true,
+   "peak_D": 3,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": true
+  },
+  "12": {
+   "blocks": 6,
+   "total": 924,
+   "q": 0.337288,
+   "lam1": 0.504785,
+   "rank": null,
+   "needed_rank": 5,
+   "dense": null,
+   "peak_D": 3,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": null
+  },
+  "14": {
+   "blocks": 7,
+   "total": 3432,
+   "q": 0.310759,
+   "lam1": 0.426009,
+   "rank": 6,
+   "needed_rank": 6,
+   "dense": true,
+   "peak_D": 2,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": true
+  }
+ },
+ "C5 浮出层数": {
+  "10": {
+   "blocks": 5,
+   "total": 252,
+   "q": 0.223986,
+   "lam1": 0.375,
+   "rank": 3,
+   "needed_rank": 4,
+   "dense": false,
+   "peak_D": 2,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": false
+  },
+  "12": {
+   "blocks": 6,
+   "total": 924,
+   "q": 0.193643,
+   "lam1": 0.363636,
+   "rank": 4,
+   "needed_rank": 5,
+   "dense": false,
+   "peak_D": 2,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": false
+  },
+  "14": {
+   "blocks": 7,
+   "total": 3432,
+   "q": 0.172358,
+   "lam1": 0.360902,
+   "rank": 4,
+   "needed_rank": 6,
+   "dense": false,
+   "peak_D": 2,
+   "gate1_survival": false,
+   "gate2_contextual": false,
+   "gate3_rank": false
+  }
+ },
+ "C6 净转向 W": {
+  "10": {
+   "blocks": 1,
+   "total": 252,
+   "q": 1.0,
+   "lam1": 1.0,
+   "rank": 0,
+   "needed_rank": 0,
+   "dense": true,
+   "peak_D": 3,
+   "gate1_survival": false,
+   "gate2_contextual": true,
+   "gate3_rank": true
+  },
+  "12": {
+   "blocks": 1,
+   "total": 924,
+   "q": 1.0,
+   "lam1": 1.0,
+   "rank": 0,
+   "needed_rank": 0,
+   "dense": true,
+   "peak_D": 3,
+   "gate1_survival": false,
+   "gate2_contextual": true,
+   "gate3_rank": true
+  },
+  "14": {
+   "blocks": 1,
+   "total": 3432,
+   "q": 1.0,
+   "lam1": 1.0,
+   "rank": 0,
+   "needed_rank": 0,
+   "dense": true,
+   "peak_D": 3,
+   "gate1_survival": false,
+   "gate2_contextual": true,
+   "gate3_rank": true
+  }
+ },
+ "_winners": []
+}

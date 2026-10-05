@@ -1,0 +1,166 @@
+{
+ "definitions": {
+  "mu": [
+   2.23606797749979,
+   1.381966011250105,
+   1.381966011250105
+  ],
+  "block_count": 4,
+  "dense_criterion": "rank of {log(w_{a+1}/w_a)} == #blocks-1",
+  "contextuality": "S_max = sum_k lambda_k mu_k > 2"
+ },
+ "A_selftest": {
+  "[2, 5, 20, 100]": {
+   "rank": 2,
+   "dense": false,
+   "expected_rank": 2,
+   "note": "文档例：素数 {2,5}，秩 2 < 3 ⇒ 离散"
+  },
+  "[144, 36, 16, 9]": {
+   "rank": 2,
+   "dense": false,
+   "expected_rank": 2,
+   "note": "幂律 a^-2：秩 2 ⇒ 离散"
+  },
+  "[1, 2, 4, 8]": {
+   "rank": 1,
+   "dense": false,
+   "expected_rank": 1,
+   "note": "等比 2^a：秩 1 ⇒ 离散（R35 的 III_{1/2}）"
+  },
+  "[16, 2, 3, 5]": {
+   "rank": 3,
+   "dense": true,
+   "expected_rank": 3,
+   "note": "素数丰富：秩 3 ⇒ 稠密（但见 C 的语境性）"
+  }
+ },
+ "B_three_blocks": {
+  "claim": "3 块轮廓秩 ≤ 2 ⇒ 恒离散；语境性要求 λ₁>0.7236 与集中度同向",
+  "implication": "语境性与 III₁ 必须由 ≥4 块实现（3 维归约只能是读出层，不能承载 III₁）",
+  "detail": {
+   "blocks=3": {
+    "max_rank_possible": 2,
+    "dense_cases": 0,
+    "contextual_samples": 2158,
+    "samples": 30000
+   }
+  }
+ },
+ "C_four_blocks": {
+  "lambda1_threshold": 0.7236067977499789,
+  "ratio_threshold": 2.6180339887498945,
+  "constructions": [
+   {
+    "name": "4 块：主导 + 素数尾 (10^4, 2, 3, 5)",
+    "w": [
+     10000,
+     2,
+     3,
+     5
+    ],
+    "rank": 3,
+    "dense": true,
+    "S_max": 2.2349386116970926,
+    "contextual": true,
+    "lambda1_over_top3": 0.9992006394884093
+   },
+   {
+    "name": "4 块：(1000, 1, 3, 15)",
+    "w": [
+     1000,
+     1,
+     3,
+     15
+    ],
+    "rank": 3,
+    "dense": true,
+    "S_max": 2.218786423652887,
+    "contextual": true,
+    "lambda1_over_top3": 0.9823182711198428
+   },
+   {
+    "name": "4 块：(1000, 2, 6, 24)",
+    "w": [
+     1000,
+     2,
+     6,
+     24
+    ],
+    "rank": 3,
+    "dense": true,
+    "S_max": 2.206905966896602,
+    "contextual": true,
+    "lambda1_over_top3": 0.970873786407767
+   },
+   {
+    "name": "4 块：随机最优 (2, 246, 1, 5)",
+    "w": [
+     2,
+     246,
+     1,
+     5
+    ],
+    "rank": 3,
+    "dense": true,
+    "S_max": 2.2037263171011774,
+    "contextual": true,
+    "lambda1_over_top3": 0.9723320158102767
+   },
+   {
+    "name": "4 块：(1,1,4,36)（对照：语境但秩 2 ⇒ 离散）",
+    "w": [
+     1,
+     1,
+     4,
+     36
+    ],
+    "rank": 2,
+    "dense": false,
+    "S_max": 2.08114945824388,
+    "contextual": true,
+    "lambda1_over_top3": 0.8780487804878049
+   },
+   {
+    "name": "4 块：纯幂律 a^-2 (144,36,16,9)（对照：秩 2 且非语境）",
+    "w": [
+     144,
+     36,
+     16,
+     9
+    ],
+    "rank": 2,
+    "dense": false,
+    "S_max": 1.921248884609635,
+    "contextual": false,
+    "lambda1_over_top3": 0.7346938775510204
+   }
+  ],
+  "random_search": {
+   "samples": 120000,
+   "rank3": 69116,
+   "rank3_and_contextual": 422,
+   "best": {
+    "w": [
+     6,
+     11,
+     1,
+     300
+    ],
+    "S_max": 2.1833767781169455
+   }
+  }
+ },
+ "D_verdict": {
+  "criterion_exact": "整数权重下 G 稠密 ⟺ 素数指数差向量秩 = 块数-1（有限可判定）",
+  "three_blocks_impossible": "3 块恒离散 ⇒ 语境性与 III₁ 必须由 ≥4 块实现",
+  "four_blocks_feasible": true,
+  "recipe": "主导块（承载 S_max）＋ 素数丰富的小尾（承载秩），两条件解耦",
+  "honest_boundary": [
+   "判据对**整数权重**（计数账本）是精确的；对实数权重退化为'秩=块数-1'的同一条件",
+   "本文件只给形状与判据；『从 Zero 原生 π 生成该形状』仍未做",
+   "首块不必是 2 的幂；但若所有块都是 2 的幂（旋转类情形），秩恒为 1 ⇒ 恒 III_λ",
+   "语境性用的是 R42/R44 的 KCMS 上界与 3 维归约口径；归约选择仍属 E5"
+  ]
+ }
+}

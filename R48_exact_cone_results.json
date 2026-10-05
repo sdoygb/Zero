@@ -1,0 +1,409 @@
+{
+ "model": "L=4 age-structured lattice: Z1-thm1 nearest-neighbour transport + Z4 ageing + Z2 reproduction + capacity K=1",
+ "closed_form": {
+  "f(mu)": "mu*tanh(mu) - log cosh(mu)",
+  "selection": "f(mu*) = (1/2) log B",
+  "c_star": "tanh(mu*)",
+  "eps(B)": "(1/2) log(4/B)"
+ },
+ "support": {
+  "B=2.00": {
+   "max_tip_minus_t": 0,
+   "tip_speed_last40pct": 0.88819,
+   "tip_at_T": 2876,
+   "T": 3000
+  },
+  "B=3.00": {
+   "max_tip_minus_t": 0,
+   "tip_speed_last40pct": 1.0,
+   "tip_at_T": 3000,
+   "T": 3000
+  },
+  "B=3.90": {
+   "max_tip_minus_t": 0,
+   "tip_speed_last40pct": 1.0,
+   "tip_at_T": 3000,
+   "T": 3000
+  },
+  "B=4.00": {
+   "max_tip_minus_t": 0,
+   "tip_speed_last40pct": 1.0,
+   "tip_at_T": 3000,
+   "T": 3000
+  },
+  "B=5.00": {
+   "max_tip_minus_t": 0,
+   "tip_speed_last40pct": 1.0,
+   "tip_at_T": 3000,
+   "T": 3000
+  }
+ },
+ "support_verdict": {
+  "claim": "supp rho_n subset [-n,n] for all n and all B (finite-range kernel, half-width 1)",
+  "exact_cone_speed": 1.0,
+  "violations": 0
+ },
+ "kpp": {
+  "B=2.00": {
+   "mu_star": 1.0452282535441446,
+   "c_star": 0.7799442711232809,
+   "c_star_from_minimisation": 0.7799442711232809,
+   "mu_from_minimisation": 1.0452282655762963,
+   "lambda_at_mu_star": 0.8152197883679477,
+   "c_star_times_mu_star": 0.8152197883679477,
+   "equivalence_rel_diff": 0.0
+  },
+  "B=2.50": {
+   "mu_star": 1.350219105735511,
+   "c_star": 0.8741049936959738,
+   "c_star_from_minimisation": 0.8741049936959738,
+   "mu_from_minimisation": 1.3502191148651224,
+   "lambda_at_mu_star": 1.1802332629071224,
+   "c_star_times_mu_star": 1.1802332629071224,
+   "equivalence_rel_diff": 0.0
+  },
+  "B=3.00": {
+   "mu_star": 1.6943364115983615,
+   "c_star": 0.9346973029773759,
+   "c_star_from_minimisation": 0.9346973029773757,
+   "mu_from_minimisation": 1.6943363841452643,
+   "lambda_at_mu_star": 1.5836916742573535,
+   "c_star_times_mu_star": 1.5836916742573535,
+   "equivalence_rel_diff": 1.1877888393265528e-16
+  },
+  "B=3.50": {
+   "mu_star": 2.18873312770062,
+   "c_star": 0.9751971824852544,
+   "c_star_from_minimisation": 0.9751971824852546,
+   "mu_from_minimisation": 2.188733178037202,
+   "lambda_at_mu_star": 2.134446379345783,
+   "c_star_times_mu_star": 2.1344463793457833,
+   "equivalence_rel_diff": 1.138460041276774e-16
+  },
+  "B=3.90": {
+   "mu_star": 3.1822281406258064,
+   "c_star": 0.996562563530009,
+   "c_star_from_minimisation": 0.9965625635300089,
+   "mu_from_minimisation": 3.1822283590883798,
+   "lambda_at_mu_star": 3.1712894335593873,
+   "c_star_times_mu_star": 3.1712894335593877,
+   "equivalence_rel_diff": 1.1140525093502821e-16
+  },
+  "B=4.00": {
+   "mu_star": 32.693147180559905,
+   "c_star": 1.0,
+   "c_star_from_minimisation": 1.0,
+   "mu_from_minimisation": 20.0,
+   "lambda_at_mu_star": 32.693147180559905,
+   "c_star_times_mu_star": 32.693147180559905,
+   "equivalence_rel_diff": 0.0
+  },
+  "B=4.5": {
+   "mu_star": null,
+   "c_star": null
+  },
+  "B=5.0": {
+   "mu_star": null,
+   "c_star": null
+  },
+  "bound": {
+   "f(+inf)": 0.6931471805599453,
+   "implies": "(1/2) log B <= log 2 => B <= 4"
+  }
+ },
+ "kpp_verdict": {
+  "closed_form_is_exact": true,
+  "why": "lambda(mu) = (1/2)log B + log cosh(mu) 为四步年龄环的精确本征值（每步一次最近邻平均）",
+  "selection": "c* = min_mu lambda(mu)/mu；极值点给出 f(mu*) = (1/2)log B 与 c* = tanh(mu*)",
+  "c_star_equals_1_iff": "B = 4"
+ },
+ "naive": {
+  "B=2.00": {
+   "eps_measured": 0.3465751535129169,
+   "eps_closed": 0.34657359027997264,
+   "tip_speed": 0.8885448531561483,
+   "max_tip_minus_t": 0
+  },
+  "B=3.00": {
+   "eps_measured": 0.14384062424617924,
+   "eps_closed": 0.14384103622589042,
+   "tip_speed": 1.0000000000000002,
+   "max_tip_minus_t": 0
+  },
+  "B=3.90": {
+   "eps_measured": 0.012658393625809937,
+   "eps_closed": 0.012658903992145,
+   "tip_speed": 1.0000000000000002,
+   "max_tip_minus_t": 0
+  },
+  "pointwise_bound": {
+   "B": 2.0,
+   "measured_max_4step_ratio": 4.0,
+   "predicted": 8.0
+  }
+ },
+ "edge_visibility": {
+  "B=2.00": {
+   "eps_measured": 0.3465793882514031,
+   "eps_closed": 0.34657359027997264,
+   "rel_diff": 1.672940925989744e-05,
+   "rho_t": {
+    "500": 4.648804182522035e-76,
+    "1000": 2.5694628159928534e-151,
+    "2000": 7.849545391236662e-302,
+    "4000": 0.0
+   },
+   "log_rho_edge": {
+    "500": -173.45985704606983,
+    "1000": -346.74665218605617,
+    "2000": -693.3202424660288,
+    "4000": null
+   }
+  },
+  "B=2.50": {
+   "eps_measured": 0.23500424854968918,
+   "eps_closed": 0.23500181462286782,
+   "rel_diff": 1.0357055434962333e-05,
+   "rho_t": {
+    "500": 6.456790901834406e-52,
+    "1000": 6.025888040964638e-103,
+    "2000": 5.248433881061976e-205,
+    "4000": 0.0
+   },
+   "log_rho_edge": {
+    "500": -117.86929240574611,
+    "1000": -235.37019971718,
+    "2000": -470.37201434004777,
+    "4000": null
+   }
+  },
+  "B=3.00": {
+   "eps_measured": 0.14384103622589045,
+   "eps_closed": 0.14384103622589042,
+   "rel_diff": 1.9296006441472713e-16,
+   "rho_t": {
+    "500": 3.1116765151230803e-32,
+    "1000": 1.812634701765804e-63,
+    "2000": 6.15094701372445e-126,
+    "4000": 7.082806506688878e-251
+   },
+   "log_rho_edge": {
+    "500": -72.5475613224788,
+    "1000": -144.46807943542404,
+    "2000": -288.3091156613145,
+    "4000": -575.9911881130954
+   }
+  },
+  "B=3.50": {
+   "eps_measured": 0.06676569631226133,
+   "eps_closed": 0.06676569631226129,
+   "rel_diff": 6.23574166421111e-16,
+   "rho_t": {
+    "500": 1.0553705758361242e-15,
+    "1000": 3.352881752720887e-30,
+    "2000": 3.3841121597015907e-59,
+    "4000": 3.447448369803638e-117
+   },
+   "log_rho_edge": {
+    "500": -34.484884432942145,
+    "1000": -67.8677325890728,
+    "2000": -134.63342890133413,
+    "4000": -268.1648215258567
+   }
+  },
+  "B=3.90": {
+   "eps_measured": 0.012658904194310667,
+   "eps_closed": 0.012658903992145,
+   "rel_diff": 1.5970234569881525e-08,
+   "rho_t": {
+    "500": 0.000157144637969884,
+    "1000": 2.7974942049432373e-07,
+    "2000": 8.893563771556835e-13,
+    "4000": 8.988588982270727e-24
+   },
+   "log_rho_edge": {
+    "500": -8.758343915761714,
+    "1000": -15.089371561269216,
+    "2000": -27.748278365534503,
+    "4000": -53.06608634983335
+   }
+  },
+  "B=4.00": {
+   "power_law_exponent": 0.9961260571905776,
+   "rho_t_times_t": {
+    "500": 7.7426289407808015,
+    "1000": 7.856590985033135,
+    "2000": 7.921186142010794,
+    "5000": 7.96481653852628,
+    "10000": 7.981048260055974
+   },
+   "rho_t": {
+    "500": 0.015485257881561604,
+    "1000": 0.007856590985033135,
+    "2000": 0.003960593071005397,
+    "5000": 0.001592963307705256,
+    "10000": 0.0007981048260055974
+   },
+   "tip_speed": 1.0000000000000004,
+   "max_tip_minus_t": 0
+  }
+ },
+ "edge_visibility_verdict": {
+  "eps(B)": "(1/2) log(4/B)",
+  "max_rel_diff_over_B_le_3.9": 1.672940925989744e-05,
+  "B=4": "power law rho_t(t) ~ t^-alpha, alpha ~ 1 (no exponential suppression)"
+ },
+ "above4": {
+  "B=4.00": {
+   "tip_speed": 0.9999999999999999,
+   "max_tip_minus_t": 0,
+   "rho_edge_t1500": 0.0052658770960348775
+  },
+  "B=4.50": {
+   "tip_speed": 0.9999999999999999,
+   "max_tip_minus_t": 0,
+   "rho_edge_t1500": 0.44444444444444486
+  },
+  "B=5.00": {
+   "tip_speed": 0.9999999999999999,
+   "max_tip_minus_t": 0,
+   "rho_edge_t1500": 0.8000000000000002
+  },
+  "B=6.00": {
+   "tip_speed": 0.9999999999999999,
+   "max_tip_minus_t": 0,
+   "rho_edge_t1500": 1.3333333333333335
+  },
+  "B=8.00": {
+   "tip_speed": 0.9999999999999999,
+   "max_tip_minus_t": 0,
+   "rho_edge_t1500": 1.9999999999999998
+  },
+  "B=5.00 seed 1e-10": {
+   "tip_speed": 0.9999999999999997,
+   "max_tip_minus_t": 0
+  },
+  "B=5.00 seed 1e+00": {
+   "tip_speed": 0.9999999999999997,
+   "max_tip_minus_t": 0
+  },
+  "B=5.00 seed 1e-04": {
+   "tip_speed": 0.9999999999999997,
+   "max_tip_minus_t": 0
+  }
+ },
+ "above4_verdict": {
+  "claim": "for B >= 4 the front is pinned to the exact cone (tip speed 1, amplitude independent)",
+  "B_upper_bound": {
+   "value": 4.0,
+   "why": "f(+inf)=log 2 => (1/2)log B <= log 2 => B <= 4"
+  }
+ },
+ "deep_tail": {
+  "B": 2.0,
+  "mu_star": 1.0452282535441446,
+  "c_star": 0.7799442711232809,
+  "lambda_mu_star": 0.8152197883679477,
+  "windows": {
+   "t=2000": {
+    "slope": -1.1270391130033692,
+    "minus_mu_star": -1.0452282535441446,
+    "rel_diff": 0.07827080753110295
+   },
+   "t=4000": {
+    "slope": -1.078307181528054,
+    "minus_mu_star": -1.0452282535441446,
+    "rel_diff": 0.031647563938064144
+   },
+   "t=6000": {
+    "slope": -1.0616062698113446,
+    "minus_mu_star": -1.0452282535441446,
+    "rel_diff": 0.01566932027685407
+   }
+  }
+ },
+ "eps_analytic": {
+  "B=2.00": {
+   "mu_star": 1.0452282535441446,
+   "c_star": 0.7799442711232809,
+   "lambda(mu_star)": 0.8152197883679477,
+   "closed_form_lambda": 0.8152197883679477,
+   "lambda_rel_diff": 0.0,
+   "kpp_f_residual": -5.551115123125783e-17,
+   "eps_closed": 0.34657359027997264,
+   "alpha_amplitude_exponent": 2.352227091825977
+  },
+  "B=2.50": {
+   "mu_star": 1.350219105735511,
+   "c_star": 0.8741049936959738,
+   "lambda(mu_star)": 1.1802332629071224,
+   "closed_form_lambda": 1.1802332629071224,
+   "lambda_rel_diff": 0.0,
+   "kpp_f_residual": 0.0,
+   "eps_closed": 0.23500181462286782,
+   "alpha_amplitude_exponent": 5.0222304232040385
+  },
+  "B=3.00": {
+   "mu_star": 1.6943364115983615,
+   "c_star": 0.9346973029773759,
+   "lambda(mu_star)": 1.5836916742573535,
+   "closed_form_lambda": 1.5836916742573535,
+   "lambda_rel_diff": 0.0,
+   "kpp_f_residual": -1.1102230246251565e-16,
+   "eps_closed": 0.14384103622589042,
+   "alpha_amplitude_exponent": 11.010012968554376
+  },
+  "B=3.50": {
+   "mu_star": 2.18873312770062,
+   "c_star": 0.9751971824852544,
+   "lambda(mu_star)": 2.134446379345783,
+   "closed_form_lambda": 2.1344463793457833,
+   "lambda_rel_diff": 2.0805826473194318e-16,
+   "kpp_f_residual": 2.220446049250313e-16,
+   "eps_closed": 0.06676569631226129,
+   "alpha_amplitude_exponent": 31.969207201300463
+  },
+  "B=3.90": {
+   "mu_star": 3.1822281406258064,
+   "c_star": 0.996562563530009,
+   "lambda(mu_star)": 3.1712894335593873,
+   "closed_form_lambda": 3.1712894335593877,
+   "lambda_rel_diff": 1.4003427285778402e-16,
+   "kpp_f_residual": 3.3306690738754696e-16,
+   "eps_closed": 0.012658903992145,
+   "alpha_amplitude_exponent": 250.51848371132368
+  },
+  "B=4.00": {
+   "mu_star": 32.693147180559905,
+   "c_star": 1.0,
+   "lambda(mu_star)": 32.693147180559905,
+   "closed_form_lambda": 32.693147180559905,
+   "lambda_rel_diff": 0.0,
+   "kpp_f_residual": 1.887379141862766e-15,
+   "eps_closed": 0.0,
+   "alpha_amplitude_exponent": null
+  },
+  "pointwise_4step": {
+   "model_B": 8.0,
+   "measured_4step_max": 8.0
+  }
+ },
+ "verdict": {
+  "exact_cone_exists": true,
+  "exact_cone_speed": 1.0,
+  "exact_cone_is_B_independent": true,
+  "what_was_missing": "not the cone but the FILLING of its edge (visibility)",
+  "eps_B": "(1/2) log(4/B), equivalently eps(B) = mu* c* / alpha(B)",
+  "eps_B_derivation": "rho_t(t) ~ e^{-alpha t} with alpha = mu* c* / eps(B); substituting lambda(mu*) - mu* = log(B/4) gives eps(B) = mu*(1-lam(mu*)/mu*) = (1/2)log(4/B)",
+  "effective_equals_exact_iff": "B >= 4; combined with B <= 4 (closed form) => B = 4",
+  "B_selection": "B=4 is a self-consistency condition (c*=1 AND edge visible), not a new axiom",
+  "R47_impact": "signature verdict is strengthened: the cone is exact, so the discrete-invariant defence is not needed",
+  "residual": [
+   "absolute origin of B=4 not derived",
+   "conformal factor/scale not derived (G57)",
+   "dynamics/Einstein not derived (G1)",
+   "constant factor of eps(B) in D>1 not checked"
+  ]
+ },
+ "runtime_sec": 18.4
+}

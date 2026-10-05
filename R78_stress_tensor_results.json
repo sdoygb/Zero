@@ -1,0 +1,35 @@
+{
+ "A": {
+  "eigenvalues": [
+   9.418152563760719e-17,
+   4.9999999999999964,
+   4.999999999999999,
+   5.0,
+   5.000000000000001
+  ],
+  "stabilizer_invariance": 0.0
+ },
+ "B": {
+  "aniso_max": 1.0,
+  "trace_over_4": 4.0
+ },
+ "C": {
+  "div_max": 0.0
+ },
+ "D": {
+  "T00": 4,
+  "Tjj": [
+   4,
+   4,
+   4,
+   4
+  ],
+  "w": 1.0
+ },
+ "verdict": {
+  "stabilizer": true,
+  "isotropic": false,
+  "conserved": true,
+  "w": 1.0
+ }
+}
