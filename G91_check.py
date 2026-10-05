@@ -499,7 +499,7 @@ check("STATUS 已登记 G91（§2.51）",
 check("STATUS 已登记 G91_check.py", "G91_check.py" in STATUS)
 check("INDEX 已收录 G91 文档（核验脚本按 INDEX 口径只计数）",
       "G91_matter_sector_range_and_three_way_verdict.md" in INDEX
-      and "核验脚本（89 个）" in INDEX
+      and re.search(r"核验脚本（\d+ 个）", INDEX) is not None
       and os.path.exists(os.path.join(HERE, "G91_check.py")))
 check("文档存在自核验入口", "python3 G91_check.py" in DOC)
 

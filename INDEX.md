@@ -189,7 +189,7 @@
 
 | 前缀 | 来源 | 归属 | `lh/` 中的数量 |
 |:--|:--|:--|--:|
-| **`G*`** | 本会话独立推导（自底层条款（Z0 条款 ＋ Z1–Z5 定理）到 GR） | **零和宇宙** | 91 篇 + 89 个核验脚本 |
+| **`G*`** | 本会话独立推导（自底层条款（Z0 条款 ＋ Z1–Z5 定理）到 GR） | **零和宇宙** | 92 篇 + 90 个核验脚本 |
 | **`D2xx`** | 零层弧（D210–D259） | **零和宇宙**（其中 8 篇含非原生桥接） | 50 篇 |
 | **`zero_sum_*`** | 零和宇宙的仿真验证笔记与程序 | **零和宇宙** | 11 篇 + 10 个脚本 |
 | **`Z*`** | **基础层**：单一公理「零不断乱动」＋ 取代 A1–A5（历史命名）＋ Zero 结构扩展 | **零和宇宙** | 18 篇 + 18 个核验脚本 |
@@ -298,7 +298,7 @@ $$
 
 ---
 
-## 5 `G*` 推导系列（91 篇）
+## 5 `G*` 推导系列（92 篇）
 
 ### 底层与路线
 
@@ -478,7 +478,11 @@ $$
 
 - [`G91_matter_sector_range_and_three_way_verdict.md`](G91_matter_sector_range_and_three_way_verdict.md) — 物质扇区的射程判定：SM 门逐项三分（能导出／只能具名输入／原理上不可导出）
 
-### 核验脚本（89 个）
+### 标准模型缺口总盘点
+
+- [`G92_standard_model_gap_inventory.md`](G92_standard_model_gap_inventory.md) — 标准模型缺口总盘点（一份不重复计数的清单）
+
+### 核验脚本（90 个）
 
 [`ledger_sync.py`](ledger_sync.py) 是**同步入口**：按 mtime 缓存逐个跑 `G*_check.py` 与 `Z*_check.py`（未变者不重跑），写回账本合计，再重生本清单。
 
@@ -487,7 +491,7 @@ python3 ledger_sync.py            # 增量同步（用缓存）
 python3 ledger_sync.py --all      # 忽略缓存，全部重跑
 ```
 
-账本合计：**独立实断言 3163 / 不符 0**（依赖上文的结论行以 `[i]` 单列，不计入合计；见 [`G10_final_derivation_and_input_ledger.md`](G10_final_derivation_and_input_ledger.md) §6）。
+账本合计：**独立实断言 3220 / 不符 0**（依赖上文的结论行以 `[i]` 单列，不计入合计；见 [`G10_final_derivation_and_input_ledger.md`](G10_final_derivation_and_input_ledger.md) §6）。
 
 ---
 
