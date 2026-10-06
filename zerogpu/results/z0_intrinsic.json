@@ -1,0 +1,217 @@
+{
+ "generated": "2026-10-06 09:28:39",
+ "runs": [
+  {
+   "graph": "torus4x4_transitive",
+   "V": 16,
+   "n_wl_colors": 1,
+   "per_color": [
+    {
+     "wl_color": 0,
+     "n_vertices": 16,
+     "class_count_min": 4363,
+     "max": 4477,
+     "std": 34.81
+    }
+   ],
+   "within_color_std": 34.81,
+   "between_color_std": 0.0,
+   "ratio_intrinsic_over_artifact": 0.0
+  },
+  {
+   "graph": "torus4x4_hubs",
+   "V": 16,
+   "n_wl_colors": 12,
+   "per_color": [
+    {
+     "wl_color": 0,
+     "n_vertices": 2,
+     "class_count_min": 13423,
+     "max": 14482,
+     "std": 529.5
+    },
+    {
+     "wl_color": 1,
+     "n_vertices": 2,
+     "class_count_min": 14417,
+     "max": 15742,
+     "std": 662.5
+    },
+    {
+     "wl_color": 2,
+     "n_vertices": 2,
+     "class_count_min": 17019,
+     "max": 17677,
+     "std": 329.0
+    },
+    {
+     "wl_color": 3,
+     "n_vertices": 1,
+     "class_count_min": 17879,
+     "max": 17879,
+     "std": 0.0
+    },
+    {
+     "wl_color": 4,
+     "n_vertices": 1,
+     "class_count_min": 18868,
+     "max": 18868,
+     "std": 0.0
+    },
+    {
+     "wl_color": 5,
+     "n_vertices": 1,
+     "class_count_min": 18017,
+     "max": 18017,
+     "std": 0.0
+    },
+    {
+     "wl_color": 6,
+     "n_vertices": 2,
+     "class_count_min": 22883,
+     "max": 23047,
+     "std": 82.0
+    },
+    {
+     "wl_color": 7,
+     "n_vertices": 1,
+     "class_count_min": 29223,
+     "max": 29223,
+     "std": 0.0
+    },
+    {
+     "wl_color": 8,
+     "n_vertices": 1,
+     "class_count_min": 29555,
+     "max": 29555,
+     "std": 0.0
+    },
+    {
+     "wl_color": 9,
+     "n_vertices": 1,
+     "class_count_min": 32370,
+     "max": 32370,
+     "std": 0.0
+    },
+    {
+     "wl_color": 10,
+     "n_vertices": 1,
+     "class_count_min": 37429,
+     "max": 37429,
+     "std": 0.0
+    },
+    {
+     "wl_color": 11,
+     "n_vertices": 1,
+     "class_count_min": 41463,
+     "max": 41463,
+     "std": 0.0
+    }
+   ],
+   "within_color_std": 133.58333333333334,
+   "between_color_std": 8830.753428675016,
+   "ratio_intrinsic_over_artifact": 66.11
+  },
+  {
+   "graph": "G_10",
+   "V": 26,
+   "n_wl_colors": 13,
+   "per_color": [
+    {
+     "wl_color": 0,
+     "n_vertices": 1,
+     "class_count_min": 1576,
+     "max": 1576,
+     "std": 0.0
+    },
+    {
+     "wl_color": 1,
+     "n_vertices": 1,
+     "class_count_min": 8065,
+     "max": 8065,
+     "std": 0.0
+    },
+    {
+     "wl_color": 2,
+     "n_vertices": 2,
+     "class_count_min": 8189,
+     "max": 8321,
+     "std": 66.0
+    },
+    {
+     "wl_color": 3,
+     "n_vertices": 4,
+     "class_count_min": 12699,
+     "max": 13807,
+     "std": 409.63
+    },
+    {
+     "wl_color": 4,
+     "n_vertices": 2,
+     "class_count_min": 17128,
+     "max": 17222,
+     "std": 47.0
+    },
+    {
+     "wl_color": 5,
+     "n_vertices": 2,
+     "class_count_min": 20489,
+     "max": 20567,
+     "std": 39.0
+    },
+    {
+     "wl_color": 6,
+     "n_vertices": 2,
+     "class_count_min": 39234,
+     "max": 39733,
+     "std": 249.5
+    },
+    {
+     "wl_color": 7,
+     "n_vertices": 2,
+     "class_count_min": 32727,
+     "max": 33200,
+     "std": 236.5
+    },
+    {
+     "wl_color": 8,
+     "n_vertices": 1,
+     "class_count_min": 36329,
+     "max": 36329,
+     "std": 0.0
+    },
+    {
+     "wl_color": 9,
+     "n_vertices": 2,
+     "class_count_min": 41304,
+     "max": 42152,
+     "std": 424.0
+    },
+    {
+     "wl_color": 10,
+     "n_vertices": 2,
+     "class_count_min": 41628,
+     "max": 41931,
+     "std": 151.5
+    },
+    {
+     "wl_color": 11,
+     "n_vertices": 4,
+     "class_count_min": 41679,
+     "max": 44386,
+     "std": 974.79
+    },
+    {
+     "wl_color": 12,
+     "n_vertices": 1,
+     "class_count_min": 51891,
+     "max": 51891,
+     "std": 0.0
+    }
+   ],
+   "within_color_std": 199.84,
+   "between_color_std": 15869.651507994973,
+   "ratio_intrinsic_over_artifact": 79.41
+  }
+ ]
+}

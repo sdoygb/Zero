@@ -1,0 +1,173 @@
+{
+ "generated": "2026-10-06 09:28:45",
+ "runs": [
+  {
+   "graph": "torus4x4_transitive",
+   "V": 16,
+   "n_classes": 8230,
+   "hottest_class_pop": 16,
+   "rows": [
+    {
+     "K": 1,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    },
+    {
+     "K": 2,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    },
+    {
+     "K": 3,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    },
+    {
+     "K": 5,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    },
+    {
+     "K": 10,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    },
+    {
+     "K": 20,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "graph": "torus4x4_hubs",
+   "V": 16,
+   "n_classes": 58180,
+   "hottest_class_pop": 16,
+   "rows": [
+    {
+     "K": 1,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    },
+    {
+     "K": 2,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    },
+    {
+     "K": 3,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    },
+    {
+     "K": 5,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    },
+    {
+     "K": 10,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    },
+    {
+     "K": 20,
+     "alive": 16,
+     "clusters": 1,
+     "sizes": [
+      16
+     ]
+    }
+   ]
+  },
+  {
+   "graph": "G_10",
+   "V": 26,
+   "n_classes": 98856,
+   "hottest_class_pop": 22,
+   "rows": [
+    {
+     "K": 1,
+     "alive": 22,
+     "clusters": 1,
+     "sizes": [
+      22
+     ]
+    },
+    {
+     "K": 2,
+     "alive": 26,
+     "clusters": 1,
+     "sizes": [
+      26
+     ]
+    },
+    {
+     "K": 3,
+     "alive": 26,
+     "clusters": 1,
+     "sizes": [
+      26
+     ]
+    },
+    {
+     "K": 5,
+     "alive": 26,
+     "clusters": 1,
+     "sizes": [
+      26
+     ]
+    },
+    {
+     "K": 10,
+     "alive": 26,
+     "clusters": 1,
+     "sizes": [
+      26
+     ]
+    },
+    {
+     "K": 20,
+     "alive": 26,
+     "clusters": 1,
+     "sizes": [
+      26
+     ]
+    }
+   ]
+  }
+ ]
+}

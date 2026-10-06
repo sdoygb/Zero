@@ -1,0 +1,160 @@
+{
+ "R3": [
+  {
+   "book": [
+    [
+     [
+      1,
+      -1
+     ]
+    ]
+   ],
+   "balances": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "uniform": true
+  },
+  {
+   "book": [
+    [
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      1,
+      -2
+     ]
+    ]
+   ],
+   "balances": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+   ],
+   "uniform": true
+  },
+  {
+   "book": [
+    [
+     [
+      1,
+      -1
+     ],
+     [
+      1,
+      1,
+      -2
+     ],
+     [
+      2,
+      -1,
+      -1
+     ]
+    ]
+   ],
+   "balances": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+   ],
+   "uniform": true
+  }
+ ],
+ "R6_escape": {
+  "seeds": [
+   2,
+   4,
+   6,
+   8,
+   0,
+   10
+  ],
+  "plus": [
+   1,
+   2,
+   3,
+   4,
+   0,
+   5
+  ],
+  "minus": [
+   1,
+   2,
+   3,
+   4,
+   0,
+   5
+  ]
+ },
+ "R7_candidates": {
+  "ring6（传递）": {
+   "deg": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "prof": [
+    0.638298,
+    0.638298,
+    0.638298,
+    0.638298,
+    0.638298,
+    0.638298
+   ],
+   "uniform": true
+  },
+  "ring6+hub（非传递）": {
+   "deg": [
+    5,
+    2,
+    3,
+    3,
+    3,
+    2
+   ],
+   "prof": [
+    0.638298,
+    0.638298,
+    0.638298,
+    0.638298,
+    0.638298,
+    0.638298
+   ],
+   "uniform": true
+  }
+ },
+ "conclusion": {
+  "deterministic": true,
+  "sign_symmetric": true,
+  "site_blind": true,
+  "profile": "uniform",
+  "buys": "Z0② 不断",
+  "does_not_buy": "非恒定剖面/结构",
+  "legacy_registrations": [
+   "D211:650 R-Z-PERIODIC-WASHOUT-RESEED（条件构造）",
+   "D219 §1 新增输入 4（每个区域独立重播种）",
+   "D233 R-Z-PROFILE-SYMMETRY-BREAKING-GAP（未导出）"
+  ]
+ },
+ "summary": {
+  "pass_": 8,
+  "fail": 0,
+  "failed": []
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "generated": "2026-10-06 09:33:11",
+ "reading": "不吸收（Z0① 字面）",
+ "region_definition": "远足 = 节点；两条远足相邻 ⟺ 足迹在非原点顶点相交；连通块 = 区域",
+ "runs": [
+  {
+   "D": 1,
+   "L": 4001,
+   "n_steps": 400,
+   "n_walkers": 3000,
+   "n_excursions": 47728,
+   "n_regions": 2,
+   "collisions": {
+    "excursions": 47728,
+    "visited_site_slots": 187167,
+    "distinct_sites": 141,
+    "colliding_pairs": 907642790,
+    "pairs_per_excursion": 19016.9877,
+    "colliding_site_frac": 0.9929,
+    "adjacent_pairs": 44728,
+    "adjacent_collision_frac": 0.5032
+   },
+   "largest_region_excursion_frac": 0.5,
+   "regions": [
+    {
+     "n_excursions": 23865,
+     "total_length": 607218,
+     "support_sites": 70,
+     "mean_excursion_len": 25.444
+    },
+    {
+     "n_excursions": 23863,
+     "total_length": 592782,
+     "support_sites": 71,
+     "mean_excursion_len": 24.841
+    }
+   ],
+   "d_growth_largest_region": 0.9477,
+   "seconds": 1.7
+  },
+  {
+   "D": 2,
+   "L": 201,
+   "n_steps": 400,
+   "n_walkers": 3000,
+   "n_excursions": 8465,
+   "n_regions": 1,
+   "collisions": {
+    "excursions": 8465,
+    "visited_site_slots": 504245,
+    "distinct_sites": 6127,
+    "colliding_pairs": 151805247,
+    "pairs_per_excursion": 17933.2838,
+    "colliding_site_frac": 0.8383,
+    "adjacent_pairs": 5465,
+    "adjacent_collision_frac": 0.574
+   },
+   "largest_region_excursion_frac": 1.0,
+   "regions": [
+    {
+     "n_excursions": 8465,
+     "total_length": 1200000,
+     "support_sites": 6127,
+     "mean_excursion_len": 141.76
+    }
+   ],
+   "d_growth_largest_region": 1.6977,
+   "seconds": 2.3
+  },
+  {
+   "D": 3,
+   "L": 61,
+   "n_steps": 400,
+   "n_walkers": 1500,
+   "n_excursions": 2197,
+   "n_regions": 1,
+   "collisions": {
+    "excursions": 2197,
+    "visited_site_slots": 412839,
+    "distinct_sites": 72473,
+    "colliding_pairs": 7477244,
+    "pairs_per_excursion": 3403.3883,
+    "colliding_site_frac": 0.5886,
+    "adjacent_pairs": 697,
+    "adjacent_collision_frac": 0.4175
+   },
+   "largest_region_excursion_frac": 1.0,
+   "regions": [
+    {
+     "n_excursions": 2197,
+     "total_length": 600000,
+     "support_sites": 72473,
+     "mean_excursion_len": 273.1
+    }
+   ],
+   "d_growth_largest_region": 2.8247,
+   "seconds": 2.0
+  },
+  {
+   "D": 4,
+   "L": 27,
+   "n_steps": 400,
+   "n_walkers": 800,
+   "n_excursions": 971,
+   "n_regions": 1,
+   "collisions": {
+    "excursions": 971,
+    "visited_site_slots": 259232,
+    "distinct_sites": 165077,
+    "colliding_pairs": 426553,
+    "pairs_per_excursion": 439.2925,
+    "colliding_site_frac": 0.2826,
+    "adjacent_pairs": 171,
+    "adjacent_collision_frac": 0.2632
+   },
+   "largest_region_excursion_frac": 1.0,
+   "regions": [
+    {
+     "n_excursions": 971,
+     "total_length": 320000,
+     "support_sites": 165077,
+     "mean_excursion_len": 329.557
+    }
+   ],
+   "d_growth_largest_region": 3.983,
+   "seconds": 1.6
+  }
+ ]
+}

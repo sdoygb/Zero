@@ -1,0 +1,976 @@
+{
+ "generated": "2026-10-06 09:32:56",
+ "runs": [
+  {
+   "tag": "G10",
+   "N": 26,
+   "edges": 64,
+   "mean_degree": 4.9231,
+   "components": 1,
+   "T": 10,
+   "graph": "𝒢_T (native closure-class graph)",
+   "slow_eigenvalues": [
+    1.0,
+    0.75877177,
+    0.44151062,
+    0.42815174,
+    0.40532303,
+    0.38490913,
+    0.30231606,
+    0.29869962,
+    0.2400322,
+    0.19849172,
+    0.13772874,
+    0.12308094,
+    0.11435678,
+    0.02591162
+   ],
+   "chosen_k": 1,
+   "why_k": {
+    "lambda": [
+     1.0,
+     0.75877177,
+     0.44151062,
+     0.42815174,
+     0.40532303,
+     0.38490913,
+     0.30231606,
+     0.29869962,
+     0.2400322
+    ],
+    "gap_definition": "gap_k = (1-λ_k)/(1-λ_{k+1})；取最大者，需 > 1.15",
+    "gap_ratios": [
+     0.4319,
+     0.9766,
+     0.9616,
+     0.9668,
+     0.8816,
+     0.9948,
+     0.9228
+    ],
+    "reason": "无明显谱隙（最大间隙比 0.995 < 1.15）⇒ 单一区域"
+   },
+   "region_sizes": [
+    26
+   ],
+   "regions": [
+    {
+     "region": 0,
+     "size": 26,
+     "leak_frac": 0.0,
+     "internal_deg_mean": 4.923,
+     "d_s_internal": 2.7513,
+     "d_growth": null,
+     "growth_info": null,
+     "quality": {
+      "usable": false,
+      "plateau_cv": 0.0931,
+      "P_decades": 2.1,
+      "t_window": [
+       0.35251035058004143,
+       1.6638482459681132
+      ],
+      "mean_degree": 4.923
+     }
+    }
+   ],
+   "dwell": [
+    {
+     "region": 0,
+     "n_dwell": 600,
+     "mean_dwell_steps": 3000.0,
+     "median_dwell_steps": 3000.0,
+     "max_dwell_steps": 3000,
+     "std_over_mean": 0.0,
+     "exit_rate_per_step": 0.000333
+    }
+   ],
+   "transition_counts": [
+    [
+     0
+    ]
+   ],
+   "seconds": 0.12
+  },
+  {
+   "tag": "G12",
+   "N": 80,
+   "edges": 246,
+   "mean_degree": 6.15,
+   "components": 1,
+   "T": 12,
+   "graph": "𝒢_T (native closure-class graph)",
+   "slow_eigenvalues": [
+    1.0,
+    0.87243568,
+    0.69107458,
+    0.64146575,
+    0.64014638,
+    0.59042293,
+    0.52365423,
+    0.50180862,
+    0.5,
+    0.5,
+    0.49716627,
+    0.491538,
+    0.40933233,
+    0.40354172
+   ],
+   "chosen_k": 1,
+   "why_k": {
+    "lambda": [
+     1.0,
+     0.87243568,
+     0.69107458,
+     0.64146575,
+     0.64014638,
+     0.59042293,
+     0.52365423,
+     0.50180862,
+     0.5
+    ],
+    "gap_definition": "gap_k = (1-λ_k)/(1-λ_{k+1})；取最大者，需 > 1.15",
+    "gap_ratios": [
+     0.4129,
+     0.8616,
+     0.9963,
+     0.8786,
+     0.8598,
+     0.9562,
+     0.9964
+    ],
+    "reason": "无明显谱隙（最大间隙比 0.996 < 1.15）⇒ 单一区域"
+   },
+   "region_sizes": [
+    80
+   ],
+   "regions": [
+    {
+     "region": 0,
+     "size": 80,
+     "leak_frac": 0.0,
+     "internal_deg_mean": 6.15,
+     "d_s_internal": 3.0903,
+     "d_growth": null,
+     "growth_info": null,
+     "quality": {
+      "usable": false,
+      "plateau_cv": 0.0536,
+      "P_decades": 2.369,
+      "t_window": [
+       0.4023251931594568,
+       1.8989742169149382
+      ],
+      "mean_degree": 6.15
+     }
+    }
+   ],
+   "dwell": [
+    {
+     "region": 0,
+     "n_dwell": 600,
+     "mean_dwell_steps": 3000.0,
+     "median_dwell_steps": 3000.0,
+     "max_dwell_steps": 3000,
+     "std_over_mean": 0.0,
+     "exit_rate_per_step": 0.000333
+    }
+   ],
+   "transition_counts": [
+    [
+     0
+    ]
+   ],
+   "seconds": 0.13
+  },
+  {
+   "tag": "G14",
+   "N": 246,
+   "edges": 909,
+   "mean_degree": 7.3902,
+   "components": 1,
+   "T": 14,
+   "graph": "𝒢_T (native closure-class graph)",
+   "slow_eigenvalues": [
+    1.0,
+    0.92203153,
+    0.8093909,
+    0.77192429,
+    0.77165963,
+    0.73513477,
+    0.67735036,
+    0.66815504,
+    0.66751508,
+    0.65365121,
+    0.62740341,
+    0.62198513,
+    0.59292119,
+    0.59033771
+   ],
+   "chosen_k": 1,
+   "why_k": {
+    "lambda": [
+     1.0,
+     0.92203153,
+     0.8093909,
+     0.77192429,
+     0.77165963,
+     0.73513477,
+     0.67735036,
+     0.66815504,
+     0.66751508
+    ],
+    "gap_definition": "gap_k = (1-λ_k)/(1-λ_{k+1})；取最大者，需 > 1.15",
+    "gap_ratios": [
+     0.409,
+     0.8357,
+     0.9988,
+     0.8621,
+     0.8209,
+     0.9723,
+     0.9981
+    ],
+    "reason": "无明显谱隙（最大间隙比 0.999 < 1.15）⇒ 单一区域"
+   },
+   "region_sizes": [
+    246
+   ],
+   "regions": [
+    {
+     "region": 0,
+     "size": 246,
+     "leak_frac": 0.0,
+     "internal_deg_mean": 7.39,
+     "d_s_internal": 3.4903,
+     "d_growth": null,
+     "growth_info": null,
+     "quality": {
+      "usable": false,
+      "plateau_cv": 0.0822,
+      "P_decades": 2.67,
+      "t_window": [
+       0.2931076334924895,
+       1.3834675239007161
+      ],
+      "mean_degree": 7.39
+     }
+    }
+   ],
+   "dwell": [
+    {
+     "region": 0,
+     "n_dwell": 600,
+     "mean_dwell_steps": 3000.0,
+     "median_dwell_steps": 3000.0,
+     "max_dwell_steps": 3000,
+     "std_over_mean": 0.0,
+     "exit_rate_per_step": 0.000333
+    }
+   ],
+   "transition_counts": [
+    [
+     0
+    ]
+   ],
+   "seconds": 0.18
+  },
+  {
+   "tag": "G16",
+   "N": 810,
+   "edges": 3416,
+   "mean_degree": 8.4346,
+   "components": 1,
+   "T": 16,
+   "graph": "𝒢_T (native closure-class graph)",
+   "slow_eigenvalues": [
+    1.0,
+    0.94983806,
+    0.87809436,
+    0.8479932,
+    0.84797164,
+    0.82135067,
+    0.78968754,
+    0.77496829,
+    0.7749241,
+    0.7605217,
+    0.71562426,
+    0.71561837,
+    0.70854655,
+    0.7079076
+   ],
+   "chosen_k": 1,
+   "why_k": {
+    "lambda": [
+     1.0,
+     0.94983806,
+     0.87809436,
+     0.8479932,
+     0.84797164,
+     0.82135067,
+     0.78968754,
+     0.77496829,
+     0.7749241
+    ],
+    "gap_definition": "gap_k = (1-λ_k)/(1-λ_{k+1})；取最大者，需 > 1.15",
+    "gap_ratios": [
+     0.4115,
+     0.802,
+     0.9999,
+     0.851,
+     0.8494,
+     0.9346,
+     0.9998
+    ],
+    "reason": "无明显谱隙（最大间隙比 1.000 < 1.15）⇒ 单一区域"
+   },
+   "region_sizes": [
+    810
+   ],
+   "regions": [
+    {
+     "region": 0,
+     "size": 810,
+     "leak_frac": 0.0,
+     "internal_deg_mean": 8.435,
+     "d_s_internal": 3.8746,
+     "d_growth": null,
+     "growth_info": null,
+     "quality": {
+      "usable": false,
+      "plateau_cv": 0.0612,
+      "P_decades": 2.969,
+      "t_window": [
+       0.3350857419816894,
+       1.5816041234754148
+      ],
+      "mean_degree": 8.435
+     }
+    }
+   ],
+   "dwell": [
+    {
+     "region": 0,
+     "n_dwell": 600,
+     "mean_dwell_steps": 3000.0,
+     "median_dwell_steps": 3000.0,
+     "max_dwell_steps": 3000,
+     "std_over_mean": 0.0,
+     "exit_rate_per_step": 0.000333
+    }
+   ],
+   "transition_counts": [
+    [
+     0
+    ]
+   ],
+   "seconds": 0.26
+  },
+  {
+   "tag": "G18",
+   "N": 2704,
+   "edges": 12843,
+   "mean_degree": 9.4993,
+   "components": 1,
+   "T": 18,
+   "graph": "𝒢_T (native closure-class graph)",
+   "slow_eigenvalues": [
+    1.0,
+    0.96565674,
+    0.9173271,
+    0.89442687,
+    0.89442209,
+    0.87458236,
+    0.8569358,
+    0.84285016,
+    0.84283607,
+    0.8300262,
+    0.79728134,
+    0.7972744,
+    0.7913901,
+    0.7886892
+   ],
+   "chosen_k": 1,
+   "why_k": {
+    "lambda": [
+     1.0,
+     0.96565674,
+     0.9173271,
+     0.89442687,
+     0.89442209,
+     0.87458236,
+     0.8569358,
+     0.84285016,
+     0.84283607
+    ],
+    "gap_definition": "gap_k = (1-λ_k)/(1-λ_{k+1})；取最大者，需 > 1.15",
+    "gap_ratios": [
+     0.4154,
+     0.7831,
+     1.0,
+     0.8418,
+     0.8767,
+     0.9104,
+     0.9999
+    ],
+    "reason": "无明显谱隙（最大间隙比 1.000 < 1.15）⇒ 单一区域"
+   },
+   "region_sizes": [
+    2704
+   ],
+   "regions": [
+    {
+     "region": 0,
+     "size": 2704,
+     "leak_frac": 0.0,
+     "internal_deg_mean": 9.499,
+     "d_s_internal": 4.4943,
+     "d_growth": null,
+     "growth_info": null,
+     "quality": {
+      "usable": false,
+      "plateau_cv": 0.0533,
+      "P_decades": 3.446,
+      "t_window": [
+       0.355263770889056,
+       1.6768443850716277
+      ],
+      "mean_degree": 9.499
+     }
+    }
+   ],
+   "dwell": [
+    {
+     "region": 0,
+     "n_dwell": 600,
+     "mean_dwell_steps": 3000.0,
+     "median_dwell_steps": 3000.0,
+     "max_dwell_steps": 3000,
+     "std_over_mean": 0.0,
+     "exit_rate_per_step": 0.000333
+    }
+   ],
+   "transition_counts": [
+    [
+     0
+    ]
+   ],
+   "seconds": 0.42
+  },
+  {
+   "tag": "G20",
+   "N": 9252,
+   "edges": 48592,
+   "mean_degree": 10.5041,
+   "components": 1,
+   "T": 20,
+   "graph": "𝒢_T (native closure-class graph)",
+   "slow_eigenvalues": [
+    1.0,
+    0.97549169,
+    0.94162277,
+    0.92401583,
+    0.92401529,
+    0.90881081,
+    0.89921305,
+    0.88682362,
+    0.88682209,
+    0.87588586,
+    0.85155905,
+    0.8515588,
+    0.85086397,
+    0.84533138
+   ],
+   "chosen_k": 1,
+   "why_k": {
+    "lambda": [
+     1.0,
+     0.97549169,
+     0.94162277,
+     0.92401583,
+     0.92401529,
+     0.90881081,
+     0.89921305,
+     0.88682362,
+     0.88682209
+    ],
+    "gap_definition": "gap_k = (1-λ_k)/(1-λ_{k+1})；取最大者，需 > 1.15",
+    "gap_ratios": [
+     0.4198,
+     0.7683,
+     1.0,
+     0.8333,
+     0.9048,
+     0.8905,
+     1.0
+    ],
+    "reason": "无明显谱隙（最大间隙比 1.000 < 1.15）⇒ 单一区域"
+   },
+   "region_sizes": [
+    9252
+   ],
+   "regions": [
+    {
+     "region": 0,
+     "size": 9252,
+     "leak_frac": 0.0,
+     "internal_deg_mean": 10.504,
+     "d_s_internal": 5.236,
+     "d_growth": null,
+     "growth_info": null,
+     "quality": {
+      "usable": true,
+      "plateau_cv": 0.0387,
+      "P_decades": 4.027,
+      "t_window": [
+       0.4381975388400355,
+       2.0682916265773246
+      ],
+      "mean_degree": 10.504
+     }
+    }
+   ],
+   "dwell": [
+    {
+     "region": 0,
+     "n_dwell": 600,
+     "mean_dwell_steps": 3000.0,
+     "median_dwell_steps": 3000.0,
+     "max_dwell_steps": 3000,
+     "std_over_mean": 0.0,
+     "exit_rate_per_step": 0.000333
+    }
+   ],
+   "transition_counts": [
+    [
+     0
+    ]
+   ],
+   "seconds": 0.58
+  },
+  {
+   "tag": "G22",
+   "N": 32066,
+   "edges": 184711,
+   "mean_degree": 11.5207,
+   "components": 1,
+   "T": 22,
+   "graph": "𝒢_T (native closure-class graph)",
+   "slow_eigenvalues": [
+    1.0,
+    0.98189698,
+    0.95730817,
+    0.94364378,
+    0.94364368,
+    0.93175558,
+    0.92660761,
+    0.91620275,
+    0.91620242,
+    0.90701042,
+    0.89094027,
+    0.88859324,
+    0.8885932,
+    0.88492791
+   ],
+   "chosen_k": 1,
+   "why_k": {
+    "lambda": [
+     1.0,
+     0.98189698,
+     0.95730817,
+     0.94364378,
+     0.94364368,
+     0.93175558,
+     0.92660761,
+     0.91620275,
+     0.91620242
+    ],
+    "gap_definition": "gap_k = (1-λ_k)/(1-λ_{k+1})；取最大者，需 > 1.15",
+    "gap_ratios": [
+     0.424,
+     0.7575,
+     1.0,
+     0.8258,
+     0.9299,
+     0.8758,
+     1.0
+    ],
+    "reason": "无明显谱隙（最大间隙比 1.000 < 1.15）⇒ 单一区域"
+   },
+   "region_sizes": [
+    32066
+   ],
+   "regions": [
+    {
+     "region": 0,
+     "size": 32066,
+     "leak_frac": 0.0,
+     "internal_deg_mean": 11.521,
+     "d_s_internal": 5.7423,
+     "d_growth": null,
+     "growth_info": null,
+     "quality": {
+      "usable": true,
+      "plateau_cv": 0.0396,
+      "P_decades": 4.419,
+      "t_window": [
+       0.43657822965008675,
+       2.0606484899972424
+      ],
+      "mean_degree": 11.521
+     }
+    }
+   ],
+   "dwell": [
+    {
+     "region": 0,
+     "n_dwell": 600,
+     "mean_dwell_steps": 3000.0,
+     "median_dwell_steps": 3000.0,
+     "max_dwell_steps": 3000,
+     "std_over_mean": 0.0,
+     "exit_rate_per_step": 0.000333
+    }
+   ],
+   "transition_counts": [
+    [
+     0
+    ]
+   ],
+   "seconds": 1.75
+  },
+  {
+   "tag": "G24",
+   "N": 112720,
+   "edges": 705372,
+   "mean_degree": 12.5155,
+   "components": 1,
+   "T": 24,
+   "graph": "𝒢_T (native closure-class graph)",
+   "slow_eigenvalues": [
+    1.0,
+    0.98625726,
+    0.96788994,
+    0.95712405,
+    0.95712403,
+    0.94767641,
+    0.94507604,
+    0.93642646,
+    0.93642641,
+    0.92874575,
+    0.91836988,
+    0.91453278,
+    0.9145327,
+    0.91260372
+   ],
+   "chosen_k": 1,
+   "why_k": {
+    "lambda": [
+     1.0,
+     0.98625726,
+     0.96788994,
+     0.95712405,
+     0.95712403,
+     0.94767641,
+     0.94507604,
+     0.93642646,
+     0.93642641
+    ],
+    "gap_definition": "gap_k = (1-λ_k)/(1-λ_{k+1})；取最大者，需 > 1.15",
+    "gap_ratios": [
+     0.428,
+     0.7489,
+     1.0,
+     0.8194,
+     0.9527,
+     0.8639,
+     1.0
+    ],
+    "reason": "无明显谱隙（最大间隙比 1.000 < 1.15）⇒ 单一区域"
+   },
+   "region_sizes": [
+    112720
+   ],
+   "regions": [
+    {
+     "region": 0,
+     "size": 112720,
+     "leak_frac": 0.0,
+     "internal_deg_mean": 12.515,
+     "d_s_internal": 6.1187,
+     "d_growth": null,
+     "growth_info": null,
+     "quality": {
+      "usable": true,
+      "plateau_cv": 0.0362,
+      "P_decades": 4.711,
+      "t_window": [
+       0.4391407840261229,
+       2.0727437422267156
+      ],
+      "mean_degree": 12.515
+     }
+    }
+   ],
+   "dwell": [
+    {
+     "region": 0,
+     "n_dwell": 600,
+     "mean_dwell_steps": 3000.0,
+     "median_dwell_steps": 3000.0,
+     "max_dwell_steps": 3000,
+     "std_over_mean": 0.0,
+     "exit_rate_per_step": 0.000333
+    }
+   ],
+   "transition_counts": [
+    [
+     0
+    ]
+   ],
+   "seconds": 8.11
+  }
+ ],
+ "method": "亚稳态/几乎不变集（P=D^{-1}A 的慢模）+ 谱嵌入 k-means；d_s 用内部 Laplacian 热核的对数斜率",
+ "window": {
+  "a_over_mu_max": 3.0,
+  "b_over_mu_min": 0.3
+ },
+ "calibration": [
+  {
+   "D": 1,
+   "L": 2000,
+   "N": 2000,
+   "d_s_measured": null,
+   "rel_err": null,
+   "quality": {
+    "usable": false,
+    "reason": "没有跨 1.0 个数量级的窗口",
+    "ritz": [
+     5.2169350448310794e-05,
+     3.999960496975685
+    ]
+   }
+  },
+  {
+   "D": 2,
+   "L": 200,
+   "N": 40000,
+   "d_s_measured": 1.952,
+   "rel_err": -0.024,
+   "quality": {
+    "usable": true,
+    "plateau_cv": 0.0037,
+    "P_decades": 1.516,
+    "t_window": [
+     15.058683124313523,
+     71.07695834108446
+    ],
+    "mean_degree": 4.0
+   }
+  },
+  {
+   "D": 3,
+   "L": 30,
+   "N": 27000,
+   "d_s_measured": 3.1381,
+   "rel_err": 0.046,
+   "quality": {
+    "usable": true,
+    "plateau_cv": 0.0099,
+    "P_decades": 2.441,
+    "t_window": [
+     2.1269334228803007,
+     10.039122082875686
+    ],
+    "mean_degree": 6.0
+   }
+  },
+  {
+   "D": 4,
+   "L": 10,
+   "N": 10000,
+   "d_s_measured": 4.6913,
+   "rel_err": 0.1728,
+   "quality": {
+    "usable": true,
+    "plateau_cv": 0.026,
+    "P_decades": 3.65,
+    "t_window": [
+     0.8575084796725986,
+     4.047438543175691
+    ],
+    "mean_degree": 8.0
+   }
+  },
+  {
+   "D": 2,
+   "L": 40,
+   "N": 1600,
+   "d_s_measured": 2.172,
+   "rel_err": 0.086,
+   "quality": {
+    "usable": true,
+    "plateau_cv": 0.0289,
+    "P_decades": 1.682,
+    "t_window": [
+     1.640638648057978,
+     7.7438115855237415
+    ],
+    "mean_degree": 4.0
+   }
+  },
+  {
+   "D": 3,
+   "L": 16,
+   "N": 4096,
+   "d_s_measured": 3.0368,
+   "rel_err": 0.0123,
+   "quality": {
+    "usable": true,
+    "plateau_cv": 0.0319,
+    "P_decades": 2.372,
+    "t_window": [
+     1.4917980900136576,
+     7.041284408595574
+    ],
+    "mean_degree": 6.0
+   }
+  }
+ ],
+ "control_torus": [
+  {
+   "tag": "torus_D2",
+   "N": 1600,
+   "edges": 3200,
+   "mean_degree": 4.0,
+   "components": 1,
+   "D": 2,
+   "L": 40,
+   "slow_eigenvalues": [
+    1.0,
+    0.99384417,
+    0.99384417,
+    0.99384417,
+    0.99384417,
+    0.98768834,
+    0.98768834,
+    0.98768834
+   ],
+   "chosen_k": 1,
+   "why_k": {
+    "lambda": [
+     1.0,
+     0.99384417,
+     0.99384417,
+     0.99384417,
+     0.99384417,
+     0.98768834,
+     0.98768834,
+     0.98768834
+    ],
+    "gap_definition": "gap_k = (1-λ_k)/(1-λ_{k+1})；取最大者，需 > 1.15",
+    "gap_ratios": [
+     1.0,
+     1.0,
+     1.0,
+     0.5,
+     1.0,
+     1.0
+    ],
+    "reason": "无明显谱隙（最大间隙比 1.000 < 1.15）⇒ 单一区域"
+   },
+   "region_sizes": [
+    1600
+   ],
+   "regions": [
+    {
+     "region": 0,
+     "size": 1600,
+     "leak_frac": 0.0,
+     "internal_deg_mean": 4.0,
+     "d_s_internal": 2.172,
+     "d_growth": null,
+     "growth_info": null,
+     "quality": {
+      "usable": true,
+      "plateau_cv": 0.0289,
+      "P_decades": 1.682,
+      "t_window": [
+       1.640638648057978,
+       7.7438115855237415
+      ],
+      "mean_degree": 4.0
+     }
+    }
+   ],
+   "seconds": 0.18
+  },
+  {
+   "tag": "torus_D3",
+   "N": 4096,
+   "edges": 12288,
+   "mean_degree": 6.0,
+   "components": 1,
+   "D": 3,
+   "L": 16,
+   "slow_eigenvalues": [
+    1.0,
+    0.97462651,
+    0.97462651,
+    0.97462651,
+    0.97462651,
+    0.97462651,
+    0.97462651,
+    0.94925302
+   ],
+   "chosen_k": 1,
+   "why_k": {
+    "lambda": [
+     1.0,
+     0.97462651,
+     0.97462651,
+     0.97462651,
+     0.97462651,
+     0.97462651,
+     0.97462651,
+     0.94925302
+    ],
+    "gap_definition": "gap_k = (1-λ_k)/(1-λ_{k+1})；取最大者，需 > 1.15",
+    "gap_ratios": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     0.5
+    ],
+    "reason": "无明显谱隙（最大间隙比 1.000 < 1.15）⇒ 单一区域"
+   },
+   "region_sizes": [
+    4096
+   ],
+   "regions": [
+    {
+     "region": 0,
+     "size": 4096,
+     "leak_frac": 0.0,
+     "internal_deg_mean": 6.0,
+     "d_s_internal": 3.0368,
+     "d_growth": null,
+     "growth_info": null,
+     "quality": {
+      "usable": true,
+      "plateau_cv": 0.0319,
+      "P_decades": 2.372,
+      "t_window": [
+       1.4917980900136576,
+       7.041284408595574
+      ],
+      "mean_degree": 6.0
+     }
+    }
+   ],
+   "seconds": 0.28
+  }
+ ]
+}

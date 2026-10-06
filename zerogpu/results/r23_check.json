@@ -1,0 +1,196 @@
+{
+ "title": "R23 / R25 独立复核",
+ "grade": "闭式算术核对",
+ "S_D_evo": [
+  {
+   "L": 2,
+   "a_L": 0.5,
+   "a_L<1": true,
+   "S_D_evo_D1": 0.5,
+   "S_D_evo_D4": 0.0625,
+   "S_D_evo_D12": 0.000244140625,
+   "strictly_decreasing_in_D": true,
+   "argmax_over_D>=4": 4
+  },
+  {
+   "L": 4,
+   "a_L": 0.375,
+   "a_L<1": true,
+   "S_D_evo_D1": 0.375,
+   "S_D_evo_D4": 0.0197753906,
+   "S_D_evo_D12": 7.733484e-06,
+   "strictly_decreasing_in_D": true,
+   "argmax_over_D>=4": 4
+  },
+  {
+   "L": 8,
+   "a_L": 0.2734375,
+   "a_L<1": true,
+   "S_D_evo_D1": 0.2734375,
+   "S_D_evo_D4": 0.0055902638,
+   "S_D_evo_D12": 1.74702e-07,
+   "strictly_decreasing_in_D": true,
+   "argmax_over_D>=4": 4
+  },
+  {
+   "L": 16,
+   "a_L": 0.19638062,
+   "a_L<1": true,
+   "S_D_evo_D1": 0.19638062,
+   "S_D_evo_D4": 0.0014872859,
+   "S_D_evo_D12": 3.29e-09,
+   "strictly_decreasing_in_D": true,
+   "argmax_over_D>=4": 4
+  },
+  {
+   "L": 32,
+   "a_L": 0.13994993,
+   "a_L<1": true,
+   "S_D_evo_D1": 0.13994993,
+   "S_D_evo_D4": 0.0003836108,
+   "S_D_evo_D12": 5.6e-11,
+   "strictly_decreasing_in_D": true,
+   "argmax_over_D>=4": 4
+  },
+  {
+   "L": 64,
+   "a_L": 0.09934675,
+   "a_L<1": true,
+   "S_D_evo_D1": 0.09934675,
+   "S_D_evo_D4": 9.74125e-05,
+   "S_D_evo_D12": 1e-12,
+   "strictly_decreasing_in_D": true,
+   "argmax_over_D>=4": 4
+  },
+  {
+   "L": 128,
+   "a_L": 0.07038609,
+   "a_L<1": true,
+   "S_D_evo_D1": 0.07038609,
+   "S_D_evo_D4": 2.45441e-05,
+   "S_D_evo_D12": 0.0,
+   "strictly_decreasing_in_D": true,
+   "argmax_over_D>=4": 4
+  }
+ ],
+ "F_D_peak": {
+  "rows": [
+   {
+    "q": 0.4,
+    "argmax_D": 3,
+    "F_max_over_B": 0.192
+   },
+   {
+    "q": 0.45,
+    "argmax_D": 3,
+    "F_max_over_B": 0.273375
+   },
+   {
+    "q": 0.48,
+    "argmax_D": 3,
+    "F_max_over_B": 0.331776
+   },
+   {
+    "q": 0.49,
+    "argmax_D": 3,
+    "F_max_over_B": 0.352947
+   },
+   {
+    "q": 0.5,
+    "argmax_D": 3,
+    "F_max_over_B": 0.375
+   },
+   {
+    "q": 0.51,
+    "argmax_D": 4,
+    "F_max_over_B": 0.405912
+   },
+   {
+    "q": 0.55,
+    "argmax_D": 4,
+    "F_max_over_B": 0.549038
+   },
+   {
+    "q": 0.5556,
+    "argmax_D": 4,
+    "F_max_over_B": 0.571742
+   },
+   {
+    "q": 0.58,
+    "argmax_D": 4,
+    "F_max_over_B": 0.67899
+   },
+   {
+    "q": 0.59,
+    "argmax_D": 4,
+    "F_max_over_B": 0.727042
+   },
+   {
+    "q": 0.6,
+    "argmax_D": 4,
+    "F_max_over_B": 0.7776
+   },
+   {
+    "q": 0.61,
+    "argmax_D": 5,
+    "F_max_over_B": 0.844596
+   },
+   {
+    "q": 0.65,
+    "argmax_D": 5,
+    "F_max_over_B": 1.160291
+   },
+   {
+    "q": 0.7,
+    "argmax_D": 6,
+    "F_max_over_B": 1.764735
+   }
+  ],
+  "q_values_with_peak_at_D4": [
+   0.51,
+   0.55,
+   0.5556,
+   0.58,
+   0.59,
+   0.6
+  ],
+  "window_exact": {
+   "lo": 0.5,
+   "hi": 0.6,
+   "derivation": "ratio(D,q)=((D+1)/(D-1))·q；D=3→4 需 >1 ⟹ q>1/2；D=4→5 需 <1 ⟹ q<3/5"
+  }
+ },
+ "ledger_q": {
+  "q": 0.5555555555555556,
+  "argmax_D": 4,
+  "in_window": true
+ },
+ "dependencies_not_derived": [
+  {
+   "name": "GR-LB",
+   "what": "D>=4 的 GR 兼容下界",
+   "status": "语料自记为临时前提，R24 说要撤掉"
+  },
+  {
+   "name": "DIM-SECTOR",
+   "what": "维数扇区的乘积分解 B·C(D,2)·q^D",
+   "status": "未导出"
+  },
+  {
+   "name": "PAIR-CARRIER-DER",
+   "what": "原生成对载体（把连通性变成完全图）",
+   "status": "R26 拆成六项，仍开放"
+  },
+  {
+   "name": "FULL-SUPPORT-LEDGER / WIPE-RESET-LEDGER",
+   "what": "满支持账本 / 毁灭-重播种账本",
+   "status": "R27 记为开放"
+  },
+  {
+   "name": "PHASE-1-COCHAIN / PAIR-ID-QUOTIENT",
+   "what": "相位 1-上链商 / 成对身份商",
+   "status": "开放"
+  }
+ ],
+ "verdict": "① S_D^evo 严格随 D 下降 ⟹ 在 GR 兼容集 {D>=4} 上唯一最大在 D=4：**复核通过**（纯算术）。② F_D 的四维窗口 1/2<q<3/5 与 q=5/9 的峰位：**复核通过**（纯算术）。③ 但两条都**不是**从 Z0 导出：它们依赖 GR-LB / DIM-SECTOR / PAIR-CARRIER-DER 等未导出前提，所以结论是【条件结论】，不是 D 的导出。本轮另给的『相互作用必然 ⟺ D<=4』（L2_REGIONS.md §3.2）是独立的第二条，但其『GR-LB』一侧同样未导出。"
+}

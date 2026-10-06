@@ -1,0 +1,20 @@
+{
+ "n_modes": 123,
+ "reflection_fixed": 63,
+ "orbits_z2": 93,
+ "persist": {
+  "commutator_max": 0.0
+ },
+ "copy": {
+  "commutator_max": 0.0
+ },
+ "split_parent": {
+  "commutator_max": 1.0
+ },
+ "split_only": {
+  "commutator_max": 1.0
+ },
+ "split_all": {
+  "commutator_max": 8.0
+ }
+}

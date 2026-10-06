@@ -1,0 +1,244 @@
+{
+ "A_state_orbit": [
+  {
+   "L": 2,
+   "n_closed": 2,
+   "n_heights": 1,
+   "transient": 2,
+   "period": 2,
+   "visited": 4,
+   "act_sat": 2,
+   "q": "1"
+  },
+  {
+   "L": 4,
+   "n_closed": 4,
+   "n_heights": 2,
+   "transient": 6,
+   "period": 2,
+   "visited": 8,
+   "act_sat": 12,
+   "q": "5/9"
+  },
+  {
+   "L": 6,
+   "n_closed": 8,
+   "n_heights": 3,
+   "transient": 10,
+   "period": 2,
+   "visited": 12,
+   "act_sat": 72,
+   "q": "7/25"
+  },
+  {
+   "L": 8,
+   "n_closed": 18,
+   "n_heights": 4,
+   "transient": 14,
+   "period": 2,
+   "visited": 16,
+   "act_sat": 522,
+   "q": "19/175"
+  },
+  {
+   "L": 10,
+   "n_closed": 46,
+   "n_heights": 5,
+   "transient": 18,
+   "period": 2,
+   "visited": 20,
+   "act_sat": 4554,
+   "q": "313/7938"
+  },
+  {
+   "L": 12,
+   "n_closed": 130,
+   "n_heights": 6,
+   "transient": 22,
+   "period": 2,
+   "visited": 24,
+   "act_sat": 45630,
+   "q": "683/53361"
+  },
+  {
+   "L": 14,
+   "n_closed": 394,
+   "n_heights": 7,
+   "transient": 26,
+   "period": 2,
+   "visited": 28,
+   "act_sat": 502350,
+   "q": "667/163592"
+  },
+  {
+   "L": 16,
+   "n_closed": 1252,
+   "n_heights": 8,
+   "transient": 30,
+   "period": 2,
+   "visited": 32,
+   "act_sat": null,
+   "q": "17111/13803075"
+  }
+ ],
+ "B_closed_form": {
+  "q": "5/9",
+  "w": [
+   "729/1139",
+   "360/1139",
+   "50/1139"
+  ],
+  "phi": 1.9740810260220096,
+  "T_rot": 3.1828406353922034,
+  "A1": 2.528533801580334,
+  "A2": 0.3511852502194908,
+  "P_mean_meas": 6.511939541893907,
+  "P_relstd_meas": 0.19463725841585433,
+  "P_mean_cf": 6.517775598547731,
+  "P_relstd_cf": 0.1927088328579747,
+  "max_dev_after_transient": 1.387109703681803e-13,
+  "acf_meas": [
+   -0.37407751017692786,
+   0.9143973509613341,
+   0.6170000678807346,
+   -0.8512758932471804,
+   0.8192686450205834
+  ],
+  "acf_cos": [
+   -0.3924416444396209,
+   0.935564485245942,
+   0.6284368205306673,
+   -0.8716514614460584,
+   0.8362325246458614
+  ],
+  "gap_counts": {
+   "3": 511,
+   "4": 115
+  },
+  "gap_mean": 3.18370607028754,
+  "gap_relstd": 0.12163318290687122,
+  "per_height_multiplicity": {
+   "2": 8,
+   "1": 8
+  }
+ },
+ "C_rotation_number": {
+  "q4": "5/9",
+  "ratio": 7.2,
+  "phi": 1.9740810260220096,
+  "rho": 0.3141847533553233,
+  "cf": [
+   0,
+   3,
+   5,
+   2,
+   7,
+   1,
+   1
+  ],
+  "convergent_denominators": [
+   3,
+   16,
+   35
+  ]
+ },
+ "D_seed_rules": {
+  "rows": [
+   {
+    "rule": "branch",
+    "gate": null,
+    "transient": 6,
+    "period": 2,
+    "act_last": 12.0,
+    "act_max": 24.0,
+    "growth_2step": null
+   },
+   {
+    "rule": "mult",
+    "gate": null,
+    "transient": null,
+    "period": null,
+    "act_last": 1.0683701246602587e+262,
+    "act_max": 1.0683701246602587e+262,
+    "growth_2step": 2.732050807568878
+   },
+   {
+    "rule": "class",
+    "gate": null,
+    "transient": 4,
+    "period": 2,
+    "act_last": 6.0,
+    "act_max": 12.0,
+    "growth_2step": null
+   },
+   {
+    "rule": "branch",
+    "gate": "phase",
+    "transient": 4,
+    "period": 1,
+    "act_last": 0.0,
+    "act_max": 4.0,
+    "growth_2step": null
+   }
+  ],
+  "rho_linear": 1.6528916502810687
+ },
+ "E_L_scan": {
+  "rows": [
+   {
+    "L": 4,
+    "q": "5/9",
+    "ratio": 7.2,
+    "pred": 3.1828406353922034,
+    "meas": 3.18370607028754,
+    "n_freq": 1,
+    "relstd": 0.19463725841585433
+   },
+   {
+    "L": 6,
+    "q": "7/25",
+    "ratio": 9.999999999999998,
+    "pred": 2.728752707683683,
+    "meas": 2.7277701778385772,
+    "n_freq": 3,
+    "relstd": 0.2744139908609336
+   },
+   {
+    "L": 8,
+    "q": "19/175",
+    "ratio": 22.56578947368421,
+    "pred": 2.0161451364268292,
+    "meas": 2.0161779575328613,
+    "n_freq": 6,
+    "relstd": 0.18955875616734125
+   }
+  ],
+  "ratio_check": [
+   {
+    "L": 4,
+    "pred_ratio": 7.199999999999999,
+    "meas_ratio": 7.2
+   },
+   {
+    "L": 6,
+    "pred_ratio": 9.999999999999998,
+    "meas_ratio": 9.999999999999998
+   },
+   {
+    "L": 8,
+    "pred_ratio": 22.565789473684212,
+    "meas_ratio": 22.56578947368421
+   },
+   {
+    "L": 10,
+    "pred_ratio": 58.3970909702371,
+    "meas_ratio": 58.397090970237095
+   },
+   {
+    "L": 12,
+    "pred_ratio": 174.01098096632504,
+    "meas_ratio": 174.01098096632512
+   }
+  ]
+ }
+}

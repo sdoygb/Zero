@@ -1,0 +1,315 @@
+{
+  "device": {
+    "name": "AMD Radeon RX 570 Compute Engine",
+    "type": "ALL | GPU",
+    "cus": 32,
+    "global_mem_gb": 8.0,
+    "max_alloc_gb": 2.0,
+    "clock_mhz": 1244,
+    "fp64": true,
+    "max_wg": 256
+  },
+  "rows": [
+    {
+      "T": 8,
+      "nodes": 10,
+      "edges": 18,
+      "mean_degree": 3.6,
+      "method": "dense-full",
+      "lambda1": 1.1343862585562756,
+      "lambda_max": 8.078736268767571,
+      "spectral_points": {
+        "0.10": {
+          "time": 29.61477107745647,
+          "spectral_dimension": 2.1316282072803006e-13
+        },
+        "0.05": {
+          "time": 63.09573444801933,
+          "spectral_dimension": -0.0
+        },
+        "0.02": {
+          "time": 63.09573444801933,
+          "spectral_dimension": -0.0
+        }
+      },
+      "plateau_median_ds_P020_002": 0.0064,
+      "plateau_n_points": 124,
+      "local_growth_dimension": null,
+      "growth_radii_used": null,
+      "seconds": 0.0
+    },
+    {
+      "T": 10,
+      "nodes": 26,
+      "edges": 64,
+      "mean_degree": 4.9231,
+      "method": "dense-full",
+      "lambda1": 0.8743862880003029,
+      "lambda_max": 10.409061581934045,
+      "spectral_points": {
+        "0.10": {
+          "time": 0.8077232235402414,
+          "spectral_dimension": 2.226671402282861
+        },
+        "0.05": {
+          "time": 1.8494351442881352,
+          "spectral_dimension": 1.053372700542468
+        },
+        "0.02": {
+          "time": 39.50463419696427,
+          "spectral_dimension": 5.684341886080802e-14
+        }
+      },
+      "plateau_median_ds_P020_002": 0.0893,
+      "plateau_n_points": 138,
+      "local_growth_dimension": null,
+      "growth_radii_used": null,
+      "seconds": 0.0
+    },
+    {
+      "T": 12,
+      "nodes": 80,
+      "edges": 246,
+      "mean_degree": 6.15,
+      "method": "dense-full",
+      "lambda1": 0.5973498743984139,
+      "lambda_max": 14.454055388806479,
+      "spectral_points": {
+        "0.10": {
+          "time": 0.5634274331051922,
+          "spectral_dimension": 2.8427390154477337
+        },
+        "0.05": {
+          "time": 0.9328942198714313,
+          "spectral_dimension": 2.8011874209733776
+        },
+        "0.02": {
+          "time": 1.987577273893125,
+          "spectral_dimension": 1.7138709231156923
+        }
+      },
+      "plateau_median_ds_P020_002": 2.6845,
+      "plateau_n_points": 50,
+      "local_growth_dimension": null,
+      "growth_radii_used": null,
+      "seconds": 0.0
+    },
+    {
+      "T": 14,
+      "nodes": 246,
+      "edges": 909,
+      "mean_degree": 7.3902,
+      "method": "dense-full",
+      "lambda1": 0.4556803448287113,
+      "lambda_max": 16.941116609336888,
+      "spectral_points": {
+        "0.10": {
+          "time": 0.4223751159668102,
+          "spectral_dimension": 3.286599292882336
+        },
+        "0.05": {
+          "time": 0.6277191285144675,
+          "spectral_dimension": 3.5994404894851755
+        },
+        "0.02": {
+          "time": 1.0393451086797687,
+          "spectral_dimension": 3.4189804172546303
+        }
+      },
+      "plateau_median_ds_P020_002": 3.4566,
+      "plateau_n_points": 39,
+      "local_growth_dimension": 2.2272,
+      "growth_radii_used": [
+        2,
+        3,
+        4
+      ],
+      "seconds": 0.1
+    },
+    {
+      "T": 16,
+      "nodes": 810,
+      "edges": 3416,
+      "mean_degree": 8.4346,
+      "method": "dense-full",
+      "lambda1": 0.3425932929854474,
+      "lambda_max": 20.783133836438253,
+      "spectral_points": {
+        "0.10": {
+          "time": 0.3527654418491978,
+          "spectral_dimension": 3.442880769155522
+        },
+        "0.05": {
+          "time": 0.5057205650666886,
+          "spectral_dimension": 3.9188173438677723
+        },
+        "0.02": {
+          "time": 0.8077232235402414,
+          "spectral_dimension": 4.163546084097774
+        }
+      },
+      "plateau_median_ds_P020_002": 3.7051,
+      "plateau_n_points": 35,
+      "local_growth_dimension": 2.4306,
+      "growth_radii_used": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "seconds": 0.2
+    },
+    {
+      "T": 18,
+      "nodes": 2704,
+      "edges": 12843,
+      "mean_degree": 9.4993,
+      "method": "dense-full",
+      "lambda1": 0.2697577020745038,
+      "lambda_max": 23.21034311906368,
+      "spectral_points": {
+        "0.10": {
+          "time": 0.3054331710655264,
+          "spectral_dimension": 3.6336606847007644
+        },
+        "0.05": {
+          "time": 0.4223751159668102,
+          "spectral_dimension": 4.207347177624868
+        },
+        "0.02": {
+          "time": 0.6507404768641575,
+          "spectral_dimension": 4.6946265867726
+        }
+      },
+      "plateau_median_ds_P020_002": 3.9029,
+      "plateau_n_points": 33,
+      "local_growth_dimension": 2.9359,
+      "growth_radii_used": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "seconds": 1.5
+    },
+    {
+      "T": 20,
+      "nodes": 9252,
+      "edges": 48592,
+      "mean_degree": 10.5041,
+      "method": "dense-full",
+      "lambda1": 0.21632711640795568,
+      "lambda_max": 26.87550812617546,
+      "spectral_points": {
+        "0.10": {
+          "time": 0.26445170337014756,
+          "spectral_dimension": 3.700251188387064
+        },
+        "0.05": {
+          "time": 0.3791149840532586,
+          "spectral_dimension": 4.449223976547259
+        },
+        "0.02": {
+          "time": 0.5434949720574466,
+          "spectral_dimension": 5.019894419751836
+        }
+      },
+      "plateau_median_ds_P020_002": 4.0491,
+      "plateau_n_points": 32,
+      "local_growth_dimension": 3.2365,
+      "growth_radii_used": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "seconds": 53.7
+    },
+    {
+      "T": 22,
+      "nodes": 32066,
+      "edges": 184711,
+      "mean_degree": 11.5207,
+      "method": "lanczos-quad(m=250,R=48)",
+      "lambda1": null,
+      "lambda_max": null,
+      "spectral_points": {
+        "0.10": {
+          "time": 0.23736626405308572,
+          "spectral_dimension": 3.8015374374308735
+        },
+        "0.05": {
+          "time": 0.3282472658626908,
+          "spectral_dimension": 4.567577915840317
+        },
+        "0.02": {
+          "time": 0.47057158406304084,
+          "spectral_dimension": 5.288996901833002
+        }
+      },
+      "plateau_median_ds_P020_002": 4.1469,
+      "plateau_n_points": 31,
+      "local_growth_dimension": 3.7172,
+      "growth_radii_used": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "seconds": 67.4
+    },
+    {
+      "T": 24,
+      "nodes": 112720,
+      "edges": 705372,
+      "mean_degree": 12.5155,
+      "method": "lanczos-quad(m=250,R=48)",
+      "lambda1": null,
+      "lambda_max": null,
+      "spectral_points": {
+        "0.10": {
+          "time": 0.21305494573297357,
+          "spectral_dimension": 3.8485651393903524
+        },
+        "0.05": {
+          "time": 0.2946278136632424,
+          "spectral_dimension": 4.691259976875045
+        },
+        "0.02": {
+          "time": 0.4223751159668102,
+          "spectral_dimension": 5.545913620071943
+        }
+      },
+      "plateau_median_ds_P020_002": 4.223,
+      "plateau_n_points": 31,
+      "local_growth_dimension": 4.0371,
+      "growth_radii_used": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "seconds": 250.7
+    }
+  ],
+  "total_seconds": 373.7
+}

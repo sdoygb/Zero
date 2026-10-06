@@ -1,0 +1,197 @@
+{
+  "N": 30,
+  "rows": [
+    {
+      "n": 7,
+      "volume": 128,
+      "records": 0
+    },
+    {
+      "n": 8,
+      "volume": 256,
+      "records": 10,
+      "classes": 7,
+      "K_n": 10,
+      "coverage": 0.7,
+      "q_class": 0.16,
+      "self_mirror_events": 6,
+      "chiral_events": 4
+    },
+    {
+      "n": 9,
+      "volume": 512,
+      "records": 0
+    },
+    {
+      "n": 10,
+      "volume": 1024,
+      "records": 28,
+      "classes": 20,
+      "K_n": 26,
+      "coverage": 0.769231,
+      "q_class": 0.056122449,
+      "self_mirror_events": 12,
+      "chiral_events": 16
+    },
+    {
+      "n": 11,
+      "volume": 2048,
+      "records": 0
+    },
+    {
+      "n": 12,
+      "volume": 4096,
+      "records": 84,
+      "classes": 61,
+      "K_n": 80,
+      "coverage": 0.7625,
+      "q_class": 0.0184240363,
+      "self_mirror_events": 20,
+      "chiral_events": 64
+    },
+    {
+      "n": 13,
+      "volume": 8192,
+      "records": 0
+    },
+    {
+      "n": 14,
+      "volume": 16384,
+      "records": 264,
+      "classes": 193,
+      "K_n": 246,
+      "coverage": 0.784553,
+      "q_class": 0.0058252984,
+      "self_mirror_events": 40,
+      "chiral_events": 224
+    },
+    {
+      "n": 15,
+      "volume": 32768,
+      "records": 0
+    },
+    {
+      "n": 16,
+      "volume": 65536,
+      "records": 858,
+      "classes": 629,
+      "K_n": 810,
+      "coverage": 0.776543,
+      "q_class": 0.0017876451,
+      "self_mirror_events": 70,
+      "chiral_events": 788
+    },
+    {
+      "n": 17,
+      "volume": 131072,
+      "records": 0
+    },
+    {
+      "n": 18,
+      "volume": 262144,
+      "records": 2860,
+      "classes": 2101,
+      "K_n": 2704,
+      "coverage": 0.776997,
+      "q_class": 0.000535234,
+      "self_mirror_events": 140,
+      "chiral_events": 2720
+    },
+    {
+      "n": 19,
+      "volume": 524288,
+      "records": 0
+    },
+    {
+      "n": 20,
+      "volume": 1048576,
+      "records": 9724,
+      "classes": 7158,
+      "K_n": 9252,
+      "coverage": 0.773671,
+      "q_class": 0.000157113,
+      "self_mirror_events": 252,
+      "chiral_events": 9472
+    },
+    {
+      "n": 21,
+      "volume": 2097152,
+      "records": 0
+    },
+    {
+      "n": 22,
+      "volume": 4194304,
+      "records": 33592,
+      "classes": 24775,
+      "K_n": 32066,
+      "coverage": 0.772625,
+      "q_class": 4.53961e-05,
+      "self_mirror_events": 504,
+      "chiral_events": 33088
+    },
+    {
+      "n": 23,
+      "volume": 8388608,
+      "records": 0
+    },
+    {
+      "n": 24,
+      "volume": 16777216,
+      "records": 117572,
+      "classes": 86855,
+      "K_n": 112720,
+      "coverage": 0.770538,
+      "q_class": 1.29497e-05,
+      "self_mirror_events": 924,
+      "chiral_events": 116648
+    },
+    {
+      "n": 25,
+      "volume": 33554432,
+      "records": 0
+    },
+    {
+      "n": 26,
+      "volume": 67108864,
+      "records": 416024,
+      "classes": 307746,
+      "K_n": 400024,
+      "coverage": 0.769319,
+      "q_class": 3.6549e-06,
+      "self_mirror_events": 1848,
+      "chiral_events": 414176
+    },
+    {
+      "n": 27,
+      "volume": 134217728,
+      "records": 0
+    },
+    {
+      "n": 28,
+      "volume": 268435456,
+      "records": 1485800,
+      "classes": 1100291,
+      "K_n": 1432860,
+      "coverage": 0.767898,
+      "q_class": 1.0223e-06,
+      "self_mirror_events": 3432,
+      "chiral_events": 1482368
+    },
+    {
+      "n": 29,
+      "volume": 536870912,
+      "records": 0
+    },
+    {
+      "n": 30,
+      "volume": 1073741824,
+      "records": 5348880,
+      "classes": 3964618,
+      "K_n": 5170604,
+      "coverage": 0.766761,
+      "q_class": 2.837e-07,
+      "self_mirror_events": 6864,
+      "chiral_events": 5342016
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+ "generated": "2026-10-06 00:36:38",
+ "runs": [
+  {
+   "N": 1024,
+   "mode": "REC",
+   "steps": 20000,
+   "L0": {
+    "mean_degree": 4.0,
+    "clustering": null,
+    "traffic_gini": 0.0,
+    "closures": 30996
+   },
+   "L1p": {
+    "records_total": 30996,
+    "record_rate_per_step": 1.5498,
+    "gini": 0.6055,
+    "max_frac": 0.00865,
+    "support_frac": 0.626,
+    "entropy": 6.24
+   },
+   "L2": {
+    "regions": 8,
+    "occupied_frac": 0.6201,
+    "mean_region_size": 79.38,
+    "max_region_size": 588,
+    "region_size_hist": [
+     0,
+     0,
+     0,
+     4,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "cross": {
+    "corr_R_f": 0.6643
+   },
+   "substrate": "torus_L32"
+  },
+  {
+   "N": 1024,
+   "mode": "TRAF",
+   "steps": 20000,
+   "L0": {
+    "mean_degree": 4.0,
+    "clustering": null,
+    "traffic_gini": 0.2884,
+    "closures": 21265
+   },
+   "L1p": {
+    "records_total": 21265,
+    "record_rate_per_step": 1.0632,
+    "gini": 0.6132,
+    "max_frac": 0.00828,
+    "support_frac": 0.6279,
+    "entropy": 6.2217
+   },
+   "L2": {
+    "regions": 5,
+    "occupied_frac": 0.793,
+    "mean_region_size": 162.4,
+    "max_region_size": 808,
+    "region_size_hist": [
+     0,
+     4,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "cross": {
+    "corr_R_f": 0.2522
+   },
+   "substrate": "torus_L32"
+  },
+  {
+   "N": 1024,
+   "mode": "BOTH",
+   "steps": 20000,
+   "L0": {
+    "mean_degree": 4.0,
+    "clustering": null,
+    "traffic_gini": 0.8016,
+    "closures": 48986
+   },
+   "L1p": {
+    "records_total": 48986,
+    "record_rate_per_step": 2.4493,
+    "gini": 0.8336,
+    "max_frac": 0.01713,
+    "support_frac": 0.4658,
+    "entropy": 5.4327
+   },
+   "L2": {
+    "regions": 36,
+    "occupied_frac": 0.3447,
+    "mean_region_size": 9.81,
+    "max_region_size": 84,
+    "region_size_hist": [
+     0,
+     2,
+     16,
+     3,
+     1,
+     2,
+     2,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0
+    ]
+   },
+   "cross": {
+    "corr_R_f": 0.6215
+   },
+   "substrate": "torus_L32"
+  },
+  {
+   "N": 1024,
+   "mode": "REC",
+   "steps": 20000,
+   "L0": {
+    "mean_degree": 3.99,
+    "clustering": null,
+    "traffic_gini": 0.0,
+    "closures": 28351
+   },
+   "L1p": {
+    "records_total": 28351,
+    "record_rate_per_step": 1.4176,
+    "gini": 0.5874,
+    "max_frac": 0.00656,
+    "support_frac": 0.6289,
+    "entropy": 6.2761
+   },
+   "L2": {
+    "regions": 7,
+    "occupied_frac": 0.6172,
+    "mean_region_size": 90.29,
+    "max_region_size": 619,
+    "region_size_hist": [
+     0,
+     0,
+     5,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "cross": {
+    "corr_R_f": 0.7079
+   },
+   "substrate": "rand4reg_N1024"
+  },
+  {
+   "N": 1024,
+   "mode": "TRAF",
+   "steps": 20000,
+   "L0": {
+    "mean_degree": 3.99,
+    "clustering": null,
+    "traffic_gini": 0.2795,
+    "closures": 21026
+   },
+   "L1p": {
+    "records_total": 21026,
+    "record_rate_per_step": 1.0513,
+    "gini": 0.6092,
+    "max_frac": 0.00875,
+    "support_frac": 0.6289,
+    "entropy": 6.2252
+   },
+   "L2": {
+    "regions": 1,
+    "occupied_frac": 0.8223,
+    "mean_region_size": 842.0,
+    "max_region_size": 842,
+    "region_size_hist": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "cross": {
+    "corr_R_f": 0.2847
+   },
+   "substrate": "rand4reg_N1024"
+  },
+  {
+   "N": 1024,
+   "mode": "BOTH",
+   "steps": 20000,
+   "L0": {
+    "mean_degree": 3.99,
+    "clustering": null,
+    "traffic_gini": 0.7986,
+    "closures": 38112
+   },
+   "L1p": {
+    "records_total": 38112,
+    "record_rate_per_step": 1.9056,
+    "gini": 0.8107,
+    "max_frac": 0.02472,
+    "support_frac": 0.4541,
+    "entropy": 5.5432
+   },
+   "L2": {
+    "regions": 23,
+    "occupied_frac": 0.3486,
+    "mean_region_size": 15.52,
+    "max_region_size": 285,
+    "region_size_hist": [
+     0,
+     0,
+     11,
+     6,
+     1,
+     1,
+     0,
+     2,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "cross": {
+    "corr_R_f": 0.679
+   },
+   "substrate": "rand4reg_N1024"
+  },
+  {
+   "N": 2704,
+   "mode": "REC",
+   "steps": 10000,
+   "L0": {
+    "mean_degree": 9.499,
+    "clustering": null,
+    "traffic_gini": 0.0,
+    "closures": 14912
+   },
+   "L1p": {
+    "records_total": 14912,
+    "record_rate_per_step": 1.4912,
+    "gini": 0.6581,
+    "max_frac": 0.00422,
+    "support_frac": 0.5832,
+    "entropy": 7.0821
+   },
+   "L2": {
+    "regions": 2,
+    "occupied_frac": 0.5788,
+    "mean_region_size": 782.5,
+    "max_region_size": 1564,
+    "region_size_hist": [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "cross": {
+    "corr_R_f": 0.6668
+   },
+   "substrate": "G_18"
+  },
+  {
+   "N": 2704,
+   "mode": "TRAF",
+   "steps": 10000,
+   "L0": {
+    "mean_degree": 9.499,
+    "clustering": null,
+    "traffic_gini": 0.5801,
+    "closures": 11064
+   },
+   "L1p": {
+    "records_total": 11064,
+    "record_rate_per_step": 1.1064,
+    "gini": 0.6186,
+    "max_frac": 0.00307,
+    "support_frac": 0.6195,
+    "entropy": 7.1803
+   },
+   "L2": {
+    "regions": 2,
+    "occupied_frac": 0.8136,
+    "mean_region_size": 1100.0,
+    "max_region_size": 2199,
+    "region_size_hist": [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "cross": {
+    "corr_R_f": 0.2593
+   },
+   "substrate": "G_18"
+  },
+  {
+   "N": 2704,
+   "mode": "BOTH",
+   "steps": 10000,
+   "L0": {
+    "mean_degree": 9.499,
+    "clustering": null,
+    "traffic_gini": 0.9042,
+    "closures": 19664
+   },
+   "L1p": {
+    "records_total": 19664,
+    "record_rate_per_step": 1.9664,
+    "gini": 0.8653,
+    "max_frac": 0.01332,
+    "support_frac": 0.3502,
+    "entropy": 6.1863
+   },
+   "L2": {
+    "regions": 8,
+    "occupied_frac": 0.2567,
+    "mean_region_size": 86.75,
+    "max_region_size": 679,
+    "region_size_hist": [
+     0,
+     1,
+     4,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "cross": {
+    "corr_R_f": 0.6758
+   },
+   "substrate": "G_18"
+  }
+ ]
+}

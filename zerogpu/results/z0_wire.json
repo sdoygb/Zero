@@ -1,0 +1,33 @@
+{
+ "orbit_sum": 1334,
+ "r_multiplicity": {
+  "0": 632,
+  "1": 356,
+  "2": 210,
+  "3": 102,
+  "4": 22,
+  "5": 12
+ },
+ "rules": {
+  "persist": {
+   "rho_comb": 1.0,
+   "rho_wired": 12.0
+  },
+  "copy": {
+   "rho_comb": 2.0,
+   "rho_wired": 24.0
+  },
+  "split_parent": {
+   "rho_comb": 1.0,
+   "rho_wired": 12.0
+  },
+  "split_only": {
+   "rho_comb": 0.0,
+   "rho_wired": 0.0
+  },
+  "split_all": {
+   "rho_comb": 1.0,
+   "rho_wired": 12.0
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "torus_L8_regular|A": {
+  "d_first5": [
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "d_last10_mean": 0.0,
+  "repeat": [
+   1,
+   2
+  ],
+  "n_distinct": 2
+ },
+ "torus_L8_regular|B": {
+  "d_first5": [
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "d_last10_mean": 0.0,
+  "repeat": [
+   1,
+   2
+  ],
+  "n_distinct": 2
+ },
+ "torus_L8_regular|C": {
+  "d_first5": [
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "d_last10_mean": 0.0,
+  "repeat": [
+   1,
+   2
+  ],
+  "n_distinct": 2
+ },
+ "torus_L8_hubs|A": {
+  "d_first5": [
+   1.5479,
+   0.5075,
+   0.0137,
+   0.0015,
+   0.0
+  ],
+  "d_last10_mean": 0.0010109950560734107,
+  "repeat": [
+   4,
+   5
+  ],
+  "n_distinct": 5
+ },
+ "torus_L8_hubs|B": {
+  "d_first5": [
+   1.5479,
+   0.5075,
+   0.0137,
+   0.0015,
+   0.0
+  ],
+  "d_last10_mean": 0.0,
+  "repeat": [
+   4,
+   5
+  ],
+  "n_distinct": 5
+ },
+ "torus_L8_hubs|C": {
+  "d_first5": [
+   1.5479,
+   0.5075,
+   0.0137,
+   0.0015,
+   0.0
+  ],
+  "d_last10_mean": 0.0010109950560734107,
+  "repeat": [
+   4,
+   5
+  ],
+  "n_distinct": 5
+ }
+}

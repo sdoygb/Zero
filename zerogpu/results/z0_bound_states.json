@@ -1,0 +1,137 @@
+{
+  "clean": {
+    "count": 0
+  },
+  "single_defect": [
+    {
+      "k": 3,
+      "count": 2,
+      "energies": [
+        -2.101395,
+        2.43675
+      ],
+      "loc_sites": [
+        6.66,
+        4.54
+      ]
+    },
+    {
+      "k": 4,
+      "count": 2,
+      "energies": [
+        -2.382976,
+        2.382976
+      ],
+      "loc_sites": [
+        5.42,
+        5.42
+      ]
+    },
+    {
+      "k": 5,
+      "count": 2,
+      "energies": [
+        -2.249612,
+        2.352881
+      ],
+      "loc_sites": [
+        5.23,
+        5.97
+      ]
+    },
+    {
+      "k": 6,
+      "count": 2,
+      "energies": [
+        -2.335236,
+        2.335236
+      ],
+      "loc_sites": [
+        6.23,
+        6.23
+      ]
+    },
+    {
+      "k": 8,
+      "count": 2,
+      "energies": [
+        -2.318437,
+        2.318437
+      ],
+      "loc_sites": [
+        6.28,
+        6.28
+      ]
+    },
+    {
+      "k": 12,
+      "count": 2,
+      "energies": [
+        -2.310447,
+        2.310447
+      ],
+      "loc_sites": [
+        6.08,
+        6.08
+      ]
+    }
+  ],
+  "two_defects": [
+    {
+      "d": 4,
+      "positive_energies": [
+        2.33879034,
+        2.41709107
+      ],
+      "max_shift_vs_single": 0.04418542918043045
+    },
+    {
+      "d": 5,
+      "positive_energies": [
+        2.36025476,
+        2.40214278
+      ],
+      "max_shift_vs_single": 0.022721011459943874
+    },
+    {
+      "d": 8,
+      "positive_energies": [
+        2.37957696,
+        2.38623355
+      ],
+      "max_shift_vs_single": 0.003398805168632002
+    },
+    {
+      "d": 12,
+      "positive_energies": [
+        2.38268436,
+        2.38326558
+      ],
+      "max_shift_vs_single": 0.0002914120304748913
+    },
+    {
+      "d": 20,
+      "positive_energies": [
+        2.38297355,
+        2.38297799
+      ],
+      "max_shift_vs_single": 2.218862552361145e-06
+    },
+    {
+      "d": 60,
+      "positive_energies": [
+        2.38297577,
+        2.38297577
+      ],
+      "max_shift_vs_single": 2.6645352591003757e-15
+    },
+    {
+      "d": 150,
+      "positive_energies": [
+        2.38297577,
+        2.38297577
+      ],
+      "max_shift_vs_single": 1.7763568394002505e-15
+    }
+  ]
+}

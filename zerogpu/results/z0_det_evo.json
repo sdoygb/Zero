@@ -1,0 +1,73 @@
+{
+ "phase": {
+  "mode": "phase",
+  "V": 256,
+  "steps": 4000,
+  "total_conserved": true,
+  "terminal": 511488,
+  "total_now": 512,
+  "domains_mean": 1.0,
+  "domains_min": 1,
+  "domains_max": 1,
+  "lifetime_n": 1,
+  "lifetime_mean": 1.0,
+  "lifetime_med": 1.0,
+  "lifetime_p95": 1.0,
+  "lifetime_max": 1,
+  "birth_per_win": 0.0,
+  "move_last": 1024.0,
+  "rec_rate_first": 0.256,
+  "rec_rate_last": 0.0,
+  "R_total": 512.0
+ },
+ "alt": {
+  "mode": "alt",
+  "V": 256,
+  "steps": 4000,
+  "total_conserved": true,
+  "terminal": 0,
+  "total_now": 512,
+  "domains_mean": 1.0,
+  "domains_min": 1,
+  "domains_max": 1,
+  "lifetime_n": 1,
+  "lifetime_mean": 1.0,
+  "lifetime_med": 1.0,
+  "lifetime_p95": 1.0,
+  "lifetime_max": 1,
+  "birth_per_win": 0.0,
+  "move_last": 1024.0,
+  "rec_rate_first": 0.256,
+  "rec_rate_last": 0.0,
+  "R_total": 512.0
+ },
+ "allplus": {
+  "mode": "allplus",
+  "V": 256,
+  "steps": 4000,
+  "total_conserved": true,
+  "terminal": 511488,
+  "total_now": 512,
+  "domains_mean": 1.0,
+  "domains_min": 1,
+  "domains_max": 1,
+  "lifetime_n": 1,
+  "lifetime_mean": 1.0,
+  "lifetime_med": 1.0,
+  "lifetime_p95": 1.0,
+  "lifetime_max": 1,
+  "birth_per_win": 0.0,
+  "move_last": 1024.0,
+  "rec_rate_first": 0.256,
+  "rec_rate_last": 0.0,
+  "R_total": 512.0
+ },
+ "summary": {
+  "pass_": 1,
+  "fail": 2,
+  "failed": [
+   "相位选择下：区域生灭在稳态下持续（寿命中位 < 步数，且区域数 > 1）",
+   "相位选择下出现**长寿畴**（95% 寿命 ≥ 5 代）"
+  ]
+ }
+}

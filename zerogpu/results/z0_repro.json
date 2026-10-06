@@ -1,0 +1,27 @@
+{
+ "persist": {
+  "rho": 1.0,
+  "n_zero_eig": 0,
+  "nilpotent_index": null
+ },
+ "copy": {
+  "rho": 2.0,
+  "n_zero_eig": 0,
+  "nilpotent_index": null
+ },
+ "split_parent": {
+  "rho": 1.0,
+  "n_zero_eig": 0,
+  "nilpotent_index": null
+ },
+ "split_only": {
+  "rho": 0.0,
+  "n_zero_eig": 123,
+  "nilpotent_index": 6
+ },
+ "split_all": {
+  "rho": 0.0,
+  "n_zero_eig": 123,
+  "nilpotent_index": 6
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "10": {
+  "N": 26,
+  "commutant": 30,
+  "symmetry": 64,
+  "extra": -34,
+  "aut_order": 4,
+  "n_orbits": 13,
+  "max_orbit": 4
+ },
+ "12": {
+  "N": 80,
+  "commutant": 134,
+  "symmetry": 218,
+  "extra": -84,
+  "aut_order": 4,
+  "n_orbits": 35,
+  "max_orbit": 4
+ },
+ "14": {
+  "N": 246,
+  "commutant": 564,
+  "symmetry": 820,
+  "extra": -256,
+  "aut_order": 4,
+  "n_orbits": 85,
+  "max_orbit": 4
+ },
+ "16": {
+  "N": 810,
+  "commutant": 6984,
+  "symmetry": 2840,
+  "extra": 4144,
+  "aut_order": 4,
+  "n_orbits": 257,
+  "max_orbit": 4
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "10": {
+  "N": 26,
+  "commutant": 30,
+  "orbitals": 246,
+  "extra": -216,
+  "aut_order": 4
+ },
+ "12": {
+  "N": 80,
+  "commutant": 134,
+  "orbitals": 1972,
+  "extra": -1838,
+  "aut_order": 4
+ },
+ "14": {
+  "N": 246,
+  "commutant": 564,
+  "orbitals": 16278,
+  "extra": -15714,
+  "aut_order": 4
+ },
+ "16": {
+  "N": 810,
+  "commutant": 6984,
+  "orbitals": 169446,
+  "extra": -162462,
+  "aut_order": 4
+ }
+}

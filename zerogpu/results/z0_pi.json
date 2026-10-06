@@ -1,0 +1,700 @@
+{
+ "R1_layer_density": {
+  "1": 256,
+  "2": 4118,
+  "3": 4858,
+  "4": 2518,
+  "5": 880,
+  "6": 208,
+  "7": 30,
+  "8": 2
+ },
+ "readings": {
+  "R1 长度恰=16（R53 口径）": {
+   "label": "R1 长度恰=16（R53 口径）",
+   "n_words": 12870,
+   "blocks": 6,
+   "h_star": 3,
+   "sizes": [
+    9232,
+    2518,
+    880,
+    208,
+    30,
+    2
+   ],
+   "weights": [
+    0.717327,
+    0.195649,
+    0.068376,
+    0.016162,
+    0.002331,
+    0.000155
+   ],
+   "q": 0.55777859,
+   "lam1": 0.73095804,
+   "rank": 5,
+   "needed_rank": 5,
+   "S_max": 2.006279,
+   "ledger_peak_D": 4,
+   "gate1": true,
+   "gate2": true,
+   "gate3": true,
+   "all_pass": true
+  },
+  "R2 首达闭合 ≤16（引擎 Z*）": {
+   "label": "R2 首达闭合 ≤16（引擎 Z*）",
+   "n_words": 1252,
+   "blocks": 5,
+   "h_star": 4,
+   "sizes": [
+    756,
+    346,
+    124,
+    24,
+    2
+   ],
+   "weights": [
+    0.603834,
+    0.276358,
+    0.099042,
+    0.019169,
+    0.001597
+   ],
+   "q": 0.45116823,
+   "lam1": 0.61663948,
+   "rank": 4,
+   "needed_rank": 4,
+   "S_max": 1.908639,
+   "ledger_peak_D": 3,
+   "gate1": false,
+   "gate2": false,
+   "gate3": true,
+   "all_pass": false
+  },
+  "R3 所有平衡词 ≤16": {
+   "label": "R3 所有平衡词 ≤16",
+   "n_words": 17576,
+   "blocks": 6,
+   "h_star": 3,
+   "sizes": [
+    13056,
+    3192,
+    1058,
+    236,
+    32,
+    2
+   ],
+   "weights": [
+    0.742831,
+    0.181611,
+    0.060196,
+    0.013427,
+    0.001821,
+    0.000114
+   ],
+   "q": 0.5885879,
+   "lam1": 0.75442043,
+   "rank": 5,
+   "needed_rank": 5,
+   "S_max": 2.026318,
+   "ledger_peak_D": 4,
+   "gate1": true,
+   "gate2": true,
+   "gate3": true,
+   "all_pass": true
+  }
+ },
+ "readout": {
+  "omega": [
+   0.7173271173271173,
+   0.19564879564879564,
+   0.06837606837606838,
+   0.01616161616161616,
+   0.002331002331002331,
+   0.0001554001554001554
+  ],
+  "K": [
+   0.332223,
+   1.631434,
+   2.682732,
+   4.125116,
+   6.061457,
+   8.769507
+  ],
+  "kappa1": 0.55777859,
+  "Td": 27.407,
+  "n_lines": 15
+ },
+ "B_scan": [
+  {
+   "L": 4,
+   "reading": "R1",
+   "q": 0.55555556,
+   "S_max": 1.951367,
+   "peak_D": 4,
+   "all_pass": false,
+   "blocks": 2,
+   "sizes": [
+    4,
+    2
+   ]
+  },
+  {
+   "L": 4,
+   "reading": "R2",
+   "q": 0.5,
+   "S_max": 1.809017,
+   "peak_D": -1,
+   "all_pass": false,
+   "blocks": 2,
+   "sizes": [
+    2,
+    2
+   ]
+  },
+  {
+   "L": 4,
+   "reading": "R3",
+   "q": 0.625,
+   "S_max": 2.022542,
+   "peak_D": 5,
+   "all_pass": false,
+   "blocks": 2,
+   "sizes": [
+    6,
+    2
+   ]
+  },
+  {
+   "L": 6,
+   "reading": "R1",
+   "q": 0.82,
+   "S_max": 2.150658,
+   "peak_D": 11,
+   "all_pass": false,
+   "blocks": 2,
+   "sizes": [
+    18,
+    2
+   ]
+  },
+  {
+   "L": 6,
+   "reading": "R2",
+   "q": 0.625,
+   "S_max": 2.022542,
+   "peak_D": 5,
+   "all_pass": false,
+   "blocks": 2,
+   "sizes": [
+    6,
+    2
+   ]
+  },
+  {
+   "L": 6,
+   "reading": "R3",
+   "q": 0.43877551,
+   "S_max": 1.809017,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 3,
+   "sizes": [
+    14,
+    12,
+    2
+   ]
+  },
+  {
+   "L": 8,
+   "reading": "R1",
+   "q": 0.63591837,
+   "S_max": 2.040845,
+   "peak_D": 5,
+   "all_pass": false,
+   "blocks": 3,
+   "sizes": [
+    54,
+    14,
+    2
+   ]
+  },
+  {
+   "L": 8,
+   "reading": "R2",
+   "q": 0.80246914,
+   "S_max": 2.141168,
+   "peak_D": 10,
+   "all_pass": false,
+   "blocks": 2,
+   "sizes": [
+    16,
+    2
+   ]
+  },
+  {
+   "L": 8,
+   "reading": "R3",
+   "q": 0.69346106,
+   "S_max": 2.079192,
+   "peak_D": 6,
+   "all_pass": false,
+   "blocks": 3,
+   "sizes": [
+    80,
+    16,
+    2
+   ]
+  },
+  {
+   "L": 10,
+   "reading": "R1",
+   "q": 0.49559083,
+   "S_max": 1.935424,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 4,
+   "sizes": [
+    162,
+    70,
+    18,
+    2
+   ]
+  },
+  {
+   "L": 10,
+   "reading": "R2",
+   "q": 0.55387524,
+   "S_max": 1.976124,
+   "peak_D": 4,
+   "all_pass": false,
+   "blocks": 3,
+   "sizes": [
+    32,
+    12,
+    2
+   ]
+  },
+  {
+   "L": 10,
+   "reading": "R3",
+   "q": 0.54174694,
+   "S_max": 1.97591,
+   "peak_D": 4,
+   "all_pass": false,
+   "blocks": 4,
+   "sizes": [
+    242,
+    86,
+    20,
+    2
+   ]
+  },
+  {
+   "L": 12,
+   "reading": "R1",
+   "q": 0.40055471,
+   "S_max": 1.843181,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 5,
+   "sizes": [
+    486,
+    306,
+    108,
+    22,
+    2
+   ]
+  },
+  {
+   "L": 12,
+   "reading": "R2",
+   "q": 0.39408284,
+   "S_max": 1.809017,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 4,
+   "sizes": [
+    64,
+    48,
+    16,
+    2
+   ]
+  },
+  {
+   "L": 12,
+   "reading": "R3",
+   "q": 0.43165693,
+   "S_max": 1.880192,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 5,
+   "sizes": [
+    728,
+    392,
+    128,
+    24,
+    2
+   ]
+  },
+  {
+   "L": 14,
+   "reading": "R1",
+   "q": 0.33966548,
+   "S_max": 1.765129,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 6,
+   "sizes": [
+    1458,
+    1246,
+    546,
+    154,
+    26,
+    2
+   ]
+  },
+  {
+   "L": 14,
+   "reading": "R2",
+   "q": 0.58767296,
+   "S_max": 2.013827,
+   "peak_D": 4,
+   "all_pass": true,
+   "blocks": 4,
+   "sizes": [
+    290,
+    82,
+    20,
+    2
+   ]
+  },
+  {
+   "L": 14,
+   "reading": "R3",
+   "q": 0.35890145,
+   "S_max": 1.797054,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 6,
+   "sizes": [
+    2186,
+    1638,
+    674,
+    178,
+    28,
+    2
+   ]
+  },
+  {
+   "L": 16,
+   "reading": "R1",
+   "q": 0.55777859,
+   "S_max": 2.006279,
+   "peak_D": 4,
+   "all_pass": true,
+   "blocks": 6,
+   "sizes": [
+    9232,
+    2518,
+    880,
+    208,
+    30,
+    2
+   ]
+  },
+  {
+   "L": 16,
+   "reading": "R2",
+   "q": 0.45116823,
+   "S_max": 1.908639,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 5,
+   "sizes": [
+    756,
+    346,
+    124,
+    24,
+    2
+   ]
+  },
+  {
+   "L": 16,
+   "reading": "R3",
+   "q": 0.5885879,
+   "S_max": 2.026318,
+   "peak_D": 4,
+   "all_pass": true,
+   "blocks": 6,
+   "sizes": [
+    13056,
+    3192,
+    1058,
+    236,
+    32,
+    2
+   ]
+  },
+  {
+   "L": 18,
+   "reading": "R1",
+   "q": 0.48058004,
+   "S_max": 1.954906,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 7,
+   "sizes": [
+    31520,
+    10980,
+    4488,
+    1326,
+    270,
+    34,
+    2
+   ]
+  },
+  {
+   "L": 18,
+   "reading": "R2",
+   "q": 0.35746188,
+   "S_max": 1.813825,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 6,
+   "sizes": [
+    1976,
+    1314,
+    618,
+    174,
+    28,
+    2
+   ]
+  },
+  {
+   "L": 18,
+   "reading": "R3",
+   "q": 0.50689211,
+   "S_max": 1.974128,
+   "peak_D": 4,
+   "all_pass": false,
+   "blocks": 7,
+   "sizes": [
+    44576,
+    14172,
+    5546,
+    1562,
+    302,
+    36,
+    2
+   ]
+  },
+  {
+   "L": 20,
+   "reading": "R1",
+   "q": 0.4166588,
+   "S_max": 1.906997,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 8,
+   "sizes": [
+    107616,
+    46134,
+    21316,
+    7410,
+    1900,
+    340,
+    38,
+    2
+   ]
+  },
+  {
+   "L": 20,
+   "reading": "R2",
+   "q": 0.55123162,
+   "S_max": 2.002055,
+   "peak_D": 4,
+   "all_pass": true,
+   "blocks": 6,
+   "sizes": [
+    9852,
+    2724,
+    994,
+    232,
+    32,
+    2
+   ]
+  },
+  {
+   "L": 20,
+   "reading": "R3",
+   "q": 0.43835551,
+   "S_max": 1.925029,
+   "peak_D": 3,
+   "all_pass": false,
+   "blocks": 8,
+   "sizes": [
+    152192,
+    60306,
+    26862,
+    8972,
+    2202,
+    376,
+    40,
+    2
+   ]
+  }
+ ],
+ "C_four_gates": [
+  {
+   "L": 4,
+   "words": 6,
+   "K2": 10,
+   "K1": 20,
+   "words_le_K2": true,
+   "words_le_K1": true,
+   "prim": 4,
+   "prim_le_K2": true,
+   "prim_le_K1": true,
+   "blocks": 2,
+   "blocks_le_K2": true,
+   "gates": []
+  },
+  {
+   "L": 6,
+   "words": 20,
+   "K2": 14,
+   "K1": 28,
+   "words_le_K2": false,
+   "words_le_K1": true,
+   "prim": 8,
+   "prim_le_K2": true,
+   "prim_le_K1": true,
+   "blocks": 2,
+   "blocks_le_K2": true,
+   "gates": []
+  },
+  {
+   "L": 8,
+   "words": 70,
+   "K2": 18,
+   "K1": 36,
+   "words_le_K2": false,
+   "words_le_K1": false,
+   "prim": 18,
+   "prim_le_K2": true,
+   "prim_le_K1": true,
+   "blocks": 3,
+   "blocks_le_K2": true,
+   "gates": []
+  },
+  {
+   "L": 10,
+   "words": 252,
+   "K2": 22,
+   "K1": 44,
+   "words_le_K2": false,
+   "words_le_K1": false,
+   "prim": 46,
+   "prim_le_K2": false,
+   "prim_le_K1": false,
+   "blocks": 4,
+   "blocks_le_K2": true,
+   "gates": []
+  },
+  {
+   "L": 12,
+   "words": 924,
+   "K2": 26,
+   "K1": 52,
+   "words_le_K2": false,
+   "words_le_K1": false,
+   "prim": 130,
+   "prim_le_K2": false,
+   "prim_le_K1": false,
+   "blocks": 5,
+   "blocks_le_K2": true,
+   "gates": []
+  },
+  {
+   "L": 14,
+   "words": 3432,
+   "K2": 30,
+   "K1": 60,
+   "words_le_K2": false,
+   "words_le_K1": false,
+   "prim": 394,
+   "prim_le_K2": false,
+   "prim_le_K1": false,
+   "blocks": 6,
+   "blocks_le_K2": true,
+   "gates": [
+    "R2"
+   ]
+  },
+  {
+   "L": 16,
+   "words": 12870,
+   "K2": 34,
+   "K1": 68,
+   "words_le_K2": false,
+   "words_le_K1": false,
+   "prim": 1252,
+   "prim_le_K2": false,
+   "prim_le_K1": false,
+   "blocks": 6,
+   "blocks_le_K2": true,
+   "gates": [
+    "R1",
+    "R3"
+   ]
+  },
+  {
+   "L": 18,
+   "words": 48620,
+   "K2": 38,
+   "K1": 76,
+   "words_le_K2": false,
+   "words_le_K1": false,
+   "prim": 4112,
+   "prim_le_K2": false,
+   "prim_le_K1": false,
+   "blocks": 7,
+   "blocks_le_K2": true,
+   "gates": []
+  },
+  {
+   "L": 20,
+   "words": 184756,
+   "K2": 42,
+   "K1": 84,
+   "words_le_K2": false,
+   "words_le_K1": false,
+   "prim": 13836,
+   "prim_le_K2": false,
+   "prim_le_K1": false,
+   "blocks": 8,
+   "blocks_le_K2": true,
+   "gates": [
+    "R2"
+   ]
+  }
+ ],
+ "C_survivors": {
+  "词数口径 K2": [],
+  "词数口径 K1": [],
+  "首达口径 K2": [],
+  "首达口径 K1": [],
+  "块数口径 K2": [
+   14,
+   16,
+   20
+  ]
+ },
+ "summary": {
+  "pass_": 9,
+  "fail": 0,
+  "failed": []
+ }
+}

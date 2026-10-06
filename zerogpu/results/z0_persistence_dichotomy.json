@@ -1,0 +1,89 @@
+{
+ "scenarios": {
+  "continue": {
+   "life": "有限",
+   "reseed": "无",
+   "traj": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "final": 0,
+   "dead": true
+  },
+  "wipe_no_reseed": {
+   "life": "有限",
+   "reseed": "无",
+   "traj": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "final": 0,
+   "dead": true
+  },
+  "wipe_reseed": {
+   "life": "有限",
+   "reseed": "有",
+   "traj": [
+    1,
+    0,
+    0,
+    7,
+    5,
+    7,
+    5,
+    7,
+    5,
+    7,
+    5,
+    7
+   ],
+   "final": 7,
+   "dead": false
+  },
+  "open": {
+   "life": "无",
+   "reseed": "无",
+   "traj": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048
+   ],
+   "final": 549755813888,
+   "dead": false
+  }
+ },
+ "summary": {
+  "pass_": 6,
+  "fail": 0,
+  "failed": []
+ }
+}

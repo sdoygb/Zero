@@ -1,0 +1,38 @@
+{
+ "12_逆序数": {
+  "values": 16,
+  "commutator": 11.0,
+  "degen_split": 8,
+  "degen_total": 65
+ },
+ "12_下降数": {
+  "values": 6,
+  "commutator": 1.0,
+  "degen_split": 6,
+  "degen_total": 65
+ },
+ "12_符号变化数": {
+  "values": 6,
+  "commutator": 2.0,
+  "degen_split": 6,
+  "degen_total": 65
+ },
+ "14_逆序数": {
+  "values": 23,
+  "commutator": 15.0,
+  "degen_split": 24,
+  "degen_total": 185
+ },
+ "14_下降数": {
+  "values": 7,
+  "commutator": 1.0,
+  "degen_split": 19,
+  "degen_total": 185
+ },
+ "14_符号变化数": {
+  "values": 7,
+  "commutator": 2.0,
+  "degen_split": 19,
+  "degen_total": 185
+ }
+}

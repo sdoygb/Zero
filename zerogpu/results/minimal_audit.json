@@ -1,0 +1,140 @@
+{
+  "device": {
+    "name": "AMD Radeon RX 570 Compute Engine",
+    "type": "ALL | GPU",
+    "cus": 32,
+    "global_mem_gb": 8.0,
+    "max_alloc_gb": 2.0,
+    "clock_mhz": 1244,
+    "fp64": true,
+    "max_wg": 256
+  },
+  "A_symmetry": [
+    {
+      "T": 6,
+      "N": 4,
+      "aut_order": 4,
+      "truncated": false,
+      "regular": false,
+      "edge_transitive": false,
+      "V4_acts": true
+    },
+    {
+      "T": 8,
+      "N": 10,
+      "aut_order": 48,
+      "truncated": false,
+      "regular": false,
+      "edge_transitive": false,
+      "V4_acts": true
+    },
+    {
+      "T": 10,
+      "N": 26,
+      "aut_order": 4,
+      "truncated": false,
+      "regular": false,
+      "edge_transitive": false,
+      "V4_acts": true
+    },
+    {
+      "T": 12,
+      "N": 80,
+      "aut_order": 4,
+      "truncated": false,
+      "regular": false,
+      "edge_transitive": false,
+      "V4_acts": true
+    }
+  ],
+  "B_g89_prop1": [
+    {
+      "m": 2,
+      "connected": true,
+      "edge_transitive": true,
+      "rankB": 1,
+      "kerL_is_span1": true,
+      "L_HQ_positive": true
+    },
+    {
+      "m": 3,
+      "connected": true,
+      "edge_transitive": true,
+      "rankB": 2,
+      "kerL_is_span1": true,
+      "L_HQ_positive": true
+    },
+    {
+      "m": 4,
+      "connected": true,
+      "edge_transitive": true,
+      "rankB": 3,
+      "kerL_is_span1": true,
+      "L_HQ_positive": true
+    },
+    {
+      "m": 5,
+      "connected": true,
+      "edge_transitive": true,
+      "rankB": 4,
+      "kerL_is_span1": true,
+      "L_HQ_positive": true
+    },
+    {
+      "m": 6,
+      "connected": true,
+      "edge_transitive": true,
+      "rankB": 5,
+      "kerL_is_span1": true,
+      "L_HQ_positive": true
+    },
+    {
+      "m": 7,
+      "connected": true,
+      "edge_transitive": true,
+      "rankB": 6,
+      "kerL_is_span1": true,
+      "L_HQ_positive": true
+    },
+    {
+      "m": 8,
+      "connected": true,
+      "edge_transitive": true,
+      "rankB": 7,
+      "kerL_is_span1": true,
+      "L_HQ_positive": true
+    },
+    {
+      "m": 9,
+      "connected": true,
+      "edge_transitive": true,
+      "rankB": 8,
+      "kerL_is_span1": true,
+      "L_HQ_positive": true
+    },
+    {
+      "m": 10,
+      "connected": true,
+      "edge_transitive": true,
+      "rankB": 9,
+      "kerL_is_span1": true,
+      "L_HQ_positive": true
+    },
+    {
+      "m": 11,
+      "connected": true,
+      "edge_transitive": true,
+      "rankB": 10,
+      "kerL_is_span1": true,
+      "L_HQ_positive": true
+    },
+    {
+      "m": 12,
+      "connected": true,
+      "edge_transitive": true,
+      "rankB": 11,
+      "kerL_is_span1": true,
+      "L_HQ_positive": true
+    }
+  ]
+}

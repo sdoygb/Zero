@@ -1,0 +1,100 @@
+{
+ "phase": [
+  {
+   "mode": "sync",
+   "scale": 1.0,
+   "f": 1.0,
+   "move": 0.5948,
+   "slope": 0.0675,
+   "acf_tau": 6,
+   "n_life": 51523,
+   "life_mean": 1.0,
+   "life_med": 1.0,
+   "life_p95": 1.0,
+   "life_max": 7
+  },
+  {
+   "mode": "async_kac",
+   "scale": 0.25,
+   "f": 0.0154,
+   "move": 0.0,
+   "slope": 0.5717,
+   "acf_tau": 1,
+   "n_life": 139,
+   "life_mean": 19.56,
+   "life_med": 1.0,
+   "life_p95": 135.0,
+   "life_max": 543
+  },
+  {
+   "mode": "async_kac",
+   "scale": 0.1,
+   "f": 0.0391,
+   "move": 0.0274,
+   "slope": 0.0876,
+   "acf_tau": 1,
+   "n_life": 1111,
+   "life_mean": 1.9,
+   "life_med": 1.0,
+   "life_p95": 1.0,
+   "life_max": 215
+  },
+  {
+   "mode": "async_kac",
+   "scale": 0.05,
+   "f": 0.0762,
+   "move": 0.0298,
+   "slope": 0.5093,
+   "acf_tau": 1,
+   "n_life": 2905,
+   "life_mean": 1.17,
+   "life_med": 1.0,
+   "life_p95": 1.0,
+   "life_max": 111
+  },
+  {
+   "mode": "async_kac",
+   "scale": 0.02,
+   "f": 0.2031,
+   "move": 0.135,
+   "slope": 0.001,
+   "acf_tau": 1,
+   "n_life": 9341,
+   "life_mean": 1.02,
+   "life_med": 1.0,
+   "life_p95": 1.0,
+   "life_max": 34
+  },
+  {
+   "mode": "async_kac",
+   "scale": 0.01,
+   "f": 0.3945,
+   "move": 0.1388,
+   "slope": -0.0136,
+   "acf_tau": 1,
+   "n_life": 16198,
+   "life_mean": 1.02,
+   "life_med": 1.0,
+   "life_p95": 1.0,
+   "life_max": 86
+  },
+  {
+   "mode": "async_event",
+   "scale": 1.0,
+   "f": 0.4074,
+   "move": 0.0392,
+   "slope": -0.0872,
+   "acf_tau": 85,
+   "n_life": 4723,
+   "life_mean": 1.01,
+   "life_med": 1.0,
+   "life_p95": 1.0,
+   "life_max": 7
+  }
+ ],
+ "summary": {
+  "pass_": 3,
+  "fail": 0,
+  "failed": []
+ }
+}

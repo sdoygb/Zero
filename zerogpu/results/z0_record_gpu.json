@@ -1,0 +1,130 @@
+{
+  "N": 32,
+  "rows": [
+    {
+      "n": 8,
+      "events": 10,
+      "distinct_classes": 7,
+      "K_n": 10,
+      "coverage": 0.7,
+      "injective": false,
+      "collisions": 3
+    },
+    {
+      "n": 10,
+      "events": 28,
+      "distinct_classes": 20,
+      "K_n": 26,
+      "coverage": 0.769231,
+      "injective": false,
+      "collisions": 8
+    },
+    {
+      "n": 12,
+      "events": 84,
+      "distinct_classes": 61,
+      "K_n": 80,
+      "coverage": 0.7625,
+      "injective": false,
+      "collisions": 23
+    },
+    {
+      "n": 14,
+      "events": 264,
+      "distinct_classes": 193,
+      "K_n": 246,
+      "coverage": 0.784553,
+      "injective": false,
+      "collisions": 71
+    },
+    {
+      "n": 16,
+      "events": 858,
+      "distinct_classes": 629,
+      "K_n": 810,
+      "coverage": 0.776543,
+      "injective": false,
+      "collisions": 229
+    },
+    {
+      "n": 18,
+      "events": 2860,
+      "distinct_classes": 2101,
+      "K_n": 2704,
+      "coverage": 0.776997,
+      "injective": false,
+      "collisions": 759
+    },
+    {
+      "n": 20,
+      "events": 9724,
+      "distinct_classes": 7158,
+      "K_n": 9252,
+      "coverage": 0.773671,
+      "injective": false,
+      "collisions": 2566
+    },
+    {
+      "n": 22,
+      "events": 33592,
+      "distinct_classes": 24775,
+      "K_n": 32066,
+      "coverage": 0.772625,
+      "injective": false,
+      "collisions": 8817
+    },
+    {
+      "n": 24,
+      "events": 117572,
+      "distinct_classes": 86855,
+      "K_n": 112720,
+      "coverage": 0.770538,
+      "injective": false,
+      "collisions": 30717
+    },
+    {
+      "n": 26,
+      "events": 416024,
+      "distinct_classes": 307746,
+      "K_n": 400024,
+      "coverage": 0.769319,
+      "injective": false,
+      "collisions": 108278
+    },
+    {
+      "n": 28,
+      "events": 1485800,
+      "distinct_classes": 1100291,
+      "K_n": 1432860,
+      "coverage": 0.767898,
+      "injective": false,
+      "collisions": 385509
+    },
+    {
+      "n": 30,
+      "events": 5348880,
+      "distinct_classes": 3964618,
+      "K_n": 5170604,
+      "coverage": 0.766761,
+      "injective": false,
+      "collisions": 1384262
+    },
+    {
+      "n": 32,
+      "events": 19389690,
+      "distinct_classes": 14382765,
+      "K_n": 18784170,
+      "coverage": 0.765685,
+      "injective": false,
+      "collisions": 5006925
+    }
+  ],
+  "timing": {
+    "kernel": 0.11639547348022461,
+    "compact": 0.04468369483947754,
+    "canon": 0.02730250358581543,
+    "download": 0.10555267333984375,
+    "unique": 2.1271896362304688
+  },
+  "total": 2.42112398147583
+}
