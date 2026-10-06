@@ -1,0 +1,189 @@
+{
+ "summary": {
+  "pass_": 6,
+  "fail": 0,
+  "gaps": [
+   "**精确撤回值的传播不完整**"
+  ],
+  "n_exact": 12,
+  "n_heuristic": 59,
+  "exact_list": {
+   "9.82": [
+    "build_122_proton_decay_mechanism.py"
+   ],
+   "33.62": [
+    "build_157_AB_decision.py"
+   ],
+   "1.349163": [
+    "build_185_q401_resolved.py"
+   ],
+   "21.12": [
+    "build_202_gut_unification.py"
+   ],
+   "4.765": [
+    "build_292_q601.py"
+   ],
+   "5.006": [
+    "build_296_q610.py"
+   ],
+   "0.419": [
+    "build_332_q659_graviton_weight.py"
+   ],
+   "2.111": [
+    "build_368_q694_downstream_k1.py"
+   ],
+   "0.231200": [
+    "build_68_running_from_true_start.py",
+    "build_83_beta_normalization_audit.py"
+   ],
+   "0.0088%": [
+    "build_69_r_from_geometry.py",
+    "build_71_spinor_overlap.py",
+    "build_72_q233_spinor_origin.py"
+   ],
+   "1.55%": [
+    "build_87_q262_r_origin.py",
+    "build_89_q262_route_2_binding.py",
+    "build_89_q262_route_2_binding.py",
+    "build_90_alpha_not_computable.py"
+   ],
+   "7.84": [
+    "build_91_q5_three_couplings.py"
+   ]
+  },
+  "n_with_citers": 12,
+  "n_unpropagated": 10,
+  "rows": [
+   [
+    "9.82",
+    "build_122_proton_decay_mechanism.py",
+    26,
+    [
+     "ALPHA_FORMULA.md",
+     "ANCHOR_EQUIVALENCE.md",
+     "LEGACY_SIX_TERM_VERDICT.md",
+     "LESSONS.md",
+     "OLD_DOCS_RECOMPUTE_LEDGER.md",
+     "Q204_TRUE_START.md",
+     "Q323_WHAT_IS_A_FLOW.md",
+     "Q328_REFERENCE_SCALE.md",
+     "Q348_Q341_COSMO_ATTACK.md",
+     "Q459_CTHREE_VEV.md",
+     "SCALE_MAP_ATTACK.md",
+     "YUKAWA_SECTOR.md"
+    ]
+   ],
+   [
+    "33.62",
+    "build_157_AB_decision.py",
+    23,
+    [
+     "AB_DECISION.md",
+     "GUT_PREDICTIONS.md",
+     "LESSONS.md",
+     "MAPPING_SCALE_DIMENSION_STATUS.md",
+     "OLD_DOCS_RECOMPUTE_LEDGER.md",
+     "Q323_WHAT_IS_A_FLOW.md",
+     "Q367_Q366_CLOSED.md",
+     "Q563_NX_DETERMINATION.md",
+     "Q565_TENSION_RESOLVED.md",
+     "SCALE_MAP_ATTACK.md"
+    ]
+   ],
+   [
+    "0.231200",
+    "build_68_running_from_true_start.py",
+    10,
+    [
+     "ALPHA_FORMULA.md",
+     "OLD_DOCS_RECOMPUTE_LEDGER.md",
+     "Q221_R_FROM_GEOMETRY.md",
+     "Q229_SPINOR_OVERLAP.md",
+     "Q233_SPINOR_ORIGIN.md"
+    ]
+   ],
+   [
+    "0.0088%",
+    "build_69_r_from_geometry.py",
+    10,
+    [
+     "ALPHA_FORMULA.md",
+     "OLD_DOCS_RECOMPUTE_LEDGER.md",
+     "Q221_R_FROM_GEOMETRY.md",
+     "Q229_SPINOR_OVERLAP.md",
+     "Q233_SPINOR_ORIGIN.md"
+    ]
+   ],
+   [
+    "21.12",
+    "build_202_gut_unification.py",
+    6,
+    [
+     "COSMOLOGY_READINESS.md",
+     "GUT_ROADMAP.md",
+     "OLD_DOCS_RECOMPUTE_LEDGER.md"
+    ]
+   ],
+   [
+    "4.765",
+    "build_292_q601.py",
+    8,
+    [
+     "Q585_WHICH_STATES_LIGHT.md",
+     "Q590_THREE_FACTOR_ANOMALY.md",
+     "Q596_DEMOCRATIC_MASS.md"
+    ]
+   ],
+   [
+    "7.84",
+    "build_91_q5_three_couplings.py",
+    5,
+    [
+     "ALPHA_FORMULA.md",
+     "LESSONS.md",
+     "Q326_HIERARCHY_AS_SECTOR_RELATIVE.md"
+    ]
+   ],
+   [
+    "0.419",
+    "build_332_q659_graviton_weight.py",
+    7,
+    [
+     "OLD_DOCS_RECOMPUTE_LEDGER.md",
+     "Q659_GRAVITON_WEIGHT.md"
+    ]
+   ],
+   [
+    "2.111",
+    "build_368_q694_downstream_k1.py",
+    8,
+    [
+     "Q659_GRAVITON_WEIGHT.md",
+     "Q694_DOWNSTREAM_K1.md"
+    ]
+   ],
+   [
+    "1.55%",
+    "build_87_q262_r_origin.py",
+    3,
+    [
+     "ALPHA_FORMULA.md",
+     "PHYSICAL_SECTOR.md"
+    ]
+   ],
+   [
+    "1.349163",
+    "build_185_q401_resolved.py",
+    1,
+    []
+   ],
+   [
+    "5.006",
+    "build_296_q610.py",
+    7,
+    []
+   ]
+  ],
+  "verdict": "【导出】：精确撤回清单（严格判读）＋ 传播真数"
+ }
+}
