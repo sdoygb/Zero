@@ -85,7 +85,7 @@ $$
 | 熄灭判据 | [`Z0`](Z0_zero_never_rests_single_axiom.md) §2.5 的 Z5 导出 |
 | 重播种映射 $w\mapsto\{w\pm\}$ | **Z5**；原登记为 **I8**；[`G37`](G37_reseeding_law_and_sign_symmetry_theorem.md) 的定量重播种律 |
 | 爆炸 $\Rightarrow$ 需截断 | [`Z0`](Z0_zero_never_rests_single_axiom.md) §2.6 的 Z4 终端款 |
-| 站点独立 | [`Z1`](Z1_zero_layer_as_the_foundation.md) §2.4 的**识别 U**（唯一宇宙）——本层的站点**互不耦合**，连通性靠识别给出 |
+| 站点独立 | ~~识别 U~~ **已删**——本层的站点**互不耦合**；$\Gamma$ 的分量各自满足零和（$\sigma$-可加） |
 
 ---
 

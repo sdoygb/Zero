@@ -156,7 +156,10 @@ for L in (2, 3, 4):
         if components(edges) != 1:
             bad += 1
 check("单条游走给出的图恰有 1 个连通分量", bad == 0, "游走样本 %d，反例 %d" % (tot, bad))
-check("Z0 写明多初始词需'识别 U'才连通", "识别 U" in DOC and "连通" in DOC)
+check("识别 U 定义块已删除；sigma-可加读法在位",
+      "**处置**：加一条**识别**（不是公理）：" not in DOC
+      and "~~**识别 U（唯一宇宙）**" in DOC          # 删除线标注（有意保留）
+      and "$\\sigma$-可加" in DOC)
 
 # ---------------------------------------------------------------- F6
 head("F6  年龄 = 词长（程序逐字）")
@@ -182,7 +185,7 @@ head("F9  价目表完整")
 _sec = DOC[DOC.index("## §3 价目表"):DOC.index("## §4")]
 rows = [l for l in _sec.split("\n")
         if l.startswith("|") and not set(l) <= set("|-: ") and "买回" not in l]
-check("价目表数据行 ≥ 6（Z0 三款 ＋ 识别 U ＋ 参数 L ＋ 残余条款）", len(rows) >= 6,
+check("价目表数据行 ≥ 5（Z0 三款 ＋ 参数 L ＋ 残余条款；识别 U 已删）", len(rows) >= 5,
       "实算 %d 行" % len(rows))
 check("价目表逐行都写了'买回'一栏（四列）",
       all(l.count("|") >= 5 for l in rows), "最少列数 %d" % min(l.count("|") for l in rows))
