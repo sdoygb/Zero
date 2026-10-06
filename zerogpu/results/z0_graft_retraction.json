@@ -1,0 +1,41 @@
+{
+ "summary": {
+  "pass_": 11,
+  "fail": 0,
+  "gaps": [
+   "**两条 sin²θ_W(M_X) 公式的关系**",
+   "**撤回未传播到下游文档**"
+  ],
+  "bY_over_b1": 1.6666666666666667,
+  "underrun": 0.4,
+  "r": 0.9330127018922194,
+  "s2MX": 0.3829127136478529,
+  "citing": [
+   "ALPHA_FORMULA.md",
+   "HOW_ALPHA_IS_COMPUTED.md",
+   "IMBALANCE_AND_ALPHA.md",
+   "INDEX.md",
+   "OLD_DOCS_RECOMPUTE_LEDGER.md",
+   "Q221_R_FROM_GEOMETRY.md",
+   "Q226_ROOT_GEOMETRY.md",
+   "Q229_SPINOR_OVERLAP.md",
+   "Q233_SPINOR_ORIGIN.md",
+   "Q244_ALPHA_S.md"
+  ],
+  "marked": [
+   "HOW_ALPHA_IS_COMPUTED.md",
+   "IMBALANCE_AND_ALPHA.md",
+   "INDEX.md",
+   "Q226_ROOT_GEOMETRY.md",
+   "Q244_ALPHA_S.md"
+  ],
+  "clean": [
+   "ALPHA_FORMULA.md",
+   "OLD_DOCS_RECOMPUTE_LEDGER.md",
+   "Q221_R_FROM_GEOMETRY.md",
+   "Q229_SPINOR_OVERLAP.md",
+   "Q233_SPINOR_ORIGIN.md"
+  ],
+  "verdict": "β 事实【导出】；几何起点【条件】；0.231200【已撤回但未传播】"
+ }
+}
