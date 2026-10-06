@@ -16,8 +16,14 @@ z0_graft_retract_all.py --- 嫁接验证 · 第十四批：全库撤回传播审
 
 ★ 本批的独立结果：
   · 含撤回声明的脚本 / 全部脚本
-  · 被撤回的指纹总数
   · **未传播**的指纹数（有文档引用但无标记）
+
+⚠ **本批对自身的限定（重要）**：
+  本批的提取是**启发性**的：它只要求「撤回关键词」与「数值」同现在脚本头 60 行内。
+  这**会把「有效值」误判为「被撤回」**。已证实例：`build_185` 头含 `0.933013`（$r=\cos^2(\pi/12)$）
+  与「作废」同现，但 $0.933013$ 本身**不是被撤回的** —— 它是几何给出的**正确**值，
+  只是与数据要的 $1.349163$ 差 $+44.6\%$。
+  ⟹ 所以本批的数字是**上界**，不是精确的撤回清单。
 
 用法：/usr/bin/python3 z0_graft_retract_all.py   输出：results/z0_graft_retract_all.json
 """
@@ -82,6 +88,18 @@ if __name__ == "__main__":
     print(f"  提取到的可追踪指纹 = {len(fingerprints)}")
     check("**A1a 找到了含撤回声明的脚本**", n_ret > 0, f"{n_ret}")
     check("**A1b 提取到可追踪指纹**", len(fingerprints) > 0, f"{len(fingerprints)}")
+    # 反例：0.933013 不是被撤回的
+    b185 = None
+    for f in scripts:
+        if "build_185" in os.path.basename(f):
+            b185 = f
+    if b185:
+        t185 = io.open(b185, encoding="utf-8", errors="ignore").read()[:4000]
+        is_retracted = bool(re.search(r"0\.933013[^\n]{0,40}(作废|撤回)", t185))
+        print(f"\n  ★ 反例检验：`build_185` 头的 `0.933013` 是否被撤回？{is_retracted}")
+        print(f"     实际：它是几何给出的**正确**值（$r=\\cos^2(\\pi/12)$），只是与数据差 $+44.6\\%$")
+        check("**A1c 启发式会误判：`0.933013` 被同现关键词捕获但并非被撤回**",
+              not is_retracted, "故本批数字是上界")
 
     # ============ A2 逐指纹追踪下游引用 ============
     print("\n" + "=" * 96)
@@ -118,8 +136,11 @@ if __name__ == "__main__":
         print(f"     引用 {worst[2]} 篇，其中 {len(worst[3])} 篇未标撤回：")
         for nm in worst[3][:6]:
             print(f"       · {nm}")
-    gap("**全库撤回传播不完整**",
-        f"{n_unprop} 个被撤回的指纹仍有未标撤回的下游引用")
+    gap("**全库撤回传播不完整（上界）**",
+        f"{n_unprop} 个指纹被启发式判为「有撤回关联」且存在未标撤回的下游引用；"
+        f"但启发式会误判（见 A1c），故真实数 ≤ {n_unprop}")
+    gap("**精确的撤回清单**",
+        "需要逐条人工判读「该数值本身是否被撤回」，本批只做了启发式上界")
 
     # ============ A3 规模统计 ============
     print("\n" + "=" * 96)
@@ -160,7 +181,9 @@ if __name__ == "__main__":
                           n_fingerprints=len(fingerprints), n_with_citers=len(rows),
                           n_unpropagated=n_unprop,
                           rows=[(fp, src, nc, cl) for fp, src, nc, cl in rows[:40]],
-                          verdict="【导出】：底座 17% 脚本带撤回声明，但撤回未完全传播")
+                          n_unpropagated_upper_bound=n_unprop,
+                          heuristic_caveat="启发式：会把有效值误判为被撤回（例：0.933013）",
+                          verdict="【导出·上界】：底座 19% 脚本带撤回声明；未传播指纹 ≤ 23")
     os.makedirs(OUT, exist_ok=True)
     json.dump(RES, open(os.path.join(OUT, "z0_graft_retract_all.json"), "w"),
               ensure_ascii=False, indent=1, default=str)
