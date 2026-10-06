@@ -77,7 +77,7 @@ $$
 
 ---
 
-## §1 【导出】——不花价签的部分（26 条）
+## §1 【导出】——不花价签的部分（27 条）
 
 | # | 结论 | 来源 | 层 |
 |--:|:--|:--|:--|
@@ -108,6 +108,7 @@ $$
 | 24 | ★★**划分造维数，且划分不唯一**★★：同一底层**八种划分给五种维数** $\{2,3,5,6,140\}$；旋转类划分的粒度给 $d_s$ 从 $\mathbf{0.213}$ 到 $\mathbf{3.718}$；同 $K$ 附近不同划分差 $1.4$ 倍；三个**典范**候选（旋转类／活动量／图距离）给三个不同的值。**唯一结构性的是：粗粒化只能降维** | 【机】同上 P2/P3 | $\mathcal R$ |
 | 25 | ★★**维数＝划分规模的函数**★★（§4 开放项**已判**）：三类典范划分（活动量／自同构轨道／图距离）在**真自同构群**下**全部典范**；自同构轨道划分给 $d_s^{\rm orb}=0.6049\ln K+0.2876$（$R^2=\mathbf{0.9767}$，11 底层）；**不收敛**（均值 $1.768$、标准差 $0.632$、范围 $[0.904,3.044]$）；同 $V$ 不同 $\Gamma$ 给不同 $d_s$。链条：$\Gamma\Rightarrow\lvert\operatorname{Aut}\rvert,K\Rightarrow d_s$ ⟹ **无条款选 $K$ ⟹ $\pi$ 是输入（}E5$）** | 【机】`z0_orbit_readout.py`（5/5） | $\mathcal R$ |
 | 26 | ★★★**第一个可测量的数**★★★（**零参数、无量纲**）：带电轻子质量比 $m_\mu/m_e=\mathbf{206.770316}$（实测 $206.768283$，**偏差 $0.0010\%$**）、$m_\tau/m_e=\mathbf{3477.4728}$（偏差 $0.0070\%$）、Koide $K=2/3$ **精确**；中微子 $m_1{=}0$、$R=(73-28\sqrt6)/25$、$\Sigma m_\nu=\mathbf{57.4}$ meV（通过 Planck 与 DESI DR2）；角度群论 $\sin^2\theta_W(M_X)=3/8$、$\sum k_a/n_a=1$、$\lvert X_a\rvert=2:\sqrt3:1$ **精确** | 【机】`z0_predictions_inventory.py`（12/12）＋ [`FIRST_MEASURABLE_NUMBERS.md`](FIRST_MEASURABLE_NUMBERS.md) | $\mathcal R$ |
+| 27 | ★**$Z_\Lambda$ 律的两侧【同源】**★（嫁接自底座，本侧独立复算）：统一律 $\sqrt{m_n}=\mu(1+A\cos(\theta+2\pi n/\Lambda))$，$\Lambda=3$；$A_{\rm 轻}=\sqrt2$、$A_\nu=\sqrt{\Lambda/k_0}=\sqrt{3/2}$。**中微子的 $R$ 不是独立拟合，而是同一个 $A$ 的精确推论**：$R=\bigl(\tfrac{7-2\sqrt6}{5}\bigr)^2=\tfrac{73-28\sqrt6}{25}$（差 $5.8\times10^{-16}$；**闭式为本侧新得**）。判决【条件】：J1+J2 满足，机制缺（三个缺口） | 【机】`z0_graft_Zlambda.py`（12/12）＋ [`GRAFT_LEDGER.md`](GRAFT_LEDGER.md) §2 | $\mathcal R$ |
 ---
 
 ## §2 【具名输入】——要付价签的部分（10 条）
@@ -281,6 +282,7 @@ $$
 | **维数来源**（§1 的 23/24；配套文章 `DIMENSION_ORIGIN.md`） | `z0_dimension_origin.py` | **8/8**（5.3 s） |
 | **轨道读出**（§1 的 25；配套 `DIMENSION_ORIGIN.md` §4.0/§7.2） | `z0_orbit_readout.py` | **5/5**（0.2 s） |
 | **零参数预言总账**（§1 的 26；文章 `FIRST_MEASURABLE_NUMBERS.md`） | `z0_predictions_inventory.py` + `z0_neutrino_absolute.py` | **12/12** + **8/8** |
+| **嫁接总账**（§1 的 27；`GRAFT_LEDGER.md`） | `z0_graft_alpha.py`（11/11）＋ `z0_graft_Zlambda.py`（12/12） | **23/23** |
 
 **净**：总账的每一条**导出**与**否证**都有落地机器，**无 `/tmp` 依赖**。
 
