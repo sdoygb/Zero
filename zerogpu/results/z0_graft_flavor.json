@@ -1,0 +1,24 @@
+{
+ "summary": {
+  "pass_": 7,
+  "fail": 0,
+  "gaps": [
+   "**Z₃ 循环约化后的 2 个关系式未被导出**",
+   "**|V_cb| 的框架动机表达式未找到**"
+  ],
+  "thm1_norm": 8.673617379884035e-19,
+  "mix_zero_Yid": 0.0,
+  "mix_zero_Vprop": 1.9698138314964214e-16,
+  "mix_general": 0.0738008930416119,
+  "vckm_form": "V_CKM = X_u† X_d (common F cancels)",
+  "vus_obs": 0.2243,
+  "sqrt_md_ms": 0.22360679774997896,
+  "fitted_samples": 720000,
+  "vus_range": [
+   1.0012963942799586e-08,
+   0.9999843999536422
+  ],
+  "vus_band_pct": 1.9333333333333333,
+  "verdict": "定理1/2 与 Z3 实质内容 = 【导出】；GST = 【一致性检查】"
+ }
+}
