@@ -1,5 +1,9 @@
 # Z17 · A0–A5 退场后的空缺账本：no-go 的 Z0 化与维数缺口的定位
 
+> **⚠ 标号警示（2026 本轮）**：本语料里 `A` 标号有**七种**独立含义，**只有本文的 `A0–A5` 是旧公理体系**。
+> 完整对照见 [`Z0`](Z0_zero_never_rests_single_axiom.md) §2.4.1 术语表。**不要对 `A` 标号做全局重命名。**
+
+
 **日期**：2026-10-03
 **性质**：**基础审计＋no-go 范围重证**。A0–A5 已由公理降为 [`Z0`](Z0_zero_never_rests_single_axiom.md) 的**定理表**（[`G0`](G0_bottom_layer_and_derivation_route.md) 顶部）。本文逐条款核验：维数 no-go（[`G89`](G89_dimension_no_go_and_the_balance_condition.md) 命题 1／[`R3`](R3_dimension_selection.md) 定理 R3-1）所用的模型类 $\{\mathcal M\_m\}\_{m\ge2}$ **是否满足 Z0 的全部条款**（Z0① ②③ ＋ Z1–Z5 ＋ 识别 U ＋ 参数）。
 **结论**：**满足，且每条 Z0 条款对 $m$ 一致**——因此 no-go 可整体搬到 Z0 层，**Z0（L0）不提供任何新的维数约束**。**层指标**：本条限 **L0**；读出面（$\mathcal R$）在具名账本族内仍可条件选出 $D=4$（[`R32`](R32_ledger_readout_selection_and_L8_resolution.md)），两者不冲突（[`R50`](R50_layer_discipline.md) 会诊 #4）。本文同时给出"A0–A5 退出的空缺"的完整账本。
