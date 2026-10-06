@@ -9,3 +9,6 @@ __pycache__/
 .trash/
 .DS_Store
 *.swp
+
+# 另一项目的数据集（体积过大，不入版本库；最大单文件 348MB）
+port/
