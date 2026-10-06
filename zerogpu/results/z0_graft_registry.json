@@ -1,0 +1,2114 @@
+{
+ "summary": {
+  "pass_": 9,
+  "fail": 0,
+  "gaps": [
+   "**注册表覆盖不全**",
+   "**量子测度的归一化（`Q12`）**",
+   "**272 篇 Q 文档的逐条审计**"
+  ],
+  "n_reg": 94,
+  "n_docs": 286,
+  "n_main": 272,
+  "cov_doc": 5.88235294117647,
+  "cov_all": 11.230585424133812,
+  "hierarchy_table": [
+   [
+    "k≤1 + Einstein",
+    5.290853914114646
+   ],
+   [
+    "k≤1 + Jordan",
+    5.14652596423833
+   ],
+   [
+    "k≤3 + Einstein",
+    4.844497970506897
+   ],
+   [
+    "k≤3 + Jordan",
+    4.639359837943612
+   ],
+   [
+    "k≤3 + 仅标量（旧）",
+    4.981525096403481
+   ]
+  ],
+  "C_exact": 0.0010554289962743518,
+  "inv_sqrt_C": 30.781195923884734,
+  "index": [
+   {
+    "file": "Q10_QUANTIZATION.md",
+    "title": "Q10：量子化",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q204_RESULT.md",
+    "title": "Q204：`sin²θ_W` 从 `3/8` 跑到 `M_Z`（build_63）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q204_STAGED.md",
+    "title": "Q204（续）：分阶段跑动（build_65）",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q204_TRUE_START.md",
+    "title": "Q204（续）：真实起点的跑动（build_66/67/68）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q221_R_FROM_GEOMETRY.md",
+    "title": "Q221：从几何导出 `r = g_R/g_L`（build_69）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q226_ROOT_GEOMETRY.md",
+    "title": "Q226：根几何能否导出 `r = (2+√3)/4`？（build_70）",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q229_SPINOR_OVERLAP.md",
+    "title": "Q229/Q230：界间的旋量投影 —— `r` 的机制（build_71）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q233_SPINOR_ORIGIN.md",
+    "title": "Q233：「界是旋量态」从哪来？（build_72）",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q238_ALPHA1_EXOTICS.md",
+    "title": "Q238：异态能否修复 `α₁` 不统一？（build_73）",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q244_ALPHA_S.md",
+    "title": "Q244：`α_s(M_Z)` 能否也是独立预言？（build_74）",
+    "nums": [],
+    "stats": [
+     "否",
+     "订正"
+    ]
+   },
+   {
+    "file": "Q269_VEV_EIGENVALUES.md",
+    "title": "Q269：VEV 本征值被钉住了吗？",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q271_Q272_THREE_VEVS.md",
+    "title": "Q271 / Q272：三个 VEV 之间有共享约束吗？",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q274_Q275_SQRT2_AND_2OVER9.md",
+    "title": "Q274 / Q275：`√2` 与 `2/9` 能从框架逼出来吗？",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q277_COMMON_SCALE_KOIDE.md",
+    "title": "Q277：在共同能标上硬算 Koide（1-loop SM RGE）",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q280_THRESHOLDS_AND_2LOOP.md",
+    "title": "Q280：阈值 + 2-loop 界定",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q282_2LOOP_CITABLE_PARTS.md",
+    "title": "Q282：2-loop —— 能引用的部分与取不到的部分",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q283_K_ERROR_BUDGET.md",
+    "title": "Q283：`K` 的系统误差来源清单（误差预算）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q285_CKM_MIXING_EFFECT.md",
+    "title": "Q285：CKM 混合对 `K` 的影响（真算一遍）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q288_CKM_RUNNING.md",
+    "title": "Q288：CKM 的跑动（直接演化矩阵）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q293_EXOTIC_CHARGE_EXPERIMENT.md",
+    "title": "Q293：电荷 4/3、5/3 态的**实验现状**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q302_BORN_FORCED.md",
+    "title": "`Q302` —— 为什么几何重叠**必然**取模方？（QM 侧）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q316_T6_COUPLING_COEFFICIENTS.md",
+    "title": "Q316：T6 耦合的显式系数",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q320_BRANCHING_RATIOS.md",
+    "title": "Q320：质子衰变的分支比能否只由嵌入算出？",
+    "nums": [],
+    "stats": [
+     "否",
+     "订正"
+    ]
+   },
+   {
+    "file": "Q322_DIMENSIONAL_TRANSMUTATION.md",
+    "title": "Q322：dimensional transmutation 的载体",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q323_WHAT_IS_A_FLOW.md",
+    "title": "Q323：框架里什么叫「流」？",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q324_COLEMAN_WEINBERG.md",
+    "title": "Q324：标量部门与 Coleman–Weinberg",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q326_HIERARCHY_AS_SECTOR_RELATIVE.md",
+    "title": "Q326：层级 = 界之间的相对标度？",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q327_SPECTRAL_SUM_ANOMALY.md",
+    "title": "Q327：离散谱和能否无需外部截断给出「尺度不对称」？",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q328_REFERENCE_SCALE.md",
+    "title": "Q328：「参照尺度」能否来自框架内部？",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q329_SATISFACTION_TRUNCATION.md",
+    "title": "Q329：「圆满 / 有限阶」是否截断谱？",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q332_DERIVE_F.md",
+    "title": "Q332：导出 F(d_a)",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q333_WHICH_F.md",
+    "title": "Q333：族里哪一个 f？",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q336_LHC_BOUND.md",
+    "title": "Q336：LHC 界限能把异态阈值收窄到多少？",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q346_CYCLE_PERIOD.md",
+    "title": "`Q346` —— 振荡周期 `T = 2√C` 与观测年龄",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q348_Q341_COSMO_ATTACK.md",
+    "title": "宇宙学可攻项：`Ω_k > 0` 的证伪通道 与 异态 `(1,1,0)` 的容量区间",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q349_GRAVITATIONAL_PRODUCTION.md",
+    "title": "`Q349`：引力产生的丰度能否在框架内定？—— 提法被修正了",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q352_A4_BOUNCE.md",
+    "title": "`Q352`：`a₄` 高阶曲率项能否给出非奇异反弹？",
+    "nums": [],
+    "stats": [
+     "否",
+     "订正"
+    ]
+   },
+   {
+    "file": "Q353_10D_BOUNCE.md",
+    "title": "`Q353`：10 维反弹是否存在非奇异解？",
+    "nums": [],
+    "stats": [
+     "已确立",
+     "否",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q356_WARPING_FROM_SPECTRAL_ACTION.md",
+    "title": "`Q356`：warping 函数 `f_a(ρ)` 能否由谱作用量定出？",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q367_Q366_CLOSED.md",
+    "title": "`Q367`（关闭）+ `Q366`（关闭）：圆满的阶 · 界间差别能否给层级",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q369_WICK_SIGN.md",
+    "title": "`Q369`：`c` 的 Lorentzian 符号（Wick 约定）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q370_FR_BOUNCE.md",
+    "title": "`Q370`：`f(R) = R + αR²` 有没有非奇异反弹？",
+    "nums": [],
+    "stats": [
+     "否",
+     "订正"
+    ]
+   },
+   {
+    "file": "Q373_SINGULARITY_STATUS.md",
+    "title": "`Q373`：框架对「初始奇点」的正式说法",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q375_MAPPING_DEFINITION.md",
+    "title": "`Q375`：「映射」这个概念在框架里被定义清楚了吗？",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q377_ALPHA_ROUTE.md",
+    "title": "`Q377`：`ln(M_X/v)` 是否是 `1/α₀` 的简单函数？",
+    "nums": [],
+    "stats": [
+     "否",
+     "订正"
+    ]
+   },
+   {
+    "file": "Q380_CORRECTION.md",
+    "title": "`Q380` 订正：「真理层有几个原初数」是**范畴错误**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q383_RELATIVE_NORMALIZATION.md",
+    "title": "⚠⚠ `Q383`：真理层度规的「相对归一化」是多少？ —— **本文档核心结论已撤回** ✗",
+    "nums": [],
+    "stats": [
+     "撤回",
+     "作废"
+    ]
+   },
+   {
+    "file": "Q383_RETRACTION.md",
+    "title": "`Q383` 撤回与订正：三界**是耦合的**，比值是**自由 moduli**",
+    "nums": [],
+    "stats": [
+     "撤回",
+     "订正"
+    ]
+   },
+   {
+    "file": "Q404_VCB_DERIVATION.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q407_NONCIRCULANT.md",
+    "title": "Q407：放弃 `Z₃` 循环之后 —— 含对 `build_176` 的撤销",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q438_MATTER_LAMBDA.md",
+    "title": "`Q438` —— 物质 / `Λ` 内容（下游：`H₀` 张力）",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q447_CHIRAL.md",
+    "title": "`Q447` —— 手性不对称的中间内容：**能统一** ✓✓",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q450_Q451_BREAKING_ORDER.md",
+    "title": "`Q450` + `Q451` —— 破缺链的顺序与 `M_I` 的身份",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q452_ALPHA_S.md",
+    "title": "`Q452` —— `M_I` 的数值能否从框架数据导出？",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q453_TWO_SCALES.md",
+    "title": "`Q453` —— 两个 `M_X` 相差 1972 倍：**不是矛盾**",
+    "nums": [],
+    "stats": [
+     "撤回",
+     "订正"
+    ]
+   },
+   {
+    "file": "Q455_NEW_CHAIN.md",
+    "title": "`Q455` —— 把 `α_s` 纳入几何链的新链",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q456_Q457_ALPHA_S_PREDICTION.md",
+    "title": "`Q456` + `Q457` —— `M_I` 的机制 ⇒ **`α_s` 成为（条件式）预言**",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q459_CTHREE_VEV.md",
+    "title": "`Q459` —— `C³` VEV 的机制（`M_I = M_Z·e^{2π k₀}`）",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q459_Q460_DLN_MU.md",
+    "title": "`Q459` + `Q460` —— `dlnμ/dρ` 与 `α_s` 的升级",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q461_E6_BREAKING_SOURCE.md",
+    "title": "`Q461`（续）—— `E₆` 破缺标度的独立来源：**性质已定**",
+    "nums": [],
+    "stats": [
+     "订正",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q461_SCALE_LADDER.md",
+    "title": "`Q461` —— `E₆` 破缺标度 `M_X^{E₆}` 的独立来源",
+    "nums": [],
+    "stats": [
+     "订正",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q463_E6_SINGLET_FORK.md",
+    "title": "`Q463`（续）—— 标量部门：`27` 无单态，但框架自带一个（**可判定分叉**）",
+    "nums": [],
+    "stats": [
+     "否",
+     "待判"
+    ]
+   },
+   {
+    "file": "Q463_SCALAR_SECTOR.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正",
+     "待判",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q468_K0_Q260.md",
+    "title": "`Q468` —— 为什么 `n = k₀`？答案：**`Q260`**（框架已登记的缺口）",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q470_THE_TWO.md",
+    "title": "`Q470` —— 独立推出「2」⇒ `Q260` 解决（**靠一条新标识，但它通过独立检验**）",
+    "nums": [],
+    "stats": [
+     "定理"
+    ]
+   },
+   {
+    "file": "Q471_CHORD_SECANT.md",
+    "title": "`Q471` —— `A_ℓ = 2cos(θ/2)` 的形式从哪来？**弦长 × 割线长 ≡ 2**",
+    "nums": [],
+    "stats": [
+     "已证"
+    ]
+   },
+   {
+    "file": "Q473_OVERLAP_LAW.md",
+    "title": "`Q473` —— `Z_Λ` 律的几何来源：**自身重叠 + 两个对称重叠**",
+    "nums": [],
+    "stats": [
+     "已证"
+    ]
+   },
+   {
+    "file": "Q476_BORN_GENERAL.md",
+    "title": "`Q476` —— Born 定则的**一般态**：**成** ✓✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q479_SPIN_STATISTICS_UNCERTAINTY.md",
+    "title": "`Q479` —— QM 其余缺口：Q8 自旋-统计 + Q9 不确定性",
+    "nums": [],
+    "stats": [
+     "待判"
+    ]
+   },
+   {
+    "file": "Q481_QUANTIZATION.md",
+    "title": "`Q481` —— 量子化 / `ħ`（QM 侧最后一块）",
+    "nums": [],
+    "stats": [
+     "已答",
+     "已确立",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q482_QM_CLOSURE.md",
+    "title": "`Q482` —— QM 侧总收口",
+    "nums": [],
+    "stats": [
+     "已答",
+     "待判",
+     "定理"
+    ]
+   },
+   {
+    "file": "Q483_OVERALL_SCALE_S.md",
+    "title": "`Q483` —— 全局最后一条断链：整体标度 `S`",
+    "nums": [],
+    "stats": [
+     "订正",
+     "定理"
+    ]
+   },
+   {
+    "file": "Q483_SCALE_REVISITED.md",
+    "title": "`Q483`（回访）—— 整体标度 `S`：缺口**收缩为「标量谱的 `Σ`」**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q484_TWO_STAGE_MECHANISM.md",
+    "title": "`Q484` —— 两阶段/迭代指数机制（`S` 的四环分级）",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q486_E6_PHASE_MECHANISM.md",
+    "title": "`Q486` —— `E₆` 破缺的离散相变机制（**判决实验已执行**）",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q488_E6_BREAKING_LITERATURE.md",
+    "title": "`Q488` —— 含 `n_a` 界分辨的 phase 公式（**文献参照后**）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q491_SU3_NONGEOMETRY.md",
+    "title": "`Q491` —— 分叉判据：**几何侧判为甲**，并得到一个硬的结构定理",
+    "nums": [],
+    "stats": [
+     "定理"
+    ]
+   },
+   {
+    "file": "Q492_SU3_REALIZATION.md",
+    "title": "`Q492` —— `SU(3)³` 究竟如何实现：**界相位空间**，并补上一个「未推导」的关系",
+    "nums": [],
+    "stats": [
+     "订正",
+     "定理"
+    ]
+   },
+   {
+    "file": "Q493_SCALAR_SIGMA.md",
+    "title": "`Q493` —— 框架标量谱的 `Σ = Σ nᵢκᵢ⁴`：**可满足**，但缺口**未关闭**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q494_SCALAR_POTENTIAL.md",
+    "title": "`Q494` —— 框架标量势：`κ` 谱**算出**，缺口收缩为「参与数 `N`」",
+    "nums": [],
+    "stats": [
+     "已证",
+     "否"
+    ]
+   },
+   {
+    "file": "Q496_SCALE_BOUNDARY_AUDIT.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q497_N1_DERIVATION.md",
+    "title": "`Q497` —— 推导 `n₁ = Λ+1`：**已成**，但顺带订正 `Q492` 一处",
+    "nums": [],
+    "stats": [
+     "订正",
+     "定理"
+    ]
+   },
+   {
+    "file": "Q498_TC_FORMULA.md",
+    "title": "`Q498` —— 超导的 `T_c`：公式能找出多少",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q499_CHARGE_QUANTIZATION_TEST.md",
+    "title": "`Q499` —— 查 `<8e>` 与<奇数电荷>：那条硬结果的**生死检验**",
+    "nums": [],
+    "stats": [
+     "订正",
+     "巧合",
+     "定理"
+    ]
+   },
+   {
+    "file": "Q500_DISCRIMINATIVE_TEST.md",
+    "title": "`Q500` —— 判别性检验的构造：找「标准允许 `8e` 而框架禁止」的系统",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q501_TBG_STATUS.md",
+    "title": "`Q501` —— 查 TBG（四分量）的 `4e`/`8e` 观测状态",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q503_READING_DEFINITION.md",
+    "title": "`Q503` —— 定义「读取」：界相位 → 涌现时间的投影",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q504_READING_VALIDATED.md",
+    "title": "`Q504` —— 「读取」的独立验证：**判据② 强通过**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q505_READING_TO_RESISTANCE.md",
+    "title": "`Q505` —— 「读取」→「电阻」：结构部分算出，**温度依赖推不出**",
+    "nums": [],
+    "stats": [
+     "未定"
+    ]
+   },
+   {
+    "file": "Q506_TEMPERATURE_DEFINITION.md",
+    "title": "`Q506` —— 定义温度：**已定义**，但暴露两个诚实的张力",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q508_DILEMMA_RESOLVED.md",
+    "title": "`Q508` —— 温度定义的两难之解：**根因是我把「相位损失」与「熵」搞混了**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q509_STAIRCASE_SYNC_TEST.md",
+    "title": "`Q509` —— `ρ(T)` ↔ 热容 `C(T)` 台阶同步的检验：**原判据不判别，收紧后得「峰个数」判据**",
+    "nums": [],
+    "stats": [
+     "订正",
+     "巧合"
+    ]
+   },
+   {
+    "file": "Q510_SCHOTTKY_REFOUNDATION.md",
+    "title": "`Q510` —— 把「Schottky 判据」**重新奠基**：两处继承错误 ＋ 与间距**无关**的判别量",
+    "nums": [],
+    "stats": [
+     "订正",
+     "巧合"
+    ]
+   },
+   {
+    "file": "Q511_CHANNEL_IDENTIFICATION.md",
+    "title": "`Q511` —— 读取通道的识别：一次<审计> ＋ 一次<必要条件> ＋ 一次<自我否定>",
+    "nums": [],
+    "stats": [
+     "否",
+     "巧合"
+    ]
+   },
+   {
+    "file": "Q511_LITERATURE_SCHOTTKY_RLN3.md",
+    "title": "`Q511` 外部文献调研 —— 金属中的三能级 Schottky 异常与 `R·ln 3` 熵量子",
+    "nums": [],
+    "stats": [
+     "已确立",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q516_OMEGA0_STRICT.md",
+    "title": "`Q516` —— `Ω(0) = 1` 能否放宽？**判决：甲（不放宽）**，且它的依据被**升级**为相位结构的推论",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q520_RHO0_COUNT_BRANCH.md",
+    "title": "`Q520` —— `ρ₀` 的来源：**计数支**（判决）；熵支<没有废掉>，它退为**热增量**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q521_RHO_DIMENSIONLESS.md",
+    "title": "`Q521`（甲轮）—— 否决项裁决 ＋ 无量纲几何式 `ρ̃ = 2/(3K − 1) − 1` ＋ 锚收敛检查",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q525_LINEARITY_ORIGIN.md",
+    "title": "`Q525` —— `𝓝_th ∝ T` 的几何来源：**热噪声相位扩散 × 读出格**",
+    "nums": [],
+    "stats": [
+     "已确立",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q527_N_TO_TAU_MAPPING.md",
+    "title": "`Q527` —— `𝓝 ↔ 1/τ` 的映射：**读速率 = 载流子散射率**（`ρ` 支线最后一块）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q529_G_FORM.md",
+    "title": "`Q529` —— `g(Δ/T)` 的精确形式 ＋ 低 `T` 判别窗口",
+    "nums": [],
+    "stats": [
+     "已确立",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q531_WF_DEVIATION.md",
+    "title": "`Q531` —— Wiedemann–Franz 偏离：**方向对（`L/L₀ < 1`）＋ 有曲线 ＋ 有可 falsify 判据**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q532_LOW_T_TABLE.md",
+    "title": "`Q532` —— 低 `T` 形态的**实验对表**：方案 ＋ 两条新结果 ＋ 一条边界",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q534_SPECTRAL_PHONON_BRANCH.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q538_N_COUNTING.md",
+    "title": "`Q538` —— `N`（模式数）的框架定出 ＋ 计数约定：**一个数 → 一个窄带 ＋ 两条判别轴**",
+    "nums": [],
+    "stats": [
+     "已确立",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q539_BOUNDARY_RELAXATION.md",
+    "title": "`Q539` —— 「紧致界 ⇒ 谱有隙」这条边界能否松动？**能，但只有一条路，且带代价**",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q540_STIFFNESS_C.md",
+    "title": "`Q540` —— 相位模的刚度/声速 `c`：**边界<维持>**（`c = 1/√2`，`O(1)`）",
+    "nums": [],
+    "stats": [
+     "已证",
+     "已确立",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q541_LOCKING_SPONTANEOUS.md",
+    "title": "`Q541` —— 锁相是「设定」还是「自发」？**判决：设定（拓扑强制）⇒ 无 Goldstone**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q544_MU_OVER_DELTA.md",
+    "title": "`Q544` —— `μ/Δ`（费米能／层隙）的框架值：**它可以给出，不是「未覆盖」**",
+    "nums": [],
+    "stats": [
+     "已确立",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q546_TC_PAIRING.md",
+    "title": "`Q546` —— 有隙谱 ＋ 有限能级的**配对通道**：`T_c` 从「找不到」到「有形式」",
+    "nums": [],
+    "stats": [
+     "已确立",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q548_J_ABSOLUTE.md",
+    "title": "`Q548` —— 锁相能 `J` 的绝对值：**`T_c = 纯数 × Δ`**，且框架预言**选择性超导**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q549_MU_STAR.md",
+    "title": "`Q549` —— 库仑排斥 `μ*`：**框架的对应 = 读取通道的退相干**；`T_c` 不被消灭，但压到 `0.463`",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q550_DELTA_TC_TABLE.md",
+    "title": "`Q550` —— `Δ/T_c ≈ 151` 的实验检验：**窗口通过，机制被外部佐证，但 `151` 偏高 2–20 倍**",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q552_MU_C.md",
+    "title": "`Q552` —— 库仑排斥 `μ_c` 的定量：**`μ_c = 1`（普适）⇒ 超导存活**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q555_DISCREPANCY_SOURCE.md",
+    "title": "`Q555` —— `151` 偏高 `2–20` 倍的**偏差来源**：**`Q544` 的 `E_F = ω_D` 识别**",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q556_EF_OVER_WD.md",
+    "title": "`Q556` —— `E_F/ω_D` 的框架导出：**计数只给 `O(1)` ⇒ `μ*` 应降级为「BCS 类比」**",
+    "nums": [],
+    "stats": [
+     "否",
+     "订正"
+    ]
+   },
+   {
+    "file": "Q558_COULOMB_IDENTITY.md",
+    "title": "`Q558` —— 库仑排斥在框架里的**正身**：**梯度能交叉项**（`μ_c = λ/2 ≈ TF` 的 `1`）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q562_SCALE_LEDGER.md",
+    "title": "`Q562` —— 「整体标度 `S`」的推进：**把那条断链整数化**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q563_NX_DETERMINATION.md",
+    "title": "`Q563` —— 定出 `n_X`：**`n_X = 4`**（并解掉 `Q562` 的疑点）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q565_TENSION_RESOLVED.md",
+    "title": "`Q565` —— `6.5` 倍张力的解决：**大部分是外推，剩下的是对新态的定量约束**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q567_27_CONTENT.md",
+    "title": "`Q567` —— `27` 里有没有 `Q447` 所需的新态？**类对 ✓、号对 ✓、但不精确**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q569_UNIT_IDENTIFICATION.md",
+    "title": "`Q569` —— 参照单位的**指认**：**唯一单位 = 内禀几何标度 `r_int`**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q570_INTERNAL_DIMENSIONS.md",
+    "title": "`Q570` —— 哪 `6` 维是内部：**`3` 对角（宏观）＋ `6` 相对（内禀）**",
+    "nums": [],
+    "stats": [
+     "已确立",
+     "确立"
+    ]
+   },
+   {
+    "file": "Q572_G4_GEOMETRIC.md",
+    "title": "`Q572` —— `G_4/r_int²` 的**几何值**：**`3/(2π³·f₂)`** ⇒ **单位 ≈ `4.5` 倍普朗克长度**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q573_F2_FIXED.md",
+    "title": "`Q573` —— `f₂` 是否被框架固定：**是（由「均匀计数」固定），非自由参数**",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q574_CUTOFF_DERIVED.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q576_INTERNAL_CUTOFF.md",
+    "title": "`Q576` —— 内部扇区的「圆满」⇒ 定 `k_c`：**候选全来自框架整数，过滤器筛掉一个**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q578_COMPLETION_EQUATION.md",
+    "title": "`Q578` —— 内部「圆满」的**显式方程**：**`Tr(Δ_{S³})|_{k≤k_c} = N` ⇒ 唯一 `k_c = 1`**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q579_TOWER_QUANTUM_NUMBERS.md",
+    "title": "`Q579` —— 内部塔的**规范量子数**：`SO(4)` 结构 ＋ 色对角 ⇒ **答案挂在 `Q570` 上**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q583_RELATIVE_GEOMETRY.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q584_MX_NGEN.md",
+    "title": "`Q584` —— 把 `M_X` 与 `N_gen` 联立：**`27` 的内容能（近似精确地）实现 `Q447`**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q585_WHICH_STATES_LIGHT.md",
+    "title": "`Q585` —— 「哪些态变轻」：**新硬约束（低能无反常）把这一问卡住**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q590_THREE_FACTOR_ANOMALY.md",
+    "title": "`Q590` —— 三因子 `su(3)³` 的异常条件：**`Q585` 的张力是假的**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q593_MIXED_ANOMALY.md",
+    "title": "`Q593` —— 混合异常的具体抵消：**`Q590` 的「张力是假的」必须订正**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q595_ONE_TEN.md",
+    "title": "`Q595` —— 为什么只有**一个** `10` 变轻：**由界对称性 ＋ 表示论导出**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q596_DEMOCRATIC_MASS.md",
+    "title": "`Q596` —— 民主 `10` 的质量：**「轻」可达，但相位结构预言两个轻态**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q597_SHAPE_CHECK.md",
+    "title": "`Q597` —— 界 `B` 相对模式算不算轻态？**（附带一处账目订正：那条线在形状检验上失败）**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q599_NO_SOURCE.md",
+    "title": "`Q599` —— 框架里有没有「色单态 ＋ 带超荷 ＋ `SU(2)` 带电」的新内容？**（负结果，但理由是定理级的）**",
+    "nums": [],
+    "stats": [
+     "定理"
+    ]
+   },
+   {
+    "file": "Q5_PATTERN_SHAPE.md",
+    "title": "Q5：pattern 的形状 —— 缺的那个关系由框架自己给出",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q5_THE_FUNCTION_F.md",
+    "title": "Q5：界依赖函数 `F` 的具体形式",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q600_NEEDED_CONTENT.md",
+    "title": "`Q600` —— 用正确账目重做「所需内容」的精确解",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q601_CORRECTION_PROPAGATION.md",
+    "title": "`Q601` —— 账目订正对其它结论的影响：**8 条存活、2 条作废**",
+    "nums": [],
+    "stats": [
+     "否",
+     "作废",
+     "订正"
+    ]
+   },
+   {
+    "file": "Q602_UNIFICATION_ROUTE.md",
+    "title": "`Q602` —— 「统一阈值」这条路是否应当放弃：**不是放弃，而是换机制（结构性统一）**",
+    "nums": [],
+    "stats": [
+     "否",
+     "撤回",
+     "订正"
+    ]
+   },
+   {
+    "file": "Q605_EW_HIERARCHY.md",
+    "title": "`Q605` —— 电弱层级的**分解与核算**：`v·r_int` 从硬缺口**降级**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q607_MU_SCALE.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q608_MODE_CONTENT.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q609_VOLUME_FACTOR.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q610_COMPLETION_TRANSPORT.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q611_SIGMA_PRINCIPLE.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q612_OFFSET_CANDIDATE.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正",
+     "巧合"
+    ]
+   },
+   {
+    "file": "Q614_SUPPRESSION_MECHANISM.md",
+    "title": "`Q614` —— 质量标度的指数压低机制：**候选全部不成立，但要求被写尖了**",
+    "nums": [],
+    "stats": [
+     "不显著"
+    ]
+   },
+   {
+    "file": "Q615_NEUTRINO_RUNG.md",
+    "title": "`Q615` —— 中微子尺度与 `n = 8` 的密度检验：**单位错误 ＋ 无对齐**",
+    "nums": [],
+    "stats": [
+     "作废",
+     "订正",
+     "巧合"
+    ]
+   },
+   {
+    "file": "Q616_LADDER_EXPONENT.md",
+    "title": "`Q616` —— 阶梯指数由什么定（`Q613` ＋ `Q614` 合并）：**两条路都无法唯一识别 ⇒ 「待判」**",
+    "nums": [],
+    "stats": [
+     "待判"
+    ]
+   },
+   {
+    "file": "Q617_HEAT_KERNEL_C.md",
+    "title": "`Q617` —— 热核系数 `C` 的独立推导：**没有自由约定，残余合流到 `Q12`**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q618_XP_FORM.md",
+    "title": "`Q618` —— `[x,p] = iħ` 的具体代数形式：**形式缺口填上了 ⇒ QM 侧 `12/12`**",
+    "nums": [],
+    "stats": [
+     "待判"
+    ]
+   },
+   {
+    "file": "Q619_SYMPLECTIC_FACTOR.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q620_STRUCTURAL_UNIFICATION.md",
+    "title": "`Q620` —— 结构性统一的定量陈述：**`α_diag = α_f`（精确）**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q621_VACUUM_ENERGY.md",
+    "title": "`Q621` —— 真空能 `Λ r_int⁴`：**无机制 ⇒ 降级为参数 ⇒ 标度账目闭合**",
+    "nums": [],
+    "stats": [
+     "否",
+     "巧合"
+    ]
+   },
+   {
+    "file": "Q622_BARE_VACUUM.md",
+    "title": "`Q622` —— 对称性能否使裸真空能精确为零：**不能（自然候选被具体否定）**",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q623_NA_ORIGIN.md",
+    "title": "`Q623` —— `k_A/n_A = 1/4` 为何是\"异类\"：**它不是异类，是被迫的；且真空能不精确相消是必然**",
+    "nums": [],
+    "stats": [
+     "否",
+     "巧合",
+     "定理"
+    ]
+   },
+   {
+    "file": "Q624_IRRATIONALITY_PREMISE.md",
+    "title": "`Q624` —— 无理数论证的前提：**判据成立，`Q623` 的\"必然\"升级为判据**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q626_OFFDIAGONAL_DYNAMICS.md",
+    "title": "`Q626` —— 非对角扇区的动力学：**机制 = 商的识别，标度 = `10¹⁵` GeV**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q628_THREE_IN_ONE.md",
+    "title": "`Q628` —— 「三合一」质量形式的共同能标检验：**扇区内成立，扇区间不成立**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q629_TWO_PURE_NUMBERS.md",
+    "title": "`Q629` —— 推 `b = √2` 与 `θ = 2/9`：**未推出，但问题被改写、两个来源被排除**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q630_EQUIPARTITION.md",
+    "title": "`Q630` —— 哪条第二条件定 `b = √2`：**等分（`45°`）**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q631_PHASE_PARAMETER.md",
+    "title": "`Q631` —— 相位 `θ = 2/9`：**一个定理 ＋ 一个分类**",
+    "nums": [],
+    "stats": [
+     "定理"
+    ]
+   },
+   {
+    "file": "Q632_MIXING_SOURCE.md",
+    "title": "`Q632` —— 混合角 `θ` 的来源：**机制找到了，但两个现有形式都被排除**",
+    "nums": [],
+    "stats": [
+     "定理"
+    ]
+   },
+   {
+    "file": "Q633_PHASE_ROUTE_CLOSED.md",
+    "title": "`Q633` —— 找那个算符：**界相位路线被关闭（类排除）**",
+    "nums": [],
+    "stats": [
+     "定理"
+    ]
+   },
+   {
+    "file": "Q634_SANHEYI_CLOSURE.md",
+    "title": "`Q634` —— 直接从 `Z₃`（代）结构推：**定理 ＋ 相容性 ＋ 边界 ⇒ 「三合一」收口**",
+    "nums": [],
+    "stats": [
+     "定理"
+    ]
+   },
+   {
+    "file": "Q635_ARCHIVE.md",
+    "title": "`Q635` —— `2/9` 能否有独立来源：**没有 ⇒ 它是输入 ⇒ 该线封存**",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q637_PREDICTION_LEDGER.md",
+    "title": "`Q637` —— （A）线：把 `Y` 族推到推导 ⇒ **预言数清点 ＋ 一条张力**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q638_FAMILY_LEDGER.md",
+    "title": "`Q638` —— `Z₃` 之外的几何族：**门是存在的**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q640_DIMENSIONLESS_AUDIT.md",
+    "title": "`Q640` —— 无量纲项账目**完整性审计**：扫出 4 处漏项 ＋ 2 个宇宙学参数入册 ＋ 1 处澄清",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q641_FOUR_OMISSIONS.md",
+    "title": "`Q641` —— 四处漏项的逐一立案：**两条算出来 ＋ 一条封存 ＋ 一条转登**",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q645_BLACKHOLE_ENTROPY.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q646_INDUCED_GRAVITY_RESIDUAL.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q648_MODE_CONTENT_UNIQUE.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q651_QUOTIENT_SPECTRUM.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q652_SPIN_SECTORS.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q653_CUTOFF_DIAGNOSIS.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "撤回"
+    ]
+   },
+   {
+    "file": "Q656_SECTOR_WEIGHTS.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q659_GRAVITON_WEIGHT.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q662_GRAVITON_A2.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q663_MODULI_XI.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "撤回",
+     "作废"
+    ]
+   },
+   {
+    "file": "Q667_FRAME.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q668_MODULI_MINIMUM.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q670_A4_SIGN.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q673_A4_REDUCTION.md",
+    "title": "`Q673` —— `a₄[M]` 与 `a₄[K]`：**`Q670` 的前提成立**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q676_R4_CORRECTION.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "否",
+     "订正"
+    ]
+   },
+   {
+    "file": "Q678_EINSTEIN_FRAME.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q680_CUTOFF_FUNCTION.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "已证",
+     "未定"
+    ]
+   },
+   {
+    "file": "Q684_MODULUS_STATUS.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q687_A8_INDEPENDENT.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q689_CUTOFF_PROVENANCE.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q690_CUTOFF_DERIVED.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "撤回"
+    ]
+   },
+   {
+    "file": "Q692_PROPAGATE_KD1.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q693_ZERO_MODE.md",
+    "title": "`Q693` —— 「跳过零模」的判据化：**框架自己就是这么做的** ⇒ **`Q690` 的匹配存活**",
+    "nums": [],
+    "stats": [
+     "巧合"
+    ]
+   },
+   {
+    "file": "Q694_DOWNSTREAM_K1.md",
+    "title": "`Q694` —— 把 `k≤1` 传播到其余下游量：**多数存活并加强，一处被取代** ✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q695_HIERARCHY_REDO.md",
+    "title": "`Q695` —— 层级判别的重做：**非整数结论加强**、**`Q650` 的 A/B 判别作废** ✗",
+    "nums": [],
+    "stats": [
+     "作废"
+    ]
+   },
+   {
+    "file": "Q698_TRUNCATION_CRITERION.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q699_KAPPA_REASON.md",
+    "title": "`Q699` —— `κ = C/Σ` 的独立理由：框架的内空间是一个**有限谱**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q700_SHELL_EXCLUDES.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "定理"
+    ]
+   },
+   {
+    "file": "Q701_FINITE_TRIPLE_AXIOM.md",
+    "title": "`Q701` —— 「有限谱三元组」的公理化：**截断属于定义，不是近似** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q702_SHELL_AXIOM.md",
+    "title": "`Q702` —— 「壳层 vs 质量阈值」的公理化：**由谱投影强制** ✓✓",
+    "nums": [],
+    "stats": [
+     "定理"
+    ]
+   },
+   {
+    "file": "Q703_W1_RECHECK.md",
+    "title": "`Q703` —— `1`-形式权重 `w̃₁ = −2` 的复核：**成立** ⇒ 反引力被**独立地**关掉",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q704_W0_RECHECK.md",
+    "title": "`Q704` —— `w̃₀` 的复核：占位值有**两处错**，改正后**更安全** ⇒ 第二个反引力入口**关闭**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q706_W0_DERIVED.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q709_FRAME_VERDICT.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q710_FRAME_ALL_WEIGHTS.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q711_JOINT_MARGIN.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q712_NO_MODULUS_FRAME.md",
+    "title": "`Q712` —— `Q684`（框架无模）能否消掉系歧义：**只能消掉背景层**",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q713_OTHER_WEIGHTS_FRAME.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q714_W0_ALPHA_EXACT.md",
+    "title": "`Q714` —— `w̃₀(α)` 的精确变换律：**线性，与 `Q711` 一致** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q715_HIGHER_ORDER.md",
+    "title": "`Q715` —— `ε²` 以上的高阶是否修正 `w̃₀(α)`：**不修正** ✓✓",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q716_RATIO_DEFINITION.md",
+    "title": "`Q716` —— `w̃_s` 是否严格按「比值」定义：**是，按定义** ⇒ `Q713` 成立 ✓✓",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q717_R_SOURCE_CENSUS.md",
+    "title": "`Q717` —— 各扇区 `∫R` 的来源普查：**只有两个来源，都是公共的** ✓✓",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q718_TWO_LOOP_AND_K1.md",
+    "title": "`Q718` —— 两圈对 `ξ` 的修正；且**顺带发现参考系分析用错了切断** ⚠⚠",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q719_ARTICLE_FRAME.md",
+    "title": "`Q719` —— 把「参考系 = Einstein」与**正确的切断**写进文章 ✓✓",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q720_FRAME_AT_K1.md",
+    "title": "`Q720` —— 把参考系分析移到 `k≤1` 重做：**形式全保留，紧窗口是产物** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q722_SPINOR_WEIGHT.md",
+    "title": "`Q722` —— 旋量权重的稳健度：**两候选都安全，但它是符号的承重件** ✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q723_K_DEPENDENCE.md",
+    "title": "`Q723` —— `k` 依赖的结构变化清单：**6 处定性变化、4 处不变** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q724_RUNG_K1.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q725_RETRACT_Q650.md",
+    "title": "`Q725` —— 正式撤回 `Q650` 的 A／B 判别 ✗",
+    "nums": [],
+    "stats": [
+     "撤回"
+    ]
+   },
+   {
+    "file": "Q726_INVENTORY_COMPLETE.md",
+    "title": "`Q726` —— `k` 依赖清单的穷尽性：**11 项，未尽证**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q727_RUNG_FORMULA.md",
+    "title": "`Q727` —— rung 公式：**`R⁴` ⇒ 位移是 `+1.647`，隐患更重** ⚠",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q729_SELECTION_PRINCIPLE.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q730_SPECTRUM_FORMULA.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q731_KD_FIRST_PRINCIPLES.md",
+    "title": "`Q731` —— `k_D = 1` 的第一性原理：**两条路都失败** ✗",
+    "nums": [],
+    "stats": [
+     "定理"
+    ]
+   },
+   {
+    "file": "Q732_LAMBDA_ORIGIN.md",
+    "title": "`Q732` —— `Λ` 的来历：**它是观测输入，不是预言** ⚠⚠",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q734_REWRITE_PAPERS.md",
+    "title": "`Q734` —— 两篇 GR 文稿重写：**核验其关键陈述** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q735_SHELL_AND_MULTIPLICITY.md",
+    "title": "`Q735` —— 壳层定义与重数：**`N2` 彻底关闭** ✓✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q737_KD_UNIQUE.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q738_PAPERS_UPDATE.md",
+    "title": "`Q738` —— 两篇文稿按 `Q735`／`Q737` 订正 ✓✓",
+    "nums": [],
+    "stats": [
+     "订正"
+    ]
+   },
+   {
+    "file": "Q741_CRITERION_DERIVED.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q742_ZN_TEST.md",
+    "title": "",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q744_Q745_CRITERION_FINAL.md",
+    "title": "`Q744` ＋ `Q745` —— 判据的最终表述；而\"桥\"**不成立** ⚠",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q747_TWO_SINGLETS.md",
+    "title": "`Q747` —— 缺口 11：`2`-张量扇区两个单态的**确权** ✓✓",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q748_GAUGE_CUT.md",
+    "title": "`Q748` —— 缺口 12：`1`-形式与规范场的切割**不存在** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q750_VOLUME_MODE.md",
+    "title": "`Q750` —— 体积模住在哪个扇区：**它根本不在谱里** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q751_SM_GAUGE_ORIGIN.md",
+    "title": "`Q751` —— SM 规范场的来源：**框架早就写了** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q753_SU2CUBED_ROLE.md",
+    "title": "`Q753` —— 三界 vs SM 规范群：**真缺口、但框架已登记过** ⚠",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q754_E6_CHAIN.md",
+    "title": "`Q754` —— 独立核 `E₆` 破缺链：**算术自洽、秩守** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q755_REGISTRY_LOSS.md",
+    "title": "`Q755` —— 登记丢失普查：**早期 era 整体在注册表之外** ✗✗",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q758_TRIAGE_BATCH1.md",
+    "title": "`Q758` —— 早期遗留的分诊：**第一批 ＋ 方法** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q760_ZERO_MODES_PN.md",
+    "title": "`Q760` —— `λ=0` 的三个模：**被框架自己的约定排除** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q763_PPN.md",
+    "title": "`Q763` —— PPN 展开本身：**`γ = 1` 从 EH 直接得出** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q764_BETA.md",
+    "title": "`Q764` —— `β = 1` 从 EH **自己的真空解** 得出 ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q770_PROPAGATOR.md",
+    "title": "`Q770` —— 线性化传播子：**只有一个无质量自旋-2 极点** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q775_WHY_THREE.md",
+    "title": "`Q775` —— `Q25`：「为什么是三个」**是被逼出的** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q776_F1_AND_BRIDGE.md",
+    "title": "`Q776` —— `F1` 与「桥」：**都不能关闭，但都变精确了** ⚠",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q779_E6_CHAIN.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "撤回"
+    ]
+   },
+   {
+    "file": "Q781_RADION_MASS.md",
+    "title": "`Q781` —— 体积模的势与质量：**`m_radion ~ Λ`** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q783_POTENTIAL_STABILITY.md",
+    "title": "`Q783` —— 势的稳定性与无鬼性：**极小需要额外的符号条件** ⚠",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q785_A4_SIGN.md",
+    "title": "`Q785` —— `a₄` 的净系数：**`c₂ > 0`** ✗",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q789_ORBIFOLD.md",
+    "title": "`Q789` —— 突破口一（轨形约化）：**结构对，但不成立** ✗",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q792_TENSOR_OPERATOR.md",
+    "title": "`Q792` —— 突破口二：**`2`-张量扇区的真实算子** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q793_W2.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "否",
+     "撤回",
+     "未定"
+    ]
+   },
+   {
+    "file": "Q796_CORRECTION.md",
+    "title": "`Q796` —— 撤回 `Q793`：**我把一个缩当当成了算子迹** ✗✗",
+    "nums": [],
+    "stats": [
+     "否",
+     "撤回"
+    ]
+   },
+   {
+    "file": "Q799_W2_FINAL.md",
+    "title": "`Q799` —— 显式算 `w̃₂`：**`−13/10`**（Lichnerowicz）vs **`+1`**（最小耦合）",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q800_E_CHECK.md",
+    "title": "`Q800` —— 复核 `Q792` 的 `E`：**未能判定，但得到关键地图** ⚠",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q802_E_DECISION.md",
+    "title": "`Q802` —— 直接变分定 `E`：**一个概念性判决**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q803_VARIATION_CLEAN.md",
+    "title": "`Q803` —— 干净的二阶变分：**`E = 0` 被直接排除** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q806_GAUGING.md",
+    "title": "`Q806` —— `SU(2)³` 是规范群吗？以及它是否吃掉零模",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q809_FLUX.md",
+    "title": "`Q809` —— 背景通量稳定化：**容许 ✓，但只解决一半** ⚠",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q810_HFLUX.md",
+    "title": "`Q810` —— `H`-通量（挠率）对 `E` 的贡献：**方向是对的** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q812_LOOP.md",
+    "title": "`Q812` —— 闭环判定：**不存在闭环，且 `n ≥ 3` 即可** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q813_PRECISE.md",
+    "title": "`Q813` —— 精确化：**`b₃ ≥ 4`，且 `n ≥ 3` 约定无关** ✓✓",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q814_VOLUMEMODULUS.md",
+    "title": "Q814——体积模剩下的路：两条不通、一条代价大",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q822_TOPOLOGY_RG.md",
+    "title": "Q822 到 Q825——拓扑路线与威尔逊路线",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q829_N12_STATUS.md",
+    "title": "Q829 到 Q831——N 等于 12 的地位：开放，不是导出，也不是已否定",
+    "nums": [],
+    "stats": [
+     "否"
+    ]
+   },
+   {
+    "file": "Q832_INDEX_FAILURE.md",
+    "title": "Q832——指标公式第四次失败，以及 Q834",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q839_CASIMIR.md",
+    "title": "Q839——战役一：Casimir 逆转体积模势能，结构性失败",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q845_SEVEN_ROUTES.md",
+    "title": "Q845 到 Q848——七条路全关，以及两个未完成",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q850_INVARIANT_FORMS.md",
+    "title": "Q850——四个不变三形式显式构造成功",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q852_KOSTANT_CLOSED.md",
+    "title": "Q852——Kostant 条件算完：整数通量达不到 N 等于 12",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q853_MATTER_GAUGE.md",
+    "title": "Q853——物质扇区第一件：规范耦合统一与内空间能标的相容性",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q854_D10.md",
+    "title": "Q854——d = 10 的记账：它不是独立的缺口",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q857_QUANTUM_GRAVITY.md",
+    "title": "Q857——引力量子化的卡点：能攻的部分已经攻完",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q858_LITERATURE_CHECK.md",
+    "title": "Q858——文献查证：抓到一篇关键的，并据此修正两处",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "Q859_MODE_SET_DIMENSION.md",
+    "title": "Q859——模集自洽方程：六维上结构性不可能",
+    "nums": [],
+    "stats": [
+     "定理"
+    ]
+   },
+   {
+    "file": "Q860_THERMO_AUDIT.md",
+    "title": "`Q860` —— 热力学与统计物理审计：**第四面**",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "QM_AXIOM_AUDIT.md",
+    "title": "",
+    "nums": [],
+    "stats": [
+     "已答",
+     "否",
+     "定理"
+    ]
+   },
+   {
+    "file": "QM_FIELD_ENTANGLEMENT.md",
+    "title": "M2：场层面的纠缠熵",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "QM_MAPPING_FORMULAS.md",
+    "title": "量子力学侧的映射公式推进",
+    "nums": [],
+    "stats": []
+   },
+   {
+    "file": "QM_STATE_MAP.md",
+    "title": "M1：state-map（叠加原理的映射公式）",
+    "nums": [],
+    "stats": [
+     "已答"
+    ]
+   },
+   {
+    "file": "Q_REGISTRY.md",
+    "title": "问题登记表（`Q` registry）",
+    "nums": [],
+    "stats": [
+     "已答",
+     "否",
+     "未定"
+    ]
+   }
+  ]
+ }
+}
