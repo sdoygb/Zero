@@ -7,7 +7,7 @@
 **编号**：本文为 $Z_{35}$。前篇 $Z_{34}$（量子信息与开放系统）。
 **前件**：[量子运动学](Z004_量子运动学_代数与Born规则.md)（$\mathcal A_L=\bigoplus_hM_2(\mathbb C)$、Born 规则）；[纠缠关联与复合](Z008_纠缠关联与复合.md)（纠缠闭式律、CHSH 的硬结果）；[概率与测量](Z007_概率与测量_效应与退相干.md)（账本态）。
 **层指标**：$\mathrm{L1}$（量子态）、$\mathrm{L1}'$（账本态）、$\mathcal R$（联合分布）。
-**核验**：[`D12_qfound_check.py`](_staging/D12_qfound_check.py)（**26 条断言 / 0 不符**）。
+**核验**：[`Z035_qfound_check.py`](_staging/Z035_qfound_check.py)（**26 条断言 / 0 不符**）。
 
 ---
 
@@ -368,7 +368,7 @@ $$
 
 ## 附录 A　核验
 
-`D12_qfound_check.py`：纯标准库、不 import、不写文件。
+`Z035_qfound_check.py`：纯标准库、不 import、不写文件。
 
 | 组 | 内容 | 断言 |
 |:--|:--|--:|

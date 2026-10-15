@@ -218,7 +218,7 @@ Partition $\pi:\mathcal{W}_n\to\{1,\dots,k\}$, block weights $\omega_b=\rvert\ma
 
 *Proof.* Direct verification from the criteria. $\blacksquare$
 
-**Remark.** Criteria 1 and 2 constrain the single-word primitive $h(w)$; the merging threshold $t^*=\arg\max_h b_h$ (Eq. 7.9) is an ensemble-level coarse-graining rule that depends on the global mode and $n$, not on individual words. The two are at different layers and do not conflict.
+**Remark.** Criteria 1 and 2 constrain the single-word primitive $h(w)$; the merging threshold $t^*=\arg\max_h b_h$ (Eq. 7.6) is an ensemble-level coarse-graining rule that depends on the global mode and $n$, not on individual words. The two are at different layers and do not conflict.
 
 ### 7.3 Height Blocks and the Reflection Principle
 
@@ -278,7 +278,7 @@ F_D = \binom{D}{2}q^D.
 \tag{7.8}
 $$
 
-Here $\binom{D}{2}=\dim\mathfrak{so}(D-1,1)$ (the number of Lorentz generator pairs), and $q^D$ is the cost of requiring simultaneous record across $D$ directions.
+Here $\binom{D}{2}=\dim\mathfrak{so}(D-1,1)$ (the dimension of the Lorentz algebra, i.e. the number of independent Lorentz generators), and $q^D$ is the cost of requiring simultaneous record across $D$ directions.
 
 **Lemma 7.4 (Peak condition).**
 

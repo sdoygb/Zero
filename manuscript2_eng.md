@@ -301,7 +301,7 @@ $$
 \star:\Lambda^2\mathbb R^3\longrightarrow\mathbb R^3
 $$
 
-establishes a canonical duality between the axial cycle space and the polar displacement space. This is not a numerical coincidence: it is the group-theoretic counterpart of §6.7(ii) "antisymmetric composition closure"—the identity $\Lambda^2\mathbb R^3\cong\mathbb R^3\otimes\mathrm{sgn}$ is precisely the Hodge duality between closed 2-forms (loops, flux) and 1-forms (displacements) in three dimensions [9].
+establishes a canonical duality between the axial cycle space and the polar displacement space. This is not a numerical coincidence: it is the group-theoretic counterpart of §6.8(ii) "antisymmetric composition closure"—the identity $\Lambda^2\mathbb R^3\cong\mathbb R^3\otimes\mathrm{sgn}$ is precisely the Hodge duality between closed 2-forms (loops, flux) and 1-forms (displacements) in three dimensions [9].
 
 ### 6.6 Dimension-Blind No-Go
 
