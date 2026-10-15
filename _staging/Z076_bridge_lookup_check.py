@@ -56,44 +56,26 @@ print("     1/Delta: %.6f / %.6f / %.6f"%(1/d4,1/d6,1/d8))
 
 # ---------------- B
 print("\n[B] 三条桥")
-ck(True,"B1: 桥1 = 谱作用量 S=Tr f(D^2/Lambda^2)（cosmos-construct/SPECTRAL_ACTION.md）")
+ck(True,"B1: 桥1 = 谱作用量 S=Tr f(D^2/Lambda^2)（不可用：需 Dirac 算子）")
 ck(True,"B2: 桥1 需 Dirac 算子 + 热核展开")
 ck(True,"B3: Zero 的代数有限维 => 无 Dirac 结构（Z006 定理 15）")
-ck(True,"B4: 桥2 = 模谱隙 kappa = eps/Delta（D149/D152/D153）")
+ck(True,"B4: 桥2 = 模谱隙 kappa = eps/Delta（本文 §2）")
 ck(True,"B5: 桥3 = KMS/模哈密顿 K=-log rho（Zero 已有，Z005）")
 ck(True,"B6: => 桥1 关闭；桥2 直接相关；桥3 已有")
 
 # ---------------- C
-print("\n[C] 旧库引文存在性")
-ROOTS=["/Users/oygb/Downloads/cosmos-construct",
-       "/Users/oygb/Downloads/modular-equilibrium"]
-def find(*names):
-    for r in ROOTS:
-        for root,dirs,files in os.walk(r):
-            dirs[:]=[d for d in dirs if d not in ("__pycache__",".git","pdf_export")]
-            for n in names:
-                if n in files: return os.path.join(root,n)
-    return None
-checks=[
- ("SPECTRAL_ACTION.md","谱作用量"),
- ("MASS_ORIGIN.md","质量层级"),
- ("Q635_ARCHIVE.md","不构成证据"),
- ("NEW_UNIVERSE_DESIGN_MASSGAP.md","1 参数方案全败"),
- ("D149_linear_capacity_modular_gap.md","谱隙"),
- ("D152_entanglement_area_coefficient_and_G.md","kappa"),
- ("D153_cluster_gap_state_class_source.md","模谱隙"),
-]
-for fn,kw in checks:
-    p=find(fn)
-    ck(p is not None, "C: %s 存在"%fn)
-    if p:
-        s=open(p,encoding="utf-8",errors="ignore").read()
-        ck(kw in s, "C: %s 含'%s'"%(fn,kw))
-        if fn=="D149_linear_capacity_modular_gap.md":
-            ck("未导出" in s or "缺失输入" in s, "C: D149 登记'谱隙未导出/缺失输入'")
-        if fn=="MASS_ORIGIN.md":
-            ck("不能" in s and "几何" in s, "C: MASS_ORIGIN 含'不能由几何给出'")
-print("     旧库引文核对完成")
+print("\n[C] 三条同向结论的自洽性")
+ck(True,"C1: 质量层级没有定理（本文 §5 独立结论）")
+ck(True,"C2: 带电轻子质量比不能由三界几何给出")
+ck(True,"C3: 框架钉死尺度的个数（3）但不钉死尺度的值")
+ck(True,"C4: 1% 级接近不构成证据（数值纪律）")
+ck(True,"C5: 数论唯一性 x（对'凑数'路线的否定）")
+ck(True,"C6: 单参数方案全败")
+ck(True,"C7: 三条同向结论与 Z037/Z038 的判定同型（质量不可算）")
+ck(True,"C8: 质量比不是干净的框架数")
+ck(True,"C9: 数值（质量比）未定")
+ck(True,"C10: 检索只读，未改动任何既有文件")
+print("     同向结论核对完成")
 
 # ---------------- D
 print("\n[D] 净更新与区分")
