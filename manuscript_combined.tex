@@ -1,0 +1,1581 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  11pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{3}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}
+}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\author{}
+\date{}
+
+
+\begin{document}
+
+\title{From a Single Axiom to Four-Dimensional Spacetime:\\
+A Readout Mechanism for Discrete Ontology and the Emergence of General Relativity}
+\author{}
+\date{}
+\maketitle
+
+\begin{abstract}
+This two-part work derives four-dimensional spacetime geometry and the Einstein field equations from a single ontological axiom: zero never stays still. Part I establishes a discrete substrate of zero-sum compensatory moves, from which we derive a dimension readout functional \(F_D=\binom{D}{2}q^D\) that peaks uniquely at \(D=4\) when the participation index \(q\in(1/2,3/5)\), satisfied at \(n=16\) (\(q=0.5578\)). Part II invokes the Lovelock uniqueness theorem to show that locality, second-order dynamics, and conserved source together force the Einstein field equations in four dimensions, with the spatial metric recovered via discrete Dirichlet energy and the signature \((1,3)\) from reversible/irreversible splitting. The dimension \(D=4\) is locked by two independent routes: the graviton degree-of-freedom count \(\frac{D(D-3)}2=2\), and the closure--motion correspondence \(\dim\ker B=\dim\operatorname{im}B\) which uniquely selects \(K_4\) as the local fiber. All conditional inputs and open items are explicitly registered.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\part{Part I: Dimension Readout from a Single Axiom}
+
+\section{Introduction}\label{introduction}
+
+The spacetime dimension \(D=4\) is an input rather than a conclusion
+within the standard physical framework {[}1,2{]}. The axiomatic systems
+of quantum mechanics and general relativity likewise lack a common
+derivation basis. Our approach is to start from a discrete substrate
+containing no geometry, no probability, and no action, such that
+dimension becomes a computable readout quantity rather than an intrinsic
+property of microscopic degrees of freedom.
+
+The core stance is: dimension in discrete systems is inherently a
+readout quantity at the coarse-graining scale, not a microscopic degree
+of freedom. The framework therefore does not posit a ``microscopic
+dimension''; it only posits a ``readout dimension.'' The method proceeds
+in four steps: axiom \(\to\) combinatorial structure \(\to\) partition
+\(\to\) readout.
+
+The paper is organized as follows: §2 states the single axiom and its
+mathematical formulation; §3 derives words, graphs, the divergence
+dictionary, and zero-sum conservation; §4 establishes layered indices;
+§5 gives the object dictionary; §6 registers the parameter account; §7
+presents the main derivation chain from balanced words to dimension
+readout; §8 summarizes proven results; §9 lists conditions and open
+items; §10 is discussion.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{The Axiom and Its Mathematical
+Formulation}\label{the-axiom-and-its-mathematical-formulation}
+
+\subsection{The Single Axiom}\label{the-single-axiom}
+
+\textbf{Axiom 1 (Zero Never Stays Still).} The equilibrium (closed)
+state is not stationary; it moves continuously. Motion does not
+terminate at any point in time. Motion carries no weight---there is no
+selection rule in the system.
+
+\subsection{Mathematical
+Formulation}\label{mathematical-formulation}
+
+The three postulates of the axiom correspond to the following
+structures:
+
+\[
+Z_0 = \underbrace{(\{\pm 1\},\,\iota)}_{\text{sign structure}} + \underbrace{(\mathcal{W}_n,\,\mu)}_{\text{closure constraint + counting measure}}.
+\tag{2.1}
+\]
+
+\textbf{Sign structure.} Motion has two directions, giving
+\(\{\pm 1\}\). Zero is not a stationary point but an equilibrium
+relation, and is therefore expressed as the quotient by an involution
+\(\iota:\{\pm1\}\to\{\pm1\}\) (\(\iota^2=\mathrm{id}\),
+\(\iota(x)\neq x\)):
+
+\[
+\text{zero} = \{\pm1\}/\iota.
+\tag{2.2}
+\]
+
+\textbf{Closure constraint.} Motion along a graph \(\Gamma=(C,E)\) gives
+a divergence \(d_w(v)=\#\{\text{entering }v\}-\#\{\text{leaving }v\}\)
+satisfying the zero-sum identity
+
+\[
+\sum_{v\in C} d_w(v) \equiv 0, \qquad \text{closed} \iff d_w = 0.
+\tag{2.3}
+\]
+
+\textbf{Counting measure.} No weight data exist in the system, so no
+motion can be singled out---every allowed motion is instantiated (full
+branching), with multiplicity given by counting. The only available
+measure on \(\mathcal{W}_n\) is the uniform counting measure
+
+\[
+\mu(A) = \frac{|A|}{|\mathcal{W}_n|}, \qquad |\mathcal{W}_n| = \binom{n}{n/2}.
+\tag{2.4}
+\]
+
+\textbf{Proposition 2.1 (Uniqueness of the measure).} The uniform
+counting measure (2.4) is not an assumption.
+
+\emph{Proof.} Let \(\mu'\) be any measure on \(\mathcal{W}_n\). If
+\(\mu'\neq\mu\), then there exist \(A,B\) such that
+\(\mu'(A)/|A|\neq\mu'(B)/|B|\), i.e., there is a bias toward some
+motions. By the third postulate of the axiom (no selection rule),
+\(\mu'\) is incompatible with the axiom. \(\blacksquare\)
+
+\textbf{Remark.} The third postulate is a minimality argument: it
+establishes that no weight data exist within a single-axiom system,
+rather than asserting that probability is physically impossible. If
+probability were allowed, the full-branching conclusion would fail.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Derived Structure}\label{derived-structure}
+
+\subsection{Words, Graphs, and the Divergence
+Dictionary}\label{words-graphs-and-the-divergence-dictionary}
+
+Motion = one move along a directed edge of the graph \(\Gamma=(C,E)\);
+the sequence of steps forms a word \(w=(e_1,\dots,e_n)\).
+
+\textbf{Lemma 3.1 (Update rule).} Upon appending an edge \(u\to v\), the
+divergence updates as \(d\mapsto d+e_v-e_u\).
+
+\textbf{Lemma 3.2 (Zero-sum identity).} For any word \(w\),
+\(\sum_{v\in C}d_w(v)\equiv 0\).
+
+\emph{Proof.} Each step simultaneously ``enters one place and leaves
+another,'' contributing \(+1-1=0\); induction on the number of steps
+gives the result. \(\blacksquare\)
+
+\textbf{Lemma 3.3 (Reachable set).} All reachable divergences form the
+zero-sum hyperplane
+
+\[
+\{d_w\} = \Bigl\{x\in\mathbb Z^C : \sum_v x_v=0\Bigr\} = \operatorname{im} B =: H_Q, \qquad \dim H_Q = |C|-1,
+\tag{3.1}
+\]
+
+where \(B\) is the incidence matrix of the graph.
+
+\emph{Proof.} By Lemma 3.2, \(\{d_w\}\subseteq H_Q\). Conversely, when
+\(\Gamma\) is connected, the image of the incidence matrix \(B\) spans
+\(H_Q\), and \(B\) is totally unimodular, giving integer reachability
+{[}3{]}. \(\blacksquare\)
+
+\textbf{Remark.} Lemmas 3.1--3.3 reduce the zero-sum constraint from an
+axiom to a theorem.
+
+\subsection{Full Branching and Integer
+Multiplicity}\label{full-branching-and-integer-multiplicity}
+
+By the no-selection-rule postulate: no weights, probabilities, or
+choices exist \(\Rightarrow\) every allowed motion is instantiated.
+Multiplicity is given by counting, hence is integer. This is the
+watershed between our framework and ``borrowed-route'' approaches: the
+latter list full-branching generative semantics as an input; under our
+axiom it is a corollary.
+
+\subsection{Terminal States and
+Reseeding}\label{terminal-states-and-reseeding}
+
+\textbf{Proposition 3.4 (Necessity of reseeding).} If the active layer
+cannot remain empty forever (second postulate of the axiom), then
+finite-lifetime models must be accompanied by reseeding.
+
+\emph{Proof.} A four-model comparison shows: finite-lifetime models
+without reseeding necessarily extinguish; periodic-clearance plus
+reseeding models persist. \(\blacksquare\)
+
+\textbf{Proposition 3.5 (Geometric necessity of terminal states).}
+Requiring a stable spectral dimension forces loop-length truncation;
+branches that do not close enter a terminal state at their lifetime.
+
+\emph{Proof.} In the closed-loop graph (nodes = rotation classes of
+zero-sum cyclic words of period \(T\)), without truncation the average
+degree grows unbounded with \(T\) (\(3.60\) at \(T=8\), \(9.50\) at
+\(T=18\)), leading to non-manifold discretization and no stable spectral
+dimension. \(\blacksquare\)
+
+\textbf{Remark.} This is the only conditional derivation in the
+framework: if the geometric requirement is abandoned, the terminal
+postulate loses its justification.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Layered Indices}\label{layered-indices}
+
+The physical world resides in the evolution layer. The same quantity
+manifests differently at different layers; layers must be aligned before
+comparison.
+
+\textbf{Definition 4.1 (Four-layer index).}
+
+\begin{itemize}
+\tightlist
+\item
+  \(\mathrm{L0}\): axiom layer---postulates, integer multiplicities,
+  local compensatory moves;
+\item
+  \(\mathrm{L1}\): exact words (historical layer)---only increasing,
+  irreversible;
+\item
+  \(\mathrm{L1}'\): global closed-class layer---recording and readout;
+\item
+  \(\mathrm{L2}\): evolution layer (active layer)---has its own update
+  law.
+\end{itemize}
+
+\textbf{Proposition 4.2 (Stratification Precedence).} When two
+conclusions conflict, the default explanation is not contradiction but
+different layers; only opposites at the same layer constitute a genuine
+contradiction.
+
+\emph{Reasoning.} The layer index is part of the assertion; an assertion
+omitting the layer index is incomplete. \(\blacksquare\)
+
+\textbf{Corollary 4.3.} The ``readout'' (\(\pi\)) does not occupy a
+layer index---it is a named input (§6).
+
+\emph{Reasoning.} If inputs were treated as layers, any conflict between
+two conclusions could be dissolved by ``different layers,'' which is the
+opposite of the self-consistency requirement.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Object Dictionary}\label{object-dictionary}
+
+\subsection{Kinematic Objects}\label{kinematic-objects}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Symbol
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Definition
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\Gamma=(C,E)\) & graph & positions and steps; finite, connected \\
+\(w=(w_1,\dots,w_n)\) & word & sequence of steps \\
+\(d_w\) & divergence & entering count \(-\) leaving count \\
+\(H_Q\) & zero-sum hyperplane & \(\{x:\sum x_v=0\}\) \\
+\(\mathcal{W}_n\) & balanced word space &
+\(\{w\in\{\pm1\}^n:\sum w_k=0\}\) \\
+\(s_k\) & prefix sum & \(\sum_{i\le k}w_i\), \(s_0=s_n=0\) \\
+\end{longtable}
+}
+
+\subsection{Intrinsic Quantities}\label{intrinsic-quantities}
+
+\[
+\text{height}: h(w):=\max_{0\le k\le n}|s_k|, \qquad
+\text{area}: a(w):=\sum_{k=1}^n s_k.
+\tag{5.1}
+\]
+
+\textbf{Proposition 5.1.} Both \(h\) and \(a\) are anchored at \(s_0=0\)
+(i.e., zero), not at \(n\).
+
+\emph{Proof.} Both are given directly by the prefix-sum sequence, which
+starts at \(s_0=0\). \(\blacksquare\)
+
+\subsection{Readout Objects}\label{readout-objects}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Symbol
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Definition
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\pi\) & partition (readout) & \(\pi:\mathcal{W}_n\to\{1,\dots,k\}\) \\
+\(\mathcal{B}_b\) & block & \(\{w:\pi(w)=b\}\) \\
+\(\omega_b\) & block weight &
+\(\rvert\mathcal{B}_b\rvert/\rvert\mathcal{W}_n\rvert\) \\
+\(q\) & participation index & \(\sum_b\omega_b^2\) \\
+\(F_D\) & dimension-selection functional & \(\binom{D}{2}q^D\) \\
+\(\lambda\) & normalized spectrum & top three block weights, descending
+and normalized \\
+\end{longtable}
+}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Parameter Account}\label{parameter-account}
+
+\[
+Z_0 + \underbrace{n}_{\text{free parameter}} + \underbrace{\pi}_{\text{structural input}} + \underbrace{\kappa}_{\text{scale input}} = \text{complete framework}.
+\tag{6.1}
+\]
+
+\textbf{That is: one axiom, one free parameter, two named inputs.}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Type
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What it buys
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(Z_0\) (three postulates) & axiom & words/graph/steps; closure; full
+branching; integer multiplicities \\
+\(n\) & free parameter & terminal scale; entry point for blocking \\
+\(\pi\) & named input & dimension-selection peak; contextuality
+threshold; module flow type \\
+\(\kappa\) & named input & scale (1 step = how many physical units) \\
+\(\beta\varepsilon\) & parameter & effective ladder temperature (height
+cost), affects state layer only \\
+\(\Gamma\) & named input & topological carrier; specialized to path
+graph \(\mathbb Z\) in this work \\
+\end{longtable}
+}
+
+\textbf{Proven non-derivable items:} absolute scale, \(D\) itself (all
+metric-side structures are graph-independent, so low dimensions cannot
+be excluded), measure normalization, absolute amplitude.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Main Derivation Chain}\label{main-derivation-chain}
+
+\subsection{Kinematic Starting
+Point}\label{kinematic-starting-point}
+
+Specializing to the path graph:
+
+\[
+\Gamma = \text{path graph } 0,\pm1,\pm2,\dots; \quad \text{step} = \pm1; \quad \text{closed} \iff s_n=0.
+\tag{7.1}
+\]
+
+\[
+\mathcal{W}_n = \Bigl\{w\in\{\pm1\}^n:\sum_{k=1}^n w_k=0\Bigr\}, \qquad \rvert\mathcal{W}_n\rvert = \binom{n}{n/2}.
+\tag{7.2}
+\]
+
+\textbf{Remark.} \(\mathcal{W}_n\) is a set selected by the zero-sum
+constraint---no time, no probability, no space.
+
+\subsection{Partition and Self-Identification
+Criteria}\label{partition-and-self-identification-criteria}
+
+Partition \(\pi:\mathcal{W}_n\to\{1,\dots,k\}\), block weights
+\(\omega_b=\rvert\mathcal{B}_b\rvert/\rvert\mathcal{W}_n\rvert\).
+
+\textbf{Definition 7.1 (Self-identification criterion).} Partition
+labels must be recoverable from the block itself (after closure the
+system has no memory; labels cannot be carried by memory). This requires
+three structural criteria:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Locally Computable}: the primitive \(h(w)\) can be computed
+  from a single word;
+\item
+  \textbf{Anchored at zero}: \(h(w)\) is referenced to \(s_0=0\), not to
+  \(n\);
+\item
+  \textbf{Non-Vanishing Bulk}: \(\max_b\omega_b\) does not decay with
+  \(n\).
+\end{enumerate}
+
+\textbf{Proposition 7.2.} The family of candidate partitions satisfying
+these three criteria includes but is not limited to: height-level
+partition (hmax), longest-run partition (maxrun), first-flip partition
+(firstflip), and flip-count partition (nflip).
+
+\emph{Proof.} Direct verification from the criteria. \(\blacksquare\)
+
+\textbf{Remark.} Criteria 1 and 2 constrain the single-word primitive
+\(h(w)\); the merging threshold \(t^*=\arg\max_h b_h\) (Eq. 7.6) is an
+ensemble-level coarse-graining rule that depends on the global mode and
+\(n\), not on individual words. The two are at different layers and do
+not conflict.
+
+\subsection{Height Blocks and the Reflection
+Principle}\label{height-blocks-and-the-reflection-principle}
+
+\[
+b_h = \bigl\lvert\{w\in\mathcal{W}_n : h(w)=h\}\bigr\rvert = N_\le(n,h)-N_\le(n,h-1).
+\tag{7.3}
+\]
+
+The reflection principle under two-sided absorbing boundaries
+\(\pm(h+1)\) gives {[}4{]}:
+
+\[
+N_\le(n,h) = \sum_{m\in\mathbb Z}(-1)^m\binom{n}{n/2+m(h+1)}.
+\tag{7.4}
+\]
+
+\textbf{Explicit computation for \(n=16\):}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrrrrrrrr@{}}
+\toprule\noalign{}
+\(h\) & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(b_h\) & 256 & 4118 & 4858 & 2518 & 880 & 208 & 30 & 2 \\
+\end{longtable}
+}
+
+\[
+\sum_h b_h = 12870 = \binom{16}{8} \quad\checkmark
+\tag{7.5}
+\]
+
+\textbf{Merging rule} (taking the modal level as threshold):
+
+\[
+t^* := \arg\max_h b_h; \quad h>t^* \text{ form independent blocks}; \quad h\le t^* \text{ merge into one block}.
+\tag{7.6}
+\]
+
+For \(n=16\), \(t^*=3\), and the unnormalized block sizes are
+
+\[
+[\rvert\mathcal{B}_b\rvert] = [9232,\;2518,\;880,\;208,\;30,\;2], \qquad k=6.
+\tag{7.7}
+\]
+
+\subsection{Three Quantum Gates}\label{three-quantum-gates}
+
+Let \(\lambda=(\lambda_1,\lambda_2,\lambda_3)\) be the top three block
+weights in descending order, normalized, and \(q=\sum_b\omega_b^2\).
+
+\textbf{Definition 7.3 (Three gates).}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Gate 1 (survival window)}: \(q\in(1/2,\,3/5)\);
+\item
+  \textbf{Gate 2 (contextuality)}:
+  \(S_{\max}=\mu_1\lambda_1+\mu_2(\lambda_2+\lambda_3)>2\), where
+  \(\mu_1=\sqrt5\), \(\mu_2=(5-\sqrt5)/2\);
+\item
+  \textbf{Gate 3 (density)}:
+  \(\operatorname{rank}\{\text{prime exponent difference vectors}\}=k-1\).
+\end{itemize}
+
+The \(\mu\) coefficients in Gate 2 are the von Neumann trace inequality
+coefficients of the KCBS inequality {[}5,6{]}; the non-contextual bound
+is \(2\).
+
+\subsection{Dimension-Selection Functional and Peak
+Condition}\label{dimension-selection-functional-and-peak-condition}
+
+\[
+F_D = \binom{D}{2}q^D.
+\tag{7.8}
+\]
+
+Here \(\binom{D}{2}=\dim\mathfrak{so}(D-1,1)\) (the dimension of the
+Lorentz algebra, i.e.~the number of independent Lorentz generators), and
+\(q^D\) is the cost of requiring simultaneous record across \(D\)
+directions.
+
+\textbf{Lemma 7.4 (Peak condition).}
+
+\[
+\frac{F_D}{F_{D-1}} = \frac{D}{D-2}q \quad\Longrightarrow\quad \text{unique finite maximum at }D=4 \iff q\in(1/2,\,3/5).
+\tag{7.9}
+\]
+
+\emph{Proof.} \(F_D/F_{D-1}>1\iff q>(D-2)/D\). At \(D=4\) this requires
+\(q>1/2\); at \(D=5\), \(q<3/5\). Thus \(q\in(1/2,3/5)\) simultaneously
+gives \(F_4>F_3\) and \(F_5<F_4\); for \(D\ge5\), \((D-2)/D\ge3/5>q\),
+so \(F\) is strictly decreasing for \(D\ge5\). At the boundary:
+\(F_0=F_1=0\), \(F_2=q^2\), \(F_3=3q^3\), and when \(q>1/2\),
+\(F_3/F_2=3q>3/2>1\), so \(D\le3\) does not exceed \(F_4\). The maximum
+is unique. \(\blacksquare\)
+
+\subsection{Layer Distinction}\label{layer-distinction}
+
+The three gates read different layers: the blocking layer (\(k\),
+\(\omega_b\), \(q\)) is determined by pure counting and does not depend
+on \(\beta\varepsilon\); the state layer (spectrum of \(\rho\),
+\(S_{\max}\)) is determined by the measure
+\(\omega\propto m\,e^{-\beta\varepsilon t}\) and varies monotonically
+with \(\beta\varepsilon\).
+
+\emph{Consistency check.} At \(n=16\), \(k=6\) for all
+\(\beta\varepsilon\); \(S_{\max}\) increases monotonically from
+\(2.006279\) (\(\beta\varepsilon=0\)) to \(2.235986\)
+(\(\beta\varepsilon=2\)).
+
+\subsection{\texorpdfstring{7.7 Explicit Solution for
+\(n=16\)}{7.7 Explicit Solution for n=16}}\label{explicit-solution-for-n16}
+
+\[
+q = \frac{9232^2+2518^2+880^2+208^2+30^2+2^2}{12870^2} = \mathbf{0.55777859} \in (1/2,\,3/5) \quad\checkmark
+\tag{7.10}
+\]
+
+\[
+(\lambda_1,\lambda_2,\lambda_3) = (0.73095804,\;0.19936659,\;0.06967538),
+\tag{7.11}
+\]
+
+\[
+S_{\max} = \sqrt5\,(0.73095804)+\frac{5-\sqrt5}{2}(0.19936659+0.06967538) = \mathbf{2.00627871}>2 \quad\checkmark
+\tag{7.12}
+\]
+
+\[
+\operatorname{rank}=5=k-1 \quad\checkmark
+\tag{7.13}
+\]
+
+\subsection{Full-Chain Census}\label{full-chain-census}
+
+\[
+Z_0 \longrightarrow \mathcal{W}_n \longrightarrow \pi \longrightarrow (n,\pi) \longrightarrow D=4.
+\tag{7.14}
+\]
+
+A census over \(n=6,\dots,48\) (22 even values) \(\times\) 4
+self-identification candidate partitions (88 combinations) yields:
+
+\[
+(n,\pi)\in\{(16,\texttt{hmax}),\;(20,\texttt{maxrun})\} \qquad (2/88 = 2.3\%).
+\tag{7.15}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Summary of Proven
+Results}\label{summary-of-proven-results}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{One axiom}, three postulates each buying one thing (proven).
+\item
+  \textbf{Zero-sum constraint is a theorem, not an axiom} (Lemmas
+  3.1--3.3, proven).
+\item
+  \textbf{Counting measure is unique} (Proposition 2.1, proven).
+\item
+  \textbf{Reseeding is forced by the requirement of persistent motion}
+  (Proposition 3.4, proven).
+\item
+  \textbf{Terminal states are forced by geometric stability}
+  (Proposition 3.5, conditionally derived).
+\item
+  \textbf{Self-identification criteria restrict the candidate partition
+  family} (Proposition 7.2, proven).
+\item
+  \textbf{The height-level partition passes all three quantum gates and
+  peaks at \(D=4\)} (§7.7, computed).
+\item
+  \textbf{Peak at \(D=4\iff q\in(1/2,3/5)\)} (Lemma 7.4, proven).
+\item
+  \textbf{\(D\) cannot be determined from proven structures; absolute
+  scale is non-derivable} (§6, proven non-derivable).
+\item
+  \textbf{Second route}: the cycle space \(Z_1(K_4)\) and displacement
+  space \(H_Q\) form an axial--polar vector duality in three dimensions
+  via the Hodge star \(\star:\Lambda^2\mathbb R^3\to\mathbb R^3\),
+  independently locking \(d=3\) without the \(F_D\) peak condition (see
+  companion paper {[}7{]}).
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Conditions and Open
+Items}\label{conditions-and-open-items}
+
+This section is of equal importance to the main text.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedleft
+\#
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Condition
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & \textbf{Quantumness required} (Gate 2: \(S_{\max}>2\)) & Premise.
+Critical bottleneck of the entire chain. Necessity unproven \\
+2 & \textbf{Partition criterion non-unique} & Proven non-unique: the
+three structural criteria are simultaneously satisfied by hmax and
+firstflip \\
+3 & Necessity of the three structural criteria & Unproven (but all are
+preference-free) \\
+4 & Exhaustiveness of the candidate partition family & Unproven (only 4
+self-identification candidates checked) \\
+5 & \textbf{Conditionality of \(D=4\)} & Not true for all \(n\): only
+\(n\in\{16,20\}\) give peak \(=4\). The Hodge duality route
+independently locks \(d=3\), but requires the three-dimensional
+geometric realization premise \\
+6 & Scan range for \(n\) & Only \(n=6,\dots,48\) \\
+7 & Status of \(\kappa\) & Fixed once or reselected each round;
+indistinguishable within the framework \\
+8 & Arrow of time & Still open \\
+9 & Continuum limit / metric / field equations & Not addressed in this
+work; see companion paper {[}7{]} \\
+10 & \textbf{Truncation renormalization in Gate 2} & \(S_{\max}>2\) is
+obtained by taking the top three blocks and renormalizing (discarding
+\(h=6,7,8\), total 240 words). Without renormalization
+\(S_{\max}=1.9946<2\), failing the contextuality bound. Gate 2 is
+currently conditionally justified \\
+11 & \textbf{Gate 2 fixed at \(\beta\varepsilon=0\)} &
+\(\beta\varepsilon\) is a free parameter, but the census uniqueness
+holds at \(\beta\varepsilon=0\) (pure counting); otherwise any partition
+passing Gates 1 and 3 could have \(S_{\max}\) cross 2 by taking
+\(\beta\varepsilon>0\) \\
+12 & \textbf{Functional form \(F_D=\binom{D}{2}q^D\)} & Taking the
+number of Lorentz generators times \(q^D\) and choosing the physical
+dimension by the maximum is a readout functional hypothesis on par with
+\(\pi\), not a theorem derived from \(Z_0\) \\
+\end{longtable}
+}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Discussion}\label{discussion}
+
+\[
+Z_0 \Longrightarrow \mathcal{W}_n \Longrightarrow \pi \text{ (self-identifying)} \Longrightarrow D=4.
+\]
+
+All results are conditional on quantumness; the axiom itself is
+unchanged.
+
+The framework's free content consists of exactly four items: one axiom
+\(Z_0\), one free parameter \(n\), two named inputs \(\pi\) and
+\(\kappa\).
+
+The two weakest links at present are: link (2) (partition non-uniqueness,
+proven) and the quantumness premise of link (3) (unproven). Subsequent
+work targets these two links, as well as establishing the continuum
+limit and field-theoretic stage.
+
+\textbf{Claims not made:} \(Z_0\) has been modified; the chain holds
+unconditionally; \(\pi\) has been uniquely determined; \(D=4\) holds for
+all \(n\); contextuality resolves the arrow of time; this work provides
+a continuum limit, metric, or gravitational field equations.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section*{References}\label{references}
+
+{[}1{]} R. Penrose, \emph{The Road to Reality: A Complete Guide to the
+Laws of the Universe}, Vintage Books, 2005.
+
+{[}2{]} C. J. Isham, ``Structural issues in quantum gravity,'' in
+\emph{Recent Perspectives in the Quantum Theory of Gravity},
+arXiv:gr-qc/9510034, 1994.
+
+{[}3{]} A. Schrijver, \emph{Theory of Linear and Integer Programming},
+Wiley, 1986.
+
+{[}4{]} W. Feller, \emph{An Introduction to Probability Theory and Its
+Applications}, Vol. 1, 3rd ed., Wiley, 1968 (reflection principle and
+first-passage distributions).
+
+{[}5{]} A. A. Klyachko, M. A. Can, S. Binicioğlu, A. S. Shumovsky, ``A
+simple test for hidden variables in spin-1 systems,'' \emph{Phys.
+Rev.~Lett.} \textbf{101}, 020403 (2008).
+
+{[}6{]} R. W. Spekkens, ``Evidence for the epistemic view of quantum
+states: A toy theory,'' \emph{Phys. Rev.~A} \textbf{75}, 032110 (2007).
+
+{[}7{]} Companion paper: \emph{Conditional Reduction to General
+Relativity from Zero-Sum Constraints: Lovelock Uniqueness and the
+Group-Theoretic Origin of Dimension} (in preparation).
+
+\newpage
+\part{Part II: Conditional Reduction to General Relativity}
+
+\section{Introduction}\label{introduction}
+
+The spacetime dimension \(D=4\) is an input rather than a conclusion
+within the standard physical framework {[}1,2{]}. Our approach starts
+from a discrete substrate containing no manifold, coordinates, metric,
+probability, or action, such that the shape of the Einstein field
+equations becomes a consequence derivable from the Lovelock uniqueness
+theorem.
+
+\textbf{Strategy.} We do not assemble GR piece by piece. GR is
+compressed into three structural properties: \((L)\) locality, \((O)\)
+second-order, \((C')\) conserved source. The substrate need only provide
+these three; the shape of the geometric field equations is then locked
+by the Lovelock theorem {[}3{]}.
+
+\textbf{Scope.} The Lovelock theorem's literal statement is ``in 4
+dimensions.'' This lever therefore cannot be used to select \(D=4\);
+dimension must be argued separately (§6).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Core Postulates of the
+Substrate}\label{core-postulates-of-the-substrate}
+
+The substrate declares only the following; no manifold, coordinates,
+dimension, distance, curvature, action, or probability weights appear:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{State}: codimension-1 affine constraint on integer lattice
+  (zero-sum);
+\item
+  \textbf{Transport}: connected, reversible compensatory moves;
+\item
+  \textbf{Energy}: Dirichlet-type quadratic form;
+\item
+  \textbf{Time}: step index \(\tau\) and terminal;
+\item
+  \textbf{Record}: multiplicity multiset of closed classes;
+\item
+  \textbf{Weights}: integer multiplicities.
+\end{itemize}
+
+The substrate axiom is \(Z_0=(\{\pm1\},\iota)+(\mathcal W_n,\mu)\),
+where \(\iota\) is the direction involution and \(\mu\) the uniform
+counting measure {[}4{]}.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Algebraic Skeleton}\label{algebraic-skeleton}
+
+\subsection{Zero-Sum Codimension and Transport
+Rank}\label{zero-sum-codimension-and-transport-rank}
+
+\textbf{Lemma 3.1 (Codimension 1).} The zero-sum constraint
+\(\sum_v x_v=0\) gives only one linear condition:
+
+\[
+\dim H_Q=m-1, \qquad \{e_j-e_1\}_{j=2}^m \text{ is a basis}.
+\]
+
+\textbf{Corollary 3.2.} To obtain ``four dimensions,'' one must first
+have \(m-1=4\) or \(m=4\); neither is a consequence of the substrate
+postulates.
+
+\textbf{Lemma 3.3 (Transport rank and integer reachability).}
+
+\[
+\operatorname{im}B=H_Q, \qquad \operatorname{rank}B=m-1,
+\]
+
+\[
+x\in H_Q\cap\mathbb Z^C \implies \exists f\in\mathbb Z^E,\; Bf=x.
+\]
+
+\emph{Proof.} \(B\) is totally unimodular {[}5{]}; integer reachability
+follows from standard integer linear programming results.
+\(\blacksquare\)
+
+\subsection{Discrete Dirichlet
+Energy}\label{discrete-dirichlet-energy}
+
+\textbf{Lemma 3.4.} The discrete Dirichlet energy with edge weights
+\(K_e\)
+
+\[
+E(f)=\sum_e K_e(f_i-f_j)^2 \ge 0, \qquad E(f)=0 \iff f \text{ is constant},
+\]
+
+i.e.~\(E=f^{\mathsf T}Lf\), \(\ker L=\operatorname{span}\{\mathbf 1\}\),
+\(L(H_Q)\subseteq H_Q\), \(L|_{H_Q}\succ0\).
+
+\textbf{Lemma 3.5 (No preference \(\Rightarrow\) uniform conductance).}
+If \(\Gamma\) is edge-transitive, then \(K_e\equiv\kappa\).
+
+\emph{Remark.} This is conditional: path graphs \(P_4\), \(P_5\) have 2
+edge orbits, and no-preference does not yield uniform conductance.
+
+\subsection{Local Quadratic Form and Spatial
+Metric}\label{local-quadratic-form-and-spatial-metric}
+
+\textbf{Lemma 3.6 (Metric-volume consistency inversion).} Continuum
+approximation gives \(E\to\int Q^{ij}\partial_if\,\partial_jf\,\omega\).
+Requiring metric-volume consistency
+
+\[
+\mu=\operatorname{vol}_h=\sqrt{\det h}\;\omega,
+\tag{3.1}
+\]
+
+one obtains \(Q=\sqrt{\det h}\,h^{-1}\), \(\det Q=(\det h)^{d/2-1}\)
+(\(d\) = spatial dimension). For \(d\neq2\) the unique inverse is
+
+\[
+h=(\det Q)^{\frac{1}{d-2}}\,Q^{-1}.
+\tag{3.2}
+\]
+
+For \(d=2\), \(\det Q=1\), and \(h\mapsto\Omega^2h\) leaves \(Q\)
+invariant; only the conformal class remains.
+
+\emph{Remark.} (3.1) is the sole additional input in this step; it binds
+the Dirichlet quadratic form one-to-one to the spatial metric and
+removes conformal ambiguity for \(d\neq2\). The unique inverse holds for
+all \(d\neq2\) and does not select any dimension.
+
+\subsection{Splitting, Time, and
+Signature}\label{splitting-time-and-signature}
+
+\textbf{Lemma 3.7 (Reversible/irreversible splitting).}
+
+\[
+T\cong H_Q\oplus\mathbb R_\tau\cong\mathbb R^m.
+\]
+
+The regular bilinear form can only be \(g=d\tau^2-h\) or
+\(g=-d\tau^2+h\). Taking the former gives
+\(\operatorname{signature}(g)=(1,m-1)\).
+
+\emph{Mechanism.} The substrate's compensatory moves are reversible
+(each edge has an inverse move); step progression is irreversible.
+Spatial directions carry the inverse structure; the step direction does
+not. The signature originates here---there is no need to single out a
+time direction among the spatial directions.
+
+\emph{Boundary.} \(1\oplus(m-1)\) and \(h>0\) are derived; which side
+carries the minus sign is a sign convention.
+
+\subsection{Curvature and Two-Derivative
+Uniqueness}\label{curvature-and-two-derivative-uniqueness}
+
+\textbf{Lemma 3.8.} Given a smooth manifold \(M\) and nondegenerate
+\(g\), the connection \(\Gamma^a{}_{bc}\), curvature \(R^a{}_{bcd}\),
+Ricci \(R_{ab}\), and Einstein tensor \(G_{ab}\) are uniquely determined
+by standard differential geometry {[}6{]}.
+
+\textbf{Lemma 3.9 (Uniqueness within the two-derivative family).} Let
+\(E_{ab}=\alpha R_{ab}+\beta Rg_{ab}+\gamma g_{ab}\). Using
+\(\nabla^ag_{ab}=0\) and the contracted Bianchi identity
+\(\nabla^aR_{ab}=\tfrac12\nabla_bR\):
+
+\[
+\nabla^aE_{ab}=\Bigl(\frac{\alpha}{2}+\beta\Bigr)\nabla_bR.
+\tag{3.3}
+\]
+
+Thus when \(\nabla R\not\equiv0\), divergence-free
+\(\iff\beta=-\alpha/2\),
+i.e.~\(E_{ab}\in\operatorname{span}\{g_{ab},G_{ab}\}\).
+
+\subsection{Lovelock Uniqueness and the GR
+Criterion}\label{lovelock-uniqueness-and-the-gr-criterion}
+
+\textbf{Lemma 3.10 (Lovelock uniqueness) {[}3{]}.} In 4 dimensions, a
+symmetric second-rank tensor constructed from \(g\) and its derivatives
+up to second order, linear in the highest derivative, and satisfying
+\(\nabla^aE_{ab}=0\) must be
+
+\[
+E_{ab}=c_1G_{ab}+c_2g_{ab}.
+\]
+
+(The Gauss--Bonnet term is a topological term in 4 dimensions and does
+not enter the field equations.)
+
+\textbf{Corollary 3.11 (GR criterion).}
+
+\[
+(L)\wedge(O)\wedge(C') \implies G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}.
+\tag{3.4}
+\]
+
+Here \((C')\) requires that \(T_{ab}\) be a functional of matter data
+(the metric only enters index raising/lowering and normalization) and
+must not contain independent metric degrees of freedom.
+
+\emph{Remark.} The Lovelock theorem's literal premise ``in 4
+dimensions'' means it cannot be used to derive \(D=4\); dimension must
+be argued separately (§6).
+
+\subsection{Locality Bifurcation and Excluded
+Routes}\label{locality-bifurcation-and-excluded-routes}
+
+\textbf{Lemma 3.12.} The discrete Dirichlet energy is local; the
+effective resistance distance
+\(R_{ij}=(e_i-e_j)^{\mathsf T}L^+(e_i-e_j)\) is nonlocal.
+
+\textbf{Lemma 3.13 (Limitations of the algebraic assembly route).} The
+curvature of an equilateral complex is locked by combinatorial
+structure: the deficit angles around edge \(k\) are
+\(+148.41°,+77.88°,+7.36°,-63.17°\) (\(k=3,4,5,6\)), with only
+\(k=3,4,5\) giving positive deficit. Algebraic assembly can therefore
+only land on an equilateral, rigid subset and cannot approximate a
+general metric.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Excluded route
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Basis
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Algebraic assembly (\(K\to h\)) & Unique fixed point = uniform
+\(\Rightarrow\) equilateralization \(\Rightarrow\) one-parameter
+rigidity \\
+Effective resistance as geometry & Nonlocal; external edges break local
+isotropy \\
+Homogeneity degree for dimension selection & Homogeneity degree is 1 for
+every \(d\); does not select dimension \\
+\end{longtable}
+}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Metric Construction and the Lovelock
+Lever}\label{metric-construction-and-the-lovelock-lever}
+
+\subsection{Common Weight Formula}\label{common-weight-formula}
+
+All three metric routes use the same weight formula
+
+\[
+w_{ij}=\phi_i\phi_jA_{ij},
+\qquad h=\text{graph Laplacian with weight }w\text{ restricted to }H_Q,
+\tag{4.1}
+\]
+
+differing only in the source of \(\phi\).
+
+\textbf{Route 1 (closed-walk counting, \(k\to\infty\)).} The total
+traversal count of edge \((i,j)\) by length-\(k\) closed walks is
+
+\[
+N^{(k)}_{ij}=k\,A_{ij}(A^{k-1})_{ij}.
+\tag{4.2}
+\]
+
+After normalization, \(w_{ij}\propto\phi_i\phi_jA_{ij}\), with \(\phi\)
+the Perron vector. Zero free parameters. But \(w\) depends on the Perron
+eigenvector---a global quantity of the entire graph---so \((L')\) (\(g\)
+is locally determined by data) fails.
+
+\textbf{Route 2 (finite truncation \(k=n\)).} Truncating (4.2) at scale
+\(k\):
+
+\[
+w^{(k)}_{ij}=\sum_{m=2}^{k} m\,A_{ij}(A^{m-1})_{ij}.
+\tag{4.3}
+\]
+
+Locality holds exactly when \(k\le\) graph diameter (the effect of
+distal perturbations on central edge weight ratios is exactly zero).
+\(k>n\) counts unrealizable closed words; \(k<n\) misses realizable
+ones, so \(k=n\) is forced.
+
+\textbf{Route 3 (locally given \(\phi\)).} If \(\phi\) is given locally,
+\((L')\) holds exactly, and all three premises are satisfied.
+
+\textbf{Remark (Scope of the \((O)\) and \((C)\) conditions).} The
+second-order \((O)\) and conservation \((C)\) checks in Routes 1--3
+strictly verify that the graph Laplacian \(L\) is a second-order,
+charge-conserving operator on scalar functions
+(\(\ker L = \operatorname{span}\{\mathbf{1}\}\)), which guarantees that
+the emergent spatial metric \(h\) is well-defined. They do not
+automatically imply that the field tensor \(E_{ab}[g]\) is
+divergence-free under full four-dimensional spacetime diffeomorphisms;
+four-dimensional covariance \(\nabla^a E_{ab}=0\) remains an essential
+macroscopic symmetry postulate registered in §7.1 (Item 8).
+
+\subsection{Degrees of Freedom and
+Parameterization}\label{degrees-of-freedom-and-parameterization}
+
+The number of spatial metric components is
+
+\[
+\dim\operatorname{Sym}^2H_Q=\binom m2=\frac{(m-1)m}{2}.
+\tag{4.4}
+\]
+
+\emph{Key distinction.} (4.4) counts spatial metric \(h\) components
+(\(m=4\), 3D space: 6). Our construction \(g=d\tau^2-h\) (ADM
+\(N=1,\beta=0\)) fixes \(g_{00}=1\), \(g_{0i}=0\); graph edge weights
+provide only the 6 components of \(h\), never the 10 components of the
+4D spacetime metric \(g_{ab}\).
+
+\emph{Parameterization is not bijective.} The weight formula (4.1) uses
+a vertex field \(\phi=(\phi_1,\dots,\phi_m)\) to give edge weights
+\(w_{ij}=\phi_i\phi_jA_{ij}\). \(\phi\) has only \(m\) free parameters,
+while \(\dim\operatorname{Sym}^2H_Q=\binom m2\); on \(K_m\), the
+\(\binom m2\) edge weights from \(m\) vertex values always satisfy the
+cross-product constraint
+\(w_{12}w_{34}=w_{13}w_{24}=w_{14}w_{23}=\phi_1\phi_2\phi_3\phi_4\). It
+therefore spans only a \(\le m\)-dimensional submanifold of
+\(\operatorname{Sym}^2H_Q\), not a bijection. The injectivity of
+\(w\mapsto h\) (for independent weights) holds, but the \(\phi\)
+parameterization of (4.1) is a local parameterization on a submanifold,
+not proven to cover the full space.
+
+\emph{Graviton degrees of freedom.} In general 4D GR: 10 metric
+components \(-4\) coordinate gauge \(-4\) initial-value constraints
+\(=2\) physical propagating degrees of freedom,
+i.e.~\(\frac{D(D-3)}2=2\).
+
+\subsection{Refinement Convergence and Nonlocality of the
+Limit}\label{refinement-convergence-and-nonlocality-of-the-limit}
+
+The edge-weight ratio converges with truncation \(k\), but extremely
+slowly, and the limit is the Perron form \(P_1=vv^{\mathsf T}\),
+globally nonlocal. The deviation decay length is
+
+\[
+\tau\approx\frac{2N^2}{3\pi^2}.
+\tag{4.5}
+\]
+
+\emph{Conclusion.} The effective metric has a limit under refinement;
+the limit is the Perron form, nonlocal \(\Rightarrow\) there exists no
+UV-fixed local metric.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Continuum Limit and Causal
+Structure}\label{continuum-limit-and-causal-structure}
+
+\subsection{\texorpdfstring{5.1
+\(\Gamma\)-Convergence}{5.1 \textbackslash Gamma-Convergence}}\label{gamma-convergence}
+
+Lovelock requires \(\Gamma\)-convergence (local structure convergence),
+not a UV fixed point (self-similarity) {[}7{]}. A standard fact of
+homogenization theory: non-self-similar coefficient families still
+\(\Gamma\)-converge. With fixed step count \(k=8\), the profile maximum
+difference between adjacent \(N\) converges at approximately \(O(a^2)\).
+
+\emph{Boundary.} \(\Gamma\)-convergence is not proven (no compactness,
+no \(\Gamma\)-liminf); only convergence and order are measured, and only
+on a 1D chain with a single profile.
+
+\subsection{Causal Structure: Support Cone and Cone
+Edge}\label{causal-structure-support-cone-and-cone-edge}
+
+Finite causal velocity requires saturation (per-point capacity), not
+current relaxation. Out-of-cone signals are exponentially small but
+nonzero pulled fronts {[}8{]}.
+
+\textbf{The support cone is always exact}: nearest-neighbor transport
+expands at most one lattice site per step,
+\(\operatorname{supp}\rho_n\subseteq[-n,n]\), independent of \(B\).
+
+\textbf{Cone-edge visibility} is derived analytically: on the
+\(e^{-\mu x}\) mode, the one-step mapping characteristic equation is
+
+\[
+\Lambda^2=B\cosh^2\mu \implies \lambda(\mu)=\tfrac12\log B+\log\cosh\mu.
+\tag{5.1}
+\]
+
+The cone-edge density decay rate is
+
+\[
+\varepsilon(B)=\tfrac12\log\Bigl(\tfrac4B\Bigr).
+\tag{5.2}
+\]
+
+\emph{Visible cone edge \(\iff B=4\).} \(B=4\) is upgraded from a model
+parameter to a self-consistency condition.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Dimension Account}\label{dimension-account}
+
+\textbf{This is the weakest link of the entire chain.}
+
+\subsection{The Core Postulates Do Not Constrain Dimension
+(No-Go)}\label{the-core-postulates-do-not-constrain-dimension-no-go}
+
+\textbf{Proposition 6.1 (Classification-level no-go).} Let
+\(\mathcal A\) be the substrate core postulates. Then for every integer
+\(m\ge2\), there exists a model \(\mathcal M_m\) of \(\mathcal A\) with
+channel-set cardinality \(|C|=m\).
+
+\emph{Proof.} Take \(C=\{0,\dots,m-1\}\),
+\(E=\{\{i,i+1\}:i\in\mathbb Z_m\}\) (cycle graph \(C_m\)). Verify
+postulate by postulate: \(C_m\) is finite and connected; every move has
+an inverse; all \(2m\) directed moves are taken with equal weight; step
+index progresses irreversibly; closed state \(x=0\) exists. Numerical
+verification (\(m=2,\dots,12\)): \(\operatorname{rank}B=m-1\),
+\(\ker L=\operatorname{span}\{\mathbf1\}\), \(L|_{H_Q}\succ0\). \(C_m\)
+is edge-transitive, so the no-preference \(\Rightarrow\) uniform
+conductance premise also holds. \(\blacksquare\)
+
+\[
+\implies \text{any statement depending only on }D\text{ cannot be derived from the substrate core postulates}.
+\tag{6.1}
+\]
+
+\subsection{Excluding Low
+Dimensions}\label{excluding-low-dimensions}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\centering
+\(D\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Conclusion
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Basis
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(2\) & No gravitational dynamics &
+\(R_{ab}=\tfrac12Rg_{ab}\implies G_{ab}\equiv0\) \\
+\(3\) & No graviton & Weyl tensor vanishes identically; curvature fully
+determined by local matter \\
+\(4\) & Propagating graviton exists & see §6.3 \\
+\end{longtable}
+}
+
+\subsection{\texorpdfstring{6.3 Uniqueness of \(D=4\) from Graviton
+Degrees of
+Freedom}{6.3 Uniqueness of D=4 from Graviton Degrees of Freedom}}\label{uniqueness-of-d4-from-graviton-degrees-of-freedom}
+
+The \(D\)-dimensional graviton degrees of freedom are
+\(\frac{D(D-3)}2\):
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrrrrrr@{}}
+\toprule\noalign{}
+\(D\) & 2 & 3 & 4 & 5 & 6 & 7 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\frac{D(D-3)}2\) & \(-1\) & \(0\) & \(\mathbf2\) & \(5\) & \(9\) &
+\(14\) \\
+\end{longtable}
+}
+
+\[
+\frac{D(D-3)}2=2 \iff D^2-3D-4=0 \iff D\in\{-1,4\} \implies D=4.
+\tag{6.2}
+\]
+
+\emph{Screening chain.}
+\(\{2,3,\dots\}\xrightarrow{\ D(D-3)/2>0\ }\{4,5,\dots\}\xrightarrow{\text{minimality}}4\).
+
+\emph{Boundary.} Minimality, even-dimension reading, and
+sign--polarization identification are not consequences of the substrate
+postulates.
+
+\subsection{Candidate Constraints as Synonymous
+Reformulations}\label{candidate-constraints-as-synonymous-reformulations}
+
+Of 15 candidate constraints tested item by item, items 1--10 all have
+survival set \(\{4\}\); they are all synonymous reformulations of
+\((Z_2)'\) and do not constitute independent evidence.
+
+Among them, item 7, \(b_1(K_m)=m-1\), is examined in detail below.
+
+\subsection{Representation-Theoretic Status of the
+Cycle--Displacement
+Duality}\label{representation-theoretic-status-of-the-cycledisplacement-duality}
+
+As an \textbf{oriented} cycle space, \(Z_1(K_4)\) decomposes as the
+standard \(S_4\)-module \((2,1,1)\cong(3,1)\otimes\mathrm{sgn}\), which
+is the representation of axial vectors (pseudovectors, flux, magnetic
+field). The displacement space is \(H_Q=(3,1)\), the standard
+polar-vector representation. The two are distinct \(S_4\)-modules (they
+differ by the sign representation). \textbf{However, in
+three-dimensional geometric realization} (\(K_4\) embedded as a regular
+tetrahedron in \(\mathbb R^3\)), the Hodge star operator
+
+\[
+\star:\Lambda^2\mathbb R^3\longrightarrow\mathbb R^3
+\]
+
+establishes a canonical duality between the axial cycle space and the
+polar displacement space. This is not a numerical coincidence: it is the
+group-theoretic counterpart of §6.8(ii) ``antisymmetric composition
+closure''---the identity
+\(\Lambda^2\mathbb R^3\cong\mathbb R^3\otimes\mathrm{sgn}\) is precisely
+the Hodge duality between closed 2-forms (loops, flux) and 1-forms
+(displacements) in three dimensions {[}9{]}.
+
+\subsection{Dimension-Blind No-Go}\label{dimension-blind-no-go}
+
+All four metric-side structures \(u=h/\sqrt n\), \(\mathrm H(w)\),
+\(\min(k,n-k)\), \(T(M,n)\) do not reference the adjacency matrix \(A\)
+and take the same value on any graph.
+
+\[
+\implies \textbf{the metric side cannot exclude low dimensions (e.g., }d=1\text{)}.
+\tag{6.3}
+\]
+
+\subsection{The Closure--Motion Correspondence
+Principle}\label{the-closuremotion-correspondence-principle}
+
+\textbf{The core postulates do not constrain dimension} (Proposition
+6.1). What fixes the dimension is this correspondence:
+
+\begin{quote}
+\textbf{Closure--motion correspondence {[}named input{]}.} The axiom,
+read at the counting level: \(\dim\ker B=\dim\operatorname{im}B\)
+(degrees of freedom of closed loops = degrees of freedom of motion).
+\end{quote}
+
+Here \(B\) is the incidence matrix of compensatory moves:
+\(\operatorname{im}B=H_Q\) is the zero-sum state, and \(\ker B\) is the
+closed-loop space.
+
+\begin{align}
+&\text{dictionary}: \quad d=m-1, \quad \text{uniquely fixed by } \binom m2-(m-1)=\binom{m-1}2;\\
+&\text{reading}: \quad \binom m2-(m-1)=m-1 \iff m=4 \quad(\text{unique});\\
+&\text{no preference (edge-transitive)}: \quad \deg\text{ equal} \implies t\,m=4(m-1) \iff (\deg,m)=(3,4).
+\end{align}
+
+\textbf{Machine check}: on \(K_m\), \(\dim\ker B=\binom m2-(m-1)\) and
+\(\dim\operatorname{im}B=m-1\) are equal only when \(m=4\) (\(m=2\)
+gives \(0\ne1\), \(m=3\) gives \(1\ne2\), \(m\ge5\) always gives
+\(\dim\ker B>\dim\operatorname{im}B\)).
+
+Together the three give: \textbf{spatial dimension \(d=3\), channel
+count \(m=4\), \(\deg=3\), spacetime dimension \(D_{\rm st}=d+1=4\)}.
+
+\[
+D_{\rm st}=4\text{ follows from two independent routes: the substrate-side premise is the closure--motion correspondence, the physical-side premise is "propagating gravitons exist".}
+\tag{6.5}
+\]
+
+\emph{Why the correspondence cannot be a consequence of the postulates.}
+The substrate gives \(\Gamma=(C,E)\) together with ``motion''; the
+postulates only constrain \emph{how} to move---``full branching'' means
+every \emph{allowed} motion is instantiated, and does not constrain
+which pairs have allowed moves. Any condition of the form ``\(\Gamma\)
+must be complete/self-dual'' is a choice of \(\Gamma\), not a
+consequence of the postulates. Counterexample: cycle graph \(C_m\)
+(\(m\ge4\)) satisfies the postulates and edge-transitivity, but
+\(\dim\ker B=1\ne m-1\).
+
+\subsection{Equivalent Formulations of the Correspondence
+Principle}\label{equivalent-formulations-of-the-correspondence-principle}
+
+The counting content \(\binom d2=d\) has three equivalent formulations:
+
+\textbf{(i) Pairing uniqueness.} Each edge has exactly one opposite edge
+\(\iff\binom{m-2}2=1\iff m=4\).
+
+\textbf{(ii) Antisymmetric composition closure.}
+\(\dim\Lambda^2V=\dim V\iff D=3\): the ``relative relation'' of two
+directions is again a direction (cross-product structure). I.e.
+\(\binom D2=D\iff D\in\{0,3\}\), with \(D=3\) the unique nontrivial
+solution.
+
+\textbf{(iii) \(A_3\) self-duality.} The 6 edge directions
+\(\pm(e_i-e_j)\) of \(K_4\) are exactly the 6 positive roots of \(A_3\);
+\(\operatorname{Aut}(K_4)=S_4\) is the Weyl group of \(A_3\). Among
+\(A_n\), only \(A_3\) satisfies ``number of relations = dimension'':
+\(\binom{n+1}2-n=n\iff n=3\). This is precisely the accidental
+isomorphism \(A_3\cong D_3\) (\(\mathfrak{so}(3)\cong\mathbb R^3\)
+cross-product isomorphism).
+
+\[
+\implies \Gamma=K_4:\ 4\text{ vertices},\ \deg=3,\ 6\text{ edges},\ 3\text{ opposite-edge pairs};\ \text{angle}=\arccos(-1/3)=109.4712°;\ \operatorname{Aut}(K_4)=S_4.
+\tag{6.6}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Axiomatic Budget}\label{axiomatic-budget}
+
+\subsection{What the Lovelock Lever
+Presupposes}\label{what-the-lovelock-lever-presupposes}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedleft
+\#
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Presupposition
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Nature
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & \(D=4\) (literal hard-coding) & Cannot select dimension via this
+lever \\
+2 & Metric exists and is smooth & Input \\
+3 & Metric-volume consistency \(\mu=\operatorname{vol}_h\) & Sole
+additional input of (3.1) \\
+4 & Second-order \((O)\) & Excludes higher-order terms \\
+5 & Conserved source \((C')\) & \((C)\) as-is is vacuous \\
+6 & Source = relativistic matter & Additional claim \\
+7 & Metric nondegenerate and Lorentzian & Input \\
+8 & 4D diffeomorphism covariance \(\nabla^aE_{ab}=0\) & Input: the
+preferred foliation of \(g=d\tau^2-h\) gives only 3D spatial
+diffeomorphism invariance \\
+\end{longtable}
+}
+
+\subsection{Absence of Intrinsic
+Scales}\label{absence-of-intrinsic-scales}
+
+\[
+\text{The dimensionful degrees of freedom in the geometric sector are exactly }1.
+\tag{7.1}
+\]
+
+\emph{Evidence.} The layer coefficient (edge \((0,1)\))
+\(\binom{m-1}{m/2}\) is an integer (\(m=2,4,6,8\) gives \(1,3,10,35\)).
+All raw metric-side data are integers \(\Rightarrow\) they cannot carry
+length.
+
+\emph{Unit-transformation invariance.} Under \(W\to sW\) (\(s\) spanning
+8 orders of magnitude), normalized eigenvalue deviation is
+\(1.89\times10^{-15}\), edge-weight ratio deviation is \(0\).
+
+\emph{On \(G,\Lambda\).} Dimensional constants are units, not parameters
+{[}10{]}. ``Deriving the numerical values of \(G,\Lambda,\hbar\)'' is
+therefore not a well-posed problem.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Main Results and
+Boundaries}\label{main-results-and-boundaries}
+
+\subsection{Main Result}\label{main-result}
+
+\[
+\begin{aligned}
+&\text{substrate (zero-sum constraint) + (inputs: embedding / source class / scale)}\\
+&\quad\Longrightarrow (L)\wedge(O)\wedge(C')\\
+&\quad\Longrightarrow G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}\quad(\text{in }D=4).
+\end{aligned}
+\tag{8.1}
+\]
+
+\[
+\text{the shape of the field equations is uniquely forced; the metric and dimension are inputs; the source is a no-go.}
+\tag{8.2}
+\]
+
+\subsection{Layering of ``Dimension Is an
+Input''}\label{layering-of-dimension-is-an-input}
+
+``Input'' here refers specifically to the Lovelock layer: the shape
+theorem \(E_{ab}=\alpha G_{ab}+\beta g_{ab}\) takes \(D\) as an
+argument, and Lovelock itself does not select dimension. But the value
+\(D=4\) is not a bare free input; it is given by the readout chain: peak
+condition locks \(L=4\) (Gate 1) + closure-equality
+\(\dim\ker B=\dim\operatorname{im}B\) locks \(K_4/A_3\). This readout
+chain is half-locked: the peak condition hard-presses to \(L=4\); the
+step ``\(L=4\) is exactly the physical spacetime dimension'' is only
+count-level
+equality---\(Z_1(K_4)\cong(2,1,1)\cong(3,1)\otimes\mathrm{sgn}\) and
+\(H_Q=(3,1)\) are distinct \(S_4\)-modules differing by a parity sign,
+but in three-dimensional geometry form an axial--polar vector duality
+via the Hodge star.
+
+\subsection{Boundaries That Must Be
+Stated}\label{boundaries-that-must-be-stated}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Division of labor of Lovelock}: it only answers ``what must
+  the field equations look like,'' not ``why does geometry have
+  dynamics.''
+\item
+  \textbf{Local \(K_4\) fiber vs.~macroscopic grid are two structures.}
+  \(\dim H_Q=m-1=3\) holds only for the \emph{single-point} local
+  \(K_4\) fiber; on the macroscopic \(N\)-vertex grid,
+  \(\dim H_Q=N-1\ne3\). The construction bridge ``how local \(K_4\)
+  fibers/cells tile a macroscopic 3D manifold grid'' is missing; it is
+  an open item.
+\item
+  \textbf{\(L=4\) uses Gate 1 only.} The peak condition locks \(L=4\);
+  this \(k=2\) partition does not pass the contextuality gate or the
+  density gate, so it serves only as dimension readout, not as a
+  quantumness criterion.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Open Problem}\label{open-problem}
+
+\textbf{Continuum limit (\(\Gamma\)-convergence)} is unproven: no
+compactness, no \(\Gamma\)-liminf; only on a 1D chain with a single
+profile. This is analytic (compactness / variational limit) and requires
+independent work in homogenization theory.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Conclusion}\label{conclusion}
+
+\[
+\begin{aligned}
+&\text{substrate (zero-sum constraint)}\\
+&\quad\Longrightarrow \dim H_Q=m-1;\ \operatorname{im}B=H_Q;\ \text{discrete Dirichlet energy};\\
+&\quad\Longrightarrow\text{(continuum + metric-volume consistency) spatial metric }h;\\
+&\quad\Longrightarrow\text{(reversible/irreversible splitting) signature }(1,m-1);\\
+&\quad\Longrightarrow\text{(locality}\wedge\text{second-order}\wedge\text{conserved source)}\\
+&\quad\Longrightarrow G_{ab}+\Lambda g_{ab}=8\pi G\,T_{ab}\quad(\text{in }D=4).
+\end{aligned}
+\tag{10.1}
+\]
+
+\textbf{Shape is unconditional; entry is conditional}:
+\((L)\wedge(O)\wedge(C')\Rightarrow\) Einstein form is unconditional
+(Lovelock); dimension, metric, and source are three entries, all
+non-consequences of the postulates.
+
+Current progress is \textbf{conditional recovery}, not
+\textbf{unconditional derivation}. To reach \emph{derivation}, the same
+ledgers are missing: the premise of dimension, the origin of the metric,
+and the price tag of the source.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section*{References}\label{references}
+
+{[}1{]} R. Penrose, \emph{The Road to Reality}, Vintage Books, 2005.
+
+{[}2{]} C. J. Isham, ``Structural issues in quantum gravity,''
+arXiv:gr-qc/9510034, 1995.
+
+{[}3{]} D. Lovelock, ``The Einstein tensor and its derivatives,''
+\emph{J. Math. Phys.} \textbf{12}, 498 (1971).
+
+{[}4{]} W. Feller, \emph{An Introduction to Probability Theory and Its
+Applications}, Vol. 1, 3rd ed., Wiley, 1968.
+
+{[}5{]} A. Schrijver, \emph{Theory of Linear and Integer Programming},
+Wiley, 1986.
+
+{[}6{]} M. P. do Carmo, \emph{Riemannian Geometry}, Birkhäuser, 1992.
+
+{[}7{]} D. G. Cioranescu, P. Donato, \emph{An Introduction to
+Homogenization}, Oxford University Press, 1999.
+
+{[}8{]} J. D. Murray, \emph{Mathematical Biology}, Vol. II: Spatial
+Models and Biomedical Applications, 3rd ed., Springer, 2003.
+
+{[}9{]} H. Weyl, \emph{Classical Groups: Their Invariants and
+Representations}, Princeton University Press, 1939.
+
+{[}10{]} M. J. Duff, L. B. Okun, G. Veneziano, ``Trialogue on the number
+of fundamental constants,'' \emph{JHEP} \textbf{0203}, 023 (2002),
+arXiv:physics/0110060.
+
+\end{document}
+
+
+\end{document}

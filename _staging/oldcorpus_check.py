@@ -18,7 +18,7 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-EXEMPT = {"引用纪律_正文不引旧库.md"}
+EXEMPT = {"引用纪律_正文不引旧库.md", "Z030_旧库到当前系列的映射_丢失清单与三处继承错误.md"}
 
 # ── 旧库编号（见该纪律文档 §三）：注意保留例外 ──
 #   R1–R9 是形式化守则号、E1–E9 是核查标签 ⟹ 都要求两位以上数字

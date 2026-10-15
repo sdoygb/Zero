@@ -187,6 +187,8 @@ Locality holds exactly when $k\le$ graph diameter (the effect of distal perturba
 
 **Route 3 (locally given $\phi$).** If $\phi$ is given locally, $(L')$ holds exactly, and all three premises are satisfied.
 
+**Remark (Scope of the $(O)$ and $(C)$ conditions).** The second-order $(O)$ and conservation $(C)$ checks in Routes 1–3 strictly verify that the graph Laplacian $L$ is a second-order, charge-conserving operator on scalar functions ($\ker L = \operatorname{span}\{\mathbf{1}\}$), which guarantees that the emergent spatial metric $h$ is well-defined. They do not automatically imply that the field tensor $E_{ab}[g]$ is divergence-free under full four-dimensional spacetime diffeomorphisms; four-dimensional covariance $\nabla^a E_{ab}=0$ remains an essential macroscopic symmetry postulate registered in §7.1 (Item 8).
+
 ### 4.2 Degrees of Freedom and Parameterization
 
 The number of spatial metric components is
