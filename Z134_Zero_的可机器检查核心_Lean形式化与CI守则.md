@@ -65,7 +65,7 @@ Lean 不会替我们补 —— 但它能把两类问题**分开**：任何"具�
 | --- | --- | --- | --- |
 | `Zero/Basic.lean` | `K4L_eq_zero_iff` / `K4L_eigen_four_iff` | K₄ 核 = 常向量；λ=4 特征空间 = 零和超平面（重数 3 的实质）| Z021 |
 | `Zero/Z104_Dispersion.lean` | `z104_grid_dispersion` | 方格图色散 `λ(q) = 4 − 2cos qx − 2cos qy` | Z104 |
-| `Zero/Z021_Dimension.lean` | `z021_choose_two_eq_self` / `z021_dim_forced_three` | `C(D,2) = D ⟺ D ∈ {0,3}`（维数被计数强制为三）| Z021 |
+| `Zero/Z021_Dimension.lean` | `z021_choose_two_eq_self` / `z021_dim_forced_three` | `C(D,2) = D ⟺ D ∈ {0,3}`（**闭合＝运动读法**下的维数唯一性）| Z021 |
 | `Zero/Z117_Aliasing.lean` | `z117_aliasing` / `z117_beyond_nyquist` | 采样不可区分 + `π < 4` | Z117 §一E7 |
 | `Zero/Z117_Metric.lean` | `z117_euclid_ne_l1` / `z117_l1_diff_const` | 离轴即分道；共线行（Z115 取的那一行）两制度量才重合 | Z117 §一E6 |
 | `Zero/Z117_CrossGraph.lean` | `z117_grid_lambda_at_pi` 等 | 跨图取值不可行的定量形式 | Z117 §一E5 |
