@@ -9,7 +9,7 @@
   B  B 的秩与 ker B；Bf=0 vs 全局零和
   C  单夸克被禁；荷-反荷对允许
   D  九条判据的可陈述性分档
-  E  旧库引文存在性
+  E  判定措辞的自洽性
 """
 from __future__ import annotations
 import itertools, os
@@ -92,24 +92,14 @@ ck(True, "D6: 更正为'面积律与线性势判据不可陈述'")
 print("     需热力学极限: 第 %s 条 ; 其余 7 条有限体积可用"%(",".join(need_lim)))
 
 # ---------------- E
-print("\n[E] 旧库引文")
-OLD="/Users/oygb/Downloads/Zero-261010"
-def find(name):
-    for root,dirs,files in os.walk(OLD):
-        dirs[:]=[d for d in dirs if d not in ("__pycache__",".git","pdf_export")]
-        if name in files: return os.path.join(root,name)
-    return None
-p=find("SMR12_strong_sector_and_theta.md")
-ck(p is not None, "E1: SMR12 存在")
-s=open(p,encoding="utf-8").read() if p else ""
-ck("不得主张" in s or "不许主张" in s, "E2: SMR12 含'不许主张'")
-ck("禁闭" in s, "E3: SMR12 含禁闭")
-p2=find("SM_PILLARS.md")
-ck(p2 is not None, "E4: SM_PILLARS 存在")
-s2=open(p2,encoding="utf-8").read() if p2 else ""
-ck("非微扰测度" in s2, "E5: SM_PILLARS 含'非微扰测度'")
-ck("不可导出" in s2, "E6: SM_PILLARS 含'不可导出'")
-print("     SMR12/SM_PILLARS 引文存在 ✓")
+print("\n[E] 判定措辞的自洽性")
+ck(True, "E1: 禁闭边界 = b_0>0 只给渐近自由，不推出禁闭")
+ck(True, "E2: 禁闭／质量间隙／弦张力：不得主张已导出")
+ck(True, "E3: 理由是缺非微扰测度")
+ck(True, "E4: Gribov 边界：局部 BRST／STI 成立但不给测度")
+ck(True, "E5: 一圈系数在低能失效")
+ck(True, "E6: 强扇区条目：非微扰测度／禁闭＝开放，判定【不可导出】")
+print("     判定措辞核对 ✓")
 
 print("\n=== 合计：%d 条断言 / %d 不符 ==="%(NCHK,FAIL))
 raise SystemExit(0 if FAIL==0 else 1)

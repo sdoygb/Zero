@@ -7,7 +7,7 @@
 分组：
   A  L=4 上两个 pi 的 K 集合相同；独立性清单
   B  L>=6 的 K 集合；K_max 一致
-  C  D149 可用性判据的交替通过
+  C  可用性判据的交替通过
   D  "缺什么输入"的缩短表
 """
 from __future__ import annotations
@@ -80,7 +80,7 @@ ck(True,"B7: 故'pi 改变物理'只对 L>=6 成立")
 ck(True,"B8: 中间层不同 => 层塔形状不同")
 
 # ---------------- C
-print("\n[C] D149 可用性判据")
+print("\n[C] 可用性判据")
 res={}
 for L in [4,6,8,10,14,16]:
     for name in ['hmax','maxrun']:
