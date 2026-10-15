@@ -146,8 +146,8 @@ print("\n[E] S4 解耦：相位与退相干率是两个独立泛函")
 rows = []
 for p in [0.5, 0.6, 0.7, 0.8, 0.9, 0.95]:
     q = 1 - p
-    kappa1 = p * p + q * q              # 退相干率（G71：kappa_1 = sum w_b^2）
-    phase = abs(math.log(p / q)) if q > 0 else 0.0   # 模流相位（GQR10：频率 log(p/q)）
+    kappa1 = p * p + q * q              # 退相干率（Z031 表 1.1：kappa_1 = sum w_b^2）
+    phase = abs(math.log(p / q)) if q > 0 else 0.0   # 模流相位（频率 log(p/q)）
     rows.append((p, kappa1, phase))
     ck(0 < kappa1 <= 1, "E1: p=%.2f  kappa_1 = %.4f ∈ (0,1]" % (p, kappa1))
 print("     p     kappa_1    |log(p/q)|")
