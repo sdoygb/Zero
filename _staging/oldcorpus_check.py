@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""oldcorpus_check.py —— Z138「引用纪律：正文不引旧库」的机械检查器。
+"""oldcorpus_check.py —— 工作纪律《引用纪律：正文不引旧库》的机械检查器。
 
 纪律：旧库的推导与结果**可以照用**，但正文（根目录 Z*.md）里不得出现旧库的
       编号、篇名、章节，也不得用「旧库」这个词当来源。
 
-例外：Z138 自身（要引述旧库编号才能定义它们）。
+例外：该纪律文档自身（要引述旧库编号才能定义它们）。
 
 用法：
   python3 _staging/oldcorpus_check.py              # 全库检查（退出码 0=干净，1=有命中）
@@ -18,9 +18,9 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-EXEMPT = {"Z138_引用纪律：正文不引旧库.md"}
+EXEMPT = {"引用纪律_正文不引旧库.md"}
 
-# ── 旧库编号（Z138 §三）：注意保留例外 ──
+# ── 旧库编号（见该纪律文档 §三）：注意保留例外 ──
 #   R1–R9 是形式化守则号、E1–E9 是核查标签 ⟹ 都要求两位以上数字
 PATTERNS = [
     (r"\bGQR\d+\b", "旧库编号 GQR*"),
@@ -77,7 +77,7 @@ def main():
             for i, toks, frag in hits:
                 print(f"  L{i:<5d} [{toks}]  {frag}")
     print(f"\n合计：{dirty} 篇 / {total} 处命中（检查 {len(files)} 篇；例外 {len(EXEMPT)} 篇）")
-    print("判据：命中后人工判一次「是引述还是引用」（Z138 §三）")
+    print("判据：命中后人工判一次「是引述还是引用」（见该纪律文档 §三）")
     return 1 if total else 0
 
 
