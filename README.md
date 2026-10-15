@@ -80,7 +80,7 @@ CI 三条守则（任一违反即非零退出）：
 | **R2** | 公理白名单——除 Lean 基石公理（`propext`／`Classical.choice`／`Quot.sound`）与 `scripts/axioms-allow.txt` 里登记的 Zero 侧输入外，不许出现别的公有理 |
 | **R3** | 定理名对得上篇号——形如 `zNNN_*` 的定理，`NNN` 必须是库里真实存在的 Z 篇 |
 
-最近一次机器检查记录（[`ZeroLean/.lean-report.json`](ZeroLean/.lean-report.json)，2026-10-14）：`buildOk: true`，审计 `Zero.*` 定理 **797 条**，`problems: []`。
+最近一次机器检查（本机重跑，2026-10-15）：`lake build: OK`，审计 `Zero.*` 定理 **797 条**（白名单 4 个名字／库内 133 篇），**守则全过**——无 `sorryAx`、无未登记公有理、定理名与篇号一致。机器可读记录见 [`ZeroLean/.lean-report.json`](ZeroLean/.lean-report.json)（2026-10-14 那一版同数）。
 
 ---
 
