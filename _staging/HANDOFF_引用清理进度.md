@@ -12,7 +12,8 @@ python3 _staging/oldcorpus_check.py <文件名>       # 看某篇的命中行
 python3 _staging/style_check.py --summary         # 另一条纪律（正文不留工作痕迹）的欠账
 ```
 
-**唯一例外**：`_staging/引用纪律_正文不引旧库.md` 自身、`Z030`（映射篇，主题就是旧库）。
+**唯一例外**：`_staging/引用纪律_正文不引旧库.md` 自身。
+（原 `Z030` 映射篇曾是第二个例外，现已移入 `_staging/` 并去号，不在检查范围。）
 
 ## 二、改写手法（"载体篇"专用）
 
