@@ -1,0 +1,31 @@
+{
+ "config": {
+  "graph": "grid6x6",
+  "n": 36,
+  "coupling": "scalar(expansion)+tensor(shear)",
+  "c2": 0.469
+ },
+ "dispersion_scalar": {
+  "n_modes": 35,
+  "corr": 0.9922
+ },
+ "expand_to_shear": {
+  "0.0": 0.0,
+  "0.005": 1.989413,
+  "0.01": 3.536556,
+  "0.02": NaN
+ },
+ "shear_to_expand": {
+  "0.0": 0.0,
+  "0.005": 0.076032,
+  "0.01": 0.184859,
+  "0.02": NaN
+ },
+ "conv_g_scan": {
+  "0.0": 0.0,
+  "0.005": 0.396868,
+  "0.01": 0.739602,
+  "0.02": NaN,
+  "0.04": NaN
+ }
+}

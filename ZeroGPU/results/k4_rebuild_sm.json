@@ -1,0 +1,111 @@
+{
+ "zero_fields_per_gen": [
+  {
+   "name": "ν_L",
+   "color": "s",
+   "T3": 0.5,
+   "Y": -1.0,
+   "Q": 0.0,
+   "chirality": "左手"
+  },
+  {
+   "name": "e_L",
+   "color": "s",
+   "T3": -0.5,
+   "Y": -1.0,
+   "Q": -1.0,
+   "chirality": "左手"
+  },
+  {
+   "name": "u_L",
+   "color": "t",
+   "T3": 0.5,
+   "Y": 0.3333,
+   "Q": 0.6667,
+   "chirality": "左手"
+  },
+  {
+   "name": "d_L",
+   "color": "t",
+   "T3": -0.5,
+   "Y": 0.3333,
+   "Q": -0.3333,
+   "chirality": "左手"
+  },
+  {
+   "name": "ν_R",
+   "color": "s",
+   "T3": 0.0,
+   "Y": 0.0,
+   "Q": 0.0,
+   "chirality": "右手"
+  },
+  {
+   "name": "e_R",
+   "color": "s",
+   "T3": 0.0,
+   "Y": -2.0,
+   "Q": -1.0,
+   "chirality": "右手"
+  },
+  {
+   "name": "u_R",
+   "color": "t",
+   "T3": 0.0,
+   "Y": 1.3333,
+   "Q": 0.6667,
+   "chirality": "右手"
+  },
+  {
+   "name": "d_R",
+   "color": "t",
+   "T3": 0.0,
+   "Y": -0.6667,
+   "Q": -0.3333,
+   "chirality": "右手"
+  }
+ ],
+ "sm_fermions_per_gen": [
+  "d_L",
+  "d_R",
+  "e_L",
+  "e_R",
+  "u_L",
+  "u_R",
+  "ν_L"
+ ],
+ "new_particles": [
+  "ν_R"
+ ],
+ "candidates": [
+  {
+   "name": "右手中微子 ν_R",
+   "count": "3（每代1个）",
+   "quantum": "色单态, T₃=0, Y=0, Q=0, 费米1/2",
+   "status": "Zero 超荷体系自然长出（Y_R=Y_L+2T₃ → ν_R Y=0, Q=0）",
+   "sm": "标准模型不含；BSM 跷跷板/中微子质量需要"
+  },
+  {
+   "name": "额外中性玻色子 Z'",
+   "count": "开放",
+   "quantum": "色单态, 矢量1, Q=0",
+   "status": "取决于 Zero 玻色子数量决定规则（未定）",
+   "sm": "SM 无；BSM 常见（U(1)' 扩展）"
+  },
+  {
+   "name": "额外标量（第二 Higgs）",
+   "count": "开放",
+   "quantum": "色单态, 标量0, Q=0",
+   "status": "取决于 Zero 标量数量规则（未定）",
+   "sm": "SM 无；2HDM 等 BSM"
+  },
+  {
+   "name": "带电新玻色子 W'",
+   "count": "开放",
+   "quantum": "色单态, 矢量1, Q=±1",
+   "status": "取决于 Zero 玻色子数量规则（未定）",
+   "sm": "SM 无；BSM"
+  }
+ ],
+ "conclusion": "ν_R 是 Zero 超荷体系自然长出的新粒子候选; 额外玻色子取决于数量规则(开放); Zero 不预测第4代/leptoquark/色六重"
+}

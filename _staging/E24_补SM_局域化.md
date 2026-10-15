@@ -1,0 +1,305 @@
+# 补 SM（三）：局域化 —— **墙 III 不挡，且局部群恰是 $W(SU(3))$**
+
+**篇性**：**更正 ＋ 推导篇（暂存讨论稿）**。用户指示："第 6 项"（局域 $SU(3)_c$）。
+**结论**：**(一)** "位置不可导出"须精确化为三种位置，**规范标签型不受墙 III 阻挡**；**(二)** Zero 的**局部群恰是 $S_3=W(SU(3))$**（一个真正的发现）；**(三)** 剩余差别是**连续极限**。
+**纪律**：**未改动任何公理**；根目录 36 篇**一字未动**。
+**依据**：正式篇 Z009（迹定理）、Z011（舞台与局域性）、Z021（Heawood）、Z028（双重缺失）；本系列 E22／E23。
+**核验**：[`E24_locality_check.py`](E24_locality_check.py)。
+
+---
+
+## 摘要
+
+$$
+\boxed{\;\textbf{（一）}\ \text{Z009 定理 1 排除的是}\ \textbf{位置可观测量};\ \text{它}\ \textbf{不排除} \text{位置作为}\ \textbf{规范标签} .\;}
+\tag{0.1}
+$$
+
+$$
+\boxed{\;\textbf{（二）}\ \text{每顶点的局部群} = S_3 = W(SU(3))\ (\textbf{已核验},\ \text{阶 6，忠实}) .\;}
+\tag{0.2}
+$$
+
+$$
+\boxed{\;\textbf{（三）}\ \text{剩余差别} = \textbf{连续极限} \text{（离散群无}\ \beta\ \text{函数）} .\;}
+\tag{0.3}
+$$
+
+---
+
+## §1 墙 III 的精确内容（**核心更正**）
+
+### 1.1 定理原文
+
+> **定理 1（Z009）.** 设 $\tau$ 为 $\mathcal A_L$ 上的矩阵迹（忠实、有限）。则**不存在**自伴对 $X,P\in\mathcal A_L$ 使
+> $$
+> [X,P]=i\cdot1 .
+> $$
+> *证明.* $\tau([X,P])=0$ 而 $\tau(i\cdot1)=i\dim\mathcal A_L\ne0$。$\blacksquare$
+
+$$
+\textbf{推论 1.1}:\ \text{任何带}\ \textbf{忠实有限迹} \text{的代数都不承载正则对易关系} \Longrightarrow \text{障碍是}\ \textbf{有限维性} .
+\tag{1.1}
+$$
+
+### 1.2 三种"位置"（**本文的更正**）
+
+| | 内容 | 被判定的墙 |
+|:--|:--|:--|
+| **(a)** 位置**可观测量** | 算符 $X$ 带共轭动量 $P$ | **被定理 1 排除** |
+| **(b)** 位置**规范标签** | 底空间的点（**冗余，不可观测**） | **不被排除** |
+| **(c)** 位置**动力学变量** | 参与演化、有运动方程 | 需 (a) |
+
+$$
+\boxed{\;\textbf{规范理论里的位置是 (b) 型}:\ A_\mu(x)\ \text{的}\ x\ \textbf{不是} \text{可观测量（可观测量须规范不变）} .\;}
+\tag{1.2}
+$$
+
+$$
+\boxed{\;\textbf{故墙 III}\ \textbf{不挡} \text{局域规范结构} .\;}
+\tag{1.3}
+$$
+
+### 1.3 与 Z028 的表述无冲突
+
+$$
+\text{Z028 写}:\ \text{"波函数}\ \psi(x,t)\ \text{的自变量}\ x\ \text{不存在"} .
+\tag{1.4}
+$$
+
+$$
+\psi(x,t)\ \text{里的}\ x\ \text{是 (a)／(c) 型（动力学自变量）} \Longrightarrow \text{与本文判定}\ \textbf{一致} .
+\tag{1.5}
+$$
+
+$$
+\Longrightarrow\quad \textbf{更正表述}:\quad
+\underbrace{(a)(c)\ \text{不可导出}}_{\text{有限迹}};\qquad
+\underbrace{(b)\ \textbf{可以}}_{\text{图顶点}} .
+\tag{1.6}
+$$
+
+---
+
+## §2 局部群 = $W(SU(3))$（**一个真正的发现**）
+
+### 2.1 计算
+
+$$
+\text{每顶点有 3 条入射边} \Longrightarrow \text{局部置换群}\subseteq S_3 .
+\tag{2.1}
+$$
+
+**核验 §A**（用回溯法算出全部自同构）：
+
+$$
+\lvert\operatorname{Aut}(\text{Heawood})\rvert=\mathbf{336} .
+\tag{2.2}
+$$
+
+$$
+\text{顶点稳定化子阶}=24;\qquad
+\text{它在 3 条入射边上的作用数}=\mathbf 6 \Longrightarrow \textbf{局部群}=S_3\ \text{（忠实）} .
+\tag{2.3}
+$$
+
+### 2.2 这是 $SU(3)$ 的 **Weyl 群**
+
+$$
+SU(3):\quad
+\underbrace{Z(SU(3))=\mathbb Z_3}_{\text{中心（三个色相）}};\qquad
+\underbrace{W(SU(3))=N(T)/T\cong S_3}_{\text{三色的置换}} .
+\tag{2.4}
+$$
+
+$$
+\Longrightarrow\quad \boxed{\;\text{Zero 的局部群}=S_3=W(SU(3));\quad \text{其}\ A_3\ \text{子群}=\mathbb Z_3=Z(SU(3)) .\;}
+\tag{2.5}
+$$
+
+### 2.3 这**修正了** E21／E22 的判定
+
+$$
+\text{E21／E22 说}:\ \text{"Zero 只有}\ \mathbb Z_3\ \textbf{置换};\ \text{QCD 有}\ \mathbb Z_3\ \textbf{相乘}" .
+\tag{2.6}
+$$
+
+$$
+\boxed{\;\textbf{更正}:\ \text{Zero 的局部群}\ \textbf{更大} \text{——是完整的}\ S_3;\ \text{不但有}\ \mathbb Z_3,\ \text{还有}\ \textbf{Weyl 对合} .\;}
+\tag{2.7}
+$$
+
+$$
+\Longrightarrow\quad \text{Zero 的局部结构与}\ SU(3)\ \text{的}\ \textbf{有限骨架} \ \textbf{完全一致} .
+\tag{2.8}
+$$
+
+---
+
+## §3 局域结构的完整构造
+
+### 3.1 Zero 有什么
+
+| 要素 | Zero 的对象 |
+|:--|:--|
+| **底空间** | Heawood 的 14 顶点（**图距离**，直径 3） |
+| **局部自由度** | 每顶点的 3 条入射边 |
+| **局域群** | $S_3=W(SU(3))$（已核验忠实） |
+| **规范场** | $a:E\to S_3$（21 条边） |
+| **场强** | 面上的 holonomy |
+| **Wilson 环** | 环上的 holonomy |
+
+$$
+\textbf{核验 §B}:\ \text{图距离分布（从一顶点）}=(0{:}1,\ 1{:}3,\ 2{:}6,\ 3{:}4);\ \text{直径}=3 .
+\tag{3.1}
+$$
+
+$$
+\textbf{核验 §C}:\ \text{谱隙}=3-\sqrt2=1.585786;\ \text{关联长度}\approx1.3297\ \text{格距} .
+\tag{3.2}
+$$
+
+### 3.2 关键的**概念区分**：对称 vs 冗余
+
+$$
+\textbf{对称性}:\ \text{保持作用量} \Longrightarrow \operatorname{Aut}(\text{Heawood})=336\ \text{个} .
+\tag{3.3}
+$$
+
+$$
+\textbf{规范冗余}:\ \text{重新标注局域自由度} \Longrightarrow \lvert S_3\rvert^{14}=6^{14}=78364164096\ \text{个} .
+\tag{3.4}
+$$
+
+$$
+\boxed{\;\text{规范变换}\ \textbf{不需要} \text{是图的自同构};\ \text{它是}\ \textbf{冗余} \text{而非对称} .\;}
+\tag{3.5}
+$$
+
+$$
+\Longrightarrow\quad \text{局域自由度}\ \textbf{不被} \text{全局约束锁死（两个数差 8 个数量级，但它们是}\textbf{不同的东西}） .
+\tag{3.6}
+$$
+
+---
+
+## §4 剩余差别（**必须诚实**）
+
+### 4.1 三条
+
+| # | 差别 | 性质 |
+|--:|:--|:--|
+| **1** | 局部群 $S_3$ 是**有限**的；$SU(3)$ 连续 | 结构 |
+| **2** | 图**固定**（14 顶点）；无连续极限 | 结构 |
+| **3** | 离散群**无** $\beta$ 函数 $\Longrightarrow$ 无跑动耦合 | 结构 |
+
+$$
+\boxed{\;\textbf{故}\ \text{本文得到的是}\ \textbf{离散}\ \text{局域规范理论};\ \text{不是连续}\ SU(3)\ \text{规范理论} .\;}
+\tag{4.1}
+$$
+
+### 4.2 但一条**重要的正面事实**
+
+$$
+\mathbb Z_N\ \text{格点规范理论}\ (N\ge3)\ \textbf{确实} \text{禁闭（面积律）} .
+\tag{4.2}
+$$
+
+$$
+S_3\ \text{含}\ \mathbb Z_3=A_3 \Longrightarrow S_3\ \text{规范理论}\ \textbf{可能} \text{禁闭} .
+\tag{4.3}
+$$
+
+$$
+\boxed{\;\Longrightarrow\quad \text{第 8 项（禁闭）}\ \textbf{可能在离散层面可得} \text{——这是}\textbf{新打开的} \text{门} .\;}
+\tag{4.4}
+$$
+
+---
+
+## §5 对目录的影响（更新）
+
+| # | 项 | 原状态 | 新状态 |
+|--:|:--|:--|:--|
+| $5$ | 整体 $SU(3)$ | 部分（+$\mathrm{C1}'$） | **部分**（+ 局部群 $S_3$） |
+| **$6$** | **局域 $SU(3)_c$** | **无** | **部分**（+ 离散局域结构；缺连续极限） |
+| **$7$** | **胶子（联络）** | **无** | **部分**（$a:E\to S_3$ 已可定义） |
+| **$8$** | **禁闭** | **无** | **可能（新门）** |
+| $9$ | $\Lambda_{\rm QCD}$ | 无 | **仍无**（需跑动） |
+| $10$ | 质子质量 | 无 | **仍无** |
+
+$$
+\boxed{\;\text{第 6、7 项从"无"变为"部分"};\ \text{第 8 项打开一条新路} .\;}
+\tag{5.1}
+$$
+
+---
+
+## §6 不许主张
+
+1. **不主张**"位置已在 Zero 里导出"——只导出**规范标签**型；可观测量型**仍被排除**（§1）；
+2. **不主张** $S_3=W(SU(3))$ 使 Zero "有了 $SU(3)$"——只是**有限骨架**（§4.1）；
+3. **不主张**规范冗余的 $6^{14}$ 个与 $336$ 个"矛盾"——它们是**不同的东西**（§3.2）；
+4. **不主张** Heawood 的环面镶嵌已构造完——**面的显式构造未完成**（附录 B）；
+5. **不主张** $S_3$ 规范理论**一定**禁闭——它**可能**（§4.2），**未算**；
+6. **不主张**连续极限不存在——本文只说**目前没有**机制；
+7. **不主张**本文改变了 E20 的判定——$\Lambda_{\rm QCD}$ 仍需**非幂律跑动**；
+8. **不主张**墙 I／II 也被绕过——本文只处理了墙 III。
+
+---
+
+## §7 结论
+
+$$
+\boxed{\;
+\begin{aligned}
+&\textbf{更正}:\ \text{墙 III 排除}\ \textbf{位置可观测量};\ \textbf{不} \text{排除}\ \textbf{规范标签} \Longrightarrow \text{局域结构不被挡}.\\[1mm]
+&\textbf{发现}:\ \text{每顶点局部群}=S_3=W(SU(3))\ (\text{阶 6，忠实});\ \text{其}\ A_3=\mathbb Z_3=Z(SU(3)).\\[1mm]
+&\textbf{构造}:\ \text{底空间（14 顶点）＋ 局域群（}S_3\text{）＋ 规范场（}E\to S_3\text{）＋ Wilson 环}.\\[1mm]
+&\textbf{关键区分}:\ \text{规范变换是}\textbf{冗余} \text{（}6^{14}\text{）};\ \text{不是}\textbf{对称} \text{（}336\text{）}.\\[1mm]
+&\textbf{剩余}:\ \text{连续极限（离散群无}\ \beta\ \text{函数）};\ \text{但}\ \mathbb Z_3\ \text{禁闭可能在离散层面可得}.
+\end{aligned}
+}
+$$
+
+**一句话：**
+
+$$
+\boxed{\;\textbf{位置不用"导出"——规范理论里的位置本来就是不可观测的标签；而 Zero 的局部群恰好就是}\ W(SU(3)) .\;}
+$$
+
+---
+
+## 附录 A　核验
+
+`E24_locality_check.py`：纯标准库（＋`numpy`）；不 import 项目脚本、不写文件。
+
+| 组 | 内容 | 断言 |
+|:--|:--|--:|
+| A | $\lvert\operatorname{Aut}(\text{Heawood})\rvert=336$；顶点稳定化子 $=S_3$ | 6 |
+| B | 图距离（直径 3、分布 $1,3,6,4$） | 5 |
+| C | 邻接谱与谱隙 | 5 |
+| D | 规范冗余 $6^{14}$ vs 对称 $336$ | 5 |
+| E | Z009 定理 1 的逐字引文与三种位置的区分 | 6 |
+| | **合计** | **27** |
+
+## 附录 B　一处**未完成**的技术项
+
+$$
+\text{Heawood 的环面镶嵌}:\quad V-E+F=14-21+7=0=\chi(\text{环面})\ \checkmark
+\tag{B.1}
+$$
+
+$$
+\text{但本文}\ \textbf{未能显式构造} \text{那 7 个六边形面}:\ \text{穷举}\ \binom{28}{7}=1184040\ \text{组，无解} .
+\tag{B.2}
+$$
+
+$$
+\Longrightarrow\quad \textbf{登记为技术项};\ \text{不影响 §1–§4 的结论（它们不依赖面结构）} .
+\tag{B.3}
+$$
+
+---
+
+*推导稿 · 未落盘 · 未改动任何公理 · 完*

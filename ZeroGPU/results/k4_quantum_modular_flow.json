@@ -1,0 +1,13 @@
+{
+ "A_modular_freq": {
+  "exact": 0.69315,
+  "measured_slope": 0.69315,
+  "err_pct": 0.0,
+  "amp": 1.0
+ },
+ "A_center_control": {
+  "measured_slope": -0.0,
+  "amp": 1.0
+ },
+ "B_note": "模流频率=f (Z005 定理4); 作 L2 波驱动源 → 定态受迫 ω=f (Z118)"
+}

@@ -1,0 +1,38 @@
+{
+  "ok": [
+    "★ K_4 的一切覆盖（Z_n, n=2..10）girth 恒为 4",
+    "★ 层对齐 ⟹ 围长 ≥ 6（不是 > 4）",
+    "★ 邻接谱 = {3, √2⁶, −√2⁶, −3}（Heawood 已知谱）",
+    "★ Heawood |V| = 14 = Moore 下界",
+    "★ Heawood 度 = 3",
+    "★ Heawood 连通",
+    "★ Heawood girth = 6 > L = 4",
+    "★ Heawood 二部 ⟹ 3-边着色存在",
+    "★ 3 个完美匹配（每色 7 条边）",
+    "★ 完美匹配数 = 3 = 轴数 = C(3,2)",
+    "Heawood 上 3000 代有界",
+    "Heawood 上时间箭头成立",
+    "Heawood 上位宽受控",
+    "★ 两条遗留同时解决（Heawood）",
+    "★ 且保持局部参数（度 3 = D = 空间维数）"
+  ],
+  "bad": [],
+  "k4_cover_girths": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "heawood": {
+    "V": 14,
+    "deg": 3,
+    "girth": 6,
+    "bipartite": true,
+    "matchings": 3
+  }
+}

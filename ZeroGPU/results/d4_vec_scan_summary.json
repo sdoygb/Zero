@@ -1,0 +1,402 @@
+[
+ {
+  "n": 10,
+  "seed": "hub2",
+  "gens": 20000,
+  "q_hist": 0.4972,
+  "drift": 0.1785,
+  "frac_in": 0.0,
+  "gini": 0.799,
+  "sec": 0.7
+ },
+ {
+  "n": 10,
+  "seed": "hub2",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": 0.1813,
+  "frac_in": 0.0,
+  "gini": 0.8,
+  "sec": 2.1
+ },
+ {
+  "n": 10,
+  "seed": "hub3",
+  "gens": 20000,
+  "q_hist": 0.4983,
+  "drift": 0.2218,
+  "frac_in": 0.0,
+  "gini": 0.799,
+  "sec": 0.7
+ },
+ {
+  "n": 10,
+  "seed": "hub3",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": 0.2235,
+  "frac_in": 0.0,
+  "gini": 0.8,
+  "sec": 2.0
+ },
+ {
+  "n": 10,
+  "seed": "hub4",
+  "gens": 20000,
+  "q_hist": 0.4819,
+  "drift": -0.2923,
+  "frac_in": 0.0,
+  "gini": 0.794,
+  "sec": 0.7
+ },
+ {
+  "n": 10,
+  "seed": "hub4",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": -0.2742,
+  "frac_in": 0.0,
+  "gini": 0.8,
+  "sec": 2.2
+ },
+ {
+  "n": 10,
+  "seed": "geom",
+  "gens": 20000,
+  "q_hist": 0.5514,
+  "drift": 0.2143,
+  "frac_in": 0.6,
+  "gini": 0.832,
+  "sec": 0.7
+ },
+ {
+  "n": 10,
+  "seed": "geom",
+  "gens": 60000,
+  "q_hist": 0.5556,
+  "drift": 0.2185,
+  "frac_in": 0.87,
+  "gini": 0.833,
+  "sec": 2.0
+ },
+ {
+  "n": 10,
+  "seed": "one",
+  "gens": 20000,
+  "q_hist": 1.0,
+  "drift": 0.0,
+  "frac_in": 0.0,
+  "gini": 0.0,
+  "sec": 0.7
+ },
+ {
+  "n": 10,
+  "seed": "one",
+  "gens": 60000,
+  "q_hist": 1.0,
+  "drift": 0.0,
+  "frac_in": 0.0,
+  "gini": 0.0,
+  "sec": 2.0
+ },
+ {
+  "n": 12,
+  "seed": "hub2",
+  "gens": 20000,
+  "q_hist": 0.5,
+  "drift": 0.1943,
+  "frac_in": 0.0,
+  "gini": 0.833,
+  "sec": 0.7
+ },
+ {
+  "n": 12,
+  "seed": "hub2",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": 0.1943,
+  "frac_in": 0.0,
+  "gini": 0.8,
+  "sec": 2.1
+ },
+ {
+  "n": 12,
+  "seed": "hub3",
+  "gens": 20000,
+  "q_hist": 0.5,
+  "drift": 0.1964,
+  "frac_in": 0.0,
+  "gini": 0.833,
+  "sec": 0.7
+ },
+ {
+  "n": 12,
+  "seed": "hub3",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": 0.1964,
+  "frac_in": 0.0,
+  "gini": 0.8,
+  "sec": 2.2
+ },
+ {
+  "n": 12,
+  "seed": "hub4",
+  "gens": 20000,
+  "q_hist": 0.5,
+  "drift": 0.1927,
+  "frac_in": 0.0,
+  "gini": 0.833,
+  "sec": 0.7
+ },
+ {
+  "n": 12,
+  "seed": "hub4",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": 0.1927,
+  "frac_in": 0.0,
+  "gini": 0.8,
+  "sec": 2.1
+ },
+ {
+  "n": 12,
+  "seed": "geom",
+  "gens": 20000,
+  "q_hist": 0.5555,
+  "drift": 0.2418,
+  "frac_in": 0.8,
+  "gini": 0.861,
+  "sec": 0.7
+ },
+ {
+  "n": 12,
+  "seed": "geom",
+  "gens": 60000,
+  "q_hist": 0.5556,
+  "drift": 0.2418,
+  "frac_in": 0.93,
+  "gini": 0.833,
+  "sec": 2.1
+ },
+ {
+  "n": 12,
+  "seed": "one",
+  "gens": 20000,
+  "q_hist": 1.0,
+  "drift": 0.0,
+  "frac_in": 0.0,
+  "gini": 0.0,
+  "sec": 0.7
+ },
+ {
+  "n": 12,
+  "seed": "one",
+  "gens": 60000,
+  "q_hist": 1.0,
+  "drift": 0.0,
+  "frac_in": 0.0,
+  "gini": 0.0,
+  "sec": 2.2
+ },
+ {
+  "n": 16,
+  "seed": "hub2",
+  "gens": 20000,
+  "q_hist": 0.4985,
+  "drift": 0.261,
+  "frac_in": 0.0,
+  "gini": 0.875,
+  "sec": 0.9
+ },
+ {
+  "n": 16,
+  "seed": "hub2",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": 0.2625,
+  "frac_in": 0.0,
+  "gini": 0.857,
+  "sec": 2.7
+ },
+ {
+  "n": 16,
+  "seed": "hub3",
+  "gens": 20000,
+  "q_hist": 0.4985,
+  "drift": 0.2647,
+  "frac_in": 0.0,
+  "gini": 0.875,
+  "sec": 0.9
+ },
+ {
+  "n": 16,
+  "seed": "hub3",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": 0.2662,
+  "frac_in": 0.0,
+  "gini": 0.857,
+  "sec": 2.7
+ },
+ {
+  "n": 16,
+  "seed": "hub4",
+  "gens": 20000,
+  "q_hist": 0.4985,
+  "drift": 0.2666,
+  "frac_in": 0.0,
+  "gini": 0.875,
+  "sec": 0.9
+ },
+ {
+  "n": 16,
+  "seed": "hub4",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": 0.2681,
+  "frac_in": 0.0,
+  "gini": 0.857,
+  "sec": 3.0
+ },
+ {
+  "n": 16,
+  "seed": "geom",
+  "gens": 20000,
+  "q_hist": 0.5531,
+  "drift": 0.3116,
+  "frac_in": 0.5,
+  "gini": 0.895,
+  "sec": 0.9
+ },
+ {
+  "n": 16,
+  "seed": "geom",
+  "gens": 60000,
+  "q_hist": 0.5556,
+  "drift": 0.3141,
+  "frac_in": 0.83,
+  "gini": 0.881,
+  "sec": 2.7
+ },
+ {
+  "n": 16,
+  "seed": "one",
+  "gens": 20000,
+  "q_hist": 1.0,
+  "drift": 0.0,
+  "frac_in": 0.0,
+  "gini": 0.0,
+  "sec": 0.9
+ },
+ {
+  "n": 16,
+  "seed": "one",
+  "gens": 60000,
+  "q_hist": 1.0,
+  "drift": 0.0,
+  "frac_in": 0.0,
+  "gini": 0.0,
+  "sec": 2.9
+ },
+ {
+  "n": 20,
+  "seed": "hub2",
+  "gens": 20000,
+  "q_hist": 0.4867,
+  "drift": 0.2944,
+  "frac_in": 0.0,
+  "gini": 0.897,
+  "sec": 1.1
+ },
+ {
+  "n": 20,
+  "seed": "hub2",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": 0.3077,
+  "frac_in": 0.0,
+  "gini": 0.889,
+  "sec": 2.9
+ },
+ {
+  "n": 20,
+  "seed": "hub3",
+  "gens": 20000,
+  "q_hist": 0.4867,
+  "drift": 0.2944,
+  "frac_in": 0.0,
+  "gini": 0.897,
+  "sec": 1.0
+ },
+ {
+  "n": 20,
+  "seed": "hub3",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": 0.3077,
+  "frac_in": 0.0,
+  "gini": 0.889,
+  "sec": 2.9
+ },
+ {
+  "n": 20,
+  "seed": "hub4",
+  "gens": 20000,
+  "q_hist": 0.4867,
+  "drift": 0.2945,
+  "frac_in": 0.0,
+  "gini": 0.897,
+  "sec": 1.0
+ },
+ {
+  "n": 20,
+  "seed": "hub4",
+  "gens": 60000,
+  "q_hist": 0.5,
+  "drift": 0.3078,
+  "frac_in": 0.0,
+  "gini": 0.889,
+  "sec": 3.0
+ },
+ {
+  "n": 20,
+  "seed": "geom",
+  "gens": 20000,
+  "q_hist": 0.5338,
+  "drift": 0.3366,
+  "frac_in": 0.3,
+  "gini": 0.913,
+  "sec": 1.0
+ },
+ {
+  "n": 20,
+  "seed": "geom",
+  "gens": 60000,
+  "q_hist": 0.5556,
+  "drift": 0.3584,
+  "frac_in": 0.77,
+  "gini": 0.907,
+  "sec": 2.9
+ },
+ {
+  "n": 20,
+  "seed": "one",
+  "gens": 20000,
+  "q_hist": 1.0,
+  "drift": 0.0,
+  "frac_in": 0.0,
+  "gini": 0.0,
+  "sec": 1.0
+ },
+ {
+  "n": 20,
+  "seed": "one",
+  "gens": 60000,
+  "q_hist": 1.0,
+  "drift": 0.0,
+  "frac_in": 0.0,
+  "gini": 0.0,
+  "sec": 3.0
+ }
+]

@@ -1,0 +1,10 @@
+# ZeroLean 公理白名单（每行一个名字，# 开头是注释）
+# Lean 基石公理：这三条是数学本身的公理，不算 Zero 的输入
+propext
+Classical.choice
+Quot.sound
+# —— 下面是 Zero 侧"具名输入"的登记区：把某个 Z 篇明写的输入写成 axiom 时，
+#    在这里登记，并注明来源。CI 会把未登记的公有理当失败。
+# 例：Zero.AuditDemo.k_is_two  # Z115 §2 的波数假设（AxiomLedger.lean 的演示）
+# 注意：写**全名**（含命名空间），CI 按全名比对
+Zero.AuditDemo.k_is_two

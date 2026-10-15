@@ -1,0 +1,45 @@
+{
+ "bridge": "L1 f -> L2 wave, λ_e measured (not assumed 2π/f)",
+ "candidates": {
+  "log2(geom, L1实测)": {
+   "f": 0.6931,
+   "q_in": 0.7078,
+   "q_measured": 0.708,
+   "lambda_measured": 8.874,
+   "lambda_2pi_over_f": 9.065,
+   "ratio_lambda_vs_2pif": 0.979
+  },
+  "K4槽1(0.405)": {
+   "f": 0.405,
+   "q_in": 0.4078,
+   "q_measured": 0.4082,
+   "lambda_measured": 15.394,
+   "lambda_2pi_over_f": 15.514,
+   "ratio_lambda_vs_2pif": 0.992
+  },
+  "K4槽2(0.693)": {
+   "f": 0.693,
+   "q_in": 0.7077,
+   "q_measured": 0.7079,
+   "lambda_measured": 8.876,
+   "lambda_2pi_over_f": 9.067,
+   "ratio_lambda_vs_2pif": 0.979
+  },
+  "K4槽3(0.981)": {
+   "f": 0.981,
+   "q_in": 1.0253,
+   "q_measured": 1.0255,
+   "lambda_measured": 6.127,
+   "lambda_2pi_over_f": 6.405,
+   "ratio_lambda_vs_2pif": 0.957
+  }
+ },
+ "doubleslit_log2": {
+  "q_drive": 0.7078,
+  "fringe_spacing": {
+   "40": 9.661,
+   "80": 14.826,
+   "120": 20.679
+  }
+ }
+}

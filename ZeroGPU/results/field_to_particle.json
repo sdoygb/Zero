@@ -1,0 +1,28 @@
+{
+  "s3_inner": {
+    "chi_1,chi_1": 1.0,
+    "chi_1,chi_sgn": 0.0,
+    "chi_1,chi_2": 0.0,
+    "chi_sgn,chi_1": 0.0,
+    "chi_sgn,chi_sgn": 1.0,
+    "chi_sgn,chi_2": 0.0,
+    "chi_2,chi_1": 0.0,
+    "chi_2,chi_sgn": 0.0,
+    "chi_2,chi_2": 1.0
+  },
+  "chi_F": [
+    3,
+    0,
+    1
+  ],
+  "chi_F_decomp": "1 ⊕ 2",
+  "chi2_restrict_Z3": {
+    "⟨χ2,1⟩": 0.0,
+    "⟨χ2,ω⟩": 1.0,
+    "⟨χ2,ω²⟩": 1.0,
+    "decomp": "ω ⊕ ω²"
+  },
+  "field_to_particle": "2维方向 = Z₃ 三代非迹部分 (结构对应)",
+  "three_is_endogenous": "粒子侧 C₃(K₄) ∥ 场侧 Z₃(S₃): 3 阶循环内生",
+  "boundary": "√2振幅/δ=2/9 数值不内生, 仍具名输入(Z086)"
+}

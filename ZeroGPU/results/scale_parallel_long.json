@@ -1,0 +1,151 @@
+{
+ "workers": 10,
+ "gens": 600000,
+ "wall_s": 595.5,
+ "results": [
+  {
+   "config": {
+    "n": 64,
+    "seed": "geom",
+    "retention": "last",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.5555126034034725,
+   "in_window": true,
+   "sec": 163.44
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "hub2",
+    "retention": "last",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.49997423012912745,
+   "in_window": false,
+   "sec": 163.45
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "geom",
+    "retention": "all",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.5548791768301077,
+   "in_window": true,
+   "sec": 164.65
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "hub2",
+    "retention": "top2",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.49967451832731125,
+   "in_window": false,
+   "sec": 165.12
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "geom",
+    "retention": "top2",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.5550133094142156,
+   "in_window": true,
+   "sec": 165.67
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "hub2",
+    "retention": "all",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.4995939527573992,
+   "in_window": false,
+   "sec": 165.83
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "geom",
+    "retention": "all",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.10949964059778329,
+   "in_window": false,
+   "sec": 516.4
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "hub2",
+    "retention": "last",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.056742589672974436,
+   "in_window": false,
+   "sec": 516.56
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "geom",
+    "retention": "top2",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.10948130839731075,
+   "in_window": false,
+   "sec": 517.58
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "geom",
+    "retention": "last",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.11104118180370257,
+   "in_window": false,
+   "sec": 520.1
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "hub2",
+    "retention": "all",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.04322331992626836,
+   "in_window": false,
+   "sec": 430.4
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "hub2",
+    "retention": "top2",
+    "L": 4,
+    "gens": 600000
+   },
+   "q_hist": 0.044287792293163195,
+   "in_window": false,
+   "sec": 430.3
+  }
+ ]
+}

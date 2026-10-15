@@ -1,0 +1,57 @@
+{
+ "config": {
+  "model": "Zero two-band → two-gap anisotropic s, vs MgB₂ σ/π",
+  "mgb2": "Δ_σ≈7meV, Δ_π≈1.7meV, ratio≈4.1, T_c=39K"
+ },
+ "twoband_scan": [
+  {
+   "g_sigma": 0.5,
+   "g_pi": 0.15,
+   "r_cross": 0.1,
+   "Delta_sigma": 3.7098,
+   "Delta_pi": 0.1926,
+   "ratio": 19.259
+  },
+  {
+   "g_sigma": 0.8,
+   "g_pi": 0.2,
+   "r_cross": 0.15,
+   "Delta_sigma": 10.3137,
+   "Delta_pi": 0.7139,
+   "ratio": 14.447
+  },
+  {
+   "g_sigma": 1.0,
+   "g_pi": 0.25,
+   "r_cross": 0.15,
+   "Delta_sigma": 16.3349,
+   "Delta_pi": 1.2898,
+   "ratio": 12.665
+  },
+  {
+   "g_sigma": 1.2,
+   "g_pi": 0.3,
+   "r_cross": 0.2,
+   "Delta_sigma": 23.9589,
+   "Delta_pi": 2.366,
+   "ratio": 10.126
+  },
+  {
+   "g_sigma": 1.5,
+   "g_pi": 0.4,
+   "r_cross": 0.2,
+   "Delta_sigma": 37.7673,
+   "Delta_pi": 4.3204,
+   "ratio": 8.742
+  },
+  {
+   "g_sigma": 1.5,
+   "g_pi": 0.6,
+   "r_cross": 0.2,
+   "Delta_sigma": 38.796,
+   "Delta_pi": 8.5345,
+   "ratio": 4.546
+  }
+ ],
+ "mgb2_ratio": 4.11764705882353
+}

@@ -1,0 +1,12 @@
+{
+ "L1_steady": {
+  "ratio": "2:1",
+  "f_intrinsic": 0.69315
+ },
+ "bridge_B": {
+  "source_modulation_f": 0.69315,
+  "measured_wave_freq": 0.4825,
+  "ratio": 0.6961,
+  "engine": "i∂tψ=c²Lψ (path16, c²=0.8)"
+ }
+}

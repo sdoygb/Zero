@@ -1,0 +1,32 @@
+{
+ "0.0": {
+  "phi_tail": 0.0,
+  "m_tail": 0.0,
+  "verdict": "static"
+ },
+ "0.2": {
+  "phi_tail": 0.000217,
+  "m_tail": 0.000868,
+  "verdict": "micro"
+ },
+ "0.4": {
+  "phi_tail": 0.000521,
+  "m_tail": 0.002086,
+  "verdict": "micro"
+ },
+ "0.6": {
+  "phi_tail": 0.000819,
+  "m_tail": 0.003275,
+  "verdict": "micro"
+ },
+ "0.8": {
+  "phi_tail": 0.00167,
+  "m_tail": 0.006681,
+  "verdict": "dyn"
+ },
+ "1.0": {
+  "phi_tail": 0.0,
+  "m_tail": 0.0,
+  "verdict": "static"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "config": {
+  "method": "per-mode eigen excitation dispersion + moduli-source radiation power"
+ },
+ "grid8x8": {
+  "n": 64,
+  "n_excited": 63,
+  "dispersion_corr": 0.9925,
+  "mean_dev_pct": 9.5
+ },
+ "grid5x20": {
+  "n": 100,
+  "n_excited": 99,
+  "dispersion_corr": 0.992,
+  "mean_dev_pct": 9.6
+ },
+ "rad_power": {
+  "P_vs_scale": {
+   "0.1": 28.719471,
+   "0.5": 717.986767,
+   "1.0": 2871.947068,
+   "2.0": 11487.788274,
+   "5.0": 71798.67671
+  },
+  "powerlaw_slope": 2.0
+ }
+}

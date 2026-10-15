@@ -1,0 +1,90 @@
+{
+ "K4": [
+  {
+   "mode": 0,
+   "k": -0.0,
+   "omega": 0.1437,
+   "amp": 0.0,
+   "energy_share": 0.0
+  },
+  {
+   "mode": 1,
+   "k": 4.0,
+   "omega": 0.0003,
+   "amp": 2.66125,
+   "energy_share": 0.6061
+  },
+  {
+   "mode": 2,
+   "k": 4.0,
+   "omega": 0.0003,
+   "amp": 0.76564,
+   "energy_share": 0.6061
+  },
+  {
+   "mode": 3,
+   "k": 4.0,
+   "omega": 0.0003,
+   "amp": 7.51007,
+   "energy_share": 0.6061
+  }
+ ],
+ "path8": [
+  {
+   "mode": 0,
+   "k": 0.0,
+   "omega": 0.0003,
+   "amp": 0.0,
+   "energy_share": 0.0
+  },
+  {
+   "mode": 1,
+   "k": 0.15224,
+   "omega": 0.0003,
+   "amp": 393.33659,
+   "energy_share": 0.5542
+  },
+  {
+   "mode": 2,
+   "k": 0.58579,
+   "omega": 0.006,
+   "amp": 7.31856,
+   "energy_share": 0.0218
+  },
+  {
+   "mode": 3,
+   "k": 1.23463,
+   "omega": 0.0003,
+   "amp": 90.40479,
+   "energy_share": 0.5938
+  },
+  {
+   "mode": 4,
+   "k": 2.0,
+   "omega": 0.006,
+   "amp": 0.77767,
+   "energy_share": 0.0183
+  },
+  {
+   "mode": 5,
+   "k": 2.76537,
+   "omega": 0.0003,
+   "amp": 16.36479,
+   "energy_share": 0.5626
+  },
+  {
+   "mode": 6,
+   "k": 3.41421,
+   "omega": 0.006,
+   "amp": 1.42835,
+   "energy_share": 0.0282
+  },
+  {
+   "mode": 7,
+   "k": 3.84776,
+   "omega": 0.0003,
+   "amp": 12.20967,
+   "energy_share": 0.5832
+  }
+ ]
+}

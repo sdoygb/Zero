@@ -1,0 +1,190 @@
+{
+ "graph": "path16",
+ "n_steady": 60000,
+ "q_steady": 0.5555555497291604,
+ "mode_counts": {
+  "stable": 0,
+  "stable_local": 0,
+  "decay": 16,
+  "unstable": 0,
+  "osc": 0
+ },
+ "modes": [
+  {
+   "k": 0,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 1,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 2,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 3,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 4,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 5,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 6,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 7,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 8,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 9,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 10,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 11,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 12,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 13,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 14,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  },
+  {
+   "k": 15,
+   "lam": "0.0000+0.0000i",
+   "abs": 0.0,
+   "arg": 0.0,
+   "kind": "decay",
+   "osc": false,
+   "gini": 0.938,
+   "mx": 1.0,
+   "local": true
+  }
+ ]
+}

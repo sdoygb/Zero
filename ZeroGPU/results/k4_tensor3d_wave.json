@@ -1,0 +1,22 @@
+{
+ "config": {
+  "graph": "grid4x4x4",
+  "n": 64,
+  "field": "per-vertex sym 3x3 tensor (metric)",
+  "tt": "traceless 3D (5 dof)",
+  "c2": 0.342
+ },
+ "dispersion": {
+  "n_modes": 62,
+  "corr": 0.9956
+ },
+ "traceless_max_trace": 0.0,
+ "polarization": {
+  "excite_plus_cross_leak": 0.0,
+  "excite_cross_plus_leak": 0.0
+ },
+ "dof": {
+  "traceless_sym3x3": 5,
+  "transverse_polarizations": 2
+ }
+}

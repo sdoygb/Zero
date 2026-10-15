@@ -1,0 +1,41 @@
+{
+ "config": {
+  "graph": "grid6x6",
+  "n": 36,
+  "coupling": "V=g·Σ(Lφ)h 变分(哈密顿, 能量守恒, 标量带质量非简并)",
+  "c2": 0.161,
+  "m2": 0.3
+ },
+ "energy": {
+  "0.0": {
+   "E_early": 0.5469,
+   "E_end": 0.547,
+   "drift": 0.0001,
+   "stable": true
+  },
+  "0.05": {
+   "E_early": 0.547,
+   "E_end": 0.547,
+   "drift": 0.0,
+   "stable": true
+  },
+  "0.1": {
+   "E_early": 0.547,
+   "E_end": 0.547,
+   "drift": 0.0,
+   "stable": true
+  },
+  "0.2": {
+   "E_early": NaN,
+   "E_end": NaN,
+   "drift": NaN,
+   "stable": false
+  }
+ },
+ "expand_to_shear": 0.087428,
+ "shear_to_expand": 0.061821,
+ "dispersion_tensor": {
+  "n_modes": 35,
+  "corr": 0.9996
+ }
+}

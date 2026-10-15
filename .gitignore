@@ -1,0 +1,17 @@
+# ── 系统 / 编辑器 ──────────────────────────────────────────
+.DS_Store
+.obsidian/
+.trash/
+*.swp
+
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ── Lean 构建产物 ─────────────────────────────────────────
+# ZeroLean/.lake 是指向外部构建目录的符号链接（Mathlib oleans 体积过大，不入库）
+ZeroLean/.lake
+*.olean
+*.ilean

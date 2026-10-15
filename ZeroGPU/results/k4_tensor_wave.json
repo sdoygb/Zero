@@ -1,0 +1,21 @@
+{
+ "config": {
+  "graph": "grid6x6",
+  "n": 36,
+  "field": "per-vertex symmetric tensor (metric perturbation)",
+  "tt": "traceless projection, traceless shear",
+  "c2": 0.469
+ },
+ "tensor_dispersion": {
+  "n_modes": 35,
+  "corr": 0.9922
+ },
+ "traceless_max_trace": 0.0,
+ "polarization": {
+  "excite_plus_cross_leak": 0.0
+ },
+ "dof": {
+  "scalar_expansion": 1,
+  "tensor_shear": 2
+ }
+}

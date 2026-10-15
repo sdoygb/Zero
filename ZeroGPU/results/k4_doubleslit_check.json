@@ -1,0 +1,385 @@
+{
+ "CK1": {
+  "continuum_bright": [
+   6.8584,
+   8.4292,
+   10.0,
+   11.5708,
+   13.1416
+  ],
+  "spacing": 1.5708,
+  "z115_bright": [
+   6.9,
+   8.4,
+   10.0,
+   11.6,
+   13.1
+  ],
+  "spacing_formula_written": 0.785398,
+  "I_strip": [
+   0.0,
+   4.0
+  ],
+  "I_outside": 0.0847,
+  "n_bright_continuum": 5,
+  "node_bright": [
+   7,
+   10,
+   13
+  ],
+  "n_bright_on_nodes": 3,
+  "nyquist": {
+   "fringe_freq": 4.0,
+   "nyquist": 3.141592653589793,
+   "alias_freq": 2.2832,
+   "apparent_period": 2.7519
+  }
+ },
+ "CK2": {
+  "grid_lmax_24": 7.9658,
+  "sqrt_lmax_24": 2.8224,
+  "grid_lmax_48": 7.9914,
+  "q_if_k_is_sqrt_lam_2": 3.141592653589793,
+  "period_if_q_pi": 2.0,
+  "vg_at_q_pi": 0.0,
+  "lam_if_lambda_e_pi": 2.8323
+ },
+ "CK3": {
+  "L1_bright_per_row": {
+   "0": [
+    6.858,
+    8.429,
+    10.0,
+    11.571,
+    13.142
+   ],
+   "4": [
+    6.858,
+    8.429,
+    10.0,
+    11.571,
+    13.142
+   ],
+   "8": [
+    6.858,
+    8.429,
+    10.0,
+    11.571,
+    13.142
+   ],
+   "12": [
+    6.858,
+    8.429,
+    10.0,
+    11.571,
+    13.142
+   ],
+   "16": [
+    6.858,
+    8.429,
+    10.0,
+    11.571,
+    13.142
+   ],
+   "20": [
+    6.858,
+    8.429,
+    10.0,
+    11.571,
+    13.142
+   ]
+  },
+  "euclid_central_spacing_vs_h": {
+   "0": 1.571,
+   "2": 1.788,
+   "4": 2.321,
+   "8": 3.76,
+   "12": 5.359,
+   "16": 7.01
+  },
+  "small_angle_law": "lambda_e*h/d, d=8"
+ },
+ "CK4": {
+  "grid_metric_test": "200x240",
+  "grid_doubleslit": "60x60",
+  "c2": 0.4378,
+  "slits": [
+   [
+    40,
+    26
+   ],
+   [
+    40,
+    34
+   ]
+  ],
+  "linearity_residual": 2.2362527633563325e-15,
+  "CK4a_metric": {
+   "q_eff": 0.25083,
+   "fits": {
+    "row_h0": {
+     "slope_euclid": 0.2524,
+     "rms_euclid": 0.097,
+     "slope_L1": 0.2524,
+     "rms_L1": 0.097,
+     "winner": "tie"
+    },
+    "col_h0": {
+     "slope_euclid": 0.2502,
+     "rms_euclid": 0.0569,
+     "slope_L1": 0.1786,
+     "rms_L1": 0.5904,
+     "winner": "euclid"
+    },
+    "row_h20": {
+     "slope_euclid": 0.2502,
+     "rms_euclid": 0.0503,
+     "slope_L1": 0.2323,
+     "rms_L1": 0.1479,
+     "winner": "euclid"
+    },
+    "col_h20": {
+     "slope_euclid": 0.2475,
+     "rms_euclid": 0.0485,
+     "slope_L1": 0.1496,
+     "rms_L1": 0.4269,
+     "winner": "euclid"
+    },
+    "row_h40": {
+     "slope_euclid": 0.2522,
+     "rms_euclid": 0.1082,
+     "slope_L1": 0.2001,
+     "rms_L1": 0.2818,
+     "winner": "euclid"
+    },
+    "col_h40": {
+     "slope_euclid": 0.2453,
+     "rms_euclid": 0.0486,
+     "slope_L1": 0.1246,
+     "rms_L1": 0.2703,
+     "winner": "euclid"
+    }
+   },
+   "euclid_wins": "5/5 (excl. trivial tie)"
+  },
+  "CK4b_q2": {
+   "omega": 1.181165,
+   "q_eff": 2.00041,
+   "alias_period": 2.7529,
+   "rows": {
+    "0": {
+     "center": {
+      "meas": 2.822,
+      "euclid": 1.57,
+      "L1": 1.57
+     },
+     "outside": {
+      "meas": Infinity,
+      "euclid": Infinity,
+      "L1": Infinity
+     },
+     "vis": 0.754
+    },
+    "4": {
+     "center": {
+      "meas": 2.665,
+      "euclid": 2.392,
+      "L1": 1.57
+     },
+     "outside": {
+      "meas": 570.033,
+      "euclid": 157.262,
+      "L1": Infinity
+     },
+     "vis": 0.725
+    },
+    "8": {
+     "center": {
+      "meas": 5.95,
+      "euclid": 3.669,
+      "L1": 1.57
+     },
+     "outside": {
+      "meas": 65.226,
+      "euclid": 48.726,
+      "L1": Infinity
+     },
+     "vis": 0.587
+    },
+    "12": {
+     "center": {
+      "meas": 9.879,
+      "euclid": 5.091,
+      "L1": 1.57
+     },
+     "outside": {
+      "meas": 22.43,
+      "euclid": 29.034,
+      "L1": Infinity
+     },
+     "vis": 0.639
+    },
+    "16": {
+     "center": {
+      "meas": 12.987,
+      "euclid": 6.575,
+      "L1": 1.57
+     },
+     "outside": {
+      "meas": 11.618,
+      "euclid": 22.624,
+      "L1": Infinity
+     },
+     "vis": 0.607
+    }
+   }
+  },
+  "CK4c_bandedge": {
+   "q_eff": 3.07216,
+   "center_spacing": 126.452,
+   "amp_row0_norm": 1.0,
+   "amp_row8_norm": 0.3254993268130263
+  }
+ },
+ "CK5": {
+  "grid": "270x420",
+  "c2": 0.43751,
+  "slit_row": 40,
+  "slits_x": [
+   180,
+   240
+  ],
+  "d": 60,
+  "q_eff": 0.52287,
+  "lam_eff": 12.0168,
+  "linearity_residual": 3.839434165373478e-15,
+  "corr_vs_analytic": {
+   "80": 0.9736,
+   "200": 0.9547
+  },
+  "screens": {
+   "40": {
+    "meas": 10.291,
+    "euclid_pred": 10.201,
+    "lamR_d": 10.014,
+    "small_angle": 8.011,
+    "vis": 0.56,
+    "n_peak": 33
+   },
+   "80": {
+    "meas": 17.312,
+    "euclid_pred": 17.26,
+    "lamR_d": 17.112,
+    "small_angle": 16.022,
+    "vis": 0.666,
+    "n_peak": 26
+   },
+   "120": {
+    "meas": 25.926,
+    "euclid_pred": 24.883,
+    "lamR_d": 24.773,
+    "small_angle": 24.034,
+    "vis": 0.625,
+    "n_peak": 12
+   },
+   "160": {
+    "meas": 33.212,
+    "euclid_pred": 32.689,
+    "lamR_d": 32.603,
+    "small_angle": 32.045,
+    "vis": 0.61,
+    "n_peak": 7
+   },
+   "200": {
+    "meas": 42.288,
+    "euclid_pred": 40.574,
+    "lamR_d": 40.504,
+    "small_angle": 40.056,
+    "vis": 0.62,
+    "n_peak": 13
+   }
+  }
+ },
+ "CK6_verdicts": [
+  {
+   "item": "CK1 亮纹位置/间距/条数(连续屏)",
+   "verdict": "可复现",
+   "detail": "6.858/8.429/10/11.571/13.142, 间距 π/2=1.571, 与 §3 表一致"
+  },
+  {
+   "item": "CK1 §2⑦ 间距公式",
+   "verdict": "错(差 2 倍)",
+   "detail": "(π/k)/斜率=0.785 ✗; 应为 (2π/k)/斜率=λ_e/斜率=1.571"
+  },
+  {
+   "item": "CK1 图上节点采样",
+   "verdict": "图上不成立",
+   "detail": "2k=4 > Nyquist π ⇒ 混叠; 节点上只见 3 条(7/10/13), 非 5 条"
+  },
+  {
+   "item": "CK1 §3 '两侧对称等间距'",
+   "verdict": "错",
+   "detail": "缝外 Δs=∓8 恒定 ⇒ 一片均匀; '亮度[0,4]' 只在缝间"
+  },
+  {
+   "item": "CK1 落盘 JSON",
+   "verdict": "欠采样",
+   "detail": "抽样 1.2 格 < 条纹 1.571, 文件里画不出 5 条纹"
+  },
+  {
+   "item": "CK2 k=√λ 当波数",
+   "verdict": "错(类型混淆)",
+   "detail": "格上相位梯度 q≠√λ; k=2⇒q=π(周期2格,v_g=0); λ_e=π⇒λ=2.83≠4"
+  },
+  {
+   "item": "CK2 以 K₄ 谱给格图定波数",
+   "verdict": "跨图取值",
+   "detail": "波在 24×24 格图(λ_max=7.966)上, K₄(λ_max=4) 是另一张图"
+  },
+  {
+   "item": "CK2 λ_e=π 的来源",
+   "verdict": "未导出",
+   "detail": "K₄ 无空间; 由 ω(K₄)=2c 推空间波长是类型错误; 格上波数须由驱动频率定"
+  },
+  {
+   "item": "CK3 曼哈顿距离差",
+   "verdict": "错(模型)",
+   "detail": "L1 ⇒ Δs 与屏行无关(无屏距依赖/无远场); 实测相位走欧氏(5/5 非平凡割线)"
+  },
+  {
+   "item": "CK3 屏与缝共线 h=0",
+   "verdict": "退化选择",
+   "detail": "L1 与欧氏唯一重合的行, 且是近场; 真实双缝须让屏离开缝行"
+  },
+  {
+   "item": "CK4 真跑双源(k=2)",
+   "verdict": "对不上",
+   "detail": "中心实测间距=混叠值 2.8, 非 1.571; 缝外仍有条纹而 L1 说没有"
+  },
+  {
+   "item": "CK4 等幅平面波假设",
+   "verdict": "错",
+   "detail": "2D 振幅 ∝1/√r; 实测 V=0.70…0.59<1, Z115 的 I∈[0,4],V=1 不成立"
+  },
+  {
+   "item": "CK4 按自身出处 ω=2c",
+   "verdict": "不自洽",
+   "detail": "带边 v_g=0, 近乎驻波, 几乎不辐射 ⇒ 给不出 1.571"
+  },
+  {
+   "item": "CK5 修正版(欧氏+屏离开缝行)",
+   "verdict": "成立",
+   "detail": "间距随 L 单调增大, 与欧氏程函一致, 渐近 λL/d"
+  },
+  {
+   "item": "④ 强度=模方(单电子)",
+   "verdict": "未证",
+   "detail": "经典波自然; 单电子探测概率需 Born 规则, Zero 未导出(Z004/Z007)"
+  },
+  {
+   "item": "电子身份",
+   "verdict": "名义",
+   "detail": "k 与电子质量/动量/能量无关 ⇒ 不给任何可测条纹间距的预言"
+  }
+ ]
+}

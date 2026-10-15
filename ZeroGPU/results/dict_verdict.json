@@ -1,0 +1,80 @@
+{
+  "ok": [
+    "条件① 对 D=m **全部失败**",
+    "★ 条件① 对 D=m−1 **全部成立**",
+    "恒等式 C(m,2) − (m−1) = C(m−1,2) 对 m=2..11 成立",
+    "★ 故 D = m−1 是条件①的**唯一**解",
+    "m=3: rank(H_Q) = 2 = m−1",
+    "m=4: rank(H_Q) = 3 = m−1",
+    "m=5: rank(H_Q) = 4 = m−1",
+    "m=6: rank(H_Q) = 5 = m−1",
+    "★ 条件② 也指向 D = m−1",
+    "★ 在 K_m 族上，'度' 与 '超平面秩' 是**同一件事**",
+    "★ 格点族的度 ≠ 超平面秩（差一倍）",
+    "★ 裁决：D = m−1（唯一同时满足三条件）",
+    "D = m 被排除（条件①对它全表失败）"
+  ],
+  "bad": [],
+  "table": [
+    {
+      "m": 3,
+      "C_m2": 3,
+      "m_minus_1": 2,
+      "quotient": 1,
+      "C_D2_if_Dm": 3,
+      "match_Dm": false,
+      "C_D2_if_Dm1": 1,
+      "match_Dm1": true
+    },
+    {
+      "m": 4,
+      "C_m2": 6,
+      "m_minus_1": 3,
+      "quotient": 3,
+      "C_D2_if_Dm": 6,
+      "match_Dm": false,
+      "C_D2_if_Dm1": 3,
+      "match_Dm1": true
+    },
+    {
+      "m": 5,
+      "C_m2": 10,
+      "m_minus_1": 4,
+      "quotient": 6,
+      "C_D2_if_Dm": 10,
+      "match_Dm": false,
+      "C_D2_if_Dm1": 6,
+      "match_Dm1": true
+    },
+    {
+      "m": 6,
+      "C_m2": 15,
+      "m_minus_1": 5,
+      "quotient": 10,
+      "C_D2_if_Dm": 15,
+      "match_Dm": false,
+      "C_D2_if_Dm1": 10,
+      "match_Dm1": true
+    },
+    {
+      "m": 7,
+      "C_m2": 21,
+      "m_minus_1": 6,
+      "quotient": 15,
+      "C_D2_if_Dm": 21,
+      "match_Dm": false,
+      "C_D2_if_Dm1": 15,
+      "match_Dm1": true
+    },
+    {
+      "m": 8,
+      "C_m2": 28,
+      "m_minus_1": 7,
+      "quotient": 21,
+      "C_D2_if_Dm": 28,
+      "match_Dm": false,
+      "C_D2_if_Dm1": 21,
+      "match_Dm1": true
+    }
+  ]
+}

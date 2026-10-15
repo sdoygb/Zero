@@ -1,0 +1,67 @@
+{
+ "config": {
+  "model": "Pairing symmetry from Zero graph mediation mechanism",
+  "phonon": "V=g²Σφφ'/ω² → s-wave",
+  "magnetic": "V=J²σ_kσ_k' Néel → d-wave"
+ },
+ "results": {
+  "Grid4x4": {
+   "wD": 2.613,
+   "phonon": {
+    "gap_min": -0.0,
+    "gap_max": 0.0,
+    "gap_mean": 0.0,
+    "n_neg": 0,
+    "sym": "s-wave(全同号)",
+    "V_offdiag_sign": "mixed"
+   },
+   "magnetic": {
+    "gap_min": -1.14147,
+    "gap_max": 1.14147,
+    "gap_mean": 0.0,
+    "n_neg": 8,
+    "n_Néel_edges_cross": 40,
+    "sym": "d-wave(符号交替)",
+    "sigma_sample": [
+     1,
+     -1,
+     1,
+     -1,
+     -1,
+     1,
+     -1,
+     1
+    ]
+   }
+  },
+  "Grid8x8": {
+   "wD": 2.774,
+   "phonon": {
+    "gap_min": -0.00593,
+    "gap_max": 0.03233,
+    "gap_mean": 0.0,
+    "n_neg": 46,
+    "sym": "符号变化",
+    "V_offdiag_sign": "mixed"
+   },
+   "magnetic": {
+    "gap_min": -6.66789,
+    "gap_max": 6.66789,
+    "gap_mean": 0.0,
+    "n_neg": 32,
+    "n_Néel_edges_cross": 336,
+    "sym": "d-wave(符号交替)",
+    "sigma_sample": [
+     1,
+     -1,
+     1,
+     -1,
+     1,
+     -1,
+     1,
+     -1
+    ]
+   }
+  }
+ }
+}

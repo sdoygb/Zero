@@ -1,0 +1,69 @@
+{
+ "carrier": {
+  "name": "K4 □ K2 □ K2 = K4 □ C4",
+  "vertices": 16,
+  "edges": 40,
+  "z2_iso_orbits": 8
+ },
+ "insufficiency": {
+  "left_handed_content": 8,
+  "full_content": 16
+ },
+ "sm15_slots_filled": 15,
+ "orbits": {
+  "full": [
+   [
+    0,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    2,
+    0
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    3,
+    0
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "half": [
+   [
+    0,
+    1
+   ]
+  ],
+  "empty": []
+ },
+ "forced_completion": {
+  "slot": "(0,↑,R)",
+  "color": "单态",
+  "T3": "0",
+  "Y": "0",
+  "Q": "0",
+  "name": "ν_R",
+  "sterile": true,
+  "per_generation": 1,
+  "generations": 3
+ },
+ "assertions": {
+  "total": 26,
+  "failed": 0,
+  "detail": []
+ },
+ "verdict": "ν_R 由结构算出（8 条 iso 轨道中唯一半满者之补位），非手写清单相减"
+}

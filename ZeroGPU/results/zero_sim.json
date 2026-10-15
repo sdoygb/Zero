@@ -1,0 +1,755 @@
+{
+  "module": "zero_sim",
+  "assertions_ok": 96,
+  "assertions_bad": 0,
+  "failed": [],
+  "rows": [
+    {
+      "name": "Fano：7 条线、每对点恰在一条线上",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Heawood：|V|=14、度 3、|E|=21",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Heawood：二部（点的部分 ⟷ 线的部分）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Heawood：围长 = 6",
+      "ok": true,
+      "detail": "girth=6"
+    },
+    {
+      "name": "谱 = {3, (√2)×6, (−√2)×6, −3}",
+      "ok": true,
+      "detail": "[-3.0, -1.414214, 1.414214, 3.0]"
+    },
+    {
+      "name": "零化多项式 (A−3)(A+3)(A²−2)=0",
+      "ok": true,
+      "detail": "max|Z|=0.00e+00"
+    },
+    {
+      "name": "|Aut(Heawood)| = 336",
+      "ok": true,
+      "detail": "|Aut|=336"
+    },
+    {
+      "name": "顶点稳定子阶 = 24",
+      "ok": true,
+      "detail": "|Stab|=24"
+    },
+    {
+      "name": "顶点稳定子在 3 条入射边上的作用 = 6（满 S₃）",
+      "ok": true,
+      "detail": "像的个数=6"
+    },
+    {
+      "name": "闭道闭式 7a_{2m} − 3^{2m} = 6·2^m（a_k = Tr A^k/14，m ≤ 30）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "质量隙 m = −log(√2/3) = 0.7520386984",
+      "ok": true,
+      "detail": "m=0.7520386984，ξ=1.3297188059"
+    },
+    {
+      "name": "返回概率偶数步精确式 p(2k) = (9^k + 6·2^k)/(7·9^k)（k ≤ 12）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "偏差衰减率 = (√2/3)^{2k} ⟹ 质量隙 m = −log(√2/3)（k ≤ 12）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "奇数步返回概率 = 0（二部图无奇闭道，k ≤ 11）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=4：Σ b_h = C(L,L/2)",
+      "ok": true,
+      "detail": "Σ=6"
+    },
+    {
+      "name": "L=4：b_h 恒偶",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=4：b_H = 2（顶层）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=4：Z032(2.1) 镜像闭式与 DP 逐层相符",
+      "ok": true,
+      "detail": "b={1: 4, 2: 2}"
+    },
+    {
+      "name": "L=4：DP 与穷举逐层相符",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=8：Σ b_h = C(L,L/2)",
+      "ok": true,
+      "detail": "Σ=70"
+    },
+    {
+      "name": "L=8：b_h 恒偶",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=8：b_H = 2（顶层）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=8：Z032(2.1) 镜像闭式与 DP 逐层相符",
+      "ok": true,
+      "detail": "b={1: 16, 2: 38, 3: 14, 4: 2}"
+    },
+    {
+      "name": "L=8：DP 与穷举逐层相符",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=12：Σ b_h = C(L,L/2)",
+      "ok": true,
+      "detail": "Σ=924"
+    },
+    {
+      "name": "L=12：b_h 恒偶",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=12：b_H = 2（顶层）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=12：Z032(2.1) 镜像闭式与 DP 逐层相符",
+      "ok": true,
+      "detail": "b={1: 64, 2: 422, 3: 306, 4: 108, 5: 22, 6: 2}"
+    },
+    {
+      "name": "L=12：DP 与穷举逐层相符",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=16：Σ b_h = C(L,L/2)",
+      "ok": true,
+      "detail": "Σ=12870"
+    },
+    {
+      "name": "L=16：b_h 恒偶",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=16：b_H = 2（顶层）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=16：Z032(2.1) 镜像闭式与 DP 逐层相符",
+      "ok": true,
+      "detail": "b={1: 256, 2: 4118, 3: 4858, 4: 2518, 5: 880, 6: 208, 7: 30, 8: 2}"
+    },
+    {
+      "name": "L=4：b = (层 1 有 4 词、层 2 有 2 词)，层权 2/3 : 1/3",
+      "ok": true,
+      "detail": "{2: 2, 1: 4}"
+    },
+    {
+      "name": "L=16：b_h 与 Z032 数值逐位相符（顶层 2）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=8：段分布 {2:2, 3:6, 4:18, 5:18, 6:18, 7:6, 8:2}（Z075 表）",
+      "ok": true,
+      "detail": "{2: 2, 3: 6, 4: 18, 5: 18, 6: 18, 7: 6, 8: 2}"
+    },
+    {
+      "name": "L=8：Σ_r b_r = C(8,4) = 70",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=4：段分布 {2:2, 3:2, 4:2}，Σ = C(4,2) = 6",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "口径判据：环上段数分布与 Z075 表**不符**（故段结构取线性口径）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=4：补偿移动图正则、度 = (L/2)² = 4",
+      "ok": true,
+      "detail": "{4: 6}"
+    },
+    {
+      "name": "L=4：连通（Z024 的不可约性）",
+      "ok": true,
+      "detail": "顶点 6"
+    },
+    {
+      "name": "L=6：补偿移动图正则、度 = (L/2)² = 9",
+      "ok": true,
+      "detail": "{9: 20}"
+    },
+    {
+      "name": "L=6：连通（Z024 的不可约性）",
+      "ok": true,
+      "detail": "顶点 20"
+    },
+    {
+      "name": "L=8：补偿移动图正则、度 = (L/2)² = 16",
+      "ok": true,
+      "detail": "{16: 70}"
+    },
+    {
+      "name": "L=8：连通（Z024 的不可约性）",
+      "ok": true,
+      "detail": "顶点 70"
+    },
+    {
+      "name": "L=10：补偿移动图正则、度 = (L/2)² = 25",
+      "ok": true,
+      "detail": "{25: 252}"
+    },
+    {
+      "name": "L=10：连通（Z024 的不可约性）",
+      "ok": true,
+      "detail": "顶点 252"
+    },
+    {
+      "name": "L=8：上行永远可走（h<H 时必有一邻升高 1）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=8：下行会被阻，计数 = 4（Z073 表）",
+      "ok": true,
+      "detail": "层分布 [2]"
+    },
+    {
+      "name": "L=8：边关系对称（无向 ⟹ 时间可逆）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=10：上行永远可走（h<H 时必有一邻升高 1）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=10：下行会被阻，计数 = 32（Z073 表）",
+      "ok": true,
+      "detail": "层分布 [2]"
+    },
+    {
+      "name": "L=10：边关系对称（无向 ⟹ 时间可逆）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=12：上行永远可走（h<H 时必有一邻升高 1）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=12：下行会被阻，计数 = 166（Z073 表）",
+      "ok": true,
+      "detail": "层分布 [2, 3]"
+    },
+    {
+      "name": "L=12：边关系对称（无向 ⟹ 时间可逆）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "L=14：上行永远可走、下行受阻 714（层 2 有 688、层 3 有 26 —— 非全在 h=2）",
+      "ok": true,
+      "detail": "{'no_up': 0, 'blocked_down': 714, 'blocked_layers': [2, 3], 'reversible': True}"
+    },
+    {
+      "name": "零面积计数 L=4/8/12/16/20 = 2/8/58/526/5448",
+      "ok": true,
+      "detail": "{2: 0, 4: 2, 6: 0, 8: 8, 10: 0, 12: 58, 14: 0, 16: 526, 18: 0, 20: 5448}"
+    },
+    {
+      "name": "L ≡ 2 (mod 4) ⟹ 零面积词数为 0（L ≤ 20）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "三种面积写法在平衡词上等价（L ≤ 12 逐词）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=1：零和（Σu_a=0）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=1：等长（‖u_a‖²=1−1/m）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=1：ρ = ⟨u_a,u_b⟩ = −1/m = −1/(D+1)（归一化后 = −1/D）",
+      "ok": true,
+      "detail": "ρ=-0.500000"
+    },
+    {
+      "name": "D=1：Gram 秩 = D",
+      "ok": true,
+      "detail": "rank=1"
+    },
+    {
+      "name": "D=2：零和（Σu_a=0）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=2：等长（‖u_a‖²=1−1/m）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=2：ρ = ⟨u_a,u_b⟩ = −1/m = −1/(D+1)（归一化后 = −1/D）",
+      "ok": true,
+      "detail": "ρ=-0.333333"
+    },
+    {
+      "name": "D=2：Gram 秩 = D",
+      "ok": true,
+      "detail": "rank=2"
+    },
+    {
+      "name": "D=3：零和（Σu_a=0）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=3：等长（‖u_a‖²=1−1/m）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=3：ρ = ⟨u_a,u_b⟩ = −1/m = −1/(D+1)（归一化后 = −1/D）",
+      "ok": true,
+      "detail": "ρ=-0.250000"
+    },
+    {
+      "name": "D=3：Gram 秩 = D",
+      "ok": true,
+      "detail": "rank=3"
+    },
+    {
+      "name": "D=4：零和（Σu_a=0）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=4：等长（‖u_a‖²=1−1/m）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=4：ρ = ⟨u_a,u_b⟩ = −1/m = −1/(D+1)（归一化后 = −1/D）",
+      "ok": true,
+      "detail": "ρ=-0.200000"
+    },
+    {
+      "name": "D=4：Gram 秩 = D",
+      "ok": true,
+      "detail": "rank=4"
+    },
+    {
+      "name": "D=5：零和（Σu_a=0）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=5：等长（‖u_a‖²=1−1/m）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=5：ρ = ⟨u_a,u_b⟩ = −1/m = −1/(D+1)（归一化后 = −1/D）",
+      "ok": true,
+      "detail": "ρ=-0.166667"
+    },
+    {
+      "name": "D=5：Gram 秩 = D",
+      "ok": true,
+      "detail": "rank=5"
+    },
+    {
+      "name": "D=6：零和（Σu_a=0）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=6：等长（‖u_a‖²=1−1/m）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=6：ρ = ⟨u_a,u_b⟩ = −1/m = −1/(D+1)（归一化后 = −1/D）",
+      "ok": true,
+      "detail": "ρ=-0.142857"
+    },
+    {
+      "name": "D=6：Gram 秩 = D",
+      "ok": true,
+      "detail": "rank=6"
+    },
+    {
+      "name": "四维窗 (1/2, 3/5) 含 q=5/9",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "q=5/9：F_D = C(D,2)q^D 的唯一峰 D=4",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "q=5/9：不落在三维窗 (1/3,1/2)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "D=3：夹角余弦 = −1/3（四面体角 arccos(−1/3)）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "K₄：4 顶点、度 3、|E|=6",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "K₄：围长 3（故层对齐需换图）",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "K₄□K₂：8 顶点、4-正则",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "K₄□K₂：谱 = {4, 2, 0³, (−2)³}",
+      "ok": true,
+      "detail": "[-2.0, -2.0, -2.0, -0.0, -0.0, 0.0, 2.0, 4.0]"
+    },
+    {
+      "name": "Heawood 有 3-边着色（每色 7 边 = 完美匹配，无共端冲突）",
+      "ok": true,
+      "detail": "边数=21"
+    },
+    {
+      "name": "K₄：−1 空间维数 = 3 且在 (123) 循环下分解为 {1, ω, ω²}",
+      "ok": true,
+      "detail": "特征值=[-0.5-0.866025j -0.5+0.866025j  1. +0.j      ]"
+    },
+    {
+      "name": "K₄ Laplacian 谱 = {0, 4, 4, 4}",
+      "ok": true,
+      "detail": "[-0.0, 4.0, 4.0, 4.0]"
+    },
+    {
+      "name": "Heawood Laplacian 谱 = {0, 3−√2×6, 3+√2×6, 6}",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "heawood": {
+    "|V|": 14,
+    "degree": 3,
+    "girth": 6,
+    "|E|": 21,
+    "spectrum": [
+      -3.0,
+      -1.414214,
+      1.414214,
+      3.0
+    ],
+    "|Aut|": 336,
+    "vertex_stabilizer": 24,
+    "mass_gap": 0.752038698388137,
+    "xi": 1.3297188058850224
+  },
+  "layers": {
+    "4": {
+      "1": 4,
+      "2": 2
+    },
+    "8": {
+      "1": 16,
+      "2": 38,
+      "3": 14,
+      "4": 2
+    },
+    "12": {
+      "1": 64,
+      "2": 422,
+      "3": 306,
+      "4": 108,
+      "5": 22,
+      "6": 2
+    },
+    "16": {
+      "1": 256,
+      "2": 4118,
+      "3": 4858,
+      "4": 2518,
+      "5": 880,
+      "6": 208,
+      "7": 30,
+      "8": 2
+    }
+  },
+  "zero_area_counts": {
+    "2": 0,
+    "4": 2,
+    "6": 0,
+    "8": 8,
+    "10": 0,
+    "12": 58,
+    "14": 0,
+    "16": 526,
+    "18": 0,
+    "20": 5448
+  },
+  "run_distribution": {
+    "4": {
+      "2": 2,
+      "3": 2,
+      "4": 2
+    },
+    "8": {
+      "2": 2,
+      "3": 6,
+      "4": 18,
+      "5": 18,
+      "6": 18,
+      "7": 6,
+      "8": 2
+    }
+  },
+  "move_graph": {
+    "4": {
+      "n": 6,
+      "degrees": {
+        "4": 6
+      },
+      "regular": true,
+      "degree": 4,
+      "connected": true,
+      "target_degree": 4
+    },
+    "6": {
+      "n": 20,
+      "degrees": {
+        "9": 20
+      },
+      "regular": true,
+      "degree": 9,
+      "connected": true,
+      "target_degree": 9
+    },
+    "8": {
+      "n": 70,
+      "degrees": {
+        "16": 70
+      },
+      "regular": true,
+      "degree": 16,
+      "connected": true,
+      "target_degree": 16
+    },
+    "10": {
+      "n": 252,
+      "degrees": {
+        "25": 252
+      },
+      "regular": true,
+      "degree": 25,
+      "connected": true,
+      "target_degree": 25
+    }
+  },
+  "up_down": {
+    "8": {
+      "no_up": 0,
+      "blocked_down": 4,
+      "blocked_layers": [
+        2
+      ],
+      "reversible": true
+    },
+    "10": {
+      "no_up": 0,
+      "blocked_down": 32,
+      "blocked_layers": [
+        2
+      ],
+      "reversible": true
+    },
+    "12": {
+      "no_up": 0,
+      "blocked_down": 166,
+      "blocked_layers": [
+        2,
+        3
+      ],
+      "reversible": true
+    }
+  },
+  "edge_color_3": [
+    [
+      0,
+      7,
+      2
+    ],
+    [
+      0,
+      11,
+      0
+    ],
+    [
+      0,
+      13,
+      1
+    ],
+    [
+      1,
+      7,
+      0
+    ],
+    [
+      1,
+      8,
+      1
+    ],
+    [
+      1,
+      12,
+      2
+    ],
+    [
+      2,
+      8,
+      2
+    ],
+    [
+      2,
+      9,
+      1
+    ],
+    [
+      2,
+      13,
+      0
+    ],
+    [
+      3,
+      7,
+      1
+    ],
+    [
+      3,
+      9,
+      0
+    ],
+    [
+      3,
+      10,
+      2
+    ],
+    [
+      4,
+      8,
+      0
+    ],
+    [
+      4,
+      10,
+      1
+    ],
+    [
+      4,
+      11,
+      2
+    ],
+    [
+      5,
+      9,
+      2
+    ],
+    [
+      5,
+      11,
+      1
+    ],
+    [
+      5,
+      12,
+      0
+    ],
+    [
+      6,
+      10,
+      0
+    ],
+    [
+      6,
+      12,
+      1
+    ],
+    [
+      6,
+      13,
+      2
+    ]
+  ],
+  "k4_minus_one": {
+    "dim": 3,
+    "eigenvalues": [
+      [
+        -0.4999999999999998,
+        0.8660254037844384
+      ],
+      [
+        -0.5,
+        -0.8660254037844386
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ]
+  }
+}

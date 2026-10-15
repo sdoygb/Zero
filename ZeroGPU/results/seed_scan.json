@@ -1,0 +1,148 @@
+{
+ "path16": {
+  "geom": {
+   "seed": "…",
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.66667
+    ],
+    [
+     8,
+     0.33333
+    ]
+   ],
+   "q": 0.5555555555462948,
+   "in_win": true,
+   "top2_ratio": 2.0,
+   "freq": 0.6931
+  },
+  "geom2": {
+   "seed": "…",
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.6
+    ],
+    [
+     8,
+     0.4
+    ]
+   ],
+   "q": 0.5199999999932601,
+   "in_win": true,
+   "top2_ratio": 1.5,
+   "freq": 0.4055
+  },
+  "uniform": {
+   "seed": "…",
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.5
+    ],
+    [
+     8,
+     0.5
+    ]
+   ],
+   "q": 0.49999999999444356,
+   "in_win": false,
+   "top2_ratio": 1.0,
+   "freq": null
+  },
+  "linear_d": {
+   "seed": "…",
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.52941
+    ],
+    [
+     8,
+     0.47059
+    ]
+   ],
+   "q": 0.5017301038004652,
+   "in_win": true,
+   "top2_ratio": 1.125,
+   "freq": 0.1178
+  },
+  "linear_i": {
+   "seed": "…",
+   "n_branch": 2,
+   "branches": [
+    [
+     8,
+     0.52941
+    ],
+    [
+     7,
+     0.47059
+    ]
+   ],
+   "q": 0.5017301038004646,
+   "in_win": true,
+   "top2_ratio": 1.125,
+   "freq": 0.1178
+  },
+  "quad_d": {
+   "seed": "…",
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.55862
+    ],
+    [
+     8,
+     0.44138
+    ]
+   ],
+   "q": 0.5068727705055074,
+   "in_win": true,
+   "top2_ratio": 1.2656,
+   "freq": 0.2356
+  },
+  "rand": {
+   "seed": "…",
+   "n_branch": 2,
+   "branches": [
+    [
+     8,
+     0.72465
+    ],
+    [
+     7,
+     0.27535
+    ]
+   ],
+   "q": 0.6009387563885662,
+   "in_win": false,
+   "top2_ratio": 2.6318,
+   "freq": 0.9677
+  },
+  "end_peaks": {
+   "seed": "…",
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.5
+    ],
+    [
+     8,
+     0.5
+    ]
+   ],
+   "q": 0.49999999999444367,
+   "in_win": false,
+   "top2_ratio": 1.0,
+   "freq": null
+  }
+ }
+}

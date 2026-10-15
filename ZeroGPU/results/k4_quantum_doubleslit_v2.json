@@ -1,0 +1,199 @@
+{
+ "A_unitarity": {
+  "closed_graph_max_dev": 6.661338147750939e-16,
+  "z116_H_eff_dtype": "float64",
+  "z116_absorber_discarded": true,
+  "norm_if_absorber_correct": [
+   1.0,
+   0.80917,
+   0.62333,
+   0.16129,
+   0.05661,
+   0.01681
+  ]
+ },
+ "B_wavelength": {
+  "q_target": 0.5236,
+  "q_measured": 0.52385,
+  "lambda_measured": 11.9942,
+  "note": "E(能量)是输入; Zero 无内生能量标度"
+ },
+ "C_doubleslit": {
+  "grid": "240x260",
+  "barrier_col": 90,
+  "apertures": [
+   90,
+   150
+  ],
+  "d": 60,
+  "aperture_illumination": {
+   "abs1": 0.02033745285928165,
+   "abs2": 0.020271365187593815,
+   "dphase": 0.0044710382512930915
+  },
+  "transmission_two_holes": 0.0011551853450851863,
+  "transmission_no_hole": 0.0,
+  "control_ratio": "inf/disconnected",
+  "screens": {
+   "40": {
+    "meas": 12.994,
+    "euclid": 14.842,
+    "lamR_d": 9.995,
+    "small_angle": 7.996,
+    "vis": 0.628,
+    "n_peak": 9
+   },
+   "80": {
+    "meas": 19.7,
+    "euclid": 20.576,
+    "lamR_d": 17.08,
+    "small_angle": 15.992,
+    "vis": 0.62,
+    "n_peak": 7
+   },
+   "120": {
+    "meas": 27.251,
+    "euclid": 27.356,
+    "lamR_d": 24.727,
+    "small_angle": 23.988,
+    "vis": 0.654,
+    "n_peak": 7
+   },
+   "140": {
+    "meas": 31.123,
+    "euclid": 30.946,
+    "lamR_d": 28.622,
+    "small_angle": 27.986,
+    "vis": 0.629,
+    "n_peak": 7
+   }
+  }
+ },
+ "D_nyquist": {
+  "k": 2.0,
+  "fringe_freq": 4.0,
+  "nyquist": 3.141592653589793,
+  "true_bright_continuous": [
+   4.146,
+   5.717,
+   7.288,
+   8.858,
+   10.429,
+   12.0,
+   13.571,
+   15.142,
+   16.712,
+   18.283,
+   19.854
+  ],
+  "node_sampled_bright": [
+   6,
+   9,
+   12,
+   15,
+   18
+  ],
+  "z116_reported": [
+   6,
+   9,
+   12,
+   15,
+   18
+  ],
+  "z116_simulated_holes": [
+   10,
+   14
+  ],
+  "z116_reported_holes": [
+   4,
+   20
+  ]
+ },
+ "E_audit": [
+  {
+   "element": "图 Laplacian L 作为结构",
+   "status": "Zero 内生",
+   "basis": "Z001/Z021 的图对象"
+  },
+  {
+   "element": "挡板/孔 = 边的切断与保留",
+   "status": "Zero 内生(组合)",
+   "basis": "纯组合操作, 无需外部几何"
+  },
+  {
+   "element": "一阶演化 i∂tψ=Hψ (Schrödinger 型)",
+   "status": "**输入**",
+   "basis": "Z003 #12: Schrödinger 方程**不能**导出(根1 无普遍时间生成元)"
+  },
+  {
+   "element": "H = c²L 这个哈密顿量",
+   "status": "**输入(具名)**",
+   "basis": "图上有 L, 但『取 H=c²L』是模型选择"
+  },
+  {
+   "element": "c² 的值",
+   "status": "**输入(数值)**",
+   "basis": "Z104/Z105: c²=3.5/λ_max 由 CFL 反推 ⇒ 『光速』随图规模变"
+  },
+  {
+   "element": "舞台图 = 24×24 / 240×260 方格",
+   "status": "**输入(且与台账冲突)**",
+   "basis": "Z021: Γ 全局=Heawood(14 顶点)、局部=K₄; 空间维数=3; 『格点不可能承载通道结构』"
+  },
+  {
+   "element": "单源+两孔 → 振幅劈裂",
+   "status": "Zero 内生(相对 Z115 的真改进)",
+   "basis": "一个源节点, 图的切断即劈裂"
+  },
+  {
+   "element": "「两孔等幅同相」",
+   "status": "**本版变成推论**",
+   "basis": "对称几何 ⇒ 实测 |ψ| 相等、相位差 4e-3 rad; Z115/Z116 里是假设"
+  },
+  {
+   "element": "能量 E ⇒ 波长 q",
+   "status": "**输入**",
+   "basis": "E 相当于粒子能量/动量; Zero 无内生能量标度(K₄ 替代是错的)"
+  },
+  {
+   "element": "Born p=|ψ|²",
+   "status": "**条件**(Z116 已明写 ✓)",
+   "basis": "Z003 #5 完全(代数扇区) / #8 交叉项条件; Z007: 交叉项需 C_coh"
+  },
+  {
+   "element": "屏/位置读出",
+   "status": "**输入**(Z116 已明写 ✓)",
+   "basis": "Z009/Z003 根2: 不存在位置可观测量"
+  },
+  {
+   "element": "吸收层(虚势/海绵)",
+   "status": "**数值装置**",
+   "basis": "为取定态散射而加, 非 Zero 结构"
+  },
+  {
+   "element": "k = √λ_max(K₄) = 2",
+   "status": "**错**",
+   "basis": "跨图取值 + q↔√λ 偷换; 本版改为实测 q"
+  },
+  {
+   "element": "Δd 用曼哈顿距离",
+   "status": "**错**",
+   "basis": "实测相位走欧氏程函(L1 只是最短步数); 本版用欧氏"
+  },
+  {
+   "element": "Σp=1 作为量子判据",
+   "status": "**不成立**",
+   "basis": "幺正性自明后果; Z116 加吸收后实测 1→0.003"
+  },
+  {
+   "element": "屏放在 x=23 = 吸收列",
+   "status": "**实现错**",
+   "basis": "屏上 |ψ|²~1e-4 是吸收层残余, 非条纹"
+  }
+ ],
+ "E_counts": {
+  "zero_internal": 4,
+  "input_or_error": 9,
+  "conditional_declared": 3
+ }
+}

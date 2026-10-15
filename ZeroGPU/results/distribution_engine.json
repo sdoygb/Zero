@@ -1,0 +1,83 @@
+{
+  "ok": [
+    "★ 行为随 T 变化（容量确实内生于 T）",
+    "★ 分布机**有界**（无需外部容量 K）",
+    "★ 自然容量 max_site = 4（cap=200 不绑定）",
+    "★ 自然容量只依赖 L 的**奇偶性**（偶数 L 全同）",
+    "★ 奇数 L 退化（闭合不存在 ⟹ 状态塌缩）",
+    "★ K 的依赖已被消除（K 不再存在）",
+    "★ 但 T 无读出量（无饱和）"
+  ],
+  "bad": [],
+  "behav": {
+    "0": {
+      "cap": 2,
+      "last_ns": 19,
+      "max_ns": 26,
+      "max_site": 2,
+      "n_dest": 0
+    },
+    "1": {
+      "cap": 4,
+      "last_ns": 31,
+      "max_ns": 48,
+      "max_site": 4,
+      "n_dest": 0
+    },
+    "2": {
+      "cap": 6,
+      "last_ns": 31,
+      "max_ns": 72,
+      "max_site": 6,
+      "n_dest": 0
+    },
+    "3": {
+      "cap": 8,
+      "last_ns": 31,
+      "max_ns": 84,
+      "max_site": 6,
+      "n_dest": 0
+    },
+    "4": {
+      "cap": 10,
+      "last_ns": 31,
+      "max_ns": 84,
+      "max_site": 6,
+      "n_dest": 0
+    },
+    "5": {
+      "cap": 12,
+      "last_ns": 31,
+      "max_ns": 84,
+      "max_site": 6,
+      "n_dest": 0
+    },
+    "6": {
+      "cap": 14,
+      "last_ns": 31,
+      "max_ns": 84,
+      "max_site": 6,
+      "n_dest": 0
+    },
+    "7": {
+      "cap": 16,
+      "last_ns": 31,
+      "max_ns": 84,
+      "max_site": 6,
+      "n_dest": 0
+    }
+  },
+  "natural_cap": 4,
+  "L_vs_natcap": {
+    "2": 4,
+    "3": 1,
+    "4": 4,
+    "5": 1,
+    "6": 4,
+    "8": 4
+  },
+  "n_states_range": [
+    13,
+    84
+  ]
+}

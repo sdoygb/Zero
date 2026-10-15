@@ -1,0 +1,43 @@
+{
+ "setup": {
+  "steady": [
+   0.6666666666666666,
+   0.3333333333333333
+  ],
+  "f_intrinsic": 0.69315,
+  "J0_natural": 0.3333333333333333,
+  "engine": "i∂tψ=c²Lψ+J(e_A−e_B), path16, c²=0.8"
+ },
+ "sweep": [
+  {
+   "coupling": "内生 J0=Δω",
+   "J0": 0.3333,
+   "freq_at_source": 0.4917,
+   "ratio_src": 0.709,
+   "freq_at_probe": 0.4917,
+   "ratio_probe": 0.709
+  },
+  {
+   "coupling": "×3",
+   "J0": 1.0,
+   "freq_at_source": 0.4917,
+   "ratio_src": 0.709,
+   "freq_at_probe": 0.4917,
+   "ratio_probe": 0.709
+  },
+  {
+   "coupling": "×10",
+   "J0": 3.3333,
+   "freq_at_source": 0.4917,
+   "ratio_src": 0.709,
+   "freq_at_probe": 0.4917,
+   "ratio_probe": 0.709
+  }
+ ],
+ "path32": {
+  "freq_at_source": 0.495,
+  "ratio_src": 0.714,
+  "freq_at_probe": 0.495,
+  "ratio_probe": 0.714
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "config": {
+  "model": "True Zero path: graph wave propagation → interference",
+  "engine": "Z104 ∂²φ/∂t²=−c²Lφ leapfrog, linear superpos",
+  "double_slit": "two source nodes on graph (no external geometry)"
+ },
+ "graph": {
+  "grid": "24x24",
+  "lam_max": 7.966,
+  "c2": 0.439
+ },
+ "geometry": {
+  "s1": [
+   6,
+   12
+  ],
+  "s2": [
+   14,
+   12
+  ],
+  "screen_row": 12
+ },
+ "vertical_stripes": {
+  "k_zero": 2.0,
+  "I_x": [
+   0.085,
+   0.085,
+   0.085,
+   0.085,
+   0.085,
+   0.063,
+   2.311,
+   3.996,
+   2.07,
+   0.017,
+   1.552,
+   3.897,
+   0.085,
+   0.085,
+   0.085,
+   0.085,
+   0.085,
+   0.085,
+   0.085,
+   0.085
+  ],
+  "bright_x": [
+   6.9,
+   8.4,
+   10.0,
+   11.6,
+   13.1
+  ],
+  "smooth": true,
+  "orientation": "vertical"
+ }
+}

@@ -1,0 +1,198 @@
+{
+ "zero_inputs": {
+  "f_slots": [
+   0.405,
+   0.693,
+   0.981
+  ],
+  "log2": 0.6931471805599453,
+  "Hmod": [
+   0.4055,
+   1.0986
+  ],
+  "seed_ratios": [
+   2.0,
+   2.6667,
+   1.5
+  ]
+ },
+ "observation": {
+  "ratio": [
+   1.0,
+   206.8,
+   3477.2
+  ],
+  "koide": 0.66666
+ },
+ "scans": [
+  {
+   "name": "m ∝ f^1",
+   "koide": 0.34374,
+   "ratio": [
+    1.0,
+    1.711,
+    2.422
+   ],
+   "logerr": 3.018,
+   "koide_ok": false,
+   "ratio_ok": false,
+   "note": ""
+  },
+  {
+   "name": "m ∝ f^2",
+   "koide": 0.37171,
+   "ratio": [
+    1.0,
+    2.928,
+    5.867
+   ],
+   "logerr": 2.654,
+   "koide_ok": false,
+   "ratio_ok": false,
+   "note": ""
+  },
+  {
+   "name": "m ∝ f^3",
+   "koide": 0.41173,
+   "ratio": [
+    1.0,
+    5.01,
+    14.212
+   ],
+   "logerr": 2.291,
+   "koide_ok": false,
+   "ratio_ok": false,
+   "note": ""
+  },
+  {
+   "name": "m ∝ f^4",
+   "koide": 0.45856,
+   "ratio": [
+    1.0,
+    8.573,
+    34.424
+   ],
+   "logerr": 1.929,
+   "koide_ok": false,
+   "ratio_ok": false,
+   "note": ""
+  },
+  {
+   "name": "m ∝ 1/f²",
+   "koide": 0.37903,
+   "ratio": [
+    5.867,
+    2.004,
+    1.0
+   ],
+   "logerr": 4.108,
+   "koide_ok": false,
+   "ratio_ok": false,
+   "note": ""
+  },
+  {
+   "name": "m ∝ e^(3·f)",
+   "koide": 0.37295,
+   "ratio": [
+    1.0,
+    2.373,
+    5.629
+   ],
+   "logerr": 2.689,
+   "koide_ok": false,
+   "ratio_ok": false,
+   "note": ""
+  },
+  {
+   "name": "m ∝ e^(5·f)",
+   "koide": 0.43522,
+   "ratio": [
+    1.0,
+    4.221,
+    17.814
+   ],
+   "logerr": 2.233,
+   "koide_ok": false,
+   "ratio_ok": false,
+   "note": ""
+  },
+  {
+   "name": "m ∝ e^(8·f)",
+   "koide": 0.55362,
+   "ratio": [
+    1.0,
+    10.014,
+    100.283
+   ],
+   "logerr": 1.564,
+   "koide_ok": false,
+   "ratio_ok": false,
+   "note": ""
+  },
+  {
+   "name": "m ∝ e^(12·f)",
+   "koide": 0.70619,
+   "ratio": [
+    1.0,
+    31.69,
+    1004.254
+   ],
+   "logerr": 0.779,
+   "koide_ok": false,
+   "ratio_ok": false,
+   "note": ""
+  },
+  {
+   "name": "m ∝ e^(Hmod 外推)",
+   "koide": 0.35924,
+   "ratio": [
+    1.0,
+    2.0,
+    4.0
+   ],
+   "logerr": 2.826,
+   "koide_ok": false,
+   "ratio_ok": false,
+   "note": ""
+  },
+  {
+   "name": "m ∝ 1/(0.288·i + a)²",
+   "koide": 0.37903,
+   "ratio": [
+    5.867,
+    2.004,
+    1.0
+   ],
+   "logerr": 4.108,
+   "koide_ok": false,
+   "ratio_ok": false,
+   "note": ""
+  },
+  {
+   "name": "三等分 M(θ)² (δ 反解)",
+   "koide": 0.66667,
+   "ratio": [
+    1.0,
+    206.763,
+    3477.365
+   ],
+   "logerr": 0.0,
+   "koide_ok": true,
+   "ratio_ok": true,
+   "note": "δ=132.7° 残差=0.000"
+  },
+  {
+   "name": "θ=c·f, (1+√2cosθ)² (c=6.22)",
+   "koide": 0.66657,
+   "ratio": [
+    1.0,
+    9.005,
+    259.864
+   ],
+   "logerr": 1.368,
+   "koide_ok": true,
+   "ratio_ok": false,
+   "note": "Koide=0.6666"
+  }
+ ]
+}

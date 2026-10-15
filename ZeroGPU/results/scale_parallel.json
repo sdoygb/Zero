@@ -1,0 +1,547 @@
+{
+ "workers": 10,
+ "gens": 20000,
+ "wall_s": 369.2,
+ "results": [
+  {
+   "config": {
+    "n": 64,
+    "seed": "geom",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.14982858456200832,
+   "in_window": false,
+   "sec": 3.94
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "geom",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.16925783254045984,
+   "in_window": false,
+   "sec": 3.96
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "hub2",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.16784766463584583,
+   "in_window": false,
+   "sec": 3.96
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "geom",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.15145680996732502,
+   "in_window": false,
+   "sec": 3.98
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "one",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 1.0,
+   "in_window": false,
+   "sec": 3.95
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "hub2",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.14549126128218276,
+   "in_window": false,
+   "sec": 3.98
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "hub3",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.145491270341931,
+   "in_window": false,
+   "sec": 3.96
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "hub3",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.16784768211319853,
+   "in_window": false,
+   "sec": 3.98
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "hub2",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.1474279496640542,
+   "in_window": false,
+   "sec": 4.0
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "hub3",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.14742796054656104,
+   "in_window": false,
+   "sec": 4.04
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "one",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 1.0,
+   "in_window": false,
+   "sec": 4.63
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "one",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 1.0,
+   "in_window": false,
+   "sec": 4.69
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "all1",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.16784589345555925,
+   "in_window": false,
+   "sec": 4.68
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "all1",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.14742794192040798,
+   "in_window": false,
+   "sec": 4.69
+  },
+  {
+   "config": {
+    "n": 64,
+    "seed": "all1",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.14549125471002322,
+   "in_window": false,
+   "sec": 4.75
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "geom",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.09025363774139916,
+   "in_window": false,
+   "sec": 19.87
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "geom",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.09252108667856845,
+   "in_window": false,
+   "sec": 19.96
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "geom",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.09284078266660187,
+   "in_window": false,
+   "sec": 20.08
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "hub2",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.022512095422581528,
+   "in_window": false,
+   "sec": 20.11
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "hub2",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.019561850879152312,
+   "in_window": false,
+   "sec": 20.11
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "hub2",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.019788842439450997,
+   "in_window": false,
+   "sec": 21.45
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "hub3",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.01978884306142169,
+   "in_window": false,
+   "sec": 21.42
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "hub3",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.01956185137777243,
+   "in_window": false,
+   "sec": 21.46
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "hub3",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.022511696185091974,
+   "in_window": false,
+   "sec": 21.48
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "one",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 1.0,
+   "in_window": false,
+   "sec": 21.64
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "one",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 1.0,
+   "in_window": false,
+   "sec": 37.32
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "all1",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.02251209410492027,
+   "in_window": false,
+   "sec": 37.37
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "one",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 1.0,
+   "in_window": false,
+   "sec": 37.72
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "all1",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.019561850579688858,
+   "in_window": false,
+   "sec": 38.16
+  },
+  {
+   "config": {
+    "n": 128,
+    "seed": "all1",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.01978884207851564,
+   "in_window": false,
+   "sec": 38.78
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "hub2",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.005832704624457176,
+   "in_window": false,
+   "sec": 204.0
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "hub2",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.005607437667537546,
+   "in_window": false,
+   "sec": 205.56
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "geom",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.09028867254147115,
+   "in_window": false,
+   "sec": 206.31
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "geom",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.09282176282772972,
+   "in_window": false,
+   "sec": 206.65
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "geom",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.09250331582201846,
+   "in_window": false,
+   "sec": 206.66
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "hub3",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.005626517501894513,
+   "in_window": false,
+   "sec": 226.21
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "hub2",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.0056265174791674715,
+   "in_window": false,
+   "sec": 228.38
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "hub3",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.0058327047417850945,
+   "in_window": false,
+   "sec": 228.7
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "hub3",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.005607437686131677,
+   "in_window": false,
+   "sec": 229.53
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "one",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 1.0,
+   "in_window": false,
+   "sec": 228.61
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "one",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 1.0,
+   "in_window": false,
+   "sec": 133.67
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "one",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 1.0,
+   "in_window": false,
+   "sec": 132.03
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "all1",
+    "retention": "all",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.0056074376544815625,
+   "in_window": false,
+   "sec": 131.71
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "all1",
+    "retention": "top2",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.005626517463547545,
+   "in_window": false,
+   "sec": 131.92
+  },
+  {
+   "config": {
+    "n": 256,
+    "seed": "all1",
+    "retention": "last",
+    "L": 4,
+    "gens": 20000
+   },
+   "q_hist": 0.005832704597373216,
+   "in_window": false,
+   "sec": 132.39
+  }
+ ]
+}

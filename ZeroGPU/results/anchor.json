@@ -1,0 +1,83 @@
+{
+  "ok": [
+    "Γ 空间已生成（含四维可达族）",
+    "★ 空间里**存在** D=4 的候选",
+    "★ 字典 D=m 与 D=m-1 给出**不同**的相容集"
+  ],
+  "bad": [],
+  "results": {
+    "仅要求「维数 = 4」（字典 D=m）": {
+      "n": 3,
+      "pred": {
+        "n": 3,
+        "V_range": [
+          9,
+          256
+        ],
+        "V_fixed": false,
+        "deg_set": [
+          [
+            8,
+            8
+          ]
+        ],
+        "deg_fixed": true,
+        "girth_set": [
+          "3",
+          "4"
+        ],
+        "girth_fixed": false,
+        "m_set": [
+          "4"
+        ],
+        "regular_fixed": true,
+        "regular_val": true
+      },
+      "examples": [
+        "T^4(3^4)",
+        "T^4(4^4)",
+        "K_9"
+      ]
+    },
+    "仅要求「维数 = 4」（字典 D=m-1）": {
+      "n": 1,
+      "pred": {
+        "n": 1,
+        "V_range": [
+          11,
+          11
+        ],
+        "V_fixed": true,
+        "deg_set": [
+          [
+            10,
+            10
+          ]
+        ],
+        "deg_fixed": true,
+        "girth_set": [
+          "3"
+        ],
+        "girth_fixed": true,
+        "m_set": [
+          "5"
+        ],
+        "regular_fixed": true,
+        "regular_val": true
+      },
+      "examples": [
+        "K_11"
+      ]
+    },
+    "维数=4 ＋ 围长>4（词/行走层不分）": {
+      "n": 0,
+      "pred": null,
+      "examples": []
+    },
+    "维数=4 ＋ 围长>4 ＋ 正则": {
+      "n": 0,
+      "pred": null,
+      "examples": []
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+ "baseline(top2 无源项)": {
+  "alpha": 0.0,
+  "final_freqs": [
+   0.4055,
+   0.6931,
+   0.9808
+  ],
+  "uniq_freq_sets": 1,
+  "n_branch": 4
+ },
+ "回写α=0.1": {
+  "alpha": 0.1,
+  "final_freqs": [
+   0.4055,
+   0.6931,
+   0.9808
+  ],
+  "uniq_freq_sets": 1,
+  "n_branch": 4
+ },
+ "回写α=1": {
+  "alpha": 1.0,
+  "final_freqs": [
+   0.4055,
+   0.6931,
+   0.9808
+  ],
+  "uniq_freq_sets": 1,
+  "n_branch": 4
+ },
+ "回写α=10": {
+  "alpha": 10.0,
+  "final_freqs": [
+   0.4055,
+   0.6931,
+   0.9808
+  ],
+  "uniq_freq_sets": 1,
+  "n_branch": 4
+ }
+}

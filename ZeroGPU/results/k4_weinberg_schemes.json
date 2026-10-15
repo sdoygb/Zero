@@ -1,0 +1,39 @@
+{
+ "inputs": {
+  "alpha_inv": 137.035999084,
+  "G_F": 1.1663787e-05,
+  "M_W": 80.377,
+  "M_Z": 91.1876,
+  "sin2_MSbar": 0.23122,
+  "sin2_eff_lept": 0.23153
+ },
+ "definitions": {
+  "D1 树级 πα/(√2 G_F M_W²)": 0.215128049340855,
+  "D2 on-shell 1−M_W²/M_Z²": 0.2230518910035465,
+  "D3 MS-bar(M_Z)": 0.23122,
+  "D4 有效轻子(Z 极点)": 0.23153
+ },
+ "spread_percent": {
+  "D2_minus_D1": 3.6833140480610873,
+  "D4_minus_D3": 0.1340714471066537,
+  "D4_minus_D1": 7.62427340804699
+ },
+ "delta_r": 0.03552465584147646,
+ "division": {
+  "computed": [
+   "sin²θ_W(M_U)=3/8（归一化）",
+   "b_i（跑动系数）"
+  ],
+  "measured": [
+   "sin²θ_W(M_Z)"
+  ],
+  "input": [
+   "L=ln(M_U/M_Z)"
+  ]
+ },
+ "assertions": {
+  "total": 3,
+  "failed": 0,
+  "detail": []
+ }
+}

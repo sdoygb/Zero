@@ -1,0 +1,87 @@
+{
+ "config": {
+  "model": "Competition: V=g²V_phonon(s-wave)+J²V_magnetic(d-wave)"
+ },
+ "competition_scan": [
+  {
+   "g": 1.0,
+   "J": 0.0,
+   "Delta_abs_mean": 0.2261,
+   "Delta_min": -0.3602,
+   "Delta_max": 0.4628,
+   "n_neg": 36,
+   "sym": "d-wave(混)",
+   "dominant": "磁"
+  },
+  {
+   "g": 1.0,
+   "J": 0.3,
+   "Delta_abs_mean": 0.2265,
+   "Delta_min": -0.367,
+   "Delta_max": 0.459,
+   "n_neg": 38,
+   "sym": "d-wave(混)",
+   "dominant": "磁"
+  },
+  {
+   "g": 1.0,
+   "J": 0.5,
+   "Delta_abs_mean": 3.0263,
+   "Delta_min": -3.0457,
+   "Delta_max": 3.0442,
+   "n_neg": 32,
+   "sym": "d-wave(混)",
+   "dominant": "磁"
+  },
+  {
+   "g": 1.0,
+   "J": 0.8,
+   "Delta_abs_mean": 8.5859,
+   "Delta_min": -8.6062,
+   "Delta_max": 8.6059,
+   "n_neg": 32,
+   "sym": "d-wave(混)",
+   "dominant": "磁"
+  },
+  {
+   "g": 1.0,
+   "J": 1.0,
+   "Delta_abs_mean": 13.5764,
+   "Delta_min": -13.5968,
+   "Delta_max": 13.5967,
+   "n_neg": 32,
+   "sym": "d-wave(混)",
+   "dominant": "磁"
+  },
+  {
+   "g": 1.0,
+   "J": 1.3,
+   "Delta_abs_mean": 23.0785,
+   "Delta_min": -23.0989,
+   "Delta_max": 23.0989,
+   "n_neg": 32,
+   "sym": "d-wave(混)",
+   "dominant": "磁"
+  },
+  {
+   "g": 1.0,
+   "J": 1.6,
+   "Delta_abs_mean": 35.0293,
+   "Delta_min": -35.0498,
+   "Delta_max": 35.0497,
+   "n_neg": 32,
+   "sym": "d-wave(混)",
+   "dominant": "磁"
+  },
+  {
+   "g": 1.0,
+   "J": 2.0,
+   "Delta_abs_mean": 54.7915,
+   "Delta_min": -54.8119,
+   "Delta_max": 54.8119,
+   "n_neg": 32,
+   "sym": "d-wave(混)",
+   "dominant": "磁"
+  }
+ ]
+}

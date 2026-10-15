@@ -1,0 +1,20 @@
+{
+ "anomaly": {
+  "S3S3U1": 0.0,
+  "S2S2U1": 0.0,
+  "U1U1U1": 0.0
+ },
+ "anomaly_zero": [
+  0.0,
+  0.0,
+  1.5543122344752192e-15
+ ],
+ "sin2thetaW_GUT": 0.375,
+ "k": 1.6666666666666667,
+ "layers": {
+  "zero_endogenous": "超荷相对值/电荷量子化/N_c=3/超荷关系",
+  "unification_group": "k=5/3 → sin²θ_w=3/8 (Z090)",
+  "RGE_lowE": "0.231 需重整化群, Zero 无(Z026)"
+ },
+ "conclusion": "Zero 内生超荷相对结构; k=5/3(sin²θ_w=3/8)需统一群嵌入; 低能运行需RGE(Zero无)"
+}

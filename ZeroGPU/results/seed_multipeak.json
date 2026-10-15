@@ -1,0 +1,140 @@
+{
+ "path16": {
+  "3peak_adj": {
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.6667
+    ],
+    [
+     8,
+     0.3333
+    ]
+   ],
+   "q": 0.5555555555544854,
+   "in_win": true,
+   "top2_ratio": 2.0,
+   "freq": 0.6931
+  },
+  "4peak_adj": {
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.6667
+    ],
+    [
+     8,
+     0.3333
+    ]
+   ],
+   "q": 0.5555555555544854,
+   "in_win": true,
+   "top2_ratio": 2.0,
+   "freq": 0.6931
+  },
+  "3peak_ctr": {
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.6667
+    ],
+    [
+     8,
+     0.3333
+    ]
+   ],
+   "q": 0.5555555555472416,
+   "in_win": true,
+   "top2_ratio": 2.0,
+   "freq": 0.6931
+  },
+  "plateau4": {
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.5
+    ],
+    [
+     8,
+     0.5
+    ]
+   ],
+   "q": 0.4999999999969441,
+   "in_win": false,
+   "top2_ratio": 1.0,
+   "freq": null
+  },
+  "3peak_sep": {
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.9804
+    ],
+    [
+     8,
+     0.0196
+    ]
+   ],
+   "q": 0.9615532487500625,
+   "in_win": false,
+   "top2_ratio": 50.0,
+   "freq": 3.912
+  },
+  "2peak_sep": {
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.5
+    ],
+    [
+     8,
+     0.5
+    ]
+   ],
+   "q": 0.4999999997193991,
+   "in_win": false,
+   "top2_ratio": 1.0,
+   "freq": null
+  },
+  "5peak_adj": {
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.6667
+    ],
+    [
+     8,
+     0.3333
+    ]
+   ],
+   "q": 0.5555555555462948,
+   "in_win": true,
+   "top2_ratio": 2.0,
+   "freq": 0.6931
+  },
+  "mid_band": {
+   "n_branch": 2,
+   "branches": [
+    [
+     7,
+     0.6667
+    ],
+    [
+     8,
+     0.3333
+    ]
+   ],
+   "q": 0.5555555555459482,
+   "in_win": true,
+   "top2_ratio": 2.0,
+   "freq": 0.6931
+  }
+ }
+}

@@ -1,0 +1,168 @@
+{
+  "ok": [
+    "① 全部候选都能跑满 3000 代（可长跑与 Γ 无关）",
+    "② ★ 全部候选都**有界**（有界性与 Γ 无关）",
+    "★ 记录层**单调不减**（时间箭头）——全部候选成立",
+    "★ 记录层**确实增长**（不是停滞）——全部候选成立",
+    "★ 位宽受控（不溢出）——全部候选成立",
+    "★ 终端层与重播种机制每代都在工作（Z4/Z5 不退化）",
+    "Γ-依赖①：结构（Gini）的有无 ⟸ 度序列是否均匀",
+    "Γ-依赖②：活动层**数值**随 Γ 变化"
+  ],
+  "bad": [],
+  "runs": {
+    "环 C_8": {
+      "V": 8,
+      "deg": [
+        2,
+        2
+      ],
+      "act_last": 6.079181246047625,
+      "act_max": 6.079181246047625,
+      "gini": 0.0,
+      "bits": 16,
+      "rec_monotone": true,
+      "rec_first": 1.6812412373755872,
+      "rec_last": 8.958062116644697,
+      "rec_grew": true,
+      "bounded": true,
+      "reseed_ever": false
+    },
+    "环 C_16": {
+      "V": 16,
+      "deg": [
+        2,
+        2
+      ],
+      "act_last": 6.748188027006201,
+      "act_max": 6.748188027006201,
+      "gini": 0.0,
+      "bits": 16,
+      "rec_monotone": true,
+      "rec_first": 1.9822712330395684,
+      "rec_last": 9.320004742060815,
+      "rec_grew": true,
+      "bounded": true,
+      "reseed_ever": false
+    },
+    "路径 P_8": {
+      "V": 8,
+      "deg": [
+        1,
+        2
+      ],
+      "act_last": 11.021189299069938,
+      "act_max": 11.021189299069938,
+      "gini": 0.15,
+      "bits": 17,
+      "rec_monotone": true,
+      "rec_first": 1.5797835966168101,
+      "rec_last": 9.175371803595946,
+      "rec_grew": true,
+      "bounded": true,
+      "reseed_ever": false
+    },
+    "路径 P_16": {
+      "V": 16,
+      "deg": [
+        1,
+        2
+      ],
+      "act_last": 11.585460729508501,
+      "act_max": 11.585460729508501,
+      "gini": 0.09722222222222222,
+      "bits": 17,
+      "rec_monotone": true,
+      "rec_first": 1.9344984512435677,
+      "rec_last": 9.430705447653871,
+      "rec_grew": true,
+      "bounded": true,
+      "reseed_ever": false
+    },
+    "星图 K_1,8": {
+      "V": 9,
+      "deg": [
+        1,
+        8
+      ],
+      "act_last": 11.7481880270062,
+      "act_max": 11.7481880270062,
+      "gini": 0.09572649572649573,
+      "bits": 17,
+      "rec_monotone": true,
+      "rec_first": 2.1072099696478683,
+      "rec_last": 9.386403953284985,
+      "rec_grew": true,
+      "bounded": true,
+      "reseed_ever": false
+    },
+    "环面 4×4": {
+      "V": 16,
+      "deg": [
+        4,
+        4
+      ],
+      "act_last": 6.447158031342219,
+      "act_max": 6.447158031342219,
+      "gini": 0.0,
+      "bits": 15,
+      "rec_monotone": true,
+      "rec_first": 2.806179973983887,
+      "rec_last": 9.054853435504059,
+      "rec_grew": true,
+      "bounded": true,
+      "reseed_ever": false
+    },
+    "网格 3×5": {
+      "V": 15,
+      "deg": [
+        2,
+        4
+      ],
+      "act_last": 11.140050392641633,
+      "act_max": 11.140050392641633,
+      "gini": 0.12718044150371202,
+      "bits": 16,
+      "rec_monotone": true,
+      "rec_first": 2.4653828514484184,
+      "rec_last": 9.210492819694267,
+      "rec_grew": true,
+      "bounded": true,
+      "reseed_ever": false
+    },
+    "完全图 K_6": {
+      "V": 6,
+      "deg": [
+        5,
+        5
+      ],
+      "act_last": 5.778151250383644,
+      "act_max": 5.778151250383644,
+      "gini": 0.0,
+      "bits": 15,
+      "rec_monotone": true,
+      "rec_first": 2.7993405494535817,
+      "rec_last": 8.51856411773235,
+      "rec_grew": true,
+      "bounded": true,
+      "reseed_ever": false
+    },
+    "二叉树 15": {
+      "V": 15,
+      "deg": [
+        1,
+        3
+      ],
+      "act_last": 11.885235110555834,
+      "act_max": 11.885235110555834,
+      "gini": 0.234922225248683,
+      "bits": 17,
+      "rec_monotone": true,
+      "rec_first": 2.0170333392987803,
+      "rec_last": 9.497728952495972,
+      "rec_grew": true,
+      "bounded": true,
+      "reseed_ever": false
+    }
+  }
+}

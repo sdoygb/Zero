@@ -1,0 +1,47 @@
+{
+ "config": {
+  "graph": "K4",
+  "selfenergy": "kappa^2 (kappa=-Lphi)",
+  "coup": "x=(1-s)*m+s*kappa^2_norm"
+ },
+ "s_scan_fb0": {
+  "0.0": {
+   "phi_range": 0.12069,
+   "phi_norm": 0.09551,
+   "tail_std": 0.0
+  },
+  "0.3": {
+   "phi_range": 0.12771,
+   "phi_norm": 0.1038,
+   "tail_std": 0.0
+  },
+  "0.6": {
+   "phi_range": 0.14408,
+   "phi_norm": 0.12103,
+   "tail_std": 0.0
+  },
+  "0.9": {
+   "phi_range": 0.16503,
+   "phi_norm": 0.1386,
+   "tail_std": 0.0
+  }
+ },
+ "coupling": {
+  "s0.0_fb0.8": {
+   "phi_dyn": 0.001822,
+   "phi_range": 0.09779
+  },
+  "s0.6_fb0.8": {
+   "phi_dyn": 0.000704,
+   "phi_range": 0.13574
+  },
+  "s0.6_fb0.4": {
+   "phi_dyn": 0.000217,
+   "phi_range": 0.14156
+  },
+  "s0.3_fb0.8": {
+   "phi_dyn": 0.001212,
+   "phi_range": 0.11277
+  }
+ }
+}

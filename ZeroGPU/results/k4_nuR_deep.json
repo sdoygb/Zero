@@ -1,0 +1,27 @@
+{
+ "nuR_quantum": {
+  "色": "单态",
+  "T3": 0.0,
+  "Y": 0.0,
+  "Q": 0.0,
+  "自旋": "费米1/2",
+  "手性": "右手"
+ },
+ "sterile": {
+  "U1": "Y=0耦合0",
+  "SU2": "T3=0耦合0",
+  "SU3": "色单态耦合0",
+  "结论": "完全惰性"
+ },
+ "majorana_candidate": {
+  "规范量子数反号不变": true,
+  "需轻子数L破缺": "未模拟(开放)"
+ },
+ "three_gen": [
+  "ν_eR",
+  "ν_μR",
+  "ν_τR"
+ ],
+ "seesaw_type_I": "m_ν = y_ν²v²/M_R; Zero能给结构前提, 不能给数值(y,v,M_R)",
+ "conclusion": "ν_R=sterile+Majorana候选+3代=Type-I Seesaw结构前提; 数值机制缺汤川/电弱/Higgs"
+}

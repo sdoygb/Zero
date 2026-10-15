@@ -1,0 +1,415 @@
+{
+ "config": {
+  "graph": "path16",
+  "n": 16,
+  "solve": "eig projection",
+  "method": "space-time dynamic → project onto L eigenbasis → mode dominant freq vs sqrt(lambda)"
+ },
+ "scans": {
+  "fb0.8_s0.0": {
+   "phi_dyn": 1.797967,
+   "modes": {
+    "0": {
+     "lambda": -0.0,
+     "sqrt_lambda": 0.0,
+     "dom_freq": 3.1416,
+     "power": 0.0848
+    },
+    "1": {
+     "lambda": 0.0384,
+     "sqrt_lambda": 0.196,
+     "dom_freq": 3.1416,
+     "power": 0.0751
+    },
+    "2": {
+     "lambda": 0.1522,
+     "sqrt_lambda": 0.3902,
+     "dom_freq": 3.1416,
+     "power": 0.0809
+    },
+    "3": {
+     "lambda": 0.3371,
+     "sqrt_lambda": 0.5806,
+     "dom_freq": 0.474,
+     "power": 0.0507
+    },
+    "4": {
+     "lambda": 0.5858,
+     "sqrt_lambda": 0.7654,
+     "dom_freq": 0.2669,
+     "power": 0.0855
+    },
+    "5": {
+     "lambda": 0.8889,
+     "sqrt_lambda": 0.9428,
+     "dom_freq": 0.0291,
+     "power": 0.1548
+    },
+    "6": {
+     "lambda": 1.2346,
+     "sqrt_lambda": 1.1111,
+     "dom_freq": 0.0291,
+     "power": 0.1126
+    },
+    "7": {
+     "lambda": 1.6098,
+     "sqrt_lambda": 1.2688,
+     "dom_freq": 0.2378,
+     "power": 0.0996
+    },
+    "8": {
+     "lambda": 2.0,
+     "sqrt_lambda": 1.4142,
+     "dom_freq": 0.385,
+     "power": 0.0465
+    },
+    "9": {
+     "lambda": 2.3902,
+     "sqrt_lambda": 1.546,
+     "dom_freq": 0.2378,
+     "power": 0.1242
+    },
+    "10": {
+     "lambda": 2.7654,
+     "sqrt_lambda": 1.6629,
+     "dom_freq": 0.0598,
+     "power": 0.0954
+    },
+    "11": {
+     "lambda": 3.1111,
+     "sqrt_lambda": 1.7638,
+     "dom_freq": 0.0291,
+     "power": 0.1269
+    },
+    "12": {
+     "lambda": 3.4142,
+     "sqrt_lambda": 1.8478,
+     "dom_freq": 0.0598,
+     "power": 0.14
+    },
+    "13": {
+     "lambda": 3.6629,
+     "sqrt_lambda": 1.9139,
+     "dom_freq": 0.2378,
+     "power": 0.0885
+    },
+    "14": {
+     "lambda": 3.8478,
+     "sqrt_lambda": 1.9616,
+     "dom_freq": 0.0291,
+     "power": 0.1955
+    },
+    "15": {
+     "lambda": 3.9616,
+     "sqrt_lambda": 1.9904,
+     "dom_freq": 0.0291,
+     "power": 0.3806
+    }
+   }
+  },
+  "fb0.8_s0.6": {
+   "phi_dyn": 0.709411,
+   "modes": {
+    "0": {
+     "lambda": -0.0,
+     "sqrt_lambda": 0.0,
+     "dom_freq": 2.7443,
+     "power": 0.0052
+    },
+    "1": {
+     "lambda": 0.0384,
+     "sqrt_lambda": 0.196,
+     "dom_freq": 2.7443,
+     "power": 0.0055
+    },
+    "2": {
+     "lambda": 0.1522,
+     "sqrt_lambda": 0.3902,
+     "dom_freq": 0.79,
+     "power": 0.0184
+    },
+    "3": {
+     "lambda": 0.3371,
+     "sqrt_lambda": 0.5806,
+     "dom_freq": 0.4571,
+     "power": 0.0083
+    },
+    "4": {
+     "lambda": 0.5858,
+     "sqrt_lambda": 0.7654,
+     "dom_freq": 1.5708,
+     "power": 0.0164
+    },
+    "5": {
+     "lambda": 0.8889,
+     "sqrt_lambda": 0.9428,
+     "dom_freq": 0.3237,
+     "power": 0.0115
+    },
+    "6": {
+     "lambda": 1.2346,
+     "sqrt_lambda": 1.1111,
+     "dom_freq": 1.5708,
+     "power": 0.0191
+    },
+    "7": {
+     "lambda": 1.6098,
+     "sqrt_lambda": 1.2688,
+     "dom_freq": 0.1212,
+     "power": 0.0175
+    },
+    "8": {
+     "lambda": 2.0,
+     "sqrt_lambda": 1.4142,
+     "dom_freq": 1.5708,
+     "power": 0.042
+    },
+    "9": {
+     "lambda": 2.3902,
+     "sqrt_lambda": 1.546,
+     "dom_freq": 0.0675,
+     "power": 0.016
+    },
+    "10": {
+     "lambda": 2.7654,
+     "sqrt_lambda": 1.6629,
+     "dom_freq": 0.1381,
+     "power": 0.0235
+    },
+    "11": {
+     "lambda": 3.1111,
+     "sqrt_lambda": 1.7638,
+     "dom_freq": 0.0736,
+     "power": 0.0181
+    },
+    "12": {
+     "lambda": 3.4142,
+     "sqrt_lambda": 1.8478,
+     "dom_freq": 0.0046,
+     "power": 0.0243
+    },
+    "13": {
+     "lambda": 3.6629,
+     "sqrt_lambda": 1.9139,
+     "dom_freq": 0.0245,
+     "power": 0.025
+    },
+    "14": {
+     "lambda": 3.8478,
+     "sqrt_lambda": 1.9616,
+     "dom_freq": 0.0736,
+     "power": 0.0271
+    },
+    "15": {
+     "lambda": 3.9616,
+     "sqrt_lambda": 1.9904,
+     "dom_freq": 0.0169,
+     "power": 0.0461
+    }
+   }
+  },
+  "fb0.6_s0.6": {
+   "phi_dyn": 2.534689,
+   "modes": {
+    "0": {
+     "lambda": -0.0,
+     "sqrt_lambda": 0.0,
+     "dom_freq": 0.7854,
+     "power": 0.6513
+    },
+    "1": {
+     "lambda": 0.0384,
+     "sqrt_lambda": 0.196,
+     "dom_freq": 0.7854,
+     "power": 0.6514
+    },
+    "2": {
+     "lambda": 0.1522,
+     "sqrt_lambda": 0.3902,
+     "dom_freq": 1.5708,
+     "power": 0.5538
+    },
+    "3": {
+     "lambda": 0.3371,
+     "sqrt_lambda": 0.5806,
+     "dom_freq": 0.7854,
+     "power": 0.6588
+    },
+    "4": {
+     "lambda": 0.5858,
+     "sqrt_lambda": 0.7654,
+     "dom_freq": 1.5708,
+     "power": 0.6073
+    },
+    "5": {
+     "lambda": 0.8889,
+     "sqrt_lambda": 0.9428,
+     "dom_freq": 0.7854,
+     "power": 0.4936
+    },
+    "6": {
+     "lambda": 1.2346,
+     "sqrt_lambda": 1.1111,
+     "dom_freq": 1.5708,
+     "power": 0.6661
+    },
+    "7": {
+     "lambda": 1.6098,
+     "sqrt_lambda": 1.2688,
+     "dom_freq": 0.7854,
+     "power": 0.6348
+    },
+    "8": {
+     "lambda": 2.0,
+     "sqrt_lambda": 1.4142,
+     "dom_freq": 1.5708,
+     "power": 0.5435
+    },
+    "9": {
+     "lambda": 2.3902,
+     "sqrt_lambda": 1.546,
+     "dom_freq": 0.7854,
+     "power": 0.6317
+    },
+    "10": {
+     "lambda": 2.7654,
+     "sqrt_lambda": 1.6629,
+     "dom_freq": 3.1416,
+     "power": 0.5855
+    },
+    "11": {
+     "lambda": 3.1111,
+     "sqrt_lambda": 1.7638,
+     "dom_freq": 0.7854,
+     "power": 0.6595
+    },
+    "12": {
+     "lambda": 3.4142,
+     "sqrt_lambda": 1.8478,
+     "dom_freq": 1.5708,
+     "power": 0.661
+    },
+    "13": {
+     "lambda": 3.6629,
+     "sqrt_lambda": 1.9139,
+     "dom_freq": 0.7854,
+     "power": 0.6537
+    },
+    "14": {
+     "lambda": 3.8478,
+     "sqrt_lambda": 1.9616,
+     "dom_freq": 1.5708,
+     "power": 0.6416
+    },
+    "15": {
+     "lambda": 3.9616,
+     "sqrt_lambda": 1.9904,
+     "dom_freq": 0.7854,
+     "power": 0.6522
+    }
+   }
+  },
+  "fb0.4_s0.0": {
+   "phi_dyn": 6.075064,
+   "modes": {
+    "0": {
+     "lambda": -0.0,
+     "sqrt_lambda": 0.0,
+     "dom_freq": 0.7854,
+     "power": 0.5872
+    },
+    "1": {
+     "lambda": 0.0384,
+     "sqrt_lambda": 0.196,
+     "dom_freq": 0.7854,
+     "power": 0.5894
+    },
+    "2": {
+     "lambda": 0.1522,
+     "sqrt_lambda": 0.3902,
+     "dom_freq": 0.5231,
+     "power": 0.4529
+    },
+    "3": {
+     "lambda": 0.3371,
+     "sqrt_lambda": 0.5806,
+     "dom_freq": 0.2623,
+     "power": 0.549
+    },
+    "4": {
+     "lambda": 0.5858,
+     "sqrt_lambda": 0.7654,
+     "dom_freq": 0.5231,
+     "power": 0.4891
+    },
+    "5": {
+     "lambda": 0.8889,
+     "sqrt_lambda": 0.9428,
+     "dom_freq": 0.2623,
+     "power": 0.5433
+    },
+    "6": {
+     "lambda": 1.2346,
+     "sqrt_lambda": 1.1111,
+     "dom_freq": 0.5231,
+     "power": 0.4888
+    },
+    "7": {
+     "lambda": 1.6098,
+     "sqrt_lambda": 1.2688,
+     "dom_freq": 0.2623,
+     "power": 0.5318
+    },
+    "8": {
+     "lambda": 2.0,
+     "sqrt_lambda": 1.4142,
+     "dom_freq": 0.5231,
+     "power": 0.4633
+    },
+    "9": {
+     "lambda": 2.3902,
+     "sqrt_lambda": 1.546,
+     "dom_freq": 0.7854,
+     "power": 0.5405
+    },
+    "10": {
+     "lambda": 2.7654,
+     "sqrt_lambda": 1.6629,
+     "dom_freq": 0.5231,
+     "power": 0.3635
+    },
+    "11": {
+     "lambda": 3.1111,
+     "sqrt_lambda": 1.7638,
+     "dom_freq": 0.7854,
+     "power": 0.3477
+    },
+    "12": {
+     "lambda": 3.4142,
+     "sqrt_lambda": 1.8478,
+     "dom_freq": 0.5231,
+     "power": 0.3484
+    },
+    "13": {
+     "lambda": 3.6629,
+     "sqrt_lambda": 1.9139,
+     "dom_freq": 0.7854,
+     "power": 0.6349
+    },
+    "14": {
+     "lambda": 3.8478,
+     "sqrt_lambda": 1.9616,
+     "dom_freq": 0.5231,
+     "power": 0.4695
+    },
+    "15": {
+     "lambda": 3.9616,
+     "sqrt_lambda": 1.9904,
+     "dom_freq": 0.2623,
+     "power": 0.5475
+    }
+   }
+  }
+ },
+ "verdict_note": "模流耦合时空动态若激发本征模式, 低频模式(k≤3)主导频率应≈√λ_k; 若全≈模流慢频(0.001~0.01)则模流与L谱脱节, 无本征色散"
+}

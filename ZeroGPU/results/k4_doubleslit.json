@@ -1,0 +1,54 @@
+{
+ "config": {
+  "model": "Zero endogenous electron double-slit interference",
+  "wave": "Zero graph wave (Z104 ω²=c²λ_k)",
+  "lambda": "λ_e=2π/k, k=√λ_max from Zero K₄ Laplacian",
+  "intensity": "I=|ψ|² graph-wave amplitude squared"
+ },
+ "zero_wave": {
+  "lam_max": 4.0,
+  "k": 2.0,
+  "lambda_e": 3.1416,
+  "source": "Zero K₄ Laplacian"
+ },
+ "stripes": {
+  "Delta_x": 314.159,
+  "bright_positions": [
+   0.0,
+   314.2,
+   628.3,
+   942.5,
+   1256.6
+  ]
+ },
+ "intensity": {
+  "model": "I=[sinβ/β]²·cos²α (单缝衍射包络×双缝干涉)",
+  "a_slit_width": 0.2,
+  "n_peaks": 7,
+  "I_center": 1.0,
+  "I_first": 0.875,
+  "I_second": 0.573,
+  "envelope_sample": [
+   0.255,
+   0.488,
+   0.737,
+   0.928,
+   1.0,
+   0.928,
+   0.737,
+   0.488,
+   0.255
+  ],
+  "I_sample": [
+   0.255,
+   0.244,
+   0.0,
+   0.464,
+   1.0,
+   0.464,
+   0.0,
+   0.244,
+   0.255
+  ]
+ }
+}

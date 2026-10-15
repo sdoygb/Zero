@@ -1,0 +1,56 @@
+{
+ "config": {
+  "model": "binary + Zero quadrupole radiation P=(1/5)(d³I)²",
+  "gw_freq": "f_gw=2·f_orb=Ω/π (quadrupole harmonic)",
+  "GR_ref": "Hulse-Taylor PSR B1913+16: dP/dt≈−2.4e-12 s/s, P_orb≈7.75h"
+ },
+ "r0=5": {
+  "r0": 4.9999424,
+  "M": 2.0,
+  "mu": 0.5,
+  "merged": true,
+  "P_orb_initial": 49.6729,
+  "f_gw_initial": 0.040263,
+  "f_gw_final": 2.542413,
+  "chirp_rate_dfdt": 0.11528,
+  "dP_orb_dt": -7.018483,
+  "dP_orb_dt_norm": -0.14129389,
+  "d3I_initial": 0.075893,
+  "P_initial": 0.001152,
+  "lifetime_to_merge": 21.71
+ },
+ "r0=8": {
+  "r0": 7.9999859375,
+  "M": 2.0,
+  "mu": 0.5,
+  "merged": true,
+  "P_orb_initial": 100.531,
+  "f_gw_initial": 0.019894,
+  "f_gw_final": 1.953042,
+  "chirp_rate_dfdt": 0.013592,
+  "dP_orb_dt": -7.01159384,
+  "dP_orb_dt_norm": -0.06974561,
+  "d3I_initial": 0.023437,
+  "P_initial": 0.00010986,
+  "lifetime_to_merge": 142.23
+ },
+ "r0=10": {
+  "r0": 9.9999928,
+  "M": 2.0,
+  "mu": 0.5,
+  "merged": false,
+  "P_orb_initial": 140.4963,
+  "f_gw_initial": 0.014235,
+  "f_gw_final": 0.019638,
+  "chirp_rate_dfdt": 2.7e-05,
+  "dP_orb_dt": -0.25831338,
+  "dP_orb_dt_norm": -0.00183858,
+  "d3I_initial": 0.013416,
+  "P_initial": 3.6e-05,
+  "lifetime_to_merge": 200.0
+ },
+ "P_quad_hold": {
+  "ratio_mean": 0.201778,
+  "ratio_std_rel": 0.0393
+ }
+}

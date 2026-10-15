@@ -1,0 +1,31 @@
+{
+ "setup": {
+  "steady": [
+   0.6666666666666666,
+   0.3333333333333333
+  ],
+  "H_mod": [
+   0.4055,
+   1.0986
+  ],
+  "f_intrinsic": 0.69315
+ },
+ "modular_coherence": {
+  "measured": 0.69315,
+  "exact": 0.69315,
+  "err_pct": 0.0
+ },
+ "doubleslit": {
+  "f": 0.69315,
+  "q_drive": 0.70783,
+  "q_measured": 0.70805,
+  "lambda_e": 8.874,
+  "lambda_2pi_f": 9.065,
+  "ratio": 0.979,
+  "fringe_spacing": {
+   "40": 9.661,
+   "80": 14.826,
+   "120": 20.679
+  }
+ }
+}

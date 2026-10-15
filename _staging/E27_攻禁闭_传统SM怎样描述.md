@@ -1,0 +1,340 @@
+# 攻禁闭：传统 SM 怎样描述它 —— **九条表述，两条不可陈述**
+
+**篇性**：**资料 ＋ 更正篇（暂存讨论稿）**。用户指示："先攻这个（第 8 项禁闭），查查传统 SM 是怎样描述这个禁闭的"。
+**结论**：**(一)** 传统描述**不是一条**，而是**九条**互不等价的表述；**(二)** E25 的否证**过宽**，须更正；**(三)** $S_3$ 的**中心是平凡的**，故第 4 条判据须改用 $\mathbb Z_3$ 子群；**(四)** 旧库已把这一步定位到"**非微扰测度**"。
+**纪律**：**未改动任何公理**；根目录 36 篇**一字未动**。
+**依据**：旧库 `sm/SMR12`（禁闭边界）、`sm/SMR4 §2.9`（Gribov 边界）、`sm/SM_PILLARS`（P4／P12）；正式篇 Z024（引理 1）；本系列 E21／E24／E25。
+**核验**：[`E27_confinement_criteria_check.py`](E27_confinement_criteria_check.py)。
+
+---
+
+## 摘要
+
+$$
+\boxed{\;\textbf{（一）}\ \text{禁闭在 QCD 里有}\ \textbf{九条} \text{互不等价的表述，不是一条} .\;}
+\tag{0.1}
+$$
+
+$$
+\boxed{\;\textbf{（二）}\ \textbf{更正 E25}:\ \text{只有}\ 2\ \text{条（面积律／线性势）需热力学极限};\ \text{其余}\ 7\ \text{条在}\ \textbf{有限体积} \text{可用} .\;}
+\tag{0.2}
+$$
+
+$$
+\boxed{\;\textbf{（三）}\ \text{Zent}(S_3)=\{1\}\ \Longrightarrow\ S_3\ \text{规范理论}\ \textbf{无} \text{中心对称};\ \text{须用}\ \mathbb Z_3\ \text{子群} .\;}
+\tag{0.3}
+$$
+
+$$
+\boxed{\;\textbf{（四）}\ \text{旧库定位}:\ \text{禁闭}\ \textbf{不得主张已导出} \text{，因为需}\ \textbf{非微扰测度} .\;}
+\tag{0.4}
+$$
+
+---
+
+## §1 传统 SM 怎样描述禁闭（**九条表述**）
+
+### 1.1 清单
+
+| # | 表述 | 判据 | 是否需热力学极限 |
+|--:|:--|:--|:--:|
+| **1** | Wilson 环**面积律** | $\langle W(C)\rangle\sim e^{-\sigma\,\mathrm{Area}(C)}$ | **需** |
+| **2** | **线性势／弦张力** | $V(R)=\sigma R$（大 $R$） | **需** |
+| 3 | **Polyakov 环** | $\langle P\rangle=0$（未破缺） | 否 |
+| 4 | **中心对称** | $\mathbb Z_N$ 未自发破缺 | 否 |
+| 5 | **无带色渐近态** | 谱中只有规范单态 | 否 |
+| 6 | **质量隙 $>0$** | 谱的间隙 | 否 |
+| 7 | **非微扰测度** | Gribov 边界外的测度 | 否（但要构造） |
+| 8 | **Gribov 视界** | 基本模范区 | 否 |
+| 9 | **中心涡／单极子凝聚** | 凝聚 $\Rightarrow$ 面积律 | 否 |
+
+$$
+\boxed{\;\textbf{只有 1、2 需热力学极限};\ \text{3–9 在}\ \textbf{有限体积} \text{上良好定义} .\;}
+\tag{1.1}
+$$
+
+### 1.2 严格定义 vs 可操作判据
+
+$$
+\textbf{严格（Clay 问题）}:\ \text{证}\ \mathbb R^4\ \text{上纯 YM 有正质量隙}\ \Longrightarrow\ \textbf{需要无穷体积} .
+\tag{1.2}
+$$
+
+$$
+\textbf{可操作（格点）}:\ \text{中心对称未破缺／}\langle P\rangle=0\text{／质量隙}\ \Longrightarrow\ \textbf{有限体积可用} .
+\tag{1.3}
+$$
+
+$$
+\Longrightarrow\quad \text{E25 的否证只覆盖 1、2};\ \textbf{不覆盖 3–9} .
+\tag{1.4}
+$$
+
+---
+
+## §2 更正 E25（**必须更正**）
+
+### 2.1 E25 写了什么
+
+$$
+\text{E25 §2.2 写}:\quad \text{"面积律判据在 Zero 里}\ \textbf{不可陈述} \Longrightarrow \textbf{禁闭的判据不可陈述}" .
+\tag{2.1}
+$$
+
+### 2.2 错在哪
+
+$$
+\text{前件}\ \textbf{对};\ \text{后件}\ \textbf{过宽} .
+\tag{2.2}
+$$
+
+$$
+\boxed{\;\textbf{更正}:\ \text{不可陈述的是}\ \textbf{面积律与线性势} \text{（第 1、2 条）};\ \text{不是"禁闭的判据"} .\;}
+\tag{2.3}
+$$
+
+### 2.3 更正后的表述
+
+$$
+\text{旧}:\ \text{"禁闭的判据在 Zero 里不可陈述"} .
+\tag{2.4}
+$$
+
+$$
+\textbf{新}:\ \text{"}\textbf{面积律与线性势} \text{判据不可陈述（因}\ \lvert V\rvert=14\ \text{固定）};\quad
+\textbf{中心对称／Polyakov／质量隙／无带色态} \text{判据可查"} .
+\tag{2.5}
+$$
+
+---
+
+## §3 更正 E24：$S_3$ 的**中心是平凡的**
+
+### 3.1 计算
+
+$$
+\textbf{核验 §A}:\quad \operatorname{Zent}(S_3)=\{1\}\ (\text{阶}\ 1) .
+\tag{3.1}
+$$
+
+$$
+\Longrightarrow\quad \boxed{\;S_3\ \text{规范理论}\ \textbf{没有} \text{中心对称} \Longrightarrow\ \text{第 4 条判据}\textbf{不可用} .\;}
+\tag{3.2}
+$$
+
+$$
+\textbf{但}:\ A_3\cong\mathbb Z_3\ \text{是}\ S_3\ \text{的正规子群，且}\ \operatorname{Zent}(\mathbb Z_3)=\mathbb Z_3\ne\{1\} .
+\tag{3.3}
+$$
+
+$$
+\Longrightarrow\quad \boxed{\;\text{若取规范群}=\mathbb Z_3\ (\text{而非}\ S_3)\text{，则第 4 条可用} .\;}
+\tag{3.4}
+$$
+
+### 3.2 这是一个**真实的限制**
+
+$$
+\text{E24 的发现（局部群}=S_3=W(SU(3))\text{）}\ \textbf{仍然成立} .
+\tag{3.5}
+$$
+
+$$
+\textbf{但它带来一个代价}:\ \text{中心平凡} \Longrightarrow\ \text{标准中心判据不直接适用} .
+\tag{3.6}
+$$
+
+$$
+\Longrightarrow\quad \text{须在}\ \mathbb Z_3\ \text{子群上做（那是}\ S_3\ \text{的正规子群，故相容）} .
+\tag{3.7}
+$$
+
+---
+
+## §4 第 5 条（无带色渐近态）在 Zero 里的精确状态
+
+### 4.1 Zero 的零和是**全局**的
+
+$$
+\textbf{核验 §B}:\ \text{Zero 的}\ B\ \text{算子（定向关联矩阵，}\ 14\times21\text{）}:
+\tag{4.1}
+$$
+
+$$
+\operatorname{rank}(B)=\mathbf{13};\qquad \dim\ker B=21-13=\mathbf 8\ (=\text{圈秩}) .
+\tag{4.2}
+$$
+
+$$
+\text{Z024 引理 1}:\quad x(\tau)-x(0)=Bf;\qquad
+\text{零和}:\quad \sum_ix_i=0\ (\textbf{全局}) .
+\tag{4.3}
+$$
+
+$$
+\boxed{\;\textbf{局域 Gauss 定律}:\ Bf=0\ (\text{每顶点净流为零})\ \textbf{不等价} \text{于 Zero 的全局零和} .\;}
+\tag{4.4}
+$$
+
+### 4.2 单夸克态被禁 —— 但**不够**
+
+$$
+\text{单夸克}:\ \text{一个顶点有净荷}\ q\ne0 \Longrightarrow \text{总荷}=q\ne0 \Longrightarrow \textbf{违反零和} \Longrightarrow \textbf{被禁} \checkmark .
+\tag{4.5}
+$$
+
+$$
+\textbf{但}:\ (+q,\ -q)\ \text{两处} \Longrightarrow \text{总荷}=0 \Longrightarrow \textbf{允许} .
+\tag{4.6}
+$$
+
+$$
+\Longrightarrow\quad \text{Zero 的零和}\ \textbf{禁单荷}，\textbf{不禁荷-反荷对}（与 E05 一致） .
+\tag{4.7}
+$$
+
+### 4.3 故第 5 条**需要一条新东西**
+
+$$
+\text{要"无带色渐近态"，需}\ \textbf{逐顶点}\ Bf=0 \Longrightarrow\ \text{即}\ \textbf{局域 Gauss 定律} .
+\tag{4.8}
+$$
+
+$$
+\boxed{\;\text{Zero}\ \textbf{没有} \text{这一条（它的零和是全局的）} \Longrightarrow\ \text{第 5 条需}\ \textbf{局域零和} .\;}
+\tag{4.9}
+$$
+
+$$
+\Longrightarrow\quad \text{这与}\ \textbf{E05 §6 的线索} \text{是同一条}:\ \text{"若零和是局域的，禁闭可升级"} .
+\tag{4.10}
+$$
+
+---
+
+## §5 旧库的定位（**决定性参考**）
+
+### 5.1 `sm/SMR12` §2.6 逐字
+
+> **结论六（禁闭边界）**: $b_0>0$ 只给渐近自由，**不推出** 禁闭、质量间隙或弦张力；**【不许主张】**
+>
+> 不能说禁闭／质量间隙／弦张力：它们需要**非微扰测度**（`SMR4` §2.9 的 Gribov 边界：局部 BRST／STI 成立但**不给**测度）；一圈系数在低能**失效**。
+>
+> 要谈禁闭，需先构造**基本模范区与非微扰测度**（或给出等价的非微扰判据）。
+
+### 5.2 `sm/SM_PILLARS` 逐字
+
+> **P4** … **非微扰测度／禁闭：开放** … **【不可导出】**
+
+$$
+\Longrightarrow\quad \boxed{\;\text{旧库的判定}:\ \text{禁闭}\ \textbf{不得主张已导出};\ \text{缺}\ \textbf{非微扰测度} .\;}
+\tag{5.1}
+$$
+
+$$
+\textbf{这与本文}\ \textbf{独立一致}:\ \text{但旧库指向"测度"，本文指向"热力学极限／局域 Gauss"} .
+\tag{5.2}
+$$
+
+$$
+\Longrightarrow\quad \text{两条路径}\ \textbf{互补} \text{（一条说资源缺什么，一条说判据需什么）} .
+\tag{5.3}
+$$
+
+---
+
+## §6 重估：禁闭在第 8 项里的**可分性**
+
+### 6.1 关键：**禁闭**与**质量隙**是两件事
+
+$$
+\textbf{质量隙}:\quad \text{有限体积内即有} \Longrightarrow\ \text{Zero}\ \textbf{已得} \text{（E25：}m=-\log\frac{\sqrt2}{3}=0.7520386984\text{）} .
+\tag{6.1}
+$$
+
+$$
+\textbf{禁闭（作为动力学）}:\quad \text{需线性势／面积律} \Longrightarrow\ \textbf{需热力学极限} .
+\tag{6.2}
+$$
+
+$$
+\boxed{\;\text{故"Zero 有质量隙但无禁闭"是}\textbf{自洽} \text{的，不是矛盾} .\;}
+\tag{6.3}
+$$
+
+### 6.2 第 8 项的**三条子问题**
+
+| # | 子问题 | 状态 |
+|--:|:--|:--|
+| $8a$ | 质量隙 $>0$ | **已得**（精确 $m=0.7520386984$） |
+| $8b$ | 无带色渐近态 | **需局域 Gauss 定律**（一条新输入） |
+| $8c$ | 面积律／弦张力 | **不可得**（需热力学极限） |
+
+$$
+\boxed{\;\text{故第 8 项}\ \textbf{不是} \text{"全无"};\ \text{而是}\ 8a\ \textbf{已得} \text{，}8b\ \textbf{需一输入} \text{，}8c\ \textbf{关闭} .\;}
+\tag{6.4}
+$$
+
+### 6.3 三条出路
+
+| # | 出路 | 代价 |
+|--:|:--|:--|
+| $1$ | 加**局域 Gauss 定律** | 一条结构公设（比改公理小） |
+| $2$ | 用 $\mathbb Z_3$ 子群做**中心对称**判据 | 需先定义 Polyakov 环 |
+| $3$ | 接受 $8c$ 关闭 | 弦张力不可得 |
+
+---
+
+## §7 不许主张
+
+1. **不主张**"Zero 已禁闭"——**没有**（§4）；
+2. **不主张**"禁闭判据全部不可陈述"——**过宽**，已更正（§2）；
+3. **不主张** $S_3$ 规范理论有中心对称——**没有**（§3）；
+4. **不主张**第 5 条判据"不可能"——它**可用**，只需局域 Gauss（§4.3）；
+5. **不主张**本文算出了弦张力——**没有**（§6.2）；
+6. **不主张**旧库的"非微扰测度"与本文的"热力学极限"是**同一件事**——它们是**互补**的两条（§5.2）；
+7. **不主张** $m=0.7520386984$ 是 $\Lambda_{\rm QCD}$——它**无量纲**（E25）；
+8. **不主张** Polyakov 环判据已算——本文只指出它**可定义**。
+
+---
+
+## §8 结论
+
+$$
+\boxed{\;
+\begin{aligned}
+&\textbf{传统描述}:\ \text{禁闭有}\ \textbf{九条} \text{互不等价表述};\ \text{只 1、2 需热力学极限}.\\[1mm]
+&\textbf{更正}:\ \text{E25 的否证}\ \textbf{过宽};\ \text{应限于}\ \textbf{面积律与线性势} \text{（第 1、2 条）}.\\[1mm]
+&\textbf{更正}:\ \operatorname{Zent}(S_3)=\{1\} \Longrightarrow S_3\ \text{无中心对称};\ \text{须用}\ \mathbb Z_3\ \text{子群}.\\[1mm]
+&\textbf{第 5 条}:\ \text{单夸克被零和禁（全局）};\ \text{但"无带色态"需}\ \textbf{局域 Gauss 定律}.\\[1mm]
+&\textbf{旧库}:\ \text{禁闭不得主张已导出};\ \text{缺}\ \textbf{非微扰测度}（与本文互补）.
+\end{aligned}
+}
+$$
+
+**一句话：**
+
+$$
+\boxed{\;\textbf{禁闭不是一条判据，是九条；Zero 关掉的是两条，另外七条里有一条已经打开了。}\;}
+$$
+
+---
+
+## 附录 A　核验
+
+`E27_confinement_criteria_check.py`：纯标准库（＋`numpy`）；不 import 项目脚本、不写文件。
+
+| 组 | 内容 | 断言 |
+|:--|:--|--:|
+| A | $\operatorname{Zent}(S_3)=\{1\}$；$A_3=\mathbb Z_3$ 正规（共轭判据）且中心非平凡 | 8 |
+| B | $B$ 的秩与 $\ker B$（$13$／$8$）；$Bf=0$ 与零和的区分 | 7 |
+| C | 单夸克被禁；荷-反荷对允许 | 5 |
+| D | 九条判据的可陈述性分档 | 6 |
+| E | 旧库引文存在性（SMR12 §2.6、SM_PILLARS P4） | 6 |
+| | **合计** | **32** |
+
+**核验纪律**：数值只算旁证；**本文更正了 E24 与 E25 各一处判定**。
+
+---
+
+*推导稿 · 未落盘 · 未改动任何公理 · 完*
