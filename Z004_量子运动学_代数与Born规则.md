@@ -648,7 +648,7 @@ $$
 2. **证明依据**：Cauchy–Schwarz 取等情形（`norm_inner_eq_norm_iff`）——概率为 1 迫使 $u$、$v$ 都与 $\psi$ 同射线，故彼此只是相位倍数。
 3. **在 Gleason 论证中的角色**：这说明二维时 $\{0,1\}$-赋值必然**集中在一根射线**上，无法在投影格上铺开，是 Gleason 前提失效的一环。
 
-**覆盖范围（据实标明，重要）**：本文件只验证了上述**刚性子步骤**。§10 命题 10.1 的**主体**——显式构造 $f(\theta)=(1+\cos6\theta)/2$ 并由三角函数频率 $6$ 与频率 $2$ 的 Fourier 正交性（$\int_0^{2\pi}\cos6\theta\,d\theta=\int\cos6\theta\cos2\theta\,d\theta=\int\cos6\theta\sin2\theta\,d\theta=0$ 而 $\int\cos^26\theta\,d\theta=\pi\ne0$）证明它非态诱导——**尚未取得 Lean 机器证明**。这部分只需实积分/Fourier 正交性，原则上可在 Lean 内完成，留作后续；目前命题 10.1 的 (i)(ii) 与各正交积分由附录 A 表中数值核验（第 637 行）。本文定理 1–7 的代数主体（可观测量代数、GNS、Born 形式）同样未取得机器证明。
+**覆盖范围**：本文件只验证了上述**刚性子步骤**。§10 命题 10.1 的**主体**——显式构造 $f(\theta)=(1+\cos6\theta)/2$ 并由三角函数频率 $6$ 与频率 $2$ 的 Fourier 正交性（$\int_0^{2\pi}\cos6\theta\,d\theta=\int\cos6\theta\cos2\theta\,d\theta=\int\cos6\theta\sin2\theta\,d\theta=0$ 而 $\int\cos^26\theta\,d\theta=\pi\ne0$）证明它非态诱导——**尚未取得 Lean 机器证明**。这部分只需实积分/Fourier 正交性，原则上可在 Lean 内完成，留作后续；目前命题 10.1 的 (i)(ii) 与各正交积分由附录 A 表中数值核验（第 637 行）。本文定理 1–7 的代数主体（可观测量代数、GNS、Born 形式）同样未取得机器证明。
 
 ## 附录 B　引用与外部依赖
 
