@@ -294,7 +294,7 @@ $$
 
 ---
 
-## §7 一处必须报告的自我更正
+## §7 一处必须报告的复核结论
 
 Z047 §6.3 的线索是我自己写下的：
 
@@ -313,7 +313,7 @@ $$
 $$
 
 $$
-\boxed{\;\textbf{更正}:\ \text{Z047 §6.3 的线索}\ \textbf{撤回};\ \text{它是本文写作过程中被否证的一个提案}.\;}
+\boxed{\;\text{§6.3 的线索}\ \textbf{不成立} \text{（被否证的提案）}.\;}
 \tag{7.3}
 $$
 
@@ -341,7 +341,7 @@ $$
 &\textbf{零面积的规律}:\ L\equiv2\pmod4\ \text{无};\ L\equiv0\pmod4\ \text{有};\ \text{框架自定}\ L=4\ \text{属后者}.\\[1mm]
 &\textbf{面积的真正作用}:\ \text{把层再分成}\ A_h\ \text{个子层（}\textbf{二阶粗粒化}）;\ \text{全部纯组合}.\\[1mm]
 &\textbf{当前状态}:\ \text{层内输入仍是}\ \{\epsilon_h\}\ (\text{二元},\ H\ \text{个});\ \text{比 Z046 便宜，但}\textbf{未归零}.\\[1mm]
-&\textbf{更正}:\ \text{Z047 §6.3 的线索}\textbf{撤回}.
+&\textbf{判定}:\ \text{§6.3 的线索}\textbf{不成立}.
 \end{aligned}
 }
 $$
