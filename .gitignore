@@ -15,3 +15,8 @@ __pycache__/
 ZeroLean/.lake
 *.olean
 *.ilean
+
+# ── 本地发布工具目录（不上传 GitHub）──────────────────────
+github_tools/
+zenodo_tools/
+zhihu_publish/
