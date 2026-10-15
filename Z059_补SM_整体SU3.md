@@ -246,7 +246,7 @@ $$
 $$
 
 $$
-\boxed{\;\text{局域化需要}\ \textbf{位置};\ \text{而位置}\ \textbf{不可导出} \ (\text{D14}=\text{Z028}=\text{Z012}) .\;}
+\boxed{\;\text{局域化需要}\ \textbf{位置};\ \text{而位置}\ \textbf{不可导出} \ (\text{Z028}=\text{Z012}) .\;}
 \tag{5.3}
 $$
 
