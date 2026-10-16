@@ -190,7 +190,7 @@ $$
 
 ## §4 一件**未验证**的事（**必须如实登记**）
 
-### 4.1 我曾试图证明的更强命题
+### 4.1 一个更强但不成立的命题
 
 $$
 \textbf{猜想}:\quad \text{一切 plaquette 平坦}\ (U_P=1)\ \Longrightarrow\ \text{一切 6-环的}\ \text{holonomy}=1 .
