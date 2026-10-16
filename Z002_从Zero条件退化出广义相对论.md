@@ -700,17 +700,27 @@ $$
 > $$
 > \dim\ker B=\dim\operatorname{im}B\qquad(\text{闭合回路的自由度}=\text{运动的自由度}) .
 > $$
-> 其中 $B$ 是补偿移动的关联矩阵：$\operatorname{im}B=H_Q$ 是零和态（引理 2），$\ker B$ 是**闭合回路空间**。
+> 其中 $B$ 是补偿移动的关联矩阵。**记号必须钉死**（否则等式会含义不明）：$B$ 取 $1$-骨架的**关联映射**——边流量 $\mapsto$ 顶点上的边界——于是
+> $$\ker B=Z_1\ (\text{闭合回路空间＝圈空间}),\qquad \operatorname{im}B=H_Q\ (\text{零和态，引理 2}) .$$
+> 注意两端**不在同一个空间里**：$\ker B\subset\mathbb R^E$（圈空间，维数 $\binom m2-(m-1)$）、$\operatorname{im}B\subset\mathbb R^V$（零和超平面，维数 $m-1$）。
+> 读法比的是这两个**数**，不是两个空间。若把 $B$ 取成它的转置（顶点 $\mapsto$ 边的上边界），则 $\ker B$ 变成**常数函数**、$\dim\ker B=1$ 与 $m$ 无关，下面那条"$m=4$ 才相等"的判定就不再成立——这正是记号必须点明的原因。
 
 $$
 \begin{aligned}
 &\text{字典}:\quad d=m-1\quad\Bigl(\text{由恒等式}\ \binom m2-(m-1)=\binom{m-1}2\ \text{唯一确定}\Bigr);\\
-&\text{读法}:\quad \underbrace{\binom m2-(m-1)}_{\dim\ker B}=\underbrace{m-1}_{\dim\operatorname{im}B=d}\iff m=4\ (\text{唯一});\\
+&\text{读法}:\quad \underbrace{\binom m2-(m-1)}_{\dim\ker B=\dim Z_1}=\underbrace{m-1}_{\dim\operatorname{im}B=\dim H_Q=d}\iff m=4\ (\text{唯一});\\
 &\text{无偏好（边可迁）}:\quad \deg\ \text{一致}\ \Longrightarrow\ t\,m=4(m-1)\iff(\deg,m)=(3,4)\ (\text{唯一非平凡解}) .
 \end{aligned}
 $$
 
-**机器核验**：$K_m$ 上 $\dim\ker B=\binom m2-(m-1)$、$\dim\operatorname{im}B=m-1$，两者相等**仅当** $m=4$（$m=2$ 给 $0\ne1$、$m=3$ 给 $1\ne2$、$m\ge5$ 一律 $\dim\ker B>\dim\operatorname{im}B$）。
+**机器核验**：$K_m$ 上 $\dim\ker B=\binom m2-(m-1)$、$\dim\operatorname{im}B=m-1$，两者相等**仅当** $m=4$（$m=2$ 给 $0\ne1$、$m=3$ 给 $1\ne2$、$m\ge5$ 一律 $\dim\ker B>\dim\operatorname{im}B$）。逐步数值：
+
+| $m$ | 2 | 3 | **4** | 5 | 6 | 7 | 8 |
+|:--|--:|--:|--:|--:|--:|--:|--:|
+| $\dim Z_1=\binom m2-(m-1)$ | 0 | 1 | **3** | 6 | 10 | 15 | 21 |
+| $\dim H_Q=m-1$ | 1 | 2 | **3** | 4 | 5 | 6 | 7 |
+
+闭链（零和）与上边界（关联矩阵及其转置）两条读法都给同一个判定：$\ker$ 侧取圈空间、$\operatorname{im}$ 侧取零和超平面时相等仅当 $m=4$；反过来读（$\ker$ 取常数、$\operatorname{im}$ 取流空间的零和超平面）则 $\dim\ker B=1$ 恒成立、与 $m$ 无关，判定失效。
 
 三条合起来给出：**空间维数 $d=3$、通道数 $m=4$、$\deg=3$、时空维数 $D_{\rm st}=d+1=4$**。物理侧另有一条独立路线：「存在传播引力子」要求 $\frac{D_{\rm st}(D_{\rm st}-3)}2=2$，其非负整数唯一解同为 $D_{\rm st}=4$（§6.3）。
 
@@ -744,7 +754,7 @@ $$
 
 **（四）移动方向的封闭性.** 「移动方向集 $\{\pm(e_i-e_j)\}$ 在反射下封闭（＝构成根系）」$\iff$ $\Gamma$ 是**不相交团之并**；与连通合起来 $\iff$ $\Gamma$ **完全**（机器核验：$n\le6$ 的全部 $33{,}861$ 个图，反例 $0$）。
 
-**读法挑的是局部通道结构，不是舞台.** $K_4$ 满足 $\dim\ker B=\dim\operatorname{im}B$（$3=3$）；而 $C_4$（$1\ne3$）、$4\times4$ 方格（$9\ne15$）、Heawood（$8\ne13$）、$16$ 槽载体 $K_4\,\square\,C_4$（$25\ne15$）都不满足——与 §8.4"两结构必须分开"一致。
+**读法挑的是局部通道结构，不是舞台.** $K_4$ 满足 $\dim\ker B=\dim\operatorname{im}B$（$3=3$）；而 $C_4$（$1\ne3$）、$4\times4$ 方格（$9\ne15$）、Heawood（$8\ne13$）、$16$ 槽载体 $K_4\,\square\,C_4$（$25\ne15$）都不满足——与 §8.4"两结构必须分开"一致。（括号里两个数依次是**圈空间维数** $|E|-|V|+1$ 与**零和维数** $|V|-1$：$1/3$、$9/15$、$8/13$、$25/15$——$K_4\square C_4$ 是 $|V|=16$、$|E|=40$，故 $25/15$。）
 
 $$
 \Rightarrow\quad \boxed{\;\Gamma=K_4:\ 4\ \text{顶点},\ \deg=3,\ 6\ \text{边},\ 3\ \text{个对边对};\quad
