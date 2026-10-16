@@ -161,5 +161,72 @@ ck(abs(mm[0]/mm[2] - 0.0644) < 5e-4, "E1: m1/m3 = %.4f（非零）" % (mm[0]/mm[
 ck(abs(summ - 0.062636) < 1e-5, "E2: Σm_ν = %.4f eV ⟹ 紧贴宇宙学上限（Z019 引用 0.064 eV）" % summ)
 ck(abs(mbeta - 0.0093969) < 1e-6, "E3: m_β = %.4f meV" % (mbeta*1e3))
 
+# ── F. 机制的恒等签名：Koide ≡ 2/3 ──
+# 因 θ_i 是间隔 2π/3 的等分点：Σcos(θ+2πk/3)=0（1+ω+ω²=0）⟹ ΣM ≡ 3；
+# 又 Σcos²=3/2（1+ω²+ω⁴=0）⟹ ΣM² ≡ 6。故 m∝M² 时
+#   K = Σm/(Σ√m)² = ΣM²/(Σ|M|)² ；当三个 M 同号时 Σ|M| = |ΣM| = 3 ⟹ K = 6/9 = 2/3。
+print("\n[F] 机制的恒等签名：Koide ≡ 2/3（与偏移无关，只要三个 M 同号）")
+for deg in (0.0, 20.0, 90.0, 132.7324, 147.8055, 200.5):
+    v = [M(math.radians(deg) + 2*PI*i/3) for i in range(3)]
+    ck(abs(sum(v) - 3) < 1e-12, "F: δ=%.1f° 时 ΣM = %.12f ≡ 3" % (deg, sum(v)))
+    ck(abs(sum(x*x for x in v) - 6) < 1e-12, "F: δ=%.1f° 时 ΣM² = %.12f ≡ 6" % (deg, sum(x*x for x in v)))
+v = [M(0.0 + 2*PI*i/3) for i in range(3)]          # δ=0：M=[2.414,0.293,0.293] 三正
+ck(all(x > 0 for x in v), "F1a: δ=0° 时三个 M 同为正（M=[%.4f,%.4f,%.4f]）" % tuple(v))
+ms = sorted(x*x for x in v)
+Kd = sum(ms)/(sum(math.sqrt(x) for x in ms))**2
+ck(abs(Kd - 2/3) < 1e-12, "F1b: 同号时 Koide = %.12f = 2/3" % Kd)
+v = [M(math.radians(90) + 2*PI*i/3) for i in range(3)]   # δ=90°：混合符号
+ms = sorted(x*x for x in v)
+Km = sum(ms)/(sum(math.sqrt(x) for x in ms))**2
+ck(abs(Km - 0.504244923464) < 1e-9,
+   "F1c: δ=90° 混合符号（M=[%.4f,%.4f,%.4f]）⟹ Koide = %.6f ≠ 2/3" % (v[0], v[1], v[2], Km))
+# 一般式 K = 6/(3+2|S₋|)²（S₋ = 负值之和）
+for deg in (250.0, 300.0):
+    v = [M(math.radians(deg) + 2*PI*i/3) for i in range(3)]
+    Sneg = abs(sum(x for x in v if x < 0))
+    ms = sorted(x*x for x in v)
+    K = sum(ms)/(sum(math.sqrt(x) for x in ms))**2
+    ck(abs(K - 6/(3+2*Sneg)**2) < 1e-12, "F2: δ=%.0f° 时 K = 6/(3+2|S₋|)² = %.6f" % (deg, K))
+
+# ── G. 用签名检验中微子扇区（决定性）──
+print("\n[G] 决定性检验：机制在 X 拟合处把 K 钉死在 2/3，而数据要求 K ≤ 0.5855")
+def K_data(ml, order):
+    if order == "NO":
+        ms = sorted([ml, math.sqrt(ml*ml+D21), math.sqrt(ml*ml+D31)])
+    else:
+        m3 = ml; m1 = math.sqrt(m3*m3+D31)
+        ms = sorted([m1, math.sqrt(m1*m1+D21), m3])
+    return sum(ms)/(sum(math.sqrt(x) for x in ms))**2
+KMAX = max(max(K_data(10**(-9 + k*2.0/100000), o) for k in range(100001)) for o in ("NO", "IO"))
+print("     数据侧 K 上界（两序、最轻质量全域）= %.6f" % KMAX)
+ck(abs(KMAX - 0.585489) < 1e-5, "G1: K_max(data) = %.6f" % KMAX)
+ck(2/3 > KMAX, "G2: 2/3 = %.6f > %.6f，差 %+.1f%% ⟹ 签名被违反" % (2/3, KMAX, (2/3/KMAX-1)*100))
+# 扫描：X 在 X_obs ±5% 内的全部 δ，机制的 K 是否恒定在 2/3
+ks, t1s = [], []
+NN = 400000
+for k in range(NN+1):
+    t = 2*PI*k/NN
+    v = [M(t + 2*PI*i/3) for i in range(3)]
+    mss = sorted(x*x for x in v)
+    if mss[2] - mss[0] < 1e-15: continue
+    Xv = (mss[1]-mss[0])/(mss[2]-mss[0])
+    if abs(Xv/X_OBS - 1) < 0.05:
+        ks.append(sum(mss)/(sum(math.sqrt(x) for x in mss))**2); t1s.append(t)
+print("     X 落在 X_obs ±5%% 的 δ 共 %d 个采样：K ∈ [%.6f, %.6f]（恒定）" % (len(ks), min(ks), max(ks)))
+ck(len(ks) > 1000, "G3: 采样点数 %d > 1000" % len(ks))
+ck(max(ks) - min(ks) < 1e-12, "G4: 该区间的 K **恒定**（极差 %.2e）" % (max(ks)-min(ks)))
+ck(min(ks) > KMAX, "G5: **排除**：机制能配 X 的每一处，其 K = %.6f 都超过数据上界 %.6f" % (min(ks), KMAX))
+# 机制的 K 全域（说明它确实能给低 K，只是那时 X 不对）
+allk = []
+for k in range(0, 200000):
+    t = 2*PI*k/200000
+    v = [M(t + 2*PI*i/3) for i in range(3)]
+    mss = sorted(x*x for x in v)
+    if mss[2]-mss[0] < 1e-15: continue
+    allk.append(sum(mss)/(sum(math.sqrt(x) for x in mss))**2)
+print("     （机制 K 全域 = [%.6f, %.6f]：它也能给低 K，但那时 X 远离 X_obs）"
+      % (min(allk), max(allk)))
+ck(min(allk) < KMAX, "G6: 机制全域 K 低至 %.6f ⟹ 排除来自 X 与 K 的不相容，不是 K 值域不够" % min(allk))
+
 print("\n=== 合计：%d 条断言 / %d 不符 ===" % (NCHK, FAIL))
 raise SystemExit(0 if FAIL == 0 else 1)
