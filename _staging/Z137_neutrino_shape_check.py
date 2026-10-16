@@ -50,6 +50,15 @@ def K_of(t1):
     return sum(v)/(sum(math.sqrt(x) for x in v))**2
 def delta0(t1):
     return math.degrees(min(min(abs(t1-z), abs(t1-z+2*PI), abs(t1-z-2*PI)) for z in ZP))
+
+# ── Z123：偏移 δ₀ 完全内生（这是本题的**权威来源**）──
+#   δ₀ = π/12 − (2/3)(1/3) = π/12 − 2/9
+#      π/12 = 3π/4 − 2π/3（零点 − 一代轮转）——seed 8 格点纯几何
+#      2/9  = (2/3)(1/3)（稳态两支权重积）——非中心态固有量
+#   两个分量**都与扇区无关** ⟹ 机制在带电轻子侧**没有拟合参数**。
+D0_E = PI/12 - 2/9
+TH_E = 2*PI/3 + 2/9          # Z123 §1.3：电子相角 δ_e = 2π/3 + 2/9
+def lepton_angles(): return [TH_E + 2*PI*i/3 for i in range(3)]
 def masses_of(t1):
     """返回 (m 升序 [eV], A)。A² = Δm²31/(s3²−s1²)。"""
     v = shape(t1)
@@ -67,9 +76,9 @@ ck(abs(R019**2/X_OBS - 1 - 0.05466) < 1e-3,
 
 # ── A. 机制在带电轻子侧的自检 ──
 print("\n[A] 机制在带电轻子侧（若这里不成立，后面无需谈）")
-d0e = PI/12 - 2/9
-te = 3*PI/4 - d0e
-amps = [M(te + 2*PI*i/3) for i in range(3)]
+d0e = D0_E                       # Z123：完全内生，非拟合
+te = TH_E                        # = 3π/4 − δ₀ = 2π/3 + 2/9
+amps = [M(t) for t in lepton_angles()]   # 振幅（非角！）
 r = [abs(x)/abs(amps[0]) for x in amps]          # √m ∝ |M|
 obs = [1.0, 14.38, 58.968]
 print("     √m 比 = [1, %.4f, %.4f]  vs 观测 [1, %.2f, %.3f]" % (r[1], r[2], obs[1], obs[2]))
@@ -183,6 +192,29 @@ print("     网格 %d 组；X_obs 的 ±1%% 邻域命中 %d 组；零假设下�
       % (len(xs), h, med, q1, q3, self_counts[-1]))
 print("     ⟹ X_obs 排在前 %.1f%%" % pct)
 ck(pct > 10, "G1: X_obs 未超 10%% 分位 ⟹ 网格的接近属典型值，不采信")
+
+# ── H. 决定性检验：把 Z123 的**内生**结构用于中微子 ──
+print("\n[H] 把内生结构用于中微子（偏移不是自由参数 ⟹ 这是**否证**而非拟合）")
+Xe, _ = X_of(TH_E), None
+print("    带电轻子：√m 比 [1, %.2f, %.2f] vs 观测 [1, 14.38, 58.968]；Koide = %.6f"
+      % (sorted(abs(M(t)) for t in lepton_angles())[1]/sorted(abs(M(t)) for t in lepton_angles())[0],
+         sorted(abs(M(t)) for t in lepton_angles())[2]/sorted(abs(M(t)) for t in lepton_angles())[0],
+         K_of(TH_E)))
+ck(abs(K_of(TH_E) - 2/3) < 1e-12, "H1: 带电轻子 Koide = 2/3 精确（振幅同号）")
+ck(abs(d0e - 0.039577166) < 1e-8, "H2: δ₀ = π/12 − 2/9 = %.9f（Z123，完全内生）" % d0e)
+Xend = X_of(TH_E)
+print("    中微子（原样）  X = %.6f  vs 实测 %.6f ⟹ 差 %.2f 倍" % (Xend, X_OBS, X_OBS/Xend))
+ck(abs(Xend - 0.003535) < 1e-5, "H3: 内生结构给 X = %.6f" % Xend)
+ck(X_OBS/Xend > 8, "H4: **否证**：实测比内生预言大 %.2f 倍" % (X_OBS/Xend))
+for sh, tag in ((PI, "加 π（另一零点侧）"), (-PI, "减 π")):
+    Xs = X_of(TH_E + sh)
+    print("    中微子（%s）X = %.6f ⟹ 差 %.2f 倍" % (tag, Xs, X_OBS/Xs if Xs else float('inf')))
+    ck(abs(Xs/X_OBS - 1) > 0.05, "H5: %s 亦不符（因子 %.2f）" % (tag, Xs/X_OBS))
+# 拟合路线的代价：需要的 δ₀^ν
+need = min((abs(delta0(t) - 0.0), delta0(t)) for t in sols)[1]
+print("    若放弃内生偏移、改为拟合：需要 δ₀^ν ∈ {%s}（都不是框架量）"
+      % "、".join("%.2f°" % d for d in d0s))
+ck(all(abs(d - d0e) > 1e-6 for d in d0s), "H6: 拟合所需的三个偏移都不等于内生值 %.4f°" % math.degrees(d0e))
 
 print("\n=== 合计：%d 条断言 / %d 不符 ===" % (NCHK, FAIL))
 raise SystemExit(0 if FAIL == 0 else 1)
