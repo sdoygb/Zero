@@ -216,5 +216,44 @@ print("    若放弃内生偏移、改为拟合：需要 δ₀^ν ∈ {%s}（都
       % "、".join("%.2f°" % d for d in d0s))
 ck(all(abs(d - d0e) > 1e-6 for d in d0s), "H6: 拟合所需的三个偏移都不等于内生值 %.4f°" % math.degrees(d0e))
 
+# ── I. 有界结构化搜索：框架自身量能否配出中微子层级？ ──
+# 候选族全部取自框架自身的角/量：10 间隔 × 9 偏移 × 2 符号 × 2 零点 × 3 质量律。
+# 选择性对照用"自零假设"（拿候选族自身值当目标），避免用任意区间抽目标造成假象。
+print("\n[I] 有界结构化搜索（候选族取自框架自身量）")
+SP = [("2π/3", 2*PI/3), ("π/3", PI/3), ("π/2", PI/2), ("π/4", PI/4), ("π/8", PI/8),
+      ("2π/9", 2*PI/9), ("π/6", PI/6), ("2π/5", 2*PI/5), ("3π/8", 3*PI/8), ("2π/7", 2*PI/7)]
+OFFS = [D0_E, PI/12, 2/9, D0_E+PI/12, 0.0, PI/8, PI/16, PI/24, 2/9-D0_E]
+def X_of_law(ths, p):
+    a = [abs(M(t)) for t in ths]
+    if min(a) < 1e-6: return None
+    v = sorted(x**p for x in a)
+    if v[2] - v[0] < 1e-15: return None
+    return (v[1]**2 - v[0]**2)/(v[2]**2 - v[0]**2)
+Xcand = []
+for _, d in SP:
+    for o in OFFS:
+        for sg in (1, -1):
+            for base in (3*PI/4, 5*PI/4):
+                for p in (2.0, 1.0, -2.0):
+                    X = X_of_law([base + sg*o + d*i for i in range(3)], p)
+                    if X and X > 0: Xcand.append(X)
+Xcand.sort()
+print("     候选族 %d 个（10 间隔 × 9 偏移 × 2 符号 × 2 零点 × 3 质量律）" % len(Xcand))
+def _hits(tg, tol=0.01): return sum(1 for v in Xcand if abs(v/tg-1) < tol)
+_h = _hits(X_OBS)
+_self = sorted(_hits(v) for v in Xcand)
+_med = _self[len(_self)//2]
+_q1 = _self[len(_self)//4]
+_q3 = _self[3*len(_self)//4]
+_pct = 100*sum(1 for c in _self if c >= _h)/len(_self)
+print("     X_obs 的 ±1%% 邻域命中 %d 个；自零假设 中位数 %d（IQR %d–%d，最大 %d）"
+      % (_h, _med, _q1, _q3, _self[-1]))
+print("     ⟹ X_obs 排在前 %.1f%%" % _pct)
+ck(len(Xcand) > 900, "I1: 候选族规模 %d > 900" % len(Xcand))
+ck(_pct > 10, "I2: **框架自身量里没有能配上中微子层级的机制**（X_obs 不特殊，排前 %.1f%%）" % _pct)
+_best = min(Xcand, key=lambda v: abs(v/X_OBS-1))
+print("     （最近者为 X=%.6f，差 %.2f%%，但同族随机目标的中位数命中与它同级 ⟹ 不采信）"
+      % (_best, abs(_best/X_OBS-1)*100))
+
 print("\n=== 合计：%d 条断言 / %d 不符 ===" % (NCHK, FAIL))
 raise SystemExit(0 if FAIL == 0 else 1)
