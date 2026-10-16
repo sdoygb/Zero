@@ -85,7 +85,30 @@ $\binom m2-(m-1)=m-1\iff m=4$ 与 $\binom{m-2}2=1\iff m=4$ —— 上面表里�
 实际 $|V|=16,\ |E|=40$（$K_4$ 方向每层 6 条 $\times4$ ＋ $C_4$ 方向 16 条）$\Rightarrow b_1=25$，**文档原本是对的**。
 **防法**：改数字前先把 $|V|,|E|$ 数出来（我这次是数错了边数，不是算错公式）。
 
-**待办**：把 `ZeroLean/wip/Z002_Dimension.lean` 收成正式文件（补 4 处欠账、挂 `Zero.lean`、`zero_lean` 跑守则）。
+## 五、本轮（补 4 处）做到哪一步 —— 诚实账
+
+**先做了独立的算术核验**：`_staging/Z002_dimension_check.py`（**全部断言通过**）——
+① $K_m$（$m=2..12$）圈空间/零和维数表；② §6.8 五个实例**逐个复算**（$3\!=\!3$、$1\!\ne\!3$、$9\!\ne\!15$、$8\!\ne\!13$、$25\!\ne\!15$，**与文档逐字一致**）；
+③ 判别式的三种等价算术形式（圈空间＝零和、$|E|=2|V|-2$、每边不相邻边数 $=1$）同解于 $m=4$。
+⟹ §6.7／§6.8 的**数字部分已独立机器核验**（不依赖 Lean）。
+
+**Lean 侧（`ZeroLean/wip/Z002_Dimension.lean`）**：
+- **已完成且 `lake env lean` 退出码 0**：四个定义（`z002B`／`z002T`／`z002Closure`／`z002ZeroSum`／`z002Sum`）、
+  `z002B_sum_col`（列和为零）、`z002T_range_le_zeroSum`（像 ⊆ 运动空间）、
+  `z002B_eq_zero`／`z002B_inf_sup`／`z002B_vertex` 等端点系数引理；
+- **未完成（3 处）**：① `z002ZeroSum_finrank`（`finrank H_Q = card V − 1`，路子已通：
+  `Module.Dual.finrank_ker_add_one_of_ne_zero` + `Module.finrank_fintype_fun_eq_card`）；
+  ② `z002T_ker_eq_zero`（连通图上 $T$ 单射）；③ 由 ①② 经秩-零化度给 `z002_finrank_range`／`z002_finrank_closure` 与主定理 `z002_dim_eq_iff`。
+
+**卡点（可复用，值得记）**：②的证明要点是"以 $v$ 为超端点的边上流量和为零 ⟹ 每条边为零"，
+在 Lean 里要反复处理 `Sym2.inf/sup` 的**定义等式**与 `if (inf = v) / if (sup = v)` 侧条件；
+我在这上面耗了很多轮仍差最后几步（`Ne`/`Eq.trans` 的 elaboration 在 `s(a,b).inf` 与 `a` 的**定义等式**上反复失败）。
+**未采用的替代路线**（更省事，下次可直接走）：把 `z002B` 显式写成**自环带方向的列表**结构，
+或改用 `Matrix.incMatrix`（Mathlib 已有无向关联矩阵）另配方向函数，避开 `Sym2` 端点簿记。
+
+**零风险保证**：这些没完成的文件全在 `ZeroLean/wip/`（**不被 CI 审计**），
+所以 `zero_lean` 仍报 **797 条定理、守则全过**（本轮实跑确认）——
+"未登记公理／无 sorryAx"这两条守则没有被绕过，欠账是**如实留白**而不是塞洞。
 
 **记忆**：本次结论本想写进项目记忆（`~/.dsh/memory/projects/--Users-oygb-Downloads-Zero--.md`），
 但写入被文件沙箱挡住（`Operation not permitted`，工作区外/策略），故只落在本报告；
