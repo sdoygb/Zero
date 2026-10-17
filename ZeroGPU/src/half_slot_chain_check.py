@@ -3,7 +3,7 @@
 """half_slot_chain_check.py —— 两条半槽修正下的完整链（推导稿 §2 更新）。
 
 D1 : c_ℓ = 1/(C(8,2)² + 1/2) = 1/784.5                 （8 槽：槽对子² + 半槽）
-D3': M_R = √(M_I M_X)·(1 − 1/(2·16)) = √(M_I M_X)·31/32 （16 槽：半槽/16 = 1/32）
+D3': M_R = √(M_I M_X)·16/(16+1/2) = √(M_I M_X)·32/33 （半槽加半个通道：N→N+1/2）
 D2 : m_D = m_τ/2                                        （半满轨道占据；Lean 已证）
 
 检查：三代带电轻子、m_ν3、Σ、mββ、Δm²21/31、X 与数据的偏差（含 pull）。
@@ -35,7 +35,7 @@ V, M_Z = 246.22, 91.1876
 M_I = M_Z * math.exp(4 * math.pi)
 M_X = 1.009e13
 M_R0 = math.sqrt(M_I * M_X)
-ALPHA = 1 - 1 / (2 * 16)          # 31/32
+ALPHA = 16 / (16 + 0.5)           # 32/33 = 1/(1+1/(2N))，N=16
 M_R = M_R0 * ALPHA
 
 A = math.sqrt(2)
@@ -46,7 +46,7 @@ c_ell = 1 / (math.comb(8, 2) ** 2 + 0.5)
 m_lep = [V * c_ell * fk**2 for fk in f]
 m_tau = m_lep[2]
 print(f"   D1 c_ℓ={c_ell:.9e}  三代={[round(x,8) for x in m_lep]}")
-print(f"   D3' M_R=√(M_I M_X)·31/32 = {M_R:.6e}（未修正 {M_R0:.6e}，修正 {100*(ALPHA-1):+.3f}%）")
+print(f"   D3' M_R=√(M_I M_X)·32/33 = {M_R:.6e}（未修正 {M_R0:.6e}，修正 {100*(ALPHA-1):+.3f}%）")
 
 R = (73 - 28 * math.sqrt(6)) / 25
 m_nu3 = (m_tau / 2) ** 2 / M_R * 1e12
