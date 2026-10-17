@@ -50,6 +50,7 @@ SCRIPTS = [
     "k4_closure_q.py",
     "quark_phase_fit.py",
     "neutrino_amplitude_winding.py",
+    "neutrino_gap_model.py",
 ]
 
 rows = []

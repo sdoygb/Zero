@@ -179,8 +179,14 @@
    "ok": true,
    "returncode": 0,
    "summary": "PASS 5 / FAIL 0"
+  },
+  {
+   "script": "neutrino_gap_model.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 6 / FAIL 0"
   }
  ],
- "n_ok": 30,
- "n_total": 30
+ "n_ok": 31,
+ "n_total": 31
 }
