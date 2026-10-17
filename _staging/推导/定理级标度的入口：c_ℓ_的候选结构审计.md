@@ -2,8 +2,8 @@
 
 > 状态：推导稿（未落盘；目标达成后再定编号）
 > 前置：标度稿（标度条件式）、Z037（量纲账）、Z076（计数→能量桥）、Z153（唯一锚）、Z121（相位律）
-> 关联脚本：`ZeroGPU/src/scale_origin_audit.py`、`ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`
-> 数据：`ZeroGPU/results/scale_origin_audit.json`、`ZeroGPU/results/c_ell_candidate_check.json`、`ZeroGPU/results/zero_mode_energy_check.json`
+> 关联脚本：`ZeroGPU/src/scale_origin_audit.py`、`ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`
+> 数据：`ZeroGPU/results/scale_origin_audit.json`、`ZeroGPU/results/c_ell_candidate_check.json`、`ZeroGPU/results/zero_mode_energy_check.json`、`ZeroGPU/results/c_ell_wide_search.json`
 > 登记日期：2026-10-17
 
 **篇性**：**核查篇**。定理级标度的第一道门是纯数 $c_\ell=\mu_\ell^2/v$（它把 $v$ 换算成费米子质量单元）。本篇先查库：把 $c_\ell$ 与 $c_\nu$ 的所需值与既有标度结构（四环指数、中心二项式、层权重、闭包常数）逐项对照，记录搜索空间与最近的匹配。
@@ -95,6 +95,24 @@ $$
 
 ⟹ 零模能量**不**给出新结构；它把 $c_\ell$ 的问题原样搬成"惯性为什么是 $2\binom82^2$"，仍差 $0.07\%$。
 
+### 2.3 广搜：51 万个三因子式里没有精确候选
+
+把已导出的纯数当原子（$2,3,\pi,\sqrt2,\sqrt3,1/2,1/3,2/3,2/9,1/8,3/8,\pi/12,\delta_0,\ln2,0.405,0.693,0.981,14,16,21,28$），取三因子式 $a_1^{e_1}a_2^{e_2}a_3^{e_3}$（$e_i\in\{-2,-1,1,2\}$），共 **510{,}696** 个组合：
+
+$$
+\min\Bigl|\text{式}/c_\ell-1\Bigr|=2.7\times10^{-4}\quad(\text{且该"最佳"是 }0.693\approx\ln2\text{ 的舍入假象}),
+\qquad
+\text{真最佳}=1/28^2\ (4.9\times10^{-4}).
+\tag{2.6}
+$$
+
+$$
+\boxed{\;51\ \text{万个三因子式里，没有}\ 10^{-4}\ \text{以内的精确候选} .\;}
+\tag{2.7}
+$$
+
+⟹ 到此为止，$c_\ell$ 不是"环指数／计数／闭包常数的简单乘积"；它需要一条**动力学机制**，而不是再换一组因子。
+
 ## §3 既有桥的障碍（Z076）
 
 Z076 判定：计数→能量桥的**模谱隙路线**在 $L=4$（读出要求固定）给 $1/\Delta=\ln2\Rightarrow1.443$，而目标量级是 $6.72$；$L=8$ 的 $7.49$ 才接近，但框架定死 $L=4$。
@@ -136,11 +154,14 @@ $$
 
 运行：`python3 ZeroGPU/src/scale_origin_audit.py`（**2/2 PASS**，写 `results/scale_origin_audit.json`）。
 
-**A.2 计数候选** `ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`（纯标准库；**2/2 PASS**）：
+**A.2 计数候选** `ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`（纯标准库；**2/2 PASS**）：
 $1/\binom82^2=1/784$ 与 $c_\ell$ 差 $+0.0698\%$；若精确则 $m_\tau=1.77810$ GeV（$+10.3\sigma$）。写 `results/c_ell_candidate_check.json`。
 
-**A.3 零模能量** `ZeroGPU/src/zero_mode_energy_check.py`（纯标准库；**2/2 PASS**）：
+**A.3 零模能量** `ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`（纯标准库；**2/2 PASS**）：
 零点曲率 $V''=2$；所需惯性 $N=2/c_\ell=1569.094$，与 $2\binom82^2=1568$ 差 $0.070\%$ ⟹ 零模路线与 §2.1 是同一个数。写 `results/zero_mode_energy_check.json`。
+
+**A.4 广搜** `ZeroGPU/src/c_ell_wide_search.py`（纯标准库；退出码 0 表示"无 $<10^{-4}$ 候选"——这是预期形态）：
+510,696 个三因子式；最小相对差 $2.7\times10^{-4}$（$0.693\approx\ln2$ 的舍入假象），真最佳 $1/28^2$（$4.9\times10^{-4}$）。写 `results/c_ell_wide_search.json`。
 
 **核验纪律**：组合系数限 $|n_i|\le2$；二项式只查 $L\le24$；常数只作对照，不作结构判定。
 
