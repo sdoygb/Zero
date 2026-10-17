@@ -1,7 +1,6 @@
-# Z161 · 弱混合角的 $L$：由 α_s-free 条件定出，不是自由参数
+# 弱混合角的 $L$：由 α_s-free 条件定出，不是自由参数
 
-> 篇号：Z161
-> 状态：正式篇（判定篇）
+> 状态：推导稿（未落盘；目标达成后再定编号）
 > 前置：Z151（定理 151.4：$\sin^2\theta_w$ 与 $L$）、Z155（α_s-free 条件与 $M_X$）、Z156（四环链：环②+环③）
 > 关联脚本：`ZeroGPU/src/weak_angle_L_check.py`
 > 数据：`ZeroGPU/results/weak_angle_L_check.json`

@@ -1,8 +1,7 @@
-# Z166 · 定理级标度的入口：$c_\ell$ 的候选结构审计
+# 定理级标度的入口：$c_\ell$ 的候选结构审计
 
-> 篇号：Z166
-> 状态：正式篇（审计＋可复跑核验）（核查篇）
-> 前置：Z163（标度条件式）、Z037（量纲账）、Z076（计数→能量桥）、Z153（唯一锚）、Z121（相位律）
+> 状态：推导稿（未落盘；目标达成后再定编号）
+> 前置：标度稿（标度条件式）、Z037（量纲账）、Z076（计数→能量桥）、Z153（唯一锚）、Z121（相位律）
 > 关联脚本：`ZeroGPU/src/scale_origin_audit.py`、`ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`
 > 数据：`ZeroGPU/results/scale_origin_audit.json`、`ZeroGPU/results/c_ell_candidate_check.json`、`ZeroGPU/results/zero_mode_energy_check.json`
 > 登记日期：2026-10-17
@@ -27,7 +26,7 @@ c_\nu=\frac{m_{\nu3}}{v}=\frac{m_{\nu3}^{\rm cond}}{v}=2.035\times10^{-13},\qqua
 \tag{1.2}
 $$
 
-（$m_{\nu3}^{\rm cond}$ 取 Z163 的条件式值 $48.59$ meV；$c_\nu$ 与 $c_\ell$ 的关系是 $c_\nu=c_\ell^2f_\tau^4e^{-(r_2+r_3)}/4$。）
+（$m_{\nu3}^{\rm cond}$ 取 标度稿 的条件式值 $48.59$ meV；$c_\nu$ 与 $c_\ell$ 的关系是 $c_\nu=c_\ell^2f_\tau^4e^{-(r_2+r_3)}/4$。）
 
 ## §2 候选结构审计
 
@@ -153,4 +152,4 @@ $1/\binom82^2=1/784$ 与 $c_\ell$ 差 $+0.0698\%$；若精确则 $m_\tau=1.77810
 | $c_\nu$ | 中微子最重态与 $v$ 之比 |
 | $r_1$–$r_4$ | 四环指数 |
 
-*Zero 项目 · Z166 · 完*
+*Zero 项目 · 入口稿 · 完*
