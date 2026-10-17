@@ -295,15 +295,13 @@ $$
 ## §7 结论
 
 $$
-\boxed{\;
 \begin{aligned}
-&\textbf{难在哪}:\ \mathbb Z_3\ \text{阿贝尔};\ PSL(2,7)\ \text{有限};\ \text{两者都不给 8 维李代数}.\\[1mm]
-&\textbf{出路}:\ \text{取}\ \mathbb C^3\ \Longrightarrow\ \mathfrak{su}(3)\ \textbf{自动} \ (\operatorname{End}\ \text{的迹零反厄米部分}).\\[1mm]
-&\textbf{来源}:\ \text{Fano 线 3 点}\ \Longrightarrow\ \mathbb C^3;\ \text{且}\ M_2\hookrightarrow M_3\ \text{相容}.\\[1mm]
-&\textbf{代价}:\ \mathrm{C1}'\ \text{``每条 Fano 线张成一个}\ \mathbb C^3\text{''}\ \text{——一条结构公设}.\\[1mm]
+&\textbf{难在哪}:\ \mathbb Z_3\ \text{阿贝尔};\ PSL(2,7)\ \text{有限};\ \text{两者都不给 8 维李代数}.\\
+&\textbf{出路}:\ \text{取}\ \mathbb C^3\ \Longrightarrow\ \mathfrak{su}(3)\ \textbf{自动} \ (\operatorname{End}\ \text{的迹零反厄米部分}).\\
+&\textbf{来源}:\ \text{Fano 线 3 点}\ \Longrightarrow\ \mathbb C^3;\ \text{且}\ M_2\hookrightarrow M_3\ \text{相容}.\\
+&\textbf{代价}:\ \mathrm{C1}'\ \text{``每条 Fano 线张成一个}\ \mathbb C^3\text{''}\ \text{——一条结构公设}.\\
 &\textbf{剩余}:\ \text{整体 vs 局域} = \text{"位置"缺口（第 6 项）}.
 \end{aligned}
-}
 $$
 
 **一句话：**

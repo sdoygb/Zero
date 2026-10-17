@@ -315,16 +315,14 @@ $$
 ## §10 结论
 
 $$
-\boxed{\;
 \begin{aligned}
-&\textbf{动力学存在且}\ \textbf{免费}:\ \text{组态图上的均匀随机游走（公理③ 的唯一实现）}.\\[1mm]
-&\textbf{图}:\ \text{Z024 的补偿移动图};\quad \textbf{正则} \text{（度}=(L/2)^2\text{）};\quad \textbf{连通}.\\[1mm]
-&\textbf{自洽}:\ \mu_{\rm unif}\ \text{是平稳分布} \Longrightarrow \text{与公理③ 一致（实测}<5\times10^{-17}\text{）}.\\[1mm]
-&\textbf{时标}:\ \text{谱隙}\to0\ \text{为}\ 1/L;\ \text{混合时间}\sim L .\\[1mm]
-&\textbf{更强}:\ \text{平稳测度}\ \textbf{恰好} \text{是账本测度}\ w_h\ \Longrightarrow\ \textbf{不需任何选择}.\\[1mm]
+&\textbf{动力学存在且}\ \textbf{免费}:\ \text{组态图上的均匀随机游走（公理③ 的唯一实现）}.\\
+&\textbf{图}:\ \text{Z024 的补偿移动图};\quad \textbf{正则} \text{（度}=(L/2)^2\text{）};\quad \textbf{连通}.\\
+&\textbf{自洽}:\ \mu_{\rm unif}\ \text{是平稳分布} \Longrightarrow \text{与公理③ 一致（实测}<5\times10^{-17}\text{）}.\\
+&\textbf{时标}:\ \text{谱隙}\to0\ \text{为}\ 1/L;\ \text{混合时间}\sim L .\\
+&\textbf{更强}:\ \text{平稳测度}\ \textbf{恰好} \text{是账本测度}\ w_h\ \Longrightarrow\ \textbf{不需任何选择}.\\
 &\textbf{代价}:\ \textbf{无净漂移};\ \textbf{不解决} \text{禁闭与标度}.
 \end{aligned}
-}
 $$
 
 **一句话：**

@@ -351,15 +351,13 @@ $$
 ## §10 结论
 
 $$
-\boxed{\;
 \begin{aligned}
-&\textbf{用户的四步}:\ 1,2,3\ \textbf{成立};\ 4\ \textbf{部分成立} .\\[1mm]
-&\textbf{判定}:\ \text{"方向需定向输入"}\ \textbf{过严};\ \text{无向计数绕过它} .\\[1mm]
-&\textbf{载体}:\ (h,k)\ \text{格点，}\lvert\cdot\rvert=H(H+3)/2\ (\text{而非图顶点}) .\\[1mm]
-&\textbf{场的存在}:\ F=\mathbf 1\oplus\mathbf 2;\quad p_\uparrow\ne\tfrac12\ \textbf{非平凡};\ \text{壁处}\ p_\uparrow=0 .\\[1mm]
+&\textbf{用户的四步}:\ 1,2,3\ \textbf{成立};\ 4\ \textbf{部分成立} .\\
+&\textbf{判定}:\ \text{"方向需定向输入"}\ \textbf{过严};\ \text{无向计数绕过它} .\\
+&\textbf{载体}:\ (h,k)\ \text{格点，}\lvert\cdot\rvert=H(H+3)/2\ (\text{而非图顶点}) .\\
+&\textbf{场的存在}:\ F=\mathbf 1\oplus\mathbf 2;\quad p_\uparrow\ne\tfrac12\ \textbf{非平凡};\ \text{壁处}\ p_\uparrow=0 .\\
 &\textbf{到不了}:\ \text{非阿贝尔、自相互作用、渐近自由、线性势、热力学极限}.
 \end{aligned}
-}
 $$
 
 **一句话：**

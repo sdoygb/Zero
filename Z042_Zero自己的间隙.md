@@ -324,15 +324,13 @@ $$
 ## §8 结论
 
 $$
-\boxed{\;
 \begin{aligned}
-&\textbf{判定}:\ \text{本框架的间隙不是质量间隙，是}\textbf{组合间隙}.\\[1mm]
-&\textbf{主候选}:\ \Delta w=w_{\max}-w_{\min};\quad L=4\ \text{给}\ \frac13\ (\text{精确、无量纲、纯组合}).\\[1mm]
-&\textbf{动力学一侧}:\ \textbf{无一致间隙}（\text{谱隙}\sim\pi^2/8h^2\to0）;\ \text{由}\textbf{幂律指数}\ \text{刻画}（1/2\ \text{反复出现}） .\\[1mm]
-&\textbf{对质子}:\ \textbf{不变}（仍不可算）；但缺口从"没有间隙"缩为"没有\textbf{翻译机制}".\\[1mm]
+&\textbf{判定}:\ \text{本框架的间隙不是质量间隙，是}\textbf{组合间隙}.\\
+&\textbf{主候选}:\ \Delta w=w_{\max}-w_{\min};\quad L=4\ \text{给}\ \frac13\ (\text{精确、无量纲、纯组合}).\\
+&\textbf{动力学一侧}:\ \textbf{无一致间隙}（\text{谱隙}\sim\pi^2/8h^2\to0）;\ \text{由}\textbf{幂律指数}\ \text{刻画}（1/2\ \text{反复出现}） .\\
+&\textbf{对质子}:\ \textbf{不变}（仍不可算）；但缺口从"没有间隙"缩为"没有\textbf{翻译机制}".\\
 &\textbf{复核}:\ \text{实现陷阱已查明};\ \textbf{已落盘数值无误}.
 \end{aligned}
-}
 $$
 
 **一句话：**

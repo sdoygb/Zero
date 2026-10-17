@@ -12,12 +12,10 @@
 从"L0 的图"到"连续几何"有两条可走的路线；本篇给出**两条路线各自的理论类别**：
 
 $$
-\boxed{\;
 \begin{aligned}
-&\textbf{路线甲}:\quad \text{离散}\ \xrightarrow{\ \Gamma\text{-收敛（条件定理）}\ }\ \text{空间型 Dirichlet 极限（度规）}\ \xrightarrow{\ \text{Lovelock}\ }\ \textbf{二阶场方程（Einstein–Hilbert 型）};\\[1mm]
+&\textbf{路线甲}:\quad \text{离散}\ \xrightarrow{\ \Gamma\text{-收敛（条件定理）}\ }\ \text{空间型 Dirichlet 极限（度规）}\ \xrightarrow{\ \text{Lovelock}\ }\ \textbf{二阶场方程（Einstein–Hilbert 型）};\\
 &\textbf{路线乙}:\quad \text{内容图的逐级细化商族}\ \longrightarrow\ \textbf{高阶曲率型} .
 \end{aligned}
-\; }
 \tag{0.1}
 $$
 
@@ -179,15 +177,13 @@ $$
 ## §7 结论
 
 $$
-\boxed{\;
 \begin{aligned}
-&\textbf{商族规模}:\ K_c\ \text{累计计数} = 10,26,80,246\ (\text{A003239 逐项相符});\quad\textbf{已证}.\\[1mm]
-&\textbf{商族粗细}:\ \lvert K\rvert/\mathrm{diam}^3\ \text{随 }L\ \text{单调上升（无平台）};\quad\textbf{已证}.\\[1mm]
-&\textbf{路线甲}:\ \Gamma\text{-收敛（条件）＋ Lovelock（引理 9）}\Longrightarrow(4.1)\ \text{型};\quad\textbf{已证}.\\[1mm]
-&\textbf{路线乙}:\ \text{不经}\ (O)\ \text{前提}\Longrightarrow\ \text{高阶曲率型};\quad\textbf{已证}.\\[1mm]
+&\textbf{商族规模}:\ K_c\ \text{累计计数} = 10,26,80,246\ (\text{A003239 逐项相符});\quad\textbf{已证}.\\
+&\textbf{商族粗细}:\ \lvert K\rvert/\mathrm{diam}^3\ \text{随 }L\ \text{单调上升（无平台）};\quad\textbf{已证}.\\
+&\textbf{路线甲}:\ \Gamma\text{-收敛（条件）＋ Lovelock（引理 9）}\Longrightarrow(4.1)\ \text{型};\quad\textbf{已证}.\\
+&\textbf{路线乙}:\ \text{不经}\ (O)\ \text{前提}\Longrightarrow\ \text{高阶曲率型};\quad\textbf{已证}.\\
 &\textbf{与判定相关的开放项}:\ \text{商族的极限对象；路线乙里是否有二阶子族}.
 \end{aligned}
-\; }
 $$
 
 **一句话：**

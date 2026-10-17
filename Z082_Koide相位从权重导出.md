@@ -164,15 +164,13 @@ $$
 ## §7 结论
 
 $$
-\boxed{\;
 \begin{aligned}
-&\textbf{成功}:\quad \theta=\arg(\hat s_1);\qquad b=2|\hat s_1|/|\hat s_0|;\qquad Q=(1+b^2/2)/3 .\\[1mm]
-&\qquad\Longrightarrow\ \text{两个参数都在权重里，不含时间};\ b\ \text{与}\ \theta\ \text{是}\ \textbf{同一个复数}\ \text{的模与辐角}.\\[1mm]
-&\textbf{衔接}:\quad \arg\hat s_1=2\pi/3+2/9+\delta\theta;\quad \delta\theta=+7.4\times10^{-6}.\\[1mm]
-&\textbf{但}:\ \text{须三项权重互异};\ L{=}4\ \text{的}\ (2,2,2)\ \text{给}\ \hat s_1=0 .\\[1mm]
+&\textbf{成功}:\quad \theta=\arg(\hat s_1);\qquad b=2|\hat s_1|/|\hat s_0|;\qquad Q=(1+b^2/2)/3 .\\
+&\qquad\Longrightarrow\ \text{两个参数都在权重里，不含时间};\ b\ \text{与}\ \theta\ \text{是}\ \textbf{同一个复数}\ \text{的模与辐角}.\\
+&\textbf{衔接}:\quad \arg\hat s_1=2\pi/3+2/9+\delta\theta;\quad \delta\theta=+7.4\times10^{-6}.\\
+&\textbf{但}:\ \text{须三项权重互异};\ L{=}4\ \text{的}\ (2,2,2)\ \text{给}\ \hat s_1=0 .\\
 &\textbf{故缺口}:\ \textbf{一个天然不对称的三项分配}\ =\ \text{Z014 定理的}\ \textbf{扇区选择性}.
 \end{aligned}
-}
 $$
 
 **一句话：**

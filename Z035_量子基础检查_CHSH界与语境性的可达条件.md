@@ -349,14 +349,12 @@ $$
 ## §9 结论
 
 $$
-\boxed{\;
 \begin{aligned}
-&\textbf{定理 23}:\ \text{经典界}\ \lvert S\rvert\le2\ \text{（逐点证明）};\ \text{乘积态}\ \lvert S\rvert\le2\ \text{（独立证明）}.\\[1mm]
-&\textbf{定理 24}:\ \text{Tsirelson 界}\ \lvert S\rvert\le2\sqrt2\ \text{（完整证明）};\ \text{单态}\ \textbf{达界}.\\[1mm]
-&\textbf{排除}:\ \text{"中心态}\Rightarrow\text{因子化"}\ \textbf{为假};\ \text{中心态是}\textbf{经典混合}。\\[1mm]
+&\textbf{定理 23}:\ \text{经典界}\ \lvert S\rvert\le2\ \text{（逐点证明）};\ \text{乘积态}\ \lvert S\rvert\le2\ \text{（独立证明）}.\\
+&\textbf{定理 24}:\ \text{Tsirelson 界}\ \lvert S\rvert\le2\sqrt2\ \text{（完整证明）};\ \text{单态}\ \textbf{达界}.\\
+&\textbf{排除}:\ \text{"中心态}\Rightarrow\text{因子化"}\ \textbf{为假};\ \text{中心态是}\textbf{经典混合}。\\
 &\textbf{定理 25／26}:\ \text{交换}\Rightarrow\text{无语境性};\ \text{非交换}\Rightarrow\text{语境性可能};\ \text{可达性}\ =\ \text{读出分辨率}.
 \end{aligned}
-}
 $$
 
 **一句话：**

@@ -626,7 +626,6 @@ $$
 ## §13 结论
 
 $$
-\boxed{\;
 \begin{aligned}
 &\text{公理（零不停留，三款）}\\
 &\quad\Longrightarrow\ \text{闭合历史空间}\ W_L,\ |W_L|=\binom{L}{L/2};\\
@@ -636,7 +635,6 @@ $$
 &\quad\Longrightarrow\ \text{中心态}:\ \omega([A,B])\equiv0,\ \text{模流平凡};\\
 &\quad\Longrightarrow\ \text{概率};\ \text{Born 形式与平方结构}.
 \end{aligned}
-}
 $$
 
 **标准量子力学的七条运动学内容全部成为定理，不新增任何公设。**
@@ -668,13 +666,17 @@ $$
 
 > Lean 文件：`ZeroLean/Zero/Z004_Gleason.lean` ｜ 无 `sorry`、无自定义公理（`#print axioms` 仅 propext / Classical.choice / Quot.sound），全库 `lake build` 通过。
 
-把 §10「Gleason 假设在二维格上失效」论证中的**刚性子步骤**放到 Lean 4 内核逐行检查：
+把 §10「Gleason 假设在二维格上失效」论证放到 Lean 4 内核逐行检查：
 
-1. **Born 赋值的刚性（已证）**：若单位态 $\psi$ 对两个单位向量 $u,v$ 的 Born 概率都为 $1$，即 $\|\langle\psi,u\rangle\|=\|\langle\psi,v\rangle\|=1$，则存在 $r\ne0$ 使 $v=r\,\mathbf{\cdot}u$（`z004_born_one_forces_parallel`）。
-2. **证明依据**：Cauchy–Schwarz 取等情形（`norm_inner_eq_norm_iff`）——概率为 1 迫使 $u$、$v$ 都与 $\psi$ 同射线，故彼此只是相位倍数。
-3. **在 Gleason 论证中的角色**：这说明二维时 $\{0,1\}$-赋值必然**集中在一根射线**上，无法在投影格上铺开，是 Gleason 前提失效的一环。
-
-**覆盖范围**：本文件只验证了上述**刚性子步骤**。§10 命题 10.1 的**主体**——显式构造 $f(\theta)=(1+\cos6\theta)/2$ 并由三角函数频率 $6$ 与频率 $2$ 的 Fourier 正交性（$\int_0^{2\pi}\cos6\theta\,d\theta=\int\cos6\theta\cos2\theta\,d\theta=\int\cos6\theta\sin2\theta\,d\theta=0$ 而 $\int\cos^26\theta\,d\theta=\pi\ne0$）证明它非态诱导——**其 Lean 形式化为开放**。这部分只需实积分/Fourier 正交性，原则上可在 Lean 内完成，留作后续；目前命题 10.1 的 (i)(ii) 与各正交积分由附录 A 表中数值核验（第 637 行）。本文定理 1–7 的代数主体（可观测量代数、GNS、Born 形式）同样未取得机器证明。
+1. **刚性子步骤（已证）**：若单位态 $\psi$ 对两个单位向量 $u,v$ 的 Born 概率都为 $1$，即 $\|\langle\psi,u\rangle\|=\|\langle\psi,v\rangle\|=1$，则存在 $r\ne0$ 使 $v=r\,\mathbf{\cdot}u$（`z004_born_one_forces_parallel`）。证明依据 Cauchy–Schwarz 取等情形（`norm_inner_eq_norm_iff`）——概率为 1 迫使 $u$、$v$ 都与 $\psi$ 同射线，故彼此只是相位倍数。这说明二维时 $\{0,1\}$-赋值必然**集中在一根射线**上，无法在投影格上铺开。
+2. **命题 10.1 的主体（已证）**：显式函数 $f(\theta)=(1+\cos6\theta)/2$，Lean 逐条证明
+   - `z004_gleason_f_nonneg`：$f\ge0$；
+   - `z004_gleason_f_add`：$f(\theta)+f(\theta+\pi/2)=1$；
+   - `z004_gleason_int_cos6_cos2`、`z004_gleason_int_cos6_sin2`：$\int_0^{2\pi}\cos6\theta\cos2\theta\,d\theta=\int_0^{2\pi}\cos6\theta\sin2\theta\,d\theta=0$；
+   - `z004_gleason_int_cos6_sq`：$\int_0^{2\pi}\cos^2(6\theta)\,d\theta=\pi$；
+   - `z004_gleason_int_state_form`：任何 $a+b\cos2\theta+c\sin2\theta$ 的频率 $6$ 分量为零；
+   - `z004_gleason_not_state_induced`：$f$ **不是**态诱导的（$\neg\exists a,b,c,\ \forall\theta,\ f(\theta)=a+b\cos2\theta+c\sin2\theta$）。
+3. **覆盖范围**：命题 10.1 的主体与刚性子步骤均已机器检查（新增 12 条定理，全库 807 条）；本文定理 1–7 的代数主体（可观测量代数、GNS、Born 形式）仍未取得机器证明。
 
 ## 附录 B　引用与外部依赖
 

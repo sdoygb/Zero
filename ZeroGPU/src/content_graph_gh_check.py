@@ -60,10 +60,15 @@ def build_adj(reps):
                 continue
             v = list(w)
             v[k], v[k2] = v[k2], v[k]
-            t = tuple(v)
-            if t in idx:
-                adj[i].add(idx[t])
-                adj[idx[t]].add(i)
+            # 类级邻接（Z145 §1.1 的字面定义：「在类之间」）：
+            # 交换后的词先归到它自己的旋转等价类，再与该类相连。
+            # 旧写法 `if t in idx` 只连"交换后恰好仍是规范代表"的边，
+            # 那是**代表依赖**的（取决于类里挑了哪个代表），会系统性漏边。
+            t = min(tuple(v[s:] + v[:s]) for s in range(L))
+            j = idx[t]
+            if i != j:
+                adj[i].add(j)
+                adj[j].add(i)
     return adj
 
 

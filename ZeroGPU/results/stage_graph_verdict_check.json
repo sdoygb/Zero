@@ -1,0 +1,59 @@
+{
+ "heawood": {
+  "nV": 14,
+  "degs": [
+   3
+  ],
+  "girth": 6,
+  "bipartite": true
+ },
+ "grid_vertices": 62400,
+ "qeff": [
+  [
+   8,
+   1.661
+  ],
+  [
+   16,
+   2.5
+  ],
+  [
+   24,
+   3.246
+  ]
+ ],
+ "checks": [
+  {
+   "name": "A  Heawood: |V|=14",
+   "pass": true,
+   "detail": "14"
+  },
+  {
+   "name": "A  Heawood: 3-正则",
+   "pass": true,
+   "detail": "[3]"
+  },
+  {
+   "name": "A  Heawood: 围长 6",
+   "pass": true,
+   "detail": "6"
+  },
+  {
+   "name": "A  Heawood: 二部",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "B  双缝格规模 >> 14",
+   "pass": true,
+   "detail": "62400"
+  },
+  {
+   "name": "C  q_eff 无平台（L=8→24 上升）",
+   "pass": true,
+   "detail": "1.661→3.246"
+  }
+ ],
+ "pass": 6,
+ "total": 6
+}

@@ -1,0 +1,78 @@
+{
+ "A_dispersion": [
+  {
+   "label": "log2",
+   "f": 0.693147,
+   "q": 0.707832,
+   "lam_lattice": 8.876666,
+   "lam_measured": 8.874,
+   "rel_err_vs_lattice": 0.0003,
+   "lam_continuum": 9.06472,
+   "ratio_continuum": 0.97896
+  },
+  {
+   "label": "K4槽1",
+   "f": 0.405,
+   "q": 0.40782,
+   "lam_lattice": 15.40675,
+   "lam_measured": 15.394,
+   "rel_err_vs_lattice": 0.000828,
+   "lam_continuum": 15.514038,
+   "ratio_continuum": 0.992263
+  },
+  {
+   "label": "K4槽2",
+   "f": 0.693,
+   "q": 0.707675,
+   "lam_lattice": 8.878634,
+   "lam_measured": 8.876,
+   "rel_err_vs_lattice": 0.000297,
+   "lam_continuum": 9.066645,
+   "ratio_continuum": 0.978973
+  },
+  {
+   "label": "K4槽3",
+   "f": 0.981,
+   "q": 1.025327,
+   "lam_lattice": 6.127983,
+   "lam_measured": 6.127,
+   "rel_err_vs_lattice": 0.00016,
+   "lam_continuum": 6.404878,
+   "ratio_continuum": 0.956615
+  }
+ ],
+ "B_time_domain": {
+  "N": 400,
+  "dt": 0.3,
+  "T": 20000,
+  "f": 0.693147,
+  "q_measured": 0.706858,
+  "q_theory": 0.707832,
+  "rel_err": 0.001375,
+  "lam_measured": 8.888889,
+  "lam_theory": 8.876666
+ },
+ "C_euler_unstable": [
+  {
+   "c2": 0.8,
+   "dt": 0.1,
+   "T": 6000,
+   "amp_per_step": 1.04995088,
+   "analytic_growth": 1.032e+127,
+   "measured_max": 5.173e+122
+  },
+  {
+   "c2": 1.0,
+   "dt": 0.02,
+   "T": 8000,
+   "amp_per_step": 1.0031948,
+   "analytic_growth": 120800000000.0,
+   "measured_max": 618000000.0
+  }
+ ],
+ "verdicts": {
+  "A_dispersion": true,
+  "B_time_domain": true,
+  "C_euler_unstable": true
+ }
+}

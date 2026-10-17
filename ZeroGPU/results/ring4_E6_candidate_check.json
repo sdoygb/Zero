@@ -1,0 +1,52 @@
+{
+ "target_ring4": 7.592094260945152,
+ "old_candidate": {
+  "expr": "pi(1+sqrt2)",
+  "value": 7.584475591748159,
+  "rel": 0.0010035003432694964
+ },
+ "new_candidate": {
+  "expr": "2*pi*(27+k0)/24 = 29*pi/12",
+  "value": 7.592182246175334,
+  "rel": 1.1589059244722183e-05,
+  "dim_27": 27,
+  "k0": 2,
+  "dim_SU3cube": 24
+ },
+ "hit_density": {
+  "hits": [
+   "π·29/12",
+   "2π·(1+5/24)"
+  ],
+  "threshold": 0.0002
+ },
+ "checks": [
+  {
+   "name": "A  新候选相对差 < 2e-4",
+   "pass": true,
+   "detail": "1.16e-05"
+  },
+  {
+   "name": "A  旧候选相对差 > 1e-3",
+   "pass": true,
+   "detail": "1.00e-03"
+  },
+  {
+   "name": "A  2π(27+k₀)/24 = 29π/12",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "B  去重后命中数 = 1",
+   "pass": true,
+   "detail": "1"
+  },
+  {
+   "name": "B  唯一命中 = 29π/12",
+   "pass": true,
+   "detail": ""
+  }
+ ],
+ "pass": 5,
+ "total": 5
+}

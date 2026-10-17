@@ -1,0 +1,46 @@
+{
+ "premises": {
+  "H1_n_a": [
+   4,
+   3,
+   12
+  ],
+  "H1_N": 12,
+  "H2": "E6 breaking driven by 27, one half-cell pi/N per state",
+  "H3": "winding k0 contributes k0 half-cells"
+ },
+ "ring4": 7.592182246175334,
+ "target": 7.592094260945152,
+ "four_ring_total": 33.61978807634303,
+ "S": 33.61970009111285,
+ "residual": 8.798523018072046e-05,
+ "checks": [
+  {
+   "name": "A  n_a = (4,3,12)",
+   "pass": true,
+   "detail": "(4, 3, 12)"
+  },
+  {
+   "name": "A  N = 12",
+   "pass": true,
+   "detail": "12"
+  },
+  {
+   "name": "B  环④ = 29π/12",
+   "pass": true,
+   "detail": "7.592182246"
+  },
+  {
+   "name": "C  与目标一致（<2e-4）",
+   "pass": true,
+   "detail": "1.16e-05"
+  },
+  {
+   "name": "D  残差 <1e-3",
+   "pass": true,
+   "detail": "8.799e-05"
+  }
+ ],
+ "pass": 5,
+ "total": 5
+}

@@ -409,15 +409,13 @@ $$
 ## §9 结论
 
 $$
-\boxed{\;
 \begin{aligned}
-&\textbf{根源}:\ \text{正式篇从未定义夸克};\ \text{本文从}\ L0\ \text{推} .\\[1mm]
-&\textbf{"三"的来源}:\ \text{Heawood 的度}=3\ (=\text{空间维数});\ \text{Fano 线长}=3\ (\text{唯一干净 3 元组}) .\\[1mm]
-&\textbf{结构}:\ \text{三色}\ \textbf{不可区分} \text{（}\mathbb Z_3\ \text{传递）}\Longrightarrow\epsilon_{ijk}\ \text{单态};\ \text{2 夸克不行} .\\[1mm]
-&\textbf{电荷}:\ \text{整数}\ x\ \text{除以线长 3};\ \text{色单态}\iff\sum x\equiv0\pmod3\iff\text{整数荷} .\\[1mm]
+&\textbf{根源}:\ \text{正式篇从未定义夸克};\ \text{本文从}\ L0\ \text{推} .\\
+&\textbf{"三"的来源}:\ \text{Heawood 的度}=3\ (=\text{空间维数});\ \text{Fano 线长}=3\ (\text{唯一干净 3 元组}) .\\
+&\textbf{结构}:\ \text{三色}\ \textbf{不可区分} \text{（}\mathbb Z_3\ \text{传递）}\Longrightarrow\epsilon_{ijk}\ \text{单态};\ \text{2 夸克不行} .\\
+&\textbf{电荷}:\ \text{整数}\ x\ \text{除以线长 3};\ \text{色单态}\iff\sum x\equiv0\pmod3\iff\text{整数荷} .\\
 &\textbf{根本差别}:\ \text{Zero 的}\ \mathbb Z_3\ \text{是}\textbf{置换};\ \text{QCD 的是}\textbf{相乘} \Longrightarrow\ \text{无胶子}.
 \end{aligned}
-}
 $$
 
 **一句话：**

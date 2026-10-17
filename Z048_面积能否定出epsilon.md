@@ -362,15 +362,13 @@ $$
 ## §9 结论
 
 $$
-\boxed{\;
 \begin{aligned}
-&\textbf{判定}:\ \epsilon_h=\operatorname{sgn}(a)\ \textbf{不成立};\ \text{三条独立理由（零面积词／跨层／类数}\gg2\text{）}.\\[1mm]
-&\textbf{零面积的规律}:\ L\equiv2\pmod4\ \text{无};\ L\equiv0\pmod4\ \text{有};\ \text{框架自定}\ L=4\ \text{属后者}.\\[1mm]
-&\textbf{面积的真正作用}:\ \text{把层再分成}\ A_h\ \text{个子层（}\textbf{二阶粗粒化}）;\ \text{全部纯组合}.\\[1mm]
-&\textbf{当前状态}:\ \text{层内输入仍是}\ \{\epsilon_h\}\ (\text{二元},\ H\ \text{个});\ \text{比 Z046 便宜，但}\textbf{未归零}.\\[1mm]
+&\textbf{判定}:\ \epsilon_h=\operatorname{sgn}(a)\ \textbf{不成立};\ \text{三条独立理由（零面积词／跨层／类数}\gg2\text{）}.\\
+&\textbf{零面积的规律}:\ L\equiv2\pmod4\ \text{无};\ L\equiv0\pmod4\ \text{有};\ \text{框架自定}\ L=4\ \text{属后者}.\\
+&\textbf{面积的真正作用}:\ \text{把层再分成}\ A_h\ \text{个子层（}\textbf{二阶粗粒化}）;\ \text{全部纯组合}.\\
+&\textbf{当前状态}:\ \text{层内输入仍是}\ \{\epsilon_h\}\ (\text{二元},\ H\ \text{个});\ \text{比 Z046 便宜，但}\textbf{未归零}.\\
 &\textbf{判定}:\ \text{§6.3 的原式}\textbf{不成立}.
 \end{aligned}
-}
 $$
 
 **一句话：**
