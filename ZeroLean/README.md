@@ -8,14 +8,14 @@ Lean 侧给的是**证明**：结论由前提经内核检查推出，中间没�
 | 项 | 值 |
 |:--|:--|
 | `lake build` | **通过** |
-| 审计 `Zero.*` 定理数 | **807 条** |
+| 审计 `Zero.*` 定理数 | **809 条** |
 | CI 守则（R1／R2／R3） | **全过** |
-| 源码 | `Zero/` 下 **88 个 `.lean`**，`Zero.lean` 逐一 import |
+| 源码 | `Zero/` 下 **89 个 `.lean`**，`Zero.lean` 逐一 import |
 | 公理白名单 | 4 个名字：`propext`／`Classical.choice`／`Quot.sound`／`Zero.AuditDemo.k_is_two` |
 | 工具链 | Lean v4.35.0（`lean-toolchain`），装在 `~/.local/lean4` |
 | Mathlib | 已接入（`lakefile.toml` 的 `require mathlib`）；构建产物在外部卷，`ZeroLean/.lake` 是指向它的符号链接 |
 
-机器可读记录：`.lean-report.json`（`{"ok": true, "theorems": 807, "problems": []}`）。
+机器可读记录：`.lean-report.json`（`{"ok": true, "theorems": 809, "problems": []}`）。
 
 ## 怎么跑
 
@@ -36,7 +36,7 @@ python3 scripts/check.py --json                 # 机器可读（插件用的就
 | `Zero.lean` | 根模块，逐一 import `Zero/` 下的全部文件 |
 | `Zero/Basic.lean` | K₄ 谱：核空间＝常向量；$\lambda=4$ 的特征空间＝零和超平面 |
 | `Zero/AxiomLedger.lean` | 要素来源表的**机械版**演示：自定义 `axiom` 如何出现在依赖清单里 |
-| `Zero/Z<篇号>_*.lean` | 逐篇形式化（88 个文件，807 条定理；文件名带篇号，CI 据此对篇号） |
+| `Zero/Z<篇号>_*.lean` | 逐篇形式化（89 个文件，809 条定理；文件名带篇号，CI 据此对篇号） |
 | `Zero/Audit.lean` | 审计机关：`collectAxioms` 遍历环境里全部 `Zero.*` 定理 |
 | `scripts/check.py` | CI：`lake build` ＋ 自动审计 ＋ 三条守则 |
 | `scripts/axioms-allow.txt` | 公理白名单（写全名，含命名空间） |
