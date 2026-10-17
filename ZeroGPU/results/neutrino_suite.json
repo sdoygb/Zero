@@ -71,8 +71,62 @@
    "ok": true,
    "returncode": 0,
    "summary": "PASS 14 / FAIL 0"
+  },
+  {
+   "script": "scale_origin_audit.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 2 / FAIL 0"
+  },
+  {
+   "script": "c_ell_candidate_check.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 2 / FAIL 0"
+  },
+  {
+   "script": "zero_mode_energy_check.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 2 / FAIL 0"
+  },
+  {
+   "script": "c_ell_wide_search.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": ""
+  },
+  {
+   "script": "mass_unit_options.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 2 / FAIL 0"
+  },
+  {
+   "script": "p1_chain_check.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 4 / FAIL 0"
+  },
+  {
+   "script": "scale_half_slot_check.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 2 / FAIL 0"
+  },
+  {
+   "script": "half_slot_window_check.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 2 / FAIL 0"
+  },
+  {
+   "script": "half_slot_chain_check.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 5 / FAIL 0"
   }
  ],
- "n_ok": 12,
- "n_total": 12
+ "n_ok": 21,
+ "n_total": 21
 }

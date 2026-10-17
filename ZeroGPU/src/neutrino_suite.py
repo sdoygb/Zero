@@ -32,6 +32,15 @@ SCRIPTS = [
     "neutrino_prediction_band.py",
     "neutrino_half_factor_rge.py",
     "neutrino_independent_check.py",
+    "scale_origin_audit.py",
+    "c_ell_candidate_check.py",
+    "zero_mode_energy_check.py",
+    "c_ell_wide_search.py",
+    "mass_unit_options.py",
+    "p1_chain_check.py",
+    "scale_half_slot_check.py",
+    "half_slot_window_check.py",
+    "half_slot_chain_check.py",
 ]
 
 rows = []
