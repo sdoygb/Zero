@@ -2,8 +2,8 @@
 
 > 状态：推导稿（未落盘；目标达成后再定编号）
 > 前置：标度稿（标度条件式）、Z037（量纲账）、Z076（计数→能量桥）、Z153（唯一锚）、Z121（相位律）
-> 关联脚本：`ZeroGPU/src/scale_origin_audit.py`、`ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`
-> 数据：`ZeroGPU/results/scale_origin_audit.json`、`ZeroGPU/results/c_ell_candidate_check.json`、`ZeroGPU/results/zero_mode_energy_check.json`、`ZeroGPU/results/c_ell_wide_search.json`、`ZeroGPU/results/mass_unit_options.json`、`ZeroGPU/results/p1_chain_check.json`
+> 关联脚本：`ZeroGPU/src/scale_origin_audit.py`、`ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`
+> 数据：`ZeroGPU/results/scale_origin_audit.json`、`ZeroGPU/results/c_ell_candidate_check.json`、`ZeroGPU/results/zero_mode_energy_check.json`、`ZeroGPU/results/c_ell_wide_search.json`、`ZeroGPU/results/mass_unit_options.json`、`ZeroGPU/results/p1_chain_check.json`、`ZeroGPU/results/scale_half_slot_check.json`
 > 登记日期：2026-10-17
 
 **篇性**：**核查篇**。定理级标度的第一道门是纯数 $c_\ell=\mu_\ell^2/v$（它把 $v$ 换算成费米子质量单元）。本篇先查库：把 $c_\ell$ 与 $c_\nu$ 的所需值与既有标度结构（四环指数、中心二项式、层权重、闭包常数）逐项对照，记录搜索空间与最近的匹配。
@@ -162,6 +162,33 @@ $$
 \tag{3.3}
 $$
 
+### 3.3 半槽修正：$c_\ell=1/(28^2+1/2)=1/784.5$
+
+$P_1$ 的 $0.07\%$ 总标度残差可以由一个**同源**的 $1/2$（半满轨道的占据，与中微子 $m_D$ 的 $1/2$ 是同一个数）吸收：
+
+$$
+c_\ell=\frac1{\binom82^2+\tfrac12}=\frac1{784.5}=1.274697\times10^{-3}.
+\tag{3.4}
+$$
+
+| 量 | 预言（GeV） | 数据（GeV） | 偏差 |
+|:--|--:|--:|--:|
+| $m_e$ | $0.000510990$ | $0.000510999$ | $-0.0011\%$ |
+| $m_\mu$ | $0.10565831$ | $0.1056584$ | $-0.0001\%$ |
+| $m_\tau$ | $1.77696645$ | $1.77686$ | $+0.0060\%$ |
+
+$$
+\boxed{\;\text{三代带电轻子全在 }0.006\%\ \text{内（相位律形状残差同量级）} .\;}
+\tag{3.5}
+$$
+
+**邻近对照**（同一族 $1/(28^2+x)$）：$x=0$ 差 $0.070\%$、$x=1/4$ 差 $0.038\%$、$x=1/2$ 差 $0.006\%$、$x=3/4$ 差 $0.033\%$、$x=1$ 差 $0.065\%$——$+1/2$ 在族内是特殊的，但它落在数据的 $c_i$ 窗口（$0.007\%$ 宽）的**边缘**，不是窗口中心。
+
+**读法与边界**：
+- $1/2$ 有结构读法（半满轨道；与 $m_D=m_\tau/2$ 同源），但"为什么加在 $N^2$ 上、而不是 $N$ 上"仍无机制；
+- 因此这是**候选**，不是定理；它把质量单元的数值钉到 $0.006\%$，但没有把它变成可证命题；
+- 若接受 $c_\ell=1/784.5$ 作为单一线索，三代带电轻子与中微子标度（$m_{\nu3}=48.6$ meV）全部随之确定。
+
 **范围框（须与结论一起读）**：
 - $P_1$ 是**无量纲**计数（28 个槽对子），$v$ 仍是**唯一**量纲锚；
 - 三代轻子的**比值**由相位律精确给出（$\delta_0$ 内生），$P_1$ 只定整体标度——所以三个 $0.07\%$ 是**同一个**标度残差，不是三次独立拟合；
@@ -198,13 +225,13 @@ $$
 
 运行：`python3 ZeroGPU/src/scale_origin_audit.py`（**2/2 PASS**，写 `results/scale_origin_audit.json`）。
 
-**A.2 计数候选** `ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`（纯标准库；**2/2 PASS**）：
+**A.2 计数候选** `ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`（纯标准库；**2/2 PASS**）：
 $1/\binom82^2=1/784$ 与 $c_\ell$ 差 $+0.0698\%$；若精确则 $m_\tau=1.77810$ GeV（$+10.3\sigma$）。写 `results/c_ell_candidate_check.json`。
 
-**A.3 零模能量** `ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`（纯标准库；**2/2 PASS**）：
+**A.3 零模能量** `ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`（纯标准库；**2/2 PASS**）：
 零点曲率 $V''=2$；所需惯性 $N=2/c_\ell=1569.094$，与 $2\binom82^2=1568$ 差 $0.070\%$ ⟹ 零模路线与 §2.1 是同一个数。写 `results/zero_mode_energy_check.json`。
 
-**A.4 广搜** `ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`（纯标准库；退出码 0 表示"无 $<10^{-4}$ 候选"——这是预期形态）：
+**A.4 广搜** `ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`（纯标准库；退出码 0 表示"无 $<10^{-4}$ 候选"——这是预期形态）：
 510,696 个三因子式；最小相对差 $2.7\times10^{-4}$（$0.693\approx\ln2$ 的舍入假象），真最佳 $1/28^2$（$4.9\times10^{-4}$）。写 `results/c_ell_wide_search.json`。
 
 **核验纪律**：组合系数限 $|n_i|\le2$；二项式只查 $L\le24$；常数只作对照，不作结构判定。
