@@ -48,6 +48,7 @@ SCRIPTS = [
     "octagon_shape_check.py",
     "octagon_engine_check.py",
     "k4_closure_q.py",
+    "quark_phase_fit.py",
 ]
 
 rows = []
