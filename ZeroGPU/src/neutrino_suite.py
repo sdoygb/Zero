@@ -30,6 +30,7 @@ SCRIPTS = [
     "neutrino_tension_decomposition.py",
     "neutrino_scale_sensitivity.py",
     "neutrino_prediction_band.py",
+    "neutrino_half_factor_rge.py",
     "neutrino_independent_check.py",
 ]
 
