@@ -125,8 +125,14 @@
    "ok": true,
    "returncode": 0,
    "summary": "PASS 5 / FAIL 0"
+  },
+  {
+   "script": "d0_channel_count.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 4 / FAIL 0"
   }
  ],
- "n_ok": 21,
- "n_total": 21
+ "n_ok": 22,
+ "n_total": 22
 }
