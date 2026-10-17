@@ -44,6 +44,7 @@ SCRIPTS = [
     "d0_channel_count.py",
     "chain_systematics.py",
     "shape_tension_versions.py",
+    "orbit_reading_check.py",
 ]
 
 rows = []
