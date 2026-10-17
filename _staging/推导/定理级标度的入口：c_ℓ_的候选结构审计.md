@@ -2,8 +2,8 @@
 
 > 状态：推导稿（未落盘；目标达成后再定编号）
 > 前置：标度稿（标度条件式）、Z037（量纲账）、Z076（计数→能量桥）、Z153（唯一锚）、Z121（相位律）
-> 关联脚本：`ZeroGPU/src/scale_origin_audit.py`、`ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`
-> 数据：`ZeroGPU/results/scale_origin_audit.json`、`ZeroGPU/results/c_ell_candidate_check.json`、`ZeroGPU/results/zero_mode_energy_check.json`、`ZeroGPU/results/c_ell_wide_search.json`、`ZeroGPU/results/mass_unit_options.json`
+> 关联脚本：`ZeroGPU/src/scale_origin_audit.py`、`ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`
+> 数据：`ZeroGPU/results/scale_origin_audit.json`、`ZeroGPU/results/c_ell_candidate_check.json`、`ZeroGPU/results/zero_mode_energy_check.json`、`ZeroGPU/results/c_ell_wide_search.json`、`ZeroGPU/results/mass_unit_options.json`、`ZeroGPU/results/p1_chain_check.json`
 > 登记日期：2026-10-17
 
 **篇性**：**核查篇**。定理级标度的第一道门是纯数 $c_\ell=\mu_\ell^2/v$（它把 $v$ 换算成费米子质量单元）。本篇先查库：把 $c_\ell$ 与 $c_\nu$ 的所需值与既有标度结构（四环指数、中心二项式、层权重、闭包常数）逐项对照，记录搜索空间与最近的匹配。
@@ -143,6 +143,30 @@ $$
 
 **读法**：即使把 $c_\ell$ 当自由候选，也只有 $1/784$ 这一个落在数据附近（仍差 $10\sigma$）；环组合近邻被 $\Sigma m_\nu$ 直接排除。这进一步缩小了"缺失机制"的形状：它必须给出 $c_\ell\approx1/784$ 的**动力学**，而不是环指数的乘积。
 
+### 3.2 在 $P_1$ 下的完整链（$c_\ell=1/784$）
+
+把 $c_\ell=1/\binom82^2$ 当**单一无量纲计数公设** $P_1$，从 $v$ 算到底（`p1_chain_check.py`，4/4 PASS）：
+
+| 量 | $P_1$ 链 | 数据 | 偏差 |
+|:--|--:|:--|:--|
+| $m_e$ | $0.000511$ GeV | $0.000510999$ | $+0.00\%$ |
+| $m_\mu$ | $0.105726$ GeV | $0.1056584$ | $+0.064\%$ |
+| $m_\tau$ | $1.77810$ GeV | $1.77686$ | $+0.070\%$ |
+| $m_{\nu3}$ | $48.66$ meV | $50.10$ | $-2.9\%$ |
+| $\Sigma m_\nu$ | $57.25$ meV | $<64$（DESI DR2） | 界内 |
+| $m_{\beta\beta}$ | $3.63$ meV | 下一代 $10$–$20$ | 无信号 |
+| $X$ | $0.031177$ | $0.029562$ | $+5.5\%$（$1.9\sigma$） |
+
+$$
+\boxed{\;\text{一条计数规则 }1/784\ \text{把三代带电轻子全定到 }0.07\%\ \text{内} .\;}
+\tag{3.3}
+$$
+
+**范围框（须与结论一起读）**：
+- $P_1$ 是**无量纲**计数（28 个槽对子），$v$ 仍是**唯一**量纲锚；
+- 三代轻子的**比值**由相位律精确给出（$\delta_0$ 内生），$P_1$ 只定整体标度——所以三个 $0.07\%$ 是**同一个**标度残差，不是三次独立拟合；
+- $M_R$ 与 $1/2$ 仍是结构识别（推导稿另两处），$P_1$ 不推出它们。
+
 ## §4 下一入口（按可判定性排）
 
 1. **相位的零模能量**：$A^2$（Z121 的质量单元）是振动能量；若零模能量 $\propto v$ 且其系数是闭包常数（$2/9$、$\pi/12$、$\delta_0$）的**非单项式**组合，可给出 $c_\ell$。
@@ -174,13 +198,13 @@ $$
 
 运行：`python3 ZeroGPU/src/scale_origin_audit.py`（**2/2 PASS**，写 `results/scale_origin_audit.json`）。
 
-**A.2 计数候选** `ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`（纯标准库；**2/2 PASS**）：
+**A.2 计数候选** `ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`（纯标准库；**2/2 PASS**）：
 $1/\binom82^2=1/784$ 与 $c_\ell$ 差 $+0.0698\%$；若精确则 $m_\tau=1.77810$ GeV（$+10.3\sigma$）。写 `results/c_ell_candidate_check.json`。
 
-**A.3 零模能量** `ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`（纯标准库；**2/2 PASS**）：
+**A.3 零模能量** `ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`（纯标准库；**2/2 PASS**）：
 零点曲率 $V''=2$；所需惯性 $N=2/c_\ell=1569.094$，与 $2\binom82^2=1568$ 差 $0.070\%$ ⟹ 零模路线与 §2.1 是同一个数。写 `results/zero_mode_energy_check.json`。
 
-**A.4 广搜** `ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`（纯标准库；退出码 0 表示"无 $<10^{-4}$ 候选"——这是预期形态）：
+**A.4 广搜** `ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`（纯标准库；退出码 0 表示"无 $<10^{-4}$ 候选"——这是预期形态）：
 510,696 个三因子式；最小相对差 $2.7\times10^{-4}$（$0.693\approx\ln2$ 的舍入假象），真最佳 $1/28^2$（$4.9\times10^{-4}$）。写 `results/c_ell_wide_search.json`。
 
 **核验纪律**：组合系数限 $|n_i|\le2$；二项式只查 $L\le24$；常数只作对照，不作结构判定。
