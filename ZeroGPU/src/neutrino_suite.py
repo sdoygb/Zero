@@ -43,6 +43,7 @@ SCRIPTS = [
     "half_slot_chain_check.py",
     "d0_channel_count.py",
     "chain_systematics.py",
+    "shape_tension_versions.py",
 ]
 
 rows = []

@@ -137,8 +137,14 @@
    "ok": true,
    "returncode": 0,
    "summary": "PASS 3 / FAIL 0"
+  },
+  {
+   "script": "shape_tension_versions.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 2 / FAIL 0"
   }
  ],
- "n_ok": 23,
- "n_total": 23
+ "n_ok": 24,
+ "n_total": 24
 }
