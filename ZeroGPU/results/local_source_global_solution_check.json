@@ -1,0 +1,38 @@
+{
+  "object": "局域源⟹全局解（离散侧）＋交换能量的梯度恒等式",
+  "local_source": [
+    {
+      "graph": "path 32",
+      "n": 32,
+      "max_residual": 3.552713678800501e-15,
+      "nonzero_fraction": 1.0,
+      "max_abs_phi": 16.0
+    },
+    {
+      "graph": "2D 8×8",
+      "n": 64,
+      "max_residual": 1.7763568394002505e-15,
+      "nonzero_fraction": 1.0,
+      "max_abs_phi": 1.714235
+    },
+    {
+      "graph": "3D 6×6×6",
+      "n": 216,
+      "max_residual": 1.7763568394002505e-15,
+      "nonzero_fraction": 1.0,
+      "max_abs_phi": 0.892463
+    }
+  ],
+  "decay": {
+    "slope_1d_large_n": 0.516828,
+    "power_3d_finite_cube": null
+  },
+  "exchange_energy": {
+    "E_ex": 74.820208,
+    "grad_identity_max_err": 8.854754263154518e-09
+  },
+  "criteria": {
+    "total": 6,
+    "failed": []
+  }
+}

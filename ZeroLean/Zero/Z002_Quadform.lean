@@ -16,9 +16,9 @@
     取 `Σ_v x_v = 0` 即得 `L(H_Q) ⊆ H_Q`。
     （`im L = H_Q` 这种满射性在 Z002 引理 2 是对关联矩阵 `B` 说的 `im B = H_Q`，
     本文件不涉及；`ker L = 常量` 与"行和为 0"合起来即 Z064 的横截结论
-    `z064_eq_zero_of_sum_zero`。）
+    `z063_eq_zero_of_sum_zero`。）
 
-  与 Z064 的关系：`Zero.Z064_Laplacian` 的 `z064_quadform` 把同一个二次型写成
+  与 Z064 的关系：`Zero.Z063_Laplacian` 的 `z063_quadform` 把同一个二次型写成
   "逐顶点邻居和"的形式 `Σ_v f v · (Σ_{w ∈ N(v)} (f v − f w)) = Σ_v Σ_{w∈N(v)} (f v − f w)²/2`；
   本文件用 Mathlib 的 `SimpleGraph.lapMatrix_toLinearMap₂'`（"逐边差平方和 / 2"，
   同上式的右手边）与 `SimpleGraph.lapMatrix_toLinearMap₂'_apply'_eq_zero_iff_forall_reachable`
@@ -38,7 +38,7 @@
 -/
 
 import Mathlib
-import Zero.Z064_Laplacian
+import Zero.Z063_Laplacian
 
 open scoped Matrix
 

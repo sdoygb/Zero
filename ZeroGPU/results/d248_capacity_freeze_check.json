@@ -1,0 +1,26 @@
+{
+ "checks": [
+  {
+   "name": "H1a 容量机制使图案序列**收敛**（末两周期图案差 → 0）",
+   "pass": true,
+   "detail": "末次差 = 0.000e+00"
+  },
+  {
+   "name": "H1b 冻结图案 = Fiedler 模（选择律，D67）",
+   "pass": true,
+   "detail": "末周期 Fiedler 投影 = 1.000000"
+  },
+  {
+   "name": "H2a 冻结图案**不依赖初值**（选择律是吸引子）",
+   "pass": true,
+   "detail": "6 个随机初值全部冻结到 Fiedler 子空间"
+  }
+ ],
+ "notes": [],
+ "verdict": {
+  "capacity": "Z022 §277（触顶⟹清空+写终端+重播种）把线性指数行为截断成周期",
+  "frozen_pattern": "周期末图案收敛到 Fiedler 模（λ_min，最长波长）",
+  "attractor": "选择律是吸引子（6 个随机初值同结果）",
+  "contrast_GR": "不是 TOV 平衡剖面，而是谱隙选出的冻结图案"
+ }
+}

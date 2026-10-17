@@ -1,0 +1,66 @@
+{
+ "checks": [
+  {
+   "name": "E0a D250 的 E_ex（K=A）＝ Z002 引理 3 的差分型能量 f^T L f",
+   "pass": true,
+   "detail": "相对差 1.53e-16（代数恒等）"
+  },
+  {
+   "name": "E1a 流反对称 J_{i→j} = −J_{j→i}（机器精度）",
+   "pass": true,
+   "detail": "max|J+Jᵀ| = 0.00e+00"
+  },
+  {
+   "name": "E1b 离散连续性方程 dq_j/dt = Σ_i J_{i→j} 成立",
+   "pass": true,
+   "detail": "max 差 = 2.22e-16"
+  },
+  {
+   "name": "E1c 总层间荷守恒（输运步）",
+   "pass": true,
+   "detail": "|Σq_a − Σq_b| = 0.00e+00"
+  },
+  {
+   "name": "E1d 路径A（代数）与路径B（实跑引擎）一致",
+   "pass": true,
+   "detail": "max 差 = 0.00e+00"
+  },
+  {
+   "name": "E2a 边②（L1→L2 seed 注入）不满足 D248 的零和交换（总荷增加 Σseed）",
+   "pass": true,
+   "detail": "总荷增加 = 14.500000 = Σseed = 14.500000"
+  },
+  {
+   "name": "E2b 边③（record）是单向累积，非守恒交换",
+   "pass": true,
+   "detail": "每代 Σrecord 严格增加 ⟹ 不能写成 dq_i/dt = −Σ_j J_{i→j}（该式要求零和）"
+  },
+  {
+   "name": "E3a 共同模盲区：b_i 均匀 ⟹ 全局读出 R_Z 对交换流完全不可见",
+   "pass": true,
+   "detail": "两种 R_Z 给同一流（差 8.88e-16）"
+  },
+  {
+   "name": "E3b 位置依赖响应 ⟹ R_Z 改变交换流（D248 主张④）",
+   "pass": true,
+   "detail": "流改变 33.279267"
+  },
+  {
+   "name": "E5a 引擎净流精确由『密度差』给出（R² = 1）",
+   "pass": true,
+   "detail": "R² = 1.000000000000"
+  },
+  {
+   "name": "E5b 引擎净流**不**由读出势差 φ_i−φ_j 给出（R² 明显 < 1）",
+   "pass": true,
+   "detail": "R² = 0.931872（势差解释力不足，且 K 不唯一：相对离散度 0.934）"
+  }
+ ],
+ "notes": [],
+ "verdict": {
+  "transport_step": "满足 D248 三件套（K=A 对称非负零对角；J 反对称；总荷守恒）",
+  "edge2_seed_injection": "非守恒（总荷 += Σseed）、非站点间交换（只加对角）",
+  "edge3_record": "单向累积（只增），非零和",
+  "gap": "D248 要的『层间读出势 φ 驱动站点间守恒交换』在新库引擎里不存在；站点间交换由走者密度驱动"
+ }
+}

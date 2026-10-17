@@ -194,11 +194,12 @@ $$
 ## §4 定理 2：超选择扇区
 
 > **定理 2.** $Z(\mathcal A_L)=\bigoplus_{h=1}^{H}\mathbb C\,I_2$，故 $\dim Z(\mathcal A_L)=H$。代数恰有 $H$ 个**超选择扇区**，即最小中心投影
-> $$
-> P_h=0\oplus\cdots\oplus I_2\oplus\cdots\oplus 0,\qquad
-> P_hP_{h'}=\delta_{hh'}P_h,\qquad \sum_h P_h=I .
-> \tag{4.1}
-> $$
+
+$$
+P_h=0\oplus\cdots\oplus I_2\oplus\cdots\oplus 0,\qquad
+P_hP_{h'}=\delta_{hh'}P_h,\qquad \sum_h P_h=I .
+\tag{4.1}
+$$
 
 *证明.* **(i) 中心.** 设 $X=\bigoplus_h X_h\in Z(\mathcal A_L)$。取矩阵单位 $E^{(h)}_{ij}\in\mathcal A_L$。由 $[X,E^{(h)}_{ij}]=0$ 得 $X_hE_{ij}=E_{ij}X_h$ 对一切 $i,j$；矩阵单位张成 $M_2(\mathbb C)$，故 $X_h\in M_2(\mathbb C)'=\mathbb C I_2$。反之 $\bigoplus_h\lambda_hI_2$ 显然中心。故 $Z(\mathcal A_L)=\bigoplus_h\mathbb C I_2$，维数为 $H$。
 
@@ -209,16 +210,19 @@ $$
 ### 4.1 扇区间相对相位不可观测
 
 > **定理 2.1.** 设 $|\psi_h\rangle$、$|\psi_{h'}\rangle$ 分别支撑在扇区 $h,h'$（$h\ne h'$），令
-> $$
-> |\psi(\varphi)\rangle:=\tfrac{1}{\sqrt2}\bigl(|\psi_h\rangle+e^{i\varphi}|\psi_{h'}\rangle\bigr).
-> $$
+
+$$
+|\psi(\varphi)\rangle:=\tfrac{1}{\sqrt2}\bigl(|\psi_h\rangle+e^{i\varphi}|\psi_{h'}\rangle\bigr).
+$$
+
 > 则对一切 $A\in\mathcal A_L$，
-> $$
-> \bigl\langle\psi(\varphi)\bigr|A\bigl|\psi(\varphi)\bigr\rangle
-> =\tfrac12\Bigl(\langle\psi_h|A|\psi_h\rangle+\langle\psi_{h'}|A|\psi_{h'}\rangle\Bigr)
-> \qquad\textbf{与 }\varphi\textbf{ 无关}.
-> \tag{4.2}
-> $$
+
+$$
+\bigl\langle\psi(\varphi)\bigr|A\bigl|\psi(\varphi)\bigr\rangle
+=\tfrac12\Bigl(\langle\psi_h|A|\psi_h\rangle+\langle\psi_{h'}|A|\psi_{h'}\rangle\Bigr)
+\qquad\textbf{与 }\varphi\textbf{ 无关}.
+\tag{4.2}
+$$
 
 *证明.* $A$ 是块对角的（(2.5)），故 $\langle\psi_h|A|\psi_{h'}\rangle=0$（$h\ne h'$）；同理 $\langle\psi_{h'}|A|\psi_h\rangle=0$。展开 $\langle\psi(\varphi)|A|\psi(\varphi)\rangle$：交叉项消失，剩余两项不含 $\varphi$。$\blacksquare$
 
@@ -233,10 +237,11 @@ $$
 ## §5 定理 3：代数是态的中心化子
 
 > **定理 3.** 若权重 $w_1,\dots,w_H$ **两两不同**，则
-> $$
-> \{\rho\}'=\mathcal A_L .
-> \tag{5.1}
-> $$
+
+$$
+\{\rho\}'=\mathcal A_L .
+\tag{5.1}
+$$
 
 *证明.*
 **(⊇)** $\rho_h=\tfrac{w_h}{2}I_2$ 与 $M_2(\mathbb C)$ 中一切元交换，故 $\mathcal A_L\subseteq\{\rho\}'$。
@@ -278,10 +283,11 @@ $$
 $$
 
 > **定理 4.** $\langle\cdot,\cdot\rangle_\omega$ 是 $\mathcal A_L$ 上的**内积**（正定 Hermite 型）；$\mathcal A_L$ 关于它的完备化 $\mathcal H_\omega$ 是复 Hilbert 空间，且
-> $$
-> \dim_{\mathbb C}\mathcal H_\omega=\dim_{\mathbb C}\mathcal A_L=4H .
-> \tag{6.2}
-> $$
+
+$$
+\dim_{\mathbb C}\mathcal H_\omega=\dim_{\mathbb C}\mathcal A_L=4H .
+\tag{6.2}
+$$
 
 *证明.*
 **(i) 半双线性.** 由 $\operatorname{Tr}$ 的线性与 $A\mapsto A^*$ 的反线性，
@@ -314,10 +320,11 @@ $$
 ### 6.2 模结构
 
 > **定理 4.2（模结构）.** 令 $\sigma_t^\omega:=\operatorname{Ad}(\rho^{it})\big|_{\mathcal A_L}$。则 $\sigma_t^\omega$ 是 $\mathcal A_L$ 的 $*$-自同构单参数群，且模算子满足
-> $$
-> \Delta_\omega^{it}\pi_\omega(A)\Omega=\pi_\omega\bigl(\sigma_{-t}^\omega(A)\bigr)\Omega .
-> \tag{6.3}
-> $$
+
+$$
+\Delta_\omega^{it}\pi_\omega(A)\Omega=\pi_\omega\bigl(\sigma_{-t}^\omega(A)\bigr)\Omega .
+\tag{6.3}
+$$
 
 *证明.* $\rho>0$ 故 $\rho^{it}$ 是酉元，$\operatorname{Ad}(\rho^{it})$ 是 $*$-自同构；群性质由 $\rho^{i(s+t)}=\rho^{is}\rho^{it}$。第二式是 Tomita–Takesaki 模理论的标准结论（**引用**）；在有限维且 $\rho$ 忠实时，可直接由 $\Delta_\omega=\rho\otimes\rho^{-1}$ 验证。$\blacksquare$
 
@@ -328,13 +335,14 @@ $$
 ## §7 定理 5：中心态、迹性与模流
 
 > **定理 5.** 设 $\mathcal A$ 含单位，$\rho\in\mathcal A$ 忠实，$\omega=\operatorname{Tr}(\rho\,\cdot\,)$。则以下四条**等价**：
-> $$
-> \text{(a)}\ \rho\in Z(\mathcal A);\quad
-> \text{(b)}\ \omega(AB)=\omega(BA)\ \ \forall A,B\in\mathcal A;\quad
-> \text{(c)}\ \Delta_\omega=I;\quad
-> \text{(d)}\ \sigma_t^\omega=\mathrm{id}\ \ \forall t .
-> \tag{7.1}
-> $$
+
+$$
+\text{(a)}\ \rho\in Z(\mathcal A);\quad
+\text{(b)}\ \omega(AB)=\omega(BA)\ \ \forall A,B\in\mathcal A;\quad
+\text{(c)}\ \Delta_\omega=I;\quad
+\text{(d)}\ \sigma_t^\omega=\mathrm{id}\ \ \forall t .
+\tag{7.1}
+$$
 
 *证明.* 按 (a)⇒(b)⇒(a)⇒(c)⇒(d)⇒(a) 闭环。
 
@@ -360,10 +368,11 @@ $$
 **(d)⇒(a)** $\rho^{it}A\rho^{-it}=A$ 对一切实 $t$；对 $t$ 求导得 $[\log\rho,A]=0$；$\rho>0$ 故 $\log\rho$ 良定义，指数化得 $[\rho,A]=0$。$\blacksquare$
 
 > **推论 7.1（本文模型）.** §2.4 的 $\rho_h\propto I_2$ $\Longrightarrow$ $\rho\in Z(\mathcal A_L)$ $\Longrightarrow$ (a)–(d) 全部成立。特别地
-> $$
-> \boxed{\;\omega([A,B])=0\qquad\text{对一切 }A,B\in\mathcal A_L .\;}
-> \tag{7.2}
-> $$
+
+$$
+\boxed{\;\omega([A,B])=0\qquad\text{对一切 }A,B\in\mathcal A_L .\;}
+\tag{7.2}
+$$
 
 $$
 \Longrightarrow\quad \textbf{在此态上，任何两个可观测量的不可交换性都不可观测；模流平凡；配分函数只有零点能项}。
@@ -389,15 +398,19 @@ $$
 ## §8 定理 6：概率是计数测度的推前
 
 > **定理 6.** 在 $W_L$ 上取**均匀计数测度**
-> $$
-> \mu_L(A):=\frac{|A|}{|W_L|}
-> \tag{8.1}
-> $$
+
+$$
+\mu_L(A):=\frac{|A|}{|W_L|}
+\tag{8.1}
+$$
+
 > （公理③允许的唯一测度）。设 $\pi:W_L\to\mathcal E$ 是任意**粗粒化映射**（把微观历史映到可观测事件），则
-> $$
-> p:=\mu_L\circ\pi^{-1}
-> \tag{8.2}
-> $$
+
+$$
+p:=\mu_L\circ\pi^{-1}
+\tag{8.2}
+$$
+
 > 是事件集 $\mathcal E$ 上的概率测度。
 
 *证明.*
@@ -410,21 +423,24 @@ $$
 $$
 
 > **定理 6.1（频率＝概率）.** 设 $f:W_L\to\mathbb R$ 有界，$w^{(1)},\dots,w^{(N)}$ 独立同分布于 $\mu_L$。则
-> $$
-> \frac1N\sum_{i=1}^{N}f(w^{(i)})\;\xrightarrow[\;N\to\infty\;]{}\;\mathbb E_{\mu_L}[f]
-> \qquad\text{几乎必然}.
-> \tag{8.3}
-> $$
+
+$$
+\frac1N\sum_{i=1}^{N}f(w^{(i)})\;\xrightarrow[\;N\to\infty\;]{}\;\mathbb E_{\mu_L}[f]
+\qquad\text{几乎必然}.
+\tag{8.3}
+$$
 
 *证明.* $\bigl(f(w^{(i)})\bigr)$ 是独立同分布的有界随机变量，由强大数定律即得。$\blacksquare$
 
 **注 8.1.** 强大数定律是**标准定理**（引用），不含新内容；引用它是为了说明"频率＝概率"在此**不需要额外公设**。
 
 > **推论 8.2（层内无偏好）.** 取 $\pi(w):=h$（壳层）。则
-> $$
-> p(h)=\frac{\bigl|W_L^{(h)}\bigr|}{|W_L|}=w_h .
-> \tag{8.4}
-> $$
+
+$$
+p(h)=\frac{\bigl|W_L^{(h)}\bigr|}{|W_L|}=w_h .
+\tag{8.4}
+$$
+
 > 特别地，**在固定壳层内对符号作任何进一步粗粒化，其条件分布都由计数唯一确定**。
 
 **核验实例.** $|W_{12}|=\binom{12}{6}=924$（精确计数）；闭合条件对全部词成立；推前是概率测度：$\sum_hp_h=1$（$7$ 层，$\sum$ 计数 $=11088$）；非负 ＋ 归一（精确有理）：$\min p=1/5544>0$。**平凡事件对照**：$L=12$ 的桥必访问 $h=1$（$924/924$，期望恰为 $1$）；**非平凡事件**：$\mathbb E[\mathbf 1_{\text{最大壳层}=H}]=1/462$（精确枚举 $924$ 词，严格介于 $0$ 与 $1$ 之间）。
@@ -434,17 +450,21 @@ $$
 ## §9 定理 7：Born 规则
 
 > **定理 7（迹形式）.** 设事件由投影 $E\in\mathcal A_L$（$E=E^2=E^*$）表示，定义
-> $$
-> p(E):=\omega(E)=\operatorname{Tr}(\rho E).
-> \tag{9.1}
-> $$
+
+$$
+p(E):=\omega(E)=\operatorname{Tr}(\rho E).
+\tag{9.1}
+$$
+
 > 则 $p$ 是事件集上的概率测度，且
-> $$
-> p(E)=\sum_k\lambda_k\,\bigl\lVert E\chi_k\bigr\rVert^2\ \ge\;0,
-> \qquad
-> \sum_i p(E_i)=1\ \ \text{若}\ \sum_iE_i=I,
-> \tag{9.2}
-> $$
+
+$$
+p(E)=\sum_k\lambda_k\,\bigl\lVert E\chi_k\bigr\rVert^2\ \ge\;0,
+\qquad
+\sum_i p(E_i)=1\ \ \text{若}\ \sum_iE_i=I,
+\tag{9.2}
+$$
+
 > 其中 $\rho=\sum_k\lambda_k|\chi_k\rangle\langle\chi_k|$ 是谱分解。
 
 *证明.* 谱分解给出 $\lambda_k\ge0$。由 $E\ge0$：
@@ -458,10 +478,11 @@ $$
 可加性同。$\blacksquare$
 
 > **定理 7.1（平方形式）.** 设 $|\psi\rangle\in\mathcal H_\omega$ 为单位向量，$P=|\chi\rangle\langle\chi|$ 为秩一投影。则
-> $$
-> \boxed{\;p=\operatorname{Tr}\bigl(P\,|\psi\rangle\langle\psi|\bigr)=\bigl|\langle\chi|\psi\rangle\bigr|^2 .\;}
-> \tag{9.3}
-> $$
+
+$$
+\boxed{\;p=\operatorname{Tr}\bigl(P\,|\psi\rangle\langle\psi|\bigr)=\bigl|\langle\chi|\psi\rangle\bigr|^2 .\;}
+\tag{9.3}
+$$
 
 *证明.* 直接计算：
 $$
@@ -472,11 +493,12 @@ $$
 $$
 
 > **定理 7.2（平方形式在 GNS 上的等价表述）.** 设 $A\in\mathcal A_L$，$A^*A$ 为投影，$\psi_A:=\pi_\omega(A)\Omega$。则对投影 $E$，
-> $$
-> \frac{\langle\psi_A,\pi_\omega(E)\psi_A\rangle_\omega}{\langle\psi_A,\psi_A\rangle_\omega}
-> =\frac{\omega(A^*EA)}{\omega(A^*A)} .
-> \tag{9.4}
-> $$
+
+$$
+\frac{\langle\psi_A,\pi_\omega(E)\psi_A\rangle_\omega}{\langle\psi_A,\psi_A\rangle_\omega}
+=\frac{\omega(A^*EA)}{\omega(A^*A)} .
+\tag{9.4}
+$$
 
 *证明.* 由 GNS 的循环性 $\langle\pi_\omega(X)\Omega,\pi_\omega(Y)\Omega\rangle_\omega=\omega(X^*Y)$ 逐项代入即得。$\blacksquare$
 
@@ -490,18 +512,22 @@ $$
 
 ## §10 Gleason 边界与 Born 唯一性的范围
 
-本节给出本文**必须写明的边界**：Born 规则的**唯一性**不能由 Gleason 定理给出。
+本节给出 Born 规则唯一性的**精确范围**：唯一性在 $\dim\ge3$ 上由 Gleason 定理给出；本文的每个块都是 $\dim=2$，其上唯一性**失效**（命题 10.1 给显式反例）。
 
 > **命题 10.1（Gleason 的假设在本文的格上不成立）.** 设 $\mathcal H\cong\mathbb C^2$，$L(\mathbb C^2)$ 为其射线格，射线以角 $\theta$ 参数化。则函数
-> $$
-> f(\theta):=\frac{1+\cos6\theta}{2}
-> \tag{10.1}
-> $$
+
+$$
+f(\theta):=\frac{1+\cos6\theta}{2}
+\tag{10.1}
+$$
+
 > 满足
-> $$
-> \text{(i) 正值性}\ f\ge0;\qquad
-> \text{(ii) 加性}\ f(\theta)+f\bigl(\theta+\tfrac\pi2\bigr)\equiv1;
-> $$
+
+$$
+\text{(i) 正值性}\ f\ge0;\qquad
+\text{(ii) 加性}\ f(\theta)+f\bigl(\theta+\tfrac\pi2\bigr)\equiv1;
+$$
+
 > 但**不存在**密度算子 $\rho$ 使 $f(\theta)=\operatorname{Tr}(\rho P_\theta)$。
 
 *证明.*
@@ -529,12 +555,14 @@ $$
 $$
 \int_0^{2\pi}\!\cos^26\theta\,d\theta=\pi\ne0 .
 $$
-故 $\cos6\theta$ 与三个基函数**正交而非零**，不可能属于其张成。矛盾。$\blacksquare$
+故 $\cos6\theta$ 与三个基函数**正交而非零**，它**不在**其张成内。矛盾。$\blacksquare$
 
-> **推论 10.2（本文的边界）.** $L(\mathcal A_L)$ 含 $I_2$ 直和项（每个壳层一块），故它是 $L(M_2)$ 的**水平和**；由命题 10.1，**Gleason 定理的假设在此不成立**。因此
-> $$
-> \textbf{迹形式}\ \operatorname{Tr}(\rho E)\ \textbf{的唯一性不能由 Gleason 定理给出} .
-> $$
+> **推论 10.2（唯一性的范围）.** $\mathcal A_L=\bigoplus_{h=1}^{H}M_2(\mathbb C)$，故 $L(\mathcal A_L)$ 是 $L(M_2)$ 的**直和**；而 $\dim L(M_2)=2$，Gleason 定理对其中每个块都**不适用**（命题 10.1 即块上的反例）。因此
+
+$$
+\text{在块级（}\dim=2\text{）上，}\textbf{迹形式}\ \operatorname{Tr}(\rho E)\ \textbf{不唯一};
+\qquad \dim\ge3\ \text{上 Gleason 定理给出唯一性} .
+$$
 
 $$
 \Longrightarrow\quad \text{本文只主张 Born 的}\textbf{形式}（\text{定理 7}）\text{与}\textbf{平方结构}（\text{定理 7.1}）；\textbf{唯一性超出本文范围}。
@@ -576,9 +604,9 @@ $$
 
 ---
 
-## §12 开放项
+## §12 结论的适用范围
 
-**边界（清单）**：① 本文证的是**模型本身**（非其物理实现）；② Born 规则的**唯一性**未证；③ 本文模型**没有**量子现象（定理 5 恰是否定的）；④ **"概率公设已被废除"不成立**——被导出的是**推前测度**，大数定律仍是引用。
+**本文的边界**：① 证的是**模型本身**（非其物理实现）；② Born 规则的唯一性范围见 §10（$\dim\ge3$ 由 Gleason 给出；块级 $\dim=2$ 失效，有显式反例）；③ 本文模型**没有**量子现象（定理 5 恰是否定的）；④ **"概率公设已被废除"不成立**——被导出的是**推前测度**，大数定律仍是引用。
 
 1. **模型本身不在本文范围内.** §2.3 的"壳层 $\Rightarrow$ 每层一个 $M_2(\mathbb C)$"是出发点。本文从该模型**往下**的每一步都是定理；模型本身的推导不在本文。
 
@@ -589,11 +617,9 @@ $$
    \textbf{这不是缺陷而是定位}:\ \text{后续各篇必须处理"如何产生非中心态"}。
    $$
 
-4. **Born 的唯一性不在本文.** 定理 7 给**形式**，定理 7.1 给**平方**；**唯一性**需 Gleason 型输入，而该输入在 $L(\mathcal A_L)$ 上**不适用**（命题 10.1 ＋ 推论 10.2，本文自证）。故本文**不**主张"Born 规则被完整导出"。
+4. **Born 的唯一性范围**（§10）.** 定理 7 给**形式**，定理 7.1 给**平方**；**唯一性**在 $\dim\ge3$ 上由 Gleason 定理给出，而本文的块是 $\dim=2$，其上**不唯一**（命题 10.1 的反例）。故本文**不**主张"Born 规则被完整导出"。
 
 5. **引用两处标准数学**：强大数定律（定理 6.1）；Tomita–Takesaki 模理论（定理 4.2 第二式）。二者均不含新内容。
-
-6. **本文不涉及**：动力学（时间平移生成元、Schrödinger 方程）、测量与塌缩、位置观测量、全同粒子、纠缠、场的门。这些属本子纲领其余各篇。
 
 ---
 
@@ -648,7 +674,7 @@ $$
 2. **证明依据**：Cauchy–Schwarz 取等情形（`norm_inner_eq_norm_iff`）——概率为 1 迫使 $u$、$v$ 都与 $\psi$ 同射线，故彼此只是相位倍数。
 3. **在 Gleason 论证中的角色**：这说明二维时 $\{0,1\}$-赋值必然**集中在一根射线**上，无法在投影格上铺开，是 Gleason 前提失效的一环。
 
-**覆盖范围**：本文件只验证了上述**刚性子步骤**。§10 命题 10.1 的**主体**——显式构造 $f(\theta)=(1+\cos6\theta)/2$ 并由三角函数频率 $6$ 与频率 $2$ 的 Fourier 正交性（$\int_0^{2\pi}\cos6\theta\,d\theta=\int\cos6\theta\cos2\theta\,d\theta=\int\cos6\theta\sin2\theta\,d\theta=0$ 而 $\int\cos^26\theta\,d\theta=\pi\ne0$）证明它非态诱导——**尚未取得 Lean 机器证明**。这部分只需实积分/Fourier 正交性，原则上可在 Lean 内完成，留作后续；目前命题 10.1 的 (i)(ii) 与各正交积分由附录 A 表中数值核验（第 637 行）。本文定理 1–7 的代数主体（可观测量代数、GNS、Born 形式）同样未取得机器证明。
+**覆盖范围**：本文件只验证了上述**刚性子步骤**。§10 命题 10.1 的**主体**——显式构造 $f(\theta)=(1+\cos6\theta)/2$ 并由三角函数频率 $6$ 与频率 $2$ 的 Fourier 正交性（$\int_0^{2\pi}\cos6\theta\,d\theta=\int\cos6\theta\cos2\theta\,d\theta=\int\cos6\theta\sin2\theta\,d\theta=0$ 而 $\int\cos^26\theta\,d\theta=\pi\ne0$）证明它非态诱导——**其 Lean 形式化为开放**。这部分只需实积分/Fourier 正交性，原则上可在 Lean 内完成，留作后续；目前命题 10.1 的 (i)(ii) 与各正交积分由附录 A 表中数值核验（第 637 行）。本文定理 1–7 的代数主体（可观测量代数、GNS、Born 形式）同样未取得机器证明。
 
 ## 附录 B　引用与外部依赖
 

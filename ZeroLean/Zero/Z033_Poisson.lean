@@ -11,7 +11,7 @@
   * `z033_solvable_of_sum_zero` ↔ Z033 §2 的**充分性（Fredholm 条件自动满足）**：
     原文写 `im L = (ker L)^⊥ = {1}^⊥ = H_Q`，`x ∈ H_Q ⟹ x ∈ im L`。
     这里用等价而更便于机器化的形式：`L` 保持零和超平面 `H_Q`（本文 `z033_sum_mulVec`），
-    且 `L|_{H_Q}` **单射**（`ker L ∩ H_Q = {0}`，即 Z064 的 `z064_eq_zero_of_sum_zero`），
+    且 `L|_{H_Q}` **单射**（`ker L ∩ H_Q = {0}`，即 Z064 的 `z063_eq_zero_of_sum_zero`），
     有限维下 `H_Q → H_Q` 的单射自映射满射，故 `−x ∈ H_Q = im L|_{H_Q}`。
 
   用到的 Mathlib 引理（注释中逐条标注）：
@@ -24,12 +24,12 @@
   * `LinearMap.injective_iff_surjective`：有限维空间的自映射单射 ⟺ 满射
     （这就是"Fredholm 条件"在这里的机器形式）。
   * `LinearMap.mem_ker`：`f ∈ ker g ↔ g f = 0`。
-  * 复用的既有机器核验：`Zero.Z064_Laplacian` 的 `z064_eq_zero_of_sum_zero`
+  * 复用的既有机器核验：`Zero.Z063_Laplacian` 的 `z063_eq_zero_of_sum_zero`
     （`ker L ∩ H_Q = {0}`，即 `L|_{H_Q} ≻ 0`）。
 -/
 
 import Mathlib
-import Zero.Z064_Laplacian
+import Zero.Z063_Laplacian
 
 open scoped Matrix
 
@@ -116,7 +116,7 @@ theorem z033_diff_constant {V : Type*} [Fintype V] [DecidableEq V] (G : SimpleGr
 theorem z033_solvable_of_sum_zero {V : Type*} [Fintype V] [DecidableEq V] (G : SimpleGraph V)
     [DecidableRel G.Adj] (hconn : G.Connected) (x : V → ℝ) (hx : ∑ v, x v = 0) :
     ∃ φ : V → ℝ, G.lapMatrix ℝ *ᵥ φ = -x := by
-  -- ① `L|_{H_Q}` 单射：`ker L ∩ H_Q = {0}`（Z064 的 `z064_eq_zero_of_sum_zero`）。
+  -- ① `L|_{H_Q}` 单射：`ker L ∩ H_Q = {0}`（Z064 的 `z063_eq_zero_of_sum_zero`）。
   --    这一步正是 Z033 §2 的 `L|_{H_Q} ≻ 0`。
   have hinj : Function.Injective (z033LapOnZeroSum G) := by
     intro f g hfg
@@ -135,7 +135,7 @@ theorem z033_solvable_of_sum_zero {V : Type*} [Fintype V] [DecidableEq V] (G : S
       intro v
       rw [← SimpleGraph.lapMatrix_mulVec_apply' G v ((f : V → ℝ) - (g : V → ℝ))]
       exact congrFun h1 v
-    exact Subtype.ext (sub_eq_zero.mp (z064_eq_zero_of_sum_zero G hconn _ hf0 hsum))
+    exact Subtype.ext (sub_eq_zero.mp (z063_eq_zero_of_sum_zero G hconn _ hf0 hsum))
   -- ② 有限维下 `H_Q → H_Q` 的单射自映射满射 —— 这就是"Fredholm 条件自动满足"
   have hsurj : Function.Surjective (z033LapOnZeroSum G) :=
     LinearMap.injective_iff_surjective.mp hinj

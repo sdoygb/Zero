@@ -22,7 +22,7 @@
     · `z136_eR_charge`、`z136_uR_hypercharge`、`z136_dR_hypercharge`：
       同一条规则复算 e_R、u_R、d_R ⟹ −12、+8、−4（即 −2、+4/3、−2/3）全对 PDG。
 
-  与 `Zero/Z097_QNumbers.lean` 的关系（**本文件取代它**，理由逐条可核）：
+  与被取代的 `wip/_orphan_Z097_QNumbers.lean`（原 `Zero/Z097_QNumbers.lean`）的关系（**本文件取代它**，理由逐条可核）：
     · `z097_gmn (t3 y : ℚ) : t3 + y/2 = t3 + y/2 := rfl` 是 `x = x` 型**重言式**，不陈述任何事；
     · `z097_right_left_hypercharge` 在右手态上**仍带着 T₃**（其 `qR := t3 + yR/2`），
       于是证出 `Q_R = Q_L + T₃`；但右手是 SU(2) 单态，`T₃^R = 0`，正确关系是 `Q_R = Q_L`

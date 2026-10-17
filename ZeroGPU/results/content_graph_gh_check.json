@@ -1,0 +1,121 @@
+{
+  "object": "内容图（词上的交换图，节点=循环等价类，边=一次相邻换位）",
+  "content_graph": [
+    {
+      "L": 8,
+      "n": 4,
+      "V": 10,
+      "diam": 6,
+      "q_eff_logV_logdiam": 1.285097,
+      "q_eff_logV_log2n": 1.107309,
+      "V_over_diam3": 0.046296
+    },
+    {
+      "L": 10,
+      "n": 5,
+      "V": 26,
+      "diam": 10,
+      "q_eff_logV_logdiam": 1.414973,
+      "q_eff_logV_log2n": 1.414973,
+      "V_over_diam3": 0.026
+    },
+    {
+      "L": 12,
+      "n": 6,
+      "V": 80,
+      "diam": 15,
+      "q_eff_logV_logdiam": 1.618148,
+      "q_eff_logV_log2n": 1.763457,
+      "V_over_diam3": 0.023704
+    },
+    {
+      "L": 14,
+      "n": 7,
+      "V": 246,
+      "diam": 22,
+      "q_eff_logV_logdiam": 1.78106,
+      "q_eff_logV_log2n": 2.086098,
+      "V_over_diam3": 0.023103
+    },
+    {
+      "L": 16,
+      "n": 8,
+      "V": 810,
+      "diam": 31,
+      "q_eff_logV_logdiam": 1.950221,
+      "q_eff_logV_log2n": 2.415445,
+      "V_over_diam3": 0.027189
+    },
+    {
+      "L": 18,
+      "n": 9,
+      "V": 2704,
+      "diam": 42,
+      "q_eff_logV_logdiam": 2.114282,
+      "q_eff_logV_log2n": 2.734073,
+      "V_over_diam3": 0.036497
+    },
+    {
+      "L": 20,
+      "n": 10,
+      "V": 9252,
+      "diam": 54,
+      "q_eff_logV_logdiam": 2.289454,
+      "q_eff_logV_log2n": 3.048535,
+      "V_over_diam3": 0.058756
+    },
+    {
+      "L": 22,
+      "n": 11,
+      "V": 32066,
+      "diam": 68,
+      "q_eff_logV_logdiam": 2.458948,
+      "q_eff_logV_log2n": 3.356651,
+      "V_over_diam3": 0.101981
+    },
+    {
+      "L": 24,
+      "n": 12,
+      "V": 112720,
+      "diam": 83,
+      "q_eff_logV_logdiam": 2.632515,
+      "q_eff_logV_log2n": 3.66031,
+      "V_over_diam3": 0.197136
+    }
+  ],
+  "lattice_refinement": [
+    {
+      "m": 8,
+      "V": 512,
+      "diam": 7,
+      "V_over_diam3": 1.492711
+    },
+    {
+      "m": 16,
+      "V": 4096,
+      "diam": 15,
+      "V_over_diam3": 1.21363
+    },
+    {
+      "m": 32,
+      "V": 32768,
+      "diam": 31,
+      "V_over_diam3": 1.09993
+    },
+    {
+      "m": 64,
+      "V": 262144,
+      "diam": 63,
+      "V_over_diam3": 1.048379
+    }
+  ],
+  "verdict": {
+    "content_graph_q_eff_monotone": true,
+    "content_graph_V_over_diam3_unbounded": true,
+    "lattice_V_over_diam3_bounded": true
+  },
+  "criteria": {
+    "total": 5,
+    "failed": []
+  }
+}

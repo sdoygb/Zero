@@ -1,0 +1,51 @@
+{
+ "checks": [
+  {
+   "name": "A1a 翘曲乘积纤维 Ricci 与旧库公式**逐项相同**（含'界与界耦合'项）",
+   "pass": true,
+   "detail": "差 = 0"
+  },
+  {
+   "name": "A1b R₂'=0 时耦合项消失（⟹ 耦合项确由'另一界的演化率'提供）",
+   "pass": true,
+   "detail": "差 = 0"
+  },
+  {
+   "name": "A1c 基方向 R_ρρ = −Σ_a n_a R_a''/R_a",
+   "pass": true,
+   "detail": "差 = 0"
+  },
+  {
+   "name": "B1a Gauss 缩并 R_ij^ij（空间指标）= ⁽³⁾R（K_ij=0 切片，精确）",
+   "pass": true,
+   "detail": "差 = 0"
+  },
+  {
+   "name": "B1b 2G_00 − ⁽³⁾R = O(Φ²)（一阶精确相等）",
+   "pass": true,
+   "detail": "D/ε² 趋于常数（-39.9632 → -39.2650），D/ε 随 ε 线性趋零"
+  },
+  {
+   "name": "C1a 球面上 ℓ² 系数 = R_scalar/(6n)（旧库口径复现）",
+   "pass": true,
+   "detail": "最大相对差 = 6.77e-11"
+  },
+  {
+   "name": "C2a 翘曲乘积 ρρ 的 Ricci 公式可用（面积展开 ℓ² 系数的正确来源）",
+   "pass": true,
+   "detail": "Ric_ρρ = -0.2"
+  }
+ ],
+ "notes": [
+  {
+   "name": "B 的结论",
+   "value": "在静态（N=1, β=0, K_ij=0）切片上：R_ij^ij = ⁽³⁾R（精确，Gauss 方程）；2G_00 = ⁽³⁾R（一阶）",
+   "detail": "⟹ 旧库 §5.9 第三步『R_ik^ik = 2G_00 ⟹ 接上 Einstein 张量』成立（一阶）"
+  }
+ ],
+ "verdict": {
+  "stepA": "翘曲乘积纤维 Ricci 与旧库公式逐项相同（差=0）；耦合项由另一界演化率提供；R_ρρ=−Σn_aR_a''/R_a",
+  "stepB": "Gauss 缩并 R_ij^ij = ⁽³⁾R（精确）；2G_00 = ⁽³⁾R（一阶）⟹ 第三步成立",
+  "stepC": "面积展开 ℓ² 系数 = Ric(γ̇,γ̇)/6；球面退化为 R_scalar/(6n)（旧库口径复现）"
+ }
+}

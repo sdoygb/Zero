@@ -1,0 +1,84 @@
+{
+  "object": "忠实引擎 path16 top2 T=4 的稳态主两支比值与 seed 比对照",
+  "rows": [
+    {
+      "seed": "geom 2^(15-i)",
+      "vertices": [
+        7,
+        8
+      ],
+      "w": [
+        0.65798,
+        0.32899
+      ],
+      "ratio": 2.0,
+      "ratio_seed": 2.0,
+      "freq": 0.69315,
+      "registered": 0.6931
+    },
+    {
+      "seed": "geom 1.5^(15-i)",
+      "vertices": [
+        7,
+        8
+      ],
+      "w": [
+        0.59391,
+        0.39594
+      ],
+      "ratio": 1.5,
+      "ratio_seed": 1.5,
+      "freq": 0.40547,
+      "registered": 0.405
+    },
+    {
+      "seed": "linear 16-i",
+      "vertices": [
+        7,
+        8
+      ],
+      "w": [
+        0.5248,
+        0.46649
+      ],
+      "ratio": 1.125,
+      "ratio_seed": 1.125,
+      "freq": 0.11778,
+      "registered": 0.118
+    },
+    {
+      "seed": "quad (16-i)^2",
+      "vertices": [
+        7,
+        8
+      ],
+      "w": [
+        0.55362,
+        0.43743
+      ],
+      "ratio": 1.26563,
+      "ratio_seed": 1.26562,
+      "freq": 0.23557,
+      "registered": 0.236
+    },
+    {
+      "seed": "uniform",
+      "vertices": [
+        7,
+        8
+      ],
+      "w": [
+        0.49565,
+        0.49565
+      ],
+      "ratio": 1.0,
+      "ratio_seed": 1.0,
+      "freq": 0.0,
+      "registered": null
+    }
+  ],
+  "criteria": {
+    "total": 4,
+    "failed": []
+  }
+}

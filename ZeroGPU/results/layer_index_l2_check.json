@@ -1,0 +1,30 @@
+{
+  "object": "忠实 L2 引擎上各层量的归属与稳态关系（path16, top2, T=4）",
+  "steady_state": {
+    "record_head": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.66667
+    ],
+    "top2": [
+      7,
+      8
+    ],
+    "max_abs_record_minus_closure": 5.138524960010253e-15,
+    "max_abs_record_minus_seed": 3.5791163276031585e-16
+  },
+  "layers_len": 100000,
+  "gen": 100000,
+  "self_reference_locked": true,
+  "height_layer_in_engine": false,
+  "ratio": 2.0,
+  "criteria": {
+    "total": 6,
+    "failed": []
+  }
+}

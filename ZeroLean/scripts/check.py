@@ -18,6 +18,8 @@ import argparse, json, os, re, subprocess, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 VAULT = ROOT.parent
+# 基础文件：其中的定理允许不带篇号（见文件头 R3 说明），故 R3b 对它们不施加篇号约束。
+BASE_MODULES = {"Basic", "AxiomLedger"}
 LEAN_BIN = pathlib.Path.home() / ".local" / "lean4" / "bin"
 
 def run_build():
@@ -84,6 +86,9 @@ def main():
         r3 = None
         if m and int(m.group(1)) not in notes:
             r3 = f"定理 {short} 声称属于 Z{m.group(1)}，但库里没有这一篇"
+        # 注：曾试过由定理名反推**文件**（R3b），不可行——`#print axioms` 给的限定量名形如
+        # `Zero.prefixIdx_nonempty`，只带命名空间 `Zero`，**带不出模块名**，故推不出文件。
+        # 无前缀定理的覆盖改由 check_file_notes() 按**文件名**判（见下）。
         if bad_sorry:
             problems.append(f"R1 {short}: 依赖 sorryAx（证明有洞）")
         if bad_ax:
@@ -92,6 +97,14 @@ def main():
             problems.append(f"R3 {r3}")
         rows.append({"theorem": name, "axioms": ax, "note": f"Z{m.group(1)}" if m else "-",
                      "ok": not (bad_sorry or bad_ax or r3)})
+
+    # R3（文件名侧）：Zero/ZNNN_*.lean 的 NNN 必须对应库内真实存在的篇。
+    #   补 R3 的覆盖面——凡是**没有** `zNNN_` 前缀的定理（命名风格不统一，如 `z021Ones_mulVec`；
+    #   或纯辅助名如 `prefixIdx_nonempty`），其篇号关联由**它住的文件**承担，故在此按文件名判。
+    for p in sorted((ROOT / "Zero").glob("Z[0-9][0-9][0-9]_*.lean")):
+        mm = re.match(r"Z(\d{3})_", p.name)
+        if mm and int(mm.group(1)) not in notes:
+            problems.append(f"R3 文件 {p.name} 声称属于 Z{mm.group(1)}，但库里没有这一篇")
 
     if a.json:
         print(json.dumps({"build_ok": rc == 0, "theorems": rows, "problems": problems,

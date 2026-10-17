@@ -14,7 +14,7 @@
 -/
 
 import Mathlib
-import Zero.Z124_Closure
+import Zero.Z063_Closure
 
 namespace Zero
 
@@ -43,7 +43,7 @@ theorem z082_koide_Q_two_thirds (b Q : ℝ) (h : b ^ 2 = 2 * (3 * Q - 1)) :
 theorem z082_equal_weights_kill_first_harmonic (s : ℂ) :
     s + s * Complex.exp (2 * Real.pi / 3 * Complex.I)
       + s * Complex.exp (2 * Real.pi / 3 * Complex.I) ^ 2 = 0 := by
-  have h := z124_color_singlet_sum_zero
+  have h := z063_color_singlet_sum_zero
   linear_combination s * h
 
 /-- **Z082 · 零权重项不贡献第一谐波**：ŝ₁ 对常数偏移不敏感（`1+ω+ω²=0` 的直接后果），

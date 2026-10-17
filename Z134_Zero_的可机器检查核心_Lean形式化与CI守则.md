@@ -2,7 +2,7 @@
 
 > 篇号：Z134
 > 状态：正式篇（建立可机器检查层）（核查篇）
-> 前置：Z104（图上波色散）、Z021（维数字典/空间维数）、Z004（Born 规则）、Z115–Z117（双缝与核查）
+> 前置：Z104（图上波色散）、Z021（维数字典/空间维数）、Z004（Born 规则）、Z117（双缝与内生性审计）
 > 关联脚本：`ZeroLean/scripts/check.py`（CI 守则）、`ZeroLean/Zero/Audit.lean`（自动审计）
 > 数据：`ZeroLean/.lean-report.json`（最近一次检查结果）
 > 登记日期：2026-10-14
@@ -17,7 +17,7 @@
 > 但其中 **25 条是空心/平凡定理**（`P↔P`、`x=x`、`True := trivial`、把假设原样返回、
 > 纯数字等式：把"两反射生成 Weyl 群 ≅ S₃、阶 6"写成 `2 * 3 = 6`），另有 **1 条 `sorry`**
 > 与 **10 个未进构建的文件**。清理后终态为 **153 条定理、守则全过**（口径含定义自动生成的
-> 等式引理），完整报告见 `_staging/FORMALIZATION_AUDIT.md`。
+> 等式引理），完整报告见 `_staging/进度与状态.md` §1.1。
 >
 > **引用纪律（本条比数字重要）**：本文的定理数**只作规模指示**。判断"某条结论是否真进了
 > kernel"，必须读定理的**类型**（statement）并核对它的依赖清单 —— 不能读注释，也不能只看
@@ -25,7 +25,7 @@
 >
 > **更新（2026-10-15 凌晨批次，就地修正）**：此后一夜落 **25 个文件**，定理数 **153 → 678**
 > （审计口径含自动生成的 `_proof_` 辅助声明），**有 kernel 定理的篇 41 → 63 篇**；覆盖账随之更新为
-> **① 已证 55 篇／缺口 43 篇**（逐条见 Z135 §三之八 与 `_staging/FORMALIZATION_COVERAGE.md`）。
+> **① 已证 55 篇／缺口 43 篇**（逐条见 `_staging/进度与状态.md` §1.1 与附录 B）。
 > 两批独立审计（仍**只读定理类型**、共 186 条）共抓出 **⚠️ 空心 24 条**，已全部整改（纯数字／往返恒等式／
 > 字段投影 → 删或改 `private`；冗余前提 → **删**，删前提即加强）。**153 → 678 不改变上面的纪律。**
 
@@ -67,7 +67,7 @@ Lean 不会替我们补 —— 但它能把两类问题**分开**：任何"具�
 | `Zero/Z104_Dispersion.lean` | `z104_grid_dispersion` | 方格图色散 `λ(q) = 4 − 2cos qx − 2cos qy` | Z104 |
 | `Zero/Z021_Dimension.lean` | `z021_choose_two_eq_self` / `z021_dim_forced_three` | `C(D,2) = D ⟺ D ∈ {0,3}`（**闭合＝运动读法**下的维数唯一性）| Z021 |
 | `Zero/Z117_Aliasing.lean` | `z117_aliasing` / `z117_beyond_nyquist` | 采样不可区分 + `π < 4` | Z117 §一E7 |
-| `Zero/Z117_Metric.lean` | `z117_euclid_ne_l1` / `z117_l1_diff_const` | 离轴即分道；共线行（Z115 取的那一行）两制度量才重合 | Z117 §一E6 |
+| `Zero/Z117_Metric.lean` | `z117_euclid_ne_l1` / `z117_l1_diff_const` | 离轴即分道；共线行两制度量才重合 | Z117 §一E6 |
 | `Zero/Z117_CrossGraph.lean` | `z117_grid_lambda_at_pi` 等 | 跨图取值不可行的定量形式 | Z117 §一E5 |
 | `Zero/Z004_Gleason.lean` | `z004_born_one_forces_parallel` | Born {0,1}-赋值必集中于一条射线（Cauchy–Schwarz 取等）| Z004 |
 
@@ -82,11 +82,6 @@ K₄ 谱的**重数论证**（维数 3）在 Mathlib 版里可补 `Matrix` + 特
 - 跑法：`PATH="$HOME/.local/lean4/bin:$PATH" lake build`；CI 用 `python3 ZeroLean/scripts/check.py`。
 - 插件侧：`zero_lean` 工具（跑 CI 并把依赖清单回给模型）；改写 `ZeroLean/**/*.lean` 会自动触发检查。
   **核实记录（2026-10-14 补）**：这条当时**并未生效** —— 插件 post-execute 的入口守卫用 Z 篇的
-  `.md` 正则先 return，`.lean`/`.py` 分支不可达（当时的"已触发"是误读：检查报告 mtime 12:54 早于写入 12:55:00）。
+  `.md` 正则先 return，`.lean`/`.py` 分支在模型内枚举为空（当时的"已触发"是误读：检查报告 mtime 12:54 早于写入 12:55:00）。
   现已按「`.lean`/`.py`（机器检查）/ `Znnn_*.md`（指针·引用体检）」两类目标分别准入，离线断言 40 项覆盖
   （`~/.dsh/local-plugins/dsh-zerovault-v3/test/plugin.test.mjs`）；插件版本 `dsh-zerovault-v3`。
-
-## 四、悬置
-
-- **"全 Zero 内生"仍未判定**：本层只保证"从前提推得对"。主缺口（能量/波长标度从哪来、舞台图身份）不变，见 Z117 §四。
-- **形式化 ≠ 物理正确**：把"图上波"编码成什么函数、把哪张图当舞台，都是人的选择；本层不对此背书。
