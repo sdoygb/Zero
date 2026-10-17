@@ -155,8 +155,14 @@
    "ok": true,
    "returncode": 0,
    "summary": "PASS 4 / FAIL 0"
+  },
+  {
+   "script": "octagon_engine_check.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 4 / FAIL 0"
   }
  ],
- "n_ok": 26,
- "n_total": 26
+ "n_ok": 27,
+ "n_total": 27
 }

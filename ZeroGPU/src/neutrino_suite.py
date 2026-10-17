@@ -46,6 +46,7 @@ SCRIPTS = [
     "shape_tension_versions.py",
     "orbit_reading_check.py",
     "octagon_shape_check.py",
+    "octagon_engine_check.py",
 ]
 
 rows = []
