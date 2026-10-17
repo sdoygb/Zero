@@ -161,8 +161,14 @@
    "ok": true,
    "returncode": 0,
    "summary": "PASS 4 / FAIL 0"
+  },
+  {
+   "script": "k4_closure_q.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 3 / FAIL 0"
   }
  ],
- "n_ok": 27,
- "n_total": 27
+ "n_ok": 28,
+ "n_total": 28
 }
