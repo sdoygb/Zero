@@ -49,6 +49,7 @@ SCRIPTS = [
     "octagon_engine_check.py",
     "k4_closure_q.py",
     "quark_phase_fit.py",
+    "neutrino_amplitude_winding.py",
 ]
 
 rows = []

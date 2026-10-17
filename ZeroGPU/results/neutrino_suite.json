@@ -173,8 +173,14 @@
    "ok": true,
    "returncode": 0,
    "summary": "PASS 3 / FAIL 0"
+  },
+  {
+   "script": "neutrino_amplitude_winding.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 4 / FAIL 0"
   }
  ],
- "n_ok": 29,
- "n_total": 29
+ "n_ok": 30,
+ "n_total": 30
 }
