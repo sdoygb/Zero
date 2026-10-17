@@ -42,6 +42,7 @@ SCRIPTS = [
     "half_slot_window_check.py",
     "half_slot_chain_check.py",
     "d0_channel_count.py",
+    "chain_systematics.py",
 ]
 
 rows = []
