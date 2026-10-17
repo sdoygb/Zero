@@ -45,6 +45,7 @@ SCRIPTS = [
     "chain_systematics.py",
     "shape_tension_versions.py",
     "orbit_reading_check.py",
+    "octagon_shape_check.py",
 ]
 
 rows = []
