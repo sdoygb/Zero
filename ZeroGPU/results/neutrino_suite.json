@@ -1,0 +1,72 @@
+{
+ "scripts": [
+  {
+   "script": "neutrino_lambda_amplitude.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 6 / FAIL 0"
+  },
+  {
+   "script": "neutrino_amplitude_geometry.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 11 / FAIL 0"
+  },
+  {
+   "script": "neutrino_amplitude_spectrum.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 9 / FAIL 0"
+  },
+  {
+   "script": "neutrino_scale_conditional.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 7 / FAIL 0"
+  },
+  {
+   "script": "neutrino_branch_test.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 4 / FAIL 0"
+  },
+  {
+   "script": "neutrino_predictions.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 6 / FAIL 0"
+  },
+  {
+   "script": "neutrino_shape_residual.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 3 / FAIL 0"
+  },
+  {
+   "script": "neutrino_tension_decomposition.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 5 / FAIL 0"
+  },
+  {
+   "script": "neutrino_scale_sensitivity.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 5 / FAIL 0"
+  },
+  {
+   "script": "neutrino_prediction_band.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 4 / FAIL 0"
+  },
+  {
+   "script": "neutrino_independent_check.py",
+   "ok": true,
+   "returncode": 0,
+   "summary": "PASS 14 / FAIL 0"
+  }
+ ],
+ "n_ok": 11,
+ "n_total": 11
+}
