@@ -2,8 +2,8 @@
 
 > 状态：推导稿（未落盘；目标达成后再定编号）
 > 前置：标度稿（标度条件式）、Z037（量纲账）、Z076（计数→能量桥）、Z153（唯一锚）、Z121（相位律）
-> 关联脚本：`ZeroGPU/src/scale_origin_audit.py`、`ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`
-> 数据：`ZeroGPU/results/scale_origin_audit.json`、`ZeroGPU/results/c_ell_candidate_check.json`、`ZeroGPU/results/zero_mode_energy_check.json`、`ZeroGPU/results/c_ell_wide_search.json`、`ZeroGPU/results/mass_unit_options.json`、`ZeroGPU/results/p1_chain_check.json`、`ZeroGPU/results/scale_half_slot_check.json`
+> 关联脚本：`ZeroGPU/src/scale_origin_audit.py`、`ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`、`ZeroGPU/src/half_slot_window_check.py`
+> 数据：`ZeroGPU/results/scale_origin_audit.json`、`ZeroGPU/results/c_ell_candidate_check.json`、`ZeroGPU/results/zero_mode_energy_check.json`、`ZeroGPU/results/c_ell_wide_search.json`、`ZeroGPU/results/mass_unit_options.json`、`ZeroGPU/results/p1_chain_check.json`、`ZeroGPU/results/scale_half_slot_check.json`、`ZeroGPU/results/half_slot_window_check.json`
 > 登记日期：2026-10-17
 
 **篇性**：**核查篇**。定理级标度的第一道门是纯数 $c_\ell=\mu_\ell^2/v$（它把 $v$ 换算成费米子质量单元）。本篇先查库：把 $c_\ell$ 与 $c_\nu$ 的所需值与既有标度结构（四环指数、中心二项式、层权重、闭包常数）逐项对照，记录搜索空间与最近的匹配。
@@ -189,6 +189,20 @@ $$
 - 因此这是**候选**，不是定理；它把质量单元的数值钉到 $0.006\%$，但没有把它变成可证命题；
 - 若接受 $c_\ell=1/784.5$ 作为单一线索，三代带电轻子与中微子标度（$m_{\nu3}=48.6$ meV）全部随之确定。
 
+### 3.4 自然计数族里的唯一性
+
+把候选放进自然计数族 $N^2=C(n,k)^2+x$（$n\le16$，$x\in\{0,\pm1/4,\pm1/2,\pm3/4,\pm1,\pm3/2\}$），问：有几个落在数据窗口 $[\min c_i,\max c_i]$（宽 $0.007\%$）里？
+
+- $C(n,k)^2+x$：**只有** $(n,k)=(8,2)$（及其对称 $(8,6)$）、$x=+1/2$ 命中；
+- $C(n,k)^2+y\,C(n,k)$：**没有**命中。
+
+$$
+\boxed{\;\text{在自然计数族里，}\ 28^2+\tfrac12\ \text{是唯一落在窗口里的形式} .\;}
+\tag{3.6}
+$$
+
+**读法**：这不是证明，但把"随便凑一个数"的可能性压低了一档——同族其它 $x$ 都差 $0.03\%$–$0.07\%$，而 $+1/2$ 落在 $0.007\%$ 的窗口内。剩下要解释的仍是"为什么是 $+1/2$、为什么加在 $N^2$ 上"。
+
 **范围框（须与结论一起读）**：
 - $P_1$ 是**无量纲**计数（28 个槽对子），$v$ 仍是**唯一**量纲锚；
 - 三代轻子的**比值**由相位律精确给出（$\delta_0$ 内生），$P_1$ 只定整体标度——所以三个 $0.07\%$ 是**同一个**标度残差，不是三次独立拟合；
@@ -225,13 +239,13 @@ $$
 
 运行：`python3 ZeroGPU/src/scale_origin_audit.py`（**2/2 PASS**，写 `results/scale_origin_audit.json`）。
 
-**A.2 计数候选** `ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`（纯标准库；**2/2 PASS**）：
+**A.2 计数候选** `ZeroGPU/src/c_ell_candidate_check.py`、`ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`、`ZeroGPU/src/half_slot_window_check.py`（纯标准库；**2/2 PASS**）：
 $1/\binom82^2=1/784$ 与 $c_\ell$ 差 $+0.0698\%$；若精确则 $m_\tau=1.77810$ GeV（$+10.3\sigma$）。写 `results/c_ell_candidate_check.json`。
 
-**A.3 零模能量** `ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`（纯标准库；**2/2 PASS**）：
+**A.3 零模能量** `ZeroGPU/src/zero_mode_energy_check.py`、`ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`、`ZeroGPU/src/half_slot_window_check.py`（纯标准库；**2/2 PASS**）：
 零点曲率 $V''=2$；所需惯性 $N=2/c_\ell=1569.094$，与 $2\binom82^2=1568$ 差 $0.070\%$ ⟹ 零模路线与 §2.1 是同一个数。写 `results/zero_mode_energy_check.json`。
 
-**A.4 广搜** `ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`（纯标准库；退出码 0 表示"无 $<10^{-4}$ 候选"——这是预期形态）：
+**A.4 广搜** `ZeroGPU/src/c_ell_wide_search.py`、`ZeroGPU/src/mass_unit_options.py`、`ZeroGPU/src/p1_chain_check.py`、`ZeroGPU/src/scale_half_slot_check.py`、`ZeroGPU/src/half_slot_window_check.py`（纯标准库；退出码 0 表示"无 $<10^{-4}$ 候选"——这是预期形态）：
 510,696 个三因子式；最小相对差 $2.7\times10^{-4}$（$0.693\approx\ln2$ 的舍入假象），真最佳 $1/28^2$（$4.9\times10^{-4}$）。写 `results/c_ell_wide_search.json`。
 
 **核验纪律**：组合系数限 $|n_i|\le2$；二项式只查 $L\le24$；常数只作对照，不作结构判定。
