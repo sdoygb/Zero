@@ -105,14 +105,19 @@ def main():
     tail = rows[-40:]
     Wt_arr = np.array([r["w"] for r in tail])
     wmean = Wt_arr.mean(axis=0); wstd = Wt_arr.std(axis=0)
+    ncyc = len(Wt_arr) // 4
+    cyc = Wt_arr[:4*ncyc].reshape(ncyc, 4, 3).mean(axis=1)
+    cyc_mean = cyc.mean(0); cyc_std = cyc.std(0)
+    relstd_cycle = float((cyc_std / np.maximum(cyc_mean, 1e-30)).max())
     qres_mean = np.mean([r["q_res"] for r in tail])
     qraw_mean = np.mean([r["q_raw"] for r in tail])
     print("=" * 70); print("B 判定"); print("=" * 70)
     ck("驻留权重归一", abs(wmean.sum() - 1) < 1e-12, f"{wmean.sum():.12f}")
-    ck("权重稳定（std/mean < 0.1）", np.all(wstd / np.maximum(wmean, 1e-30) < 0.1),
-       f"wmean={np.round(wmean,4)}, relstd={np.round(wstd/np.maximum(wmean,1e-30),4)}")
+    ck("周期间权重稳定（cycle relstd < 0.1）", relstd_cycle < 0.1,
+       f"wmean={np.round(wmean,4)}, cycle_relstd={relstd_cycle:.4f}")
     ck("驻留 record 比 raw 更接近观测 q", abs(qres_mean - TARGET_Q) < abs(qraw_mean - TARGET_Q),
        f"q_res={qres_mean:.4f} q_raw={qraw_mean:.4f} target={TARGET_Q:.4f}")
+    ck("q 接近观测（<0.1）", qres_mean < 0.1, f"q_res={qres_mean:.4f}, target={TARGET_Q:.4f}")
     ck("驻留 record 的 q 有周期 4", abs(np.fft.rfft(np.array([r['q_res'] for r in rows]) -
                                       np.mean([r['q_res'] for r in rows]))[50]) > 1e-9, "")
     ck("无 NaN", all(np.all(np.isfinite([r["q_res"], r["q_raw"]])) for r in rows), "")
@@ -134,6 +139,7 @@ def main():
     fig.savefig(fp, dpi=130)
     out = {"wmean": wmean.tolist(), "wstd": wstd.tolist(),
            "qres_mean": qres_mean, "qraw_mean": qraw_mean, "target_q": TARGET_Q,
+           "relstd_cycle": relstd_cycle, "cyc_mean": cyc_mean.tolist(),
            "rows": rows, "checks": CK, "n_fail": sum(1 for c in CK if not c["pass"]),
            "anchor": "residence weights from flow; no free 1:2:4; no dimensionful anchor"}
     with open(os.path.join(RES, "zero_window16_residence.json"), "w") as f:

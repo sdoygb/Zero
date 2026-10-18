@@ -12,6 +12,12 @@
  "qres_mean": 0.45636294777697384,
  "qraw_mean": 0.4642608372882343,
  "target_q": 0.06830296233,
+ "relstd_cycle": 0.13842835918754898,
+ "cyc_mean": [
+  0.37235046032160757,
+  0.5563893453343465,
+  0.07126019434404597
+ ],
  "rows": [
   {
    "gen": 1,
@@ -3221,14 +3227,19 @@
    "detail": "1.000000000000"
   },
   {
-   "name": "\u6743\u91cd\u7a33\u5b9a\uff08std/mean < 0.1\uff09",
+   "name": "\u5468\u671f\u95f4\u6743\u91cd\u7a33\u5b9a\uff08cycle relstd < 0.1\uff09",
    "pass": false,
-   "detail": "wmean=[0.3724 0.5564 0.0713], relstd=[0.3609 0.2103 0.2834]"
+   "detail": "wmean=[0.3724 0.5564 0.0713], cycle_relstd=0.1384"
   },
   {
    "name": "\u9a7b\u7559 record \u6bd4 raw \u66f4\u63a5\u8fd1\u89c2\u6d4b q",
    "pass": true,
    "detail": "q_res=0.4564 q_raw=0.4643 target=0.0683"
+  },
+  {
+   "name": "q \u63a5\u8fd1\u89c2\u6d4b\uff08<0.1\uff09",
+   "pass": false,
+   "detail": "q_res=0.4564, target=0.0683"
   },
   {
    "name": "\u9a7b\u7559 record \u7684 q \u6709\u5468\u671f 4",
@@ -3241,6 +3252,6 @@
    "detail": ""
   }
  ],
- "n_fail": 1,
+ "n_fail": 2,
  "anchor": "residence weights from flow; no free 1:2:4; no dimensionful anchor"
 }
