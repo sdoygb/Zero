@@ -25,7 +25,7 @@ $$
 |:--|:--|
 | `src/` 脚本 | **240 个 `.py`** |
 | `results/` 结果文件 | **281 个**（`.json`／`.txt`／`.png`） |
-| `doc/` 说明 | **35 份**（索引见下） |
+| `doc/` 说明 | **36 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
 | 统一引擎自检 | `zero_evo.py`：**20 条全过** → `results/zero_evo_selftest.json` |
@@ -79,14 +79,14 @@ ZeroGPU/
 │   ├── field_sim.py／force_from_field.py／field_to_particle.py   场与力
 │   ├── curvature_from_defects_check.py／a2_bridge_check.py   曲率与作用量桥核验
 │   └── …（其余 150+ 个按篇的判定脚本，命名与篇号对应）
-├── doc/                   35 份说明（索引见下）
+├── doc/                   36 份说明（索引见下）
 ├── results/               218 个结果文件（脚本输出，JSON/TXT/PNG）
 └── logs/                  运行日志
 ```
 
 ---
 
-## 文档索引（`doc/`，35 份）
+## 文档索引（`doc/`，36 份）
 
 | 文档 | 内容 |
 |:--|:--|
@@ -103,6 +103,7 @@ ZeroGPU/
 | `zero_window_16.md` | ★ 窗口化 16/8/4：4 site×2×2；周期 4；距观测 0.127（目前最好，保 D=4） |
 | `zero_window16_engine.md` | ★ 三拷贝 W + flow/reseed：原始份额 [0.170,0.292,0.537]；q 仍偏高 0.31 |
 | `zero_window16_aggregate.md` | ★ 聚合一致 1:2:4 读法：q 0.532、中拷贝独大；暴露“聚合 vs 顶不动”矛盾；原始 0.033 是读法 artifact |
+| `zero_window16_residence.md` | ★ B 判定：独立三拷贝 + 驻留权重——权重不稳（relstd 0.36/0.21/0.28），q 0.456，不成立 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
@@ -154,6 +155,7 @@ cd ZeroGPU/src
 /usr/bin/python3 zero_window_16.py                                 # 窗口化 16/8/4，约 1 s
 /usr/bin/python3 zero_window16_engine.py                           # 三拷贝 W micro core，约 1 s
 /usr/bin/python3 zero_window16_aggregate.py                        # 聚合一致读法，约 1 s
+/usr/bin/python3 zero_window16_residence.py                        # B 驻留权重判定，约 1 s
 /usr/bin/python3 z0_engine.py           # 动力学引擎自检：24 条断言
 /usr/bin/python3 closure_reading.py     # 闭合口径判定
 /usr/bin/python3 anchor.py              # 锚定：反问题 + 三档标注
