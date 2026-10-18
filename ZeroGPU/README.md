@@ -25,7 +25,7 @@ $$
 |:--|:--|
 | `src/` 脚本 | **240 个 `.py`** |
 | `results/` 结果文件 | **281 个**（`.json`／`.txt`／`.png`） |
-| `doc/` 说明 | **47 份**（索引见下） |
+| `doc/` 说明 | **48 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
 | 统一引擎自检 | `zero_evo.py`：**20 条全过** → `results/zero_evo_selftest.json` |
@@ -79,14 +79,14 @@ ZeroGPU/
 │   ├── field_sim.py／force_from_field.py／field_to_particle.py   场与力
 │   ├── curvature_from_defects_check.py／a2_bridge_check.py   曲率与作用量桥核验
 │   └── …（其余 150+ 个按篇的判定脚本，命名与篇号对应）
-├── doc/                   47 份说明（索引见下）
+├── doc/                   48 份说明（索引见下）
 ├── results/               218 个结果文件（脚本输出，JSON/TXT/PNG）
 └── logs/                  运行日志
 ```
 
 ---
 
-## 文档索引（`doc/`，47 份）
+## 文档索引（`doc/`，48 份）
 
 | 文档 | 内容 |
 |:--|:--|
@@ -115,6 +115,7 @@ ZeroGPU/
 | `zero_evo_1684_long.md` | ★ 16/8/4 长跑 10000 代：q16 稳定（relstd 0.0082）；五种映射聚合量不变；8/8 |
 | `zero_evo_1684_site.md` | ★ site-resolved：q16/份额不变，n/top 随映射变；h_E=0、ψ 周期4弱 |
 | `zero_evo_1684_geo.md` | ★ 固定 seq 映射 + 几何源：g_src>0 时 h_E>0 且继承周期4；ψ 仍未接（β=0） |
+| `zero_evo_1684_beta.md` | ★ β 扫描：β 是 content→phase（不是 h→phase）；ψ 周期4弱升到 0.037；h→ψ 仍缺 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
@@ -178,6 +179,7 @@ cd ZeroGPU/src
 /usr/bin/python3 zero_evo_1684_long.py                            # 长跑/映射，约 60 s
 /usr/bin/python3 zero_evo_1684_site.py                            # site-resolved/谱，约 30 s
 /usr/bin/python3 zero_evo_1684_geo.py                             # 固定映射+几何源，约 30 s
+/usr/bin/python3 zero_evo_1684_beta.py                            # β（content→phase）扫描，约 30 s
 /usr/bin/python3 z0_engine.py           # 动力学引擎自检：24 条断言
 /usr/bin/python3 closure_reading.py     # 闭合口径判定
 /usr/bin/python3 anchor.py              # 锚定：反问题 + 三档标注
