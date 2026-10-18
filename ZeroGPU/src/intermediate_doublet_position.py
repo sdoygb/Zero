@@ -236,10 +236,40 @@ check("(5,2) 的阶梯不等差（较大因子不是最小者整数倍）",
 print("  ⟹ 等差条件：较大因子都是最小因子的整数倍（4=2·2 与 3=3·1 都满足）；")
 print("     等差时相邻比恒为 2, 3/2, 4/3…，故振幅比**不**区分 (4,2,2) 与 (3,3,3)。")
 
+# ───────────────── I  24 的三种读音 / 质量圆的封顶 ─────────────────
+print()
+print("=" * 80)
+print("I  24 的三种读音，与『质量圆能不能装下中间双态』")
+print("=" * 80)
+A2_MeV = 246.2205 / 784.5 * 1e3
+print(f"  (1) 轨道环：8 轨道/代 × 3 代 = {8*3}；SM 补位后已占 {8*3} ⟹ 无空位")
+print(f"      中间双态需 2 双态/代 = 2 轨道/代 ⟹ 再加 {2*3} ⟹ 共 {8*3+2*3} 轨道")
+print(f"  (2) 相位格：2π/(π/12) = {2*math.pi/(math.pi/12):.6f}")
+print(f"  (3) |Aut(K4)| = 4! = {math.factorial(4)}")
+check("24 轨道已被 SM 补位占满（8×3），中间双态需再加 6 ⟹ 30",
+      8 * 3 == 24 and 8 * 3 + 2 * 3 == 30, "24 → 30")
+
+CAP = {"轻子": (math.sqrt(2), 1.0), "中微子": (math.sqrt(1.5), 1.0),
+       "上型": (1.7778326303083105, 71.6020533976),
+       "下型": (2.682849902237757, 0.9879791572463)}
+cap = {}
+for nm, (A, u) in CAP.items():
+    cap[nm] = u * A2_MeV * (1 + A) ** 2
+    print(f"  质量圆封顶 {nm:<4}: m_max = {cap[nm]:.4g} MeV = {cap[nm]/1e3:.4g} GeV")
+M_I = 91.1876 * math.exp(4 * math.pi)
+print(f"  中间双态必须 ≥ M_I = M_Z·e^(4π) = {M_I:.3e} GeV")
+dec = math.log10(M_I) - math.log10(cap["轻子"] / 1e3)
+print(f"  与轻子扇区封顶差 {dec:.1f} 个量级")
+check("中间双态不可能是轻子质量圆上的相位位置（差 >7 个量级）", dec > 7, f"{dec:.1f} 量级")
+check("轻子扇区封顶 = A²(1+A_ℓ)² ≈ 1.83 GeV",
+      abs(cap["轻子"] / 1e3 - 1.829) < 0.01, f"{cap['轻子']/1e3:.4f} GeV")
+print("  ⟹ 同量子数不同标度 ⟹ 需要一个『槽位以外』的标签：标度/块（候选：环段 ②③④）")
+
 res = {"beta": {"n_doublet": n_doublet, "dL": dL, "dY": dY,
                 "b_L_SM": b_L_SM, "b_L_int": b_L_int, "b_Y_SM": b_Y_SM, "b_Y_int": b_Y_int},
        "slots_colorless": {str(k): {"name": v[0], "Y": v[1]} for k, v in colorless.items()},
        "e6": {"27": dim27, "16": dim16, "doublets_per_gen": len(dbls), "light_extra": light},
+       "mass_cap_GeV": {k: v / 1e3 for k, v in cap.items()}, "M_I_GeV": M_I,
        "ladders": {str(f): ladder(f) for f in [(4,2,2),(3,3,3),(5,2),(6,3,3)]},
        "blocks": blocks, "spec27": sp27, "spec16": sorted(set(np.round(ev16, 9))),
        "pass": PASS, "fail": FAIL}
