@@ -32,22 +32,23 @@ def ck(name, cond, detail=""):
 
 
 class ZeroEvo1684Mode(ZeroEvo1684Cycle16):
-    def __init__(self, *a, order="sym", **kw):
+    def __init__(self, *a, order="sym", factor=0.5, **kw):
         super().__init__(*a, **kw)
         self.order = order
+        self.factor = factor
         self.omega = np.sqrt(np.maximum(self.wave_eigs, 0.0))
         self.omega_op = self.wave_vecs @ np.diag(self.omega) @ self.wave_vecs.T
 
     def _apply_mode_phase(self, dt):
         H = np.diag(self.h - self.h.mean())
         if self.order == "sym":
-            G = 0.5 * (self.omega_op @ H + H @ self.omega_op)
+            G = self.factor * (self.omega_op @ H + H @ self.omega_op)
         elif self.order == "left":
             A = self.omega_op @ H
-            G = 0.5 * (A + A.conj().T)
+            G = self.factor * (A + A.conj().T)
         elif self.order == "right":
             A = H @ self.omega_op
-            G = 0.5 * (A + A.conj().T)
+            G = self.factor * (A + A.conj().T)
         else:
             raise ValueError(self.order)
         vals, vecs = np.linalg.eigh(G)
@@ -77,7 +78,7 @@ def omega_char():
     return float((P * w).sum() / P.sum())
 
 
-def run(mode="scalar", bh=0.0, steps=2000, order="sym"):
+def run(mode="scalar", bh=0.0, steps=2000, order="sym", factor=0.5):
     if mode == "scalar":
         e = ZeroEvo1684Cycle16(zs.cycle(16), Params(L=4, T=4, micro=True, c_h=1.0, dt=0.05,
                                                       alpha=0.1, g_src=1.0, beta=0.0, beta_h=bh),
@@ -85,7 +86,7 @@ def run(mode="scalar", bh=0.0, steps=2000, order="sym"):
     else:
         e = ZeroEvo1684Mode(zs.cycle(16), Params(L=4, T=4, micro=True, c_h=1.0, dt=0.05,
                                                    alpha=0.1, g_src=1.0, beta=0.0, beta_h=0.0),
-                             seed=np.ones(16), order=order)
+                             seed=np.ones(16), order=order, factor=factor)
     e.perm = MAPS["seq"]
     rows = []
     for g in range(1, steps+1):
@@ -118,6 +119,9 @@ def main():
     ck("三种顺序都有周期4", all(p4([x['psi_coh'] for x in ro[o]]) > 1e-6 for o in orders),
        str([round(p4([x['psi_coh'] for x in ro[o]]),3) for o in orders]))
     ck("三种顺序 h_E 相近", max(tail(ro[o],'h_E') for o in orders) - min(tail(ro[o],'h_E') for o in orders) < 1e-6, "")
+    r1 = run("mode", 0.0, 2000, "sym", factor=1.0)
+    print(f"mode-sym factor=1  psi_coh={tail(r1,'psi_coh'):.4f} p4={p4([x['psi_coh'] for x in r1]):.4f}")
+    ck("factor=1 与 factor=1/2 不同", abs(p4([x['psi_coh'] for x in r1]) - p4([x['psi_coh'] for x in ro['sym']])) > 1e-6, "")
 
     print("长跑 mode-sym, 10000 代 ...")
     rl = run("mode", 0.0, 10000, "sym")
@@ -144,6 +148,7 @@ def main():
            "orders": {o: {"psi_coh": tail(ro[o],'psi_coh'),
                           "p4": p4([x['psi_coh'] for x in ro[o]]),
                           "h_E": tail(ro[o],'h_E'), "rows": ro[o]} for o in orders},
+           "factor1": {"psi_coh": tail(r1,'psi_coh'), "p4": p4([x['psi_coh'] for x in r1]), "rows": r1},
            "long": {"psi_coh": float(psi[-200:].mean()), "p4": p4(psi),
                     "p4_h": p4([x['h_E'] for x in rl]), "rows": rl},
            "checks": CK, "n_fail": sum(1 for c in CK if not c["pass"]),
