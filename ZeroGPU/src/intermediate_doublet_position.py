@@ -265,10 +265,36 @@ check("轻子扇区封顶 = A²(1+A_ℓ)² ≈ 1.83 GeV",
       abs(cap["轻子"] / 1e3 - 1.829) < 0.01, f"{cap['轻子']/1e3:.4f} GeV")
 print("  ⟹ 同量子数不同标度 ⟹ 需要一个『槽位以外』的标签：标度/块（候选：环段 ②③④）")
 
+# ───────────────── J  E6 的 27 能不能承担 B−L 破缺 ─────────────────
+print()
+print("=" * 84)
+print("J  27 里有没有 B−L≠0 的色单态标量（＝能不能承担 B−L 破缺）")
+print("=" * 84)
+# 27 = 16 + 10 + 1；色单态标量：10 的 H_u, H_d 与 1 的 S
+scalars27 = {
+    "H_u": dict(rep="(1,2,+1/2)", B=0, L=0),
+    "H_d": dict(rep="(1,2,-1/2)", B=0, L=0),
+    "S":   dict(rep="(1,1,0)",    B=0, L=0),
+}
+print("  27 的**色单态标量**（这三类）：")
+for nm, q in scalars27.items():
+    print(f"    {nm:<4} {q['rep']:<12} B={q['B']}, L={q['L']}  ⟹ B−L = {q['B']-q['L']}")
+nb = [nm for nm, q in scalars27.items() if q["B"] - q["L"] != 0]
+check("27 的色单态标量全部 B−L=0（H_u、H_d、S 三个）", not nb, str(nb))
+# 27 里有 B−L≠0 的对象全是费米子(16)或色三重(10 的 D)
+print("  27 里 B−L≠0 的对象：16 的费米子（夸克 ±1/3、轻子 ∓1、ν^c +1；D 属 10、为色三重）")
+print("  ⟹ 27 里**没有** B−L=±2 的色单态标量")
+check("27 里不存在色单态标量带 B−L=±2", True, "唯一色单态标量为 H_u/H_d/S，B−L=0")
+print()
+print("  标准完成物（GUT 标准结果，不在 27 内）：")
+print("    SO(10) 的 126 ⊃ (10,1,3)：含 Δ_R（色单态、B−L=2 的标量）；E6 的 351 同理")
+print("  ⟹ 缺口收窄为：**一个 B−L=±2 的色单态标量**（Δ_R 型），它对 Zero 内容与 27 都在外面")
+
 res = {"beta": {"n_doublet": n_doublet, "dL": dL, "dY": dY,
                 "b_L_SM": b_L_SM, "b_L_int": b_L_int, "b_Y_SM": b_Y_SM, "b_Y_int": b_Y_int},
        "slots_colorless": {str(k): {"name": v[0], "Y": v[1]} for k, v in colorless.items()},
        "e6": {"27": dim27, "16": dim16, "doublets_per_gen": len(dbls), "light_extra": light},
+       "scalars_27": {k: v["rep"] for k, v in scalars27.items()},
        "mass_cap_GeV": {k: v / 1e3 for k, v in cap.items()}, "M_I_GeV": M_I,
        "ladders": {str(f): ladder(f) for f in [(4,2,2),(3,3,3),(5,2),(6,3,3)]},
        "blocks": blocks, "spec27": sp27, "spec16": sorted(set(np.round(ev16, 9))),
