@@ -25,7 +25,7 @@ $$
 |:--|:--|
 | `src/` 脚本 | **240 个 `.py`** |
 | `results/` 结果文件 | **281 个**（`.json`／`.txt`／`.png`） |
-| `doc/` 说明 | **58 份**（索引见下） |
+| `doc/` 说明 | **59 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
 | 统一引擎自检 | `zero_evo.py`：**20 条全过** → `results/zero_evo_selftest.json` |
@@ -79,14 +79,14 @@ ZeroGPU/
 │   ├── field_sim.py／force_from_field.py／field_to_particle.py   场与力
 │   ├── curvature_from_defects_check.py／a2_bridge_check.py   曲率与作用量桥核验
 │   └── …（其余 150+ 个按篇的判定脚本，命名与篇号对应）
-├── doc/                   58 份说明（索引见下）
+├── doc/                   59 份说明（索引见下）
 ├── results/               218 个结果文件（脚本输出，JSON/TXT/PNG）
 └── logs/                  运行日志
 ```
 
 ---
 
-## 文档索引（`doc/`，58 份）
+## 文档索引（`doc/`，59 份）
 
 | 文档 | 内容 |
 |:--|:--|
@@ -126,6 +126,7 @@ ZeroGPU/
 | `zero_tau_6_18_4.md` | ★ 6/18/4 count prototype：能跑、5/5；但只是计数测试，中18的top2/flow还没结构 |
 | `zero_tau_6_18_4_graph.md` | ★ 6/18/4 图版：K4关联流 + 动态 top2；6/6；top2 第4代=[0,15] |
 | `zero_tau_6_18_4_graph_long.md` | ★ 长跑10000代：top2 冻结在 [0,15]，毁灭代模式保持；8/8 |
+| `zero_evo_layers_proto.md` | ★ 层集成 prototype：L0反馈+L1静态+L2名义3槽；实际只有1个非零槽，仍非完整L0-L1-L2 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
@@ -198,6 +199,7 @@ cd ZeroGPU/src
 /usr/bin/python3 zero_tau_6_18_4.py                             # 6/18/4 count prototype，约 1 s
 /usr/bin/python3 zero_tau_6_18_4_graph.py                       # 6/18/4 图版，约 1 s
 /usr/bin/python3 zero_tau_6_18_4_graph_long.py                  # 6/18/4 长跑，约 5 s
+/usr/bin/python3 zero_evo_layers_proto.py                       # L0-L1-L2 层集成，约 5 s
 /usr/bin/python3 z0_engine.py           # 动力学引擎自检：24 条断言
 /usr/bin/python3 closure_reading.py     # 闭合口径判定
 /usr/bin/python3 anchor.py              # 锚定：反问题 + 三档标注

@@ -60,9 +60,18 @@ class ZeroEvo1684Cycle16(ZeroEvo):
 
     def _micro_gen(self):
         diag = np.arange(V4)
-        self.Wb[diag, diag] += (1/3) * self.sub_seed
-        self.Wm[diag, diag] += (1/3) * self.sub_seed
-        self.Wt[diag, diag] += (1/3) * self.sub_seed
+        seed = self.sub_seed.copy()
+        if self.p.l0_back:
+            m = self.m_hist if self.p.l0_back_mode == "hist" else self.m_live
+            w = m.reshape(V4, 4).sum(axis=1)
+            if w.sum() > 0 and np.all(np.isfinite(w)):
+                w = w / w.sum()
+                seed = seed * (1.0 + self.p.l0_back * (w - 1.0))
+                if seed.sum() > 0:
+                    seed = seed / seed.sum()
+        self.Wb[diag, diag] += (1/3) * seed
+        self.Wm[diag, diag] += (1/3) * seed
+        self.Wt[diag, diag] += (1/3) * seed
         self.Wb = self.Wb @ self.A4_L
         self.Wm = self.Wm @ self.A4_L
         self.Wt = self.Wt @ self.A4_L
