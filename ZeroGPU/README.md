@@ -25,7 +25,7 @@ $$
 |:--|:--|
 | `src/` 脚本 | **240 个 `.py`** |
 | `results/` 结果文件 | **281 个**（`.json`／`.txt`／`.png`） |
-| `doc/` 说明 | **29 份**（索引见下） |
+| `doc/` 说明 | **30 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
 | 统一引擎自检 | `zero_evo.py`：**20 条全过** → `results/zero_evo_selftest.json` |
@@ -79,14 +79,14 @@ ZeroGPU/
 │   ├── field_sim.py／force_from_field.py／field_to_particle.py   场与力
 │   ├── curvature_from_defects_check.py／a2_bridge_check.py   曲率与作用量桥核验
 │   └── …（其余 150+ 个按篇的判定脚本，命名与篇号对应）
-├── doc/                   29 份说明（索引见下）
+├── doc/                   30 份说明（索引见下）
 ├── results/               218 个结果文件（脚本输出，JSON/TXT/PNG）
 └── logs/                  运行日志
 ```
 
 ---
 
-## 文档索引（`doc/`，29 份）
+## 文档索引（`doc/`，30 份）
 
 | 文档 | 内容 |
 |:--|:--|
@@ -97,6 +97,7 @@ ZeroGPU/
 | `zero_sublayers.md` | ★ L2 亚亚层 16/8/4 分级毁灭 prototype：底全灭、中留 2、顶不动；周期 4 |
 | `zero_faithful_sublayers.md` | ★ 忠实引擎里的 16/8/4：能跑、有周期 4，但 q/n_std 过冲，未复现观测 |
 | `zero_reseed_derivation.md` | ★ L1 记录 push-forward 的 16/8/4 reseed：周期 4、未毁层继续被播种；相位平均 0.224/0.360/0.416 |
+| `zero_routes_compare.md` | ★ A（L=8 词 top2）vs B（K4 纤维）：A 更接近观测（距离 0.150 vs 0.275），两者都有周期 4 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
@@ -142,6 +143,7 @@ cd ZeroGPU/src
 /usr/bin/python3 zero_sublayers.py --steps 200                    # 亚亚层 prototype，约 1 s
 /usr/bin/python3 zero_faithful_sublayers.py                        # 忠实引擎 16/8/4 尝试，约 2 s
 /usr/bin/python3 zero_reseed_derivation.py                         # L1 push-forward reseed，约 1 s
+/usr/bin/python3 zero_routes_compare.py                            # A/B 路线对比，约 1 s
 /usr/bin/python3 z0_engine.py           # 动力学引擎自检：24 条断言
 /usr/bin/python3 closure_reading.py     # 闭合口径判定
 /usr/bin/python3 anchor.py              # 锚定：反问题 + 三档标注
