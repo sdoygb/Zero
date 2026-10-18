@@ -14,10 +14,13 @@
   * `z002ZeroSum` = `H_Q = {Σ x = 0}`；
   * `z002B_sum_col`：列和为零；`z002T_range_le_zeroSum`：像 ⊆ H_Q；
   * `z002ZeroSum_finrank`：`finrank H_Q = card V − 1`；
-  * `z002T_ker_eq_zero`：连通图上 `T y = 0 ⟹ y = 0`（圈空间的"零"＝无流量）；
-  * `z002_finrank_range`／`z002_finrank_closure`：秩-零化度给出两个维数；
-  * **主定理** `z002_dim_eq_iff`：`finrank (卷空间) = finrank (range T) ⟺ m = 4`；
-  * `z002_dim_eq_iff_instances`：§6.8 的五个实例（$C_4$、方格、Heawood、$K_4\square C_4$）都**不**相等。
+  * `z002B_sup_eq_one`／`z002B_inf_eq_neg_one`：端点处列系数；
+  * `z002B_mul_eq_indicator_diff`：逐边分解 `B v e · y e = (sup=v) − (inf=v)`；
+  * `z002T_sup_eq_inf`：核条件 `T y = 0` ⟹ `Σ_{sup=v} y = Σ_{inf=v} y`（端点流量守恒）。
+
+  说明（诚实边界）：本篇是**维数账的输入层**——定义与端点分解已证；主定理
+  `finrank (圈空间) = finrank (range T) ⟺ m = 4` 还需要"关联映射的秩 = card V − 1"
+  （连通图），Mathlib 的 `IncMatrix` 未提供该秩结论，故尚未在此形式化。
 
   口径注（承重）："闭合回路空间 = 关联映射的核"只在**实数系数**下成立（整数系数下还有挠元），
   与 Zero 全部取实系数一致。
@@ -182,58 +185,86 @@ theorem z002ZeroSum_finrank (hV : 1 ≤ Nat.card V) :
   rw [z002ZeroSum]
   omega
 
-/-! ## 五、圈空间：连通图上边界为零的流量为零 -/
+/-! ## 五、核条件的端点分解 -/
 
-/-- `sup` 端点处的核条件：以 `v` 为超端点的那些边上流量之和为零。 -/
-private lemma z002T_sup_eq_zero (y : {e // e ∈ G.edgeSet} → ℝ) (h : z002T G y = 0) (v : V) :
-    ∑ e : {e // e ∈ G.edgeSet}, (if ((e.val : Sym2 V).sup : V) = v then y e else 0) = 0 := by
+/-- `sup = v` 时该列系数为 `+1`。 -/
+private lemma z002B_sup_eq_one (e : {e // e ∈ G.edgeSet}) {v : V}
+    (hv : ((e.val : Sym2 V).sup : V) = v) : z002B G v e = 1 := by
+  obtain ⟨e, hz⟩ := e
+  induction e using Sym2.ind with
+  | _ a b =>
+    have hab : G.Adj a b := adj_of_mem hz
+    rcases lt_trichotomy a b with hlt | heq | hgt
+    · have hs : ((s(a, b) : Sym2 V).sup : V) = b := by
+        rw [Sym2.sup_mk, sup_eq_right.mpr hlt.le]
+      rw [hs] at hv
+      rw [hv.symm]
+      exact (z002B_inf_sup a b hab hlt).2
+    · exact absurd heq (G.ne_of_adj hab)
+    · have hs : ((s(a, b) : Sym2 V).sup : V) = a := by
+        rw [Sym2.sup_mk, sup_eq_left.mpr hgt.le]
+      rw [hs] at hv
+      rw [hv.symm]
+      have hba : (⟨s(b, a), by simpa using hab.symm⟩ : {e // e ∈ G.edgeSet}) =
+          ⟨s(a, b), hz⟩ := Subtype.ext (Sym2.eq_swap)
+      rw [← hba]
+      exact (z002B_inf_sup b a hab.symm hgt).2
+
+/-- `inf = v` 时该列系数为 `-1`。 -/
+private lemma z002B_inf_eq_neg_one (e : {e // e ∈ G.edgeSet}) {v : V}
+    (hv : ((e.val : Sym2 V).inf : V) = v) : z002B G v e = -1 := by
+  obtain ⟨e, hz⟩ := e
+  induction e using Sym2.ind with
+  | _ a b =>
+    have hab : G.Adj a b := adj_of_mem hz
+    rcases lt_trichotomy a b with hlt | heq | hgt
+    · have hi : ((s(a, b) : Sym2 V).inf : V) = a := by
+        rw [Sym2.inf_mk, inf_eq_left.mpr hlt.le]
+      rw [hi] at hv
+      rw [hv.symm]
+      exact (z002B_inf_sup a b hab hlt).1
+    · exact absurd heq (G.ne_of_adj hab)
+    · have hi : ((s(a, b) : Sym2 V).inf : V) = b := by
+        rw [Sym2.inf_mk, inf_eq_right.mpr hgt.le]
+      rw [hi] at hv
+      rw [hv.symm]
+      have hba : (⟨s(b, a), by simpa using hab.symm⟩ : {e // e ∈ G.edgeSet}) =
+          ⟨s(a, b), hz⟩ := Subtype.ext (Sym2.eq_swap)
+      rw [← hba]
+      exact (z002B_inf_sup b a hab.symm hgt).1
+
+/-- **逐边分解**：`B v e · y e = (sup = v 的指示) − (inf = v 的指示)`。 -/
+private lemma z002B_mul_eq_indicator_diff (y : {e // e ∈ G.edgeSet} → ℝ) (v : V)
+    (e : {e // e ∈ G.edgeSet}) :
+    z002B G v e * y e =
+      (if ((e.val : Sym2 V).sup : V) = v then y e else 0)
+        - (if ((e.val : Sym2 V).inf : V) = v then y e else 0) := by
+  by_cases hsup : ((e.val : Sym2 V).sup : V) = v
+  · have hcoe : z002B G v e = 1 := z002B_sup_eq_one e hsup
+    have hinf : ((e.val : Sym2 V).inf : V) ≠ v := by
+      intro hc
+      exact G.not_isDiag_of_mem_edgeSet e.prop (isDiag_of_inf_eq_sup _ (hc.trans hsup.symm))
+    rw [hcoe, one_mul, if_pos hsup, if_neg hinf, sub_zero]
+  · by_cases hinf : ((e.val : Sym2 V).inf : V) = v
+    · have hcoe : z002B G v e = -1 := z002B_inf_eq_neg_one e hinf
+      rw [hcoe, neg_one_mul, if_neg hsup, if_pos hinf, zero_sub]
+    · have hcoe : z002B G v e = 0 := z002B_eq_zero e (fun hc => hinf hc.symm) (fun hc => hsup hc.symm)
+      rw [hcoe, zero_mul, if_neg hsup, if_neg hinf, sub_self]
+
+/-- **核条件的端点分解**：`(T y)_v = 0` ⟹ `Σ_{sup=v} y = Σ_{inf=v} y`。 -/
+theorem z002T_sup_eq_inf (y : {e // e ∈ G.edgeSet} → ℝ) (h : z002T G y = 0) (v : V) :
+    (∑ e : {e // e ∈ G.edgeSet}, (if ((e.val : Sym2 V).sup : V) = v then y e else 0))
+      = ∑ e : {e // e ∈ G.edgeSet}, (if ((e.val : Sym2 V).inf : V) = v then y e else 0) := by
   have h1 : (∑ e : {e // e ∈ G.edgeSet}, z002B G v e * y e) = 0 := by
     have h2 := congrFun h v
     rw [show z002T G y = (z002B G) *ᵥ y from rfl, Matrix.mulVec_apply_eq_sum] at h2
     exact h2
-  rw [← h1]
-  refine Finset.sum_congr rfl fun e _ => ?_
-  by_cases hv : ((e.val : Sym2 V).sup : V) = v
-  · rw [ite_eq_left hv]
-    -- `sup = v` 时该列在 `v` 处的系数是 `+1`
-    have hcoe : z002B G v e = 1 := by
-      obtain ⟨e, hz⟩ := e
-      induction e using Sym2.ind with
-      | _ a b =>
-        have hab : G.Adj a b := adj_of_mem hz
-        rcases lt_trichotomy a b with hlt | heq | hgt
-        · have hs : ((s(a, b) : Sym2 V).sup : V) = b := by
-            rw [Sym2.sup_mk, sup_eq_right.mpr hlt.le]
-          rw [hs] at hv
-          have h1 : z002B G b ⟨s(a, b), hz⟩ = 1 :=
-            (z002B_inf_sup a b hab hlt).2
-          rw [hv.symm]
-          exact h1
-        · exact absurd heq (G.ne_of_adj hab)
-        · have hs : ((s(a, b) : Sym2 V).sup : V) = a := by
-            rw [Sym2.sup_mk, sup_eq_left.mpr hgt.le]
-          rw [hs] at hv
-          have h1 : z002B G a ⟨s(a, b), hz⟩ = 1 := by
-            have hba : (⟨s(b, a), by simpa using hab.symm⟩ : {e // e ∈ G.edgeSet}) =
-                ⟨s(a, b), hz⟩ := Subtype.ext (Sym2.eq_swap)
-            rw [← hba]
-            exact (z002B_inf_sup b a hab.symm hgt).2
-          rw [hv.symm]
-          exact h1
-    rw [hcoe, one_mul]
-  · -- `sup ≠ v`：端点里若恰是 v 就与边非对角矛盾 ⟹ 系数为 0（用 z002B_eq_zero）
-    rw [ite_eq_right hv]
-    have hvisup : v = ((e.val : Sym2 V).sup : V) := by
-      exact Classical.byContradiction fun h2 : ¬ (v = _) => hv (by
-        rw [← h2]
-        exact (Classical.byContradiction fun h3 : ¬ (v = _) => h2 h3).symm)
-    have hvi : ¬ (v = ((e.val : Sym2 V).inf : V)) := by
-      intro hc
-      exact G.not_isDiag_of_mem_edgeSet e.prop
-        (isDiag_of_inf_eq_sup _ (hc.symm.trans hvisup))
-    have hvs : ¬ (v = ((e.val : Sym2 V).sup : V)) := fun hc => hv hc.symm
-    have hcoe : z002B G v e = 0 := z002B_eq_zero (G := G) e hvi hvs
-    rw [hcoe, zero_mul]
-
+  have hsplit : (∑ e : {e // e ∈ G.edgeSet}, z002B G v e * y e)
+      = (∑ e : {e // e ∈ G.edgeSet}, (if ((e.val : Sym2 V).sup : V) = v then y e else 0))
+        - ∑ e : {e // e ∈ G.edgeSet}, (if ((e.val : Sym2 V).inf : V) = v then y e else 0) := by
+    rw [← Finset.sum_sub_distrib]
+    exact Finset.sum_congr rfl fun e _ => z002B_mul_eq_indicator_diff y v e
+  rw [hsplit] at h1
+  linarith
 
 end Zero
