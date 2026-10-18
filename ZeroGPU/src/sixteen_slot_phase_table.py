@@ -247,12 +247,30 @@ for k in sorted(slots):
 check("载体对 P 封闭（16/16）", nP == 16, f"{nP}/16")
 check("载体对 C 不封闭（0/16）", nC == 0, f"{nC}/16")
 
+# ───────── ⑦ 唯一可承载 Majorana 质量的格 ─────────
+print()
+print("=" * 84)
+print("⑦ C 与 P 在哪些格上重合（＝哪些格可承载 Majorana 质量）")
+print("=" * 84)
+# 判据：C(s)=P(s) <=> (Y,T3)=(-Y,-T3) <=> (Y,T3)=(0,0)
+cand = [k for k in slots if abs(QP[k][0]) < 1e-12 and abs(QP[k][1]) < 1e-12]
+print(f"  判据：$C(s)=P(s)$ ⟺ $(Y,T_3)=(-Y,-T_3)$ ⟺ $(Y,T_3)=(0,0)$")
+print(f"  16 槽里满足 (Y,T3)=(0,0) 的格：{cand}")
+print(f"  其中粒子名：{[SLOT_TABLE[k][0] for k in cand]}")
+print("  它们是否就是补位格（半满轨道 (0,R) 的洞）："
+      f"{[k == (0, chr(0x2191), chr(0x52)) for k in cand]}")
+check("唯一可承载 Majorana 质量的格 = 补位格 (0,↑,R)=ν_R",
+      cand == [(0, "↑", "R")], str(cand))
+print("  ⟹ 「为什么只有中微子可以是 Majorana」＝「为什么补位格是唯一的 (0,0) 格」。")
+print(r"  ⟹ 另一面：$\nu_L$–$\nu_R$ 那条手征边是 **Dirac(P)** 配对，不是 C 配对")
+print(r"     （$\nu_L$ 的共轭是 $(+1,-\tfrac12,\bar c)$，不是 $\nu_R$）——C 与 P 在**那条边上不重合**。")
+
 res = {"slots": [{"v": k[0], "a": k[1], "c": k[2], "particle": v_[0], "orbit_state": v_[1]}
                  for k, v_ in sorted(SLOT_TABLE.items())],
        "rows": rows, "landmarks": [{"name": n, "deg": a, "desc": d, "src": s} for n, a, d, s in LANDMARKS],
        "nu_masses_meV": nu_m,
        "nu_theta120_alt_meV": [A2_meV * (1 + math.sqrt(3/2)*math.cos(th0_nu + 2*math.pi*k/3))**2 for k in range(3)], "nu_theta0_deg": math.degrees(th0_nu), "d_nu": d_nu,
-       "A2_MeV": A2_MeV, "P_closed": nP, "C_closed": nC, "pass": PASS, "fail": FAIL}
+       "A2_MeV": A2_MeV, "P_closed": nP, "C_closed": nC, "majorana_slots": [str(k) for k in cand], "pass": PASS, "fail": FAIL}
 with open(os.path.join(OUT, "sixteen_slot_phase_table.json"), "w", encoding="utf-8") as fh:
     json.dump(res, fh, ensure_ascii=False, indent=1)
 print()
