@@ -230,6 +230,20 @@ def height_persistent(V, L, gens, seed0, kind="cycle", T=4):
     return rec_h[:H + 1]
 
 
+def exp_l1_area():
+    """L1 的第二个再分坐标：面积 A(w)=Σ_k 前缀和_k（Z048）。"""
+    rows = []
+    for L in (4, 8, 12, 16):
+        words = zs.balanced_words(L)
+        areas = [zs.word_area(w) for w in words]
+        rows.append({"L": L, "n": len(words),
+                     "zero": sum(1 for a in areas if a == 0),
+                     "min": min(areas), "max": max(areas),
+                     "hist": {str(k): int(v) for k, v in
+                              sorted(Counter(areas).items())}})
+    return rows
+
+
 # ══════════════════════════════════════════════════════════════════
 #  实验 1：闭合口径分叉（K4 / path16）
 # ══════════════════════════════════════════════════════════════════
@@ -572,6 +586,8 @@ def main():
     print("L1：高度层（H=L/2，静态）")
     print("=" * 78)
     OUT["l1"] = exp_l1(200)
+    OUT["l1_area"] = exp_l1_area()
+    print("  面积零计数：", [(r["L"], r["zero"]) for r in OUT["l1_area"]])
     for r in OUT["l1"]["static"]:
         print(f"  L={r['L']:2d} H={r['H']} b_h={r['b_h']} "
               f"总={r['total']}=C(L,L/2)={r['balanced']}")
@@ -622,6 +638,9 @@ def main():
     dev = [min(abs(x - e) for e in exp_vals) for x in ds]
     ck("种子→槽响应 = ±log(1.1) / |log(0.9)|", bool(ds) and max(dev) < 1e-4,
        f"max dev = {max(dev):.2e}" if ds else "none")
+    ck("L1 面积零计数 = 2/8/58/526（Z048）",
+       [r["zero"] for r in OUT["l1_area"]] == [2, 8, 58, 526],
+       str([r["zero"] for r in OUT["l1_area"]]))
     ck("fresh 基线 3 槽全 0",
        max(OUT["l2"]["baseline"]["fresh"]["freqs"]) < 1e-12,
        f"max = {max(OUT['l2']['baseline']['fresh']['freqs']):.2e}")
