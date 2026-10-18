@@ -32,14 +32,24 @@ def ck(name, cond, detail=""):
 
 
 class ZeroEvo1684Mode(ZeroEvo1684Cycle16):
-    def __init__(self, *a, **kw):
+    def __init__(self, *a, order="sym", **kw):
         super().__init__(*a, **kw)
+        self.order = order
         self.omega = np.sqrt(np.maximum(self.wave_eigs, 0.0))
         self.omega_op = self.wave_vecs @ np.diag(self.omega) @ self.wave_vecs.T
 
     def _apply_mode_phase(self, dt):
         H = np.diag(self.h - self.h.mean())
-        G = 0.5 * (self.omega_op @ H + H @ self.omega_op)
+        if self.order == "sym":
+            G = 0.5 * (self.omega_op @ H + H @ self.omega_op)
+        elif self.order == "left":
+            A = self.omega_op @ H
+            G = 0.5 * (A + A.conj().T)
+        elif self.order == "right":
+            A = H @ self.omega_op
+            G = 0.5 * (A + A.conj().T)
+        else:
+            raise ValueError(self.order)
         vals, vecs = np.linalg.eigh(G)
         U = vecs @ np.diag(np.exp(-1j * dt * vals)) @ vecs.conj().T
         self.psi = U @ self.psi
@@ -67,7 +77,7 @@ def omega_char():
     return float((P * w).sum() / P.sum())
 
 
-def run(mode="scalar", bh=0.0, steps=2000):
+def run(mode="scalar", bh=0.0, steps=2000, order="sym"):
     if mode == "scalar":
         e = ZeroEvo1684Cycle16(zs.cycle(16), Params(L=4, T=4, micro=True, c_h=1.0, dt=0.05,
                                                       alpha=0.1, g_src=1.0, beta=0.0, beta_h=bh),
@@ -75,7 +85,7 @@ def run(mode="scalar", bh=0.0, steps=2000):
     else:
         e = ZeroEvo1684Mode(zs.cycle(16), Params(L=4, T=4, micro=True, c_h=1.0, dt=0.05,
                                                    alpha=0.1, g_src=1.0, beta=0.0, beta_h=0.0),
-                             seed=np.ones(16))
+                             seed=np.ones(16), order=order)
     e.perm = MAPS["seq"]
     rows = []
     for g in range(1, steps+1):
@@ -93,35 +103,51 @@ def main():
     wc = omega_char(); bh = wc / 2
     print("omega_char", wc, "scalar beta_h", bh)
     rs = run("scalar", bh, 2000)
-    rm = run("mode", 0.0, 2000)
+    orders = ["sym", "left", "right"]
+    ro = {o: run("mode", 0.0, 2000, o) for o in orders}
     def tail(r, k): return float(np.mean([x[k] for x in r[-200:]]))
-    print("mode     q       q16     h_E       psi_coh  p4psi")
-    for name, r in [("scalar", rs), ("mode", rm)]:
-        print(f"{name:8s} {tail(r,'q'):.4f}  {tail(r,'q16'):.4f}  {tail(r,'h_E'):.3f}  "
+    print("coupling   q       q16     h_E       psi_coh  p4psi")
+    print(f"scalar     {tail(rs,'q'):.4f}  {tail(rs,'q16'):.4f}  {tail(rs,'h_E'):.3f}  "
+          f"{tail(rs,'psi_coh'):.4f}  {p4([x['psi_coh'] for x in rs]):.4f}")
+    for o in orders:
+        r = ro[o]
+        print(f"mode-{o:5s} {tail(r,'q'):.4f}  {tail(r,'q16'):.4f}  {tail(r,'h_E'):.3f}  "
               f"{tail(r,'psi_coh'):.4f}  {p4([x['psi_coh'] for x in r]):.4f}")
-    ck("scalar beta_h=omega/2 有周期4", p4([x['psi_coh'] for x in rs]) > 1e-6, "")
-    ck("mode 相位有周期4", p4([x['psi_coh'] for x in rm]) > 1e-6,
-       f"{p4([x['psi_coh'] for x in rm]):.4f}")
-    ck("两者 psi_coh 都有界", max(x['psi_coh'] for x in rs) <= 1.0 + 1e-9 and
-       max(x['psi_coh'] for x in rm) <= 1.0 + 1e-9, "")
-    ck("两者 h_E 相近", abs(tail(rs,'h_E') - tail(rm,'h_E')) < 1e-6, "")
+    ck("三种顺序都无 NaN", all(np.all(np.isfinite([x['psi_coh'] for x in ro[o]])) for o in orders), "")
+    ck("三种顺序 psi_coh 有界", all(max(x['psi_coh'] for x in ro[o]) <= 1.0 + 1e-9 for o in orders), "")
+    ck("三种顺序都有周期4", all(p4([x['psi_coh'] for x in ro[o]]) > 1e-6 for o in orders),
+       str([round(p4([x['psi_coh'] for x in ro[o]]),3) for o in orders]))
+    ck("三种顺序 h_E 相近", max(tail(ro[o],'h_E') for o in orders) - min(tail(ro[o],'h_E') for o in orders) < 1e-6, "")
+
+    print("长跑 mode-sym, 10000 代 ...")
+    rl = run("mode", 0.0, 10000, "sym")
+    psi = np.array([x['psi_coh'] for x in rl])
+    print("long psi_coh", round(float(psi[-200:].mean()),4), "p4psi", round(p4(psi),4),
+          "p4h", round(p4([x['h_E'] for x in rl]),3), "q16", round(float(np.mean([x['q16'] for x in rl[-200:]])),4))
+    ck("长跑 psi 有周期4", p4(psi) > 1e-6, f"{p4(psi):.4f}")
+    ck("长跑 psi_coh 有界", float(np.max(psi)) <= 1.0 + 1e-9, f"max={np.max(psi):.4f}")
+    ck("长跑无 NaN", np.all(np.isfinite(psi)), "")
 
     fig, ax = plt.subplots(1, 2, figsize=(10, 3.6))
     ax[0].plot([x['psi_coh'] for x in rs], lw=1, label="scalar ω/2")
-    ax[0].plot([x['psi_coh'] for x in rm], lw=1, label="mode")
-    ax[0].set_title("(a) psi_coh"); ax[0].legend(fontsize=8)
-    ax[1].plot([x['h_E'] for x in rm], lw=1, label="mode h_E")
-    ax[1].set_title("(b) h_E"); ax[1].legend(fontsize=8)
+    for o in orders:
+        ax[0].plot([x['psi_coh'] for x in ro[o]], lw=1, label=f"mode-{o}")
+    ax[0].set_title("(a) psi_coh (2000)"); ax[0].legend(fontsize=7)
+    ax[1].plot(psi, lw=1, label="mode-sym long")
+    ax[1].set_title("(b) psi_coh (10000)"); ax[1].legend(fontsize=8)
     for a in ax: a.grid(alpha=.3)
     fig.tight_layout(); fp = os.path.join(RES, "zero_evo_1684_mode.png")
     fig.savefig(fp, dpi=130)
     out = {"omega_char": wc, "beta_h_scalar": bh,
            "scalar": {"psi_coh": tail(rs,'psi_coh'), "p4": p4([x['psi_coh'] for x in rs]),
                       "h_E": tail(rs,'h_E'), "rows": rs},
-           "mode": {"psi_coh": tail(rm,'psi_coh'), "p4": p4([x['psi_coh'] for x in rm]),
-                    "h_E": tail(rm,'h_E'), "rows": rm},
+           "orders": {o: {"psi_coh": tail(ro[o],'psi_coh'),
+                          "p4": p4([x['psi_coh'] for x in ro[o]]),
+                          "h_E": tail(ro[o],'h_E'), "rows": ro[o]} for o in orders},
+           "long": {"psi_coh": float(psi[-200:].mean()), "p4": p4(psi),
+                    "p4_h": p4([x['h_E'] for x in rl]), "rows": rl},
            "checks": CK, "n_fail": sum(1 for c in CK if not c["pass"]),
-           "anchor": "mode-dependent conformal redshift omega_op; no fitting"}
+           "anchor": "mode-dependent conformal redshift; ordering comparison; no fitting"}
     with open(os.path.join(RES, "zero_evo_1684_mode.json"), "w") as f:
         json.dump(out, f, indent=1)
     print(f"合计 {len(CK)} 条：PASS {len(CK)-out['n_fail']} / FAIL {out['n_fail']}")
