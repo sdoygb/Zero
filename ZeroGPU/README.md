@@ -25,7 +25,7 @@ $$
 |:--|:--|
 | `src/` 脚本 | **240 个 `.py`** |
 | `results/` 结果文件 | **281 个**（`.json`／`.txt`／`.png`） |
-| `doc/` 说明 | **51 份**（索引见下） |
+| `doc/` 说明 | **52 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
 | 统一引擎自检 | `zero_evo.py`：**20 条全过** → `results/zero_evo_selftest.json` |
@@ -79,14 +79,14 @@ ZeroGPU/
 │   ├── field_sim.py／force_from_field.py／field_to_particle.py   场与力
 │   ├── curvature_from_defects_check.py／a2_bridge_check.py   曲率与作用量桥核验
 │   └── …（其余 150+ 个按篇的判定脚本，命名与篇号对应）
-├── doc/                   51 份说明（索引见下）
+├── doc/                   52 份说明（索引见下）
 ├── results/               218 个结果文件（脚本输出，JSON/TXT/PNG）
 └── logs/                  运行日志
 ```
 
 ---
 
-## 文档索引（`doc/`，51 份）
+## 文档索引（`doc/`，52 份）
 
 | 文档 | 内容 |
 |:--|:--|
@@ -119,6 +119,7 @@ ZeroGPU/
 | `zero_evo_1684_betah.md` | ★ h→ψ：β_h 已登记；来源=共形红移 ω/2（ω_char=1.433→β_h=0.717，ψ周期4=0.183）；β_h=3–10 超出 eikonal |
 | `zero_evo_1684_mode.md` | ★ 模依赖红移 Ω：采用 lapse 归一化 β_h=ω（因子1）；长跑 ψ周期4=1.122；11/11 |
 | `zero_tau_layers.md` | ★ 每类 τ prototype：第4代 pre-flow 底全灭、中留2、顶4；但仍是年龄定时器，不是涌现 |
+| `zero_tau_fail.md` | ★ 失败闭合年龄：模式每4代重复，高2/顶靠闭合存活；但闭合分配/τ仍是输入 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
@@ -186,6 +187,7 @@ cd ZeroGPU/src
 /usr/bin/python3 zero_evo_1684_betah.py                           # 新增 h→ψ，约 30 s
 /usr/bin/python3 zero_evo_1684_mode.py                            # 模依赖红移，约 30 s
 /usr/bin/python3 zero_tau_layers.py                              # 每类 τ prototype，约 1 s
+/usr/bin/python3 zero_tau_fail.py                                # 失败闭合年龄，约 1 s
 /usr/bin/python3 z0_engine.py           # 动力学引擎自检：24 条断言
 /usr/bin/python3 closure_reading.py     # 闭合口径判定
 /usr/bin/python3 anchor.py              # 锚定：反问题 + 三档标注
