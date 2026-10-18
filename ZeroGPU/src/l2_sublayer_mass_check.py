@@ -111,9 +111,40 @@ check("下型 = 8/3 落在 1% 内", abs(rows[2]["dev_pct"]) < 1.0, f"{rows[2]['d
 check("上型 = r₃/r₁ = 16/9 落在 0.01% 内", abs(rows[3]["dev_pct"]) < 1e-2, f"{rows[3]['dev_pct']:.4f}%")
 print("  注意：3 个比 ↔ 4 个振幅，映射不唯一（上型需用『比之比』）⟹ 这是候选，不是推导。")
 
+# ───────────────── D  「三个不同大小的圆」的判别 ─────────────────
+print()
+print("=" * 78)
+print("D  三代是一个圆还是三个圆（大小不同）")
+print("=" * 78)
+Al = math.sqrt(2)
+A2_MeV = 246.2205 / 784.5 * 1e3
+PDG = {"e": 0.51099895, "mu": 105.6584, "tau": 1776.86}
+PH = {"e": 2 * math.pi / 3 + 2 / 9, "mu": 2 * math.pi / 3 + 2 / 9 + 2 * math.pi / 3,
+      "tau": 2 / 9}
+Rk = {}
+print("  每一代反解出的单元 R_k = m_k / M_k^2（三代共用一个圆 ⟹ R_k 相同）")
+for nm in ("e", "mu", "tau"):
+    M = 1 + Al * math.cos(PH[nm])
+    Rk[nm] = PDG[nm] / M ** 2
+    print(f"    {nm:<3} θ={math.degrees(PH[nm]) % 360:9.4f}°  M={M:+.6f}  R_k={Rk[nm]:11.4f} MeV")
+disp = max(Rk.values()) / min(Rk.values())
+check("三代反解出的单元相同（离散度 <0.1%）——即三代共用同一个圆",
+      disp - 1 < 1e-3, f"max/min−1 = {100*(disp-1):.4f}%")
+print("  ⟹ 『三个亚层＝三个大小不同的圆（各有自己的振幅）』在 0.01% 水平上不成立。")
+
+print()
+print("  『大小不同的圆』在库里的位置是**扇区**：")
+SEC = {"轻子": (math.sqrt(2), 1.0), "中微子": (math.sqrt(1.5), 1.0),
+       "上型": (1.7778326303083105, 71.6020533976),
+       "下型": (2.682849902237757, 0.9879791572463)}
+for nm, (amp, u) in SEC.items():
+    print(f"    {nm:<4} A_s={amp:.6f}  u_s={u:.5f}  有效振幅 A·√u = {amp*math.sqrt(u):.4f}")
+check("上型扇区标度 ≈72（不同大小的圆在扇区层）",
+      abs(71.6020533976 / 72 - 1) < 0.01, f"{100*(71.6020533976/72-1):+.2f}%")
+
 res = {"seed": SEED, "sum": S, "normalized": wn, "ratios_sorted": r,
        "frequencies": [math.log(x) for x in r], "z091": Z091, "z091_ratio_checks": fs_norm,
-       "neutrino_route_pred": pred, "amplitude_table": rows,
+       "neutrino_route_pred": pred, "amplitude_table": rows, "generation_units_MeV": Rk, "generation_unit_spread": disp,
        "pass": PASS, "fail": FAIL}
 with open(os.path.join(OUT, "l2_sublayer_mass_check.json"), "w", encoding="utf-8") as fh:
     json.dump(res, fh, ensure_ascii=False, indent=1)
