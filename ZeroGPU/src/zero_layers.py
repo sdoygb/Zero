@@ -48,6 +48,7 @@ import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from zero_evo import ZeroEvo, Params, lap_matrix  # noqa: E402
+from z0_engine import torus_adj, star_adj  # noqa: E402
 import zero_sim as zs  # noqa: E402
 
 RES = os.path.join(HERE, "..", "results")
@@ -400,6 +401,39 @@ def exp_l2(seed=(8.0, 4.0, 1.5, 1.0)):
 
 
 # ══════════════════════════════════════════════════════════════════
+#  实验 3.5：六边闭环的边⑤⑥（L0 多重度回读）与归一化口径
+# ══════════════════════════════════════════════════════════════════
+def _edge_run(adj, name, ret, norm, T, gens, sem="persistent", seed=None):
+    V = len(adj)
+    if seed is None:
+        seed = (np.array([8.0, 4.0, 1.5, 1.0]) if V == 4
+                else np.array([2.0 ** (V - 1 - i) for i in range(V)]))
+    e = ZeroEvo(adj, Params(micro=True, micro_semantics=sem, L=4, T=T,
+                            retention=ret, norm_mode=norm, wave_on=False,
+                            poisson_on=False), seed=seed)
+    e.run(gens, every=max(1, gens // 20))
+    s = e.snapshot()
+    return {"graph": name, "ret": ret, "norm": norm, "T": T,
+            "q_live": s["q_live"], "q_hist": s["q_hist"],
+            "q_record": float(((e.record / e.record.sum()) ** 2).sum()),
+            "n_vertices": int((e.record / e.record.sum() > 1e-4).sum())}
+
+
+def exp_edges():
+    rows = []
+    rows.append(_edge_run(zs.path(16), "path16", "last", "separate", 0, 200000))
+    rows.append(_edge_run(zs.path(16), "path16", "last", "common", 0, 20000))
+    for name, adj in (("cycle16", zs.cycle(16)), ("torus4x4", torus_adj(2, 4)),
+                      ("star16", star_adj(16))):
+        rows.append(_edge_run(adj, name, "last", "separate", 0, 60000))
+    rows.append(_edge_run(zs.k4(), "K4", "last", "separate", 0, 20000))
+    rows.append(_edge_run(zs.k4(), "K4", "last", "common", 0, 20000))
+    rows.append(_edge_run(zs.k4(), "K4", "top2", "common", 0, 5000,
+                          sem="fresh"))
+    return rows
+
+
+# ══════════════════════════════════════════════════════════════════
 #  实验 4：宏观量的脉冲响应矩阵（cycle16）
 # ══════════════════════════════════════════════════════════════════
 OBS = ["n_std", "q", "h_energy", "psi_norm", "psi_coh",
@@ -603,6 +637,15 @@ def main():
     OUT["l2"] = exp_l2()
 
     print("=" * 78)
+    print("六边闭环边⑤⑥：L0 多重度回读")
+    print("=" * 78)
+    OUT["edges"] = exp_edges()
+    for r in OUT["edges"]:
+        print(f"  {r['graph']:8s} {r['ret']:5s} {r['norm']:8s} "
+              f"q_live={r['q_live']:.6f} q_hist={r['q_hist']:.6f} "
+              f"q_rec={r['q_record']:.6f} support={r['n_vertices']}")
+
+    print("=" * 78)
     print("宏观脉冲响应（cycle16，c_h=1.7，波扇区开）")
     print("=" * 78)
     OUT["influence"] = exp_influence()
@@ -641,6 +684,25 @@ def main():
     ck("L1 面积零计数 = 2/8/58/526（Z048）",
        [r["zero"] for r in OUT["l1_area"]] == [2, 8, 58, 526],
        str([r["zero"] for r in OUT["l1_area"]]))
+    ed = {(r["graph"], r["norm"], r["ret"]): r for r in OUT["edges"]}
+    ck("path16 last separate q=5/9（Z088 口径）",
+       abs(ed[("path16", "separate", "last")]["q_live"] - 5 / 9) < 1e-5,
+       f"q={ed[('path16','separate','last')]['q_live']:.6f}")
+    ck("path16 last common q≠5/9（尺度不变口径）",
+       abs(ed[("path16", "common", "last")]["q_live"] - 5 / 9) > 0.1,
+       f"q={ed[('path16','common','last')]['q_live']:.6f}")
+    ck("q_live=q_hist（所有 last/top2 末态）",
+       max(abs(r["q_live"] - r["q_hist"]) for r in OUT["edges"]) < 1e-9,
+       "max diff < 1e-9")
+    ck("cycle/torus q=1/3，star q=0.864（Z088 D4 窗）",
+       abs(ed[("cycle16", "separate", "last")]["q_live"] - 1 / 3) < 1e-3
+       and abs(ed[("torus4x4", "separate", "last")]["q_live"] - 1 / 3) < 1e-3
+       and abs(ed[("star16", "separate", "last")]["q_live"] - 0.864) < 1e-3,
+       "ok")
+    ck("K4 persistent q=0.39596 / fresh q=0.25",
+       abs(ed[("K4", "common", "last")]["q_live"] - 0.395957) < 1e-4
+       and abs(OUT["l2"]["baseline"]["fresh"]["p"][0] - 0.25) < 1e-12,
+       "ok")
     ck("fresh 基线 3 槽全 0",
        max(OUT["l2"]["baseline"]["fresh"]["freqs"]) < 1e-12,
        f"max = {max(OUT['l2']['baseline']['fresh']['freqs']):.2e}")

@@ -136,6 +136,7 @@ class Params:
     clip_lo: float = 1e-12      # 内容密度下限（保持正性）
     wave_on: bool = True        # 是否推进相位扇区（关掉可省时间）
     poisson_on: bool = True     # 是否每步解泊松势（关掉则 phi 不更新）
+    norm_mode: str = "common"   # common（保持 seed/W 比）| separate（各扇区各自归一）
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -227,6 +228,8 @@ class ZeroEvo:
         # ── 走者扇区 ──
         self.W = np.zeros((self.V, self.V), dtype=float)
         self.fresh_surv = np.zeros(self.V)
+        self.m_live = np.zeros(self.V)   # 边⑤：L2→L0 本代闭合累积
+        self.m_hist = np.zeros(self.V)   # 边⑥：L1→L0 记录回读
         if seed is None:
             seed = np.ones(self.V)
         elif isinstance(seed, str) and seed == "geom":
@@ -275,7 +278,8 @@ class ZeroEvo:
         self.hist: dict[str, list] = {
             "gen": [], "t": [], "n_mean": [], "n_std": [], "n_max": [], "n_min": [],
             "q": [], "entropy": [], "gini": [], "pr": [],
-            "lock_cn": [], "lock_cs": [], "fiedler": [], "low": [], "high": [], "lam_peak": [],
+            "lock_cn": [], "lock_cs": [], "q_live": [], "q_hist": [],
+            "fiedler": [], "low": [], "high": [], "lam_peak": [],
             "phi_energy": [], "h_energy": [], "h_max": [],
             "psi_norm": [], "psi_coh": [], "top1": [], "top2": [],
             "events": [],
@@ -350,18 +354,34 @@ class ZeroEvo:
         if self.p.T and self.gen % self.p.T == 0:
             self.W[:] = 0.0
 
-        # 走者扇区一起归一化（保持 seed 与 W 的相对注入幅度）；
-        # L1 历史（record/terminal）另归一化（否则 record 会被 W 的指数增长压到 0）。
-        m_w = max(self.seed.sum(), self.W.sum())
-        if m_w > self.p.norm_hi:
-            self.seed /= m_w
-            self.W /= m_w
-            self.layers = [lay / m_w for lay in self.layers]
-            self.log_scale += math.log10(m_w)
-        m_r = max(self.record.sum(), self.terminal.sum())
-        if m_r > self.p.norm_hi:
-            self.record /= m_r
-            self.terminal /= m_r
+        if self.p.norm_mode == "separate":
+            # 对照口径（ZeroCoreVec/loyalty 的各自归一）：seed 与 W 各自除自己的和。
+            # 这会改变 seed/W 的注入比，不是尺度不变；仅作对照。
+            if self.record.sum() > self.p.norm_hi:
+                self.record /= self.record.sum()
+            if self.terminal.sum() > self.p.norm_hi:
+                self.terminal /= self.terminal.sum()
+            if self.seed.sum() > self.p.norm_hi:
+                self.seed /= self.seed.sum()
+            if self.W.sum() > self.p.norm_hi:
+                self.W /= self.W.sum()
+            for arr in (self.seed, self.W, self.record):
+                t = arr.sum()
+                if t > self.p.norm_hi:
+                    arr /= t
+        else:
+            # 走者扇区一起归一化（保持 seed 与 W 的相对注入幅度）；
+            # L1 历史（record/terminal）另归一化。
+            m_w = max(self.seed.sum(), self.W.sum())
+            if m_w > self.p.norm_hi:
+                self.seed /= m_w
+                self.W /= m_w
+                self.layers = [lay / m_w for lay in self.layers]
+                self.log_scale += math.log10(m_w)
+            m_r = max(self.record.sum(), self.terminal.sum())
+            if m_r > self.p.norm_hi:
+                self.record /= m_r
+                self.terminal /= m_r
 
     def _micro_gen_fresh(self):
         """词层口径：每代走者从**当前位置**起一条新的长度 L 词。
@@ -393,17 +413,23 @@ class ZeroEvo:
         self.gen += 1
         if self.p.T and self.gen % self.p.T == 0:
             self.fresh_surv[:] = 0.0
-        m_w = max(self.seed.sum(), self.fresh_surv.sum(), self.W.sum())
-        if m_w > self.p.norm_hi:
-            self.seed /= m_w
-            self.fresh_surv /= m_w
-            self.W /= m_w
-            self.layers = [lay / m_w for lay in self.layers]
-            self.log_scale += math.log10(m_w)
-        m_r = max(self.record.sum(), self.terminal.sum())
-        if m_r > self.p.norm_hi:
-            self.record /= m_r
-            self.terminal /= m_r
+        if self.p.norm_mode == "separate":
+            for arr in (self.seed, self.fresh_surv, self.W, self.record):
+                t = arr.sum()
+                if t > self.p.norm_hi:
+                    arr /= t
+        else:
+            m_w = max(self.seed.sum(), self.fresh_surv.sum(), self.W.sum())
+            if m_w > self.p.norm_hi:
+                self.seed /= m_w
+                self.fresh_surv /= m_w
+                self.W /= m_w
+                self.layers = [lay / m_w for lay in self.layers]
+                self.log_scale += math.log10(m_w)
+            m_r = max(self.record.sum(), self.terminal.sum())
+            if m_r > self.p.norm_hi:
+                self.record /= m_r
+                self.terminal /= m_r
 
     # ───────────────────────── 宏观：内容 ─────────────────────────
     def _content_rhs(self, n: np.ndarray, h: np.ndarray) -> np.ndarray:
@@ -543,6 +569,7 @@ class ZeroEvo:
         self.n = np.maximum(self.n, self.p.clip_lo)
         self.W[:] = 0.0
         self.fresh_surv[:] = 0.0
+        self.m_live[:] = 0.0
         self.layers = []
         self.seed = np.ones(self.V) * (1.0 + self.p.reset_amp * z)
         self.seed = np.maximum(self.seed, 1e-12)
@@ -567,6 +594,11 @@ class ZeroEvo:
         if self.p.micro:
             self._micro_gen()
             self._closure_update()
+            self.m_live = self.m_live + self.gen_closures
+            ml = float(self.m_live.sum())
+            if ml > self.p.norm_hi:
+                self.m_live /= ml
+            self.m_hist = self.record.copy()
         else:
             self.gen += 1
         self.t += self.p.dt
@@ -598,6 +630,10 @@ class ZeroEvo:
             P = np.zeros(self.V)
         low = float(P[self.lap_eigs < 1.0].sum())
         high = float(P[self.lap_eigs > 2.5].sum())
+        ml = float(self.m_live.sum())
+        q_live = float(((self.m_live / ml) ** 2).sum()) if ml > 0 else 0.0
+        mr = float(self.m_hist.sum())
+        q_hist = float(((self.m_hist / mr) ** 2).sum()) if mr > 0 else 0.0
         order = np.argsort(-p)
         return {
             "n_mean": mn,
@@ -609,6 +645,8 @@ class ZeroEvo:
             "gini": _gini(n),
             "pr": pr,
             "lock_cn": float(np.linalg.norm(pc - p)),
+            "q_live": q_live,
+            "q_hist": q_hist,
             "lock_cs": float(np.linalg.norm(pc - ps)),
             "fiedler": fid,
             "low": low,
