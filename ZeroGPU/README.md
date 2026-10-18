@@ -101,7 +101,7 @@ ZeroGPU/
 | `zero_l4_layers.md` | ★ L=4/D=4 下的 8/4/2：周期 4、未毁顶被 reseed；顶 0.395，低于观测 0.552 |
 | `zero_window_readout.md` | ★ L=4 vs L=8：漏掉的是读出窗口≠词长；W8 的 180 个平衡 4-窗口 q_rot=5/9 |
 | `zero_window_16.md` | ★ 窗口化 16/8/4：4 site×2×2；周期 4；距观测 0.127（目前最好，保 D=4） |
-| `zero_window16_engine.md` | ★ 三拷贝 W 首试：能跑但顶拷贝独大（份额 [0,0,1]，q=0.396）；需加 flow/reseed |
+| `zero_window16_engine.md` | ★ 三拷贝 W + flow/reseed：份额 [0.170,0.292,0.537]（距观测 0.033）；q 仍偏高 0.31 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
