@@ -117,7 +117,7 @@ ZeroGPU/
 | `zero_evo_1684_geo.md` | ★ 固定 seq 映射 + 几何源：g_src>0 时 h_E>0 且继承周期4；ψ 仍未接（β=0） |
 | `zero_evo_1684_beta.md` | ★ β 扫描：β 是 content→phase（不是 h→phase）；ψ 周期4弱升到 0.037；h→ψ 仍缺 |
 | `zero_evo_1684_betah.md` | ★ h→ψ：β_h 已登记；来源=共形红移 ω/2（ω_char=1.433→β_h=0.717，ψ周期4=0.183）；β_h=3–10 超出 eikonal |
-| `zero_evo_1684_mode.md` | ★ 模依赖红移 Ω：ψ周期4=0.293；排序逐位一致；长跑0.396；但 h 是标量代理，因子1/2未定 |
+| `zero_evo_1684_mode.md` | ★ 模依赖红移 Ω：ψ周期4=0.293；排序逐位一致；长跑0.396；四角度复核确认 h 因子1/2未定 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
