@@ -1,0 +1,65 @@
+{
+ "global_q_rank": 1,
+ "global_q_s": [
+  0.3286335345030997,
+  3.325806089277205e-17,
+  7.475233693089388e-18
+ ],
+ "basedep_Q_rank": 3,
+ "basedep_Q_s": [
+  0.243290963614205,
+  0.1896411513885251,
+  0.11333905206814672
+ ],
+ "q": [
+  0.4,
+  0.3,
+  0.2,
+  0.1
+ ],
+ "Q": [
+  [
+   0.4,
+   0.3,
+   0.2,
+   0.1
+  ],
+  [
+   0.1,
+   0.4,
+   0.3,
+   0.2
+  ],
+  [
+   0.2,
+   0.1,
+   0.4,
+   0.3
+  ],
+  [
+   0.3,
+   0.2,
+   0.1,
+   0.4
+  ]
+ ],
+ "checks": [
+  {
+   "name": "global q \u7684 3 \u5b57\u7b26\u79e9=1",
+   "pass": true,
+   "detail": "1"
+  },
+  {
+   "name": "base-dependent Q \u7684 3 \u5b57\u7b26\u79e9=3",
+   "pass": true,
+   "detail": "3"
+  },
+  {
+   "name": "Q \u6bcf\u884c\u90fd\u662f\u5168\u652f\u6491",
+   "pass": true,
+   "detail": ""
+  }
+ ],
+ "n_fail": 0,
+ "note": "structural: base-dependent connection needed for rank3"
+}
