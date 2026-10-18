@@ -214,12 +214,45 @@ check("中微子的代间距确实不能用 +120°（会给出 O(A²) 的质量�
       abs(A2_meV * (1 + A_nu * math.cos(th0_nu + 2 * math.pi / 3)) ** 2) > 1e3,
       "见上三行")
 
+# ───────── ⑥ P 与 C：载体对哪个操作封闭 ─────────
+print()
+print("=" * 84)
+print("⑥ P（手征翻转）与 C（电荷共轭）：载体对哪个封闭")
+print("=" * 84)
+# 槽 -> (Y, T3)；量子数取 Z136 §3.5
+QP = {
+    (0, "↑", "L"): (-1, 1 / 2), (0, "↓", "L"): (-1, -1 / 2),
+    (0, "↑", "R"): (0, 0), (0, "↓", "R"): (-2, 0),
+}
+for i in (1, 2, 3):
+    QP[(i, "↑", "L")] = (1 / 3, 1 / 2)
+    QP[(i, "↓", "L")] = (1 / 3, -1 / 2)
+    QP[(i, "↑", "R")] = (4 / 3, 0)
+    QP[(i, "↓", "R")] = (-2 / 3, 0)
+slots = set(SLOT_TABLE.keys())
+flip_c = lambda k: (k[0], k[1], "R" if k[2] == "L" else "L")
+nP = sum(1 for k in slots if flip_c(k) in slots)
+# C：Y、T3 取负，手征翻转（共轭 Weyl 的手征相反）
+by_q = {(round(y, 9), round(t3, 9), c): k for k, (y, t3) in QP.items() for c in (k[2],)}
+def C_image(k):
+    y, t3 = QP[k]
+    return (round(-y, 9), round(-t3, 9), "R" if k[2] == "L" else "L")
+nC = sum(1 for k in slots if C_image(k) in by_q)
+print(f"  P：(v,a,c) -> (v,a,c̄)：{nP}/16 个槽的自同构成立")
+print(f"  C：(Y,T3,c) -> (-Y,-T3,c̄)：{nC}/16 个槽的像仍在槽表内")
+for k in sorted(slots):
+    y, t3 = QP[k]
+    print(f"    {k}  (Y,T3)=({y:+.3f},{t3:+.1f})  C 像 = ({-y:+.3f},{-t3:+.1f},"
+          f"{'R' if k[2]=='L' else 'L'})  在表内 = {C_image(k) in by_q}")
+check("载体对 P 封闭（16/16）", nP == 16, f"{nP}/16")
+check("载体对 C 不封闭（0/16）", nC == 0, f"{nC}/16")
+
 res = {"slots": [{"v": k[0], "a": k[1], "c": k[2], "particle": v_[0], "orbit_state": v_[1]}
                  for k, v_ in sorted(SLOT_TABLE.items())],
        "rows": rows, "landmarks": [{"name": n, "deg": a, "desc": d, "src": s} for n, a, d, s in LANDMARKS],
        "nu_masses_meV": nu_m,
        "nu_theta120_alt_meV": [A2_meV * (1 + math.sqrt(3/2)*math.cos(th0_nu + 2*math.pi*k/3))**2 for k in range(3)], "nu_theta0_deg": math.degrees(th0_nu), "d_nu": d_nu,
-       "A2_MeV": A2_MeV, "pass": PASS, "fail": FAIL}
+       "A2_MeV": A2_MeV, "P_closed": nP, "C_closed": nC, "pass": PASS, "fail": FAIL}
 with open(os.path.join(OUT, "sixteen_slot_phase_table.json"), "w", encoding="utf-8") as fh:
     json.dump(res, fh, ensure_ascii=False, indent=1)
 print()
