@@ -99,8 +99,11 @@ def run(lam, steps=200):
             s = x.sum(); return x / s if s > 0 else np.full(V, 1/V)
         Rres = (mb*norm(rb) + mm*norm(rm) + mt*norm(rt)) / msum if msum > 0 else np.full(V, 1/V)
         raw = record / record.sum() if record.sum() > 0 else record
+        p16 = np.abs(Wb).reshape(-1)
+        q16 = float(((p16 / p16.sum()) ** 2).sum()) if p16.sum() > 0 else np.nan
         rows.append({"gen": gen, "destroyed": dest, "w": w.tolist(),
-                     "q_res": float((Rres**2).sum()), "q_raw": float((raw**2).sum())})
+                     "q_res": float((Rres**2).sum()), "q_raw": float((raw**2).sum()),
+                     "q16": q16})
     tail = rows[-40:]
     Wt_arr = np.array([r["w"] for r in tail])
     wmean = Wt_arr.mean(0); wstd = Wt_arr.std(0)
@@ -110,12 +113,13 @@ def run(lam, steps=200):
     cyc_mean = cyc.mean(0); cyc_std = cyc.std(0)
     relstd_cycle = (cyc_std / np.maximum(cyc_mean, 1e-30)).max()
     qres = np.mean([r["q_res"] for r in tail]); qraw = np.mean([r["q_raw"] for r in tail])
+    q16 = np.mean([r["q16"] for r in tail])
     dist = float(np.abs(wmean - TARGET).sum())
     relstd = (wstd / np.maximum(wmean, 1e-30)).max()
     return {"lam": lam, "wmean": wmean.tolist(), "wstd": wstd.tolist(),
             "relstd": float(relstd), "relstd_cycle": float(relstd_cycle),
             "cyc_mean": cyc_mean.tolist(), "cyc_std": cyc_std.tolist(),
-            "q_res": float(qres), "q_raw": float(qraw),
+            "q_res": float(qres), "q_raw": float(qraw), "q16": float(q16),
             "dist": dist, "rows": rows}
 
 
@@ -125,7 +129,7 @@ def main():
     print("lam   w_b     w_m     w_t     relstd  q_res   q_raw   dist")
     for r in res:
         print(f"{r['lam']:.2f}  " + "  ".join(f"{x:.4f}" for x in r["wmean"]) +
-              f"   {r['relstd']:.4f} {r['relstd_cycle']:.4f}  {r['q_res']:.4f}  {r['q_raw']:.4f}  {r['dist']:.4f}")
+              f"   {r['relstd']:.4f} {r['relstd_cycle']:.4f}  {r['q_res']:.4f}  {r['q16']:.4f}  {r['dist']:.4f}")
     print("=" * 70); print("C′ 判据"); print("=" * 70)
     ck("顶不被压到 1/4（w_t > 0.25）", all(r["wmean"][2] > 0.25 for r in res[1:]),
        str([round(r["wmean"][2],3) for r in res]))
@@ -133,6 +137,8 @@ def main():
        str([round(r["dist"],3) for r in res]))
     ck("存在 λ 使周期间权重稳定（relstd_cycle<0.1）", any(r["relstd_cycle"] < 0.1 for r in res),
        str([round(r["relstd_cycle"],3) for r in res]))
+    ck("q16 接近观测 0.068（|Δ|<0.02）", any(abs(r["q16"] - TARGET_Q) < 0.02 for r in res),
+       str([round(r["q16"],4) for r in res]))
     ck("无 NaN", all(all(np.isfinite(r["wmean"])) for r in res), "")
 
     fig, ax = plt.subplots(1, 3, figsize=(13, 3.6))

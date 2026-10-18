@@ -106,7 +106,7 @@ ZeroGPU/
 | `zero_window16_residence.md` | ★ B 判定：独立三拷贝 + 驻留权重——周期内 relstd 0.36，周期间 0.138，q 0.456，不成立 |
 | `zero_window16_A.md` | ★ A 判定：单 W 读出——份额恒 1/3、q 0.396、无周期 4；A/B 都不成立 |
 | `zero_window16_merge.md` | ★ A/B 软约束扫描：无甜点；稳定只在 λ=1（1/3），份额距离仍 0.40 |
-| `zero_window16_toppias.md` | ★ C′ 顶偏置：只约束中、放开顶；λ=1 份额 [0.235,0.235,0.531]，距离 0.125，周期间稳定 |
+| `zero_window16_toppias.md` | ★ C′ 顶偏置：λ=1 份额 [0.235,0.235,0.531]，距离 0.125，周期间稳定；q16=0.091（4 顶点 q 不可比） |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
