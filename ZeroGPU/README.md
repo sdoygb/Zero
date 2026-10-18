@@ -126,7 +126,7 @@ ZeroGPU/
 | `zero_tau_6_18_4.md` | ★ 6/18/4 count prototype：能跑、5/5；但只是计数测试，中18的top2/flow还没结构 |
 | `zero_tau_6_18_4_graph.md` | ★ 6/18/4 图版：K4关联流 + 动态 top2；6/6；top2 第4代=[0,15] |
 | `zero_tau_6_18_4_graph_long.md` | ★ 长跑10000代：top2 冻结在 [0,15]，毁灭代模式保持；8/8 |
-| `zero_evo_layers_proto.md` | ★ 层集成 prototype：L0反馈+L1静态；L2 相邻比坐标1个非零，正交基3个非零（坐标依赖） |
+| `zero_evo_layers_proto.md` | ★ 层集成 prototype：L0反馈+L1静态；L2 Helmert 3分量非零但协方差秩=1，只1个独立模式 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |

@@ -43,9 +43,12 @@ def run(l0_back, steps=2000):
         rec = e._rec16()
         p = rec.reshape(4, 4).sum(axis=1)
         p = np.maximum(p, 1e-300); p = p / p.sum()
-        freqs = np.abs(np.log(p[:-1] / p[1:]))
+        d = p - p.mean()
+        c = np.array([(d[0]-d[1])/np.sqrt(2),
+                      (d[0]+d[1]-2*d[2])/np.sqrt(6),
+                      (d[0]+d[1]+d[2]-3*d[3])/np.sqrt(12)])
         rows.append({"gen": g, "q": s["q"], "q16": e.q16(), "n_std": s["n_std"],
-                     "slots": freqs.tolist()})
+                     "p": p.tolist(), "slots": c.tolist()})
     return rows
 
 
@@ -54,27 +57,33 @@ def p4(a):
 
 
 def main():
-    l0s = [0.0, 0.1, 0.3]
+    l0s = [0.0, 0.1]
     res = {l: run(l) for l in l0s}
-    print("l0_back  q       q16     n_std   slots(mean)          p4_slots")
+    print("l0_back  q       q16     n_std   Helmert(mean)        cov-rank  eig")
+    ranks = {}
     for l in l0s:
         r = res[l][-200:]
         sl = np.mean([x["slots"] for x in r], axis=0)
-        p4s = [p4([x["slots"][i] for x in res[l]]) for i in range(3)]
+        X = np.array([x["slots"] for x in res[l][-1000:]])
+        C = np.cov(X.T)
+        eig = np.linalg.eigvalsh(C)
+        rank = int(np.sum(eig > max(eig.max()*1e-8, 1e-14)))
+        ranks[l] = rank
         print(f"{l:.2f}     {np.mean([x['q'] for x in r]):.4f}  {np.mean([x['q16'] for x in r]):.4f}  "
-              f"{np.mean([x['n_std'] for x in r]):.4f}  {np.round(sl,3)}  {np.round(p4s,4)}")
+              f"{np.mean([x['n_std'] for x in r]):.4f}  {np.round(sl,3)}  {rank}  {np.round(eig,6)}")
     ck("L1 静态 b_h/A_h 可读出", True, "b_h=[4,2], A_h=[3,2]")
-    ck("L2 有 3 个槽", all(len(x["slots"]) == 3 for x in res[0.0]), "")
+    ck("L2 给出 3 个 Helmert 分量", all(len(x["slots"]) == 3 for x in res[0.0]), "")
     ck("无 NaN", all(np.all(np.isfinite([x["slots"] for x in res[l]])) for l in l0s), "")
     ck("l0_back 改变动力学", any(abs(np.mean([x['q'] for x in res[l][-200:]]) -
                                       np.mean([x['q'] for x in res[0.0][-200:]])) > 1e-6
                                   for l in l0s[1:]), "")
-    ck("L2 槽有周期 4", any(p4([x["slots"][i] for x in res[0.3]]) > 1e-6 for i in range(3)), "")
+    ck("L2 分量有周期 4", any(p4([x["slots"][i] for x in res[0.1]]) > 1e-6 for i in range(3)), "")
+    ck("协方差秩=1（不是3个独立槽）", all(ranks[l] == 1 for l in l0s), str(ranks))
 
     fig, ax = plt.subplots(1, 2, figsize=(10, 3.6))
     for i in range(3):
-        ax[0].plot([x["slots"][i] for x in res[0.3]], lw=1, label=f"slot {i+1}")
-    ax[0].set_title("(a) L2 slots (l0=0.3)"); ax[0].legend(fontsize=8)
+        ax[0].plot([x["slots"][i] for x in res[0.1]], lw=1, label=f"Helmert {i+1}")
+    ax[0].set_title("(a) L2 Helmert components (l0=0.1)"); ax[0].legend(fontsize=8)
     for l in l0s:
         ax[1].plot([x["q"] for x in res[l]], lw=1, label=f"l0={l}")
     ax[1].set_title("(b) content q"); ax[1].legend(fontsize=8)
@@ -85,6 +94,7 @@ def main():
                                 "q16": float(np.mean([x['q16'] for x in res[l][-200:]])),
                                 "n_std": float(np.mean([x['n_std'] for x in res[l][-200:]])),
                                 "slots": np.mean([x['slots'] for x in res[l][-200:]], axis=0).tolist(),
+                                "cov_rank": ranks[l],
                                 "p4_slots": [p4([x['slots'][i] for x in res[l]]) for i in range(3)]}
                         for l in l0s},
            "l1_static": {"b_h": [4, 2], "A_h": [3, 2]},
