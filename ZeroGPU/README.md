@@ -23,8 +23,8 @@ $$
 
 | 项 | 值 |
 |:--|:--|
-| `src/` 脚本 | **238 个 `.py`** |
-| `results/` 结果文件 | **279 个**（`.json`／`.txt`／`.png`） |
+| `src/` 脚本 | **239 个 `.py`** |
+| `results/` 结果文件 | **280 个**（`.json`／`.txt`／`.png`） |
 | `doc/` 说明 | **25 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
@@ -42,7 +42,8 @@ $$
 - **耦合**：正则 $D$-单纯形（等角族内唯一），独立身份↔格点轴 $\Rightarrow$ 空间维数 $=3$（`doc/coupling_verdict.md`、`doc/coupling_map.md`、`doc/coupling_recheck.md`）；
 - **锚定层**：反问题接口＋三档自动标注（`doc/anchoring_layer.md`）；
 - **统一引擎（讨论稿）**：走者／记忆／内容／势／相位／几何／容量在一个状态里；几何回写反转选择律、双稳与手性行波（`doc/zero_evo.md`）；
-- **层账（讨论稿）**：L0=0／L1=$H=L/2$ 静态／L2=3 槽；`persistent` 与 `fresh` 闭合口径分叉，L1 高度只在 `fresh` 下逐位（`doc/zero_layers.md`）。
+- **层账（讨论稿）**：L0=0／L1=$H=L/2$ 静态／L2=3 槽；`persistent` 与 `fresh` 闭合口径分叉，L1 高度只在 `fresh` 下逐位（`doc/zero_layers.md`）；
+- **第七条边（判定）**：L0 内容→L2 seed 的无量纲耦合 λ；`persistent` 硬 winner-take-all，`fresh` path16 有准定常 8/16 选择、λ≥0.5 振荡；默认 λ=0（`zero_seventh.py`）。
 
 ---
 
@@ -63,6 +64,7 @@ ZeroGPU/
 │   ├── zero_evo_bistable.py c_h=1.55 的 FID 支复核
 │   ├── zero_evo_linear.py 线性化对照（Fiedler 最快）
 │   ├── zero_layers.py     L0/L1/L2 层账、口径分叉、L2 槽、脉冲响应
+│   ├── zero_seventh.py    第七条边（L0 内容→L2 seed）的 λ 扫描与判据
 │   ├── closure_reading.py 闭合口径判定（穷举 ＋ 引擎对照）
 │   ├── gamma_gap.py       Γ 约束检验 ＋ 差异扫描 ＋ 穷举对照
 │   ├── gamma_origin.py    Γ 原生来源核验
@@ -128,6 +130,7 @@ cd ZeroGPU/src
 /usr/bin/python3 zero_evo_long.py       # 10^6 步长跑，约 3–5 min
 /usr/bin/python3 zero_evo_bistable.py   # 双稳的 FID 支，约 1 min
 /usr/bin/python3 zero_evo_linear.py     # 线性化对照，约 1 s
+/usr/bin/python3 zero_seventh.py        # 第七条边 λ 扫描，约 1–2 min
 /usr/bin/python3 zero_layers.py         # L0/L1/L2 层账与脉冲响应，约 2 min
 /usr/bin/python3 z0_engine.py           # 动力学引擎自检：24 条断言
 /usr/bin/python3 closure_reading.py     # 闭合口径判定

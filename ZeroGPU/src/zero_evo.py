@@ -137,6 +137,8 @@ class Params:
     wave_on: bool = True        # 是否推进相位扇区（关掉可省时间）
     poisson_on: bool = True     # 是否每步解泊松势（关掉则 phi 不更新）
     norm_mode: str = "common"   # common（保持 seed/W 比）| separate（各扇区各自归一）
+    l0_back: float = 0.0        # 第七条边：L0 内容→L2 seed 的无量纲耦合 λ
+    l0_back_mode: str = "hist"  # hist（边⑥记录）| live（边⑤本代闭合）
 
 
 # ══════════════════════════════════════════════════════════════════
@@ -311,16 +313,26 @@ class ZeroEvo:
         s = self.seed.copy()
         if s.sum() <= 0:
             s = np.ones(self.V)
-        if self.p.eta_n == 0 and self.p.eta_h == 0 and self.p.eta_psi == 0:
-            return s
-        mn = max(self._mean_n(), 1e-30)
-        x = self.n / mn - 1.0
-        h = self.h - self.h.mean()
-        a = np.abs(self.psi) ** 2
-        ma = max(a.mean(), 1e-30)
-        mod = self.p.eta_n * x + self.p.eta_h * h + self.p.eta_psi * (a / ma - 1.0)
-        mod = np.clip(mod, -5.0, 5.0)
-        return s * np.exp(mod)
+        if not (self.p.eta_n == 0 and self.p.eta_h == 0 and self.p.eta_psi == 0):
+            mn = max(self._mean_n(), 1e-30)
+            x = self.n / mn - 1.0
+            h = self.h - self.h.mean()
+            a = np.abs(self.psi) ** 2
+            ma = max(a.mean(), 1e-30)
+            mod = self.p.eta_n * x + self.p.eta_h * h + self.p.eta_psi * (a / ma - 1.0)
+            mod = np.clip(mod, -5.0, 5.0)
+            s = s * np.exp(mod)
+        if self.p.l0_back:
+            m = self.m_hist if self.p.l0_back_mode == "hist" else self.m_live
+            tot = float(m.sum())
+            if tot > 0:
+                w = m / (tot / self.V)
+                s = s * (1.0 + self.p.l0_back * (w - 1.0))
+                s = np.maximum(s, 0.0)
+                ss = float(s.sum())
+                if ss > 0:
+                    s *= float(self.seed.sum()) / ss
+        return s
 
     # ───────────────────────── 微观：L2 走者 ─────────────────────────
     def _micro_gen(self):
