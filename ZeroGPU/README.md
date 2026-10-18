@@ -25,7 +25,7 @@ $$
 |:--|:--|
 | `src/` 脚本 | **240 个 `.py`** |
 | `results/` 结果文件 | **281 个**（`.json`／`.txt`／`.png`） |
-| `doc/` 说明 | **26 份**（索引见下） |
+| `doc/` 说明 | **27 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
 | 统一引擎自检 | `zero_evo.py`：**20 条全过** → `results/zero_evo_selftest.json` |
@@ -79,14 +79,14 @@ ZeroGPU/
 │   ├── field_sim.py／force_from_field.py／field_to_particle.py   场与力
 │   ├── curvature_from_defects_check.py／a2_bridge_check.py   曲率与作用量桥核验
 │   └── …（其余 150+ 个按篇的判定脚本，命名与篇号对应）
-├── doc/                   26 份说明（索引见下）
+├── doc/                   27 份说明（索引见下）
 ├── results/               218 个结果文件（脚本输出，JSON/TXT/PNG）
 └── logs/                  运行日志
 ```
 
 ---
 
-## 文档索引（`doc/`，26 份）
+## 文档索引（`doc/`，27 份）
 
 | 文档 | 内容 |
 |:--|:--|
@@ -94,6 +94,7 @@ ZeroGPU/
 | `zero_evo.md` | ★ 统一多扇区引擎：状态／通道／20 条自检／几何反转选择律／相图与迟滞／手性行波 |
 | `zero_layers.md` | ★ L0/L1/L2 层账：L1 高度静态读出、L2 三槽、persistent/fresh 口径分叉、脉冲响应 |
 | `zero_long_audit.md` | ★ 长跑审计：full 5×10^6 步与 layer 10^7 步；形状冻结、进程不卡 |
+| `zero_sublayers.md` | ★ L2 亚亚层 16/8/4 分级毁灭 prototype：底全灭、中留 2、顶不动；周期 4 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
@@ -136,6 +137,7 @@ cd ZeroGPU/src
 /usr/bin/python3 neutrino_lr_oscillation.py # Z019 左右手相消，约 1 s
 /usr/bin/python3 zero_layers.py         # L0/L1/L2 层账与脉冲响应，约 2 min
 /usr/bin/python3 zero_long_audit.py --case full --steps 5000000   # 长跑审计，约 15 min
+/usr/bin/python3 zero_sublayers.py --steps 200                    # 亚亚层 prototype，约 1 s
 /usr/bin/python3 z0_engine.py           # 动力学引擎自检：24 条断言
 /usr/bin/python3 closure_reading.py     # 闭合口径判定
 /usr/bin/python3 anchor.py              # 锚定：反问题 + 三档标注
