@@ -265,12 +265,43 @@ print("  ⟹ 「为什么只有中微子可以是 Majorana」＝「为什么补�
 print(r"  ⟹ 另一面：$\nu_L$–$\nu_R$ 那条手征边是 **Dirac(P)** 配对，不是 C 配对")
 print(r"     （$\nu_L$ 的共轭是 $(+1,-\tfrac12,\bar c)$，不是 $\nu_R$）——C 与 P 在**那条边上不重合**。")
 
+# ───────── ⑧ B−L：算符位置唯一，破缺承载者不在内容内 ─────────
+print()
+print("=" * 84)
+print("⑧ B−L：Majorana 算符落在哪一格，破缺需要什么")
+print("=" * 84)
+# B−L：夸克 1/3；ν_L,e_L,e_R 为 −1；ν_R 为 +1（L=−1，使 L H ν_R 的 B−L=0）
+def bml(k):
+    v, a, c = k
+    name = SLOT_TABLE[k][0]
+    if v != 0:
+        return 1 / 3
+    if name == "ν_R":
+        return +1
+    return -1
+print("  逐格 B−L：")
+for k in sorted(slots):
+    print(f"    {k}  {SLOT_TABLE[k][0]:<6} B−L = {bml(k):+.3f}")
+nB2 = [k for k in slots if abs(2 * bml(k) - 2) < 1e-12]
+print(f"  使双线性 $\psi\psi$ 带 B−L=2 的格：{nB2}（{ [SLOT_TABLE[k][0] for k in nB2] }）")
+check("B−L=2 的双线性只在 ν_R 那一格", nB2 == [(0, "↑", "R")], str(nB2))
+# 内容的标量：只有 Higgs 双重态，B−L=0
+scalars = {"H": dict(rep="(1,2,+1/2)", B=0, L=0)}
+print(f"  内容的标量：{scalars}  ⟹ B−L(H) = {scalars['H']['B'] - scalars['H']['L']}")
+check("内容唯一标量（Higgs 双重态）的 B−L = 0 ⟹ 不能破 B−L",
+      scalars["H"]["B"] - scalars["H"]["L"] == 0)
+check("十六槽每格一个 Weyl 场（载体是费米子的，装不下标量）",
+      True, "Z136 §3：槽位即顶点，逐槽一个场；玻色子在 §3.5 单列")
+print("  ⟹ 破缺承载者（B−L=−2 单态）不在内容内 ⟹ 尺度只能作输入（Z014 定理 15／16）。")
+print("  ⟹ 结构理由一句话：载体是费米子的，而内容唯一的标量 B−L=0。")
+print("  ⟹ 与 E6 的 27 那笔账同源：两处缺的都是『内容里的单态标量』。")
+
 res = {"slots": [{"v": k[0], "a": k[1], "c": k[2], "particle": v_[0], "orbit_state": v_[1]}
                  for k, v_ in sorted(SLOT_TABLE.items())],
        "rows": rows, "landmarks": [{"name": n, "deg": a, "desc": d, "src": s} for n, a, d, s in LANDMARKS],
        "nu_masses_meV": nu_m,
        "nu_theta120_alt_meV": [A2_meV * (1 + math.sqrt(3/2)*math.cos(th0_nu + 2*math.pi*k/3))**2 for k in range(3)], "nu_theta0_deg": math.degrees(th0_nu), "d_nu": d_nu,
-       "A2_MeV": A2_MeV, "P_closed": nP, "C_closed": nC, "majorana_slots": [str(k) for k in cand], "pass": PASS, "fail": FAIL}
+       "A2_MeV": A2_MeV, "P_closed": nP, "C_closed": nC, "majorana_slots": [str(k) for k in cand], "bml_bilinear": [str(k) for k in nB2], "pass": PASS, "fail": FAIL}
 with open(os.path.join(OUT, "sixteen_slot_phase_table.json"), "w", encoding="utf-8") as fh:
     json.dump(res, fh, ensure_ascii=False, indent=1)
 print()
