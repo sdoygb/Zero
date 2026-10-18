@@ -25,7 +25,7 @@ $$
 |:--|:--|
 | `src/` 脚本 | **240 个 `.py`** |
 | `results/` 结果文件 | **281 个**（`.json`／`.txt`／`.png`） |
-| `doc/` 说明 | **53 份**（索引见下） |
+| `doc/` 说明 | **54 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
 | 统一引擎自检 | `zero_evo.py`：**20 条全过** → `results/zero_evo_selftest.json` |
@@ -79,14 +79,14 @@ ZeroGPU/
 │   ├── field_sim.py／force_from_field.py／field_to_particle.py   场与力
 │   ├── curvature_from_defects_check.py／a2_bridge_check.py   曲率与作用量桥核验
 │   └── …（其余 150+ 个按篇的判定脚本，命名与篇号对应）
-├── doc/                   53 份说明（索引见下）
+├── doc/                   54 份说明（索引见下）
 ├── results/               218 个结果文件（脚本输出，JSON/TXT/PNG）
 └── logs/                  运行日志
 ```
 
 ---
 
-## 文档索引（`doc/`，53 份）
+## 文档索引（`doc/`，54 份）
 
 | 文档 | 内容 |
 |:--|:--|
@@ -120,7 +120,8 @@ ZeroGPU/
 | `zero_evo_1684_mode.md` | ★ 模依赖红移 Ω：采用 lapse 归一化 β_h=ω（因子1）；长跑 ψ周期4=1.122；11/11 |
 | `zero_tau_layers.md` | ★ 每类 τ prototype：第4代 pre-flow 底全灭、中留2、顶4；但仍是年龄定时器，不是涌现 |
 | `zero_tau_fail.md` | ★ 失败闭合年龄：模式每4代重复，高2/顶靠闭合存活；闭合分配/τ仍是输入 |
-| `zero_capacity_derivation.md` | ★ 条件推导：闭合分配=Z129+Z017；τ=4m 来自 Z022 容量×重数 |
+| `zero_capacity_derivation.md` | ★ 条件推导：闭合分配=Z129+Z017；τ=4m（上一版误称 Z022 容量） |
+| `zero_capacity_audit.md` | ★ 审计：Z022 容量是每点 10，不是每类 4m；4m 是外延寿命输入 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
