@@ -22,6 +22,13 @@ from zero_evo import ZeroEvo, Params  # noqa: E402
 RES = os.path.join(HERE, "..", "results")
 V4, T = 4, 4
 TARGET_Q = 0.06830296233
+MAPS = {
+    "seq": np.arange(16),
+    "transpose": np.array([f*4 + s for s in range(4) for f in range(4)]),
+    "shift": np.array([s*4 + (f+s) % 4 for s in range(4) for f in range(4)]),
+    "bitrev": np.array([s*4 + [0,2,1,3][f] for s in range(4) for f in range(4)]),
+    "random": np.random.default_rng(20261018).permutation(16),
+}
 CK = []
 
 
@@ -37,6 +44,7 @@ class ZeroEvo1684Cycle16(ZeroEvo):
         self.A4_L = np.linalg.matrix_power(self.A4, self.p.L)
         self.Wb = np.zeros((V4, V4)); self.Wm = np.zeros((V4, V4)); self.Wt = np.zeros((V4, V4))
         self.sub_seed = np.ones(V4) / V4
+        self.perm = np.arange(16)
 
     def _rec16(self):
         Wm8 = np.zeros((V4, 2)); Wt4 = self.Wt.sum(axis=1)
@@ -86,8 +94,9 @@ class ZeroEvo1684Cycle16(ZeroEvo):
         x = self._rec16()
         if not np.all(np.isfinite(x)):
             x = np.ones(16) / 16
-        self.gen_closures = x
-        self.record = self.record + x
+        xv = np.zeros(16); xv[self.perm] = x
+        self.gen_closures = xv
+        self.record = self.record + xv
         clo = np.diag(self.Wb) + np.diag(self.Wm) + np.diag(self.Wt)
         if np.all(np.isfinite(clo)) and clo.sum() > 0:
             self.sub_seed = clo / clo.sum()
@@ -105,9 +114,10 @@ class ZeroEvo1684Cycle16(ZeroEvo):
         return (m / s).tolist() if s > 0 else [1/3]*3
 
 
-def run(alpha, steps=1000):
+def run(alpha, mapping="seq", steps=1000):
     e = ZeroEvo1684Cycle16(zs.cycle(16), Params(L=4, T=4, micro=True, c_h=1.0, dt=0.05, alpha=alpha),
                            seed=np.ones(16))
+    e.perm = MAPS[mapping]
     rows = []
     for g in range(1, steps+1):
         e.step()
@@ -118,7 +128,7 @@ def run(alpha, steps=1000):
     nstd = np.array([r["n_std"] for r in rows]); w = np.array([r["w"] for r in rows])
     def p4(a):
         a = np.asarray(a) - np.mean(a); f = np.abs(np.fft.rfft(a)); return float(f[len(a)//T])
-    return {"alpha": alpha, "q": float(q[-100:].mean()), "q16": float(q16[-100:].mean()),
+    return {"alpha": alpha, "mapping": mapping, "q": float(q[-100:].mean()), "q16": float(q16[-100:].mean()),
             "n_std": float(nstd[-100:].mean()), "n_std_max": float(np.nanmax(nstd)),
             "w": w[-100:].mean(0).tolist(), "p4q": p4(q), "p4q16": p4(q16), "rows": rows}
 

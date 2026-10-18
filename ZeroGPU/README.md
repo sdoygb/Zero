@@ -25,7 +25,7 @@ $$
 |:--|:--|
 | `src/` 脚本 | **240 个 `.py`** |
 | `results/` 结果文件 | **281 个**（`.json`／`.txt`／`.png`） |
-| `doc/` 说明 | **44 份**（索引见下） |
+| `doc/` 说明 | **45 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
 | 统一引擎自检 | `zero_evo.py`：**20 条全过** → `results/zero_evo_selftest.json` |
@@ -79,14 +79,14 @@ ZeroGPU/
 │   ├── field_sim.py／force_from_field.py／field_to_particle.py   场与力
 │   ├── curvature_from_defects_check.py／a2_bridge_check.py   曲率与作用量桥核验
 │   └── …（其余 150+ 个按篇的判定脚本，命名与篇号对应）
-├── doc/                   44 份说明（索引见下）
+├── doc/                   45 份说明（索引见下）
 ├── results/               218 个结果文件（脚本输出，JSON/TXT/PNG）
 └── logs/                  运行日志
 ```
 
 ---
 
-## 文档索引（`doc/`，44 份）
+## 文档索引（`doc/`，45 份）
 
 | 文档 | 内容 |
 |:--|:--|
@@ -112,6 +112,7 @@ ZeroGPU/
 | `zero_cprime_top0.md` | ★ 顶初始偏置存在性：FAIL；top0≥1 饱和在 [0.235,0.235,0.530]，目标不在吸引域 |
 | `zero_evo_1684.md` | ★ 16/8/4 固定底层：能跑；q16=0.103、份额 [0.195,0.412,0.393]；α>0 后 content 也有周期4（5/5） |
 | `zero_evo_1684_cycle16.md` | ★ 16/8/4 接 cycle16：能跑；q16=0.1123、份额 [0.196,0.412,0.393]、q16 周期4；6/6 |
+| `zero_evo_1684_long.md` | ★ 16/8/4 长跑 10000 代：q16 稳定（relstd 0.0082）；五种映射聚合量不变；8/8 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
@@ -172,6 +173,7 @@ cd ZeroGPU/src
 /usr/bin/python3 zero_cprime_top0.py                               # 顶初始偏置存在性，约 10 s
 /usr/bin/python3 zero_evo_1684.py                                 # 16/8/4 固定底层跑 1000 代，约 5 s
 /usr/bin/python3 zero_evo_1684_cycle16.py                         # 16/8/4 + cycle16，约 6 s
+/usr/bin/python3 zero_evo_1684_long.py                            # 长跑/映射，约 60 s
 /usr/bin/python3 z0_engine.py           # 动力学引擎自检：24 条断言
 /usr/bin/python3 closure_reading.py     # 闭合口径判定
 /usr/bin/python3 anchor.py              # 锚定：反问题 + 三档标注
