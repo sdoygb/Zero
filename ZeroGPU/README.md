@@ -25,7 +25,7 @@ $$
 |:--|:--|
 | `src/` 脚本 | **240 个 `.py`** |
 | `results/` 结果文件 | **281 个**（`.json`／`.txt`／`.png`） |
-| `doc/` 说明 | **39 份**（索引见下） |
+| `doc/` 说明 | **40 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
 | 统一引擎自检 | `zero_evo.py`：**20 条全过** → `results/zero_evo_selftest.json` |
@@ -79,14 +79,14 @@ ZeroGPU/
 │   ├── field_sim.py／force_from_field.py／field_to_particle.py   场与力
 │   ├── curvature_from_defects_check.py／a2_bridge_check.py   曲率与作用量桥核验
 │   └── …（其余 150+ 个按篇的判定脚本，命名与篇号对应）
-├── doc/                   39 份说明（索引见下）
+├── doc/                   40 份说明（索引见下）
 ├── results/               218 个结果文件（脚本输出，JSON/TXT/PNG）
 └── logs/                  运行日志
 ```
 
 ---
 
-## 文档索引（`doc/`，39 份）
+## 文档索引（`doc/`，40 份）
 
 | 文档 | 内容 |
 |:--|:--|
@@ -107,6 +107,7 @@ ZeroGPU/
 | `zero_window16_A.md` | ★ A 判定：单 W 读出——份额恒 1/3、q 0.396、无周期 4；A/B 都不成立 |
 | `zero_window16_merge.md` | ★ A/B 软约束扫描：无甜点；稳定只在 λ=1（1/3），份额距离仍 0.40 |
 | `zero_window16_toppias.md` | ★ C′ 顶偏置：λ=1 份额 [0.235,0.235,0.531]，距离 0.125，周期间稳定；q16=0.091（4 顶点 q 不可比） |
+| `zero_cprime_12ch.md` | ★ C′ 接 12 通道：content q=0.0625，record q_live=0.0696，离观测 0.0683 仅 0.0013 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
@@ -162,6 +163,7 @@ cd ZeroGPU/src
 /usr/bin/python3 zero_window16_A.py                                 # A 单 W 读出判定，约 1 s
 /usr/bin/python3 zero_window16_merge.py                             # A/B 软约束扫描，约 1 s
 /usr/bin/python3 zero_window16_toppias.py                           # C′ 顶偏置扫描，约 1 s
+/usr/bin/python3 zero_cprime_12ch.py                               # C′ 接 12 通道，约 5 s
 /usr/bin/python3 z0_engine.py           # 动力学引擎自检：24 条断言
 /usr/bin/python3 closure_reading.py     # 闭合口径判定
 /usr/bin/python3 anchor.py              # 锚定：反问题 + 三档标注
