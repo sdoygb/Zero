@@ -30,40 +30,11 @@ def ck(name, cond, detail=""):
     print(f"  [{'PASS' if cond else 'FAIL'}] {name}" + (f" —— {detail}" if detail else ""))
 
 
-class ZeroEvo1684Bh(ZeroEvo1684Cycle16):
-    def __init__(self, *a, beta_h=0.0, **kw):
-        super().__init__(*a, **kw)
-        self.beta_h = beta_h
-
-    def _wave_step(self, dt):
-        if not self.p.wave_on:
-            return
-        if self.p.beta:
-            v = self.p.beta * (self.n - self.n.mean())
-            self.psi = self.psi * np.exp(-0.5j * dt * v)
-        if self.beta_h:
-            vh = self.beta_h * (self.h - self.h.mean())
-            self.psi = self.psi * np.exp(-0.5j * dt * vh)
-        self.psi = self.wave_vecs @ (np.exp(-1j * self.wave_eigs * dt) *
-                                     (self.wave_vecs.T @ self.psi))
-        if self.p.beta:
-            v = self.p.beta * (self.n - self.n.mean())
-            self.psi = self.psi * np.exp(-0.5j * dt * v)
-        if self.beta_h:
-            vh = self.beta_h * (self.h - self.h.mean())
-            self.psi = self.psi * np.exp(-0.5j * dt * vh)
-        if self.p.g_wave:
-            self.psi = self.psi + (-1j * dt * self.p.g_wave) * (self.n - self.n.mean())
-        if self.p.Gamma_w:
-            import math
-            self.psi = self.psi * math.exp(-self.p.Gamma_w * dt)
-
-
 def run(beta_h, steps=2000):
-    e = ZeroEvo1684Bh(zs.cycle(16),
-                      Params(L=4, T=4, micro=True, c_h=1.0, dt=0.05,
-                             alpha=0.1, g_src=1.0, beta=0.0),
-                      seed=np.ones(16), beta_h=beta_h)
+    e = ZeroEvo1684Cycle16(zs.cycle(16),
+                           Params(L=4, T=4, micro=True, c_h=1.0, dt=0.05,
+                                  alpha=0.1, g_src=1.0, beta=0.0, beta_h=beta_h),
+                           seed=np.ones(16))
     e.perm = MAPS["seq"]
     rows = []
     for g in range(1, steps+1):

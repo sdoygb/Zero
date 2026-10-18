@@ -116,7 +116,7 @@ ZeroGPU/
 | `zero_evo_1684_site.md` | ★ site-resolved：q16/份额不变，n/top 随映射变；h_E=0、ψ 周期4弱 |
 | `zero_evo_1684_geo.md` | ★ 固定 seq 映射 + 几何源：g_src>0 时 h_E>0 且继承周期4；ψ 仍未接（β=0） |
 | `zero_evo_1684_beta.md` | ★ β 扫描：β 是 content→phase（不是 h→phase）；ψ 周期4弱升到 0.037；h→ψ 仍缺 |
-| `zero_evo_1684_betah.md` | ★ 新增 h→ψ：β_h=10 时 ψ 周期4=6.88；长跑 β_h=1 仍有 0.741；7/7 |
+| `zero_evo_1684_betah.md` | ★ h→ψ：β_h 已登记为 Params.beta_h（默认0，自检20/20）；β_h=10 时 ψ 周期4=6.88；长跑 0.741 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |

@@ -112,6 +112,7 @@ class Params:
 
     # ── 相位 / 波扇区 ──────────────────────────────────────────
     beta: float = 0.0           # 势 -> 相位（探索：局部红移形式）
+    beta_h: float = 0.0         # 几何 h -> 相位（探索：与 beta 同构，默认 0）
     g_wave: float = 0.0         # 内容 -> 波源（Z158 的标量源）
     omega0: float = 0.0         # 波的质量/偏移
     c_w: float = 1.0            # 波速（Z152 的 c）
@@ -499,11 +500,17 @@ class ZeroEvo:
         if self.p.beta:
             v = self.p.beta * (self.n - self.n.mean())
             self.psi = self.psi * np.exp(-0.5j * dt * v)
+        if self.p.beta_h:
+            vh = self.p.beta_h * (self.h - self.h.mean())
+            self.psi = self.psi * np.exp(-0.5j * dt * vh)
         self.psi = self.wave_vecs @ (np.exp(-1j * self.wave_eigs * dt) *
                                      (self.wave_vecs.T @ self.psi))
         if self.p.beta:
             v = self.p.beta * (self.n - self.n.mean())
             self.psi = self.psi * np.exp(-0.5j * dt * v)
+        if self.p.beta_h:
+            vh = self.p.beta_h * (self.h - self.h.mean())
+            self.psi = self.psi * np.exp(-0.5j * dt * vh)
         if self.p.g_wave:
             self.psi = self.psi + (-1j * dt * self.p.g_wave) * (self.n - self.n.mean())
         if self.p.Gamma_w:
