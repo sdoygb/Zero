@@ -128,7 +128,7 @@ ZeroGPU/
 | `zero_tau_6_18_4_graph_long.md` | ★ 长跑10000代：top2 冻结在 [0,15]，毁灭代模式保持；8/8 |
 | `zero_evo_layers_proto.md` | ★ 层集成 prototype：L0反馈+L1静态；L2 Helmert 3分量非零但协方差秩=1，只1个独立模式 |
 | `zero_fiber_topdown.md` | ★ 16/8/4 纤维塔：全局q秩1，base-dependent Q秩3；完整L2需base-dependent连接 |
-| `zero_fiber_engine.md` | ★ 基依赖Q注入引擎后秩0：A4^L/归一化把纤维差异抹平；需改seed/初始纤维态 |
+| `zero_fiber_engine.md` | ★ 基依赖Q注入/seed/非循环Q都失败：A4^L/归一化把纤维差异抹平；需改状态变量 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
