@@ -1,0 +1,73 @@
+{
+ "A": 1.4142135623730951,
+ "A2_MeV": 313.856,
+ "M_L_MeV": 313.856,
+ "M_R_MeV": 313.856,
+ "epsilon3": 1.5915207064351072e-10,
+ "epsilon3_deg": 9.118741948641091e-09,
+ "r": [
+  0.0,
+  0.41421356237309515,
+  1.0
+ ],
+ "epsilon": [
+  0.0,
+  2.730617836290462e-11,
+  1.5915207064351072e-10
+ ],
+ "m_meV": [
+  0.0,
+  8.570207916267792,
+  49.9508322838897
+ ],
+ "phase_deg": [
+  360.0,
+  359.9999999984355,
+  359.99999999088124
+ ],
+ "epsilon4": 9.276062454981597e-10,
+ "m4_meV": 291.1347857870704,
+ "checks": [
+  {
+   "name": "M_L=M_R=A\u00b2=313.856 MeV",
+   "pass": true,
+   "detail": "313.856 MeV"
+  },
+  {
+   "name": "\u03b53=(2/9)^15",
+   "pass": true,
+   "detail": "1.591521e-10"
+  },
+  {
+   "name": "m=(0,8.570,49.951) meV",
+   "pass": true,
+   "detail": "8.570,49.951"
+  },
+  {
+   "name": "m2/m3=(A\u22121)\u00b2=3\u22122\u221a2",
+   "pass": true,
+   "detail": "0.171572875"
+  },
+  {
+   "name": "\u76f8\u5e72\u548c\u516c\u5f0f 2M sin(\u03b5/2)=M\u03b5",
+   "pass": true,
+   "detail": "small-angle"
+  },
+  {
+   "name": "\u76f8\u4f4d\u7f3a\u53e3 = 2\u03c0\u2212\u03b5\uff08\u03b53\u22481.59e-10 rad\uff09",
+   "pass": true,
+   "detail": "gap=9.119e-09\u00b0"
+  },
+  {
+   "name": "\u7b2c\u56db\u4e2a r=A+1 \u7ed9 m4\u2248291.1 meV\uff08\u672a\u89c2\u6d4b\u652f\uff09",
+   "pass": true,
+   "detail": "291.135 meV"
+  },
+  {
+   "name": "\u9707\u8361 m(t)=M \u03b53 cos\u00b2 \u5728 cos=0,A\u22121,1 \u7ed9 0,m2,m3",
+   "pass": true,
+   "detail": "three phases"
+  }
+ ],
+ "n_fail": 0
+}

@@ -23,8 +23,8 @@ $$
 
 | 项 | 值 |
 |:--|:--|
-| `src/` 脚本 | **239 个 `.py`** |
-| `results/` 结果文件 | **280 个**（`.json`／`.txt`／`.png`） |
+| `src/` 脚本 | **240 个 `.py`** |
+| `results/` 结果文件 | **281 个**（`.json`／`.txt`／`.png`） |
 | `doc/` 说明 | **25 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
@@ -65,6 +65,7 @@ ZeroGPU/
 │   ├── zero_evo_linear.py 线性化对照（Fiedler 最快）
 │   ├── zero_layers.py     L0/L1/L2 层账、口径分叉、L2 槽、脉冲响应
 │   ├── zero_seventh.py    第七条边（L0 内容→L2 seed）的 λ 扫描与判据
+│   ├── neutrino_lr_oscillation.py  Z019 左右手真质量、相消与三相位震荡
 │   ├── closure_reading.py 闭合口径判定（穷举 ＋ 引擎对照）
 │   ├── gamma_gap.py       Γ 约束检验 ＋ 差异扫描 ＋ 穷举对照
 │   ├── gamma_origin.py    Γ 原生来源核验
@@ -131,6 +132,7 @@ cd ZeroGPU/src
 /usr/bin/python3 zero_evo_bistable.py   # 双稳的 FID 支，约 1 min
 /usr/bin/python3 zero_evo_linear.py     # 线性化对照，约 1 s
 /usr/bin/python3 zero_seventh.py        # 第七条边 λ 扫描，约 1–2 min
+/usr/bin/python3 neutrino_lr_oscillation.py # Z019 左右手相消，约 1 s
 /usr/bin/python3 zero_layers.py         # L0/L1/L2 层账与脉冲响应，约 2 min
 /usr/bin/python3 z0_engine.py           # 动力学引擎自检：24 条断言
 /usr/bin/python3 closure_reading.py     # 闭合口径判定
