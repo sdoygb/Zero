@@ -79,33 +79,46 @@ def p4(a):
 
 
 def main():
-    bs = [0.0, 0.01, 0.1, 1.0]
-    res = {b: run(b) for b in bs}
-    print("beta_h q       h_E       psi_coh  n_std   p4psi")
+    bs = [0.1, 0.3, 1.0, 3.0, 10.0]
+    res = {b: run(b, 2000) for b in bs}
+    print("beta_h  psi_coh  h_E       p4psi    q16     n_std")
     for b in bs:
         r = res[b][-200:]
-        print(f"{b:.3f}  {np.mean([x['q'] for x in r]):.4f}  {np.mean([x['h_E'] for x in r]):.3e}  "
-              f"{np.mean([x['psi_coh'] for x in r]):.4f}  {np.mean([x['n_std'] for x in r]):.4f}  "
-              f"{p4([x['psi_coh'] for x in res[b]]):.3e}")
-    ck("无 NaN", all(np.all(np.isfinite([x['psi_coh'] for x in res[b]])) for b in bs), "")
-    ck("psi_coh 有界（<=1）", all(np.max([x['psi_coh'] for x in res[b]]) <= 1.0 + 1e-9 for b in bs), "")
-    ck("beta_h>0 时 psi 有周期4", any(p4([x['psi_coh'] for x in res[b]]) > 1e-6 for b in bs if b > 0),
-       str([round(p4([x['psi_coh'] for x in res[b]]),5) for b in bs]))
-    ck("beta_h>0 时 h_E 仍在", all(np.mean([x['h_E'] for x in res[b][-200:]]) > 0 for b in bs if b > 0), "")
+        print(f"{b:5.1f}  {np.mean([x['psi_coh'] for x in r]):.4f}  "
+              f"{np.mean([x['h_E'] for x in r]):.3e}  "
+              f"{p4([x['psi_coh'] for x in res[b]]):.4f}  "
+              f"{np.mean([x['q16'] for x in r]):.4f}  {np.mean([x['n_std'] for x in r]):.4f}")
+    ck("所有 beta_h 无 NaN", all(np.all(np.isfinite([x['psi_coh'] for x in res[b]])) for b in bs), "")
+    ck("所有 beta_h psi_coh 有界（<=1）", all(np.max([x['psi_coh'] for x in res[b]]) <= 1.0 + 1e-9 for b in bs), "")
+    ck("beta_h 增大时 psi 周期4 不消失", all(p4([x['psi_coh'] for x in res[b]]) > 1e-6 for b in bs),
+       str([round(p4([x['psi_coh'] for x in res[b]]),3) for b in bs]))
+    ck("所有 beta_h h_E 仍在", all(np.mean([x['h_E'] for x in res[b][-200:]]) > 0 for b in bs), "")
+
+    print("长跑 beta_h=1.0, 10000 代 ...")
+    rl = run(1.0, 10000)
+    psi = np.array([x['psi_coh'] for x in rl]); h = np.array([x['h_E'] for x in rl])
+    q16 = np.array([x['q16'] for x in rl])
+    print("long tail psi_coh", round(float(psi[-200:].mean()),4), "p4psi", round(p4(psi),4),
+          "p4h", round(p4(h),3), "q16", round(float(q16[-200:].mean()),4))
+    ck("长跑 psi 有周期4", p4(psi) > 1e-6, f"{p4(psi):.4f}")
+    ck("长跑 psi_coh 有界", float(np.max(psi)) <= 1.0 + 1e-9, f"max={np.max(psi):.4f}")
+    ck("长跑无 NaN", np.all(np.isfinite(psi)), "")
 
     fig, ax = plt.subplots(1, 2, figsize=(10, 3.6))
-    for b in bs:
-        ax[0].plot([x['psi_coh'] for x in res[b]], lw=1, label=f"βh={b}")
-        ax[1].plot([x['h_E'] for x in res[b]], lw=1, label=f"βh={b}")
-    ax[0].set_title("(a) psi_coh"); ax[0].legend(fontsize=8)
-    ax[1].set_title("(b) h_E"); ax[1].legend(fontsize=8)
+    ax[0].semilogx(bs, [p4([x['psi_coh'] for x in res[b]]) for b in bs], marker="o", label="p4 psi")
+    ax[0].semilogx(bs, [np.mean([x['psi_coh'] for x in res[b][-200:]]) for b in bs], marker="o", label="psi_coh")
+    ax[0].set_title("(a) vs beta_h"); ax[0].legend(fontsize=8)
+    ax[1].plot(psi, lw=1, label="psi_coh")
+    ax[1].set_title("(b) long run beta_h=1"); ax[1].legend(fontsize=8)
     for a in ax: a.grid(alpha=.3)
     fig.tight_layout(); fp = os.path.join(RES, "zero_evo_1684_betah.png")
     fig.savefig(fp, dpi=130)
-    out = {"results": {str(b): {"tail": {k: float(np.mean([x[k] for x in res[b][-200:]]))
+    out = {"scan": {str(b): {"tail": {k: float(np.mean([x[k] for x in res[b][-200:]]))
                                        for k in ["q","q16","h_E","psi_coh","n_std"]},
-                              "p4_psi": p4([x['psi_coh'] for x in res[b]]),
-                              "rows": res[b]} for b in bs},
+                              "p4_psi": p4([x['psi_coh'] for x in res[b]])} for b in bs},
+           "long": {"psi_coh": float(psi[-200:].mean()), "p4_psi": p4(psi),
+                    "p4_h": p4(h), "q16": float(q16[-200:].mean()),
+                    "rows": rl},
            "checks": CK, "n_fail": sum(1 for c in CK if not c["pass"]),
            "note": "new exploratory h->psi coupling beta_h; beta=0"}
     with open(os.path.join(RES, "zero_evo_1684_betah.json"), "w") as f:
