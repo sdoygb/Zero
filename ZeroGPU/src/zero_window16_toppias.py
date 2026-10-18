@@ -32,7 +32,7 @@ def ck(name, cond, detail=""):
     print(f"  [{'PASS' if cond else 'FAIL'}] {name}" + (f" —— {detail}" if detail else ""))
 
 
-def run(lam, steps=200):
+def run(lam, steps=200, seed0=None):
     adj = zs.k4(); A = np.zeros((V, V))
     for u, nb in enumerate(adj):
         for v in nb: A[u, v] = 1.0
@@ -52,7 +52,7 @@ def run(lam, steps=200):
         for s in range(2): rho_mid[j, s] = R[j, 2*s] + R[j, 2*s+1]
     rho_mid /= rho_mid.sum()
 
-    seed = np.array([8.0, 4.0, 1.5, 1.0])
+    seed = np.array(seed0 if seed0 is not None else [8.0, 4.0, 1.5, 1.0])
     shares = (1/3, 1/3, 1/3)
     Wb = np.zeros((V, V)); Wm = np.zeros((V, V)); Wt = np.zeros((V, V))
     record = np.zeros(V); rows = []
@@ -130,6 +130,11 @@ def main():
     for r in res:
         print(f"{r['lam']:.2f}  " + "  ".join(f"{x:.4f}" for x in r["wmean"]) +
               f"   {r['relstd']:.4f} {r['relstd_cycle']:.4f}  {r['q_res']:.4f}  {r['q16']:.4f}  {r['dist']:.4f}")
+    print("=" * 70)
+    print("λ=1 + 均匀 seed [1,1,1,1]（K4 无优先顶点）")
+    uni = run(1.0, seed0=[1.0, 1.0, 1.0, 1.0])
+    print(f"uniform: w={np.round(uni['wmean'],4)} q16={uni['q16']:.4f} "
+          f"dist={uni['dist']:.4f} relstd_cycle={uni['relstd_cycle']:.4f}")
     print("=" * 70); print("C′ 判据"); print("=" * 70)
     ck("顶不被压到 1/4（w_t > 0.25）", all(r["wmean"][2] > 0.25 for r in res[1:]),
        str([round(r["wmean"][2],3) for r in res]))
@@ -155,7 +160,7 @@ def main():
     for a in ax: a.grid(alpha=.3)
     fig.tight_layout(); fp = os.path.join(RES, "zero_window16_toppias.png")
     fig.savefig(fp, dpi=130)
-    out = {"results": res, "checks": CK, "n_fail": sum(1 for c in CK if not c["pass"]),
+    out = {"results": res, "uniform": uni, "checks": CK, "n_fail": sum(1 for c in CK if not c["pass"]),
            "anchor": "middle-only constraint; equal level seed; top independent; no dimensionful anchor"}
     with open(os.path.join(RES, "zero_window16_toppias.json"), "w") as f:
         json.dump(out, f, indent=1)
