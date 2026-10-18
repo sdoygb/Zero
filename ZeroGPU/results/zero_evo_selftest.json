@@ -1,0 +1,107 @@
+{
+ "checks": [
+  {
+   "name": "V1 与 loyalty_engine 逐位对照（record/closure/seed 形状）",
+   "pass": true,
+   "detail": "max diff = 0.000e+00"
+  },
+  {
+   "name": "V2 与 z0_engine（整数核心）对照 5 代 record 形状",
+   "pass": true,
+   "detail": "max diff = 0.000e+00"
+  },
+  {
+   "name": "V3 泊松残差 path16",
+   "pass": true,
+   "detail": "max|L phi + x| = 5.523e-15"
+  },
+  {
+   "name": "V3 泊松残差 cycle16",
+   "pass": true,
+   "detail": "max|L phi + x| = 3.442e-15"
+  },
+  {
+   "name": "V3 泊松残差 K4",
+   "pass": true,
+   "detail": "max|L phi + x| = 3.331e-16"
+  },
+  {
+   "name": "V3 泊松残差 Heawood",
+   "pass": true,
+   "detail": "max|L phi + x| = 1.679e-15"
+  },
+  {
+   "name": "V4 交换型更新精确守恒（Z144）",
+   "pass": true,
+   "detail": "|Σn-8| = 1.776e-15"
+  },
+  {
+   "name": "V5 吸引支增长因子 λ=1+dt（Z144 λ+）",
+   "pass": true,
+   "detail": "实测 1.6446318218 vs 预测 1.6446318218"
+  },
+  {
+   "name": "V6 容量冻结复现 cycle16",
+   "pass": true,
+   "detail": "末相邻图案差 = 0.000e+00（事件数 42）"
+  },
+  {
+   "name": "V7 冻结图案落 Fiedler cycle16",
+   "pass": true,
+   "detail": "投影 = 1.000000"
+  },
+  {
+   "name": "V6 容量冻结复现 torus4x4",
+   "pass": true,
+   "detail": "末相邻图案差 = 1.316e-06（事件数 34）"
+  },
+  {
+   "name": "V7 冻结图案落 Fiedler torus4x4",
+   "pass": true,
+   "detail": "投影 = 1.000000"
+  },
+  {
+   "name": "V8 比例继承复现（Z148）",
+   "pass": true,
+   "detail": "geom2:2.00000/2.00000; geom1.5:1.50000/1.50000; linear:1.12500/1.12500; quad:1.26562/1.26562; uniform:1.00000/1.00000"
+  },
+  {
+   "name": "V9 波扇区保范（酉演化）",
+   "pass": true,
+   "detail": "|d|psi||/|psi| = 5.973e-14"
+  },
+  {
+   "name": "V10 波单模相位频率 = 本征值",
+   "pass": true,
+   "detail": "实测 -0.7973165676 vs 预测 5.4858687395（Δ=8.88e-16）"
+  },
+  {
+   "name": "V11 几何扇区能量守恒（无源无阻尼）",
+   "pass": true,
+   "detail": "E0=0.58578644 E1=0.58578438 rel=3.516e-06"
+  },
+  {
+   "name": "V12 几何单模色散 ω = c_h sqrt(λ)",
+   "pass": true,
+   "detail": "实测 0.06000 vs 预测 0.06091（分辨率 0.0050）"
+  },
+  {
+   "name": "V13 无耦合时 L1/L2 锁死（α=1, last）",
+   "pass": true,
+   "detail": "lock_cn=0.000e+00 lock_cs=0.000e+00"
+  },
+  {
+   "name": "V14 容量事件后 n > 0 且有限",
+   "pass": true,
+   "detail": "n_min=1.166e-01 events=38"
+  },
+  {
+   "name": "V15 容量事件至少发生一次",
+   "pass": true,
+   "detail": "events=38"
+  }
+ ],
+ "n_pass": 20,
+ "n_fail": 0,
+ "wall_s": 9.42
+}

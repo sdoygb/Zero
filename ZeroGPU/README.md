@@ -23,11 +23,12 @@ $$
 
 | 项 | 值 |
 |:--|:--|
-| `src/` 脚本 | **183 个 `.py`** |
-| `results/` 结果文件 | **218 个**（`.json` 175／`.txt` 41／`.png` 2） |
-| `doc/` 说明 | **23 份**（索引见下） |
+| `src/` 脚本 | **238 个 `.py`** |
+| `results/` 结果文件 | **279 个**（`.json`／`.txt`／`.png`） |
+| `doc/` 说明 | **25 份**（索引见下） |
 | 公共核心自检 | `zero_sim.py`：**96 条判据全过** → `results/zero_sim.json` |
 | 动力学引擎自检 | `z0_engine.py`：**24 条断言全过** |
+| 统一引擎自检 | `zero_evo.py`：**20 条全过** → `results/zero_evo_selftest.json` |
 | 工程侧 | 连续跑数十万代无溢出、有界且有结构（`doc/progress.md`、`doc/longterm_eval.md`） |
 
 **已确认的底座（有文档与脚本支撑）**：
@@ -39,7 +40,9 @@ $$
 - **饱和律**：$c_T=\binom{T}{\lfloor T/2\rfloor}\le2(T+1)\Rightarrow T\le5$，与分布机的自然容量 4 自动一致（`doc/saturation_law_rediscovered.md`）；
 - **维数字典**：$D=m-1$（代数唯一解），格点族无独立字典（`doc/dict_verdict.md`、`doc/lattice_dict_verdict.md`）；
 - **耦合**：正则 $D$-单纯形（等角族内唯一），独立身份↔格点轴 $\Rightarrow$ 空间维数 $=3$（`doc/coupling_verdict.md`、`doc/coupling_map.md`、`doc/coupling_recheck.md`）；
-- **锚定层**：反问题接口＋三档自动标注（`doc/anchoring_layer.md`）。
+- **锚定层**：反问题接口＋三档自动标注（`doc/anchoring_layer.md`）；
+- **统一引擎（讨论稿）**：走者／记忆／内容／势／相位／几何／容量在一个状态里；几何回写反转选择律、双稳与手性行波（`doc/zero_evo.md`）；
+- **层账（讨论稿）**：L0=0／L1=$H=L/2$ 静态／L2=3 槽；`persistent` 与 `fresh` 闭合口径分叉，L1 高度只在 `fresh` 下逐位（`doc/zero_layers.md`）。
 
 ---
 
@@ -53,6 +56,13 @@ ZeroGPU/
 │   │                        （girth/spectrum/aut_order/精确整数幂）＋词层＋耦合几何；
 │   │                        96 条判据自检 → results/zero_sim.json。**新脚本从它 import**
 │   ├── z0_engine.py       ★ 忠实核心引擎（64 位安全版）＋ 自检（24 条断言）
+│   ├── zero_evo.py        ★ 统一多扇区引擎（12 通道）＋ 自检（20 条）
+│   ├── zero_evo_phase.py  相图／迟滞／行波／换图／α 扫描
+│   ├── zero_evo_speed.py  行波速度 vs 几何响应速度
+│   ├── zero_evo_long.py   4 条 10^6 步长跑＋李雅普诺夫＋时空图
+│   ├── zero_evo_bistable.py c_h=1.55 的 FID 支复核
+│   ├── zero_evo_linear.py 线性化对照（Fiedler 最快）
+│   ├── zero_layers.py     L0/L1/L2 层账、口径分叉、L2 槽、脉冲响应
 │   ├── closure_reading.py 闭合口径判定（穷举 ＋ 引擎对照）
 │   ├── gamma_gap.py       Γ 约束检验 ＋ 差异扫描 ＋ 穷举对照
 │   ├── gamma_origin.py    Γ 原生来源核验
@@ -66,18 +76,20 @@ ZeroGPU/
 │   ├── field_sim.py／force_from_field.py／field_to_particle.py   场与力
 │   ├── curvature_from_defects_check.py／a2_bridge_check.py   曲率与作用量桥核验
 │   └── …（其余 150+ 个按篇的判定脚本，命名与篇号对应）
-├── doc/                   23 份说明（索引见下）
+├── doc/                   25 份说明（索引见下）
 ├── results/               218 个结果文件（脚本输出，JSON/TXT/PNG）
 └── logs/                  运行日志
 ```
 
 ---
 
-## 文档索引（`doc/`，23 份）
+## 文档索引（`doc/`，25 份）
 
 | 文档 | 内容 |
 |:--|:--|
 | `zero_sim.md` | ★ 公共核心说明：三层接口 ＋ 判据账 ＋ 两个易错口径 |
+| `zero_evo.md` | ★ 统一多扇区引擎：状态／通道／20 条自检／几何反转选择律／相图与迟滞／手性行波 |
+| `zero_layers.md` | ★ L0/L1/L2 层账：L1 高度静态读出、L2 三槽、persistent/fresh 口径分叉、脉冲响应 |
 | `progress.md` | ★ 三个实现级根因与「有界＋有结构」的达成 |
 | `closure_verdict.md` | ★ 忠实口径判定（闭合＝回到起点） |
 | `gamma_origin_verdict.md` | Γ 的原生来源：唯一刻画为 $K_4$ |
@@ -110,6 +122,13 @@ ZeroGPU/
 ```bash
 cd ZeroGPU/src
 /usr/bin/python3 zero_sim.py            # 公共核心自检：96 条判据 → results/zero_sim.json
+/usr/bin/python3 zero_evo.py --selftest # 统一引擎自检：20 条 → results/zero_evo_selftest.json
+/usr/bin/python3 zero_evo_phase.py      # 相图/迟滞/行波，约 8 min
+/usr/bin/python3 zero_evo_speed.py      # 速度曲线，约 1 min
+/usr/bin/python3 zero_evo_long.py       # 10^6 步长跑，约 3–5 min
+/usr/bin/python3 zero_evo_bistable.py   # 双稳的 FID 支，约 1 min
+/usr/bin/python3 zero_evo_linear.py     # 线性化对照，约 1 s
+/usr/bin/python3 zero_layers.py         # L0/L1/L2 层账与脉冲响应，约 2 min
 /usr/bin/python3 z0_engine.py           # 动力学引擎自检：24 条断言
 /usr/bin/python3 closure_reading.py     # 闭合口径判定
 /usr/bin/python3 anchor.py              # 锚定：反问题 + 三档标注
