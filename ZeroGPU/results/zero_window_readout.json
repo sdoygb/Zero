@@ -1,0 +1,43 @@
+{
+ "W8": 70,
+ "words_with_window": 70,
+ "windows": 180,
+ "positions": {
+  "0": 36,
+  "1": 36,
+  "2": 36,
+  "3": 36,
+  "4": 36
+ },
+ "q_rot": 0.5555555555555556,
+ "first_half_balanced": 36,
+ "last_half_balanced": 36,
+ "checks": [
+  {
+   "name": "\u6bcf\u4e2a W8 \u8bcd\u81f3\u5c11\u4e00\u4e2a\u5e73\u8861 4-\u7a97\u53e3",
+   "pass": true,
+   "detail": "70/70"
+  },
+  {
+   "name": "\u7a97\u53e3\u6570 = 180",
+   "pass": true,
+   "detail": "180"
+  },
+  {
+   "name": "q_rot(\u7a97\u53e3) = 5/9",
+   "pass": true,
+   "detail": "0.555555555556"
+  },
+  {
+   "name": "\u4e94\u4e2a\u4f4d\u7f6e\u5404 36 \u4e2a\u7a97\u53e3",
+   "pass": true,
+   "detail": "{0: 36, 1: 36, 2: 36, 3: 36, 4: 36}"
+  },
+  {
+   "name": "\u9996/\u5c3e\u534a\u8bcd\u5e73\u8861\u5404 36",
+   "pass": true,
+   "detail": "36/36"
+  }
+ ],
+ "n_fail": 0
+}
