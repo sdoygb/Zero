@@ -132,6 +132,15 @@ def main():
     ck("长跑 psi_coh 有界", float(np.max(psi)) <= 1.0 + 1e-9, f"max={np.max(psi):.4f}")
     ck("长跑无 NaN", np.all(np.isfinite(psi)), "")
 
+    print("长跑 mode-sym factor=1.0, 10000 代 ...")
+    rl1 = run("mode", 0.0, 10000, "sym", factor=1.0)
+    psi1 = np.array([x['psi_coh'] for x in rl1])
+    print("long factor1 psi_coh", round(float(psi1[-200:].mean()),4), "p4psi", round(p4(psi1),4),
+          "p4h", round(p4([x['h_E'] for x in rl1]),3), "q16", round(float(np.mean([x['q16'] for x in rl1[-200:]])),4))
+    ck("factor=1 长跑 psi 有周期4", p4(psi1) > 1e-6, f"{p4(psi1):.4f}")
+    ck("factor=1 长跑 psi_coh 有界", float(np.max(psi1)) <= 1.0 + 1e-9, f"max={np.max(psi1):.4f}")
+    ck("factor=1 长跑无 NaN", np.all(np.isfinite(psi1)), "")
+
     fig, ax = plt.subplots(1, 2, figsize=(10, 3.6))
     ax[0].plot([x['psi_coh'] for x in rs], lw=1, label="scalar ω/2")
     for o in orders:
@@ -149,6 +158,8 @@ def main():
                           "p4": p4([x['psi_coh'] for x in ro[o]]),
                           "h_E": tail(ro[o],'h_E'), "rows": ro[o]} for o in orders},
            "factor1": {"psi_coh": tail(r1,'psi_coh'), "p4": p4([x['psi_coh'] for x in r1]), "rows": r1},
+           "long_factor1": {"psi_coh": float(psi1[-200:].mean()), "p4": p4(psi1),
+                            "p4_h": p4([x['h_E'] for x in rl1]), "rows": rl1},
            "long": {"psi_coh": float(psi[-200:].mean()), "p4": p4(psi),
                     "p4_h": p4([x['h_E'] for x in rl]), "rows": rl},
            "checks": CK, "n_fail": sum(1 for c in CK if not c["pass"]),
