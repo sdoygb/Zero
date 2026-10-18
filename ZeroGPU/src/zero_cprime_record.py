@@ -53,13 +53,19 @@ def window_rho():
 RHO, RHO_B, RHO_M = window_rho()
 
 
-def cprime_step(Wb, Wm, Wt, seed, gen, lam=1.0):
+def cprime_step(Wb, Wm, Wt, seed, gen, lam=1.0, top_src=None):
     A = np.zeros((V4, V4))
     for u, nb in enumerate(zs.k4()):
         for v in nb: A[u, v] = 1.0
     AL = np.linalg.matrix_power(A, L)
-    for Wc, s in zip((Wb, Wm, Wt), (1/3, 1/3, 1/3)):
-        Wc[np.arange(V4), np.arange(V4)] += s * seed
+    diag = np.arange(V4)
+    Wb[diag, diag] += (1/3) * seed
+    Wm[diag, diag] += (1/3) * seed
+    if top_src is None:
+        Wt[diag, diag] += (1/3) * seed
+    else:
+        # 顶的独立源：同一份 seed 预算，改由引擎 L1 记录给
+        Wt[diag, diag] += (1/3) * float(seed.sum()) * top_src
     Wb = Wb @ AL; Wm = Wm @ AL; Wt = Wt @ AL
     mw = max(np.abs(Wb).sum(), np.abs(Wm).sum(), np.abs(Wt).sum())
     if np.isfinite(mw) and mw > 1e200:
@@ -116,14 +122,19 @@ def run(lam, steps=500):
                 seed=np.ones(16))
     Wb = np.zeros((V4, V4)); Wm = np.zeros((V4, V4)); Wt = np.zeros((V4, V4))
     seed = np.ones(V4) / V4
+    top_src = np.ones(V4) / V4
     rows = []
     for g in range(1, steps+1):
-        Wb, Wm, Wt, seed = cprime_step(Wb, Wm, Wt, seed, g, lam)
+        Wb, Wm, Wt, seed = cprime_step(Wb, Wm, Wt, seed, g, lam, top_src)
         e.step()
         x = record16(Wb, Wm, Wt)
         if x.sum() > 0 and np.all(np.isfinite(x)):
             e.m_live = x / x.sum(); e.m_hist = x / x.sum()
         s = e.snapshot()
+        # 引擎自己的 L1 记录（16 -> 4 site），作为顶的独立源
+        ts = e.record.reshape(V4, 4).sum(axis=1)
+        if ts.sum() > 0 and np.all(np.isfinite(ts)): top_src = ts / ts.sum()
+        else: top_src = np.ones(V4) / V4
         mb, mm, mt = np.abs(Wb).sum(), np.abs(Wm).sum(), np.abs(Wt).sum()
         ms = mb + mm + mt
         w = [float(mb/ms), float(mm/ms), float(mt/ms)] if ms > 0 else [1/3]*3
