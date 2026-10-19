@@ -1,0 +1,54 @@
+{
+ "T": 4,
+ "step_Gyr": 3.63,
+ "age_Gyr": 13.8,
+ "stages": [
+  {
+   "stage": "rebirth",
+   "start_Gyr": 0,
+   "end_Gyr": 3.63,
+   "in_stage": false
+  },
+  {
+   "stage": "growth",
+   "start_Gyr": 3.63,
+   "end_Gyr": 10.89,
+   "in_stage": false
+  },
+  {
+   "stage": "saturation",
+   "start_Gyr": 10.89,
+   "end_Gyr": 14.52,
+   "in_stage": true
+  },
+  {
+   "stage": "destruction",
+   "start_Gyr": 14.52,
+   "end_Gyr": 14.52,
+   "in_stage": false
+  }
+ ],
+ "remain_Gyr": 0.7199999999999989,
+ "checks": [
+  {
+   "name": "\u5f53\u524d\u5728\u9971\u548c\u9636\u6bb5",
+   "detail": "[{'stage': 'saturation', 'start_Gyr': 10.89, 'end_Gyr': 14.52, 'in_stage': True}]",
+   "pass": true
+  },
+  {
+   "name": "\u5269\u4f59\u22480.7 Gyr",
+   "detail": "0.72 Gyr",
+   "pass": true
+  },
+  {
+   "name": "SFR \u5cf0(3.3 Gyr)\u2248\u91cd\u751f/\u589e\u957f\u8fb9\u754c(3.63 Gyr)",
+   "detail": "3.63 Gyr",
+   "pass": true
+  },
+  {
+   "name": "\u56db\u9636\u6bb5\u6781\u4e0d\u5e73\u5747\uff08\u65f6\u957f 3.63/7.26/3.63/0\uff09",
+   "detail": "[3.63, 7.26, 3.63, 0.0]",
+   "pass": true
+  }
+ ]
+}
