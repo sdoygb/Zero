@@ -1,0 +1,55 @@
+{
+ "pred": {
+  "3pi/4 (mass zero)": 135.0,
+  "pi (double cover)": 180.0,
+  "2pi (cycle)": 360.0
+ },
+ "obs": {
+  "NO best-fit": 216.0,
+  "NO 1sigma low": 162.0,
+  "NO 1sigma high": 270.0,
+  "IO best-fit": 270.0
+ },
+ "rows": [
+  {
+   "pred": "3pi/4 (mass zero)",
+   "boundary_deg": 135.0,
+   "inside_1sigma": false,
+   "gap_deg": 27.0
+  },
+  {
+   "pred": "pi (double cover)",
+   "boundary_deg": 180.0,
+   "inside_1sigma": true,
+   "gap_deg": 0.0
+  },
+  {
+   "pred": "2pi (cycle)",
+   "boundary_deg": 360.0,
+   "inside_1sigma": false,
+   "gap_deg": 0.0
+  }
+ ],
+ "checks": [
+  {
+   "name": "\u03b8_crit=3\u03c0/4\uff1a\u9884\u8a00 \u03b4<135\u00b0",
+   "detail": "135\u00b0",
+   "pass": true
+  },
+  {
+   "name": "\u4e0e NO 1\u03c3 [162\u00b0,270\u00b0] \u4e0d\u76f8\u4ea4\uff08tension\uff09",
+   "detail": "gap=27\u00b0",
+   "pass": true
+  },
+  {
+   "name": "\u03b8_crit=\u03c0\uff1a\u4e0e 1\u03c3 \u6709\u91cd\u53e0\uff08\u8fb9\u7f18\uff09",
+   "detail": "boundary=180.0\u00b0",
+   "pass": true
+  },
+  {
+   "name": "\u03b8_crit=2\u03c0\uff1a\u65e0\u7ea6\u675f",
+   "detail": "no constraint",
+   "pass": true
+  }
+ ]
+}
