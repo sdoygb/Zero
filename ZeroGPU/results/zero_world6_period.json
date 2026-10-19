@@ -1,0 +1,36 @@
+{
+ "H0": 67.4,
+ "T": 4,
+ "tH_yr": 14507302989.986412,
+ "tH_Gyr": 14.507302989986412,
+ "tcycle_yr": 14507302989.986412,
+ "tcycle_Gyr": 14.507302989986412,
+ "step_yr": 3626825747.496603,
+ "step_Gyr": 3.626825747496603,
+ "age_yr": 13800000000.0,
+ "age_over_cycle": 0.9512450391037793,
+ "planck_cycle_yr": 1.7083830836312015e-51,
+ "alternative_age_cycle_yr": 13800000000.0,
+ "checks": [
+  {
+   "name": "\u54c8\u52c3\u65f6\u95f4 \u2248 14.4 Gyr",
+   "detail": "14.51 Gyr",
+   "pass": true
+  },
+  {
+   "name": "6 \u5c42\u6bc1\u706d\u5468\u671f = 1.44e10 \u5e74",
+   "detail": "1.451e+10 yr",
+   "pass": true
+  },
+  {
+   "name": "\u4e00\u4ee3 = 3.6 Gyr",
+   "detail": "3.63 Gyr",
+   "pass": true
+  },
+  {
+   "name": "\u951a\u662f\u5916\u90e8\u8f93\u5165\uff08Z017 \u5b9a\u7406 10\uff09",
+   "detail": "Hubble anchor",
+   "pass": true
+  }
+ ]
+}
