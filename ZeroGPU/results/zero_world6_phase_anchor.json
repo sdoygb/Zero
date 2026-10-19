@@ -1,0 +1,52 @@
+{
+ "T_Gyr": 14.51,
+ "AGE_Gyr": 13.787,
+ "rows": [
+  {
+   "anchor": "recombination",
+   "t0_Gyr": 0.00038,
+   "phi": 0.950146106133701,
+   "remain_Gyr": 0.7233799999999988
+  },
+  {
+   "anchor": "matter-radiation equality",
+   "t0_Gyr": 5e-05,
+   "phi": 0.9501688490696072,
+   "remain_Gyr": 0.7230499999999989
+  },
+  {
+   "anchor": "dark-energy onset",
+   "t0_Gyr": 9.3,
+   "phi": 0.3092350103376981,
+   "remain_Gyr": 10.023
+  },
+  {
+   "anchor": "Big Bang (reference only)",
+   "t0_Gyr": 0.0,
+   "phi": 0.950172294968987,
+   "remain_Gyr": 0.722999999999999
+  }
+ ],
+ "checks": [
+  {
+   "name": "\u5468\u671f 14.51 Gyr",
+   "detail": "14.51 Gyr",
+   "pass": true
+  },
+  {
+   "name": "\u590d\u5408\u951a\uff1a\u03c6\u22480.95\u3001\u5269\u4f59\u22480.72 Gyr",
+   "detail": "\u03c6=0.950, remain=0.723",
+   "pass": true
+  },
+  {
+   "name": "\u6697\u80fd\u91cf\u951a\uff1a\u03c6\u22480.31\u3001\u5269\u4f59\u224810 Gyr",
+   "detail": "\u03c6=0.309, remain=10.023",
+   "pass": true
+  },
+  {
+   "name": "\u76f8\u4f4d\u4f9d\u8d56\u951a\uff1a\u6ca1\u6709\u552f\u4e00\u503c",
+   "detail": "anchor-dependent",
+   "pass": true
+  }
+ ]
+}
