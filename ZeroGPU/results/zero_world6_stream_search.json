@@ -1,0 +1,58 @@
+{
+ "control": {
+  "s": 2.0,
+  "L": 6.0,
+  "T": 4,
+  "score": 1.0,
+  "run_ok": true,
+  "note": ""
+ },
+ "candidates": {
+  "CMB peaks": {
+   "s": 270.0,
+   "L": 320.0,
+   "T": 318,
+   "score": 1.0,
+   "run_ok": false,
+   "note": ""
+  },
+  "quark log10 masses": {
+   "s": 0.33486312941518126,
+   "L": 1.6162669136004255,
+   "T": 0,
+   "score": 0.4,
+   "run_ok": false,
+   "note": ""
+  },
+  "lepton log10 masses": {
+   "s": 0.7644715530924509,
+   "L": 2.315483921366538,
+   "T": 0,
+   "score": 0.4,
+   "run_ok": false,
+   "note": ""
+  }
+ },
+ "checks": [
+  {
+   "name": "\u5408\u6210\u63a7\u5236\u6d41\uff08T=4\uff09\u901a\u8fc7\uff1as=2,L=6,\u6e38\u7a0b=1",
+   "detail": "score=1.00, s=2.0, L=6.0, run_ok=True",
+   "pass": true
+  },
+  {
+   "name": "CMB \u5cf0\uff1a\u95f4\u9694\u8fd1\u4f3c\u4e24\u503c\u4f46\u6e38\u7a0b\u4e0d\u5bf9\uff08\u5931\u8d25\uff09",
+   "detail": "score=1.00, run_ok=False",
+   "pass": true
+  },
+  {
+   "name": "\u5938\u514b\u8d28\u91cf\u95f4\u9694\uff1a\u4e0d\u662f\u4e24\u503c\u6e38\u7a0b\uff08\u5931\u8d25\uff09",
+   "detail": "score=0.40",
+   "pass": true
+  },
+  {
+   "name": "\u8f7b\u5b50\u8d28\u91cf\u95f4\u9694\uff1a\u4e0d\u662f\u4e24\u503c\u6e38\u7a0b\uff08\u5931\u8d25\uff09",
+   "detail": "score=0.40",
+   "pass": true
+  }
+ ]
+}
