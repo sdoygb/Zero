@@ -1,0 +1,57 @@
+{
+ "candidates": {
+  "pulsar glitches (yr)": {
+   "s": 1.0,
+   "L": 6.0,
+   "score": 0.23076923076923078,
+   "run_ok": true,
+   "T": 4,
+   "n": 14
+  },
+  "FRB bursts (MJD)": {
+   "s": 1.0,
+   "L": 74.0,
+   "score": 0.4444444444444444,
+   "run_ok": false,
+   "T": 72,
+   "n": 10
+  },
+  "CMB polarization peaks": {
+   "s": 270.0,
+   "L": 320.0,
+   "score": 1.0,
+   "run_ok": false,
+   "T": 318,
+   "n": 9
+  },
+  "engine gen_closures": {
+   "s": 1.0,
+   "L": 1.0,
+   "score": 0.0,
+   "run_ok": false,
+   "n": 3000
+  }
+ },
+ "checks": [
+  {
+   "name": "pulsar glitches (yr): \u4e0d\u662f\u4e24\u503c\u6e38\u7a0b",
+   "detail": "score=0.23, run_ok=True",
+   "pass": true
+  },
+  {
+   "name": "FRB bursts (MJD): \u4e0d\u662f\u4e24\u503c\u6e38\u7a0b",
+   "detail": "score=0.44, run_ok=False",
+   "pass": true
+  },
+  {
+   "name": "CMB polarization peaks: \u4e0d\u662f\u4e24\u503c\u6e38\u7a0b",
+   "detail": "score=1.00, run_ok=False",
+   "pass": true
+  },
+  {
+   "name": "\u5f15\u64ce gen_closures \u5e8f\u5217\uff08\u53c2\u8003\uff09",
+   "detail": "{'s': 1.0, 'L': 1.0, 'score': 0.0, 'run_ok': False, 'n': 3000}",
+   "pass": true
+  }
+ ]
+}
