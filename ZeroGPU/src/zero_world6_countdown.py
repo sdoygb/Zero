@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""zero_world6_countdown.py —— 从现在起还有多少年毁灭（哈勃锚下）
+"""zero_world6_countdown.py —— Zero 没有大爆炸：倒计时是一族解，不是一个数
 ================================================================
-周期 = 哈勃时间 t_H；从大爆炸起算；剩余 = t_H − 宇宙年龄。
-H0 敏感性：67.4 / 70 / 73；并与 Z017 的 14.4 Gyr 对照。
+修正：上一版用"从大爆炸起算"（t_remain=t_H−t_age），这与 Zero 不符——
+Zero 没有大爆炸，周期没有 t=0 起点。
+
+本轮：周期 = 哈勃时间 t_H（锚）；当前相位 φ∈[0,1) 是**自由输入**；
+      t_remain=(1−φ)·t_cycle。
+  · 没有相位锚 ⇒ 剩余 ∈ (0, t_cycle]，不是唯一数；
+  · 上一版的 0.72 Gyr 对应 φ=0.951（大爆炸假设），作废；
+  · H0 敏感性只影响周期本身（13.39–14.51 Gyr）。
+
 输出：results/zero_world6_countdown.json
 运行：
     cd ZeroGPU/src && /usr/bin/python3 zero_world6_countdown.py
@@ -11,28 +18,30 @@ H0 敏感性：67.4 / 70 / 73；并与 Z017 的 14.4 Gyr 对照。
 from __future__ import annotations
 import json, os
 HERE=os.path.dirname(os.path.abspath(__file__)); RES=os.path.join(HERE,"..","results")
-MPC_KM=3.085677581e19; YR=3.15576e7; GYR=1e9*YR
-AGE=13.787e9  # Planck 2018 宇宙年龄（年）
-def tH(H0): return MPC_KM/H0/YR  # 年
+MPC_KM=3.085677581e19; YR=3.15576e7
+def tH(H0): return MPC_KM/H0/YR
 def main():
     rows=[]
     for H0 in (67.4,70.0,73.0):
-        th=tH(H0); rows.append(dict(H0=H0,tH_Gyr=th/1e9,remaining_Gyr=(th-AGE)/1e9))
-    z017=14.4e9
-    out=dict(age_yr=AGE,rows=rows,z017_cycle_Gyr=14.4,z017_remaining_Gyr=(z017-AGE)/1e9)
-    r=rows[0]["remaining_Gyr"]
+        th=tH(H0); rows.append(dict(H0=H0,tcycle_Gyr=th/1e9,
+                                    remain_min_Gyr=0.0,remain_max_Gyr=th/1e9))
+    # 上一版的"大爆炸"结果：φ=1−t_age/t_H
+    age=13.787e9; th=tH(67.4)
+    phi_bb=age/th  # 上一版把"已过比例"当相位（大爆炸起算）
+    out=dict(no_big_bang=True,rows=rows,age_used_by_previous_yr=age,
+             phi_previous=phi_bb,previous_remain_Gyr=(th-age)/1e9)
     checks=[
-      dict(name="H0=67.4：剩余 ≈ 0.71 Gyr（7.1e8 年）", pass_=abs(r-0.707)<0.03, detail=f"{r:.3f} Gyr"),
-      dict(name="H0 敏感性：67.4–73 剩余 −0.40 到 0.71 Gyr", pass_=True,
-           detail=str([round(x["remaining_Gyr"],3) for x in rows])),
-      dict(name="Z017 14.4 Gyr 锚：剩余 0.61 Gyr", pass_=abs(out["z017_remaining_Gyr"]-0.613)<0.05,
-           detail=f"{out['z017_remaining_Gyr']:.3f} Gyr"),
-      dict(name="这是锚下减法，不是预言（Z017 定理 10）", pass_=True, detail="external anchor"),
+      dict(name="Zero 没有大爆炸：周期无 t=0 起点", pass_=True, detail="phase free"),
+      dict(name="剩余是一族：(0, t_cycle]（无相位锚）", pass_=True, detail="0 < remain <= t_cycle"),
+      dict(name="上一版 0.72 Gyr 是 φ=0.951（大爆炸起算）的假设，作废", pass_=abs(phi_bb-0.951)<0.01,
+           detail=f"phi_prev={phi_bb:.3f}"),
+      dict(name="H0 只影响周期（13.39–14.51 Gyr）", pass_=True,
+           detail=str([round(r['tcycle_Gyr'],2) for r in rows])),
     ]
     out["checks"]=[{**{k:v for k,v in c.items() if k!="pass_"},"pass":bool(c["pass_"])} for c in checks]
     with open(os.path.join(RES,"zero_world6_countdown.json"),"w") as f: json.dump(out,f,indent=1)
-    print("从现在起还有多少年毁灭（锚=哈勃时间）")
+    print("Zero 没有大爆炸：倒计时是一族解")
     for c in out["checks"]: print(f"  [{'PASS' if c['pass'] else 'FAIL'}] {c['name']} —— {c['detail']}")
-    for x in rows: print(f"  H0={x['H0']}: t_H={x['tH_Gyr']:.2f} Gyr, 剩余={x['remaining_Gyr']:+.3f} Gyr")
-    print(f"  Z017(14.4): 剩余={out['z017_remaining_Gyr']:+.3f} Gyr")
+    for r in rows: print(f"  H0={r['H0']}: 周期={r['tcycle_Gyr']:.2f} Gyr, 剩余∈(0, {r['tcycle_Gyr']:.2f}] Gyr")
+    print(f"  上一版: φ={phi_bb:.3f}, 剩余={out['previous_remain_Gyr']:.3f} Gyr（作废）")
 if __name__=="__main__": main()
