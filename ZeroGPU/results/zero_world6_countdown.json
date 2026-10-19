@@ -1,0 +1,44 @@
+{
+ "age_yr": 13787000000.0,
+ "rows": [
+  {
+   "H0": 67.4,
+   "tH_Gyr": 14.507302989986412,
+   "remaining_Gyr": 0.7203029899864121
+  },
+  {
+   "H0": 70.0,
+   "tH_Gyr": 13.968460307501203,
+   "remaining_Gyr": 0.18146030750120354
+  },
+  {
+   "H0": 73.0,
+   "tH_Gyr": 13.394413993494304,
+   "remaining_Gyr": -0.39258600650569536
+  }
+ ],
+ "z017_cycle_Gyr": 14.4,
+ "z017_remaining_Gyr": 0.613,
+ "checks": [
+  {
+   "name": "H0=67.4\uff1a\u5269\u4f59 \u2248 0.71 Gyr\uff087.1e8 \u5e74\uff09",
+   "detail": "0.720 Gyr",
+   "pass": true
+  },
+  {
+   "name": "H0 \u654f\u611f\u6027\uff1a67.4\u201373 \u5269\u4f59 \u22120.40 \u5230 0.71 Gyr",
+   "detail": "[0.72, 0.181, -0.393]",
+   "pass": true
+  },
+  {
+   "name": "Z017 14.4 Gyr \u951a\uff1a\u5269\u4f59 0.61 Gyr",
+   "detail": "0.613 Gyr",
+   "pass": true
+  },
+  {
+   "name": "\u8fd9\u662f\u951a\u4e0b\u51cf\u6cd5\uff0c\u4e0d\u662f\u9884\u8a00\uff08Z017 \u5b9a\u7406 10\uff09",
+   "detail": "external anchor",
+   "pass": true
+  }
+ ]
+}
