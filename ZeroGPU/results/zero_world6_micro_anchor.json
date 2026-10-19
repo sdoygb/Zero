@@ -1,0 +1,57 @@
+{
+ "T_Gyr": 14.51,
+ "rows": [
+  {
+   "anchor": "CKM gamma",
+   "delta_rad": 1.1431906600562858,
+   "phi": 0.18194444444444444,
+   "remain_Gyr": 11.86998611111111
+  },
+  {
+   "anchor": "PMNS delta_CP=0.7pi",
+   "delta_rad": 2.199114857512855,
+   "phi": 0.35,
+   "remain_Gyr": 9.4315
+  },
+  {
+   "anchor": "PMNS delta_CP=1.0pi",
+   "delta_rad": 3.141592653589793,
+   "phi": 0.5,
+   "remain_Gyr": 7.255
+  },
+  {
+   "anchor": "PMNS delta_CP=1.2pi",
+   "delta_rad": 3.7699111843077517,
+   "phi": 0.6,
+   "remain_Gyr": 5.804
+  },
+  {
+   "anchor": "PMNS delta_CP=1.5pi",
+   "delta_rad": 4.71238898038469,
+   "phi": 0.75,
+   "remain_Gyr": 3.6275
+  }
+ ],
+ "checks": [
+  {
+   "name": "\u5fae\u89c2\u76f8\u4f4d\u951a\u7ed9\u51fa \u03c6\u2208(0,1)",
+   "detail": "ok",
+   "pass": true
+  },
+  {
+   "name": "CKM \u03b3\uff1a\u03c6\u22480.18\u3001\u5269\u4f59\u224811.9 Gyr",
+   "detail": "\u03c6=0.182, remain=11.87",
+   "pass": true
+  },
+  {
+   "name": "PMNS \u03b4_CP\uff1a\u03c6 0.35\u20130.75\u3001\u5269\u4f59 3.6\u20139.4 Gyr",
+   "detail": "[0.35, 0.5, 0.6, 0.75]",
+   "pass": true
+  },
+  {
+   "name": "\u4e0d\u540c\u5fae\u89c2\u951a\u7ed9\u4e0d\u540c \u03c6\uff08\u65e0\u552f\u4e00\u6620\u5c04\uff09",
+   "detail": "convention",
+   "pass": true
+  }
+ ]
+}
