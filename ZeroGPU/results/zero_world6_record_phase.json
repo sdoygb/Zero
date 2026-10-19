@@ -1,0 +1,33 @@
+{
+ "T": 4,
+ "T_rec": 4,
+ "k": 1.0,
+ "remain_Gyr": 10.8825,
+ "checks": [
+  {
+   "name": "\u95f4\u9694\u7ed3\u6784\u53cd\u89e3 T=4",
+   "detail": "T_rec=4, short=2.00",
+   "pass": true
+  },
+  {
+   "name": "\u52a0\u566a\u58f0\u4ecd\u53cd\u89e3 T=4",
+   "detail": "T_rec=4, short=1.99",
+   "pass": true
+  },
+  {
+   "name": "\u76f8\u4f4d k=\u73b0\u5728\u2212\u6700\u8fd1\u6c89\u79ef\uff08\u793a\u4f8b k=1\uff09",
+   "detail": "k=1.00",
+   "pass": true
+  },
+  {
+   "name": "\u5269\u4f59=(1\u2212k/T)\u00b714.51 Gyr\uff08\u793a\u4f8b\uff09",
+   "detail": "10.88 Gyr",
+   "pass": true
+  },
+  {
+   "name": "\u6ca1\u6709 L2 \u6c89\u79ef\u6d41\u89c2\u6d4b \u21d2 k \u4ecd\u672a\u77e5",
+   "detail": "method only",
+   "pass": true
+  }
+ ]
+}
