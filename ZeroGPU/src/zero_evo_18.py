@@ -54,6 +54,7 @@ class ZeroEvo18(ZeroEvo):
         self.W18 /= self.W18.sum()
         self.alpha = 0.35
         self.gamma_gen = 0.0          # 代依赖宏观耦合强度（0 = 不耦合）
+        self.lambda_gen = 0.0         # 份额负反馈（稳定化）
 
     def _edge_source(self, w4):
         w4 = np.asarray(w4, float)
@@ -65,14 +66,16 @@ class ZeroEvo18(ZeroEvo):
         if w4.sum() <= 0:
             w4 = np.ones(self.V)
         w4 = w4 / w4.sum()
-        if self.gamma_gen:
+        if self.gamma_gen or self.lambda_gen:
             nn = self.n / max(self.n.mean(), 1e-30)
             # 用**边梯度**（匹配之间的区别只能在边上，顶点平均对 3 个匹配相同）
             obs = np.array([np.mean([abs(nn[u] - nn[v])
                                      for (u, v) in [EDGES[e] for e in MATCH[g]]])
                             for g in range(NG)])
             obs = obs - obs.mean()
-            ge = self.gen_w * np.exp(np.clip(self.gamma_gen * obs, -20, 20))
+            share = self.W18.sum(axis=1)
+            mod = self.gamma_gen * obs - self.lambda_gen * (share - self.gen_w)
+            ge = self.gen_w * np.exp(np.clip(mod, -20, 20))
             ge = ge / ge.sum()
         else:
             ge = self.gen_w
