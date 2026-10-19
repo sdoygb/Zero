@@ -1,0 +1,147 @@
+{
+ "T_Gyr": 14.51,
+ "rows": [
+  {
+   "crit": "3pi/4 (mass zero)",
+   "crit_rad": 2.356194490192345,
+   "now": "CKM gamma",
+   "now_rad": 1.143,
+   "remain_Gyr": 2.801676409666932,
+   "past": false
+  },
+  {
+   "crit": "3pi/4 (mass zero)",
+   "crit_rad": 2.356194490192345,
+   "now": "PMNS 0.7pi",
+   "now_rad": 2.199114857512855,
+   "remain_Gyr": 0.36275,
+   "past": false
+  },
+  {
+   "crit": "3pi/4 (mass zero)",
+   "crit_rad": 2.356194490192345,
+   "now": "PMNS 1.0pi",
+   "now_rad": 3.141592653589793,
+   "remain_Gyr": -1.81375,
+   "past": true
+  },
+  {
+   "crit": "3pi/4 (mass zero)",
+   "crit_rad": 2.356194490192345,
+   "now": "PMNS 1.2pi",
+   "now_rad": 3.7699111843077517,
+   "remain_Gyr": -3.26475,
+   "past": true
+  },
+  {
+   "crit": "3pi/4 (mass zero)",
+   "crit_rad": 2.356194490192345,
+   "now": "PMNS 1.5pi",
+   "now_rad": 4.71238898038469,
+   "remain_Gyr": -5.44125,
+   "past": true
+  },
+  {
+   "crit": "pi (double cover)",
+   "crit_rad": 3.141592653589793,
+   "now": "CKM gamma",
+   "now_rad": 1.143,
+   "remain_Gyr": 4.615426409666932,
+   "past": false
+  },
+  {
+   "crit": "pi (double cover)",
+   "crit_rad": 3.141592653589793,
+   "now": "PMNS 0.7pi",
+   "now_rad": 2.199114857512855,
+   "remain_Gyr": 2.1765,
+   "past": false
+  },
+  {
+   "crit": "pi (double cover)",
+   "crit_rad": 3.141592653589793,
+   "now": "PMNS 1.0pi",
+   "now_rad": 3.141592653589793,
+   "remain_Gyr": 0.0,
+   "past": false
+  },
+  {
+   "crit": "pi (double cover)",
+   "crit_rad": 3.141592653589793,
+   "now": "PMNS 1.2pi",
+   "now_rad": 3.7699111843077517,
+   "remain_Gyr": -1.451,
+   "past": true
+  },
+  {
+   "crit": "pi (double cover)",
+   "crit_rad": 3.141592653589793,
+   "now": "PMNS 1.5pi",
+   "now_rad": 4.71238898038469,
+   "remain_Gyr": -3.6275,
+   "past": true
+  },
+  {
+   "crit": "2pi (cycle)",
+   "crit_rad": 6.283185307179586,
+   "now": "CKM gamma",
+   "now_rad": 1.143,
+   "remain_Gyr": 11.870426409666933,
+   "past": false
+  },
+  {
+   "crit": "2pi (cycle)",
+   "crit_rad": 6.283185307179586,
+   "now": "PMNS 0.7pi",
+   "now_rad": 2.199114857512855,
+   "remain_Gyr": 9.4315,
+   "past": false
+  },
+  {
+   "crit": "2pi (cycle)",
+   "crit_rad": 6.283185307179586,
+   "now": "PMNS 1.0pi",
+   "now_rad": 3.141592653589793,
+   "remain_Gyr": 7.255,
+   "past": false
+  },
+  {
+   "crit": "2pi (cycle)",
+   "crit_rad": 6.283185307179586,
+   "now": "PMNS 1.2pi",
+   "now_rad": 3.7699111843077517,
+   "remain_Gyr": 5.804,
+   "past": false
+  },
+  {
+   "crit": "2pi (cycle)",
+   "crit_rad": 6.283185307179586,
+   "now": "PMNS 1.5pi",
+   "now_rad": 4.71238898038469,
+   "remain_Gyr": 3.6275,
+   "past": false
+  }
+ ],
+ "checks": [
+  {
+   "name": "\u76f8\u4f4d\u9608\u503c\u6a21\u578b\uff1a\u5269\u4f59=(\u03b8_crit\u2212\u03b8_now)/(2\u03c0)\u00b7T",
+   "detail": "formula",
+   "pass": true
+  },
+  {
+   "name": "\u8d28\u91cf\u96f6\u70b9 \u03b8_crit=3\u03c0/4\uff1aCKM \u03b3\u21922.80 Gyr",
+   "detail": "2.80",
+   "pass": true
+  },
+  {
+   "name": "\u53cc\u8986\u76d6 \u03b8_crit=\u03c0\uff1aPMNS 0.7\u03c0\u21922.18 Gyr",
+   "detail": "2.18",
+   "pass": true
+  },
+  {
+   "name": "\u7ed3\u679c\u4f9d\u8d56 (\u03b8_crit, \u03b8_now)\uff1a\u6709\u6b63\u6709\u8d1f",
+   "detail": "past cases exist",
+   "pass": true
+  }
+ ]
+}
