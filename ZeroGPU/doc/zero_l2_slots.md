@@ -269,4 +269,6 @@ cd ZeroGPU/src
 
 ---
 
+**标定**：与引擎衰减/三种激发模式的对照见 `zero_l2_slots_calib.md`——$\kappa=7.50$/代只对上速率；链的全局交换 $G$ 不能复现三种模式，引擎的模式是局部的（$f\approx\alpha Bd$）。
+
 *ZeroGPU 讨论稿 · zero_l2_slots · 2026-10-19*
