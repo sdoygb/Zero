@@ -1,0 +1,84 @@
+{
+  "nu_reconstructed_MHz": 1420.3859623659125,
+  "nu_observed_MHz": 1420.4057517679998,
+  "rel_dev": -1.3932217651764553e-05,
+  "factors": [
+    {
+      "symbol": "4/3 或 8/3",
+      "value": 2.6666666666666665,
+      "tag": "IN",
+      "why": "角动量/接触项纯代数; Zero 有自旋-角动量代数(Z006)"
+    },
+    {
+      "symbol": "g_p",
+      "value": 5.5856946893,
+      "tag": "EXT",
+      "why": "质子磁矩=非微扰 QCD 量; 全库 grep 无磁矩/塞曼/g-2"
+    },
+    {
+      "symbol": "alpha^2",
+      "value": 5.3251354520432896e-05,
+      "tag": "GAP",
+      "why": "精细结构常数; 全库 grep 无 1/137; 且 Coulomb 问题需 QED"
+    },
+    {
+      "symbol": "m_e/m_p",
+      "value": 0.000544617021484666,
+      "tag": "PART",
+      "why": "m_e 半内生(Z126 振幅律, 但标度 u=1 是定义, 绝对值靠锚 v); m_p 仅近似(Z125, 无精确命中)"
+    },
+    {
+      "symbol": "Ry",
+      "value": 13.605693122994,
+      "tag": "GAP",
+      "why": "库仑问题束缚态能; 库内无 Coulomb 求解器; QM 动力学有 no-go(Z003 #12)"
+    },
+    {
+      "symbol": "1/(1+me/mp)",
+      "value": 0.9994556794247658,
+      "tag": "GAP",
+      "why": "约化质量; 同上, 属束缚态结构"
+    }
+  ],
+  "counts": {
+    "IN": 1,
+    "EXT": 1,
+    "GAP": 3,
+    "PART": 1
+  },
+  "external_inputs_needed": 4,
+  "verdict": {
+    "绝对频率可内生推导": false,
+    "原因": "需要 g_p, alpha, Ry, 约化质量修正 共 4 个外部输入; 且 Coulomb 束缚态在库内为 GAP(Z003 #12 no-go)",
+    "标度换算可达": true,
+    "口径": "用 v 锚可把 21cm 写成无量纲数, 但那是换算(Z153), 不是推导",
+    "外部输入数": 4
+  },
+  "checks": [
+    {
+      "name": "因子分解可重建 21cm(偏差<0.01%)",
+      "pass": true,
+      "detail": "dev=-1.39e-05"
+    },
+    {
+      "name": "内生因子不足以定出 21cm(IN 因子无法独立给出频率)",
+      "pass": true,
+      "detail": "IN=1"
+    },
+    {
+      "name": "21cm 绝对频率需要 >=3 个外部输入",
+      "pass": true,
+      "detail": "需外部=4"
+    },
+    {
+      "name": "v 是输入而非导出(Z013 定理16)",
+      "pass": true,
+      "detail": "v=246.2205 GeV 作为锚"
+    },
+    {
+      "name": "21cm 可由 v 表达为无量纲数(但该数非内生)",
+      "pass": true,
+      "detail": "E/v=2.386e-17"
+    }
+  ]
+}

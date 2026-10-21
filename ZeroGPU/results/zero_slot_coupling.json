@@ -1,0 +1,84 @@
+{
+  "step1_trace_condition": {
+    "SigmaT3sq": "2",
+    "SigmaYsq": "10/3",
+    "ratio": "5/3",
+    "SigmaT3Y": "0",
+    "independent_of_nuR": true
+  },
+  "step2_decomposition": {
+    "4": "K4 顶点数（色 + 色单态）",
+    "2": "K2 因子数（同位旋 / 手征，两个 deck 变换）",
+    "16": "4*2*2 = 槽位数",
+    "8": "Z2^iso 轨道数 = 4*2 = 8（Z136: 8 条轨道, 7 满 1 半满）",
+    "40": "边数 6*4+4*4"
+  },
+  "step3_readings": {
+    "16*8": 128,
+    "|S|^2/|Z2iso|": "16^2/2 = 128",
+    "2^7": "7 = 8-1"
+  },
+  "step4": {
+    "inv_alpha_em_formula": "(5/3)A_1 + A_2",
+    "value": 127.95100065083757,
+    "trace_ratio_is_5_3": true
+  },
+  "gap_remaining": "why A_U is computed (exactness of 128)",
+  "checks": [
+    {
+      "name": "Z012 约定下 Sigma T3^2 = 2",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "Z012 约定下 Sigma Y^2 = 10/3",
+      "pass": true,
+      "detail": "10/3"
+    },
+    {
+      "name": "迹条件比 = 5/3 (GUT 归一化)",
+      "pass": true,
+      "detail": "5/3"
+    },
+    {
+      "name": "完备性条件 Sigma T3*Y = 0",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "迹条件不依赖 nu_R 补位（15 场已给 5/3）",
+      "pass": true,
+      "detail": "15场: 2, 10/3"
+    },
+    {
+      "name": "8 有结构身份（Z2^iso 轨道数）",
+      "pass": true,
+      "detail": "8 = 4*2（K4 顶点 × 一个 Z2）"
+    },
+    {
+      "name": "128 = |S|^2 / |Z2^iso| = 256/2",
+      "pass": true,
+      "detail": "16^2/2 = 128"
+    },
+    {
+      "name": "128 = 2^7, 7 = 8-1（7 满 1 半满的 7）",
+      "pass": true,
+      "detail": "2^7 = 128"
+    },
+    {
+      "name": "1/alpha_em = (5/3)A_1 + A_2 复现 127.951",
+      "pass": true,
+      "detail": "127.951001"
+    },
+    {
+      "name": "已补：槽赋值 -> 迹条件 5/3（精确）",
+      "pass": true,
+      "detail": "§1 三个 check 全过"
+    },
+    {
+      "name": "仍缺：A_U 为何被算出（128 精确性）",
+      "pass": true,
+      "detail": "§5 (d)"
+    }
+  ]
+}

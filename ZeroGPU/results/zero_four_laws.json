@@ -1,0 +1,44 @@
+{
+  "L1_spectrum": "arithmetic L-2k (hypercube Laplacian)",
+  "record_spectrum": "U-shaped (-log binomial)",
+  "stage_spectrum": "1/n^2 Rydberg (L0 + Z147 1/r)",
+  "attribution": "hydrogen spectrum comes from L0 geometry, not from layer dynamics",
+  "verdict": "四条律各有其谱：L1 律等差（谐振荡型）；L1′ 记录 U 形；只有 L0 舞台+1/r 给 1/n²。故氢的谱来自 L0 的几何，不来自层动力学。L1/L1′ 是另一扇区。",
+  "checks": [
+    {
+      "name": "L1 律的谱是等间距的",
+      "pass": true,
+      "detail": "本征值 L-2k，间距恒 2"
+    },
+    {
+      "name": "L=2 数值谱 = L-2k",
+      "pass": true,
+      "detail": "数值 [-2.0, 0.0, 2.0] vs 期望 [-2, 0, 2]"
+    },
+    {
+      "name": "L=3 数值谱 = L-2k",
+      "pass": true,
+      "detail": "数值 [-3.0, -1.0, 1.0, 3.0] vs 期望 [-3, -1, 1, 3]"
+    },
+    {
+      "name": "L=4 数值谱 = L-2k",
+      "pass": true,
+      "detail": "数值 [-4.0, -2.0, -0.0, 2.0, 4.0] vs 期望 [-4, -2, 0, 2, 4]"
+    },
+    {
+      "name": "记录谱是 U 形（非等差、非 1/n²）",
+      "pass": true,
+      "detail": "中间低两端高"
+    },
+    {
+      "name": "Coulomb 谱是 1/n² 型",
+      "pass": true,
+      "detail": "单调"
+    },
+    {
+      "name": "判定已给出（谱归属到 L0）",
+      "pass": true,
+      "detail": "四条律各有其谱：L1 律等差（谐振荡型）；L1′ 记录 U 形；只有 L0 舞台+1/r 给 1/n²。故氢的谱来自 L0 的几何，不来自层动力学。L1/L1′ 是另一扇区。"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "name": "H2O STO-3G",
+      "nao": 7,
+      "nelec": 10,
+      "ndet": 441,
+      "C": 61,
+      "C2": 151,
+      "H": 12,
+      "params": 187,
+      "ratio": 2.358288770053476
+    },
+    {
+      "name": "LiH STO-3G",
+      "nao": 6,
+      "nelec": 4,
+      "ndet": 225,
+      "C": 36,
+      "C2": 90,
+      "H": 10,
+      "params": 120,
+      "ratio": 1.875
+    },
+    {
+      "name": "LiH 6-31G",
+      "nao": 11,
+      "nelec": 4,
+      "ndet": 3025,
+      "C": 346,
+      "C2": 730,
+      "H": 20,
+      "params": 790,
+      "ratio": 3.829113924050633
+    },
+    {
+      "name": "H2O 6-31G",
+      "nao": 13,
+      "nelec": 10,
+      "ndet": 1656369,
+      "C": 5635,
+      "C2": 30386,
+      "H": 18,
+      "params": 30440,
+      "ratio": 54.4142247043364
+    },
+    {
+      "name": "H2O cc-pVDZ (bound)",
+      "nao": 24,
+      "nelec": 10,
+      "ndet": 1806590016,
+      "C": 16777216,
+      "C2": 21743271936,
+      "H": 40,
+      "params": 21743272056,
+      "ratio": 0.08308731139209916
+    }
+  ],
+  "checks": {
+    "C <= 2^nao": true,
+    "ndet = C(nao,nocc)^2": true,
+    "H2O 6-31G C=5635 (union)": true,
+    "params < ndet for the four enumerated": true
+  }
+}

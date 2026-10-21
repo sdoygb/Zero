@@ -1,0 +1,49 @@
+{
+  "M_at_57.93": 1.7508836979382454,
+  "M_candidate": 1.75,
+  "M_candidate_rel_dev_pct": 0.05049702504259507,
+  "theta_M_from_7over4": 57.972239886185,
+  "theta_star": [
+    57.972239886185,
+    26.11583295135789,
+    5.911927162457105
+  ],
+  "theta_star_article": [
+    57.93,
+    26.1593112467,
+    5.9106887533
+  ],
+  "S_theta_e": 137.03597734462122,
+  "one_over_alpha": 137.035999084,
+  "zero_param_rel_dev": -1.586399115413929e-07,
+  "fitted_version_rel_dev": 2.26e-09,
+  "sensitivity_amplification": 1.0041240175001152,
+  "verdict": "用 M(theta_M*) = L/k0^2 = 7/4 钉住 theta_M（无拟合），配 sum=90 与 S=137 定 theta_C/theta_I，再加结构位移 dxi = 1/(S_min L^(L-Lambda))，得 alpha^-1 到 1.6e-7 相对（零参数）。文章用拟合 theta_M*=57.93 得 1.6e-9（1 个参数）。⟹ 位置输入被换成结构条件 M = L/k0^2；代价 100 倍精度，收益 0 拟合参数。但'为什么 M = L/k0^2'未导出，是新的更小的缺口。",
+  "checks": [
+    {
+      "name": "W1 M(57.93) 与 7/4 相合 < 0.1%",
+      "pass": true,
+      "detail": "0.0505%"
+    },
+    {
+      "name": "W2 S(theta*) = 137（精确）",
+      "pass": true,
+      "detail": "137.0000000000"
+    },
+    {
+      "name": "W2 复现文章的 theta*（各角差 < 0.1°）",
+      "pass": true,
+      "detail": "见上"
+    },
+    {
+      "name": "W3 零参数下 alpha^-1 到 < 1e-6 相对",
+      "pass": true,
+      "detail": "-1.59e-07（-1.6 倍 10^-7）"
+    },
+    {
+      "name": "判定已给出（缺口降级）",
+      "pass": true,
+      "detail": "用 M(theta_M*) = L/k0^2 = 7/4 钉住 theta_M（无拟合），配 sum=90 与 S=137 定 theta_C/theta_I，再加结构位移 dxi = 1/(S_min L^(L-Lambda))，得 alpha^-1 到 1.6e-7 相对（零参数）。文章用拟合 theta_M*=57.93 得 1.6e-9（1 个参数）。⟹ 位置输入被换成结构条件 M = L/k0^2；代价 100 倍精度，收益 0 拟合参数。但'为什么 M = L/k0^2'未导出，是新的更小的缺口。"
+    }
+  ]
+}

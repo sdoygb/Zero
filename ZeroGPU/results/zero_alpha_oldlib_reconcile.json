@@ -1,0 +1,70 @@
+{
+  "inputs": {
+    "x1_MZ": 59.0192406,
+    "x2_MZ": 29.584599,
+    "x3_MZ": 8.481764206955047
+  },
+  "t_alpha1_eq_alpha2": 25.450913893103262,
+  "t_alpha2_eq_alpha3": 34.589483872564756,
+  "R_at_t12": 1.6666666666666667,
+  "R_at_t23": 1.2920181839357043,
+  "old_L_target": 25.4509,
+  "xU_at_t12": 42.41162171559633,
+  "x3_at_t12": 36.83623547301009,
+  "candidate": {
+    "form": "L = 1/M_e + 2/3",
+    "value": 25.44987049868876,
+    "deviation_percent": 0.00409980245107247,
+    "threshold_percent": 0.0037,
+    "ratio_to_threshold": 1.1080547165060728,
+    "verdict": "candidate, outside threshold"
+  },
+  "phase_formula": {
+    "form": "alpha^-1 = (2/9)/M_e^2",
+    "value": 136.49048715101213,
+    "deviation_percent": -0.39807929057638947
+  },
+  "tautology": true,
+  "checks": [
+    {
+      "name": "V1 旧库 L=25.4509 是 alpha1=alpha2 交叉",
+      "pass": true,
+      "detail": "t12 = 25.450914"
+    },
+    {
+      "name": "V1b 旧库 x_U=42.4116 = x1=x2 的值",
+      "pass": true,
+      "detail": "42.411622"
+    },
+    {
+      "name": "V2 新库 R_data=1.292018 是 alpha2=alpha3 处的值",
+      "pass": true,
+      "detail": "R(t23)=1.2920182"
+    },
+    {
+      "name": "V2b 旧库 R=1.291148 与 t23 处差 0.067%",
+      "pass": true,
+      "detail": "差 0.0674%"
+    },
+    {
+      "name": "V3 判定：该链是重言式（非预言）",
+      "pass": true,
+      "detail": "旧库已判；本脚本复核"
+    },
+    {
+      "name": "V4 候选在门槛外（不得宣布命中）",
+      "pass": true,
+      "detail": "0.00410% > 0.0037%（1.11 倍）"
+    },
+    {
+      "name": "该候选偏离 0.4% 量级（更松，仅登记）",
+      "pass": true,
+      "detail": "-0.3981%"
+    },
+    {
+      "name": "跑动不能救（方向相反）",
+      "pass": true,
+      "detail": "136.49 < 137.04"
+    }
+  ]
+}

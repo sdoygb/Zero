@@ -1,0 +1,71 @@
+{
+  "koide": {
+    "b": 1.414200505184577,
+    "Q": 0.6666605114773855,
+    "sqrt2": 1.4142135623730951,
+    "arg_s1": 2.3166247338829122
+  },
+  "half_slot": {
+    "D1": "28^2+1/2=784.5",
+    "D3": "16+1/2=16.5",
+    "as_norm": "784.5 = 28^2 + (1/sqrt2)^2"
+  },
+  "reparameterization": {
+    "old_inputs": [
+      28,
+      16
+    ],
+    "new_inputs": [
+      784,
+      16
+    ],
+    "unified_rule": "N + 1/2"
+  },
+  "relative_correction": {
+    "D1": 0.0006377551020408163,
+    "D3": 0.03125
+  },
+  "koide_vs_halfslot": "different mechanism: absolute ratio vs relative correction",
+  "reference_points": [
+    "reduction to a physical condition",
+    "one complex two readings",
+    "conditional-proof status is acceptable"
+  ],
+  "checks": [
+    {
+      "name": "复现 Koide b=sqrt2（<1e-4）",
+      "pass": true,
+      "detail": "b=1.4142005052"
+    },
+    {
+      "name": "复现 Koide Q=2/3（<1e-5）",
+      "pass": true,
+      "detail": "Q=0.6666605115"
+    },
+    {
+      "name": "Koide 的 sqrt2 有物理条件（块等功率）",
+      "pass": true,
+      "detail": "定理 29"
+    },
+    {
+      "name": "1/2 可写成 (1/sqrt2)^2",
+      "pass": true,
+      "detail": "1/2 = 0.5"
+    },
+    {
+      "name": "以基数为输入时，统一规则存在（基数 + 半槽）",
+      "pass": true,
+      "detail": "N+1/2"
+    },
+    {
+      "name": "两处的相对修正形式相同（1/(2N)）",
+      "pass": true,
+      "detail": "D1: 1/1568, D3: 1/32"
+    },
+    {
+      "name": "两处机制不同（诚实）",
+      "pass": true,
+      "detail": "Koide: 绝对比；半槽: 相对修正"
+    }
+  ]
+}

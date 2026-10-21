@@ -1,0 +1,159 @@
+{
+  "chains": [
+    {
+      "id": "N1",
+      "name": "中微子质量",
+      "T1": "exact",
+      "T2": false,
+      "T3": "高",
+      "out": "m_nu3/m_e=(2/9)^15/M_e^2",
+      "note": "比值，标度约掉"
+    },
+    {
+      "id": "N2",
+      "name": "Koide 形状/角度/振幅",
+      "T1": "exact",
+      "T2": false,
+      "T3": "高",
+      "out": "Q=2/3, theta=pi/2, b=sqrt2",
+      "note": "块等功率"
+    },
+    {
+      "id": "N3",
+      "name": "质量算子的角",
+      "T1": "exact",
+      "T2": false,
+      "T3": "中",
+      "out": "delta_0=pi/12-2/9",
+      "note": "seed 8 几何"
+    },
+    {
+      "id": "N4",
+      "name": "闭合圆谱",
+      "T1": "exact",
+      "T2": false,
+      "T3": "中",
+      "out": "freq=log|2cos|",
+      "note": "11/11 精确命中"
+    },
+    {
+      "id": "N5",
+      "name": "高能弱混合角/beta",
+      "T1": "exact",
+      "T2": false,
+      "T3": "中",
+      "out": "sin^2=3/8; b=(41/10,-19/6,-7)",
+      "note": "16 槽内容"
+    },
+    {
+      "id": "N6",
+      "name": "alpha_s 预言",
+      "T1": "numeric",
+      "T2": true,
+      "T3": "高",
+      "out": "alpha_s(M_Z)=0.1179",
+      "note": "外部输入 1（中间谱）"
+    },
+    {
+      "id": "N7",
+      "name": "面积律有限尺寸修正",
+      "T1": "numeric",
+      "T2": false,
+      "T3": "高",
+      "out": "a_face(m)m=0.467+-0.008",
+      "note": "主预言，数值阈值"
+    },
+    {
+      "id": "N8",
+      "name": "有限前沿锥指数尾",
+      "T1": "exact",
+      "T2": false,
+      "T3": "中",
+      "out": "c_*=tanh mu_*",
+      "note": "闭式"
+    },
+    {
+      "id": "N9",
+      "name": "超荷 5->1",
+      "T1": "exact",
+      "T2": false,
+      "T3": "中",
+      "out": "Y_R=Y_L+2T3",
+      "note": "外部输入 1（轻子超荷单位）"
+    },
+    {
+      "id": "N10",
+      "name": "rho 参数充要条件",
+      "T1": "exact",
+      "T2": false,
+      "T3": "低",
+      "out": "rho=1 <=> sum D_i v_i^2=0",
+      "note": "纯代数恒等式"
+    }
+  ],
+  "tiers": {
+    "1": [
+      "N1",
+      "N2"
+    ],
+    "2": [
+      "N3",
+      "N4",
+      "N5",
+      "N8",
+      "N9",
+      "N10"
+    ],
+    "3": [
+      "N6",
+      "N7"
+    ]
+  },
+  "ranking": [
+    "N7",
+    "N1",
+    "N2"
+  ],
+  "checks": [
+    {
+      "name": "多数链输出精确结构值",
+      "pass": true,
+      "detail": "8/10"
+    },
+    {
+      "name": "多数链无拟合步骤",
+      "pass": true,
+      "detail": "9/10"
+    },
+    {
+      "name": "分档非空且覆盖全部",
+      "pass": true,
+      "detail": "2+6+2=10"
+    },
+    {
+      "name": "N1 复算",
+      "pass": true,
+      "detail": "49.9513"
+    },
+    {
+      "name": "N2 结构值 Q=2/3",
+      "pass": true,
+      "detail": "由块等功率"
+    },
+    {
+      "name": "N7 有数值阈值（可被实验杀）",
+      "pass": true,
+      "detail": "见 Z018 §2.2"
+    },
+    {
+      "name": "排序已给出（含理由）",
+      "pass": true,
+      "detail": "N7 > N1 > N2"
+    },
+    {
+      "name": "边界已逐条列出",
+      "pass": true,
+      "detail": "见 §5"
+    }
+  ]
+}

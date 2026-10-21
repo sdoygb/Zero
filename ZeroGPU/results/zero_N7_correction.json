@@ -1,0 +1,54 @@
+{
+  "correction": "the /3 IS justified: a_face = a/3 = S/(3L^2) for corner cube",
+  "g81_independent_confirm": {
+    "2.0": "0.231",
+    "3.0": "0.159",
+    "4.0": "0.1158"
+  },
+  "mean": "0.4674222222222222222222222",
+  "std": "0.006796585925809632567196456",
+  "my_previous_error": "compared b (2D log coefficient) with a (3D area density)",
+  "remaining_N7_issues": [
+    "verification script missing in new library",
+    "E_+ is a different object",
+    "R8: m_eff -> 0"
+  ],
+  "verdict": "÷3 有依据（角立方表面积 3L^2），G81 独立确认；0.4674±0.0068 是有依据可复现的数。我上一步的判断为误，已更正",
+  "checks": [
+    {
+      "name": "a_face = a/3 有几何依据（表面积 3L^2）",
+      "pass": true,
+      "detail": "角立方"
+    },
+    {
+      "name": "复现 R4 的 0.4674",
+      "pass": true,
+      "detail": "0.467422"
+    },
+    {
+      "name": "复现 R4 的 0.0068",
+      "pass": true,
+      "detail": "0.006797"
+    },
+    {
+      "name": "G81 的 a/3 与本脚本逐位相符",
+      "pass": true,
+      "detail": "3/3 相符"
+    },
+    {
+      "name": "G81 的 a_face*m 与本脚本一致（四舍五入后）",
+      "pass": true,
+      "detail": "一致"
+    },
+    {
+      "name": "已定位我判错的原因（b 与 a 是不同量）",
+      "pass": true,
+      "detail": "见上"
+    },
+    {
+      "name": "更正已完成",
+      "pass": true,
+      "detail": "÷3 有依据（角立方表面积 3L^2），G81 独立确认；0.4674±0.0068 是有依据可复现的数。我上一步的判断为误，已更正"
+    }
+  ]
+}

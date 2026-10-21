@@ -1,0 +1,88 @@
+{
+  "script": "zero_l1_layerweights.py",
+  "checks": [
+    {
+      "name": "L1 runs+zc E/lam > 0.995",
+      "ok": true,
+      "detail": "min=0.997338"
+    },
+    {
+      "name": "L2 runs+zc fidelity > 0.985",
+      "ok": true,
+      "detail": "min=0.989936"
+    },
+    {
+      "name": "L3 runs+zc beats runs by >0.005",
+      "ok": true,
+      "detail": "min diff=0.011883"
+    },
+    {
+      "name": "L4 runs+zc beats layer by >0.01",
+      "ok": true,
+      "detail": "min diff=0.025405"
+    },
+    {
+      "name": "L5 3H < N",
+      "ok": true,
+      "detail": "max 3H=18, min N=70"
+    },
+    {
+      "name": "L6 Perron residual/positivity",
+      "ok": true,
+      "detail": "max res=6.15e-15, min gs=0.000"
+    }
+  ],
+  "n_pass": 6,
+  "n_fail": 0,
+  "rows": [
+    {
+      "n": 8,
+      "N": 70,
+      "H": 4,
+      "lambda_max": 4.7587704831436355,
+      "F_layer": 0.969994476330591,
+      "E_layer_ratio": 0.9736578197104618,
+      "E_runs_ratio": 0.9871803431274401,
+      "F_runs": 0.9809650725151735,
+      "E_runszc_ratio": 0.9990632053903339,
+      "F_runszc": 0.9985358776685039,
+      "dim_runs": 8,
+      "dim_runszc": 12,
+      "perron_res": 4.059519805547878e-15,
+      "perron_min": 0.0017827159021086218
+    },
+    {
+      "n": 10,
+      "N": 252,
+      "H": 5,
+      "lambda_max": 6.02667418333227,
+      "F_layer": 0.9434527051534781,
+      "E_layer_ratio": 0.960809100250357,
+      "E_runs_ratio": 0.9824063762004723,
+      "F_runs": 0.9638717535769322,
+      "E_runszc_ratio": 0.998178334555582,
+      "F_runszc": 0.9952730810986514,
+      "dim_runs": 10,
+      "dim_runszc": 15,
+      "perron_res": 6.1543456580644054e-15,
+      "perron_min": 4.4548252846853604e-05
+    },
+    {
+      "n": 12,
+      "N": 924,
+      "H": 6,
+      "lambda_max": 7.296229810558754,
+      "F_layer": 0.9102083592633389,
+      "E_layer_ratio": 0.9487220175133771,
+      "E_runs_ratio": 0.9785598619587071,
+      "F_runs": 0.9430368938010985,
+      "E_runszc_ratio": 0.9973383780082806,
+      "F_runszc": 0.9899359832969479,
+      "dim_runs": 12,
+      "dim_runszc": 18,
+      "perron_res": 5.3467034742398994e-15,
+      "perron_min": 4.7544289316908274e-07
+    }
+  ],
+  "model": "L1 word layers, XY adjacent-swap adjacency"
+}

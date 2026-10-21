@@ -1,0 +1,72 @@
+{
+  "script": "zero_l1_amplitude.py",
+  "checks": [
+    {
+      "name": "A1 full simplex reaches lambda_max",
+      "ok": true,
+      "detail": "max rel=7.80e-10"
+    },
+    {
+      "name": "A2 per-parameter variance ~ 1/N",
+      "ok": true,
+      "detail": "slope=-0.838"
+    },
+    {
+      "name": "A3 gradient norm O(1)",
+      "ok": true,
+      "detail": "min=3.942"
+    },
+    {
+      "name": "A4 layer-constant fidelity < 0.98",
+      "ok": true,
+      "detail": "max F=0.9700"
+    },
+    {
+      "name": "A5 layer energy ratio < 1",
+      "ok": true,
+      "detail": "max ratio=0.9737"
+    }
+  ],
+  "n_pass": 5,
+  "n_fail": 0,
+  "rows": [
+    {
+      "n": 8,
+      "N": 70,
+      "lambda_max": 4.7587704831436355,
+      "E_full": 4.758770483143634,
+      "fid_full": 1.0,
+      "F_layer": 0.969994476330591,
+      "E_layer": 4.633414093120133,
+      "ratio_layer": 0.9736578197104618,
+      "var_per_param": 0.2246591807461254,
+      "grad_norm": 3.942322804903451
+    },
+    {
+      "n": 10,
+      "N": 252,
+      "lambda_max": 6.02667418333227,
+      "E_full": 6.026674183332233,
+      "fid_full": 0.999999999999936,
+      "F_layer": 0.9434527051534781,
+      "E_layer": 5.790483399589534,
+      "ratio_layer": 0.960809100250357,
+      "var_per_param": 0.07856350544660415,
+      "grad_norm": 4.442105402527289
+    },
+    {
+      "n": 12,
+      "N": 924,
+      "lambda_max": 7.296229810558754,
+      "E_full": 7.296229804868359,
+      "fid_full": 0.9999999881977861,
+      "F_layer": 0.9102083592633389,
+      "E_layer": 6.922093866114547,
+      "ratio_layer": 0.9487220175133771,
+      "var_per_param": 0.02588408501051825,
+      "grad_norm": 4.88839028906311
+    }
+  ],
+  "slope_var_vs_N": -0.8375501741786305,
+  "model": "L1 word simplex, XY adjacent-swap adjacency"
+}

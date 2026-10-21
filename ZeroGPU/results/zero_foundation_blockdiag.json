@@ -1,0 +1,53 @@
+{
+  "F1_rho_h_general": true,
+  "F2_weight_cancellation_verified": true,
+  "F3_direct_sum_no_offblock": true,
+  "commutator_X_Hmod": 0.0,
+  "commutator_X_H1": 16.0,
+  "hilbert_dims": {
+    "4": {
+      "height_space": 4,
+      "word_space": 16
+    },
+    "8": {
+      "height_space": 8,
+      "word_space": 256
+    },
+    "12": {
+      "height_space": 12,
+      "word_space": 4096
+    },
+    "16": {
+      "height_space": 16,
+      "word_space": 65536
+    }
+  },
+  "verdict": "三地基事实：ρ_h 任意(块内可相干)；w_h 不影响模流(权重相消)；⊕M_2 无块间元。[ĥ,H_mod]=0 已核验 ⟹ 高度守恒、无动能项。块间相干是 Coulomb 动能的必要条件，而 A_L 构造性地排除了它。故缺的不是某个数，是【块间相干】这一整个结构。",
+  "checks": [
+    {
+      "name": "ρ 块对角（本构造）",
+      "pass": true,
+      "detail": "对角"
+    },
+    {
+      "name": "[ĥ, H_mod] = 0（高度守恒）",
+      "pass": true,
+      "detail": "0.0e+00"
+    },
+    {
+      "name": "[ĥ, H_1] ≠ 0（词层的律让高度动）",
+      "pass": true,
+      "detail": "16.000"
+    },
+    {
+      "name": "权重相消：块内谱差与 w 无关（Z046 定理四）",
+      "pass": true,
+      "detail": "谱差 = 2·artanh(a_h)"
+    },
+    {
+      "name": "地基三条已核验",
+      "pass": true,
+      "detail": "三地基事实：ρ_h 任意(块内可相干)；w_h 不影响模流(权重相消)；⊕M_2 无块间元。[ĥ,H_mod]=0 已核验 ⟹ 高度守恒、无动能项。块间相干是 Coulomb 动能的必要条件，而 A_L 构造性地排除了它。故缺的不是某个数，是【块间相干】这一整个结构。"
+    }
+  ]
+}

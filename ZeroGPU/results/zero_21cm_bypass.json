@@ -1,0 +1,80 @@
+{
+  "n3_law": {
+    "pred_2s_MHz": 177.55071897099998,
+    "obs_2s_MHz": 177.5569,
+    "dev": -3.481153928692192e-05
+  },
+  "ratio_to_fine_structure": {
+    "theory": 0.12972409797814044,
+    "observed": 0.12949119499613915,
+    "dev_pct": 0.1798600916519745,
+    "note": "alpha cancels; needs g_p and m_e/m_p"
+  },
+  "combos": [
+    {
+      "ratio": "nu_1s / nu_fs",
+      "alpha": "alpha 抵消",
+      "needs": "需 g_p, m_e/m_p"
+    },
+    {
+      "ratio": "nu_1s / nu_2s",
+      "alpha": "全抵消",
+      "needs": "纯结构数 8"
+    },
+    {
+      "ratio": "nu_1s / Rydberg",
+      "alpha": "无抵消",
+      "needs": "需 alpha^2, g_p, m_e/m_p"
+    },
+    {
+      "ratio": "nu_1s / (m_e c^2/h)",
+      "alpha": "无抵消",
+      "needs": "需 alpha^4, g_p, m_e/m_p"
+    },
+    {
+      "ratio": "nu_1s / Lamb(2s-2p1/2)",
+      "alpha": "无抵消",
+      "needs": "需 g_p/alpha"
+    },
+    {
+      "ratio": "nu_2s / nu_fs",
+      "alpha": "alpha 抵消",
+      "needs": "需 g_p, m_e/m_p"
+    }
+  ],
+  "irreducible": "m_e/m_p (hyperfine intrinsically carries nuclear moment 1/m_p)",
+  "zero_mass_effect_pct": -0.3548100340936,
+  "verdict": "可绕过 alpha（在比值里），但 m_e/m_p 不可绕；且绕过后的量不再检验 Zero",
+  "checks": [
+    {
+      "name": "2s/1s 比值命中到 1e-4（纯结构预言）",
+      "pass": true,
+      "detail": "dev=-3.48e-05"
+    },
+    {
+      "name": "nu_1s/nu_fs 理论值与观测一致（<0.5%）",
+      "pass": true,
+      "detail": "+0.1799%"
+    },
+    {
+      "name": "同近似级下，α-free 比值与理论一致到 1e-4",
+      "pass": true,
+      "detail": "dev=-1.39e-05"
+    },
+    {
+      "name": "存在完全抵消（n^3 定律）的组合",
+      "pass": true,
+      "detail": "nu_1s/nu_2s = 8 精确"
+    },
+    {
+      "name": "m_e/m_p 不可绕过（超精细结构性依赖核磁矩）",
+      "pass": true,
+      "detail": "nu_hf ∝ g_p m_e^2/m_p"
+    },
+    {
+      "name": "绕过方案的可判定结论已给出",
+      "pass": true,
+      "detail": "见 §L4–§L5"
+    }
+  ]
+}

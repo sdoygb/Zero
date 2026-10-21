@@ -1,0 +1,81 @@
+{
+  "script": "zero_h2o_hybrid.py",
+  "checks": [
+    {
+      "name": "H1 FCI matches",
+      "ok": true,
+      "detail": "-75.01243743"
+    },
+    {
+      "name": "H2 SVD k=10 base 5.69e-4",
+      "ok": true,
+      "detail": "+5.69e-04"
+    },
+    {
+      "name": "H3 hybrid F > cell F",
+      "ok": true,
+      "detail": "0.99744 vs 0.99633"
+    },
+    {
+      "name": "H4 hybrid err < cell err",
+      "ok": true,
+      "detail": "+0.004831 vs +0.007423"
+    },
+    {
+      "name": "H5 hybrid err < 1.6e-3",
+      "ok": false,
+      "detail": "+4.83e-03"
+    },
+    {
+      "name": "H6 params poly",
+      "ok": true,
+      "detail": "104"
+    },
+    {
+      "name": "H7 spin-cell F > cell F",
+      "ok": true,
+      "detail": "0.99966 vs 0.99633"
+    },
+    {
+      "name": "H8 spin-cell err < cell err",
+      "ok": true,
+      "detail": "+0.000737 vs +0.007423"
+    },
+    {
+      "name": "H9 state-hybrid(cell) err <= SVD+1e-5",
+      "ok": false,
+      "detail": "+0.000685 vs SVD +0.000569"
+    },
+    {
+      "name": "H10 state-hybrid(spin) err <= SVD+1e-5",
+      "ok": true,
+      "detail": "+0.000352 vs SVD +0.000569"
+    }
+  ],
+  "n_pass": 8,
+  "n_fail": 2,
+  "e_fci": -75.01243743249299,
+  "e_svd": -75.01186834167612,
+  "err_svd": 0.0005690908168674014,
+  "F_svd": 0.9998070261874213,
+  "F3": 0.9672230221762111,
+  "err3": 0.10061878620167874,
+  "Fc": 0.9963272899635541,
+  "errc": 0.007423110655935261,
+  "Fh": 0.9974447321721767,
+  "errh": 0.004830926224315135,
+  "C": 61,
+  "k": 10,
+  "H": 11,
+  "params3": 33,
+  "paramsc": 94,
+  "paramsh": 104,
+  "Esh": -75.01175288415406,
+  "Fsh": 0.9997756006869001,
+  "Esh2": -75.01208505813631,
+  "Fsh2": 0.9999209179227768,
+  "F2": 0.9996562599229603,
+  "err2": 0.0007367595565312968,
+  "C2": 151,
+  "params2": 184
+}

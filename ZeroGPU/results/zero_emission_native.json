@@ -1,0 +1,59 @@
+{
+  "modular_fixes_state": true,
+  "four_frequency_objects": {
+    "F1": "log(p/q) Z087/Z131 -> log of rationals",
+    "F2": "A^2 M(theta)^2 Z126 -> cosine squared",
+    "F3": "log|2cos(pi m/n)| Z132 -> box m^2/n^2",
+    "F4": "bound state energy Z165+Z147 -> 1/n^2 (Rydberg)"
+  },
+  "atom_lives_in": "F4",
+  "photon_energy": "0.287682072451780927439219",
+  "verdict": "Zero 原生可答: 光=均匀零静频模(Z095)；能级=多吸引子/束缚态；发光频率=能级差(频率必须被搬运)；不发光的原因=模流固定态。但【跃迁速率】与【绝对频率】不在内。",
+  "checks": [
+    {
+      "name": "t=0.0: σ_t(ρ)=ρ（态被固定）",
+      "pass": true,
+      "detail": "0.00e+00"
+    },
+    {
+      "name": "t=0.7: σ_t(ρ)=ρ（态被固定）",
+      "pass": true,
+      "detail": "2.41e-27"
+    },
+    {
+      "name": "t=3.1: σ_t(ρ)=ρ（态被固定）",
+      "pass": true,
+      "detail": "6.46e-27"
+    },
+    {
+      "name": "模流不能产生跃迁（定理级）",
+      "pass": true,
+      "detail": "σ_t(ρ)=ρ 对一切 t"
+    },
+    {
+      "name": "F3 是盒谱 m²/n²（依赖 m，非 1/n²）",
+      "pass": true,
+      "detail": "小 x 展开已核验"
+    },
+    {
+      "name": "原子定位于 F4（束缚态）",
+      "pass": true,
+      "detail": "三个候选被结构排除"
+    },
+    {
+      "name": "光频 = 两吸引子的频率差（log 有理数）",
+      "pass": true,
+      "detail": "log(4/3) = 0.287682"
+    },
+    {
+      "name": "光子 = 均匀模 = 零静频（Z095）",
+      "pass": true,
+      "detail": "log(1)=0"
+    },
+    {
+      "name": "机制链条已给出（含边界）",
+      "pass": true,
+      "detail": "Zero 原生可答: 光=均匀零静频模(Z095)；能级=多吸引子/束缚态；发光频率=能级差(频率必须被搬运)；不发光的原因=模流固定态。但【跃迁速率】与【绝对频率】不在内。"
+    }
+  ]
+}

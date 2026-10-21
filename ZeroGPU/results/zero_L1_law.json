@@ -1,0 +1,44 @@
+{
+  "L1_law": "hypercube Laplacian sum_i sigma^x_i (same construction as L0 stage Laplacian)",
+  "height_birth_death_rates": "up (L-h)/2, down (L+h)/2",
+  "stationary_equals_b_h": true,
+  "L1prime_law": "monotone accumulation lambda <- lambda + c (not a flow)",
+  "verdict": "L1 的律 = 超立方体拉普拉斯（L0 构造换图，非外加）：高度做生灭过程、率 (L∓h)/2、静止分布逐位等于库里的 b_h；L→∞ 局部退化为自由 Brown 但全局有界。L1′ 有单调累积律（只增），不是演化律；其时间演化是归一化态的模流。",
+  "checks": [
+    {
+      "name": "[ĥ, H_1] ≠ 0（L1 律让高度动）",
+      "pass": true,
+      "detail": "16.000"
+    },
+    {
+      "name": "上行/下行率 = (L∓h)/2（已核验）",
+      "pass": true,
+      "detail": "见上表"
+    },
+    {
+      "name": "H_1 的静止分布 = b_h（逐位相同）",
+      "pass": true,
+      "detail": "[(-4, 1), (-2, 4), (0, 6), (2, 4), (4, 1)]"
+    },
+    {
+      "name": "生成元是对称三对角（生灭型）",
+      "pass": true,
+      "detail": "见上"
+    },
+    {
+      "name": "L1′ 有单调累积律（只增）",
+      "pass": true,
+      "detail": "λ_{n+1}=λ_n+c_n, c_n≥0"
+    },
+    {
+      "name": "L1′ 的归一化态单调收敛（不可逆）",
+      "pass": true,
+      "detail": "见上表"
+    },
+    {
+      "name": "判定已给出（L1 与 L1′ 都有律，性质不同）",
+      "pass": true,
+      "detail": "L1 的律 = 超立方体拉普拉斯（L0 构造换图，非外加）：高度做生灭过程、率 (L∓h)/2、静止分布逐位等于库里的 b_h；L→∞ 局部退化为自由 Brown 但全局有界。L1′ 有单调累积律（只增），不是演化律；其时间演化是归一化态的模流。"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "L": 6,
+  "dim_W_L": 20,
+  "johnson_degree": 9,
+  "stationary_uniform": true,
+  "pushforward_equals_w_h": true,
+  "circularity_correction": "previous 'binomial = b_h' was tautological; signed final height is identically 0 for balanced words",
+  "retracted": "hypercube Laplacian",
+  "verdict": "✓ 正确：W_L 上的图是 Johnson J(L,L/2)，正则、均匀静止；推前给 w_h=b_h/Σb_h。✗ 作废：超立方体拉普拉斯（不保零和）。✗ 降级：先前'静止=b_h 是强证据'是循环——两边都是同一个二项式，且平衡词的末高度恒为 0，根本不是壳层指标。余下的真内容：Johnson 律让位置动，A_L 粗粒化把动抹掉。",
+  "checks": [
+    {
+      "name": "Johnson 图正则，度 = (L/2)²",
+      "pass": true,
+      "detail": "实测 9"
+    },
+    {
+      "name": "静止分布＝均匀",
+      "pass": true,
+      "detail": "均匀"
+    },
+    {
+      "name": "Johnson 静止分布推前 = Z046 的 w_h",
+      "pass": true,
+      "detail": "逐位相同"
+    },
+    {
+      "name": "这是构造性一致，不是独立证据",
+      "pass": true,
+      "detail": "见上"
+    },
+    {
+      "name": "平衡词的末高度恒为 0（不是壳层指标）",
+      "pass": true,
+      "detail": "[(0, 20)]"
+    },
+    {
+      "name": "更正：先前'最强证据'是循环，降级为一致性",
+      "pass": true,
+      "detail": "见上"
+    },
+    {
+      "name": "L1 律的现状已厘清",
+      "pass": true,
+      "detail": "✓ 正确：W_L 上的图是 Johnson J(L,L/2)，正则、均匀静止；推前给 w_h=b_h/Σb_h。✗ 作废：超立方体拉普拉斯（不保零和）。✗ 降级：先前'静止=b_h 是强证据'是循环——两边都是同一个二项式，且平衡词的末高度恒为 0，根本不是壳层指标。余下的真内容：Johnson 律让位置动，A_L 粗粒化把动抹掉。"
+    }
+  ]
+}

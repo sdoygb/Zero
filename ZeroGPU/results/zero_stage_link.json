@@ -1,0 +1,30 @@
+{
+  "W_L_bijects_closed_walks_on_Z": true,
+  "tree_gives_half_line_with_reflection": true,
+  "Z004_is_1D": true,
+  "3D_comes_from_stage_Z021": true,
+  "link_relation_unwritten": true,
+  "verdict": "W_L 与 Z 上的闭走双射 ⟹ Z004 的模型是一维 Z 上的走者。树形舞台给的是半轴+边界（有反弹），与 Z 不等价。故三维不来自 ±1 词，只能来自 Z021 的舞台，而两个模型的关系库里没写。",
+  "checks": [
+    {
+      "name": "K1 W_L ↔ Z 闭走（双射，数目一致）",
+      "pass": true,
+      "detail": "20"
+    },
+    {
+      "name": "轨迹含负位置（在 Z 上，不在半轴）",
+      "pass": true,
+      "detail": "[-3, -2, -1, 0, 1, 2, 3]"
+    },
+    {
+      "name": "树形舞台给半轴、Z004 给整轴（不同）",
+      "pass": true,
+      "detail": "见上"
+    },
+    {
+      "name": "判定已给出（Z004 是一维；三维在舞台）",
+      "pass": true,
+      "detail": "W_L 与 Z 上的闭走双射 ⟹ Z004 的模型是一维 Z 上的走者。树形舞台给的是半轴+边界（有反弹），与 Z 不等价。故三维不来自 ±1 词，只能来自 Z021 的舞台，而两个模型的关系库里没写。"
+    }
+  ]
+}

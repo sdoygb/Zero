@@ -1,0 +1,75 @@
+{
+  "dimensional": {
+    "claim": "phi ~ x (L 无量纲); v 只给出单位",
+    "E0_stage_units": -0.035767,
+    "E0_over_v": -0.035767
+  },
+  "charge_lattice": {
+    "quantization": "Q in (1/3)Z",
+    "unit_e_internal": false
+  },
+  "bridge": {
+    "dimensional_part": "automatic (v is the only dimensional d.o.f.)",
+    "numerical_part": "needs dimensionless c_e ~ alpha_em^{1/2}",
+    "c_e_status": "registered open item (Z014 Thm25)"
+  },
+  "stage_amplitude": {
+    "cubic": {
+      "sigma": 1.0,
+      "lb": 1.0,
+      "A": 1.0
+    },
+    "diamond": {
+      "sigma": 2.0,
+      "lb": 1.7320508075688772,
+      "A": 0.2886751345948129
+    }
+  },
+  "checks": [
+    {
+      "name": "势与荷同量纲（L 无量纲）",
+      "pass": true,
+      "detail": "phi ~ x，L 无量纲"
+    },
+    {
+      "name": "束缚能以 v 为单位的表达可写出",
+      "pass": true,
+      "detail": "E/v=-3.576700e-02"
+    },
+    {
+      "name": "荷的格内生（1/3 量子化），单位 e 不内生",
+      "pass": true,
+      "detail": "Z012 定理11/12 + Z090 §五"
+    },
+    {
+      "name": "e 必须由 v 表达（v 是唯一有量纲自由度）",
+      "pass": true,
+      "detail": "e = c_e * v，c_e 无量纲"
+    },
+    {
+      "name": "c_e 的候选承载：舞台势幅度 A（Z147）",
+      "pass": true,
+      "detail": "A=1/(sigma*lb)，立方 1.0"
+    },
+    {
+      "name": "舞台幅度实算与 Z147 表值相符",
+      "pass": true,
+      "detail": "cubic=1.0000 diamond=0.2887"
+    },
+    {
+      "name": "A 不能直接充当 c_e（差 137 倍）",
+      "pass": true,
+      "detail": "A^2/alpha_em = 137.0"
+    },
+    {
+      "name": "量纲桥接上（定理级）",
+      "pass": true,
+      "detail": "phi_phys = 舞台纯数 × v"
+    },
+    {
+      "name": "数值桥仍需 c_e（=库内开放项）",
+      "pass": true,
+      "detail": "c_e ~ alpha_em^{1/2}，归 Z014 定理25"
+    }
+  ]
+}

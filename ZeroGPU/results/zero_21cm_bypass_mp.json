@@ -1,0 +1,61 @@
+{
+  "identity": {
+    "g_p_over_m_p": 3.339484321105455e+27,
+    "four_mup_over_ehbar": 3.339484323094232e+27,
+    "rel_diff": 5.955341154150388e-10
+  },
+  "rewrite": {
+    "nu_with_mup_MHz": 1420.3859632027552,
+    "dev": -1.3931628494212703e-05
+  },
+  "zero_me": {
+    "value_MeV": 0.510994661987887,
+    "dev_pct": -0.0008489277108170157
+  },
+  "comparison": {
+    "A_old_pct": -0.35494182472219915,
+    "A_MHz": -5.041614093784332,
+    "B_new_pct": -0.0016978482148544138,
+    "B_MHz": -0.024116333700180053,
+    "improvement_x": 209.05391990687136
+  },
+  "no_half_slot_pct": 0.12589167903709342,
+  "note": "m_p bottleneck was a parameterization artifact",
+  "checks": [
+    {
+      "name": "两式相等（mu_p 把 m_p 吸收掉）",
+      "pass": true,
+      "detail": "rel=5.96e-10"
+    },
+    {
+      "name": "改写后复现 21cm（<1e-4）",
+      "pass": true,
+      "detail": "dev=-1.39e-05"
+    },
+    {
+      "name": "Z126 的 m_e 复现到 0.01%",
+      "pass": true,
+      "detail": "0.510995 MeV"
+    },
+    {
+      "name": "绕过后误差显著改善（>100×）",
+      "pass": true,
+      "detail": "209×"
+    },
+    {
+      "name": "绕过后 21cm 精度优于 0.01%",
+      "pass": true,
+      "detail": "-0.0017%"
+    },
+    {
+      "name": "已登记参数化更正（m_p 瓶颈是假象）",
+      "pass": true,
+      "detail": "见 §5"
+    },
+    {
+      "name": "无半槽时 21cm 偏约 +0.13%",
+      "pass": true,
+      "detail": "+0.126%"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "L": 4,
+  "dim": 16,
+  "heisenberg_structure": "[h, sigma^+] = +2 sigma^+",
+  "ladder_bounded": true,
+  "observable": "h (read by record b_h)",
+  "not_dynamical": "sigma^pm (L1 has no update law, Z110)",
+  "verdict": "词层有完整的 Heisenberg 型结构（ĥ 对角 + σ^± 为 ±2 本征算子），但阶梯有界（有限 L）；且 ĥ 被记录读出（可观），σ^± 因 L1 无更新律而只是运动学操作。故位置算子可观、共轭算子无动力学。",
+  "checks": [
+    {
+      "name": "ĥ 在词基对角",
+      "pass": true,
+      "detail": "对角"
+    },
+    {
+      "name": "σ^x 在词基上非对角",
+      "pass": true,
+      "detail": "4.000"
+    },
+    {
+      "name": "[ĥ,σ^+] = +2σ^+（升 2）",
+      "pass": true,
+      "detail": "精确"
+    },
+    {
+      "name": "[ĥ,σ^-] = -2σ^-（降 2）",
+      "pass": true,
+      "detail": "精确"
+    },
+    {
+      "name": "升到顶端后 σ^+=0（阶梯有界）",
+      "pass": true,
+      "detail": "顶端封闭"
+    },
+    {
+      "name": "降到低端后 σ^-=0（阶梯有界）",
+      "pass": true,
+      "detail": "低端封闭"
+    },
+    {
+      "name": "记录只依赖 h 的分布（不分辨具体词）",
+      "pass": true,
+      "detail": "b_h = {-4: 1, -2: 4, 0: 6, 2: 4, 4: 1}"
+    },
+    {
+      "name": "判定已给出（可观 vs 动力学 分离）",
+      "pass": true,
+      "detail": "词层有完整的 Heisenberg 型结构（ĥ 对角 + σ^± 为 ±2 本征算子），但阶梯有界（有限 L）；且 ĥ 被记录读出（可观），σ^± 因 L1 无更新律而只是运动学操作。故位置算子可观、共轭算子无动力学。"
+    }
+  ]
+}

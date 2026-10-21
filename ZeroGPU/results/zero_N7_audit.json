@@ -1,0 +1,50 @@
+{
+  "prediction": "a_face(m)*m = 0.467 +- 0.008",
+  "script_missing": true,
+  "nearest_value": {
+    "source": "old R8",
+    "E_plus_L4": "0.4706834199",
+    "dev_pct": 0.7887408779443255,
+    "sigma": 0.4604274875
+  },
+  "object_mismatch": "a_face (3D area density) vs E_+ (lifetime ring mode)",
+  "r8_audit_negative": true,
+  "verdict": "N7 目前【不可复算】：Z018 的核验脚本未落盘；0.467 的最接近数值（旧库 E_+(L=4)=0.47068）是【不同对象】；且旧库对相关对象的审计为负",
+  "checks": [
+    {
+      "name": "Z018 核验脚本缺失（已核实）",
+      "pass": true,
+      "detail": "全库搜不到"
+    },
+    {
+      "name": "E_+/2 复现 R8 的 m_stag",
+      "pass": true,
+      "detail": "0.23534170995"
+    },
+    {
+      "name": "E_+ 落在主预言区间内",
+      "pass": true,
+      "detail": "0.460 sigma"
+    },
+    {
+      "name": "两对象不同（已核实 R8 原文）",
+      "pass": true,
+      "detail": "a_face vs E_+"
+    },
+    {
+      "name": "E_+*L 在 L=4 上接近极限（差 <2%）",
+      "pass": true,
+      "detail": "1.517%"
+    },
+    {
+      "name": "R8 审计结论为负（已核实）",
+      "pass": true,
+      "detail": "C3 不由现有数据成立"
+    },
+    {
+      "name": "N7 档位应下调（已判定）",
+      "pass": true,
+      "detail": "N7 目前【不可复算】：Z018 的核验脚本未落盘；0.467 的最接近数值（旧库 E_+(L=4)=0.47068）是【不同对象】；且旧库对相关对象的审计为负"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "锚 v",
+      "cat": "OK",
+      "basis": "Z013 定理16：v 是唯一有量纲自由度、是量纲单位",
+      "verdict": "满足：锚只有一个"
+    },
+    {
+      "id": "N1",
+      "name": "8/3 系数",
+      "cat": "OK",
+      "basis": "接触项纯代数；Z006 自旋-角动量代数",
+      "verdict": "内生"
+    },
+    {
+      "id": "N2",
+      "name": "alpha",
+      "cat": "A",
+      "basis": "旧 Z23：需无量纲输入 R；(2.1) 导出 L <=> 导出 alpha^-1",
+      "verdict": "已证：非预言，需一笔无量纲输入"
+    },
+    {
+      "id": "N3",
+      "name": "g_p",
+      "cat": "A",
+      "basis": "库内无磁矩结构；Z014 定理22：禁闭/质量间隙不推出",
+      "verdict": "已证：非微扰 QCD 量，库内无机制"
+    },
+    {
+      "id": "N4",
+      "name": "m_e",
+      "cat": "OK",
+      "basis": "Z126 振幅律：m_e = A^2 M_e^2，差 -0.0008%",
+      "verdict": "半内生：形状硬，标度靠 784.5 构造"
+    },
+    {
+      "id": "N5",
+      "name": "m_p",
+      "cat": "C",
+      "basis": "超精细里 m_p 只通过质子磁矩进来：g_p/m_p = 4 mu_p/(e hbar)",
+      "verdict": "可绕过：用 mu_p 替代，Zero 的 m_p 误差掉出"
+    },
+    {
+      "id": "N6",
+      "name": "约化质量",
+      "cat": "C",
+      "basis": "(1+r) 因子；r 是测量值",
+      "verdict": "可绕过：用测量比值"
+    },
+    {
+      "id": "N7",
+      "name": "库仑束缚态",
+      "cat": "B",
+      "basis": "Z165：原生泊松核有束缚态；但 1/r 只在 n->inf 出现",
+      "verdict": "未做：原生束缚态可算，但未报到物理单位"
+    }
+  ],
+  "counts": {
+    "OK": 3,
+    "A": 2,
+    "B": 1,
+    "C": 2
+  },
+  "verdict": "不能。'锚一个锚点'满足（v）；'其余内生'不满足——alpha 缺一个无量纲比（类型已定）、g_p 缺一个非微扰机制（类型未定）；绕过只能到比值，绝对频率绕不掉",
+  "min_inputs": [
+    "anchor v (have)",
+    "alpha (needs dimensionless R)",
+    "g_p or mu_p (needs non-perturbative mechanism)"
+  ],
+  "checks": [
+    {
+      "name": "alpha 的灵敏度为 4（四次方）",
+      "pass": true,
+      "detail": "nu ~ alpha^4"
+    },
+    {
+      "name": "有 2 个环节是 A 类（已证不可）",
+      "pass": true,
+      "detail": "alpha, g_p"
+    },
+    {
+      "name": "两个 A 类的障碍性质不同（已区分）",
+      "pass": true,
+      "detail": "alpha 缺数；g_p 缺机制"
+    },
+    {
+      "name": "绕过方案已明确（含残留依赖）",
+      "pass": true,
+      "detail": "见上"
+    },
+    {
+      "name": "总判决已给出（分层）",
+      "pass": true,
+      "detail": "不能。'锚一个锚点'满足（v）；'其余内生'不满足——alpha 缺一个无量纲比（类型已定）、g_p 缺一个非微扰机制（类型未定）；绕过只能到比值，绝对频率绕不掉"
+    },
+    {
+      "name": "最少输入数已给出（2 笔无量纲）",
+      "pass": true,
+      "detail": "alpha + g_p"
+    },
+    {
+      "name": "坏靶子的理由已给出",
+      "pass": true,
+      "detail": "alpha^4 放大"
+    }
+  ]
+}

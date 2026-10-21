@@ -1,0 +1,57 @@
+{
+  "L": 6,
+  "dim_W_L": 20,
+  "shell_distribution": {
+    "3": 2,
+    "2": 10,
+    "1": 8
+  },
+  "position_diagonal": true,
+  "flip_commutator": 6.928203230275509,
+  "coarse_graining_loses_position": true,
+  "stage_algebra_has_kinetic": true,
+  "A_L_has_kinetic": false,
+  "verdict": "±1 词 = 路径图上的走，S_k 就是位置；位置与共轭在全轨迹空间里都有（[Ŝ_t,σ^x]≠0 已核验）。A_L=⊕M_2 是把轨迹按 (max|S_k|,sign) 粗粒化的结果，粗粒化让位置多值化、不可差分，故动能项消失。所以缺的不是位置，是【选粗粒化前还是后的代数】——这正是 Z004 12.1 划走的那一格。",
+  "checks": [
+    {
+      "name": "|W_L| = C(L,L/2)",
+      "pass": true,
+      "detail": "dim = 20"
+    },
+    {
+      "name": "A1 位置算符在词基对角",
+      "pass": true,
+      "detail": "全对角"
+    },
+    {
+      "name": "交换算子非对角",
+      "pass": true,
+      "detail": "3.464"
+    },
+    {
+      "name": "A2 [位置, 某交换] ≠ 0（保零和的共轭存在）",
+      "pass": true,
+      "detail": "(0,2) 给 6.928"
+    },
+    {
+      "name": "粗粒化丢掉位置",
+      "pass": true,
+      "detail": "同壳层内 S_t 多值"
+    },
+    {
+      "name": "粗粒化前有动能项、粗粒化后没有",
+      "pass": true,
+      "detail": "见上表"
+    },
+    {
+      "name": "A_L 是粗粒化后代数",
+      "pass": true,
+      "detail": "见上"
+    },
+    {
+      "name": "判定已给出（闸门＝代数选取层级）",
+      "pass": true,
+      "detail": "±1 词 = 路径图上的走，S_k 就是位置；位置与共轭在全轨迹空间里都有（[Ŝ_t,σ^x]≠0 已核验）。A_L=⊕M_2 是把轨迹按 (max|S_k|,sign) 粗粒化的结果，粗粒化让位置多值化、不可差分，故动能项消失。所以缺的不是位置，是【选粗粒化前还是后的代数】——这正是 Z004 12.1 划走的那一格。"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "R_data": 1.292018,
+  "cL2": "1/3",
+  "cR2": "4/3",
+  "formula_corrected": "R = c_L^2 + c_R^2 / r^2  (r = g_R/g_L)",
+  "formula_old": "R = c_L^2 + c_R^2 * r^2  (as printed in old Z23 §3.3)",
+  "r_old_printed": 0.847947,
+  "r_corrected": 1.179319494657552,
+  "reciprocal_check": {
+    "1_over_r_corrected": 0.847946637471958,
+    "r_old": 0.847946637471958
+  },
+  "footnote_check": {
+    "r_old_theory": 0.847562,
+    "its_reciprocal": 1.1798546890964907,
+    "claimed": 0.847947,
+    "holds": false
+  },
+  "physical_reading": "R < 5/3 requires r > 1, i.e. g_R > g_L (parity broken at M_X)",
+  "norm_requires_parity_breaking": true,
+  "no_simple_r_gives_norm": true,
+  "verdict_unaffected": true,
+  "checks": [
+    {
+      "name": "c_L^2 + c_R^2 = 5/3（迹比）",
+      "pass": true,
+      "detail": "5/3"
+    },
+    {
+      "name": "两式仅在 r=1 处相等",
+      "pass": true,
+      "detail": "r=1 同值；r=2 相差 5.0000"
+    },
+    {
+      "name": "两解互为倒数（同一物理量的两种标法）",
+      "pass": true,
+      "detail": "0.847947 = 1/1.179319"
+    },
+    {
+      "name": "数据要求 r > 1（右手中性耦合更强）",
+      "pass": true,
+      "detail": "r=1.1793"
+    },
+    {
+      "name": "两种标法给同一物理方向 g_R > g_L",
+      "pass": true,
+      "detail": "r_minus2=1.1793>1, r_plus2=0.8479<1"
+    },
+    {
+      "name": "脚注的'互为倒数'说法不成立",
+      "pass": true,
+      "detail": "1/0.847562=1.1799 vs 0.847947"
+    },
+    {
+      "name": "无简单结构 r 命中 sqrt(5/3)（机制仍缺）",
+      "pass": true,
+      "detail": "最小偏差 12.2124%"
+    },
+    {
+      "name": "判决（迹排除/范数通过）不受 r 方向影响",
+      "pass": true,
+      "detail": "只依赖 R 本身"
+    }
+  ]
+}

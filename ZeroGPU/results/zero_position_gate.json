@@ -1,0 +1,64 @@
+{
+  "commutant": {
+    "1": {
+      "no_coupling": 1,
+      "with_coupling": 1
+    },
+    "2": {
+      "no_coupling": 2,
+      "with_coupling": 1
+    },
+    "3": {
+      "no_coupling": 3,
+      "with_coupling": 1
+    },
+    "4": {
+      "no_coupling": 4,
+      "with_coupling": 1
+    }
+  },
+  "obstruction": "direct-sum structure (no inter-layer operators), not finite dimensionality",
+  "escape_conditions": [
+    "H -> infinity",
+    "inter-layer coupling making algebra irreducible"
+  ],
+  "zero_lacks": "inter-layer coupling on L1 height layers",
+  "verdict": "[X,P]=i 的真障碍是【直和结构（无跨层元素）】，不是有限维性；L→∞ 单靠去维数不救。要救须同时：(a) H→∞，(b) 有跨层耦合使代数不可约。Zero 现在缺 (b)——L1 高度层无跨层耦合。",
+  "checks": [
+    {
+      "name": "障碍定位到单块（M_2）而非整体维数",
+      "pass": true,
+      "detail": "M_2 里 tr([x,p])=0≠2i"
+    },
+    {
+      "name": "迹定理非充分；直和结构才是真障碍",
+      "pass": true,
+      "detail": "无穷直和仍逐块失败"
+    },
+    {
+      "name": "直和代数的换位子维数 = H（随 H 无界）",
+      "pass": true,
+      "detail": "换位子 = ⊕ C·I_2"
+    },
+    {
+      "name": "无耦合时换位子维数 = H（可约）",
+      "pass": true,
+      "detail": "{1: 1, 2: 2, 3: 3, 4: 4}"
+    },
+    {
+      "name": "有耦合时换位子缩到标量（不可约）",
+      "pass": true,
+      "detail": "{1: 1, 2: 1, 3: 1, 4: 1}"
+    },
+    {
+      "name": "Zero 现在缺的是跨层耦合，不是维数",
+      "pass": true,
+      "detail": "见下"
+    },
+    {
+      "name": "判定已给出（障碍被重新定位）",
+      "pass": true,
+      "detail": "[X,P]=i 的真障碍是【直和结构（无跨层元素）】，不是有限维性；L→∞ 单靠去维数不救。要救须同时：(a) H→∞，(b) 有跨层耦合使代数不可约。Zero 现在缺 (b)——L1 高度层无跨层耦合。"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "M_e": 0.040349908219207586,
+  "M_e2": 0.001628115093298476,
+  "inv_c_ell": 784.4934169228674,
+  "candidate_784p5": 784.5,
+  "dev_from_784p5": -0.006583077132631843,
+  "sigma_estimate": 0.007844934169228674,
+  "decompositions": {
+    "28^2": 784,
+    "16*7^2": 784
+  },
+  "sourcing": {
+    "28": "C(8,2) from Gamma_8",
+    "16/7/1-2": "Z136 Thm2 table"
+  },
+  "window_distinct_values": [
+    784.0
+  ],
+  "still_missing": [
+    "why multiply 7^2",
+    "why half enters additively",
+    "why D3 base is 16 while D1 base is 16*7^2"
+  ],
+  "checks": [
+    {
+      "name": "M_e 与 Z019 印值一致",
+      "pass": true,
+      "detail": "0.0403499"
+    },
+    {
+      "name": "数据分辨率足以区分 784 与 784.5",
+      "pass": true,
+      "detail": "sigma~0.0078"
+    },
+    {
+      "name": "两种分解数值恒等（784）",
+      "pass": true,
+      "detail": "784 = 28^2 = 16*7^2"
+    },
+    {
+      "name": "两种分解加半槽后恒等（784.5）",
+      "pass": true,
+      "detail": "784.5"
+    },
+    {
+      "name": "轨道数 = 满 + 半（Z136 定理 2）",
+      "pass": true,
+      "detail": "8 = 7 + 1"
+    },
+    {
+      "name": "窗内不同值很少（非平凡）",
+      "pass": true,
+      "detail": "1 个"
+    },
+    {
+      "name": "已把 +1/2 的对象来源定位到 Z136 定理 2",
+      "pass": true,
+      "detail": "半满轨道"
+    },
+    {
+      "name": "仍缺：进入计数的方式（乘/加/权重）",
+      "pass": true,
+      "detail": "见 §D (d)-(f)"
+    }
+  ]
+}

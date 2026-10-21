@@ -1,0 +1,218 @@
+{
+  "chains": [
+    {
+      "id": "N1",
+      "note": "Z019 §4-6",
+      "name": "中微子质量形状",
+      "out": "m_nu3/m_e = (2/9)^15 / M_e^2",
+      "struct": "A_l=sqrt2, 2/9, 15, 三平台",
+      "free": 0,
+      "ext": 0,
+      "falsifiable": "是",
+      "scale_cancel": true
+    },
+    {
+      "id": "N2",
+      "note": "Z014 定理27-29",
+      "name": "Koide 形状/角度/振幅",
+      "out": "Q=2/3, theta=pi/2, b=sqrt2",
+      "struct": "Z3 正则表示; 圆分割; 块等功率",
+      "free": 0,
+      "ext": 0,
+      "falsifiable": "是(部分)",
+      "scale_cancel": true
+    },
+    {
+      "id": "N3",
+      "note": "Z121/Z122/Z123",
+      "name": "质量算子的角",
+      "out": "零点 3pi/4, 5pi/4; delta_0=pi/12-2/9",
+      "struct": "闭合 2pi 分 8 (seed 8)",
+      "free": 0,
+      "ext": 0,
+      "falsifiable": "是",
+      "scale_cancel": true
+    },
+    {
+      "id": "N4",
+      "note": "Z132",
+      "name": "闭合圆内部多吸引子谱",
+      "out": "频率 = log|2cos| 精确命中 (11/11)",
+      "struct": "闭合圆正则分划",
+      "free": 0,
+      "ext": 0,
+      "falsifiable": "是",
+      "scale_cancel": true
+    },
+    {
+      "id": "N5",
+      "note": "Z151",
+      "name": "高能弱混合角与 beta 系数",
+      "out": "sin^2(M_X)=3/8 精确; b=(41/10,-19/6,-7)",
+      "struct": "16 槽内容 + 迹条件",
+      "free": 0,
+      "ext": 0,
+      "falsifiable": "是",
+      "scale_cancel": true
+    },
+    {
+      "id": "N6",
+      "note": "Z151/Z155",
+      "name": "alpha_s 预言（条件式）",
+      "out": "alpha_s(M_Z)=0.1179 (0.2 sigma)",
+      "struct": "中间谱 + alpha_s-free 条件",
+      "free": 0,
+      "ext": 1,
+      "falsifiable": "是",
+      "scale_cancel": false
+    },
+    {
+      "id": "N7",
+      "note": "Z018 C4",
+      "name": "面积律有限尺寸修正（主预言）",
+      "out": "a_face(m)*m = 0.467 +- 0.008",
+      "struct": "量子运动学 + 离散闭环计数",
+      "free": 0,
+      "ext": 0,
+      "falsifiable": "是（数值阈值）",
+      "scale_cancel": true
+    },
+    {
+      "id": "N8",
+      "note": "Z018 C1",
+      "name": "有限前沿锥指数尾",
+      "out": "锥外 ~ exp[-mu_*(x-c_*t)]",
+      "struct": "闭式 c_*=tanh mu_*",
+      "free": 0,
+      "ext": 0,
+      "falsifiable": "是",
+      "scale_cancel": true
+    },
+    {
+      "id": "N9",
+      "note": "Z090",
+      "name": "超荷 5->1 与电荷量子化",
+      "out": "Y_R=Y_L+2T3; Y(夸克)=-Y(轻子)/N_c; sin^2=3/8",
+      "struct": "手性 + 色重数",
+      "free": 0,
+      "ext": 1,
+      "falsifiable": "是",
+      "scale_cancel": true
+    },
+    {
+      "id": "N10",
+      "note": "Z013 定理11-13",
+      "name": "rho 参数充要条件",
+      "out": "rho=1 <=> sum D_i v_i^2 = 0",
+      "struct": "纯代数恒等式",
+      "free": 0,
+      "ext": 0,
+      "falsifiable": "是",
+      "scale_cancel": true
+    }
+  ],
+  "reverse": [
+    {
+      "id": "R1",
+      "name": "1/c_ell = 28^2 + 1/2",
+      "why": "784.5 是测量值，结构数配说法"
+    },
+    {
+      "id": "R2",
+      "name": "alpha_em^-1(M_Z) = 16 x 8 = 128",
+      "why": "整数凑数（旧 Z23 已否）"
+    },
+    {
+      "id": "R3",
+      "name": "2^7 + 3^2 = 137",
+      "why": "旧记账式，Zero 侧无来源（旧 Z23 点名）"
+    }
+  ],
+  "criteria": [
+    [
+      "方向",
+      "结构 -> 数",
+      "数 -> 结构"
+    ],
+    [
+      "起点",
+      "内生结构量",
+      "测量值"
+    ],
+    [
+      "自由参数",
+      "0",
+      "—（配说法）"
+    ],
+    [
+      "输出",
+      "可测数",
+      "分解式"
+    ],
+    [
+      "可证伪",
+      "是（数值阈值）",
+      "否（恒等改写）"
+    ],
+    [
+      "换个数",
+      "链断",
+      "照样能配"
+    ]
+  ],
+  "n_free0": 10,
+  "n_ext0": 8,
+  "verdict": "库里正向链 10 条（全零自由参数，8 条零外部输入）；反向链 3 条已识别",
+  "checks": [
+    {
+      "name": "收集到 >=10 条链",
+      "pass": true,
+      "detail": "10 条"
+    },
+    {
+      "name": "全部链都零自由参数",
+      "pass": true,
+      "detail": "10/10"
+    },
+    {
+      "name": "N1 复现",
+      "pass": true,
+      "detail": "49.9513 meV"
+    },
+    {
+      "name": "N2 结构值",
+      "pass": true,
+      "detail": "Q=2/3 由块等功率"
+    },
+    {
+      "name": "N3 复现",
+      "pass": true,
+      "detail": "0.03957717"
+    },
+    {
+      "name": "N5 迹条件比 = 5/3（精确）",
+      "pass": true,
+      "detail": "5/3"
+    },
+    {
+      "name": "N10 是代数恒等式",
+      "pass": true,
+      "detail": "Z013 定理11"
+    },
+    {
+      "name": "反向链已被识别（3 条）",
+      "pass": true,
+      "detail": "R1-R3"
+    },
+    {
+      "name": "判据表已给出（6 条）",
+      "pass": true,
+      "detail": "见上"
+    },
+    {
+      "name": "盘点完成，结论已给出",
+      "pass": true,
+      "detail": "库里正向链 10 条（全零自由参数，8 条零外部输入）；反向链 3 条已识别"
+    }
+  ]
+}

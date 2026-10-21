@@ -1,0 +1,53 @@
+{
+  "common_primitive": "F2 (Z004: 1 bit/step; K4 = F2^2)",
+  "projection_balanced": true,
+  "projection_surjective": false,
+  "preimage_sizes": {
+    "n_distinct": 32
+  },
+  "avg_preimage_by_shell": {
+    "2": 20.0,
+    "3": 20.0,
+    "4": 20.0,
+    "6": 66.0
+  },
+  "measure_incompatible": true,
+  "verdict": "共同原语＝F₂：Z004 每步 1 bit；Z021 局部 K₄＝F₂²。桥：K₄ 闭走经非零泛函投影得 ±1 词，其 1 的个数恒为偶（F2 和为零）。奇偶闸门：W_L 平衡需恰 L/2 个 +1，故 L≡0 (mod 4) 时 W_L⊆像（满射，已验 L=4,8,12），L≡2 (mod 4) 时完全不相交（L=6 实测）。且 Hom(F2²,Z)=0（2-挠）⟹ 整数平衡无法由线性投影得到，桥只在奇偶对上时成立。",
+  "checks": [
+    {
+      "name": "M1 K₄ 闭走的步和恒为 0（自动）",
+      "pass": true,
+      "detail": "telescoping"
+    },
+    {
+      "name": "M1 投影 λ₁(x,y)=x 的 1 个数恒偶（F2 和为零）",
+      "pass": true,
+      "detail": "Σλ=0 ⟺ 偶数个 1"
+    },
+    {
+      "name": "M1 投影 λ₂(x,y)=y 的 1 个数恒偶（F2 和为零）",
+      "pass": true,
+      "detail": "Σλ=0 ⟺ 偶数个 1"
+    },
+    {
+      "name": "M1 投影 λ₃(x,y)=x+y 的 1 个数恒偶（F2 和为零）",
+      "pass": true,
+      "detail": "Σλ=0 ⟺ 偶数个 1"
+    },
+    {
+      "name": "M2 满射条件：L/2 为偶 ⟺ W_L⊆像",
+      "pass": true,
+      "detail": "L=6, W_L⊆像 = False"
+    },
+    {
+      "name": "M3 原像数随壳层变化（测度不可简单推前）",
+      "pass": true,
+      "detail": "{2: 20.0, 3: 20.0, 4: 20.0, 6: 66.0}"
+    },
+    {
+      "name": "判定已给出（原语共享，测度不兼容）",
+      "pass": true,
+      "detail": "共同原语＝F₂：Z004 每步 1 bit；Z021 局部 K₄＝F₂²。桥：K₄ 闭走经非零泛函投影得 ±1 词，其 1 的个数恒为偶（F2 和为零）。奇偶闸门：W_L 平衡需恰 L/2 个 +1，故 L≡0 (mod 4) 时 W_L⊆像（满射，已验 L=4,8,12），L≡2 (mod 4) 时完全不相交（L=6 实测）。且 Hom(F2²,Z)=0（2-挠）⟹ 整数平衡无法由线性投影得到，桥只在奇偶对上时成立。"
+    }
+  ]
+}

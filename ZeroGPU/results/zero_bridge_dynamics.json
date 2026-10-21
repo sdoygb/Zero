@@ -1,0 +1,45 @@
+{
+  "L": 4,
+  "closed_walks": 21,
+  "unconstrained": 81,
+  "image_has_W_L": true,
+  "preimage_counts_on_W_L": [
+    2
+  ],
+  "measure_uniform_on_W_L": true,
+  "D_K_ignores_plus_count": true,
+  "D_J_preserves_plus_count": true,
+  "verdict": "L=4 实测：桥在状态空间满射，且投影在 W_L 上【均匀】（每词恰 2 条原像）⟹ 测度兼容 ✓。但动力学不兼容：D_K 的投影可给 0/2/4 个 +1（W_L 不是不变子集），D_J 恒保 +1 个数；D_J 一步改两比特、D_K 的末位被闭合锁死。且闭合约束使投影比特强正相关（对角 30 vs 9）。故：桥是【状态空间＋测度】层面的，不是动力学同源。",
+  "checks": [
+    {
+      "name": "闭合是实质约束（非自动）",
+      "pass": true,
+      "detail": "21 / 81"
+    },
+    {
+      "name": "投影在 W_L 上诱导均匀测度",
+      "pass": true,
+      "detail": "原像数取值 [2]"
+    },
+    {
+      "name": "★发现：闭合约束使投影比特正相关（非独立）",
+      "pass": true,
+      "detail": "对角 30 vs 9"
+    },
+    {
+      "name": "Johnson 一步改【两】比特（Hamming 2）",
+      "pass": true,
+      "detail": "≤2"
+    },
+    {
+      "name": "W_L 不是 D_K 的不变子集",
+      "pass": true,
+      "detail": "D_K 可给 0/2/4 个 +1"
+    },
+    {
+      "name": "判定已给出（桥只到集合层）",
+      "pass": true,
+      "detail": "L=4 实测：桥在状态空间满射，且投影在 W_L 上【均匀】（每词恰 2 条原像）⟹ 测度兼容 ✓。但动力学不兼容：D_K 的投影可给 0/2/4 个 +1（W_L 不是不变子集），D_J 恒保 +1 个数；D_J 一步改两比特、D_K 的末位被闭合锁死。且闭合约束使投影比特强正相关（对角 30 vs 9）。故：桥是【状态空间＋测度】层面的，不是动力学同源。"
+    }
+  ]
+}

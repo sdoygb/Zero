@@ -1,0 +1,260 @@
+{
+  "script": "zero_l1_barren.py",
+  "checks": [
+    {
+      "name": "N1 L=4 exact vs grid",
+      "ok": true,
+      "detail": "rel=4.46e-05"
+    },
+    {
+      "name": "N1 L=6 exact vs grid",
+      "ok": true,
+      "detail": "rel=1.24e-04"
+    },
+    {
+      "name": "N1 L=8 exact vs grid",
+      "ok": true,
+      "detail": "rel=2.55e-04"
+    },
+    {
+      "name": "N1 L=10 exact vs grid",
+      "ok": true,
+      "detail": "rel=4.64e-04"
+    },
+    {
+      "name": "N1 L=12 exact vs grid",
+      "ok": true,
+      "detail": "rel=7.72e-04"
+    },
+    {
+      "name": "N1 L=14 exact vs grid",
+      "ok": true,
+      "detail": "rel=1.19e-03"
+    },
+    {
+      "name": "N1 L=16 exact vs grid",
+      "ok": true,
+      "detail": "rel=1.74e-03"
+    },
+    {
+      "name": "N2 global variance grows with L",
+      "ok": true,
+      "detail": "Var(20)/Var(4)=6.96"
+    },
+    {
+      "name": "N3 mean |gradient| stays O(1)",
+      "ok": true,
+      "detail": "min=1.286"
+    },
+    {
+      "name": "N4 top layer b_H=2 and largest",
+      "ok": true,
+      "detail": "b_H=2; Var_top > Var_bottom for all L"
+    },
+    {
+      "name": "N5 no 1/N suppression",
+      "ok": true,
+      "detail": "d log Var / d log N = 0.184"
+    },
+    {
+      "name": "N6 bottom-layer variance grows",
+      "ok": true,
+      "detail": "2.00 -> 3.71"
+    },
+    {
+      "name": "N7 L=16 layer variances positive, top largest",
+      "ok": true,
+      "detail": "top var=8192.0"
+    },
+    {
+      "name": "N8 effective layer variance peaks inside (not at top/bottom)",
+      "ok": true,
+      "detail": "peak h=3, eff=5.010"
+    },
+    {
+      "name": "N9 total layer-phase variance is O(1)+",
+      "ok": true,
+      "detail": "sum eff=10.860"
+    }
+  ],
+  "n_pass": 15,
+  "n_fail": 0,
+  "table": [
+    {
+      "L": 4,
+      "N": 6,
+      "var": 4.444444444444445,
+      "mean_abs_grad": 1.8037122072743506,
+      "var_top": 32.0,
+      "b_top": 2,
+      "var_bottom": 2.0,
+      "b_bottom": 4,
+      "max_area": 4,
+      "n_area_values": 5
+    },
+    {
+      "L": 6,
+      "N": 20,
+      "var": 6.4,
+      "mean_abs_grad": 1.7259282301684926,
+      "var_top": 162.0,
+      "b_top": 2,
+      "var_bottom": 2.25,
+      "b_bottom": 8,
+      "max_area": 9,
+      "n_area_values": 10
+    },
+    {
+      "L": 8,
+      "N": 70,
+      "var": 8.82938775510204,
+      "mean_abs_grad": 1.5580209825550364,
+      "var_top": 512.0,
+      "b_top": 2,
+      "var_bottom": 2.5,
+      "b_bottom": 16,
+      "max_area": 16,
+      "n_area_values": 17
+    },
+    {
+      "L": 10,
+      "N": 252,
+      "var": 11.705215419501133,
+      "mean_abs_grad": 1.3952350675860465,
+      "var_top": 1250.0,
+      "b_top": 2,
+      "var_bottom": 2.734375,
+      "b_bottom": 32,
+      "max_area": 25,
+      "n_area_values": 26
+    },
+    {
+      "L": 12,
+      "N": 924,
+      "var": 15.026929780176534,
+      "mean_abs_grad": 1.3427903847748972,
+      "var_top": 2592.0,
+      "b_top": 2,
+      "var_bottom": 2.953125,
+      "b_bottom": 64,
+      "max_area": 36,
+      "n_area_values": 37
+    },
+    {
+      "L": 14,
+      "N": 3432,
+      "var": 18.627883189072,
+      "mean_abs_grad": 1.2960949054317144,
+      "var_top": 4802.0,
+      "b_top": 2,
+      "var_bottom": 3.158203125,
+      "b_bottom": 128,
+      "max_area": 49,
+      "n_area_values": 50
+    },
+    {
+      "L": 16,
+      "N": 12870,
+      "var": 22.499906627086116,
+      "mean_abs_grad": 1.2855517677120751,
+      "var_top": 8192.0,
+      "b_top": 2,
+      "var_bottom": 3.3515625,
+      "b_bottom": 256,
+      "max_area": 64,
+      "n_area_values": 65
+    },
+    {
+      "L": 18,
+      "N": 48620,
+      "var": 26.611915419252995,
+      "mean_abs_grad": null,
+      "var_top": 13122.0,
+      "b_top": 2,
+      "var_bottom": 3.53485107421875,
+      "b_bottom": 512,
+      "max_area": 81,
+      "n_area_values": 82
+    },
+    {
+      "L": 20,
+      "N": 184756,
+      "var": 30.951943883443864,
+      "mean_abs_grad": null,
+      "var_top": 20000.0,
+      "b_top": 2,
+      "var_bottom": 3.70941162109375,
+      "b_bottom": 1024,
+      "max_area": 100,
+      "n_area_values": 101
+    }
+  ],
+  "layers_L16": [
+    {
+      "h": 1,
+      "b_h": 256,
+      "var": 3.3515625,
+      "weight": 0.01989121989121989,
+      "eff_var": 0.001326081326081326,
+      "max_area": 8
+    },
+    {
+      "h": 2,
+      "b_h": 4118,
+      "var": 10.51044691555405,
+      "weight": 0.31996891996891996,
+      "eff_var": 1.0760607086947414,
+      "max_area": 22
+    },
+    {
+      "h": 3,
+      "b_h": 4858,
+      "var": 35.161338031379785,
+      "weight": 0.3774669774669775,
+      "eff_var": 5.009833823260398,
+      "max_area": 34
+    },
+    {
+      "h": 4,
+      "b_h": 2518,
+      "var": 97.0839017059696,
+      "weight": 0.19564879564879564,
+      "eff_var": 3.716221397526758,
+      "max_area": 44
+    },
+    {
+      "h": 5,
+      "b_h": 880,
+      "var": 203.85061983471076,
+      "weight": 0.06837606837606838,
+      "eff_var": 0.9530600971160414,
+      "max_area": 52
+    },
+    {
+      "h": 6,
+      "b_h": 208,
+      "var": 379.85133136094674,
+      "weight": 0.01616161616161616,
+      "eff_var": 0.09921634611611302,
+      "max_area": 58
+    },
+    {
+      "h": 7,
+      "b_h": 30,
+      "var": 763.9111111111112,
+      "weight": 0.002331002331002331,
+      "eff_var": 0.004150765922327694,
+      "max_area": 62
+    },
+    {
+      "h": 8,
+      "b_h": 2,
+      "var": 8192.0,
+      "weight": 0.0001554001554001554,
+      "eff_var": 0.00019783031438043092,
+      "max_area": 64
+    }
+  ],
+  "slope_logvar_logn": 0.18439267141745727,
+  "formula": "Var = 4 N^-2 sum_{a!=0} a^2 n_a^2"
+}

@@ -1,0 +1,77 @@
+{
+  "baseline": {
+    "L": 25.4509,
+    "A_U": 42.412,
+    "A": [
+      59.019609818663824,
+      29.584984286397855,
+      14.05754421203736
+    ],
+    "alpha_em_inv_MZ": 127.95100065083757,
+    "sin2_MZ": 0.23122120292854617
+  },
+  "candidate": {
+    "expr": "16*8",
+    "value": 128,
+    "dev_rel": 0.0003829540129673713,
+    "factors": {
+      "16": "Z136 Thm2 (sixteen-slot carrier)",
+      "8": "Z090/Z095 (K4 double cover)"
+    }
+  },
+  "falsifiable_prediction": {
+    "A_U_pred": 42.4303747559359,
+    "sin2_pred": 0.23127624251823253,
+    "sin2_dev": 0.0002432424454308639
+  },
+  "decircularized": [
+    {
+      "branch": "SM-only",
+      "L": 25.4296,
+      "inv_alpha_em": 127.9385706497821
+    },
+    {
+      "branch": "中间谱",
+      "L": 27.0209,
+      "inv_alpha_em": 128.86720260656992
+    }
+  ],
+  "window_count": 1,
+  "checks": [
+    {
+      "name": "框架内重算与 Z151 表值相符",
+      "pass": true,
+      "detail": "sin2=0.231221"
+    },
+    {
+      "name": "候选与观测差 < 0.1%（注意：循环，见 §1b）",
+      "pass": true,
+      "detail": "dev=0.0383% (CIRCULAR)"
+    },
+    {
+      "name": "去循环后 128 的符合度不再压倒性",
+      "pass": true,
+      "detail": "min dev=0.0480%"
+    },
+    {
+      "name": "落在窗内的不同值不多（非平凡）",
+      "pass": true,
+      "detail": "1 个值"
+    },
+    {
+      "name": "两因子有独立结构出处",
+      "pass": true,
+      "detail": "16=Z136, 8=Z090/Z095"
+    },
+    {
+      "name": "弱混合角偏差 < 0.1%（若候选成立则它是预言）",
+      "pass": true,
+      "detail": "dev=0.0243%"
+    },
+    {
+      "name": "边界已声明（非预言、L 仍实测、能标不混）",
+      "pass": true,
+      "detail": "见 §5"
+    }
+  ]
+}

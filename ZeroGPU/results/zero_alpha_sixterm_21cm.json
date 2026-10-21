@@ -1,0 +1,64 @@
+{
+  "S_star": 137.00000000088352,
+  "S_electron": 137.03599908299714,
+  "closed_form": 137.036,
+  "closed_dev": 9.16e-07,
+  "delta_xi": 1.735388032764126e-05,
+  "R_MX": 1.2917383526466848,
+  "r": 0.8478229558610769,
+  "t": 34.59367830853025,
+  "RG_route_val": 137.0354503587876,
+  "two_route_diff": -0.0005490412123808504,
+  "alpha_s_spread": 0.0,
+  "sin_thetaM": 0.8474000448933744,
+  "nu_21_MHz": 1420.4882835754302,
+  "nu_21_dev_pct": 0.0058070429894204615,
+  "g_p_external": 5.58569,
+  "checks": [
+    {
+      "name": "V1a 三角和 = 90 度",
+      "pass": true,
+      "detail": "90.000000000000"
+    },
+    {
+      "name": "V1b S(theta*) = 137（精确）",
+      "pass": true,
+      "detail": "137.000000000884"
+    },
+    {
+      "name": "V1c S(theta^e) = 1/alpha（12 位）",
+      "pass": true,
+      "detail": "137.035999082997"
+    },
+    {
+      "name": "V2a 闭式偏差 < 1e-6",
+      "pass": true,
+      "detail": "9.16e-07"
+    },
+    {
+      "name": "V2b 位移式与实测相合 < 0.01%",
+      "pass": true,
+      "detail": "0.000865%"
+    },
+    {
+      "name": "V3a 两路自洽（相对 < 1e-5）",
+      "pass": true,
+      "detail": "绝对 -5.49e-04, 相对 4.0e-06（4.0 ppm）"
+    },
+    {
+      "name": "V3b sin(theta_M*) = r（同一量，差 < 1% 舍入级）",
+      "pass": true,
+      "detail": "-4.23e-04"
+    },
+    {
+      "name": "V4 alpha_s 在 alpha(0) 里消掉（极差 < 1e-9）",
+      "pass": true,
+      "detail": "极差 0.00e+00"
+    },
+    {
+      "name": "21cm 公式偏差 < 0.01%",
+      "pass": true,
+      "detail": "+0.0058%"
+    }
+  ]
+}
