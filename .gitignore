@@ -30,3 +30,7 @@ paper/
 _staging/
 check/
 QM/
+
+# ── 动画中间帧（可再生；成品 gif/mp4 仍入库）──────────────────
+ZeroGPU/results/anim_frames/
+ZeroGPU/results/anim_sk_blender/

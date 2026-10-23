@@ -1,0 +1,41 @@
+{
+ "B1": {
+  "candidate_A": "指数 = 2×(所在律的平方阶)",
+  "refuted": true,
+  "reason": "两处都是质量标度；'质量律有平方'不能区分"
+ },
+ "B2": {
+  "candidate_B": "指数 = 该量中振幅的幂次",
+  "D1": {
+   "quantity": "A^2",
+   "amp_power": 2,
+   "base": 784
+  },
+  "D3": {
+   "quantity": "M_R",
+   "amp_power": 0,
+   "base": 16
+  },
+  "reproduces_both": true
+ },
+ "B3": {
+  "counting_type_uses": 2,
+  "third_case_available": false,
+  "falsifiable": false
+ },
+ "B4": {
+  "why_not_upgraded": "计数型只有 2 处 ⟹ 任何条件都无法独立证伪",
+  "needed": "第三处，或一个独立于两处的理由"
+ },
+ "verdict": {
+  "B1 自我否证": "候选甲（'所在律的平方阶'）**被否证**——两处都是质量标度，区分不了。",
+  "B2 候选乙": "**指数 = 该量中振幅的幂次**：D_1（A²，幂次 2）→ 784；D_3（M_R，幂次 0）→ 16。两处复算通过。",
+  "B3 可证伪性": "计数型只有 **2** 处 ⟹ **无第三处可检验** ⟹ 候选乙无法独立证伪。",
+  "B4 判定": "这一步的性质是**两处的一致性**，不是**条件**；升档需造出第三处或独立理由。"
+ },
+ "assertions": {
+  "passed": 4,
+  "failed": 0,
+  "bad": []
+ }
+}

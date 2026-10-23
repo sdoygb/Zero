@@ -1,0 +1,14 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl k4_vertex
+Ka 0.000000 0.000000 0.000000
+Kd 0.274510 0.509804 0.784314
+Ks 0.330000 0.330000 0.330000
+
+newmtl k4_edge
+Ka 0.000000 0.000000 0.000000
+Kd 0.784314 0.352941 0.274510
+Ks 0.330000 0.330000 0.330000
+

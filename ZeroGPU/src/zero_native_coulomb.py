@@ -6,7 +6,7 @@ zero_native_coulomb.py —— Zero 自己的"库仑问题"：原生束缚态谱
 用户口径（2026-10-20）："不用退化出 QED，我们用自己的内生 Zero 理论"。
 
 本脚本不借 QED 的任何数（不 import 1/137、不借氢原子解），只用 Zero 自己的两件东西：
-  (1) Z147/Z033: 舞台上的离散泊松核 G = L^+  (L phi = -x, 解模常数唯一)
+  (1) Z147/Z033: 舞台上的离散泊松核 G = L^+  (L phi = +x, 解模常数唯一)
       —— 这是 Zero 版的 1/(4 pi r) 势（形状由维数给，幅度由舞台键几何给 A=1/(sigma*lb)）
   (2) Z144 路(ii): 交换型更新 J_ij = K_ij (phi_i - phi_j), K=A (邻接, 唯一) 精确给出势驱动
 
@@ -87,9 +87,9 @@ P_("\n§1 离散泊松核 G=L^+（Z033 定理16 / Z147）")
 Lpinv = np.linalg.pinv(L)
 # 单位荷在中心: x = delta_center - 1/N (零和化)
 x = np.zeros(N); x[center] = 1.0; x -= x.mean()
-phi = Lpinv @ (-x)                 # 解 L phi = -x（吸引势：中心为负井）
+phi = Lpinv @ x                   # 解 L phi = +x（正源 -> 中心正井；电子用 -diag(phi)）
 P_("  零和检验: sum(x)=%.3e" % x.sum())
-P_("  残差 max|L phi + x| = %.3e" % np.max(np.abs(L @ phi + x)))
+P_("  残差 max|L phi - x| = %.3e" % np.max(np.abs(L @ phi - x)))
 
 # 径向剖面: 按距离中心分箱
 r = np.array([np.linalg.norm(np.array(c) - np.array(coords[center])) for c in coords])
@@ -132,9 +132,9 @@ for nn in (15, 25, 35, 45):
     # 稀疏求解（大 n 下 dense 不可行）
     import scipy.sparse.linalg as spl
     Ls = laplacian_sparse(adjs)
-    phil = spl.lsqr(Ls, -xl, atol=1e-13, btol=1e-13, iter_lim=100000)[0]
+    phil = spl.lsqr(Ls, xl, atol=1e-13, btol=1e-13, iter_lim=100000)[0]
     phil -= phil.mean()
-    res = float(np.max(np.abs(Ls @ phil + xl)))
+    res = float(np.max(np.abs(Ls @ phil - xl)))
     rt = ratio_at(phil, coords_l, cen, 2.0, 4.0)
     convergence.append({"n": nn, "ratio_4_2": rt, "residual": res})
     P_("    %4d %14.4f %14.2e" % (nn, rt, res))
@@ -153,7 +153,7 @@ for rr in radii[:8]:
     val = float(np.mean(prof[rr]))
     cont = 1.0/(4*np.pi*rr)
     rel = (val+cont)/cont      # 势为负，比较 |phi| 与连续值
-    maxrel = max(maxrel, abs(rel-1.0))
+    maxrel = max(maxrel, abs(val/cont-1.0))
     P_("  %8.3f %14.8f %14.8f %14.6e" % (rr, val, cont, val/cont))
 check("格点修正非零（离散势 != 连续库仑）", maxrel > 1e-3,
       "max rel dev=%.3e" % maxrel)

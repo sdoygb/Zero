@@ -1,0 +1,93 @@
+{
+ "derived": [
+  {
+   "name": "词 w=(e_1..e_n)",
+   "content": "沿图的有向边序列",
+   "kind": "序列（结合）",
+   "algebra": "阿贝尔/组合"
+  },
+  {
+   "name": "散度 d_w in Z^C",
+   "content": "进入数 − 离开数",
+   "kind": "整数向量",
+   "algebra": "阿贝尔"
+  },
+  {
+   "name": "零和超平面 H_Q",
+   "content": "{x : sum x = 0}",
+   "kind": "阿贝尔群",
+   "algebra": "阿贝尔"
+  },
+  {
+   "name": "全分支/整数重数",
+   "content": "无概率 ⟹ 计数",
+   "kind": "计数",
+   "algebra": "阿贝尔"
+  },
+  {
+   "name": "终端与重播种",
+   "content": "款②逼出",
+   "kind": "—",
+   "algebra": "阿贝尔"
+  }
+ ],
+ "representations": {
+  "Z2_irreps_real": [
+   1,
+   1
+  ],
+  "Z2_irreps_complex": [
+   1,
+   1
+  ],
+  "has_3dim": false
+ },
+ "complex_field": {
+  "C_derivable": true,
+  "C3_derivable": false,
+  "reason": "C 是系数域；C^3 需要 3 维载体"
+ },
+ "dimension_candidates": {
+  "H_Q_with_C9": 8,
+  "Heawood_cycle_rank": 8,
+  "both_abelian": true
+ },
+ "bracket": {
+  "concatenation_associative": true,
+  "lie_bracket_anticommutative": true,
+  "one_implies_other": false
+ },
+ "candidates": [
+  {
+   "source": "{±1} 的复化",
+   "reason": "C[Z] 无穷维；截断到 3 需额外选取",
+   "verdict": "需额外选取"
+  },
+  {
+   "source": "图顶点数 |C|=3",
+   "reason": "给 Z^3 不是 C^3；|C| 是具名输入",
+   "verdict": "对象不对"
+  },
+  {
+   "source": "Fano 线 3 点",
+   "reason": "3 点的自由 Z-模 = Z^3；要 C^3 需给域与基",
+   "verdict": "需额外选取"
+  },
+  {
+   "source": "K_4 三循环点",
+   "reason": "组合结构，不给复向量空间",
+   "verdict": "需额外选取"
+  },
+  {
+   "source": "模流/相位",
+   "reason": "U(1) 相位一维复；不是 C^3 空间",
+   "verdict": "维数/对象不符"
+  }
+ ],
+ "verdict": "在'只有 Z_0'的约束下，C^3 不是 Z_0 的导出：Z_0 导出的结构全是阿贝尔/组合的；{±1} 无 3 维不可约表示；维数候选（H_Q、圈空间）虽能凑 8 但都阿贝尔；结合运算给不出李括号。故 C1' 不可加，路线乙走不通。",
+ "assertions": {
+  "passed": 6,
+  "failed": 0,
+  "bad": []
+ }
+}

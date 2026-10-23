@@ -1,0 +1,40 @@
+{
+ "He": -2.7831671667184783,
+ "K": {
+  "E4s": -551.9130404377174,
+  "E3d": -551.1609957172
+ },
+ "Sc": {
+  "A": -691.5906945965817,
+  "B": -691.8968310349193
+ },
+ "checks": [
+  {
+   "name": "S1 He 自洽，E≈-2.86（10%）",
+   "pass": true,
+   "detail": "E=-2.78317"
+  },
+  {
+   "name": "S2 K：E(4s¹) < E(3d¹)",
+   "pass": true,
+   "detail": "ΔE=-0.75204"
+  },
+  {
+   "name": "S3 Sc：E(4s²3d¹) < E(4s¹3d²)",
+   "pass": false,
+   "detail": "ΔE=+0.30614"
+  },
+  {
+   "name": "S4 若 S2/S3 不成立：自洽 LDA 也不给 Madelung（负结果）",
+   "pass": true,
+   "detail": "见结果"
+  },
+  {
+   "name": "S5 判定：标准 LDA，不是 Zero 原生；Zero 只提供 1/r 极限与密度",
+   "pass": true,
+   "detail": "见 doc §3"
+  }
+ ],
+ "n_fail": 1,
+ "boundary": "径向 LDA（Slater 交换），球平均；标准量子化学，不是 Zero 原生"
+}

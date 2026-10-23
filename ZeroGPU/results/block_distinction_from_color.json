@@ -1,0 +1,93 @@
+{
+ "fano": {
+  "points": 7,
+  "lines": [
+   [
+    0,
+    1,
+    3
+   ],
+   [
+    0,
+    2,
+    6
+   ],
+   [
+    0,
+    4,
+    5
+   ],
+   [
+    1,
+    2,
+    4
+   ],
+   [
+    1,
+    5,
+    6
+   ],
+   [
+    2,
+    3,
+    5
+   ],
+   [
+    3,
+    4,
+    6
+   ]
+  ],
+  "each_line_3": true,
+  "each_point_deg3": true
+ },
+ "colorless_criterion": "x ≡ 0 (mod 3)",
+ "labels": [
+  {
+   "label": "色判据 x ≡ 0 mod 3",
+   "scope": "有色 / 无色",
+   "verdict": "只给 2 档，给不出 3 块"
+  },
+  {
+   "label": "槽位 (v,a,c)",
+   "scope": "量子数",
+   "verdict": "是**态**的坐标，不是**块**的坐标"
+  },
+  {
+   "label": "相位 θ",
+   "scope": "质量",
+   "verdict": "同上；且到不了 M_I 标度（差 7.2 量级）"
+  },
+  {
+   "label": "代 (Z089 三频率槽)",
+   "scope": "重复次数",
+   "verdict": "3 代是**纵向**重复，不是块"
+  },
+  {
+   "label": "读数／局域化",
+   "scope": "稳态两支",
+   "verdict": "管读数，不管块"
+  },
+  {
+   "label": "**标度／块**",
+   "scope": "同量子数落不同标度段",
+   "verdict": "**缺**（E6 的 16 vs 10 在 Zero 上的空白）"
+  }
+ ],
+ "verdict": {
+  "block_distinction_from_color": false,
+  "missing_object": "Z_3 的相乘实现（三个 SU(3) 槽的轮换）",
+  "same_as": "Z058 (0.2) su(3) rank-2 Cartan 与李括号"
+ },
+ "interface": {
+  "Z057": "Z_3 是置换，不是相乘中心",
+  "Z058": "缺 su(3) rank-2 Cartan 与李括号",
+  "Z155_156": "中间谱色单态双重态是具名输入",
+  "common": "Zero 没有 Z_3 的相乘实现"
+ },
+ "assertions": {
+  "passed": 8,
+  "failed": 0,
+  "bad": []
+ }
+}

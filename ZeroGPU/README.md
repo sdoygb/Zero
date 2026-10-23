@@ -58,6 +58,39 @@ ZeroGPU/
 │   │                        96 条判据自检 → results/zero_sim.json。**新脚本从它 import**
 │   ├── z0_engine.py       ★ 忠实核心引擎（64 位安全版）＋ 自检（24 条断言）
 │   ├── zero_evo.py        ★ 统一多扇区引擎（12 通道）＋ 自检（20 条）
+│   ├── zero_faithful_v2.py ★ 忠实引擎 v2：L2 三亚层（6/18/4）＋三层角/α
+│   │                        ＋3 槽/模流＋质量/质子/21cm 读出；组件级毁灭（4+2+0）
+│   │                        与层规则并存；38 条自检
+│   ├── zero_destruction_emergence.py ★ 组件级毁灭：28 组件统一（年龄,−记录）
+│   │                        选 6；4顶+2中活，16中+6底灭；10 条自检
+│   ├── zero_destruction_capacity_free.py ★ 去掉容量 6：age0 留 22（4+18+0），
+│   │                        结构规则（deg−1 条入射边）给 6；11 条自检
+│   ├── zero_huayan_net.py ★ 华严/因陀罗网 → Zero 读出：GHZ 局部身份、
+│   │                        一与整体、无信号、嵌套计数；10 条自检
+│   ├── zero_social_port.py ★ 社会层 H4 → 当前 Zero：WVS R²、UCDP 重尾、
+│   │                        终端/闭合/概率映射；15 条自检
+│   ├── zero_elements_audit.py ★ 自然元素四层拆解：H/类氢可导出；
+│   │                        中性多电子/核素/丰度不可导出；7 条自检
+│   ├── zero_h2plus_1r.py ★ H2+ 1/r 极限：局部极小 R*=2.25 a.u.，
+│   │                        结合 0.068 Hartree；5 条自检
+│   ├── zero_h2_two_electron.py ★ H2 两电子：R*=2.0 a.u.，
+│   │                        结合 0.196 Hartree；5 条自检
+│   ├── zero_h2_pauli.py ★ H2 Pauli：E_triplet>E_singlet，
+│   │                        J=+0.236（R=2）；5 条自检
+│   ├── zero_closure_bond_toy.py ★ 纯闭合计数能否给键长：
+│   │                        负结果（极大在 R=0）；4 条自检
+│   ├── zero_sixterm_closure.py ★ 六项式+闭合相位：相位 0/π，
+│   │                        无 R~2 键长（负结果）；4 条自检
+│   ├── zero_record_entropy.py ★ 记录熵泛函：单调下降，
+│   │                        极小在端点（负结果）；4 条自检
+│   ├── zero_periodic_table.py ★ 周期表：Aufbau 生成＋
+│   │                        承重件逐项核对（6/6；生成≠推出）
+│   ├── zero_so4_degeneracy.py ★ SO(4) 简并第一试：n=2 spread
+│   │                        1.7%→1.2%；n≥3 未解析（6/6）
+│   ├── zero_madelung.py ★ Madelung 第一试：阶跃屏蔽负结果
+│   │                        （4s>3d，4/4 负结果）
+│   ├── zero_screening_scf.py ★ 自洽屏蔽第一试：径向 LDA，
+│   │                        He 验证通过；3d 开壳层不收敛（部分成功）
 │   ├── zero_evo_phase.py  相图／迟滞／行波／换图／α 扫描
 │   ├── zero_evo_speed.py  行波速度 vs 几何响应速度
 │   ├── zero_evo_long.py   4 条 10^6 步长跑＋李雅普诺夫＋时空图
@@ -94,6 +127,13 @@ ZeroGPU/
 | `zero_evo.md` | ★ 统一多扇区引擎：状态／通道／20 条自检／几何反转选择律／相图与迟滞／手性行波 |
 | `zero_layers.md` | ★ L0/L1/L2 层账：L1 高度静态读出、L2 三槽、persistent/fresh 口径分叉、脉冲响应 |
 | `zero_long_audit.md` | ★ 长跑审计：full 5×10^6 步与 layer 10^7 步；形状冻结、进程不卡 |
+| `zero_faithful_v2.md` | ★ 忠实引擎 v2：三亚层周期映射、6/18/4、三层角/α、质量/质子/21cm 读出；20k 代结果与未闭合接口 |
+| `zero_destruction_emergence.md` | ★ 组件级毁灭：无层标签，28 组件按（年龄,−记录）选 6；4顶+2中活、16中+6底灭；含容量扫描与只按记录的对照 |
+| `zero_destruction_capacity_free.md` | ★ 去掉容量 6：age0 留 22（4+18+0）；结构规则（顶点 deg−1 条入射边，当前代）给 4+2+0，无全局容量；含八种毁灭选择对照 |
+| `oldlibs_inventory.md` | ★ 旧库盘点：cosmos-construct／modular-equilibrium 是物理/数学，不是社会/政治/军事；唯一人文子集是佛教/华严 |
+| `zero_huayan_net.md` | ★ 华严/因陀罗网 → Zero：局部身份 S(A)=1 bit、一与整体、无信号、嵌套计数；10/10 |
+| `zero_social_bridge_proposal.md` | ★ 社会/政治/军事接入 Zero 的新线提案（未导入；映射＋最小模型＋判据） |
+| `zero_social_port.md` | ★ 社会层 H4 → 当前 Zero：WVS 0.27% 是恒等式、结构方差稳定、UCDP ΔAIC +112/+203、重尾等待、终端映射、圆满者=闭合事件、15/15 与边界 |
 | `zero_sublayers.md` | ★ L2 亚亚层 16/8/4 分级毁灭 prototype：底全灭、中留 2、顶不动；周期 4 |
 | `zero_faithful_sublayers.md` | ★ 忠实引擎里的 16/8/4：能跑、有周期 4，但 q/n_std 过冲，未复现观测 |
 | `zero_reseed_derivation.md` | ★ L1 记录 push-forward 的 16/8/4 reseed：周期 4、未毁层继续被播种；相位平均 0.224/0.360/0.416 |

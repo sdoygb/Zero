@@ -1,0 +1,34 @@
+{
+ "counting": {
+  "27_decomp": "16+10+1",
+  "Z136_decomp": "5bar+10+1",
+  "remaining_states": 11
+ },
+ "beta_shift": {
+  "bL_per_doublet": "1/3",
+  "b1_per_doublet": "1/5",
+  "n_doublets_total": "6",
+  "n_per_generation": "2"
+ },
+ "Z155_reproduced": {
+  "b_SM": [
+   -7,
+   -3.1666666666666665,
+   5.916666666666667
+  ],
+  "b_int": [
+   -7,
+   -1.1666666666666667,
+   6.916666666666667
+  ]
+ },
+ "criterion": "在 K_4 的 16 槽载体（Z136：V(K_4)×Z_2^iso×Z_2^chir）之外，存在一次新的 Z_2 扩张，其新增槽位恰好给出：每代 2 个色单态 SU(2) 双重态（Y/2 = ±1/2，手征配对），共 3 代 6 个；且这 6 个态对 (b_L, b_1) 的贡献恰为 (+2, +6/5)（等价于 b_Y 位移 +2）。",
+ "errors_fixed": [
+  "b_Y 与 b_1 混淆：b_Y = (5/3)b_1，故 +2 的 b_Y 位移 = +6/5 的 b_1 位移"
+ ],
+ "assertions": {
+  "passed": 6,
+  "failed": 0,
+  "bad": []
+ }
+}

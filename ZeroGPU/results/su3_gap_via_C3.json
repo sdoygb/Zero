@@ -1,0 +1,38 @@
+{
+ "dimension": {
+  "antihermitian": 9,
+  "su3": 8
+ },
+ "basis": {
+  "count": 8,
+  "traceless": true,
+  "hermitian": true
+ },
+ "cartan": {
+  "commute": true,
+  "cartan_dim": 2
+ },
+ "lie_bracket": {
+  "pairs": 64,
+  "not_closed": 0,
+  "max_trace": 0.0
+ },
+ "bypass": {
+  "Z3xZ3_exists": false,
+  "su3_from": "End(C^3)",
+  "obstacle_solved": false,
+  "obstacle_bypassed": true
+ },
+ "compatibility": {
+  "dim_M2": 4,
+  "dim_M3": 9,
+  "embedding": "left-upper block",
+  "is_extension": true
+ },
+ "verdict": "缺口可补：一旦有 C^3，su(3) 的 8 生成元 + 李括号 + rank-2 Cartan 一次得到（End(C^3) 机制）。Z_3×Z_3 的障碍被绕过（不是解决）。代价是承认 C^3 为新的基本对象（结构公设 C1'）。剩余差别：此 su(3) 是**整体的**；局域化仍需要位置（具名输入）。",
+ "assertions": {
+  "passed": 10,
+  "failed": 0,
+  "bad": []
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "penetration": {
+  "P4s": 0.37116903988823974,
+  "P3d": 0.9989384367283378,
+  "rc": 2.0
+ },
+ "rows": {
+  "K": [
+   {
+    "rc": 1.0,
+    "E4s": -0.19505928181801457,
+    "E3d": -18.453063978794773,
+    "inversion": false
+   },
+   {
+    "rc": 1.5,
+    "E4s": -5.709784608032004,
+    "E3d": -18.829503658196153,
+    "inversion": false
+   },
+   {
+    "rc": 2.0,
+    "E4s": -8.515982536282106,
+    "E3d": -18.83699129215534,
+    "inversion": false
+   }
+  ],
+  "Sc": [
+   {
+    "rc": 1.0,
+    "E4s": -1.1126018486433293,
+    "E3d": -22.53487319887568,
+    "inversion": false
+   },
+   {
+    "rc": 1.5,
+    "E4s": -8.408987987403904,
+    "E3d": -22.75557985222956,
+    "inversion": false
+   },
+   {
+    "rc": 2.0,
+    "E4s": -10.627551687973517,
+    "E3d": -22.75800794114878,
+    "inversion": false
+   }
+  ]
+ },
+ "checks": [
+  {
+   "name": "M1 简单启发式“P_4s>P_3d”不成立（实际 P_4s<P_3d）",
+   "pass": true,
+   "detail": "P4s=0.3712 < P3d=0.9989"
+  },
+  {
+   "name": "M2 阶跃模型预测 4s<3d 不成立（K/Sc，r_c=1.5 都给 4s>=3d）",
+   "pass": true,
+   "detail": "{'K': [False, False, False], 'Sc': [False, False, False]}"
+  },
+  {
+   "name": "M3 r_c 扫描 1.0–2.0，模型一致地错（全部 4s>=3d）",
+   "pass": true,
+   "detail": "{'K': [False, False, False], 'Sc': [False, False, False]}"
+  },
+  {
+   "name": "M4 判定：简单穿透/屏蔽不足，需要自洽多电子（标准模型，不是 Zero 原生）",
+   "pass": true,
+   "detail": "见 doc §3"
+  }
+ ],
+ "n_fail": 0,
+ "boundary": "阶跃屏蔽模型；Z,Nc,rc 是输入；标准量子化学，不是 Zero 原生"
+}

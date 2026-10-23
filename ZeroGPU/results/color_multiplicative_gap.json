@@ -1,0 +1,43 @@
+{
+ "clarification_1": {
+  "K4_double_cover_vertices": 8,
+  "Heawood_cycle_rank": 8,
+  "dim_su3": 8,
+  "same_object": false
+ },
+ "clarification_2": {
+  "spectrum": [
+   "(-0.5000000000000001+0.866025403784439j)",
+   "(-0.5000000000000001-0.866025403784439j)",
+   "(1-1.3256180803817732e-34j)"
+  ],
+  "three_distinguishable": true
+ },
+ "cartan_2": {
+  "Aut_Fano_order": 168,
+  "9_divides": false,
+  "has_Z3xZ3": false
+ },
+ "lie_bracket": {
+  "needs_multiplication": true,
+  "otimes_gives_it": false
+ },
+ "counting": {
+  "cartan_have": 1,
+  "raising": 6,
+  "total": 7,
+  "needed": 8,
+  "missing": 1
+ },
+ "rank": {
+  "su3_rank": 2,
+  "with_one_cartan": 1,
+  "structurally_different": true
+ },
+ "verdict": "色相乘中心不能靠 Fano/Heawood 补：第 2 个 Cartan 被 |Aut(Fano)|=168（9∤168）挡住；李括号需要的乘法也不由 ⊕→⊗ 提供（Z039 §3 表）。缺口 = 秩（第 2 个 Cartan）＋ 李括号，两者都不在现有载体里。",
+ "assertions": {
+  "passed": 7,
+  "failed": 0,
+  "bad": []
+ }
+}

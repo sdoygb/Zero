@@ -1,0 +1,83 @@
+{
+ "user_conjecture": "6/18/4 是三种零件的计数（4顶点/6边/18边×代），不是三层；毁灭差异因零件类型不同",
+ "sub_a_parts_not_layers": {
+  "verdict": "成立",
+  "library_docstring": "底 6 边、中 3 代×6 边、顶 4 顶点（zero_tau_6_18_4_graph.py）",
+  "array_shapes": {
+   "mb": [
+    6
+   ],
+   "mm": [
+    3,
+    6
+   ],
+   "mt": [
+    4
+   ]
+  },
+  "destruction_rules": {
+   "top": "at[:]=0 每代清零 -> 永不毁灭",
+   "middle": "am+=1，top2 清零 -> 只留 2",
+   "bottom": "ab+=1，到期全清 -> 全灭"
+  },
+  "gen4_alive": {
+   "bottom": 0,
+   "middle": 2,
+   "top": 4
+  }
+ },
+ "sub_b_layer_mapping": {
+  "verdict": "不成立",
+  "user_mapping": "4->L0, 18->L1, 6->L2",
+  "reason": "Z016 §3.4：物理格点＝L2 预设输入；Z021：Γ＝K4 ⟹ K4 顶点与边都在 L2；18 的代为记忆窗非 L1"
+ },
+ "stronger_statement": "三者同在 L2，区别为（零件类型 × 时间深度）：4=顶点当前权重、6=边当前权重、18=边最近3代权重",
+ "checks": [
+  {
+   "name": "(a) 三个数组形状恰为 6 / 3×6=18 / 4（计数即零件数）",
+   "pass": true,
+   "detail": "mb(6,) mm(3, 6) mt(4,)"
+  },
+  {
+   "name": "K4 边数 = 6（EDGES 长度）",
+   "pass": true,
+   "detail": "6 条"
+  },
+  {
+   "name": "K4 顶点数 = 4（EDGES 中出现的不重复顶点）",
+   "pass": true,
+   "detail": "4 个"
+  },
+  {
+   "name": "(a) 第4代：底 6 全灭",
+   "pass": true,
+   "detail": "底存活 = 0"
+  },
+  {
+   "name": "(a) 第4代：中 18 只留 2",
+   "pass": true,
+   "detail": "中存活 = 2"
+  },
+  {
+   "name": "(a) 第4代：顶 4 全在",
+   "pass": true,
+   "detail": "顶存活 = 4"
+  },
+  {
+   "name": "(b) 不成立：K4 顶点与边都在 L2（物理格点＝L2 输入，Z016 §3.4）",
+   "pass": true,
+   "detail": "Z016 §3.4：物理格点＝L2 预设；Z021：Γ＝K4"
+  },
+  {
+   "name": "(b) 不成立：18 的代索引是记忆窗，不是 L1 历史层",
+   "pass": true,
+   "detail": "L1 对象＝精确词/循环次序/双覆盖（Z016）；记忆窗是实现层缓冲"
+  },
+  {
+   "name": "★ 判定：(a) 成立；(b) 不成立（三者同在 L2，差在零件类型×时间深度）",
+   "pass": true,
+   "detail": "docstring + 数组形状 + Z016 §3.4"
+  }
+ ],
+ "verdict": "猜想 (a) 成立：6/18/4 是三种零件的计数，库内 docstring 原文即此；毁灭差异来自年龄重置规则（顶 at 清零/中 am top2/底 ab 全清），与层无关。但 (b) 不成立：K4＝物理格点＝L2 输入（Z016 §3.4），故顶点与边都在 L2，不是 4→L0；18 的代索引是记忆窗非 L1。更强结论：三者同在 L2，区别是零件类型×时间深度。"
+}

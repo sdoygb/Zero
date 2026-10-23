@@ -1,0 +1,84 @@
+{
+ "carrier": {
+  "slots8": 8,
+  "slots16": 16,
+  "slots32": 32
+ },
+ "capacity": {
+  "need": 22,
+  "available": 32,
+  "sufficient": true
+ },
+ "v0_slots16": [
+  {
+   "slot": "(0, 'up', 'L')",
+   "Y": "-1",
+   "occupant": "ν_L"
+  },
+  {
+   "slot": "(0, 'up', 'R')",
+   "Y": "0",
+   "occupant": "ν_R(补位)"
+  },
+  {
+   "slot": "(0, 'down', 'L')",
+   "Y": "-1",
+   "occupant": "e_L"
+  },
+  {
+   "slot": "(0, 'down', 'R')",
+   "Y": "-2",
+   "occupant": "e_R"
+  }
+ ],
+ "chirality": {
+  "new_v0_slots": [
+   "(0, 'up', 'L', 1)",
+   "(0, 'up', 'R', 1)",
+   "(0, 'down', 'L', 1)",
+   "(0, 'down', 'R', 1)"
+  ],
+  "gives_12_half": false,
+  "reason": "新坐标未赋角色时不改 Y；Y 仍取自 {−1,−1,0,−2}"
+ },
+ "Y_ledger": {
+  "lepton_doublet_Y_L": -1,
+  "intermediate_doublet_Y_L": 0,
+  "need_new_Y_base": true
+ },
+ "role_candidates": [
+  {
+   "name": "共轭（粒子↔反粒子）",
+   "how": "给每槽配共轭槽",
+   "verdict": "载体从手征变矢量型，但**全部** 16 槽都成对 ⟹ 32 槽，不是只给 6 个"
+  },
+  {
+   "name": "标度／块",
+   "how": "同量子数落在不同标度段",
+   "verdict": "这是真正缺的标签，但它是**读数层**的对象，**不是群角色**（不改量子数）"
+  },
+  {
+   "name": "代重复",
+   "how": "第三代副本",
+   "verdict": "已有 Z089 三频率槽管代，再加会重复计数"
+  },
+  {
+   "name": "N 与 L' 的区别",
+   "how": "区分两个双态",
+   "verdict": "N,L' 已由 Y/2=±1/2 区分，不需要新坐标"
+  }
+ ],
+ "beta_fingerprint": {
+  "n_doublets": 6,
+  "dbL": "2",
+  "db1": "6/5",
+  "dbY": "2",
+  "note_wrong_formula": "10/3"
+ },
+ "verdict": "第三次 Z_2 扩张在容量上可行（32 ≥ 22），但**不解决障碍**：16 槽的障碍不是槽数，是**手征性**（每槽一个 Weyl，无共轭槽）；而中间双态需要的是 (1,2,+1/2) 的槽位与新 Y 基（Y_L=0 的双态），这两个都不是加一个 Z_2 坐标能给的——Z_2 只给 2 个槽，不改 Y。",
+ "assertions": {
+  "passed": 6,
+  "failed": 0,
+  "bad": []
+ }
+}

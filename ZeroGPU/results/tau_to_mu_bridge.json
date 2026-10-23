@@ -1,0 +1,157 @@
+{
+ "question": "零和层慢模速率 γ₁ 是否由图 Laplacian 的 Fiedler 值 λ₁(L) 决定",
+ "T1_family": [
+  {
+   "graph": "path4",
+   "V": 4,
+   "L": 1,
+   "N_states": 19,
+   "fiedler": 0.585786437626905,
+   "gamma1": 0.34763683668645395,
+   "mean_degree": 1.5,
+   "mono_ok": true
+  },
+  {
+   "graph": "star4",
+   "V": 4,
+   "L": 1,
+   "N_states": 19,
+   "fiedler": 1.0,
+   "gamma1": 0.6023384591077402,
+   "mean_degree": 1.5,
+   "mono_ok": true
+  },
+  {
+   "graph": "K4",
+   "V": 4,
+   "L": 1,
+   "N_states": 19,
+   "fiedler": 3.9999999999999964,
+   "gamma1": 2.438447187191168,
+   "mean_degree": 3.0,
+   "mono_ok": true
+  },
+  {
+   "graph": "path6",
+   "V": 6,
+   "L": 1,
+   "N_states": 141,
+   "fiedler": 0.2679491924311227,
+   "gamma1": 0.1647429111876666,
+   "mean_degree": 1.6666666666666667,
+   "mono_ok": true
+  },
+  {
+   "graph": "ring6",
+   "V": 6,
+   "L": 1,
+   "N_states": 141,
+   "fiedler": 0.9999999999999998,
+   "gamma1": 0.6151142747462263,
+   "mean_degree": 2.0,
+   "mono_ok": true
+  },
+  {
+   "graph": "star6",
+   "V": 6,
+   "L": 1,
+   "N_states": 141,
+   "fiedler": 1.0,
+   "gamma1": 0.6285434094068687,
+   "mean_degree": 1.6666666666666667,
+   "mono_ok": true
+  },
+  {
+   "graph": "K23",
+   "V": 5,
+   "L": 1,
+   "N_states": 51,
+   "fiedler": 1.999999999999999,
+   "gamma1": 1.2585071065704376,
+   "mean_degree": 2.4,
+   "mono_ok": true
+  },
+  {
+   "graph": "K6",
+   "V": 6,
+   "L": 1,
+   "N_states": 141,
+   "fiedler": 6.0,
+   "gamma1": 3.8467363796373326,
+   "mean_degree": 5.0,
+   "mono_ok": true
+  },
+  {
+   "graph": "path8",
+   "V": 8,
+   "L": 1,
+   "N_states": 1107,
+   "fiedler": 0.1522409349774265,
+   "gamma1": 0.09481893092865887,
+   "mean_degree": 1.75,
+   "mono_ok": true
+  },
+  {
+   "graph": "ring8",
+   "V": 8,
+   "L": 1,
+   "N_states": 1107,
+   "fiedler": 0.5857864376269044,
+   "gamma1": 0.3649190053748762,
+   "mean_degree": 2.0,
+   "mono_ok": true
+  },
+  {
+   "graph": "star8",
+   "V": 8,
+   "L": 1,
+   "N_states": 1107,
+   "fiedler": 0.9999999999999989,
+   "gamma1": 0.6395040466995233,
+   "mean_degree": 1.75,
+   "mono_ok": true
+  },
+  {
+   "graph": "Q3(cube)",
+   "V": 8,
+   "L": 1,
+   "N_states": 1107,
+   "fiedler": 1.9999999999999973,
+   "gamma1": 1.2691235090464128,
+   "mean_degree": 3.0,
+   "mono_ok": true
+  }
+ ],
+ "T3_power_law": {
+  "prefactor": 0.6209057070184069,
+  "p": 1.0071906471562733,
+  "r2": 0.9995385265499499,
+  "n_points": 12
+ },
+ "T4_mean_degree": {
+  "p": 2.3031465834794917,
+  "r2": 0.6254165596581909
+ },
+ "T4_within_V": {
+  "4": {
+   "p": 1.0129179351726358,
+   "r2": 0.9999830949022676,
+   "n": 3
+  },
+  "6": {
+   "p": 1.0137853780517123,
+   "r2": 0.9999453277209894,
+   "n": 4
+  },
+  "8": {
+   "p": 1.009074086422921,
+   "r2": 0.9999338379063861,
+   "n": 4
+  }
+ },
+ "assertions": {
+  "passed": 6,
+  "failed": 0,
+  "bad": []
+ }
+}

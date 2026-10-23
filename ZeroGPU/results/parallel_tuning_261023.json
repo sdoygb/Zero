@@ -1,0 +1,100 @@
+{
+ "machine": {
+  "model": "iMac19,1 (Hackintosh, WhateverGreen=1)",
+  "cpu": "Genuine Intel @ 2.40GHz, 12 threads, L3=12MB",
+  "memory": "16GB DDR4-2667, 2 slots filled (DIMM_A1 + DIMM_B1), 2 empty",
+  "gpu_discrete": "AMD Radeon RX 570, 8GB, Metal 2",
+  "gpu_integrated": "Intel UHD Graphics 630, 1.5GB shared, IGPU@2"
+ },
+ "igpu_verdict": {
+  "hardware_present": true,
+  "metal_visible": false,
+  "metal_device_count": 1,
+  "opencl_visible": false,
+  "opencl_devices": [
+   "Intel CPU (CU=12)",
+   "AMD RX 570 (CU=32)"
+  ],
+  "policy": "AppleGraphicsDevicePolicy Config3/Config4: IGPU unload=Yes",
+  "actual_role": "VideoToolbox hardware decode (VTDecoderXPCServ -> IntelAccelerator)"
+ },
+ "mps_verdict": {
+  "available": true,
+  "torch": "2.2.2 (x86_64)",
+  "numpy": "2.5.2 (torch built for numpy 1.x -> warning)",
+  "speedup_vs_cpu": {
+   "V16_B256": 0.008,
+   "V16_B1024": 0.012,
+   "V16_B4096": 0.025,
+   "V64_B256": 0.134,
+   "V64_B1024": 0.249,
+   "V128_B256": 0.553
+  },
+  "existing_script_status": "z0_mps.py --verify FAIL: max_dq=3.07e-02 (judge <1e-5)",
+  "root_cause": "float32+threshold-norm (MPS) vs float64+lossless-norm (NumPy) => semantic inequivalence"
+ },
+ "parallel_scaling": {
+  "identical_tasks_n128_2000gens": {
+   "workers_1": {
+    "wall_s": 18.06,
+    "efficiency": 0.97
+   },
+   "workers_2": {
+    "wall_s": 9.52,
+    "efficiency": 0.92
+   },
+   "workers_4": {
+    "wall_s": 7.44,
+    "efficiency": 0.59
+   },
+   "workers_6": {
+    "wall_s": 6.35,
+    "efficiency": 0.46
+   },
+   "workers_8": {
+    "wall_s": 6.46,
+    "efficiency": 0.34
+   },
+   "workers_12": {
+    "wall_s": 6.81,
+    "efficiency": 0.21
+   },
+   "workers_24": {
+    "wall_s": 6.76,
+    "efficiency": 0.11
+   }
+  },
+  "real_workload_calibration": {
+   "config_pool": "18 configs (V=64/128/256 mixed) x 1500 gens",
+   "optimal_workers": 8,
+   "optimal_wall_s": 11.49,
+   "workers_12_wall_s": 12.15
+  }
+ },
+ "memory_bandwidth_wall": {
+  "single_process_GBps": 41.28,
+  "four_process_aggregate_GBps": 61.2,
+  "conclusion": "bandwidth saturated; adding cores gives diminishing/negative returns",
+  "pure_mem_parallel_speedup": {
+   "1": 1.0,
+   "2": 0.84,
+   "4": 0.51,
+   "8": 0.28,
+   "12": 0.19
+  },
+  "two_process_aggregate_GBps": 46.2,
+  "ddr4_2667_dual_channel_theoretical_GBps": 42.6,
+  "note": "single-thread 41.28 GB/s already near dual-channel theoretical ceiling; adding DIMMs cannot raise the ceiling"
+ },
+ "cpu_utilization_at_8_workers": "80.31% user + 13.53% sys + 6.14% idle",
+ "load_imbalance": {
+  "max_task_s": 2.609,
+  "mean_task_s": 1.14,
+  "factor": 2.3,
+  "lpt_gain": "13.47s -> 13.42s (negligible)"
+ },
+ "hardware_ceiling": {
+  "parallel_speedup_max_approx": 3.5,
+  "reason": "memory bandwidth wall"
+ }
+}

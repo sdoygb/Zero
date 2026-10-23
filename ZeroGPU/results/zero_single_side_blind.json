@@ -1,0 +1,122 @@
+{
+ "rho_V": {
+  "definition": "0.5*diag(0,1,1,0) + (V/2)(|01><10|+h.c.)",
+  "note": "不是标准 Werner 态（Z008 定理 16 特定构造）"
+ },
+ "blindness": {
+  "max_dev_from_I2_A": 0.0,
+  "max_dev_from_I2_B": 0.0,
+  "V0_vs_V1_marginal_diff": 0.0,
+  "V0_vs_V1_all_obs_max_diff": 0.0,
+  "n_observables": 2000
+ },
+ "I_q_at_V1": 2.0,
+ "I_acc": 1.0,
+ "signalling": 0.0,
+ "bipartition": {
+  "dim_A_L": 8,
+  "block_n_i": 2,
+  "obstruction": "M_4 -> ⊕M_2 需 4|2 为假",
+  "consequence": "无第二观测者，CHSH 不可执行"
+ },
+ "corrections": {
+  "data_cannot_identify_V": {
+   "rho_A_for_all_V": "I/2",
+   "consequence": "V 不可辨识；算不是从数据算"
+  },
+  "neighbor_not_part_of_L2": {
+   "dim_A_L": 8,
+   "dim_composite": 64,
+   "consequence": "在 𝒜_L⊗𝒜_L 里是第二因子，非 L2 子部分"
+  },
+  "user_correct_step": "主动撤回「空间」一词（避免跨对象替换）"
+ },
+ "removal_analysis": {
+  "citation": "Z008 推论 2.1（跨因子相干与扇区内分级需同一个非中心态）",
+  "noncentral_lives_in": "L2 内部（Z027 命题 3：块内两支不等权）",
+  "lost_by_removing": "两体描述能力（CHSH/纠缠/无信号定量式）",
+  "kept_by_removing": "L2 亚层结构、非中心态、2/9、5/9、I_q",
+  "missing_feeling": "观察者（Z009 §8.4：额外输入）",
+  "two_senses_of_exists": "代数结构：存在（dim 16H²）；物理对象：不存在"
+ },
+ "definite_result": {
+  "definition": "这一回实际出现的那一个值（不是分布）",
+  "example_L4": "6 个词，各 1/6；P(h=1)=4/6, P(h=2)=2/6；缺的是'哪一个'",
+  "rank_only": "Tr(ρP) 只依赖 rank P（四个方向给同一值）",
+  "distinction": "不确定（无知）vs 态不指定（描述不完整）——Z009 推论 11.4 选后者",
+  "chain": "分布←结构（定理6）；频率←分布（定理6.1）；单次值←没有来源"
+ },
+ "checks": [
+  {
+   "name": "ρ_V 迹为 1（合法态）",
+   "pass": true,
+   "detail": "Tr = 1.000000"
+  },
+  {
+   "name": "★ 测：单方边缘态恒为 I/2，对所有 V（对 V 完全失明）",
+   "pass": true,
+   "detail": "max|Δρ_A|=0.00e+00, max|Δρ_B|=0.00e+00"
+  },
+  {
+   "name": "★ 连'有没有邻居'都分不出：V=0 与 V=1 在 A 侧任何测量都不可区分",
+   "pass": true,
+   "detail": "max|Δ⟨M⟩| = 0.00e+00"
+  },
+  {
+   "name": "算：代数上 I_q > I_acc（那头确实有东西）",
+   "pass": true,
+   "detail": "I_q = 2.0000 bits"
+  },
+  {
+   "name": "验：Z036 定理 27 ⟹ 无双分划 ⟹ CHSH 不可执行（代数事实≠可测事实）",
+   "pass": true,
+   "detail": "需 4|2，为假；每块 n_i=2<4"
+  },
+  {
+   "name": "★ 判定：测=全盲／算=有／验=不可能（三层）",
+   "pass": true,
+   "detail": "§1 §2 失明；§3 代数有；§4 无第二观测者"
+  },
+  {
+   "name": "校正一：V 从 A 侧数据不可辨识（数据对它完全失明）",
+   "pass": true,
+   "detail": "ρ_A 对 V=0..1 完全相同；max|Δ⟨M⟩|=0.00e+00"
+  },
+  {
+   "name": "校正二：「邻居」不在 𝒜_L 内（Z036 定理 27），而在 𝒜_L⊗𝒜_L 里",
+   "pass": true,
+   "detail": "dim(𝒜_L)=8 < dim(𝒜_L⊗𝒜_L)=64"
+  },
+  {
+   "name": "★ 去掉复合代数：L2 的亚层结构不受影响（驱动它的非中心态在 L2 内部）",
+   "pass": true,
+   "detail": "Z027 命题 3（块内两支不等权）+ Z008 推论 2.1（两缺口是一个）"
+  },
+  {
+   "name": "★ 两种「存在」：代数上有（dim 16H²）／物理上没有（无第二观测者）",
+   "pass": true,
+   "detail": "代数 dim=64；物理：Z036 定理 27 判无"
+  },
+  {
+   "name": "★ 判定：可以去；L2 不会缺一块（那块本来不在 L2 里）；缺的是观察者",
+   "pass": true,
+   "detail": "§7：描述力≠物理内容；观察者是额外输入（Z009 §8.4）"
+  },
+  {
+   "name": "§8：结构给分布、不给'这一次是哪一个'（L=4 例）",
+   "pass": true,
+   "detail": "6 个词；分布 4/6 vs 2/6；缺的是'哪一个'"
+  },
+  {
+   "name": "§8：读数只依赖 rank（四个方向给同一值）⟹ 态不指定该问哪个问题",
+   "pass": true,
+   "detail": "max|读数 − w₁/2| = 2.78e-17"
+  },
+  {
+   "name": "§8：结构→分布→频率三环都通，第四环'这一次是哪一个'没有来源",
+   "pass": true,
+   "detail": "Z004 定理 6/6.1 通；Z009 §8.4 判额外输入"
+  }
+ ],
+ "verdict": "用户问的是认识论，前几轮答的是代数。三层结论：(1) 测：单方边缘态恒 I/2，V=0 与 V=1 在任何测量下不可区分 ⟹ 连'有没有邻居'都分不出（比'不知道邻居情况'更强）；(2) 算：代数上 I_q=2 bits > I_acc=1 bit，那头确实有东西；(3) 验：Z036 定理 27（𝒜_L 内最多一个 M_2）⟹ 无第二观测者 ⟹ CHSH 不可执行 ⟹ S=2√2 只是代数值。故'同一根绳'在 Zero 里是代数陈述，不是可操作事实。前一轮'可被实验证实'的表述对 Zero 不成立，本篇更正。"
+}
