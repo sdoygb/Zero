@@ -493,6 +493,8 @@ $$
 \boxed{\;\text{类 A 的四项}\ \longrightarrow\ \text{一个无量纲数 } N=\ell_{\rm edge}\,A^2c/\hbar.\;}\tag{4.8}
 $$
 
+> **2026-10-23 标注（类 A 的 $N$ 算出；并给出 (4.7) 的正确形式）**：**(i) (4.7) 与 (4.8) 互为倒数**——$(4.7)$ 写作 $\ell_{\rm edge}=\frac{\hbar}{A^2c}\cdot\frac1N$，而 $(4.8)$ 是 $N=\ell_{\rm edge}A^2c/\hbar$。用本节自己的端点判：$N=M_e^{-2}=614.21243$ 时，$(4.7)$ 给 $1.02\times10^{-18}$ m（**不是** $\lambdabar_C$），$(4.8)$ 给 $3.8616\times10^{-13}$ m（**是** $\lambdabar_C$）⟹ **$(4.8)$ 对**，$(4.7)$ 的倒数写反，应作 $\ell_{\rm edge}=\frac{\hbar}{A^2c}\cdot N$。**(ii) $N$ 有值了**：Z171 给出格距 $a=2.733357\times10^{-13}$ m（$=\lambda_C/\lambda_e^{\rm cells}$，$\lambda_e^{\rm cells}=2\pi/q=8.87667$），故 $N=a\cdot A^2c/\hbar=\mathbf{434.751}$；另一条独立式子 $N=2\pi M_e^{-2}/\lambda_e^{\rm cells}=434.755$，两者差 $+0.001\%$（即 $m_e$ 的 $1.88\times10^{-5}$）。**(iii) 两"单位"也归位**：注 167.16 的"输入 5 需时间单位"由 $\tau_{\rm step}=9.1175\times10^{-22}$ s 满足、"输入 1 跨到 A 需长度单位"由 $a$ 满足。**(iv) 档位是 C 不是 D**：$a$ 由电子的格上波长定，而"内禀频率 $\log2$ ⇔ 格上波长"是 Z118 的桥（该篇自陈"源-波耦合是假设待层间依据"）⟹ 这三项是**有条件地**给出。**(v) 故几何侧三条 obstruction 只剩两条（类 B、类 C）**。脚本 `ZeroGPU/src/z167_classA_close.py`（$5/5$）；详见 `_staging/推导/补Z167类A账_N算出与两单位归位.md`。
+
 **这个改写的价值在于换了问题所在的域**：
 
 | | 原问法 | 新问法 |
