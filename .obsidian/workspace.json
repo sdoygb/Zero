@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb043_毁灭与重播种：粗粒化映射、截面、以及为什么循环不增加可分辨状态.md",
+                "file": "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb043_毁灭与重播种：粗粒化映射、截面、以及为什么循环不增加可分辨状态"
+              "title": "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb043_毁灭与重播种：粗粒化映射、截面、以及为什么循环不增加可分辨状态.md",
+                "file": "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb043_毁灭与重播种：粗粒化映射、截面、以及为什么循环不增加可分辨状态.md",
+                "file": "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb043_毁灭与重播种：粗粒化映射、截面、以及为什么循环不增加可分辨状态.md",
+                "file": "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,9 +190,10 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb019_时间与演化：幺正生成元、KMS_条件、几何时间与热时间的分工.md",
+    "Zb043_毁灭与重播种：粗粒化映射、截面、以及为什么循环不增加可分辨状态.md",
     "Zb041_相位与代结构：Z₃_等变、三个相位的等间距、以及那个唯一的自由度_δ₀.md",
     "_staging/缺口补充进度.md",
-    "Zb019_时间与演化：幺正生成元、KMS_条件、几何时间与热时间的分工.md",
     "Zb048_层内结构：K₄_的边、三个完美匹配、以及_S₄_到_S₃_的同态.md",
     "_staging/缺口汇总一页.md",
     "Zb051_开普勒运动：中心力的角动量守恒、Binet_方程、椭圆解与_T²∝a³.md",
@@ -214,7 +215,6 @@
     "Zb016_离散到连续：缺陷角、正曲率的窗口、连续化的三条路线.md",
     "Zb047_账本熵：多重集的熵、最大值在均匀、以及粗粒化不减.md",
     "Zb036_氢原子与精细结构常数：$1_n^2$_谱、玻尔半径、以及_α_的记账位置.md",
-    "Zb023_场与观察者：局域代数、门、以及观察者作为子系统.md",
-    "Zb002_零的对象表：约束力作为独立的变量.md"
+    "Zb023_场与观察者：局域代数、门、以及观察者作为子系统.md"
   ]
 }
