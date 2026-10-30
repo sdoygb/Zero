@@ -308,10 +308,12 @@ $$
 
 | 新篇 | 标题（拟） | 能证明的核心 | 外部输入 |
 |:--|:--|:--|:--|
-| **Zb054** | 膨胀方程：FLRW 度规、Friedmann 两式、连续性方程、幂律解 | 由 (i)(ii) 推出 $\dot\rho+3H(\rho+p)=0$；$w$ 常数 $\Rightarrow a\propto t^{2/3(1+w)}$，$\rho\propto a^{-3(1+w)}$ | 空间曲率符号 $k$（结构选择 I） |
-| **Zb055** | 红移与距离：$1+z=a_0/a$、$d_L$、Etherington 关系、$H_0$ 的位置 | $k^0\propto1/a$ 给出红移；$d_A=d_L/(1+z)^2$ | $H_0$ 的数值、$q_0$（外部） |
-| **Zb056** | 暗物质：旋转曲线、维里定理、透镜偏折 | 平直旋转曲线 $\Rightarrow\rho\propto r^{-2}$；$2\langle K\rangle+\langle W\rangle=0$；$\alpha=4GM/(c^2b)$ | 观测的 $v(r)$、光度（外部） |
-| **Zb057** | 微波背景：黑体谱的红移、声视界、峰位 | 黑体在红移下**仍是黑体**，$T'\propto1/a$；$r_s=\int c_s\,dt/a$ | 解耦红移 $z_*$、重子-光子比（具名条件 C） |
-| **Zb058** | 黑洞：Schwarzschild 解、视界、ISCO、面积 | 真空 $R_{\mu\nu}=0$ 的球对称解唯一（Birkhoff 结构）；$r_s=2GM/c^2$；ISCO $=6GM/c^2$；$A=16\pi G^2M^2/c^4$ | 熵面积律 $S=A/4G\hbar$ 记为 **C** |
+| **Zb054** | 膨胀方程：FLRW 度规、Friedmann 两式、连续性方程、幂律解 | 由 (i)(ii) 推出 $\dot\rho+3H(\rho+p)=0$；$w$ 常数 $\Rightarrow a\propto t^{2/3(1+w)}$，$\rho\propto a^{-3(1+w)}$ ✅ | 空间曲率符号 $k$（结构选择 I） |
+| **Zb055** | 红移与距离：$1+z=a_0/a$、$d_L$、Etherington 关系、$H_0$ 的位置 | $k^0\propto1/a$ 给出红移；$d_A=d_L/(1+z)^2$ ✅ | $H_0$ 的数值、$q_0$（外部） |
+| **Zb056** | 微波背景：黑体谱的红移、声视界、峰位 | 黑体在红移下**仍是黑体**，$T'\propto1/a$；$r_s=\int c_s\,dt/a$ ✅ | 解耦红移 $z_*$、重子-光子比（具名条件 C） |
+| **Zb057** | 暗物质：旋转曲线、维里定理、透镜偏折 | 平直旋转曲线 $\Rightarrow\rho\propto r^{-2}$；$2\langle K\rangle+\langle W\rangle=0$；$\alpha=4GM/(c^2b)$ ✅ | 观测的 $v(r)$、光度（外部） |
+| **Zb058** | 黑洞：Schwarzschild 解、视界、ISCO、面积 | 真空球对称解唯一；$r_s=2GM/c^2$；ISCO $=6GM/c^2$（$v=c/2$）；$A=16\pi G^2M^2/c^4$ ✅ | 熵面积律 $S=A/4\hbar G$ 记为 **C** |
+
+**本块 5/5 完成（Zb054–Zb058）**。全库 58 篇，缺号 0。
 
 **顺序**：Zb054 → Zb055 → Zb057 → Zb056 → Zb058（前两篇建工具，后三篇用）。
