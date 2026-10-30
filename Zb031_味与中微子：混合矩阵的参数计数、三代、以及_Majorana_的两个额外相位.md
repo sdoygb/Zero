@@ -177,7 +177,7 @@ $$
 
 ## §3 幺正矩阵的参数
 
-> **定义 1.1（混合矩阵）.** 味本征态与质量本征态由幺正 $U\in U(n)$ 联系：$\lvert\text{味}_i\rangle=\sum_aU_{ia}\lvert\text{质量}_a\rangle$。
+> **定义 3.0（混合矩阵）.** 味本征态与质量本征态由幺正 $U\in U(n)$ 联系：$\lvert\text{味}_i\rangle=\sum_aU_{ia}\lvert\text{质量}_a\rangle$。
 
 > **定理 3.1（$U(n)$ 的维数）.**
 
@@ -340,7 +340,7 @@ $\blacksquare$
 
 ## §6 Majorana 情形
 
-> **定义 5.1（Majorana）.** 若中微子是自己的反粒子，则质量态的相位**不能**任意重定义（$\psi\mapsto e^{i\alpha}\psi$ 改变 Majorana 质量项的符号），故只能扣 $n$ 个相位（只来自味侧）。
+> **定义 6.0（Majorana）.** 若中微子是自己的反粒子，则质量态的相位**不能**任意重定义（$\psi\mapsto e^{i\alpha}\psi$ 改变 Majorana 质量项的符号），故只能扣 $n$ 个相位（只来自味侧）。
 
 > **定理 6.1（Majorana 参数数）.**
 
@@ -354,7 +354,7 @@ $n=3$ 时：$3$ 个角与 $3$ 个相位。
 
 *证明.* 相位部分：$\frac{n(n+1)}2-n=\frac{n^2+n-2n}2=\frac{n(n-1)}2$。$\blacksquare$
 
-> **推论 5.3（两个额外相位）.** Majorana 比 Dirac 多
+> **推论 6.2（两个额外相位）.** Majorana 比 Dirac 多
 
 $$
 \frac{n(n-1)}2-\frac{(n-1)(n-2)}2=n-1 .
