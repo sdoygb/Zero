@@ -420,3 +420,53 @@ $\operatorname{tr}L=256$ 对 $\varepsilon=0,0.05,0.2$ 不变；谱的各向异�
 2. 于是唯一的缺口收敛为一条：**$\partial_\tau w$ 由什么定**。
 
 这比"补 $K$ 层"是更强的表述：不是少一个组件，而是**同一个对象的方程还没写出来**。
+
+---
+
+# (甲) 试"二阶 w 方程"：结果（2026-10-30）
+
+## 出发点
+既然 $K=\partial_\tau w$ 是一阶量（Zb015 命题 3.3），$w$ 的方程应当是**二阶时间**的，相空间 $(w,\partial_\tau w)$。前三次（变分、谱 RG、场匹配）全是一阶/静态提法，没有相空间——这解释了它们为什么撞墙。
+
+## 试验一：二阶 + 场能量势
+$$\partial_\tau^2 w_e=-\kappa\,\frac{\partial V}{\partial w_e},\qquad V=\tfrac12 x^{\mathsf T}L(w)^{+}x$$
+
+数值（路径图 $n=6$，源在两端，$\kappa=0.5$ 与 $2.0$）：
+
+| $\kappa$ | 末端 $w$ | 动能 $\tfrac12|\dot w|^2$ |
+|--:|:--|--:|
+| $0.5$ | 全 $0$ | $2.9\times10^{9}$ |
+| $2.0$ | 全 $0$ | $1.2\times10^{10}$ |
+
+**无界**。原因是梯度单调：$\partial V/\partial w_e=-\tfrac12(\Delta\varphi_e)^2$ 恒负，故 $-\partial V/\partial w$ 恒正，$w$ 只往一个方向跑。
+
+**这是同一道障碍第三次出现**（前两次：一圈有效作用量两项同号；谱 RG 无源）。共同形态：**任何由场能量造出的势，其梯度都是单号的。**
+
+## 试验二：换几何作用量（Regge 型）
+由 Zb016 的缺陷角 $\delta=2\pi-k\theta$ 构造离散 Einstein–Hilbert 作用量，检验它是否非单调。
+
+平直构型：$A=0$（各顶点 $\sum$角 $=2\pi$ 精确）✓
+仿射变形（$x$ 边乘 $1+\varepsilon$、$y$ 边乘 $1-\varepsilon$）：$A=0$ 对 $\varepsilon\in\{0,0.05,0.1,0.2,-0.1\}$ **全部为零**。
+
+**为什么全零**：二维的 Regge 作用是 $\sum_v\delta_v=2\pi\chi$（Gauss–Bonnet），是**拓扑量**，与度量无关。故二维**根本没有局部引力自由度**——这也与 Zb011 的维数账相容（$D\ge3$ 才有引力）。
+
+真正的 Regge 作用是**乘积形式**：
+$$S_{\rm Regge}=\sum_{\rm hinge}\delta_{\rm hinge}\cdot{\rm vol}_{\rm hinge}
+\qquad
+\begin{cases}2\text{D}:&\text{铰链}=顶点,\ {\rm vol}=1\ \Rightarrow\ \text{拓扑}\\ 3\text{D}:&\text{铰链}=棱,\ {\rm vol}=|e|\ \Rightarrow\ \sum_e\delta_e|e|\\ 4\text{D}:&\text{铰链}=三角形,\ {\rm vol}=A_t\ \Rightarrow\ \sum_t\delta_tA_t\end{cases}$$
+
+## 得到的结论（三条）
+
+1. **二阶方程是对的提法**，但**势不能来自场能量**（梯度恒单号，必无界）。
+2. **势必须来自几何作用量**（Regge 型），其梯度在平直处为零——这才有驻点。
+3. **二维不能测试**（Regge 作用量退化为拓扑量）。要用三维的 $\sum_e\delta_e|e|$。
+
+## 与已有库件的关系
+- Zb016 已给缺陷角 $\delta_k=2\pi-k\theta$ 与正曲率窗口 $k\in\{3,4,5\}$——这是三维 Regge 作用的现成材料。
+- Zb015 命题 3.3 给 $K=\partial_\tau w$，故 $w$ 的二阶方程一旦写出，$K$ 的演化律就是它的推论。
+
+## 下一步
+在三维（正四面体三角剖分）上构造 $S_{\rm Regge}=\sum_e\delta_e|e|$，检验：
+(a) 平直构型是驻点；
+(b) 驻点不是孤立的（存在模方向，对应引力子的零模）；
+(c) 加源后驻点移动（这才给出"舞台随物质变"）。
