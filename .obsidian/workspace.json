@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
+                "file": "Zb022_纠缠与复合：Schmidt_分解、可分判据与_CHSH_的两条界.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理"
+              "title": "Zb022_纠缠与复合：Schmidt_分解、可分判据与_CHSH_的两条界"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
+                "file": "Zb022_纠缠与复合：Schmidt_分解、可分判据与_CHSH_的两条界.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
+                "file": "Zb022_纠缠与复合：Schmidt_分解、可分判据与_CHSH_的两条界.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
+                "file": "Zb022_纠缠与复合：Schmidt_分解、可分判据与_CHSH_的两条界.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,10 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb028_载体与局域性：张量积结构、局域代数生成全代数、场作为每点的纤维.md",
+    "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据.md",
+    "Zb019_时间与演化：幺正生成元、KMS_条件、几何时间与热时间的分工.md",
+    "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
     "Zb027_双缝：相位差、条纹间距与_Nyquist_可分辨极限.md",
     "Zb026_相位与_2π：单值性、通量量子化、自旋半整数的_4π_周期.md",
     "Zb025_开放系统：完全正、Kraus_表示与_Lindblad_生成元的保迹性.md",
@@ -199,9 +203,6 @@
     "Zb023_场与观察者：局域代数、门、以及观察者作为子系统.md",
     "Zb022_纠缠与复合：Schmidt_分解、可分判据与_CHSH_的两条界.md",
     "Zb021_测量：效应、无信号、退相干与指针基.md",
-    "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据.md",
-    "Zb019_时间与演化：幺正生成元、KMS_条件、几何时间与热时间的分工.md",
-    "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
     "Zb015_时空动态与四维_Lorentzian：ADM_分解、号差、静态性的对称判据.md",
     "Zb012_弱场与泊松：离散泊松方程的可解性、显式解与长程势.md",
     "Zb014_色散与横向分量：受迫稳态、频率锁定、对称性给出的零横波.md",
@@ -214,7 +215,6 @@
     "Zb007_稳态与内禀频率：模流、比值到频率、三频率槽.md",
     "Zb006_舞台与格点：平移不变性、行模、舞台是输入.md",
     "Zb005_桥与单位：格点色散、频率↔波长、唯一锚.md",
-    "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
-    "Zb003_层与词层：四层指标、词与闭合、维数字典.md"
+    "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md"
   ]
 }
