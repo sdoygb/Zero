@@ -39,6 +39,25 @@ import traceback
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+# 篇号模式：`Z{可选小写前缀}{三位数}_` —— 既认 Z001，也认 Zb001（重写库的前缀）
+NOTE_RE = re.compile(r"^Z([a-z]{0,2})(\d{3})_")
+NOTE_ID_RE = re.compile(r"^Z([a-z]{0,2})(\d{3})$")
+NOTE_GLOB = "Z*[0-9][0-9][0-9]_*.md"
+REF_RE = re.compile(r"Z([a-z]{0,2})(\d{3})")
+
+
+def note_id(name):
+    """文件名／key → 篇号（`Zb001`）；不是篇则 None。"""
+    stem = Path(str(name)).stem
+    m = NOTE_RE.match(stem)
+    return f"Z{m.group(1)}{int(m.group(2)):03d}" if m else None
+
+
+def note_prefix_num(pid):
+    """篇号 `Zb012` → (`Zb`, 12)。"""
+    m = NOTE_ID_RE.match(pid or "")
+    return (f"Z{m.group(1)}", int(m.group(2))) if m else (None, None)
 DEFAULT_LEDGER = ROOT / "_staging" / "检索台账"
 GROUPS_PATH = ROOT / "tools" / "zfind_groups.json"
 
@@ -89,7 +108,7 @@ def _excluded(part: str) -> bool:
 def tier_of(rel: Path):
     parts = rel.parts
     if len(parts) == 1:
-        return "篇" if re.match(r"Z\d{3}_", parts[0]) else None
+        return "篇" if NOTE_RE.match(parts[0]) else None
     top = parts[0]
     if top == "_staging":
         return "暂存"
@@ -291,7 +310,7 @@ def resolve_doc(s):
     hits = [d for d in docs() if d["key"] == s]
     if hits:
         return hits[0]
-    if re.fullmatch(r"Z\d{3}", s):          # 篇号：优先正式篇
+    if NOTE_ID_RE.fullmatch(s):             # 篇号：优先正式篇（Z001／Zb001）
         form = [d for d in docs() if d["tier"] == "篇" and d["key"].startswith(s + "_")]
         if len(form) == 1:
             return form[0]
@@ -429,8 +448,8 @@ RECALL_K = 8
 def short_of(name: str) -> str:
     """篇名 → 短名。Z020_长时间演化 → Z020；零散文档（D51／zero_closure）原样。"""
     stem = Path(str(name)).stem
-    m = re.match(r"(Z\d{3})_", stem)
-    return m.group(1) if m else stem
+    m = NOTE_RE.match(stem)
+    return f"Z{m.group(1)}{int(m.group(2)):03d}" if m else stem
 
 
 def recall_search(text: str, k: int = RECALL_K, timeout: int = 180) -> dict:
@@ -676,8 +695,8 @@ def short_name(name):
     d = doc_by_name(name)
     if not d:
         return Path(str(name)).stem
-    m = re.match(r"(Z\d{3})_", d["key"])
-    return m.group(1) if m else d["key"][:24]
+    pid = note_id(d["key"])
+    return pid if pid else d["key"][:24]
 
 
 def render_card(w, claim):
@@ -806,24 +825,30 @@ def cmd_lint(a):
     except Exception as e:  # noqa: BLE001
         issues.append((0, "style_check 无法运行", str(e)))
 
-    existing = {int(q.name[1:4]) for q in ROOT.glob("Z[0-9][0-9][0-9]_*.md")}
-    own = int(p.name[1:4]) if re.match(r"^Z\d{3}_", p.name) else None
-    nmax = max(existing) if existing else 0
-    archived = set(range(1, nmax + 1)) - existing
-    for m in re.finditer(r"Z(\d{3})", text):
-        n = int(m.group(1))
-        # 本篇自己的篇号不算引用（前言必写）；新库首篇时 ROOT 里还没有它
-        if n in existing or n == own:
+    have = {}                        # 前缀 → 已有的号集合
+    for q in ROOT.glob(NOTE_GLOB):
+        pid = note_id(q.name)
+        if pid:
+            pre, num = note_prefix_num(pid)
+            have.setdefault(pre, set()).add(num)
+    archived = {}                    # 前缀 → 缺号集合
+    for pre, nums in have.items():
+        archived[pre] = set(range(1, max(nums) + 1)) - nums
+    own = note_id(p.name)
+    for m in REF_RE.finditer(text):
+        pre, n = f"Z{m.group(1)}", int(m.group(2))
+        # 本篇自己的篇号不算引用（前言必写）；新库首篇时库里还没有它
+        if n in have.get(pre, set()) or f"Z{m.group(1)}{int(m.group(2)):03d}" == own:
             continue
         line = text.count("\n", 0, m.start()) + 1
-        tag = "缺号（已归档/撤号）" if n in archived else "不存在的篇号"
-        issues.append((line, f"悬空引用 {m.group(0)}：{tag}", ""))
+        tag = "缺号（已归档/撤号）" if n in archived.get(pre, set()) else "不存在的篇号"
+        issues.append((line, f"悬空引用 Z{pre[1:]}{n:03d}：{tag}", ""))
 
     lines = text.split("\n")
     for i, ln in enumerate(lines):
-        if "开放" in ln and not re.search(r"Z\d{3}", ln):
+        if "开放" in ln and not REF_RE.search(ln):
             win = "\n".join(lines[max(0, i - 2):i + 3])
-            if not re.search(r"Z\d{3}", win):
+            if not REF_RE.search(win):
                 issues.append((i + 1, "「开放」未点背靠定理", ln.strip()[:110]))
 
     issues.sort()
@@ -860,8 +885,16 @@ def cmd_groups(a):
 
 def audit_data():
     """快照：篇数/缺号/可搜篇数/README 漂移/体例基线/检索窗口（不加载正文，~0.3s）。"""
-    notes = sorted(ROOT.glob("Z[0-9][0-9][0-9]_*.md"))
-    nums = sorted(int(q.name[1:4]) for q in notes)
+    notes = sorted(ROOT.glob(NOTE_GLOB))
+    bypre = {}
+    for q in notes:
+        pid = note_id(q.name)
+        if not pid:
+            continue
+        pre, num = note_prefix_num(pid)
+        bypre.setdefault(pre, []).append(num)
+    prefix = max(bypre, key=lambda k: len(bypre[k])) if bypre else "Z"
+    nums = sorted(bypre.get(prefix, []))
     nmax = nums[-1] if nums else 0
     have = set(nums)
     missing = [n for n in range(1, nmax + 1) if n not in have]
@@ -931,14 +964,20 @@ def cmd_preflight(a):
 
     print("\n" + "─" * 72)
     formal = [d for d in docs() if d["tier"] == "篇"]
-    nums = sorted(int(d["key"][1:4]) for d in formal)
+    bypre = {}
+    for d in formal:
+        pid = note_id(d["key"])
+        if pid:
+            bypre.setdefault(note_prefix_num(pid)[0], []).append(note_prefix_num(pid)[1])
+    prefix = max(bypre, key=lambda k: len(bypre[k])) if bypre else "Z"
+    nums = sorted(bypre.get(prefix, []))
     nmax = nums[-1] if nums else 0
     missing = [n for n in range(1, nmax + 1) if n not in set(nums)]
     if nums:
-        print(f"库况：正式 {len(formal)} 篇（Z{nums[0]:03d}–Z{nmax:03d}，缺 {len(missing)} 个）；"
+        print(f"库况：正式 {len(formal)} 篇（{prefix}{nums[0]:03d}–{prefix}{nmax:03d}，缺 {len(missing)} 个）；"
               f"可检索 {len(docs())} 篇")
     else:
-        print(f"库况：**空库**（尚无正式篇；下一篇应为 Z001）；可检索 {len(docs())} 篇")
+        print(f"库况：**空库**（尚无正式篇；下一篇应为 {prefix}001）；可检索 {len(docs())} 篇")
 
     readme = ROOT / "README.md"
     if readme.exists():

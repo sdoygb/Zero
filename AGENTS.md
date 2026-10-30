@@ -7,6 +7,8 @@
 <!-- CARD:BEGIN -->
 ## §0 开工三步（缺一步不算开工）
 
+> **编号规则**：篇名一律 `Zb` ＋ 三位数（`Zb001`…）；前缀 `Zb` 专属本重写库，与冻结库的 `Z` 号不共用编号空间；正文不出现旧库编号（§6）。
+
 1. `python3 tools/zfind.py preflight` —— 打印本卡 ＋ 库况（空库会直接说“空库”）＋ 台账。
 2. 任务含「能不能／是否／有没有／无法／不行／缺」⟹ **先过 §1 检索门**（**第 0 步全语料召回** ＋ 四族），再动笔、再下结论。
 3. 落盘前 `python3 tools/zfind.py lint <新篇>` 必须 0 命中。
@@ -90,7 +92,7 @@
 | `python3 tools/zfind.py recall "原话问题"` | **第 0 步全语料召回**（含归档；写成检索窗口；结论门要查） |
 | `python3 tools/zfind.py window [--new]` | 检索窗口：看必读/已读状态；`--new` 按问题开新窗 |
 | `python3 tools/zfind.py prior "词"` | 既有判定：定理／开放／具名输入行（"已经做过什么"） |
-| `python3 tools/zfind.py read Z117 Z120` | 登记已读（结论门据此判） |
+| `python3 tools/zfind.py read Zb001 Zb002` | 登记已读（结论门据此判） |
 | `python3 tools/zfind.py conclude --claim "…"` | 结论门（族不全／必读未读／已读<3 ⟹ 拒绝） |
 | `python3 tools/zfind.py lint <篇>` | 断语／痕迹／悬空篇号／开放无背靠 |
 | `python3 tools/zfind.py groups --audit` | 同义词族体检（0 命中＝死词，删或换） |
