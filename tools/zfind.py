@@ -851,6 +851,19 @@ def cmd_lint(a):
             if not REF_RE.search(win):
                 issues.append((i + 1, "「开放」未点背靠定理", ln.strip()[:110]))
 
+    # R1 证明不许外包：「证明见某篇」「由前篇得」= 跨篇引了证明，而纪律只许引定义
+    for i, ln in enumerate(lines, 1):
+        if REF_RE.search(ln) and re.search(r"(证明见|见\s*Z\S*\s*的?证明|由前篇得|证明参照|证明从略)", ln):
+            issues.append((i, "[R1] 证明被外包到别的篇（要求篇内自足）", ln.strip()[:110]))
+
+    # R2 每个「定理/命题/引理」之后应有「证明」或「论证」。只看以粗体标记开头的定理句，
+    # 给 1400 字窗口；摘要、表格里的提及自然落空（各处只有一句）。
+    for m in re.finditer(r"\*\*(定理|命题|引理)\s*[0-9Zzb]", text):
+        window = text[m.start():m.start() + 1400]
+        if not re.search(r"\*(证明|论证)\*|(证明|论证)[.．：]", window):
+            line = text.count("\n", 0, m.start()) + 1
+            issues.append((line, f"[R2] {m.group(1)}后 1400 字内没有「证明/论证」", ""))
+
     issues.sort()
     data = {"ok": not issues, "file": p.name,
             "issues": [{"line": i, "tag": tag, "frag": frag} for i, tag, frag in issues]}
