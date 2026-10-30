@@ -176,7 +176,7 @@ S:=A_1\otimes(B_1+B_2)+A_2\otimes(B_1-B_2).
 \tag{3.1}
 $$
 
-> **定理 3.2（乘积态上界）.** 若 $\rho=\rho_A\otimes\rho_B$，则
+> **定理 4.1（乘积态上界）.** 若 $\rho=\rho_A\otimes\rho_B$，则
 
 $$
 \bigl|\operatorname{tr}(\rho S)\bigr|\ \le\ 2 .
