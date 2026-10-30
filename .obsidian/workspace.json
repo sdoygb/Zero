@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
+                "file": "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理"
+              "title": "Zb004_守恒与流：离散连续性方程、整数流与交换输运"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
+                "file": "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
+                "file": "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
+                "file": "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,8 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb013_张量扇区：每顶点对称张量、无迹投影、两个偏振.md",
+    "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
     "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
     "_staging/第三轮整合.md",
     "Zb030_谱、破缺与尺度：真空流形、Goldstone_计数与自由度守恒.md",
@@ -213,8 +215,6 @@
     "Zb035_统一：SU(5)_的嵌入、24_的分解、以及_sin²θ_W_=_3_8_的迹比.md",
     "Zb039_质量的来源：振幅平方、同舞台的质量比、以及三代振幅的整数分配.md",
     "Zb022_纠缠与复合：Schmidt_分解、可分判据与_CHSH_的两条界.md",
-    "_staging/缺口台账.md",
-    "_staging/新库开放项审计.md",
-    "_staging/整合总结.md"
+    "_staging/缺口台账.md"
   ]
 }

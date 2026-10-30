@@ -19,12 +19,13 @@ $$
 \tag{0.1}
 $$
 
-**三条正面结果**：
+**四条正面结果**：
 
 1. **熵分解（定理 3.2）**：块对角态的熵 $=H(w)+\sum_hw_h\ln d_h$；$d=2$ 时多出的恰是常数 $\ln2$。
 2. **Schmidt 分解（定理 1.2）**：任何纯态都能写成配对形式，$\lambda_i$ 是系数矩阵的奇异值平方。
 2. **可分判据（命题 1.3）**：纯态可分当且仅当其 Schmidt 秩为 1。
-3. **两条界（定理 3.1、3.2）**：乘积态的上界是 $2$，一般态的上界是 $2\sqrt2$——**两者之间的差距是可观测的**，这就是纠缠的判据。
+3. **两条界（定理 4.1、3.3）**：乘积态的上界是 $2$，一般态的上界是 $2\sqrt2$。
+4. **纠缠 $\ne$ Bell 违反（定理 5.1／5.2）**：Werner 态的可分门限是 $p\le\frac13$、CHSH 门限是 $p>\frac{1}{\sqrt2}$——**两条线不重合**。故存在**纠缠却 Bell 局域**的态（例：$p=\frac35$ 给 $S_{\max}=\frac{6\sqrt2}{5}=1.697<2$）。
 
 **一处记账**：把"复合系统"读作张量积 $\mathcal H_A\otimes\mathcal H_B$ 是**结构选择（I）**；由它推出的全部分解与界是定理。
 
@@ -173,14 +174,14 @@ $$
 
 $$
 S:=A_1\otimes(B_1+B_2)+A_2\otimes(B_1-B_2).
-\tag{3.1}
+\tag{4.1}
 $$
 
 > **定理 4.1（乘积态上界）.** 若 $\rho=\rho_A\otimes\rho_B$，则
 
 $$
 \bigl|\operatorname{tr}(\rho S)\bigr|\ \le\ 2 .
-\tag{3.2}
+\tag{4.2}
 $$
 
 *证明.* 记 $a_i=\operatorname{tr}(\rho_AA_i)$、$b_j=\operatorname{tr}(\rho_BB_j)$。由乘积性，
@@ -207,7 +208,7 @@ $$
 
 $$
 \bigl|\operatorname{tr}(\rho S)\bigr|\ \le\ \|S\|\ \le\ 2\sqrt2 .
-\tag{3.3}
+\tag{4.3}
 $$
 
 *证明.* **（i）$S^2$ 的展开**：由 $A_i^2=I$、$B_j^2=I$，
@@ -229,7 +230,7 @@ $$
 
 $$
 \bigl|\operatorname{tr}(\rho S)\bigr|=2\sqrt2 .
-\tag{3.4}
+\tag{4.4}
 $$
 
 *证明.* 直接计算（数值核验见篇末）：四个期望值之组合给 $2\sqrt2=2.8284\ldots$。$\blacksquare$
@@ -238,7 +239,73 @@ $$
 
 ---
 
-## §5 记账
+## §5 两条不同的线：纠缠不等于 Bell 违反
+
+§4 给了 CHSH 的两条界（可分侧 $2$、量子上界 $2\sqrt2$）。本节给一个**具体态**，说明"纠缠"与"违反 CHSH"是**两条不同的线**。
+
+> **定义 5.0（Werner 态）.** 记 $\lvert\Phi^+\rangle=\frac1{\sqrt2}(\lvert00\rangle+\lvert11\rangle)$，
+
+$$
+\rho_p:=p\,\lvert\Phi^+\rangle\langle\Phi^+\rvert+\frac{1-p}{4}I,\qquad 0\le p\le1 .
+\tag{5.1}
+$$
+
+> **定理 5.1（Bell 对角态的最大 CHSH）.** 设态在 Bell 基下对角：$\rho=\operatorname{diag}(p_1,p_2,p_3,p_4)$。则关联矩阵
+
+$$
+\mathbf c=\bigl(p_1-p_2+p_3-p_4,\ -p_1+p_2+p_3-p_4,\ p_1+p_2-p_3-p_4\bigr),
+\tag{5.2}
+$$
+
+且
+
+$$
+S_{\max}=2\sqrt{c_{(1)}^2+c_{(2)}^2},
+\tag{5.3}
+$$
+
+其中 $c_{(1)}\ge c_{(2)}$ 是 $|c_i|$ 的前两大。
+
+*证明.* Bell 对角态的关联矩阵是对角的 $T=\operatorname{diag}(c_1,c_2,c_3)$；CHSH 的最优值由 Horodecki 判据 $S_{\max}=2\sqrt{\lambda_1+\lambda_2}$ 给出，其中 $\lambda_i$ 是 $T^{\mathsf T}T$ 的前两个本征值，即 $c_i^2$ 的前两大。$\blacksquare$
+
+> **定理 5.2（Werner 态的两条门限不同）.**
+
+$$
+\text{可分}\iff p\le\tfrac13;\qquad
+\text{违反 CHSH}\iff p>\tfrac{1}{\sqrt2}.
+\tag{5.4}
+$$
+
+*证明.* 这是数值论证加一处引用：对 (4.6) 直接算 $T$，其本征值为 $(p,-p,p)$，故 $S_{\max}=2\sqrt{p^2+p^2}=2p\sqrt2$，于是 $S_{\max}>2\iff p>1/\sqrt2$；可分门限 $p\le\frac13$ 引用 Werner 态的 PPT 判据（标准结果）。$\blacksquare$
+
+**核验（我独立复算）.** 取 $p=\frac35$：
+
+| 量 | 值 |
+|:--|--:|
+| $T^{\mathsf T}T$ 的本征值 | $(0.36,\ 0.36,\ 0.36)$ |
+| $S_{\max}=2\sqrt{\lambda_1+\lambda_2}$ | $1.6970563$ |
+| 与 $6\sqrt2/5$ 比较 | 逐位相同 |
+| 可分门限 $1/3$ | $p=0.6>1/3$ ⟹ **纠缠** |
+| CHSH 门限 $1/\sqrt2$ | $p=0.6<0.707$ ⟹ **不违反** |
+
+$$
+\boxed{\;\text{故存在}\ \textbf{纠缠}\ \text{而}\ \textbf{Bell 局域}\ \text{的态};\quad \tfrac13\ne\tfrac{1}{\sqrt2}\ \text{是}\textbf{两条线}.\;}
+$$
+
+**读法（这条把两个概念分开）.**
+
+| 概念 | 判据 | 门限 |
+|:--|:--|:--|
+| **纠缠** | 不可写成可分的凸组合（PPT 等） | Werner：$p>\frac13$ |
+| **Bell 违反** | $S_{\max}>2$ | Werner：$p>\frac{1}{\sqrt2}$ |
+
+两门限之间的区间 $\bigl(\frac13,\frac{1}{\sqrt2}\bigr]$ 就是"纠缠但不违反 CHSH"的态。故"量子关联"与"非局域性"在本库的记账里是**两个不同的量**，不能互相替代。
+
+**边界.** 本节只算 CHSH（两组设置、两结果）。更多设置下的非局域性（如 $S>2$ 的其它不等式）不在本节范围；KH 定理那类"一切局域隐变量模型都不行"的结论也不在。
+
+---
+
+## §6 记账
 
 | 项 | 档位 | 说明 |
 |:--|:--|:--|
@@ -249,7 +316,7 @@ $$
 
 ---
 
-## §6 量纲
+## §7 量纲
 
 - $C_{ij}$、$\lambda_k$、$a_i$、$b_j$ 皆无量纲；$S$ 无量纲。
 - 本篇不引入有量纲常数。
