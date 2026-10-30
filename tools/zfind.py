@@ -845,8 +845,10 @@ def cmd_lint(a):
         issues.append((line, f"悬空引用 Z{pre[1:]}{n:03d}：{tag}", ""))
 
     lines = text.split("\n")
+    # 「开放」作为判定标记才要求点背靠；「开放系统／开放体系／开放量子系统」是术语（open system），不算
+    OPEN_MARK_RE = re.compile(r"开放(?!\s*(系统|体系|量子|边界|腔))")
     for i, ln in enumerate(lines):
-        if "开放" in ln and not REF_RE.search(ln):
+        if OPEN_MARK_RE.search(ln) and not REF_RE.search(ln):
             win = "\n".join(lines[max(0, i - 2):i + 3])
             if not REF_RE.search(win):
                 issues.append((i + 1, "「开放」未点背靠定理", ln.strip()[:110]))
