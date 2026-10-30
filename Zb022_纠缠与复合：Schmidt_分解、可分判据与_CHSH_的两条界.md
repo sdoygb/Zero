@@ -21,7 +21,8 @@ $$
 
 **三条正面结果**：
 
-1. **Schmidt 分解（定理 1.2）**：任何纯态都能写成配对形式，$\lambda_i$ 是系数矩阵的奇异值平方。
+1. **熵分解（定理 3.2）**：块对角态的熵 $=H(w)+\sum_hw_h\ln d_h$；$d=2$ 时多出的恰是常数 $\ln2$。
+2. **Schmidt 分解（定理 1.2）**：任何纯态都能写成配对形式，$\lambda_i$ 是系数矩阵的奇异值平方。
 2. **可分判据（命题 1.3）**：纯态可分当且仅当其 Schmidt 秩为 1。
 3. **两条界（定理 3.1、3.2）**：乘积态的上界是 $2$，一般态的上界是 $2\sqrt2$——**两者之间的差距是可观测的**，这就是纠缠的判据。
 
@@ -102,7 +103,71 @@ $$
 
 ---
 
-## §3 CHSH 的两条界
+## §3 熵：约化态的 von Neumann 熵与它的可加分解
+
+§1 给了 Schmidt 系数 $\lambda_i$。本节把它们读成一个数——**熵**。
+
+> **定义 3.0（von Neumann 熵）.** 对态 $\rho$，
+
+$$
+S(\rho):=-\operatorname{tr}\bigl(\rho\ln\rho\bigr)=-\sum_k\lambda_k\ln\lambda_k ,
+\tag{3.1}
+$$
+
+其中 $\lambda_k$ 是 $\rho$ 的本征值（约定 $0\ln0:=0$）。
+
+> **定理 3.1（纯态的纠缠熵）.** 若 $\lvert\psi\rangle=\sum_i\sqrt{\lambda_i}\lvert a_i\rangle\lvert b_i\rangle$（Schmidt 形式），则两侧约化态同谱，且
+
+$$
+S(\rho_A)=S(\rho_B)=-\sum_i\lambda_i\ln\lambda_i .
+\tag{3.2}
+$$
+
+*证明.* 由定理 1.2 的 Schmidt 形式，$\rho_A=\sum_i\lambda_i\lvert a_i\rangle\langle a_i\rvert$、$\rho_B=\sum_i\lambda_i\lvert b_i\rangle\langle b_i\rvert$——同一组本征值。代入 (3.1) 即得 (3.2)，且与基底选择无关（本征值不依赖基底）。$\blacksquare$
+
+> **定理 3.2（块对角态的熵分解）.** 若态在直和分解上是块对角的，且每块内是最大混合：
+
+$$
+\rho=\bigoplus_{h=1}^{H}w_h\,\frac{I_{d_h}}{d_h},\qquad \sum_hw_h=1,
+\tag{3.3}
+$$
+
+则
+
+$$
+S(\rho)=\underbrace{H(w)}_{\text{块间}}+\underbrace{\sum_hw_h\ln d_h}_{\text{块内}},\qquad H(w):=-\sum_hw_h\ln w_h .
+\tag{3.4}
+$$
+
+特别地，当 $d_h\equiv2$ 时
+
+$$
+S(\rho)=H(w)+\ln2 .
+\tag{3.5}
+$$
+
+*证明.* $\rho$ 的本征值是 $\{w_h/d_h\}$，每个重数 $d_h$。故
+
+$$
+S=-\sum_hd_h\cdot\frac{w_h}{d_h}\ln\frac{w_h}{d_h}
+=-\sum_hw_h(\ln w_h-\ln d_h)=H(w)+\sum_hw_h\ln d_h .
+$$
+
+$d_h\equiv2$ 时 $\sum_hw_h\ln2=\ln2$。$\blacksquare$
+
+**核验.** 取 $H=4$ 与随机权重：$d=2$ 时 $S(\rho)$ 与 $H(w)+\ln2$ 的差 $\le2.2\times10^{-16}$；$d=3$ 时 $S(\rho)$ 与 $H(w)+\ln3$ 的差 $\le10^{-15}$。
+
+**读法（块内贡献为什么是常数）.** 由 (3.5)：$d=2$ 的块对角态，其熵**总比经典熵多 $\ln2$**，且这个增量**与权重 $w$ 无关**。故
+
+$$
+\boxed{\;\text{块内最大混合 }d=2\ \Longrightarrow\ \text{熵的"量子"部分恰为}\ \ln2\ \text{（一个常数，不是自由度）}.\;}
+$$
+
+与 Zb019 命题 4.2 对照：那里的"中心态（块内最大混合）使模流在块内平凡"，这里的"块内最大混合使熵多一个常数 $\ln2$"——**同一个结构（块内是标量）的两个后果**。
+
+---
+
+## §4 CHSH 的两条界
 
 > **定义 3.1（CHSH 算符）.** 设 $A_1,A_2$（$A$ 侧）与 $B_1,B_2$（$B$ 侧）都是自伴、平方为 $I$、谱在 $\{\pm1\}$ 的算子：
 
@@ -173,7 +238,7 @@ $$
 
 ---
 
-## §4 记账
+## §5 记账
 
 | 项 | 档位 | 说明 |
 |:--|:--|:--|
@@ -184,7 +249,7 @@ $$
 
 ---
 
-## §5 量纲
+## §6 量纲
 
 - $C_{ij}$、$\lambda_k$、$a_i$、$b_j$ 皆无量纲；$S$ 无量纲。
 - 本篇不引入有量纲常数。
