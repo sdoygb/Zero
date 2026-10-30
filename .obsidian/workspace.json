@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
+                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb003_层与词层：四层指标、词与闭合、维数字典"
+              "title": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
+                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
+                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
+                "file": "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,7 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
     "_staging/第三轮整合.md",
     "Zb030_谱、破缺与尺度：真空流形、Goldstone_计数与自由度守恒.md",
     "Zb007_稳态与内禀频率：模流、比值到频率、三频率槽.md",
@@ -214,7 +215,6 @@
     "Zb022_纠缠与复合：Schmidt_分解、可分判据与_CHSH_的两条界.md",
     "_staging/缺口台账.md",
     "_staging/新库开放项审计.md",
-    "_staging/整合总结.md",
-    "Zb008_代数骨架：零和、传输、能量与两导数族.md"
+    "_staging/整合总结.md"
   ]
 }
