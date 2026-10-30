@@ -276,7 +276,7 @@ $$
 \tag{5.4}
 $$
 
-*证明.* 这是数值论证加一处引用：对 (4.6) 直接算 $T$，其本征值为 $(p,-p,p)$，故 $S_{\max}=2\sqrt{p^2+p^2}=2p\sqrt2$，于是 $S_{\max}>2\iff p>1/\sqrt2$；可分门限 $p\le\frac13$ 引用 Werner 态的 PPT 判据（标准结果）。$\blacksquare$
+*证明.* 这是数值论证加一处引用：对 (5.1) 直接算 $T$，其本征值为 $(p,-p,p)$，故 $S_{\max}=2\sqrt{p^2+p^2}=2p\sqrt2$，于是 $S_{\max}>2\iff p>1/\sqrt2$；可分门限 $p\le\frac13$ 引用 Werner 态的 PPT 判据（标准结果）。$\blacksquare$
 
 **核验（我独立复算）.** 取 $p=\frac35$：
 

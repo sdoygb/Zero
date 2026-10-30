@@ -81,7 +81,7 @@ $$
 
 $$
 w_{ij}=w^{(k)}_{ij}=k\,A_{ij}(A^{k-1})_{ij}\ \ (\text{或大 }k\text{ 极限 }\phi_i\phi_jA_{ij}).
-\tag{2.3}
+\tag{3.1}
 $$
 
 它对称、非负，其**各向同性部分**给出局部标度、**各向异性部分**给出方向结构。
@@ -90,7 +90,7 @@ $$
 
 $$
 N(x)=\frac{a(x)}{a_0}\quad(\text{取 }a_0\ \text{为参考格距}).
-\tag{2.4}
+\tag{3.2}
 $$
 
 即：**lapse 不是独立的场，它就是（相对于参考的）局部格距**。
@@ -102,7 +102,7 @@ $$
 $$
 K_{ij}=\frac{1}{2N}\cdot\frac{a_0}{c}\,\partial_\tau h_{ij}
 =\frac{1}{2}\cdot\frac{a_0^2}{a\,c}\,\partial_\tau h_{ij},
-\tag{2.5}
+\tag{3.3}
 $$
 
 其中 $h$ 是 $w$ 的各向同性部分。故 $K$ 不是新对象：**它是同一个 $w$ 对步的一阶导数**。
@@ -113,17 +113,17 @@ $$
 
 $$
 w^{(x)}=1+\varepsilon,\qquad w^{(y)}=1-\varepsilon
-\tag{2.6}
+\tag{3.4}
 $$
 
 则迹 $\operatorname{tr}L=2\sum_ew_e$ 与 $\varepsilon$ 无关（保体积），而谱的方向结构随 $\varepsilon$ 变。
 
 $$
 \operatorname{tr}L(\varepsilon=0)=\operatorname{tr}L(\varepsilon.05)=\operatorname{tr}L(\varepsilon.2)=256\quad(8\times8\ \text{方格}).
-\tag{2.7}
+\tag{3.5}
 $$
 
-*证明.* $\operatorname{tr}L=2\sum_ew_e$；两类边各 $2n_xn_y$ 条，权重和为 $(1+\varepsilon)+(1-\varepsilon)=2$，与 $\varepsilon$ 无关。数值核对见 (2.7)。$\blacksquare$
+*证明.* $\operatorname{tr}L=2\sum_ew_e$；两类边各 $2n_xn_y$ 条，权重和为 $(1+\varepsilon)+(1-\varepsilon)=2$，与 $\varepsilon$ 无关。数值核对见 (3.5)。$\blacksquare$
 
 > **命题 3.5（动态扇区的自由数据）.** 三维对称二阶张量有 $6$ 个分量。ADM 的两个约束恒等式（§4 定理 4.1）给出 $1+3=4$ 个方程：Hamiltonian 定迹、动量定纵向。故
 
@@ -131,16 +131,16 @@ $$
 \underbrace{6}_{\text{分量}}=\underbrace{1}_{\text{迹}}+\underbrace{3}_{\text{纵向}}+\underbrace{2}_{\text{TT}},
 \qquad
 \text{自由数据}\ =\ K^{\rm TT}\ \text{的 2 个分量}.
-\tag{3.3}
+\tag{3.6}
 $$
 
 *证明.* 计数：$K_{ij}$ 对称、$3\times3$，故 $6$ 个分量。迹是 $1$ 维（$\delta_{ij}$）；纵向形如 $D_iV_j+D_jV_i$，由 $V$ 的 $3$ 个分量给出；余下部分满足 $D_iK^{ij}=0$、$K^i{}_i=0$，维数 $6-1-3=2$。约束方程数：Hamiltonian $1$ 个（对 $K$ 没有时间导数）、动量 $3$ 个（只含 $D_jK$），共 $4$ 个，正好定住迹与纵向。$\blacksquare$
 
-**读法.** (3.3) 说明动态扇区的**载体与计数都齐了**：$K^{\rm TT}$ 的 2 个分量正是引力子的两个偏振（与 Zb013 的两个偏振同一维数）。由命题 3.4，它们在本库有现成的运动学载体——保体积、各向异性的边权调制。
+**读法.** (3.6) 说明动态扇区的**载体与计数都齐了**：$K^{\rm TT}$ 的 2 个分量正是引力子的两个偏振（与 Zb013 的两个偏振同一维数）。由命题 3.4，它们在本库有现成的运动学载体——保体积、各向异性的边权调制。
 
 $$
 \boxed{\;\text{动态扇区的形态}:\ \text{自由数据}=K^{\rm TT}\ (2);\quad \text{载体}=\text{保体积各向异性调制};\quad \text{演化律}\ \text{见命题 3.6}.\;}
-\tag{3.4}
+\tag{3.7}
 $$
 
 > **命题 3.6（演化律的归属）.** $K^{\rm TT}$ 的两个分量是否被源激发，取决于源与 $K^{\rm TT}$ 的耦合项；而源的独立性由 Zb008 命题 12.3 给出（源与度规来自两类输入）。故演化律的形态是「源的一个分量驱动 $K^{\rm TT}$」，本库尚缺这条耦合的显式形式。
@@ -161,7 +161,7 @@ $$
 
 $$
 \boxed{\;\text{边权场的步导数}\ \partial_\tau w\ \text{由什么定};\;}
-\tag{2.8}
+\tag{3.8}
 $$
 
 （这条记为「开放」，背靠 Zb008 推论 12.1 的场方程：方程的右端含源，而源是否激发 $\partial_\tau w$ 尚未建立。）
@@ -176,7 +176,7 @@ $$
 
 $$
 K_{ij}=\frac{1}{2N}\bigl(\partial_th_{ij}-D_i\beta_j-D_j\beta_i\bigr).
-\tag{4.0}
+\tag{4.1}
 $$
 
 > **定理 4.1（Hamiltonian 与动量约束恒等式）.** 对任意叶化，
@@ -185,16 +185,16 @@ $$
 2\,n^an^bG_{ab}={}^{(3)}R+K^2-K_{ij}K^{ij},
 \qquad
 n^aG_{ai}=-\,D_j\bigl(K^j{}_i-\delta^j{}_iK\bigr).
-\tag{4.1}
+\tag{4.2}
 $$
 
-*证明.* 把四维 Riemann 张量按法向与空间方向分解（Gauss–Codazzi 关系）：空间块给 ${}^{(3)}R_{ijkl}$ 与 $K$ 的二次项，法-空间块给 $D K$ 项。对 $G_{ab}=R_{ab}-\frac12Rg_{ab}$ 取 $n^an^b$ 与 $n^a(\cdot)_{i}$ 两个投影，即得 (4.1)。$\blacksquare$
+*证明.* 把四维 Riemann 张量按法向与空间方向分解（Gauss–Codazzi 关系）：空间块给 ${}^{(3)}R_{ijkl}$ 与 $K$ 的二次项，法-空间块给 $D K$ 项。对 $G_{ab}=R_{ab}-\frac12Rg_{ab}$ 取 $n^an^b$ 与 $n^a(\cdot)_{i}$ 两个投影，即得 (4.1)–(4.2)。$\blacksquare$
 
 > **推论 4.2（$K=0$ 时混合分量消失）.** 若 $K_{ij}=0$ 且 $\beta^i=0$，则
 
 $$
 2n^an^bG_{ab}={}^{(3)}R,\qquad n^aG_{ai}\equiv0 .
-\tag{4.2}
+\tag{4.3}
 $$
 
 *证明.* 把 $K=0$、$\beta=0$ 代入 (4.1)：第一式只剩 ${}^{(3)}R$；第二式的右端 $D_j(0)=0$。$\blacksquare$
@@ -258,7 +258,7 @@ N=c\,\sqrt{1-\frac{2M}{r}},\qquad a=-2M .
 \tag{5.3}
 $$
 
-*证明.* (4.4) 由 ADM 演化方程在 $K=0$、$\beta=0$ 处的静态度规给出。取迹：$D^2N=N{}^{(3)}R=0$。在 $h$ 下
+*证明.* (5.2) 由 ADM 演化方程在 $K=0$、$\beta=0$ 处的静态度规给出。取迹：$D^2N=N{}^{(3)}R=0$。在 $h$ 下
 
 $$
 D^2N=\frac{1}{r^2\sqrt A}\,\partial_r\Bigl(\frac{r^2}{\sqrt A}N'\Bigr)=0
@@ -266,11 +266,11 @@ D^2N=\frac{1}{r^2\sqrt A}\,\partial_r\Bigl(\frac{r^2}{\sqrt A}N'\Bigr)=0
 N'=\frac{c\,\sqrt A}{r^2}=\frac{c}{r^2}\Bigl(1-\frac{2M}{r}\Bigr)^{-1/2},
 $$
 
-积分并取 $N\to1$ 得 (4.5)。$\blacksquare$
+积分并取 $N\to1$ 得 (5.3)。$\blacksquare$
 
 **核验.** 对 $N=\sqrt{1-2M/r}$ 与 Schwarzschild 空间度规，逐分量核对 (5.2)：sympy 精确为零（含 $D_iD_jN-N{}^{(3)}R_{ij}$ 的 $6$ 个独立分量）。
 
-> **推论 5.4（唯一性）.** 在设定 5.1 下，解的空间部分是 (4.3)、时间部分是 (4.5)，仅含一个自由参数 $M$（质量的积分常数）。故
+> **推论 5.4（唯一性）.** 在设定 5.1 下，解的空间部分是 (5.1)、时间部分是 (5.3)，仅含一个自由参数 $M$（质量的积分常数）。故
 
 $$
 \boxed{\;g=-\Bigl(1-\frac{2M}{r}\Bigr)dt^2+\Bigl(1-\frac{2M}{r}\Bigr)^{-1}dr^2+r^2d\Omega^2\;}
@@ -320,7 +320,7 @@ $$
 
 $$
 \boxed{\;\text{四维 Lorentzian}=\underbrace{\text{号差（恒等式）}}_{}+\underbrace{\text{切片（I）}}_{}+\underbrace{(N,\beta)\ \text{由方程定（解）}}_{} .\;}
-\tag{4.1}
+\tag{7.1}
 $$
 
 ---
