@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb048_层内结构：K₄_的边、三个完美匹配、以及_S₄_到_S₃_的同态.md",
+                "file": "Zb019_时间与演化：幺正生成元、KMS_条件、几何时间与热时间的分工.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb048_层内结构：K₄_的边、三个完美匹配、以及_S₄_到_S₃_的同态"
+              "title": "Zb019_时间与演化：幺正生成元、KMS_条件、几何时间与热时间的分工"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb048_层内结构：K₄_的边、三个完美匹配、以及_S₄_到_S₃_的同态.md",
+                "file": "Zb019_时间与演化：幺正生成元、KMS_条件、几何时间与热时间的分工.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb048_层内结构：K₄_的边、三个完美匹配、以及_S₄_到_S₃_的同态.md",
+                "file": "Zb019_时间与演化：幺正生成元、KMS_条件、几何时间与热时间的分工.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb048_层内结构：K₄_的边、三个完美匹配、以及_S₄_到_S₃_的同态.md",
+                "file": "Zb019_时间与演化：幺正生成元、KMS_条件、几何时间与热时间的分工.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,7 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb048_层内结构：K₄_的边、三个完美匹配、以及_S₄_到_S₃_的同态.md",
     "_staging/缺口汇总一页.md",
     "Zb051_开普勒运动：中心力的角动量守恒、Binet_方程、椭圆解与_T²∝a³.md",
     "Zb052_潮汐与地月：同步半径、角动量记账、以及_快照_与_守恒量_的分界.md",
@@ -214,7 +215,6 @@
     "Zb023_场与观察者：局域代数、门、以及观察者作为子系统.md",
     "Zb002_零的对象表：约束力作为独立的变量.md",
     "Zb046_慢模与重标度：Schur_补、二阶小量、以及快模对慢模的有效作用.md",
-    "Zb006_舞台与格点：平移不变性、行模、舞台是输入.md",
-    "Zb017_源·舞台·传播·锚：引力接入的四笔账.md"
+    "Zb006_舞台与格点：平移不变性、行模、舞台是输入.md"
   ]
 }
