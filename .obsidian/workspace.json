@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb002_零的对象表：约束力作为独立的变量.md",
+                "file": "Zb030_谱、破缺与尺度：真空流形、Goldstone_计数与自由度守恒.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb002_零的对象表：约束力作为独立的变量"
+              "title": "Zb030_谱、破缺与尺度：真空流形、Goldstone_计数与自由度守恒"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb002_零的对象表：约束力作为独立的变量.md",
+                "file": "Zb030_谱、破缺与尺度：真空流形、Goldstone_计数与自由度守恒.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb002_零的对象表：约束力作为独立的变量.md",
+                "file": "Zb030_谱、破缺与尺度：真空流形、Goldstone_计数与自由度守恒.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb002_零的对象表：约束力作为独立的变量.md",
+                "file": "Zb030_谱、破缺与尺度：真空流形、Goldstone_计数与自由度守恒.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,7 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb002_零的对象表：约束力作为独立的变量.md",
     "Zb001_架构_零的两种读法与两条公理.md",
     "Zb042_核结合能：四段结构的来源、库仑项的精确积分、以及半经验公式的形状.md",
     "Zb007_稳态与内禀频率：模流、比值到频率、三频率槽.md",
@@ -214,7 +215,6 @@
     "Zb008_代数骨架：零和、传输、能量与两导数族.md",
     "Zb009_度量构造：闭环计数、截断后的局域性、Lovelock_的适用前提.md",
     "Zb010_连续极限与因果：O(a²)_收敛、支撑锥、锥边的可见性.md",
-    "Zb014_色散与横向分量：受迫稳态、频率锁定、对称性给出的零横波.md",
-    "Zb038_弱混合角与标度：跑动、两个常数的分工、以及一阶公式的检验.md"
+    "Zb014_色散与横向分量：受迫稳态、频率锁定、对称性给出的零横波.md"
   ]
 }
