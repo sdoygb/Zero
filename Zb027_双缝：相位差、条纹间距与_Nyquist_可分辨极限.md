@@ -23,6 +23,8 @@ $$
 1. **条纹公式（定理 2.1）**：两路振幅相加的模方给出 $\cos\Delta\varphi$ 的调制。
 2. **条纹间距（命题 2.2）**：小角下 $\Delta y=\lambda L/d$。
 3. **Nyquist 极限（定理 3.2）**：屏上的采样间距为 $a$ 时，条纹周期小于 $2a$ 就无法分辨——这是**格点舞台**给出的硬下限。
+4. **波长的来源（定理 4.1、推论 4.2）**：稳态的谱比 $p:q$ 经模流给出 $f=\log(p/q)$，再经 Zb005 的逆映射给格上波长；$p:q=2:1$ 时 $\lambda_{
+m lat}=8.8767$ 格。
 
 **一处记账**：屏（采样面）是 Zb006 意义下的**舞台（I）**；条纹间距依赖它，但条纹的存在不依赖。
 
@@ -108,7 +110,64 @@ $$
 
 ---
 
-## §4 记账
+## §4 条纹的波长从哪来：模流频率 → 格上波长
+
+§2 用 $\lambda$ 写条纹，但没问 $\lambda$ 从哪来。本节把它接上——$\lambda$ 由稳态的**模流频率**定出，中间只过 Zb005 的逆映射。
+
+> **定理 4.1（模流给出相干频率）.** 设稳态在二维上为 $\rho=\operatorname{diag}(p,q)$、$p+q=1$，模流生成元
+
+$$
+H_{\rm mod}=-\log\rho=\operatorname{diag}\bigl(-\log p,\ -\log q\bigr).
+\tag{4.1}
+$$
+
+则两路振幅的相干量 $\psi_1\psi_2^\ast$ 以
+
+$$
+f=H_2-H_1=\log\frac pq
+\tag{4.2}
+$$
+
+振荡。
+
+*证明.* 由 $H$ 对角，$\psi_j(t)=e^{-iH_jt}\psi_j(0)$，故 $\psi_1\psi_2^\ast(t)=e^{i(H_2-H_1)t}\psi_1\psi_2^\ast(0)$，振荡频率即 $H_2-H_1=\log(p/q)$。$\blacksquare$
+
+**核验.** 取 $p:q=2:1$：$H_{\rm mod}=\operatorname{diag}(0.4055,\,1.0986)$，$f=0.693147=\log2$（差 $<10^{-12}$）。
+
+> **推论 4.2（格上波长）.** 由 Zb005 定理 3.2 的逆映射与命题 3.3 的格上波长，
+
+$$
+q=2\arcsin\frac{f}{2c},\qquad \lambda_{\rm lat}=\frac{2\pi a}{q}.
+\tag{4.3}
+$$
+
+取 $f=\log2$、$c=1$、$a=1$：
+
+$$
+q=0.707832\ \text{rad},\qquad \lambda_{\rm lat}=8.8767\ \text{格}.
+\tag{4.4}
+$$
+
+*证明.* 直接代 (4.2) 入 (4.3)。$\blacksquare$
+
+**两个极限的对照.** 连续极限给 $\lambda=2\pi a/f=9.0647$ 格，格上值比它小 $2.07\%$——这是 $2\arcsin$ 与线性近似之差，量级 $f^2/24$。
+
+$$
+\frac{2\pi/f-2\pi/q(f)}{2\pi/f}=1-\frac{q(f)}{f}\approx\frac{f^2}{24}=0.0200 .
+$$
+
+**读法（这条链的档位）.** 从"稳态的谱比 $2:1$"到"条纹间距"的整条链是：
+
+$$
+\underbrace{p:q}_{\text{稳态}}\ \longrightarrow\ \underbrace{f=\log(p/q)}_{\text{定理 4.1}}\ \longrightarrow\ \underbrace{q=2\arcsin\frac f{2c}}_{\text{Zb005 定理 3.2}}\ \longrightarrow\ \underbrace{\lambda_{\rm lat}}_{\text{命题 3.3}}\ \longrightarrow\ \underbrace{\Delta y=\frac{\lambda L}{d}}_{\text{命题 2.2}} .
+\tag{4.5}
+$$
+
+其中 $p:q=2:1$ 是**结构选择（I）**；给定它，后面的每一步都是定理。
+
+---
+
+## §5 记账
 
 | 项 | 档位 | 说明 |
 |:--|:--|:--|
@@ -119,7 +178,7 @@ $$
 
 ---
 
-## §5 量纲
+## §6 量纲
 
 - $k$：长度$^{-1}$；$r_i,\ d,\ L,\ y,\ a$：长度；$\Delta\varphi$ 无量纲。
 - 条纹间距 $\Delta y$ 与 $\lambda L/d$ 同量纲（长度）。
