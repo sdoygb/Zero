@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb008_代数骨架：零和、传输、能量与两导数族.md",
+                "file": "Zb009_度量构造：闭环计数、截断后的局域性、Lovelock_的适用前提.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb008_代数骨架：零和、传输、能量与两导数族"
+              "title": "Zb009_度量构造：闭环计数、截断后的局域性、Lovelock_的适用前提"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb008_代数骨架：零和、传输、能量与两导数族.md",
+                "file": "Zb009_度量构造：闭环计数、截断后的局域性、Lovelock_的适用前提.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb008_代数骨架：零和、传输、能量与两导数族.md",
+                "file": "Zb009_度量构造：闭环计数、截断后的局域性、Lovelock_的适用前提.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb008_代数骨架：零和、传输、能量与两导数族.md",
+                "file": "Zb009_度量构造：闭环计数、截断后的局域性、Lovelock_的适用前提.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,11 +190,12 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb010_连续极限与因果：O(a²)_收敛、支撑锥、锥边的可见性.md",
+    "Zb008_代数骨架：零和、传输、能量与两导数族.md",
     "Zb009_度量构造：闭环计数、截断后的局域性、Lovelock_的适用前提.md",
     "AGENTS.md",
     "Zb007_稳态与内禀频率：模流、比值到频率、三频率槽.md",
     "Zb006_舞台与格点：平移不变性、行模、舞台是输入.md",
-    "Zb008_代数骨架：零和、传输、能量与两导数族.md",
     "Zb005_桥与单位：格点色散、频率↔波长、唯一锚.md",
     "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
     "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
