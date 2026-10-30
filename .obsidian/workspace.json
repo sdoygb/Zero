@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
+                "file": "Zb021_测量：效应、无信号、退相干与指针基.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb004_守恒与流：离散连续性方程、整数流与交换输运"
+              "title": "Zb021_测量：效应、无信号、退相干与指针基"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
+                "file": "Zb021_测量：效应、无信号、退相干与指针基.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
+                "file": "Zb021_测量：效应、无信号、退相干与指针基.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
+                "file": "Zb021_测量：效应、无信号、退相干与指针基.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,7 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
     "Zb013_张量扇区：每顶点对称张量、无迹投影、两个偏振.md",
     "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
     "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
@@ -214,7 +215,6 @@
     "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据.md",
     "Zb035_统一：SU(5)_的嵌入、24_的分解、以及_sin²θ_W_=_3_8_的迹比.md",
     "Zb039_质量的来源：振幅平方、同舞台的质量比、以及三代振幅的整数分配.md",
-    "Zb022_纠缠与复合：Schmidt_分解、可分判据与_CHSH_的两条界.md",
-    "_staging/缺口台账.md"
+    "Zb022_纠缠与复合：Schmidt_分解、可分判据与_CHSH_的两条界.md"
   ]
 }
