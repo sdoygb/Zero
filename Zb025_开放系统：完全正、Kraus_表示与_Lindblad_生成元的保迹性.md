@@ -68,7 +68,9 @@ $$
 
 > **命题 2.2（正但不完全正的例子）.** 转置映射 $T(\rho)=\rho^{\mathsf T}$ 正、保迹，但**不**完全正。
 
-*证明.* 正性：$\rho\ge0\Rightarrow\rho^{\mathsf T}\ge0$；保迹：$\operatorname{tr}\rho^{\mathsf T}=\operatorname{tr}\rho$。不完全正：取 $\lvert\Omega\rangle=\frac{1}{\sqrt2}(\lvert00\rangle+\lvert11\rangle)$，则 $(T\otimes I)(\lvert\Omega\rangle\langle\Omega\rvert)$ 有一个负本征值 $-1/2$（Bell 态的转置）。$\blacksquare$
+*证明.* 正性：$\rho\ge0\Rightarrow\rho^{\mathsf T}\ge0$（转置不改变本征值）；保迹：$\operatorname{tr}\rho^{\mathsf T}=\operatorname{tr}\rho$。不完全正：**在计算基下**取 $\lvert\Omega\rangle=\frac{1}{\sqrt2}(\lvert00\rangle+\lvert11\rangle)$，则 $(T\otimes I)(\lvert\Omega\rangle\langle\Omega\rvert)$——即对第一个子系统作部分转置——的本征值为 $(\tfrac12,\tfrac12,\tfrac12,-\tfrac12)$，有一个负本征值 $-1/2$。$\blacksquare$
+
+**核验（自算）.** 部分转置的本征值逐项为 $[-0.5,\ 0.5,\ 0.5,\ 0.5]$。（转置依赖基的选择；上式默认计算基。）
 
 **读法.** 这条是"为什么要求完全正而不是正"的判据：正性说的是"对系统本身"，完全正说的是"对系统加任意辅助系统"。开放系统必须用后者——因为环境随时可能纠缠进来。
 
