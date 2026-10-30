@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位.md",
+                "file": "Zb052_潮汐与地月：同步半径、角动量记账、以及_快照_与_守恒量_的分界.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位"
+              "title": "Zb052_潮汐与地月：同步半径、角动量记账、以及_快照_与_守恒量_的分界"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位.md",
+                "file": "Zb052_潮汐与地月：同步半径、角动量记账、以及_快照_与_守恒量_的分界.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位.md",
+                "file": "Zb052_潮汐与地月：同步半径、角动量记账、以及_快照_与_守恒量_的分界.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位.md",
+                "file": "Zb052_潮汐与地月：同步半径、角动量记账、以及_快照_与_守恒量_的分界.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,12 +190,13 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb057_带宽上限给出膨胀率的界：绝热条件、最短波长、以及幂律舞台的可定义区间.md",
+    "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位.md",
     "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据.md",
     "Zb035_统一：SU(5)_的嵌入、24_的分解、以及_sin²θ_W_=_3_8_的迹比.md",
     "Zb039_质量的来源：振幅平方、同舞台的质量比、以及三代振幅的整数分配.md",
     "Zb022_纠缠与复合：Schmidt_分解、可分判据与_CHSH_的两条界.md",
     "Zb041_相位与代结构：Z₃_等变、三个相位的等间距、以及那个唯一的自由度_δ₀.md",
-    "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位.md",
     "_staging/缺口台账.md",
     "_staging/新库开放项审计.md",
     "_staging/整合总结.md",
@@ -214,7 +215,6 @@
     "Zb017_源·舞台·传播·锚：引力接入的四笔账.md",
     "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
     "_staging/旧库篇目对照.md",
-    "Zb042_核结合能：四段结构的来源、库仑项的精确积分、以及半经验公式的形状.md",
-    "Zb040_质量圆与三代：比值槽的几何、圆上的三个点、以及它们的排列.md"
+    "Zb042_核结合能：四段结构的来源、库仑项的精确积分、以及半经验公式的形状.md"
   ]
 }
