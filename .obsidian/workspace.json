@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据.md",
+                "file": "Zb050_观测量分栏：比值可内生、绝对量需锚，以及一条式子的等价改写.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据"
+              "title": "Zb050_观测量分栏：比值可内生、绝对量需锚，以及一条式子的等价改写"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据.md",
+                "file": "Zb050_观测量分栏：比值可内生、绝对量需锚，以及一条式子的等价改写.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据.md",
+                "file": "Zb050_观测量分栏：比值可内生、绝对量需锚，以及一条式子的等价改写.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据.md",
+                "file": "Zb050_观测量分栏：比值可内生、绝对量需锚，以及一条式子的等价改写.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,8 +188,9 @@
       "bases:新建数据库": false
     }
   },
-  "active": "8dbd897bbc8b6fa1",
+  "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据.md",
     "Zb021_测量：效应、无信号、退相干与指针基.md",
     "Zb001_架构_零的两种读法与两条公理.md",
     "_staging/复核台账.md",
@@ -214,7 +215,6 @@
     "_staging/缺口汇总一页.md",
     "Zb051_开普勒运动：中心力的角动量守恒、Binet_方程、椭圆解与_T²∝a³.md",
     "Zb052_潮汐与地月：同步半径、角动量记账、以及_快照_与_守恒量_的分界.md",
-    "Zb057_带宽上限给出膨胀率的界：绝热条件、最短波长、以及幂律舞台的可定义区间.md",
-    "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据.md"
+    "Zb057_带宽上限给出膨胀率的界：绝热条件、最短波长、以及幂律舞台的可定义区间.md"
   ]
 }
