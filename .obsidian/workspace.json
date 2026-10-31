@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb056_舞台序列的记账：a(τ)_是输入，而距离与膨胀率只能是纯数乘锚.md",
+                "file": "Zb058_临界距离与奇点的重述：两个下界、一个离散谱、以及视界的记账位置.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb056_舞台序列的记账：a(τ)_是输入，而距离与膨胀率只能是纯数乘锚"
+              "title": "Zb058_临界距离与奇点的重述：两个下界、一个离散谱、以及视界的记账位置"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb056_舞台序列的记账：a(τ)_是输入，而距离与膨胀率只能是纯数乘锚.md",
+                "file": "Zb058_临界距离与奇点的重述：两个下界、一个离散谱、以及视界的记账位置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb056_舞台序列的记账：a(τ)_是输入，而距离与膨胀率只能是纯数乘锚.md",
+                "file": "Zb058_临界距离与奇点的重述：两个下界、一个离散谱、以及视界的记账位置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb056_舞台序列的记账：a(τ)_是输入，而距离与膨胀率只能是纯数乘锚.md",
+                "file": "Zb058_临界距离与奇点的重述：两个下界、一个离散谱、以及视界的记账位置.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,8 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb037_超导与配对：库珀对的能隙方程、指数小能隙、以及_h_2e_的通量量子.md",
+    "Zb056_舞台序列的记账：a(τ)_是输入，而距离与膨胀率只能是纯数乘锚.md",
     "Zb043_毁灭与重播种：粗粒化映射、截面、以及为什么循环不增加可分辨状态.md",
     "Zb001_架构：零的两种读法与两条公理.md",
     "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
@@ -213,8 +215,6 @@
     "Zb013_张量扇区：每顶点对称张量、无迹投影、两个偏振.md",
     "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
     "_staging/第三轮整合.md",
-    "Zb030_谱、破缺与尺度：真空流形、Goldstone_计数与自由度守恒.md",
-    "Zb007_稳态与内禀频率：模流、比值到频率、三频率槽.md",
-    "_staging/希格斯与汤川整合.md"
+    "Zb030_谱、破缺与尺度：真空流形、Goldstone_计数与自由度守恒.md"
   ]
 }
