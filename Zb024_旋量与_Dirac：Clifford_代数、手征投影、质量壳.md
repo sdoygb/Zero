@@ -94,7 +94,7 @@ $$
 $$
 
 *证明.* **（i）** $(\gamma^5)^2=-\gamma^0\gamma^1\gamma^2\gamma^3\gamma^0\gamma^1\gamma^2\gamma^3$。把最后一个 $\gamma^0$ 逐个左移穿过三个 $\gamma^i$，每次变号，共三次，得 $-\gamma^0\gamma^1\gamma^2\gamma^3\gamma^0\gamma^1\gamma^2\gamma^3=(-\gamma^0\gamma^0)(\gamma^1\gamma^2\gamma^3\gamma^1\gamma^2\gamma^3)$… 逐对归并：每对 $(\gamma^\mu)^2=\pm I$，共四个因子，符号为 $-$（来自前面的负号）乘以 $(\gamma^0)^2(\gamma^1)^2(\gamma^2)^2(\gamma^3)^2$ 的排列符号。直接核验给 $+I$。
-**（ii）** 由 (i)，$\gamma^5\gamma^\mu=-\gamma^\mu\gamma^5$：$\gamma^\mu$ 与 $\gamma^5$ 中四个因子的一个反对易、与其余三个对易，净效果是变号。
+**（ii）** 由 (i)，当 $\nu\ne\mu$ 时 $\gamma^\mu\gamma^\nu=-\gamma^\nu\gamma^\mu$（**反对易**），当 $\nu=\mu$ 时 $\gamma^\mu\gamma^\mu=g^{\mu\mu}I$（**对易**）。故 $\gamma^\mu$ 穿过 $\gamma^5$ 的四个因子时，与其中 **1 个同指标因子对易**、与其余 **3 个不同指标因子反对易**，净变号系数 $(+1)^1\times(-1)^3=-1$。故 $\gamma^\mu\gamma^5=-\gamma^5\gamma^\mu$，即 $\{\gamma^5,\gamma^\mu\}=0$。
 **（iii）** 由 (ii)，$\gamma^5\gamma^\mu=-\gamma^\mu\gamma^5$；取迹并用循环性：$\operatorname{tr}\gamma^5\gamma^\mu=-\operatorname{tr}\gamma^\mu\gamma^5=-\operatorname{tr}\gamma^5\gamma^\mu$，故 $\operatorname{tr}\gamma^5\gamma^\mu=0$。取 $\mu$ 的组合再得 $\operatorname{tr}\gamma^5=0$。$\blacksquare$
 
 > **命题 2.3（手征投影）.** $P_\pm:=\frac{1\pm\gamma^5}{2}$ 满足
