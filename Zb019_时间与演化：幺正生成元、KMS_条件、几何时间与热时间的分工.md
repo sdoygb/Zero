@@ -2,7 +2,7 @@
 
 > 篇号：Zb019
 > 状态：正式篇（推导篇）
-> 前置：Zb007（模流与内禀频率）、Zb018（态、可观测量、读出）
+> 前置：Zb007（模流与内禀频率）、Zb018（态、可观测量、读出）、Zb047（账本熵与 Gibbs 不等式）
 > 登记日期：2026-10-30
 
 ## 摘要
@@ -18,15 +18,16 @@ $$
 \tag{0.1}
 $$
 
-**五条正面结果**：
+**六条正面结果**：
 
 1. **幺正性（定理 1.2）**：$U(t)=e^{-iHt}$ 是单参数幺正群，共轭作用保持态的集合。
 2. **KMS 条件（定理 2.2）**：Gibbs 态 $\rho=e^{-\beta H}/Z$ 的模流与 $H$ 生成的演化一致，满足 KMS 关系。
 3. **两种时间的关系（命题 3.1）**：$\sigma_t^{\rm mod}(A)=e^{-i\beta Ht}Ae^{i\beta Ht}=\sigma^{\rm geo}_{-\beta t}(A)$——模流就是以 $\beta H$ 为生成元的演化，差一个由约定固定的符号。
 4. **模流的完整判据（定理 4.3／4.4／4.5）**：非平凡且保代数 ⟺ 块对角 ＋ 块内非标量；不同的态给不同的流；"保持一切忠实态"只在 $H$ 属于中心时发生（那时 $\alpha=\mathrm{id}$）。
 5. **时间箭头（定理 5.1）**：$\sigma_{-t}=\sigma_t^{-1}$ 使模流本身不区分方向；**箭头由 $\rho$ 的本征值序给出**，且 $K=-\ln\rho$ 的谱单调。箭头给方向、熵给大小，两者都来自同一个 $\rho$。
+6. **热态（定理 4.6–4.9、命题 4.10）**：给定平均能量时 Gibbs 态是唯一最大熵态；$\beta$ 与 $E$ 一一对应；$S=\ln Z+\beta E$；KMS 条件在非简并谱上**反推出** Boltzmann 权重；Rindler 视界给 $\beta_\eta\kappa=2\pi$（Killing 归一化下 $\kappa=1$）与 $T_U=\hbar a/(2\pi c k_B)$。
 
-**一处记账**：把 $\rho$ 取成 Gibbs 形式 $e^{-\beta H}/Z$ 是**结构选择（I）**；给定它，KMS 是定理。
+**一处记账**：把 $\rho$ 取成 Gibbs 形式 $e^{-\beta H}/Z$ 是**结构选择（I）**；给定它，KMS 是定理。定理 4.9 说明：在非简并谱上，KMS 条件把 Gibbs 权重定出来。
 
 ---
 
@@ -284,6 +285,121 @@ $$
 
 ---
 
+## §4.5 热态：最大熵与 Gibbs
+
+§2 的 KMS 是从 Gibbs 态**推出来**的。本节补反方向：把"微观计数"与"Gibbs 权重"接上，并给出 KMS 的逆定理。
+
+> **定理 4.6（最大熵 ⟹ Gibbs）.** 设 $\mathcal H=\mathbb C^n$、$H=H^\ast$，$E$ 在 $H$ 的谱区间内。则
+$$
+\rho_\beta=\frac{e^{-\beta H}}{Z},\qquad \langle H\rangle_\beta=E
+\tag{4.7}
+$$
+在约束族 $\{\rho:\operatorname{tr}\rho=1,\ \operatorname{tr}(\rho H)=E\}$ 中使 $S(\rho)=-\operatorname{tr}\rho\ln\rho$ 取极大；且对**一切**态
+$$
+S(\rho)\ \le\ \ln Z+\beta\,\langle H\rangle_\rho,\qquad \text{等号}\iff\rho=\rho_\beta .
+\tag{4.8}
+$$
+*证明.* 令 $\ln\rho_\beta=-\beta H-\ln Z$。相对熵 $D(\rho\|\rho_\beta)=\operatorname{tr}\rho(\ln\rho-\ln\rho_\beta)\ge0$（Klein 不等式；Zb047 定理 2.1 的矩阵版），展开：
+$$
+0\le -S(\rho)+\beta\langle H\rangle_\rho+\ln Z ,
+$$
+即 (4.8)。等号当且仅当 $\rho=\rho_\beta$。约束 $\langle H\rangle_\beta=E$ 由 $\beta\mapsto\langle H\rangle_\beta$ 的连续性给出。$\blacksquare$
+
+**读法（"从计数到 Gibbs"的那一步）.** (4.8) 的右端只用到 $Z=\operatorname{tr}e^{-\beta H}$（一个计数）与 $\langle H\rangle$；最大化把权重钉成 $e^{-\beta E_k}/Z$。故 Gibbs 权重是"给定平均能量时熵最大"的唯一解，不需要额外的概率公设——概率公设的位置在 Zb018（读出计数）。
+
+> **定理 4.7（$\beta$ 与 $E$ 一一对应）.** 记 $\langle H\rangle_\beta=-\partial_\beta\ln Z$。则
+$$
+\partial_\beta\langle H\rangle_\beta=-\operatorname{Var}_\beta(H)\le0,
+\tag{4.9}
+$$
+且等号只在 $H$ 于支撑上取单值时成立。故在非平凡谱上 $\beta\mapsto E$ 严格单调，两者一一对应。
+
+*证明.* $Z=\sum_ke^{-\beta E_k}$，逐项求导：$-\partial_\beta\ln Z=\sum_kE_ke^{-\beta E_k}/Z$。再求导得 $-\sum_kE_k^2p_k+(\sum_kE_kp_k)^2=-\operatorname{Var}(H)$。$\blacksquare$
+
+> **定理 4.8（热力学恒等式）.** 记 $E=\langle H\rangle_\beta$、$S=S(\rho_\beta)$。则
+$$
+S=\ln Z+\beta E,\qquad \frac{\partial S}{\partial E}=\beta,\qquad
+F:=-\frac1\beta\ln Z,\qquad \operatorname{Var}(H)=\frac{\partial^2\ln Z}{\partial\beta^2}.
+\tag{4.10}
+$$
+*证明.* 第一式由 (4.8) 取等号；对 $E$ 求导并用 (4.9) 的逆得 $\partial S/\partial E=\beta$；后两式是定义与 (4.9)。$\blacksquare$
+
+> **定理 4.9（KMS 的唯一性）.** 设 $\omega$ 是 $M_n(\mathbb C)$ 上的态，$\sigma_t(A)=e^{iHt}Ae^{-iHt}$，且对一切 $A,B$ 与 $t$ 满足 (2.2)。则 $\omega$ 在 $H$ 的本征基下的对角元为
+$$
+\omega_{mm}=\frac{e^{-\beta E_m}}{Z};
+\tag{4.11}
+$$
+不同本征值之间的非对角元为零。故在**非简并**谱上 $\omega=\rho_\beta$；在简并子空间内 KMS 不选态（该子空间上任意密度矩阵都满足 (2.2)）。
+
+*证明.* 取 $A=|m\rangle\langle n|$、$B=|n\rangle\langle m|$，$t=0$：左边 $=\omega_{mm}e^{-\beta(E_n-E_m)}$，右边 $=\omega_{nn}$，故 $\omega_{mm}e^{\beta E_m}=\omega_{nn}e^{\beta E_n}$，即对角元 $\propto e^{-\beta E_m}$；归一给 (4.11)。取 $A=|m\rangle\langle m|$、$B=|m\rangle\langle n|$：左边 $=e^{\beta(E_m-E_n)}\omega_{mn}$，右边 $=\omega_{mn}$，故 $E_m\ne E_n$ 时 $\omega_{mn}=0$。$\blacksquare$
+
+**读法（这条补上了什么）.** 定理 2.2 说"Gibbs 态满足 KMS"；定理 4.9 说"满足 KMS 的态在非简并谱上就是 Gibbs"。两条合起来：**KMS 条件本身把 Boltzmann 权重 $e^{-\beta E_m}$ 定出来**，不需要先假定 Gibbs 形式。Gibbs 形式作为"结构选择（I）"的记账（摘要末行）因此可以换成更强的说法：给定 KMS 与谱，权重是**导出**的；未被导出的是"为什么物理态满足 KMS"这一条（它是热平衡的定义）。
+
+**核验（数值，$n=5$，随机 $H$）.**
+
+| 检查 | 结果 |
+|:--|:--|
+| 300 个随机态上 $S(\rho)-(\ln Z+\beta\langle H\rangle_\rho)$ 的最大值 | $-0.598\le0$ |
+| Gibbs 态上同一差 | $-8.9\times10^{-16}$ |
+| $\beta\in[0.05,4]$ 上 $E(\beta)$ 的单调性（60 点） | 全部严格下降（$0.0976\to-3.2283$） |
+| 随机 $A,B$ 的 KMS 关系相对误差 | $1.3\times10^{-15}$ |
+| 由 KMS 反解的对角权重 vs $e^{-\beta E}/Z$ | 差 $1.4\times10^{-16}$ |
+
+---
+
+## §4.6 几何流与视界温度
+
+> **命题 4.10（Rindler 的模周期）.** 在 $1+1$ 维 Rindler 楔取坐标 $(\eta,\xi)$，度规为
+$$
+ds^2=-\xi^2d\eta^2+d\xi^2 .
+\tag{4.12}
+$$
+则：(i) 固定 $\xi$ 的观察者的固有时为 $\tau=\xi\eta$；(ii) boost 的 Killing 向量 $\zeta=\partial_\eta$ 在视界 $\xi=0$ 处的表面引力为 $\kappa=1$（这一归一化下它沿视界为常数）；(iii) Euclid 化后 $(\xi,\eta)$ 在视界附近是平面极坐标，光滑性要求 $\eta$ 的周期为 $2\pi$；(iv) 若热态是 boost 流的 KMS 态（定理 2.2），则对该流的参数 $\eta$ 有 $\beta_\eta\kappa=2\pi$，即 $\beta_\eta=2\pi$；固定在 $\xi$ 的观察者用固有时 $\tau=\xi\eta$ 记账，故其局部温度为
+$$
+T_U(\xi)=\frac{\hbar}{2\pi c\,k_B\,\xi}=\frac{\hbar a}{2\pi c\,k_B},\qquad a=\frac1\xi .
+\tag{4.13}
+$$
+*证明.* (i) 沿固定 $\xi$ 的曲线 $d\tau=\sqrt{-ds^2}=\xi\,d\eta$。(ii) 由 $\kappa^2=-\frac12(\nabla_\mu\zeta_\nu)(\nabla^\mu\zeta^\nu)$：$\zeta_\eta=-\xi^2$，$\nabla_\xi\zeta_\eta=-\xi$、$\nabla_\eta\zeta_\xi=\xi$，$g^{\xi\xi}=1$、$g^{\eta\eta}=-\xi^{-2}$，代入得 $\kappa^2=1$。(iii) 令 $\rho=\xi$，度规为 $d\rho^2+\rho^2d\eta^2$；$\rho=0$ 处无锥奇点当且仅当 $\eta\sim\eta+2\pi$。(iv) KMS 的虚时间周期是 $\beta$（(2.2) 的等价形式）；boost 的 Euclid 周期是 $2\pi$，故按 $\eta$ 记账的逆温度是 $2\pi$。观察者的固有时是 $\tau=\xi\eta$，故按 $\tau$ 记账的逆温度是 $2\pi\xi$，对应的温度即 (4.13)。$\blacksquare$
+
+> **推论 4.11（接口的量纲记账）.** 取库内的长度单位 $\ell$、时间单位 $\tau$（$\ell$ 即 Zb005 的格距 $a$ 所取的单位，此处用 $\ell$ 以免与固有加速度 $a$ 撞符号；$c$ 无量纲，故 $\ell$ 与 $\tau$ 只差纯数）。固有加速度 $a$ 的量纲是 $\ell/\tau^2$，故
+$$
+T_U=\frac{\hbar}{k_B\tau}\cdot\frac{a\tau^2}{2\pi c\,\ell}
+=\frac{\hbar}{k_B\tau}\times(\text{纯数}),
+\tag{4.14}
+$$
+即 $T_U$ 的数值 = 纯数 × $\hbar/(k_B\tau)$，与 Zb005 的"唯一锚"一致：$\hbar,c,k_B$ 是**单位**，不是新的有量纲常数。
+
+**核验（数值）.**
+
+| $\xi$ | $\int\xi\,d\eta$（数值） | $\xi\cdot\Delta\eta$ | 相对差 | $a=1/\xi$ | $\beta_\eta\kappa$ |
+|--:|--:|--:|--:|--:|--:|
+| $0.5$ | $2.0000013$ | $2.0$ | $6.7\times10^{-7}$ | $2.0$ | $2\pi$ |
+| $1.0$ | $4.0000027$ | $4.0$ | $6.7\times10^{-7}$ | $1.0$ | $2\pi$ |
+| $2.0$ | $8.0000053$ | $8.0$ | $6.7\times10^{-7}$ | $0.5$ | $2\pi$ |
+
+（相对差来自积分步长；表面引力 $\kappa=1$ 由 (ii) 的公式直接给出，$\beta_\eta\kappa=2\pi$ 即 (iii) 的周期。）
+
+**读法（这条接口的位置）.** (4.13) 的左边是 KMS 参数（本库的定理 2.2），右边是视界几何（Rindler 的初等几何）。两者的桥梁是"热时间与几何时间只差标度"（命题 3.1）。视界**本身**在库内的建立仍记为开放（背靠 Zb015 定理 2.2；Zb058 命题 4.1 给了它需要的两条材料）。
+
+---
+
+## §4.7 记账与边界
+
+| 项 | 档位 | 说明 |
+|:--|:--|:--|
+| Gibbs 形式 $e^{-\beta H}/Z$ | **结构选择（I）** | 摘要末行的记账；定理 4.9 说明它对**非简并**谱由 KMS 反推出来 |
+| 最大熵 ⟹ Gibbs | 定理 | 定理 4.6 |
+| $\beta\leftrightarrow E$ 一一对应 | 定理 | 定理 4.7 |
+| KMS ⟹ Gibbs（非简并谱） | 定理 | 定理 4.9 |
+| Rindler 的 $\beta\kappa=2\pi$ | 定理（初等几何） | 命题 4.10 |
+| 视界的建立 | 开放（背靠 Zb015 定理 2.2） | Zb058 命题 4.1 |
+
+**边界（热力学极限的位置）.** 本节的 Gibbs 族是**有限维精确对象**：$Z=\operatorname{tr}e^{-\beta H}$、$S=\ln Z+\beta E$ 都在固定维数下成立。广延极限要求 $S\propto$ 系统大小，而本库的账本熵是 $O(\ln L)$（Zb047 命题 5.2），故相变与临界现象的定义要另找承载量（Zb047 命题 6.2）。本节不越过这条线。
+
+（核验脚本：`_staging/热态核验.py`；数据：`_staging/热态核验.json`。）
+
+---
+
 ## §5 时间箭头：由态的本征值序给出
 
 §1–§4 讲的是**演化**与**时间刻度**。本节讲另一件事：**哪个方向是"未来"**。
@@ -352,7 +468,8 @@ $$
 
 - $H$：每步（与 $\omega$ 同）。
 - $t$：步；$\beta$：每步的倒数（与 $1/\omega$ 同）；$\beta H$ 无量纲。
-- 本篇不引入有量纲常数。
+- §4.6：$\eta,\xi$ 无量纲（以 $\ell$ 为单位）；表面引力 $\kappa=1$（无量纲）；固有加速度 $a=\ell/\tau^2$；$\beta_\eta$ 无量纲；$T_U$ 是温度，数值 = 纯数 × $\hbar/(k_B\tau)$。
+- $\hbar,c,k_B$：**单位**（Zb005 命题 4.2′ 的判据），不是新的有量纲常数。
 
 ---
 
@@ -369,5 +486,8 @@ $$
 | 定理 4.3 | 模流的完整判据 | 导出 | §4 |
 | 定理 4.4 | 态依赖：因子上成立、直和上只看到条件态 | 导出 | §4 |
 | 定理 4.5 | 普遍自同构（直和上的形式） | 导出 | §4 |
+| 定理 4.6／4.7／4.8 | 最大熵 ⟹ Gibbs；$\beta\leftrightarrow E$；热力学恒等式 | 导出＋数值 | §4.5 |
+| 定理 4.9 | KMS ⟹ Gibbs（非简并谱） | 导出＋数值 | §4.5 |
+| 命题 4.10／推论 4.11 | Rindler 的 $\beta_\eta\kappa=2\pi$；温度的量纲记账 | 导出＋数值 | §4.6 |
 | 定理 5.1 | 时间箭头 ＝ 谱序 | 导出 | §5 |
 | 记账 | Gibbs 形式是 (I) | 记账 | §2 |
