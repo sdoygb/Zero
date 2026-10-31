@@ -214,13 +214,17 @@ $$
 \tag{4.5}
 $$
 
-*证明.* 取对角态 $\rho=\operatorname{diag}(p_1,p_2)$、$\rho'=\operatorname{diag}(q_1,q_2)$，满足 $p_1/p_2\ne q_1/q_2$；取 $A=|\chi_1\rangle\langle\chi_2|$。则
+*证明.* **反证**：设两流处处相同，即 $\sigma_t=\sigma'_t$ 对一切 $t$（作为代数自同构）。两个酉算子给出同一个自同构当且仅当它们差一个相位，故存在 $|c(t)|=1$ 使
 
 $$
-\sigma_t(A)=e^{it\ln(p_1/p_2)}A,\qquad \sigma'_t(A)=e^{it\ln(q_1/q_2)}A .
+\rho'^{\,it}=c(t)\,\rho^{\,it}\qquad(\forall t\in\mathbb R).
 $$
 
-两个相位不同（比值不同），故两流在 $A$ 上不等。$\blacksquare$
+在 $t=0$ 处对 $t$ 求导（$\rho,\rho'$ 忠实，故 $\ln$ 存在）：$i\ln\rho'=\dot c(0)+i\ln\rho$，即 $\ln\rho'=\ln\rho+\lambda$（$\lambda$ 为常数）。两边取指数得 $\rho'=e^{\lambda}\rho$；再由 $\operatorname{tr}\rho'=\operatorname{tr}\rho=1$ 得 $e^{\lambda}=1$，故 $\rho'=\rho$——与假设矛盾。$\blacksquare$
+
+**特例（对角情形，便于手算）.** 取 $\rho=\operatorname{diag}(p_1,p_2)$、$\rho'=\operatorname{diag}(q_1,q_2)$、$A=|\chi_1\rangle\langle\chi_2|$：$\sigma_t(A)=e^{it\ln(p_1/p_2)}A$、$\sigma'_t(A)=e^{it\ln(q_1/q_2)}A$，比值的对数不同即两流不同。
+
+**核验（自算）.** 取两个随机忠实态（**不对易**），$d=3$：$t=0.3$ 时 $\|\sigma_t(A)-\sigma'_t(A)\|=1.0166$、$t=1$ 时 $2.5905$；同一态的两流差为 $0$。故上面的通解证明与数值一致——**只靠对角特例不足以推出通解**。
 
 **核验.** 取 $p=(0.7,0.3)$、$q=(0.6,0.4)$：$\ln(p_1/p_2)=0.847298$、$\ln(q_1/q_2)=0.405465$；用 $e^{iKt}$ 直接作用得两个相角 $-0.847298$ 与 $-0.405465$，不同。
 
