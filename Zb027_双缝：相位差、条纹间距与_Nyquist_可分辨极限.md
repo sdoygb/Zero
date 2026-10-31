@@ -134,7 +134,7 @@ $$
 
 **核验.** 取 $p:q=2:1$：$H_{\rm mod}=\operatorname{diag}(0.4055,\,1.0986)$，$f=0.693147=\log2$（差 $<10^{-12}$）。
 
-> **推论 4.2（格上波长）.** 由 Zb005 定理 3.2 的逆映射与命题 3.3 的格上波长，
+> **推论 4.2（格上波长）.** 由 Zb005 定理 3.2 的逆映射与 Zb005 推论 3.3 的格上波长，
 
 $$
 q=2\arcsin\frac{f}{2c},\qquad \lambda_{\rm lat}=\frac{2\pi a}{q}.
@@ -159,7 +159,7 @@ $$
 **读法（这条链的档位）.** 从"稳态的谱比 $2:1$"到"条纹间距"的整条链是：
 
 $$
-\underbrace{p:q}_{\text{稳态}}\ \longrightarrow\ \underbrace{f=\log(p/q)}_{\text{定理 4.1}}\ \longrightarrow\ \underbrace{q=2\arcsin\frac f{2c}}_{\text{Zb005 定理 3.2}}\ \longrightarrow\ \underbrace{\lambda_{\rm lat}}_{\text{命题 3.3}}\ \longrightarrow\ \underbrace{\Delta y=\frac{\lambda L}{d}}_{\text{命题 2.2}} .
+\underbrace{p:q}_{\text{稳态}}\ \longrightarrow\ \underbrace{f=\log(p/q)}_{\text{定理 4.1}}\ \longrightarrow\ \underbrace{q=2\arcsin\frac f{2c}}_{\text{Zb005 定理 3.2}}\ \longrightarrow\ \underbrace{\lambda_{\rm lat}}_{\text{Zb005 推论 3.3}}\ \longrightarrow\ \underbrace{\Delta y=\frac{\lambda L}{d}}_{\text{命题 2.2}} .
 \tag{4.5}
 $$
 
