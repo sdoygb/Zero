@@ -2,8 +2,8 @@ tools/__pycache__/
 *.pyc
 .DS_Store
 ZeroReal/results/
-_staging/检索台账/
 
-# 本地发布工具（含 .zenodo_token，不上传）
+# 本地目录（不上传 GitHub）
 github_tools/
 zenodo_tools/
+_staging/
