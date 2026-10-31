@@ -194,9 +194,7 @@ $$
 | $\rho=\operatorname{diag}(w_1/2,w_1/2,w_2/2,w_2/2)$ | 标量 | $0.000$ | 是 |
 | $\rho'=\operatorname{diag}(1.5\tfrac{w_1}3,1.0\tfrac{w_1}3,0.5\tfrac{w_1}3,w_2/2)$ | 非标量 | $1.041$ | 是 |
 
-**补核情形二**（块间分量 ⟹ 流出代数）：取块对角态与掺入块间分量（$
-ho'=0.9
-ho+0.1\,\mathbf 1/4$）的态，让模流作用在块内算符上，看流后是否留在块内：
+**补核情形二**（块间分量 ⟹ 流出代数）：取块对角态与掺入块间分量（$\rho'=0.9\rho+0.1\,\mathbf 1/4$）的态，让模流作用在块内算符上，看流后是否留在块内：
 
 | 态 | 流后落在块外的成分 |
 |:--|--:|
@@ -207,20 +205,40 @@ ho+0.1\,\mathbf 1/4$）的态，让模流作用在块内算符上，看流后是
 
 （情形三（张量积／因子代数）本表仍未覆盖。）
 
-> **定理 4.4（态依赖）.** 设 $\rho\ne\rho'$ 为两个忠实态，$\sigma,\sigma'$ 为各自的模流。则存在 $A$ 与 $t$ 使
+> **定理 4.4（态依赖：因子上成立，直和上只看到条件态）.** 分两种代数：
 
 $$
-\sigma_t(A)\ne\sigma'_t(A) .
-\tag{4.5}
+\textbf{(i)}\ \mathcal A=M_n(\mathbb C)；\qquad
+\textbf{(ii)}\ \mathcal A=\bigoplus_{h=1}^H M_{d_h}(\mathbb C) .
 $$
 
-*证明.* **反证**：设两流处处相同，即 $\sigma_t=\sigma'_t$ 对一切 $t$（作为代数自同构）。两个酉算子给出同一个自同构当且仅当它们差一个相位，故存在 $|c(t)|=1$ 使
+**(i)** 设 $\rho\ne\rho'$ 为 $M_n(\mathbb C)$ 上两个忠实态，则存在 $A$ 与 $t$ 使 $\sigma_t(A)\ne\sigma'_t(A)$。
+
+**(ii)** 设 $\rho=\bigoplus_h w_h\tilde\rho_h$、$\rho'=\bigoplus_h w'_h\tilde\rho_h$（$\tilde\rho_h$ 是块内归一化态）。则
+
+$$
+\sigma=\sigma'\iff \tilde\rho_h=\tilde\rho'_h\ (\forall h);
+\qquad\text{中心权重 } w_h\ \textbf{不进入模流}.
+$$
+
+*证明.* **（i）** **反证**：设两流处处相同，即 $\sigma_t=\sigma'_t$ 对一切 $t$（作为代数自同构）。**在因子上**，两个酉算子给出同一个自同构当且仅当它们差一个相位（因为 $V^*U$ 与一切算符对易 ⟹ 属中心 ⟹ 是标量），故存在 $|c(t)|=1$ 使
 
 $$
 \rho'^{\,it}=c(t)\,\rho^{\,it}\qquad(\forall t\in\mathbb R).
 $$
 
-在 $t=0$ 处对 $t$ 求导（$\rho,\rho'$ 忠实，故 $\ln$ 存在）：$i\ln\rho'=\dot c(0)+i\ln\rho$，即 $\ln\rho'=\ln\rho+\lambda$（$\lambda$ 为常数）。两边取指数得 $\rho'=e^{\lambda}\rho$；再由 $\operatorname{tr}\rho'=\operatorname{tr}\rho=1$ 得 $e^{\lambda}=1$，故 $\rho'=\rho$——与假设矛盾。$\blacksquare$
+在 $t=0$ 处对 $t$ 求导（$\rho,\rho'$ 忠实，故 $\ln$ 存在）：$i\ln\rho'=\dot c(0)+i\ln\rho$，即 $\ln\rho'=\ln\rho+\lambda$（$\lambda$ 为常数）。两边取指数得 $\rho'=e^{\lambda}\rho$；再由 $\operatorname{tr}\rho'=\operatorname{tr}\rho=1$ 得 $e^{\lambda}=1$，故 $\rho'=\rho$——与假设矛盾。
+
+*证明（续）. **（ii）** 直和上 $\rho^{it}=\bigoplus_h(w_h\tilde\rho_h)^{it}=\bigoplus_h w_h^{it}\tilde\rho_h^{it}$，故对 $A=\bigoplus_hA_h$
+
+$$
+\sigma_t(A)=\bigoplus_h w_h^{it}\tilde\rho_h^{it}A_h\,w_h^{-it}\tilde\rho_h^{-it}
+=\bigoplus_h \tilde\rho_h^{it}A_h\tilde\rho_h^{-it},
+$$
+
+标量相位 $w_h^{it}w_h^{-it}\equiv1$ **恒等相消**。故两流相同当且仅当各块条件态相同；$w_h$ 与 $w'_h$ 可以完全不同而流不变。$\blacksquare$
+
+> **推论（相位相同的两态不是同一个流，权重不同的两态也不是）.** (i) 说明"态不同 ⟹ 流不同"**只在因子上**成立；(ii) 说明直和代数上模流是**中心盲**的——它只记录块内的比值结构。本库的 $\mathcal A$ 是直和（§4.2），故以后要用模流区分两态，必须先确认它们在**同一块内**不同。
 
 **特例（对角情形，便于手算）.** 取 $\rho=\operatorname{diag}(p_1,p_2)$、$\rho'=\operatorname{diag}(q_1,q_2)$、$A=|\chi_1\rangle\langle\chi_2|$：$\sigma_t(A)=e^{it\ln(p_1/p_2)}A$、$\sigma'_t(A)=e^{it\ln(q_1/q_2)}A$，比值的对数不同即两流不同。
 
@@ -347,4 +365,9 @@ $$
 | 定理 2.2 | KMS 关系 | 导出 | §2 |
 | 命题 3.1 | 模流＝以 $\beta H$ 为生成元 | 导出 | §3 |
 | 命题 4.1 | $\beta$ 是桥 | 导出 | §4 |
+| 命题 4.2 | 中心态的模流在块内平凡 | 导出 | §4 |
+| 定理 4.3 | 模流的完整判据 | 导出 | §4 |
+| 定理 4.4 | 态依赖：因子上成立、直和上只看到条件态 | 导出 | §4 |
+| 定理 4.5 | 普遍自同构（直和上的形式） | 导出 | §4 |
+| 定理 5.1 | 时间箭头 ＝ 谱序 | 导出 | §5 |
 | 记账 | Gibbs 形式是 (I) | 记账 | §2 |

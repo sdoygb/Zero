@@ -12,6 +12,8 @@
   C8 跨篇悬空     ZbNNN 引用的篇不存在
   C9 控制字符     控制字符/零宽字符混进正文（如 \\x08 冒充 \\b，终端里看不出来）
   C10 自检表覆盖  正文的每条定理/命题/推论/引理/界定 都应在 `## 自检` 表里有一行
+  C11 跨篇条目     ZbNNN 命题 X.Y 的条目必须在那一篇里真的存在（C8 只查篇号）
+  C12 行内公式     行内 `$...$` 不许跨行断开（`\\rho` 被吃成换行时就会这样）
 
 c10 的口径：自检表覆盖是**存量债**（2026-10-31 首测 146 处），默认只统计不判死；
 基线写死在本文件里，只许降不许升——新写的内容漏了自检表会被算成硬失败。
@@ -30,8 +32,7 @@ ROOT = Path(__file__).resolve().parent.parent
 ITEM_RE = re.compile(r"\*\*(定理|命题|推论|定义|引理|界定|设定|记账规则) ?(\d+)\.(\d+)(′?)")
 TAG_RE = re.compile(r"\\tag\{(\d+)\.(\d+)([a-z]?)\}")
 SEC_RE = re.compile(r"^## §(\d+(?:\.\d+)?)")
-# 零宽与双向控制字符：肉眼不可见，会把"看起来对的"文本弄坏
-C10_BASELINE = 146   # 自检表覆盖的存量欠账；只许降不许升
+C10_BASELINE = 132   # 自检表覆盖的存量欠账；只许降不许升
 # 零宽与双向控制字符：肉眼不可见，会把"看起来对的"文本弄坏
 ZERO_WIDTH = {"\u200b", "\u200c", "\u200d", "\u200e", "\u200f",
               "\u202a", "\u202b", "\u202c", "\u202d", "\u202e", "\ufeff"}
@@ -44,7 +45,17 @@ def notes(pattern=None):
     return fs
 
 
-def check(path, have):
+def build_item_index():
+    """每篇有哪些条目：{「ZbNNN」: {(类型, 编号), ...}}。给 C11 用。"""
+    idx = {}
+    for f in notes():
+        s = f.read_text(encoding="utf-8")
+        idx[f.name[:5]] = {(m.group(1), f"{m.group(2)}.{m.group(3)}{m.group(4)}")
+                           for m in ITEM_RE.finditer(s)}
+    return idx
+
+
+def check(path, have, index=None):
     s = path.read_text(encoding="utf-8")
     lines = s.split("\n")
     issues = []
@@ -185,6 +196,35 @@ def check(path, have):
             if (t, f"{a}.{b}{c}") not in covered:
                 issues.append((i + 1, "C10", f"{t} {a}.{b}{c} 不在自检表里"))
 
+    # ---- C11 跨篇条目引用
+    # C8 只查篇号存在；「Zb015 命题 4.2」里 Zb015 在、但它的命题 4.2 不在（那是推论 4.2）。
+    if index:
+        for i, ln in enumerate(lines):
+            for m in re.finditer(r"(Zb\d{3})[^。\n|]{0,4}?(定理|命题|推论|引理|界定)\s*(\d+\.\d+)(′?)", ln):
+                tgt, t, num = m.group(1), m.group(2), m.group(3) + m.group(4)
+                if tgt == path.name[:5] or tgt not in index:
+                    continue
+                if (t, num) not in index[tgt]:
+                    issues.append((i + 1, "C11", f"{tgt} 没有 {t} {num}（引用了不存在的对象）"))
+
+    # ---- C12 行内公式跨行
+    # 行内 `$...$` 必须在一行内闭合。`\rho` 被 Python 的 `\r` 吃掉再规范化成换行时，
+    # 公式会从中间断开——这种损伤 C9 查不到（没有控制字符残留），只能查配对。
+    in_display = False
+    for i, ln in enumerate(lines):
+        parts = ln.split("$$")
+        # 每段 `$$` 交替翻转显示态
+        for k, seg in enumerate(parts):
+            if k % 2 == 1:
+                in_display = not in_display
+                continue
+            if in_display:
+                continue
+            body = re.sub(r"\\\$", "", seg)          # 去掉转义的 \$
+            if body.count("$") % 2:
+                issues.append((i + 1, "C12", "行内 $ 未配对（公式可能被断行）"))
+                break
+
     return issues
 
 
@@ -195,10 +235,11 @@ def main():
     have = {f.name[:5] for f in notes()}
     files = notes(arg)
 
+    index = build_item_index()
     hard = 0                 # C1–C9：硬失败
     soft = []                 # C10：存量债，默认不判死
     for f in files:
-        iss = check(f, have)
+        iss = check(f, have, index)
         h = [(ln, c, m) for ln, c, m in iss if c != "C10"]
         s10 = [(ln, c, m) for ln, c, m in iss if c == "C10"]
         if h:
