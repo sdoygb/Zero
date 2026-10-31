@@ -32,7 +32,7 @@ ROOT = Path(__file__).resolve().parent.parent
 ITEM_RE = re.compile(r"\*\*(定理|命题|推论|定义|引理|界定|设定|记账规则) ?(\d+)\.(\d+)(′?)")
 TAG_RE = re.compile(r"\\tag\{(\d+)\.(\d+)([a-z]?)\}")
 SEC_RE = re.compile(r"^## §(\d+(?:\.\d+)?)")
-C10_BASELINE = 126   # 自检表覆盖的存量欠账；只许降不许升
+C10_BASELINE = 124   # 自检表覆盖的存量欠账；只许降不许升
 # 零宽与双向控制字符：肉眼不可见，会把"看起来对的"文本弄坏
 ZERO_WIDTH = {"\u200b", "\u200c", "\u200d", "\u200e", "\u200f",
               "\u202a", "\u202b", "\u202c", "\u202d", "\u202e", "\ufeff"}
