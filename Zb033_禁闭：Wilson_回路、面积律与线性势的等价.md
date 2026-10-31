@@ -38,9 +38,17 @@ W(C):=\operatorname{tr}U(C).
 \tag{1.1}
 $$
 
-> **命题 1.2（规范不变性）.** $W(C)$ 在规范变换 $A_\mu\mapsto A_\mu-\partial_\mu\theta$ 下不变。
+> **命题 1.2（规范不变性）.** 设规范群是**非阿贝尔**的 $SU(3)$：$A_\mu\mapsto gA_\mu g^{-1}+\frac{i}{g_s}(\partial_\mu g)g^{-1}$（$g(x)\in SU(3)$）。则 $W(C)=\operatorname{tr}U(C)$ 严格不变。
 
-*证明.* 由 Zb029 定理 1.2 的协变性，沿回路的积 $U(C)$ 在变换下变为 $e^{iq\theta(x_0)}U(C)e^{-iq\theta(x_0)}$（起点相位相消），故 $\operatorname{tr}U(C)$ 不变。$\blacksquare$
+*证明.* 沿闭合回路的路径有序和乐在规范变换下按**基点作相似变换**：
+
+$$
+U(C)\ \longmapsto\ g(x_0)\,U(C)\,g(x_0)^{-1} .
+$$
+
+取迹后用迹的**循环性**：$\operatorname{tr}(gUg^{-1})=\operatorname{tr}(g^{-1}gU)=\operatorname{tr}U$。故 $W(C)$ 不变。$\blacksquare$
+
+**一处必须说清的区分.** 阿贝尔情形（$U(1)$）里这一步退化为 $e^{iq\theta}Ue^{-iq\theta}$——标量相位前后相消。**非阿贝尔情形靠的不是相位相消，而是矩阵迹的循环性**；两者形式相似但机制不同，混写会掩盖 $SU(3)$ 的非对易结构（后文面积律用的正是它）。
 
 **读法.** $W(C)$ 是"沿回路搬一圈荷所需的相位"的迹。它只依赖回路与场，是一个可直接计算的可观测量。
 
