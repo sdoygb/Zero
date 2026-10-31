@@ -131,7 +131,9 @@ def main():
     ap.add_argument("--summary", action="store_true")
     a = ap.parse_args()
 
-    files = [pathlib.Path(f) for f in a.files] or sorted(ROOT.glob("Z[0-9][0-9][0-9]_*.md"))
+    # 新库篇名是 Zb###（旧库为 Z###）：两种前缀都要扫，否则默认回归会空转
+    files = [pathlib.Path(f) for f in a.files] or sorted(
+        set(ROOT.glob("Z[0-9][0-9][0-9]_*.md")) | set(ROOT.glob("Zb[0-9][0-9][0-9]_*.md")))
     total, dirty, nverdict = 0, 0, 0
     for p in files:
         if p.name in EXEMPT:
