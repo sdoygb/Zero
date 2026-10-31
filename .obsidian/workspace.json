@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
+                "file": "Zb001_架构：零的两种读法与两条公理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb003_层与词层：四层指标、词与闭合、维数字典"
+              "title": "Zb001_架构：零的两种读法与两条公理"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
+                "file": "Zb001_架构：零的两种读法与两条公理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
+                "file": "Zb001_架构：零的两种读法与两条公理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
+                "file": "Zb001_架构：零的两种读法与两条公理.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,6 +190,7 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
+    "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
     "Zb001_架构：零的两种读法与两条公理.md",
     "Zb017_源·舞台·传播·锚：引力接入的五笔账.md",
     "Zb002_零的对象表：约束力作为独立的变量.md",
@@ -210,7 +211,6 @@
     "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md",
     "Zb013_张量扇区：每顶点对称张量、无迹投影、两个偏振.md",
     "Zb018_运动学：态、可观测量与读出计数——Born_比值不是新公理.md",
-    "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
     "_staging/第三轮整合.md",
     "Zb030_谱、破缺与尺度：真空流形、Goldstone_计数与自由度守恒.md",
     "Zb007_稳态与内禀频率：模流、比值到频率、三频率槽.md",
