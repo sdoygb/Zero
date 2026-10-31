@@ -10,10 +10,17 @@
   C6 悬空条目引用 正文引用了本篇不存在的条目号
   C7 悬空公式引用 正文引用了本篇不存在的公式号
   C8 跨篇悬空     ZbNNN 引用的篇不存在
+  C9 控制字符     控制字符/零宽字符混进正文（如 \\x08 冒充 \\b，终端里看不出来）
+  C10 自检表覆盖  正文的每条定理/命题/推论/引理/界定 都应在 `## 自检` 表里有一行
+
+c10 的口径：自检表覆盖是**存量债**（2026-10-31 首测 146 处），默认只统计不判死；
+基线写死在本文件里，只许降不许升——新写的内容漏了自检表会被算成硬失败。
 
 用法：
-    python3 tools/struct_check.py            # 全库
-    python3 tools/struct_check.py Zb047      # 单篇
+    python3 tools/struct_check.py              # 全库（C1–C9 硬失败；C10 只统计）
+    python3 tools/struct_check.py --strict     # C10 也计入退出码
+    python3 tools/struct_check.py Zb047        # 单篇
+    python3 tools/struct_check.py Zb047 --strict
 """
 import re
 import sys
@@ -23,6 +30,11 @@ ROOT = Path(__file__).resolve().parent.parent
 ITEM_RE = re.compile(r"\*\*(定理|命题|推论|定义|引理|界定|设定|记账规则) ?(\d+)\.(\d+)(′?)")
 TAG_RE = re.compile(r"\\tag\{(\d+)\.(\d+)([a-z]?)\}")
 SEC_RE = re.compile(r"^## §(\d+(?:\.\d+)?)")
+# 零宽与双向控制字符：肉眼不可见，会把"看起来对的"文本弄坏
+C10_BASELINE = 146   # 自检表覆盖的存量欠账；只许降不许升
+# 零宽与双向控制字符：肉眼不可见，会把"看起来对的"文本弄坏
+ZERO_WIDTH = {"\u200b", "\u200c", "\u200d", "\u200e", "\u200f",
+              "\u202a", "\u202b", "\u202c", "\u202d", "\u202e", "\ufeff"}
 
 
 def notes(pattern=None):
@@ -129,23 +141,93 @@ def check(path, have):
             if m.group(0) not in have and path.name[:5] != m.group(0):
                 issues.append((i + 1, "C8", f"引用了不存在的篇 {m.group(0)}"))
 
+    # ---- C9 控制字符 / 零宽字符
+    # 白名单只留 \n（换行）与 \t（缩进）。其余控制字符一律报——`\x08` 冒充 `\b`
+    # 这类错在终端里与正确写法长得一样，只能靠字节层查。
+    for i, ln in enumerate(lines):
+        for j, ch in enumerate(ln):
+            o = ord(ch)
+            if o >= 32 and o != 127:
+                continue
+            issues.append((i + 1, "C9", f"第 {j + 1} 列有控制字符 U+{o:04X}（{ln[max(0,j-14):j]!r}▸）"))
+            break
+        else:
+            for j, ch in enumerate(ln):
+                if ch in ZERO_WIDTH:
+                    issues.append((i + 1, "C9", f"第 {j + 1} 列有零宽字符 U+{ord(ch):04X}"))
+                    break
+
+    # ---- C10 自检表覆盖
+    # 查「正文有、表里没有」。反过来（表里有、正文没有）由 C6 管。
+    hit = None
+    for i, ln in enumerate(lines):
+        if re.match(r"^## 自检", ln):
+            hit = i
+            break
+    if hit is None:
+        issues.append((1, "C10", "本篇没有 `## 自检` 表"))
+    else:
+        tail = "\n".join(lines[hit:])
+        # 表里允许紧凑写法：「命题 3.2／3.3／3.4」「定理 5.1／5.2／推论 5.3」
+        # 故一个类型词之后要把整串数字都收下，不能只认第一个。
+        covered = set()
+        for m in re.finditer(
+                r"(定理|命题|推论|定义|引理|界定|设定|记账规则)\s*"
+                r"(\d+\.\d+)((?:[／/、]\s*\d+\.\d+)*)", tail):
+            t, first, rest = m.group(1), m.group(2), m.group(3)
+            covered.add((t, first))
+            for n in re.findall(r"\d+\.\d+", rest):
+                covered.add((t, n))
+        need = {"定理", "命题", "推论", "引理", "界定"}      # 定义/设定/记账规则不强制进表
+        for i, t, a, b, c, _ in items:
+            if t not in need:
+                continue
+            if (t, f"{a}.{b}{c}") not in covered:
+                issues.append((i + 1, "C10", f"{t} {a}.{b}{c} 不在自检表里"))
+
     return issues
 
 
 def main():
-    arg = sys.argv[1] if len(sys.argv) > 1 else None
+    args = [a for a in sys.argv[1:] if not a.startswith("-")]
+    strict = "--strict" in sys.argv
+    arg = args[0] if args else None
     have = {f.name[:5] for f in notes()}
     files = notes(arg)
-    total = 0
+
+    hard = 0                 # C1–C9：硬失败
+    soft = []                 # C10：存量债，默认不判死
     for f in files:
         iss = check(f, have)
-        if iss:
+        h = [(ln, c, m) for ln, c, m in iss if c != "C10"]
+        s10 = [(ln, c, m) for ln, c, m in iss if c == "C10"]
+        if h:
             print(f"\n{f.name}")
-            for ln, code, msg in iss:
+            for ln, code, msg in h:
                 print(f"  L{ln:<4} [{code}] {msg}")
-            total += len(iss)
-    print(f"\n━━ 结构检查｜{len(files)} 篇｜{total} 处")
-    return 0 if total == 0 else 1
+        hard += len(h)
+        if s10:
+            soft.append((f.name, s10))
+
+    if soft:
+        tot = sum(len(v) for _, v in soft)
+        print(f"\n── 自检表覆盖（C10，存量债）：{len(soft)} 篇 / {tot} 处")
+        if strict:
+            for name, v in soft:
+                print(f"  {name[:5]}: {len(v)} 处")
+        else:
+            print("   （默认只统计；加 --strict 才计入退出码）")
+        if strict:
+            hard += tot                      # 严格模式：一处都不能少
+        elif tot > C10_BASELINE:
+            print(f"   ⚠ 比基线 {C10_BASELINE} 多 {tot - C10_BASELINE} 处——新写的内容漏了自检表")
+            hard += tot - C10_BASELINE
+        elif tot < C10_BASELINE:
+            print(f"   ✓ 比基线 {C10_BASELINE} 少 {C10_BASELINE - tot} 处（可下调 C10_BASELINE）")
+
+    print(f"\n━━ 结构检查｜{len(files)} 篇｜硬失败 {hard} 处"
+          + (f"｜自检表待补 {sum(len(v) for _, v in soft)} 处" if soft else ""))
+    return 0 if hard == 0 else 1
 
 
 if __name__ == "__main__":
