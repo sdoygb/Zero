@@ -3,7 +3,8 @@ tools/__pycache__/
 .DS_Store
 ZeroReal/results/
 
-# 本地目录（不上传 GitHub）
+# 本地目录/文件（不上传 GitHub）
 github_tools/
 zenodo_tools/
 _staging/
+AGENTS.md
