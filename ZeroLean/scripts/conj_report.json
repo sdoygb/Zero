@@ -1,0 +1,1286 @@
+{
+  "theorems": 328,
+  "registered": [
+    "toy_true_invariant",
+    "toy_point_not_invariant",
+    "zb067_wordSum_conj_invariant",
+    "zb003_sum_eq_card_diff",
+    "zb067_aux_sum_neg",
+    "zb067_aux_layer_neg",
+    "zb005_dispersion_identity",
+    "zb001_kernel_eq_const",
+    "zb001_eigen_four_iff",
+    "zb001_eigen_four_zero_sum",
+    "K4L_eq_zero_iff",
+    "K4L_eigen_four_iff",
+    "eigen_four_zero_sum",
+    "zb003_card_true_eq_half",
+    "zb004_charge_conservation"
+  ],
+  "unregistered": [
+    {
+      "name": "needs_input",
+      "file": "AxiomLedger.lean"
+    },
+    {
+      "name": "no_input",
+      "file": "AxiomLedger.lean"
+    },
+    {
+      "name": "zb003_aux_ballot_L6",
+      "file": "Zb003_AuxBallot.lean"
+    },
+    {
+      "name": "zb003_aux_ballot_L8",
+      "file": "Zb003_AuxBallot.lean"
+    },
+    {
+      "name": "zb003_aux_L6_mass",
+      "file": "Zb003_AuxBallot.lean"
+    },
+    {
+      "name": "zb003_aux_flip_length",
+      "file": "Zb003_AuxBallot.lean"
+    },
+    {
+      "name": "zb003_aux_map_not_sum",
+      "file": "Zb003_AuxBallot.lean"
+    },
+    {
+      "name": "zb003_aux_flip_prefix_sum",
+      "file": "Zb003_AuxBallot.lean"
+    },
+    {
+      "name": "zb003_balanced_count",
+      "file": "Zb003_Counting.lean"
+    },
+    {
+      "name": "zb005_inverse_of_dispersion",
+      "file": "Zb005_Dispersion.lean"
+    },
+    {
+      "name": "zb005_dispersion_of_inverse",
+      "file": "Zb005_Dispersion.lean"
+    },
+    {
+      "name": "zb005_longwave_algebra",
+      "file": "Zb005_Dispersion.lean"
+    },
+    {
+      "name": "zb007_diag_modular_flow_entry",
+      "file": "Zb007_Diag.lean"
+    },
+    {
+      "name": "zb007Herm2_isHermitian",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007Herm2_trace",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007Herm2_det",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007Herm2_charpoly",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007EigPlus_charpoly_real",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007EigMinus_charpoly_real",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007Herm2_det_eigPlus",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007Herm2_det_eigMinus",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007Herm2_eigenvector_plus",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007Herm2_eigenvector_minus",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007EigPlus_add_eigMinus",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007EigPlus_mul_eigMinus",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007Herm2_eigenvectors_orthogonal",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007Herm2_normalized_eigenvector_plus",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007_normalized_norm_plus",
+      "file": "Zb007_Hermitian2.lean"
+    },
+    {
+      "name": "zb007_phase_mul",
+      "file": "Zb007_ModularFlow.lean"
+    },
+    {
+      "name": "zb007U_mul_inv",
+      "file": "Zb007_ModularFlow.lean"
+    },
+    {
+      "name": "zb007_modular_flow_E",
+      "file": "Zb007_ModularFlow.lean"
+    },
+    {
+      "name": "zb007_two_level_frequency",
+      "file": "Zb007_Slots.lean"
+    },
+    {
+      "name": "zb007_frequency_of_ratio_two",
+      "file": "Zb007_Slots.lean"
+    },
+    {
+      "name": "zb007_seed_ratios",
+      "file": "Zb007_Slots.lean"
+    },
+    {
+      "name": "zb007_ratios_distinct",
+      "file": "Zb007_Slots.lean"
+    },
+    {
+      "name": "zb007_log_ne",
+      "file": "Zb007_Slots.lean"
+    },
+    {
+      "name": "zb007_logs_distinct",
+      "file": "Zb007_Slots.lean"
+    },
+    {
+      "name": "zb007_modular_phase",
+      "file": "Zb007_Slots.lean"
+    },
+    {
+      "name": "zb010_step_abs",
+      "file": "Zb010_Cone.lean"
+    },
+    {
+      "name": "zb010_support",
+      "file": "Zb010_Cone.lean"
+    },
+    {
+      "name": "zb010_paths_count",
+      "file": "Zb010_Cone.lean"
+    },
+    {
+      "name": "zb010_taylor_even_terms",
+      "file": "Zb010_Taylor.lean"
+    },
+    {
+      "name": "zb010_taylor_main_bigO",
+      "file": "Zb010_Taylor.lean"
+    },
+    {
+      "name": "zb010_taylor_remainder",
+      "file": "Zb010_Taylor.lean"
+    },
+    {
+      "name": "zb011_relation_dirs",
+      "file": "Zb011_Coupling.lean"
+    },
+    {
+      "name": "zb011_relation_dirs_forced_three",
+      "file": "Zb011_Coupling.lean"
+    },
+    {
+      "name": "zb011_coupling_two_hypotheses",
+      "file": "Zb011_Coupling.lean"
+    },
+    {
+      "name": "zb011_channel_ne_neighbours",
+      "file": "Zb011_Coupling.lean"
+    },
+    {
+      "name": "zb011_choose_two_eq_self",
+      "file": "Zb011_DimCount.lean"
+    },
+    {
+      "name": "zb011_dim_forced_three",
+      "file": "Zb011_DimCount.lean"
+    },
+    {
+      "name": "zb011_dict_identity",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_choose_two_lt",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_dict_unique",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_dict_m_fails",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_two_mul_choose_two",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_two_mul_choose_two_rat",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_window_four",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_window_three",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_peak_four_iff",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_peak_three_iff",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_five_ninths_decay",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_five_ninths_peak",
+      "file": "Zb011_DimDict.lean"
+    },
+    {
+      "name": "zb011_pairs_D3",
+      "file": "Zb011_Dimension.lean"
+    },
+    {
+      "name": "zb011_pairs_D4",
+      "file": "Zb011_Dimension.lean"
+    },
+    {
+      "name": "zb011_spacetime_split",
+      "file": "Zb011_Dimension.lean"
+    },
+    {
+      "name": "zb012_aux_quadform",
+      "file": "Zb012_AuxLaplacian.lean"
+    },
+    {
+      "name": "zb012_aux_div_zero_adj_eq",
+      "file": "Zb012_AuxLaplacian.lean"
+    },
+    {
+      "name": "zb012_aux_connected_constant",
+      "file": "Zb012_AuxLaplacian.lean"
+    },
+    {
+      "name": "zb012_aux_eq_zero_of_sum_zero",
+      "file": "Zb012_AuxLaplacian.lean"
+    },
+    {
+      "name": "zb012_mulVec_mem_zeroSum",
+      "file": "Zb012_Poisson.lean"
+    },
+    {
+      "name": "zb012_sum_zero_of_solvable",
+      "file": "Zb012_Poisson.lean"
+    },
+    {
+      "name": "zb012_diff_constant",
+      "file": "Zb012_Poisson.lean"
+    },
+    {
+      "name": "zb012_solvable_of_sum_zero",
+      "file": "Zb012_Poisson.lean"
+    },
+    {
+      "name": "zb013_sym_dim_3",
+      "file": "Zb013_Tensor.lean"
+    },
+    {
+      "name": "zb013_traceless_dim_3",
+      "file": "Zb013_Tensor.lean"
+    },
+    {
+      "name": "zb013_polarizations",
+      "file": "Zb013_Tensor.lean"
+    },
+    {
+      "name": "zb013_traceless_dim_4",
+      "file": "Zb013_Tensor.lean"
+    },
+    {
+      "name": "zb014_frequency_locked",
+      "file": "Zb014_Forced.lean"
+    },
+    {
+      "name": "zb014_amplitude_linear",
+      "file": "Zb014_Forced.lean"
+    },
+    {
+      "name": "zb014_amplitude_ratio",
+      "file": "Zb014_Forced.lean"
+    },
+    {
+      "name": "zb014_hermitian_add_i_smul_one_kernel",
+      "file": "Zb014_Matrix.lean"
+    },
+    {
+      "name": "zb018_born_one_forces_parallel",
+      "file": "Zb018_Gleason.lean"
+    },
+    {
+      "name": "zb018_gleason_int_cos_nat_mul",
+      "file": "Zb018_Gleason.lean"
+    },
+    {
+      "name": "zb018_gleason_int_sin_nat_mul",
+      "file": "Zb018_Gleason.lean"
+    },
+    {
+      "name": "zb018_gleason_int_cos6_cos2",
+      "file": "Zb018_Gleason.lean"
+    },
+    {
+      "name": "zb018_gleason_int_cos6_sin2",
+      "file": "Zb018_Gleason.lean"
+    },
+    {
+      "name": "zb018_gleason_int_cos6_sq",
+      "file": "Zb018_Gleason.lean"
+    },
+    {
+      "name": "zb018_gleason_int_state_form",
+      "file": "Zb018_Gleason.lean"
+    },
+    {
+      "name": "zb018_gleason_f_nonneg",
+      "file": "Zb018_Gleason.lean"
+    },
+    {
+      "name": "zb018_gleason_f_add",
+      "file": "Zb018_Gleason.lean"
+    },
+    {
+      "name": "zb018_gleason_f_int_cos6",
+      "file": "Zb018_Gleason.lean"
+    },
+    {
+      "name": "zb018_gleason_not_state_induced",
+      "file": "Zb018_Gleason.lean"
+    },
+    {
+      "name": "zb020_su2_2pi_minus",
+      "file": "Zb020_Spin.lean"
+    },
+    {
+      "name": "zb020_su2_4pi_one",
+      "file": "Zb020_Spin.lean"
+    },
+    {
+      "name": "zb020_involution_eigenvalues",
+      "file": "Zb020_Spin.lean"
+    },
+    {
+      "name": "zb020_wedge_self_zero",
+      "file": "Zb020_Spin.lean"
+    },
+    {
+      "name": "zb020_wedge_antisym",
+      "file": "Zb020_Spin.lean"
+    },
+    {
+      "name": "zb021_povm_probability_sum",
+      "file": "Zb021_POVM.lean"
+    },
+    {
+      "name": "zb021_no_signal_trace",
+      "file": "Zb021_POVM.lean"
+    },
+    {
+      "name": "zb022_chsh_classical_bound",
+      "file": "Zb022_CHSH.lean"
+    },
+    {
+      "name": "zb022_eigen_plus",
+      "file": "Zb022_Werner.lean"
+    },
+    {
+      "name": "zb022_eigen_minus",
+      "file": "Zb022_Werner.lean"
+    },
+    {
+      "name": "zb022_trace_one",
+      "file": "Zb022_Werner.lean"
+    },
+    {
+      "name": "zb022_min_eig_nonneg_iff",
+      "file": "Zb022_Werner.lean"
+    },
+    {
+      "name": "zb022_S_zero",
+      "file": "Zb022_Werner.lean"
+    },
+    {
+      "name": "zb022_S_one",
+      "file": "Zb022_Werner.lean"
+    },
+    {
+      "name": "zb022_PR_box_V_sqrt3",
+      "file": "Zb022_Werner.lean"
+    },
+    {
+      "name": "zb022_PR_box_negative_eigenvalue",
+      "file": "Zb022_Werner.lean"
+    },
+    {
+      "name": "zb024B_sq",
+      "file": "Zb024_BoostV2.lean"
+    },
+    {
+      "name": "zb024B_herm",
+      "file": "Zb024_BoostV2.lean"
+    },
+    {
+      "name": "zb024_gramian",
+      "file": "Zb024_BoostV2.lean"
+    },
+    {
+      "name": "zb024_boost_not_unitary",
+      "file": "Zb024_BoostV2.lean"
+    },
+    {
+      "name": "zb026_cos_two_pi",
+      "file": "Zb026_Phase.lean"
+    },
+    {
+      "name": "zb026_sin_two_pi",
+      "file": "Zb026_Phase.lean"
+    },
+    {
+      "name": "zb026_cos_add_two_pi",
+      "file": "Zb026_Phase.lean"
+    },
+    {
+      "name": "zb026_exp_two_pi_I",
+      "file": "Zb026_Phase.lean"
+    },
+    {
+      "name": "zb027_aliasing",
+      "file": "Zb027_Aliasing.lean"
+    },
+    {
+      "name": "zb027_aliasing_funext",
+      "file": "Zb027_Aliasing.lean"
+    },
+    {
+      "name": "zb027_beyond_nyquist",
+      "file": "Zb027_Aliasing.lean"
+    },
+    {
+      "name": "zb029_A333",
+      "file": "Zb029_Anomaly.lean"
+    },
+    {
+      "name": "zb029_A_YYY",
+      "file": "Zb029_Anomaly.lean"
+    },
+    {
+      "name": "zb029_witten_even",
+      "file": "Zb029_Anomaly.lean"
+    },
+    {
+      "name": "zb029_trace_ratio",
+      "file": "Zb029_Anomaly.lean"
+    },
+    {
+      "name": "zb029_charge_formula",
+      "file": "Zb029_Anomaly.lean"
+    },
+    {
+      "name": "zb029_quantization_needs_parity",
+      "file": "Zb029_Anomaly.lean"
+    },
+    {
+      "name": "zb029_step_one_third",
+      "file": "Zb029_Anomaly.lean"
+    },
+    {
+      "name": "zb031_complex_matrix_real_dim",
+      "file": "Zb031_CKM.lean"
+    },
+    {
+      "name": "zb031_unitary_constraints",
+      "file": "Zb031_CKM.lean"
+    },
+    {
+      "name": "zb031_after_unitarity",
+      "file": "Zb031_CKM.lean"
+    },
+    {
+      "name": "zb031_physical_parameters",
+      "file": "Zb031_CKM.lean"
+    },
+    {
+      "name": "zb031_three_angles_one_phase",
+      "file": "Zb031_CKM.lean"
+    },
+    {
+      "name": "zb032_omega_cubed",
+      "file": "Zb032_Cartan.lean"
+    },
+    {
+      "name": "zb032_cos_two_pi_div_three",
+      "file": "Zb032_Cartan.lean"
+    },
+    {
+      "name": "zb032_omega_eq",
+      "file": "Zb032_Cartan.lean"
+    },
+    {
+      "name": "zb032_omega_re",
+      "file": "Zb032_Cartan.lean"
+    },
+    {
+      "name": "zb032_omega_im",
+      "file": "Zb032_Cartan.lean"
+    },
+    {
+      "name": "zb032_sin_two_pi_div_three",
+      "file": "Zb032_Cartan.lean"
+    },
+    {
+      "name": "zb032_cartan_11",
+      "file": "Zb032_Cartan.lean"
+    },
+    {
+      "name": "zb032_cartan_12",
+      "file": "Zb032_Cartan.lean"
+    },
+    {
+      "name": "zb032_cartan_22",
+      "file": "Zb032_Cartan.lean"
+    },
+    {
+      "name": "zb032_cartan_matrix_entries",
+      "file": "Zb032_Cartan.lean"
+    },
+    {
+      "name": "zb032_skew_hermitian_structure",
+      "file": "Zb032_SU3.lean"
+    },
+    {
+      "name": "zb032_traceless_diagonal_sum",
+      "file": "Zb032_SU3.lean"
+    },
+    {
+      "name": "zb040_log_closure",
+      "file": "Zb040_LogCircle.lean"
+    },
+    {
+      "name": "zb040_log_antisym",
+      "file": "Zb040_LogCircle.lean"
+    },
+    {
+      "name": "zb040_geometric_arc",
+      "file": "Zb040_LogCircle.lean"
+    },
+    {
+      "name": "zb040_square_law_not_equal",
+      "file": "Zb040_LogCircle.lean"
+    },
+    {
+      "name": "zb041_omega_cube",
+      "file": "Zb041_Z3.lean"
+    },
+    {
+      "name": "zb041_omega_ne_one",
+      "file": "Zb041_Z3.lean"
+    },
+    {
+      "name": "zb041_omega_sum",
+      "file": "Zb041_Z3.lean"
+    },
+    {
+      "name": "zb041_minus_one_eigen",
+      "file": "Zb041_Z3.lean"
+    },
+    {
+      "name": "zb041_mulVec_apply",
+      "file": "Zb041_Z3.lean"
+    },
+    {
+      "name": "zb041_minus_one_space",
+      "file": "Zb041_Z3.lean"
+    },
+    {
+      "name": "zb041_minus_one_shape_refuted",
+      "file": "Zb041_Z3.lean"
+    },
+    {
+      "name": "zb041_minus_one_shape_of_C3",
+      "file": "Zb041_Z3.lean"
+    },
+    {
+      "name": "zb041_trivial_component",
+      "file": "Zb041_Z3.lean"
+    },
+    {
+      "name": "zb041_minus_one_linearIndependent",
+      "file": "Zb041_Z3.lean"
+    },
+    {
+      "name": "zb041_third_vector_not_in_minus_one",
+      "file": "Zb041_Z3.lean"
+    },
+    {
+      "name": "zb047_block_entropy_closed",
+      "file": "Zb047_Entropy.lean"
+    },
+    {
+      "name": "zb047_two_blocks_example",
+      "file": "Zb047_Entropy.lean"
+    },
+    {
+      "name": "prefixIdx_nonempty",
+      "file": "Zb047_Ledger.lean"
+    },
+    {
+      "name": "zb047_W4_card",
+      "file": "Zb047_Ledger.lean"
+    },
+    {
+      "name": "zb047_layer_table",
+      "file": "Zb047_Ledger.lean"
+    },
+    {
+      "name": "zb047_layer_counts",
+      "file": "Zb047_Ledger.lean"
+    },
+    {
+      "name": "zb047_layer_weights",
+      "file": "Zb047_Ledger.lean"
+    },
+    {
+      "name": "zb047_kappa1",
+      "file": "Zb047_Ledger.lean"
+    },
+    {
+      "name": "zb047_delta_mod",
+      "file": "Zb047_Ledger.lean"
+    },
+    {
+      "name": "zb047_all_balanced",
+      "file": "Zb047_Ledger.lean"
+    },
+    {
+      "name": "zb047_aux_Mplus_distribution",
+      "file": "Zb047_Ledger.lean"
+    },
+    {
+      "name": "zb047_aux_ballot_formula_L4",
+      "file": "Zb047_Ledger.lean"
+    },
+    {
+      "name": "zb047_aux_mass_sum_L4",
+      "file": "Zb047_Ledger.lean"
+    },
+    {
+      "name": "zb048_all_edges",
+      "file": "Zb048_Count.lean"
+    },
+    {
+      "name": "zb048_perfect_subset_edges",
+      "file": "Zb048_Count.lean"
+    },
+    {
+      "name": "zb048_candidates",
+      "file": "Zb048_Count.lean"
+    },
+    {
+      "name": "zb048_three_matchings_unordered",
+      "file": "Zb048_Count.lean"
+    },
+    {
+      "name": "zb048_edge_count",
+      "file": "Zb048_K4.lean"
+    },
+    {
+      "name": "zb048_M1_perfect",
+      "file": "Zb048_K4.lean"
+    },
+    {
+      "name": "zb048_M2_perfect",
+      "file": "Zb048_K4.lean"
+    },
+    {
+      "name": "zb048_M3_perfect",
+      "file": "Zb048_K4.lean"
+    },
+    {
+      "name": "zb048_aut_card",
+      "file": "Zb048_K4.lean"
+    },
+    {
+      "name": "zb048_s3_card",
+      "file": "Zb048_K4.lean"
+    },
+    {
+      "name": "zb048_ordered_pairs",
+      "file": "Zb048_Pairs.lean"
+    },
+    {
+      "name": "zb048_action_maps",
+      "file": "Zb048_S4S3.lean"
+    },
+    {
+      "name": "zb048_idx_bijective",
+      "file": "Zb048_S4S3.lean"
+    },
+    {
+      "name": "zb048_idx_mul",
+      "file": "Zb048_S4S3.lean"
+    },
+    {
+      "name": "zb048_kernel_card",
+      "file": "Zb048_S4S3.lean"
+    },
+    {
+      "name": "zb048_image_card",
+      "file": "Zb048_S4S3.lean"
+    },
+    {
+      "name": "zb048_kernel_eq_V4",
+      "file": "Zb048_S4S3.lean"
+    },
+    {
+      "name": "zb049_iterate_eventually_periodic",
+      "file": "Zb049_Periodicity.lean"
+    },
+    {
+      "name": "zb049_iterate_periodic_eventually",
+      "file": "Zb049_Periodicity.lean"
+    },
+    {
+      "name": "zb049_monotone_on_cycle_constant",
+      "file": "Zb049_Periodicity.lean"
+    },
+    {
+      "name": "zb049_mobility_regular",
+      "file": "Zb049_Spectrum.lean"
+    },
+    {
+      "name": "zb049_mobility_trace",
+      "file": "Zb049_Spectrum.lean"
+    },
+    {
+      "name": "zb049_uniform_stationary",
+      "file": "Zb049_Spectrum.lean"
+    },
+    {
+      "name": "zb049_spectrum_annihilator",
+      "file": "Zb049_Spectrum.lean"
+    },
+    {
+      "name": "zb049_zero_eigenvector",
+      "file": "Zb049_Spectrum.lean"
+    },
+    {
+      "name": "zb049_four_eigenvector",
+      "file": "Zb049_Spectrum.lean"
+    },
+    {
+      "name": "zb049_minus_two_eigenvector",
+      "file": "Zb049_Spectrum.lean"
+    },
+    {
+      "name": "zb053_expectation",
+      "file": "Zb053_Evidence.lean"
+    },
+    {
+      "name": "zb053_markov_threshold",
+      "file": "Zb053_Evidence.lean"
+    },
+    {
+      "name": "zb053_example_M1e4",
+      "file": "Zb053_Evidence.lean"
+    },
+    {
+      "name": "zb053_example_M1e10",
+      "file": "Zb053_Evidence.lean"
+    },
+    {
+      "name": "zb053_precision_relative",
+      "file": "Zb053_Evidence.lean"
+    },
+    {
+      "name": "zb054_energy_nonneg",
+      "file": "Zb054_Laplacian.lean"
+    },
+    {
+      "name": "zb054_energy_eq_zero_iff",
+      "file": "Zb054_Laplacian.lean"
+    },
+    {
+      "name": "zb054_mulVec_mem_zeroSum",
+      "file": "Zb054_Laplacian.lean"
+    },
+    {
+      "name": "zb060_partition_normalized",
+      "file": "Zb060_Gibbs.lean"
+    },
+    {
+      "name": "zb060_first_law",
+      "file": "Zb060_Gibbs.lean"
+    },
+    {
+      "name": "zb060_kl_nonneg",
+      "file": "Zb060_Gibbs.lean"
+    },
+    {
+      "name": "zb060_kl_eq_zero",
+      "file": "Zb060_Gibbs.lean"
+    },
+    {
+      "name": "zb060_gibbs_variational_two",
+      "file": "Zb060_Gibbs.lean"
+    },
+    {
+      "name": "zb061_partition_normalized",
+      "file": "Zb061_Partition.lean"
+    },
+    {
+      "name": "zb061_partition_eq_one",
+      "file": "Zb061_Partition.lean"
+    },
+    {
+      "name": "zb061_entropy_mean",
+      "file": "Zb061_Partition.lean"
+    },
+    {
+      "name": "zb067_aux_wordStep_neg",
+      "file": "Zb067_AuxWords.lean"
+    },
+    {
+      "name": "zb067_aux_prefix_neg",
+      "file": "Zb067_AuxWords.lean"
+    },
+    {
+      "name": "zb067_aux_fixed_point_free_involution_even",
+      "file": "Zb067_AuxWords.lean"
+    },
+    {
+      "name": "zb067_aux_bh_even",
+      "file": "Zb067_AuxWords.lean"
+    },
+    {
+      "name": "zb067_runs_runs_even_smallL",
+      "file": "Zb067_Runs.lean"
+    },
+    {
+      "name": "zb067_runs_runs_odd_smallL",
+      "file": "Zb067_Runs.lean"
+    },
+    {
+      "name": "zb067_runs_runs_L12_even_c3",
+      "file": "Zb067_Runs.lean"
+    },
+    {
+      "name": "zb067_runs_runs_L12_odd_c3",
+      "file": "Zb067_Runs.lean"
+    },
+    {
+      "name": "zb067_runs_runLensAux_sum",
+      "file": "Zb067_RunsBijection.lean"
+    },
+    {
+      "name": "zb067_runs_runLensList_sum",
+      "file": "Zb067_RunsBijection.lean"
+    },
+    {
+      "name": "zb067_runs_runLens_sum",
+      "file": "Zb067_RunsBijection.lean"
+    },
+    {
+      "name": "zb067_runs_runLensAux_length",
+      "file": "Zb067_RunsBijection.lean"
+    },
+    {
+      "name": "zb067_runs_runLensList_length_cons",
+      "file": "Zb067_RunsBijection.lean"
+    },
+    {
+      "name": "zb067_runs_runLensAux_succ_pos",
+      "file": "Zb067_RunsBijection.lean"
+    },
+    {
+      "name": "z075TurnsAux_ofFn",
+      "file": "Zb067_RunsBijection.lean"
+    },
+    {
+      "name": "zb067_runs_runLens_length",
+      "file": "Zb067_RunsBijection.lean"
+    },
+    {
+      "name": "zb067_runs_runLens_pos",
+      "file": "Zb067_RunsBijection.lean"
+    },
+    {
+      "name": "zb067_runs_exists_pos_composition",
+      "file": "Zb067_RunsBijection.lean"
+    },
+    {
+      "name": "zb067_runs_mem_bdd",
+      "file": "Zb067_RunsGeneral.lean"
+    },
+    {
+      "name": "zb067_runs_mem_compositions",
+      "file": "Zb067_RunsGeneral.lean"
+    },
+    {
+      "name": "zb067_runs_compositions_card_eq_zero_of_lt",
+      "file": "Zb067_RunsGeneral.lean"
+    },
+    {
+      "name": "zb067_runs_compositions_succ_card",
+      "file": "Zb067_RunsGeneral.lean"
+    },
+    {
+      "name": "zb067_runs_compositions_one_card",
+      "file": "Zb067_RunsGeneral.lean"
+    },
+    {
+      "name": "zb067_runs_compositions_card",
+      "file": "Zb067_RunsGeneral.lean"
+    },
+    {
+      "name": "zb067_runs_wordStep_ite",
+      "file": "Zb067_RunsGeneral.lean"
+    },
+    {
+      "name": "zb067_runs_wordSum_eq_sameCount",
+      "file": "Zb067_RunsGeneral.lean"
+    },
+    {
+      "name": "zb067_runs_wordSum_zero_iff",
+      "file": "Zb067_RunsGeneral.lean"
+    },
+    {
+      "name": "zb067_sector_mod_lt",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "z074Sectors_eq_startSet_card",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "z074Blk_eq_true",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "z074Blk_eq_false",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_bool_eq_false_of_ne_true",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_bool_eq_true_of_ne_false",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_mod_add_one",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "z074Succ_iter_val",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_mod_eq_of_lt",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_iter_val_eq",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_iter_injOn",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_arc_card",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_mem_arc_self",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_mem_arc_succ",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_iter_surj",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_pred_succ",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_pred_succ_iter",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_iter_last",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_sum_eq",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_card_true_of_sum_zero",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_two_mul_div_two",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_startSet_blk",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_blk_sum_zero",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_blk_of_sectors_one",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_sector_one_card",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_L4_sectors_indistinguishable",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_L6_hmin",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_sector_L8_rot_hmin",
+      "file": "Zb067_Sectors.lean"
+    },
+    {
+      "name": "zb067_top_step_le_one",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_neg_one_le_step",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_step_eq_one_iff",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_step_eq_neg_one_iff",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_prefix_le_self",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_neg_le_prefix_self",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_prefix_split",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_tail_bounds",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_natAbs_le",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_prefix_bounds",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_prefix_natAbs_le_min",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_layer_le_half",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_exists_reach",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_reach_pos",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_reach_neg",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_top_layer_two",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_sum_utd",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_prefix_utd_top",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_layer_utd",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_utd_mem",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_neg_utd_mem",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_utd_ne_neg",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_top_top_layer_card",
+      "file": "Zb067_TopLayer.lean"
+    },
+    {
+      "name": "zb067_area_prefix_succ",
+      "file": "Zb067_ZeroArea.lean"
+    },
+    {
+      "name": "zb067_area_prefix_sub_even",
+      "file": "Zb067_ZeroArea.lean"
+    },
+    {
+      "name": "zb067_area_family_prefix",
+      "file": "Zb067_ZeroArea.lean"
+    },
+    {
+      "name": "zb067_area_family_antisymm",
+      "file": "Zb067_ZeroArea.lean"
+    },
+    {
+      "name": "zb067_area_half_prod_odd",
+      "file": "Zb067_ZeroArea.lean"
+    },
+    {
+      "name": "zb067_area_prefix_odd_iff_refuted",
+      "file": "Zb067_ZeroArea.lean"
+    },
+    {
+      "name": "zb067_area_prefix_even_iff_of_le",
+      "file": "Zb067_ZeroArea.lean"
+    },
+    {
+      "name": "zb067_area_area_odd_of_mod_four_two",
+      "file": "Zb067_ZeroArea.lean"
+    },
+    {
+      "name": "zb067_area_zero_area_exists",
+      "file": "Zb067_ZeroArea.lean"
+    },
+    {
+      "name": "z021Ones_mulVec",
+      "file": "Zb068_GramRank.lean"
+    },
+    {
+      "name": "z021Ones_mulVec_one",
+      "file": "Zb068_GramRank.lean"
+    },
+    {
+      "name": "zb068_gram_mulVec_one",
+      "file": "Zb068_GramRank.lean"
+    },
+    {
+      "name": "zb068_gram_kernel_one",
+      "file": "Zb068_GramRank.lean"
+    },
+    {
+      "name": "z021Gram_mulVec",
+      "file": "Zb068_GramRank.lean"
+    },
+    {
+      "name": "z021Gram_ker_eq_bot",
+      "file": "Zb068_GramRank.lean"
+    },
+    {
+      "name": "z021Gram_rank_eq_card",
+      "file": "Zb068_GramRank.lean"
+    },
+    {
+      "name": "zb068_gram_rank_forces_rho",
+      "file": "Zb068_GramRank.lean"
+    },
+    {
+      "name": "zb068_simplex_sum_zero",
+      "file": "Zb068_Simplex.lean"
+    },
+    {
+      "name": "zb068_simplex_self",
+      "file": "Zb068_Simplex.lean"
+    },
+    {
+      "name": "zb068_simplex_pair",
+      "file": "Zb068_Simplex.lean"
+    },
+    {
+      "name": "zb068_simplex_rho",
+      "file": "Zb068_Simplex.lean"
+    },
+    {
+      "name": "zb068_simplex_equilateral",
+      "file": "Zb068_Simplex.lean"
+    },
+    {
+      "name": "zb068_simplex_rho_five",
+      "file": "Zb068_Simplex.lean"
+    },
+    {
+      "name": "zb068_simplex_rho_tetra",
+      "file": "Zb068_Simplex.lean"
+    }
+  ]
+}
