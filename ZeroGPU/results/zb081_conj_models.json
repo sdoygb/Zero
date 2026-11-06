@@ -1,0 +1,84 @@
+{
+  "C13": {
+    "two_core": {
+      "n_vars": 5,
+      "n_eqs": 2,
+      "rank": 2,
+      "dual_rank": 3,
+      "dof": 3,
+      "B": [
+        [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ]
+    },
+    "K4_graphic": {
+      "n_edges": 6,
+      "rank": 3,
+      "dual_rank": 3
+    }
+  },
+  "C14": {
+    "chain_2": {
+      "ideals": 3,
+      "filters": 3,
+      "complement_bijection": true
+    },
+    "chain_4": {
+      "ideals": 5,
+      "filters": 5,
+      "complement_bijection": true
+    }
+  },
+  "C24": {
+    "K": [
+      [
+        1.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rank": 2,
+    "kernel_dim": 1,
+    "KKpK_eq_K": true,
+    "quotient_dim": 2,
+    "pseudoinverse": [
+      [
+        0.333333,
+        -0.333333,
+        0.333333
+      ],
+      [
+        -0.166667,
+        0.666667,
+        -0.166667
+      ],
+      [
+        0.166667,
+        0.333333,
+        0.166667
+      ]
+    ]
+  }
+}
