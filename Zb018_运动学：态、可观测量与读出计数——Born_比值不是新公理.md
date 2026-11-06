@@ -77,6 +77,35 @@ $$
 
 ---
 
+### 2.5 Gleason 的维度门槛：2D 反例
+
+Gleason 定理的结论（$\dim\ge3$ 时，投影格上的测度由密度矩阵诱导）在 $\dim=2$ 不成立。
+取
+$$
+f(\theta):=\frac{1+\cos6\theta}{2}.
+\tag{2.3}
+$$
+则：
+
+1. $f(\theta)\ge0$；
+2. $f(\theta)+f(\theta+\pi/2)=1$（归一）；
+3. 不存在 $a,b,c\in\mathbb R$ 使 $f(\theta)=a+b\cos2\theta+c\sin2\theta$ 对一切 $\theta$ 成立。
+
+第 3 条是关键：$f$ 含频率 $6$，而 $\operatorname{span}\{1,\cos2\theta,\sin2\theta\}$ 只含频率 $0,2$；
+在 $(0,2\pi)$ 上 $\cos6\theta$ 与 $1,\cos2\theta,\sin2\theta$ 都正交，故
+$$
+\int_0^{2\pi}f(\theta)\cos6\theta\,d\theta=\frac\pi2\ne0,
+$$
+而任何 $a+b\cos2\theta+c\sin2\theta$ 乘 $\cos6\theta$ 的积分都为 $0$，矛盾。
+
+**读法.** 2D 的 Born 比值必须由迹定义（定理 2.2）给出；Gleason 的唯一性论证只在 $\dim\ge3$ 可用。
+这不是 Born 规则的例外，而是「Gleason 的前提在 2D 不成立」的边界。
+
+**Lean 指针**：`Zero/Zb018_Gleason.lean`，主定理 `zb018_gleason_f_nonneg`、
+`zb018_gleason_f_add`、`zb018_gleason_not_state_induced`。
+
+---
+
 ## §3 计数测度的推前：概率从哪里来
 
 公理②说"不设概率"。本节说明**概率从哪来**：它是**计数测度的推前**。
@@ -198,3 +227,4 @@ $$
 | 命题 4.1 | 计数比与公理②的分工 | 记账 | §4 |
 | 定理 5.1 | 纯态 ⟹ 模方 | 导出 | §5 |
 | §6 | 频率趋近引大数定律 | 引用＋(I) | §6 |
+| 命题 2.5 | 2D Gleason 反例：$f=(1+\cos6\theta)/2$ 非态诱导 | 导出 | §2.5 |

@@ -59,6 +59,11 @@ $$
 
 除以 $a^2$ 即得 (1.2)。$\blacksquare$
 
+**Lean 指针**：`Zero/Zb010_Taylor.lean` 把这条写成三条 kernel 定理：
+`zb010_taylor_even_terms`（$T_6(x+a)+T_6(x-a)-2f$ 的偶次项）、
+`zb010_taylor_main_bigO`（主差 $O(a^6)$）、
+`zb010_taylor_remainder`（(1.2) 的 $O(a^4)$，在 $\mathcal N^\times_0$ 上）。
+
 > **推论 1.3.** $\max_i\bigl|(D_au)_i-f''(x_i)\bigr|\le\frac{a^2}{12}\|f^{(4)}\|_\infty+O(a^4)$；故细化时收敛阶为 $2$。
 
 *证明.* 由 (1.2) 取绝对值并用三角不等式。$\blacksquare$

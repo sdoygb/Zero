@@ -48,6 +48,7 @@ import Zero.Zb060_Gibbs
 import Zero.Zb061_Partition
 import Zero.Zb068_GramRank
 import Zero.Zb068_Simplex
+import Zero.Zb074_RecordInterlayer
 import Zero.Zb067_AuxWords
 import Zero.Zb067_TopLayer
 import Zero.Zb067_ZeroArea
@@ -60,3 +61,7 @@ import Zero.ConjugationZb001
 import Zero.ConjugationZb004
 import Zero.ConjugationZb003
 import Zero.ConjugationMore
+import Zero.Zb075_Conj
+import Zero.Zb076_Conj
+import Zero.Zb078_LineGraph
+import Zero.Zb080_Hodge
