@@ -1,0 +1,167 @@
+{
+  "C01_complement": {
+    "spec_A": [
+      -2.0,
+      -2.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      4.0
+    ],
+    "spec_C": [
+      -1.0,
+      -1.0,
+      -1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "involution": true
+  },
+  "C02_transpose": {
+    "rank": 5,
+    "rank_T": 5,
+    "sv_match": true,
+    "ker_dim_B": 4,
+    "ker_dim_BT": 0
+  },
+  "C03_line_graph": {
+    "n": 6,
+    "edges": 9,
+    "rank_B": 6,
+    "spec_line": [
+      -2.0,
+      -2.0,
+      -2.0,
+      -1.518816693,
+      -0.0,
+      0.0,
+      1.0,
+      1.609300727,
+      4.909515966
+    ],
+    "spec_pred": [
+      -2.0,
+      -2.0,
+      -2.0,
+      -1.518816693,
+      -0.0,
+      0.0,
+      1.0,
+      1.609300727,
+      4.909515966
+    ],
+    "match": true
+  },
+  "C04_bipartite": {
+    "DAD_eq_minusA": true,
+    "spec_L": [
+      -0.0,
+      0.585786438,
+      1.0,
+      2.0,
+      2.0,
+      3.414213562,
+      4.0,
+      5.0
+    ],
+    "spec_Q": [
+      -0.0,
+      0.585786438,
+      1.0,
+      2.0,
+      2.0,
+      3.414213562,
+      4.0,
+      5.0
+    ],
+    "spec_match": true
+  },
+  "C05_seidel": {
+    "seidel_equivariance": true,
+    "spec_match": true
+  },
+  "C06C07_words": {
+    "L": 6,
+    "balanced_words": 20,
+    "reversal_area_odd": true,
+    "negation_area_odd": true,
+    "example": {
+      "w": [
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "area": -9,
+      "area_rev": 9,
+      "area_neg": 9,
+      "runs": 2,
+      "sector": 1
+    }
+  },
+  "C08_constraint": {
+    "rank": 7,
+    "rank_T": 7,
+    "dof_var": 4,
+    "dof_eq": 0,
+    "rank_match": true
+  },
+  "C09_schur": {
+    "det_M": 10.796034706399825,
+    "det_A_det_S": 10.79603470639982,
+    "match": true
+  },
+  "C10_subgroup": {
+    "stab0": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        1
+      ]
+    ],
+    "stab1": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        0
+      ]
+    ],
+    "gH": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        0
+      ]
+    ],
+    "conj_match": true
+  },
+  "C11_partition": {
+    "partitions_of_6": 11,
+    "involution_size": true
+  },
+  "C12_code": {
+    "dim_C": 4,
+    "dim_dual": 3,
+    "sum": 7,
+    "GHT_zero": true,
+    "rank_G": 4
+  }
+}

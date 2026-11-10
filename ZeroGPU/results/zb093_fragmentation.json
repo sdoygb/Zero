@@ -1,0 +1,62 @@
+{
+  "n_proteins": 1787,
+  "rows": {
+    "8": {
+      "n_fragments": 276415,
+      "n_distinct": 257936,
+      "n_collided": 10235,
+      "collision_rate": 0.03968038583214441,
+      "combinatorial_upper": 65536
+    },
+    "10": {
+      "n_fragments": 272841,
+      "n_distinct": 256896,
+      "n_collided": 8851,
+      "collision_rate": 0.03445363104135526,
+      "combinatorial_upper": 1048576
+    },
+    "12": {
+      "n_fragments": 269267,
+      "n_distinct": 255090,
+      "n_collided": 7839,
+      "collision_rate": 0.03073033047159826,
+      "combinatorial_upper": 16777216
+    },
+    "15": {
+      "n_fragments": 263906,
+      "n_distinct": 251665,
+      "n_collided": 6753,
+      "collision_rate": 0.02683329028669064,
+      "combinatorial_upper": 1073741824
+    },
+    "20": {
+      "n_fragments": 254971,
+      "n_distinct": 244958,
+      "n_collided": 5541,
+      "collision_rate": 0.022620204279917372,
+      "combinatorial_upper": 1099511627776
+    },
+    "25": {
+      "n_fragments": 246036,
+      "n_distinct": 237521,
+      "n_collided": 4705,
+      "collision_rate": 0.019808774803070046,
+      "combinatorial_upper": 1125899906842624
+    },
+    "30": {
+      "n_fragments": 237101,
+      "n_distinct": 229721,
+      "n_collided": 4072,
+      "collision_rate": 0.017725850052890246,
+      "combinatorial_upper": 1152921504606846976
+    },
+    "40": {
+      "n_fragments": 219231,
+      "n_distinct": 213504,
+      "n_collided": 3175,
+      "collision_rate": 0.01487091576738609,
+      "combinatorial_upper": 1208925819614629174706176
+    }
+  },
+  "slope": -0.013032698197405346
+}

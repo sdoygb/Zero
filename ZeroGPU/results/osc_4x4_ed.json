@@ -1,0 +1,11 @@
+{
+ "source": "OSC dataset validation/comparison_4x4_ED_vs_VMC.md (Ku-ku ED, U/t=8, 4x4 torus, organizer normalization)",
+ "columns": ["n", "Ne", "ED_Pd_U8", "ED_Pd_U0"],
+ "rows": [
+  [0.500,  8, 0.048076, 0.046875],
+  [0.625, 10, 0.060122, 0.093750],
+  [0.750, 12, 0.009831, 0.041667],
+  [0.875, 14, 0.019219, 0.010417],
+  [1.000, 16, 0.006197, 0.000000]
+ ]
+}

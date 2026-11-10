@@ -1,0 +1,10 @@
+{
+  "sdii_before_nnse": -0.4953,
+  "sdii_after_nnse": -0.3203,
+  "sdii_target_nnse": 0.0429,
+  "sdii_before_mean": 3.709544201782547,
+  "sdii_after_mean": 4.413184795271049,
+  "sdii_true_mean": 4.517534626060988,
+  "sdii_target_mean": 4.467305546304246,
+  "max_abs_target_gap": 25.609882815050092
+}

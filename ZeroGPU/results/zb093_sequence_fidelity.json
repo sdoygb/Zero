@@ -1,0 +1,46 @@
+{
+  "n_sequences": 60,
+  "width": 148,
+  "ref_len": 148,
+  "conserved_frac": 0.05405405405405406,
+  "semi_variable_frac": 0.6351351351351351,
+  "hyper_variable_frac": 0.3108108108108108,
+  "species_per_column_mean": 3.7364864864864864,
+  "distribution": [
+    [
+      3,
+      39
+    ],
+    [
+      2,
+      37
+    ],
+    [
+      5,
+      20
+    ],
+    [
+      4,
+      18
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      8,
+      3
+    ]
+  ],
+  "independent_model_conserved_frac_mean": 0.12783783783783784,
+  "independent_model_conserved_frac_99": 0.16891891891891891,
+  "observed_beyond_model": false
+}

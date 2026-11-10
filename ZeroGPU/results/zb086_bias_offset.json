@@ -1,0 +1,177 @@
+{
+  "S1_internal_fixed": {
+    "n": 6,
+    "edges": 6,
+    "trials": 200,
+    "max_abs_delta_b": 0.0,
+    "pass": true
+  },
+  "S2_boundary_law": {
+    "subsystem": [
+      0,
+      1,
+      2
+    ],
+    "cut_edges": 3,
+    "trials": 200,
+    "max_abs_residual": 4.440892098500626e-16,
+    "pass": true
+  },
+  "S3_wrong_direction": {
+    "max_abs_residual_all_edges": 11.333333333333334,
+    "fails_as_expected": true
+  },
+  "S4_solar": {
+    "rows": [
+      {
+        "planet": "Mercury",
+        "a_au": 0.3871,
+        "m_mjup": 0.000174,
+        "b_au": 6.431038224521757e-08,
+        "b_km": 9.620696247787633,
+        "b_over_rsun": 1.3828800126186048e-05
+      },
+      {
+        "planet": "Venus",
+        "a_au": 0.72333,
+        "m_mjup": 0.002564,
+        "b_au": 1.770770094833255e-06,
+        "b_km": 264.903435686292,
+        "b_over_rsun": 0.0003807725106889349
+      },
+      {
+        "planet": "Earth",
+        "a_au": 1.0,
+        "m_mjup": 0.003147,
+        "b_au": 3.0047212018447133e-06,
+        "b_km": 449.499893843114,
+        "b_over_rsun": 0.0006461116772216674
+      },
+      {
+        "planet": "Mars",
+        "a_au": 1.52371,
+        "m_mjup": 0.000323,
+        "b_au": 4.699086609935817e-07,
+        "b_km": 70.29733510812797,
+        "b_over_rsun": 0.00010104547234171047
+      },
+      {
+        "planet": "Jupiter",
+        "a_au": 5.20288,
+        "m_mjup": 1.0,
+        "b_au": 0.0049629293156875495,
+        "b_km": 742443.6580614655,
+        "b_over_rsun": 1.0671893891928497
+      },
+      {
+        "planet": "Saturn",
+        "a_au": 9.53667,
+        "m_mjup": 0.2994,
+        "b_au": 0.0027254182683496744,
+        "b_km": 407716.7697119925,
+        "b_over_rsun": 0.5860525653471216
+      },
+      {
+        "planet": "Uranus",
+        "a_au": 19.18916,
+        "m_mjup": 0.04572,
+        "b_au": 0.0008376295139733046,
+        "b_km": 125307.59172588226,
+        "b_over_rsun": 0.1801172800429528
+      },
+      {
+        "planet": "Neptune",
+        "a_au": 30.06992,
+        "m_mjup": 0.05372,
+        "b_au": 0.001542249880065188,
+        "b_km": 230717.29814508252,
+        "b_over_rsun": 0.331633316293061
+      }
+    ],
+    "aligned_sum_au": 0.010073536688415633,
+    "aligned_sum_over_rsun": 2.166134309336363,
+    "max_single_over_rsun": 1.0671893891928497
+  },
+  "S5_ratio_vs_anchor": {
+    "scale": 1000000.0,
+    "ratio_scaled": 1.0671893891928497,
+    "ratio_original": 1.0671893891928497,
+    "ratio_invariant": true,
+    "absolute_changes_by_scale": 1000000.0
+  },
+  "S6_weighted_boundary": {
+    "n": 6,
+    "trials": 300,
+    "subsystem": [
+      0,
+      1,
+      2
+    ],
+    "max_abs_orthogonality": 2.3869795029440866e-15,
+    "max_abs_boundary_law": 8.881784197001252e-16,
+    "pass": true
+  },
+  "S7_two_body": {
+    "rows": [
+      {
+        "planet": "Mercury",
+        "zero_mode_residual": 0.0,
+        "edge_readout_residual": 0.0,
+        "b_over_a": 1.6613376968539805e-07,
+        "formula_over_a": 1.6613376968539805e-07
+      },
+      {
+        "planet": "Venus",
+        "zero_mode_residual": 2.117582368135751e-22,
+        "edge_readout_residual": 0.0,
+        "b_over_a": 2.4480805370069744e-06,
+        "formula_over_a": 2.4480805370069744e-06
+      },
+      {
+        "planet": "Earth",
+        "zero_mode_residual": -4.235164736271502e-22,
+        "edge_readout_residual": 0.0,
+        "b_over_a": 3.0047212018447133e-06,
+        "formula_over_a": 3.0047212018447133e-06
+      },
+      {
+        "planet": "Mars",
+        "zero_mode_residual": 0.0,
+        "edge_readout_residual": 0.0,
+        "b_over_a": 3.083977010018847e-07,
+        "formula_over_a": 3.083977010018847e-07
+      },
+      {
+        "planet": "Jupiter",
+        "zero_mode_residual": 0.0,
+        "edge_readout_residual": 0.0,
+        "b_over_a": 0.0009538811803630968,
+        "formula_over_a": 0.0009538811803630968
+      },
+      {
+        "planet": "Saturn",
+        "zero_mode_residual": -4.336808689942018e-19,
+        "edge_readout_residual": 0.0,
+        "b_over_a": 0.0002857830110876936,
+        "formula_over_a": 0.0002857830110876936
+      },
+      {
+        "planet": "Uranus",
+        "zero_mode_residual": 0.0,
+        "edge_readout_residual": 0.0,
+        "b_over_a": 4.365118191589963e-05,
+        "formula_over_a": 4.365118191589963e-05
+      },
+      {
+        "planet": "Neptune",
+        "zero_mode_residual": 2.168404344971009e-19,
+        "edge_readout_residual": 0.0,
+        "b_over_a": 5.1288792257019247e-05,
+        "formula_over_a": 5.1288792257019247e-05
+      }
+    ],
+    "max_abs_residual": 4.336808689942018e-19,
+    "pass": true
+  },
+  "PASS": true
+}

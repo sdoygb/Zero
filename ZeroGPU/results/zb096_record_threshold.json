@@ -1,0 +1,14 @@
+{
+  "tau=50.0": {
+    "seeds_at_x_stop": 101.0,
+    "m_at_x_stop": 303.993,
+    "self_sustained_days_after_stop": 50,
+    "seed_final": 101.0
+  },
+  "tau=200.0": {
+    "seeds_at_x_stop": 100.99,
+    "m_at_x_stop": 101.993,
+    "self_sustained_days_after_stop": 0,
+    "seed_final": 100.99
+  }
+}

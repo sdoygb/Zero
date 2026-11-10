@@ -1,0 +1,38 @@
+{
+  "yeast_chrXII": {
+    "genome": "yeast_chrXII",
+    "length": 1078177,
+    "k": 50,
+    "n_families": 0,
+    "n_pairs": 0,
+    "identity_mean": null,
+    "identity_frac_ge_999": null,
+    "identity_frac_lt_99": null,
+    "identity_quantiles": null,
+    "examples": []
+  },
+  "yeast_chrIV": {
+    "genome": "yeast_chrIV",
+    "length": 1531933,
+    "k": 50,
+    "n_families": 0,
+    "n_pairs": 0,
+    "identity_mean": null,
+    "identity_frac_ge_999": null,
+    "identity_frac_lt_99": null,
+    "identity_quantiles": null,
+    "examples": []
+  },
+  "human_mt": {
+    "genome": "human_mt",
+    "length": 16569,
+    "k": 50,
+    "n_families": 0,
+    "n_pairs": 0,
+    "identity_mean": null,
+    "identity_frac_ge_999": null,
+    "identity_frac_lt_99": null,
+    "identity_quantiles": null,
+    "examples": []
+  }
+}

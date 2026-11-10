@@ -1047,7 +1047,7 @@ def cmd_preflight(a):
     if concl.exists():
         n = sum(1 for _ in concl.open(encoding="utf-8"))
         print(f"累计过门结论：{n} 条（{concl}）")
-    print("\n开工三步：① 本命令 ② 判定类任务先进检索门（recall 原话 → search×4 族 → conclude）③ 落盘前 lint")
+    print("\n开工四步：① 本命令 ② 旧树检索 zarch \"<词>\"（五棵副目录＋本库） ③ 判定类任务先进检索门（recall 原话 → search×4 族 → conclude） ④ 落盘前 lint")
     print("═" * 72)
     return 0
 

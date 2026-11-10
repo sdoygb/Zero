@@ -1,0 +1,75 @@
+{
+  "rows": [
+    {
+      "pair": [
+        "4AKE.pdb",
+        "1AKE.pdb"
+      ],
+      "geo_r": 9.704365208232886,
+      "contact_jaccard": 0.8227848101265823,
+      "within_noise_r": 0.0,
+      "n_a": 1,
+      "n_b": 1,
+      "geo_over_noise": 9704.365208232886,
+      "disambiguates": false,
+      "differs_from_noise": true
+    },
+    {
+      "pair": [
+        "2K39.pdb",
+        "1G6J.pdb"
+      ],
+      "geo_r": 0.9884519819154295,
+      "contact_jaccard": 0.8545454545454545,
+      "within_noise_r": 0.9709778510881947,
+      "n_a": 116,
+      "n_b": 32,
+      "geo_over_noise": 1.0179964257759857,
+      "disambiguates": false,
+      "differs_from_noise": false
+    },
+    {
+      "pair": [
+        "1D3Z.pdb",
+        "2MJB.pdb"
+      ],
+      "geo_r": 0.20266757827137602,
+      "contact_jaccard": 0.9721115537848606,
+      "within_noise_r": 0.18821632669211924,
+      "n_a": 10,
+      "n_b": 20,
+      "geo_over_noise": 1.0767800107102072,
+      "disambiguates": false,
+      "differs_from_noise": false
+    },
+    {
+      "pair": [
+        "1D3Z.pdb",
+        "2NR2.pdb"
+      ],
+      "geo_r": 0.6879075049781502,
+      "contact_jaccard": 0.9307692307692308,
+      "within_noise_r": 0.18821632669211924,
+      "n_a": 10,
+      "n_b": 144,
+      "geo_over_noise": 3.654876901850372,
+      "disambiguates": true,
+      "differs_from_noise": true
+    },
+    {
+      "pair": [
+        "2MJB.pdb",
+        "2NR2.pdb"
+      ],
+      "geo_r": 0.7598364518633548,
+      "contact_jaccard": 0.926923076923077,
+      "within_noise_r": 0.12383951534495533,
+      "n_a": 20,
+      "n_b": 144,
+      "geo_over_noise": 6.135654275994445,
+      "disambiguates": true,
+      "differs_from_noise": true
+    }
+  ],
+  "note": "本地 8 个结构可供 5 对；补到 20+ 对需要更多同蛋白多条件 PDB"
+}

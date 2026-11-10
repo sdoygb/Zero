@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zb027_双缝：相位差、条纹间距与_Nyquist_可分辨极限.md",
+                "file": "Zb096_光的波长、能量、波粒二象与交换：从色散到整数记录.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zb027_双缝：相位差、条纹间距与_Nyquist_可分辨极限"
+              "title": "Zb096_光的波长、能量、波粒二象与交换：从色散到整数记录"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 400.86400985717773
+    "width": 314.245418548584
   },
   "right": {
     "id": "b917f7793d5008d8",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zb027_双缝：相位差、条纹间距与_Nyquist_可分辨极限.md",
+                "file": "_staging/conj_batch/LEDGER.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zb027_双缝：相位差、条纹间距与_Nyquist_可分辨极限.md",
+                "file": "_staging/conj_batch/LEDGER.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zb027_双缝：相位差、条纹间距与_Nyquist_可分辨极限.md",
+                "file": "_staging/conj_batch/LEDGER.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,33 +190,51 @@
   },
   "active": "687f3da76a481441",
   "lastOpenFiles": [
-    "Zb028_载体与局域性：张量积结构、局域代数生成全代数、场作为每点的纤维.md",
-    "Zb037_超导与配对：库珀对的能隙方程、指数小能隙、以及_h_2e_的通量量子.md",
-    "_staging/检索台账/conclusions.jsonl",
-    "tools/struct_check.py",
-    "Zb038_弱混合角与标度：跑动、两个常数的分工、以及一阶公式的检验.md",
-    "Zb027_双缝：相位差、条纹间距与_Nyquist_可分辨极限.md",
-    "Zb042_核结合能：四段结构的来源、库仑项的精确积分、以及半经验公式的形状.md",
-    "Zb058_临界距离与奇点的重述：两个下界、一个离散谱、以及视界的记账位置.md",
-    "Zb056_舞台序列的记账：a(τ)_是输入，而距离与膨胀率只能是纯数乘锚.md",
-    "Zb043_毁灭与重播种：粗粒化映射、截面、以及为什么循环不增加可分辨状态.md",
-    "Zb001_架构：零的两种读法与两条公理.md",
-    "Zb003_层与词层：四层指标、词与闭合、维数字典.md",
-    "Zb017_源·舞台·传播·锚：引力接入的五笔账.md",
-    "Zb002_零的对象表：约束力作为独立的变量.md",
-    "Zb001_架构_零的两种读法与两条公理.md",
-    "Zb055_静态舞台没有红移：舞台必须演化，以及_1+z=a₀_a_的锚论证.md",
-    "Zb053_证据的计数判据：搜索空间、多重比较的界、以及_精度不构成证据.md",
-    "Zb052_潮汐与地月：同步半径、角动量记账、以及_快照_与_守恒量_的分界.md",
-    "Zb051_开普勒运动：中心力的角动量守恒、Binet_方程、椭圆解与_T²∝a³.md",
-    "Zb050_观测量分栏：比值可内生、绝对量需锚，以及一条式子的等价改写.md",
-    "Zb057_带宽上限给出膨胀率的界：绝热条件、最短波长、以及幂律舞台的可定义区间.md",
-    "Zb054_均匀即零：宇宙学背景不携带场能量，以及唯一的守恒量.md",
-    "Zb020_自旋、交换与不确定性：su(2)_表示、两点张量积的分解、同时可读的判据.md",
-    "Zb021_测量：效应、无信号、退相干与指针基.md",
-    "_staging/复核台账.md",
-    "Zb031_味与中微子：混合矩阵的参数计数、三代、以及_Majorana_的两个额外相位.md",
-    "_staging/第四轮整合总表.md",
-    "Zb004_守恒与流：离散连续性方程、整数流与交换输运.md"
+    "LICENSE",
+    "_staging/外宣/lean_zulip_帖_20261110.md",
+    "_staging/外宣",
+    "zenodo_tools/sync_261110_report.md",
+    "zenodo_tools/zenodo_current_records_261110.json",
+    "zenodo_tools/progress_sync_261110.json",
+    "zenodo_tools/sync_261110.log",
+    "zenodo_tools/zenodo_sync_261110.py",
+    "_staging/pdf_upload/Zb096.pdf",
+    "_staging/pdf_upload/Zb095.pdf",
+    "_staging/pdf_upload/Zb094.pdf",
+    "_staging/pdf_upload/Zb093.pdf",
+    "_staging/pdf_upload/Zb092.pdf",
+    "_staging/推导/me过mp的8ppm异常.md",
+    "_staging/推导/AME核质量_残差挖掘.md",
+    "_staging/推导/格距a的数据约束.md",
+    "ZeroGPU/results/zb096_fringe_single_photon.png",
+    "ZeroGPU/results/zb096_fringe_profile.png",
+    "ZeroGPU/results/zb096_fringe_lab_view.png",
+    "_staging/推导/单光子干涉_纯格点计算.md",
+    "ZeroGPU/results/zb096_single_photon_fringe.png",
+    "Zb094_分子因果可导出性判据：四层齐备式、重数守恒约束与六条真实路线的回测.md",
+    "Zb096_光的波长、能量、波粒二象与交换：从色散到整数记录.md",
+    "Zb097_光与物质的交换：端口、共振线与记录的不可逆.md",
+    "Zb096_光的波长、能量与波粒二象：从色散到整数记录.md",
+    "Zb095_光是什么？舞台上的零质量模、支撑锥与未破缺身份.md",
+    "_staging/推导/分子因果动力学_基因未解问题映射.md",
+    "Zb093_结构可传承性：接触账在层链上的位置、构象态的不分辨与局部闭合的时序.md",
+    "Zb092_分子手性的可枚举判据：自同构群里的镜面元素与手征荷的强制为零.md",
+    "Zb089_层间交换：潜热是层间通量的能量当量.md",
+    "_staging/归档_推导稿/Zb090_极端事件的尾部：零模不进配分函数，尾部不是幂律.md",
+    "_staging/ClimX_HANDOFF.md",
+    "Zb090_极端事件的尾部：零模不进配分函数，尾部不是幂律.md",
+    "Zb088_旋转读出：科氏项是连接项，不是源.md",
+    "Zb087_天气系统的三层账：守恒数分层、边界通量定均值、零和振荡的偏斜.md",
+    "Zb085_因果积累的速率与容量：并行加输入、端口截带宽、跨代不加分辨.md",
+    "_staging/ClimX参赛_合规与路径_20261107.md",
+    "_staging/天气系统_Zero推导纲领_20261107.md",
+    "Zb086_偏置量：子系统的非中心分量只由边界通量改变.md",
+    "_staging/非中心态_太阳系_纲领_20261107.md",
+    "_staging/geocore_run/enso_phasespace.png",
+    "_staging/geocore_run/hurricane_region.png",
+    "ZeroGPU/results/zb084_frames/f_0720.png",
+    "ZeroGPU/results/zb084_frames/f_0719.png",
+    "ZeroGPU/results/zb084_frames/f_0718.png",
+    "ZeroGPU/results/zb084_frames/f_0717.png"
   ]
 }

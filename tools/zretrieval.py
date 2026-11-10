@@ -66,7 +66,7 @@ EXCLUDE_PART = ("快照", "_backup", "mem-backup", "zenodo", "zhihu_publish", "p
                 "_snapshot", "__pycache__", ".git", "results", "node_modules",
                 # 自身/元文档：检索必须回到原始证据，不能把我的综述排到前面
                 "ZeroReal", "tools")
-NOTE_RE = re.compile(r"^(Z\d{3})_")
+NOTE_RE = re.compile(r"^(Z[a-z]{0,2}\d{3})_")   # 与 zfind.NOTE_RE 同口径（Zb0NN 字符预示）
 CHUNK_MAX = 2000         # 8B 支持 32K；按 `##` 整节切，节过长才再切
 CHUNK_OVERLAP = 200
 CHUNK_TAG = "sec"        # 分块版本，进缓存签名与索引文件名
@@ -480,15 +480,20 @@ def multi_search(text: str, chunks: list[Chunk], k: int = 10, K: int = 60,
         return bm25_only(text, chunks, k, pool)
     LAST_MODE = "multi"
     lists = [lex]
+    loaded = 0
     for name in (FINE_INDEX, COARSE_INDEX):
         try:
             vec, meta = _load_index(name)
-        except Exception as exc:  # noqa: BLE001
-            # 新库／刚切 --vault 的库可能还没有向量索引：退到纯 BM25，而不是硬失败
-            LAST_MODE = f"bm25-fallback（缺 {name}：{type(exc).__name__}；先跑 embed --ctx 建索引）"
-            return bm25_only(text, chunks, k, pool)
+        except Exception:  # noqa: BLE001
+            continue                    # 缺哪一级就跳过哪一级，别整体降级
+        loaded += 1
         idx = np.argsort(-(vec @ e))[:pool]
         lists.append([meta[i]["note"] for i in idx])
+    if loaded == 0:
+        # 两级索引都没有：才退到纯 BM25
+        LAST_MODE = "bm25-fallback（缺向量索引；先跑 embed --ctx 建索引）"
+        return bm25_only(text, chunks, k, pool)
+    LAST_MODE = "multi" if loaded == 2 else "multi（仅一级索引）"
     score: dict[str, float] = {}
     for lst in lists:
         for i, n in enumerate(lst, 1):
@@ -613,8 +618,8 @@ def main() -> int:
                   f"L{m.get('start','?')}  {m.get('path','?')}")
         return 0
 
-    hits = bm.search(a.text, a.k)
-    print(f"查询：{a.text}")
+    hits = BM25().fit(chunks).search(a.text, a.k)
+    print(f"查询（BM25）：{a.text}")
     for i, (sc, c) in enumerate(hits, 1):
         print(f"  {i}. [{sc:6.2f}] {c.note}  §{c.heading[:30]}  L{c.start}  {c.path}")
     return 0

@@ -1,0 +1,21 @@
+{
+  "observed_levels": 5,
+  "observed_distribution": {
+    "1": 2,
+    "2": 9,
+    "3": 1,
+    "4": 5,
+    "6": 3
+  },
+  "null_full_random": {
+    "3": 0.00025,
+    "4": 0.00985,
+    "5": 0.1623,
+    "6": 0.55165,
+    "7": 0.26045,
+    "8": 0.0155
+  },
+  "p_levels_le_observed": 0.1724,
+  "null_mean_levels": 6.1087,
+  "n_sim": 20000
+}

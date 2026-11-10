@@ -1,0 +1,10 @@
+name = "zero"
+defaultTargets = ["Zero"]
+
+[[lean_lib]]
+name = "Zero"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.35.0"

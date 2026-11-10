@@ -8,3 +8,20 @@ github_tools/
 zenodo_tools/
 _staging/
 AGENTS.md
+.secrets/
+
+# Lean 构建产物（7.3 GB，绝不上传）
+ZeroLean/.lake/
+ZeroLean/wip/
+*.olean
+*.ilean
+*.trace
+
+# 不属于 Zero 库的媒体大件（Blender / 视频 / 音频，另一项目的产物）
+ZeroGPU/results/*.blend
+ZeroGPU/results/*.blend1
+ZeroGPU/results/*.mp4
+ZeroGPU/results/*.mov
+ZeroGPU/results/zb084_audio/
+ZeroGPU/results/zb084_labels/
+ZeroGPU/frames_test/

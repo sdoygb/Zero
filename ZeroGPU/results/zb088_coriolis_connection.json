@@ -1,0 +1,50 @@
+{
+  "grid_points": 31892,
+  "params": {
+    "omega": 1.0,
+    "c": 1.0,
+    "k": [
+      1.0,
+      0.5
+    ],
+    "sigma": 1.118033988749895
+  },
+  "S1_first_order": {
+    "max_abs_residual": 4.440892098500626e-16,
+    "pass": true,
+    "control_without_connection": 0.8124888878806825
+  },
+  "S1b_fd_convergence": {
+    "err_h": 1.8025652570585748e-06,
+    "err_h_over_2": 4.506415174354572e-07,
+    "ratio": 3.9999981966081184
+  },
+  "S2_direction": {
+    "ratio_control_over_exact": 1829562326351055.2,
+    "fails_as_expected": true
+  },
+  "S3_second_order": {
+    "max_abs_residual": 2.4424906541753444e-15,
+    "pass": true,
+    "control_without_two_terms": 3.919335790827232
+  },
+  "S4_discrete_first_order": {
+    "n": 8,
+    "T": 10,
+    "max_abs_residual": 0.0,
+    "control_without_connection": 3.2878281352186436,
+    "commutator_PLPt_minus_L": 0.0,
+    "pass": true
+  },
+  "S5_discrete_second_order": {
+    "n": 8,
+    "T": 10,
+    "c": 0.5,
+    "max_abs_residual": 5.551115123125783e-16,
+    "max_abs_expansion": 1.7763568394002505e-15,
+    "max_abs_algebraic": 4.440892098500626e-16,
+    "control_without_connection": 6.195929118673329,
+    "pass": true
+  },
+  "PASS": true
+}

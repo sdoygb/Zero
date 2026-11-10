@@ -1,0 +1,1985 @@
+{
+ "A_concentration": {
+  "cases": [
+   {
+    "m": 1,
+    "a": [
+     0.1
+    ],
+    "A": 0.1,
+    "amplitudes": [
+     1.0,
+     0.9,
+     0.1
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 1,
+    "a": [
+     0.15
+    ],
+    "A": 0.15,
+    "amplitudes": [
+     1.0,
+     0.85,
+     0.15
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 1,
+    "a": [
+     0.2
+    ],
+    "A": 0.2,
+    "amplitudes": [
+     1.0,
+     0.8,
+     0.2
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.2,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 1,
+    "a": [
+     0.3
+    ],
+    "A": 0.3,
+    "amplitudes": [
+     1.0,
+     0.7,
+     0.3
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.3,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.1,
+     0.1
+    ],
+    "A": 0.010000000000000002,
+    "amplitudes": [
+     1.0,
+     0.99,
+     0.010000000000000002
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.1,
+     0.15
+    ],
+    "A": 0.015,
+    "amplitudes": [
+     1.0,
+     0.985,
+     0.015
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.1,
+     0.2
+    ],
+    "A": 0.020000000000000004,
+    "amplitudes": [
+     1.0,
+     0.98,
+     0.020000000000000004
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.1,
+     0.3
+    ],
+    "A": 0.03,
+    "amplitudes": [
+     1.0,
+     0.97,
+     0.03
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.15,
+     0.1
+    ],
+    "A": 0.015,
+    "amplitudes": [
+     1.0,
+     0.985,
+     0.015
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.15,
+     0.15
+    ],
+    "A": 0.0225,
+    "amplitudes": [
+     1.0,
+     0.9775,
+     0.0225
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.15,
+     0.2
+    ],
+    "A": 0.03,
+    "amplitudes": [
+     1.0,
+     0.97,
+     0.03
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.15,
+     0.3
+    ],
+    "A": 0.045,
+    "amplitudes": [
+     1.0,
+     0.955,
+     0.045
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.2,
+     0.1
+    ],
+    "A": 0.020000000000000004,
+    "amplitudes": [
+     1.0,
+     0.98,
+     0.020000000000000004
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.2,
+     0.15
+    ],
+    "A": 0.03,
+    "amplitudes": [
+     1.0,
+     0.97,
+     0.03
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.2,
+     0.2
+    ],
+    "A": 0.04000000000000001,
+    "amplitudes": [
+     1.0,
+     0.96,
+     0.04000000000000001
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.2,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.2,
+     0.3
+    ],
+    "A": 0.06,
+    "amplitudes": [
+     1.0,
+     0.94,
+     0.06
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.2,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.3,
+     0.1
+    ],
+    "A": 0.03,
+    "amplitudes": [
+     1.0,
+     0.97,
+     0.03
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.3,
+     0.15
+    ],
+    "A": 0.045,
+    "amplitudes": [
+     1.0,
+     0.955,
+     0.045
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.3,
+     0.2
+    ],
+    "A": 0.06,
+    "amplitudes": [
+     1.0,
+     0.94,
+     0.06
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.2,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 2,
+    "a": [
+     0.3,
+     0.3
+    ],
+    "A": 0.09,
+    "amplitudes": [
+     1.0,
+     0.91,
+     0.09
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.3,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.1,
+     0.1
+    ],
+    "A": 0.0010000000000000002,
+    "amplitudes": [
+     1.0,
+     0.999,
+     0.0010000000000000002
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.1,
+     0.15
+    ],
+    "A": 0.0015000000000000002,
+    "amplitudes": [
+     1.0,
+     0.9985,
+     0.0015000000000000002
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.1,
+     0.2
+    ],
+    "A": 0.0020000000000000005,
+    "amplitudes": [
+     1.0,
+     0.998,
+     0.0020000000000000005
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.1,
+     0.3
+    ],
+    "A": 0.0030000000000000005,
+    "amplitudes": [
+     1.0,
+     0.997,
+     0.0030000000000000005
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.15,
+     0.1
+    ],
+    "A": 0.0015,
+    "amplitudes": [
+     1.0,
+     0.9985,
+     0.0015
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.15,
+     0.15
+    ],
+    "A": 0.00225,
+    "amplitudes": [
+     1.0,
+     0.99775,
+     0.00225
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.15,
+     0.2
+    ],
+    "A": 0.003,
+    "amplitudes": [
+     1.0,
+     0.997,
+     0.003
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.15,
+     0.3
+    ],
+    "A": 0.0045,
+    "amplitudes": [
+     1.0,
+     0.9955,
+     0.0045
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.2,
+     0.1
+    ],
+    "A": 0.0020000000000000005,
+    "amplitudes": [
+     1.0,
+     0.998,
+     0.0020000000000000005
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.2,
+     0.15
+    ],
+    "A": 0.0030000000000000005,
+    "amplitudes": [
+     1.0,
+     0.997,
+     0.0030000000000000005
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.2,
+     0.2
+    ],
+    "A": 0.004000000000000001,
+    "amplitudes": [
+     1.0,
+     0.996,
+     0.004000000000000001
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.2,
+     0.3
+    ],
+    "A": 0.006000000000000001,
+    "amplitudes": [
+     1.0,
+     0.994,
+     0.006000000000000001
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.3,
+     0.1
+    ],
+    "A": 0.003,
+    "amplitudes": [
+     1.0,
+     0.997,
+     0.003
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.3,
+     0.15
+    ],
+    "A": 0.0045,
+    "amplitudes": [
+     1.0,
+     0.9955,
+     0.0045
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.3,
+     0.2
+    ],
+    "A": 0.006,
+    "amplitudes": [
+     1.0,
+     0.994,
+     0.006
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.1,
+     0.3,
+     0.3
+    ],
+    "A": 0.009,
+    "amplitudes": [
+     1.0,
+     0.991,
+     0.009
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.1,
+     0.1
+    ],
+    "A": 0.0015,
+    "amplitudes": [
+     1.0,
+     0.9985,
+     0.0015
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.1,
+     0.15
+    ],
+    "A": 0.00225,
+    "amplitudes": [
+     1.0,
+     0.99775,
+     0.00225
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.1,
+     0.2
+    ],
+    "A": 0.003,
+    "amplitudes": [
+     1.0,
+     0.997,
+     0.003
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.1,
+     0.3
+    ],
+    "A": 0.0045,
+    "amplitudes": [
+     1.0,
+     0.9955,
+     0.0045
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.15,
+     0.1
+    ],
+    "A": 0.00225,
+    "amplitudes": [
+     1.0,
+     0.99775,
+     0.00225
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.15,
+     0.15
+    ],
+    "A": 0.003375,
+    "amplitudes": [
+     1.0,
+     0.996625,
+     0.003375
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.15,
+     0.2
+    ],
+    "A": 0.0045,
+    "amplitudes": [
+     1.0,
+     0.9955,
+     0.0045
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.15,
+     0.3
+    ],
+    "A": 0.00675,
+    "amplitudes": [
+     1.0,
+     0.99325,
+     0.00675
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.2,
+     0.1
+    ],
+    "A": 0.003,
+    "amplitudes": [
+     1.0,
+     0.997,
+     0.003
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.2,
+     0.15
+    ],
+    "A": 0.0045,
+    "amplitudes": [
+     1.0,
+     0.9955,
+     0.0045
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.2,
+     0.2
+    ],
+    "A": 0.006,
+    "amplitudes": [
+     1.0,
+     0.994,
+     0.006
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.2,
+     0.3
+    ],
+    "A": 0.009,
+    "amplitudes": [
+     1.0,
+     0.991,
+     0.009
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.3,
+     0.1
+    ],
+    "A": 0.0045,
+    "amplitudes": [
+     1.0,
+     0.9955,
+     0.0045
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.3,
+     0.15
+    ],
+    "A": 0.00675,
+    "amplitudes": [
+     1.0,
+     0.99325,
+     0.00675
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.3,
+     0.2
+    ],
+    "A": 0.009,
+    "amplitudes": [
+     1.0,
+     0.991,
+     0.009
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.15,
+     0.3,
+     0.3
+    ],
+    "A": 0.0135,
+    "amplitudes": [
+     1.0,
+     0.9865,
+     0.0135
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.1,
+     0.1
+    ],
+    "A": 0.0020000000000000005,
+    "amplitudes": [
+     1.0,
+     0.998,
+     0.0020000000000000005
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.1,
+     0.15
+    ],
+    "A": 0.0030000000000000005,
+    "amplitudes": [
+     1.0,
+     0.997,
+     0.0030000000000000005
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.1,
+     0.2
+    ],
+    "A": 0.004000000000000001,
+    "amplitudes": [
+     1.0,
+     0.996,
+     0.004000000000000001
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.1,
+     0.3
+    ],
+    "A": 0.006000000000000001,
+    "amplitudes": [
+     1.0,
+     0.994,
+     0.006000000000000001
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.15,
+     0.1
+    ],
+    "A": 0.003,
+    "amplitudes": [
+     1.0,
+     0.997,
+     0.003
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.15,
+     0.15
+    ],
+    "A": 0.0045,
+    "amplitudes": [
+     1.0,
+     0.9955,
+     0.0045
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.15,
+     0.2
+    ],
+    "A": 0.006,
+    "amplitudes": [
+     1.0,
+     0.994,
+     0.006
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.15,
+     0.3
+    ],
+    "A": 0.009,
+    "amplitudes": [
+     1.0,
+     0.991,
+     0.009
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.2,
+     0.1
+    ],
+    "A": 0.004000000000000001,
+    "amplitudes": [
+     1.0,
+     0.996,
+     0.004000000000000001
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.2,
+     0.15
+    ],
+    "A": 0.006000000000000001,
+    "amplitudes": [
+     1.0,
+     0.994,
+     0.006000000000000001
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.2,
+     0.2
+    ],
+    "A": 0.008000000000000002,
+    "amplitudes": [
+     1.0,
+     0.992,
+     0.008000000000000002
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.2,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.2,
+     0.3
+    ],
+    "A": 0.012000000000000002,
+    "amplitudes": [
+     1.0,
+     0.988,
+     0.012000000000000002
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.2,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.3,
+     0.1
+    ],
+    "A": 0.006,
+    "amplitudes": [
+     1.0,
+     0.994,
+     0.006
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.3,
+     0.15
+    ],
+    "A": 0.009,
+    "amplitudes": [
+     1.0,
+     0.991,
+     0.009
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.3,
+     0.2
+    ],
+    "A": 0.012,
+    "amplitudes": [
+     1.0,
+     0.988,
+     0.012
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.2,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.2,
+     0.3,
+     0.3
+    ],
+    "A": 0.018,
+    "amplitudes": [
+     1.0,
+     0.982,
+     0.018
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.2,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.1,
+     0.1
+    ],
+    "A": 0.003,
+    "amplitudes": [
+     1.0,
+     0.997,
+     0.003
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.1,
+     0.15
+    ],
+    "A": 0.0045,
+    "amplitudes": [
+     1.0,
+     0.9955,
+     0.0045
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.1,
+     0.2
+    ],
+    "A": 0.006,
+    "amplitudes": [
+     1.0,
+     0.994,
+     0.006
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.1,
+     0.3
+    ],
+    "A": 0.009,
+    "amplitudes": [
+     1.0,
+     0.991,
+     0.009
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.15,
+     0.1
+    ],
+    "A": 0.0045,
+    "amplitudes": [
+     1.0,
+     0.9955,
+     0.0045
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.15,
+     0.15
+    ],
+    "A": 0.00675,
+    "amplitudes": [
+     1.0,
+     0.99325,
+     0.00675
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.15,
+     0.2
+    ],
+    "A": 0.009,
+    "amplitudes": [
+     1.0,
+     0.991,
+     0.009
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.15,
+     0.3
+    ],
+    "A": 0.0135,
+    "amplitudes": [
+     1.0,
+     0.9865,
+     0.0135
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.2,
+     0.1
+    ],
+    "A": 0.006,
+    "amplitudes": [
+     1.0,
+     0.994,
+     0.006
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.2,
+     0.15
+    ],
+    "A": 0.009,
+    "amplitudes": [
+     1.0,
+     0.991,
+     0.009
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.2,
+     0.2
+    ],
+    "A": 0.012,
+    "amplitudes": [
+     1.0,
+     0.988,
+     0.012
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.2,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.2,
+     0.3
+    ],
+    "A": 0.018,
+    "amplitudes": [
+     1.0,
+     0.982,
+     0.018
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.2,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.3,
+     0.1
+    ],
+    "A": 0.009,
+    "amplitudes": [
+     1.0,
+     0.991,
+     0.009
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.1,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.3,
+     0.15
+    ],
+    "A": 0.0135,
+    "amplitudes": [
+     1.0,
+     0.9865,
+     0.0135
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.15,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.3,
+     0.2
+    ],
+    "A": 0.018,
+    "amplitudes": [
+     1.0,
+     0.982,
+     0.018
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.2,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   },
+   {
+    "m": 3,
+    "a": [
+     0.3,
+     0.3,
+     0.3
+    ],
+    "A": 0.027,
+    "amplitudes": [
+     1.0,
+     0.973,
+     0.027
+    ],
+    "diff_01_eq_A": true,
+    "chiral_gt_axis": true,
+    "gap": 1.3,
+    "gap_ge_1": true,
+    "wedge_assumption_fails": true
+   }
+  ],
+  "all_ok": true,
+  "reading": "a_1 是剩余（轴）扇区，a_2 是手征扇区；a_w<1 时 a_1>a_2"
+ },
+ "B_k4": {
+  "circuits_are_cycles_rank3": false,
+  "spectrum_LK4": [
+   -2.0,
+   -2.0,
+   -0.0,
+   0.0,
+   0.0,
+   4.0
+  ],
+  "sigma_top_K4_line": 4.0,
+  "cases": [
+   {
+    "W": [
+     "01",
+     "02"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.561552812808831,
+    "chi": -0.5615528128088312,
+    "st_chi": 0,
+    "null_dim": 3
+   },
+   {
+    "W": [
+     "01",
+     "03"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.5615528128088303,
+    "chi": -0.5615528128088303,
+    "st_chi": 0,
+    "null_dim": 3
+   },
+   {
+    "W": [
+     "01",
+     "12"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.56155281280883,
+    "chi": -0.5615528128088298,
+    "st_chi": 0,
+    "null_dim": 3
+   },
+   {
+    "W": [
+     "01",
+     "13"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.561552812808829,
+    "chi": -0.561552812808829,
+    "st_chi": 0,
+    "null_dim": 3
+   },
+   {
+    "W": [
+     "01",
+     "23"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.0,
+    "chi": 0.0,
+    "st_chi": 1,
+    "null_dim": 4
+   },
+   {
+    "W": [
+     "02",
+     "03"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.5615528128088303,
+    "chi": -0.5615528128088303,
+    "st_chi": 0,
+    "null_dim": 3
+   },
+   {
+    "W": [
+     "02",
+     "12"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.5615528128088303,
+    "chi": -0.5615528128088303,
+    "st_chi": 0,
+    "null_dim": 3
+   },
+   {
+    "W": [
+     "02",
+     "13"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.0,
+    "chi": 0.0,
+    "st_chi": 1,
+    "null_dim": 4
+   },
+   {
+    "W": [
+     "02",
+     "23"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.56155281280883,
+    "chi": -0.5615528128088298,
+    "st_chi": 0,
+    "null_dim": 3
+   },
+   {
+    "W": [
+     "03",
+     "12"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.0,
+    "chi": 0.0,
+    "st_chi": 1,
+    "null_dim": 4
+   },
+   {
+    "W": [
+     "03",
+     "13"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.56155281280883,
+    "chi": -0.5615528128088298,
+    "st_chi": 0,
+    "null_dim": 3
+   },
+   {
+    "W": [
+     "03",
+     "23"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.5615528128088307,
+    "chi": -0.5615528128088307,
+    "st_chi": 0,
+    "null_dim": 3
+   },
+   {
+    "W": [
+     "12",
+     "13"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.56155281280883,
+    "chi": -0.5615528128088298,
+    "st_chi": 0,
+    "null_dim": 3
+   },
+   {
+    "W": [
+     "12",
+     "23"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.56155281280883,
+    "chi": -0.5615528128088298,
+    "st_chi": 0,
+    "null_dim": 3
+   },
+   {
+    "W": [
+     "13",
+     "23"
+    ],
+    "rank_F_W": 2,
+    "transversal": true,
+    "max_spec_AW": 2.56155281280883,
+    "chi": -0.5615528128088298,
+    "st_chi": 0,
+    "null_dim": 3
+   }
+  ],
+  "all_transversal": true,
+  "layer_rank_frame": 3,
+  "num_K4_wall_edges": 6
+ },
+ "C_z2": {
+  "cases": [
+   {
+    "r": 1,
+    "M": 2,
+    "d_sector": 1,
+    "rows": [
+     {
+      "n": 1,
+      "flux_over_2pi": 0.5,
+      "proton": false,
+      "sector": "flat"
+     },
+     {
+      "n": 2,
+      "flux_over_2pi": 1.0,
+      "proton": true,
+      "sector": "ladder"
+     },
+     {
+      "n": 3,
+      "flux_over_2pi": 1.5,
+      "proton": false,
+      "sector": "flat"
+     },
+     {
+      "n": 4,
+      "flux_over_2pi": 2.0,
+      "proton": true,
+      "sector": "ladder"
+     },
+     {
+      "n": 5,
+      "flux_over_2pi": 2.5,
+      "proton": false,
+      "sector": "flat"
+     },
+     {
+      "n": 6,
+      "flux_over_2pi": 3.0,
+      "proton": true,
+      "sector": "ladder"
+     }
+    ],
+    "ladder_n": [
+     2,
+     4,
+     6
+    ],
+    "orthogonal_v": "1/2",
+    "orthogonal_ok_M_odd": false
+   },
+   {
+    "r": 2,
+    "M": 3,
+    "d_sector": 1,
+    "rows": [
+     {
+      "n": 1,
+      "flux_over_2pi": 0.5,
+      "proton": false,
+      "sector": "flat"
+     },
+     {
+      "n": 2,
+      "flux_over_2pi": 1.0,
+      "proton": true,
+      "sector": "ladder"
+     },
+     {
+      "n": 3,
+      "flux_over_2pi": 1.5,
+      "proton": false,
+      "sector": "flat"
+     },
+     {
+      "n": 4,
+      "flux_over_2pi": 2.0,
+      "proton": true,
+      "sector": "ladder"
+     },
+     {
+      "n": 5,
+      "flux_over_2pi": 2.5,
+      "proton": false,
+      "sector": "flat"
+     },
+     {
+      "n": 6,
+      "flux_over_2pi": 3.0,
+      "proton": true,
+      "sector": "ladder"
+     }
+    ],
+    "ladder_n": [
+     2,
+     4,
+     6
+    ],
+    "orthogonal_v": "1/3",
+    "orthogonal_ok_M_odd": true
+   },
+   {
+    "r": 3,
+    "M": 4,
+    "d_sector": 1,
+    "rows": [
+     {
+      "n": 1,
+      "flux_over_2pi": 0.5,
+      "proton": false,
+      "sector": "flat"
+     },
+     {
+      "n": 2,
+      "flux_over_2pi": 1.0,
+      "proton": true,
+      "sector": "ladder"
+     },
+     {
+      "n": 3,
+      "flux_over_2pi": 1.5,
+      "proton": false,
+      "sector": "flat"
+     },
+     {
+      "n": 4,
+      "flux_over_2pi": 2.0,
+      "proton": true,
+      "sector": "ladder"
+     },
+     {
+      "n": 5,
+      "flux_over_2pi": 2.5,
+      "proton": false,
+      "sector": "flat"
+     },
+     {
+      "n": 6,
+      "flux_over_2pi": 3.0,
+      "proton": true,
+      "sector": "ladder"
+     }
+    ],
+    "ladder_n": [
+     2,
+     4,
+     6
+    ],
+    "orthogonal_v": "1/4",
+    "orthogonal_ok_M_odd": false
+   }
+  ],
+  "lambda_lattice": "Λ = {a ∈ Z^r : Σ a ∈ 2Z}（目格判据 nπ = 2πk）"
+ },
+ "independent": {
+  "spectrum_LK4": {
+   "numeric": [
+    -2.0,
+    -2.0,
+    -4.464916839158722e-16,
+    9.788078281377408e-17,
+    2.550741258291453e-16,
+    3.9999999999999987
+   ],
+   "integer": [
+    -2,
+    -2,
+    0,
+    0,
+    0,
+    4
+   ],
+   "all_integral": true
+  },
+  "three_factor_T": {
+   "012": 4046.0,
+   "013": 4046.0,
+   "023": 4046.0,
+   "123": 4046.0
+  },
+  "mu_shared_exact": {
+   "eig": [
+    -1.5615528128088305,
+    -1.0,
+    -9.862441815130648e-17,
+    2.561552812808831
+   ],
+   "charpoly_int": [
+    1,
+    0,
+    -5,
+    -4,
+    0
+   ],
+   "charpoly_eq_x(x+1)(x^2-x-4)": true,
+   "matches_{(1±sqrt17)/2,-1,0}": true
+  },
+  "A_diff01_eq_A_violations": 0,
+  "proton_even_n": [
+   2,
+   4,
+   6,
+   8,
+   10
+  ],
+  "incidence_cofactor_2": 1
+ }
+}

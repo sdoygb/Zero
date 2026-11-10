@@ -1,0 +1,84 @@
+{
+  "S1_law": {
+    "trials": 300,
+    "max_abs_residual_A": 0.0,
+    "max_abs_residual_W": 0.0,
+    "max_abs_total_change": 0.0,
+    "pass": true
+  },
+  "S2_single_valued": {
+    "cases": [
+      {
+        "nu": 1,
+        "eps_up": 2.0,
+        "eps_down": 2.0,
+        "delta_E": 0.0
+      },
+      {
+        "nu": 3,
+        "eps_up": 2.0,
+        "eps_down": 2.0,
+        "delta_E": 0.0
+      },
+      {
+        "nu": 7,
+        "eps_up": 2.0,
+        "eps_down": 2.0,
+        "delta_E": 0.0
+      }
+    ],
+    "all_zero": true
+  },
+  "S3_direction": {
+    "cases": [
+      {
+        "nu": 1,
+        "eps_up": 2.0,
+        "eps_down": 1.5,
+        "delta_E": 0.5
+      },
+      {
+        "nu": 3,
+        "eps_up": 2.0,
+        "eps_down": 1.5,
+        "delta_E": 1.5
+      },
+      {
+        "nu": 7,
+        "eps_up": 2.0,
+        "eps_down": 1.5,
+        "delta_E": 3.5
+      }
+    ],
+    "drift_nonzero": true
+  },
+  "S4_linearity": {
+    "1": 0.5,
+    "2": 1.0,
+    "3": 1.5,
+    "4": 2.0,
+    "5": 2.5
+  },
+  "S5_detailed_balance": {
+    "E": [
+      0.0,
+      1.0,
+      -0.4
+    ],
+    "beta": 1.0,
+    "pi_balanced": [
+      0.3496865240105498,
+      0.12864248303818535,
+      0.5216709929512654
+    ],
+    "cycle_current_balanced": 0.0,
+    "pi_broken": [
+      0.2849911993674327,
+      0.23473652943553922,
+      0.4802722711970279
+    ],
+    "cycle_current_broken": 0.14249559968371622,
+    "pass": true
+  },
+  "PASS": true
+}

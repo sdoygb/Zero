@@ -23,8 +23,9 @@ $$
 1. **误差阶（定理 1.2）**：二阶中心差分以 $O(a^2)$ 逼近二阶导，且首项系数恰为 $\frac{1}{12}f^{(4)}$。
 2. **支撑锥精确（定理 2.2）**：最近邻传输下 $n$ 步后支撑严格落在 $[-n,n]$ 内，与任何参数无关。
 3. **锥边可见性（命题 3.1、3.2）**：边上的概率是 $2^{-n}$，"看得见"与"看不见"之间只隔一个对数刻度。
+4. **Weyl 关系的强极限（定理 1.6、推论 1.7）**：格点上 $T_aV_\beta=e^{i\beta a}V_\beta T_a$ 精确成立；$a\to0$ 时以 $O(a)$ 的范数误差收敛到连续 Weyl 关系 $e^{i\alpha p}e^{i\beta x}=e^{i\hbar\alpha\beta}e^{i\beta x}e^{i\alpha p}$。
 
-**三处记账**：收敛阶是**定理**；"离散数据 → 连续几何"的读法是**结构选择（I）**；极限的存在性是**外部条件定理**（引用）。
+**三处记账**：收敛阶是**定理**；"离散数据 → 连续几何"的读法是**结构选择（I）**；极限的存在性是**外部条件定理**（引用）。定理 1.6 的极限存在性由显式估计给出，不依赖该外部定理。
 
 ---
 
@@ -58,11 +59,85 @@ $$
 
 除以 $a^2$ 即得 (1.2)。$\blacksquare$
 
+**Lean 指针**：`Zero/Zb010_Taylor.lean` 把这条写成三条 kernel 定理：
+`zb010_taylor_even_terms`（$T_6(x+a)+T_6(x-a)-2f$ 的偶次项）、
+`zb010_taylor_main_bigO`（主差 $O(a^6)$）、
+`zb010_taylor_remainder`（(1.2) 的 $O(a^4)$，在 $\mathcal N^\times_0$ 上）。
+
 > **推论 1.3.** $\max_i\bigl|(D_au)_i-f''(x_i)\bigr|\le\frac{a^2}{12}\|f^{(4)}\|_\infty+O(a^4)$；故细化时收敛阶为 $2$。
 
 *证明.* 由 (1.2) 取绝对值并用三角不等式。$\blacksquare$
 
 **读法.** 收敛的**阶**是定理而非拟合：误差由 $a^2$ 控制，系数 $\frac1{12}$ 与舞台无关。
+
+---
+
+## §1.5 Weyl 关系的强极限
+
+§1 讲的是"二阶导"的收敛。本节讲另一件同样属于连续极限的事：**非对易结构**怎么从离散到连续。
+
+> **定义 1.4（格点态的 Fourier 坐标）.** 格距 $a$ 的态 $\psi\in\ell^2(\mathbb Z)$ 由
+$$
+\hat\psi_a(k)=\sqrt a\sum_n\psi_n e^{-ikna},\qquad k\in\Bigl[-\frac\pi a,\frac\pi a\Bigr]
+\tag{1.4}
+$$
+给出（$\sqrt a$ 使 Parseval 成立：$\|\psi\|^2=\int_{-\pi/a}^{\pi/a}|\hat\psi_a(k)|^2dk$）。若 $\psi$ 的 Fourier 变换支撑在 $|k|\le\pi/a$，取 $\psi_n=\sqrt a\,\psi(na)$，则 Poisson 求和给 $\hat\psi_a(k)=\hat\psi(k)$（无混叠）。平移 $T_a$ 与相位 $V_\beta$ 为
+$$
+(T_a\psi)_n=\psi_{n+1},\qquad (V_\beta\psi)_n=e^{i\beta an}\psi_n .
+\tag{1.5}
+$$
+
+> **引理 1.5（平移是相位乘法）.** $\widehat{T_a\psi}_a(k)=e^{ika}\hat\psi_a(k)$；$\widehat{V_\beta\psi}_a(k)=\hat\psi_a(k-\beta)$。
+
+*证明.* 第一式：把 $e^{-ikna}$ 与 $\psi_{n+1}$ 的求和重指为 $n'=n+1$，提出 $e^{ika}$。第二式：$e^{i\beta an}e^{-ikna}=e^{-i(k-\beta)an}$。$\blacksquare$
+
+> **定理 1.6（Weyl 弱极限）.** 取 $a_j\to0$、$m_j\in\mathbb Z$，满足
+$$
+\bigl|m_ja_j-\alpha\hbar\bigr|\le\frac{a_j}{2}.
+\tag{1.6}
+$$
+设 $\hat\psi$ 的支撑在 $|k|\le K$，且 $a_j\le\pi/K$。则（把格点态与连续态放在同一个 Fourier 坐标上比较）
+$$
+\bigl\|T_{a_j}^{m_j}\psi-\psi_\alpha\bigr\|^2
+=\int_{-K}^{K}\bigl|e^{ikm_ja_j}-e^{ik\alpha\hbar}\bigr|^2|\hat\psi(k)|^2dk
+\ \le\ \frac{a_j^2}{4\hbar^2}\bigl\|\hat p\psi\bigr\|^2,
+\tag{1.7}
+$$
+其中 $\psi_\alpha(x)=\psi(x+\alpha\hbar)=e^{i\alpha p}\psi(x)$。
+
+*证明.* 由引理 1.5，$T_a^m$ 在 Fourier 侧是乘 $e^{ikma}$；连续平移 $\psi_\alpha$ 的 Fourier 变换是 $e^{ik\alpha\hbar}\hat\psi(k)$。逐点估计
+$$
+\bigl|e^{ikm_ja_j}-e^{ik\alpha\hbar}\bigr|\le|k|\,\bigl|m_ja_j-\alpha\hbar\bigr|\le\frac{a_j}{2}|k|,
+$$
+平方后乘 $|\hat\psi|^2$ 积分，右端即 $\frac{a_j^2}{4}\int k^2|\hat\psi|^2=\frac{a_j^2}{4\hbar^2}\|\hat p\psi\|^2$。$\blacksquare$
+
+> **推论 1.7（Weyl 乘法关系的极限）.** 记 $U_j:=T_{a_j}^{m_j}$、$V_j:=V_\beta$。则
+$$
+\bigl\|U_jV_j-e^{i\beta m_ja_j}V_jU_j\bigr\|=0\ \ (\text{每层精确}),\qquad
+e^{i\beta m_ja_j}\longrightarrow e^{i\hbar\alpha\beta}.
+\tag{1.8}
+$$
+故 (1.7) 的强收敛（因而弱收敛）把离散的 $T_aV_\beta=e^{i\beta a}V_\beta T_a$ 变成连续的 Weyl 关系 $e^{i\alpha p}e^{i\beta x}=e^{i\hbar\alpha\beta}e^{i\beta x}e^{i\alpha p}$。
+
+*证明.* 逐点：$(T_aV_\beta\psi)_n=e^{i\beta a(n+1)}\psi_{n+1}=e^{i\beta a}(V_\beta T_a\psi)_n$，取 $m$ 次幂得第一式。第二式由 (1.6)。强极限保持乘法（(1.7) 给范数收敛），故极限关系成立。$\blacksquare$
+
+**读法（这条买回了什么）.** 离散对易子 $[x,\hat p_a]=i\hbar\cos(a\hat p_{\rm ex}/\hbar)$（Zb020 定理 2.7）在 $a\to0$ 时**逐点**趋于 $i\hbar$；本节把这个"趋于"写成 $H^1$ 上的范数估计，误差是 $O(a)$。两条合起来：连续 CCR 的**位置**由离散 Weyl 关系给出，误差由格距的一次方控制。
+
+**核验（数值，$\hbar=1$，$\hat\psi$ 取 Fourier 高斯，支撑 $|k|\lesssim3$）.**
+
+| $a$ | $\lvert m a-\alpha\hbar\rvert$ | $\|T_a^m\psi-\psi_\alpha\|^2$ | 界 $\frac{a^2}{4\hbar^2}\|\hat p\psi\|^2$ | 比 |
+|--:|--:|--:|--:|--:|
+| $0.2$ | $0.100$ | $2.3212\times10^{-2}$ | $2.3300\times10^{-2}$ | $0.9962$ |
+| $0.1$ | $0.050$ | $5.8195\times10^{-3}$ | $5.8250\times10^{-3}$ | $0.9991$ |
+| $0.05$ | $0.025$ | $1.4559\times10^{-3}$ | $1.4563\times10^{-3}$ | $0.9998$ |
+| $0.025$ | $0.0125$ | $3.6404\times10^{-4}$ | $3.6406\times10^{-4}$ | $0.9999$ |
+| $0.0125$ | $0.00625$ | $9.1014\times10^{-5}$ | $9.1016\times10^{-5}$ | $1.0000$ |
+
+误差平方的收敛阶为 $2$（每减半 $a$，误差平方除以 $4$），故范数误差的阶为 $1$。
+
+**记账.** 定理 1.6 的"同一个 Fourier 坐标"要求格点态与连续态共用 $k$ 轴；这一步是 §5 的"嵌入读法"（结构选择 I）在非对易结构上的具体形式。极限的**存在性**不需要外部定理：这里给的是显式估计。
+
+（核验脚本：`_staging/对易子与Weyl核验.py`；数据：`_staging/对易子与Weyl核验.json`。）
 
 ---
 
@@ -197,6 +272,7 @@ $$
 - $a$：长度（一个格距）；$u$ 与 $f$ 同量纲。
 - $D_a$：$[\,\text{长度}\,]^{-2}$，与 $f''$ 同。
 - 概率与 $n$ 皆无量纲。
+- §1.5：$k$ 波数（长度$^{-1}$）；$\hat p=\hbar k$ 动量；定理 1.6 的两边都是 $L^2$ 范数（无量纲）；$\hbar$ 是**单位**（Zb005 命题 4.2′）。
 
 ---
 
@@ -206,6 +282,7 @@ $$
 |:--|:--|:--|:--|
 | 定理 1.2 | 二阶导的 $O(a^2)$ 逼近与 $\frac1{12}$ 系数 | 导出 | §1 |
 | 推论 1.3 | 收敛阶恰为 2 | 导出 | §1 |
+| 引理 1.5／定理 1.6／推论 1.7 | 平移是相位乘法；Weyl 弱极限的 $O(a)$ 范数误差；乘法关系的极限 | 导出＋数值 | §1.5 |
 | 定理 2.2 | 支撑锥精确 | 导出 | §2 |
 | 推论 2.3 | 锥外零、锥边 $2^{-n}$ | 导出 | §2 |
 | 命题 3.1／3.2 | 可见性阈值与量级差 | 导出 | §3 |

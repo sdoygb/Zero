@@ -1,0 +1,127 @@
+{
+  "cut_angstrom": 8.0,
+  "minseq": 2,
+  "rows": {
+    "AK_open": {
+      "n_struct": 1,
+      "n_contact_mean": 1565.0,
+      "const": 1565,
+      "modul": 0,
+      "const_frac": 1.0,
+      "switch_per_contact": 0.0,
+      "residues": 428,
+      "category": "单结构",
+      "desc": "腺苷酸激酶 无配体"
+    },
+    "AK_closed": {
+      "n_struct": 1,
+      "n_contact_mean": 1603.0,
+      "const": 1603,
+      "modul": 0,
+      "const_frac": 1.0,
+      "switch_per_contact": 0.0,
+      "residues": 428,
+      "category": "单结构",
+      "desc": "腺苷酸激酶 +AP5A"
+    },
+    "GB1": {
+      "n_struct": 1,
+      "n_contact_mean": 192.0,
+      "const": 192,
+      "modul": 0,
+      "const_frac": 1.0,
+      "switch_per_contact": 0.0,
+      "residues": 56,
+      "category": "单结构",
+      "desc": "蛋白 G B1 结构域"
+    },
+    "NAC_2K39": {
+      "n_struct": 116,
+      "n_contact_mean": 250.57758620689654,
+      "const": 147,
+      "modul": 258,
+      "const_frac": 0.362962962962963,
+      "switch_per_contact": 0.09041331186258722,
+      "residues": 76,
+      "category": "系综（同一条件）",
+      "desc": "折叠态系综"
+    },
+    "NAC_1G6J": {
+      "n_struct": 32,
+      "n_contact_mean": 260.5625,
+      "const": 240,
+      "modul": 52,
+      "const_frac": 0.821917808219178,
+      "switch_per_contact": 0.04827662395050818,
+      "residues": 76,
+      "category": "系综（同一条件）",
+      "desc": "NAC 系综"
+    },
+    "UBQ_1D3Z": {
+      "n_struct": 10,
+      "n_contact_mean": 246.4,
+      "const": 242,
+      "modul": 15,
+      "const_frac": 0.9416342412451362,
+      "switch_per_contact": 0.016861219195849545,
+      "residues": 76,
+      "category": "系综",
+      "desc": "泛素 pH 6.5 晶体模型集"
+    },
+    "UBQ_2MJB": {
+      "n_struct": 20,
+      "n_contact_mean": 245.55,
+      "const": 242,
+      "modul": 7,
+      "const_frac": 0.9718875502008032,
+      "switch_per_contact": 0.010145846544071021,
+      "residues": 76,
+      "category": "系综",
+      "desc": "泛素 pH 4.5"
+    },
+    "UBQ_2NR2": {
+      "n_struct": 144,
+      "n_contact_mean": 256.4791666666667,
+      "const": 217,
+      "modul": 116,
+      "const_frac": 0.6516516516516516,
+      "switch_per_contact": 0.06654906654906655,
+      "residues": 76,
+      "category": "系综",
+      "desc": "泛素 pH 6.5 (NMR)"
+    },
+    "UBQ_env": {
+      "n_struct": 174,
+      "n_contact_mean": 254.64367816091954,
+      "const": 217,
+      "modul": 116,
+      "const_frac": 0.6516516516516516,
+      "switch_per_contact": 0.057022340259334475,
+      "residues": 76,
+      "category": "跨条件",
+      "desc": "泛素三个条件合看"
+    },
+    "AK_env": {
+      "n_struct": 2,
+      "n_contact_mean": 1584.0,
+      "const": 1430,
+      "modul": 308,
+      "const_frac": 0.8227848101265823,
+      "switch_per_contact": 0.17721518987341772,
+      "residues": 428,
+      "category": "跨条件",
+      "desc": "腺苷酸激酶 open vs closed"
+    },
+    "NAC_env": {
+      "n_struct": 148,
+      "n_contact_mean": 252.73648648648648,
+      "const": 147,
+      "modul": 264,
+      "const_frac": 0.35766423357664234,
+      "switch_per_contact": 0.07737888342685005,
+      "residues": 76,
+      "category": "跨条件",
+      "desc": "NAC 折叠态 vs 未折叠态"
+    }
+  }
+}

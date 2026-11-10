@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "tau": 10,
+      "c": 0.5,
+      "K_eff": 0.5,
+      "t_sim": 41,
+      "t_pred": 41,
+      "match": true
+    },
+    {
+      "tau": 10,
+      "c": 0.5,
+      "K_eff": 1.0,
+      "t_sim": 21,
+      "t_pred": 21,
+      "match": true
+    },
+    {
+      "tau": 10,
+      "c": 0.5,
+      "K_eff": 2.0,
+      "t_sim": 11,
+      "t_pred": 11,
+      "match": true
+    },
+    {
+      "tau": 10,
+      "c": 1.0,
+      "K_eff": 0.5,
+      "t_sim": 21,
+      "t_pred": 21,
+      "match": true
+    },
+    {
+      "tau": 10,
+      "c": 1.0,
+      "K_eff": 1.0,
+      "t_sim": 11,
+      "t_pred": 11,
+      "match": true
+    },
+    {
+      "tau": 10,
+      "c": 1.0,
+      "K_eff": 2.0,
+      "t_sim": 6,
+      "t_pred": 6,
+      "match": true
+    },
+    {
+      "tau": 10,
+      "c": 2.0,
+      "K_eff": 0.5,
+      "t_sim": 11,
+      "t_pred": 11,
+      "match": true
+    },
+    {
+      "tau": 10,
+      "c": 2.0,
+      "K_eff": 1.0,
+      "t_sim": 6,
+      "t_pred": 6,
+      "match": true
+    },
+    {
+      "tau": 10,
+      "c": 2.0,
+      "K_eff": 2.0,
+      "t_sim": 3,
+      "t_pred": 3,
+      "match": true
+    },
+    {
+      "tau": 50,
+      "c": 0.5,
+      "K_eff": 0.5,
+      "t_sim": 201,
+      "t_pred": 201,
+      "match": true
+    },
+    {
+      "tau": 50,
+      "c": 0.5,
+      "K_eff": 1.0,
+      "t_sim": 101,
+      "t_pred": 101,
+      "match": true
+    },
+    {
+      "tau": 50,
+      "c": 0.5,
+      "K_eff": 2.0,
+      "t_sim": 51,
+      "t_pred": 51,
+      "match": true
+    },
+    {
+      "tau": 50,
+      "c": 1.0,
+      "K_eff": 0.5,
+      "t_sim": 101,
+      "t_pred": 101,
+      "match": true
+    },
+    {
+      "tau": 50,
+      "c": 1.0,
+      "K_eff": 1.0,
+      "t_sim": 51,
+      "t_pred": 51,
+      "match": true
+    },
+    {
+      "tau": 50,
+      "c": 1.0,
+      "K_eff": 2.0,
+      "t_sim": 26,
+      "t_pred": 26,
+      "match": true
+    },
+    {
+      "tau": 50,
+      "c": 2.0,
+      "K_eff": 0.5,
+      "t_sim": 51,
+      "t_pred": 51,
+      "match": true
+    },
+    {
+      "tau": 50,
+      "c": 2.0,
+      "K_eff": 1.0,
+      "t_sim": 26,
+      "t_pred": 26,
+      "match": true
+    },
+    {
+      "tau": 50,
+      "c": 2.0,
+      "K_eff": 2.0,
+      "t_sim": 13,
+      "t_pred": 13,
+      "match": true
+    },
+    {
+      "tau": 100,
+      "c": 0.5,
+      "K_eff": 0.5,
+      "t_sim": 401,
+      "t_pred": 401,
+      "match": true
+    },
+    {
+      "tau": 100,
+      "c": 0.5,
+      "K_eff": 1.0,
+      "t_sim": 201,
+      "t_pred": 201,
+      "match": true
+    },
+    {
+      "tau": 100,
+      "c": 0.5,
+      "K_eff": 2.0,
+      "t_sim": 101,
+      "t_pred": 101,
+      "match": true
+    },
+    {
+      "tau": 100,
+      "c": 1.0,
+      "K_eff": 0.5,
+      "t_sim": 201,
+      "t_pred": 201,
+      "match": true
+    },
+    {
+      "tau": 100,
+      "c": 1.0,
+      "K_eff": 1.0,
+      "t_sim": 101,
+      "t_pred": 101,
+      "match": true
+    },
+    {
+      "tau": 100,
+      "c": 1.0,
+      "K_eff": 2.0,
+      "t_sim": 51,
+      "t_pred": 51,
+      "match": true
+    },
+    {
+      "tau": 100,
+      "c": 2.0,
+      "K_eff": 0.5,
+      "t_sim": 101,
+      "t_pred": 101,
+      "match": true
+    },
+    {
+      "tau": 100,
+      "c": 2.0,
+      "K_eff": 1.0,
+      "t_sim": 51,
+      "t_pred": 51,
+      "match": true
+    },
+    {
+      "tau": 100,
+      "c": 2.0,
+      "K_eff": 2.0,
+      "t_sim": 26,
+      "t_pred": 26,
+      "match": true
+    }
+  ],
+  "match_count": 27,
+  "total": 27,
+  "nonlinear_t_star": 112
+}

@@ -1,0 +1,1061 @@
+{
+  "n_pairs": 100,
+  "rows": [
+    {
+      "family": "AK",
+      "pair": [
+        "1AKE",
+        "1AKY"
+      ],
+      "coverage": 0.48847926267281105,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "AK",
+      "pair": [
+        "1AKE",
+        "1ANK"
+      ],
+      "coverage": 1.0,
+      "geo_r": 7.960947868381105,
+      "retention": 0.958203368683718,
+      "noise_r": 0.0,
+      "geo_over_noise": 7960.947868381105,
+      "disambiguates": true
+    },
+    {
+      "family": "AK",
+      "pair": [
+        "1AKE",
+        "1DVR"
+      ],
+      "coverage": 0.9727272727272728,
+      "geo_r": 11.159526813460213,
+      "retention": 0.4822208359326263,
+      "noise_r": 0.0,
+      "geo_over_noise": 11159.526813460212,
+      "disambiguates": false
+    },
+    {
+      "family": "AK",
+      "pair": [
+        "1AKE",
+        "1E4V"
+      ],
+      "coverage": 1.0,
+      "geo_r": 0.16015228448994517,
+      "retention": 0.9806612601372426,
+      "noise_r": 0.0,
+      "geo_over_noise": 160.15228448994517,
+      "disambiguates": true
+    },
+    {
+      "family": "AK",
+      "pair": [
+        "1AKE",
+        "1E4Y"
+      ],
+      "coverage": 1.0,
+      "geo_r": 6.306639769706761,
+      "retention": 0.9344978165938864,
+      "noise_r": 0.0,
+      "geo_over_noise": 6306.639769706761,
+      "disambiguates": true
+    },
+    {
+      "family": "AK",
+      "pair": [
+        "1AKE",
+        "1KHT"
+      ],
+      "coverage": 0.6155088852988692,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "AK",
+      "pair": [
+        "1AKE",
+        "1KI9"
+      ],
+      "coverage": 0.617741935483871,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "AK",
+      "pair": [
+        "1AKY",
+        "1ANK"
+      ],
+      "coverage": 0.48847926267281105,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "AK",
+      "pair": [
+        "1AKY",
+        "1DVR"
+      ],
+      "coverage": 0.4954545454545455,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "AK",
+      "pair": [
+        "1AKY",
+        "1E4V"
+      ],
+      "coverage": 0.48847926267281105,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LYZ",
+      "pair": [
+        "180L",
+        "190L"
+      ],
+      "coverage": 0.49693251533742333,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LYZ",
+      "pair": [
+        "180L",
+        "191L"
+      ],
+      "coverage": 0.49693251533742333,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LYZ",
+      "pair": [
+        "180L",
+        "192L"
+      ],
+      "coverage": 0.49693251533742333,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LYZ",
+      "pair": [
+        "180L",
+        "193L"
+      ],
+      "coverage": 0.39570552147239263,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LYZ",
+      "pair": [
+        "180L",
+        "194L"
+      ],
+      "coverage": 0.39570552147239263,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LYZ",
+      "pair": [
+        "180L",
+        "195L"
+      ],
+      "coverage": 0.49693251533742333,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LYZ",
+      "pair": [
+        "180L",
+        "196L"
+      ],
+      "coverage": 0.49693251533742333,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LYZ",
+      "pair": [
+        "190L",
+        "191L"
+      ],
+      "coverage": 1.0,
+      "geo_r": 0.14888658194916005,
+      "retention": 0.9763513513513513,
+      "noise_r": 0.0,
+      "geo_over_noise": 148.88658194916005,
+      "disambiguates": true
+    },
+    {
+      "family": "LYZ",
+      "pair": [
+        "190L",
+        "192L"
+      ],
+      "coverage": 1.0,
+      "geo_r": 0.23888064113303403,
+      "retention": 0.9712837837837838,
+      "noise_r": 0.0,
+      "geo_over_noise": 238.88064113303403,
+      "disambiguates": true
+    },
+    {
+      "family": "LYZ",
+      "pair": [
+        "190L",
+        "193L"
+      ],
+      "coverage": 0.7962962962962963,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "GP",
+      "pair": [
+        "1AXR",
+        "1FS4"
+      ],
+      "coverage": 0.9987951807228915,
+      "geo_r": 0.30231343523643645,
+      "retention": 0.9617664493183166,
+      "noise_r": 0.0,
+      "geo_over_noise": 302.3134352364364,
+      "disambiguates": true
+    },
+    {
+      "family": "GP",
+      "pair": [
+        "1AXR",
+        "1FTQ"
+      ],
+      "coverage": 0.9987951807228915,
+      "geo_r": 0.3022151129154791,
+      "retention": 0.9617664493183166,
+      "noise_r": 0.0,
+      "geo_over_noise": 302.2151129154791,
+      "disambiguates": true
+    },
+    {
+      "family": "GP",
+      "pair": [
+        "1AXR",
+        "1FTW"
+      ],
+      "coverage": 0.9987951807228915,
+      "geo_r": 0.299379680181885,
+      "retention": 0.96443390634262,
+      "noise_r": 0.0,
+      "geo_over_noise": 299.37968018188496,
+      "disambiguates": true
+    },
+    {
+      "family": "GP",
+      "pair": [
+        "1AXR",
+        "1FTY"
+      ],
+      "coverage": 0.9987951807228915,
+      "geo_r": 0.2992032495021796,
+      "retention": 0.9629519857735626,
+      "noise_r": 0.0,
+      "geo_over_noise": 299.2032495021796,
+      "disambiguates": true
+    },
+    {
+      "family": "GP",
+      "pair": [
+        "1AXR",
+        "1FU4"
+      ],
+      "coverage": 0.9987951807228915,
+      "geo_r": 0.29771167905583207,
+      "retention": 0.9617664493183166,
+      "noise_r": 0.0,
+      "geo_over_noise": 297.71167905583206,
+      "disambiguates": true
+    },
+    {
+      "family": "GP",
+      "pair": [
+        "1AXR",
+        "1FU7"
+      ],
+      "coverage": 0.9987951807228915,
+      "geo_r": 0.3042206512294137,
+      "retention": 0.9635447540011856,
+      "noise_r": 0.0,
+      "geo_over_noise": 304.2206512294137,
+      "disambiguates": true
+    },
+    {
+      "family": "GP",
+      "pair": [
+        "1AXR",
+        "1FU8"
+      ],
+      "coverage": 0.9987951807228915,
+      "geo_r": 0.30369154598861425,
+      "retention": 0.9614700652045051,
+      "noise_r": 0.0,
+      "geo_over_noise": 303.6915459886142,
+      "disambiguates": true
+    },
+    {
+      "family": "GP",
+      "pair": [
+        "1FS4",
+        "1FTQ"
+      ],
+      "coverage": 1.0,
+      "geo_r": 0.028307922276252864,
+      "retention": 0.9966757328498036,
+      "noise_r": 0.0,
+      "geo_over_noise": 28.307922276252864,
+      "disambiguates": true
+    },
+    {
+      "family": "GP",
+      "pair": [
+        "1FS4",
+        "1FTW"
+      ],
+      "coverage": 1.0,
+      "geo_r": 0.0357786416089324,
+      "retention": 0.9954669084315503,
+      "noise_r": 0.0,
+      "geo_over_noise": 35.778641608932396,
+      "disambiguates": true
+    },
+    {
+      "family": "GP",
+      "pair": [
+        "1FS4",
+        "1FTY"
+      ],
+      "coverage": 1.0,
+      "geo_r": 0.026877413978640234,
+      "retention": 0.9963735267452403,
+      "noise_r": 0.0,
+      "geo_over_noise": 26.877413978640234,
+      "disambiguates": true
+    },
+    {
+      "family": "UBQ",
+      "pair": [
+        "2O6V",
+        "6OQ1"
+      ],
+      "coverage": 0.07700205338809035,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "UBQ",
+      "pair": [
+        "2O6V",
+        "2XK5"
+      ],
+      "coverage": 0.10766961651917405,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "UBQ",
+      "pair": [
+        "2O6V",
+        "3H7P"
+      ],
+      "coverage": 0.11045655375552282,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "UBQ",
+      "pair": [
+        "2O6V",
+        "7S6O"
+      ],
+      "coverage": 0.10766961651917405,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "UBQ",
+      "pair": [
+        "2O6V",
+        "8E7O"
+      ],
+      "coverage": 0.09014423076923077,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "UBQ",
+      "pair": [
+        "2O6V",
+        "5GO7"
+      ],
+      "coverage": 0.12026359143327842,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "UBQ",
+      "pair": [
+        "2O6V",
+        "5GO8"
+      ],
+      "coverage": 0.12026359143327842,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "UBQ",
+      "pair": [
+        "6OQ1",
+        "2XK5"
+      ],
+      "coverage": 0.33183856502242154,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "UBQ",
+      "pair": [
+        "6OQ1",
+        "3H7P"
+      ],
+      "coverage": 0.33856502242152464,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "UBQ",
+      "pair": [
+        "6OQ1",
+        "7S6O"
+      ],
+      "coverage": 0.33183856502242154,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "MYO",
+      "pair": [
+        "3WYO",
+        "101M"
+      ],
+      "coverage": 0.2495921696574225,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "MYO",
+      "pair": [
+        "3WYO",
+        "102M"
+      ],
+      "coverage": 0.2495921696574225,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "MYO",
+      "pair": [
+        "3WYO",
+        "103M"
+      ],
+      "coverage": 0.2495921696574225,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "MYO",
+      "pair": [
+        "3WYO",
+        "104M"
+      ],
+      "coverage": 0.25,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "MYO",
+      "pair": [
+        "3WYO",
+        "105M"
+      ],
+      "coverage": 0.25,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "MYO",
+      "pair": [
+        "3WYO",
+        "106M"
+      ],
+      "coverage": 0.2495921696574225,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "MYO",
+      "pair": [
+        "3WYO",
+        "107M"
+      ],
+      "coverage": 0.2495921696574225,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "MYO",
+      "pair": [
+        "101M",
+        "102M"
+      ],
+      "coverage": 1.0,
+      "geo_r": 0.09561410378667548,
+      "retention": 0.9890710382513661,
+      "noise_r": 0.0,
+      "geo_over_noise": 95.61410378667549,
+      "disambiguates": true
+    },
+    {
+      "family": "MYO",
+      "pair": [
+        "101M",
+        "103M"
+      ],
+      "coverage": 1.0,
+      "geo_r": 0.10062727986641165,
+      "retention": 0.9890710382513661,
+      "noise_r": 0.0,
+      "geo_over_noise": 100.62727986641166,
+      "disambiguates": true
+    },
+    {
+      "family": "MYO",
+      "pair": [
+        "101M",
+        "104M"
+      ],
+      "coverage": 0.9935064935064936,
+      "geo_r": 0.23548261389763242,
+      "retention": 0.9762340036563071,
+      "noise_r": 0.0,
+      "geo_over_noise": 235.4826138976324,
+      "disambiguates": true
+    },
+    {
+      "family": "THR",
+      "pair": [
+        "1SFQ",
+        "1SG8"
+      ],
+      "coverage": 0.9946332737030411,
+      "geo_r": 9.907406293813345,
+      "retention": 0.9658119658119658,
+      "noise_r": 0.0,
+      "geo_over_noise": 9907.406293813345,
+      "disambiguates": true
+    },
+    {
+      "family": "THR",
+      "pair": [
+        "1SFQ",
+        "1SGI"
+      ],
+      "coverage": 0.9893428063943162,
+      "geo_r": 0.22501611211240996,
+      "retention": 0.9744680851063829,
+      "noise_r": 0.0,
+      "geo_over_noise": 225.01611211240996,
+      "disambiguates": true
+    },
+    {
+      "family": "THR",
+      "pair": [
+        "1SFQ",
+        "1SHH"
+      ],
+      "coverage": 0.9858906525573192,
+      "geo_r": 0.12536880963984967,
+      "retention": 0.9881002974925627,
+      "noise_r": 0.0,
+      "geo_over_noise": 125.36880963984967,
+      "disambiguates": true
+    },
+    {
+      "family": "THR",
+      "pair": [
+        "1SFQ",
+        "1UVS"
+      ],
+      "coverage": 0.0,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "THR",
+      "pair": [
+        "1SFQ",
+        "1UVT"
+      ],
+      "coverage": 0.0,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "THR",
+      "pair": [
+        "1SFQ",
+        "1UVU"
+      ],
+      "coverage": 0.0,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "THR",
+      "pair": [
+        "1SFQ",
+        "2ANM"
+      ],
+      "coverage": 0.0,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "THR",
+      "pair": [
+        "1SG8",
+        "1SGI"
+      ],
+      "coverage": 0.9840142095914742,
+      "geo_r": 9.847230170658612,
+      "retention": 0.9637372013651877,
+      "noise_r": 0.0,
+      "geo_over_noise": 9847.230170658611,
+      "disambiguates": true
+    },
+    {
+      "family": "THR",
+      "pair": [
+        "1SG8",
+        "1SHH"
+      ],
+      "coverage": 0.9805996472663139,
+      "geo_r": 9.922189433099598,
+      "retention": 0.9604086845466155,
+      "noise_r": 0.0,
+      "geo_over_noise": 9922.189433099598,
+      "disambiguates": true
+    },
+    {
+      "family": "THR",
+      "pair": [
+        "1SG8",
+        "1UVS"
+      ],
+      "coverage": 0.0,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "CAH",
+      "pair": [
+        "1AM6",
+        "1BN1"
+      ],
+      "coverage": 0.9961240310077519,
+      "geo_r": 0.13528775555282133,
+      "retention": 0.9951737451737451,
+      "noise_r": 0.0,
+      "geo_over_noise": 135.28775555282132,
+      "disambiguates": true
+    },
+    {
+      "family": "CAH",
+      "pair": [
+        "1AM6",
+        "1BN3"
+      ],
+      "coverage": 0.9961240310077519,
+      "geo_r": 0.1571409029442962,
+      "retention": 0.9893822393822393,
+      "noise_r": 0.0,
+      "geo_over_noise": 157.1409029442962,
+      "disambiguates": true
+    },
+    {
+      "family": "CAH",
+      "pair": [
+        "1AM6",
+        "1BN4"
+      ],
+      "coverage": 0.9961240310077519,
+      "geo_r": 0.11564930299299574,
+      "retention": 0.9951737451737451,
+      "noise_r": 0.0,
+      "geo_over_noise": 115.64930299299573,
+      "disambiguates": true
+    },
+    {
+      "family": "CAH",
+      "pair": [
+        "1AM6",
+        "1BNM"
+      ],
+      "coverage": 0.9961240310077519,
+      "geo_r": 0.17015153379456052,
+      "retention": 0.9913127413127413,
+      "noise_r": 0.0,
+      "geo_over_noise": 170.15153379456052,
+      "disambiguates": true
+    },
+    {
+      "family": "CAH",
+      "pair": [
+        "1AM6",
+        "1BNN"
+      ],
+      "coverage": 0.9961240310077519,
+      "geo_r": 0.16398012458258174,
+      "retention": 0.9913127413127413,
+      "noise_r": 0.0,
+      "geo_over_noise": 163.98012458258174,
+      "disambiguates": true
+    },
+    {
+      "family": "CAH",
+      "pair": [
+        "1AM6",
+        "1BNQ"
+      ],
+      "coverage": 0.9922480620155039,
+      "geo_r": 0.1353071959459409,
+      "retention": 0.9874152952565344,
+      "noise_r": 0.0,
+      "geo_over_noise": 135.3071959459409,
+      "disambiguates": true
+    },
+    {
+      "family": "CAH",
+      "pair": [
+        "1AM6",
+        "1BNT"
+      ],
+      "coverage": 0.9922480620155039,
+      "geo_r": 0.13800875578895513,
+      "retention": 0.9912875121006777,
+      "noise_r": 0.0,
+      "geo_over_noise": 138.00875578895514,
+      "disambiguates": true
+    },
+    {
+      "family": "CAH",
+      "pair": [
+        "1BN1",
+        "1BN3"
+      ],
+      "coverage": 1.0,
+      "geo_r": 0.07594994099066728,
+      "retention": 0.9904580152671756,
+      "noise_r": 0.0,
+      "geo_over_noise": 75.94994099066727,
+      "disambiguates": true
+    },
+    {
+      "family": "CAH",
+      "pair": [
+        "1BN1",
+        "1BN4"
+      ],
+      "coverage": 1.0,
+      "geo_r": 0.04377336054607228,
+      "retention": 0.9914122137404581,
+      "noise_r": 0.0,
+      "geo_over_noise": 43.77336054607228,
+      "disambiguates": true
+    },
+    {
+      "family": "CAH",
+      "pair": [
+        "1BN1",
+        "1BNM"
+      ],
+      "coverage": 1.0,
+      "geo_r": 0.1011672954890006,
+      "retention": 0.9904580152671756,
+      "noise_r": 0.0,
+      "geo_over_noise": 101.1672954890006,
+      "disambiguates": true
+    },
+    {
+      "family": "GST",
+      "pair": [
+        "3GTU",
+        "5LCZ"
+      ],
+      "coverage": 0.4580498866213152,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "GST",
+      "pair": [
+        "3GTU",
+        "11GS"
+      ],
+      "coverage": 0.47165532879818595,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "GST",
+      "pair": [
+        "3GTU",
+        "12GS"
+      ],
+      "coverage": 0.47165532879818595,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "GST",
+      "pair": [
+        "3GTU",
+        "13GS"
+      ],
+      "coverage": 0.4722536806342016,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "GST",
+      "pair": [
+        "3GTU",
+        "14GS"
+      ],
+      "coverage": 0.4399092970521542,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "GST",
+      "pair": [
+        "3GTU",
+        "16GS"
+      ],
+      "coverage": 0.47165532879818595,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "GST",
+      "pair": [
+        "5LCZ",
+        "11GS"
+      ],
+      "coverage": 0.9617224880382775,
+      "geo_r": 4.278827687902606,
+      "retention": 0.5740120562625586,
+      "noise_r": 0.0,
+      "geo_over_noise": 4278.827687902605,
+      "disambiguates": false
+    },
+    {
+      "family": "GST",
+      "pair": [
+        "5LCZ",
+        "12GS"
+      ],
+      "coverage": 0.9617224880382775,
+      "geo_r": 4.274701443843782,
+      "retention": 0.5746818486269256,
+      "noise_r": 0.0,
+      "geo_over_noise": 4274.701443843782,
+      "disambiguates": false
+    },
+    {
+      "family": "GST",
+      "pair": [
+        "5LCZ",
+        "13GS"
+      ],
+      "coverage": 0.9571428571428572,
+      "geo_r": 4.27001496748218,
+      "retention": 0.5713328868050904,
+      "noise_r": 0.0,
+      "geo_over_noise": 4270.0149674821805,
+      "disambiguates": false
+    },
+    {
+      "family": "GST",
+      "pair": [
+        "5LCZ",
+        "14GS"
+      ],
+      "coverage": 0.8947368421052632,
+      "geo_r": 4.314316630818656,
+      "retention": 0.5660649819494585,
+      "noise_r": 0.0,
+      "geo_over_noise": 4314.3166308186555,
+      "disambiguates": false
+    },
+    {
+      "family": "LDH",
+      "pair": [
+        "1EZ4",
+        "1PZE"
+      ],
+      "coverage": 0.22698907956318254,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LDH",
+      "pair": [
+        "1EZ4",
+        "1PZF"
+      ],
+      "coverage": 0.8590116279069767,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LDH",
+      "pair": [
+        "1EZ4",
+        "1PZG"
+      ],
+      "coverage": 0.8567272727272728,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LDH",
+      "pair": [
+        "1EZ4",
+        "1PZH"
+      ],
+      "coverage": 0.8591140159767611,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LDH",
+      "pair": [
+        "1EZ4",
+        "2FN7"
+      ],
+      "coverage": 0.4537037037037037,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LDH",
+      "pair": [
+        "1EZ4",
+        "3LDH"
+      ],
+      "coverage": 0.23552425665101723,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LDH",
+      "pair": [
+        "1EZ4",
+        "3OM9"
+      ],
+      "coverage": 0.8591140159767611,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LDH",
+      "pair": [
+        "1PZE",
+        "1PZF"
+      ],
+      "coverage": 0.24694189602446484,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LDH",
+      "pair": [
+        "1PZE",
+        "1PZG"
+      ],
+      "coverage": 0.2469325153374233,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "LDH",
+      "pair": [
+        "1PZE",
+        "1PZH"
+      ],
+      "coverage": 0.24656488549618322,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "TRP",
+      "pair": [
+        "1AVW",
+        "1AVX"
+      ],
+      "coverage": 0.9924242424242424,
+      "geo_r": 0.4294029747258345,
+      "retention": 0.9641990291262136,
+      "noise_r": 0.0,
+      "geo_over_noise": 429.4029747258345,
+      "disambiguates": true
+    },
+    {
+      "family": "TRP",
+      "pair": [
+        "1AVW",
+        "4AN7"
+      ],
+      "coverage": 0.40545454545454546,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "TRP",
+      "pair": [
+        "1AVW",
+        "1A0J"
+      ],
+      "coverage": 0.20978363123236124,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "TRP",
+      "pair": [
+        "1AVW",
+        "1AUJ"
+      ],
+      "coverage": 0.5620253164556962,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "TRP",
+      "pair": [
+        "1AVW",
+        "1AZ8"
+      ],
+      "coverage": 0.5620253164556962,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "TRP",
+      "pair": [
+        "1AVW",
+        "1BIT"
+      ],
+      "coverage": 0.5634517766497462,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "TRP",
+      "pair": [
+        "1AVW",
+        "1BRA"
+      ],
+      "coverage": 0.5620253164556962,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "TRP",
+      "pair": [
+        "1AVX",
+        "4AN7"
+      ],
+      "coverage": 0.4047186932849365,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "TRP",
+      "pair": [
+        "1AVX",
+        "1A0J"
+      ],
+      "coverage": 0.20958646616541354,
+      "skipped": "残基覆盖不足/长度差过大"
+    },
+    {
+      "family": "TRP",
+      "pair": [
+        "1AVX",
+        "1AUJ"
+      ],
+      "coverage": 0.5606060606060606,
+      "skipped": "残基覆盖不足/长度差过大"
+    }
+  ]
+}

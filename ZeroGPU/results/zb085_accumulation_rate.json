@@ -1,0 +1,102 @@
+{
+  "S1_port_no_signal": {
+    "trials": 20,
+    "max_deviation": 2.7756941646545684e-16
+  },
+  "S2_port_filter": {
+    "tau": 5.0,
+    "narrowband_gain_analytic": 0.624,
+    "narrowband_sample_Zb074_convention": 0.624,
+    "white_std_ratio_analytic": 0.316,
+    "white_sample_range_20_seeds": [
+      0.232,
+      0.38
+    ],
+    "high_freq_slope": -1.96
+  },
+  "S3_input_count": {
+    "k": 4,
+    "rows": {
+      "1": {
+        "sequential_nk": 4,
+        "simultaneous_k_pow_n": 4
+      },
+      "2": {
+        "sequential_nk": 8,
+        "simultaneous_k_pow_n": 16
+      },
+      "3": {
+        "sequential_nk": 12,
+        "simultaneous_k_pow_n": 64
+      },
+      "4": {
+        "sequential_nk": 16,
+        "simultaneous_k_pow_n": 256
+      },
+      "5": {
+        "sequential_nk": 20,
+        "simultaneous_k_pow_n": 1024
+      },
+      "6": {
+        "sequential_nk": 24,
+        "simultaneous_k_pow_n": 4096
+      }
+    }
+  },
+  "S4_record_entropy": {
+    "kappa": 1.0,
+    "ln_1_plus_lambda_over_kappa": {
+      "1": 0.693,
+      "10": 2.398,
+      "100": 4.615,
+      "1000": 6.909,
+      "10000": 9.21
+    }
+  },
+  "S5_rate_bound": {
+    "formula": "bits/step <= ln(1+lambda/kappa) / (tau * 2 ln(2+sqrt3))",
+    "half_depth_factor": 2.6339,
+    "rows": {
+      "1": {
+        "10": 0.91,
+        "100": 1.752,
+        "1000": 2.623,
+        "10000": 3.497
+      },
+      "2": {
+        "10": 0.455,
+        "100": 0.876,
+        "1000": 1.311,
+        "10000": 1.748
+      },
+      "5": {
+        "10": 0.182,
+        "100": 0.35,
+        "1000": 0.525,
+        "10000": 0.699
+      },
+      "10": {
+        "10": 0.091,
+        "100": 0.175,
+        "1000": 0.262,
+        "10000": 0.35
+      }
+    },
+    "note": "并行数 n 不进入公式；它只经 lambda 进入，且为对数"
+  },
+  "S6_reseed_capacity": {
+    "trials": 300,
+    "rounds": 4,
+    "all_subsets_of_Y": true,
+    "monotone_nonincreasing": true,
+    "max_size": 6,
+    "bound": 6,
+    "equal_fiber_check": {
+      "k": 3,
+      "ny": 5,
+      "nx": 15,
+      "all_fibers_size_k": true,
+      "nx_equals_k_ny": true
+    }
+  }
+}

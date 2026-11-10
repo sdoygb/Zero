@@ -1,0 +1,54 @@
+{
+  "C11": {
+    "n_max": 8,
+    "involution_and_size": true
+  },
+  "C12": {
+    "n": 7,
+    "dim_C": 4,
+    "dim_dual": 3,
+    "sum": 7,
+    "rank_H": 3
+  },
+  "C13": {
+    "edges": 6,
+    "rE": 3,
+    "rstar_E": 3,
+    "dual_rank_formula_full": true,
+    "subsets_checked": 64
+  },
+  "C14": {
+    "ideals": 6,
+    "filters": 6,
+    "complement_bijection": true
+  },
+  "C15C16": {
+    "Z3_char_conj": true,
+    "S3_char_real": true
+  },
+  "C17": {
+    "T2_is_minus1": true,
+    "H_T_invariant": true,
+    "even_degeneracy": true,
+    "eigs": [
+      -2.406359,
+      -2.406359,
+      -0.93287,
+      -0.93287,
+      0.557336,
+      0.557336,
+      2.317259,
+      2.317259
+    ]
+  },
+  "C23": {
+    "N4": {
+      "F2_is_reversal": true,
+      "F4_is_identity": true
+    },
+    "N8": {
+      "F2_is_reversal": true,
+      "F4_is_identity": true
+    }
+  }
+}

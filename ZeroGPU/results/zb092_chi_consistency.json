@@ -1,0 +1,188 @@
+{
+  "tol": 0.2,
+  "trials": 64,
+  "n": 18,
+  "consistent": 18,
+  "rows": [
+    {
+      "name": "甲烷",
+      "smiles": "C",
+      "aut": 24,
+      "n_proper": 12,
+      "n_improper": 12,
+      "chiral": false,
+      "mean_abs_im_prod": 5.2243575385422e-19,
+      "max_abs_im_prod": 6.164405124251261e-18
+    },
+    {
+      "name": "乙醇",
+      "smiles": "CCO",
+      "aut": 12,
+      "n_proper": 1,
+      "n_improper": 1,
+      "chiral": false,
+      "mean_abs_im_prod": 1.7312580923418852e-18,
+      "max_abs_im_prod": 3.1634563991891125e-17
+    },
+    {
+      "name": "甘氨酸",
+      "smiles": "NCC(=O)O",
+      "aut": 4,
+      "n_proper": 1,
+      "n_improper": 1,
+      "chiral": false,
+      "mean_abs_im_prod": 8.87761945770781e-18,
+      "max_abs_im_prod": 4.018300324484364e-16
+    },
+    {
+      "name": "丙氨酸（L）",
+      "smiles": "C[C@@H](N)C(=O)O",
+      "aut": 12,
+      "n_proper": 1,
+      "n_improper": 0,
+      "chiral": true,
+      "mean_abs_im_prod": 3.005983045957538,
+      "max_abs_im_prod": 33.83202153755533
+    },
+    {
+      "name": "乳酸（L）",
+      "smiles": "C[C@@H](O)C(=O)O",
+      "aut": 6,
+      "n_proper": 1,
+      "n_improper": 0,
+      "chiral": true,
+      "mean_abs_im_prod": 9.2086284592717,
+      "max_abs_im_prod": 134.24549307584684
+    },
+    {
+      "name": "苯",
+      "smiles": "c1ccccc1",
+      "aut": 12,
+      "n_proper": 12,
+      "n_improper": 12,
+      "chiral": false,
+      "mean_abs_im_prod": 3.872015001165782e-20,
+      "max_abs_im_prod": 1.6206950466879532e-18
+    },
+    {
+      "name": "内消旋酒石酸",
+      "smiles": "O=C(O)[C@@H](O)[C@@H](O)C(=O)O",
+      "aut": 2,
+      "n_proper": 1,
+      "n_improper": 1,
+      "chiral": false,
+      "mean_abs_im_prod": 5.812317022588706e-18,
+      "max_abs_im_prod": 9.425462556092887e-17
+    },
+    {
+      "name": "(S,S)-酒石酸",
+      "smiles": "O=C(O)[C@@H](O)[C@H](O)C(=O)O",
+      "aut": 2,
+      "n_proper": 2,
+      "n_improper": 0,
+      "chiral": true,
+      "mean_abs_im_prod": 0.10857985078856242,
+      "max_abs_im_prod": 1.3042049940680338
+    },
+    {
+      "name": "顺-1,2-二甲基环丙烷（内消旋）",
+      "smiles": "C[C@@H]1C[C@@H]1C",
+      "aut": 144,
+      "n_proper": 1,
+      "n_improper": 1,
+      "chiral": false,
+      "mean_abs_im_prod": 1.2728917673933724e-17,
+      "max_abs_im_prod": 4.256543555678869e-16
+    },
+    {
+      "name": "反-1,2-二甲基环丙烷（R,R）",
+      "smiles": "C[C@@H]1C[C@H]1C",
+      "aut": 144,
+      "n_proper": 2,
+      "n_improper": 0,
+      "chiral": true,
+      "mean_abs_im_prod": 0.324084764667255,
+      "max_abs_im_prod": 9.179596629655192
+    },
+    {
+      "name": "柠檬烯（R）",
+      "smiles": "CC(=C)[C@H]1CCC(=CC1)C",
+      "aut": 576,
+      "n_proper": 1,
+      "n_improper": 0,
+      "chiral": true,
+      "mean_abs_im_prod": 45.79244592396054,
+      "max_abs_im_prod": 824.0925826808989
+    },
+    {
+      "name": "樟脑",
+      "smiles": "CC1(C)C2CC[C@@]1(C)C(=O)C2",
+      "aut": 3456,
+      "n_proper": 1,
+      "n_improper": 0,
+      "chiral": true,
+      "mean_abs_im_prod": 689.8076948667156,
+      "max_abs_im_prod": 23326.383143670202
+    },
+    {
+      "name": "环己烷",
+      "smiles": "C1CCCCC1",
+      "aut": 768,
+      "n_proper": 6,
+      "n_improper": 6,
+      "chiral": false,
+      "mean_abs_im_prod": 1.5879017131914236e-23,
+      "max_abs_im_prod": 9.586250606540398e-22
+    },
+    {
+      "name": "2,3-戊二烯（轴手性）",
+      "smiles": "CC=C=CC",
+      "aut": 72,
+      "n_proper": 2,
+      "n_improper": 0,
+      "chiral": true,
+      "mean_abs_im_prod": 0.08002355547960693,
+      "max_abs_im_prod": 1.297582564132624
+    },
+    {
+      "name": "取代丙二烯 ClC=C=C(F)Br",
+      "smiles": "ClC=C=C(F)Br",
+      "aut": 1,
+      "n_proper": 1,
+      "n_improper": 0,
+      "chiral": true,
+      "mean_abs_im_prod": 2.1915086558761,
+      "max_abs_im_prod": 44.798194996141625
+    },
+    {
+      "name": "3-甲基戊烷",
+      "smiles": "CCC(C)CC",
+      "aut": 1728,
+      "n_proper": 1,
+      "n_improper": 1,
+      "chiral": false,
+      "mean_abs_im_prod": 1.1107120877868665e-17,
+      "max_abs_im_prod": 5.083413379702128e-16
+    },
+    {
+      "name": "1,3-二氯环戊烷（顺式）",
+      "smiles": "Cl[C@H]1C[C@@H](Cl)CC1",
+      "aut": 16,
+      "n_proper": 1,
+      "n_improper": 1,
+      "chiral": false,
+      "mean_abs_im_prod": 2.9665248407196052e-18,
+      "max_abs_im_prod": 4.433119375630118e-17
+    },
+    {
+      "name": "葡萄糖（开链 D）",
+      "smiles": "OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)C=O",
+      "aut": 2,
+      "n_proper": 1,
+      "n_improper": 0,
+      "chiral": true,
+      "mean_abs_im_prod": 42.96310820763118,
+      "max_abs_im_prod": 1026.730172812747
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "n_levels": [
+    3,
+    4
+  ],
+  "routes": {
+    "维C_植物（自然，葡萄糖→山梨糖→抗坏血酸）": {
+      "steps": 2,
+      "beta_series": [
+        1,
+        1,
+        1
+      ],
+      "monotone": true,
+      "delta_beta1": [
+        0,
+        0
+      ],
+      "max_add_per_step": 0,
+      "capacity_ok(N=3,4)": true,
+      "verdict": "因果可导出（首过 (b)(c)）"
+    },
+    "维C_Reichstein（人工，含丙酮叉保护）": {
+      "steps": 7,
+      "beta_series": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        3,
+        1
+      ],
+      "monotone": false,
+      "delta_beta1": [
+        -1,
+        1,
+        0,
+        -1,
+        1,
+        2,
+        -2
+      ],
+      "max_add_per_step": 2,
+      "capacity_ok(N=3,4)": true,
+      "verdict": "被 (b)/(c) 卡住"
+    },
+    "青蒿素（半合成，FPP→紫穗槐二烯→青蒿素）": {
+      "steps": 2,
+      "beta_series": [
+        0,
+        2,
+        3
+      ],
+      "monotone": true,
+      "delta_beta1": [
+        2,
+        1
+      ],
+      "max_add_per_step": 2,
+      "capacity_ok(N=3,4)": true,
+      "verdict": "被 (b)/(c) 卡住"
+    },
+    "沙利度胺（工业，邻苯二甲酸酐+谷氨酸→沙利度胺）": {
+      "steps": 1,
+      "beta_series": [
+        2,
+        3
+      ],
+      "monotone": true,
+      "delta_beta1": [
+        1
+      ],
+      "max_add_per_step": 1,
+      "capacity_ok(N=3,4)": true,
+      "verdict": "因果可导出（首过 (b)(c)）"
+    },
+    "布洛芬（人工，BHC 路线）": {
+      "steps": 3,
+      "beta_series": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "monotone": true,
+      "delta_beta1": [
+        0,
+        0,
+        0
+      ],
+      "max_add_per_step": 0,
+      "capacity_ok(N=3,4)": true,
+      "verdict": "因果可导出（首过 (b)(c)）"
+    },
+    "阿司匹林（人工）": {
+      "steps": 1,
+      "beta_series": [
+        0,
+        0
+      ],
+      "monotone": true,
+      "delta_beta1": [
+        0
+      ],
+      "max_add_per_step": 0,
+      "capacity_ok(N=3,4)": true,
+      "verdict": "因果可导出（首过 (b)(c)）"
+    }
+  }
+}

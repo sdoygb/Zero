@@ -1,0 +1,12 @@
+{
+  "genome_bp": 270161,
+  "n_orfs": 633,
+  "n_distinct_lengths": 236,
+  "length_range": [
+    90,
+    2564
+  ],
+  "orfs_per_length_median": 1.0,
+  "orfs_per_length_max": 14,
+  "collision_frac_lengths_with_gt1": 0.4364406779661017
+}
